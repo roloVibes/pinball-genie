@@ -227,7 +227,7 @@ schematic diagrams and all goal descriptions are original instructional text.
 ## License
 
 - **Code** (everything outside `data/`): [GNU AGPL-3.0](LICENSE).
-  © 2026 Robert Taylor Lowery.
+  © 2026 Pinball Genie LLC.
 - **Dataset** (`data/`): [CC BY-NC-SA 4.0](data/LICENSE.md). Non-commercial use
   with attribution and share-alike; commercial use needs permission.
 - Fonts: Chakra Petch, SIL Open Font License (`app/public/fonts/OFL.txt`).

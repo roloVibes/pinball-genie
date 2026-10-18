@@ -2,7 +2,7 @@
 
 The files in this `data/` directory (per-machine goals, shots, playfield models,
 drills, how-it-plays text, the catalog, glossary and guide prose) are
-© 2026 Robert Taylor Lowery / Pinball Genie LLC and are licensed under the
+© 2026 Pinball Genie LLC and are licensed under the
 **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**
 license (CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/
 
