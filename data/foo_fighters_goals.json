@@ -1,0 +1,1674 @@
+{
+  "machine": "Foo Fighters (Stern Pinball, 2023)",
+  "defaultFx": "guitar",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Manual plunger. Skill-shot source: soft plunge=Rock-O-Meter, short plunge=Mod-ulator drops, secret lane plunges."
+    },
+    {
+      "id": "pat-ramp",
+      "name": "Pat (Left Ramp)",
+      "type": "ramp",
+      "x": 0.3729,
+      "y": 0.2919,
+      "trim": "all",
+      "notes": "Left ramp; starts/advances Van Modes and mode select via Tour Van. FooBot Left Leg (Pat) shot. Combotron insert.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "rami-crossover",
+      "name": "Rami (Left Crossover Ramp)",
+      "type": "ramp",
+      "x": 0.2688,
+      "y": 0.3168,
+      "trim": "all",
+      "notes": "Crossover ramp feeding the upper-right flipper. Super Skill Shot start. FooBot Right Leg (Rami) shot.",
+      "feeds": {
+        "x": 0.52,
+        "y": 0.74
+      }
+    },
+    {
+      "id": "taylor-ramp",
+      "name": "Taylor (Side Ramp)",
+      "type": "ramp",
+      "x": 0.4722,
+      "y": 0.5031,
+      "trim": "all",
+      "notes": "Side ramp; easy flow shot,",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "dave-ramp",
+      "name": "Dave (Right Ramp)",
+      "type": "ramp",
+      "x": 0.7177,
+      "y": 0.4534,
+      "trim": "all",
+      "notes": "Right ramp; primary Area 51 progression (5 shots qualify). FooBot Head (Dave) shot. Pro returns to right flipper; Prem/LE diverts to Area 51 upper playfield.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "chris-orbit",
+      "name": "Chris (Right Orbit)",
+      "type": "orbit",
+      "x": 0.8659,
+      "y": 0.6149,
+      "trim": "all",
+      "notes": "Right orbit; feeds Rock-O-Meter. 3 shots fill playfield multiplier. FooBot Right Arm (Chris) shot.",
+      "feeds": {
+        "shot": "rock-o-meter"
+      }
+    },
+    {
+      "id": "nate-loop",
+      "name": "Nate (Upper / Side Loop)",
+      "type": "loop",
+      "x": 0.4,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Repeatable loop from upper-right flipper. Nate combo = triple loop. FooBot Left Arm (Nate) shot. Prem/LE routes via upper playfield.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "rock-o-meter",
+      "name": "Rock-O-Meter",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Figure-8 wireform playfield-multiplier device. Fed by Chris orbit and soft plunge. 2x then 3x playfield."
+    },
+    {
+      "id": "overlord-spinner",
+      "name": "Overlord Spinner (Center Spinner)",
+      "type": "spinner",
+      "x": 0.46,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Center spinning target up the middle. Ripped for Bot Frenzy 8x and New York mode value."
+    },
+    {
+      "id": "overlord",
+      "name": "Overlord (Gate / Lock / Captive Ball)",
+      "type": "scoop",
+      "x": 0.56,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Center-back lock/gate + captive ball. Overlord MB lock; combo cash-out (3x); final shot of every van mode. Most drain-prone area."
+    },
+    {
+      "id": "overlord-arena",
+      "name": "Overlord Arena Targets (3)",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Three stand-ups fronting the Overlord. Light the lock; backhand directly for 5x combo cash-out. Prem/LE hides abduction magnet beneath."
+    },
+    {
+      "id": "ufo-captive",
+      "name": "UFO Captive Ball",
+      "type": "captive-ball",
+      "x": 0.4117,
+      "y": 0.6273,
+      "trim": "all",
+      "notes": "Under a clear dome. Hits charge the Action Button (spots the most valuable shot). Yellow to green to red. A quick shot in from the upper flipper doubles the UFO bonus."
+    },
+    {
+      "id": "mod-ulator",
+      "name": "Mod-ulator Drop Targets + Paddle",
+      "type": "drop-target",
+      "x": 0.36,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "3 drops fronting a hidden paddle/Mod-ulator target. Complete drops then hit paddle to level Van Mods (Engine/Speakers/Bomb). Relights Rock-O-Meter battery; Bonus X."
+    },
+    {
+      "id": "sonic-radio",
+      "name": "Sonic Radio Targets (2)",
+      "type": "standup",
+      "x": 0.15,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Left-side amp-cabinet standups. Advance radio dial for Mystery awards; toward Supersonic Radio. Relight Overdrive."
+    },
+    {
+      "id": "ray-gun-left",
+      "name": "Left Ray Gun (Inlane) Target",
+      "type": "standup",
+      "x": 0.1438,
+      "y": 0.118,
+      "trim": "all",
+      "notes": "Left return-lane standup. Hit for next-shot 2x; hit opposite Ray Gun for 4x. Stacks with all multipliers."
+    },
+    {
+      "id": "ray-gun-right",
+      "name": "Right Ray Gun (Inlane) Target",
+      "type": "standup",
+      "x": 0.8562,
+      "y": 0.118,
+      "trim": "all",
+      "notes": "Right return-lane standup. Hit for next-shot 2x; hit opposite Ray Gun for 4x."
+    },
+    {
+      "id": "bot-targets",
+      "name": "Bot Standup Targets (4)",
+      "type": "standup",
+      "x": 0.72,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Four spider-bot standups on the right. Complete to light Bot Award; each adds +5k/step to Bot Frenzy spinner (up to 8x)."
+    },
+    {
+      "id": "bot-award",
+      "name": "Bot Award Target",
+      "type": "standup",
+      "x": 0.8244,
+      "y": 0.3416,
+      "trim": "all",
+      "notes": "Bottom-right. Collect cycling awards: 1=ball save, 2=Mod-ulator Frenzy, 3=Bot Frenzy. Also extra ball at 10 and 30 bots."
+    },
+    {
+      "id": "ka-foom",
+      "name": "KA-FOOM Kicking Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Center kicking target (low-confidence exact position)."
+    },
+    {
+      "id": "tour-van",
+      "name": "Foo Fighters Tour Van",
+      "type": "mech",
+      "x": 0.1329,
+      "y": 0.3665,
+      "trim": "all",
+      "notes": "Top of Pat left ramp. Holds ball and selects next destination city. Prem/LE sculpted; Pro decorated plastic."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Secret skill shot target (2.5M + ball-save time). Rolls to relight Ray Gun."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane (Overdrive)",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Overdrive ball save lives here (hold left flipper when lit). Secret plunge to left outlane = 5M + light Overdrive.",
+      "flipper": "left"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.66,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Rolls to relight Ray Gun multiplier target."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Ball-save insert nearby; 1st bot award lights right-outlane save."
+    },
+    {
+      "id": "deadpost",
+      "name": "The Deadpost (Left-Outlane Save Post)",
+      "type": "mech",
+      "x": 0.19,
+      "y": 0.05,
+      "trim": "premium-le",
+      "notes": "Physical raising save post at left outlane (Prem/LE). Pro uses a virtual Overdrive save instead."
+    },
+    {
+      "id": "area51-upper",
+      "name": "Area 51 Upper Mini-Playfield",
+      "type": "mech",
+      "x": 0.22,
+      "y": 0.86,
+      "trim": "premium-le",
+      "notes": "Prem/LE upper playfield: 2 loops, spinning target, 3 standups, diverter, mini-flipper. Fed by Dave right ramp. Area 51 MB path.",
+      "playfield": "area51-upper-deck"
+    },
+    {
+      "id": "area51-secret-files",
+      "name": "Area 51 Super Secret Files Target",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.92,
+      "trim": "premium-le",
+      "notes": "Hidden super-jackpot target on the upper playfield; starts Area 51 MB and collects its super (Prem/LE).",
+      "playfield": "area51-upper-deck",
+      "flipper": "area51-mini-flipper"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.52,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "The upper flipper, fed by the crossover ramp's return. Shoots the upper loop."
+    },
+    {
+      "id": "area51-mini-flipper",
+      "name": "Area 51 Mini-Flipper",
+      "type": "flipper",
+      "x": 0.2,
+      "y": 0.8,
+      "trim": "premium-le",
+      "notes": "Confirmed to exist ('The Area 51 upper playfield features additional flippers') but not individually documented with a position in any source found. Estimated near the deck's entry edge.",
+      "playfield": "area51-upper-deck",
+      "bat": {
+        "size": "mini"
+      }
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-rock-o-meter",
+      "title": "Rock-O-Meter Skill Shot",
+      "category": "skillshot",
+      "summary": "Soft-plunge so the ball rolls the Rock-O-Meter switch while the top light blinks — the direct on-ramp to 2x/3x playfield.",
+      "difficulty": 2,
+      "reward": "~100k x lit level, plus meter advances (Lvl 3 = 3x value + 2 advances) toward 2x playfield",
+      "steps": [
+        {
+          "shot": "rock-o-meter",
+          "action": "Soft-plunge into the Rock-O-Meter lane",
+          "detail": "Meter the plunge so the ball crawls up the right crossover and rolls the switch while the top insert blinks. Auto-qualifies the meter at the lit level; higher level = more advances toward 2x playfield. Adds +5s ball save."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-super-hifive",
+      "title": "Super Skill Shot (Combo Hi-Five)",
+      "category": "skillshot",
+      "summary": "Plunge to the left crossover before the timer expires to start a Hi-Five combo chain — up to a 6-way Super Skill Shot.",
+      "difficulty": 3,
+      "reward": "~500k x chain length (up to 6 shots), +3s ball save each",
+      "steps": [
+        {
+          "shot": "rami-crossover",
+          "action": "Plunge to the left crossover before the timer runs out",
+          "detail": "This skill shot is on a timer, not switch-cancelled — feed the left crossover to start the chain. Feeds the upper-right flipper."
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "Continue the combo",
+          "detail": "Chain side ramp / side loop repeatably up to 6 shots for the 6-way Super Skill Shot."
+        },
+        {
+          "shot": "nate-loop",
+          "action": "Keep chaining lit shots",
+          "detail": "Each made shot extends the chain and adds ball-save time."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-nate",
+      "title": "Nate Combo (Triple Side Loop)",
+      "category": "combo",
+      "summary": "The one pure self-feeding loop — Nate = Side loop x3 — the easiest repeatable combo to farm for Combotron progress.",
+      "difficulty": 1,
+      "reward": "Combo value 25k + 5k/combo x shot level; advances Nate / FooBot Left Arm",
+      "steps": [
+        {
+          "shot": "nate-loop",
+          "action": "Shoot the side loop",
+          "detail": "A made loop feeds the upper-right flipper for the next one."
+        },
+        {
+          "shot": "nate-loop",
+          "action": "Loop again"
+        },
+        {
+          "shot": "nate-loop",
+          "action": "Complete the triple loop",
+          "detail": "Finishes the Nate band-member combo."
+        },
+        {
+          "shot": "overlord",
+          "action": "Cash out at the Overlord",
+          "detail": "Combos never auto-score; shoot Overlord for 3x (or backhand the arena for 5x)."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-taylor",
+      "title": "Taylor Combo (Side Ramp / Spinner / Side Ramp)",
+      "category": "combo",
+      "summary": "Scripted band-member combo feeding the FooBot Torso; flows through the center spinner between two side-ramp shots.",
+      "difficulty": 2,
+      "reward": "Advances Taylor combo / FooBot Torso; combo value into the cash-out",
+      "steps": [
+        {
+          "shot": "taylor-ramp",
+          "action": "Shoot the side ramp"
+        },
+        {
+          "shot": "overlord-spinner",
+          "action": "Rip the center spinner"
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "Shoot the side ramp again",
+          "detail": "Completes the Taylor combo."
+        },
+        {
+          "shot": "overlord",
+          "action": "Cash out at the Overlord",
+          "detail": "3x normal, 5x backhand into the back targets."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-dave",
+      "title": "Dave Combo (Right Ramp / Left Ramp / Right Orbit)",
+      "category": "combo",
+      "summary": "Three-shot band-member combo spanning the whole playfield; feeds the FooBot Head.",
+      "difficulty": 2,
+      "reward": "Advances Dave combo / FooBot Head; combo value into cash-out",
+      "steps": [
+        {
+          "shot": "dave-ramp",
+          "action": "Shoot the right ramp"
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Completes the Dave combo."
+        },
+        {
+          "shot": "overlord",
+          "action": "Cash out at the Overlord"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-pat",
+      "title": "Pat Combo (Left Ramp / Spinner / Side Ramp)",
+      "category": "combo",
+      "summary": "Band-member combo feeding the FooBot Left Leg; left ramp into spinner into side ramp.",
+      "difficulty": 2,
+      "reward": "Advances Pat combo / FooBot Left Leg",
+      "steps": [
+        {
+          "shot": "pat-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "overlord-spinner",
+          "action": "Rip the center spinner"
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "Shoot the side ramp",
+          "detail": "Completes the Pat combo."
+        },
+        {
+          "shot": "overlord",
+          "action": "Cash out at the Overlord"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-cashout-loop",
+      "title": "Combo Cash-Out Loop (Light Combotron)",
+      "category": "combo",
+      "summary": "The signature Foo Fighters twist: chain a combo, then backhand the Overlord back targets for the 5x cash-out. Six cash-outs light the side ramp for Combotron Multiball.",
+      "difficulty": 3,
+      "reward": "6 cash-outs light Taylor side ramp for Combotron MB; best under 2x/3x playfield",
+      "steps": [
+        {
+          "shot": "nate-loop",
+          "action": "Start a combo chain",
+          "detail": "Any lit Combotron shot works; the triple side loop is easiest to farm."
+        },
+        {
+          "shot": "overlord-arena",
+          "action": "Backhand the Overlord back targets",
+          "detail": "Direct hit into the arena = 5x cash-out (vs 3x for a normal Overlord hit)."
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "After 6 cash-outs, shoot the lit side ramp",
+          "detail": "Starts Combotron Multiball."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-overlord-allmylife",
+      "title": "Overlord Multiball: All My Life",
+      "category": "multiball",
+      "summary": "The first and easiest Overlord multiball (2-ball). Light the lock at the arena, lock the ball, then pound the captive ball 3 times to start. Best used as a utility to help a van mode.",
+      "difficulty": 1,
+      "reward": "2-ball MB, starting jackpot ~1M; feeds FooBot Left Arm; jackpots carry to Monkey Wrench/Pretender",
+      "steps": [
+        {
+          "shot": "overlord-arena",
+          "action": "Hit the two targets flanking the Overlord",
+          "detail": "250k each; lights the lock."
+        },
+        {
+          "shot": "overlord",
+          "action": "Lock the ball at the Overlord shot"
+        },
+        {
+          "shot": "overlord",
+          "action": "Hit the captive ball 3 times to start",
+          "detail": "500k per hit. Jackpot order: L/R ramp/spinner then crossover/orbit then loop/side ramp then Overlord super."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-overlord-monkeywrench",
+      "title": "Overlord Multiball: Monkey Wrench",
+      "category": "multiball",
+      "summary": "The lucrative 2nd Overlord multiball (3-ball) — a longer qualify: Overlord 2x, side targets 2x, Overlord 2x to light lock, then captive ball 5x.",
+      "difficulty": 3,
+      "reward": "3-ball MB (~1.75M/captive hit); double jackpots by re-shooting lit shots; qualifies FooBot Left Arm",
+      "steps": [
+        {
+          "shot": "overlord",
+          "action": "Shoot the Overlord twice",
+          "detail": "1M each."
+        },
+        {
+          "shot": "overlord-arena",
+          "action": "Complete the side targets twice",
+          "detail": "1M each."
+        },
+        {
+          "shot": "overlord",
+          "action": "Shoot the Overlord twice to light lock",
+          "detail": "1.5M each."
+        },
+        {
+          "shot": "overlord",
+          "action": "Lock, then hit the captive ball 5 times to start",
+          "detail": "1.75M per hit; all shots lit, re-shoot for double jackpots, super at Overlord."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-area51",
+      "title": "Area 51 Multiball",
+      "category": "multiball",
+      "summary": "Hammer the right ramp (Dave) five times to qualify, then start it. Divert shots score jackpots; after 8, the super comes from the right ramp → captive-ball combo (Pro) or the secret-files target (Prem/LE). Stacks with Overlord MB.",
+      "difficulty": 2,
+      "reward": "750k jackpots; super = 1M + 1.25M/lit shot; feeds FooBot Head",
+      "steps": [
+        {
+          "shot": "dave-ramp",
+          "action": "Shoot the right ramp 5 times to qualify",
+          "detail": "9 shots for each subsequent Area 51."
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Shoot the right ramp again to start",
+          "detail": "On Prem/LE it diverts up to the Area 51 upper playfield.",
+          "feeds": {
+            "shot": "area51-upper"
+          }
+        },
+        {
+          "shot": "area51-upper",
+          "action": "(Prem/LE) Complete targets → spinner → loop on the upper playfield",
+          "detail": "Pro instead plays the divert jackpots on the flat playfield."
+        },
+        {
+          "shot": "area51-secret-files",
+          "action": "(Prem/LE) Hit the secret-files target for the super",
+          "detail": "After 8 jackpots. On Pro the super is a right-ramp → captive-ball combo instead."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-combotron",
+      "title": "Combotron Multiball",
+      "category": "multiball",
+      "summary": "Start and cash out 6 combos at the Overlord to light the side ramp, then shoot it to start this 3-ball MB. Score color-escalating jackpots to red to unlock the Combotron Super at the Overlord.",
+      "difficulty": 3,
+      "reward": "3-ball MB; Super = 20% of combined combo shot values; feeds FooBot Torso",
+      "steps": [
+        {
+          "shot": "overlord",
+          "action": "Cash out 6 combos at the Overlord",
+          "detail": "Each combo cashed builds toward the light."
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "Shoot the lit side ramp to start",
+          "detail": "Combotron Multiball begins with your best combos displayed."
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Score lit jackpots up to a red jackpot",
+          "detail": "Jackpots advance yellow→red; a red unlocks the Overlord super."
+        },
+        {
+          "shot": "overlord",
+          "action": "Collect the Combotron Super Jackpot",
+          "detail": "20% of the combined shot values of your combos."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mode-select-neworleans",
+      "title": "Van Mode: New Orleans — \"I'll Stick Around\"",
+      "category": "mode",
+      "summary": "The top tournament starter. Spell V-A-N, pick New Orleans at the Tour Van, then follow the lit shots — all shots start lit and side-flipper shots count twice.",
+      "difficulty": 1,
+      "reward": "Award starts 2M / +150-200k; side shots count double; great to stack into a multiball",
+      "steps": [
+        {
+          "shot": "chris-orbit",
+          "action": "Spell V-A-N",
+          "detail": "Make lit white-arrow shots to light the left ramp — one is enough for the first mode of the game, rising to a maximum of three later."
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Shoot the left ramp to the Tour Van",
+          "detail": "Holds the ball to pick a destination."
+        },
+        {
+          "shot": "tour-van",
+          "action": "Select New Orleans"
+        },
+        {
+          "shot": "nate-loop",
+          "action": "Shoot lit shots — side loop/side ramp count twice",
+          "detail": "Shooting one relights only that shot; easy to play by inserts."
+        },
+        {
+          "shot": "overlord",
+          "action": "Final shot is always the Overlord",
+          "detail": "Banks the mode; awards Bomb Bonus + Time Bonus."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mode-losangeles",
+      "title": "Van Mode: Los Angeles — \"Learn to Fly\"",
+      "category": "mode",
+      "summary": "The fastest mode to complete — a ramp-combo mode where ramp combos multiply awards and the side ramp scores double.",
+      "difficulty": 2,
+      "reward": "Award starts 1M / +100k; fastest completion",
+      "steps": [
+        {
+          "shot": "pat-ramp",
+          "action": "Spell V-A-N and select Los Angeles at the Tour Van"
+        },
+        {
+          "shot": "tour-van",
+          "action": "Select Los Angeles"
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "Shoot the side ramp (scores double)",
+          "detail": "Any ramp in a combo = 2x progress; side ramp doubles value."
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Chain another ramp for the combo multiplier"
+        },
+        {
+          "shot": "overlord",
+          "action": "Finish at the Overlord"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mode-seattle",
+      "title": "Van Mode: Seattle — \"This Is A Call\"",
+      "category": "mode",
+      "summary": "Two alternating lit shots move right→left→right; the side loop is the value shot (2x progress, 3x value).",
+      "difficulty": 2,
+      "reward": "Award starts 2M / +250k; side loop 2x progress + 3x value",
+      "steps": [
+        {
+          "shot": "pat-ramp",
+          "action": "Spell V-A-N and select Seattle at the Tour Van"
+        },
+        {
+          "shot": "tour-van",
+          "action": "Select Seattle"
+        },
+        {
+          "shot": "nate-loop",
+          "action": "Hit the side loop for 2x progress + 3x value",
+          "detail": "Alternating lit shots; the side loop is the premium shot."
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Follow the moving lit shot"
+        },
+        {
+          "shot": "overlord",
+          "action": "Finish at the Overlord"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mode-newyork",
+      "title": "Van Mode: New York — \"Breakout\"",
+      "category": "mode",
+      "summary": "Rip the center spinner to build value and light a roving 2x/3x shot that cycles across the playfield every 10th spin.",
+      "difficulty": 3,
+      "reward": "Award starts 500k / +100k per roving shot + 10k/spin (caps 5M)",
+      "steps": [
+        {
+          "shot": "pat-ramp",
+          "action": "Spell V-A-N and select New York at the Tour Van"
+        },
+        {
+          "shot": "tour-van",
+          "action": "Select New York"
+        },
+        {
+          "shot": "overlord-spinner",
+          "action": "Rip the spinner to build value + light a roving shot",
+          "detail": "Roving cycles L crossover → L ramp → Overlord → R ramp → R orbit."
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Collect the roving shot for 2x progress + 3x value",
+          "detail": "Collect after 3s of no spins."
+        },
+        {
+          "shot": "overlord",
+          "action": "Finish at the Overlord"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mult-playfield",
+      "title": "Playfield Multiplier (Rock-O-Meter 2x/3x)",
+      "category": "multiplier",
+      "summary": "The foundation multiplier. Shoot the right orbit x3 to fill the Rock-O-Meter and start 2x playfield; refill while it runs for 3x. Everything else should be scored under it.",
+      "difficulty": 2,
+      "reward": "2x playfield 40s; refill → 3x + timer reset",
+      "steps": [
+        {
+          "shot": "chris-orbit",
+          "action": "Shoot the right orbit 3 times (battery insert lit)",
+          "detail": "Fills the Rock-O-Meter."
+        },
+        {
+          "shot": "rock-o-meter",
+          "action": "Fill the meter to start 2x playfield",
+          "detail": "2x for ~40 seconds."
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Fill the meter a second time while 2x is running → 3x",
+          "detail": "Resets timer and upgrades to 3x."
+        },
+        {
+          "shot": "mod-ulator",
+          "action": "Relight the battery at the paddle behind the drops",
+          "detail": "Re-qualifies the meter for the next fill."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-raygun",
+      "title": "Ray Gun Shot Multiplier (2x / 4x)",
+      "category": "multiplier",
+      "summary": "Aim the multiplier at your biggest shot. Hit a Ray Gun return-lane target → next shot 2x; immediately hit the opposite Ray Gun → next shot 4x. Stacks multiplicatively with playfield and FooBot multipliers.",
+      "difficulty": 2,
+      "reward": "Next shot 2x/4x; ceiling ~120M single shot with 3x playfield stacked",
+      "steps": [
+        {
+          "shot": "ray-gun-left",
+          "action": "Alley-pass/shatz the left Ray Gun target",
+          "detail": "Arms next-shot 2x."
+        },
+        {
+          "shot": "ray-gun-right",
+          "action": "Immediately hit the opposite (right) Ray Gun target",
+          "detail": "Bumps it to 4x."
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Fire your biggest shot while the multiplier is armed",
+          "detail": "Point a 4x at an extra-ball or Area 51 shot under playfield multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-foobot",
+      "title": "FooBot Multiball (Mini-Wizard) — Qualification Path",
+      "category": "wizard",
+      "summary": "Assemble all 6 FooBot parts (one per band member, each earned from a distinct feature) to light the left ramp for FooBot Multiball. Each collected part also gives a 2x at that member's shot.",
+      "difficulty": 3,
+      "reward": "2-ball mini-wizard; jackpot base 3M, cap 10M/shot; parts give permanent 2x when upgraded",
+      "steps": [
+        {
+          "shot": "taylor-ramp",
+          "action": "Earn the Torso (Taylor) — start Combotron MB",
+          "link": "none"
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Earn the Head (Dave) — start Area 51 MB",
+          "link": "none"
+        },
+        {
+          "shot": "nate-loop",
+          "action": "Earn the Left Arm (Nate) — Overlord super or play Monkey Wrench",
+          "link": "none"
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Earn the Right Arm (Chris) — start Bot Frenzy",
+          "link": "none"
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Earn the Left Leg (Pat) — complete a van mode in one visit; and the Right Leg (Rami) via Supersonic Radio",
+          "link": "none"
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Assemble all 6, then shoot the lit left ramp to start",
+          "detail": "Left ramp lights once every part is collected."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-final-battle",
+      "title": "The Final Battle (Full Wizard) — Qualification Path",
+      "category": "wizard",
+      "summary": "The full wizard mode: requires all six city van modes + Austin + D.C., all 3 Overlord multiballs, and FooBot MB. Four phases with ~1-minute unlimited ball saves each.",
+      "difficulty": 3,
+      "reward": "4-phase wizard; epilogue steps all FooBot shot multipliers +1x for the next game",
+      "steps": [
+        {
+          "shot": "pat-ramp",
+          "action": "Save all six cities + Austin + D.C.",
+          "detail": "Complete the entire van/city system including both van mini-wizards via the left ramp.",
+          "link": "none"
+        },
+        {
+          "shot": "overlord",
+          "action": "Play all 3 Overlord multiballs",
+          "detail": "All My Life → Monkey Wrench → The Pretender.",
+          "link": "none"
+        },
+        {
+          "shot": "rami-crossover",
+          "action": "Assemble and play FooBot Multiball",
+          "detail": "All 6 parts collected.",
+          "link": "none"
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Phase 1 — Rescue Pat & Dave: ramp hurry-ups",
+          "detail": "3 shots each ramp then a 7th at the Overlord."
+        },
+        {
+          "shot": "overlord",
+          "action": "Battle through to the FooBot Mech final blow",
+          "detail": "Phases 2-4 culminate in a 3-ball multiball; final blow at the Overlord."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-opener",
+      "title": "Strategy: The First Three Shots",
+      "category": "strategy",
+      "summary": "Neutralize and use the Overlord first (it's the #1 drain risk), mod your van for time, then start New Orleans. The canonical safe, high-EV opener.",
+      "difficulty": 1,
+      "reward": "Safe opener that builds the Overlord lock, an Engine van mod, and an easy first mode",
+      "steps": [
+        {
+          "shot": "overlord",
+          "action": "Backhand the Overlord captive ball from the right flipper",
+          "detail": "Controlled early shot that starts your first lock AND removes the drain-prone rebound.",
+          "flipper": "right"
+        },
+        {
+          "shot": "mod-ulator",
+          "action": "Complete the drops, then bash the paddle for Engine (+20s mode time)",
+          "detail": "Engine is the strongest early mod for a completable first mode."
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Spell V-A-N then shoot the left ramp to start New Orleans",
+          "detail": "All shots lit, side-flipper shots count twice; easiest mode to read."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "strat-tournament-stack",
+      "title": "Strategy: The Tournament Stack",
+      "category": "strategy",
+      "summary": "The signature money move: with 2x one shot away, first start an Overlord MB + a van mode, THEN take the final right orbit — stacking van mode + Overlord MB + 2x playfield, and layer Area 51 on top.",
+      "difficulty": 3,
+      "reward": "Van mode + Overlord MB + 2x/3x playfield + Area 51 all scoring at once — the big-score game",
+      "steps": [
+        {
+          "shot": "overlord",
+          "action": "Start Overlord All My Life",
+          "detail": "Lock + captive ball while a van mode is running."
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Have a van mode (New Orleans) running",
+          "detail": "New Orleans stacks especially well into multiballs."
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Only NOW take the final right orbit to trigger 2x playfield",
+          "detail": "Hold the last Rock-O-Meter shot until the stack is set."
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Progress and start Area 51 on top",
+          "detail": "Area 51 can be started during any Overlord MB for the full stack."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "strat-bot-frenzy-spinner",
+      "title": "Strategy: Bot Frenzy 8x Spinner Farm",
+      "category": "strategy",
+      "summary": "Hit all four bot standups first (steps spinner 1x→2x→4x→8x), light Bot Frenzy at the 3rd bot award, then rip the center spinner during the 40s window — ideally brought into a spinner-heavy multiball under playfield multiplier.",
+      "difficulty": 2,
+      "reward": "Bot standups build the spinner up to 8x, but you get only one rip at that built value; 25M+ in the mode upgrades a FooBot arm",
+      "steps": [
+        {
+          "shot": "bot-targets",
+          "action": "Hit all four bot standups first",
+          "detail": "Each adds +5k spinner value and steps the multiplier to 8x."
+        },
+        {
+          "shot": "bot-award",
+          "action": "Collect the 3rd bot award to light Bot Frenzy",
+          "detail": "Lights the left ramp; Bot Frenzy is 40s and stackable."
+        },
+        {
+          "shot": "overlord-spinner",
+          "action": "Rip the center spinner during Bot Frenzy",
+          "detail": "That single rip spends the whole built-up value — once the spinner stops it drops back down, so work the bot standups again before the next one. Time it inside New York or Combotron MB under 2x/3x playfield."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-overlord-pretender",
+      "title": "Overlord Multiball: The Pretender",
+      "category": "multiball",
+      "summary": "The third and last Overlord multiball. The qualify cycle repeats once more and longer — Overlord hits, then the arena targets, then more Overlord hits to light the lock, then the most captive-ball hits of the three. Needed for the full wizard.",
+      "difficulty": 3,
+      "reward": "Final Overlord multiball; largest jackpot base of the three and the last Overlord requirement for The Final Battle",
+      "steps": [
+        {
+          "shot": "overlord",
+          "action": "Work the Overlord shot through its hit requirement again",
+          "detail": "Each Overlord multiball costs more than the last; expect several clean hits here before anything lights."
+        },
+        {
+          "shot": "overlord-arena",
+          "action": "Clear the arena stand-ups again",
+          "detail": "The flanking targets have to be completed three times over on this pass, so keep backhanding them from the right flipper for safety."
+        },
+        {
+          "shot": "overlord",
+          "action": "Finish the Overlord hits to light the lock",
+          "detail": "Lock the ball once the lock insert lights."
+        },
+        {
+          "shot": "overlord",
+          "action": "Pound the captive ball until the multiball starts",
+          "detail": "This one takes the most captive hits of the three; jackpots then live on the ramps, loops and orbit with the super back at the Overlord."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "wizard-van-mini",
+      "title": "Bonus Van Destinations (Austin / Washington D.C.)",
+      "category": "wizard",
+      "summary": "Two extra stops sit inside the van system beyond the six cities. Fully complete three van modes and the van offers Austin or D.C. at the top of the left ramp; the other unlocks at six completed modes, and both are required before the full wizard will light.",
+      "difficulty": 3,
+      "reward": "Van mini-wizard scoring, van-system progress, and a hard requirement for The Final Battle",
+      "steps": [
+        {
+          "shot": "pat-ramp",
+          "action": "Keep banking city modes off the left ramp",
+          "detail": "Spell V-A-N, pick a city, finish it, repeat — the bonus stops unlock off completed cities, not started ones."
+        },
+        {
+          "shot": "tour-van",
+          "action": "Take the bonus destination when the van offers it",
+          "detail": "The van holds the ball for the selection; the bonus stop appears in the list once you have enough completed cities."
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Shoot the lit shots as the mode cycles them",
+          "detail": "Play it off the inserts like any van mode, but expect more shots and tighter timing than a single city."
+        },
+        {
+          "shot": "overlord",
+          "action": "Collect the super jackpot where the mode puts it, not at the Overlord",
+          "detail": "Austin and D.C. are multiball mini-wizards, not timed city stops, and neither one pays out at the Overlord. In Austin the super jackpot rides on the blue shot and shooting the Overlord only relocates it. In D.C. drop the targets and hit the paddle behind them to light a super jackpot at a band-member shot."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "feature-supersonic-radio",
+      "title": "Supersonic Radio (Radio Dial)",
+      "category": "mode",
+      "summary": "The two amp-cabinet stand-ups on the left advance a radio dial that hands out mystery awards on the way up and Supersonic Radio at the top. This is the feature that earns the Rami leg for the FooBot.",
+      "difficulty": 3,
+      "reward": "Mystery awards along the dial, Supersonic Radio at the top, and the Rami FooBot part",
+      "steps": [
+        {
+          "shot": "sonic-radio",
+          "action": "Hit the amp-cabinet stand-ups to advance the dial",
+          "detail": "Awkward left-side targets; take them on the rebound off the left ramp or with a controlled left-flipper shot rather than forcing them."
+        },
+        {
+          "shot": "sonic-radio",
+          "action": "Keep advancing to the top of the dial",
+          "detail": "Awards cycle as you climb, so there is no wasted hit here even before the top."
+        },
+        {
+          "shot": "rami-crossover",
+          "action": "Bank the Rami side of the FooBot once the radio pays out",
+          "detail": "Rami is the FooBot part this feature feeds; the crossover ramp is that member's shot on the board."
+        },
+        {
+          "shot": "sonic-radio",
+          "action": "Hit all the pink shots, then take the radio targets for the Radio Jackpot",
+          "detail": "The jackpot is worth the combined value of every radio award you banked during the mode, and collecting it ends the mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-all-band",
+      "title": "Every Band-Member Combo In One Game",
+      "category": "combo",
+      "summary": "Each band member has a scripted three-shot combo. Running the whole set in one game raises your combo base value, lights an extra ball, and — with every city saved too — qualifies Toy Time Multiball, on top of the cash-outs banked along the way. The FooBot parts themselves come from the game's big features, not from these combos.",
+      "difficulty": 3,
+      "reward": "All band combos credited, FooBot parts and shot multipliers, and heavy Combotron progress",
+      "steps": [
+        {
+          "shot": "nate-loop",
+          "action": "Farm the triple side loop first",
+          "detail": "It self-feeds, so it is the cheapest combo to bank while you learn the ball."
+        },
+        {
+          "shot": "taylor-ramp",
+          "action": "Run the side ramp / spinner / side ramp script",
+          "detail": "Flows straight through the middle; the second side ramp closes it."
+        },
+        {
+          "shot": "pat-ramp",
+          "action": "Run left ramp / spinner / side ramp",
+          "detail": "Same spinner link, different bookends."
+        },
+        {
+          "shot": "dave-ramp",
+          "action": "Run right ramp / left ramp / right orbit",
+          "detail": "The full-playfield one; do it when the ball is behaving, not on a scramble."
+        },
+        {
+          "shot": "chris-orbit",
+          "action": "Pick up the remaining member shots",
+          "detail": "Chris runs right orbit, left ramp, right orbit; Rami runs left crossover, side loop, then the Mod-ulator paddle target behind the drop targets."
+        },
+        {
+          "shot": "overlord-arena",
+          "action": "Backhand the arena for the 5x cash-out on each one",
+          "detail": "Nothing scores until you cash out, and the direct arena hit pays well above a plain Overlord hit."
+        }
+      ],
+      "fx": "guitar",
+      "ordered": false
+    },
+    {
+      "id": "secret-attract-mode-menu",
+      "title": "Attract-Mode Game Modes Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Foo Fighters keeps a menu of alternate ways to play behind the flipper buttons, reachable before a game even starts. Holding both flippers while the machine runs its light show brings up a list that goes well past the standard game, including a standalone run at the final wizard mode.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "During attract mode, with no game in progress, hold both flipper buttons together",
+        "Keep holding until a menu appears on the display",
+        "Standard runs the normal ruleset",
+        "Competition runs Standard rules but hands out the mystery awards in a fixed order instead of at random",
+        "The Final Battle Challenge plays that wizard mode on its own, with its own separate high scores",
+        "Competition Install adjusts difficulty settings, touching Overlord multiball, timers and ball save behaviour",
+        "DJ Mixer is a jukebox for the music and playlists in the machine rather than a way to play"
+      ],
+      "reward": "Standard, Competition, The Final Battle Challenge with its own high scores, Competition Install, and a DJ Mixer jukebox"
+    },
+    {
+      "id": "secret-skillshot-plunges",
+      "title": "The Two Secret Skill Shots",
+      "category": "secret",
+      "summary": "Past the skill shots the game shows you at the start of a ball, Foo Fighters holds back two more it never names on the playfield. One buys extra ball save time and the other lights Overdrive outright, and both come down to how hard you plunge.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "At the start of a ball, ignore the skill shots the display is offering",
+        "Plunge the ball into the left inlane for 2,500,000 and additional ball save time",
+        "Or plunge the ball into the left outlane for 5,000,000 and Overdrive lit immediately",
+        "Hitting any major switch disables the ordinary skill shots, so commit to the plunge you want"
+      ],
+      "reward": "2,500,000 plus extra ball save time from the left inlane, or 5,000,000 plus Overdrive lit from the left outlane"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "meter-opening-plunge",
+      "title": "Metered Opener",
+      "desc": "Score the Rock-O-Meter skill shot on a soft plunge while the top insert is blinking.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-rock-o-meter"
+    },
+    {
+      "id": "first-lock-and-load",
+      "title": "Lock and Load",
+      "desc": "Start your first Overlord multiball (All My Life) by lighting the lock and beating on the captive ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-overlord-allmylife"
+    },
+    {
+      "id": "desert-base-breach",
+      "title": "Desert Base Breach",
+      "desc": "Qualify and start Area 51 Multiball off the right ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-area51"
+    },
+    {
+      "id": "one-visit-city",
+      "title": "City Cleared In One Trip",
+      "desc": "Complete a van mode's shots and bank it at the Overlord without ever leaving the mode.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-select-neworleans"
+    },
+    {
+      "id": "wrench-in-the-works",
+      "title": "Wrench In The Works",
+      "desc": "Work through the longer Overlord qualify and start the three-ball Monkey Wrench multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-overlord-monkeywrench"
+    },
+    {
+      "id": "combotron-online",
+      "title": "Combotron Online",
+      "desc": "Cash out six combos at the Overlord and shoot the lit side ramp to start Combotron Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-combotron"
+    },
+    {
+      "id": "triple-playfield",
+      "title": "Meter Pegged",
+      "desc": "Fill the Rock-O-Meter for 2x playfield, then refill it while the timer runs to reach 3x.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-playfield"
+    },
+    {
+      "id": "quad-loaded-shot",
+      "title": "Quad-Loaded Shot",
+      "desc": "Arm both Ray Gun targets back to back for a 4x next shot, then cash it on a major shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-raygun"
+    },
+    {
+      "id": "eight-times-spinner",
+      "title": "Spinner At Eight",
+      "desc": "Step the spinner to 8x off all four bot standups and rip it during a Bot Frenzy window.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strat-bot-frenzy-spinner"
+    },
+    {
+      "id": "radio-dial-maxed",
+      "title": "Dial Turned All The Way Up",
+      "desc": "Advance the radio dial with the amp-cabinet targets far enough to reach Supersonic Radio.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "feature-supersonic-radio"
+    },
+    {
+      "id": "area51-secret-super",
+      "title": "Files Cracked Open",
+      "desc": "Score the Area 51 super jackpot after collecting eight jackpots in that multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-area51"
+    },
+    {
+      "id": "six-shot-super-plunge",
+      "title": "Six-Deep Off The Plunge",
+      "desc": "Turn the plunge into a six-shot combo chain for the full Super Skill Shot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "skill-super-hifive"
+    },
+    {
+      "id": "third-overlord-showdown",
+      "title": "Third Time At The Overlord",
+      "desc": "Reach and start the third Overlord multiball, The Pretender.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-overlord-pretender"
+    },
+    {
+      "id": "red-jackpot-super",
+      "title": "Into The Red",
+      "desc": "Advance Combotron jackpots to red and collect the Combotron super at the Overlord.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-combotron"
+    },
+    {
+      "id": "full-band-combos",
+      "title": "Whole Band Credited",
+      "desc": "Complete every band-member combo in a single game and cash each one at the Overlord.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-all-band"
+    },
+    {
+      "id": "foobot-assembled",
+      "title": "All Six Parts Bolted On",
+      "desc": "Collect all six FooBot parts and start FooBot Multiball off the lit left ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-foobot"
+    },
+    {
+      "id": "austin-van-mini-wizard",
+      "title": "Extra Stop On The Tour",
+      "desc": "Complete enough cities to unlock and play one of the two bonus van destinations (Austin).",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-van-mini"
+    },
+    {
+      "id": "final-battle-reached",
+      "title": "Every Box Ticked",
+      "desc": "Satisfy every requirement — all van destinations, all three Overlord multiballs, FooBot Multiball — and start the final wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-final-battle"
+    },
+    {
+      "id": "final-battle-won",
+      "title": "Mech Down",
+      "desc": "Survive all four phases of the final wizard mode and land the finishing blow at the Overlord.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-final-battle"
+    }
+  ],
+  "drills": [
+    {
+      "id": "metered-plunge",
+      "title": "Metered Plunge",
+      "text": "Ease the plunge so the ball crawls up the right crossover and rolls the Rock-O-Meter switch while the top insert is still blinking. Too hard and it sails past, too soft and it never gets there — the whole drill is plunger pressure.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-rock-o-meter",
+      "shots": [
+        "shooter-lane",
+        "rock-o-meter"
+      ]
+    },
+    {
+      "id": "overlord-backhand",
+      "title": "Overlord Backhand",
+      "text": "Take the Overlord from a right-flipper cradle as a backhand, never on the fly. It is the most drain-prone area on the playfield, and a direct backhand into the arena targets is also the higher-paying way to cash a combo.",
+      "reps": "20 backhands",
+      "focus": "ball-control",
+      "goal": "combo-cashout-loop",
+      "shots": [
+        "overlord",
+        "overlord-arena",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "orbit-to-meter",
+      "title": "Three Orbits, Then Hold",
+      "text": "Shoot the right orbit three times to fill the meter, then hold the last one until a mode and a multiball are already running. Relight the battery at the paddle behind the drops so the next fill is ready — the multiplier is worth nothing spent on an empty playfield.",
+      "reps": "5 fills",
+      "focus": "accuracy",
+      "goal": "mult-playfield",
+      "shots": [
+        "chris-orbit",
+        "rock-o-meter",
+        "mod-ulator"
+      ]
+    },
+    {
+      "id": "ray-gun-pair",
+      "title": "Ray Gun Pair",
+      "text": "Pass the ball across to hit one return-lane Ray Gun target, then immediately take the opposite one to double the multiplier again. Then fire your biggest shot — the multiplier is armed for the next shot only, so decide what it is going on before you start.",
+      "reps": "10 pairs",
+      "focus": "ball-control",
+      "goal": "mult-raygun",
+      "shots": [
+        "ray-gun-left",
+        "ray-gun-right"
+      ]
+    },
+    {
+      "id": "side-loop-triple",
+      "title": "Side Loop Triple",
+      "text": "Loop the side loop three times off its own feed to the upper-right flipper, then cash at the Overlord. Nothing scores until you cash out, so the drill ends at the Overlord, not at the third loop.",
+      "reps": "8 completions",
+      "focus": "flow",
+      "goal": "combo-nate",
+      "shots": [
+        "nate-loop",
+        "overlord"
+      ]
+    },
+    {
+      "id": "spinner-link-combo",
+      "title": "Ramp, Spinner, Ramp",
+      "text": "Left ramp, rip the center spinner, then the side ramp, and cash it at the Overlord. The spinner link in the middle is what makes several of these scripted combos flow, so get comfortable shooting straight up the center between two ramp shots.",
+      "reps": "10 chains",
+      "focus": "flow",
+      "goal": "combo-pat",
+      "shots": [
+        "pat-ramp",
+        "overlord-spinner",
+        "taylor-ramp",
+        "overlord"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "area51-upper-deck",
+      "name": "Area 51 Upper Playfield",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.76,
+        "w": 0.3,
+        "h": 0.22
+      },
+      "trim": "premium-le",
+      "entries": [
+        "dave-ramp"
+      ],
+      "exits": [
+        {
+          "x": 0.24,
+          "y": 0.31
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "UFO Button",
+    "location": "center of the lockdown bar",
+    "how": "The captive ball under the clear UFO dome charges the lockdown bar button. Bank up to three uses — yellow for one, green for two, red for three — and each press hands you the most valuable lit shot during a van mode or a multiball.",
+    "uses": [
+      {
+        "when": "Van mode running with shots lit",
+        "what": "Takes the most valuable lit shot for you, though a spotted shot skips your ray gun and playfield multipliers."
+      },
+      {
+        "when": "Working toward Overlord Multiball",
+        "what": "Can spot an Overlord shot toward lighting lock, or toward the multiball itself once a ball is locked."
+      },
+      {
+        "when": "Final Overlord shot of a phase",
+        "what": "Will not spot it, and the targets flanking the Overlord are off limits too."
+      },
+      {
+        "when": "Mystery offers Max UFO Button",
+        "what": "Fills you straight to three uses."
+      },
+      {
+        "when": "Multiball running",
+        "what": "The captive ball stops charging new uses unless you hit it right off a left crossover combo."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Foo Fighters sends the band on tour against an alien Overlord: save cities from the tour van, beat the Overlord across three multiballs, and build a giant FooBot from the six band members' parts. Score everything under the Rock-O-Meter playfield multiplier and reach FooBot Multiball and the four-phase Final Battle.",
+    "loop": [
+      "Spell V-A-N on the white-arrow shots, take the Left Ramp to the Tour Van, and pick a city; follow its lit shots and always bank it at the Overlord.",
+      "Cash band-member combos at the Overlord -- backhand the arena targets for the 5x cash-out -- and light Combotron Multiball after six of them.",
+      "Fill the Rock-O-Meter with three Right Orbit shots for 2x playfield, refill it for 3x, and arm the Ray Gun return-lane targets to multiply your single biggest shot.",
+      "Earn all six FooBot parts from the game's big features to light the Left Ramp for FooBot Multiball, then complete every city plus all three Overlord multiballs for The Final Battle."
+    ],
+    "lights": [
+      {
+        "id": "van-cities",
+        "name": "V-A-N & City Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "chris-orbit"
+          },
+          {
+            "shot": "pat-ramp"
+          },
+          {
+            "shot": "tour-van"
+          },
+          {
+            "shot": "nate-loop"
+          },
+          {
+            "shot": "overlord"
+          }
+        ],
+        "lit": "White arrows light the V-A-N shots, and making them lights the Left Ramp, which feeds the Tour Van to hold the ball and let you pick a destination -- one V-A-N is enough for your first city, rising toward three later on.",
+        "flashing": null,
+        "control": null,
+        "then": "Choose a city and follow its lit shots -- the final shot of every van mode is always the Overlord -- then bank it; completing cities unlocks the Austin and D.C. bonus stops, both required before The Final Battle will light.",
+        "goals": [
+          "mode-select-neworleans",
+          "mode-losangeles",
+          "mode-seattle",
+          "mode-newyork",
+          "wizard-van-mini"
+        ]
+      },
+      {
+        "id": "overlord-lock",
+        "name": "Overlord Lock & Cash-Out",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "overlord-arena",
+            "lamps": 3
+          },
+          {
+            "shot": "overlord"
+          },
+          {
+            "shot": "right-flipper"
+          }
+        ],
+        "lit": "The three arena targets fronting the Overlord light the lock, then the Overlord shot locks a ball and its captive ball starts the multiball once you have pounded it enough times.",
+        "flashing": null,
+        "control": null,
+        "then": "Backhand the arena from the right flipper -- it is the most drain-prone spot on the playfield, so never take it on the fly -- for a 5x combo cash-out instead of the Overlord's 3x; once you have banked six cash-outs the Side Ramp lights for Combotron Multiball, and each of the three Overlord multiballs demands a longer qualify than the one before.",
+        "goals": [
+          "mb-overlord-allmylife",
+          "mb-overlord-monkeywrench",
+          "mb-overlord-pretender",
+          "combo-cashout-loop",
+          "combo-nate"
+        ]
+      },
+      {
+        "id": "rock-o-meter",
+        "name": "Rock-O-Meter Playfield X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "chris-orbit"
+          },
+          {
+            "shot": "rock-o-meter"
+          },
+          {
+            "shot": "mod-ulator"
+          }
+        ],
+        "lit": "Three Right Orbit shots fill the Rock-O-Meter battery; filling it starts 2x playfield for about forty seconds, and filling it again while that runs upgrades to 3x and resets the timer.",
+        "flashing": null,
+        "control": null,
+        "then": "Relight the battery at the Mod-ulator paddle behind the drops so the next fill is ready, and hold that last orbit shot until a mode and a multiball are already running -- the multiplier is wasted on an empty playfield.",
+        "goals": [
+          "mult-playfield"
+        ]
+      },
+      {
+        "id": "ray-gun",
+        "name": "Ray Gun Shot Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "ray-gun-left"
+          },
+          {
+            "shot": "ray-gun-right"
+          },
+          {
+            "shot": "dave-ramp"
+          }
+        ],
+        "lit": "Hitting a Ray Gun return-lane target arms a 2x on your next shot, immediately hitting the opposite Ray Gun bumps it to 4x, and it stays armed until you take a shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Point the armed multiplier at your single biggest shot -- an Area 51 or extra-ball shot under 3x playfield can reach nine figures -- since it stacks multiplicatively with the playfield and FooBot multipliers; rolling the return lanes relights the targets between uses.",
+        "goals": [
+          "mult-raygun"
+        ]
+      },
+      {
+        "id": "ufo-button",
+        "name": "UFO Button",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "ufo-captive"
+          },
+          {
+            "shot": "overlord"
+          }
+        ],
+        "lit": "The UFO captive ball under the clear dome charges the lockdown-bar button -- yellow for one use, green for two, red for three -- and the charge holds until you spend it.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "each stored press collects whatever lit shot is worth the most while a van mode or multiball runs, but a shot handed over this way scores flat, skipping the Ray Gun and playfield multipliers; it will spot an Overlord shot toward the lock, yet never the phase-ending Overlord shot or the arena targets beside it",
+          "when": "a van mode or multiball is running with shots lit"
+        },
+        "then": "Bank charges by hitting the UFO captive ball -- a quick shot in off the upper flipper doubles the UFO bonus -- and save your presses for the biggest lit shot you cannot reach cleanly on your own.",
+        "goals": null
+      },
+      {
+        "id": "area51",
+        "name": "Area 51 Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "dave-ramp"
+          },
+          {
+            "shot": "area51-upper"
+          },
+          {
+            "shot": "area51-secret-files"
+          }
+        ],
+        "lit": "Five Right Ramp shots qualify Area 51 Multiball, and on Premium and LE the ramp then diverts the ball up to the Area 51 mini-playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "Start it at the Right Ramp and score the divert jackpots; after eight, take the super -- a Right Ramp into the captive ball on Pro, or the hidden secret-files target up top on Premium and LE -- and it stacks on top of any Overlord multiball you have running.",
+        "goals": [
+          "mb-area51"
+        ]
+      },
+      {
+        "id": "bot-frenzy",
+        "name": "Bot Standups & Frenzy Spinner",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "bot-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "bot-award"
+          },
+          {
+            "shot": "overlord-spinner"
+          }
+        ],
+        "lit": "The four bot standups each step the center-spinner value up toward eight times, and the Bot Award target cycles its offer -- ball save, then Mod-ulator Frenzy, then Bot Frenzy -- handing you whichever is lit when you collect.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit all four bots to build the spinner, collect the third Bot Award to light Bot Frenzy at the Left Ramp, then rip the center spinner once for the whole built-up value -- it drops back down afterward, so rebuild the bots before the next rip, ideally inside a multiball under 3x playfield.",
+        "goals": [
+          "strat-bot-frenzy-spinner"
+        ]
+      },
+      {
+        "id": "foobot-parts",
+        "name": "FooBot Parts & Wizard",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "pat-ramp"
+          },
+          {
+            "shot": "taylor-ramp"
+          },
+          {
+            "shot": "dave-ramp"
+          },
+          {
+            "shot": "nate-loop"
+          },
+          {
+            "shot": "chris-orbit"
+          },
+          {
+            "shot": "rami-crossover"
+          }
+        ],
+        "lit": "Six inserts, one per band member, light as you earn each FooBot part from a different feature -- Torso from Combotron, Head from Area 51, the arms from an Overlord super and Bot Frenzy, the legs from a one-visit city and Supersonic Radio -- and each collected part also grants a 2x at that member's shot.",
+        "flashing": "The Left Ramp flashes for FooBot Multiball once all six parts are assembled.",
+        "control": null,
+        "then": "Assemble all six and start FooBot Multiball off the Left Ramp; then save every city plus Austin and D.C., play all three Overlord multiballs, and clear FooBot to light The Final Battle, the four-phase full wizard.",
+        "goals": [
+          "wizard-foobot",
+          "wizard-final-battle",
+          "feature-supersonic-radio"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Roll through the return lanes three times and one inlane lights for Super Spinner; a flipper tap swaps it to the other side, so set it under the ball, roll through, then rip the spinner while it pays five times its value.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Soft-plunge the Rock-O-Meter skill shot to set the playfield multiplier climbing, then neutralize the Overlord early -- backhand its captive ball from the right flipper, since it is the game's number-one drain risk. Mod your van for extra mode time at the Mod-ulator and start New Orleans, the easiest city to read.",
+        "goals": [
+          "skill-rock-o-meter",
+          "strat-opener",
+          "mode-select-neworleans"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Hold your last Rock-O-Meter shot until an Overlord multiball and a van mode are already running, THEN trigger 2x playfield and layer Area 51 on top -- the signature stack. Arm the Ray Gun pair to point a 4x at your biggest shot inside it.",
+        "goals": [
+          "mult-playfield",
+          "mb-overlord-allmylife",
+          "mb-area51",
+          "strat-tournament-stack",
+          "mult-raygun"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Assemble all six FooBot parts for FooBot Multiball, then satisfy every requirement -- all six cities plus Austin and D.C., all three Overlord multiballs, and FooBot -- to start The Final Battle. Its four phases each run about a minute with unlimited ball save, and finishing it steps every FooBot shot multiplier up for your next game.",
+        "goals": [
+          "wizard-final-battle",
+          "wizard-foobot"
+        ]
+      }
+    ]
+  }
+}

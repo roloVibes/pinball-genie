@@ -1,0 +1,1268 @@
+{
+  "machine": "Theatre of Magic (Bally, 1995)",
+  "defaultFx": "sparkle",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Plunger",
+      "type": "plunge",
+      "x": 0.98,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Manual spring plunger. The plunged ball drops onto a diverter joining the Left Lane's back-ramp wireform and is delivered to the right inlane, setting up the trunk skill shot.",
+      "feeds": {
+        "x": 0.85,
+        "y": 0.12
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Lane (Theatre Lane)",
+      "type": "orbit",
+      "x": 0.13,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Spells T-H-E-A-T-R-E and is the game's safest, most repeatable shot. Full-power shots ride a small back ramp onto a wireform to the right inlane; weak shots fall into the Bonus X lanes/jets. Diverts into the Vanish Lock when Vanish is lit; Extra Ball collect spot.",
+      "feeds": {
+        "x": 0.85,
+        "y": 0.12
+      },
+      "apex": {
+        "x": 0.1,
+        "y": 0.92
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "vanish-lock",
+      "name": "Vanish Lock",
+      "type": "scoop",
+      "x": 0.07,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Subterranean lock about 2/3 of the way up the Left Lane — a post diverter drops the ball in when Vanish is lit (40M). Holds the ball for Tiger Saw Multiball; kickout returns down the left side."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Tiger Saw Captive Ball",
+      "type": "captive-ball",
+      "x": 0.21,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Just right of the Left Lane. 3 hits light the first Vanish (6 for later ones). Always-lit jackpot shot during Tiger Saw Multiball; the skill-shot target on later plunges. Rebounds are unpredictable — shoot it deliberately.",
+      "flipper": "right"
+    },
+    {
+      "id": "left-inner-loop",
+      "name": "Left Inner Loop",
+      "type": "loop",
+      "x": 0.29,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Loops behind the trunk and exits through the right inner loop/spinner lane. Lock shot for Theatre Multiball and the Grand Finale start; a post behind the trunk can divert a loop shot into the Rear Trunk Entrance.",
+      "feeds": {
+        "x": 0.63,
+        "y": 0.52
+      },
+      "apex": {
+        "x": 0.45,
+        "y": 0.7
+      }
+    },
+    {
+      "id": "right-inner-loop",
+      "name": "Right Inner Loop",
+      "type": "loop",
+      "x": 0.63,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Runs directly through the spinner, behind the trunk, and out the left inner loop entrance. Lock shot for Theatre Multiball; Spirit Cards and Safe Escape shot.",
+      "feeds": {
+        "x": 0.29,
+        "y": 0.5
+      },
+      "apex": {
+        "x": 0.45,
+        "y": 0.7
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.63,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Mounted in the right inner loop entrance. 100K per spin base; massively boosted during the Spirit Cards Illusion."
+    },
+    {
+      "id": "trunk",
+      "name": "Magic Trunk",
+      "type": "mech",
+      "x": 0.4,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Rotating bash toy left of center with four faces: blank, green jackpot light, bulls-eye magnet (grabs the ball for multiball/Midnight starts), and open hole (Illusion starts, jackpots, hurry-ups). 3 hits light an Illusion. Dead-face rejects go straight down the middle — don't bash it unless something is lit.",
+      "flipper": "right"
+    },
+    {
+      "id": "rear-trunk",
+      "name": "Rear Trunk Entrance",
+      "type": "scoop",
+      "x": 0.42,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Hole behind the trunk reached off the inner loops. The Secret Ball Lock: hitting it spots ALL of MAGIC and awards a free lock (first two multiballs); jackpot collect during multiball. Subway ejects at the Trap Door kickout to the right flipper.",
+      "feeds": {
+        "shot": "trap-door"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Dead-center steel staircase ramp. Spells MAGIC (first two multiballs), raises the Trap Door when lit, Levitating Woman shot. Return wireform always delivers to the left inlane, making it self-looping from the left flipper.",
+      "feeds": {
+        "x": 0.15,
+        "y": 0.12
+      },
+      "apex": {
+        "x": 0.52,
+        "y": 0.85
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "trap-door-targets",
+      "name": "Trap Door Targets",
+      "type": "target-bank",
+      "x": 0.51,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Two standups flanking the center ramp entrance. 4 hits light Raise Trap Door at the center ramp."
+    },
+    {
+      "id": "trap-door",
+      "name": "Trap Door (Basement)",
+      "type": "scoop",
+      "x": 0.71,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Pop-up hole that rises directly in front of the right ramp entrance, blocking it. When raised: 15M + a Basement mystery award. Same mech is the subway kickout — all trunk/rear-trunk balls eject here to the right flipper.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Staircase ramp with the game's longest wireform: sweeps across the back, through the Spirit Ring, and down to the right inlane. When the Spirit Ring is lit/active it catches the ball mid-wireform and drops it onto the center-ramp return to the left inlane instead. Spells MAGIC; Metamorphosis shot; Spirit Ring collects 10M/20M/30M.",
+      "feeds": {
+        "x": 0.85,
+        "y": 0.12
+      },
+      "apex": {
+        "x": 0.78,
+        "y": 0.87
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Advances the Clock one hour per shot (toward Midnight Madness) and starts Tiger Saw Multiball when Vanish is loaded. Normally exits down the left side; a top diverter post can drop it into the Bonus X lanes/jets instead.",
+      "feeds": {
+        "x": 0.15,
+        "y": 0.14
+      },
+      "apex": {
+        "x": 0.8,
+        "y": 0.94
+      }
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Jets (Pop Bumpers)",
+      "type": "bumpers",
+      "x": 0.63,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "Three jets in a triangle, upper center-right. Build the THEATRE Hurry-Up value ~100K per hit, rotate the flashing Illusion, and score 6M each during Strait Jacket. The only exit feeds down the right orbit — plan the nudge or live catch."
+    },
+    {
+      "id": "bonus-x-lanes",
+      "name": "Bonus X Rollovers",
+      "type": "lane",
+      "x": 0.65,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Two top rollover lanes read via the back-panel mirror; lane change on both flippers. Completing both advances Bonus X (2x steps, max 8x; 5M per completion afterward). Fed by weak Left Lane shots and diverted right-orbit shots. Resets every ball."
+    },
+    {
+      "id": "hocus-pocus",
+      "name": "Hocus Pocus Targets",
+      "type": "target-bank",
+      "x": 0.07,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Two standups above the left inlane. Each hit arms both outlane drain magnets (automatic magna-save) for ~15 seconds; single-ball play only."
+    },
+    {
+      "id": "poof-target",
+      "name": "Poof Target",
+      "type": "standup",
+      "x": 0.93,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Single standup above the right inlane, 100K; no rule function in production code."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "trunk-skill-shot",
+      "title": "Trunk Skill Shot",
+      "category": "skillshot",
+      "summary": "The ball-start skill shot: time your plunge to lock the cycling award, then collect it with the first Magic Trunk hit off the right-inlane feed.",
+      "difficulty": 1,
+      "reward": "10M/20M points, 2x Bonus, Advance Clock +2 hours, Begin Illusion, or 2x Combos — plus 1M into bonus per made skill shot",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the skill shot is made with a flipper."
+        },
+        {
+          "shot": "trunk",
+          "action": "Plunge through, then shoot the Magic Trunk",
+          "detail": "The display cycles three of: 10M or 20M, 2x Bonus, Advance Clock (+2 hours), and Begin Illusion (or 2x Combos if an Illusion is already lit). Plunging locks the award showing; the ball is delivered to the right inlane. The first trunk hit after the plunge collects the locked award. If an Illusion is already lit the trunk is showing its open hole, and then you have to put the ball in the hole rathe",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "captive-skill-shot",
+      "title": "Captive Ball Skill Shot",
+      "category": "skillshot",
+      "summary": "Once any ball is locked or vanished, the cycling menu goes away and every later plunge offers a fixed skill shot at the Tiger Saw captive ball.",
+      "difficulty": 1,
+      "reward": "Advance Clock +1 hour toward Midnight, plus 1M into bonus",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge through to the flippers",
+          "detail": "On any plunge after a ball has been locked, there is no award menu — the skill target moves to the captive ball. Always awards Advance Clock (+1 hour) and counts a captive-ball hit toward lighting Vanish. Each made skill shot adds 1M to end-of-ball bonus."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Plunge through, then shoot the Tiger Saw captive ball from the right flipper",
+          "detail": "On any plunge after a ball has been locked, there is no award menu — the skill target moves to the captive ball. Always awards Advance Clock (+1 hour) and counts a captive-ball hit toward lighting Vanish. Each made skill shot adds 1M to end-of-ball bonus.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "theatre-lane-loop",
+      "title": "THEATRE Lane Loop",
+      "category": "combo",
+      "summary": "The game's signature money sequence: the Left Lane returns to the right flipper that shoots it, so it self-loops forever — escalating combos, THEATRE letters, bonus base, and hurry-up qualification all from one shot.",
+      "difficulty": 2,
+      "reward": "Escalating combos (2M, +2M each, no factory cap), 500K per letter in bonus, and a 50M+ THEATRE Hurry-Up every 7 letters",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Lane from the right flipper",
+          "detail": "Awards a THEATRE letter and opens the combo chain. A full-power shot rides the back ramp and wireform straight back to the right inlane.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Loop it again immediately",
+          "detail": "Each successive combo is worth 2M more than the last (2M, 4M, 6M...), with no cap in factory 1.3 code. Even weak shots pay off — they fall into the Bonus X lanes.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Keep looping to spell T-H-E-A-T-R-E",
+          "detail": "Seven letters completes the word and lights the hurry-up at the trunk. Letters carry ball-to-ball until a hurry-up is collected.",
+          "flipper": "right"
+        },
+        {
+          "shot": "trunk",
+          "action": "Cash the THEATRE Hurry-Up at the trunk hole",
+          "detail": "Roughly a 10-second window (timer pauses in the pops). Value is 50M base plus ~100K per pop-bumper hit so far; uncollected value carries, collected value resets to 50M.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "center-ramp-loop",
+      "title": "MAGIC Ramp Loop",
+      "category": "combo",
+      "summary": "The center ramp always returns to the left inlane, so the left flipper can loop it endlessly — chaining combos while spelling MAGIC toward Theatre Multiball.",
+      "difficulty": 2,
+      "reward": "Escalating combos plus MAGIC letters (1M each in bonus) and multiball qualification",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp from the left flipper",
+          "detail": "Awards a MAGIC letter (center ramp counts for the first two multiballs) and starts the combo chain. The wireform returns to the left inlane.",
+          "flipper": "left"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Re-shoot straight off the left-inlane return",
+          "detail": "Combos escalate 2M, 4M, 6M... and the same-shot repeat counts. Unlit base value is small — the value is combo escalation plus lock progress.",
+          "flipper": "left"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Repeat until MAGIC is complete",
+          "detail": "With MAGIC spelled, Lock lights at both inner-loop entrances for Theatre Multiball.",
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "five-way-combo",
+      "title": "Five-Way Combo",
+      "category": "combo",
+      "summary": "Chain five of the six major combo shots (Left Lane, both inner loops, both ramps, right orbit) without a break for the escalating N-way combo and the top callout.",
+      "difficulty": 3,
+      "reward": "2M + 4M + 6M + 8M across the chain (doubled all ball by the 2x Combos skill award)",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Open with the center ramp",
+          "detail": "Feeds the left inlane — you keep the left flipper loaded for the next shot.",
+          "flipper": "left"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp off the return",
+          "detail": "2-way combo (2M). The unlit right ramp wireform delivers to the right inlane.",
+          "flipper": "left"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Left Lane from the right flipper",
+          "detail": "3-way (4M) plus a THEATRE letter; the lane feeds the right inlane again.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Loop the Left Lane again",
+          "detail": "4-way (6M). Same-shot repeats count — the chain doesn't require different shots.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "One more for the five-way",
+          "detail": "5-way (8M) draws the game's top escalating callout. The chain keeps growing 2M per shot with no factory cap.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "theatre-jackpot-cycle",
+      "title": "Theatre Jackpot Cycle",
+      "category": "combo",
+      "summary": "The money sequence inside Theatre Multiball: grab the 100M countdown, then alternate jackpot collects at the trunk with +5M pump shots — the value never resets.",
+      "difficulty": 3,
+      "reward": "100M countdown shot, 50M+ jackpots pumped past 115M (effectively uncapped)",
+      "steps": [
+        {
+          "shot": "trunk",
+          "action": "Shoot the trunk hole during the 5-4-3-2-1 countdown",
+          "detail": "The moment multiball starts a spoken countdown runs; the trunk hole in that window is an instant 100,000,000 (counts as a Jackpot). Any other major shot first aborts it.",
+          "flipper": "right"
+        },
+        {
+          "shot": "trunk",
+          "action": "Collect the Jackpot at the trunk",
+          "detail": "Base 50M, collected at the trunk hole/lit face or the Rear Trunk Entrance while Jackpot is lit.",
+          "flipper": "right"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Pump the jackpot with major shots",
+          "detail": "Left Lane, both inner loops, right ramp, and right orbit each add +5M to the jackpot — lit or not — and collecting never resets the value."
+        },
+        {
+          "shot": "trunk",
+          "action": "Relight and re-collect",
+          "detail": "After each collect the trunk spins away; relights cost escalating trunk hits — 2, then 3, 4, 5. Keep pumping between collects.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "theatre-multiball",
+      "title": "Theatre Multiball",
+      "category": "multiball",
+      "summary": "The main multiball: spell MAGIC on the ramps to light the inner-loop locks, lock two balls, then bash the trunk's bulls-eye magnet face to start 3-ball play.",
+      "difficulty": 2,
+      "reward": "20M per lock, 100M countdown, 50M+ jackpots; playing it lights the Multiball diamond",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Spell MAGIC on the ramps",
+          "detail": "Both ramps award letters for the first two multiballs of a game; from the third on, only the right ramp does.",
+          "flipper": "left",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish the five letters",
+          "detail": "The rear trunk Secret Ball Lock shortcut spots ALL of MAGIC plus a free lock (valid toward the first two multiballs).",
+          "link": "none"
+        },
+        {
+          "shot": "left-inner-loop",
+          "action": "Lock ball 1 at either inner loop",
+          "detail": "20M; Lock 2 lights immediately."
+        },
+        {
+          "shot": "right-inner-loop",
+          "action": "Lock ball 2",
+          "detail": "20M; the trunk rotates to its bulls-eye magnet face."
+        },
+        {
+          "shot": "trunk",
+          "action": "Shoot the trunk magnet face to start",
+          "detail": "The magnet catches the ball, the trunk spins and drops it in back — 3-ball multiball begins (4-ball if a ball waits in the Vanish Lock). THEATRE letters, Clock, and Vanish freeze during it; the diverter forces Left Lane shots up to the Bonus X lanes.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "tiger-saw-multiball",
+      "title": "Tiger Saw Multiball",
+      "category": "multiball",
+      "summary": "The safest multiball: light Vanish at the captive ball, vanish a ball off the Left Lane, then start 2-ball play at the right orbit and farm the always-lit captive-ball jackpot.",
+      "difficulty": 2,
+      "reward": "40M Vanish, jackpots 30M/40M/50M/60M to a 70M max; third Vanish lights Extra Ball",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Hit the Tiger Saw captive ball 3 times",
+          "detail": "Lights the first Vanish (6 hits for every subsequent one; hits during Illusions count).",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Lane while Vanish is lit",
+          "detail": "40M and the ball is diverted into the Vanish Lock — it vanishes. The third Vanish of a game also lights Extra Ball here.",
+          "feeds": {
+            "shot": "vanish-lock"
+          },
+          "flipper": "right"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start it at the Right Orbit",
+          "detail": "2-ball multiball — the locked ball fires down the Left Lane. There is no ball saver, and THEATRE letters freeze for the duration, but the Clock and Bonus X both keep advancing."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Farm jackpots at the captive ball",
+          "detail": "Always lit, no relight needed: 30M first, +10M each collect, capped at 70M. Trap one ball on a flipper and feed the captive ball with the other — THEATRE letters do not advance during multiball, so the Left Lane pays nothing toward them here.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "four-ball-stack",
+      "title": "Four-Ball Theatre Stack",
+      "category": "multiball",
+      "summary": "The only multiball stack in the game: park a vanished ball in the lock instead of starting Tiger Saw, then start Theatre Multiball to release it for 4-ball play.",
+      "difficulty": 3,
+      "reward": "4-ball Theatre Multiball with the full jackpot cycle and an extra ball in play",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Light Vanish at the captive ball",
+          "detail": "3 hits for the first Vanish of the game.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Vanish the ball — and leave it locked",
+          "detail": "40M. Deliberately avoid the lit right orbit so Tiger Saw doesn't start and the ball stays in the Vanish Lock.",
+          "feeds": {
+            "shot": "vanish-lock"
+          },
+          "flipper": "right"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Spell MAGIC on the ramps",
+          "detail": "Lights the locks at both inner-loop entrances.",
+          "flipper": "left"
+        },
+        {
+          "shot": "left-inner-loop",
+          "action": "Lock two balls at the inner loops",
+          "detail": "20M each; after lock 2 the trunk rotates to the magnet face."
+        },
+        {
+          "shot": "trunk",
+          "action": "Start multiball at the trunk magnet face",
+          "detail": "The waiting Vanish ball is released into play — 4-ball Theatre Multiball.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "start-illusion",
+      "title": "Start an Illusion",
+      "category": "mode",
+      "summary": "The core mode loop: three trunk hits light one of the eight ~20-second Illusions, then the trunk's open hole face takes the starting shot. Starting all eight lights a Grand Finale diamond.",
+      "difficulty": 1,
+      "reward": "20-second scoring modes worth 60M-100M+; each start adds 4M to bonus and counts toward the Illusions diamond",
+      "steps": [
+        {
+          "shot": "trunk",
+          "action": "Hit the trunk 3 times on any scoring face",
+          "detail": "Lights the flashing Illusion and rotates the trunk to its open hole face. Slingshot and pop hits rotate which Illusion is flashing (flippers choose before ball 1).",
+          "flipper": "right"
+        },
+        {
+          "shot": "trunk",
+          "action": "Shoot into the open hole to start it",
+          "detail": "All Illusions run ~20 seconds (timer freezes in the pops/subway). STARTING counts toward the Grand Finale diamond — completion is never required. Skill-shot and Basement awards can also start one.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "safe-escape",
+      "title": "Safe Escape (11-04-69)",
+      "category": "mode",
+      "summary": "One of the few completable Illusions: dial the safe combination with three inner-loop shots for roughly 60-70M and the payoff animation.",
+      "difficulty": 2,
+      "reward": "20M + 20M + 30M for completing the combination",
+      "steps": [
+        {
+          "shot": "trunk",
+          "action": "Light an Illusion with 3 trunk hits",
+          "detail": "Use slings/pops to rotate the selection onto Safe Escape before starting.",
+          "flipper": "right"
+        },
+        {
+          "shot": "trunk",
+          "action": "Start it at the trunk hole",
+          "detail": "The 20-second timer begins.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-inner-loop",
+          "action": "Dial the first number — loop shot 1",
+          "detail": "20M. Either inner-loop entrance counts (if Lock or Finale is lit on the left entrance, use the right one)."
+        },
+        {
+          "shot": "right-inner-loop",
+          "action": "Loop shot 2",
+          "detail": "20M — two numbers of 11-04-69 dialed."
+        },
+        {
+          "shot": "left-inner-loop",
+          "action": "Loop shot 3 completes the combination",
+          "detail": "30M and the completion animation — one of the game's few hard completions."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "trap-door-basement",
+      "title": "Trap Door Basement",
+      "category": "mode",
+      "summary": "Bally mystery award: pound the trap-door standups, raise the door with the center ramp, then shoot the pop-up door before it closes for 15M plus a Basement award.",
+      "difficulty": 2,
+      "reward": "15M + Basement mystery: 15-40M points, Spell Magic, Midnight, Extra Ball, video mode, Special, Illusion start, Bonus X and more",
+      "steps": [
+        {
+          "shot": "trap-door-targets",
+          "action": "Hit the trap-door targets 4 times",
+          "detail": "The two standups flanking the center ramp entrance light Raise Trap Door at the center ramp."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to raise the door",
+          "detail": "The trap door pops up directly in front of the right-ramp entrance and only stays open a few seconds.",
+          "flipper": "left"
+        },
+        {
+          "shot": "trap-door",
+          "action": "Shoot the raised Trap Door",
+          "detail": "15M plus a walk-downstairs Basement award that rarely repeats in one game. In tournament mode the mystery is off and it's a flat 15M."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "midnight-madness",
+      "title": "Clock to Midnight Madness",
+      "category": "mode",
+      "summary": "Drive the clock to 12:00 with right-orbit shots: 6:00 lights an Extra Ball, and midnight instantly starts the trunk-magnet frenzy while lighting the Midnight diamond.",
+      "difficulty": 2,
+      "reward": "Extra Ball at 6:00 (first time), Midnight diamond, magnet catches worth 2M x clock hour (24M at midnight)",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit — every shot adds an hour",
+          "detail": "Skill shots (+2 from the trunk menu, +1 from the captive ball) and Basement awards also advance it. At 6:00 the first time, Extra Ball lights at the Left Lane."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Keep advancing to 12:00",
+          "detail": "Clock hours are also worth 1M each in bonus (times Bonus X). At midnight, Madness starts instantly and the Midnight diamond lights — reaching 12:00 is all the Finale requires."
+        },
+        {
+          "shot": "trunk",
+          "action": "Bash the magnet bulls-eye face",
+          "detail": "Each magnet catch scores 2M x current hour (24M at midnight, minimum 10M) as the clock rewinds an hour every few seconds. The magnet needs a couple of seconds to re-arm between catches. Playing Madness resets the clock to 0.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "max-bonus-x",
+      "title": "Build 8x Bonus",
+      "category": "multiplier",
+      "summary": "The only bonus multiplier: complete the two mirror-read top rollover lanes to step Bonus X up to 8x. It resets every ball, so rebuild it early, every ball.",
+      "difficulty": 2,
+      "reward": "Bonus X to 8x (then 5M per completion); end-of-ball bonus can exceed 300M",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Feed the top lanes off the Left Lane",
+          "detail": "Weak Left Lane shots fall into the rollovers naturally, and during Theatre Multiball the diverter forces EVERY Left Lane shot up there — the intended time to farm Bonus X.",
+          "feeds": {
+            "shot": "bonus-x-lanes"
+          },
+          "flipper": "right"
+        },
+        {
+          "shot": "bonus-x-lanes",
+          "action": "Complete both rollovers using lane change",
+          "detail": "Both flippers move the lit lane (read them in the back-panel mirror). Each completion advances 2x per step to the 8x max; completions past 8x pay 5M each."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Work the jets to re-feed the lanes",
+          "detail": "The pops sit right below the rollovers and bounce balls back through them. The only pop exit comes down the right orbit — be ready to live-catch or hold the right flipper."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "double-combos",
+      "title": "2x Combos for the Ball",
+      "category": "multiplier",
+      "summary": "The game's only shot-value multiplier: the 2x Combos skill award doubles every combo score for the rest of the ball — the force multiplier behind the lane-loop strategy.",
+      "difficulty": 2,
+      "reward": "All combos doubled: the 2M/4M/6M chain becomes 4M/8M/12M",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge when 2x Combos is showing",
+          "detail": "It appears on the skill-shot menu only when an Illusion is already lit (it replaces Begin Illusion — never both)."
+        },
+        {
+          "shot": "trunk",
+          "action": "Collect it with the first trunk hit",
+          "detail": "The award activates for the remainder of the ball.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Loop the Left Lane relentlessly",
+          "detail": "The doubled self-loop chain (4M, 8M, 12M... uncapped in factory code) is one of the few things that competes with the bonus stack for pure scoring.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "grand-finale",
+      "title": "Grand Finale",
+      "category": "wizard",
+      "summary": "The wizard mode: light all four diamonds — Theatre, Multiball, Midnight, Illusions — then start the 60-second Finale at the inner loop, where every major shot is 50M and a MAGIC THEATRE letter.",
+      "difficulty": 3,
+      "reward": "50M per shot, +500M for all 12 MAGIC THEATRE letters inside 60 seconds; Master magicianship rank",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Diamond 1 — spell THEATRE",
+          "detail": "Seven Left Lane shots, and they only count in single-ball play — no multiball spells THEATRE. Collecting the hurry-up is not required; spelling alone lights the diamond.",
+          "flipper": "right",
+          "link": "none"
+        },
+        {
+          "shot": "trunk",
+          "action": "Diamond 2 — play Theatre Multiball",
+          "detail": "Spell MAGIC, lock two at the inner loops, start at the magnet face. Just starting the multiball lights the diamond; nothing inside it must be completed.",
+          "flipper": "right",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Diamond 3 — drive the clock to 12:00",
+          "detail": "Right orbits, skill shots, and Basement clock awards. Midnight Madness starting is automatic at 12:00 and lights the diamond; scoring in it is irrelevant.",
+          "link": "none"
+        },
+        {
+          "shot": "trunk",
+          "action": "Diamond 4 — start all 8 Illusions",
+          "detail": "Three trunk hits then the hole, eight times over; skill-shot and Basement Illusion starts count. This is the hardest diamond — prioritize it all game.",
+          "flipper": "right",
+          "link": "none"
+        },
+        {
+          "shot": "left-inner-loop",
+          "action": "Start the Finale at the inner loop",
+          "detail": "Lights during single-ball play with all four diamonds lit (either inner-loop entrance). One ball, 60 seconds, no ball save: every ramp, lane, loop, and orbit scores 50M and one of the 12 MAGIC THEATRE letters; all 12 pays a 500M bonus. Afterward the diamonds clear and the cycle restarts."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "beginner-opener",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "The safe default opener: take a skill award, then live on the Left Lane — the shot that drives letters, bonus base, multiplier feeds, and hurry-up qualification all at once.",
+      "difficulty": 1,
+      "reward": "Safe scoring foundation: letters + Bonus X + a lit hurry-up with minimal drain risk",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge on 2x Bonus if it cycles up",
+          "detail": "The top lanes are hard to complete deliberately, so a free multiplier jump beats raw points. Any award is fine for a beginner."
+        },
+        {
+          "shot": "trunk",
+          "action": "One controlled trunk hit to collect",
+          "detail": "Then leave the trunk alone — dead-face rejects drain straight down the middle. Only shoot it when something is lit.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Left Lane on repeat from the right flipper",
+          "detail": "Safest full-power shot on the table: it returns to the flipper that shoots it, spells THEATRE, and weak attempts feed the Bonus X lanes.",
+          "flipper": "right"
+        },
+        {
+          "shot": "bonus-x-lanes",
+          "action": "Lane-change the top rollovers toward 8x",
+          "detail": "Use either flipper to move the lit lane off each orbit feed. Control every pop exit — the ball leaves down the right orbit."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Three captive-ball hits when comfortable",
+          "detail": "Lights Vanish; the Left Lane then locks a ball (40M) and the right orbit starts Tiger Saw — the safest multiball, and the Clock and Bonus X keep building while it runs.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "tournament-bonus-stack",
+      "title": "Tournament Bonus Stack",
+      "category": "strategy",
+      "summary": "The tournament meta in one line: 8x bonus first, then Theatre-lane loops all ball — end-of-ball bonus multiplies everything, and 8x times a fat letter stack is hundreds of millions per ball.",
+      "difficulty": 3,
+      "reward": "End-of-ball bonuses in the hundreds of millions (8x x letters + clock + illusions + magicianship)",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Take 2x Bonus (or 2x Combos) on the plunge",
+          "detail": "An instant multiplier step without touching the top lanes."
+        },
+        {
+          "shot": "bonus-x-lanes",
+          "action": "Max Bonus X to 8x as early as possible",
+          "detail": "It resets every ball. The safest window is Theatre Multiball, when the diverter forces every Left Lane shot up into the rollovers."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Loop the Theatre lane the rest of the ball",
+          "detail": "Every letter is 500K x letters in bonus, multiplied by 8x — plus uncapped escalating combos on the way. With 8x and a big stack, play conservative late: tilting forfeits the whole bonus.",
+          "flipper": "right"
+        },
+        {
+          "shot": "trunk",
+          "action": "Cash each THEATRE Hurry-Up promptly",
+          "detail": "Every 7th lane shot lights a ~10-second 50M+ hurry-up at the trunk hole, silently inflated by your pop hits. Collect it, then go right back to the lane.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "illusion-first-opener",
+      "title": "Illusion-First Opener",
+      "category": "strategy",
+      "summary": "The tournament ball-one opener: take Begin Illusion on the plunge (pre-selecting Levitating Woman), loop the center ramp for the mode, and bank wizard-mode progress while you score.",
+      "difficulty": 2,
+      "reward": "100M+ mode ceiling plus a head start on the hardest Grand Finale diamond",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge on Begin Illusion",
+          "detail": "It skips three risky trunk bashes. Work the flippers before the plunge to move the flashing Illusion onto Levitating Woman."
+        },
+        {
+          "shot": "trunk",
+          "action": "Make the trunk hole to start the mode",
+          "detail": "Begin Illusion requires actually making the hole for credit.",
+          "flipper": "right"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop the center ramp for the whole mode",
+          "detail": "Levitating Woman pays 11M, 12M, 13M... with no cap, and the ramp's left-inlane return makes it self-looping — with MAGIC letters toward locks as a byproduct.",
+          "flipper": "left"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "After the mode, shift to Left Lane loops",
+          "detail": "Letters, combos, and Bonus X lane feeds — the standard backbone.",
+          "flipper": "right"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Then qualify Tiger Saw at the captive ball",
+          "detail": "Three hits light Vanish; Tiger Saw is the low-risk multiball, and the Clock still advances inside it even though THEATRE letters do not.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "video-mode-digital-pinball",
+      "title": "Digital Pinball (Left Flipper at Start)",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Hold the left flipper while you press Start and Theatre of Magic locks a hidden video game in as your first Basement award instead of leaving it to chance. The display confirms it straight away, and you still have to earn the Trap Door to actually play it.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Hold the left flipper button down while you press Start",
+        "Look for \"Congratulations! Digital Pinball Selected\" on the display to confirm it took",
+        "Play the ball normally and earn your first Basement award by shooting the Trap Door",
+        "That first Basement award is now the Pinball video mode instead of a random pick",
+        "Use the flipper buttons to knock down all six on-screen targets before time runs out"
+      ],
+      "reward": "The first Basement award of the game becomes the Pinball video mode. Clearing all six on-screen targets scores 40 million for the player who set the secret; other players in a multiplayer game receive an extra ball instead."
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "opening-flourish",
+      "title": "Opening Flourish",
+      "desc": "Collect a skill-shot award by hitting the Magic Trunk on the first shot after your plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "trunk-skill-shot"
+    },
+    {
+      "id": "now-you-see-it",
+      "title": "Now You See It",
+      "desc": "Light Vanish by striking the Tiger Saw captive ball three times.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "tiger-saw-multiball"
+    },
+    {
+      "id": "curtain-up",
+      "title": "Curtain Up",
+      "desc": "Start any Illusion by shooting into the trunk's open hole face.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "start-illusion"
+    },
+    {
+      "id": "marquee-speller",
+      "title": "Marquee Speller",
+      "desc": "Spell all seven T-H-E-A-T-R-E letters at the Left Lane in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "theatre-lane-loop"
+    },
+    {
+      "id": "trunk-show",
+      "title": "Trunk Show",
+      "desc": "Lock two balls at the inner loops and start Theatre Multiball at the trunk's magnet face.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "theatre-multiball"
+    },
+    {
+      "id": "eightfold",
+      "title": "Eightfold",
+      "desc": "Raise your bonus multiplier to the 8x maximum in one ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "max-bonus-x"
+    },
+    {
+      "id": "below-stage",
+      "title": "Below Stage",
+      "desc": "Raise the trap door and collect a mystery award from the basement.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "trap-door-basement"
+    },
+    {
+      "id": "cracked-it",
+      "title": "Cracked It",
+      "desc": "Dial the full 11-04-69 safe combination with three inner-loop shots during Safe Escape.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "safe-escape"
+    },
+    {
+      "id": "beat-the-count",
+      "title": "Beat the Count",
+      "desc": "Sink the ball in the trunk hole during the countdown at the start of Theatre Multiball for the 100,000,000 award.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "theatre-jackpot-cycle"
+    },
+    {
+      "id": "stroke-of-twelve",
+      "title": "Stroke of Twelve",
+      "desc": "Advance the clock all the way to 12:00 and trigger the midnight magnet frenzy.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "midnight-madness"
+    },
+    {
+      "id": "maximum-saw",
+      "title": "Maximum Saw",
+      "desc": "Grow the Tiger Saw jackpot to its 70 million ceiling during one multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tiger-saw-multiball"
+    },
+    {
+      "id": "five-in-a-row",
+      "title": "Five in a Row",
+      "desc": "Chain five major shots without a break to earn the game's top combo callout.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "five-way-combo"
+    },
+    {
+      "id": "full-diamonds",
+      "title": "Full Diamonds",
+      "desc": "Light all four playfield diamonds in one game to reach the top magicianship rank and open the Grand Finale.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "grand-finale"
+    },
+    {
+      "id": "standing-ovation",
+      "title": "Standing Ovation",
+      "desc": "Collect all twelve MAGIC THEATRE letters inside the 60-second Grand Finale for the 500 million finish.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "grand-finale"
+    }
+  ],
+  "drills": [
+    {
+      "id": "both-skill-menus",
+      "title": "Both Skill Menus",
+      "text": "The plunge locks whichever award is cycling on the display and the ball is delivered to the right inlane, so the skill is reading the display and releasing on the one you want, then collecting it with the first trunk hit. Once any ball has been locked the menu disappears and the target becomes the captive ball off the right flipper. Drill both, because a single game shows you both.",
+      "reps": "10 plunges before a lock, 10 after",
+      "focus": "skill-shot",
+      "goal": "trunk-skill-shot",
+      "shots": [
+        "plunge",
+        "trunk",
+        "captive-ball"
+      ]
+    },
+    {
+      "id": "left-lane-self-loop",
+      "title": "Left Lane Self-Loop",
+      "text": "A full-power Left Lane rides the back ramp and wireform straight to the right inlane, which is the flipper that shoots it — the lane loops itself and the only thing that breaks the chain is you. Loop it from the right flipper until all seven letters land, cash the hurry-up at the trunk hole, then go straight back to the lane.",
+      "reps": "spell it twice",
+      "focus": "flow",
+      "goal": "theatre-lane-loop",
+      "shots": [
+        "left-orbit",
+        "trunk"
+      ]
+    },
+    {
+      "id": "center-ramp-on-the-fly",
+      "title": "Center Ramp On the Fly",
+      "text": "The center ramp's wireform always returns to the left inlane, so the left flipper can re-shoot it without ever cradling. Take it off the return on the fly and count how many you string together before you have to stop and trap.",
+      "reps": "5 sets, note your longest string",
+      "focus": "accuracy",
+      "goal": "center-ramp-loop",
+      "shots": [
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "lit-faces-only",
+      "title": "Lit Faces Only",
+      "text": "The trunk has four faces and only some of them do anything — a reject off the dead face goes straight down the middle. Play a full ball shooting the trunk only when it shows a face that pays: the green jackpot light, the magnet bulls-eye, or the open hole. Everything else goes somewhere safer.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "goal": "beginner-opener",
+      "shots": [
+        "trunk"
+      ]
+    },
+    {
+      "id": "catch-the-pop-exit",
+      "title": "Catch the Pop Exit",
+      "text": "Every ball that leaves the jets comes down the right orbit — there is no other exit. Feed the pops with weak Left Lane shots to work the Bonus X rollovers, then hold the right flipper up and live-catch the exit instead of flipping at it blind.",
+      "reps": "10 pop feeds",
+      "focus": "ball-control",
+      "goal": "max-bonus-x",
+      "shots": [
+        "pop-bumpers",
+        "right-orbit",
+        "bonus-x-lanes",
+        "left-orbit"
+      ]
+    },
+    {
+      "id": "captive-from-a-cradle",
+      "title": "Captive Ball From a Cradle",
+      "text": "Rebounds off the Tiger Saw captive ball are unpredictable, so take it from a settled ball rather than on the fly. Three hits light Vanish, and once the multiball is running it never needs relighting — trap one ball on a flipper and feed the captive with the other instead of firing everything at it at once.",
+      "reps": "15 deliberate hits",
+      "focus": "accuracy",
+      "goal": "tiger-saw-multiball",
+      "shots": [
+        "captive-ball"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Theatre of Magic gives you two flippers, a plunger, and nothing else to press. The feature people mistake for a magna-save button is automatic: hitting either Hocus Pocus standup arms the outlane magnets for roughly fifteen seconds, and they grab the ball off a sensor with no input from you at all."
+  },
+  "howItPlays": {
+    "objective": "Theatre of Magic is a Bally stage-magic table built on two self-returning shots -- the Left Lane and the center ramp -- that loop straight back to the flipper that fired them. Run the trunk's Illusions and stack the multiballs, and light all four diamonds -- earned by spelling THEATRE, playing a multiball, driving the clock to midnight, and starting every Illusion -- to open the Grand Finale.",
+    "loop": [
+      "Loop the Left Lane from the right flipper to spell THEATRE and chain escalating combos; a full shot rides its wireform right back to the same flipper.",
+      "Loop the center ramp from the left flipper to spell MAGIC, which lights the ball locks at the two inner loops for Theatre Multiball.",
+      "Bash the Magic Trunk three times to light an Illusion, then feed its open hole to start the twenty-second mode; getting all eight underway lights a diamond.",
+      "Push the clock an hour at a time up the right orbit toward Midnight Madness, and light Vanish at the captive ball for the safe Tiger Saw multiball.",
+      "Rebuild Bonus X on the top rollovers every ball, sliding the lit lane under the ball with either flipper, and light the four diamonds to open the Grand Finale."
+    ],
+    "lights": [
+      {
+        "id": "bonus-x-lanes",
+        "name": "Bonus X Rollovers",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "bonus-x-lanes",
+            "lamps": 2
+          }
+        ],
+        "lit": "The two top rollover lanes, read in the back-panel mirror, stay lit until you roll them, and Bonus X drops to its base every ball, so it is never banked for good and must be rebuilt from scratch each ball.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button shifts the lit rollover sideways to the neighboring lane",
+          "when": "as the ball crosses the top lanes, fed by a soft Left Lane shot or a right orbit sent up by the diverter"
+        },
+        "then": "Line the lit lane up with the ball and complete the pair to step Bonus X one notch toward the 8x ceiling, past which each pair simply pays five million. The easiest farm is Theatre Multiball, when the diverter sends every Left Lane shot up into these rollovers, and because end-of-ball bonus multiplies your whole letter, clock and Illusion haul, 8x can be worth hundreds of millions.",
+        "goals": [
+          "max-bonus-x"
+        ]
+      },
+      {
+        "id": "theatre-letters",
+        "name": "THEATRE Lane",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Each shot up the Left Lane lights the next letter of THEATRE, a lit letter is one you have banked, and the letters carry ball to ball until you cash a hurry-up -- and it is the safest full-power shot on the table because it returns to the very flipper that fired it.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep looping and the combo climbs two million higher each time with no ceiling, and every seventh letter completes the word to light a fifty-million-plus hurry-up at the trunk hole. Collect it inside its short window, then drop right back onto the lane.",
+        "goals": [
+          "theatre-lane-loop"
+        ]
+      },
+      {
+        "id": "magic-letters",
+        "name": "MAGIC Ramps",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "The ramps light the letters of MAGIC, and the center ramp's wireform always comes back to the left inlane, putting the ball on the left flipper for an instant re-shoot with no trap -- both ramps spell it early, but once you have run two multiballs only the right ramp still lights letters.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell MAGIC to light Lock at both inner-loop entrances, bank two balls there, and the trunk swings to its magnet face -- shoot that to begin three-ball Theatre Multiball. The rear-trunk hole is a shortcut that spots the whole word plus a free lock for those first two multiballs.",
+        "goals": [
+          "center-ramp-loop",
+          "theatre-multiball"
+        ]
+      },
+      {
+        "id": "trunk-illusions",
+        "name": "Magic Trunk & Illusions",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "trunk"
+          }
+        ],
+        "lit": "The rotating trunk shows four faces and only some pay -- a green jackpot light, a magnet bulls-eye, and an open hole, while the fourth is dead and rejects down the middle -- so three hits on a scoring face light one of the eight Illusions and swing the open hole toward you.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the open hole to start a twenty-second Illusion, the timer even pausing in the pops, and only starting one counts toward the Illusions diamond, so you never have to finish them. Getting all eight underway is the toughest of the four diamonds and worth chasing all game.",
+        "goals": [
+          "start-illusion",
+          "safe-escape"
+        ]
+      },
+      {
+        "id": "vanish-tiger-saw",
+        "name": "Vanish & Tiger Saw",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "captive-ball"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Hits on the Tiger Saw captive ball light Vanish, three for the first of the game and six for each one after, and with Vanish lit a Left Lane shot pays forty million and drops the ball into the hidden lock where it vanishes.",
+        "flashing": null,
+        "control": null,
+        "then": "Start the two-ball multiball at the right orbit and farm the captive-ball jackpot, which needs no relight and climbs thirty, forty, fifty, sixty to a seventy-million cap while you trap one ball and feed it with the other. Skip the right orbit to leave the ball vanished, then start Theatre Multiball and it joins for a four-ball stack.",
+        "goals": [
+          "tiger-saw-multiball",
+          "four-ball-stack"
+        ]
+      },
+      {
+        "id": "clock-midnight",
+        "name": "The Clock",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Every right orbit winds the clock forward an hour -- skill shots and Basement awards add hours too -- and the hour you have reached is lit on the dial and is also worth a million apiece in bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "Reach 6:00 for the first time and an Extra Ball lights at the Left Lane; reach 12:00 and Midnight Madness fires on its own as the Midnight diamond lights. In the frenzy, bash the trunk magnet face for two million times the current hour as the clock rewinds -- twenty-four million a catch at midnight.",
+        "goals": [
+          "midnight-madness"
+        ]
+      },
+      {
+        "id": "finale-diamonds",
+        "name": "Grand Finale Diamonds",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-inner-loop"
+          }
+        ],
+        "lit": "Four diamonds track your progress -- one for spelling THEATRE, one for playing Theatre Multiball, one for driving the clock to midnight, one for starting all eight Illusions -- and each stays lit until the Finale is played.",
+        "flashing": null,
+        "control": null,
+        "then": "With all four lit in single-ball play the Finale opens at either inner loop -- one ball, sixty seconds, no save, every major shot fifty million and a letter of MAGIC THEATRE. Collect all twelve for a five-hundred-million bonus, then the diamonds clear and the climb starts over.",
+        "goals": [
+          "grand-finale"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button slides the lit rollover across the two top lanes; tap it as the ball rolls up there, off a soft Left Lane shot or a diverted right orbit, to drop the lit one onto the ball's path. Completing both lanes steps Bonus X up one 2x notch to the 8x max (five million per pair after that), and since it resets every ball while end-of-ball bonus multiplies your entire stack, rebuilding it early every ball is where the huge scores come from.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take whatever the skill-shot menu is offering off the plunge, then live on the Left Lane from the right flipper -- it spells THEATRE, feeds the Bonus X rollovers on soft shots, and never leaves your flipper. Rebuild Bonus X toward 8x early.",
+        "goals": [
+          "trunk-skill-shot",
+          "theatre-lane-loop",
+          "max-bonus-x"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell MAGIC for Theatre Multiball, light Vanish at the captive ball for the low-risk Tiger Saw, and start Illusions at the trunk. Keep winding the clock up the right orbit toward Midnight Madness.",
+        "goals": [
+          "theatre-multiball",
+          "tiger-saw-multiball",
+          "start-illusion",
+          "midnight-madness"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Light all four diamonds to open the Grand Finale, where every shot is fifty million and all twelve MAGIC THEATRE letters pay a five-hundred-million bonus. The biggest single jackpot lives in Theatre Multiball, where the countdown trunk hole is an instant hundred million.",
+        "goals": [
+          "grand-finale",
+          "theatre-jackpot-cycle"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1354 @@
+{
+  "machine": "Shrek (Stern, 2008)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The skill shot light sits on the lowest Baby target at the start of every ball. There is also a second, better-paying skill shot hidden at the Puss In Boots Jackpot lane."
+    },
+    {
+      "id": "baby-targets",
+      "name": "B-A-B-Y Drop Bank",
+      "type": "drop-target",
+      "x": 0.25,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Clearing all four knocks one off the drop-target count shown above the right flipper. Run that count to zero and Baby Multiball starts. The bottom target carries the skill shot light."
+    },
+    {
+      "id": "pinocchio",
+      "name": "Pinocchio Drop Target",
+      "type": "drop-target",
+      "x": 0.16,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Up at the start of every game. Knocking it down raises the save post between the flippers. Worth 200K the first time each ball, climbing 25K per hit after that."
+    },
+    {
+      "id": "fiona-target",
+      "name": "Fiona Target",
+      "type": "standup",
+      "x": 0.1,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "100K on the first hit of each ball, climbing 15K per hit. Also lights the Fairy Godmother target, and doubles briefly when the 2X Fiona inlane is lit."
+    },
+    {
+      "id": "puss-orbit",
+      "name": "Puss In Boots Target",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Called the left orbit, though nothing orbits — your ball simply returns down the left side. On the way through it will usually knock the Castle Guard target over, which bumps that jackpot's value up and puts the Castle Guard Jackpot on a short timer."
+    },
+    {
+      "id": "ramp",
+      "name": "Main Ramp",
+      "type": "ramp",
+      "x": 0.38,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Feeds the 2X Gingy inlane and the lower left flipper. Every shot raises the ramp count toward lighting the upper captive ball for extra ball, lights Merlin, and pumps up the bumpers.",
+      "feeds": {
+        "shot": "gingy-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "castle-guard",
+      "name": "Castle Guard Target",
+      "type": "drop-target",
+      "x": 0.38,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Stands in front of the ramp. Hitting it pays whatever point lights are flashing at the ramp entrance and can start Repay Your Debt. It is also the Super Jackpot lane in two multiballs."
+    },
+    {
+      "id": "shrek-targets",
+      "name": "Shrek Target Bank",
+      "type": "drop-target",
+      "x": 0.47,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Three targets. Clear all three and the multiplier on your end-of-ball bonus steps up one, stopping once it reaches 5X; the clear itself pays 100K the first time each ball, then 20K more on every repeat until it caps at 250K."
+    },
+    {
+      "id": "prince-charming",
+      "name": "Prince Charming Target",
+      "type": "standup",
+      "x": 0.52,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "The counter for the Prince Charming awards. Five hits collects the first award, six the next, and so on."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers (3)",
+      "type": "bumpers",
+      "x": 0.1512,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Any bumper hit rotates BOTH the flashing Prince Charming award and the flashing Swamp mode through the ones you have not played. Ramp shots raise their point values."
+    },
+    {
+      "id": "merlin",
+      "name": "Merlin",
+      "type": "scoop",
+      "x": 0.31,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Lit at the start of every ball and relit by ramp shots. Ejects into the bumpers. The award list is long and includes multiballs, extra ball, specials and bonus holds.",
+      "feeds": {
+        "shot": "bumpers"
+      }
+    },
+    {
+      "id": "donkey-mini",
+      "name": "Donkey Mini-Playfield",
+      "type": "mini-playfield",
+      "x": 0.8876,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "A complete miniature playfield with its own flippers and ball. Five shots left to right: Fiona, Man, Shrek, Puss and Charm. The mini ball is fed up its right inlane."
+    },
+    {
+      "id": "donkey-left-flipper",
+      "name": "Left Mini Flipper",
+      "type": "flipper",
+      "x": 0.68,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Left flipper of the Donkey mini-playfield's own pair, fed by its inlane and the Puss ramp return; works the Fiona, Man, Shrek, Puss and Charm shots up there.",
+      "playfield": "deck-donkey-mini"
+    },
+    {
+      "id": "donkey-right-flipper",
+      "name": "Right Mini Flipper",
+      "type": "flipper",
+      "x": 0.77,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Right flipper of the Donkey mini-playfield's own pair, fed by its own inlane; the other flipper working the same five character shots.",
+      "playfield": "deck-donkey-mini"
+    },
+    {
+      "id": "puss-jackpot-lane",
+      "name": "Puss In Boots Jackpot Lane",
+      "type": "lane",
+      "x": 0.82,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Runs under the Donkey playfield and exits into the right orbit. Unlit it pays 250K the first time each ball, climbing 25K to a 500K cap. Lit it is a jackpot lane, and it is the secret skill shot.",
+      "flipper": "right"
+    },
+    {
+      "id": "donkey-targets",
+      "name": "Donkey Targets",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Worth 100K the first time each ball, climbing 10K per hit. Each hit also buys one extra second on the next Donkey Pinball round, which otherwise starts with fifteen."
+    },
+    {
+      "id": "upper-captive",
+      "name": "Upper Captive Ball",
+      "type": "captive-ball",
+      "x": 0.62,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "One of the two captive-ball shots, each hit adding a P-I-N-B-A-L-L letter. It also holds the extra ball light once you have banked enough ramps, and it finishes off the Pinball Combo."
+    },
+    {
+      "id": "lower-captive",
+      "name": "Lower Captive Ball",
+      "type": "captive-ball",
+      "x": 0.76,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "The other P-I-N-B-A-L-L letter shot, and a jackpot during Dragon Multiball."
+    },
+    {
+      "id": "fairy-target",
+      "name": "Fairy Godmother Target",
+      "type": "standup",
+      "x": 0.7,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Lit by the Fiona target. When lit it pays a random award that is always chosen to be useful for whatever you currently have running."
+    },
+    {
+      "id": "swamp",
+      "name": "Swamp Scoop",
+      "type": "scoop",
+      "x": 0.56,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Ejects to the right flipper. Unlit it pays a random 20K to 120K. Lit, it starts in priority order: Far Far Away, then Donkey Pinball, then the flashing Swamp mode.",
+      "feeds": {
+        "shot": "right-flipper"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "gingy-spinner",
+      "name": "Gingy Spinner",
+      "type": "spinner",
+      "x": 0.9,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The right orbit. Spins are how you light the Swamp. The first rotation of each ball is worth 1K and each one after adds 50, up to 5K a spin. The shot exits down the left side."
+    },
+    {
+      "id": "tell-a-lie-inlane",
+      "name": "Tell A Lie Inlane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "When lit, rolling through here raises the Pinocchio drop target again so you can re-arm the ball save post. Feeds the left flipper."
+    },
+    {
+      "id": "gingy-inlane",
+      "name": "2X Gingy Inlane",
+      "type": "lane",
+      "x": 0.29,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Doubles the Gingy spinner shot for a few seconds when lit. It alternates with the 2X Fiona inlane, and every slingshot hit swaps which one is lit."
+    },
+    {
+      "id": "fiona-inlane",
+      "name": "2X Fiona Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Doubles the Fiona target briefly when lit. Feeds the right flipper, which is the flipper you want for the ramp, the Swamp and the Puss In Boots Jackpot lane."
+    },
+    {
+      "id": "extra-ball-outlane",
+      "name": "Extra Ball Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "The left outlane. Awards the extra ball when lit, and Merlin can also light a Special here."
+    },
+    {
+      "id": "special-outlane",
+      "name": "Special Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "The right outlane. Carries a Special when Merlin awards one."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "donkey-mini-fiona",
+      "name": "Donkey Deck: Fiona (Left Orbit)",
+      "type": "orbit",
+      "x": 0.61,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Leftmost of the five mini-deck shots. Source: 'FIONA (left orbit)'.",
+      "playfield": "deck-donkey-mini"
+    },
+    {
+      "id": "donkey-mini-man",
+      "name": "Donkey Deck: Man/Gingy Target",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Source: 'MAN \"Gingy\" (standup target)'.",
+      "playfield": "deck-donkey-mini"
+    },
+    {
+      "id": "donkey-mini-shrek",
+      "name": "Donkey Deck: Shrek Target",
+      "type": "standup",
+      "x": 0.72,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Source: 'SHREK (standup target)'.",
+      "playfield": "deck-donkey-mini"
+    },
+    {
+      "id": "donkey-mini-puss",
+      "name": "Donkey Deck: Puss Ramp",
+      "type": "ramp",
+      "x": 0.77,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Source: 'PUSS (ramp, feeding left mini flipper)'.",
+      "playfield": "deck-donkey-mini",
+      "feeds": {
+        "shot": "donkey-left-flipper"
+      }
+    },
+    {
+      "id": "donkey-mini-charm",
+      "name": "Donkey Deck: Charm (Right Orbit)",
+      "type": "orbit",
+      "x": 0.84,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Rightmost of five. Source: 'CHARM (right orbit)'.",
+      "playfield": "deck-donkey-mini"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Baby Target Skill Shot",
+      "category": "skillshot",
+      "summary": "The Baby drop bank's bottom target carries the skill shot light on every ball. Drop it and the game's first skill shot pays 500K; each one you make after that is worth 250K more than the one before.",
+      "difficulty": 2,
+      "reward": "500K, +250K per skill shot",
+      "steps": [
+        {
+          "shot": "baby-targets",
+          "action": "Plunge into the lit bottom Baby target",
+          "detail": "The plunge reaches the Baby target bank directly — drop the lit bottom target for the skill shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "secret-skillshot",
+      "title": "The Secret Skill Shot",
+      "category": "skillshot",
+      "summary": "Ignore the Baby bank. With the skill shot lit, put the ball through the Puss In Boots Jackpot lane instead and you collect double the current skill shot value, and the next one is worth 250K more on top.",
+      "difficulty": 3,
+      "reward": "2x the skill shot value, +250K to the next",
+      "steps": [
+        {
+          "shot": "puss-jackpot-lane",
+          "action": "Plunge through the Puss jackpot lane while lit",
+          "detail": "With the skill shot lit, send the plunge through the jackpot lane for the secret award."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "pinocchio-post",
+      "title": "Raise The Save Post",
+      "category": "strategy",
+      "summary": "The Pinocchio drop target raises a post between the flippers. It is not permanent — four gongs and it drops again — and bad flipper work will still drain you around it. When the Tell A Lie inlane is lit, rolling through raises the target so you can re-arm it.",
+      "difficulty": 1,
+      "reward": "200K first hit per ball, +25K after, plus the post",
+      "steps": [
+        {
+          "shot": "pinocchio",
+          "action": "Knock down Pinocchio",
+          "detail": "The post goes up immediately and stays up until you hear four gongs."
+        },
+        {
+          "shot": "tell-a-lie-inlane",
+          "action": "Roll the lit inlane to reset it",
+          "detail": "That raises the target again so you can knock it down for a fresh post. Merlin is the other route — his award list includes both raising the ball saver and raising Pinocchio."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Build The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The three-target Shrek bank is your bonus multiplier. Every completion advances it, up to 5X. The first completion of each ball is worth 100K, and each one after that adds 20K until it caps at 250K.",
+      "difficulty": 1,
+      "reward": "Up to 5X bonus, 100K to 250K per completion",
+      "steps": [
+        {
+          "shot": "shrek-targets",
+          "action": "Clear all three targets",
+          "detail": "Repeat completions keep paying and keep advancing the multiplier to its ceiling."
+        },
+        {
+          "shot": "merlin",
+          "action": "Take Hold Bonus X if Merlin offers it",
+          "detail": "That carries the multiplier into the next ball instead of starting over at 1X."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "prince-charming",
+      "title": "Prince Charming Awards",
+      "category": "mode",
+      "summary": "Five awards sit behind one standup target. Hit Prince Charming five times to collect whichever one is flashing; the next award costs six hits, then seven, and so on. Bumper hits rotate which award is up.",
+      "difficulty": 2,
+      "reward": "One of five awards per completion",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Rotate to the award you want",
+          "detail": "Any of the three bumpers cycles through the awards you have not collected yet."
+        },
+        {
+          "shot": "prince-charming",
+          "action": "Hit the target the required number of times",
+          "detail": "Five hits for the first award, then one more hit for each award after."
+        },
+        {
+          "shot": "prince-charming",
+          "action": "Know the five",
+          "detail": "Villains, 3 Little Pigs, Un-Happy Hour, Once Upon A Time and Dragon Multiball. Collect all five and they reset."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "un-happy-hour",
+      "title": "Un-Happy Hour",
+      "category": "multiplier",
+      "summary": "The most valuable Prince Charming award if you can time it. Everything you score doubles for twenty seconds, so save it for a moment when you already have a multiball or a big Swamp mode running.",
+      "difficulty": 2,
+      "reward": "All scoring doubled for 20 seconds",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Rotate Un-Happy Hour up",
+          "detail": "Line it up before you cash the Charming counter, not after."
+        },
+        {
+          "shot": "prince-charming",
+          "action": "Collect it with something else already running",
+          "detail": "Twenty seconds of double scoring is worth far more stacked than it is on its own."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "dragon-multiball",
+      "title": "Dragon Multiball",
+      "category": "multiball",
+      "summary": "One of the Prince Charming awards. You get two balls and a generous save, and your jackpot list runs to six: both captive balls, plus Shrek, Fiona, Gingy and Puss In Boots. The first jackpot of the game is worth 250K, and each one after that adds 100K until the value tops out at 750K.",
+      "difficulty": 2,
+      "reward": "250K to 750K jackpots, 3M Super Jackpot",
+      "steps": [
+        {
+          "shot": "prince-charming",
+          "action": "Collect Dragon Multiball from the Charming awards",
+          "detail": "It is one of the five, so rotate to it with the bumpers first."
+        },
+        {
+          "shot": "fiona-target",
+          "action": "Keep the ten-second clock alive",
+          "detail": "Every jackpot resets the countdown to ten seconds; let it run out and one collected jackpot relights."
+        },
+        {
+          "shot": "castle-guard",
+          "action": "Collect all six jackpots at once, then take the Super",
+          "detail": "Getting all six collected at the same time kills the timer and lights the Castle Guard lane for a 3M Super Jackpot, which restarts the mode."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "light-the-swamp",
+      "title": "Light The Swamp",
+      "category": "progression",
+      "summary": "The spinner is the key to the whole left-hand side of the ruleset. Ten spins lights the Swamp scoop for a mode; after that the price climbs by five each time, topping out at thirty spins.",
+      "difficulty": 2,
+      "reward": "500K and a Swamp mode",
+      "steps": [
+        {
+          "shot": "gingy-spinner",
+          "action": "Rip the spinner",
+          "detail": "Ten rotations lights the Swamp the first time, then fifteen, twenty, twenty-five and thirty."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Pick your mode before you shoot",
+          "detail": "Bumper hits rotate the flashing Swamp mode through the ones you have not played."
+        },
+        {
+          "shot": "swamp",
+          "action": "Shoot the scoop",
+          "detail": "500K just for starting, plus whatever the mode itself pays."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "bridge-to-fiona",
+      "title": "Bridge To Fiona",
+      "category": "mode",
+      "summary": "Thirty seconds on the side shots and the ramp. Each lit shot pays 500K and every one after adds 100K, capping at a million a shot. Simple, safe and the friendliest of the Swamp modes to a newer player.",
+      "difficulty": 1,
+      "reward": "500K per shot climbing to 1M",
+      "steps": [
+        {
+          "shot": "swamp",
+          "action": "Start it with Bridge To Fiona flashing",
+          "detail": "Both flipper buttons at once ejects the ball early if you would rather skip the intro."
+        },
+        {
+          "shot": "ramp",
+          "action": "Hammer the ramp",
+          "detail": "It returns to the left flipper, which sets up the side shots on the other side."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "dinner-theater",
+      "title": "Dinner Theater",
+      "category": "mode",
+      "summary": "Thirty seconds to hit all six characters once each. The first pays 750K and each one after adds 50K, so the sixth is worth a million — and finishing the set adds another million on top for 6.75M in all.",
+      "difficulty": 2,
+      "reward": "6.75M for all six characters",
+      "steps": [
+        {
+          "shot": "swamp",
+          "action": "Start Dinner Theater",
+          "detail": "Rotate to it with the bumpers before you shoot the scoop."
+        },
+        {
+          "shot": "donkey-targets",
+          "action": "Sweep the characters you can reach fastest",
+          "detail": "Every character only counts once, so there is no value in repeating one."
+        },
+        {
+          "shot": "puss-orbit",
+          "action": "Do not leave one out",
+          "detail": "The completion bonus is worth more than any single character shot."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "wrestling-match",
+      "title": "Wrestling Match",
+      "category": "mode",
+      "summary": "A brawl scored on switch hits. Every playfield switch you make lands a hit on the knight, and he swings back at random. The mode ends when either life bar empties, and winning pays a bonus on top of the points you scored.",
+      "difficulty": 1,
+      "reward": "Points per switch, plus a bonus for winning",
+      "steps": [
+        {
+          "shot": "swamp",
+          "action": "Start Wrestling Match",
+          "detail": "No specific shot is required once it is running."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Feed the bumpers",
+          "detail": "Any switch counts, so the fastest hits come from the bumper area and the spinner."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "potion-problems",
+      "title": "Potion Problems",
+      "category": "mode",
+      "summary": "Thirty seconds where any of the five main shots pays 300K. The Donkey targets are the lever: every hit on them raises the shot value by 50K, up to 750K a shot.",
+      "difficulty": 2,
+      "reward": "300K per shot, raised to 750K",
+      "steps": [
+        {
+          "shot": "donkey-targets",
+          "action": "Pump the value first",
+          "detail": "Each Donkey target hit adds 50K to every shot for the rest of the mode."
+        },
+        {
+          "shot": "ramp",
+          "action": "Then cash it on the ramp",
+          "detail": "Fiona, Puss In Boots, Shrek, Gingy and the ramp all pay the same raised value."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "ogres-are-onions",
+      "title": "Ogres Are Onions",
+      "category": "mode",
+      "summary": "Four character shots for thirty seconds, and the payout depends on how many different ones you have hit. One character pays 250K a shot, two pays 500K, three pays 750K and all four pays a million a shot.",
+      "difficulty": 2,
+      "reward": "250K to 1M per shot",
+      "steps": [
+        {
+          "shot": "shrek-targets",
+          "action": "Spread out early",
+          "detail": "Hitting four different characters as fast as you can quadruples everything that follows."
+        },
+        {
+          "shot": "prince-charming",
+          "action": "Then repeat the easiest one",
+          "detail": "Once all four are on the board, every further hit pays the full million."
+        },
+        {
+          "shot": "donkey-targets",
+          "action": "Do not forget Donkey",
+          "detail": "Puss In Boots, Shrek, Prince Charming and Donkey are the four that count here."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "swamp-wizard",
+      "title": "Swamp Wizard",
+      "category": "wizard",
+      "summary": "Play all five Swamp modes and they stay lit; the next Swamp shot starts the wizard round for a flat million on top. The starting jackpot is built out of everything you did in those modes, and every jackpot you take raises the multiplier.",
+      "difficulty": 3,
+      "reward": "1M to start, escalating multiplied jackpots",
+      "steps": [
+        {
+          "shot": "swamp",
+          "action": "Finish all five Swamp modes, then shoot the scoop",
+          "detail": "The starting jackpot is seeded by your shot counts in each mode, so grinding shots earlier pays here."
+        },
+        {
+          "shot": "puss-orbit",
+          "action": "Work the jackpots in groups",
+          "detail": "Each jackpot scores one more multiple of the value than the last, and each shot counts once per group."
+        },
+        {
+          "shot": "castle-guard",
+          "action": "Take the Puss and Castle Guard pair together",
+          "detail": "With both lit, that combination pays double for the Castle Guard half."
+        },
+        {
+          "shot": "swamp",
+          "action": "Cash the group at the scoop",
+          "detail": "The lit scoop pays the jackpot times your multiplier, then resets both and relights everything for a new group."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "donkey-pinball",
+      "title": "Donkey Pinball",
+      "category": "mode",
+      "summary": "Spell P-I-N-B-A-L-L on the captive balls and the Swamp scoop hands you the mini playfield. Your main flippers go dead, the mini ball launches, and every drain is relaunched until the clock runs out. It starts at fifteen seconds.",
+      "difficulty": 2,
+      "reward": "Character values plus a playfield multiplier to 3X",
+      "steps": [
+        {
+          "shot": "upper-captive",
+          "action": "Spell P-I-N-B-A-L-L",
+          "detail": "Both captive balls award letters, and the Fairy Godmother can spot one when the lane is not already lit."
+        },
+        {
+          "shot": "donkey-targets",
+          "action": "Buy time first",
+          "detail": "Each Donkey target hit adds one second to the next round's fifteen-second clock."
+        },
+        {
+          "shot": "swamp",
+          "action": "Shoot the scoop to start",
+          "detail": "Fiona pays 100K a shot and the rest 50K, each climbing by its base value on repeats."
+        },
+        {
+          "shot": "donkey-mini",
+          "action": "Complete characters, not just shots",
+          "detail": "The first character completed is worth 500K and a playfield multiplier, climbing to 1.5M and 3X."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "donkey-multiball",
+      "title": "Donkey Multiball",
+      "category": "multiball",
+      "summary": "Finish all five characters on the mini playfield and the main flippers wake back up for Donkey Multiball. Every character now has to be completed twice — once up top and once down here — and jackpots start at 500K.",
+      "difficulty": 3,
+      "reward": "500K jackpots, 2M then 3M Super Jackpot",
+      "steps": [
+        {
+          "shot": "donkey-mini",
+          "action": "Complete all five characters up top",
+          "detail": "That ends Donkey Pinball and launches the multiball."
+        },
+        {
+          "shot": "puss-orbit",
+          "action": "Watch the character lights above the left flipper",
+          "detail": "Flashing means one of that character's two shots is done, steady means both."
+        },
+        {
+          "shot": "castle-guard",
+          "action": "Complete everything for the Super Jackpot",
+          "detail": "2M the first time; complete them all again in the same multiball and the second Super is worth 3M."
+        },
+        {
+          "shot": "merlin",
+          "action": "Chase Merlin straight after the Super",
+          "detail": "Scoring a Super lights Merlin for a few seconds for a hidden jackpot worth triple the Super you just took."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "baby-multiball",
+      "title": "Baby Multiball",
+      "category": "multiball",
+      "summary": "The workhorse multiball. Clear the Baby drop bank three times for the first one, then four, five and six for each one after, to a ceiling of six. The first is two balls with barely any ball save; later ones start with three.",
+      "difficulty": 2,
+      "reward": "Switch-count jackpots",
+      "steps": [
+        {
+          "shot": "baby-targets",
+          "action": "Clear the bank the required number of times",
+          "detail": "The count above the right flipper tells you how many clears are left."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Rack up switches",
+          "detail": "Jackpots here are priced in switch hits — the first one needs ten, and every jackpot after needs more."
+        },
+        {
+          "shot": "merlin",
+          "action": "Take it from Merlin when offered",
+          "detail": "Merlin hands out Baby Multiball more often when you still need Baby jackpots for Far Far Away.",
+          "link": "none"
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "merlin-mystery",
+      "title": "Merlin",
+      "category": "secret",
+      "summary": "The mystery award, lit at the start of every ball and relit by ramp shots. It can hand you a million, two million, a bonus multiplier, a lit Castle Guard Jackpot, Baby Multiball, an extra ball, a Special, or Far Far Away itself.",
+      "difficulty": 1,
+      "reward": "One of roughly seventeen awards",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Relight Merlin with the ramp",
+          "detail": "Ramp shots are the cheapest way to keep the mystery available all ball long."
+        },
+        {
+          "shot": "merlin",
+          "action": "Cash it",
+          "detail": "The game will not give you a useless award — it skips anything you already have lit."
+        },
+        {
+          "shot": "merlin",
+          "action": "Use it for what you are short of",
+          "detail": "It can spot a character for Donkey Pinball, raise the ball save post, or reset Pinocchio."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "fairy-godmother",
+      "title": "Fairy Godmother",
+      "category": "secret",
+      "summary": "The Fiona target lights the Fairy Godmother, and her award is always something you can actually use right now — mode time, a hurry-up reset, a P-I-N-B-A-L-L letter, three free Charming hits, or an add-a-ball during multiball.",
+      "difficulty": 2,
+      "reward": "A context-sensitive award",
+      "steps": [
+        {
+          "shot": "fiona-target",
+          "action": "Hit Fiona to light her",
+          "detail": "This costs you nothing — the Fiona target is already worth 100K and climbing."
+        },
+        {
+          "shot": "fairy-target",
+          "action": "Collect during something worth extending",
+          "detail": "During multiball she can add a ball; during a Swamp mode she adds time; during a hurry-up she resets it."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "pinball-combo",
+      "title": "The Pinball Combo",
+      "category": "combo",
+      "summary": "Either orbit into the upper captive ball pays a combo starting at 500K and growing 50K each time. Direction matters: starting from the Gingy side pays the full value, starting from Puss In Boots pays half.",
+      "difficulty": 2,
+      "reward": "500K climbing by 50K, halved from the left",
+      "steps": [
+        {
+          "shot": "gingy-spinner",
+          "action": "Start from the right orbit",
+          "detail": "This is the full-value half of the combo and it feeds the spinner on the way."
+        },
+        {
+          "shot": "upper-captive",
+          "action": "Finish on the upper captive ball",
+          "detail": "The captive also adds a P-I-N-B-A-L-L letter, so the combo does double duty."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "castle-guard-jackpot",
+      "title": "Castle Guard Jackpots",
+      "category": "combo",
+      "summary": "Send the ball at Puss In Boots and it will usually flatten the Castle Guard target on the way through, bumping that jackpot's value up and putting the Castle Guard Jackpot on a short timer. Drill this pair of shots: five of these jackpots is one of the six boxes you have to tick for the final wizard mode.",
+      "difficulty": 2,
+      "reward": "An escalating jackpot, and Far Far Away credit",
+      "steps": [
+        {
+          "shot": "puss-orbit",
+          "action": "Shoot Puss In Boots",
+          "detail": "The ball returns down the left side while the Castle Guard light is still on."
+        },
+        {
+          "shot": "castle-guard",
+          "action": "Take the jackpot before it times out",
+          "detail": "It also pays whatever point lights are flashing at the ramp entrance."
+        },
+        {
+          "shot": "merlin",
+          "action": "Or have Merlin light it",
+          "detail": "The Merlin version stays lit until you collect it, which removes all the timing pressure.",
+          "link": "none"
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "repay-your-debt",
+      "title": "Repay Your Debt",
+      "category": "mode",
+      "summary": "Started from the Castle Guard target when its light is flashing. For twenty seconds every lit shot pays 200K multiplied by how many Castle Guard hits you have banked since the last one, up to a million a shot.",
+      "difficulty": 2,
+      "reward": "Up to 1M per shot, or a flat 400K from Merlin",
+      "steps": [
+        {
+          "shot": "puss-orbit",
+          "action": "Bank Castle Guard hits first",
+          "detail": "Every hit since your last Repay Your Debt multiplies the shot value in this mode."
+        },
+        {
+          "shot": "castle-guard",
+          "action": "Start it",
+          "detail": "Started as a Merlin award instead, lit shots simply pay a flat 400K each."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "far-far-away-checklist",
+      "title": "The Far Far Away Checklist",
+      "category": "progression",
+      "summary": "The final wizard mode is not a shot, it is a report card. Six separate parts of the game have to be pushed to a threshold before the Swamp scoop will light for it. Hold a flipper for instant info and the third screen shows exactly what you still owe.",
+      "difficulty": 3,
+      "reward": "Lights Far Far Away at the Swamp",
+      "steps": [],
+      "instructions": [
+        "Five Castle Guard Jackpots — shoot Puss In Boots and follow it with the Castle Guard target.",
+        "Ten lit shots during Repay Your Debt, which usually means starting that mode more than once.",
+        "Fifteen Baby Multiball jackpots, so treat Baby Multiball as a jackpot grind, not a break.",
+        "All five Prince Charming awards, which means Dragon Multiball is on the checklist by definition.",
+        "One Super Jackpot during Donkey Multiball — the 2M shot at the Castle Guard lane.",
+        "25M or more scored in a single Swamp Wizard, which is the hardest line on the list.",
+        "Hold either flipper during play to bring up instant info; the requirements screen highlights what you have already banked."
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "far-far-away",
+      "title": "Far Far Away",
+      "category": "wizard",
+      "summary": "The end of the game. Phase one is eighteen seconds on the Donkey playfield building a jackpot that starts at a million, with drains relaunched. Phase two puts every ball on the main playfield with all of those jackpots lit.",
+      "difficulty": 3,
+      "reward": "Everything you built in phase one, paid at every lit shot",
+      "steps": [
+        {
+          "shot": "swamp",
+          "action": "Start it at the lit Swamp scoop",
+          "detail": "It only lights once all six Far Far Away requirements are done."
+        },
+        {
+          "shot": "donkey-mini",
+          "action": "Build the jackpot up top",
+          "detail": "Puss adds 100K a shot, Fiona and Charm 75K, Shrek and Man 50K, on top of the 1M base."
+        },
+        {
+          "shot": "puss-jackpot-lane",
+          "action": "Cash every lit jackpot below",
+          "detail": "All the main playfield jackpots pay the value you built in the first phase."
+        },
+        {
+          "shot": "merlin",
+          "action": "Shoot Merlin when you are down to two balls",
+          "detail": "Merlin pays 2M and starts a ten-second clock on the Swamp; making that shot pays another 2M and restarts the build phase."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "inlane-doubles",
+      "title": "Ride The 2X Inlanes",
+      "category": "multiplier",
+      "summary": "One of the two inside inlanes is always lit, and every slingshot hit swaps which one. Lit 2X Gingy doubles the spinner for a few seconds; lit 2X Fiona doubles the Fiona target. Free points if you are paying attention before you shoot.",
+      "difficulty": 1,
+      "reward": "Double value on Gingy or Fiona",
+      "steps": [
+        {
+          "shot": "gingy-inlane",
+          "action": "Check which inlane is lit",
+          "detail": "The slings flip it constantly, so look before you commit to a shot."
+        },
+        {
+          "shot": "gingy-spinner",
+          "action": "Shoot the matching target",
+          "detail": "A doubled spinner rip is also doubled progress toward lighting the Swamp."
+        }
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "shrek-skillshot",
+      "title": "Straight Off The Plunge",
+      "desc": "Collect the Baby target skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "shrek-secret-skill",
+      "title": "The Other Skill Shot",
+      "desc": "Find the secret skill shot in the Puss In Boots Jackpot lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "secret-skillshot"
+    },
+    {
+      "id": "shrek-max-bonus-x",
+      "title": "Five Times",
+      "desc": "Take the bonus multiplier all the way to 5X.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bonus-multiplier"
+    },
+    {
+      "id": "shrek-dragon",
+      "title": "Dragon Multiball",
+      "desc": "Collect Dragon Multiball from the Prince Charming awards.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "dragon-multiball"
+    },
+    {
+      "id": "shrek-dragon-super",
+      "title": "All Six At Once",
+      "desc": "Hold all six Dragon jackpots lit and take the 3M Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dragon-multiball"
+    },
+    {
+      "id": "shrek-dinner",
+      "title": "Table For Six",
+      "desc": "Hit all six characters in Dinner Theater for the full 6.75M.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "dinner-theater"
+    },
+    {
+      "id": "shrek-onions",
+      "title": "All Four Layers",
+      "desc": "Get all four characters on the board during Ogres Are Onions.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ogres-are-onions"
+    },
+    {
+      "id": "shrek-donkey-pinball",
+      "title": "Game Within A Game",
+      "desc": "Spell P-I-N-B-A-L-L and start Donkey Pinball on the mini playfield.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "donkey-pinball"
+    },
+    {
+      "id": "shrek-donkey-super",
+      "title": "Triple Secret",
+      "desc": "Score a Donkey Multiball Super Jackpot, then hit Merlin for the triple.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "donkey-multiball"
+    },
+    {
+      "id": "shrek-swamp-wizard",
+      "title": "Master Of The Swamp",
+      "desc": "Play all five Swamp modes and start Swamp Wizard.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "swamp-wizard"
+    },
+    {
+      "id": "shrek-checklist",
+      "title": "Six Of Six",
+      "desc": "Clear every Far Far Away requirement in a single game.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "far-far-away-checklist"
+    },
+    {
+      "id": "shrek-far-far-away",
+      "title": "Far Far Away",
+      "desc": "Start the final wizard mode at the Swamp scoop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "far-far-away"
+    }
+  ],
+  "drills": [
+    {
+      "id": "take-the-secret-one",
+      "title": "Take The Secret One",
+      "text": "The lit bottom Baby target is the plunge everybody makes; the Puss In Boots Jackpot lane is the one worth learning, because it pays double the current skill shot value and adds to the next one. Run both from the plunger until the harder shot is your default rather than your gamble.",
+      "reps": "every plunge, one full game",
+      "focus": "skill-shot",
+      "goal": "secret-skillshot",
+      "shots": [
+        "shooter-lane",
+        "baby-targets",
+        "puss-jackpot-lane"
+      ]
+    },
+    {
+      "id": "rip-the-gingy-spinner",
+      "title": "Rip The Gingy Spinner",
+      "text": "Spins are what light the Swamp, and the price climbs every time, so rip the right orbit rather than nursing it. Look at the inlanes first — every slingshot hit swaps which one is lit, and a doubled Gingy spinner is doubled progress toward the scoop as well as doubled points.",
+      "reps": "light the Swamp three times in a game",
+      "focus": "accuracy",
+      "goal": "light-the-swamp",
+      "shots": [
+        "gingy-spinner",
+        "gingy-inlane",
+        "swamp"
+      ]
+    },
+    {
+      "id": "puss-then-guard",
+      "title": "Puss, Then The Guard",
+      "text": "A shot at Puss In Boots usually flattens the Castle Guard target on the way through, which raises that jackpot and puts it on a short timer. The ball comes back down the left side, so take the Castle Guard before the timer dies — the pair is one motion, not two separate decisions.",
+      "reps": "5 Castle Guard jackpots",
+      "focus": "flow",
+      "goal": "castle-guard-jackpot",
+      "shots": [
+        "puss-orbit",
+        "castle-guard"
+      ]
+    },
+    {
+      "id": "keep-the-post-up",
+      "title": "Keep The Post Up",
+      "text": "Knock Pinocchio down at the start of every ball to raise the post between the flippers, and treat it as temporary — four gongs and it drops again. When the Tell A Lie inlane lights, roll it to stand the target back up and re-arm the post yourself instead of waiting on Merlin.",
+      "reps": "every ball, post up before you shoot anything else",
+      "focus": "ball-control",
+      "goal": "pinocchio-post",
+      "shots": [
+        "pinocchio",
+        "tell-a-lie-inlane"
+      ]
+    },
+    {
+      "id": "combo-from-the-right",
+      "title": "Combo From The Right",
+      "text": "Start the orbit-to-captive combo from the Gingy side, not from Puss In Boots — the same two shots pay full value one way round and half the other. Finish on the upper captive ball, which also banks a P-I-N-B-A-L-L letter, so one combo does two jobs.",
+      "reps": "10 combos from the right",
+      "focus": "flow",
+      "goal": "pinball-combo",
+      "shots": [
+        "gingy-spinner",
+        "upper-captive"
+      ]
+    },
+    {
+      "id": "buy-time-then-go-up",
+      "title": "Buy Time Before You Go Up",
+      "text": "Every Donkey target hit adds a second to a round that otherwise starts at fifteen, so bank hits before you take the scoop. Up there your main flippers are dead and every drain is relaunched — spend the time completing characters rather than just taking shots, because the first character completed is what starts the playfield multiplier.",
+      "reps": "3 rounds, more banked seconds each time",
+      "focus": "ball-control",
+      "goal": "donkey-pinball",
+      "shots": [
+        "donkey-targets",
+        "swamp",
+        "donkey-mini"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "castle",
+  "playfields": [
+    {
+      "id": "deck-donkey-mini",
+      "name": "Donkey Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.6,
+        "y": 0.62,
+        "w": 0.25,
+        "h": 0.18
+      },
+      "entries": [],
+      "exits": []
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Shrek arrived about five years before Stern started putting a button in the middle of the lockdown bar, so there is nothing extra to press. The Donkey mini playfield up on the right has its own ball and its own flippers, but they run off the same two buttons you already have — your main flippers simply go dead while it is live."
+  },
+  "howItPlays": {
+    "objective": "Shrek is a busy pre-lockbar Stern set in the swamp-and-fairytale world, built around a Donkey mini playfield, a stack of five Swamp modes, and a six-part checklist that opens the Far Far Away wizard. Play the Swamp modes, drop onto the Donkey deck, and tick every Far Far Away requirement to reach the finale.",
+    "loop": [
+      "Rip the Gingy spinner to light the Swamp scoop, bump the pops to the mode you want, and start it at the scoop.",
+      "Light every letter of P-I-N-B-A-L-L across the two captive balls so the next Swamp shot hands you the Donkey deck; finish its five characters to wake the main flippers for Donkey Multiball.",
+      "Collect Prince Charming awards toward Dragon Multiball and run the Baby drop bank to zero for Baby Multiball, keeping Merlin lit off the ramp for mystery awards.",
+      "Push all six Far Far Away requirements to threshold -- Castle Guard jackpots, Repay Your Debt shots, Baby jackpots, every Charming award, a Donkey super, and a big Swamp Wizard -- to light the wizard at the Swamp."
+    ],
+    "lights": [
+      {
+        "id": "swamp-modes",
+        "name": "Swamp Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "gingy-spinner"
+          },
+          {
+            "shot": "swamp"
+          },
+          {
+            "shot": "bumpers"
+          }
+        ],
+        "lit": "The Swamp scoop lights once you have ripped enough Gingy spinner rotations -- ten the first time, then more each time out to thirty -- and a lit scoop is a Swamp mode waiting to be started.",
+        "flashing": "The mode currently up flashes at the scoop, and pop-bumper hits rotate it through the ones you have not played yet.",
+        "control": null,
+        "then": "Bump the flashing mode to the one you want, then shoot the lit scoop to start it for a flat award plus whatever it pays; play all five and the scoop lights once more for Swamp Wizard, whose starting jackpot is built from how many shots you made in each mode.",
+        "goals": [
+          "light-the-swamp",
+          "bridge-to-fiona",
+          "dinner-theater",
+          "wrestling-match",
+          "potion-problems",
+          "ogres-are-onions",
+          "swamp-wizard"
+        ]
+      },
+      {
+        "id": "prince-charming",
+        "name": "Prince Charming Awards",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "prince-charming"
+          },
+          {
+            "shot": "bumpers"
+          }
+        ],
+        "lit": "The Prince Charming target keeps a running tally -- the first award costs five hits, the one after it six, then seven -- while any bumper hit rotates which of the five prizes is up.",
+        "flashing": "The prize currently up flashes, so line up the one you want before you finish the count.",
+        "control": null,
+        "then": "Rotate to your pick and bank the hits to collect it, saving Un-Happy Hour's twenty seconds of double scoring for a moment when a multiball is already running; Dragon Multiball is one of the five, so taking all five puts it on your Far Far Away checklist by default.",
+        "goals": [
+          "prince-charming",
+          "un-happy-hour",
+          "dragon-multiball"
+        ]
+      },
+      {
+        "id": "baby-bank",
+        "name": "B-A-B-Y Drop Bank",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "baby-targets"
+          }
+        ],
+        "lit": "The B-A-B-Y bank shows a lit target for each letter still standing, and clearing all four knocks one off the count shown above the right flipper, with dropped targets staying down until the bank resets for the next clear.",
+        "flashing": null,
+        "control": null,
+        "then": "Run that count to zero to start Baby Multiball -- three clears for the first, then four, five and six -- and grind its switch-priced jackpots, since a stack of Baby jackpots is one of the six things Far Far Away demands.",
+        "goals": [
+          "baby-multiball"
+        ]
+      },
+      {
+        "id": "pinball-letters",
+        "name": "P-I-N-B-A-L-L Captives",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "upper-captive"
+          },
+          {
+            "shot": "lower-captive"
+          },
+          {
+            "shot": "fairy-target"
+          }
+        ],
+        "lit": "Each captive-ball hit lights one more letter toward P-I-N-B-A-L-L; when a captive is not already lit, the Fairy Godmother can spot a letter for free.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the word and the next Swamp shot hands you the Donkey mini playfield; complete its five characters up top to wake your dead main flippers for Donkey Multiball.",
+        "goals": [
+          "donkey-pinball",
+          "donkey-multiball",
+          "fairy-godmother"
+        ]
+      },
+      {
+        "id": "donkey-deck",
+        "name": "Donkey Mini Playfield",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "donkey-mini-fiona"
+          },
+          {
+            "shot": "donkey-mini-man"
+          },
+          {
+            "shot": "donkey-mini-shrek"
+          },
+          {
+            "shot": "donkey-mini-puss"
+          },
+          {
+            "shot": "donkey-mini-charm"
+          },
+          {
+            "shot": "donkey-targets"
+          }
+        ],
+        "lit": "Up on the Donkey deck five character shots run left to right -- Fiona, Gingy, Shrek, Puss and Charm -- while the Donkey standups buy extra seconds onto a short round clock that starts at fifteen.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "your two flipper buttons now drive the mini playfield's own pair of flippers while the main flippers sit dead, so each button works the character shots up on the deck",
+          "when": "the Donkey playfield is live"
+        },
+        "then": "Sweep the characters before the clock dies to score Donkey Pinball, then complete all five to launch Donkey Multiball, where every character must be finished again down on the main playfield for a Super at the Castle Guard lane.",
+        "goals": [
+          "donkey-pinball",
+          "donkey-multiball"
+        ]
+      },
+      {
+        "id": "castle-guard",
+        "name": "Castle Guard Jackpots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "puss-orbit"
+          },
+          {
+            "shot": "castle-guard"
+          }
+        ],
+        "lit": "A ball sent at Puss In Boots tends to clip the Castle Guard target as it passes, which bumps that jackpot up and starts a short timer on it.",
+        "flashing": "The Castle Guard light runs down after a Puss shot, while a Merlin-lit one has no clock at all.",
+        "control": null,
+        "then": "Pair Puss into Castle Guard to take the escalating jackpot, and with its light flashing start Repay Your Debt for twenty seconds of multiplied lit shots; five of these Castle Guard jackpots is one line on the Far Far Away checklist.",
+        "goals": [
+          "castle-guard-jackpot",
+          "repay-your-debt",
+          "pinball-combo"
+        ]
+      },
+      {
+        "id": "merlin",
+        "name": "Merlin Mystery",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "merlin"
+          },
+          {
+            "shot": "ramp"
+          }
+        ],
+        "lit": "Merlin starts every ball already lit and comes back on with each ramp shot, and a lit Merlin is a mystery award the game tailors to what you are short of, never handing you something you already have.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the ramp to keep Merlin available, then cash it for anything from a couple of million to Baby Multiball, an extra ball, a re-raised save post, or Far Far Away itself.",
+        "goals": [
+          "merlin-mystery"
+        ]
+      },
+      {
+        "id": "bonus-x",
+        "name": "Shrek Bank Bonus Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "shrek-targets"
+          },
+          {
+            "shot": "merlin"
+          }
+        ],
+        "lit": "The three Shrek targets are your end-of-ball bonus multiplier, and clearing the bank steps it up one toward a 5X ceiling, with each clear paying a little more until it caps.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep sweeping the bank to reach 5X, and grab a Hold Bonus X whenever Merlin offers one so the multiplier carries into your next ball instead of dropping back to 1X.",
+        "goals": [
+          "bonus-multiplier",
+          "inlane-doubles"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Knock down the lit bottom Baby target for the skill shot, or thread the plunge through the Puss In Boots jackpot lane for double the value, then drop Pinocchio so the post pops up between the flippers. Start ripping the Gingy spinner to light your first Swamp mode, and sweep the Shrek bank early to climb the bonus multiplier.",
+        "goals": [
+          "skillshot",
+          "secret-skillshot",
+          "pinocchio-post",
+          "light-the-swamp",
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack the Swamp modes and multiballs. Collect Prince Charming awards toward Dragon Multiball, run the Baby bank to zero for Baby Multiball, and fill P-I-N-B-A-L-L to drop onto the Donkey deck and its multiball. Save Un-Happy Hour's double scoring for whenever balls are already loose.",
+        "goals": [
+          "prince-charming",
+          "dragon-multiball",
+          "baby-multiball",
+          "donkey-pinball",
+          "donkey-multiball",
+          "un-happy-hour"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Far Far Away is the finish, and it is a report card rather than a shot -- five Castle Guard jackpots, ten Repay Your Debt shots, fifteen Baby jackpots, all five Charming awards, a Donkey super, and a 25M Swamp Wizard all have to be banked before the Swamp lights for it. Beat those and the wizard pays out everything you build on the Donkey deck across every lit shot below.",
+        "goals": [
+          "far-far-away-checklist",
+          "far-far-away",
+          "swamp-wizard"
+        ]
+      }
+    ]
+  }
+}

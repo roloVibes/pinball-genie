@@ -1,0 +1,1093 @@
+{
+  "machine": "Super Mario Bros. (Gottlieb, 1992)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Manual plunger in the usual place."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.2,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Take it and the ball climbs to the raised platform in the upper playfield. Only 3,000 unlit, but it is the Quick Shot target and the '1' of the multiball sequence, so it is worth far more than its base value suggests.",
+      "feeds": {
+        "shot": "upper-flipper"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "left-ramp-target",
+      "name": "Left Ramp Target",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "The single most important standup on the machine. 100K normally, 5M when flashing, and when it is flashing fast it turns you into Super Mario. It also lights the fuse during the bomb round."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.48,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Three in the middle of the playfield. Worth 3,000 normally and a million each during the mega bumper round. Outside a round they toggle which turtle shell lamps are lit, which is how you steer your shell progress."
+    },
+    {
+      "id": "bumper-targets",
+      "name": "Bumper Spot Targets",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "30,000 each, or the current exclamation value during that round. They advance shells while lit."
+    },
+    {
+      "id": "cave-targets",
+      "name": "Luigi's Cave Targets",
+      "type": "target-bank",
+      "x": 0.52,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Tucked under the raised platform. 30,000 each, an extra ball when flashing, the count-up value during Luigi's round, and outside a round they light the bonus chance at the left hole."
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.44,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Flipper number three, mounted up on the platform itself. It is the only thing that feeds the right ramp, which makes it the gate to the '4' of the multiball sequence.",
+      "playfield": "deck-raised-platform"
+    },
+    {
+      "id": "yoshi-target",
+      "name": "Yoshi Target",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "On the upper playfield. Every hit adds 500K to a Yoshi bonus that is paid when you drain and carries to your next ball. It is also the '2' of the multiball sequence.",
+      "playfield": "deck-raised-platform"
+    },
+    {
+      "id": "upper-hole",
+      "name": "Upper Playfield Hole",
+      "type": "scoop",
+      "x": 0.52,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Above the upper flipper. 200K normally, but 20M for the rest of the ball once you have beaten the bomb round. Also awards a quick pick when the key lamp is flashing.",
+      "playfield": "deck-raised-platform",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.64,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "A moulded plastic ramp starting on the raised platform and dropping the ball into the right inlane. 100K as normal Mario, 500K as Super Mario, and it advances S-U-P-E-R while lit.",
+      "playfield": "deck-raised-platform",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "castle",
+      "name": "The Castle",
+      "type": "toy",
+      "x": 0.78,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "A revolving blue castle at the top right with a hole in front of it that drains through a tube to the right hole. 500K unlit, a jackpot in multiball, and the shot that destroys a castle when it flashes. Four bullet lamps sit in front of it."
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.86,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Shoot it and the ball vanishes into a tunnel beneath the right plastic ramp, then reappears among the bumpers. This is the '3' of the multiball sequence.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "right-rollover",
+      "name": "Right Lane Rollover",
+      "type": "rollover",
+      "x": 0.82,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Sits under the right plastic ramp. 50,000, and it lights the mystery at the right hole. It also advances shells while lit and pays the exclamation value during that round.",
+      "flipper": "left"
+    },
+    {
+      "id": "left-hole",
+      "name": "Left Hole",
+      "type": "scoop",
+      "x": 0.16,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Just above the left slingshot. Where multiball is actually started, where the bonus chance is played, and it advances S-U-P-E-R when flashing.",
+      "flipper": "right"
+    },
+    {
+      "id": "right-hole",
+      "name": "Right Hole",
+      "type": "scoop",
+      "x": 0.84,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Just above the right slingshot, and where the castle tube dumps the ball. The mystery award lives here, and it advances S-U-P-E-R when flashing.",
+      "flipper": "left"
+    },
+    {
+      "id": "shield",
+      "name": "Centre Shield",
+      "type": "drop-target",
+      "x": 0.5,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Sits between the flippers and behaves like a drop target. When it is up it is the only thing between a centre drain and the ball."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "50,000 and one step of the bullet sequence — the four lamps in front of the castle that arm the video mode. The upper wireform drops balls here."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "50,000, and it starts the Quick Shot flashing at the left ramp when its lamp is lit. The right ramp returns here."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "200K, and a kick save lives here. Once the kick save has been used, a Super Mario who drains down this lane comes back as ordinary Mario."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "200K and no save."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.2821,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the right side — the loop, the right hole and the rollover. Also the run button in the video mode."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6667,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the left ramp and the left hole. It is the jump button in the video mode."
+    }
+  ],
+  "goals": [
+    {
+      "id": "super-mario",
+      "title": "Become Super Mario",
+      "category": "multiplier",
+      "summary": "The state that changes everything. Advance S-U-P-E-R at the ramps and holes, then hit the left ramp target while it flashes fast. Super doubles every round award — extra balls included — turns the right ramp from 100K into 500K, and upgrades multiball from two balls to three.",
+      "difficulty": 2,
+      "reward": "Double round values, 500K ramps, three-ball multiball",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Advance S-U-P-E-R",
+          "detail": "The right ramp advances it while lit; the left and right holes advance it while flashing."
+        },
+        {
+          "shot": "left-ramp-target",
+          "action": "Cash it on the fast flash",
+          "detail": "A slow flash is 5M. A fast flash is Super Mario, and that is worth far more than the points."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Protect it",
+          "detail": "Once the kick save has been spent, a drain down the left outlane knocks you back to ordinary Mario."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "shells-and-key",
+      "title": "Shells, Then The Key",
+      "category": "progression",
+      "summary": "Every round in this game costs the same two things. Light three turtle shells, then collect the key from one of the holes that has its key lamp lit. Only then do you get to pick what you play — and you get about two seconds to decide.",
+      "difficulty": 2,
+      "reward": "A round of your choosing",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Toggle the shell lamps",
+          "detail": "Outside a round the bumpers and slingshots move which shots have shells lit, so let the ball rattle rather than trapping it up."
+        },
+        {
+          "shot": "bumper-targets",
+          "action": "Light three shells",
+          "detail": "Any spot target or ramp with a shell lit will do."
+        },
+        {
+          "shot": "left-hole",
+          "action": "Take the key from a lit hole",
+          "detail": "Three holes carry the key lamp; any one of them with it lit collects the key."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Choose fast",
+          "detail": "The machine offers you two rounds at random and picks the left flipper option itself if you hesitate."
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "bomb-round",
+      "title": "Bomb Round",
+      "category": "mode",
+      "summary": "Two shots for the best long-term payoff in the game. Light the fuse at the left ramp target while it flashes, then put the ball in any hole for 30M — and the upper playfield hole stays lit for 20M for the whole rest of the ball.",
+      "difficulty": 2,
+      "reward": "30M, plus a 20M hole for the rest of the ball",
+      "steps": [
+        {
+          "shot": "left-ramp-target",
+          "action": "Light the fuse",
+          "detail": "The target has to be flashing when you hit it."
+        },
+        {
+          "shot": "upper-hole",
+          "action": "Drop into any hole",
+          "detail": "30M immediately, and the upper hole stays lit at 20M afterwards. That residue is the real prize."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "yoshi-round",
+      "title": "Yoshi's Countdown Round",
+      "category": "mode",
+      "summary": "A single-shot round with a falling value. It opens at 24M and drops the longer you take, so this is not one to line up carefully. One useful wrinkle: the countdown freezes during multiball.",
+      "difficulty": 2,
+      "reward": "Up to 24M",
+      "steps": [
+        {
+          "shot": "upper-flipper",
+          "action": "Get up top fast",
+          "detail": "You need the ball on the raised platform to reach Yoshi at all."
+        },
+        {
+          "shot": "yoshi-target",
+          "action": "Collect before it bleeds out",
+          "detail": "The value stops falling during multiball, so starting this round with balls already in play is a real advantage."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "luigi-round",
+      "title": "Luigi's Cave Count-Up Round",
+      "category": "mode",
+      "summary": "The mirror image of Yoshi's round — the value climbs instead of falling, and it stops at 48M. Wait too long and you risk the ball, but cashing it early is leaving half of it on the table.",
+      "difficulty": 2,
+      "reward": "Up to 48M",
+      "steps": [
+        {
+          "shot": "cave-targets",
+          "action": "Let the value build",
+          "detail": "It caps at 48M, so there is a right moment rather than an infinite wait."
+        },
+        {
+          "shot": "cave-targets",
+          "action": "Collect from the cave",
+          "detail": "The cave targets sit under the raised part of the playfield, which is an awkward shot under pressure."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "castle-round",
+      "title": "Castle Extra Ball Round",
+      "category": "mode",
+      "summary": "One shot, one extra ball. Enter the castle during this round and it is yours — and if you are Super Mario when the round starts, the award doubles, which means two extra balls from a single shot.",
+      "difficulty": 2,
+      "reward": "An extra ball, or two if you are Super",
+      "steps": [
+        {
+          "shot": "left-ramp-target",
+          "action": "Be Super before you start it",
+          "detail": "The round doubling applies to extra balls as well as points."
+        },
+        {
+          "shot": "castle",
+          "action": "Enter the castle",
+          "detail": "That is the whole round. Everything else here is about getting a clean look at that shot."
+        },
+        {
+          "shot": "upper-flipper",
+          "action": "Set up the angle",
+          "detail": "The castle sits at the top right and the tube behind it returns the ball to the right hole."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "exclamation-round",
+      "title": "Exclamation Round",
+      "category": "mode",
+      "summary": "The best scoring round on the machine. The exclamation targets pay increasing amounts as you keep hitting them, walking up 1M, 2M, 3M, 5M and finally 10M. Take this round every time it is offered.",
+      "difficulty": 1,
+      "reward": "1M climbing to 10M per shot",
+      "steps": [
+        {
+          "shot": "bumper-targets",
+          "action": "Start with what is nearest",
+          "detail": "Several shots pay the exclamation value, including the bumper targets, both ramps, the upper hole and the right rollover."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Climb the ladder",
+          "detail": "Every hit steps the value up, so keep the shots coming rather than hunting for a specific target."
+        }
+      ],
+      "ordered": false,
+      "fx": "coin"
+    },
+    {
+      "id": "mega-bumper-round",
+      "title": "Mega Bumper Round",
+      "category": "mode",
+      "summary": "Each pop bumper is worth a million during this round. It is the one round where the correct play is to stop aiming entirely and just keep the ball alive in the middle of the playfield.",
+      "difficulty": 1,
+      "reward": "1M per bumper",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed the nest",
+          "detail": "A million a hit instead of three thousand."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Use the loop to refeed",
+          "detail": "The right loop dumps the ball straight back into the bumpers, which is exactly what you want here."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Light 1-2-3-4 in order, then drop into the left hole. Two balls normally, three if you are Super Mario. Every ball you put in the castle is a jackpot, and the jackpots climb steeply — 5M, then 10M, then 20M, then 40M.",
+      "difficulty": 3,
+      "reward": "Jackpots of 5M, 10M, 20M and 40M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "1 — the left ramp",
+          "detail": "The sequence has to be lit in order, so watch which number is flashing."
+        },
+        {
+          "shot": "yoshi-target",
+          "action": "2 — the Yoshi target",
+          "detail": "Which means getting up to the raised platform."
+        },
+        {
+          "shot": "right-loop",
+          "action": "3 — the right loop",
+          "detail": "The tunnel that feeds back into the bumpers."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "4 — the right ramp from the upper flipper",
+          "detail": "You are on the platform already if you took 2 cleanly, so plan 2 and 4 together."
+        },
+        {
+          "shot": "left-hole",
+          "action": "Start it in the left hole",
+          "detail": "Be Super first if you can — that is the difference between two balls and three."
+        },
+        {
+          "shot": "castle",
+          "action": "Feed the castle",
+          "detail": "Each ball into the castle is a jackpot and the values escalate to 40M."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "destroy-castles",
+      "title": "Destroy Seven Castles",
+      "category": "progression",
+      "summary": "The long game, and the strangest rule on the machine. Seven castles have to fall to rescue the princess, and destroyed castles carry over between games — so you can walk up to a machine with six already down and finish the job in one ball.",
+      "difficulty": 3,
+      "reward": "A replay and your initials on the machine",
+      "steps": [
+        {
+          "shot": "left-ramp-target",
+          "action": "Become Super",
+          "detail": "The castle only flashes for destruction while you are Super Mario."
+        },
+        {
+          "shot": "castle",
+          "action": "Shoot the flashing castle",
+          "detail": "One castle per Super Mario state, so plan the shot before you spend it."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Rebuild S-U-P-E-R and repeat",
+          "detail": "Because the count carries over, check the machine's progress before you drop a coin in."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "quick-shot",
+      "title": "Quick Shot",
+      "category": "combo",
+      "summary": "Roll the right inlane and the left ramp starts flashing. Hit it and you collect from a ladder that climbs 1M, 2M, 5M, 7M, an extra ball, and then 10M. It is the cheapest extra ball on the machine and almost nobody chases it.",
+      "difficulty": 2,
+      "reward": "1M up to 10M, with an extra ball on the fifth step",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right inlane",
+          "detail": "The right ramp returns the ball here, which makes this a natural loop."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take the flashing ramp",
+          "detail": "The ramp is only 3,000 unlit, so this is the difference between a wasted shot and a real one."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Climb to the extra ball",
+          "detail": "The fifth award in the ladder is the extra ball, and the sixth is 10M."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bonus-chance",
+      "title": "Bonus Chance",
+      "category": "strategy",
+      "summary": "A three-reel gamble at the left hole, lit by the cave targets outside a round. Most results are small — 200K for nothing, a million or two for cherries or mushrooms, five million for any three of a kind. Three sevens pays two hundred million.",
+      "difficulty": 2,
+      "reward": "200K to 200M",
+      "steps": [
+        {
+          "shot": "cave-targets",
+          "action": "Light it from the cave",
+          "detail": "The cave targets light bonus chance whenever you are not in a round."
+        },
+        {
+          "shot": "left-hole",
+          "action": "Spin it at the left hole",
+          "detail": "One cherry pays a million, two cherries two million, three mushrooms two million, and any three of a kind five million."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Stack them from mystery",
+          "detail": "The mystery award at the right hole can hand you three bonus chances at once.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "mystery",
+      "title": "Mystery",
+      "category": "strategy",
+      "summary": "The right lane rollover lights mystery at the right hole, and the award list is unusually strong for a machine of this era — extra shells, extra balls, an instant Super Mario, or three bonus chances in a row.",
+      "difficulty": 1,
+      "reward": "Shells, an extra ball, Super Mario or three bonus chances",
+      "steps": [
+        {
+          "shot": "right-rollover",
+          "action": "Light it under the plastic ramp",
+          "detail": "The rollover sits under the right plastic ramp and is easy to collect on the way past."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Collect at the right hole",
+          "detail": "An instant Super Mario here saves you a whole S-U-P-E-R cycle."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "yoshi-bonus",
+      "title": "The Yoshi Bonus",
+      "category": "strategy",
+      "summary": "Every Yoshi target hit adds 500K to a bonus paid when you drain — and the total carries into your next ball rather than resetting. Two hits in a row outside a round also lights the target for three million on the next hit.",
+      "difficulty": 2,
+      "reward": "500K per hit, banked across balls",
+      "steps": [
+        {
+          "shot": "upper-flipper",
+          "action": "Work the upper playfield",
+          "detail": "Time spent on the raised platform is never wasted, because every Yoshi hit banks."
+        },
+        {
+          "shot": "yoshi-target",
+          "action": "Double up for 3M",
+          "detail": "Hitting Yoshi twice in a row outside a round lights it for three million on the following hit."
+        },
+        {
+          "shot": "yoshi-target",
+          "action": "Watch for the feather",
+          "detail": "Outside a round a Yoshi hit also briefly flashes the feather target, which is worth five million."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "video-mode",
+      "title": "Video Mode",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Four bullet lamps sit in front of the castle. Fill them all by rolling the left inlane and the next castle shot drops you into a side-scrolling run where you jump gaps with the right flipper and sprint with the left.",
+      "difficulty": 2,
+      "reward": "10M for finishing, 30M if you run it",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Advance the bullet sequence",
+          "detail": "Each left inlane roll lights one of the four lamps in front of the castle."
+        },
+        {
+          "shot": "castle",
+          "action": "Enter the castle to start it",
+          "detail": "With all four lamps lit, the castle shot is easy — the game makes sure of it."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Jump with the right, run with the left",
+          "detail": "Two buttons, gaps in the ground, and a clock you are working against."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "video-mode-secret",
+      "title": "Run, Do Not Walk",
+      "category": "secret",
+      "summary": "The video mode pays triple if you know one thing about it, and the machine never tells you. There is a second version of the same trick that only appears after your final castle falls.",
+      "difficulty": 2,
+      "reward": "30M instead of 10M, twice over",
+      "steps": [],
+      "instructions": [
+        "Once the video mode starts, pin the left flipper button down and keep it there — that is what puts Mario at a sprint rather than a stroll.",
+        "Reach the end while running and the mode pays 30M rather than the usual 10M.",
+        "The second version waits until your final castle has fallen: drain that ball and the game plays a short sprint at the castle.",
+        "Time a jump during that sprint and you collect 30M in place of 10M again.",
+        "Both are pure button timing, so they cost you nothing to attempt."
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "special",
+      "title": "The Special",
+      "category": "secret",
+      "summary": "Complete all six rounds in a game and the castle flashes for special — but only for a limited time. It is the hardest thing on the machine because the shell-and-key cycle has to be run six separate times.",
+      "difficulty": 3,
+      "reward": "Special at the castle",
+      "steps": [
+        {
+          "shot": "left-hole",
+          "action": "Run the key cycle six times",
+          "detail": "Two rounds are offered at random each time, so you cannot simply pick your way through the list."
+        },
+        {
+          "shot": "castle",
+          "action": "Shoot the flashing castle quickly",
+          "detail": "The special is only lit for a short window after the sixth round finishes."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "extra-balls",
+      "title": "Where The Extra Balls Are",
+      "category": "progression",
+      "summary": "This game hands out extra balls in more places than most players realise, and one of them is effectively free once you know the loop.",
+      "difficulty": 2,
+      "reward": "Multiple extra balls per game",
+      "steps": [],
+      "instructions": [
+        "The Quick Shot ladder gives one on its fifth step — right inlane, then the flashing left ramp, repeated.",
+        "The castle extra ball round gives one for a single castle shot, or two if you are Super Mario when it starts.",
+        "The cave spot targets award one when they are flashing.",
+        "The mystery award at the right hole can give one outright.",
+        "Being Super Mario doubles extra ball awards from rounds, so it is worth arming Super before you cash a round that pays one."
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "smb-super",
+      "title": "Super Mario",
+      "desc": "Spell S-U-P-E-R and cash the fast-flashing left ramp target.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "super-mario"
+    },
+    {
+      "id": "smb-key",
+      "title": "Got The Key",
+      "desc": "Light three shells and collect the key to start a round.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "shells-and-key"
+    },
+    {
+      "id": "smb-bomb",
+      "title": "Lit The Fuse",
+      "desc": "Beat the bomb round and leave the upper hole lit at 20M.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bomb-round"
+    },
+    {
+      "id": "smb-luigi",
+      "title": "Capped The Cave",
+      "desc": "Let Luigi's count-up reach its 48M ceiling before collecting.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "luigi-round"
+    },
+    {
+      "id": "smb-exclamation",
+      "title": "Ten Million",
+      "desc": "Climb the exclamation round ladder to its 10M step.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "exclamation-round"
+    },
+    {
+      "id": "smb-quickshot",
+      "title": "Quick Shot Extra Ball",
+      "desc": "Work the Quick Shot ladder up to the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "quick-shot"
+    },
+    {
+      "id": "smb-multiball",
+      "title": "One Two Three Four",
+      "desc": "Complete the sequence and start multiball at the left hole.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "smb-jackpot-40",
+      "title": "Forty Million",
+      "desc": "Climb the multiball jackpot ladder to its 40M top step.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "smb-video",
+      "title": "Bullets Loaded",
+      "desc": "Fill the bullet sequence and start the video mode at the castle.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "video-mode"
+    },
+    {
+      "id": "smb-run",
+      "title": "Held The Run Button",
+      "desc": "Finish the video mode at a run for the 30M award.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "video-mode-secret"
+    },
+    {
+      "id": "smb-sevens",
+      "title": "Three Sevens",
+      "desc": "Hit three sevens on the bonus chance for 200M.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "bonus-chance"
+    },
+    {
+      "id": "smb-special",
+      "title": "All Six Rounds",
+      "desc": "Complete every round in one game and light the castle special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "special"
+    },
+    {
+      "id": "smb-princess",
+      "title": "Seven Castles",
+      "desc": "Destroy the seventh castle and rescue the princess.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "destroy-castles"
+    }
+  ],
+  "drills": [
+    {
+      "id": "watch-the-flash-rate",
+      "title": "Watch The Flash Rate",
+      "text": "Advance S-U-P-E-R at the right ramp and the holes, then read the left ramp target: a slow flash is worth five million, a fast flash makes you Super Mario. Super doubles every round award, extra balls included, and turns two-ball multiball into three, so the fast flash is worth far more than the points on the slow one.",
+      "reps": "become Super twice in a game",
+      "focus": "accuracy",
+      "goal": "super-mario",
+      "shots": [
+        "right-ramp",
+        "left-hole",
+        "right-hole",
+        "left-ramp-target"
+      ]
+    },
+    {
+      "id": "quick-shot-loop",
+      "title": "The Quick Shot Loop",
+      "text": "Roll the right inlane and the left ramp starts flashing — take it straight away, because unlit that ramp is worth almost nothing. The right ramp returns to the same inlane, so ramp, inlane, ramp is a loop you can walk all the way up the ladder to the extra ball.",
+      "reps": "climb to the extra ball step",
+      "focus": "flow",
+      "goal": "quick-shot",
+      "shots": [
+        "right-inlane",
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "plan-two-and-four",
+      "title": "Plan Two And Four Together",
+      "text": "The numbers only count in order: left ramp, Yoshi, right loop, right ramp. Take Yoshi cleanly and you are already on the platform with the upper flipper in hand for the fourth, which is the awkward one. Then drop into the left hole — ideally as Super, because that is the difference between two balls and three.",
+      "reps": "5 full sequences",
+      "focus": "flow",
+      "goal": "multiball",
+      "shots": [
+        "left-ramp",
+        "yoshi-target",
+        "right-loop",
+        "upper-flipper",
+        "right-ramp",
+        "left-hole"
+      ]
+    },
+    {
+      "id": "let-it-rattle",
+      "title": "Let It Rattle",
+      "text": "Outside a round the bumpers and slingshots toggle which shots have shells lit, so let the ball rattle around the middle instead of trapping it up and waiting. Three shells, then the key from any hole showing its lamp — and have your round chosen before the offer appears, because the machine picks for you if you hesitate.",
+      "reps": "run the cycle three times in a ball",
+      "focus": "ball-control",
+      "goal": "shells-and-key",
+      "shots": [
+        "pop-bumpers",
+        "bumper-targets",
+        "left-hole"
+      ]
+    },
+    {
+      "id": "bank-yoshi-hits",
+      "title": "Bank Yoshi Hits",
+      "text": "Time on the raised platform is never wasted: every Yoshi hit banks into a bonus that pays when you drain and carries into your next ball. Two hits in a row outside a round light the target for three million on the following one, so work the upper flipper deliberately rather than treating the platform as somewhere the ball happens to end up.",
+      "reps": "10 Yoshi hits in a ball",
+      "focus": "accuracy",
+      "goal": "yoshi-bonus",
+      "shots": [
+        "upper-flipper",
+        "yoshi-target"
+      ]
+    },
+    {
+      "id": "light-the-fuse-first",
+      "title": "Light The Fuse First",
+      "text": "Two shots: hit the left ramp target while it is flashing to light the fuse, then put the ball in any hole. The thirty million is the announcement — the real prize is the upper playfield hole staying lit at twenty million for the rest of the ball, so plan to spend that ball up top.",
+      "reps": "3 bomb rounds, then live on the upper hole",
+      "focus": "accuracy",
+      "goal": "bomb-round",
+      "shots": [
+        "left-ramp-target",
+        "upper-hole",
+        "left-hole",
+        "right-hole"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "castle",
+  "playfields": [
+    {
+      "id": "deck-raised-platform",
+      "name": "Raised Platform",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.34,
+        "y": 0.66,
+        "w": 0.48,
+        "h": 0.26
+      },
+      "entries": [
+        "left-ramp"
+      ],
+      "exits": [
+        {
+          "x": 0.72,
+          "y": 0.1
+        },
+        {
+          "x": 0.28,
+          "y": 0.1
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "No dedicated button on this one — but during the video mode the flipper buttons stop being flippers and become a controller. Hold the left one down to keep Mario sprinting instead of strolling, and tap the right one to jump. Out on the playfield the third flipper up on the platform runs off a normal flipper button too."
+  },
+  "howItPlays": {
+    "objective": "Super Mario Bros. is round-based: light three turtle shells and grab a key to play a round of your choosing, and spell S-U-P-E-R to become Super Mario, which doubles round awards and upgrades multiball. The long haul is toppling all seven castles to rescue the princess -- and fallen castles carry over from one game to the next.",
+    "loop": [
+      "Let the ball rattle the bumpers and slings to move the lit turtle-shell lamps around; light three shells and take the key from a hole showing its key lamp.",
+      "Cash the key into one of two offered rounds -- decide fast, because the game chooses for you if you freeze.",
+      "Spell out S-U-P-E-R with lit ramp and flashing hole shots, then strike the fast-flashing left ramp target to turn into Super Mario and double everything you score.",
+      "Light the numbered shots 1 through 4 in sequence -- the left ramp, the Yoshi target, the right loop, then the right ramp off the upper flipper -- and drop into the left hole for multiball, feeding the castle for jackpots that climb to forty million."
+    ],
+    "lights": [
+      {
+        "id": "super-letters",
+        "name": "S-U-P-E-R & Super Mario",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-hole"
+          },
+          {
+            "shot": "right-hole"
+          },
+          {
+            "shot": "left-ramp-target"
+          }
+        ],
+        "lit": "The S-U-P-E-R letters advance at the right ramp while it is lit and at the left and right holes while they flash. When the word is done, the left ramp target starts flashing to cash it -- read the flash rate.",
+        "flashing": "A slow flash on the left ramp target is worth five million points; a fast flash is the Super Mario cash-in you actually want.",
+        "control": null,
+        "then": "Hit the fast flash to become Super Mario: every round award doubles (extra balls included), the right ramp jumps from 100K to 500K, and multiball comes with three balls in place of two. Guard it -- once the left-outlane kick save is spent, draining there knocks you back to ordinary Mario.",
+        "goals": [
+          "super-mario"
+        ]
+      },
+      {
+        "id": "shells-key-rounds",
+        "name": "Shells, Key & Rounds",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "bumper-targets"
+          },
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "left-hole"
+          }
+        ],
+        "lit": "A lit shell sits on whichever shots the bumpers and slingshots have currently toggled it onto -- so keep the ball rolling through the pops rather than cradling it. Light three shells and a key lamp appears on the holes.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect the key at any hole whose lamp is lit to begin a round, and decide fast -- two rounds come up at random and the game defaults to the left-flipper choice if you freeze. Exclamation is the big scorer, climbing 1M to 10M; the bomb round keeps the upper hole lit at 20M for the remainder of the ball; and clearing all six rounds in one game flashes the castle for the Special.",
+        "goals": [
+          "shells-and-key",
+          "exclamation-round",
+          "bomb-round",
+          "special"
+        ]
+      },
+      {
+        "id": "multiball-sequence",
+        "name": "1-2-3-4 Multiball",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "yoshi-target"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-hole"
+          },
+          {
+            "shot": "castle"
+          }
+        ],
+        "lit": "Four numbered arrows must be lit in sequence -- 1 the left ramp, 2 the Yoshi target up top, 3 the right loop, 4 the right ramp off the upper flipper. Watch which number is flashing, because they only score in order.",
+        "flashing": null,
+        "control": null,
+        "then": "With 1 through 4 done, drop the left hole to start multiball -- two balls, or three if you armed Super Mario first. Then bury the ball in the castle again and again; each castle shot is a jackpot and they escalate 5M, 10M, 20M, 40M. Pair up 2 and 4 -- a clean Yoshi hit leaves you on the platform with the upper flipper ready for the fourth.",
+        "goals": [
+          "multiball"
+        ]
+      },
+      {
+        "id": "seven-castles",
+        "name": "Seven Castles",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "castle"
+          }
+        ],
+        "lit": "The revolving castle flashes for destruction only while you are Super Mario, and only one castle falls per Super state. Seven have to come down in all to rescue the princess.",
+        "flashing": null,
+        "control": null,
+        "then": "Become Super, shoot the flashing castle to topple one, then rebuild S-U-P-E-R and line up the next. Those fallen castles are remembered between games -- find a cabinet where earlier players already knocked down most of the seven and you could finish the rescue on a single ball for a replay, so glance at how many remain before paying in.",
+        "goals": [
+          "destroy-castles"
+        ]
+      },
+      {
+        "id": "video-mode-bullets",
+        "name": "Video Mode Bullets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-inlane",
+            "lamps": 4
+          },
+          {
+            "shot": "castle"
+          }
+        ],
+        "lit": "In front of the castle sit four bullet lamps, and each pass through the left inlane lights one. Once all four glow, your following castle shot stops scoring normally and instead launches a side-scrolling running-and-jumping stage.",
+        "flashing": null,
+        "control": null,
+        "then": "In the run the flippers become a controller -- tap the right to jump gaps, and here is the trick the game never tells you: hold the left button down the whole way to sprint, which pays 30M at the finish rather than the 10M walk. Another hidden sprint shows up once your last castle has fallen -- land a jump during it for a second 30M.",
+        "goals": [
+          "video-mode",
+          "video-mode-secret"
+        ]
+      },
+      {
+        "id": "yoshi-bonus",
+        "name": "Yoshi Bonus",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "yoshi-target"
+          },
+          {
+            "shot": "upper-flipper"
+          }
+        ],
+        "lit": "The Yoshi target sits on the raised platform, reachable only with the upper flipper. Each hit adds 500K to a running Yoshi bonus that pays out when the ball drains -- and it does not reset, carrying forward into your next ball instead.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the upper flipper on purpose, since time up top is never wasted. Land two Yoshi hits back to back outside a round and it lights for a 3M shot next time; outside a round a Yoshi strike also winks the feather insert on for a 5M grab. It doubles as number 2 in the multiball sequence, so platform time is never idle.",
+        "goals": [
+          "yoshi-bonus",
+          "multiball"
+        ]
+      },
+      {
+        "id": "quick-shot",
+        "name": "Quick Shot Ramp",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Rolling the right inlane sets the left ramp flashing for Quick Shot. Unlit that ramp is nearly worthless, so the flash is the whole difference between a dead shot and a live one.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the flashing ramp to climb a ladder -- 1M, 2M, 5M, 7M, an extra ball on the fifth step, then 10M. The right ramp returns you to that same inlane, so you can run the loop straight up to the easiest extra ball the game gives up.",
+        "goals": [
+          "quick-shot"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Get Super Mario lit early: build the word, take the fast flash, and every round you play then pays double. Run the shell-and-key cycle for your first round, and work the Quick Shot ladder off the right inlane for an easy extra ball.",
+        "goals": [
+          "super-mario",
+          "shells-and-key",
+          "quick-shot"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spend rounds where they pay. The exclamation round walks up to 10M a shot, the bomb round leaves a 20M hole for the remainder of that ball, and Luigi's cave tops out at 48M. Bank Yoshi hits on the platform between rounds, and arm the video mode so you can hold the run button for 30M.",
+        "goals": [
+          "exclamation-round",
+          "bomb-round",
+          "luigi-round",
+          "video-mode-secret"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The biggest points live in multiball -- run the 1-2-3-4 sequence, start Super for three balls, and climb the castle jackpots to 40M. Beyond that sit the two endgame marks: light the castle Special by clearing all six rounds, and topple the seventh castle to rescue the princess for a replay.",
+        "goals": [
+          "multiball",
+          "special",
+          "destroy-castles"
+        ]
+      }
+    ]
+  }
+}

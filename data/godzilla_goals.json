@@ -1,0 +1,1686 @@
+{
+  "machine": "Godzilla (Stern Pinball, 2021)",
+  "defaultFx": "kaiju",
+  "shots": [
+    {
+      "id": "plunger",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Right-edge shooter lane. Full plunge feeds the right orbit around the top toward the Magna-Grab; a soft/controlled plunge settles on the upper (right) flipper; a short plunge dribbles into the pop bumper."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.14,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Outer-left lane running up the left edge and around the top."
+    },
+    {
+      "id": "left-spinner",
+      "name": "Left Spinner",
+      "type": "spinner",
+      "x": 0.16,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Spinner in the left orbit lane. Monster Rampage (R-A-M-P-A-G-E) letters, Ebirah spins, Jet Fighter 5x final, Imposter Battle release target. Risky shot early."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Wireform ramp; crossing wireform returns to the right inlane. Damages upper building floors, lights Kaiju Battles, Trains / Advance Train, Rage Combo.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.63,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Wireform ramp; crossing wireform returns to the left inlane and can feed the upper-flipper loop. Damages upper building floors, lights Kaiju Battles; hosts Bridge Attack on Pro.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "center-spinner",
+      "name": "Center Spinner (Heat Ray)",
+      "type": "spinner",
+      "x": 0.52,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Main center-lane spinner. Spins charge Heat Ray; first rip after firing Heat Ray is the Super Spinner (2x/spin +1x per conquered city)."
+    },
+    {
+      "id": "center-building",
+      "name": "Center Building Shot / U-turn",
+      "type": "ramp",
+      "x": 0.4038,
+      "y": 0.8295,
+      "trim": "all",
+      "notes": "Straight-up-the-middle shot into the building; damages the lower building floors toward Godzilla Multiball.",
+      "feeds": {
+        "shot": "upper-flipper"
+      }
+    },
+    {
+      "id": "godzilla-building",
+      "name": "Godzilla Building",
+      "type": "mech",
+      "x": 0.3655,
+      "y": 0.8247,
+      "trim": "all",
+      "notes": "Center kinetic tower with variable-height ball target/lock. Damage meter, Godzilla MB start/Super Jackpot, Destruction Jackpot collect, wizard-mode start."
+    },
+    {
+      "id": "building-elevator",
+      "name": "Building Magna-Grab Elevator",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.8,
+      "trim": "premium-le",
+      "notes": "Motorized 5-story lift that physically locks 3 balls on the roof for Godzilla Multiball and stages Magna-Grab / Destruction Jackpot. Prem/LE only."
+    },
+    {
+      "id": "bridge",
+      "name": "Bridge (breakaway ramp)",
+      "type": "ramp",
+      "x": 0.44,
+      "y": 0.66,
+      "trim": "premium-le",
+      "notes": "Collapsing 3rd ramp guarded by a molded Godzilla figure. Prem/LE only; on Pro, Bridge Attack routes through the right ramp.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "magna-grab",
+      "name": "Magna-Grab Captive Ball",
+      "type": "captive-ball",
+      "x": 0.43,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Magnet + captive/newton ball in front of the building. Bridge Attack damage shot, Magna-Grab capture (press both flippers to drop the ball for 5x loops), Imposter Battle, Titanosaurus final target."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop (Monster Select)",
+      "type": "scoop",
+      "x": 0.58,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Monster-select scoop. Starts Kaiju Battles, City Select, cashes Power-Ups, collects Allies, starts Tank Attack. Best fed via the GODZILLA 'Z' insert."
+    },
+    {
+      "id": "maser-cannon",
+      "name": "Maser Cannon",
+      "type": "standup",
+      "x": 0.1449,
+      "y": 0.4247,
+      "trim": "all",
+      "notes": "Lower-left standup on the left wall. Mystery award, Titanosaurus target, Tank/Saucer Super Jackpots."
+    },
+    {
+      "id": "pop-bumper",
+      "name": "Pop Bumper (UFO / Saucer)",
+      "type": "bumpers",
+      "x": 0.87,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Single pop bumper, upper right by the shooter-lane exit. Saucer Attack counter, Ebirah final blow, short-plunge skill shot."
+    },
+    {
+      "id": "big-loop",
+      "name": "Big Loop / Upper Loop",
+      "type": "loop",
+      "x": 0.74,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Upper loop shot from the upper (right) flipper. Loops counter, Destruction Jackpot bank shot, Rage Combo shot, 5x Magna-Grab loops.",
+      "feeds": {
+        "shot": "upper-flipper"
+      },
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "tail-whip",
+      "name": "Tail Whip Lane",
+      "type": "lane",
+      "x": 0.64,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Reverse exit off the upper flipper near the Godzilla figure ('Godzilla Wallop'). 3x super jackpot collect, Rage Combo final shot.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "shield-targets",
+      "name": "Neo-Barrier / Shield Targets",
+      "type": "target-bank",
+      "x": 0.7454,
+      "y": 0.5098,
+      "trim": "all",
+      "notes": "3-bank standups protecting Mechagodzilla. Knock all down to expose the Mechagodzilla shot; Godzilla-MB add-a-ball. On Prem/LE the bank rotates."
+    },
+    {
+      "id": "mechagodzilla-spinner",
+      "name": "Right Spinner (Mechagodzilla)",
+      "type": "spinner",
+      "x": 0.84,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Right spinner. Spins deploy Mechagodzilla and start Mechagodzilla MB; Godzilla-MB add-a-ball; Mecha Super Jackpot build/collect."
+    },
+    {
+      "id": "mechagodzilla-toy",
+      "name": "Mechagodzilla Toy / Ball-Lock",
+      "type": "mech",
+      "x": 0.7727,
+      "y": 0.68,
+      "trim": "premium-le",
+      "notes": "Rotating toy with magnetic-chest ball-lock behind the shields; stages Mechagodzilla Multiball. Prem/LE only."
+    },
+    {
+      "id": "power-line-targets",
+      "name": "Power Line / Tesla Targets",
+      "type": "standup",
+      "x": 0.52,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Three blue standups flanking the building. Complete for POWER / Tesla Strike, Magna-Grab qualify, Titanosaurus. Hit left-to-right in Titanosaurus."
+    },
+    {
+      "id": "right-tesla-target",
+      "name": "Right Tesla Target",
+      "type": "standup",
+      "x": 0.69,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Standup beside the right ramp."
+    },
+    {
+      "id": "godzilla-lane-inserts",
+      "name": "GODZILLA Lane Inserts ('the Z')",
+      "type": "lane",
+      "x": 0.4197,
+      "y": 0.072,
+      "trim": "all",
+      "notes": "Lit inserts above the flippers spelling GODZILLA; the 'Z' aligns with and feeds the scoop."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Left return; lights when Heat Ray is charged to feed the Rage Combo; secret skill-shot plunge."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Right return; passing it (after 3 Powerlines) lights Magna-Grab."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.1462,
+      "y": 0.1779,
+      "trim": "all",
+      "notes": "Far lower-left; Mothra Save ball-saver when Mothra ally is collected."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Far lower-right; Oxygen Destroyer last-ball save."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "standup",
+      "x": 0.29,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Above/left of the left flipper."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "standup",
+      "x": 0.71,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Above/right of the right flipper."
+    },
+    {
+      "id": "left-building-uturn",
+      "name": "Left Building U-turn",
+      "type": "lane",
+      "x": 0.4,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "U-turn shot just left of the building."
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper (Right) Flipper",
+      "type": "flipper",
+      "x": 0.68,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Mini upper flipper on the right at ~mid-height; shoots the Big Loop and Tail Whip. A soft plunge settles the ball here."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6941,
+      "y": 0.0026,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "bumper-skill-shot",
+      "title": "Bumper Skill Shot",
+      "category": "skillshot",
+      "summary": "The safe, easy plunge: a short plunge that dribbles into the pop bumper. Low value, but each unique skill-shot type you make raises the multiplier on all of them.",
+      "difficulty": 1,
+      "reward": "~750K x unique skill shots + ~5 sec ball save",
+      "steps": [
+        {
+          "shot": "pop-bumper",
+          "action": "Short, soft plunge into the pop bumper",
+          "detail": "Ease off so the ball dribbles into the bumper instead of reaching the top rollovers or looping the orbit — banks the standard skill shot value and ball-save time."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-left-spinner",
+      "title": "Skill Shot — Left Spinner",
+      "category": "skillshot",
+      "summary": "The highest-value regular skill shot: a full plunge around the orbit behind the upper flipper into the left spinner lane.",
+      "difficulty": 2,
+      "reward": "5M + 1M x unique skill shots, plus 8 sec ball save",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Full plunge into the left spinner lane",
+          "detail": "Hard plunge that travels the orbit behind the upper flipper into the left spinner lane — a complete skill shot on its own. Reflexing an immediate follow-up shot into the scoop instead banks the bigger Super Secret award."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-secret-skill-shot",
+      "title": "Super Secret Skill Shot",
+      "category": "skillshot",
+      "summary": "The single best opener if you can execute it: a full plunge into the left spinner lane, then an immediate reflex to the scoop for ~10M, 2 Power-Ups, and an instant Ally.",
+      "difficulty": 3,
+      "reward": "~10M + 2 Power-Ups + collect an Ally immediately; boosts future secret skill shots by +2M",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Full plunge into the left spinner lane",
+          "detail": "Hard plunge that travels the orbit behind the upper flipper — on its own this banks the Left Spinner skill shot (~5M); keep the flipper reflex ready for the follow-up."
+        },
+        {
+          "shot": "scoop",
+          "action": "Immediately reflex the ball into the scoop",
+          "detail": "Time the live catch off the spinner lane straight into the scoop to bank the Super Secret award instead."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "rage-combo",
+      "title": "Rage Combo",
+      "category": "combo",
+      "summary": "The Heat-Ray-fed five-shot combo. Charge Heat Ray to level 3 to light the left inlane, roll it to arm the right ramp, then run right ramp - left ramp - center spinner - upper loop - tail whip.",
+      "difficulty": 3,
+      "reward": "~20M on the final tail whip + +1x Destruction-Jackpot multiplier and lights the building to collect; 3 shots in lights an Ally",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Spin the center spinner to charge Heat Ray to level 3",
+          "detail": "Charge level 3 is what lights the left inlane."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll through the lit left inlane",
+          "detail": "Passing it lights the right ramp to start Rage Combo."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Combo shot 1 of 5 - start the chain."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Combo shot 2, taken off the right-ramp return."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Shoot the center spinner",
+          "detail": "Combo shot 3; lights an Ally."
+        },
+        {
+          "shot": "big-loop",
+          "action": "Shoot the upper loop off the upper flipper",
+          "detail": "Combo shot 4 - feed the ball to the upper flipper first."
+        },
+        {
+          "shot": "tail-whip",
+          "action": "Finish on the Tail Whip",
+          "detail": "Combo shot 5: ~20M, +1x Destruction Jackpot, lights the building to collect."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "magna-grab-5x-loops",
+      "title": "Magna-Grab into 5x Loops",
+      "category": "combo",
+      "summary": "Complete the three Powerline targets, pass the right inlane to light Magna-Grab, let the magnet catch the ball, then press both flippers to release it into a window of 5x-value loops.",
+      "difficulty": 2,
+      "reward": "5x-value loops after the drop",
+      "steps": [
+        {
+          "shot": "power-line-targets",
+          "action": "Complete all three Power Line targets",
+          "detail": "This lights the right inlane."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Pass the lit right inlane",
+          "detail": "Passing it lights Magna-Grab."
+        },
+        {
+          "shot": "magna-grab",
+          "action": "Shoot into the Magna-Grab; the magnet catches the ball",
+          "detail": "The magnet holds the ball on its own — take your time and line up the loop."
+        },
+        {
+          "shot": "big-loop",
+          "action": "Press both flippers to drop the ball, then loop",
+          "detail": "Pressing both flippers cuts the magnet and drops the ball to the flipper; rip loops immediately for 5x."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "imposter-battle",
+      "title": "Imposter Battle",
+      "category": "combo",
+      "summary": "Instead of dropping the Magna-Grab ball for loops, time the release into the left spinner for one of four escalating awards - up to 250M on the fourth.",
+      "difficulty": 3,
+      "reward": "Escalating in order: 15M + Ally, 20M + Annihilation%, 30M + Destruction-Jackpot x, 250M",
+      "steps": [
+        {
+          "shot": "power-line-targets",
+          "action": "Complete the three Power Line targets",
+          "detail": "Lights the right inlane toward Magna-Grab."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Pass the lit right inlane",
+          "detail": "Lights Magna-Grab so the magnet will capture."
+        },
+        {
+          "shot": "magna-grab",
+          "action": "Let the magnet capture the ball",
+          "detail": "The magnet holds the ball for you — set your aim, then press both flippers to drop it."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Time the release into the left spinner",
+          "detail": "Drop and steer into the left spinner to collect the next Imposter award in sequence."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "destruction-jackpot-collect",
+      "title": "Destruction Jackpot Collect",
+      "category": "combo",
+      "summary": "The main big-points bank: with the Destruction Jackpot lit, shoot the building to stage it, then shoot the upper loop to bank the value times its multiplier.",
+      "difficulty": 2,
+      "reward": "Base ~5M + 1M per lit Monster-Monitor insert + temp base x multiplier; also +1% Annihilation and lights the left spinner for a Monster Rampage letter",
+      "steps": [
+        {
+          "shot": "godzilla-building",
+          "action": "Shoot the building when the Destruction Jackpot is lit",
+          "detail": "The building holds/stages the ball (on Prem/LE the elevator lifts it ~9s)."
+        },
+        {
+          "shot": "big-loop",
+          "action": "Shoot the upper loop to bank it",
+          "detail": "The loop is the actual collect - do it before the stage timer expires."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "super-train-loops",
+      "title": "Super Train Loops (Prem/LE)",
+      "category": "combo",
+      "summary": "The train-wreck loop mode: light Advance Train at the left ramp (via scoop, reverse-building, or captive ball), then bank trains on the left ramp. On Prem/LE the 5th train starts Super Train Loops.",
+      "difficulty": 3,
+      "reward": "Prem/LE: Super Train Loops mini-mode (Pro: 5 Trains = 50M); 10 Trains = +1x Destruction Jackpot",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop to light Advance Train",
+          "detail": "Scoop, reverse-building, or the captive ball (when Attack Bridge is lit) all light Advance Train at the left ramp."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Bank the left ramp for a Train",
+          "detail": "Each lit left ramp = 1 Train (~2M +200K each). Repeat to hit the thresholds."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep looping the left ramp to 5 Trains",
+          "detail": "On Prem/LE the 5th train opens Super Train Loops; then loop a single ramp repeatedly during the timed mode."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "godzilla-multiball",
+      "title": "Godzilla Multiball",
+      "category": "multiball",
+      "summary": "The cornerstone multiball and mandatory progress. Damage the building to 0% integrity with ramps (upper floors) and building shots (lower floors), then start it at the building.",
+      "difficulty": 2,
+      "reward": "3-ball; six jackpots light the Super Jackpot at the building; scoring the Super qualifies the Monster Zero mini-wizard",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to damage the upper floors",
+          "detail": "Ramps drop the upper-floor integrity; alternate ramps to keep the loop safe.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to keep damaging the building",
+          "detail": "The damage meter fills as balls cross the building.",
+          "link": "none"
+        },
+        {
+          "shot": "center-building",
+          "action": "Shoot the center building shot to damage the lower floors",
+          "detail": "Direct building shots take the lower floors to 0%.",
+          "link": "none"
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Shoot the building to start",
+          "detail": "Pro: at 0% the magnet holds then plunge-releases. Prem/LE: lock 3 balls (shoot the building three times); the third lock starts the 3-ball MB."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mechagodzilla-multiball",
+      "title": "Mechagodzilla Multiball",
+      "category": "multiball",
+      "summary": "The second pillar. Spin the right spinner to deploy Mechagodzilla (~20 spins), disable the Neo-Barrier by knocking down the three shield targets, then start at the right spinner.",
+      "difficulty": 3,
+      "reward": "3-ball; ramps + building jackpots, then a timed ~20s Super Jackpot window; scoring the Super qualifies Terror of Mechagodzilla",
+      "steps": [
+        {
+          "shot": "mechagodzilla-spinner",
+          "action": "Spin the right spinner to deploy Mechagodzilla",
+          "detail": "~20 spins the first time, +10 each subsequent deploy."
+        },
+        {
+          "shot": "shield-targets",
+          "action": "Knock down all three Neo-Barrier / shield targets",
+          "detail": "Disabling the barrier exposes the Mechagodzilla shot (Prem/LE bank rotates to reveal the spinner/jump ramp)."
+        },
+        {
+          "shot": "mechagodzilla-spinner",
+          "action": "Shoot the right spinner to start",
+          "detail": "Prem/LE stages it via the jump ramp into the Mechagodzilla toy ball-lock."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "bridge-attack-multiball",
+      "title": "Bridge Attack Multiball",
+      "category": "multiball",
+      "summary": "Rack up switch hits (~50) to light Bridge Attack at the Magna-Grab captive ball; four attacks destroy the bridge, then 'Bridge Out!' flashes on either ramp to start.",
+      "difficulty": 2,
+      "reward": "2-ball; three jackpots light double jackpots at Magna-Grab, then a ~15s Super Jackpot (up to 6x per right-ramp shot); first two Supers add a ball",
+      "steps": [
+        {
+          "shot": "magna-grab",
+          "action": "Hit the Magna-Grab captive ball to attack the bridge",
+          "detail": "~50 switch hits light Bridge Attack here; each attack removes 25% integrity - four attacks destroy the bridge."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot a ramp when 'Bridge Out!' flashes to start",
+          "detail": "Either ramp starts it. On Pro, Bridge Attack routes specifically through the right ramp."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "saucer-attack-multiball",
+      "title": "Saucer Attack Multiball",
+      "category": "multiball",
+      "summary": "Feed the pop bumper to destroy saucers; six destroyed arms the multiball so the next pop-bumper hit in normal play starts it. Each Saucer Jackpot adds a ball.",
+      "difficulty": 2,
+      "reward": "Grows to a bigger ball count; each Saucer Jackpot (~10x base) adds a ball; 3 saucers = Extra Ball earlier",
+      "steps": [
+        {
+          "shot": "pop-bumper",
+          "action": "Roll through / hit the pop bumper to light Saucer Attack",
+          "detail": "5 hits + 3 per saucer destroyed lights the ~10s Saucer Attack window."
+        },
+        {
+          "shot": "pop-bumper",
+          "action": "Keep working the pop bumper to destroy 6 saucers",
+          "detail": "Entering via a right-return/alley pass counts as 2 saucers - faster."
+        },
+        {
+          "shot": "pop-bumper",
+          "action": "Hit the pop bumper again in normal play to start the MB",
+          "detail": "With 6 saucers destroyed, the next bumper hit launches the multiball."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "kaiju-gigan",
+      "title": "Kaiju Battle: Gigan",
+      "category": "mode",
+      "summary": "The standard opening battle. Shoot either ramp twice to light the scoop, start Gigan, then make eight ramp shots in any combination - every shot doubles as building damage.",
+      "difficulty": 1,
+      "reward": "Conquers the city + advances Godzilla Multiball; alternating opposite ramps = combo 2x, final combo = 4x",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a ramp",
+          "detail": "Either ramp twice lights the first Kaiju Battle at the scoop."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the other ramp",
+          "detail": "Two ramp shots qualify the battle.",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop and select Gigan",
+          "detail": "Use flippers + action button at the scoop to pick Gigan."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Make eight ramp shots (either ramp, any mix)",
+          "detail": "Alternate ramps for the 2x combo; the loop is the safest path on the game and pre-loads Godzilla MB."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "kaiju-titanosaurus",
+      "title": "Kaiju Battle: Titanosaurus",
+      "category": "mode",
+      "summary": "The precision battle - dangerous on its own. Hit five flashing targets strictly in sequence: the three Powerlines left-to-right, then the Maser Cannon, then the Magna-Grab captive ball.",
+      "difficulty": 3,
+      "reward": "Escalating values 4M -> 7M -> 10M -> 15M -> 20M; conquers the city on the win",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start Titanosaurus at the scoop",
+          "detail": "Qualify with two ramp shots, then select Titanosaurus."
+        },
+        {
+          "shot": "power-line-targets",
+          "action": "Hit the three Power Line targets left-to-right",
+          "detail": "Order matters - the flashing sequence starts here."
+        },
+        {
+          "shot": "maser-cannon",
+          "action": "Hit the Maser Cannon",
+          "detail": "Fourth target in the sequence."
+        },
+        {
+          "shot": "magna-grab",
+          "action": "Hit the Magna-Grab captive ball",
+          "detail": "Final target - closes out the battle."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "kaiju-ebirah",
+      "title": "Kaiju Battle: Ebirah",
+      "category": "mode",
+      "summary": "The spinner battle. Rack up spins on the three spinners (left, right, center), then deliver the final blow with a pop-bumper shot. Low time pressure but the left spinner is risky.",
+      "difficulty": 2,
+      "reward": "Each completed spin set scores millions; conquers the city; final blow at the pop bumper",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start Ebirah at the scoop",
+          "detail": "Qualify with two ramp shots, then select Ebirah."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rack up spins on the center spinner",
+          "detail": "~40 center spins needed - the safest spinner to feed.",
+          "link": "none"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Add left-spinner spins",
+          "detail": "~15 left spins; watch for the drain-prone reject.",
+          "link": "none"
+        },
+        {
+          "shot": "mechagodzilla-spinner",
+          "action": "Add right-spinner spins",
+          "detail": "~15 right spins to finish the sets.",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumper",
+          "action": "Deliver the final blow at the pop bumper",
+          "detail": "The pop-bumper shot ends the battle."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "jet-fighter-attack",
+      "title": "Jet Fighter Attack",
+      "category": "mode",
+      "summary": "A low-drain warm-up mode. Collect six missiles at the flashing inlanes to start, then shoot the roving red-arrow hurry-ups; the fifth shot lights the left spinner for a 5x final.",
+      "difficulty": 2,
+      "reward": "~500K+ per jet; 10 Jet Fighters = Extra Ball; 15 = +1x Destruction Jackpot; thresholds light Allies",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Collect missiles at the flashing inlanes",
+          "detail": "Pass both inlanes to gather the six missiles that start the mode."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Finish collecting the six missiles",
+          "detail": "Six missiles start Jet Fighter Attack.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the roving red-arrow hurry-ups",
+          "detail": "Each lit shot destroys jets; values escalate from ~1M."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Take the fifth shot at the left spinner for the 5x final",
+          "detail": "The fifth hurry-up lights the left spinner for a 5x finish."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "heat-ray-super-spinner",
+      "title": "Heat Ray & Super Spinner",
+      "category": "multiplier",
+      "summary": "Charge Heat Ray on the center spinner, hold the action button to fill the meter, then release to collect everything lit and arm the Super Spinner - the first rip scores 2x/spin +1x per conquered city.",
+      "difficulty": 2,
+      "reward": "Heat Ray collects all currently-lit shots; Super Spinner = 2x/spin +1x per conquered city (Power-Up #7 adds +2x)",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Spin the center spinner to charge Heat Ray",
+          "detail": "~60 spins for the first charge, +60 each subsequent. Hold the action button to fill the meter to 100%, then release to fire and collect all lit shots."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip the center spinner again for the Super Spinner",
+          "detail": "The first rip after firing Heat Ray scores 2x/spin, +1x per conquered city - increase it by conquering cities and via Power-Up #7."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "rodan-playfield-2x",
+      "title": "Rodan - 2x Playfield",
+      "category": "multiplier",
+      "summary": "The game's only whole-playfield multiplier. Light an Ally (halfway through any Kaiju Battle, Super Secret skill shot, Jet-Fighter milestones), cycle to Rodan at the scoop, and collect for 2x scoring.",
+      "difficulty": 2,
+      "reward": "2x playfield scoring for ~60s (75s via Power-Up #6); collecting Rodan again extends the timer",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Play a Kaiju Battle to its halfway point to light an Ally",
+          "detail": "Halfway through any battle lights an Ally at the scoop (also via Super Secret skill shot, Jet-Fighter kills, loop/combo streaks)."
+        },
+        {
+          "shot": "scoop",
+          "action": "Cycle to Rodan with the right flipper and shoot the scoop",
+          "detail": "Right flipper cycles the unlit Ally to Rodan, then shoot the scoop to collect 2x. Overlap it with a Destruction Jackpot collect or a stacked multiball."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "planet-x-multiball",
+      "title": "Planet X Multiball",
+      "category": "wizard",
+      "summary": "The major mid-wizard. Play all four city objectives at least once, across as many cities as it takes - a Tier 2 Kaiju Battle for RAID, Tesla Strike for POWER, Bridge Attack for BRIDGE and Tank Attack for TANKS - and Planet X appears as a City-Select choice.",
+      "difficulty": 3,
+      "reward": "3-ball multiball seeded by an Earth Bonus; five waves ending in a scoop hurry-up worth 175M+; a path into Monster Island Madness via its Victory Challenge",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start a Kaiju Battle to bank the RAID objective",
+          "detail": "RAID means reaching a Tier 2 battle: start a Tier 1 battle, change city, get at least halfway through a Tier 1 battle there, then pick the Tier 2 monster at the scoop."
+        },
+        {
+          "shot": "power-line-targets",
+          "action": "Complete the Power Line targets for the POWER objective",
+          "detail": "Completing Tesla/Powerlines banks POWER."
+        },
+        {
+          "shot": "magna-grab",
+          "action": "Destroy the bridge for the BRIDGE objective",
+          "detail": "Bridge Attack at the Magna-Grab captive ball banks BRIDGE."
+        },
+        {
+          "shot": "scoop",
+          "action": "Start Tank Attack for the TANKS objective, then select Planet X",
+          "detail": "With all four objectives done across any cities, Planet X appears at City Select - shoot the scoop and pick it to start."
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "king-of-the-monsters",
+      "title": "King of the Monsters",
+      "category": "wizard",
+      "summary": "The final wizard mode. Qualify by playing Monster Zero or Terror of Mechagodzilla, playing Planet X, and reaching Power-Up level 8 to pick Light King of the Monsters. Start at the building.",
+      "difficulty": 3,
+      "reward": "Part 1: fight all four Tier-1 monsters at once; Part 2: 4-ball MB ending in the Ghidorah Bounty = Part-1 value x balls in play (up to 4x)",
+      "steps": [
+        {
+          "shot": "godzilla-building",
+          "action": "Start King of the Monsters at the building",
+          "detail": "After qualifying (a mini-wizard + Planet X + Power-Up level 8 'Light KOTM'), the building starts Part 1 - all four monsters lit at once."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Light every shot in Part 2's multiball",
+          "detail": "Part 2 needs multiple hits per shot (center spinner 7, building 5, left ramp 3, etc.) with Mothra + Anguirus active."
+        },
+        {
+          "shot": "scoop",
+          "action": "Collect the Ghidorah Bounty at the scoop",
+          "detail": "All shots lit lights the scoop for the bounty = Part-1 value x balls still in play (up to 4x)."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "opener-gigan-ramp-line",
+      "title": "Best Opener: Gigan Ramp Line",
+      "category": "strategy",
+      "summary": "The consensus opening across every source. Plunge for a skill shot, shoot both ramps to light the scoop, start Gigan, then keep looping ramps - the single safest path that also pre-loads Godzilla Multiball.",
+      "difficulty": 1,
+      "reward": "Completed Gigan battle + heavy Godzilla-MB progress with almost no drain-prone shots",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Plunge for a skill shot for the ball-save cushion",
+          "detail": "Take the left-spinner-lane full plunge (~5M + 8s save), or the Super Secret if you have the hands."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Ramps are the safest shots and damage the building's upper floors."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Two ramp shots light the scoop."
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop and select Gigan",
+          "detail": "Aim for the GODZILLA 'Z' insert for a reliable scoop feed; pick Gigan."
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Loop ramps to finish Gigan, then start Godzilla MB",
+          "detail": "Eight ramp shots close Gigan and take the building to 0%; then shoot the building to start Godzilla Multiball."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "first-30-seconds-beginner",
+      "title": "First 30 Seconds (Beginner)",
+      "category": "strategy",
+      "summary": "A beginner's opening minute: land a skill shot for the save window, run ramp-ramp-scoop into Gigan, damage the building, and grab Mothra to insure the left outlane.",
+      "difficulty": 1,
+      "reward": "A safe ball-save cushion, Godzilla-MB progress, and left-outlane insurance",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Land any skill shot",
+          "detail": "Variety over value early - each new type raises the multiplier on all of them."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Get used to the ramp timing - the same ramps drive Kaiju Battles and many modes."
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop and start Gigan",
+          "detail": "Ramp-ramp lights the scoop; pick Gigan for the safe loop battle."
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Damage the building toward Godzilla Multiball",
+          "detail": "Ramps and the building shot take integrity to 0%, then shoot the building to start the MB."
+        },
+        {
+          "shot": "scoop",
+          "action": "Cycle to Mothra and collect it at the scoop",
+          "detail": "Grab Mothra first to light the left-outlane save; keep Rodan handy for your first stack."
+        }
+      ],
+      "fx": "moth"
+    },
+    {
+      "id": "cash-before-changing-cities",
+      "title": "Cash the Destruction Jackpot Before Changing Cities",
+      "category": "strategy",
+      "summary": "Changing city wipes the temporary base value the Destruction Jackpot has built up, so build it through battles, collect it at the building and bank it on the upper loop first - then change city, since conquering a high-value city like London adds its own DJ bonus on top.",
+      "difficulty": 2,
+      "reward": "Banks the fully-built Destruction Jackpot before the multiplier resets; conquering London afterward adds its own DJ bonus",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Build the Destruction Jackpot multiplier via battles and kills",
+          "detail": "Winning Kaiju battles, saucer/Jet-Fighter thresholds, and combos each add +1x - build it up on the current city."
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Shoot the building to stage the Destruction Jackpot",
+          "detail": "With the DJ lit, the building holds/stages the ball."
+        },
+        {
+          "shot": "big-loop",
+          "action": "Bank it on the upper loop before you touch City Select",
+          "detail": "The loop is the actual collect - cash the full value x multiplier now, because changing city resets the temp base and would zero this jackpot."
+        },
+        {
+          "shot": "scoop",
+          "action": "Only now change city at the scoop",
+          "detail": "With the jackpot already banked, switch cities. Conquering a high-value city like London awards its own +DJ bonus - that bonus comes from conquering London, not from switching to it before the collect."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "kaiju-battle-sweep",
+      "title": "Sweep Every Kaiju Battle",
+      "category": "mode",
+      "summary": "Win the whole first-tier monster roster in one game: two ramp shots qualify each battle at the scoop, then run each monster's own pattern - Gigan's eight ramp shots, Titanosaurus's strict target order, Ebirah's spinner sets and Megalon's roving purple shot - before moving to the next city.",
+      "difficulty": 3,
+      "reward": "Every battle won conquers the city and stacks Destruction-Jackpot multiplier plus Allies; a full sweep is also the backbone of wizard-mode progress",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot both ramps to qualify the next battle",
+          "detail": "Only the first battle of a game lights off one ramp twice. Every battle after that needs the left ramp and the right ramp, and the scoop only re-arms once you have traveled to a fresh city, since each city gives up exactly one battle."
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop and pick an unbeaten monster",
+          "detail": "Flippers cycle the choices at the scoop; take the safest one left rather than the highest value."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Win the ramp-based battle with eight ramp shots",
+          "detail": "Alternating ramps doubles the combo value and damages the building at the same time."
+        },
+        {
+          "shot": "power-line-targets",
+          "action": "Start the strict-sequence battle at the three Power Line targets",
+          "detail": "Left to right in order - an out-of-order hit does nothing."
+        },
+        {
+          "shot": "maser-cannon",
+          "action": "Continue the sequence at the Maser Cannon",
+          "detail": "Fourth target in the chain; take it from a settled ball, not a live bounce."
+        },
+        {
+          "shot": "magna-grab",
+          "action": "Close the sequence on the captive ball",
+          "detail": "Final target of that battle - this is the win."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Feed the center spinner for the spinner battle's spin count",
+          "detail": "The center spinner is the safest source of spins; add left and right spinner rips only when you have a clean look."
+        },
+        {
+          "shot": "pop-bumper",
+          "action": "Finish the spinner battle at the pop bumper",
+          "detail": "The bumper shot lands the final blow, then go back to the ramps and qualify the next monster."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "monster-zero-mini-wizard",
+      "title": "Monster Zero Mini-Wizard",
+      "category": "wizard",
+      "summary": "The reward for finishing Godzilla Multiball properly: collect all six multiball jackpots, cash the super jackpot at the building, then start the mini-wizard it qualifies.",
+      "difficulty": 3,
+      "reward": "Mini-wizard mode plus one of the two qualifiers for the final wizard mode",
+      "steps": [
+        {
+          "shot": "godzilla-building",
+          "action": "Start Godzilla Multiball at the building",
+          "detail": "Building integrity has to be at zero first - ramps take the upper floors, the building shot takes the lower ones."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect the lit multiball jackpots on the ramps",
+          "detail": "Ramps are the highest-percentage jackpot shots while three balls are loose."
+        },
+        {
+          "shot": "center-building",
+          "action": "Take the building-side jackpots to finish all six",
+          "detail": "Six jackpots is what lights the super jackpot; don't chase anything else until they are done.",
+          "link": "none"
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Shoot the building for the super jackpot",
+          "detail": "Cashing the super is what qualifies the mini-wizard - get it before you are back to one ball."
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Start the qualified mini-wizard when it is lit",
+          "detail": "Banking the super only qualifies it. Reach Power-Up level four (or eight), take Light Monster Zero at the scoop, then shoot the building to begin the mode."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "terror-of-mechagodzilla",
+      "title": "Terror of Mechagodzilla Mini-Wizard",
+      "category": "wizard",
+      "summary": "The Mechagodzilla side of the same path: start its multiball, work the jackpots, cash the timed super jackpot on the Mechagodzilla shot, then play the mini-wizard it qualifies.",
+      "difficulty": 3,
+      "reward": "Mini-wizard mode plus the second qualifier route toward the final wizard mode",
+      "steps": [
+        {
+          "shot": "mechagodzilla-spinner",
+          "action": "Spin the right spinner to deploy Mechagodzilla",
+          "detail": "The deploy count rises every time, so bank spins whenever the shot is safe."
+        },
+        {
+          "shot": "shield-targets",
+          "action": "Drop all three shield targets to disable the barrier",
+          "detail": "With the barrier down the Mechagodzilla shot is exposed and the multiball can start."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the multiball jackpots on the ramps and building",
+          "detail": "Same principle as the other multiball: clear the lit shots before the super window opens."
+        },
+        {
+          "shot": "tail-whip",
+          "action": "Cash the super jackpot in the timed window",
+          "detail": "The super window is short - roughly twenty seconds - so set up the shot before you trigger it."
+        },
+        {
+          "shot": "godzilla-building",
+          "action": "Start the qualified mini-wizard when it is lit",
+          "detail": "The super only qualifies the mode. Reach Power-Up level four (or eight), take Light Terror of Mechagodzilla at the scoop, then shoot the building to start it."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "attract-mode-game-mode-menu",
+      "title": "Attract-Mode Game Mode Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Godzilla keeps an alternate-play menu behind its attract screen that almost nobody demonstrates on location. While the machine sits idle between games, holding both flippers opens a list whose contents depend on how that particular machine is equipped.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both the left and right flipper buttons while the machine is in attract mode",
+        "Keep holding until the Game Mode menu appears on the display",
+        "Choose the mode you want, then start your game",
+        "King of the Monsters Time Attack only appears on machines fitted with the Stern Godzilla topper — it opens with every Tier 1 Kaiju battle running at once on a single ball, then escalates into a four-ball multiball, all against a five-minute clock",
+        "DJ Mixer turns the machine into a soundtrack jukebox and is listed when the machine is set to free play"
+      ],
+      "reward": "Access to King of the Monsters Time Attack — a two-part timed challenge ending in a four-ball multiball, on topper-equipped machines only — plus a DJ Mixer jukebox when the machine is set to free play"
+    },
+    {
+      "id": "godzilla-powerup-ladder",
+      "title": "The Godzilla Power-Up Ladder",
+      "category": "progression",
+      "summary": "Nearly everything you accomplish drips energy into a single meter. Fill it and the scoop lights for a Power-Up. Shoot the scoop and you are handed two awards to choose between, and whichever one you take stays switched on until the game ends. The first three rungs are cheap, then the price locks at six and never comes back down.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Fill the meter with ordinary progress. Energy arrives for starting Bridge Attack, Tank Attack, Saucer Attack and Mechagodzilla multiballs, for beating a tier-1 monster (two units the first time you win one, one on a repeat), for scoring a Destruction Jackpot, for entering a new city, for chaining loops, for racking up tail whips, and for finishing Jet Fighter Attack.",
+        "Cash out at the scoop once the Power-Up light is on. The first award costs two units, the second costs three, the third costs four, and every award from the fourth onward costs six.",
+        "Pick from the pair on offer. Two awards are presented together as a left option and a right option, and you take one with the flippers. Level one is the odd one out: its pair is drawn at random from a wider list, though competition settings pin it to a Godzilla Multiball jackpot boost against a Mechagodzilla Multiball jackpot boost.",
+        "Bank a multiball super jackpot before you go hunting for level four. That rung will not light at all until you have scored a super jackpot in one of the two big multiballs. The Godzilla Multiball super jackpot qualifies Monster Zero; the Mechagodzilla Multiball super jackpot qualifies Terror of Mechagodzilla.",
+        "Level four hands you a mini-wizard mode, and level eight lights whichever of the two you did not get there.",
+        "Know which mid-ladder rungs are worth climbing for. Level six offers 15 extra seconds on Rodan against doubling Magna-Grab. Level seven offers a Super Spinner boost against doubling loop value. Level nine offers +2x on the Destruction Jackpot against lighting every ally at once."
+      ],
+      "reward": "Permanent scoring, timer and multiplier boosts, plus the two mini-wizard modes at levels four and eight"
+    },
+    {
+      "id": "godzilla-city-conquest",
+      "title": "Conquering Cities for Permanent Perks",
+      "category": "progression",
+      "summary": "The four cities are more than backdrops. Beat a city's tier-1 monster before you move on and it stays under your control for the rest of the game, paying a perk found nowhere else plus a permanent bonus multiplier. Move on with that battle unfinished and the monster keeps the city for good. The running count of cities you hold then pays out again on a ladder of its own.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Attempt a Kaiju Battle to open City Select at the right scoop. Every game begins in Tokyo, with New York, London and Paris as the other three destinations.",
+        "Finish the tier-1 battle before you travel. Winning it puts the city under your control and immediately pays that city's perk along with a permanent +1 bonus multiplier. Change cities with the battle unfinished and the monster holds that city for the remainder of the game.",
+        "Learn what each city is worth. Tokyo adds one percent to the Annihilation Bonus, New York adds 2M to the Saucer Attack base value, Paris adds 500K to loop value, and London raises the Destruction Jackpot.",
+        "Stack cities for the bigger awards. The first pays 5M and three units of Power-Up energy. The second pays 10M and an extra ball. The third pays 20M and shortens the action-button hold the Heat Ray needs. The fourth pays 40M and adds 15M to the Destruction Jackpot."
+      ],
+      "reward": "A unique perk and a permanent +1 bonus multiplier per city, plus escalating awards at one, two, three and four cities"
+    },
+    {
+      "id": "godzilla-allies",
+      "title": "Recruiting Allies and Choosing Their Perks",
+      "category": "progression",
+      "summary": "Three allies wait at the scoop, and you decide which one turns up. Each carries a different perk, so the choice is really about what your ball needs right now: a scoring doubler, an outlane save, or an add-a-ball held in reserve for the next multiball.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Light Summon Ally through normal progress. Getting halfway through a tier-1 Kaiju Battle is the main route, and six consecutive loops, jet fighter kill thresholds, a Super Secret Skill Shot, Rage Combo progress and a Mystery Award will also light it.",
+        "Choose the ally before you shoot. Trap the ball on the left flipper to line up the scoop, tap the right flipper to rotate the lit insert through the allies you have not collected yet, then shoot the scoop.",
+        "Rodan is 2x playfield scoring for 60 seconds. Hold it for a mode or a multiball that is actually worth doubling.",
+        "Mothra arms a ball save on the left outlane. It only comes into play when no other ball saver is already running.",
+        "Anguirus lights the action button to add a ball during any multiball.",
+        "Two Power-Up rungs feed this system: level six adds 15 seconds to Rodan, and level nine lights all three allies at once."
+      ],
+      "reward": "Your pick of 2x playfield scoring, a left outlane save, or an add-a-ball during multiball"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-monster-down",
+      "title": "First Monster Down",
+      "desc": "Win a single Kaiju Battle from start to finish on one ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "kaiju-gigan"
+    },
+    {
+      "id": "skill-shot-sampler",
+      "title": "Skill Shot Sampler",
+      "desc": "Land skill shots of two different types across a game so the shared skill-shot multiplier climbs.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bumper-skill-shot"
+    },
+    {
+      "id": "level-the-building",
+      "title": "Level the Building",
+      "desc": "Take the building to zero integrity and start Godzilla Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "godzilla-multiball"
+    },
+    {
+      "id": "clear-the-skies",
+      "title": "Clear the Skies",
+      "desc": "Destroy six saucers at the pop bumper and start Saucer Attack Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "saucer-attack-multiball"
+    },
+    {
+      "id": "bridge-comes-down",
+      "title": "Bridge Comes Down",
+      "desc": "Land four bridge attacks at the captive ball to destroy the bridge, then start Bridge Attack Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bridge-attack-multiball"
+    },
+    {
+      "id": "barrier-breached",
+      "title": "Barrier Breached",
+      "desc": "Deploy Mechagodzilla with the right spinner, drop all three shield targets, and start Mechagodzilla Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mechagodzilla-multiball"
+    },
+    {
+      "id": "heat-ray-charged",
+      "title": "Heat Ray Charged",
+      "desc": "Fill the Heat Ray meter to full on the center spinner and fire it to sweep every lit shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "heat-ray-super-spinner"
+    },
+    {
+      "id": "everything-counts-double",
+      "title": "Everything Counts Double",
+      "desc": "Light an Ally and collect Rodan at the scoop to run the whole playfield at doubled scoring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rodan-playfield-2x"
+    },
+    {
+      "id": "ten-jets-one-ball",
+      "title": "Jets Earn a Ball",
+      "desc": "Shoot down ten jet fighters in a game to collect the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "jet-fighter-attack"
+    },
+    {
+      "id": "secret-opener",
+      "title": "Secret Opener",
+      "desc": "Make the hidden plunge award: full plunge through the left spinner lane straight into the scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-secret-skill-shot"
+    },
+    {
+      "id": "jackpot-cashed",
+      "title": "Jackpot Cashed",
+      "desc": "Stage the Destruction Jackpot at the building and bank it on the upper loop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "destruction-jackpot-collect"
+    },
+    {
+      "id": "five-shot-rampage",
+      "title": "Five-Shot Rampage",
+      "desc": "Complete the full five-shot Rage Combo chain and finish it on the tail whip.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "rage-combo"
+    },
+    {
+      "id": "monster-roster-cleared",
+      "title": "Monster Roster Cleared",
+      "desc": "Win every first-tier Kaiju Battle the scoop offers in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "kaiju-battle-sweep"
+    },
+    {
+      "id": "reach-monster-zero",
+      "title": "Reach Monster Zero",
+      "desc": "Score the Godzilla Multiball super jackpot and play the mini-wizard mode it qualifies.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "monster-zero-mini-wizard"
+    },
+    {
+      "id": "reach-mecha-terror",
+      "title": "Reach Mecha Terror",
+      "desc": "Score the Mechagodzilla Multiball super jackpot and play the mini-wizard mode it qualifies.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "terror-of-mechagodzilla"
+    },
+    {
+      "id": "off-world-multiball",
+      "title": "Off-World Multiball",
+      "desc": "Bank all four city objectives, unlock Planet X at city select, and start its multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "planet-x-multiball"
+    },
+    {
+      "id": "crown-the-king",
+      "title": "Crown the King",
+      "desc": "Meet every qualifier and start the final wizard mode at the building.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "king-of-the-monsters"
+    },
+    {
+      "id": "three-headed-payoff",
+      "title": "Three-Headed Payoff",
+      "desc": "Finish the final wizard mode by lighting every shot in its multiball and collecting the closing bounty at the scoop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "king-of-the-monsters"
+    }
+  ],
+  "drills": [
+    {
+      "id": "spinner-scoop-reflex",
+      "title": "Spinner-to-Scoop Reflex",
+      "text": "Full plunge so the ball travels the orbit behind the upper flipper into the left spinner lane, then reflex the return straight into the scoop. The plunge alone is already a skill shot — the whole drill is the follow-up while the ball is still moving.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "super-secret-skill-shot",
+      "shots": [
+        "plunger",
+        "left-spinner",
+        "scoop"
+      ]
+    },
+    {
+      "id": "gigan-ramp-loop",
+      "title": "Alternating Ramp Loop",
+      "text": "Shoot the left ramp, take the return off the right inlane into the right ramp, then take that return off the left inlane back into the left ramp. Alternating is what doubles the combo, and every pass is building damage whether or not a battle is running.",
+      "reps": "20 alternating ramp shots",
+      "focus": "accuracy",
+      "goal": "kaiju-gigan",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "left-inlane",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "titanosaurus-order",
+      "title": "Strict-Order Target Run",
+      "text": "Run the three Power Line targets left to right, then the Maser Cannon, then the captive ball, and start over the moment you hit one out of sequence. Take the Maser Cannon from a settled ball rather than a live bounce — that is the link where the order usually breaks.",
+      "reps": "5 clean runs",
+      "focus": "accuracy",
+      "goal": "kaiju-titanosaurus",
+      "shots": [
+        "power-line-targets",
+        "maser-cannon",
+        "magna-grab"
+      ]
+    },
+    {
+      "id": "magna-grab-release",
+      "title": "Magnet Hold and Release",
+      "text": "Let the magnet capture the ball, then use the hold to actually line the loop up before you press both flippers to drop it. The magnet is not going anywhere, so the mistake is releasing early and flipping at a ball you have not aimed yet.",
+      "reps": "10 captures",
+      "focus": "ball-control",
+      "goal": "magna-grab-5x-loops",
+      "shots": [
+        "magna-grab",
+        "big-loop"
+      ]
+    },
+    {
+      "id": "stage-and-bank",
+      "title": "Stage and Bank",
+      "text": "With the Destruction Jackpot lit, shoot the building to stage the ball, then take the upper loop before the stage window closes. The loop is the collect, not the building, so have the upper flipper fed and ready before you commit to the building shot.",
+      "reps": "every lit jackpot for a full game",
+      "focus": "accuracy",
+      "goal": "destruction-jackpot-collect",
+      "shots": [
+        "godzilla-building",
+        "big-loop"
+      ]
+    },
+    {
+      "id": "rage-combo-chain",
+      "title": "Rage Chain",
+      "text": "Charge Heat Ray on the center spinner until the left inlane lights, roll it to arm the right ramp, then run right ramp, left ramp, center spinner, upper loop, tail whip without a hesitation. Feed the upper flipper before the fourth link or the chain dies there every time.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "rage-combo",
+      "shots": [
+        "center-spinner",
+        "left-inlane",
+        "right-ramp",
+        "left-ramp",
+        "big-loop",
+        "tail-whip"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Godzilla's button is a hold-and-release control more than a tap control. Its marquee job is the Heat Ray — squeeze it until the meter fills, let go, and every lit shot on the playfield pays at once. It also picks your Kaiju Battle at the scoop and cashes in the Anguirus ally.",
+    "uses": [
+      {
+        "when": "Button flashing after ~60 spinner rips",
+        "what": "Hold to charge the Heat Ray; release once the on-screen meter hits 100% to collect every lit shot."
+      },
+      {
+        "when": "Second or third Heat Ray of the game",
+        "what": "Each one demands a longer hold — conquering three cities shortens the charge back down."
+      },
+      {
+        "when": "At the scoop after two ramp shots",
+        "what": "Flippers scroll the Kaiju Battles and the button locks in the fight you want to play."
+      },
+      {
+        "when": "Anguirus banked, any multiball running",
+        "what": "Press to add a ball; every Anguirus you collect stacks another use for later."
+      },
+      {
+        "when": "Godzilla Multiball buildup on screen",
+        "what": "Hold during the intro to swap the soundtrack — seven tracks sit behind the default."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Godzilla is a city-conquest pinball where you destroy four cities, win Kaiju Battles, and build the Destruction Jackpot multiplier. Victory means conquering all cities, stacking multipliers, and reaching the final wizard mode King of the Monsters.",
+    "loop": [
+      "Shoot either ramp twice to light the scoop, then start a Kaiju Battle at the scoop.",
+      "Win battles to conquer the current city and add +1x to the Destruction Jackpot multiplier.",
+      "Damage the building with ramps and building shots to start Godzilla Multiball.",
+      "Collect jackpots and super jackpots in multiballs to qualify mini-wizard modes.",
+      "Cash the Destruction Jackpot at the building and upper loop before changing cities."
+    ],
+    "lights": [
+      {
+        "id": "kaiju-battle-arrows",
+        "name": "Kaiju Battle Arrows",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Ramps light to qualify a Kaiju Battle, and the scoop lights to start it.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "Cycles through available monsters before starting the battle.",
+          "when": "When the scoop is lit and a battle is ready."
+        },
+        "then": "Shoot the lit ramps during the battle to deal damage and win.",
+        "goals": [
+          "kaiju-gigan",
+          "kaiju-titanosaurus",
+          "kaiju-ebirah",
+          "kaiju-battle-sweep"
+        ]
+      },
+      {
+        "id": "godzilla-lane-inserts",
+        "name": "GODZILLA Lane Inserts",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "godzilla-lane-inserts"
+          }
+        ],
+        "lit": "Inserts above the flippers spell GODZILLA; the 'Z' aligns with and feeds the scoop.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect letters by making shots that light them; the 'Z' feeds the scoop for a collect.",
+        "goals": [
+          "godzilla-multiball"
+        ]
+      },
+      {
+        "id": "monster-rampage-letters",
+        "name": "Monster Rampage Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-spinner"
+          }
+        ],
+        "lit": "Left spinner lights R-A-M-P-A-G-E letters; completing the spell starts Monster Rampage.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip the left spinner to collect letters and start Monster Rampage.",
+        "goals": [
+          "destruction-jackpot-collect"
+        ]
+      },
+      {
+        "id": "heat-ray-super-spinner",
+        "name": "Heat Ray & Super Spinner",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "center-spinner"
+          },
+          {
+            "shot": "left-spinner"
+          }
+        ],
+        "lit": "Center spinner charges Heat Ray; when full, hold the action button to fire and collect all lit shots, then the first rip on the center spinner is the Super Spinner.",
+        "flashing": "Center spinner flashes when Heat Ray is fully charged and ready to fire.",
+        "control": {
+          "input": "action-button",
+          "effect": "Hold to fill the meter to 100%, then release to fire Heat Ray.",
+          "when": "When Heat Ray is charged."
+        },
+        "then": "Rip the center spinner immediately after firing for 2x/spin plus 1x per conquered city.",
+        "goals": [
+          "heat-ray-super-spinner"
+        ]
+      },
+      {
+        "id": "rodan-2x-playfield",
+        "name": "Rodan 2x Playfield",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Scoop lights when an Ally is available; cycle to Rodan and collect for 2x playfield scoring.",
+        "flashing": null,
+        "control": {
+          "input": "right-flipper",
+          "effect": "Cycles the unlit Ally insert to Rodan.",
+          "when": "When the scoop is lit for an Ally collect."
+        },
+        "then": "Shoot the scoop to collect Rodan and activate 2x scoring for about 60 seconds.",
+        "goals": [
+          "rodan-playfield-2x"
+        ]
+      },
+      {
+        "id": "jet-fighter-attack",
+        "name": "Jet Fighter Attack",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-spinner"
+          }
+        ],
+        "lit": "Inlanes flash to collect missiles; after six missiles, roving red arrows light shots to destroy jets.",
+        "flashing": "Inlanes flash when missiles are available; the fifth hurry-up lights the left spinner for a 5x final.",
+        "control": null,
+        "then": "Shoot the lit red-arrow shots; take the fifth shot at the left spinner for the 5x finish.",
+        "goals": [
+          "jet-fighter-attack"
+        ]
+      },
+      {
+        "id": "magna-grab-5x-loops",
+        "name": "Magna-Grab 5x Loops",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "power-line-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "magna-grab"
+          },
+          {
+            "shot": "big-loop"
+          }
+        ],
+        "lit": "Complete the three Powerline targets, pass the right inlane to light Magna-Grab, let the magnet catch the ball, then press both flippers to drop it for 5x-value loops.",
+        "flashing": "Magna-Grab flashes when lit and ready to catch the ball.",
+        "control": {
+          "input": "both-flippers",
+          "effect": "Press both flippers to release the captured ball from the magnet.",
+          "when": "After the magnet has caught the ball and 5x loops are lit."
+        },
+        "then": "Immediately rip loops for 5x value.",
+        "goals": [
+          "magna-grab-5x-loops"
+        ]
+      },
+      {
+        "id": "destruction-jackpot",
+        "name": "Destruction Jackpot",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "center-building"
+          },
+          {
+            "shot": "big-loop"
+          }
+        ],
+        "lit": "Building lights when the Destruction Jackpot is lit; shoot it to stage the ball, then shoot the upper loop to bank the value times its multiplier.",
+        "flashing": "Building flashes when the Destruction Jackpot is lit and ready to stage.",
+        "control": null,
+        "then": "Shoot the building first, then the upper loop before the stage window closes.",
+        "goals": [
+          "destruction-jackpot-collect",
+          "cash-before-changing-cities"
+        ]
+      },
+      {
+        "id": "multiball-starts",
+        "name": "Multiball Starts",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-building"
+          },
+          {
+            "shot": "mechagodzilla-spinner"
+          },
+          {
+            "shot": "magna-grab"
+          },
+          {
+            "shot": "pop-bumper"
+          }
+        ],
+        "lit": "Each shot lights when its multiball is ready: building for Godzilla, right spinner for Mechagodzilla, Magna-Grab for Bridge Attack, pop bumper for Saucer Attack.",
+        "flashing": "The specific shot flashes when its multiball start is available.",
+        "control": null,
+        "then": "Shoot the lit shot to start the corresponding multiball.",
+        "goals": [
+          "godzilla-multiball",
+          "mechagodzilla-multiball",
+          "bridge-attack-multiball",
+          "saucer-attack-multiball"
+        ]
+      },
+      {
+        "id": "oxygen-destroyer",
+        "name": "Oxygen Destroyer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Right outlane lights for the Oxygen Destroyer last-ball save.",
+        "flashing": null,
+        "control": null,
+        "then": "Ball is saved and returned to play.",
+        "goals": []
+      }
+    ],
+    "laneChange": "unknown",
+    "laneChangeNote": null,
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the safe opening: plunge for a skill shot, shoot both ramps to light the scoop, start Gigan, and loop ramps while damaging the building. Each unique skill-shot type raises the shared multiplier.",
+        "goals": [
+          "bumper-skill-shot",
+          "skillshot-left-spinner",
+          "opener-gigan-ramp-line",
+          "first-30-seconds-beginner"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack multiballs and multipliers: start Godzilla Multiball by damaging the building, collect jackpots to qualify Monster Zero, and use Heat Ray for Super Spinner 2x/spin. Add Rodan's 2x playfield and the Destruction Jackpot multiplier.",
+        "goals": [
+          "godzilla-multiball",
+          "heat-ray-super-spinner",
+          "rodan-playfield-2x",
+          "destruction-jackpot-collect",
+          "magna-grab-5x-loops"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The largest payoff is King of the Monsters: qualify by playing a mini-wizard, Planet X Multiball, and reaching Power-Up level 8, then start at the building for a four-monster battle and a 4-ball bounty multiball.",
+        "goals": [
+          "king-of-the-monsters",
+          "planet-x-multiball",
+          "monster-zero-mini-wizard",
+          "terror-of-mechagodzilla"
+        ]
+      }
+    ]
+  }
+}

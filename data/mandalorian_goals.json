@@ -1,0 +1,1524 @@
+{
+  "machine": "The Mandalorian (Stern Pinball, 2021)",
+  "defaultFx": "space",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Main Flipper",
+      "type": "flipper",
+      "x": 0.194,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Main Flipper",
+      "type": "flipper",
+      "x": 0.8024,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.1788,
+      "y": 0.0772,
+      "trim": "all"
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.8076,
+      "y": 0.0772,
+      "trim": "all"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (Scope Lane)",
+      "type": "lane",
+      "x": 0.33,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Lights Scope / Hunter awards; toggle with flipper buttons."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane (HEAL)",
+      "type": "lane",
+      "x": 0.15,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "HEAL outlane saver available."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.67,
+      "y": 0.15,
+      "trim": "all"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane (HEAL)",
+      "type": "lane",
+      "x": 0.85,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "HEAL outlane saver available."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Feeds CHILD lanes via up-post divert; Hunter and Child-award shot."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner (TIE Fighter)",
+      "type": "spinner",
+      "x": 0.13,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "On the left orbit; raises shot values in Destroy the Imperial Base; Super Spinner target."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Chapter Ramp)",
+      "type": "ramp",
+      "x": 0.27,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Lights Missions with the right ramp; qualifies/diverts Encounters to the mini-playfield.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "left-scoop",
+      "name": "Left Scoop (Grogu / Foundry VUK)",
+      "type": "scoop",
+      "x": 0.17,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Starts Missions, collects Extra Ball, opens the Foundry to spend Beskar."
+    },
+    {
+      "id": "hunter-targets",
+      "name": "Hunter Standup Bank (3)",
+      "type": "standup",
+      "x": 0.33,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Completing lights Hunter on an inlane."
+    },
+    {
+      "id": "grogu",
+      "name": "Grogu (The Child sculpture)",
+      "type": "sculpture",
+      "x": 0.22,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Force magnet grabs and flings the ball down the CHILD lanes on Premium/LE only; Pro has the sculpture without magnet."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (2)",
+      "type": "bumpers",
+      "x": 0.33,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "Move flashing shots in Defeat the Mudhorn; Super Pops scoring."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Razor Crest Ramp)",
+      "type": "ramp",
+      "x": 0.48,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Starts Razor Crest Multiball / Hurry-Up once qualified by the Razor Crest target.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "razor-crest",
+      "name": "Razor Crest Uplift Target",
+      "type": "captive-ball",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Hanging pendulum ship target; direct hits qualify the center ramp for Razor Crest MB."
+    },
+    {
+      "id": "u-turn",
+      "name": "U-Turn",
+      "type": "loop",
+      "x": 0.42,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Super Skill Shot and Scope shot; Ambush trigger on Pro; Super Jackpot collect point."
+    },
+    {
+      "id": "inner-loop",
+      "name": "Inner Loop (Horseshoe Scoop Ramp)",
+      "type": "loop",
+      "x": 0.58,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Dynamic raise/lower scoop ramp on Premium/LE enabling fast repeatable loops; static loop on Pro."
+    },
+    {
+      "id": "ramp-2x-targets",
+      "name": "2X Ramp Targets (2)",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Left 2X target is a Scope blue-arrow shot; light 2x ramp scoring."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Helix)",
+      "type": "ramp",
+      "x": 0.74,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Scope shot, Super Skill Shot final shot, Ambush cash-out, Mission lighter.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "boba-fett-targets",
+      "name": "Boba Fett Targets (2)",
+      "type": "standup",
+      "x": 0.72,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Green +1X multiplier; cycle which Razor Crest MB is next."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit / Right Scoop",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Feeds CHILD lanes; Ambush escape. Routed as a right scoop on Premium/LE, a right loop/orbit on Pro."
+    },
+    {
+      "id": "child-lanes",
+      "name": "C-H-I-L-D Top Lanes (5)",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Default plunge/skill-shot target; spell CHILD for mystery award and Bonus X."
+    },
+    {
+      "id": "encounter-mini-pf",
+      "name": "Encounter Mini-Playfield",
+      "type": "mini-playfield",
+      "x": 0.55,
+      "y": 0.82,
+      "trim": "premium-le",
+      "notes": "Rotating/gravity-changing motorized mini-playfield on Premium/LE; Pro has a static single-flipper area.",
+      "playfield": "mando-encounter-zone"
+    },
+    {
+      "id": "encounter-targets",
+      "name": "Encounter Mini-PF Targets (6)",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Six battleground standups fought during Encounters and Jetpack Multiball.",
+      "playfield": "mando-encounter-zone"
+    },
+    {
+      "id": "encounter-flippers",
+      "name": "Encounter Mini-PF Flipper(s)",
+      "type": "flipper",
+      "x": 0.52,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "1 flipper on Pro; a 2nd tilting flipper is added on Premium/LE.",
+      "playfield": "mando-encounter-zone"
+    },
+    {
+      "id": "encounter-flippers-2",
+      "name": "Encounter Mini-PF Second Flipper",
+      "type": "flipper",
+      "x": 0.58,
+      "y": 0.74,
+      "trim": "premium-le",
+      "notes": "The second flipper on the tilting Encounter mini-playfield, Premium/LE only; Pro works the same targets with just the one flipper.",
+      "playfield": "mando-encounter-zone"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Plunge",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Feeds the CHILD top lanes for the skill shot."
+    }
+  ],
+  "goals": [
+    {
+      "id": "regular-skill-shot",
+      "title": "Regular Skill Shot",
+      "category": "skillshot",
+      "summary": "Land the plunged ball in the lit CHILD lane for a ratcheting 1M award plus a rotating bonus.",
+      "difficulty": 1,
+      "reward": "1,000,000 (+1M cumulative each skill shot) + rotating award",
+      "steps": [
+        {
+          "shot": "child-lanes",
+          "action": "Plunge for the lit CHILD lane",
+          "detail": "A firm plunge always falls through the C lane — time your plunge or nudge the ball into one of the two cycling lit lanes. Scores 1,000,000 (increasing +1M per later skill shot) plus a menu award: +2 Bonus X, Light The Child, or +1 Super Pops.",
+          "technique": [
+            "nudge"
+          ]
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper past the C lane, then run U-Turn → right ramp → a chosen final shot to launch straight into a feature.",
+      "difficulty": 3,
+      "reward": "Immediately starts a Mission, Encounter, or Razor Crest MB",
+      "steps": [
+        {
+          "shot": "u-turn",
+          "action": "Plunge through, then shoot the U-Turn within ~5s",
+          "detail": "Hold the left flipper in until the ball passes the C lane to arm the Super Skill Shot sequence.",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp within ~5s"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the final shot",
+          "detail": "Center ramp starts Razor Crest MB/Hurry-Up (strongest opener); left scoop starts the lit Mission, left ramp starts the lit Encounter."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mission-combo",
+      "title": "Mission Combo",
+      "category": "combo",
+      "summary": "While a Mission runs, chain the next yellow/cyan-lit shot quickly for escalating mission scoring.",
+      "difficulty": 2,
+      "reward": "Escalated mission-shot value for fast chaining",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start a Mission at the left scoop"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the first mission shot",
+          "detail": "Completing a mission shot lights the next in sequence flashing yellow and cyan."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Chain the next lit shot quickly",
+          "detail": "Hit the yellow/cyan shot before it stops flashing; faster chains score higher."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "fire-triangle",
+      "title": "The Fire Triangle",
+      "category": "combo",
+      "summary": "Build all three +1X playfield multipliers to 6X, add the Flamethrower for ~12X, then dump into a multiball.",
+      "difficulty": 3,
+      "reward": "6X playfield (→ ~12X with Flamethrower) on multiball shots",
+      "steps": [
+        {
+          "shot": "u-turn",
+          "action": "Complete Scope shot 1 (U-Turn blue arrow)"
+        },
+        {
+          "shot": "ramp-2x-targets",
+          "action": "Complete Scope shot 2 (left 2X target)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Complete Scope shot 3 (right ramp) → Blue +1X (75s)"
+        },
+        {
+          "shot": "hunter-targets",
+          "action": "Complete the Hunter bank and finish Hunter → Orange +1X (75s)"
+        },
+        {
+          "shot": "boba-fett-targets",
+          "action": "Hit both Boba Fett targets last → Green +1X (30s) for 6X total",
+          "detail": "Green is short, so light it right before starting the multiball, then fire the Flamethrower for ~12X."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "jetpack-superjackpot-dump",
+      "title": "Jetpack Super Jackpot Dump",
+      "category": "combo",
+      "summary": "Build the Jetpack Super Jackpot during multiball, then collect it 2X with the Flamethrower at the U-Turn.",
+      "difficulty": 3,
+      "reward": "Single Super Jackpot up to ~600M",
+      "steps": [
+        {
+          "shot": "razor-crest",
+          "action": "Qualify Jetpack Multiball at the Razor Crest target"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start the multiball via the center ramp"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Build the Super Jackpot value",
+          "detail": "All shots lit purple; a shot can't repeat until a different shot is made. Build to ~50M while keeping multipliers alive."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Collect the Super Jackpot after the MB ends",
+          "detail": "Fire the Flamethrower so U-Turn is lit 2X, then collect for up to ~600M on one shot."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "hunter-loop",
+      "title": "Hunter Loop",
+      "category": "combo",
+      "summary": "Repeatable orbit-to-orbit loop that farms Beskar and keeps the Orange multiplier alive.",
+      "difficulty": 2,
+      "reward": "≥250 Beskar + Orange +1X relight, fully repeatable",
+      "steps": [
+        {
+          "shot": "hunter-targets",
+          "action": "Complete the left Hunter standup bank"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll the lit inlane to start Hunter (25s)"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the flashing orbit"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the opposite orbit to complete",
+          "detail": "Awards ≥250 Beskar, relights Orange +1X and the Razor Crest feature."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mission-mb-stack",
+      "title": "Mission + Razor Crest MB Stack",
+      "category": "combo",
+      "summary": "Start a Mission then a Razor Crest Multiball on top of it for layered, relatively safe points.",
+      "difficulty": 2,
+      "reward": "Mission scoring + jackpots + combos + multiplier at once",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to light the Mission",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to light the Mission",
+          "link": "none"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Start the Mission at the left scoop"
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Build and start a Razor Crest MB while the Mission runs"
+        },
+        {
+          "shot": "boba-fett-targets",
+          "action": "Re-hit Boba Fett targets to hold the Green multiplier"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "razor-crest-multiball",
+      "title": "Razor Crest Multiball (Ice Spider)",
+      "category": "multiball",
+      "summary": "Qualify the center ramp with the Razor Crest target and start the first (Ice Spider) multiball.",
+      "difficulty": 2,
+      "reward": "Multiball + Super Jackpots (+2.5M each to bonus)",
+      "steps": [
+        {
+          "shot": "boba-fett-targets",
+          "action": "Cycle which multiball is next",
+          "detail": "Boba/Fett targets select Ice Spider (1), Jetpack (2), or Pirates (3)."
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Hit the Razor Crest uplift target ~3 times to qualify"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start the multiball at the center ramp"
+        },
+        {
+          "shot": "u-turn",
+          "action": "Collect the timed Super Jackpot",
+          "detail": "Ice Spider: make all purple shots to light a 20s Super Jackpot at the U-Turn; upper targets add +5s."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "jetpack-multiball",
+      "title": "Jetpack Multiball",
+      "category": "multiball",
+      "summary": "The single-big-shot money multiball: build jackpots, get add-a-ball from the mini-PF, collect at U-Turn.",
+      "difficulty": 2,
+      "reward": "Add-a-ball + large Super Jackpot",
+      "steps": [
+        {
+          "shot": "boba-fett-targets",
+          "action": "Set the next multiball to Jetpack (2)"
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Qualify by hitting the Razor Crest target"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start Jetpack Multiball at the center ramp"
+        },
+        {
+          "shot": "encounter-targets",
+          "action": "Hit all six mini-PF targets for add-a-ball",
+          "detail": "The left ramp diverts to the Encounter mini-playfield during Jetpack MB."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Collect the Super Jackpot at the U-Turn after the MB"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "pirates-multiball",
+      "title": "Pirates Multiball",
+      "category": "multiball",
+      "summary": "Clear escalating waves of lit jackpot shots to stabilize the rhydonium and reach the Wave 3 Super Jackpot.",
+      "difficulty": 3,
+      "reward": "Wave-based jackpots + Super Jackpot",
+      "steps": [
+        {
+          "shot": "boba-fett-targets",
+          "action": "Set the next multiball to Pirates (3)"
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Qualify at the Razor Crest target"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start Pirates Multiball at the center ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Complete waves of lit jackpot shots",
+          "detail": "Each jackpot once per wave; each wave needs +1 additional shot."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Collect the Wave 3 Super Jackpot at the U-Turn"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "ambush-multiball",
+      "title": "Ambush Multiball",
+      "category": "multiball",
+      "summary": "Trigger the Ambush value-builder, lock and grow the value across stages, then cash out at the right ramp.",
+      "difficulty": 3,
+      "reward": "Built value up to ~720M with all multipliers",
+      "steps": [
+        {
+          "shot": "u-turn",
+          "action": "Trigger Ambush",
+          "detail": "With no mode running, shoot U-Turn (Pro) / right scoop (Prem-LE); six shots light ~5s and two of them start Ambush."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Shoot U-Turn to lock the value red",
+          "detail": "Locks value and stops the countdown."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit white shots to add seconds and value"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash out at the right ramp when all shots are blue",
+          "detail": "Ends the mode and awards the built value; restarts grant +1x multipliers."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "start-mission",
+      "title": "Start a Mission",
+      "category": "mode",
+      "summary": "Shoot both ramps to light the Mission, then start it at the left scoop for timer points and Beskar.",
+      "difficulty": 1,
+      "reward": "Timer points + Beskar; 2 Missions light Extra Ball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp (any order) to light the Mission",
+          "link": "none"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Start the Mission at the left scoop",
+          "detail": "60s timer; completion adds 2.5M to bonus + 225K per second remaining. Starting 2 Missions lights the Extra Ball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "hunter-mode",
+      "title": "Hunter Mode",
+      "category": "mode",
+      "summary": "Complete the standup bank, start Hunter from an inlane, then shoot orbit and opposite orbit.",
+      "difficulty": 2,
+      "reward": "≥250 Beskar + Orange 75s playfield multiplier",
+      "steps": [
+        {
+          "shot": "hunter-targets",
+          "action": "Complete the left standup bank to light Hunter"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll the lit inlane to start Hunter (25s)",
+          "detail": "Toggle inlanes with the flipper buttons."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the flashing orbit"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the opposite orbit to finish"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "scope-mode",
+      "title": "Scope Mode",
+      "category": "mode",
+      "summary": "Hit the three blue-arrow shots to light Scope at the left inlane, then collect within the timer.",
+      "difficulty": 2,
+      "reward": "Beskar/points + Blue 75s playfield multiplier",
+      "steps": [
+        {
+          "shot": "u-turn",
+          "action": "Hit blue arrow 1 (U-Turn)",
+          "link": "none"
+        },
+        {
+          "shot": "ramp-2x-targets",
+          "action": "Hit blue arrow 2 (left 2X target) — worth 200 Beskar",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit blue arrow 3 (right ramp) — worth 2,000,000; lights Scope",
+          "link": "none"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Collect the 5s timed Scope award and start the Blue +1X"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "encounter-mode",
+      "title": "Encounter",
+      "category": "mode",
+      "summary": "Qualify via the left ramp, then fight three waves of targets on the Encounter mini-playfield.",
+      "difficulty": 2,
+      "reward": "Completing all 3 Encounters qualifies 'You Have What I Want'",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp until its insert flashes red to qualify",
+          "detail": "1 shot for the first Encounter, +2 per additional; then left-ramp shots divert to the mini-playfield.",
+          "feeds": {
+            "shot": "encounter-mini-pf"
+          }
+        },
+        {
+          "shot": "encounter-targets",
+          "action": "Complete three waves of lit targets on the mini-PF"
+        },
+        {
+          "shot": "encounter-flippers",
+          "action": "Control the ball on the mini-PF to finish the Bonus Level",
+          "detail": "Prem/LE = 2 tilting flippers (leveled by Jet Pack), Pro = 1 flipper (Rising Phoenix). Equipment instantly clears a wave."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "playfield-6x",
+      "title": "Light All Three Playfield Multipliers (6X)",
+      "category": "multiplier",
+      "summary": "Combine the Scope, Hunter, and Boba Fett +1X inserts for the full +5X / 6X total before a multiball.",
+      "difficulty": 3,
+      "reward": "6X total playfield multiplier",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Complete Scope → Blue +1X (75s)",
+          "link": "none"
+        },
+        {
+          "shot": "hunter-targets",
+          "action": "Complete Hunter → Orange +1X (75s)",
+          "link": "none"
+        },
+        {
+          "shot": "boba-fett-targets",
+          "action": "Hit both Boba Fett targets → Green +1X (30s)",
+          "detail": "All three lit = +5X for 6X total. Green is the only one startable mid-multiball, so light it last."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-x",
+      "title": "Build Bonus X",
+      "category": "multiplier",
+      "summary": "Grow the end-of-ball Bonus multiplier by spelling CHILD and making skill shots.",
+      "difficulty": 1,
+      "reward": "Higher end-of-ball bonus (Base × Bonus X)",
+      "steps": [
+        {
+          "shot": "child-lanes",
+          "action": "Spell CHILD for +1x Bonus each completion"
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Make a skill shot for +2 Bonus X",
+          "detail": "The regular skill-shot menu includes +2 Bonus X; the Child mystery award can grant +1x to +3x Bonus X."
+        }
+      ],
+      "ordered": false,
+      "fx": "sparkle"
+    },
+    {
+      "id": "i-like-those-odds",
+      "title": "I Like Those Odds (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Play all 5 Missions to qualify this 6th-mission mini-wizard, ending in a 4-ball frenzy multiball.",
+      "difficulty": 3,
+      "reward": "Mini-wizard toward This Is The Way",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Play all 5 Missions once to qualify"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Phase 1: shoot both ramps + Razor Crest once, then the scoop"
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Phase 2: both ramps + Razor Crest + U-Turn once, then the scoop"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Phase 3: 4-ball multiball, make every major shot",
+          "detail": "Activates a 60s frenzy where all switches score 250,000."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "this-is-the-way",
+      "title": "This Is The Way (Wizard Mode)",
+      "category": "wizard",
+      "summary": "Start all three mini-wizards, then make the six major shots plus the left scoop to earn your signet.",
+      "difficulty": 3,
+      "reward": "10,000,000 + permanent +1x Signet",
+      "steps": [
+        {
+          "shot": "razor-crest",
+          "action": "Complete Precious Cargo (play all 3 Razor Crest Multiballs)",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Complete You Have What I Want (all 3 Encounters, then left ramp 7x)",
+          "link": "none"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Complete I Like Those Odds (play all 5 Missions)",
+          "link": "none"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Make all six major lit shots then the left scoop to start",
+          "detail": "Three rounds alternating single-ball and multiball; completion resets Missions, MBs, and Encounters."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "ball-one-opener",
+      "title": "Ball-One Opener",
+      "category": "strategy",
+      "summary": "Concrete first-30-seconds line: skill shot, then stack a Mission toward your first multiball with HEAL insurance.",
+      "difficulty": 2,
+      "reward": "Mission stacked toward multiball with an outlane save",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Attempt the Super Skill Shot",
+          "detail": "Fall back to the plain C-lane skill shot for 1M + Light The Child (a cheap HEAL/outlane save)."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot left ramp then right ramp then the left scoop to start a Mission"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Feed the center ramp to progress Razor Crest Multiball"
+        },
+        {
+          "shot": "child-lanes",
+          "action": "Use orbit/CHILD lanes to light HEAL at the outlanes",
+          "detail": "Fed by orbit shots; a lit HEAL lowers early drain risk from the center target."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiplier-cash-timing",
+      "title": "Multiplier Cash Timing",
+      "category": "strategy",
+      "summary": "Light Green last, start a multiball at 6X, then Flamethrower a single big shot before the multiplier expires.",
+      "difficulty": 3,
+      "reward": "~12X base on a Super Jackpot collect",
+      "steps": [
+        {
+          "shot": "boba-fett-targets",
+          "action": "Light Green +1X last (the only multiplier you can start mid-multiball)"
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Start a multiball with all three multipliers live (6X)"
+        },
+        {
+          "shot": "u-turn",
+          "action": "Fire the Flamethrower and cash the biggest single shot",
+          "detail": "Watch the blue/purple strobing inserts — cash before the multiplier lapses for ~12X."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "beskar-foundry-farming",
+      "title": "Beskar & Foundry Farming",
+      "category": "strategy",
+      "summary": "Bank Beskar from Hunter loops and Child awards, then spend at the Foundry for Extra Balls, Flamethrowers, and multipliers.",
+      "difficulty": 2,
+      "reward": "Beskar economy → Extra Ball, extra Flamethrower, +1x",
+      "steps": [
+        {
+          "shot": "hunter-targets",
+          "action": "Farm the Hunter loop for ≥250 Beskar per completion"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Open the Foundry at the left scoop and buy two adjacent items",
+          "detail": "Each purchase raises that item's cost +50%. Notable buys: Extra Ball 600, Multiplier 500, Flamethrower 175."
+        },
+        {
+          "shot": "child-lanes",
+          "action": "Collect Child mystery awards (300–400 Beskar) via orbit shots"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "precious-cargo",
+      "title": "Precious Cargo (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Play all three Razor Crest Multiballs in one game, then run the mini-wizard that unlocks toward the final wizard mode.",
+      "difficulty": 3,
+      "reward": "Precious Cargo mini-wizard completed (one of the three requirements for This Is The Way)",
+      "steps": [
+        {
+          "shot": "boba-fett-targets",
+          "action": "Cycle to the multiball you have not played yet",
+          "detail": "The two Boba Fett targets step the selection through Ice Spider, Jetpack, and Pirates; check the display before qualifying."
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Hit the uplift target until the center ramp is qualified",
+          "detail": "Roughly three hits per multiball; the requirement grows for later multiballs in the same game."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start each Razor Crest Multiball at the center ramp",
+          "detail": "Repeat the qualify-and-start cycle until all three multiballs have been played."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Collect each multiball's super jackpot before it ends",
+          "detail": "Not required for the mini-wizard, but the collects are where the points are while you work through all three."
+        },
+        {
+          "shot": "razor-crest",
+          "action": "Start Precious Cargo at the Razor Crest once all three are played",
+          "detail": "It takes several more hits on the Razor Crest target, the same way you qualified each of the three multiballs."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "you-have-what-i-want",
+      "title": "You Have What I Want (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Clear all three Encounters, then hammer the left ramp repeatedly to finish the mini-wizard they qualify.",
+      "difficulty": 3,
+      "reward": "You Have What I Want completed (one of the three requirements for This Is The Way)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Qualify each Encounter at the left ramp",
+          "detail": "One shot lights the first Encounter; each later one needs about two more shots than the last."
+        },
+        {
+          "shot": "encounter-targets",
+          "action": "Clear the target waves on the mini-playfield",
+          "detail": "Do this three times, once per Encounter, to qualify the mini-wizard."
+        },
+        {
+          "shot": "encounter-flippers",
+          "action": "Keep the ball alive up top to finish each bonus level",
+          "detail": "Equipment awards clear a wave instantly, so spend them on the wave you keep losing."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start the mini-wizard with seven more left-ramp shots",
+          "detail": "Roughly seven ramp shots on a timer; feed the right flipper cleanly and shoot in rhythm rather than aiming shot by shot."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "attract-mode-select",
+      "title": "Attract-Mode Game Select Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "The Mandalorian ships with a whole second rule set behind the attract-mode flippers, and nothing on the cabinet points to it. A group can turn an ordinary game into a shared hunt, a team battle, a punishing hard mode, or a straight run at the final wizard mode.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "During attract mode, with no game in progress, hold both flipper buttons together",
+        "Keep holding until a menu appears on the display",
+        "Competition plays like Standard but makes awards deterministic, switches extra balls off, and takes away the Child mystery award",
+        "Cooperation shares progress between 2 to 4 players",
+        "Team Play splits the players 2 vs 2, 3 vs 1, or 2 vs 1",
+        "Impossible Play strips out ball saves and extra balls, tightens every multiball, pays less Beskar, locks Armor out of the Foundry, and sticks each flipper up for about two and a half seconds after you press it",
+        "Monster Play puts player one on Impossible Play rules as the Monster while all other players are set to Standard",
+        "Challenge Mode drops you straight into the You Have What I Want wizard mode",
+        "DJ Mixer is a jukebox for the music in the machine rather than a way to play"
+      ],
+      "reward": "Standard, Competition, Cooperation, Team Play, Impossible Play, Monster Play, Challenge Mode, and a DJ Mixer jukebox"
+    },
+    {
+      "id": "equipment-loadout",
+      "title": "Building Your Equipment Loadout",
+      "category": "progression",
+      "summary": "Five pieces of gear change what you can do with a ball in play. Four of them sit waiting behind the action button until you spend them; the fifth just works in the background. Collecting them is the easy half. The hard half is picking the moment - hold the rifle a beat too long and a rescue turns into a drain.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Gather gear four ways. The Foundry stocks all five pieces for Beskar. During Scope, the scoop/U-turn award tries to hand you two pieces at once. The Child's random award can also give equipment, and restarting Ambush twice pays out the Flamethrower.",
+        "Armour is the odd one out - there is no button press. It simply adds time to the ball save, in single-ball play and in multiball.",
+        "Amban Rifle: press the action button during any multiball to put another ball into play. The button does not light green for it until the multiball's opening ball save has run out.",
+        "Whistling Birds: press the action button during a running mission to collect the shots that are lit at that moment.",
+        "Flamethrower: press and hold the action button. Shots catch fire one at a time, beginning at the right orbit and travelling leftward across the playfield, and the spread stops the instant you release. A burning shot pays double the next time you hit it, and hitting it puts the fire out.",
+        "Rising Phoenix, also called the Jet Pack: press the action button to finish the Encounter level you are on outright. On Premium and LE machines it also levels the mini playfield."
+      ],
+      "reward": "Five equipment pieces with distinct effects: four action-button powers plus a passive ball-save extension"
+    },
+    {
+      "id": "foundry-price-ladder",
+      "title": "Foundry Prices and the Question Mark",
+      "category": "progression",
+      "summary": "Beskar is the currency and the Foundry is where it becomes an advantage. The catch is built-in inflation: every item you buy raises its own price for the next time you want it, so the order you spend in matters as much as the total you bank. One slot on the board is a flat-rate gamble that ignores the price list entirely.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Bank Beskar. Hunter and Scope are the two main earners; the Child also hands out Beskar as one of its random awards. Collecting Beskar from any of those lights the Foundry.",
+        "Learn the price list. Lighting Scope costs 75 and lighting an Encounter 100. Each of the four action-button items - Whistling Birds, Rising Phoenix, Flamethrower, Amban Rifle - costs 175, as does starting the next mission. Armour is 200 and lighting Heal on an outlane is 200. Lighting the next Razor Crest multiball is 300, a +1x playfield multiplier is 500, and an extra ball is 600.",
+        "Buy in a deliberate order. Every time you trade for an item, that item's price rises roughly 50 percent for your next visit. The extra ball can only be bought once per game.",
+        "Take the question mark when the price list is not serving you. It costs a flat 100 Beskar and sets a cursor racing around the board; the action button stops it, and whatever it lands on is what you bought.",
+        "Stop the cursor on a question mark again and you get a hidden award instead: a two-ball frenzy multiball, lighting the Child, lighting Ambush, starting Hunter, or all three +1x playfield multipliers at once, which takes the playfield to 6x.",
+        "Or take Pass and bank the Beskar for a later, better-stocked visit."
+      ],
+      "reward": "Cheaper unlocks through smart buying order, plus a 100-Beskar gamble that can start a two-ball multiball or push the playfield to 6x"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-skill-shot",
+      "title": "Clean Plunge",
+      "desc": "Collect a skill shot by sending the plunged ball through the lit top lane.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "regular-skill-shot"
+    },
+    {
+      "id": "held-plunge-launch",
+      "title": "Straight Into Trouble",
+      "desc": "Collect the held-flipper super skill shot so the plunge itself starts a feature.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "first-mission-complete",
+      "title": "Job Finished",
+      "desc": "Start a Mission at the left scoop and complete all of its shots before the timer runs out.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "start-mission"
+    },
+    {
+      "id": "hunter-complete",
+      "title": "Bounty Collected",
+      "desc": "Light Hunter off the standup bank and finish it with the orbit-and-opposite-orbit pair.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "hunter-mode"
+    },
+    {
+      "id": "scope-complete",
+      "title": "Eye On The Target",
+      "desc": "Hit all three blue-arrow shots and collect the Scope award at the inlane.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "scope-mode"
+    },
+    {
+      "id": "extra-ball-earned",
+      "title": "One More Ball",
+      "desc": "Earn an extra ball in one game, either from two started Missions or by buying it at the Foundry.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "beskar-foundry-farming"
+    },
+    {
+      "id": "ice-spider-multiball",
+      "title": "Cargo Hold Breach",
+      "desc": "Start the Ice Spider Razor Crest Multiball and collect its timed super jackpot.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "razor-crest-multiball"
+    },
+    {
+      "id": "jetpack-multiball-started",
+      "title": "Rocket Assist",
+      "desc": "Start the Jetpack Razor Crest Multiball and earn its add-a-ball from the mini-playfield targets.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "jetpack-multiball"
+    },
+    {
+      "id": "pirates-multiball-super",
+      "title": "Rhydonium Run",
+      "desc": "Start the Pirates Razor Crest Multiball and clear through to the third-wave super jackpot.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "pirates-multiball"
+    },
+    {
+      "id": "encounter-cleared",
+      "title": "Up Close",
+      "desc": "Qualify an Encounter at the left ramp and clear all three target waves on the mini-playfield.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "encounter-mode"
+    },
+    {
+      "id": "ambush-cashed-out",
+      "title": "Cash The Ambush",
+      "desc": "Trigger Ambush, build the locked value up, and cash it out at the right ramp instead of losing it to the timer.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ambush-multiball"
+    },
+    {
+      "id": "six-x-playfield",
+      "title": "All Three Lit",
+      "desc": "Have the Scope, Hunter, and Boba Fett multiplier inserts lit at the same time for the full playfield multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "playfield-6x"
+    },
+    {
+      "id": "multiplied-super-jackpot",
+      "title": "One Huge Shot",
+      "desc": "Collect a multiball super jackpot while the playfield multipliers and the Flamethrower are both active.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jetpack-superjackpot-dump"
+    },
+    {
+      "id": "all-three-crest-multiballs",
+      "title": "Every Hold Emptied",
+      "desc": "Play all three Razor Crest Multiballs in one game to finish the Precious Cargo mini-wizard.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "precious-cargo"
+    },
+    {
+      "id": "all-three-encounters",
+      "title": "Three Fights Won",
+      "desc": "Complete all three Encounters and then finish the mini-wizard they qualify at the left ramp.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "you-have-what-i-want"
+    },
+    {
+      "id": "all-five-missions",
+      "title": "Full Contract Board",
+      "desc": "Play all five Missions in one game and complete the mini-wizard that follows them.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "i-like-those-odds"
+    },
+    {
+      "id": "wizard-mode-reached",
+      "title": "Called To The Forge",
+      "desc": "Finish all three mini-wizards in one game so the final wizard mode can be started at the left scoop.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "this-is-the-way"
+    },
+    {
+      "id": "wizard-mode-completed",
+      "title": "Earn The Signet",
+      "desc": "Complete all three rounds of the final wizard mode for the signet award.",
+      "tier": "epic",
+      "source": "insider",
+      "goal": "this-is-the-way"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-chain",
+      "title": "Held Plunge, Three Shots",
+      "text": "Hold the left flipper in until the ball passes the C lane, then take the U-Turn, the right ramp and a final shot in quick succession. Decide the finisher before you plunge — the center ramp launches straight into a multiball, the left scoop into a mission.",
+      "reps": "12 plunges",
+      "focus": "skill-shot",
+      "goal": "super-skill-shot",
+      "shots": [
+        "u-turn",
+        "right-ramp",
+        "center-ramp",
+        "left-scoop"
+      ]
+    },
+    {
+      "id": "razor-crest-taps",
+      "title": "Uplift Target Taps",
+      "text": "Hit the hanging ship target directly, three times, then take the center ramp. It swings, so a glancing hit does nothing — aim through it rather than at it.",
+      "reps": "10 qualify-and-start cycles",
+      "focus": "accuracy",
+      "goal": "razor-crest-multiball",
+      "shots": [
+        "razor-crest",
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "scope-triangle",
+      "title": "Three Blues, Then Collect",
+      "text": "Take the U-Turn, the left 2X target and the right ramp in whatever order the ball gives you, then collect at the left inlane inside the short window. The collect is the part people miss — line the inlane up before you make the third shot.",
+      "reps": "8 completions",
+      "focus": "accuracy",
+      "goal": "scope-mode",
+      "shots": [
+        "u-turn",
+        "ramp-2x-targets",
+        "right-ramp",
+        "left-inlane"
+      ]
+    },
+    {
+      "id": "left-ramp-rhythm",
+      "title": "Left Ramp Rhythm",
+      "text": "Shoot the left ramp, take the return off the right inlane, shoot it again, and keep the rhythm rather than re-aiming each time. Long ramp counts on a timer are what several of this game's requirements come down to, and rhythm beats aiming shot by shot.",
+      "reps": "note your longest unbroken run",
+      "focus": "ball-control",
+      "goal": "you-have-what-i-want",
+      "shots": [
+        "left-ramp",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "encounter-pf-control",
+      "title": "Mini-Playfield Control",
+      "text": "Ride the Encounter deck out instead of flailing at it — keeping the ball alive up there is what finishes the bonus level. Take the six standups in whatever order the deck offers them, and save an equipment award for the wave you keep losing.",
+      "reps": "3 full Encounters",
+      "focus": "ball-control",
+      "goal": "encounter-mode",
+      "shots": [
+        "encounter-targets",
+        "encounter-flippers"
+      ]
+    },
+    {
+      "id": "hunter-orbit-loop",
+      "title": "Hunter Orbit Loop",
+      "text": "Complete the left standup bank, roll the lit inlane to start the timer, then take the flashing orbit and the opposite orbit before it runs out. Both orbits inside one short window is the whole shape of it, so pick your first orbit as the inlane rolls.",
+      "reps": "8 completions",
+      "focus": "flow",
+      "goal": "hunter-loop",
+      "shots": [
+        "hunter-targets",
+        "left-inlane",
+        "left-orbit",
+        "right-orbit"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "mando-encounter-zone",
+      "name": "Encounter Mini-Playfield (Mando Helmet)",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.45,
+        "y": 0.68,
+        "w": 0.2,
+        "h": 0.24
+      },
+      "trim": "all",
+      "entries": [
+        "left-ramp"
+      ],
+      "exits": [
+        {
+          "x": 0.5,
+          "y": 0.4
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "The lockdown bar button is where your gear sits. Four of the five items you buy at the Foundry wait behind it and its color tells you which one is ready to spend. Collecting the gear is the easy half; picking the moment is the hard half, because a wasted press costs you the item until you earn another.",
+    "uses": [
+      {
+        "when": "Any multiball, ball save expired",
+        "what": "Amban Rifle adds a ball. The button will not light green for it until the opening ball save has run out."
+      },
+      {
+        "when": "Mission running with shots flashing",
+        "what": "Whistling Birds collects every flashing shot at once, and lit jackpots too during a multiball."
+      },
+      {
+        "when": "Before a big shot in single-ball play",
+        "what": "Hold for the Flamethrower: fire spreads right to left and stops when you release. Each burning shot pays double once."
+      },
+      {
+        "when": "Stuck on an Encounter wave",
+        "what": "Rising Phoenix finishes the current level outright; on Premium and LE it also levels the mini playfield."
+      },
+      {
+        "when": "Question mark bought at the Foundry",
+        "what": "Stops the racing selector — whatever it lands on is what you walk away with."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Play the Mandalorian hunting bounties across the galaxy with the Child along for the ride. Take Missions and Encounters, build the three Razor Crest Multiballs, spend Beskar at the Foundry for gear, and work toward the wizard mode This Is The Way.",
+    "loop": [
+      "Shoot the left and right ramps to light a Mission, start it at the left scoop, and chase its flashing shots on the timer.",
+      "Tap the Razor Crest uplift target to qualify a multiball, set which one loads next at the Boba Fett targets, and start it at the center ramp.",
+      "Light Scope, Hunter, and Green off their shots to stack up to a 6X playfield, then fire the Flamethrower to double your biggest collect.",
+      "Earn Beskar from the Hunter loop and mystery awards, then spend it at the Foundry for equipment that sits behind the action button.",
+      "Clear the three mini-wizards -- all three Razor Crest Multiballs, all three Encounters, and all five Missions -- to light This Is The Way."
+    ],
+    "lights": [
+      {
+        "id": "mission-shots",
+        "name": "Mission Ramps & Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-scoop"
+          }
+        ],
+        "lit": "The Chapter and Helix ramps light to arm a bounty Mission; hit one and then the other in any order and the left scoop lights to begin it.",
+        "flashing": "Inside a Mission the next shot flashes yellow and cyan -- that is the one paying the rising combo value if you chain it quickly.",
+        "control": null,
+        "then": "Start the Mission at the scoop and chase the flashing shots on its timer. Play any two Missions in a game and the Extra Ball lights; finish all five to clear one of the three doors into This Is The Way.",
+        "goals": [
+          "start-mission",
+          "mission-combo",
+          "i-like-those-odds"
+        ]
+      },
+      {
+        "id": "razor-crest-locks",
+        "name": "Razor Crest Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "razor-crest"
+          },
+          {
+            "shot": "boba-fett-targets"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "u-turn"
+          }
+        ],
+        "lit": "The Razor Crest uplift target lights to qualify a Razor Crest Multiball, and the two Boba Fett targets set which of the three -- Ice Spider, Jetpack, or Pirates -- loads up next.",
+        "flashing": "During the multiball the U-Turn flashes for the Super Jackpot once you have banked the purple shots.",
+        "control": null,
+        "then": "Tap the uplift target a few times, start the multiball at the center ramp, build the Super on the purple shots, then take it at the U-Turn with the Flamethrower firing so that one shot lands doubled. Play all three multiballs to clear Precious Cargo.",
+        "goals": [
+          "razor-crest-multiball",
+          "jetpack-multiball",
+          "pirates-multiball",
+          "jetpack-superjackpot-dump",
+          "precious-cargo"
+        ]
+      },
+      {
+        "id": "playfield-multipliers",
+        "name": "Blue / Orange / Green Multipliers",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "hunter-targets"
+          },
+          {
+            "shot": "boba-fett-targets"
+          }
+        ],
+        "lit": "Three playfield multipliers stack: Blue from finishing Scope at the ramps, Orange from clearing the Hunter bank, and Green from the two Boba Fett targets, running 6X when all three are lit together.",
+        "flashing": null,
+        "control": null,
+        "then": "Blue and Orange hold for a stretch while Green is short and the only one you can start mid-multiball, so save Green for last. With all three live, start a multiball and fire the Flamethrower to push a single collect toward twelve times its base.",
+        "goals": [
+          "scope-mode",
+          "hunter-mode",
+          "playfield-6x",
+          "fire-triangle",
+          "multiplier-cash-timing"
+        ]
+      },
+      {
+        "id": "hunter-inlanes",
+        "name": "Hunter Return Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "hunter-targets"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Clearing the Hunter standup bank lights one return lane to start Hunter; roll through the lit inlane and the mode runs on a short timer while you trade the two orbits.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button swaps which inlane is lit, so you can slide the lit return under whichever inlane the ball is dropping toward and start Hunter without waiting for one exact feed",
+          "when": "Hunter lit, before the ball reaches a return lane"
+        },
+        "then": "Line the lit inlane up with the ball and roll through to start Hunter, then shoot the flashing orbit and the opposite orbit to finish it for a pile of Beskar and a fresh Orange multiplier -- and the whole loop is repeatable.",
+        "goals": [
+          "hunter-mode",
+          "hunter-loop"
+        ]
+      },
+      {
+        "id": "encounter-ramp",
+        "name": "Encounter Mini-Playfield",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "encounter-mini-pf"
+          },
+          {
+            "shot": "encounter-targets"
+          }
+        ],
+        "lit": "The Chapter ramp insert flashes red when an Encounter is ready, and once you begin it the left-ramp shots divert the ball up onto the Encounter mini-playfield.",
+        "flashing": "A flashing red left-ramp insert means the next Encounter is qualified and waiting to start.",
+        "control": null,
+        "then": "Clear three waves of targets up top, keeping the ball alive with the tilting mini-flipper, to finish the bonus level. Complete all three Encounters to open You Have What I Want.",
+        "goals": [
+          "encounter-mode",
+          "you-have-what-i-want"
+        ]
+      },
+      {
+        "id": "ambush-uturn",
+        "name": "Ambush Hurry-Up",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "u-turn"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "With no mode running, a ring of shots lights briefly around the U-Turn, and catching two of them starts Ambush.",
+        "flashing": "During Ambush the U-Turn flashes to lock the countdown, then the ramps flash white to pump the value up.",
+        "control": null,
+        "then": "Lock the value at the U-Turn, feed white ramp shots to add time and points, then cash out at the right ramp once the shots have turned blue -- restarting it stacks another playfield multiplier on top.",
+        "goals": [
+          "ambush-multiball"
+        ]
+      },
+      {
+        "id": "child-heal-lanes",
+        "name": "CHILD Lanes & HEAL",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "child-lanes"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Spelling C-H-I-L-D across the top lanes steps up your end-of-ball bonus multiplier, and orbit shots light HEAL at the outlanes.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep HEAL lit at both outlanes as a cheap save, since there is no long ball save to lean on, and bank CHILD completions to fatten the bonus your multiplier rides on.",
+        "goals": [
+          "bonus-x",
+          "ball-one-opener"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Once the Hunter bank is down and a return lane lights to start Hunter, tapping either flipper button swaps which inlane is lit. Slide it under the return the ball is taking and roll through to start the mode -- a short timer worth a pile of Beskar and a fresh Orange multiplier -- and the loop repeats.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Go for the Super Skill Shot -- hold the left flipper through the plunge, then hit the U-Turn, right ramp, and center ramp -- or fall back to the C-lane skill shot to light The Child. Then shoot both ramps into the left scoop to start a Mission, and keep HEAL lit at the outlanes since there is no safety net.",
+        "goals": [
+          "super-skill-shot",
+          "regular-skill-shot",
+          "start-mission",
+          "ball-one-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack a Mission with a Razor Crest Multiball, and light Scope, Hunter, and Green together for a 6X playfield. Farm the Hunter loop for Beskar and spend it at the Foundry, buying two adjacent items to keep the price ladder cheap.",
+        "goals": [
+          "mission-mb-stack",
+          "playfield-6x",
+          "hunter-loop",
+          "beskar-foundry-farming"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear the three mini-wizards -- Precious Cargo for the three Razor Crest Multiballs, You Have What I Want for the three Encounters, and I Like Those Odds for all five Missions -- to light This Is The Way. It pays ten million and a permanent Signet multiplier, the top of the whole game.",
+        "goals": [
+          "this-is-the-way",
+          "precious-cargo",
+          "you-have-what-i-want",
+          "i-like-those-odds"
+        ]
+      }
+    ]
+  }
+}

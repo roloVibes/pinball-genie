@@ -1,0 +1,266 @@
+/*
+  Pinball Genie — shared stylesheet for the legal / marketing pages
+  (privacy, terms, about, contact).
+
+  Same recipe as app/server/login.css: charcoal #0a0b10 + amber #ffb02e,
+  color-scheme: dark. No inline styles anywhere in these pages — production
+  CSP is `default-src 'self'; style-src 'self'` with no 'unsafe-inline', so
+  every rule lives in this one file.
+*/
+
+/* BACKGLASS display face (P5 fast-follow, 2026-08-14). This file was the one
+   surface the reskin moved onto the new palette but NOT onto the new type —
+   so the legal pages were the only pages left setting their headings in the
+   system stack while every other page used Chakra Petch.
+
+   The src paths are ABSOLUTE (/fonts/...) and must stay that way. These pages
+   are served from /legal/, and the guide pages that share this arrangement
+   are served from /machines/<slug>/ — a relative './fonts/...' would resolve
+   against the page's own directory and 404 at both depths. deploy-prod.sh
+   uploads app/dist/. wholesale (which is where Vite puts public/fonts/), so
+   /fonts/*.woff2 is one path that works from every depth. */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-SemiBold-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-Bold-latin.woff2') format('woff2');
+}
+
+:root {
+  color-scheme: dark;
+  --display: 'Chakra Petch', 'DIN Alternate', system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0b10;
+  background-image: radial-gradient(circle at 50% -10%, rgba(255, 176, 46, 0.12), transparent 55%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  color: #e9edf7;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #ffb02e;
+}
+a:hover,
+a:focus {
+  color: #ffc85f;
+}
+
+/* ---- header ---- */
+.site-header {
+  border-bottom: 1px solid rgba(142, 170, 222, 0.1);
+}
+.header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.brand {
+  font-family: var(--display);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  color: #e9edf7;
+}
+.brand:hover,
+.brand:focus {
+  color: #e9edf7;
+}
+/* BACKGLASS brand mark (P5, 2026-08-14) — the lit amber tile the app header,
+   the guide pages and the sign-in page all use now. Was a chrome pinball
+   drawn as a radial gradient; class name kept so the legal pages' markup does
+   not change. */
+.brand-ball {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: linear-gradient(150deg, #ffc85f, #e07d00);
+  box-shadow: 0 0 14px rgba(255, 176, 46, 0.28);
+}
+.back-link {
+  font-family: var(--display);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---- main content ---- */
+main {
+  flex: 1;
+  width: 100%;
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 36px 24px 64px;
+}
+h1 {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  margin: 0 0 6px;
+  color: #e9edf7;
+}
+.dek {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(233, 237, 247, 0.65);
+  margin: 0 0 28px;
+}
+.meta {
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(233, 237, 247, 0.5);
+  margin: 0 0 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(142, 170, 222, 0.1);
+}
+.meta strong {
+  color: rgba(233, 237, 247, 0.78);
+  font-weight: 700;
+}
+h2 {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 36px 0 12px;
+  color: #ffc85f;
+}
+h3 {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  color: #ffc85f;
+}
+p,
+li {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: rgba(233, 237, 247, 0.88);
+}
+p {
+  margin: 0 0 14px;
+}
+ul,
+ol {
+  padding-left: 22px;
+  margin: 0 0 14px;
+}
+li {
+  margin-bottom: 8px;
+}
+strong {
+  color: #e9edf7;
+}
+.callout {
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- contact cards (contact.html) ---- */
+.contact-grid {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0 8px;
+}
+.contact-card {
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+.contact-card p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: rgba(233, 237, 247, 0.65);
+}
+.contact-card .contact-link {
+  font-size: 16px;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+/* ---- footer ---- */
+.site-footer {
+  border-top: 1px solid rgba(142, 170, 222, 0.1);
+  margin-top: auto;
+}
+.footer-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 28px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-links {
+  font-family: var(--display);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-contact {
+  font-size: 13px;
+  color: rgba(233, 237, 247, 0.6);
+}
+.footer-copy {
+  font-size: 11.5px;
+  color: rgba(233, 237, 247, 0.35);
+}
+
+@media (min-width: 560px) {
+  h1 {
+    font-size: 30px;
+  }
+}

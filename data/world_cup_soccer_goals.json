@@ -1,0 +1,1329 @@
+{
+  "machine": "World Cup Soccer (Bally, 1994)",
+  "defaultFx": "sparkle",
+  "shots": [
+    {
+      "id": "left-spiral",
+      "name": "Left Spiral / Orbit",
+      "type": "orbit",
+      "x": 0.08,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Far-left edge, curls up the whole left side to the top lanes/pops unless a city is lit (then loops back out). Contains the Ultra Spinner and the TRAVEL award; primary city-travel shot.",
+      "feeds": {
+        "shot": "top-lanes"
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Ultra Spinner",
+      "type": "spinner",
+      "x": 0.1,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Spinning blade near the base of the Left Spiral orbit; scores 1M/spin during Ultra Spinner and collects the Boston Tea Party hurry-up."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Entrance shootable mainly from the right flipper; upper shelf physically holds the locked ball for multiball. Two consecutive hits divert return to the left flipper.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Mirrors left ramp; entrance shootable from left flipper, always returns to left flipper. Under-hit shots drop into the jet bumpers.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "striker-targets",
+      "name": "Striker Targets (bank)",
+      "type": "target-bank",
+      "x": 0.3,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Two of three non-contiguous standups flanking the left ramp; spell S-T-R-I-K-E-R with the Header target."
+    },
+    {
+      "id": "header-target",
+      "name": "Header Target",
+      "type": "standup",
+      "x": 0.7,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Upper-right Striker standup in front of the jets; double-duty — spots a STRIKER letter AND spots a Star Rollover."
+    },
+    {
+      "id": "free-kick-saucer-left",
+      "name": "Free Kick Saucer (Left)",
+      "type": "saucer",
+      "x": 0.28,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "Mid-left kickout hole below the Striker targets; falling in lights the Free Kick standup."
+    },
+    {
+      "id": "free-kick-saucer-right",
+      "name": "Free Kick Saucer (Right)",
+      "type": "saucer",
+      "x": 0.71,
+      "y": 0.49,
+      "trim": "all",
+      "notes": "Mirror of the left Free Kick saucer, adjacent to the Right Ramp entrance."
+    },
+    {
+      "id": "free-kick-target",
+      "name": "Free Kick Target",
+      "type": "standup",
+      "x": 0.58,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Standup directly below the spinning soccer ball; scores 10M when lit, +5M per consecutive hit during Super Free Kick."
+    },
+    {
+      "id": "kickback-target",
+      "name": "Corner Kickback Target",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Lower-left standup beside the left Free Kick saucer; blinks when the kickback is off, and hitting it relights the left-outlane kickback. The right inlane lights it; its mirror on the right side is the Magna-Goal Save target, lit by the left inlane."
+    },
+    {
+      "id": "magna-save-target",
+      "name": "Magna-Save Relight Target",
+      "type": "standup",
+      "x": 0.71,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Mirrored decal lower-right near the right Free Kick saucer; relights the Magna-Save per the left-inlane rollover crossover."
+    },
+    {
+      "id": "assist-saucer",
+      "name": "Assist Saucer",
+      "type": "saucer",
+      "x": 0.4,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Upper/back-center, directly below the Goal opening. Lights Goal (or scores when Goal is already lit) and lets you flipper-fire straight into Goal, bypassing the goalie. Scripted not to miss during multiball."
+    },
+    {
+      "id": "tackle-target",
+      "name": "Tackle Target",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Just right/below the Assist saucer; lit for 10M after any city travel."
+    },
+    {
+      "id": "star-rollovers",
+      "name": "Star Rollovers (x4)",
+      "type": "lane",
+      "x": 0.53,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Diagonal cluster of star inserts running toward the soccer ball; lighting all 4 relights the Goal."
+    },
+    {
+      "id": "goal",
+      "name": "GOAL",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Upper/back-center net hole with the moving goalie; primary scoring shot and the multiball/Final Match jackpot. Relit via 4 Star Rollovers or the Assist saucer."
+    },
+    {
+      "id": "striker-scoop",
+      "name": "Striker Scoop",
+      "type": "scoop",
+      "x": 0.55,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Back-middle scoop, right of Goal. Completing STRIKER lights it for a random mystery award (Extra Ball, Multiball, 20M, Super Free Kick, Penalty Kick, Advance 3 Cities, Unlimited Kickback, 3 Goals); also the Extra Ball Round collect point."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.7,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Triangle cluster upper-right ('ULTRA JETS'); 100K/pop normally, jumps to flat 1M/pop for the rest of the ball after 25,000 cumulative fans; 2M/pop during Ultra Jets."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Lanes (Buy/Ticket)",
+      "type": "lane",
+      "x": 0.64,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Twin standing lanes at the very top, fed via the Left Spiral; completing both lights TRAVEL for a city."
+    },
+    {
+      "id": "soccer-ball",
+      "name": "Spinning Soccer Ball",
+      "type": "mech",
+      "x": 0.6,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Large motorized rubber half-sphere between the Goal/jets and the two ramps; spins violently when Goal is lit or during multiball, producing unpredictable deflections. Not a direct shot target."
+    },
+    {
+      "id": "tv-award-scoop",
+      "name": "TV Award / Final Draw Scoop",
+      "type": "scoop",
+      "x": 0.67,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Dual-function center-right scoop: collects timed TV Awards (fixed sequence, re-lit every 4 Goals) and starts Multiball/Final Match when lit; Multiball takes priority if both are lit."
+    },
+    {
+      "id": "plunger",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Real mechanical spring plunger, far-right edge — no auto-launch, even in Final Match. Feeds the skill-shot dividers."
+    },
+    {
+      "id": "skill-shot-lanes",
+      "name": "Skill Shot Dividers",
+      "type": "lane",
+      "x": 0.85,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "3-way lit divider near the top of the shooter loop; 1st=5M, 2nd=10M, 3rd=30M+city."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Has the kickback mechanism, relit via the Corner Kickback target."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.18,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Rollover lights the Magna-Save relight target."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.82,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Rollover lights the Corner Kickback target."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane (Special)",
+      "type": "lane",
+      "x": 0.92,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "SPECIAL lights here after defeating Germany in multiball."
+    },
+    {
+      "id": "magna-save-button",
+      "name": "Magna-Save",
+      "type": "mech",
+      "x": 0.22,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Player-activated magnet, fired by a dedicated button on the left side of the cabinet behind the flipper button, that catches a ball headed for the center drain so you can re-trap on the left flipper. The manual calls it Magna-Goal Save. Not a flipper."
+    },
+    {
+      "id": "goalie",
+      "name": "Moving Goalie",
+      "type": "mech",
+      "x": 0.39,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "Animated plastic goalkeeper sweeping in front of the Goal hole; blocks direct shots and is itself a hit target during Hit The Goalie! and Ultra Goalie."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot-basic",
+      "title": "Three-Tier Skill Shot",
+      "category": "skillshot",
+      "summary": "Real mechanical plunger feeds a 3-way divided loop; first hit scores 5M, but the real prize is stacking toward a city.",
+      "difficulty": 1,
+      "reward": "5M / 10M / 30M + spots a city, depending on which flashing divider you land",
+      "steps": [
+        {
+          "shot": "skill-shot-lanes",
+          "action": "Plunge into the flashing divider",
+          "detail": "Firm, medium-strength plunge — real spring plunger, no auto-launcher; feel for the sweet spot. 1st flashing hole = 5M, 2nd = 10M, 3rd/last = 30M + spots a city."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-sweep",
+      "title": "Full Skill Shot Sweep",
+      "category": "skillshot",
+      "summary": "Clearing all three flashing skill-shot lanes over the course of a game is one of three ways to advance cities toward Final Match.",
+      "difficulty": 2,
+      "reward": "Advances a city toward Final Match; clearing all 3 lanes across the game can net an extra city",
+      "steps": [
+        {
+          "shot": "skill-shot-lanes",
+          "action": "Plunge into whichever divider is still flashing",
+          "detail": "Take the free skill shot on every ball — zero risk. Track which of the three lanes are still lit from ball to ball; the last one you clear spots a city."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-build-lock",
+      "title": "BUILD Combo → Lock",
+      "category": "combo",
+      "summary": "Shoot BUILD-lit shots — left ramp, left spiral, right ramp — to fill panels on the soccer-ball graphic, then close on the right ramp once Lock is lit to lock the ball.",
+      "difficulty": 3,
+      "reward": "Fills a BUILD panel per shot; locks the ball for multiball once all 5 panels are filled",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp while BUILD is flashing",
+          "detail": "Fills a Strength/Stamina/Skill/Speed/Spirit panel on the soccer-ball graphic.",
+          "link": "none"
+        },
+        {
+          "shot": "left-spiral",
+          "action": "Or work in the left spiral/spinner",
+          "detail": "Another BUILD source — any BUILD-lit shot fills a panel toward lighting Lock.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Close on the right ramp once Lock is lit",
+          "detail": "Locks the ball for multiball once all five BUILD panels are filled."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-assist-jackpot-loop",
+      "title": "Assist-Saucer Jackpot Loop",
+      "category": "combo",
+      "summary": "During multiball the Assist saucer is scripted not to miss — the single most reliable repeatable jackpot loop in the game.",
+      "difficulty": 2,
+      "reward": "Current jackpot + auto-relights the next one -- the most reliable repeatable jackpot loop in the game",
+      "steps": [
+        {
+          "shot": "assist-saucer",
+          "action": "Feed the Assist saucer",
+          "detail": "Ball drops in from the upper-left approach."
+        },
+        {
+          "shot": "goal",
+          "action": "Punch the flipper button to auto-fire into Goal",
+          "detail": "Scores the current jackpot. The next team's jackpot still has to be relit with a ramp shot before the Goal pays again."
+        },
+        {
+          "shot": "assist-saucer",
+          "action": "Repeat — feed the Assist saucer again",
+          "detail": "Loop as long as the ball keeps returning to the saucer."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-goal-ramp-cycle",
+      "title": "Goal → Ramp Jackpot-Relight Cycle",
+      "category": "combo",
+      "summary": "The standard multiball climb — score the Goal jackpot, relight it with a ramp, repeat up all 15 ranked opponents.",
+      "difficulty": 2,
+      "reward": "Jackpot for the current rank (USA 20M up to Germany 250M); beats that team and advances rank each cycle",
+      "steps": [
+        {
+          "shot": "goal",
+          "action": "Shoot the lit Goal",
+          "detail": "Scores the jackpot for the current rank and beats that team, advancing rank."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot either ramp to relight Goal",
+          "detail": "Advances to the next-ranked opponent, USA 20M up through Germany 250M."
+        },
+        {
+          "shot": "goal",
+          "action": "Shoot Goal again",
+          "detail": "Repeat the ramp-relight/Goal cycle to climb the ranks."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-victory-laps",
+      "title": "Post-Germany Victory Laps",
+      "category": "combo",
+      "summary": "Beat Germany (rank 1, 250M) and Goal/ramps become flat 50M Victory Lap shots — the best sustained per-shot value in the game.",
+      "difficulty": 2,
+      "reward": "Flat 50M per shot (Goal/Left Ramp/Right Ramp) -- the best sustained per-shot value in the game",
+      "steps": [
+        {
+          "shot": "goal",
+          "action": "Shoot Goal, Left Ramp, or Right Ramp in any order",
+          "detail": "Each is worth a flat 50M with no relight step needed, for the first 5 laps."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "After 5 laps, alternate strictly between left ramp and Goal",
+          "detail": "Victory Laps lock into a left-ramp/Goal alternation for the rest of the ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-goal-ultra-farm",
+      "title": "Goal Ultra-Farming Loop",
+      "category": "combo",
+      "summary": "Outside multiball, repeatedly scoring and relighting Goal banks Ultra-mode points that pay out at end-of-ball bonus.",
+      "difficulty": 1,
+      "reward": "10M + starts/advances an Ultra mode each cycle; Ultra points bank into end-of-ball bonus (lost on tilt)",
+      "steps": [
+        {
+          "shot": "goal",
+          "action": "Shoot the lit Goal",
+          "detail": "10M plus starts or advances an Ultra mode."
+        },
+        {
+          "shot": "star-rollovers",
+          "action": "Relight Goal via the 4 Star Rollovers",
+          "detail": "Or take the Assist saucer shot instead — either relights Goal."
+        },
+        {
+          "shot": "goal",
+          "action": "Shoot Goal again",
+          "detail": "Repeat; Ultra points only bank into bonus if you survive to ball end — a tilt wipes them."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mb-build-and-lock",
+      "title": "Multiball: Build & Lock",
+      "category": "multiball",
+      "summary": "Fill all five BUILD panels, lock a ball on the left ramp, then start Multiball at the TV/Final Draw scoop.",
+      "difficulty": 2,
+      "reward": "Locks the ball (jumps multiball starting rank by 4) and launches Multiball at the Final Draw scoop",
+      "steps": [
+        {
+          "shot": "left-spiral",
+          "action": "Shoot the left spiral",
+          "detail": "Lights one of the 5 BUILD words (Strength/Stamina/Skill/Speed/Spirit).",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left or right ramp",
+          "detail": "Each BUILD shot lights another word.",
+          "link": "none"
+        },
+        {
+          "shot": "striker-scoop",
+          "action": "Shoot the Striker Scoop",
+          "detail": "The 4th BUILD source; lighting all 5 words lights Lock.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a ramp to lock the ball",
+          "detail": "The left ramp's upper shelf physically holds the locked ball; locking also jumps multiball rank by 4."
+        },
+        {
+          "shot": "tv-award-scoop",
+          "action": "Shoot the lit Final Draw scoop",
+          "detail": "Launches Multiball. If TV Award is also lit here, Multiball takes priority."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mb-striker-backup",
+      "title": "Striker Scoop Multiball Backup",
+      "category": "multiball",
+      "summary": "A random Striker Scoop award can start Multiball on the spot, but at the bottom of the rankings; separately, reaching your last ball with no multiball yet lights the Final Draw scoop on its own.",
+      "difficulty": 1,
+      "reward": "Random Striker award — one possibility is Multiball starting at the lowest rank",
+      "steps": [
+        {
+          "shot": "striker-targets",
+          "action": "Hit Striker standups to spell S-T-R-I-K-E-R",
+          "detail": "Completing the word lights the Striker Scoop (also lit at game start).",
+          "link": "none"
+        },
+        {
+          "shot": "header-target",
+          "action": "Or hit the Header target",
+          "detail": "Spots a STRIKER letter and a star in one shot — fastest way to complete the word.",
+          "link": "none"
+        },
+        {
+          "shot": "striker-scoop",
+          "action": "Shoot the lit Striker Scoop",
+          "detail": "Random award. Multiball is one of the possible outcomes and drops you in at the bottom of the rankings — a chance, not a guarantee."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mb-drain-recovery",
+      "title": "Drain Recovery Resume",
+      "category": "multiball",
+      "summary": "Draining mid-multiball before collecting a jackpot doesn't end it — a ramp or the Final Draw scoop resumes right where you left off.",
+      "difficulty": 2,
+      "reward": "Resumes multiball at the rank where you left off; a later, separate multiball starts two ranks higher",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "After a drain mid-multiball, shoot either ramp",
+          "detail": "Resumes multiball from the same rank instead of losing progress."
+        },
+        {
+          "shot": "tv-award-scoop",
+          "action": "Or shoot the Final Draw scoop",
+          "detail": "Also resumes; subsequent multiballs restart 2 ranks above the last team you beat."
+        }
+      ],
+      "ordered": false,
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-ultra",
+      "title": "Ultra Modes",
+      "category": "mode",
+      "summary": "Four stacking sub-modes — Ramps, Spinner, Jets, Goalie — are awarded one per Goal scored and bank points into end-of-ball bonus.",
+      "difficulty": 2,
+      "reward": "5M/ramp, 1M/spin, 2M/pop, or 5M/goalie hit while active; each Ultra caps at 30M + a 10M bonus",
+      "steps": [
+        {
+          "shot": "goal",
+          "action": "Score the Goal to award an Ultra mode",
+          "detail": "One Ultra Mode is awarded per Goal scored; up to 4 can run concurrently."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot ramps for Ultra Ramps",
+          "detail": "5M per ramp shot while active."
+        },
+        {
+          "shot": "spinner",
+          "action": "Spin the left orbit spinner for Ultra Spinner",
+          "detail": "1M per spin."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Rattle the jet bumpers for Ultra Jets",
+          "detail": "Upped to 2M per pop while active."
+        },
+        {
+          "shot": "goalie",
+          "action": "Hit the goalie for Ultra Goalie",
+          "detail": "5M per hit; each Ultra caps at 30M plus a 10M bonus, then ends."
+        }
+      ],
+      "ordered": false,
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-tv-big-goal",
+      "title": "TV Award: Big Goal Round",
+      "category": "mode",
+      "summary": "Start a timed round at the TV/Final Draw scoop and hammer 3 escalating Goal shots before the clock runs out.",
+      "difficulty": 2,
+      "reward": "25M just for starting, then 15M + 15M + 30M for the three Goal shots landed within the timer",
+      "steps": [
+        {
+          "shot": "tv-award-scoop",
+          "action": "Shoot the lit TV/Final Draw scoop",
+          "detail": "Starts the fixed-sequence TV Award (flat 25M just for starting); re-lights every 4 Goals scored."
+        },
+        {
+          "shot": "goal",
+          "action": "Shoot Goal within the 20-25 sec timer",
+          "detail": "1st Goal shot = 15M."
+        },
+        {
+          "shot": "goal",
+          "action": "Shoot Goal again",
+          "detail": "2nd Goal shot = 15M."
+        },
+        {
+          "shot": "goal",
+          "action": "Shoot Goal a third time",
+          "detail": "3rd Goal shot = 30M — all three must land before the timer expires."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-tv-extra-ball",
+      "title": "TV Award: Extra Ball Round",
+      "category": "mode",
+      "summary": "A 20-second window to collect Extra Ball at the Striker Scoop, then keep milking it at 50M per additional shot.",
+      "difficulty": 2,
+      "reward": "An Extra Ball, then 50M per additional Striker Scoop shot for the rest of the 20-sec timer",
+      "steps": [
+        {
+          "shot": "tv-award-scoop",
+          "action": "Shoot the lit TV/Final Draw scoop",
+          "detail": "Starts the Extra Ball Round when it's next in the fixed TV Award sequence."
+        },
+        {
+          "shot": "striker-scoop",
+          "action": "Shoot the Striker Scoop within 20 sec",
+          "detail": "Collects the Extra Ball."
+        },
+        {
+          "shot": "striker-scoop",
+          "action": "Keep shooting the Striker Scoop",
+          "detail": "Worth 50M per additional shot for the rest of the timer."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-boston-tea-party",
+      "title": "Boston Tea Party Hurry-Up",
+      "category": "mode",
+      "summary": "A countdown hurry-up unlocked by traveling to Boston — starts at 40M and drains to a 10M floor if you wait too long.",
+      "difficulty": 2,
+      "reward": "Hurry-up starting at 40M, counting down to a 10M floor if you wait",
+      "steps": [
+        {
+          "shot": "left-spiral",
+          "action": "Travel to Boston via the left spiral",
+          "detail": "Light TRAVEL first (both ramps or both top lanes), then shoot the spiral/spinner to advance cities to Boston."
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the left spiral/spinner to collect",
+          "detail": "Value starts at 40M and counts down to a 10M floor — don't wait."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-ultra-jets",
+      "title": "Packed Stands: 1M Jet Bumpers",
+      "category": "multiplier",
+      "summary": "WCS94 has no true playfield multiplier — the closest thing is the jet bumpers jumping from 100K to a flat 1M per pop for the rest of the ball.",
+      "difficulty": 2,
+      "reward": "Jet bumpers jump from 100K to a flat 1M per pop for the rest of the ball",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Pound the jet bumpers all game",
+          "detail": "Each pop banks toward a cumulative 'fan count'; normal value is 100K per pop."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Keep hitting jets past 25,000 cumulative fans",
+          "detail": "Jets jump to a flat 1M per pop for the rest of the ball once the threshold is crossed."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-super-free-kick",
+      "title": "Super Free Kick Escalator",
+      "category": "multiplier",
+      "summary": "Light Super Free Kick from a Striker award, then chain hits on the Free Kick target — value climbs +5M per consecutive hit.",
+      "difficulty": 2,
+      "reward": "10M base, +5M per consecutive Free Kick target hit while Super Free Kick is active",
+      "steps": [
+        {
+          "shot": "striker-scoop",
+          "action": "Collect a Striker mystery award",
+          "detail": "One outcome is Super Free Kick, a roughly 45-60 sec escalating window.",
+          "link": "none"
+        },
+        {
+          "shot": "free-kick-saucer-left",
+          "action": "Or drop into a Free Kick saucer first",
+          "detail": "Lights the base Free Kick target for 10 seconds at 10M.",
+          "link": "none"
+        },
+        {
+          "shot": "free-kick-target",
+          "action": "Hit the Free Kick target repeatedly",
+          "detail": "Base 10M climbs +5M per consecutive hit while Super Free Kick is active."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-final-match-qualify",
+      "title": "Final Match Qualification",
+      "category": "wizard",
+      "summary": "The full chain to unlock the World Cup Final — travel all 9 cities culminating in Los Angeles, then start it at the Final Draw scoop.",
+      "difficulty": 3,
+      "reward": "Starts the Final Match wizard mode against Germany at the Final Draw scoop",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Bank skill shots toward cities",
+          "detail": "Completing all 3 flashing skill-shot lanes across the game is one of three ways to advance a city.",
+          "link": "none"
+        },
+        {
+          "shot": "left-spiral",
+          "action": "Travel cities via TRAVEL at the left spiral",
+          "detail": "Light TRAVEL (both ramps or both top lanes) then shoot the spiral/spinner; repeat through Chicago, Dallas, Boston, NY, Orlando, DC, SF, Detroit.",
+          "link": "none"
+        },
+        {
+          "shot": "striker-scoop",
+          "action": "Or collect 'Advance Three Cities' from Striker",
+          "detail": "A random Striker Scoop award that jumps 3 cities at once.",
+          "link": "none"
+        },
+        {
+          "shot": "tv-award-scoop",
+          "action": "Reach Los Angeles, then shoot the lit Final Draw scoop",
+          "detail": "LA is the 9th and final city; this starts the Final Match wizard mode against Germany."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-final-match-play",
+      "title": "Final Match: Beat Germany",
+      "category": "wizard",
+      "summary": "A 45-second timed multiball against Germany — the trough keeps serving balls for you to plunge all round, each Goal worth 75M, and outscoring Germany pays a 500M bonus.",
+      "difficulty": 3,
+      "reward": "75M per Goal scored in 45 sec; beating Germany's total nets a 500M bonus (tie forces sudden-death overtime)",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Manually plunge every ball",
+          "detail": "No auto-launch: every ball is yours to plunge, and the trough keeps feeding the shooter lane for the full 45 seconds. Keep one ready in the lane and plunge as fast as you can shoot — with the ball save running, volume beats caution."
+        },
+        {
+          "shot": "goal",
+          "action": "Shoot Goal as many times as possible in 45 sec",
+          "detail": "Each Goal is worth 75M; Germany scores on its own running counter, not a shot you defend."
+        },
+        {
+          "shot": "goal",
+          "action": "Keep pounding Goal to the buzzer",
+          "detail": "Beat Germany's total when time expires for a 500M bonus; a tie forces sudden-death overtime."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A safe, concrete opening sequence off a fresh ball — free points, build progress, and a low-risk Goal shot.",
+      "difficulty": 1,
+      "reward": "Free skill-shot points, a BUILD panel, and a safe goalie-bypass Goal shot for 10M + an Ultra mode",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Plunge the skill shot",
+          "detail": "Free points, zero risk — take it on every ball."
+        },
+        {
+          "shot": "star-rollovers",
+          "action": "Hit the 4 rollover lanes toward Goal",
+          "detail": "Qualifies a direct Goal shot if not already lit."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot either ramp",
+          "detail": "Builds toward multiball and is the table's highest-leverage habit shot."
+        },
+        {
+          "shot": "assist-saucer",
+          "action": "Take the Assist saucer",
+          "detail": "Catches the ball and lets you flipper-fire straight into Goal, skipping the moving-goalie risk."
+        },
+        {
+          "shot": "goal",
+          "action": "Fire into the lit Goal",
+          "detail": "10M plus starts an Ultra mode."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "strat-best-opener-build-fast",
+      "title": "Best Opener: Build Toward Multiball Fast",
+      "category": "strategy",
+      "summary": "Prioritize the 4 BUILD sources over risky direct Goal shots early — multiball is the game's primary score engine.",
+      "difficulty": 2,
+      "reward": "Fills all 5 BUILD panels and locks the ball, jumping multiball starting rank by 4",
+      "steps": [
+        {
+          "shot": "left-spiral",
+          "action": "Shoot the left spiral early",
+          "detail": "One of 4 BUILD sources; safer than a direct goalie-defended shot."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Alternate left and right ramps",
+          "detail": "Each ramp shot fills another BUILD panel and feeds the flippers back for the next shot."
+        },
+        {
+          "shot": "striker-scoop",
+          "action": "Work in Striker Scoop hits",
+          "detail": "4th BUILD source; also spells STRIKER for a bonus mystery award along the way."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Once all 5 panels are lit, lock on a ramp",
+          "detail": "Locking instantly jumps multiball rank by 4 — don't stall once Lock is lit."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "strat-goal-only-grinding",
+      "title": "Goal-Only Grinding (Safe Farm)",
+      "category": "strategy",
+      "summary": "The lowest-risk high-score approach — skip multiball entirely and just grind Goal-relight-Goal, banking Ultra bonus every ball.",
+      "difficulty": 1,
+      "reward": "10M + Ultra-mode progress per cycle with zero lock/drain risk -- can rack tens to hundreds of millions purely from bonus",
+      "steps": [
+        {
+          "shot": "goal",
+          "action": "Shoot the lit Goal",
+          "detail": "10M and starts or advances an Ultra mode; no lock or combo risk involved."
+        },
+        {
+          "shot": "star-rollovers",
+          "action": "Relight via the 4 Star Rollovers",
+          "detail": "Or take the Assist saucer instead — either relights Goal for the next shot."
+        },
+        {
+          "shot": "goal",
+          "action": "Repeat Goal → relight all game",
+          "detail": "Worth far more than it looks — can rack tens or hundreds of millions purely on Goal + Ultra bonus without ever risking a drain-prone lock attempt."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "special-after-germany",
+      "title": "Light and Collect SPECIAL",
+      "category": "strategy",
+      "summary": "Climbing to the #1 ranked team, Germany, lights SPECIAL in the right outlane -- the one time a right-outlane drain is what you want.",
+      "difficulty": 3,
+      "reward": "SPECIAL award (typically a credit or replay, per operator settings) collected in the right outlane",
+      "steps": [
+        {
+          "shot": "goal",
+          "action": "Climb the ranks to Germany in multiball",
+          "detail": "Shoot the lit Goal for each ranked opponent's jackpot until Germany falls."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Relight Goal on a ramp between jackpots",
+          "detail": "Each ramp shot advances to the next-ranked team, so keep the Goal-then-ramp rhythm going."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Send a ball down the right outlane while SPECIAL is lit",
+          "detail": "SPECIAL lights as soon as you reach the match against #1 Germany, so it is already live while you are shooting that jackpot; let a spare multiball ball take it rather than your last ball."
+        }
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "top-tier-skill-shot",
+      "title": "Perfect Plunge",
+      "desc": "Land the plunged ball in the third flashing skill-shot divider for the 30M award plus a spotted city.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot-basic"
+    },
+    {
+      "id": "skill-lane-sweep",
+      "title": "Every Divider Cleared",
+      "desc": "Clear all three flashing skill-shot dividers across a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-shot-sweep"
+    },
+    {
+      "id": "full-build-lock",
+      "title": "Squad Fully Built",
+      "desc": "Fill all five BUILD panels on the soccer-ball graphic and lock a ball on the ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-build-lock"
+    },
+    {
+      "id": "first-multiball-start",
+      "title": "Multiball Kickoff",
+      "desc": "Start Multiball from the lit Final Draw scoop after locking a ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-build-and-lock"
+    },
+    {
+      "id": "striker-word-award",
+      "title": "Striker Spelled",
+      "desc": "Spell S-T-R-I-K-E-R on the standups and cash the lit Striker Scoop for its mystery award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-striker-backup"
+    },
+    {
+      "id": "assist-jackpot-chain",
+      "title": "Assist Hat Trick",
+      "desc": "Collect three jackpots in one multiball using the Assist saucer feed into Goal.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-assist-jackpot-loop"
+    },
+    {
+      "id": "multiball-resumed",
+      "title": "Back From The Drain",
+      "desc": "Drain out of multiball before a jackpot, then resume it at the same rank with a ramp or the Final Draw scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-drain-recovery"
+    },
+    {
+      "id": "germany-toppled",
+      "title": "Top Of The Bracket",
+      "desc": "Climb the ranked opponents in multiball all the way to Germany and collect the 250M jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-goal-ramp-cycle"
+    },
+    {
+      "id": "victory-lap-run",
+      "title": "Five Laps Of Honor",
+      "desc": "Score five Victory Lap shots at 50M each after beating Germany.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-victory-laps"
+    },
+    {
+      "id": "special-collected",
+      "title": "Outlane Payoff",
+      "desc": "Beat Germany in multiball to light SPECIAL, then collect it in the right outlane.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "special-after-germany"
+    },
+    {
+      "id": "ultra-quad-stack",
+      "title": "Four Ultras Running",
+      "desc": "Have all four Ultra modes -- Ramps, Spinner, Jets, Goalie -- active at the same time.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-ultra"
+    },
+    {
+      "id": "ultra-bonus-banked",
+      "title": "Bonus In The Bank",
+      "desc": "Bank Ultra-mode points and survive to end of ball without tilting so they pay into bonus.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-goal-ultra-farm"
+    },
+    {
+      "id": "big-goal-sweep",
+      "title": "Three Goals, One Clock",
+      "desc": "Land all three Goal shots of the Big Goal TV Award before its timer expires.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-tv-big-goal"
+    },
+    {
+      "id": "extra-ball-earned",
+      "title": "One More Ball",
+      "desc": "Collect an Extra Ball at the Striker Scoop during the Extra Ball TV Award window.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-tv-extra-ball"
+    },
+    {
+      "id": "boston-top-value",
+      "title": "Cash The Countdown",
+      "desc": "Travel to Boston and collect the hurry-up on the spinner before its value drops toward the floor.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-boston-tea-party"
+    },
+    {
+      "id": "jet-fan-threshold",
+      "title": "Stands Packed",
+      "desc": "Pass 25,000 cumulative fans on the jet bumpers so they pay a flat 1M per pop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-ultra-jets"
+    },
+    {
+      "id": "free-kick-escalation",
+      "title": "Set Piece Streak",
+      "desc": "Chain four consecutive Free Kick target hits while Super Free Kick is running.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-super-free-kick"
+    },
+    {
+      "id": "all-nine-cities",
+      "title": "Tour To Los Angeles",
+      "desc": "Travel through all nine cities to Los Angeles and qualify the Final Match.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-final-match-qualify"
+    },
+    {
+      "id": "final-match-victory",
+      "title": "Cup Won",
+      "desc": "Outscore Germany in the 45-second Final Match to take the 500M winner bonus.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-final-match-play"
+    }
+  ],
+  "drills": [
+    {
+      "id": "divider-sweep",
+      "title": "Sweep the Dividers",
+      "text": "Real spring plunger, no auto-launcher, so the strength is yours to set. Work firm-medium pulls and keep track of which of the three dividers is still flashing from ball to ball — the last one you clear is the one that spots a city.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skill-shot-sweep",
+      "shots": [
+        "plunger",
+        "skill-shot-lanes"
+      ]
+    },
+    {
+      "id": "magna-save-habit",
+      "title": "Magna-Save Habit",
+      "text": "The magnet guards the center drain only — the left outlane is the kickback's job, so spending it on a ball drifting left is a wasted charge. Play whole balls with a thumb resting on the button whenever the goalie is in the way, since rejects come back center-ish, and rebuild the charge through the left inlane and the blinking target on the lower right before you need it again.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "shots": [
+        "magna-save-button",
+        "goalie",
+        "left-inlane",
+        "magna-save-target"
+      ]
+    },
+    {
+      "id": "assist-feed-reps",
+      "title": "Assist Feed Reps",
+      "text": "The Assist saucer catches the ball and lets you fire straight into the net with the goalie taken out of it, so the shot worth drilling is the feed, not the Goal itself. Work the approach into the saucer until it lands cold, then punch it in.",
+      "reps": "15 feeds",
+      "focus": "accuracy",
+      "goal": "combo-assist-jackpot-loop",
+      "shots": [
+        "assist-saucer",
+        "goal"
+      ]
+    },
+    {
+      "id": "goal-ramp-rhythm",
+      "title": "Goal-Ramp Rhythm",
+      "text": "Goal, ramp, Goal, ramp — the ramp is what relights the net for the next rank, so treat the pair as one unit rather than two separate decisions. Run it on a single ball until the hesitation after the Goal is gone.",
+      "reps": "5 unbroken cycles",
+      "focus": "flow",
+      "goal": "combo-goal-ramp-cycle",
+      "shots": [
+        "goal",
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "ramp-return-map",
+      "title": "Map the Ramp Returns",
+      "text": "The left ramp comes off the right flipper, the right ramp comes off the left, and the right one always returns to the left flipper — while two left-ramp hits in a row divert its return over to the left as well. Shoot ten of each and watch the return actually change, and note where an under-hit right ramp goes, because it drops into the jets.",
+      "reps": "10 of each ramp",
+      "focus": "accuracy",
+      "goal": "strat-best-opener-build-fast",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "jet-bumpers",
+        "left-flipper"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Magna-Goal Save",
+    "location": "left cabinet wall, just behind the left flipper button",
+    "how": "WCS94 hands you one extra control, and it is pure defense: a small button on the cabinet's left wall, tucked behind the flipper button, that switches on a magnet mounted over the left flipper tip. It exists for the ball coming straight down the middle — hit it and the ball sticks there instead of splitting the flippers. You hold one charge at a time and have to earn the next one.",
+    "uses": [
+      {
+        "when": "Ball dropping straight down the middle",
+        "what": "Fires the magnet above the left flipper tip so the ball parks there and you can trap it instead of draining."
+      },
+      {
+        "when": "First ball of a fresh game",
+        "what": "The save starts lit, so you already have one charge banked before you have hit anything."
+      },
+      {
+        "when": "Right after you spend it",
+        "what": "The button goes dead — mashing it again does nothing until you relight the magnet."
+      },
+      {
+        "when": "Rolling through the left inlane",
+        "what": "That starts the Light Magna-Goal Save target blinking on the lower right; hit it while it blinks to recharge the button."
+      },
+      {
+        "when": "Ball drifting toward the left outlane",
+        "what": "Wrong save — the kickback covers that lane. The magnet only guards the center drain."
+      },
+      {
+        "when": "Goalie rejects your Goal shot",
+        "what": "Rejects often come back center-ish, so keep a thumb near the button whenever the goalie is in the way."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Play out the 1994 World Cup: beat one ranked nation after another, travel the host cities, and reach the Final against Germany. Shoot the moving goalie's net for Goals while you build toward the multiball that carries your whole score.",
+    "loop": [
+      "Shoot a ramp, the left spiral, or the Striker scoop to fill a BUILD panel; fill all five to light Lock.",
+      "Trap that fifth ball on the left ramp's shelf, and the Final Draw scoop opens to launch multiball.",
+      "In multiball, beat the goalie for the lit Goal jackpot, then relight it with a ramp to climb from USA up to Germany.",
+      "Feed the Assist saucer whenever the keeper is in your way -- it fires the ball into the net for a jackpot you almost never miss.",
+      "Between multiballs, grind Goal-and-relight for Ultra modes that bank into your bonus, and travel the cities toward the Final Match."
+    ],
+    "lights": [
+      {
+        "id": "goal-shot",
+        "name": "Goal / Goalie",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "goal"
+          },
+          {
+            "shot": "goalie"
+          }
+        ],
+        "lit": "The Goal arrow lights when the net is open, but a keeper slides across the mouth so an open arrow still has to beat him, and the arrow goes dark once you score until you relight it.",
+        "flashing": null,
+        "control": null,
+        "then": "Relight it with either ramp or by sweeping the four star rollovers and shoot again -- outside multiball each Goal also hands you an Ultra mode, and in multiball it is the jackpot climbing from USA up to Germany. When the goalie is parked in the lane, feed the Assist saucer instead and let it fire the ball in for you.",
+        "goals": [
+          "combo-goal-ramp-cycle",
+          "combo-goal-ultra-farm",
+          "mode-ultra"
+        ]
+      },
+      {
+        "id": "build-panels",
+        "name": "BUILD Panels",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-spiral"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "striker-scoop"
+          }
+        ],
+        "lit": "Every BUILD source you hit fills one panel -- Strength, Stamina, Skill, Speed, Spirit -- on the soccer-ball graphic, and a filled panel stays filled so you only chase the ones still open.",
+        "flashing": null,
+        "control": null,
+        "then": "Fill all five to light Lock on the left ramp, trap the ball on its upper shelf, and the Draw scoop lights to launch multiball. Locking also jumps your multiball starting rank up four teams, so it pays far more than the panels alone.",
+        "goals": [
+          "combo-build-lock",
+          "mb-build-and-lock",
+          "strat-best-opener-build-fast"
+        ]
+      },
+      {
+        "id": "assist-loop",
+        "name": "Assist Saucer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "assist-saucer"
+          }
+        ],
+        "lit": "The Assist saucer stays live through multiball and catches a ball dropping in from the upper left, lining it up so you can flipper-fire it straight at an open net with the keeper taken out of the shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Tap a flipper to auto-fire the caught ball into the Goal -- the feed is scripted not to miss, so as long as the ball keeps returning here you have the most reliable repeating jackpot on the game. Relight the next team's jackpot on a ramp before the Goal will pay again.",
+        "goals": [
+          "combo-assist-jackpot-loop"
+        ]
+      },
+      {
+        "id": "ultra-modes",
+        "name": "Ultra Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "jet-bumpers"
+          },
+          {
+            "shot": "goalie"
+          }
+        ],
+        "lit": "Every Goal you score switches on one of four Ultra modes -- Ramps, Spinner, Jets, Goalie -- and up to all four run at once, each paying a bonus every time you hit its shot while it stays lit.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the matching shot while its Ultra is lit -- ramps, the left-orbit spinner, the jets, or the goalie -- to pile up points that only cash at your end-of-ball bonus. Each Ultra caps out and ends, and a tilt wipes the whole bonus, so nurse the ball rather than risk it.",
+        "goals": [
+          "mode-ultra",
+          "mult-ultra-jets"
+        ]
+      },
+      {
+        "id": "striker-standups",
+        "name": "STRIKER Standups",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "striker-targets"
+          },
+          {
+            "shot": "header-target"
+          }
+        ],
+        "lit": "The Striker standups spell out the word STRIKER, a lit target marks a letter you have not knocked down yet, and the overhead Header target spots both a letter and a star in one hit.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the word to light the Striker scoop, then shoot it for a random award -- a Super Free Kick, an Advance Three Cities jump, or even a multiball dropped in at the bottom rank. The scoop also starts lit at the beginning of the game, so you have one award waiting for free.",
+        "goals": [
+          "mb-striker-backup",
+          "mult-super-free-kick"
+        ]
+      },
+      {
+        "id": "draw-scoop",
+        "name": "Final Draw / TV Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "tv-award-scoop"
+          }
+        ],
+        "lit": "The Final Draw scoop lights for multiball once you have a ball locked and otherwise cycles the TV Awards -- a Big Goal round, an Extra Ball round -- relighting every four Goals you score.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot it to launch multiball or to start whichever TV Award is up, and if both are lit the multiball wins. Travel all nine host cities to Los Angeles and this same scoop starts the Final Match against Germany.",
+        "goals": [
+          "mb-build-and-lock",
+          "mode-tv-big-goal",
+          "mode-tv-extra-ball",
+          "wizard-final-match-qualify"
+        ]
+      },
+      {
+        "id": "city-travel",
+        "name": "City Travel",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-spiral"
+          },
+          {
+            "shot": "top-lanes",
+            "lamps": 2
+          }
+        ],
+        "lit": "TRAVEL lights at the left spiral once you complete both ramps or both top lanes, and the host cities you bank stay banked toward the Final, so a spiral shot always moves you one city closer.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep lighting and collecting TRAVEL to climb the nine cities up to Los Angeles, which arms the Final Match at the Draw scoop. A stop in Boston lights a countdown hurry-up at the spinner that bleeds from forty million down to a floor, so collect it fast.",
+        "goals": [
+          "wizard-final-match-qualify",
+          "mode-boston-tea-party"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the free skill shot into a flashing divider on every plunge, then play the ramps and left spiral -- they fill BUILD panels and feed the flippers back cleanly. When the keeper is in your way use the Assist saucer to put the ball in the net instead of a cold shot, and keep a thumb on the Magna-Save for anything dropping down the middle.",
+        "goals": [
+          "skill-shot-basic",
+          "strat-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Fill all five BUILD panels, lock on the left ramp, and start multiball at the Draw scoop, because multiball is the score engine here. Between multiballs grind Goal-and-relight for Ultra modes that bank into your bonus, and spell STRIKER for a mystery award.",
+        "goals": [
+          "mb-build-and-lock",
+          "strat-best-opener-build-fast",
+          "combo-goal-ultra-farm"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Travel all nine cities to Los Angeles and start the Final Match against Germany -- a forty-five-second timed multiball where every Goal is worth seventy-five million and out-scoring Germany pays a five-hundred-million bonus. Short of that, climbing a multiball all the way to the Germany jackpot and into flat fifty-million Victory Laps is the biggest scoring you will bank in a normal game.",
+        "goals": [
+          "wizard-final-match-play",
+          "wizard-final-match-qualify",
+          "combo-victory-laps"
+        ]
+      }
+    ]
+  }
+}

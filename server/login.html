@@ -1,0 +1,185 @@
+<!doctype html>
+<!--
+  Pinball Genie Web — sign-in screen.
+  Phase 5 (2026-07-30): magic-link sign-in replaces username+password. One
+  email field, "Send me a link", and (after a successful POST) a "check your
+  inbox" confirmation — no password field has ever existed on this page and
+  none will; see pinball_auth.py's module docstring for why.
+
+  Served by pinball_auth.py (see that file's docstring). The .card element
+  below carries a template marker in its class list, substituted by
+  _login_page() (STATE_MARKER / STATE_DEFAULT / STATE_SENT / STATE_LIMITED):
+    - GET /login              -> marker becomes empty: the .signin-panel
+                                  form is shown, .sent-panel and
+                                  .limited-panel stay hidden (login.css's
+                                  default)
+    - GET /login?sent=1       -> marker becomes "is-sent": .sent-panel is
+                                  shown, .signin-panel is hidden. POST
+                                  /auth/request redirects here (302) after
+                                  EVERY accepted request, whether the address
+                                  was new, already registered, or garbage —
+                                  see pinball_auth.py's ENUMERATION note. This
+                                  is why the form's own POST->redirect works
+                                  with NO JavaScript: the state is rendered
+                                  server-side from the query string, not
+                                  toggled by a script.
+    - a tripped rate limit    -> marker becomes "is-limited": .limited-panel
+                                  is shown, .signin-panel is hidden (D5,
+                                  2026-07-30 security review — see
+                                  pinball_auth.py's _send_rate_limited; this
+                                  replaced a bare Content-Length:0 429 that
+                                  read, to a real visitor, as the site being
+                                  down). A SECOND template slot (RETRY_MARKER,
+                                  spelled out down in .limited-body below —
+                                  never here, to avoid this prose ALSO being
+                                  a match for pinball_auth.py's own
+                                  page.replace() call) is substituted
+                                  alongside the .card class above and holds a
+                                  human-readable minute count for this state's
+                                  copy — always substituted, even when this
+                                  state isn't active, so a raw marker is
+                                  never left in a served page.
+  Both markers MUST live in THIS file, never in login.css — login.css is
+  served raw through LOGIN_ASSETS and is never templated. A %%-delimited
+  marker shipped INTO login.css once already (2026-07-29, back when the
+  marker gated a login-error banner instead of this sent/default/limited
+  state) and broke both the page and the CSS declaration that followed it;
+  login.css's own header comment carries the full incident note and
+  deliberately doesn't spell the marker out, so a future find-and-replace
+  can't match it there. login.js is optional UX polish only (see its own
+  header, which for the same reason also doesn't spell the marker out) —
+  the sign-in flow requires no JavaScript at all.
+  Native reference: none (server-rendered login has no native-app analogue);
+  themed to match app/src/styles.css (BACKGLASS ground #0a0b10 + amber #ffb02e).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <title>Pinball Genie — Sign in</title>
+    <meta name="theme-color" content="#0a0b10" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="/login.css" />
+  </head>
+  <body>
+    <div class="card %%STATE%%">
+      <div class="marquee">
+        <div class="marquee-ball" aria-hidden="true"></div>
+        <h1>Pinball Genie</h1>
+        <p>Sign in to save your progress</p>
+      </div>
+
+      <!-- Default state: the email form. Hidden (via .card.is-sent) once a
+           link has been sent — see this file's header comment. -->
+      <div class="signin-panel">
+        <form method="POST" action="/auth/request" autocomplete="on">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false" required autofocus maxlength="254" placeholder="you@example.com" />
+          </div>
+          <button type="submit">Send me a link</button>
+        </form>
+        <p class="signin-hint">No password to remember — we'll email you a one-time sign-in link. It expires in 15 minutes.</p>
+      </div>
+
+      <!-- "Check your inbox" state: shown only when .card carries is-sent
+           (POST /auth/request always redirects here — see header comment). -->
+      <div class="sent-panel">
+        <p class="sent-title">Check your inbox</p>
+        <p class="sent-body">If that address can receive mail, a sign-in link is on its way — it works once and expires in 15 minutes. Didn't get it? Check spam, or request another below.</p>
+
+        <!-- PG-18 (2026-07-31, rolo): the CODE path. On iOS a Home-Screen web
+             app has its own cookie jar and Mail opens links in Safari, so the
+             emailed link physically cannot sign you in inside the installed
+             app — it signs in the browser instead. The same email carries a
+             short code, and typing it here works in whichever app you are
+             actually standing in. Also covers request-on-phone /
+             sign-in-on-laptop. Posts to /auth/code; see pinball_auth.py's
+             _do_verify_code. -->
+        <form class="code-form" method="POST" action="/auth/code">
+          <label class="code-label" for="signin-code">Added the app to your Home Screen? Enter the code from that email</label>
+          <input
+            class="code-input"
+            id="signin-code"
+            name="code"
+            type="text"
+            inputmode="latin"
+            autocomplete="one-time-code"
+            autocapitalize="characters"
+            spellcheck="false"
+            maxlength="9"
+            placeholder="ABCD-EFGH"
+            aria-describedby="code-hint"
+          />
+          <!-- VISIBLE, not hidden. Two reasons: (1) with JavaScript off there
+               is nothing to prefill it, and the whole sign-in flow is
+               deliberately no-JS-safe; (2) the case this feature exists for is
+               precisely the one where the address was typed in a DIFFERENT
+               storage container (Safari) from the one entering the code (the
+               installed PWA), so client-side memory of it is not available
+               either. login.js prefills it when it happens to know. -->
+          <input
+            class="code-input code-email-input"
+            id="signin-code-email"
+            name="email"
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            autocapitalize="none"
+            spellcheck="false"
+            placeholder="you@example.com"
+            aria-label="The email address you requested the code for"
+          />
+          <button class="code-submit" type="submit">Sign in with code</button>
+          <p class="code-hint" id="code-hint">The code and the link are the same sign-in — using either one retires the other.</p>
+        </form>
+
+        <a class="login-alt-link" href="/login">Try again &rarr;</a>
+      </div>
+
+      <!-- "Too many attempts" state (D5, 2026-07-30 security review): shown
+           only when .card carries is-limited — rendered by
+           pinball_auth.py's _send_rate_limited() in place of a bare
+           Content-Length:0 429 (see header comment above). -->
+      <div class="limited-panel">
+        <p class="limited-title">Too many attempts</p>
+        <p class="limited-body">Please wait about %%RETRY_MIN%% minute(s) and try again.</p>
+        <a class="login-alt-link" href="/login">Back to sign in &rarr;</a>
+      </div>
+
+      <!-- No account? The study tool itself needs none — say so, and give a way
+           back out. -->
+      <div class="login-alt">
+        <a class="login-alt-link" href="/">Skip sign-in — browse every machine &rarr;</a>
+        <p class="login-alt-note">You only need an account to save achievement progress across devices.</p>
+      </div>
+
+      <!-- Instagram CTA (rolo, 2026-07-30). This page is static HTML served by
+           pinball_auth.py, so it cannot import ui/instagram.ts — the glyph is
+           inlined here instead. KEEP THE TWO IN SYNC: same viewBox, same three
+           shapes, same generic camera outline (deliberately NOT Instagram's
+           gradient logo — see ui/instagram.ts's trademark note). -->
+      <a class="login-ig" href="https://www.instagram.com/pinballgenie/" target="_blank" rel="noopener noreferrer"
+         aria-label="Follow Pinball Genie on Instagram (opens in a new tab)">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"></circle>
+        </svg>
+        <span>Follow @pinballgenie</span>
+      </a>
+
+      <!-- 2026-07-30: was "auth required", which stopped being true when the
+           app went public — studying needs no account; signing in only saves
+           achievement progress. This page is noindex, so this is UX, not SEO. -->
+      <div class="footer-note">Study tool — sign in to save your achievement progress. Independent, not affiliated with or endorsed by any pinball manufacturer.</div>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> ·
+        <a href="/about">About</a> · <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <script src="/login.js" defer></script>
+  </body>
+</html>

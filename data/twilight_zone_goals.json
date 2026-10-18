@@ -1,0 +1,1487 @@
+{
+  "machine": "Twilight Zone (Bally, 1993)",
+  "defaultFx": "psychic",
+  "shots": [
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Manual plunger lane; gate + 3 rollovers (Red/Orange/Yellow) for Skill Shot."
+    },
+    {
+      "id": "skill-shot-red",
+      "name": "Red Skill Shot Rollover",
+      "type": "lane",
+      "x": 0.94,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Lowest of the 3 skill-shot rollovers."
+    },
+    {
+      "id": "skill-shot-orange",
+      "name": "Orange Skill Shot Rollover",
+      "type": "lane",
+      "x": 0.95,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Middle skill-shot rollover."
+    },
+    {
+      "id": "skill-shot-yellow",
+      "name": "Yellow Skill Shot Rollover",
+      "type": "lane",
+      "x": 0.96,
+      "y": 0.24,
+      "trim": "all",
+      "notes": "Highest, hardest-to-control skill-shot rollover."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.05,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Adjustable post; can light Extra Ball via the outlane system."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.18,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Left Ramp exit deposits here; can light Slot Machine/Right Spiral."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "standup",
+      "x": 0.33,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Mannequin ('Willy') slingshot; toggles lit outlane."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.38,
+      "y": 0.17,
+      "trim": "all",
+      "notes": "Spells GUM; core combo shot; Bonus X shot when flashing.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "clock-target",
+      "name": "Clock Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Dead-center standup between the two ramp entrances; scores by hour-hand position."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Powerfield Ramp)",
+      "type": "ramp",
+      "x": 0.58,
+      "y": 0.17,
+      "trim": "all",
+      "notes": "Spells BALL; entry to the Powerfield when Battle the Power is lit.",
+      "feeds": {
+        "shot": "bridge-diverter"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "standup",
+      "x": 0.63,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Invader-themed slingshot; toggles lit outlane."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.82,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights Dead End, Left Spiral, Left Ramp Bonus X."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.92,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Adjustable post; lightable Special."
+    },
+    {
+      "id": "center-door",
+      "name": "Center Door",
+      "type": "mech",
+      "x": 0.48,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Non-scoring toy/backdrop mirroring the show's title door."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers (Town Square)",
+      "type": "bumpers",
+      "x": 0.32,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "3-bumper cluster; rotates the flashing Door Panel; fuels Town Square Madness."
+    },
+    {
+      "id": "hitchhiker-lane",
+      "name": "Hitchhiker Lane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Feeds the Jet Bumpers; combo endpoint; fuels Hitchhiker awards. Also a direct shot from the upper-right flipper, not just a Rocket feed.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "dead-end",
+      "name": "Dead End",
+      "type": "scoop",
+      "x": 0.22,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Tempting scoop that is riskier than it looks; lit by Right Inlane; pays double Town Square value.",
+      "feeds": {
+        "shot": "slot-machine"
+      }
+    },
+    {
+      "id": "rocket",
+      "name": "Rocket Kicker",
+      "type": "mech",
+      "x": 0.85,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Catches Skill-Shot balls and auto-fires across the table into the Jet Bumpers.",
+      "feeds": {
+        "shot": "jet-bumpers"
+      }
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "type": "scoop",
+      "x": 0.15,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Sinkhole reachable mainly off the orbit, and directly from the upper-right flipper once the upper-left flipper is held up out of the way; cycles an 8-award pool (20 Million, Hold Town Square, 3X Town Square, Lite Greed Targets, Clock 10 Millions, 10 Hitchhikers, Lite Outlanes, Collect Bonus). During Multiball those awards are off and the Camera relights the Jackpot instead.",
+      "feeds": {
+        "shot": "slot-machine"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "gumball-machine",
+      "name": "Gumball Machine",
+      "type": "mech",
+      "x": 0.08,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Ball lock/dispenser prop holding up to 3 balls; loaded via Right Orbit; dispenses the Powerball periodically."
+    },
+    {
+      "id": "powerfield",
+      "name": "Powerfield (Battle the Power)",
+      "type": "mech",
+      "x": 0.2,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Raised mini-playfield with Magna-Flips; entered via Right Ramp; 'Defeat the Power' at the upper exit."
+    },
+    {
+      "id": "bridge-diverter",
+      "name": "Bridge Diverter",
+      "type": "mech",
+      "x": 0.32,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Habitrail diverter on the Right Ramp path routing to the Powerfield or main field."
+    },
+    {
+      "id": "player-piano",
+      "name": "Player Piano",
+      "type": "scoop",
+      "x": 0.55,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "The primary Jackpot/Door-Panel-collect scoop; shot from the upper-left flipper.",
+      "feeds": {
+        "shot": "slot-machine"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "clock-toy",
+      "name": "Clock (toy)",
+      "type": "mech",
+      "x": 0.52,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Rotating-hand clock toy mounted above the Player Piano."
+    },
+    {
+      "id": "lock-lane",
+      "name": "Lock Lane",
+      "type": "lane",
+      "x": 0.63,
+      "y": 0.87,
+      "trim": "all",
+      "notes": "Ball-lock lane; also the Fast Lock hurry-up shot."
+    },
+    {
+      "id": "slot-machine",
+      "name": "Slot Machine",
+      "type": "scoop",
+      "x": 0.83,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Receives balls from Camera subway and Dead End kicker; awards random Door Panels when lit; the kickout is a notorious drain risk.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "hidden-lane",
+      "name": "Hidden Lane",
+      "type": "lane",
+      "x": 0.88,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Passage behind the Slot Machine feeding the upper-right flipper; combo leg.",
+      "feeds": {
+        "x": 0.74,
+        "y": 0.63
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (Right Spiral)",
+      "type": "orbit",
+      "x": 0.85,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Loop from right side across the back of the playfield; feeds Gumball Popper when diverted.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Left Spiral)",
+      "type": "orbit",
+      "x": 0.15,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Loop above the upper-left flipper crossing the back of the playfield.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      }
+    },
+    {
+      "id": "power-payoff-1",
+      "name": "Power Payoff Target (Hidden Lane side)",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Lightning-bolt-lit standup; flat 10M when lit after defeating the Power."
+    },
+    {
+      "id": "power-payoff-2",
+      "name": "Power Payoff Target (Piano side)",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Second Power Payoff standup at the Player Piano entrance."
+    },
+    {
+      "id": "greed-target",
+      "name": "Greed Target Bank",
+      "type": "target-bank",
+      "x": 0.77,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "7 scattered '5-Million' standups; lit progressively off the Clock Target or via awards; pay 5M each when lit."
+    },
+    {
+      "id": "magna-flip-left",
+      "name": "Magna-Flip (Left)",
+      "type": "mech",
+      "x": 0.14,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Player-controlled electromagnet in the Powerfield's lower-left corner.",
+      "playfield": "deck-powerfield"
+    },
+    {
+      "id": "magna-flip-right",
+      "name": "Magna-Flip (Right)",
+      "type": "mech",
+      "x": 0.27,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Player-controlled electromagnet in the Powerfield's lower-right corner.",
+      "playfield": "deck-powerfield"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Left Flipper",
+      "type": "flipper",
+      "x": 0.32,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "A much shorter bat, high on the left. Shoots the Player Piano, and blocks the Camera sinkhole behind it unless you hold it raised."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.76,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Fed by the Hidden Lane and by the Lock kickout down the right orbit; the Rocket catch area sits just beneath it. Shoots the Hitchhiker lane and the Camera."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot-yellow",
+      "title": "Yellow Skill Shot",
+      "category": "skillshot",
+      "summary": "Strong controlled plunge to clear all three rollovers for the biggest Skill Shot award and the deepest Jet Bumper advance.",
+      "difficulty": 2,
+      "reward": "10M + advances all three Jet Bumpers one step",
+      "steps": [
+        {
+          "shot": "skill-shot-yellow",
+          "action": "Pull the plunger firmly to clear Red and Orange",
+          "detail": "Needs a strong but controlled plunge to cross Red and Orange and land in the Yellow rollover — pays 10M and advances all three Jet Bumpers one step. The Rocket then catches the ball and auto-fires it through the Hitchhiker Lane into the Jet Bumpers; be ready on the flippers as it comes in hot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-red",
+      "title": "Red Skill Shot",
+      "category": "skillshot",
+      "summary": "The safe, low-risk skill shot option — smallest reward, but the easiest rollover to control before the Rocket fires the ball into the Jet Bumpers.",
+      "difficulty": 1,
+      "reward": "2M + advances Jet Bumpers 1 level",
+      "steps": [
+        {
+          "shot": "skill-shot-red",
+          "action": "Gentle plunge over the red rollover",
+          "detail": "Lowest-risk skill shot if you're unsure of plunge strength. Pays 2M and advances Jet Bumpers 1 level. The Rocket then catches the ball and auto-fires it through the Hitchhiker Lane into the Jet Bumpers regardless of plunge strength, so get ready to control the rebound."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-gum-ball",
+      "title": "Gum-Ball Combo (2-way)",
+      "category": "combo",
+      "summary": "The simplest scoring combo on the table: Left Ramp into Right Ramp for a quick 5M.",
+      "difficulty": 1,
+      "reward": "5M for the 2-way combo",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp",
+          "detail": "Spells GUM toward Lock; must be the first leg of the combo."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Follow immediately with the Right Ramp",
+          "detail": "Completes the 2-way combo for 5M — only counts if neither GUM nor BALL is already lit for the next Lock."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "combo-lr-rr-piano",
+      "title": "LR-RR-Piano 3-Way Combo",
+      "category": "combo",
+      "summary": "The game's core repeatable loop — safe, builds three progress tracks at once, and pays 10M each lap.",
+      "difficulty": 2,
+      "reward": "10M 3-way combo + spells GUM-BALL, which lights both the Lock and the Gumball Machine",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Continue into the Right Ramp",
+          "detail": "The Left Ramp returns down the left inlane to the lower-left flipper, which shoots into the Right Ramp entrance at the bottom of the playfield; the Right Ramp's exit then routes via the Bridge Diverter down to the upper-left flipper for the Piano shot.",
+          "flipper": "left"
+        },
+        {
+          "shot": "player-piano",
+          "action": "Finish at the Player Piano",
+          "detail": "10M 3-way combo — the game's core repeatable loop; simultaneously spells GUM-BALL, loads the Gumball Machine, and lights Lock."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "combo-lr-lock-camera",
+      "title": "LR-Lock-Camera 3-Way Combo",
+      "category": "combo",
+      "summary": "Alternate 3-way combo routing through an unlit Lock Lane into the Camera.",
+      "difficulty": 2,
+      "reward": "10M 3-way combo",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp"
+        },
+        {
+          "shot": "lock-lane",
+          "action": "Shoot the unlit Lock Lane",
+          "detail": "Lock must be unlit for this combo variant to register."
+        },
+        {
+          "shot": "camera",
+          "action": "Finish at the Camera",
+          "detail": "10M 3-way combo."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "combo-lr-lock-hitchhiker",
+      "title": "LR-Lock-Hitchhiker 3-Way Combo",
+      "category": "combo",
+      "summary": "Same opening as the Camera combo but finishing through the Hitchhiker Lane instead.",
+      "difficulty": 2,
+      "reward": "10M 3-way combo (alternate ending to the Lock combo)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp"
+        },
+        {
+          "shot": "lock-lane",
+          "action": "Shoot the unlit Lock Lane"
+        },
+        {
+          "shot": "hitchhiker-lane",
+          "action": "Finish through the Hitchhiker Lane",
+          "detail": "10M 3-way combo; alternate ending to the Lock combo."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "combo-4way-hidden-camera",
+      "title": "4-Way Combo via Hidden Lane",
+      "category": "combo",
+      "summary": "The advanced money combo — Left Ramp, Right Ramp, Hidden Lane, then Camera for 20M.",
+      "difficulty": 3,
+      "reward": "20M 4-way combo",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Continue into the Right Ramp"
+        },
+        {
+          "shot": "hidden-lane",
+          "action": "Continue through the Hidden Lane",
+          "detail": "Behind the Slot Machine, feeds cleanly to the upper-right flipper."
+        },
+        {
+          "shot": "camera",
+          "action": "Finish at the Camera",
+          "detail": "20M 4-way combo — requires precise shot-to-shot timing."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "multiball-standard",
+      "title": "Standard (Regular) Multiball",
+      "category": "multiball",
+      "summary": "Spell GUMBALL to light Lock, lock balls, then loop Piano and Camera to build and cash Jackpots.",
+      "difficulty": 2,
+      "reward": "3-ball Multiball, 15M starting Jackpot (40M with 2nd lock) + up to 5 relights at +10M and +5M per Greed Target",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Left Ramp to spell GUM"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot Right Ramp to spell BALL",
+          "detail": "Completing GUMBALL lights the Lock Lane and the Gumball Machine."
+        },
+        {
+          "shot": "lock-lane",
+          "action": "Shoot the Lock Lane to lock a ball",
+          "detail": "Respell GUMBALL and lock a 2nd ball — raises the starting Jackpot from 15M to 40M."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Left Ramp (or Lock) again to start Multiball",
+          "detail": "With a lock lit, this launches 3-ball Standard Multiball."
+        },
+        {
+          "shot": "player-piano",
+          "action": "Shoot Player Piano for the Jackpot",
+          "detail": "Jackpot climbs +10M each relight, capping after 5 steps."
+        },
+        {
+          "shot": "camera",
+          "action": "Shoot Camera to relight the Jackpot",
+          "detail": "Loop Piano and Camera; bank Greed Targets in between for +5M each hit."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "multiball-fast-lock",
+      "title": "Fast Lock Multiball",
+      "category": "multiball",
+      "summary": "Collect the Fast Lock Door Panel, then catch the hurry-up value at the Lock Lane to start an instant 3-ball multiball.",
+      "difficulty": 2,
+      "reward": "Instant 3-ball Multiball + banks the hurry-up value (~17-20M down to a 5.3M floor); Lock repeats that value each shot",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect Door Panels until Fast Lock is flashing",
+          "detail": "Fast Lock is one of the 14 rotating panels; Jet Bumper hits rotate which one flashes."
+        },
+        {
+          "shot": "lock-lane",
+          "action": "Shoot the Lock Lane during the Fast Lock hurry-up",
+          "detail": "Countdown runs from roughly 17-20M down to a 5.3M floor; shooting Lock while it's live banks that value and starts 3-ball Multiball immediately."
+        },
+        {
+          "shot": "lock-lane",
+          "action": "Repeat Lock Lane shots",
+          "detail": "Each shot re-awards the same locked-in Jackpot value; no drain grace period here, so shoot fast."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "multiball-powerball-mania",
+      "title": "Powerball Mania",
+      "category": "multiball",
+      "summary": "Load the ceramic Powerball into the Gumball Machine, then work the Powerfield's Magna-Flips for repeated 50M jackpots.",
+      "difficulty": 3,
+      "reward": "Powerball Payoff + 3-ball Multiball, then a repeatable flat 50M Mania Jackpot per Powerfield exit",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Feed the Gumball Machine via the Right Orbit",
+          "detail": "Loading the Powerball into the Gumball Machine qualifies Mania."
+        },
+        {
+          "shot": "gumball-machine",
+          "action": "Mania begins the instant the Powerball loads",
+          "detail": "Loading kicks off Mania immediately — the Powerball Payoff pays out, the Powerball reloads into the Gumball Machine (it is not dispensed), and three steel balls are put into play (one from the Gumball Machine plus two from the Lock/trough)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp to enter the Powerfield",
+          "detail": "Sends the ball onto the mini-playfield, activating the Magna-Flips.",
+          "feeds": {
+            "shot": "powerfield"
+          }
+        },
+        {
+          "shot": "magna-flip-left",
+          "action": "Work the Magna-Flips to walk the ball upward",
+          "detail": "Use both Magna-Flip buttons with the real flippers to steer the ball toward the upper exit; the balls in play during Mania are ordinary steel balls, not the ceramic Powerball, which stays loaded in the Gumball Machine."
+        },
+        {
+          "shot": "powerfield",
+          "action": "Defeat the Power (send the ball out the upper exit)",
+          "detail": "Awards a flat 50M Mania Jackpot; relight Right Ramp via Left Ramp to repeat."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mode-town-square-madness",
+      "title": "Town Square Madness",
+      "category": "mode",
+      "summary": "Timed round where every switch — especially the Jet Bumpers — adds to a running point total.",
+      "difficulty": 1,
+      "reward": "Running total starts at 3M, +350K per switch plus stepped Jet Bumper value; banks into end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Shoot Player Piano to collect the flashing Door Panel",
+          "detail": "Cycle Jet Bumpers first if you need to rotate the flashing panel to this one."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Pound the Jet Bumpers",
+          "detail": "Town Square Madness Total starts at 3M; every switch adds 350K, and Jets add their own stepped value on top."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mode-clock-millions",
+      "title": "Clock Millions",
+      "category": "mode",
+      "summary": "Repeatedly hit the Clock Target while the hour hand is high for stacking millions.",
+      "difficulty": 1,
+      "reward": "Up to 12M per Clock Target hit; grace-period hits are a fixed 12M; 6+ hits adds a 10M Clock Damage Bonus",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect Clock Millions at the Player Piano",
+          "detail": "It's in the starting pool of 4 panels, so it can come up on your first lap."
+        },
+        {
+          "shot": "clock-target",
+          "action": "Repeatedly hit the Clock Target",
+          "detail": "Pays whatever the hour hand currently reads (up to 12M) per hit."
+        },
+        {
+          "shot": "clock-target",
+          "action": "Keep hitting into the grace period",
+          "detail": "After the timer ends you get roughly 2 more hits at a fixed 12M each; 6+ hits earns a 10M Clock Damage Bonus."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mode-the-spiral",
+      "title": "The Spiral",
+      "category": "mode",
+      "summary": "Alternate orbit shots for escalating Spiral Breakthru values with no time-out grace period.",
+      "difficulty": 2,
+      "reward": "10M for the first two orbit shots, then 15M per Spiral Breakthru shot with no grace period",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect The Spiral panel at the Player Piano"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot either orbit (Left Spiral)",
+          "detail": "First two orbit shots pay 10M each.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the Right Orbit (Right Spiral)",
+          "detail": "Third shot pays 15M, and every one after is a 15M 'Spiral Breakthru' — keep looping since there's no grace period.",
+          "link": "none"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mode-greed",
+      "title": "Greed",
+      "category": "mode",
+      "summary": "Clear all seven Greed Targets for a fast-stacking bonus total.",
+      "difficulty": 2,
+      "reward": "5M per Greed Target hit; the bank relights once all seven are cleared",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect the Greed panel at the Player Piano"
+        },
+        {
+          "shot": "greed-target",
+          "action": "Clear the Greed Target bank",
+          "detail": "All seven targets flash; each hit adds 5M to the Greed Total, and they relight once the whole bank is cleared."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "multiplier-bonus-x",
+      "title": "Bonus Multiplier (Bonus X)",
+      "category": "multiplier",
+      "summary": "Twilight Zone's only true general multiplier — applies to end-of-ball bonus and resets every ball.",
+      "difficulty": 1,
+      "reward": "Steps Bonus X 2X to 5X (hard cap) on end-of-ball bonus + awards Robots; resets every ball",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the Right Inlane",
+          "detail": "Lights the Left Ramp to flash for Bonus X."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the flashing Left Ramp",
+          "detail": "Steps Bonus Multiplier 2X to 3X to 4X to 5X (hard cap); also awards Robots. Never carries over to the next ball, so use it before draining."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-3x-town-square",
+      "title": "3X Town Square (Camera award)",
+      "category": "multiplier",
+      "summary": "Build the Town Square value in the Jet Bumpers first, then take the 3X Town Square Camera award — it pays three times whatever the value is at the moment you collect it.",
+      "difficulty": 2,
+      "reward": "Three times the current Town Square value, paid the moment the award is collected",
+      "steps": [
+        {
+          "shot": "camera",
+          "action": "Collect Camera awards until '3X Town Square' comes up",
+          "detail": "Camera cycles through 8 awards that must be exhausted before repeating."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Bank additional Jet Bumper hits",
+          "detail": "The 3X award pays out the instant you collect it, so these hits are not tripled — they raise the Town Square value for the Dead End collect."
+        },
+        {
+          "shot": "dead-end",
+          "action": "Shoot the Dead End to bank the tripled value",
+          "detail": "Dead End pays double the current Town Square value — with 3X active that's the single biggest collect available from this system."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-panel-cycle",
+      "title": "Complete the Door Panel Cycle",
+      "category": "wizard",
+      "summary": "The qualification path to Lost in the Zone — collect all 14 rotating Door Panels, then The Handle.",
+      "difficulty": 3,
+      "reward": "Completes the Door Panel cycle and launches Lost in the Zone wizard mode",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect Door Panels at the Player Piano",
+          "detail": "Jet Bumper hits rotate which of the 15 panels is currently flashing; Piano awards the flashing one.",
+          "link": "none"
+        },
+        {
+          "shot": "powerfield",
+          "action": "Defeat the Power on the Powerfield",
+          "detail": "Also awards the currently flashing Door Panel, same as a Piano hit.",
+          "link": "none"
+        },
+        {
+          "shot": "slot-machine",
+          "action": "Shoot the Slot Machine when lit",
+          "detail": "Awards a random (not necessarily flashing) Door Panel — useful for mopping up stragglers.",
+          "link": "none"
+        },
+        {
+          "shot": "player-piano",
+          "action": "Collect all 14 rotating panels",
+          "detail": "Once all 14 are cleared, the 15th slot, 'The Handle,' becomes the flashing award.",
+          "link": "none"
+        },
+        {
+          "shot": "player-piano",
+          "action": "Collect The Handle",
+          "detail": "Collecting it (via Piano, Power-defeat, or Slot Machine) launches Lost in the Zone."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-lost-in-the-zone",
+      "title": "Lost in the Zone (6-Ball Wizard Mode)",
+      "category": "wizard",
+      "summary": "The 45-second, 6-ball finale — nearly every mode runs at once and everything banks into end-of-ball bonus.",
+      "difficulty": 3,
+      "reward": "45-second 6-ball frenzy: 10M/hit Left Ramp, 50M Powerfield Jackpots, Clock/Greed scoring — all banks into bonus (~300M for a strong run)",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Trigger Lost in the Zone by collecting The Handle",
+          "detail": "Empties the Gumball Machine and auto-plunges all 6 balls at once for a fixed 45-second frenzy with unlimited ball-saves."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Pound the Left Ramp",
+          "detail": "Flat 10M per hit — the highest-value simple repeat shot in the mode.",
+          "link": "none"
+        },
+        {
+          "shot": "clock-target",
+          "action": "Hit the Clock Target",
+          "detail": "Clock Millions keeps accumulating throughout the 45 seconds.",
+          "link": "none"
+        },
+        {
+          "shot": "greed-target",
+          "action": "Clear Greed Targets",
+          "detail": "All seven flash continuously during LITZ.",
+          "link": "none"
+        },
+        {
+          "shot": "powerfield",
+          "action": "Defeat the Power for a 50M Mania Jackpot",
+          "detail": "Powerfield stays lit throughout the mode; each defeat still pays the full 50M.",
+          "link": "none"
+        },
+        {
+          "shot": "player-piano",
+          "action": "Keep shooting Piano for the random 'Odd Change' award",
+          "detail": "Permanently lit during LITZ; everything accrued banks into end-of-ball bonus once the timer ends.",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "Plunge firmly but short of full strength for the biggest Skill Shot, ride the Rocket into the Jet Bumpers, then settle into the safe LR-RR-Piano loop.",
+      "difficulty": 1,
+      "reward": "Biggest Skill Shot + Jet Bumper advances, then a safe GUM-BALL/Lock loop that avoids the worst drains",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Plunge firmly but short of full strength",
+          "detail": "A strong plunge clears all three rollovers for the biggest Skill Shot award — every Skill-Shot ball gets caught by the Rocket and auto-fired into the Jet Bumpers regardless of plunge strength, so there's no 'safe' plunge that avoids the bumpers."
+        },
+        {
+          "shot": "rocket",
+          "action": "Ride out the Rocket-fed Jet Bumpers",
+          "detail": "The Rocket auto-fires the Skill-Shot ball through the Hitchhiker Lane into the Jet Bumpers — control the rebound off the bumpers and slings before it drains; this is the first thing you'll deal with on nearly every ball."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Left Ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot Right Ramp"
+        },
+        {
+          "shot": "player-piano",
+          "action": "Finish at Player Piano",
+          "detail": "Run this loop repeatedly — it spells GUM-BALL, loads the Gumball Machine, and lights Lock, all from a pattern that avoids the outlanes."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener — Lock the 2nd Ball Before Multiball",
+      "category": "strategy",
+      "summary": "Loop the core combo but hold off starting Multiball until a second ball is locked for the 40M starting Jackpot.",
+      "difficulty": 2,
+      "reward": "40M starting Multiball Jackpot instead of 15M, by locking a 2nd ball before starting",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Left Ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot Right Ramp",
+          "detail": "Loop Left Ramp - Right Ramp - Piano repeatedly between other objectives; it's the safest shot chain on the table."
+        },
+        {
+          "shot": "player-piano",
+          "action": "Shoot Player Piano"
+        },
+        {
+          "shot": "lock-lane",
+          "action": "Take the Lock shot once GUMBALL is spelled a 2nd time",
+          "detail": "Don't cash Multiball off a single lock — locking the 2nd ball swings the starting Jackpot from 15M to 40M, the single biggest EV decision in the ruleset."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "strategy-multiball-priority",
+      "title": "Multiball Jackpot Farming",
+      "category": "strategy",
+      "summary": "Farm Greed Targets before cashing each Jackpot, and keep a ball parked since there's no ball-saver in Multiball.",
+      "difficulty": 2,
+      "reward": "Inflated Jackpots (+5M per Greed Target) before each cash-out, protected by a parked ball",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Shoot the Jackpot at Player Piano",
+          "detail": "Don't cash immediately — farm nearby Greed Targets first to inflate the value."
+        },
+        {
+          "shot": "greed-target",
+          "action": "Hit Greed Targets while Multiball is running",
+          "detail": "Each hit adds 5M directly onto the current Jackpot before you collect it."
+        },
+        {
+          "shot": "player-piano",
+          "action": "Collect the inflated Jackpot at Player Piano"
+        },
+        {
+          "shot": "camera",
+          "action": "Shoot Camera to relight the Jackpot",
+          "detail": "No ball saver in Multiball — keep one ball 'parked' on a flipper while working Jackpots with the others rather than firing all three at once."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "strategy-lite-extra-ball",
+      "title": "Light and Collect Extra Ball",
+      "category": "strategy",
+      "summary": "Take the Extra Ball Door Panel and collect it at the Lock Lane; the outlane Extra Ball is a separate award, lit by the Camera's Lite Outlanes award or the Orange Super Skill Shot, and steered between the outlanes by the slingshots.",
+      "difficulty": 2,
+      "reward": "Extra Ball, collected by rolling through the left outlane while it is the lit side",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect Door Panels until the Extra Ball panel is the flashing one",
+          "detail": "Jet Bumper hits rotate which panel flashes; the Piano awards the flashing panel."
+        },
+        {
+          "shot": "left-slingshot",
+          "action": "Watch the slingshots toggle which outlane is lit",
+          "detail": "Each slingshot hit flips the lit outlane side, so the light can move while the ball is still in play."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Collect at the left outlane when it is the lit side",
+          "detail": "A lit outlane turns a drain into the Extra Ball award."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Do not count on the right outlane — that side pays Special",
+          "detail": "The right outlane pays SPECIAL, not an Extra Ball — the Extra Ball is the left outlane's award, and only one outlane is lit at a time on default settings."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mode-battle-the-power",
+      "title": "Battle the Power",
+      "category": "mode",
+      "summary": "The Door Panel that lights the Right Ramp into the Powerfield; win the mini-playfield fight for points and a free Door Panel.",
+      "difficulty": 3,
+      "reward": "Points for defeating the Power plus the currently flashing Door Panel",
+      "steps": [
+        {
+          "shot": "player-piano",
+          "action": "Collect the Battle the Power panel at the Player Piano",
+          "detail": "Lights the Right Ramp as the entrance to the Powerfield."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the lit Right Ramp",
+          "detail": "Diverts the ball up onto the mini-playfield and hands control to the Magna-Flips."
+        },
+        {
+          "shot": "magna-flip-right",
+          "action": "Use both Magna-Flip magnets to climb the mini-playfield",
+          "detail": "The flipper buttons drive the magnets; short taps keep the ball from rolling straight back down."
+        },
+        {
+          "shot": "powerfield",
+          "action": "Send the ball out the upper exit to defeat the Power",
+          "detail": "Winning awards points and the flashing Door Panel; falling out the bottom ends the fight with no award."
+        }
+      ],
+      "fx": "psychic"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "top-rollover-plunge",
+      "title": "Full-Strength Plunge",
+      "desc": "Plunge hard enough to clear all three lit rollovers and collect the largest Skill Shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot-yellow"
+    },
+    {
+      "id": "three-shot-lap",
+      "title": "Three-Shot Lap",
+      "desc": "Chain Left Ramp into Right Ramp into the Player Piano without losing the combo timer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-lr-rr-piano"
+    },
+    {
+      "id": "four-shot-chain",
+      "title": "Four-Shot Chain",
+      "desc": "Link four shots in one combo: Left Ramp, Right Ramp, Hidden Lane, Camera.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-4way-hidden-camera"
+    },
+    {
+      "id": "square-frenzy-run",
+      "title": "Run the Square",
+      "desc": "Start the timed Town Square round and build its running value with Jet Bumper hits.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-town-square-madness"
+    },
+    {
+      "id": "clock-hand-payday",
+      "title": "High Hand Payday",
+      "desc": "Start Clock Millions and score repeat Clock Target hits while the hour hand sits high.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-clock-millions"
+    },
+    {
+      "id": "greed-bank-swept",
+      "title": "Sweep the Greed Bank",
+      "desc": "Start Greed and knock down all seven targets in the bank so it relights.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-greed"
+    },
+    {
+      "id": "spiral-breakthrough",
+      "title": "Keep the Spiral Alive",
+      "desc": "During The Spiral, make enough orbit shots to reach the repeating Spiral Breakthru value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-the-spiral"
+    },
+    {
+      "id": "bonus-x-capped",
+      "title": "Bonus Multiplier Capped",
+      "desc": "Step the Bonus Multiplier all the way to its 5X ceiling on a single ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-bonus-x"
+    },
+    {
+      "id": "extra-ball-banked",
+      "title": "Extra Ball Banked",
+      "desc": "Light an Extra Ball from the Door Panels and collect it at the lit outlane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-lite-extra-ball"
+    },
+    {
+      "id": "first-lock-multiball",
+      "title": "Lock and Launch",
+      "desc": "Spell GUMBALL, lock a ball, and start Standard Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-standard"
+    },
+    {
+      "id": "jackpot-relight-loop",
+      "title": "Jackpot Round Trip",
+      "desc": "In Standard Multiball, cash a Jackpot at the Piano, relight it at the Camera, and cash it again.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-standard"
+    },
+    {
+      "id": "fast-lock-caught",
+      "title": "Caught the Countdown",
+      "desc": "Hit the Lock Lane while the Fast Lock hurry-up is still counting down to start multiball on the spot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-fast-lock"
+    },
+    {
+      "id": "power-defeated",
+      "title": "Beat the Mini Playfield",
+      "desc": "Light the Powerfield, then steer the ball out its upper exit to defeat the Power.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-battle-the-power"
+    },
+    {
+      "id": "powerball-loaded",
+      "title": "Feed the Gumball Machine",
+      "desc": "Load the ceramic Powerball into the Gumball Machine to kick off Powerball Mania.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-powerball-mania"
+    },
+    {
+      "id": "square-value-tripled",
+      "title": "Tripled and Banked",
+      "desc": "Take the 3X Town Square award from the Camera, build the value, then bank it at the Dead End.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-3x-town-square"
+    },
+    {
+      "id": "fourteen-panels-down",
+      "title": "Fourteen Panels Down",
+      "desc": "Collect all fourteen rotating Door Panels in one game so the final slot lights.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-panel-cycle"
+    },
+    {
+      "id": "zone-reached",
+      "title": "Into the Zone",
+      "desc": "Collect the last Door Panel to launch the six-ball wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-lost-in-the-zone"
+    },
+    {
+      "id": "zone-mastered",
+      "title": "Zone Mastered",
+      "desc": "Survive the full wizard-mode timer while hitting every scoring source in it, ending with a monster end-of-ball bonus.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-lost-in-the-zone"
+    }
+  ],
+  "drills": [
+    {
+      "id": "rollover-band",
+      "title": "Find the Yellow Band",
+      "text": "Three rollovers stack up the lane and the highest one wants a firm plunge that still stops short of full. Work the strength band until Yellow lands on purpose instead of by accident, and stay on the flippers after it scores — every skill-shot ball gets caught by the Rocket and fired into the Jets regardless of how you plunged, so the shot is not over when the rollover lights.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-shot-yellow",
+      "shots": [
+        "plunger-lane",
+        "skill-shot-red",
+        "skill-shot-orange",
+        "skill-shot-yellow",
+        "rocket"
+      ]
+    },
+    {
+      "id": "core-lap",
+      "title": "The Core Lap",
+      "text": "Left ramp, right ramp, Piano. The left ramp returns down the left inlane to the flipper that shoots the right ramp, and the right ramp routes over to the upper-left flipper for the Piano, so the lap feeds itself all the way around. Run it until there is no thinking between legs.",
+      "reps": "5 unbroken laps",
+      "focus": "flow",
+      "goal": "combo-lr-rr-piano",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "player-piano"
+      ]
+    },
+    {
+      "id": "magna-flip-taps",
+      "title": "Magna-Flip Taps",
+      "text": "Once the right ramp puts the ball on the Powerfield, the same two buttons drive the magnets in the mini-playfield's lower corners while the real flippers keep working below. Short taps, never a held press — the ball has to be walked up toward the exit, and a long grab drops it straight back down.",
+      "reps": "10 trips up",
+      "focus": "ball-control",
+      "goal": "mode-battle-the-power",
+      "shots": [
+        "right-ramp",
+        "magna-flip-left",
+        "magna-flip-right",
+        "powerfield"
+      ]
+    },
+    {
+      "id": "hold-and-shoot-camera",
+      "title": "Hold and Shoot the Camera",
+      "text": "The short upper-left flipper blocks the Camera sinkhole unless you hold it raised, so this is one button held while the other one shoots. Hold the upper left up and out of the way, then take the Camera off the upper right, until holding the block open stops being something you have to remember.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "multiplier-3x-town-square",
+      "shots": [
+        "camera",
+        "upper-left-flipper",
+        "upper-right-flipper"
+      ]
+    },
+    {
+      "id": "clock-hand-reads",
+      "title": "Read the Clock Hand",
+      "text": "The Clock target sits dead center between the two ramp entrances, so every ramp miss finds it and every attempt at it that misses becomes a ramp. Take it from a cradle and watch the hour hand first, since the target pays what the hand reads. Keep hitting it into the grace period after the timer ends rather than walking away when the clock stops.",
+      "reps": "15 hits",
+      "focus": "accuracy",
+      "goal": "mode-clock-millions",
+      "shots": [
+        "clock-target",
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "park-a-ball",
+      "title": "Park a Ball in Multiball",
+      "text": "There is no ball saver in Multiball on this table, so the habit that keeps it alive is parking one ball on a flipper and working with the others. Start every multiball by trapping before you go anywhere, then farm Greed targets to inflate the Jackpot before taking it at the Piano.",
+      "reps": "3 multiballs",
+      "focus": "ball-control",
+      "goal": "strategy-multiball-priority",
+      "shots": [
+        "greed-target",
+        "player-piano"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "deck-powerfield",
+      "name": "Powerfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.71,
+        "w": 0.22,
+        "h": 0.12
+      },
+      "entries": [
+        "right-ramp"
+      ],
+      "exits": [
+        {
+          "x": 0.15,
+          "y": 0.68
+        },
+        {
+          "x": 0.32,
+          "y": 0.42
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Twilight Zone has no dedicated button, but do not assume the flipper buttons only flip. Once the Right Ramp puts the ball onto the raised Powerfield, those same two buttons also fire the Magna-Flip magnets in the mini-playfield's lower corners while the real flippers keep working below. Short taps walk the ball up toward the top exit, which is how you collect the 50M Mania jackpots."
+  },
+  "howItPlays": {
+    "objective": "Twilight Zone is a sprawling Bally crammed with toys - a clock, a Gumball Machine, a ceramic Powerball, and a mini-playfield you steer by hand. Collect all the rotating Door Panels to reach Lost in the Zone, its six-ball finale.",
+    "loop": [
+      "Run the Left Ramp into the Right Ramp into the Player Piano, the safe loop that finishes GUM-BALL to light the Lock and load the Gumball Machine.",
+      "Collect the flashing Door Panel at the Piano - the Jet Bumpers rotate which one is up - to start modes like Clock Millions, Greed, and Battle the Power.",
+      "Lock balls for regular Multiball, holding off until a second ball is locked so the jackpot opens at 40M instead of 15M.",
+      "Feed the Powerball into the Gumball Machine for Powerball Mania, then ride the Right Ramp onto the Powerfield and drive its magnets with the flipper buttons for 50M jackpots.",
+      "Clear every Door Panel and then The Handle to drop into Lost in the Zone."
+    ],
+    "lights": [
+      {
+        "id": "door-panels",
+        "name": "Door Panels",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "player-piano"
+          },
+          {
+            "shot": "slot-machine"
+          },
+          {
+            "shot": "powerfield"
+          }
+        ],
+        "lit": "One Door Panel flashes at a time, the Player Piano collects whichever is flashing, the Slot Machine hands you a random one, and defeating the Power also awards the flashing panel.",
+        "flashing": "Jet Bumper hits keep rotating which panel is currently flashing, so you can aim the selection by pounding the bumpers first.",
+        "control": null,
+        "then": "Work through all fourteen rotating panels and the fifteenth slot, The Handle, lights up. Collecting The Handle launches Lost in the Zone, so every panel you bank is a step toward the wizard mode.",
+        "goals": [
+          "wizard-panel-cycle",
+          "wizard-lost-in-the-zone"
+        ]
+      },
+      {
+        "id": "gumball-lock",
+        "name": "GUM-BALL and the Lock",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "lock-lane"
+          }
+        ],
+        "lit": "The Left Ramp spells GUM and the Right Ramp spells BALL, and finishing the word lights both the Lock Lane and the Gumball Machine.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock a ball at the Lock Lane, then respell the word and lock a second before you start - that swings the opening jackpot from 15M up to 40M. Shoot the Lock or Left Ramp again to launch the three-ball Multiball.",
+        "goals": [
+          "multiball-standard",
+          "strategy-best-opener"
+        ]
+      },
+      {
+        "id": "powerfield",
+        "name": "The Powerfield",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "magna-flip-left"
+          },
+          {
+            "shot": "magna-flip-right"
+          },
+          {
+            "shot": "powerfield"
+          }
+        ],
+        "lit": "Collecting the Battle the Power panel opens the Right Ramp as the way up onto the raised mini-playfield.",
+        "flashing": null,
+        "control": {
+          "input": "both-flippers",
+          "effect": "the flipper buttons stop working the main flippers and instead fire the two corner magnets on the mini-playfield, and gentle taps nudge the ball upward to the exit at the top",
+          "when": "while the ball is on the Powerfield"
+        },
+        "then": "Drive the ball out the top exit to defeat the Power for points and the flashing Door Panel, or drop out the bottom for nothing. During Powerball Mania each exit pays a flat 50M, again and again.",
+        "goals": [
+          "mode-battle-the-power",
+          "multiball-powerball-mania"
+        ]
+      },
+      {
+        "id": "camera-awards",
+        "name": "Camera and Dead End",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "camera"
+          },
+          {
+            "shot": "dead-end"
+          }
+        ],
+        "lit": "The Camera cycles a fixed set of awards you have to exhaust before they repeat, and the one to wait for is 3X Town Square.",
+        "flashing": null,
+        "control": null,
+        "then": "Build the Town Square total in the Jet Bumpers, take 3X Town Square at the Camera to triple it on the spot, then bank double the running value at the Dead End for the biggest single grab this system offers.",
+        "goals": [
+          "multiplier-3x-town-square",
+          "mode-town-square-madness"
+        ]
+      },
+      {
+        "id": "clock-millions",
+        "name": "The Clock",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "clock-target"
+          },
+          {
+            "shot": "clock-toy"
+          }
+        ],
+        "lit": "During Clock Millions the Clock Target is worth the value the hour hand is showing, as much as 12M a strike, so a high hand is worth chasing.",
+        "flashing": null,
+        "control": null,
+        "then": "Hammer the target while the timer runs, then squeeze a couple more fixed 12M hits out of the grace period. Six or more hits tacks on a 10M Clock Damage Bonus.",
+        "goals": [
+          "mode-clock-millions"
+        ]
+      },
+      {
+        "id": "town-square-jets",
+        "name": "Town Square Jet Bumpers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "The Jet Bumpers pull double duty, piling up the Town Square value while every hit also rotates which Door Panel is flashing at the Piano.",
+        "flashing": null,
+        "control": null,
+        "then": "During Town Square Madness every switch adds to a running total that banks into your end-of-ball bonus. Between modes, pound the Jets to line up the exact Door Panel you want before shooting the Piano.",
+        "goals": [
+          "mode-town-square-madness"
+        ]
+      },
+      {
+        "id": "bonus-multiplier",
+        "name": "Bonus X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Rolling the Right Inlane sets the Left Ramp flashing for Bonus X, and shooting it there steps your end-of-ball multiplier toward a hard cap of 5X.",
+        "flashing": "The Left Ramp flashes for Bonus X only right after you roll the Right Inlane.",
+        "control": null,
+        "then": "Cash the flashing ramp to climb 2X, 3X, 4X, 5X and to pick up Robots along the way. It resets every ball and never carries over, so bank it before you drain.",
+        "goals": [
+          "multiplier-bonus-x"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge firmly but a hair short of full so the ball clears the red and orange rollovers into yellow for the 10M Skill Shot, then ride out the Rocket that fires you into the Jet Bumpers. Settle into the Left Ramp, Right Ramp, Player Piano loop that keeps the ball away from the outlanes.",
+        "goals": [
+          "skill-shot-yellow",
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell GUM-BALL and lock a second ball before starting Multiball for the 40M opening jackpot, farming Greed Targets to fatten each jackpot before you cash it. Collect Door Panels for modes, and stop the Camera on 3X Town Square for a huge Dead End payoff.",
+        "goals": [
+          "strategy-best-opener",
+          "multiball-standard",
+          "strategy-multiball-priority",
+          "multiplier-3x-town-square"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Collect all fourteen Door Panels and then The Handle to drop into Lost in the Zone, a 45-second six-ball frenzy with endless ball saves where a strong run banks around 300M. Powerball Mania, with its repeatable flat 50M Powerfield jackpots, is the other giant on the table.",
+        "goals": [
+          "wizard-lost-in-the-zone",
+          "wizard-panel-cycle",
+          "multiball-powerball-mania"
+        ]
+      }
+    ]
+  }
+}

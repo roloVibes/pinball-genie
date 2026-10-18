@@ -1,0 +1,349 @@
+/* Pinball Genie machine guides — BACKGLASS palette (P5, 2026-08-14).
+ * Deliberately a STANDALONE stylesheet, not an import of the app bundle:
+ * these pages are static HTML served straight from the webroot and must not
+ * depend on a hashed Vite asset name. It carries its own copy of the palette
+ * and its own @font-face — kept in step with app/src/styles.css by hand, and
+ * app/tests/guide-pages.test.mjs pins the ground/accent hexes so a divergence
+ * fails a gate rather than shipping two different-looking sites.
+ *
+ * The font files it points at are the SAME ones the app ships: Vite copies
+ * app/public/ into dist/ verbatim, and deploy-prod.sh uploads dist/ wholesale,
+ * so /fonts/*.woff2 exists in the webroot for both. */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-SemiBold-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-Bold-latin.woff2') format('woff2');
+}
+:root {
+  color-scheme: dark;
+  --display: 'Chakra Petch', 'DIN Alternate', system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0b10;
+  background-image: radial-gradient(circle at 50% -10%, rgba(255, 176, 46, 0.12), transparent 55%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  color: #e9edf7;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #ffb02e;
+}
+a:hover,
+a:focus {
+  color: #ffc85f;
+}
+
+/* ---- header ---- */
+.site-header {
+  border-bottom: 1px solid rgba(142, 170, 222, 0.1);
+}
+.header-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #e9edf7;
+}
+.brand:hover,
+.brand:focus {
+  color: #e9edf7;
+}
+/* BACKGLASS brand mark. Was `.brand-ball`, a chrome pinball drawn as a
+   radial gradient — a third, different mark from the app header's icon tile
+   and the login page's, and the one thing on the page that still looked like
+   the old warm-charcoal build. It is now the same LIT AMBER TILE treatment
+   the app uses: a rounded square with the amber bloom, no chrome, no
+   highlight. Class name kept so the generated markup does not have to
+   change. */
+.brand-ball {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: linear-gradient(150deg, #ffc85f, #e07d00);
+  box-shadow: 0 0 14px rgba(255, 176, 46, 0.28);
+}
+.back-link {
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---- main content ---- */
+main {
+  flex: 1;
+  width: 100%;
+}
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+.breadcrumbs {
+  font-size: 12.5px;
+  color: rgba(233, 237, 247, 0.5);
+  margin-bottom: 18px;
+}
+.breadcrumbs a {
+  color: rgba(233, 237, 247, 0.7);
+}
+.breadcrumbs span[aria-hidden] {
+  margin: 0 4px;
+}
+h1 {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+  margin: 0 0 6px;
+  color: #e9edf7;
+}
+.dek {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(233, 237, 247, 0.65);
+  margin: 0 0 20px;
+}
+.dek-secondary {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: rgba(233, 237, 247, 0.55);
+  margin: 0 0 16px;
+}
+h2 {
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 34px 0 12px;
+  color: #ffc85f;
+}
+h3 {
+  font-family: var(--display);
+  font-size: 14.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 22px 0 8px;
+  color: #ffc85f;
+}
+p,
+li {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: rgba(233, 237, 247, 0.88);
+}
+p {
+  margin: 0 0 14px;
+}
+ul {
+  padding-left: 22px;
+  margin: 0 0 14px;
+}
+li {
+  margin-bottom: 8px;
+}
+strong {
+  color: #e9edf7;
+}
+
+/* ---- call to action (the entire point of these pages) ---- */
+.cta {
+  display: inline-block;
+  background: #ffb02e;
+  color: #1a1200;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 20px;
+  border-radius: 999px;
+  margin: 4px 0 28px;
+  box-shadow: 0 0 0 1px rgba(255, 176, 46, 0.55), 0 0 10px rgba(255, 176, 46, 0.34),
+    0 0 28px rgba(255, 176, 46, 0.13);
+}
+.cta:hover,
+.cta:focus {
+  background: #ffc85f;
+  color: #1a1200;
+}
+
+/* ---- goal list ---- */
+.goal-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.goal-item {
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 0;
+}
+.goal-title {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  color: #e9edf7;
+  margin: 0 0 6px;
+}
+/* Each goal title deep-links into the app (P7a) — but a page of thirty amber
+ * headings would read as a link farm, so the link keeps the title's own ink
+ * and takes an underline instead, going amber only on hover/focus. Both
+ * colours are this stylesheet's existing pair (see the `a` rule above); no
+ * new value is introduced. */
+.goal-title a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.goal-title a:hover,
+.goal-title a:focus {
+  color: #ffb02e;
+}
+.goal-meta {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 176, 46, 0.85);
+}
+.goal-summary {
+  margin: 0 0 6px;
+  color: rgba(233, 237, 247, 0.78);
+}
+.goal-reward {
+  margin: 0;
+  font-size: 13.5px;
+  color: rgba(233, 237, 247, 0.6);
+}
+
+/* ---- /machines index ---- */
+.machine-index {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 20px 0 8px;
+}
+.machine-index li {
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 0;
+}
+.machine-index a {
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+}
+.index-meta {
+  display: block;
+  font-size: 12px;
+  color: rgba(233, 237, 247, 0.5);
+  margin-top: 3px;
+}
+
+/* ---- non-affiliation callout ---- */
+.callout {
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 28px 0 0;
+}
+.callout p {
+  margin: 0;
+  font-size: 13.5px;
+  color: rgba(233, 237, 247, 0.6);
+}
+
+/* ---- footer ---- */
+.site-footer {
+  border-top: 1px solid rgba(142, 170, 222, 0.1);
+  margin-top: auto;
+}
+.footer-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.footer-contact {
+  font-size: 13px;
+  color: rgba(233, 237, 247, 0.6);
+}
+.footer-copy {
+  font-size: 11.5px;
+  color: rgba(233, 237, 247, 0.35);
+}
+
+@media (min-width: 560px) {
+  h1 {
+    font-size: 32px;
+  }
+}

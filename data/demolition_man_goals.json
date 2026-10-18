@@ -1,0 +1,1196 @@
+{
+  "machine": "Demolition Man (Williams, 1994)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A full plunge carries the ball all the way round to the upper left flipper, which is where the skill shot is taken from."
+    },
+    {
+      "id": "retina-scan",
+      "name": "Retina Scan",
+      "type": "captive-ball",
+      "x": 0.06,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Leftmost shot on the game. The ball passes a gate into an eject; hit hard enough it drives the captive eyeball into the upper target and scores the Retina value. Returns via the left saucer to the left inlane."
+    },
+    {
+      "id": "car-crash",
+      "name": "Car Crash",
+      "type": "standup",
+      "x": 0.11,
+      "y": 0.69,
+      "trim": "all",
+      "notes": "An impact target with two captive cars behind it. Notorious for kicking the ball straight down the middle — there is a short ball saver to compensate, though it can be switched off in LA-4 ROMs."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Left Flipper",
+      "type": "flipper",
+      "x": 0.2,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Sits at the bottom of the left loop. Feeds the Side Ramp and the Underground — the two shots that make the skill shot and Prison Break reflexes possible."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.13,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Give it a firm shot and the Top Lock sinkhole takes the ball; feeble ones slip behind the top ramp and dribble into the MTL rollovers. The lamp stack here reads Extra Ball, Start Multiball, Explode, Jackpot, Combo.",
+      "feeds": {
+        "shot": "top-lock"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Everything you shoot here comes back down to the left inlane. Quick Freeze can light it, so can the Car Chase round, and it counts as one of the four Explode ramps.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "upper-rebound",
+      "name": "Upper Rebound",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "The Center Ramp's left wall is a three-inch strip of rubber stretched over a switch, so even a glancing hit registers."
+    },
+    {
+      "id": "top-lock",
+      "name": "Top Lock Sinkhole",
+      "type": "saucer",
+      "x": 0.4,
+      "y": 0.81,
+      "trim": "all",
+      "notes": "Awards multiball and extra balls when lit, a mystery value when not. Easiest from the left loop; occasionally a lucky Center Ramp shot bounces in."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (AcMag)",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.87,
+      "trim": "all",
+      "notes": "Three pinball-widths wide at the very top of the playfield, triggered by a gate. Balls drop straight down into the left loop or the MTL rollovers."
+    },
+    {
+      "id": "mtl-rollovers",
+      "name": "M-T-L Rollovers",
+      "type": "rollover",
+      "x": 0.73,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Top right corner, and genuinely hard to see past the two big ramps — the leftmost M especially. Advance the bonus multiplier and light Access Claw."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.62,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "Two bumpers plus a top slingshot that scores as a third. Each raises the Retina value by 100K and pays 500K. That left bumper does double duty as the Center Ramp's right-hand wall."
+    },
+    {
+      "id": "underground",
+      "name": "Underground",
+      "type": "scoop",
+      "x": 0.42,
+      "y": 0.69,
+      "trim": "all",
+      "notes": "Sinkhole left of the jets, opening on its left side. Easy from the upper left flipper. Home of the Computer (yellow light) and Demolition Time (blue light); returns via VUK to the right ramp habitrail.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp",
+      "type": "ramp",
+      "x": 0.53,
+      "y": 0.59,
+      "trim": "all",
+      "notes": "Small, twisting and difficult, tucked below the Underground. The skill shot target, and the second half of the right loop Double Combo.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Tall ramp with a diverter — normally to the right inlane, or up to the Cryo-Claw when the claw is available. Also the Super Jackpot shot.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.9,
+      "y": 0.59,
+      "trim": "all",
+      "notes": "A full shot carries past the MTL rollovers all the way to the upper left flipper. A weak one dies in the rollovers instead.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "cryo-claw",
+      "name": "Cryo-Claw",
+      "type": "mech",
+      "x": 0.79,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "The signature gimmick. An elevator lifts the ball from the right ramp to a magnetic claw you steer with the two gun triggers, then drop into one of five mode lanes."
+    },
+    {
+      "id": "yellow-standups",
+      "name": "Yellow Standups (5)",
+      "type": "standup",
+      "x": 0.56,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Scattered across the playfield. Worth 1M plus 1M per hit up to twenty, resetting each ball. Completing sets lights Quick Freeze."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Roll through it while lit and Access Claw comes on at the right ramp. It also arms the right ramp, right loop and AcMag ramp as combo continuations."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "A lit pass through here puts Quick Freeze on the left ramp. The left orbit and left ramp also come up as combo shots."
+    },
+    {
+      "id": "right-rebound",
+      "name": "Right Rebound",
+      "type": "standup",
+      "x": 0.9,
+      "y": 0.17,
+      "trim": "all",
+      "notes": "Rubber-across-a-switch on the right side, just above the right outlane."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Dangerous. The divider posts ship without rubber and the ball spins unpredictably here. No Specials or awards in the outlanes at all."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same story as the left — no award, and no rubber on the posts as shipped."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Widebody, but the gap between the two lower flippers is mercifully small."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the left ramp, left loop and Underground."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge full strength so the ball travels all the way round to the upper left flipper, then shoot the Side Ramp. It is technically the first lit combo, which is why it pays 5M — and every skill shot you make permanently raises the base value of every combo for the rest of the game.",
+      "difficulty": 2,
+      "reward": "5M, +5M per repeat, and +1M to all combo values",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the skill shot is made with a flipper."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Plunge through, then catch it on the upper flipper, then shoot the Side Ramp",
+          "detail": "The ball needs enough speed to travel all the way round to the upper left flipper untouched This is the only flipper that can reach the Side Ramp cleanly — 5M first, 10M second, and each one raises the base combo value by a million"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "combos",
+      "title": "Combos — The Heart Of The Game",
+      "category": "combo",
+      "summary": "Combos are what Demolition Man is actually about. Seven major shots, each with a flashing red arrow, and the elegant part is that hitting a shot automatically lights whatever shots are reachable from where the ball ends up. You can keep going indefinitely.",
+      "difficulty": 2,
+      "reward": "5M, then 6M, 7M... with no apparent limit",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Start from a return lane",
+          "detail": "The right inlane lights the left orbit and left ramp; the left inlane lights the right ramp, right loop and AcMag"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take the shot its arrow is flashing on",
+          "detail": "First combo pays 5M, and the ramp returns to the left inlane — which lights the next set for you"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Follow the chain the game lights",
+          "detail": "Values climb 5M, 6M, 7M with no ceiling. Unlit shots in between do not break it — the lit arrows stay lit"
+        },
+        {
+          "shot": "right-loop",
+          "action": "Use the right loop into the Side Ramp",
+          "detail": "The Side Ramp scores Double Combo as the second half of that pair"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Keep it alive to the milestones",
+          "detail": "Combos light the Computer every 10, and an extra ball at 12 and again at 50. The chain only resets to 5M when the arrows time out"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "explodes",
+      "title": "Explode Shots",
+      "category": "multiplier",
+      "summary": "The four loop and ramp shots carry Explode lights worth 10M each. The trick is how you light them: you have to hit the Underground while it is *unlit* as a combo. It may still be lit for Computer or Demolition Time — that is fine, it just must not be the current combo shot.",
+      "difficulty": 2,
+      "reward": "10M per Explode shot",
+      "steps": [
+        {
+          "shot": "underground",
+          "action": "Hit the Underground while it is NOT the lit combo shot",
+          "detail": "Being lit for Computer or Demolition Time does not disqualify it"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cash the Explodes",
+          "detail": "Left and right loops and left and right ramps all carry Explode lights"
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "retina-scan",
+      "title": "Retina Scan",
+      "category": "strategy",
+      "summary": "Drive the captive eyeball into the upper target. The value starts at 5M and every jet bumper hit adds 100K, so the bumpers are quietly building this shot the whole game. Three Retina Scans light an extra ball.",
+      "difficulty": 2,
+      "reward": "Retina value (5M base, +100K per jet), extra ball at three",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Let the bumpers build the value",
+          "detail": "Each bumper hit adds 100K to what the Retina Scan will pay"
+        },
+        {
+          "shot": "retina-scan",
+          "action": "Hit it hard enough",
+          "detail": "The shot must drive the captive eyeball into the upper target; a soft shot just ejects to the left inlane"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "explode-hurry-up",
+      "title": "Explode Hurry-Up",
+      "category": "mode",
+      "summary": "The Retina Scan starts it — a single hit the first time, four hits the time after. What you get is a countdown across all four Explode ramps, opening at 15M, and each one you collect pushes the next value up by 10M.",
+      "difficulty": 3,
+      "reward": "15M countdown, +10M per collect",
+      "steps": [
+        {
+          "shot": "retina-scan",
+          "action": "Trigger the hurry-up",
+          "detail": "One Retina Scan the first time, four the second"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect Explodes fast",
+          "detail": "Each collect raises the next one by 10M"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep going before it bottoms out",
+          "detail": "The round ends when the countdown hits 5M — higher if you have already banked some"
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "car-crash",
+      "title": "Car Crash",
+      "category": "combo",
+      "summary": "Two captive cars behind an impact target. Each hit adds to the value and lights another Car Crash light; with all three lit, the next hit collects. Worth 3M, 6M then 10M — and doubled if the top car reaches the end of the captive lane.",
+      "difficulty": 2,
+      "reward": "3M / 6M / 10M, doubled on a full car travel",
+      "steps": [
+        {
+          "shot": "car-crash",
+          "action": "Build the lights",
+          "detail": "Each hit adds value and lights one more Car Crash lamp"
+        },
+        {
+          "shot": "car-crash",
+          "action": "Collect with three lit",
+          "detail": "Drive the top car the full length of the captive lane into the target at its far end and the award doubles. Brace for a return straight down the middle — that ball saver is a short one"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mtl-rollovers",
+      "title": "M-T-L Rollovers",
+      "category": "multiplier",
+      "summary": "Three rollovers hidden behind the ramps, stepping the bonus multiplier through 2x, 3x, 4x, 5x. Reach 5x and an extra ball lights on the left loop. Every time you complete the sequence, Access Claw lights — which is the real reason to care about them.",
+      "difficulty": 2,
+      "reward": "Bonus multiplier, extra ball at 5x, lights Access Claw",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Use the AcMag to feed them",
+          "detail": "Balls dropping off the Center Ramp roll into the rollovers"
+        },
+        {
+          "shot": "mtl-rollovers",
+          "action": "Complete M-T-L",
+          "detail": "Very hard to see from the player position — go by the sound and the display rather than looking"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "computer",
+      "title": "The Computer",
+      "category": "mode",
+      "summary": "This game's random award, in the same family as Twilight Zone's Camera. Lit every ten combos and collected at the Underground. The table is unusually strong — two of the awards are effectively free progress toward multiball and Explodes.",
+      "difficulty": 2,
+      "reward": "Random award",
+      "steps": [
+        {
+          "shot": "underground",
+          "action": "Collect when the yellow lamp is lit",
+          "detail": "Awards include Light Extra Ball, Light Explodes (all four 10M lamps), 3x Car Crash, 2x Retina Scan, Light Arrows, Maximize Freezes (freezes four balls and lights multiball), Collect Bonus and Collect Standups"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "access-claw",
+      "title": "Access The Cryo-Claw",
+      "category": "strategy",
+      "summary": "Two steps that people often miss the order of. The *left inlane* is what the MTL rollovers light — not the claw itself. Roll that lit inlane and Claw Ready appears on the right ramp; only then will the ramp divert you up the elevator.",
+      "difficulty": 2,
+      "reward": "Claw available — pick your mode",
+      "steps": [
+        {
+          "shot": "mtl-rollovers",
+          "action": "Complete the rollovers",
+          "detail": "This lights the left inlane, not the claw itself"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll the lit left inlane",
+          "detail": "Now Claw Ready lights on the right ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the ramp to ride the elevator",
+          "detail": "Steer with the two gun triggers and drop into one of five lanes"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "claw-lock-freeze",
+      "title": "Claw: Lock Freeze",
+      "category": "strategy",
+      "summary": "The most valuable claw lane and the one to take when you are close to multiball. It locks as many Freeze lamps as you still need, or starts multiball outright — and when it starts one, it does so with an *extra* frozen ball on top.",
+      "difficulty": 1,
+      "reward": "Instant locks, or multiball with a bonus ball",
+      "steps": [
+        {
+          "shot": "cryo-claw",
+          "action": "Drop into Lock Freeze",
+          "detail": "Fills whatever Freeze lamps you are short of"
+        },
+        {
+          "shot": "cryo-claw",
+          "action": "Use it to start multiball when lit",
+          "detail": "Starting this way adds one additional frozen ball to the multiball"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "claw-acmag",
+      "title": "Claw: Start AcMag",
+      "category": "mode",
+      "summary": "Repeated Center Ramp shots for a climbing value, in the same shape as Judge Dredd's Safe Cracker. Awards run 5M up to 12.5M, then 6M up to 13.5M, adding a million for every successful ramp. The ball returns to the left inlane.",
+      "difficulty": 2,
+      "reward": "5M-12.5M climbing, +1M per ramp",
+      "steps": [
+        {
+          "shot": "cryo-claw",
+          "action": "Drop into Start AcMag",
+          "detail": "Ball returns to the left inlane"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Repeat the Center Ramp",
+          "detail": "Each successful ramp adds a million to the running award"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "claw-prison-break",
+      "title": "Claw: Prison Break",
+      "category": "mode",
+      "summary": "Fast and reflex-based. The ball drops above the upper left flipper and you are handed 15M immediately — but a quick shot into the Underground doubles it, and a quick Side Ramp triples it. It also lights Car Chase.",
+      "difficulty": 3,
+      "reward": "15M, doubled or tripled on the reflex shot",
+      "steps": [
+        {
+          "shot": "cryo-claw",
+          "action": "Drop into Prison Break",
+          "detail": "The ball arrives above the upper left flipper — be ready before it lands"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Take the Side Ramp for the triple",
+          "detail": "The Underground doubles instead; the Side Ramp is worth the extra risk"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Then play Car Chase",
+          "detail": "Alternating ramps at 5M each, in the style of T2's Payback Time"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "claw-super-jets",
+      "title": "Claw: Super Jets",
+      "category": "mode",
+      "summary": "The bumpers light for 25 hits at a million each, and the ball is dropped straight into the bumper area so none of it is wasted. Every yellow target you hit adds to the hits remaining, so this mode is longer than it first appears.",
+      "difficulty": 1,
+      "reward": "1M per bumper hit, 25 hits",
+      "steps": [
+        {
+          "shot": "cryo-claw",
+          "action": "Drop into Super Jets",
+          "detail": "The ball lands directly in the jets"
+        },
+        {
+          "shot": "yellow-standups",
+          "action": "Extend it with the yellow targets",
+          "detail": "Every yellow standup you hit pushes the remaining hit count back up"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "claw-capture-simon",
+      "title": "Claw: Capture Simon",
+      "category": "mode",
+      "summary": "The seven major shots light at 5M each, but only three shots are on offer. Each 5M also builds toward a 25M completion bonus, so finishing all three is worth 40M rather than 15M. A left loop into the top lock counts as two.",
+      "difficulty": 3,
+      "reward": "5M x3 plus 25M completion = 40M",
+      "steps": [
+        {
+          "shot": "cryo-claw",
+          "action": "Drop into Capture Simon",
+          "detail": "The ball is served to the right ramp"
+        },
+        {
+          "shot": "left-loop",
+          "action": "Use the left loop into the top lock",
+          "detail": "That combination awards two Simon shots at once — a third of the mode in one shot"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish all three",
+          "detail": "Completion is worth 25M on top of the three 5M awards"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "yellow-targets",
+      "title": "The Yellow Targets",
+      "category": "strategy",
+      "summary": "Twilight Zone's Greed targets in spirit. Worth 1M plus 1M per hit up to twenty, resetting each ball. Their real job is lighting Quick Freeze — depending on the operator setting that takes one, two or three complete sets.",
+      "difficulty": 2,
+      "reward": "1M-20M, and lights Quick Freeze",
+      "steps": [
+        {
+          "shot": "yellow-standups",
+          "action": "Keep picking them off",
+          "detail": "Value climbs a million per hit and resets at the start of each ball"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cash the Quick Freeze",
+          "detail": "The right inlane lights the left ramp for it"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "fortress-multiball",
+      "title": "Fortress Multiball",
+      "category": "multiball",
+      "summary": "The entry multiball, needing just one frozen ball. Jackpots are Center Ramp, Underground and Left Ramp, then the Right Ramp lights for a Super Jackpot worth triple. Base runs 20M to 35M depending on how many balls you froze.",
+      "difficulty": 2,
+      "reward": "20M-35M jackpots, triple Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Lock via the left ramp or the Claw",
+          "detail": "Freeze lamps are lit by the yellow targets"
+        },
+        {
+          "shot": "left-loop",
+          "action": "Start it at the Top Lock",
+          "detail": "Reached via the left loop, or a lucky Center Ramp bounce"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Take the three jackpots",
+          "detail": "Yellow targets add 2M each to the base value"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the triple Super Jackpot",
+          "detail": "The Center Ramp then relights to run it again, but the second lap adds the loops as required shots"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "museum-multiball",
+      "title": "Museum Multiball",
+      "category": "multiball",
+      "summary": "Needs two frozen balls. Every shot on the playfield is lit for a jackpot at once, and once you have made them all the Right Ramp lights for the Super. Base is 25M minimum and the bumpers add a million each.",
+      "difficulty": 2,
+      "reward": "25M+ jackpots on all shots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Freeze two balls",
+          "detail": "Two locks is the entry price"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Sweep every lit shot",
+          "detail": "All shots are jackpots simultaneously — no alternation"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish on the Super",
+          "detail": "Lit once every jackpot has been collected"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "wasteland-multiball",
+      "title": "Wasteland Multiball",
+      "category": "multiball",
+      "summary": "Fortress's structure all over again, only the values are fatter — you froze more balls to get here. The real difference is that several jackpots can sit lit at once rather than one, which makes this far friendlier when multiball turns chaotic.",
+      "difficulty": 3,
+      "reward": "Larger jackpots, multiple lit at once",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Freeze the required balls",
+          "detail": "More freezes than Fortress, hence the larger values"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Work whichever jackpots are lit",
+          "detail": "Unlike Fortress you are not restricted to one at a time"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "cryo-prison-multiball",
+      "title": "Cryo-Prison Multiball",
+      "category": "multiball",
+      "summary": "The odd one out, and worth understanding before you play it. Every jackpot shot is lit but none of them pay — they only ADD to a Super Jackpot that you collect at the right ramp. After each Super you must re-hit a regular jackpot shot to relight it.",
+      "difficulty": 3,
+      "reward": "Accumulating Super Jackpot at the right ramp",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Feed the Super, do not expect payment",
+          "detail": "Regular jackpot shots award nothing directly — they build the Super"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the Super",
+          "detail": "Super Jackpot balls go to the Claw and return to the left inlane"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Relight before the next one",
+          "detail": "You cannot collect another Super until the previous animation finishes"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "demolition-time",
+      "title": "Demolition Time",
+      "category": "wizard",
+      "summary": "Finish all five Claw modes and the blue light at the Underground offers this. It opens by handing you a flat 50M, then lights every major shot for 15M — and, unusually, those lamps do not time out. Keep two or more balls alive and they simply STAY on.",
+      "difficulty": 3,
+      "reward": "50M start, 15M on every shot, separate high-score table",
+      "steps": [
+        {
+          "shot": "cryo-claw",
+          "action": "Complete all five claw modes",
+          "detail": "AcMag, Lock Freeze, Prison Break, Super Jets and Capture Simon"
+        },
+        {
+          "shot": "underground",
+          "action": "Start it at the blue light",
+          "detail": "50 million awarded outright on start"
+        },
+        {
+          "shot": "yellow-standups",
+          "action": "Complete the yellow targets for another ball",
+          "detail": "Adds a ball and raises the award by 5M; losing a ball lowers it"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Keep multiple balls alive and keep shooting",
+          "detail": "The shots stay lit — the total is banked as its own Demolition Time high score"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "demolition-jackpot",
+      "title": "Demolition Jackpot",
+      "category": "wizard",
+      "summary": "The other end-game, earned by completing all four multiballs and collected on the right ramp. It pays a fixed amount for each jackpot you scored in each multiball — 15M in Fortress, 20M in Museum, 25M in Wasteland, 30M in Cryo-Prison — and every mode counts one more jackpot than you actually collected, so it is worth at least 90M even if you never scored one.",
+      "difficulty": 3,
+      "reward": "Compounded across all four multiballs",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Play all four multiballs",
+          "detail": "Fortress, Museum, Wasteland and Cryo-Prison"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the Demolition Jackpot",
+          "detail": "Only the count matters — each multiball pays a fixed amount per jackpot, rising from Fortress through Cryo-Prison, so a pile of small jackpots beats one big one"
+        }
+      ],
+      "fx": "kaiju"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "dm-skillshot",
+      "title": "All The Way Round",
+      "desc": "Make the Side Ramp skill shot from the upper left flipper.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "dm-first-combo",
+      "title": "Chain Reaction",
+      "desc": "Complete your first combo.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combos"
+    },
+    {
+      "id": "dm-car-crash",
+      "title": "Total Write-Off",
+      "desc": "Collect a Car Crash with all three lights lit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "car-crash"
+    },
+    {
+      "id": "dm-claw",
+      "title": "Ride The Elevator",
+      "desc": "Light Access Claw and drop into any of the five claw lanes.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "access-claw"
+    },
+    {
+      "id": "dm-computer",
+      "title": "Ask The Computer",
+      "desc": "Reach ten combos and collect a Computer award at the Underground.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "computer"
+    },
+    {
+      "id": "dm-fortress",
+      "title": "Fortress Multiball",
+      "desc": "Freeze a ball and start Fortress Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fortress-multiball"
+    },
+    {
+      "id": "dm-explode-hurry",
+      "title": "Explode Hurry-Up",
+      "desc": "Trigger the Explode Hurry-Up off the Retina Scan and collect at least one.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "explode-hurry-up"
+    },
+    {
+      "id": "dm-simon-40",
+      "title": "Capture Simon",
+      "desc": "Complete all three Capture Simon shots for the full 40M.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "claw-capture-simon"
+    },
+    {
+      "id": "dm-twelve-combos",
+      "title": "Twelve In A Row",
+      "desc": "Reach twelve combos and light the extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combos"
+    },
+    {
+      "id": "dm-all-claw",
+      "title": "Five Lanes",
+      "desc": "Complete all five Cryo-Claw modes in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "demolition-time"
+    },
+    {
+      "id": "dm-demolition-time",
+      "title": "Demolition Time",
+      "desc": "Start Demolition Time at the Underground.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "demolition-time"
+    },
+    {
+      "id": "dm-demolition-jackpot",
+      "title": "Demolition Jackpot",
+      "desc": "Play all four multiballs and collect the Demolition Jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "demolition-jackpot"
+    }
+  ],
+  "drills": [
+    {
+      "id": "round-to-the-upper",
+      "title": "Round to the Upper Flipper",
+      "text": "Plunge full strength so the ball travels all the way around to the upper left flipper untouched, catch it there, then take the Side Ramp — that flipper is the only one that reaches it cleanly. It counts as your first lit combo, and every skill shot you make permanently raises the base value of every combo for the rest of the game.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "upper-left-flipper",
+        "side-ramp"
+      ]
+    },
+    {
+      "id": "follow-the-arrows",
+      "title": "Follow the Arrows",
+      "text": "The inlanes start every chain: the right one lights the left orbit and left ramp, the left one lights the right ramp, right loop and AcMag. Shoot the arrows the game lights rather than the shots you planned on. An unlit shot in between does not break the chain — only letting the arrows time out does, so keep moving.",
+      "reps": "chase a 10-combo chain",
+      "focus": "flow",
+      "goal": "combos",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-loop",
+        "left-ramp",
+        "right-ramp",
+        "right-loop",
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "drive-the-eyeball",
+      "title": "Drive the Eyeball",
+      "text": "The leftmost shot on the game has to be hit hard enough to push the captive eyeball into the target above it — a soft one just ejects to the left inlane with nothing to show for it. Take it at full power from a cradle, and keep in mind the jets have been quietly raising what it pays all game.",
+      "reps": "15 full-power attempts",
+      "focus": "accuracy",
+      "goal": "retina-scan",
+      "shots": [
+        "retina-scan",
+        "jet-bumpers"
+      ]
+    },
+    {
+      "id": "claw-in-order",
+      "title": "Get the Claw Order Right",
+      "text": "The rollovers light the left inlane, not the claw. Roll that lit inlane, then Claw Ready appears on the right ramp, and only then does the ramp divert you up the elevator. Once you are up there, steer with the two gun triggers and practice stopping over the lane you actually want rather than the nearest one.",
+      "reps": "5 full trips to the claw",
+      "focus": "ball-control",
+      "goal": "access-claw",
+      "shots": [
+        "mtl-rollovers",
+        "left-inlane",
+        "right-ramp",
+        "cryo-claw"
+      ]
+    },
+    {
+      "id": "brace-for-car-crash",
+      "title": "Brace for Car Crash",
+      "text": "This target is notorious for kicking the ball straight down the middle, and the ball saver that covers it is short and can be switched off entirely on some ROMs. Take it deliberately with hands on the machine and watch what the return actually does, before you build a habit of shooting it on the fly.",
+      "reps": "10 deliberate hits",
+      "focus": "ball-control",
+      "goal": "car-crash",
+      "shots": [
+        "car-crash"
+      ]
+    },
+    {
+      "id": "prison-break-reflex",
+      "title": "Prison Break Reflex",
+      "text": "The ball arrives above the upper left flipper, so be set before it lands rather than after. The Underground doubles the award and the Side Ramp triples it, and both windows are short — pick which one you are taking before the drop, then execute without looking up at the display.",
+      "reps": "5 drops",
+      "focus": "flow",
+      "goal": "claw-prison-break",
+      "shots": [
+        "cryo-claw",
+        "upper-left-flipper",
+        "side-ramp",
+        "underground"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "city",
+  "actionButton": {
+    "present": true,
+    "label": "Gun-Handle Thumb Buttons",
+    "location": "on top of each pistol grip, mounted on the cabinet sides ahead of the flipper buttons",
+    "how": "Two pistol grips stick out of the cabinet in front of the flipper buttons. The trigger on each one is simply a second flipper button — though the triggers are also what swing the Cryo-Claw — while the thumb button on top of each grip is the real extra control. Almost everything it does is a hidden award, and nearly all of them want both thumbs at once.",
+    "uses": [
+      {
+        "when": "Any jackpot lit during multiball",
+        "what": "Both thumbs turn the next jackpot into a Secret Jackpot. Super jackpots are excluded."
+      },
+      {
+        "when": "Big Points award from the top lock",
+        "what": "Both thumbs pay 5 million and an Eat at Joe's graphic; add both triggers and it becomes 10 million."
+      },
+      {
+        "when": "Right after the third Capture Simon shot",
+        "what": "Both thumbs award a 10 million capture bonus on top of the capture itself."
+      },
+      {
+        "when": "Outlane drain during Capture Simon",
+        "what": "Both thumbs still capture him as the ball goes — you lose the bonus but keep the capture."
+      },
+      {
+        "when": "Just after the second Retina Scan hit",
+        "what": "Both thumbs award the Smithers bonus, 10 million with the eye-poke animation."
+      },
+      {
+        "when": "Anytime during the AcMag mode",
+        "what": "Both thumbs hand over a free AcMag award, complete with the exploding cow."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Demolition Man is a widebody built on endless combos and a steerable Cryo-Claw. Chain the seven major shots, run the claw's five modes, and freeze balls for four different multiballs, all aiming at the Demolition Time and Demolition Jackpot end games.",
+    "loop": [
+      "Start a chain from a return lane and follow the flashing arrows -- each shot you make lights whatever is reachable next, so a clean combo feeds itself.",
+      "Complete the buried M-T-L rollovers to light the left inlane, roll it for Claw Ready, then shoot the right ramp to ride the elevator up to the Cryo-Claw.",
+      "Swing the claw with the gun triggers and drop into one of its five lanes; clearing every lane opens Demolition Time.",
+      "Pick off the yellow targets to freeze balls, then run Fortress, Museum, Wasteland and Cryo-Prison -- all four played lead to the Demolition Jackpot.",
+      "Strike the Underground while it is not your combo shot to arm the four 10M Explode lamps, and drive the captive eyeball for a Retina Scan the jets have been fattening all game."
+    ],
+    "lights": [
+      {
+        "id": "combo-arrows",
+        "name": "Combo Arrows",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "underground"
+          }
+        ],
+        "lit": "A flashing red arrow marks a live combo shot, and making one automatically lights whatever the ball can reach next, so the chain keeps handing you a target -- a dead shot between is harmless, and only letting the arrows time out breaks the run.",
+        "flashing": null,
+        "control": null,
+        "then": "Ride the chain for values that climb with no ceiling, opening around 5M. Every tenth combo lights the Computer award at the Underground, and reaching twelve -- then fifty -- lights an extra ball.",
+        "goals": [
+          "combos",
+          "computer"
+        ]
+      },
+      {
+        "id": "explode-lamps",
+        "name": "Explode Lamps",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "underground"
+          }
+        ],
+        "lit": "The two loops and two ramps hold 10M Explode lamps that only light when you strike the Underground while it is not your current combo shot, and being lit there for the Computer or Demolition Time does not spoil it.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect each lit loop and ramp for a flat 10M apiece. Driving the captive eyeball into the Retina Scan can kick off the Explode Hurry-Up, a countdown across all four shots that pushes the next value up every time you cash one.",
+        "goals": [
+          "explodes",
+          "explode-hurry-up"
+        ]
+      },
+      {
+        "id": "mtl-access-claw",
+        "name": "M-T-L Rollovers",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "mtl-rollovers",
+            "lamps": 3
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "The three M-T-L rollovers hide behind the ramps almost out of sight, so play them by ear; balls dropping off the AcMag center ramp roll them through, and each completed set steps your bonus multiplier from 2X toward 5X.",
+        "flashing": null,
+        "control": null,
+        "then": "Completing M-T-L switches on the LEFT INLANE rather than the claw -- the step most players get wrong. Roll that lit inlane for Claw Ready on the right ramp, shoot the ramp to reach the Cryo-Claw, and note that 5X also lights an extra ball at the left loop.",
+        "goals": [
+          "mtl-rollovers",
+          "access-claw"
+        ]
+      },
+      {
+        "id": "cryo-claw-lanes",
+        "name": "Cryo-Claw Lanes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "cryo-claw"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "underground"
+          }
+        ],
+        "lit": "With the claw armed the right ramp diverts onto an elevator that lifts the ball to the magnetic claw, which you swing left and right with the two gun triggers to drop into one of five mode lanes.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock Freeze banks freezes or starts a multiball with a bonus ball; Prison Break hands you 15M plus a reflex shot to triple it; Capture Simon can build to 40M. Finish all five lanes and Demolition Time lights at the Underground.",
+        "goals": [
+          "access-claw",
+          "claw-lock-freeze",
+          "claw-prison-break",
+          "claw-super-jets",
+          "claw-acmag",
+          "claw-capture-simon",
+          "demolition-time"
+        ]
+      },
+      {
+        "id": "retina-scan-eye",
+        "name": "Retina Scan",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "retina-scan"
+          },
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "The captive eyeball on the far left pays a base 5M, and every jet bumper hit quietly adds to it, so the bumpers are building this shot all game whether you watch them or not.",
+        "flashing": null,
+        "control": null,
+        "then": "Drive it hard enough to shove the eyeball into the target above; a soft hit just ejects to the left inlane for nothing. Three Retina Scans light an extra ball, and this is also the shot that starts the Explode Hurry-Up.",
+        "goals": [
+          "retina-scan",
+          "explode-hurry-up"
+        ]
+      },
+      {
+        "id": "car-crash-cars",
+        "name": "Car Crash",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "car-crash"
+          }
+        ],
+        "lit": "Two captive cars sit behind the impact target; each hit adds value and turns on another Car Crash lamp, and once all three glow the next hit banks it for 3M, 6M then 10M -- doubled if the top car rides the full length of its lane.",
+        "flashing": null,
+        "control": null,
+        "then": "Take it with all three lamps lit, and brace yourself -- this target is notorious for punching the ball back down the center, and the short save that covers it can be switched off entirely.",
+        "goals": [
+          "car-crash"
+        ]
+      },
+      {
+        "id": "freeze-multiballs",
+        "name": "Freeze Lamps & Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "yellow-standups",
+            "lamps": 5
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "top-lock"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "The scattered yellow targets light your Freeze lamps, a lit Freeze lets you lock a ball at the Top Lock off a clean left loop, and each multiball asks for more frozen balls than the one before it.",
+        "flashing": null,
+        "control": null,
+        "then": "Fortress opens on one freeze, Museum on two, then Wasteland and the odd Cryo-Prison. Work the ramp and Underground jackpots up to the triple Super Jackpot on the right ramp, and playing all four multiballs lights the compounding Demolition Jackpot there.",
+        "goals": [
+          "fortress-multiball",
+          "museum-multiball",
+          "wasteland-multiball",
+          "cryo-prison-multiball",
+          "demolition-jackpot",
+          "yellow-targets"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Make the skill shot -- a full plunge round to the upper left flipper, then the Side Ramp -- because every one permanently fattens your combo base. Then start chaining combos, pick off yellow targets, and let the jets build the Retina Scan.",
+        "goals": [
+          "skillshot",
+          "combos",
+          "retina-scan",
+          "yellow-targets"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Arm the four Explode lamps at the Underground, complete M-T-L to reach the Cryo-Claw, and run its five lanes while you freeze balls for Fortress and Museum. Car Crash and the Retina hurry-up fill the gaps.",
+        "goals": [
+          "explodes",
+          "access-claw",
+          "claw-capture-simon",
+          "fortress-multiball",
+          "explode-hurry-up"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The two end games are the ceiling. Demolition Time follows all five claw modes with a flat 50M start and every major shot lit at 15M that never times out. Play all four multiballs for the Demolition Jackpot, which pays for every jackpot you scored across each one.",
+        "goals": [
+          "demolition-time",
+          "demolition-jackpot"
+        ]
+      }
+    ]
+  }
+}

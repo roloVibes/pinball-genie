@@ -1,0 +1,1629 @@
+{
+  "machine": "Labyrinth (Barrels of Fun, 2023)",
+  "defaultFx": "magic",
+  "shots": [
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Manual plunge; strength routes to Ello Worm, Wiseman scoop, upper flipper shots, Village, or Egdirb depending on power"
+    },
+    {
+      "id": "ello-worm",
+      "name": "Ello Worm Staging Area",
+      "type": "mech",
+      "x": 0.9,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Appearing-post toy target reached on the shortest plunge; Worm Skillshot"
+    },
+    {
+      "id": "hoggle-target",
+      "name": "Hoggle Circle",
+      "type": "standup",
+      "x": 0.269,
+      "y": 0.169,
+      "trim": "all",
+      "notes": "Yellow Friend target — Fairies/information friend"
+    },
+    {
+      "id": "ludo-target",
+      "name": "Ludo Circle",
+      "type": "standup",
+      "x": 0.369,
+      "y": 0.071,
+      "trim": "all",
+      "notes": "Orange Friend target — Rocks/points friend"
+    },
+    {
+      "id": "didymus-target",
+      "name": "Sir Didymus Circle",
+      "type": "standup",
+      "x": 0.538,
+      "y": 0.075,
+      "trim": "all",
+      "notes": "Blue Friend target — Medals/support friend"
+    },
+    {
+      "id": "left-scoop",
+      "name": "Helping Hands Scoop",
+      "type": "scoop",
+      "x": 0.14,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "= Left Scoop; feeds Friend jackpots, Friend Multiball start, Extra Ball"
+    },
+    {
+      "id": "friend-progress-target",
+      "name": "Friend Progress Target",
+      "type": "standup",
+      "x": 0.82,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Wall target above right slingshot; spots Friend/Brick Keeper progress"
+    },
+    {
+      "id": "didymus-post",
+      "name": "Sir Didymus Staff Up-Post",
+      "type": "mech",
+      "x": 0.07,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Rising ball-save post above left outlane, armed by spelling HELP"
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Carries yellow/mode shots, Bog sequence, Tea Time collect, Poisoned Peach gate",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Forks)",
+      "type": "orbit",
+      "x": 0.08,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Outer left edge; spinner, captive ball, drop target; forks catch ball for Fireys/Goblin City"
+    },
+    {
+      "id": "goblin-gate-spinner",
+      "name": "Goblin Gate Spinner",
+      "type": "spinner",
+      "x": 0.09,
+      "y": 0.27,
+      "trim": "all",
+      "notes": "Low on left orbit; builds Cleaners hurry-up and Brick Keeper Super Jackpot value"
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.1,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Bashed into spinner for Super Jackpots; pops Firey heads; damages Humongous"
+    },
+    {
+      "id": "brick-keeper-lock1",
+      "name": "Brick Keeper Lock 1 (Left Orbit Target)",
+      "type": "standup",
+      "x": 0.15,
+      "y": 0.24,
+      "trim": "all"
+    },
+    {
+      "id": "humongous-drop-target",
+      "name": "Humongous Smart Drop Target",
+      "type": "drop-target",
+      "x": 0.13,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Sculpted Rock Golem; boss target for Goblin City Phase 1 and Poisoned Peach; also the Poisoned Peach collect shot, in the left-orbit cluster"
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.55,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Shot from upper flipper; Ramp Skillshot; Wiseman Quest and Guards shot",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "brick-keeper-lock2",
+      "name": "Brick Keeper Lock 2 (Center Ramp Target)",
+      "type": "standup",
+      "x": 0.52,
+      "y": 0.38,
+      "trim": "all"
+    },
+    {
+      "id": "bridge-loop",
+      "name": "Bridge Loop (Inner Loop)",
+      "type": "loop",
+      "x": 0.55,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Requires right-orbit switches tripped first, else registers as Egdirb",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "horseshoe-left",
+      "name": "Horseshoe (Left Side / U-turn)",
+      "type": "loop",
+      "x": 0.42,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Also called U-turn in some sources; central mode-start shot"
+    },
+    {
+      "id": "horseshoe-right",
+      "name": "Horseshoe (Right Side / U-turn)",
+      "type": "loop",
+      "x": 0.58,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Also called U-turn in some sources; used for Guards answer and Bog sequence"
+    },
+    {
+      "id": "wiseman-scoop",
+      "name": "Wiseman Scoop",
+      "type": "scoop",
+      "x": 0.62,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Under right ramp; Quest start/finish, Orb collect adjacent, multiball jackpots"
+    },
+    {
+      "id": "wiseman-drop-target",
+      "name": "Wiseman Drop Target",
+      "type": "drop-target",
+      "x": 0.6,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Guards Wiseman scoop; knock down to start a Wiseman Quest"
+    },
+    {
+      "id": "mystery-target-left",
+      "name": "Mystery Target (Left)",
+      "type": "standup",
+      "x": 0.56,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Flanks Wiseman scoop; lights Ello Mystery award"
+    },
+    {
+      "id": "mystery-target-right",
+      "name": "Mystery Target (Right)",
+      "type": "standup",
+      "x": 0.68,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Flanks Wiseman scoop; lights Ello Mystery award"
+    },
+    {
+      "id": "change-mode-target",
+      "name": "Change Mode Target",
+      "type": "standup",
+      "x": 0.43,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "One-shot from upper flipper; Target Skillshot; cycles lit mode when none running",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "orb-collect-lane",
+      "name": "Orb Collect / Mystery Award Lane",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Same physical shot as upper flipper's direct shot; collects Orbs (10M) and Ello Mystery",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.75,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Metal ramp with wireform return over the Wiseman scoop",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.92,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Early switches route skill shots; Brick Keeper lock/start; Cleaners collect shot"
+    },
+    {
+      "id": "brick-keeper-lock3",
+      "name": "Brick Keeper Lock 3 / Start (Right Orbit Target)",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.28,
+      "trim": "all"
+    },
+    {
+      "id": "village",
+      "name": "Village",
+      "type": "scoop",
+      "x": 0.65,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Back-of-playfield entry scoop; Village Skillshot on a strong-but-not-full plunge"
+    },
+    {
+      "id": "jareth-corner",
+      "name": "Jareth's Castle Shot (Back-Left Corner)",
+      "type": "lane",
+      "x": 0.1,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Battle Jareth final shot, fed from either orbit"
+    },
+    {
+      "id": "help-lanes",
+      "name": "H-E-L-P In/Outlanes",
+      "type": "lane",
+      "x": 0.1,
+      "y": 0.055,
+      "trim": "all",
+      "notes": "Spelling HELP arms Sir Didymus up-post and can light Helping Hands for a mode-tier change"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.79,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Shoots the Change Mode target, Center Ramp, and Bridge Loop, and drops Orb/Mystery awards right off its tip."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-target",
+      "title": "Target Skillshot",
+      "category": "skillshot",
+      "summary": "A medium-strength plunge routes the ball to the Change Mode target for the highest flat skill-shot value while also advancing mode progress.",
+      "difficulty": 1,
+      "reward": "500k / 1M / 1.5M by ball number",
+      "steps": [
+        {
+          "shot": "upper-right-flipper",
+          "action": "Plunge with medium strength toward the upper flipper",
+          "detail": "Routes up the right orbit onto the upper flipper — from there it's one shot to the Change Mode target."
+        },
+        {
+          "shot": "change-mode-target",
+          "action": "Shoot the Change Mode target off the upper flipper",
+          "detail": "Registers as the Target Skillshot — the highest value of all 7 skill-shot variants, and double-duty toward mode selection."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-wiseman",
+      "title": "Skill Shot — Wiseman Scoop",
+      "category": "skillshot",
+      "summary": "One of Labyrinth's seven skill-shot variants: a medium-strong plunge that drops the ball into the Wiseman scoop under the right ramp.",
+      "difficulty": 1,
+      "reward": "250k",
+      "steps": [
+        {
+          "shot": "wiseman-scoop",
+          "action": "Plunge medium-strong toward the Wiseman scoop",
+          "detail": "Routes to the end of the shooter lane wireform and drops into the scoop under the right ramp — banks the Wiseman Skillshot on its own. Following up immediately with the bridge loop instead arms the Super Skill Shot Combo."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-super-combo",
+      "title": "Super Skill Shot Combo",
+      "category": "skillshot",
+      "summary": "Chain the Wiseman scoop skill shot into an immediate bridge/inner-loop shot off the upper flipper for a 1.2M Super Skill Shot.",
+      "difficulty": 2,
+      "reward": "1.2M flat",
+      "steps": [
+        {
+          "shot": "wiseman-scoop",
+          "action": "Plunge medium-strong into the Wiseman scoop",
+          "detail": "Banks the Wiseman Skillshot on its own (250k) — follow up immediately for the combo."
+        },
+        {
+          "shot": "bridge-loop",
+          "action": "Immediately shoot the bridge/inner loop off the upper flipper",
+          "detail": "Completing this second shot right after the scoop scores the 1.2M Super Skill Shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-cleaners-hurryup",
+      "title": "The Cleaners Hurry-Up Loop",
+      "category": "combo",
+      "summary": "The clearest farmable money loop in the game: spin the left-orbit spinner to inflate a hurry-up, then cash it at the right orbit — repeatable 3 times per attempt.",
+      "difficulty": 2,
+      "reward": "Escalating hurry-up value; 5M+ cumulative lights an Orb",
+      "steps": [
+        {
+          "shot": "goblin-gate-spinner",
+          "action": "Spin the left-orbit spinner to build hurry-up value",
+          "detail": "The longer you spin before cashing, the bigger the collect"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit to collect the hurry-up",
+          "detail": "Repeatable up to 3 times per Cleaners attempt"
+        },
+        {
+          "shot": "goblin-gate-spinner",
+          "action": "Spin again to rebuild value"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect a second/third time",
+          "detail": "Need ≥5M cumulative across the 3 collects to light an Orb; letting the clock hit '13' pays nothing — don't get greedy"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "combo-brick-keeper-grind",
+      "title": "Brick Keeper Captive-Ball Grind",
+      "category": "combo",
+      "summary": "Inside Brick Keeper Multiball, trap a ball at the left orbit's forks and bash the captive ball into the spinner repeatedly to inflate and collect the Super Jackpot.",
+      "difficulty": 2,
+      "reward": "Growing Super Jackpot, re-lights for progressively more",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to trap a ball in the forks",
+          "detail": "Available once enough regular jackpots are collected during Brick Keeper Multiball"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the captive ball into the spinner",
+          "detail": "Each hit into the spinner increases the Super Jackpot value before you cash it"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Repeat across the multiball for more Super Jackpots",
+          "detail": "Each re-light costs one more regular jackpot than the last"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "combo-tea-time-loop",
+      "title": "Tea Time Value Loop",
+      "category": "combo",
+      "summary": "Cycle orbit and Horseshoe shots to inflate the Tea Time hurry-up before banking it under the left ramp.",
+      "difficulty": 2,
+      "reward": "Inflated hurry-up jackpot per bank",
+      "steps": [
+        {
+          "shot": "orb-collect-lane",
+          "action": "Collect a purple-flashing Ello Mystery award to start Tea Time Multiball"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot an orbit shot to multiply the hurry-up value",
+          "detail": "Orbit shots multiply the value"
+        },
+        {
+          "shot": "horseshoe-left",
+          "action": "Shoot the Horseshoe to increase the value",
+          "detail": "Alternate orbit and Horseshoe shots to keep inflating"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot under the left ramp to bank the value as a jackpot",
+          "detail": "Repeat the loop for more jackpots before the hurry-up times out"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "combo-poisoned-peach-ramps",
+      "title": "Poisoned Peach Ramp-Combo Grind",
+      "category": "combo",
+      "summary": "During the Poisoned Peach mini-wizard, alternate ramps while their arrows blink for combo value instead of taking single solid shots.",
+      "difficulty": 2,
+      "reward": "Above-base ramp value + faster drop-target breaks",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a ramp while its arrow is blinking (combo-primed)",
+          "detail": "Blinking beats a solid-arrow single shot"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Immediately shoot the opposite ramp while it blinks",
+          "detail": "Ramp-to-ramp combos raise the value and speed up breaking both drop-target spells"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep alternating ramps for the duration of the timed mode"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "combo-goblin-city-frenzy",
+      "title": "Goblin City Counterattack Frenzy",
+      "category": "combo",
+      "summary": "The endgame jackpot frenzy of Goblin City Multiball — every shot on the playfield scores simultaneously once you reach Phase 3.",
+      "difficulty": 3,
+      "reward": "Biggest score density in the ruleset; Collecting at least five jackpots in the Attack phase lights an Orb",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Reach Counterattack by clearing Phases 1 and 2 first",
+          "detail": "See the Goblin City Multiball wizard goal for the full path"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Shoot any lit shot for a jackpot",
+          "detail": "All shots on the playfield are lit simultaneously during Counterattack"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Cash the Super Jackpot once lit",
+          "detail": "First jackpot lights it; each re-light costs one more regular jackpot; ends at one ball remaining"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "multiball-brick-keeper",
+      "title": "Brick Keeper Multiball",
+      "category": "multiball",
+      "summary": "Light three locks via wall/Fairy targets and the green standup targets at the left orbit, center ramp, and right orbit, then start the multiball.",
+      "difficulty": 2,
+      "reward": "Red-arrow jackpots + Super Jackpot at the captive-ball spinner",
+      "steps": [
+        {
+          "shot": "friend-progress-target",
+          "action": "Hit the wall target above the right slingshot",
+          "detail": "Combines with Fairy target hits to light Brick Keeper locks"
+        },
+        {
+          "shot": "hoggle-target",
+          "action": "Hit the Fairy (Hoggle) targets",
+          "detail": "Completes the light-locks requirement"
+        },
+        {
+          "shot": "brick-keeper-lock1",
+          "action": "Shoot the left-orbit green target",
+          "detail": "Lock 1"
+        },
+        {
+          "shot": "brick-keeper-lock2",
+          "action": "Shoot the center-ramp green target",
+          "detail": "Lock 2"
+        },
+        {
+          "shot": "brick-keeper-lock3",
+          "action": "Shoot the right-orbit green target",
+          "detail": "Starts Brick Keeper Multiball"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit any red-arrow shot for a jackpot",
+          "detail": "Ramps, orbits, and Horseshoe all count while lit red"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to trap the ball in the forks",
+          "detail": "Unlocks once enough jackpots are collected"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the captive ball into the spinner for the Super Jackpot"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "multiball-friend",
+      "title": "Friend Multiball",
+      "category": "multiball",
+      "summary": "Collect a jackpot for all three Friends, then start the multiball at Helping Hands scoop.",
+      "difficulty": 2,
+      "reward": "Friend jackpots; the three Friends reaching Level 4 each light an Orb (3 of 13), separate from Friend Multiball's own Orb (collect one jackpot in the MB)",
+      "steps": [
+        {
+          "shot": "hoggle-target",
+          "action": "Collect a jackpot for Hoggle",
+          "detail": "Hit the lit Advance Friend insert, then the relocating yellow collect shot"
+        },
+        {
+          "shot": "ludo-target",
+          "action": "Collect a jackpot for Ludo",
+          "link": "none"
+        },
+        {
+          "shot": "didymus-target",
+          "action": "Collect a jackpot for Sir Didymus",
+          "detail": "Once all three Friends have a jackpot, Helping Hands scoop flashes green",
+          "link": "none"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Shoot Helping Hands scoop to start Friend Multiball",
+          "detail": "Hold either flipper before the multiball starts to decline it and keep building Friend levels for bigger jackpots."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "multiball-tea-time",
+      "title": "Tea Time Multiball",
+      "category": "multiball",
+      "summary": "Collect the Ello Mystery award to start Tea Time Multiball, then bank hurry-up value under the left ramp.",
+      "difficulty": 2,
+      "reward": "Inflatable hurry-up jackpots",
+      "steps": [
+        {
+          "shot": "mystery-target-left",
+          "action": "Hit a Wiseman target on either side of the scoop",
+          "detail": "Lights the Ello Mystery insert"
+        },
+        {
+          "shot": "orb-collect-lane",
+          "action": "Shoot the Ello shot under the upper flipper",
+          "detail": "Collects the Mystery award; if it's Tea Time Multiball, it starts immediately"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot under the left ramp to bank the current hurry-up value",
+          "detail": "Build value first with orbit/Horseshoe shots — see the Tea Time combo"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "multiball-wiseman",
+      "title": "Wiseman Multiball",
+      "category": "multiball",
+      "summary": "Completing your 4th Wiseman Quest auto-starts Wiseman Multiball, scoring jackpots at the Wiseman scoop.",
+      "difficulty": 2,
+      "reward": "Jackpots at the Wiseman scoop",
+      "steps": [
+        {
+          "shot": "wiseman-drop-target",
+          "action": "Knock down the Wiseman drop target",
+          "detail": "Repeat across the game to build toward 4 completed Quests"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Shoot the scoop to start, then finish, each Quest",
+          "detail": "4th completion auto-starts Wiseman Multiball"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Shoot the Wiseman scoop for jackpots during the multiball"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "mode-knockers",
+      "title": "The Knockers",
+      "category": "mode",
+      "summary": "Single-ball mode: pass the ring across to the second knocker with yellow shots, then knock at the Wiseman drop target and put the ball through the door that opens.",
+      "difficulty": 2,
+      "reward": "Orb for completing the mode",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the yellow-arrow left ramp, right ramp, or flashing Horseshoe side",
+          "detail": "Each one carries the ring further across; the flashing Horseshoe side pays double"
+        },
+        {
+          "shot": "wiseman-drop-target",
+          "action": "Knock down the drop target guarding the Wiseman when the callout lands",
+          "detail": "That knock is what swings the door open behind it"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Send the ball straight into the Wiseman doorway while the target is still down",
+          "detail": "The target pops back up after a few seconds — knock again and retake the shot if you miss the window"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "mode-four-guards",
+      "title": "The Four Guards",
+      "category": "mode",
+      "summary": "Toggle four guard shots to red/blue, question the guards to reveal the true color, then answer at the Horseshoe.",
+      "difficulty": 3,
+      "reward": "Orb for opening the door on the first attempt",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot left ramp, right ramp, left orbit, and right orbit",
+          "detail": "Each hit toggles that guard between red and blue"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Toggle the remaining guard shots",
+          "detail": "Get all four to a color before answering",
+          "link": "none"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp or bridge loop to question the guards",
+          "detail": "Reveals the true correct color, which is the opposite of the guard's claim"
+        },
+        {
+          "shot": "horseshoe-right",
+          "action": "Shoot the right side of the Horseshoe to answer",
+          "detail": "Matching all four correctly opens the door on the first try"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "mode-fireys",
+      "title": "The Fireys",
+      "category": "mode",
+      "summary": "A 2-ball mini-multiball mode: pop Firey heads at the captive ball to add balls, relight the forks, and chase the roving Super Jackpot after 5 heads.",
+      "difficulty": 2,
+      "reward": "Orb for collecting one Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Second ball auto-plunges to the left orbit and is caught by the forks"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball to pop a Firey's head",
+          "detail": "Releases the trapped ball and auto-launches another, capped at 5 total"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the lit red-arrow shot to relight the forks"
+        },
+        {
+          "shot": "goblin-gate-spinner",
+          "action": "Shoot the roving Super Jackpot shot once all 5 heads are popped",
+          "detail": "Location moves around the playfield; spinner area is a common landing spot"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "mode-bog",
+      "title": "The Bog of Eternal Stench",
+      "category": "mode",
+      "summary": "Single-ball discrimination mode: shoot the 5-shot sequence while avoiding the two green ('Bog') shots flanking the safe orange one.",
+      "difficulty": 3,
+      "reward": "Orb for crossing stench-less",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "First shot in the sequence — orange is safe, the two adjacent shots are green/Bog"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit"
+        },
+        {
+          "shot": "horseshoe-right",
+          "action": "Shoot the right Horseshoe"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Complete all 5 without touching green to earn the Orb; touching green carries the Bog penalty for the rest of the game"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "multiplier-bonus-quests",
+      "title": "Bonus Multiplier via Wiseman Quests",
+      "category": "multiplier",
+      "summary": "Each completed Wiseman Quest adds +1x to the passive end-of-ball Bonus Multiplier — start Quests early to compound value.",
+      "difficulty": 1,
+      "reward": "+1x Bonus Multiplier per completion",
+      "steps": [
+        {
+          "shot": "wiseman-drop-target",
+          "action": "Knock down the Wiseman drop target"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Shoot the scoop behind it to start a random Quest",
+          "detail": "Requirements vary — e.g. 5 ramps, 5 orbits, or 10 targets"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Work the shots your Quest requires",
+          "detail": "Exact shots depend on the randomly assigned Quest"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Return to the Wiseman scoop to finish the Quest",
+          "detail": "Each completion adds +1x to the Bonus Multiplier, paid at end of ball"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-orb-rainbow",
+      "title": "Orb Rainbow Multiplier",
+      "category": "multiplier",
+      "summary": "Collecting an Orb lights 'rainbow' shot arrows that stack a multiplier on future Orb value.",
+      "difficulty": 2,
+      "reward": "Stacking multiplier up to 3x/shot (unconfirmed)",
+      "steps": [
+        {
+          "shot": "orb-collect-lane",
+          "action": "Complete any mode, multiball jackpot, Quest, or Friend Level 4 to light Collect Orb"
+        },
+        {
+          "shot": "orb-collect-lane",
+          "action": "Shoot the Orb shot under the upper flipper to collect 10M",
+          "detail": "Also lights rainbow shot arrows across the playfield"
+        },
+        {
+          "shot": "change-mode-target",
+          "action": "Shoot a lit rainbow arrow shot",
+          "detail": "Adds a stacking multiplier to future Orb points; lost if you drain before it locks in"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-poisoned-peach",
+      "title": "Poisoned Peach",
+      "category": "wizard",
+      "summary": "Mini-wizard mode: start and play all 3 modes on either the upper or lower level to qualify, then break two hallucination spells before the clock hits 13.",
+      "difficulty": 3,
+      "reward": "Score bonus based on the time left when you break the spell",
+      "steps": [
+        {
+          "shot": "horseshoe-left",
+          "action": "Start and play all 3 modes on one level",
+          "detail": "Upper: Knockers/Four Guards/Fireys, or lower: Cleaners/Oubliette/Bog — starting/playing each mode qualifies you, full clears are not required"
+        },
+        {
+          "shot": "horseshoe-left",
+          "action": "Shoot the Horseshoe (or Wiseman scoop if its drop target is down) when Start inserts flash",
+          "detail": "Begins Poisoned Peach — single ball with a built-in ball save"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Alternate ramp shots while the opposite arrow blinks",
+          "detail": "Ramp-to-ramp combos raise both drop targets' values"
+        },
+        {
+          "shot": "humongous-drop-target",
+          "action": "Hit the Humongous (left-orbit) drop target twice",
+          "link": "none"
+        },
+        {
+          "shot": "wiseman-drop-target",
+          "action": "Hit the Wiseman drop target twice",
+          "detail": "Breaking both spells before the clock hits 13 clears the mode",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-goblin-city",
+      "title": "Goblin City Multiball",
+      "category": "wizard",
+      "summary": "Full wizard mode: start and play all six story modes to qualify, then survive three escalating phases — Defeat The Gate, Evade Capture, and Counterattack.",
+      "difficulty": 3,
+      "reward": "Orb #13 (Battle Jareth qualifier) via a Counterattack Super Jackpot",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Start and play all six story modes",
+          "detail": "Qualifies Goblin City Multiball — starting/playing each mode is sufficient, full clears are not required"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the forks at the left orbit to catch a ball and start the wizard mode"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Phase 1 — Defeat The Gate: alternate ramp shots to dodge"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the captive ball into the Humongous drop target to damage it",
+          "detail": "3 total damage hits defeats Humongous"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the opened gate under the left ramp",
+          "detail": "Clears Phase 1"
+        },
+        {
+          "shot": "mystery-target-left",
+          "action": "Phase 2 — Evade Capture: hit the 4 blue shots",
+          "detail": "Lights hiding spots at the Wiseman scoop and center ramp"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Hide balls at the Wiseman scoop and center ramp",
+          "detail": "Hiding 2 balls clears with 2 survivors"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Optional: hide a 3rd ball at Helping Hands scoop",
+          "detail": "Available only if all 3 balls survive, for a full clear"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Phase 3 — Counterattack: shoot any lit shot for jackpots",
+          "detail": "First jackpot lights the Super Jackpot at the Wiseman scoop"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener",
+      "category": "strategy",
+      "summary": "The Target Skillshot, a Friend shot, and an early Wiseman Quest form the highest-value, lowest-risk opening sequence on a fresh ball.",
+      "difficulty": 1,
+      "reward": "Max skill-shot value + early multiplier engine online",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Medium plunge for the Target Skillshot",
+          "detail": "Highest guaranteed skill-shot value and it hits Change Mode for mode progress"
+        },
+        {
+          "shot": "change-mode-target",
+          "action": "Let the plunge register on the Change Mode target"
+        },
+        {
+          "shot": "hoggle-target",
+          "action": "Take whichever Friend shot (yellow/orange/blue) is lit or closest",
+          "detail": "Starts the Friends track toward Friend Multiball"
+        },
+        {
+          "shot": "wiseman-drop-target",
+          "action": "Knock down the Wiseman drop target"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Shoot the scoop to open a Wiseman Quest",
+          "detail": "Starts the bonus-multiplier engine early so it compounds for the rest of the ball"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A concrete shot-by-shot plan for a brand-new player's opening ball: skill shot, Friend shot, a LABYRINTH letter, a Quest, then the easiest first mode.",
+      "difficulty": 1,
+      "reward": "Safe points + mode/quest progress with low execution risk",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Medium plunge for the Target Skillshot"
+        },
+        {
+          "shot": "hoggle-target",
+          "action": "Hit whatever Friend-color shot is lit or closest"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Work a white-arrow LABYRINTH letter shot",
+          "detail": "Left ramp, right ramp, orbits, and Horseshoe all carry LABYRINTH letters — take whichever is lit"
+        },
+        {
+          "shot": "wiseman-drop-target",
+          "action": "Knock down the Wiseman drop target"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Shoot the scoop to open a Wiseman Quest for the bonus multiplier"
+        },
+        {
+          "shot": "horseshoe-left",
+          "action": "Feed the Horseshoe once Mode Start flashes",
+          "detail": "Take The Knockers or The Oubliette first — simplest, lowest execution risk for a new player"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "strategy-orb-rush",
+      "title": "Orb Rush (Advanced Priority)",
+      "category": "strategy",
+      "summary": "Orbs are the real end-goal currency gating Battle Jareth — prioritize mode clears, Quest grinding, and cashing every lit Orb over farming any single combo shot.",
+      "difficulty": 3,
+      "reward": "Fastest path to all 13 Orbs and Battle Jareth qualification",
+      "steps": [
+        {
+          "shot": "horseshoe-left",
+          "action": "Prioritize clearing all six story modes",
+          "detail": "Mode completion is the single biggest Orb bucket — 6 of 13"
+        },
+        {
+          "shot": "wiseman-scoop",
+          "action": "Grind Wiseman Quests early",
+          "detail": "Each completion stacks the Bonus Multiplier; the 6th completion lights an Orb"
+        },
+        {
+          "shot": "brick-keeper-lock3",
+          "action": "Build and clear Brick Keeper Multiball",
+          "detail": "Holds 1 of 13 Orbs (5 cumulative Super Jackpots per the manual); let the spinner build Super Jackpot value before collecting"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Build Friend levels toward Level 4 before cashing Friend Multiball",
+          "detail": "Holding either flipper before the multiball begins declines the start, so you can keep climbing levels for bigger jackpots — each Friend taken to Level 4 lights an Orb, 3 of 13"
+        },
+        {
+          "shot": "orb-collect-lane",
+          "action": "Cash every lit Orb immediately at the upper-flipper shot",
+          "detail": "Orbs gate Battle Jareth — qualify and collect as often as possible rather than farming one combo"
+        }
+      ],
+      "fx": "magic",
+      "ordered": false
+    },
+    {
+      "id": "strategy-friend-levels",
+      "title": "Maxing the Friends to Level 4",
+      "category": "strategy",
+      "summary": "Each Friend levels up on its own advance-and-collect cycle, and taking all three to Level 4 lights three separate Orbs — so keep feeding levels instead of cashing Friend Multiball the moment it qualifies.",
+      "difficulty": 3,
+      "reward": "One Orb per Friend at Level 4 (3 of 13)",
+      "steps": [
+        {
+          "shot": "hoggle-target",
+          "action": "Hit the lit Hoggle circle, then its relocating yellow collect shot",
+          "detail": "Advance-then-collect is one level; repeat the cycle to climb toward Level 4"
+        },
+        {
+          "shot": "ludo-target",
+          "action": "Run the same advance-and-collect cycle for Ludo",
+          "detail": "Ludo's track pays points, so it is the safest one to grind while a level is close",
+          "link": "none"
+        },
+        {
+          "shot": "didymus-target",
+          "action": "Run the cycle for Sir Didymus",
+          "detail": "Levels are tracked per Friend and carry across balls",
+          "link": "none"
+        },
+        {
+          "shot": "friend-progress-target",
+          "action": "Use the wall target above the right slingshot to spot progress cheaply",
+          "detail": "Free advances that save you a risky circle shot"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Hold off on starting Friend Multiball until the levels are banked",
+          "detail": "Holding either flipper before the multiball begins declines the start, so you can keep building levels for higher jackpots"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "wizard-battle-jareth",
+      "title": "Battle Jareth",
+      "category": "wizard",
+      "summary": "The final confrontation, gated behind all 13 Orbs — every mode clear, multiball Orb, Quest milestone and Friend Level 4 moves you closer. Once the thirteenth Orb is collected and its rainbow shot is made, both orbits light for the back-left castle shot that starts the fight: six red shots, each opened by a longer run of yellow ones, then those six repeated in order to escape. A clock runs throughout, and every strike of 13 — or a drain — costs you an Orb.",
+      "difficulty": 3,
+      "reward": "Game-ending wizard mode",
+      "steps": [
+        {
+          "shot": "orb-collect-lane",
+          "action": "Cash every lit Orb the moment it appears",
+          "detail": "Orbs are the only currency that qualifies this mode — never leave one lit going into a risky shot"
+        },
+        {
+          "shot": "horseshoe-left",
+          "action": "Keep the mode engine running so mode clears fill the biggest Orb bucket",
+          "detail": "Six of the thirteen Orbs come from completed story modes"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Feed an orbit to route the ball toward the castle when the fight starts",
+          "detail": "Either orbit delivers the ball across the back of the playfield"
+        },
+        {
+          "shot": "jareth-corner",
+          "action": "Hit the back-left castle shot to land damage on Jareth",
+          "detail": "That shot starts the fight — the damage then comes from six red shots, each opened by a longer run of yellow ones"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Alternate the other orbit to keep re-feeding the castle",
+          "detail": "Working both orbits keeps you off the flipper-to-corner shot, which is the drain risk here"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "egdirb-reverse-skillshot",
+      "title": "Egdirb — The Reverse Skill Shot",
+      "category": "secret",
+      "summary": "Bridge spelled backwards is a real, separately-scored skill shot, and most players only ever collect it by accident while wondering why their skill shot paid less than expected. Done deliberately, it is a plunge strong enough to reach the back corner but soft enough to fall back through the upper loop in reverse.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Give it enough to reach the back corner but not enough to complete the orbit — you want the ball dropping back down through the upper loop the wrong way",
+        "Collect Egdirb as the ball comes back down",
+        "Know the trap: soft plunge to the upper flipper without hitting the right orbit switches first, and a later shot to the bridge loop scores Egdirb instead of Bridge",
+        "To score the higher-value Bridge skill shot instead, make sure the right orbit switches trip before you shoot the bridge loop"
+      ],
+      "reward": "250,000 on ball one, 500,000 on ball two and 750,000 on ball three — below the 300,000 / 750,000 / 900,000 the normal Bridge skill shot pays"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "best-plunge-banked",
+      "title": "Banked the Best Plunge",
+      "desc": "Score the Change Mode target skill shot on a plunge, the highest-value of the game's skill-shot variants.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-target"
+    },
+    {
+      "id": "orb-in-hand",
+      "title": "Orb in Hand",
+      "desc": "Light and then cash a single Orb at the upper-flipper collect shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-orb-rainbow"
+    },
+    {
+      "id": "three-locks-open",
+      "title": "Three Locks Open",
+      "desc": "Light all three Brick Keeper locks and start Brick Keeper Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-brick-keeper"
+    },
+    {
+      "id": "two-shot-plunge",
+      "title": "Two-Shot Plunge",
+      "desc": "Complete the Super Skill Shot by following the scoop plunge with an immediate bridge-loop shot off the upper flipper.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-super-combo"
+    },
+    {
+      "id": "spinner-fed-super",
+      "title": "Spinner-Fed Super",
+      "desc": "Collect a Brick Keeper Super Jackpot after inflating it with captive-ball hits into the spinner.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-brick-keeper-grind"
+    },
+    {
+      "id": "friends-along-for-it",
+      "title": "Friends Along For It",
+      "desc": "Earn a jackpot from all three Friends and start Friend Multiball at the Helping Hands scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-friend"
+    },
+    {
+      "id": "sat-down-for-tea",
+      "title": "Sat Down For Tea",
+      "desc": "Draw Tea Time Multiball from the Ello Mystery award and bank at least one hurry-up jackpot under the left ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-tea-time"
+    },
+    {
+      "id": "four-quests-answered",
+      "title": "Four Quests Answered",
+      "desc": "Finish four Wiseman Quests in one game so the fourth completion launches Wiseman Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-wiseman"
+    },
+    {
+      "id": "ring-back-on",
+      "title": "Ring Back On",
+      "desc": "Complete The Knockers by passing the ring across, knocking at the Wiseman drop target and putting the ball through the door that opens.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-knockers"
+    },
+    {
+      "id": "heads-all-popped",
+      "title": "Heads All Popped",
+      "desc": "Pop all five Firey heads during The Fireys and collect the roving Super Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-fireys"
+    },
+    {
+      "id": "swept-the-shaft",
+      "title": "Swept the Shaft",
+      "desc": "Build and cash Cleaners hurry-ups to at least five million cumulative across one attempt.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-cleaners-hurryup"
+    },
+    {
+      "id": "guards-called-right",
+      "title": "Guards Called Right",
+      "desc": "Question the guards and answer correctly so The Four Guards' door opens on the first attempt.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-four-guards"
+    },
+    {
+      "id": "crossed-clean",
+      "title": "Crossed Clean",
+      "desc": "Complete all five Bog of Eternal Stench shots without ever hitting a green shot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-bog"
+    },
+    {
+      "id": "quest-grinder",
+      "title": "Quest Grinder",
+      "desc": "Complete six Wiseman Quests in one game, stacking the bonus multiplier the whole way.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-bonus-quests"
+    },
+    {
+      "id": "friends-fully-grown",
+      "title": "Friends Fully Grown",
+      "desc": "Raise Hoggle, Ludo and Sir Didymus all the way to Friend Level 4 in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-friend-levels"
+    },
+    {
+      "id": "spells-broken",
+      "title": "Spells Broken",
+      "desc": "Qualify Poisoned Peach and break both hallucination spells before the clock reaches thirteen.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-poisoned-peach"
+    },
+    {
+      "id": "city-taken-apart",
+      "title": "City Taken Apart",
+      "desc": "Start all six story modes, reach Goblin City Multiball, and clear all three of its phases.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-goblin-city"
+    },
+    {
+      "id": "thirteen-orbs-and-the-king",
+      "title": "Thirteen Orbs and the King",
+      "desc": "Collect all thirteen Orbs to qualify the final wizard mode and take on Jareth at the castle shot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-battle-jareth"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunge-ladder",
+      "title": "Work the Plunge Ladder",
+      "text": "There is no lockdown button here — the plunger is the extra control, and seven distinct strengths send the ball to seven different first shots. Climb the ladder deliberately: shortest into the Ello Worm staging area, medium up the right orbit onto the upper flipper for the Change Mode target, medium-strong into the Wiseman scoop, strong-but-not-full into the Village. Learn where each pull dies rather than pulling the same one every ball.",
+      "reps": "5 plunges at each strength",
+      "focus": "skill-shot",
+      "goal": "skillshot-target",
+      "shots": [
+        "plunger-lane",
+        "ello-worm",
+        "change-mode-target",
+        "wiseman-scoop",
+        "village"
+      ]
+    },
+    {
+      "id": "upper-flipper-menu",
+      "title": "Upper Flipper Menu",
+      "text": "From a settled ball on the upper right flipper you own four shots: the Change Mode target, the center ramp, the bridge loop, and the Orb collect that drops right off the tip. Cycle them in order from up there. The bridge loop only registers as itself once the right orbit switches have been tripped, so watch what the game calls your shot rather than assuming.",
+      "reps": "5 passes through all four",
+      "focus": "accuracy",
+      "goal": "multiplier-orb-rainbow",
+      "shots": [
+        "upper-right-flipper",
+        "change-mode-target",
+        "center-ramp",
+        "bridge-loop",
+        "orb-collect-lane"
+      ]
+    },
+    {
+      "id": "cleaners-build-cash",
+      "title": "Cleaners Build and Cash",
+      "text": "Rip the left-orbit spinner to inflate the hurry-up, then swing over and cash it at the right orbit, three times per attempt. The drill is knowing when to stop building — letting the clock reach thirteen pays nothing, so practice cashing a shade earlier than feels right.",
+      "reps": "5 full three-collect runs",
+      "focus": "flow",
+      "goal": "combo-cleaners-hurryup",
+      "shots": [
+        "goblin-gate-spinner",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "bog-discrimination",
+      "title": "Bog Discrimination",
+      "text": "The sequence runs across the left ramp, the right ramp, the left orbit, the right side of the Horseshoe and the right orbit, and at each step only the orange shot is safe — the two green ones flanking it carry a penalty for the rest of the game. This is a drill in not shooting: cradle, read the colors, then commit.",
+      "reps": "3 clean sequences",
+      "focus": "accuracy",
+      "goal": "mode-bog",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "left-orbit",
+        "horseshoe-right",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "quest-pair",
+      "title": "Drop-and-Scoop Pair",
+      "text": "Knock down the Wiseman drop target and put the ball in the scoop behind it before the target pops back up. That pair is the whole Quest engine and it repeats all game, so drill it as one motion; when you miss the window, knock again and retake it instead of wandering off to another shot.",
+      "reps": "10 pairs",
+      "focus": "accuracy",
+      "goal": "multiplier-bonus-quests",
+      "shots": [
+        "wiseman-drop-target",
+        "wiseman-scoop"
+      ]
+    },
+    {
+      "id": "help-lane-routing",
+      "title": "Build HELP Before You Need It",
+      "text": "Spelling HELP through the in and outlanes arms the Sir Didymus staff post above the left outlane, so treat those lanes as a save you build rather than letters you happen to collect. Play a full ball where routing returns through unlit lanes comes before any mode shot, and note the moment the post is armed — that is when the left side is safe to play loose.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "shots": [
+        "help-lanes",
+        "didymus-post"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Despite being a brand-new machine, Labyrinth skips the lockdown-bar button entirely. The cabinet carries two flipper buttons, a green start button, and a genuine spring plunger — nothing else to press. Your extra layer of control is the plunger itself: seven distinct plunge strengths send the ball to seven different first shots, and everything after that is flippers."
+  },
+  "howItPlays": {
+    "objective": "Labyrinth sends you through Jareth's maze to befriend Hoggle, Ludo and Sir Didymus and clear the story modes hidden inside it. Almost everything you finish -- modes, quests, multiballs, friendships -- pays out an Orb, and thirteen Orbs open Battle Jareth.",
+    "loop": [
+      "Use the plunger's seven strengths to pick your first shot, since there is no lockbar button and everything after the plunge is flippers.",
+      "Advance and collect each Friend to climb their levels, and open Wiseman Quests early so the bonus multiplier compounds all ball.",
+      "Start a story mode at the Horseshoe -- cycling which one is lit with the Change Mode target -- and clear it for an Orb.",
+      "Build the four multiballs, each of which banks an Orb of its own, and grind the Cleaners hurry-up for another.",
+      "Collect all thirteen Orbs to light the back-left castle for Battle Jareth."
+    ],
+    "lights": [
+      {
+        "id": "friend-circles",
+        "name": "Friend Circles",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "hoggle-target"
+          },
+          {
+            "shot": "ludo-target"
+          },
+          {
+            "shot": "didymus-target"
+          },
+          {
+            "shot": "left-scoop"
+          },
+          {
+            "shot": "friend-progress-target"
+          }
+        ],
+        "lit": "Each Friend has a color -- Hoggle yellow, Ludo orange, Sir Didymus blue -- and hitting the lit circle then its relocating collect shot is one level; levels are tracked per Friend and carry from ball to ball.",
+        "flashing": "Helping Hands flashes green once all three Friends hold a jackpot, meaning Friend Multiball is ready to start.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "holding either flipper button as Helping Hands flashes declines the Friend Multiball start, so you can keep leveling the Friends for bigger jackpots instead of cashing in early",
+          "when": "when Helping Hands flashes green to start Friend Multiball"
+        },
+        "then": "Cash Friend Multiball for a quick Orb, or hold off and take each Friend all the way to Level 4 -- every Friend that reaches it lights an Orb of its own.",
+        "goals": [
+          "multiball-friend",
+          "strategy-friend-levels"
+        ]
+      },
+      {
+        "id": "wiseman-quests",
+        "name": "Wiseman Quests",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "wiseman-drop-target"
+          },
+          {
+            "shot": "wiseman-scoop"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "Knocking down the drop target guarding the scoop opens it for a random Quest -- five ramps, five orbits, ten targets -- and the drop resets itself within a few seconds, so treat the knock-then-scoop as a single motion.",
+        "flashing": null,
+        "control": null,
+        "then": "Every finished Quest adds a step to your end-of-ball bonus multiplier, so start them early to compound; the sixth completion lights an Orb, and the fourth auto-starts Wiseman Multiball.",
+        "goals": [
+          "multiplier-bonus-quests",
+          "multiball-wiseman"
+        ]
+      },
+      {
+        "id": "brick-keeper-locks",
+        "name": "Brick Keeper Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "friend-progress-target"
+          },
+          {
+            "shot": "hoggle-target"
+          },
+          {
+            "shot": "brick-keeper-lock1"
+          },
+          {
+            "shot": "brick-keeper-lock2"
+          },
+          {
+            "shot": "brick-keeper-lock3"
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "The wall target and the Fairy circles light the three locks, and a green standup on each orbit plus one at the center ramp holds them; shooting the last green target starts the multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "In the multiball, trap a ball in the left-orbit forks and ram the captive ball repeatedly into the spinner to pump the Super Jackpot higher before you cash it -- banking five supers across the multiball lights an Orb, and every relight demands one more regular jackpot than the one before.",
+        "goals": [
+          "multiball-brick-keeper",
+          "combo-brick-keeper-grind"
+        ]
+      },
+      {
+        "id": "cleaners-hurryup",
+        "name": "The Cleaners Hurry-Up",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "goblin-gate-spinner"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Ripping the left-orbit spinner inflates a hurry-up whose value only counts once you cash it at the right orbit; the longer you spin the bigger the collect, but letting the clock strike thirteen pays nothing.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash it up to three times per attempt, stopping a shade earlier than feels right, and reach five million across the collects to light an Orb.",
+        "goals": [
+          "combo-cleaners-hurryup"
+        ]
+      },
+      {
+        "id": "story-modes",
+        "name": "Story Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "change-mode-target"
+          },
+          {
+            "shot": "horseshoe-left"
+          },
+          {
+            "shot": "horseshoe-right"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "When no mode is running, an insert shows which story mode is queued, and a hit on the Change Mode target from the upper flipper rotates it to the one you want; the Horseshoe starts it once Mode Start flashes.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear modes for the biggest Orb bucket of all -- six of the thirteen -- and playing all three modes on one level qualifies Poisoned Peach while playing all six qualifies Goblin City.",
+        "goals": [
+          "mode-knockers",
+          "mode-four-guards",
+          "mode-fireys",
+          "mode-bog"
+        ]
+      },
+      {
+        "id": "orb-collect",
+        "name": "Orb Collect & Rainbow",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "orb-collect-lane"
+          },
+          {
+            "shot": "change-mode-target"
+          }
+        ],
+        "lit": "Any mode clear, multiball jackpot, Quest milestone or Friend Level 4 lights Collect Orb at the upper-flipper shot; the ten-million Orb is the currency that gates Battle Jareth, so a lit one is never left sitting.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash the Orb the moment it lights, then shoot a lit rainbow arrow to stack a multiplier onto future Orb value -- but that stacked multiplier vanishes if the ball drains before it is locked in.",
+        "goals": [
+          "multiplier-orb-rainbow",
+          "strategy-orb-rush"
+        ]
+      },
+      {
+        "id": "tea-time",
+        "name": "Ello Mystery & Tea Time",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "mystery-target-left"
+          },
+          {
+            "shot": "orb-collect-lane"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Tagging either Wiseman target that flanks the scoop lights the Ello Mystery at the upper-flipper shot; collecting it while Tea Time is the lit award starts Tea Time Multiball on the spot.",
+        "flashing": null,
+        "control": null,
+        "then": "Inflate the hurry-up first with orbit and Horseshoe shots, then bank it under the left ramp, and keep running the loop to stack more jackpots until the clock runs out.",
+        "goals": [
+          "multiball-tea-time",
+          "combo-tea-time-loop"
+        ]
+      },
+      {
+        "id": "help-lanes",
+        "name": "H-E-L-P Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "help-lanes"
+          },
+          {
+            "shot": "didymus-post"
+          },
+          {
+            "shot": "left-scoop"
+          }
+        ],
+        "lit": "A lit HELP rollover is a letter you still need as the ball rolls the in and outlanes; treat the set as a save you are building rather than letters you happen to catch.",
+        "flashing": null,
+        "control": null,
+        "then": "Spelling HELP raises the Sir Didymus staff post over the left outlane as a ball save, and can light Helping Hands at the left scoop for a mode-tier change.",
+        "goals": null
+      },
+      {
+        "id": "goblin-city-jareth",
+        "name": "Goblin City & Battle Jareth",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "horseshoe-left"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "jareth-corner"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Playing all six story modes qualifies Goblin City Multiball, whose Counterattack phase lights every shot at once for the thirteenth Orb; that final Orb and its rainbow shot are what light both orbits into the back-left castle.",
+        "flashing": null,
+        "control": null,
+        "then": "Battle Jareth is the game-ending fight fed from either orbit into the castle corner -- but a drain or a clock strike of thirteen there costs you an Orb, so keep working both orbits rather than risking the flipper-to-corner shot.",
+        "goals": [
+          "wizard-goblin-city",
+          "wizard-poisoned-peach",
+          "wizard-battle-jareth"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Medium-plunge the Target Skillshot off the upper flipper -- the highest flat skill value, and it hits Change Mode for free mode progress. Take whichever Friend circle is lit, then knock the Wiseman drop target and shoot the scoop behind it to open a Quest, starting the bonus-multiplier engine early. Spell HELP through the lanes to raise the Sir Didymus save post.",
+        "goals": [
+          "skillshot-target",
+          "strategy-best-opener",
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Grind Wiseman Quests for stacking bonus multiplier and build the Friends toward Level 4 -- hold a flipper to decline Friend Multiball so you keep leveling for bigger jackpots and three separate Orbs. Farm the Cleaners hurry-up off the spinner and the right orbit, and light Brick Keeper Multiball to bash the captive-ball Super Jackpot.",
+        "goals": [
+          "multiplier-bonus-quests",
+          "multiball-brick-keeper",
+          "strategy-friend-levels",
+          "combo-cleaners-hurryup"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Orbs are the real currency: six come from clearing the story modes, more from Quests, Friend Level 4s and each multiball, and the thirteenth from a Goblin City Counterattack Super Jackpot. Collect all thirteen to light both orbits into the back-left castle for Battle Jareth, the game-ending fight, and cash every Orb the moment it lights so a drain never robs you of one.",
+        "goals": [
+          "wizard-battle-jareth",
+          "wizard-goblin-city",
+          "strategy-orb-rush"
+        ]
+      }
+    ]
+  }
+}

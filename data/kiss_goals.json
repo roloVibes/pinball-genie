@@ -1,0 +1,1375 @@
+{
+  "machine": "KISS (Stern Pinball, 2015)",
+  "defaultFx": "guitar",
+  "shots": [
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Dead center, reachable on the fly from either flipper — the easiest, most reliable shot on the layout and the primary combo starter.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.62,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Called the trickiest shot on the table. Lights an instrument, qualifies Love Gun Multiball. Premium/LE continues across the backboard via a magnet-assisted catch-ramp segment into the Starchild area (not present on Pro).",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Shorter inner ramp feeding directly up into the Starchild mini-playfield; has its own dedicated lit-arrow insert separate from the Left Orbit.",
+      "feeds": {
+        "shot": "starchild-saucer"
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.06,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Outer rail hugging the far-left edge, sweeping up behind the pop-bumper cluster. Used in several City Combos and mode sequences; collects the Drums instrument."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.92,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Fed by the plunger lane; advances pop-bumper color tiers (red->green->purple). A top-right diverter routes it either around the loop or into the right-ramp/backboard path."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.87,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Mounted in the right-orbit lane between the shooter lane and upper orbit rail; scores Super Spinner awards and the Rock City 'Continents' stage."
+    },
+    {
+      "id": "backstage-pass-scoop",
+      "name": "Backstage Pass Scoop",
+      "type": "scoop",
+      "x": 0.36,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Center-left scoop, just below the pop-bumper cluster. Doubles as the 'New Track' mode-select shot, the Backstage Pass mystery award (KISS+ARMY complete), and the start shot for all three wizard/mini-wizard modes. Frustratingly tight forehand; safer backhanded."
+    },
+    {
+      "id": "starchild-saucer",
+      "name": "Starchild Saucer",
+      "type": "saucer",
+      "x": 0.29,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Inside the upper-left Starchild mini-playfield, at the top of the Left Ramp entry; distinct mech from the Backstage Pass scoop. Alternate Love Gun Multiball start."
+    },
+    {
+      "id": "demon-vuk",
+      "name": "Demon Head (Gene Simmons)",
+      "type": "mech",
+      "x": 0.55,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Vertical up-kicker inside the Demon head sculpt. Premium/LE has a true physical 3-ball lock; Pro uses a spinning-disc virtual lock with a more unpredictable kickback. Can spit balls SDTM — a flagged drain risk."
+    },
+    {
+      "id": "kiss-bank",
+      "name": "KISS Bank",
+      "type": "target-bank",
+      "x": 0.22,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Spell K-I-S-S. Standup targets on Pro, physical drop targets on Premium/LE — same rule logic, different hardware feel. Angled to feed the right outlane if shot carelessly."
+    },
+    {
+      "id": "army-bank",
+      "name": "ARMY Bank",
+      "type": "target-bank",
+      "x": 0.8,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Spell A-R-M-Y. Standup targets on all editions, vertical rail in front of the right inlane/orbit."
+    },
+    {
+      "id": "star-targets",
+      "name": "STAR Targets",
+      "type": "target-bank",
+      "x": 0.25,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Spell S-T-A-R, arranged in an arc inside the upper-left Starchild mini-playfield leading up to the Starchild Saucer. Qualifies and drives Love Gun Multiball."
+    },
+    {
+      "id": "left-lock-target",
+      "name": "Left Lock Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Flanks the left side of the Demon head's mouth entrance; completing both Lock targets lights Demon Lock."
+    },
+    {
+      "id": "right-lock-target",
+      "name": "Right Lock Target",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Flanks the right side of the Demon head's mouth entrance; paired with the Left Lock Target."
+    },
+    {
+      "id": "starchild-captive-drop",
+      "name": "Starchild Captive-Ball Drop Target",
+      "type": "captive-ball",
+      "x": 0.27,
+      "y": 0.87,
+      "trim": "premium-le",
+      "notes": "Premium/LE only. A single drop target holding a captive ball inside the Starchild area, used during Love Gun Multiball's Hurry-Up/3rd-ball phase. Pro has no equivalent mech — that phase is played with 2 loose balls instead."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumper Cluster",
+      "type": "bumpers",
+      "x": 0.27,
+      "y": 0.49,
+      "trim": "all",
+      "notes": "4 pop bumpers (Top, Right, Left, Bottom) left-of-center below the Starchild area, fed via the Right Orbit. Advances red->green->purple color tiers; all 4 at Purple lights Cat Man."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Two lanes: the inside left return lane lights Army Combo (collect at a flashing ARMY standup); the outer/leftmost left return lane arms a bumper-advance light on the right orbit."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Rolling it lights Kiss Combo (collect at a KISS standup/drop target)."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.13,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Unprotected until 'Front Row' virtual kickback is lit by spelling KISS on the left bank; drains here are saved once lit."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.87,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "No kickback documented for this outlane; the KISS bank is angled to feed misses toward it."
+    },
+    {
+      "id": "plunger-lane",
+      "name": "Shooter Lane / Auto Plunger",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Far-right vertical channel feeding the right orbit at the top. No formal skill shot exists in KISS's code."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-left-orbit-soft-plunge",
+      "title": "Left Orbit Soft-Plunge Delay",
+      "category": "skillshot",
+      "summary": "KISS has no formal awarded skill shot — this is the known cheese: plunge soft to delay the left-orbit switch trip and pre-load a left-orbit requirement before your first flipper touch.",
+      "difficulty": 2,
+      "reward": "Pre-loads whatever left-orbit award/combo is currently active",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Pull the plunger back and release with reduced strength",
+          "detail": "Plunge softly so the ball travels slowly enough to trip the left-orbit switch late — a timing quirk, not a scored award. The delayed switch hit still satisfies whatever left-orbit requirement (Hurry-Up, mode shot, City Combo leg) is currently lit."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-right-loop-reentry",
+      "title": "Right Loop Re-Entry Trick",
+      "category": "skillshot",
+      "summary": "Shoot the right orbit and let the ball fall back into the same switch to double-trip it and re-collect whatever's lit there.",
+      "difficulty": 2,
+      "reward": "Re-collects the currently lit right-orbit award",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit at normal strength",
+          "detail": "No dedicated skill shot exists in KISS; this exploits the switch itself, not the plunge. A ball that goes up and falls back can double-trigger the switch, re-collecting any award lit at the right orbit (pop-bumper advance, mode shot, etc.)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-chicago",
+      "title": "Chicago Combo",
+      "category": "combo",
+      "summary": "The easiest City Combo on the table — center ramp straight into right ramp while both arrows flash for double value.",
+      "difficulty": 1,
+      "reward": "2M (1M x 2 shots)",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp",
+          "detail": "Easiest, most reliable shot in the game and the standard combo starter."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Follow immediately with the right ramp",
+          "detail": "Hit while the arrow is still flashing for double value and to complete the 2-shot Chicago combo."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-pittsburgh",
+      "title": "Pittsburgh Combo",
+      "category": "combo",
+      "summary": "Chicago run in reverse — right ramp into center ramp — trivially farmable filler between other objectives.",
+      "difficulty": 1,
+      "reward": "2M (1M x 2 shots)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Trickier entry than center ramp; backhand off the left flipper or cradle on the right.",
+          "flipper": "left"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Follow immediately with the center ramp",
+          "detail": "Completes Pittsburgh while the combo arrow flashes; repeatable since center ramp is reachable on the fly from either flipper."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-army-hurry-up-stack",
+      "title": "Army Combo / Hurry-Up Stack",
+      "category": "combo",
+      "summary": "Roll the left inlane to light Army Combo, then hit the flashing ARMY bank shot to instantly complete the whole bank and light an Army Hurry-Up, collected at the center ramp.",
+      "difficulty": 2,
+      "reward": "Army Hurry-Up collected at the center ramp; stacking it with a pending Kiss Hurry-Up in one cycle awards a 2X Shot Multiplier (only documented stack)",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the left return lane",
+          "detail": "Lights Army Combo — the ARMY bank now flashes as the combo target."
+        },
+        {
+          "shot": "army-bank",
+          "action": "Hit the flashing ARMY bank shot",
+          "detail": "One hit instantly completes the whole ARMY bank (not one letter collected at a time), which lights an Army Hurry-Up."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to collect the Army Hurry-Up",
+          "detail": "Collects the Army Hurry-Up value; if a Kiss Hurry-Up is also pending, collecting both Hurry-Ups in the same cycle stacks a 2X Shot Multiplier — the only documented stack for this mechanic."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-kiss-hurry-up-stack",
+      "title": "Kiss Combo / Hurry-Up Stack",
+      "category": "combo",
+      "summary": "Mirror of the Army combo on the right side — roll the right inlane to light Kiss Combo, then hit the flashing KISS bank shot to instantly complete the whole bank and light a Kiss Hurry-Up, collected at the left orbit.",
+      "difficulty": 2,
+      "reward": "Kiss Hurry-Up collected at the left orbit; stacking it with a pending Army Hurry-Up in one cycle awards a 2X Shot Multiplier (only documented stack)",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right return lane",
+          "detail": "Lights Kiss Combo — the KISS bank now flashes as the combo target."
+        },
+        {
+          "shot": "kiss-bank",
+          "action": "Hit the flashing KISS bank shot",
+          "detail": "One hit instantly completes the whole KISS bank/drop-target row (not one letter collected at a time), which lights a Kiss Hurry-Up."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to collect the Kiss Hurry-Up",
+          "detail": "Collects the Kiss Hurry-Up value; if an Army Hurry-Up is also pending, collecting both Hurry-Ups in the same cycle stacks a 2X Shot Multiplier — the only documented stack for this mechanic."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-los-angeles",
+      "title": "Los Angeles Combo",
+      "category": "combo",
+      "summary": "A 3-shot money combo threading right ramp, center ramp, and the Demon head.",
+      "difficulty": 2,
+      "reward": "3M (1M x 3 shots)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Opens the Los Angeles combo sequence."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Follow with the center ramp",
+          "detail": "On-the-fly from either flipper — keep the flashing arrow alive."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Finish at the Demon head",
+          "detail": "Completes the 3-shot combo and also banks a rep toward Demon Lock."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-san-francisco",
+      "title": "San Francisco Combo",
+      "category": "combo",
+      "summary": "The big 5-shot money combo — hammer the center ramp four times then finish on the right orbit.",
+      "difficulty": 3,
+      "reward": "5M (1M x 5 shots)",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp",
+          "detail": "Rep 1 of 4; don't trap between reps, keep the ball moving."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp again",
+          "detail": "Rep 2 of 4."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp again",
+          "detail": "Rep 3 of 4."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp a 4th time",
+          "detail": "Rep 4 of 4 — arrow should be flashing hard for the finisher."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish on the right orbit",
+          "detail": "Completes the 5-shot San Francisco combo."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "multiball-demon",
+      "title": "Demon Multiball",
+      "category": "multiball",
+      "summary": "Lock 3 balls in the Gene Simmons Demon head — physically on Premium/LE, virtually on Pro — for the game's most consistent-value multiball.",
+      "difficulty": 2,
+      "reward": "6 major shots x2 Jackpots, then Super Jackpots and a strobing Double Jackpot",
+      "steps": [
+        {
+          "shot": "left-lock-target",
+          "action": "Hit the left Lock target",
+          "detail": "Completing both Lock targets lights Lock at the Demon; alternatively spell D-E-M-O-N by repeatedly hitting the Demon while Lock is unlit (+500K per letter).",
+          "link": "none"
+        },
+        {
+          "shot": "right-lock-target",
+          "action": "Hit the right Lock target",
+          "detail": "Completes the Lock-target pair to light Lock at the Demon head.",
+          "link": "none"
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Shoot the Demon head to lock a ball",
+          "detail": "Repeat 3 times; Premium/LE physically holds each ball, Pro tracks the count virtually and spits it back."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Lock the 3rd ball to start multiball",
+          "detail": "All 3 fire out rapid-fire (Premium/LE) or feed from the trough (Pro) to begin Demon Multiball."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "multiball-love-gun",
+      "title": "Love Gun Multiball (Flying Starchild)",
+      "category": "multiball",
+      "summary": "Build STAR-target hits to qualify, then launch via the right ramp or Starchild saucer for a fast but riskier multiball.",
+      "difficulty": 2,
+      "reward": "Jackpots -> Double Jackpots -> Triple Jackpot -> ~50M Super Jackpot",
+      "steps": [
+        {
+          "shot": "star-targets",
+          "action": "Hit the STAR standup targets repeatedly",
+          "detail": "Fills a meter that qualifies Love Gun; each subsequent Love Gun needs more hits than the last."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to launch Love Gun",
+          "detail": "The Starchild saucer is an alternate start; begins as a 2-ball multiball."
+        },
+        {
+          "shot": "starchild-captive-drop",
+          "action": "Shoot the captive drop target to add the 3rd ball",
+          "detail": "Premium/LE only — collects a Hurry-Up and locks the jackpot value; on Pro, hit STAR targets directly with 2 balls live instead."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "multiball-kiss-army",
+      "title": "KISS Army Multiball",
+      "category": "multiball",
+      "summary": "Get all 4 band-member inserts flashing to qualify this sub-wizard multiball, then shoot the scoop to start it.",
+      "difficulty": 3,
+      "reward": "Super Jackpot at the Demon after clearing every lit shot",
+      "steps": [
+        {
+          "shot": "army-bank",
+          "action": "Work toward flashing the band-member inserts",
+          "detail": "Qualify by getting Star Child, Space Man, Demon, and Cat Man to their flashing state via instruments, Love Gun start, Demon start, and lighting all 4 pop bumpers once.",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Light all 4 pop bumpers at least once",
+          "detail": "One of the four flashing-insert conditions. Arm bumper advances by rolling the leftmost left inlane, then collect them with a right-orbit shot; all four lit once flashes the Cat Man insert.",
+          "link": "none"
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Shoot the scoop to start",
+          "detail": "All non-Demon shots start lit for Jackpot."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Hit the Demon for Double Jackpot",
+          "detail": "Relights the other shots for Jackpot again; clear every shot to light the Super Jackpot at the Demon."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mode-deuce",
+      "title": "Deuce (Song Mode)",
+      "category": "mode",
+      "summary": "The consensus easiest, safest opening song — two lit shots migrate left-to-right across the playfield, then alternate faster and faster.",
+      "difficulty": 1,
+      "reward": "~300K x shots made (cap ~2.4M) plus a step on the playfield multiplier",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select Deuce at New Track",
+          "detail": "Chosen at ball start or whenever song-select is offered."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the lit left loop",
+          "detail": "Deuce starts on the left side (Left Loop / STAR targets)."
+        },
+        {
+          "shot": "star-targets",
+          "action": "Shoot the lit STAR targets next",
+          "detail": "Each hit advances the lit shot one position rightward."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Continue to the center ramp when lit",
+          "detail": "Midpoint of the left-to-right sweep."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Continue to the Demon shot when lit",
+          "detail": "Keep following the lit shot rightward."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Continue to the right ramp when lit",
+          "detail": "Second-to-last stop."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish on the right orbit",
+          "detail": "After crossing the playfield, two shots strobe back-and-forth, speeding up — hit the final strobing shot to complete Deuce."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-detroit-rock-city",
+      "title": "Detroit Rock City (Song Mode)",
+      "category": "mode",
+      "summary": "All major shots light at once; clear left-to-right to stack the doubler on the highest-value shots first. An advanced, high-drain-risk mode — avoid it early.",
+      "difficulty": 3,
+      "reward": "~200K x shots made, final shot up to 3.6M if flashing",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select Detroit Rock City at New Track",
+          "detail": "Not recommended for first-timers — requires clearing nearly every major shot."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Clear the leftmost lit arrow first",
+          "detail": "Value doubles the further left you clear shots, so sequence left to right."
+        },
+        {
+          "shot": "star-targets",
+          "action": "Continue clearing left-to-right",
+          "detail": "The leftmost lit arrow always flashes and is worth double."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Continue toward center",
+          "detail": "After 6 shots made, everything relights for 3 more shots to finish."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep clearing rightward",
+          "detail": "Approaching the final shot."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Finish on the Demon if it's the last lit shot",
+          "detail": "Watch for the Pro's unpredictable disc-kickback drain risk under pressure."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-black-diamond",
+      "title": "Black Diamond (Song Mode)",
+      "category": "mode",
+      "summary": "Shoot the right orbit into the pop bumpers; whichever bumper you hit determines the next lit shot — the roughest mode since it leans on repeat right-orbit shots.",
+      "difficulty": 2,
+      "reward": "~300K x shots made (final ~2.4M)",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select Black Diamond at New Track",
+          "detail": "8 total shots needed to complete."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit into the pops",
+          "detail": "Routes the ball into the pop-bumper cluster."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball bounce among the pop bumpers",
+          "detail": "Whichever bumper is hit determines which shot lights next."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot whichever shot is now lit",
+          "detail": "Repeat the right-orbit-into-pops loop 8 times total to complete the mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-rock-and-roll-all-night",
+      "title": "Rock and Roll All Night (Song Mode)",
+      "category": "mode",
+      "summary": "A chained-lighting mode that alternates sides of the playfield, ending on a run that includes the Demon.",
+      "difficulty": 2,
+      "reward": "~500K x shots made (final up to ~4M)",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select Rock and Roll All Night at New Track",
+          "detail": "—"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to start the chain",
+          "detail": "Lights the Right Loop next."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Lights Left Loop + STAR targets together."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit or STAR targets",
+          "detail": "Lights Right Loop + Right Ramp next, alternating sides."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Continue the alternating chain toward the finish."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Finish the chain at the Demon",
+          "detail": "The final run in the chain includes the Demon shot."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "multiplier-playfield-ladder",
+      "title": "Playfield Multiplier Ladder",
+      "category": "multiplier",
+      "summary": "Completing song modes steps an untimed, ball-long playfield multiplier: 2x, then 3x, 5x, then Colossal — the single biggest scoring lever in the game.",
+      "difficulty": 2,
+      "reward": "Up to Colossal (10x) playfield multiplier for the rest of the ball",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select and start any song at New Track",
+          "detail": "Only full song completion steps the multiplier, not partial progress."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Work the song's lit shot sequence to completion",
+          "detail": "First song completed sets the playfield multiplier to 2x."
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select and complete a second, third, and fourth song",
+          "detail": "Steps the multiplier 3x -> 5x -> Colossal; untimed and persists to the end of the ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-demon-lock",
+      "title": "Demon Lock Multiplier",
+      "category": "multiplier",
+      "summary": "Hit the Lock targets during Demon Multiball to add a temporary +2x/+3x playfield stack plus a ~20-second ball hold, additive with the song multiplier.",
+      "difficulty": 2,
+      "reward": "+2X (one ball held) or +3X (two balls held) for ~20 seconds",
+      "steps": [
+        {
+          "shot": "demon-vuk",
+          "action": "Be inside an active Demon Multiball",
+          "detail": "This multiplier only triggers while Demon Multiball is running."
+        },
+        {
+          "shot": "left-lock-target",
+          "action": "Complete both Lock targets, then lock a ball in the Demon",
+          "detail": "Adds +2X playfield multiplier for about 20 seconds."
+        },
+        {
+          "shot": "right-lock-target",
+          "action": "Complete the Lock targets again and lock a second ball",
+          "detail": "Bumps the temporary bonus to +3X, additive with the song-completion playfield multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-heavens-on-fire",
+      "title": "Heaven's on Fire (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Complete the full 16-light Grid twice by default (adjustable down to one completion) to qualify this mini-wizard, then re-clear the grid elements at the scoop for a Super Jackpot.",
+      "difficulty": 3,
+      "reward": "Super Jackpot at the scoop + repeatable Add-A-Ball via STAR targets",
+      "steps": [
+        {
+          "shot": "kiss-bank",
+          "action": "Complete the KISS bank",
+          "detail": "Part of the 16-light Grid (KISS bank, ARMY bank, 4 bumpers, 4 instruments).",
+          "link": "none"
+        },
+        {
+          "shot": "army-bank",
+          "action": "Complete the ARMY bank",
+          "detail": "Second Grid component.",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Advance all 4 pop bumpers",
+          "detail": "Third Grid component — feed via the right orbit.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to light instruments, then collect all four at their shots",
+          "detail": "Fourth Grid component; complete the full grid twice by default (adjustable down to one completion) to light the scoop.",
+          "link": "none"
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Shoot the scoop to start Heaven's on Fire",
+          "detail": "Re-complete the grid elements during the mode to collect jackpots."
+        },
+        {
+          "shot": "star-targets",
+          "action": "Hit STAR targets for a repeatable Add-A-Ball",
+          "detail": "Available once per Super Jackpot collected during the mode."
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Collect the Super Jackpot at the scoop",
+          "detail": "Awarded for completing all 16 Grid lights again inside the mode."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-rock-city",
+      "title": "Rock City (Final Wizard Mode)",
+      "category": "wizard",
+      "summary": "Get all 4 band-member inserts to their solid state, then shoot the scoop to start the 8-stage, 3-ball Rock City finale.",
+      "difficulty": 3,
+      "reward": "~100M Final Shot at the end of Stage 8",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Collect 12 instruments",
+          "detail": "Solidly lights the Space Man insert.",
+          "link": "none"
+        },
+        {
+          "shot": "star-targets",
+          "action": "Collect a Love Gun Super Jackpot",
+          "detail": "Solidly lights the Star Child insert — requires deep progress in Love Gun Multiball.",
+          "link": "none"
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Collect a Demon Double Super Jackpot",
+          "detail": "Solidly lights the Demon insert — requires two Super Jackpots in one Demon Multiball.",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Advance all 4 pop bumpers to Purple",
+          "detail": "Solidly lights the Cat Man insert; feed via right orbit repeatedly.",
+          "link": "none"
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Shoot the scoop to start Rock City",
+          "detail": "Requires all 4 band-member inserts solid first."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Clear Stage 1: Instrument",
+          "detail": "Collect lit instruments, ~1M each; a completed stage adds a ball if fewer than 3 are in play."
+        },
+        {
+          "shot": "kiss-bank",
+          "action": "Clear Stage 2: Kiss Army",
+          "detail": "Collect lit KISS/ARMY targets, ~2M each."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Clear Stage 3: Pop Bumper (KISS Towers)",
+          "detail": "Collect lit bumpers, ~300K each."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Clear Stage 4: Demon",
+          "detail": "Spell D-E-M-O-N via the Demon shot, ~4M each."
+        },
+        {
+          "shot": "star-targets",
+          "action": "Clear Stage 5: Starchild",
+          "detail": "Collect lit Starchild shots/slings/ejects, ~500K each."
+        },
+        {
+          "shot": "spinner",
+          "action": "Clear Stage 6: Spinner (Continents)",
+          "detail": "Collect lit spinner spins, ~600K each."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Clear Stage 7: World",
+          "detail": "Collect lit arrows, ~7M each."
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Finish Stage 8 at the left scoop",
+          "detail": "Final Shot worth ~100M."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener: Deuce + Center Ramp",
+      "category": "strategy",
+      "summary": "Select Deuce at New Track and lead every ball with the center ramp — the safest, highest-percentage opening sequence in the game.",
+      "difficulty": 1,
+      "reward": "Deuce song progress on the safest shot in the game, plus banked Demon Lock progress and an instrument toward Rock City's Space Man req",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select Deuce at New Track",
+          "detail": "Consensus easiest/safest mode for a fresh ball — avoid Detroit Rock City and Hotter Than Hell early."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lead with the center ramp",
+          "detail": "Easiest, most reliable shot and doubles as a combo starter into whatever Deuce shot lights next."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Work in a Demon shot when convenient",
+          "detail": "Banks Lock progress toward Demon Multiball without costing song progress — don't force it on-axis."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Get an early right-ramp rep in",
+          "detail": "Feeds an instrument light toward the 6/12-instrument Space Man requirement for Rock City."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A concrete shot-by-shot opening plan for a new player: normal plunge, safe mode, spell KISS for outlane insurance, avoid high-drain shots.",
+      "difficulty": 1,
+      "reward": "Deuce song progress plus the Front Row kickback lit, insuring the unprotected left outlane",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Plunge at normal strength",
+          "detail": "No formal skill shot exists in KISS — don't hunt for one, just get the ball in play."
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Select Deuce at song-select",
+          "detail": "Lowest drain-risk, most straightforward geometry of the setlist."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp, then the lit Deuce shot",
+          "detail": "Repeat, letting the lit shots walk across the playfield."
+        },
+        {
+          "shot": "kiss-bank",
+          "action": "Spell KISS on the bank early",
+          "detail": "Lights the virtual Front Row kickback — insurance before shooting near the unprotected left outlane."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Mix in a Demon shot only when it's on-axis",
+          "detail": "Don't force a backhand yet — flagged as a drain risk, especially the Pro's disc kickback."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strategy-stack-modes-before-multiball",
+      "title": "Stack Modes Before Cashing Multiball",
+      "category": "strategy",
+      "summary": "The core tournament heuristic: bank the highest playfield multiplier by finishing songs first, then start Demon Multiball so jackpots inherit it — one great ball beats three good ones.",
+      "difficulty": 2,
+      "reward": "Demon Multiball jackpots land at your maxed playfield multiplier (up to Colossal/10x) instead of a lower one",
+      "steps": [
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Complete a song to bank a playfield multiplier step",
+          "detail": "If no mode is running, starting a new one should always be top priority — even over a qualified multiball."
+        },
+        {
+          "shot": "backstage-pass-scoop",
+          "action": "Complete additional songs on the same ball",
+          "detail": "Climb 2x -> 3x -> 5x -> Colossal before locking in a multiball; song progress is untimed and carries the rest of the ball."
+        },
+        {
+          "shot": "left-lock-target",
+          "action": "Bank Demon Lock progress in parallel",
+          "detail": "Lock progress doesn't conflict with song progress, so work it opportunistically between mode shots."
+        },
+        {
+          "shot": "demon-vuk",
+          "action": "Start Demon Multiball once your multiplier is maxed for the ball",
+          "detail": "Jackpots and Super Jackpots land at your highest available playfield multiplier this way, not a lower one."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strategy-pop-tower-purple",
+      "title": "Pop Bumper Color Ladder to Purple",
+      "category": "strategy",
+      "summary": "Feed the pop-bumper cluster off the right orbit over and over to walk every bumper up the red-green-purple color tiers — grid fuel, and the Cat Man requirement for the finale.",
+      "difficulty": 2,
+      "reward": "All four bumpers at purple: satisfies the Cat Man insert condition and banks grid progress toward the mini-wizard",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Roll the leftmost left inlane first — that is what arms a bumper-advance light on the right orbit. The centre ramp feeds that inlane, so ramp-then-orbit is the natural loop. Only then does the right-orbit shot advance the armed bumpers."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball work the bumper cluster",
+          "detail": "Each pass steps a bumper along red to green to purple; watch which bumpers are still short."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Bank inlane rollovers before each orbit shot — arm all four lights and one orbit shot advances all four bumpers at once. Repeat until every bumper reads purple.",
+          "detail": "Expect several trips. Cradle up between attempts rather than chasing the ball out of the pops, since the left outlane is unprotected until the kickback is lit."
+        }
+      ],
+      "fx": "guitar"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "open-the-set",
+      "title": "Open the Set",
+      "desc": "Complete one full song mode from start to finish in a single game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-deuce"
+    },
+    {
+      "id": "front-row-insurance",
+      "title": "Front Row Insurance",
+      "desc": "Spell KISS on the bank to light the Front Row kickback before your first drain.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strategy-first-30-seconds"
+    },
+    {
+      "id": "three-in-the-head",
+      "title": "Three In The Head",
+      "desc": "Lock three balls at the Demon head to start Demon Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-demon"
+    },
+    {
+      "id": "starchild-airborne",
+      "title": "Starchild Airborne",
+      "desc": "Fill the STAR target meter and launch Love Gun Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-love-gun"
+    },
+    {
+      "id": "hurry-up-doubleheader",
+      "title": "Hurry-Up Doubleheader",
+      "desc": "Have both the Army and Kiss Hurry-Ups pending and collect both in the same cycle to earn the 2X shot multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-army-hurry-up-stack"
+    },
+    {
+      "id": "five-shot-run",
+      "title": "Five-Shot Run",
+      "desc": "Land the full five-shot city combo: four center ramps followed by the right orbit without breaking the chain.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-san-francisco"
+    },
+    {
+      "id": "towers-all-purple",
+      "title": "Towers All Purple",
+      "desc": "Advance every pop bumper through red and green to its purple tier in one ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-pop-tower-purple"
+    },
+    {
+      "id": "held-for-triple",
+      "title": "Held For Triple",
+      "desc": "During Demon Multiball, hit both Lock targets to hold two balls and stack the temporary +3X playfield bonus.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-demon-lock"
+    },
+    {
+      "id": "bumper-roulette",
+      "title": "Bumper Roulette",
+      "desc": "Complete all eight shots of the pop-bumper-driven song mode where the bumpers pick your next target.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-black-diamond"
+    },
+    {
+      "id": "thunder-super-jackpot",
+      "title": "Thunder Super Jackpot",
+      "desc": "Clear every lit jackpot shot in Demon Multiball and cash the Super Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-demon"
+    },
+    {
+      "id": "hardest-song-cleared",
+      "title": "Hardest Song Cleared",
+      "desc": "Pick the song that lights every major shot at once and complete it, including the relit final round.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-detroit-rock-city"
+    },
+    {
+      "id": "colossal-ladder",
+      "title": "Colossal Ladder",
+      "desc": "Complete four song modes on one ball to climb the playfield multiplier all the way to Colossal.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-playfield-ladder"
+    },
+    {
+      "id": "army-answers-the-call",
+      "title": "Army Answers The Call",
+      "desc": "Get all four band-member inserts flashing, start KISS Army Multiball, and clear every lit shot for its Super Jackpot at the Demon.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-kiss-army"
+    },
+    {
+      "id": "love-gun-top-jackpot",
+      "title": "Love Gun Top Jackpot",
+      "desc": "Work Love Gun Multiball through its jackpot ladder to the Super Jackpot at the top.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-love-gun"
+    },
+    {
+      "id": "grid-twice-over",
+      "title": "Grid Twice Over",
+      "desc": "Complete the sixteen-light grid the required number of times and start the mini-wizard mode at the scoop.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-heavens-on-fire"
+    },
+    {
+      "id": "grid-super-jackpot",
+      "title": "Grid Super Jackpot",
+      "desc": "Inside the mini-wizard mode, re-complete all sixteen grid lights and collect the Super Jackpot at the scoop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-heavens-on-fire"
+    },
+    {
+      "id": "whole-band-lit",
+      "title": "Whole Band Lit",
+      "desc": "Turn all four band-member inserts solid and shoot the scoop to start the eight-stage finale.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-rock-city"
+    },
+    {
+      "id": "closing-encore",
+      "title": "Closing Encore",
+      "desc": "Clear all seven finale stages and collect the Final Shot at the left scoop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-rock-city"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-soft-plunge-delay",
+      "title": "Soft Plunge The Left Orbit",
+      "text": "Pull the plunger back and release short so the ball crawls up and trips the left-orbit switch late. Nothing is awarded for the plunge itself, but the delayed trip still satisfies whatever the left orbit currently owes you, before you have touched a flipper.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-left-orbit-soft-plunge",
+      "shots": [
+        "plunger-lane",
+        "left-orbit"
+      ]
+    },
+    {
+      "id": "drill-center-ramp-lead",
+      "title": "Lead With The Center Ramp",
+      "text": "Open every ball with the centre ramp and keep going back to it. It is the easiest shot on the layout, reachable on the fly from either flipper, and it is the primary combo starter on this machine.",
+      "reps": "15 makes",
+      "focus": "accuracy",
+      "goal": "strategy-best-opener",
+      "shots": [
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "drill-right-ramp-backhand",
+      "title": "The Trickiest Shot",
+      "text": "Work the right ramp as a backhand off the left flipper and again from a right-flipper cradle. It is the hardest shot on the table and it is what lights instruments and starts Love Gun, so there is no route that avoids it.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "multiball-love-gun",
+      "shots": [
+        "right-ramp",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "drill-demon-kickout",
+      "title": "Set Up For The Demon Kickout",
+      "text": "Shoot the Demon head from a settled ball and keep both flippers ready for what comes back out. It is flagged as a drain risk for a reason, and you will be feeding it three times in a row to lock.",
+      "reps": "15 shots",
+      "focus": "ball-control",
+      "goal": "multiball-demon",
+      "shots": [
+        "demon-vuk"
+      ]
+    },
+    {
+      "id": "drill-san-francisco-run",
+      "title": "Four Ramps, Then The Orbit",
+      "text": "Hit the centre ramp four times without trapping, then finish on the right orbit. The whole value of this chain is in not cradling between reps, so treat a trap anywhere in the middle as a failed attempt.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "combo-san-francisco",
+      "shots": [
+        "center-ramp",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "drill-double-hurry-up",
+      "title": "Both Hurry-Ups In One Cycle",
+      "text": "Roll the left inlane, hit the flashing ARMY bank, and collect at the centre ramp; roll the right inlane, hit the flashing KISS bank, and collect at the left orbit. Landing both inside the same cycle is the only documented stack for these hurry-ups, and it pays a shot multiplier for it.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "combo-army-hurry-up-stack",
+      "shots": [
+        "left-inlane",
+        "army-bank",
+        "center-ramp",
+        "right-inlane",
+        "kiss-bank",
+        "left-orbit"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "KISS came out just before Stern made the lockdown-bar button standard, so there is nothing to press on the front rail. Your cabinet controls are the two flipper buttons, the shooter lane, start, and the white tournament button next to it — every decision in this game is made with a flipper or a shot."
+  },
+  "howItPlays": {
+    "objective": "KISS turns a set list into a scoring engine: play the songs, spell KISS and ARMY, and roll through the band's three multiballs. Turn all four band-member inserts solid to reach the Rock City finale.",
+    "loop": [
+      "Select a song at the Backstage Pass scoop and clear its lit shots, since only a full completion steps the playfield multiplier.",
+      "Spell KISS and ARMY on the target banks for hurry-ups, combos and the Front Row outlane save.",
+      "Lock three balls in the Demon head and build the STAR targets to start the Demon and Love Gun multiballs.",
+      "Light every band-member insert solid, then start Rock City at the scoop for its eight-stage finish."
+    ],
+    "lights": [
+      {
+        "id": "new-track-scoop",
+        "name": "New Track Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "backstage-pass-scoop"
+          }
+        ],
+        "lit": "A lit scoop starts the New Track song you pick, and each song lights its own sequence of shots to clear.",
+        "flashing": null,
+        "control": null,
+        "then": "A completed song steps an untimed playfield multiplier through 2x, 3x, 5x and Colossal for the rest of the ball, so bank songs before you cash a multiball; the same scoop also starts both wizard modes.",
+        "goals": [
+          "mode-deuce",
+          "multiplier-playfield-ladder",
+          "strategy-stack-modes-before-multiball"
+        ]
+      },
+      {
+        "id": "kiss-army-banks",
+        "name": "KISS & ARMY Banks",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "kiss-bank",
+            "lamps": 4
+          },
+          {
+            "shot": "army-bank",
+            "lamps": 4
+          }
+        ],
+        "lit": "A lit letter on either the KISS or the ARMY bank is one you still need, and a letter already knocked down stays down until that word is finished.",
+        "flashing": null,
+        "control": null,
+        "then": "Rolling a return lane lights that side's Combo so one bank hit completes the whole word for a Hurry-Up, KISS paying at the left orbit and ARMY at the center ramp, and collecting both in a single cycle stacks a 2x shot multiplier. Spelling KISS also lights the Front Row kickback over the unprotected left outlane.",
+        "goals": [
+          "combo-kiss-hurry-up-stack",
+          "combo-army-hurry-up-stack",
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "id": "demon-lock",
+        "name": "Demon Head Lock",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "demon-vuk"
+          },
+          {
+            "shot": "left-lock-target"
+          },
+          {
+            "shot": "right-lock-target"
+          }
+        ],
+        "lit": "Completing both Lock targets flanking the Demon's mouth lights Lock at the head, where a ball is held physically on Premium and LE or tracked virtually on a Pro.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three to start Demon Multiball, the steadiest multiball here; hitting the Lock targets again while it runs holds a ball for a temporary added doubler, then tripler, stacked on top of your song multiplier.",
+        "goals": [
+          "multiball-demon",
+          "multiplier-demon-lock"
+        ]
+      },
+      {
+        "id": "star-love-gun",
+        "name": "STAR Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "star-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "starchild-saucer"
+          }
+        ],
+        "lit": "Repeated hits on the STAR targets in the Starchild playfield fill the meter that qualifies Love Gun, and every Love Gun after the first asks for more hits than the one before.",
+        "flashing": null,
+        "control": null,
+        "then": "Launch it at the right ramp or the Starchild saucer and climb the jackpot ladder toward a roughly fifty-million Super, and landing a Love Gun Super is what turns the Star Child band insert solid for the finale.",
+        "goals": [
+          "multiball-love-gun"
+        ]
+      },
+      {
+        "id": "pop-color-ladder",
+        "name": "Pop Bumper Colors",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "pop-bumpers",
+            "lamps": 4
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Each pop bumper climbs a red-to-green-to-purple ladder as the cluster is fed through the right orbit, and rolling the leftmost left return lane first arms a bumper advance on that orbit.",
+        "flashing": null,
+        "control": null,
+        "then": "Walk all four bumpers to purple to turn the Cat Man insert solid and stock the sixteen-light Grid, and arming all four inlane lights before an orbit shot bumps every bumper up at once.",
+        "goals": [
+          "strategy-pop-tower-purple",
+          "multiball-kiss-army"
+        ]
+      },
+      {
+        "id": "band-inserts",
+        "name": "Band-Member Inserts",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "demon-vuk"
+          },
+          {
+            "shot": "star-targets"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "The four band-member inserts light at their own milestones: instruments for Space Man, a Love Gun Super for Star Child, a Demon Double Super for Demon, and every bumper purple for Cat Man.",
+        "flashing": "All four flashing at once qualifies KISS Army Multiball at the scoop, where every non-Demon shot starts lit for a jackpot.",
+        "control": null,
+        "then": "Push each of the four inserts from flashing to solid and the scoop lights Rock City, the eight-stage three-ball finale that ends on a roughly hundred-million Final Shot.",
+        "goals": [
+          "multiball-kiss-army",
+          "wizard-rock-city"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Pick the safest song, Deuce, at the scoop and open each ball on the center ramp, the surest shot on the layout, to walk its lit shots across the playfield. Spell KISS on the bank early to light the Front Row kickback before you risk the open left outlane.",
+        "goals": [
+          "mode-deuce",
+          "strategy-best-opener",
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Complete songs to climb the playfield multiplier toward Colossal while banking Demon Lock progress alongside, then start Demon Multiball so its jackpots inherit your best multiplier. Farm the ramp city combos and land both Hurry-Ups in one cycle for a 2x shot multiplier.",
+        "goals": [
+          "multiplier-playfield-ladder",
+          "multiball-demon",
+          "strategy-stack-modes-before-multiball",
+          "combo-san-francisco"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Rock City is the finale: turn all four band members solid with twelve instruments, a Love Gun Super, a Demon Double Super and every bumper purple, then start it at the scoop. Its eight stages run three balls and end on a roughly hundred-million Final Shot, with Heaven's on Fire as the mini-wizard along the way.",
+        "goals": [
+          "wizard-rock-city",
+          "wizard-heavens-on-fire"
+        ]
+      }
+    ]
+  }
+}

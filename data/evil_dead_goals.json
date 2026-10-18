@@ -1,0 +1,1512 @@
+{
+  "machine": "The Evil Dead (Spooky Pinball, 2024)",
+  "defaultFx": "deadite",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Shooter Lane / Plunge",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Right auto-launch barrel used for the normal plunge and skill shots; roving lit GROOVY target scores the standard skill shot. Both barrels fire together for Double-Barrel Boomstick Multiball."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.08,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Full orbit hugging the left wall; lit by the opposite (right) inlane to boost the Dagger multiplier. Feeds toward the pop cluster / Blood Flood.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.92,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Full orbit hugging the right wall, fed by the shooter; Mystery lights here. Lit by the opposite (left) inlane for the Dagger multiplier."
+    },
+    {
+      "id": "inner-orbit",
+      "name": "Inner Loop",
+      "type": "loop",
+      "x": 0.16,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Left-of-center inner return loop."
+    },
+    {
+      "id": "rear-orbit",
+      "name": "Rear Orbit",
+      "type": "orbit",
+      "x": 0.5,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Back-panel connector between the two orbits."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Backhandable stainless ramp guarded by the Left Deadite (Evil Scotty). The Delta 88 mode wants 88 shots here; the premier repeatable single-shot farm.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "middle-ramp",
+      "name": "Middle / Lift Ramp",
+      "type": "ramp",
+      "x": 0.52,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Motorized lift ramp with a diverter flap that can capture and release a ball.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Backhandable stainless ramp guarded by the Right Deadite (Evil Ed); a mode-start scoop sits beneath it. Pauses the Hand.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "center-spinner",
+      "name": "Center Super Spinner",
+      "type": "spinner",
+      "x": 0.5,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Spinner straight up the middle; hard to find but loopable once located."
+    },
+    {
+      "id": "right-ramp-scoop",
+      "name": "Right Ramp Scoop",
+      "type": "scoop",
+      "x": 0.64,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Kickout under the right ramp; starts the selected story mode."
+    },
+    {
+      "id": "groovy-drops",
+      "name": "GROOVY Inline Drops",
+      "type": "drop-target",
+      "x": 0.47,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Six in-line drops spelling G-R-O-O-V-Y. Collect in order for a 20% ball-wide scoring boost; also the skill-shot bank and spells toward Mystery."
+    },
+    {
+      "id": "cabin-drops",
+      "name": "Cabin Front/Back Drops",
+      "type": "drop-target",
+      "x": 0.36,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Two drops guarding the cabin lock; state persists between balls/players and locks are stealable."
+    },
+    {
+      "id": "cabin-vuk",
+      "name": "Cabin Lock VUK",
+      "type": "mech",
+      "x": 0.36,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "VUK through the cabin window; banks Cabin Multiball locks. Motorized porch swing releases balls here."
+    },
+    {
+      "id": "necklace-targets",
+      "name": "Necklace Targets",
+      "type": "standup",
+      "x": 0.84,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Three right-side standups (Left/Center/Right). Host the general combo sequence in any mode not otherwise using them, and build Undying Love jackpots."
+    },
+    {
+      "id": "left-deadite",
+      "name": "Left Deadite (Evil Scotty)",
+      "type": "mech",
+      "x": 0.18,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Pop-up bash toy guarding the left ramp; knock it down and collect the jackpot behind it during Deadite Multiball. Hit with control — rejects can go SDTM."
+    },
+    {
+      "id": "right-deadite",
+      "name": "Right Deadite (Evil Ed)",
+      "type": "mech",
+      "x": 0.73,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Pop-up bash toy guarding the right ramp; jackpot behind it in Deadite Multiball."
+    },
+    {
+      "id": "hand-target",
+      "name": "Evil Ash Hand",
+      "type": "mech",
+      "x": 0.78,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Stepper-driven crawling-hand bash toy. Hit 3x for Give Me Back My Hand trap-door multiball; complete Fingers to light Super Jackpot."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Deadite Pop Cluster / Blood Flood",
+      "type": "bumpers",
+      "x": 0.4,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Three pops fed by the 180-degree ramp and left orbit; three Blood Flood standups nested here build the playfield multiplier. Pops give positive or negative awards; Good/Bad Linda swings here."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Necronomicon Captive Ball",
+      "type": "captive-ball",
+      "x": 0.41,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Insanity-inducing captive ball; acts as the mode selector."
+    },
+    {
+      "id": "lift-bank",
+      "name": "Rising Cheryl Lift Bank",
+      "type": "drop-target",
+      "x": 0.5,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Three-target bank that rises at the cellar door; ties to Cheryl Multiball."
+    },
+    {
+      "id": "shotgun-targets",
+      "name": "Shotgun / Boomstick Shells",
+      "type": "standup",
+      "x": 0.85,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Shell bash targets loading the double barrel; reload here to relight the action-button jackpot in Boomstick Multiball."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.21,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Lights the opposite (right) orbit to boost the Dagger multiplier; inlane completions award extra points, same-color fill = x2."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Lights the opposite (left) orbit to boost the Dagger multiplier; part of the Deadite Multiball qualify (both inlanes)."
+    },
+    {
+      "id": "cellar-door",
+      "name": "Cellar Door / Trap Door",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Motorized door mid-playfield (Action button lowers it) that drops the ball to the RGB-lit fruit-cellar lower playfield; open window is ~15 seconds or 3 drains."
+    },
+    {
+      "id": "lock-and-load",
+      "name": "Lock and Load (Basement)",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Lower-playfield target that arms Boomstick Multiball; the basement has its own flipper, loop, launch and drain.",
+      "playfield": "basement"
+    },
+    {
+      "id": "book-target",
+      "name": "Book Target (Basement)",
+      "type": "standup",
+      "x": 0.54,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Necronomicon target in the basement for the Destroy the Book wizard mode.",
+      "playfield": "basement"
+    },
+    {
+      "id": "linda-head",
+      "name": "Good/Bad Linda Head",
+      "type": "mech",
+      "x": 0.8,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Rotating head in a vice near the right-ramp scoop; Good Linda (easier/lower) vs Bad Linda (harder/higher, can reverse flippers or reset cabin drops)."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A second flipper up the right side of the playfield, above the lower pair."
+    },
+    {
+      "id": "lower-playfield-flipper",
+      "name": "Lower Playfield Flipper",
+      "type": "flipper",
+      "x": 0.48,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "The one flipper down on the basement playfield, where the Lock and Load and Book targets sit.",
+      "playfield": "basement",
+      "bat": {
+        "size": "mini"
+      }
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-standard",
+      "title": "Standard Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge into the roving lit GROOVY target for a guaranteed 1M + 500k and free progress toward the 20% GROOVY boost. The safe opener.",
+      "difficulty": 1,
+      "reward": "1,000,000 + 500,000 and one GROOVY letter",
+      "steps": [
+        {
+          "shot": "groovy-drops",
+          "action": "Full plunge into the roving GROOVY target",
+          "detail": "Time nothing — just launch when an insert is lit; the plunge usually delivers the ball onto one of the two 'O' targets. Scores the skill shot and banks a letter toward the 20% ball-wide boost and Mystery."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-super",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper for a soft plunge, then hit the random flashing shot before the window closes for double the skill-shot value. High reward, real mishit risk.",
+      "difficulty": 3,
+      "reward": "2x standard skill-shot value",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Hold the left flipper and soft-plunge, then hit the flashing shot",
+          "detail": "A reduced-power launch drops the ball onto the left flipper for a controlled cradle, arming a tight timed window before the flashing shot goes dark. Shoot whichever shot is flashing; the left ramp is the cleanest catch off the left flipper if that's the one.",
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-left-ramp-loop",
+      "title": "Left Ramp Loop (Delta 88 Farm)",
+      "category": "combo",
+      "summary": "The premier single-shot farm: backhand the left ramp over and over. Builds combos, lights modes, and drives 88 shots toward Delta 88.",
+      "difficulty": 2,
+      "reward": "Combo credit, mode qualification, Delta 88 progress",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Guarded by the Left Deadite (Evil Scotty) when it pops up — hit it with control."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Backhand the returning ball straight back up the left ramp",
+          "detail": "The ramp feeds the flipper cleanly; repeat the backhand to loop it. Delta 88 wants 88 total left-ramp shots."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo-ramp-chain",
+      "title": "Ramp-to-Ramp Combo Chain",
+      "category": "combo",
+      "summary": "Alternate the two backhandable ramps inside the combo window. Faster links pay a bigger speed bonus and feed the shot multiplier and Bonus Ball.",
+      "difficulty": 2,
+      "reward": "Speed-bonus combo scoring + Bonus Ball progress",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Pre-arm the Dagger multiplier before you start",
+          "detail": "Feed an inlane to light the opposite orbit, then double-tap the upper flipper button and hit the Launch button for the 10-second build-up so linked shots score multiplied."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Start the chain from the right flipper.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Immediately shoot the left ramp",
+          "detail": "Link fast — combo value scales with how tightly you chain (the Undying Love speed-bonus mechanic)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Chain back to the right ramp and repeat",
+          "detail": "Keep alternating inside the combo window to bank the Bonus Ball."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo-necklace",
+      "title": "Necklace Combo Sequence",
+      "category": "combo",
+      "summary": "The always-available combo: chain the three Necklace standups in any mode that isn't already using them. The main path to qualifying the Bonus Ball.",
+      "difficulty": 2,
+      "reward": "Combo scoring + Bonus Ball qualification",
+      "steps": [
+        {
+          "shot": "necklace-targets",
+          "action": "Hit the Necklace targets in sequence",
+          "detail": "Available whenever the running mode doesn't consume the Necklace bank; chain consecutive hits for combo credit."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Feed an inlane between chains to keep the multiplier hot",
+          "detail": "Same-color inlane fill scores x2 and lights the opposite orbit for the Dagger multiplier."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo-deadite-frenzy",
+      "title": "Deadite Jackpot Loop",
+      "category": "combo",
+      "summary": "During Double Deadite Multiball, knock down a popped deadite and collect the jackpot behind it, then repeat around the cluster. Second pass is Deadite Frenzy.",
+      "difficulty": 2,
+      "reward": "Repeating deadite jackpots; Frenzy on the 2nd pass",
+      "steps": [
+        {
+          "shot": "left-deadite",
+          "action": "Knock down the left Deadite and collect its jackpot",
+          "detail": "Hit with control — rejected balls tend to go straight down the middle."
+        },
+        {
+          "shot": "right-deadite",
+          "action": "Knock down the right Deadite and collect its jackpot",
+          "detail": "Alternate to whichever deadite is popped up."
+        },
+        {
+          "shot": "left-deadite",
+          "action": "Loop back to the next popped deadite",
+          "detail": "The 2nd time through the deadites triggers Deadite Frenzy; stack under Blood Flood for the big line."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo-boomstick-purple",
+      "title": "Boomstick Purple Jackpot Loop",
+      "category": "combo",
+      "summary": "In Double-Barrel Boomstick Multiball, hammer the purple jackpot shots and reload shells to relight the action-button jackpot. High value, high drain risk.",
+      "difficulty": 3,
+      "reward": "Purple jackpots + relit action-button jackpot",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the lit purple jackpot shots",
+          "detail": "Purple = jackpot during Boomstick; press Launch on the spoken firing cue for bonus points."
+        },
+        {
+          "shot": "shotgun-targets",
+          "action": "Reload shells at the shotgun targets",
+          "detail": "Reloading relights the action-button jackpot so you can collect it again."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Return to the purple shots and repeat",
+          "detail": "Keep the Dagger multiplier armed underneath; Phase 2 adds balls."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mb-cabin",
+      "title": "Cabin Multiball",
+      "category": "multiball",
+      "summary": "The easiest multiball to qualify and the bread-and-butter stack under a story mode. Drops and locks persist between balls and are stealable.",
+      "difficulty": 2,
+      "reward": "Cabin Multiball (stacks onto a running mode)",
+      "steps": [
+        {
+          "shot": "cabin-drops",
+          "action": "Knock down the Cabin front and back drops",
+          "detail": "Their state persists across balls/players, so any early progress is money in the bank."
+        },
+        {
+          "shot": "cabin-vuk",
+          "action": "Shoot the exposed Cabin VUK to lock a ball",
+          "detail": "Repeat drops-then-lock to bank the required locks; you can steal locks from other players."
+        },
+        {
+          "shot": "cabin-vuk",
+          "action": "Lock the final ball to start Cabin Multiball",
+          "detail": "Best started with a story mode already running so it stacks."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mb-deadite",
+      "title": "Double Deadite Multiball",
+      "category": "multiball",
+      "summary": "The other stacking workhorse — stacks with all modes and multiballs. Collect orange deadite arrows, both inlanes, and hit the popped deadites.",
+      "difficulty": 2,
+      "reward": "Double Deadite Multiball, then Deadite Frenzy",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Collect the orange deadite arrows",
+          "detail": "Orbits and lit shots feed the deadite arrow progress."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll through both inlanes",
+          "detail": "Both inlanes are part of the qualify; keep the ball live and controlled through them."
+        },
+        {
+          "shot": "left-deadite",
+          "action": "Hit the popped-up deadites to start the multiball",
+          "detail": "Knock down a lit deadite to launch Double Deadite; it stacks onto anything already running."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mb-boomstick",
+      "title": "Double-Barrel Boomstick Multiball",
+      "category": "multiball",
+      "summary": "High-value cellar multiball. Load shells, drop into the basement, hit Lock and Load, and fire the double barrel. Start it once multipliers are built.",
+      "difficulty": 3,
+      "reward": "Double-Barrel Boomstick Multiball",
+      "steps": [
+        {
+          "shot": "shotgun-targets",
+          "action": "Load shells into the shotgun",
+          "detail": "Bash the shell sculpts to load the double barrel."
+        },
+        {
+          "shot": "cellar-door",
+          "action": "Open the cellar door to the basement",
+          "detail": "Window is ~15 seconds or 3 drains; the lower playfield has its own drain, so commit."
+        },
+        {
+          "shot": "lock-and-load",
+          "action": "Hit Lock and Load in the basement, then Launch on the cue",
+          "detail": "Press the Launch button on the audio cue to fire both barrels and start the multiball."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mb-cheryl",
+      "title": "Cheryl Multiball",
+      "category": "multiball",
+      "summary": "The larger mode-driven multiball. Complete two Movie-1 story modes to qualify it via the rising Cheryl lift bank. Now restartable if missed.",
+      "difficulty": 3,
+      "reward": "Cheryl Multiball (Phase-2 variant chosen by performance)",
+      "steps": [
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Start and complete a first Movie-1 mode",
+          "detail": "Movie-1 set: Evil Awakens, Hacked to Bits, It Won't Let Us Leave, Undying Love.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Start and complete a second Movie-1 mode",
+          "detail": "Two Movie-1 completions qualify Cheryl.",
+          "link": "none"
+        },
+        {
+          "shot": "lift-bank",
+          "action": "Hit the rising Cheryl lift bank to start the multiball",
+          "detail": "Phase-2 performance picks one of two variants; the mode is restartable if you miss."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mode-movie1-start",
+      "title": "Start a Movie-1 Story Mode",
+      "category": "mode",
+      "summary": "The natural entry point into the code. One lit ramp qualifies a mode; the captive ball selects which; the scoop under the right ramp starts it.",
+      "difficulty": 1,
+      "reward": "Story mode (Evil Awakens / Hacked to Bits / etc.)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a lit white ramp to qualify a mode",
+          "detail": "Only one ramp is needed to qualify the first mode."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Nudge the Necronomicon captive ball to select the mode",
+          "detail": "The captive ball acts as the mode selector; use the Action button to defer to a different mode."
+        },
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Shoot the scoop under the right ramp to start",
+          "detail": "Kicks off the selected Movie-1 mode."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mode-undying-love",
+      "title": "Undying Love (Mode-Multiball)",
+      "category": "mode",
+      "summary": "A 2-ball mode-multiball built on red shots and the Necklace targets. Chain the two ramps fast for a speed-bonus jackpot on Linda.",
+      "difficulty": 2,
+      "reward": "Undying Love jackpots (speed-bonus scaled)",
+      "steps": [
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Start Undying Love from the mode scoop",
+          "detail": "Selected via the captive ball like other Movie-1 modes."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Chain the two ramps to build Linda's jackpot",
+          "detail": "The speed bonus scales with how quickly you combo the two ramps — link them tight."
+        },
+        {
+          "shot": "necklace-targets",
+          "action": "Hit the Necklace targets and red shots to build the jackpot",
+          "detail": "Red shots plus the Necklace bank grow the jackpot value."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mode-delta88",
+      "title": "Delta 88",
+      "category": "mode",
+      "summary": "A left-ramp endurance mode. Eighty-eight left ramps in a single game qualify it, so every backhand you take is banked progress toward it — and what you get is a two-phase drive in the Delta 88, not more ramp repetition.",
+      "difficulty": 3,
+      "reward": "Delta 88 mode scoring",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Bank 88 left-ramp shots in one game to qualify Delta 88",
+          "detail": "The count runs the whole game and is kept per player. The backhandable left ramp is the fastest way to feed it, so treat every left-ramp opportunity as progress."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Drive the two phases once the mode starts",
+          "detail": "Daytime driving asks for every lane, ramp and orbit once. Nighttime driving alternates the left and right ramps and orbits — hit the lit shots to light the book for a final shot."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mult-groovy",
+      "title": "Spell GROOVY (20% Boost)",
+      "category": "multiplier",
+      "summary": "The single highest-leverage repeatable thing each ball: collect the six inline GROOVY drops in order for a 20% boost to ALL scoring for the rest of the ball.",
+      "difficulty": 1,
+      "reward": "+20% ball-wide scoring; lights Mystery",
+      "steps": [
+        {
+          "shot": "groovy-drops",
+          "action": "Knock the GROOVY drops down in G-R-O-O-V-Y order",
+          "detail": "The skill shot and roving lights help start the sequence; finishing in order grants the 20% boost and lights Mystery."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect Mystery on the right orbit once lit",
+          "detail": "Press the Action button on the moving award — outcomes include points, deadite rollovers, an outlane save, or a Bad-Linda boost."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-dagger",
+      "title": "Build the Dagger Multiplier",
+      "category": "multiplier",
+      "summary": "The Kandarian-dagger shot multiplier. Control the inlanes to light the opposite orbit, then arm the build-up before firing your high-value shots.",
+      "difficulty": 2,
+      "reward": "Boosted shot multiplier for ~10 seconds",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll an inlane to light the opposite orbit",
+          "detail": "Inlanes light the opposite orbit specifically to boost the Dagger multiplier; same-color fill also scores x2."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the lit opposite orbit",
+          "detail": "Feeds the Dagger multiplier build-up."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Double-tap the upper flipper + Launch, then fire your money shot",
+          "detail": "Double-tapping the upper flipper button arms the multiplier; the Launch button runs the 10-second build-up — cash it on ramps/jackpots."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "wizard-kandarian",
+      "title": "Kandarian Demon (Wizard Mode)",
+      "category": "wizard",
+      "summary": "The marquee multi-phase wizard mode, gated by Spooky Tokens. Earn tokens through mode/multiball play, then spend them with the demon multipliers already stacked.",
+      "difficulty": 3,
+      "reward": "Multi-phase Kandarian Demon wizard mode",
+      "steps": [
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Play modes and multiballs to earn Spooky Tokens",
+          "detail": "Tokens accrue through general progress; more modes/MBs = more tokens."
+        },
+        {
+          "shot": "groovy-drops",
+          "action": "Build GROOVY, Blood Flood and Dagger before you spend",
+          "detail": "Enter with live multipliers up so the wizard phases score multiplied."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hold the Action button while pressing Start to spend tokens",
+          "detail": "Selects Kandarian Demon (or Hail to the King / Destroy the Book / Hero From The Sky / Delta 88)."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-hail-king",
+      "title": "Hail to the King",
+      "category": "wizard",
+      "summary": "The global-scoring-multiplier wizard driven by 25 deadite hits — the biggest casual scoring lever (disabled by default in Tournament Mode).",
+      "difficulty": 3,
+      "reward": "Global scoring multiplier",
+      "steps": [
+        {
+          "shot": "left-deadite",
+          "action": "Rack up deadite hits toward 25",
+          "detail": "Knock down deadites throughout play; Deadite Multiball is the fastest way to pile up hits.",
+          "link": "none"
+        },
+        {
+          "shot": "right-deadite",
+          "action": "Finish the deadite count to light Hail to the King",
+          "detail": "25 deadite hits arms the global multiplier; note it is neutralized in Tournament Mode.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Spend tokens (Action + Start) to start it with multipliers up",
+          "detail": "Run it only when your live playfield multipliers are already built."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-best-opener",
+      "title": "Best Opener: Ball 1 Walk-Up",
+      "category": "strategy",
+      "summary": "The safest high-value opener — skill shot, a lit ramp to qualify Mode 1, cabin lock progress banked, then start a mode you can stack Cabin MB onto.",
+      "difficulty": 1,
+      "reward": "Mode running + Cabin lock banked for a stack",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Take the standard skill shot",
+          "detail": "1M + 500k and a free GROOVY letter — stay alive, build the boost."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a lit white ramp to qualify Mode 1",
+          "detail": "Ramps are the safest live shots and feed the flippers cleanly."
+        },
+        {
+          "shot": "cabin-drops",
+          "action": "Knock the Cabin drops down whenever they present",
+          "detail": "Their state persists, so this is never wasted work."
+        },
+        {
+          "shot": "cabin-vuk",
+          "action": "Bank a lock at the Cabin VUK",
+          "detail": "Lock progress carries over so you can stack Cabin MB into the mode later."
+        },
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Start a Movie-1 mode at the scoop",
+          "detail": "Now you have a mode running with cabin progress ready to stack."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "strat-beginner-30s",
+      "title": "Beginner: First 30 Seconds",
+      "category": "strategy",
+      "summary": "A linear, low-risk beginner path — take the safe skill shot, qualify and start a mode via the ramps and scoop, and let background meters build. Avoid bashing toys cold.",
+      "difficulty": 1,
+      "reward": "Safe progression into your first mode + multiball",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge the standard skill shot",
+          "detail": "Take the safe GROOVY plunge, not the Super, when you just need to stay alive."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit lit white ramps to qualify Mode 1",
+          "detail": "One ramp qualifies; ramps are the safest repeatable shots on the game."
+        },
+        {
+          "shot": "right-ramp-scoop",
+          "action": "Start a Movie-1 mode at the scoop",
+          "detail": "Evil Awakens / Hacked to Bits are natural first modes."
+        },
+        {
+          "shot": "groovy-drops",
+          "action": "Spell GROOVY across the ball for the 20% boost",
+          "detail": "Don't hammer the pop-up deadites or the Hand cold — those bash toys are the main SDTM source; hit them only with a controlled ball."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "strat-big-stack",
+      "title": "Big Points: The Multiplier Stack",
+      "category": "strategy",
+      "summary": "The bread-and-butter scoring engine: build every live multiplier first, then layer a story mode with Cabin MB and Deadite MB on top of Blood Flood.",
+      "difficulty": 3,
+      "reward": "Multiplied jackpot barrage",
+      "steps": [
+        {
+          "shot": "groovy-drops",
+          "action": "Lock in the 20% GROOVY boost",
+          "detail": "Do this first every ball so everything after is multiplied."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Complete the 3 Blood Flood targets in the pop nest",
+          "detail": "Reached via the left orbit and the secret feed ramp into the cluster; enables the playfield multiplier."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Build the Dagger multiplier off the inlanes/orbits",
+          "detail": "Get the live multipliers up before starting any scoring-heavy multiball."
+        },
+        {
+          "shot": "cabin-vuk",
+          "action": "Start a story mode, then stack Cabin Multiball",
+          "detail": "Cabin MB is designed to stack onto a running mode."
+        },
+        {
+          "shot": "left-deadite",
+          "action": "Layer Deadite Multiball on top",
+          "detail": "Deadite MB stacks with all modes and multiballs — this mode + Cabin + Deadite stack under Blood Flood is the go-big line."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mult-blood-flood",
+      "title": "Complete Blood Flood (Playfield Multiplier)",
+      "category": "multiplier",
+      "summary": "Feed the pop cluster and pick off the three nested Blood Flood standups to switch on the playfield multiplier before you start anything valuable.",
+      "difficulty": 2,
+      "reward": "Playfield multiplier enabled for your stack",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Send the ball around the left orbit into the pop cluster",
+          "detail": "The orbit is the reliable feed into the nest; the middle ramp also dumps in there.",
+          "link": "none"
+        },
+        {
+          "shot": "middle-ramp",
+          "action": "Use the lift ramp as a second feed when the orbit is blocked",
+          "detail": "Both feeds pour into the pops, and every pass gives the nested standups a chance.",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Finish all three Blood Flood standups in the nest",
+          "detail": "Pop awards can be good or bad, so keep feeding rather than aiming; completing the trio is what lights the multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mb-hand",
+      "title": "Give Me Back My Hand Multiball",
+      "category": "multiball",
+      "summary": "Bash the crawling-hand toy three times to trip the trap door and start its multiball, then finish the Fingers set to light and cash the Super Jackpot.",
+      "difficulty": 3,
+      "reward": "Hand multiball, then its Super Jackpot",
+      "steps": [
+        {
+          "shot": "hand-target",
+          "action": "Hit the crawling hand three times",
+          "detail": "Only swing at it from a controlled ball - this stepper toy is one of the main straight down the middle risks."
+        },
+        {
+          "shot": "cellar-door",
+          "action": "Let the trap door take the ball and start the multiball",
+          "detail": "The third hand hit drops the door; the lower playfield has its own drain, so play it deliberately."
+        },
+        {
+          "shot": "hand-target",
+          "action": "Finish the Fingers set during the multiball",
+          "detail": "Continued hand hits complete Fingers, which is what arms the Super Jackpot."
+        },
+        {
+          "shot": "hand-target",
+          "action": "Collect the lit Super Jackpot once Fingers is done",
+          "detail": "Cash it with the Dagger build-up armed so the biggest single award of the multiball scores multiplied."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "wizard-destroy-book",
+      "title": "Destroy the Book",
+      "category": "wizard",
+      "summary": "The fruit-cellar wizard mode, unlocked by finishing all four Movie 1 modes: open the cellar door, then beat on the Necronomicon target down there until the book is done.",
+      "difficulty": 3,
+      "reward": "Destroy the Book wizard mode completion",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Complete all four Movie 1 modes to unlock Destroy the Book",
+          "detail": "This one is earned rather than bought — finish every Movie 1 story mode and the wizard lights on its own. Banked Spooky Tokens are a separate shortcut into a wizard mode, worth spending only once your multipliers are already stacked."
+        },
+        {
+          "shot": "cellar-door",
+          "action": "Drop through the cellar door into the basement",
+          "detail": "The door window is short and the lower playfield drains on its own, so commit once it opens."
+        },
+        {
+          "shot": "book-target",
+          "action": "Hammer the Necronomicon target with the basement flipper",
+          "detail": "Use the basement loop to keep returning to the target until the book is done."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "secret-video-mode-lost-tapes",
+      "title": "Video Mode: The Lost Tapes",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Buried inside the story modes are hidden lost tapes, and finding one drops the game out of pinball entirely. What replaces it is a retro action game on the display where you steer a character through the undead.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Play story modes and watch for a hidden lost tape to turn up",
+        "Finding a lost tape starts the video mode",
+        "Follow the instructions given on screen and in the audio to control your man",
+        "Battle zombies and a hideous beast at the end",
+        "Treat it as a breather rather than a scoring chance, because it awards minimal points in the scheme of things"
+      ],
+      "reward": "A standalone retro action game; the points are minimal next to the rest of the game"
+    },
+    {
+      "id": "secret-spooky-tokens-wizard-skip",
+      "title": "Spooky Tokens: Skip Straight to a Wizard Mode",
+      "category": "secret",
+      "summary": "The Evil Dead runs a currency most players never notice. Tokens banked during ordinary play can be spent at the moment a game starts to jump straight into a sub-wizard or wizard mode instead of earning the way there shot by shot.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Earn Spooky Tokens during gameplay",
+        "With tokens banked, hold the action button down as you press Start — the game then offers a sub-wizard or wizard mode instead of a normal ball one.",
+        "The operator menu controls whether the feature is enabled at all and how many tokens each mode costs",
+        "On location, token play still requires a normal credit"
+      ],
+      "reward": "Direct entry to a sub-wizard or wizard mode without meeting its normal requirements"
+    },
+    {
+      "id": "secret-movie-select-game-start",
+      "title": "Pick Your Movie at Game Start",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "The Evil Dead splits its story content across two films, and which one you are playing is settled at the very start of the game rather than during it. That single choice decides which modes are on the table for the rest of the game.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Make the choice at the start of the game, before play gets going",
+        "Pick between the two movies",
+        "The pick changes which modes are available to you for that game",
+        "Plan the rest of the game around the mode set you just chose"
+      ],
+      "reward": "Sets which half of the story modes is available for the whole game"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-story-mode",
+      "title": "Into the Cabin",
+      "desc": "Qualify, select and start any Movie-1 story mode.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-movie1-start"
+    },
+    {
+      "id": "groovy-spelled",
+      "title": "Six Letters Down",
+      "desc": "Drop all six inline GROOVY targets in order on a single ball to lock in the ball-wide scoring boost.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-groovy"
+    },
+    {
+      "id": "cabin-multiball-started",
+      "title": "Locks in the Window",
+      "desc": "Bank the required cabin locks and start Cabin Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-cabin"
+    },
+    {
+      "id": "deadite-multiball-started",
+      "title": "Two of Them Up",
+      "desc": "Complete the deadite arrows and inlanes and start Double Deadite Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-deadite"
+    },
+    {
+      "id": "super-skill-collected",
+      "title": "Soft Plunge Payoff",
+      "desc": "Soft-plunge with the left flipper held and hit the flashing shot inside the five-second window for the doubled skill shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-super"
+    },
+    {
+      "id": "blood-flood-complete",
+      "title": "Flooded Cellar",
+      "desc": "Complete all three Blood Flood standups in the pop cluster to turn on the playfield multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-blood-flood"
+    },
+    {
+      "id": "hand-multiball-started",
+      "title": "Hand Off",
+      "desc": "Hit the crawling-hand toy three times to trip the trap door and start the hand multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-hand"
+    },
+    {
+      "id": "boomstick-multiball-started",
+      "title": "Both Barrels",
+      "desc": "Load shells, drop into the basement, hit Lock and Load and fire the double barrel to start Boomstick Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-boomstick"
+    },
+    {
+      "id": "cheryl-multiball-started",
+      "title": "She Comes Up",
+      "desc": "Finish two Movie-1 story modes and hit the rising lift bank to start Cheryl Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-cheryl"
+    },
+    {
+      "id": "undying-love-jackpot",
+      "title": "Fast Hands, Big Jackpot",
+      "desc": "During the Undying Love mode-multiball, chain the two ramps quickly enough to collect a speed-boosted jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-undying-love"
+    },
+    {
+      "id": "bonus-ball-earned",
+      "title": "One More Ball",
+      "desc": "Qualify the Bonus Ball by chaining combos through the Necklace standups.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-necklace"
+    },
+    {
+      "id": "hand-super-jackpot",
+      "title": "All Five Fingers",
+      "desc": "Complete the Fingers set to light and then collect the hand Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-hand"
+    },
+    {
+      "id": "deadite-frenzy-reached",
+      "title": "Second Time Around",
+      "desc": "Work the deadites a second full time through during Double Deadite Multiball to trigger the frenzy round.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-deadite-frenzy"
+    },
+    {
+      "id": "boomstick-jackpot-run",
+      "title": "Keep Reloading",
+      "desc": "In Boomstick Multiball, collect the purple jackpots and reload shells to re-light and collect the button jackpot again.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-boomstick-purple"
+    },
+    {
+      "id": "hail-the-king-lit",
+      "title": "Twenty-Five Deadites",
+      "desc": "Rack up twenty-five deadite hits in one game to arm the global scoring multiplier wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-hail-king"
+    },
+    {
+      "id": "kandarian-demon-started",
+      "title": "Spend the Token",
+      "desc": "Earn Spooky Tokens and spend them to start the Kandarian Demon wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-kandarian"
+    },
+    {
+      "id": "kandarian-demon-finished",
+      "title": "Demon Down",
+      "desc": "Clear every phase of the Kandarian Demon wizard mode in a single game.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-kandarian"
+    },
+    {
+      "id": "delta-88-finished",
+      "title": "Eighty-Eight Trips",
+      "desc": "Complete the Delta 88 token mode by delivering its full left-ramp count.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mode-delta88"
+    },
+    {
+      "id": "book-destroyed",
+      "title": "Burn the Book",
+      "desc": "Start the Destroy the Book wizard mode and finish off the Necronomicon target in the basement.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-destroy-book"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-left-ramp-backhand",
+      "title": "Left Ramp Backhand Reps",
+      "text": "Feed the left ramp and backhand the return in one motion, over and over, without letting it settle into a cradle.",
+      "reps": "20",
+      "focus": "Backhand timing on the left flipper",
+      "goal": "combo-left-ramp-loop",
+      "shots": [
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "drill-groovy-order",
+      "title": "GROOVY In Order",
+      "text": "Run the six inline drops G-R-O-O-V-Y start to finish without skipping a letter, then reset and go again.",
+      "reps": "3",
+      "focus": "Sequencing discipline before chasing anything else",
+      "goal": "mult-groovy",
+      "shots": [
+        "groovy-drops"
+      ]
+    },
+    {
+      "id": "drill-super-skill-catch",
+      "title": "Soft-Plunge Cradle",
+      "text": "Hold the left flipper through the launch and dial in exactly how much power the reduced plunge needs to die dead in your flipper, not roll past it.",
+      "reps": "10",
+      "focus": "Reduced-power plunge control and the cradle catch",
+      "goal": "skill-super",
+      "shots": [
+        "plunge",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "drill-basement-control",
+      "title": "Basement Single-Flipper Aim",
+      "text": "Down in the cellar it's one flipper, no bailout — work Lock and Load and the Book target off the mini flipper alone.",
+      "reps": "15",
+      "focus": "Single-flipper aim under the short cellar window",
+      "goal": "mb-boomstick",
+      "shots": [
+        "lock-and-load",
+        "book-target"
+      ]
+    },
+    {
+      "id": "drill-dagger-buildup",
+      "title": "Dagger Build-Then-Cash",
+      "text": "Feed an inlane, double-tap the upper flipper button, hit Launch, then cash the ten-second window on a ramp before it expires.",
+      "reps": "10",
+      "focus": "Arming the multiplier before firing the money shot",
+      "goal": "mult-dagger",
+      "shots": [
+        "right-orbit",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "drill-deadite-restraint",
+      "title": "Deadite Restraint",
+      "text": "Only take the popped-up Deadites off a controlled, slowed ball — never off a hot rebound straight from a ramp or orbit.",
+      "reps": "15",
+      "focus": "Avoiding the SDTM reject on the bash toys",
+      "goal": "combo-deadite-frenzy",
+      "shots": [
+        "left-deadite",
+        "right-deadite"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "basement",
+      "name": "Basement",
+      "kind": "lower",
+      "bounds": {
+        "x": 0.366,
+        "y": 0.169,
+        "w": 0.229,
+        "h": 0.231
+      },
+      "entries": [
+        "lock-and-load"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Evil Dead spreads its controls further than most: flippers, an upper-left button that fires a hidden sling flipper, a Launch button that works the shotgun, and this one. The Action button is the door-and-decision button — it drops you into the fruit cellar, changes which mode you're queuing, and cashes button jackpots.",
+    "uses": [
+      {
+        "when": "Ready to drop to the fruit cellar",
+        "what": "Lowers the motorized cellar door to the lower playfield; you get about 15 seconds or 3 drains down there."
+      },
+      {
+        "when": "Wrong mode lit under the right ramp",
+        "what": "Press to defer it and queue a different one — this closes the right ramp until you re-earn it."
+      },
+      {
+        "when": "Shells reloaded in Boomstick Multiball",
+        "what": "Reloading relights the button jackpot; press to collect it, then reload and do it again."
+      },
+      {
+        "when": "GROOVY spelled, mystery lit at the right orbit",
+        "what": "Press to shoot the moving award — points, deadite rollovers, an outlane save, or a Bad Linda boost."
+      },
+      {
+        "when": "Spooky Tokens banked, starting a ball",
+        "what": "Hold it as you press Start to spend tokens and drop straight into a wizard or sub-wizard mode."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "The Evil Dead drops you into the cabin as the dead rise, splitting its story modes across two films you choose at game start. Spell GROOVY for a ball-wide boost, stack modes with multiballs under the Blood Flood and Dagger multipliers, and fight through to the Kandarian Demon.",
+    "loop": [
+      "Knock the six inline GROOVY drops down in order for a boost that lifts everything you score for the rest of the ball.",
+      "Qualify a story mode at a lit white ramp, select it on the Necronomicon captive ball, and start it at the scoop under the right ramp.",
+      "Build the Blood Flood playfield multiplier in the pop nest and arm the Dagger shot multiplier off the inlanes before you reach for points.",
+      "Stack Cabin and Double Deadite multiballs onto the running mode so a barrage of jackpots all score several times over.",
+      "Finish your movie's modes for Destroy the Book, pile up deadite hits for Hail to the King, and spend it all in the Kandarian Demon."
+    ],
+    "lights": [
+      {
+        "id": "groovy-drops",
+        "name": "GROOVY Inline Drops",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "groovy-drops"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "A lit GROOVY drop is a letter still standing; take the six inline drops in their fixed spelling order and the boost you earn holds until you drain, so it resets each ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the word first thing every ball for a boost that lifts all of your scoring for the rest of it, which also lights Mystery at the right orbit -- stop the moving award on the button for points, a save, or a Bad Linda boost.",
+        "goals": [
+          "mult-groovy"
+        ]
+      },
+      {
+        "id": "blood-flood",
+        "name": "Blood Flood Pop Nest",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "middle-ramp"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "The left orbit and the lift ramp both pour the ball into the pop cluster, where three nested Blood Flood standups wait; the trio stays down once cleared, and clearing all three switches on the playfield multiplier.",
+        "flashing": null,
+        "control": null,
+        "then": "Turn Blood Flood on before you start anything valuable, because it multiplies the whole stack of modes and multiballs you layer on top of it.",
+        "goals": [
+          "mult-blood-flood"
+        ]
+      },
+      {
+        "id": "dagger-multiplier",
+        "name": "Kandarian Dagger Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Rolling an inlane lights the OPPOSITE orbit and a same-color fill scores double, and the lit orbit feeds the dagger's build-up rather than the lane sitting there lit on its own.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll an inlane to light the far orbit, then arm the multiplier with a quick double press of the upper flipper button plus the Launch button, which opens a short build-up window; cash it on a ramp or a jackpot so your money shot lands multiplied.",
+        "goals": [
+          "mult-dagger"
+        ]
+      },
+      {
+        "id": "story-modes",
+        "name": "Movie Story Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "captive-ball"
+          },
+          {
+            "shot": "right-ramp-scoop"
+          }
+        ],
+        "lit": "A lit white ramp qualifies a mode, the Necronomicon captive ball selects which one is queued, and the mode scoop below the right ramp kicks it off; the film you picked at game start decides which modes are even on the table.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "pressing the button defers whichever mode is queued and swaps in a different one, which shuts the right ramp until you light a mode there again",
+          "when": "a mode is lit and waiting under the right ramp"
+        },
+        "then": "Complete two of your movie's modes to qualify Cheryl Multiball at the rising lift bank, and finish all four to earn Destroy the Book down in the cellar.",
+        "goals": [
+          "mode-movie1-start",
+          "mode-undying-love",
+          "mb-cheryl"
+        ]
+      },
+      {
+        "id": "cabin-locks",
+        "name": "Cabin Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "cabin-drops"
+          },
+          {
+            "shot": "cabin-vuk"
+          }
+        ],
+        "lit": "Knocking the cabin front and back drops exposes the lock up-kicker; both the drops and your banked locks persist across balls and players and can even be stolen, so no early progress is ever wasted.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank the locks and start Cabin Multiball on top of a running story mode, the bread-and-butter stack this game is built around.",
+        "goals": [
+          "mb-cabin"
+        ]
+      },
+      {
+        "id": "deadites",
+        "name": "The Deadites",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-deadite"
+          },
+          {
+            "shot": "right-deadite"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "Collect the orange deadite arrows and roll both inlanes to pop the deadites up; only a popped deadite scores, and knocking a lit one down starts Double Deadite Multiball, which stacks onto anything already running.",
+        "flashing": null,
+        "control": null,
+        "then": "Run the deadites a second time for Deadite Frenzy, and pile up twenty-five deadite hits across the game -- fastest inside the multiball -- to light Hail to the King, the global scoring multiplier.",
+        "goals": [
+          "mb-deadite",
+          "combo-deadite-frenzy",
+          "wizard-hail-king"
+        ]
+      },
+      {
+        "id": "boomstick-cellar",
+        "name": "Boomstick & the Cellar",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "shotgun-targets"
+          },
+          {
+            "shot": "cellar-door"
+          },
+          {
+            "shot": "lock-and-load"
+          },
+          {
+            "shot": "book-target"
+          }
+        ],
+        "lit": "Bashing the shell sculpts loads the double barrel, and the cellar door drops you to the basement -- a one-flipper lower playfield that drains on its own, so once you are down there you commit.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit Lock and Load and fire on the audio cue to start Double-Barrel Boomstick Multiball; finishing all four of your movie's modes instead sends you down to hammer the Necronomicon target for Destroy the Book.",
+        "goals": [
+          "mb-boomstick",
+          "combo-boomstick-purple",
+          "wizard-destroy-book"
+        ]
+      },
+      {
+        "id": "the-hand",
+        "name": "Give Me Back My Hand",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "hand-target"
+          },
+          {
+            "shot": "cellar-door"
+          }
+        ],
+        "lit": "Three hits on the crawling-hand toy trip the trap door; swing at it only off a slowed, controlled ball, since a cold bash sends it straight back down the center more reliably than almost anything else here.",
+        "flashing": null,
+        "control": null,
+        "then": "The third hit drops the door and starts Hand Multiball; finish the Fingers set to arm the Super Jackpot and cash it with the Dagger already armed so the biggest award of the multiball lands multiplied.",
+        "goals": [
+          "mb-hand"
+        ]
+      },
+      {
+        "id": "ramps-necklace",
+        "name": "Ramps & Necklace Combos",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "necklace-targets"
+          }
+        ],
+        "lit": "Both ramps backhand cleanly and feed opposite inlanes, and the three Necklace standups chain whenever the running mode is not already using them; a tighter chain pays a bigger speed bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank eighty-eight left-ramp shots across the game to qualify Delta 88, and keep the ramp-to-ramp and Necklace chains tight to earn the Bonus Ball.",
+        "goals": [
+          "combo-left-ramp-loop",
+          "combo-ramp-chain",
+          "combo-necklace",
+          "mode-delta88"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the standard skill shot into the roving GROOVY target for guaranteed points and a free letter, then qualify a story mode at a lit white ramp and start it at the scoop. Spell GROOVY across the ball for the boost, and save the pop-up deadites and the Hand for a slowed ball -- cold bashes on those toys are the main drain.",
+        "goals": [
+          "skill-standard",
+          "strat-beginner-30s",
+          "mult-groovy"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Lock in the GROOVY boost, clear the Blood Flood standups for the playfield multiplier, and arm the Dagger before you go for points. Then start a story mode and stack Cabin Multiball and Double Deadite Multiball on top, so the whole jackpot barrage scores multiplied.",
+        "goals": [
+          "strat-big-stack",
+          "mb-cabin",
+          "mb-deadite",
+          "mult-blood-flood"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Finish all four of your movie's modes to earn Destroy the Book in the cellar, and rack up twenty-five deadite hits for Hail to the King, the global scoring multiplier. The Kandarian Demon is the marquee multi-phase wizard -- walk in with GROOVY, Blood Flood and Dagger already live, or spend banked Spooky Tokens to jump straight to it, so every phase scores multiplied.",
+        "goals": [
+          "wizard-kandarian",
+          "wizard-hail-king",
+          "wizard-destroy-book"
+        ]
+      }
+    ]
+  }
+}

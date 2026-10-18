@@ -1,0 +1,1228 @@
+{
+  "machine": "Tales of the Arabian Nights (Williams, 1996)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger feeding three baskets lined up front to back — plunge strength decides which one the ball drops into."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights the Tiger Loop on the Right Orbit."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Can be lit for Special. A lit Left Shooting Star is the only real defense against a drain here."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights the Tiger Loop on the Left Orbit."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Can be lit for Special. Right-side drains are common on this game, so keep the Right Shooting Star lit."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Cycles the selected Mode before a ball starts. Also the Jewel choice during Make A Wish."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "The random-award choice during Make A Wish."
+    },
+    {
+      "id": "left-shooting-star",
+      "name": "Left Shooting Star",
+      "type": "mech",
+      "x": 0.14,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Spikes that punch up out of the playfield to catch a draining ball. Lit by the left standup bank."
+    },
+    {
+      "id": "right-shooting-star",
+      "name": "Right Shooting Star",
+      "type": "mech",
+      "x": 0.86,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "The harder of the two to light, since the standups behind it are tucked away by the Lamp."
+    },
+    {
+      "id": "left-standups",
+      "name": "Left Standups",
+      "type": "target-bank",
+      "x": 0.18,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Three vertical targets right above the left inlane. Any hit lights the Left Shooting Star and carries a Golden Symbol."
+    },
+    {
+      "id": "right-standups",
+      "name": "Right Standups",
+      "type": "target-bank",
+      "x": 0.62,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Three targets hidden behind the Lamp, arranged in an outward curve. Any hit lights the Right Shooting Star and carries a Golden Symbol — genuinely hard to see when it's lit."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.12,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Lock, Harem, and Tiger Loop can all be lit here. When the diverter is active it sends the ball toward the Jet Bumpers instead of letting it complete the loop. Also carries a Golden Symbol.",
+      "feeds": {
+        "shot": "right-orbit"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Can be lit for Lock, Tiger Loop or Extra Ball. Making this shot closes the Left Orbit's diverter. Carries a Golden Symbol."
+    },
+    {
+      "id": "left-orb",
+      "name": "Left Orb",
+      "type": "captive-ball",
+      "x": 0.28,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A captive ball behind a fixed ball, with a saucer in front that catches anything too weak to reach the captive ball. Raises Bonus X when fully hit, and is one half of the Cyclops shot."
+    },
+    {
+      "id": "right-orb",
+      "name": "Right Orb",
+      "type": "captive-ball",
+      "x": 0.82,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "The same captive-ball mechanism as the Left Orb, lower on the playfield and without a saucer in front."
+    },
+    {
+      "id": "ramp",
+      "name": "The Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The only ramp on the machine, but with roughly three miles of habitrail behind it. Collects Jewels, and can be lit for Fireball or Magic Carpet. Carries a Golden Symbol.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "ramp-standup",
+      "name": "Ramp Standup",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "A small target beside the Ramp entrance. Spots a Bazaar letter."
+    },
+    {
+      "id": "lamp",
+      "name": "The Lamp",
+      "type": "toy",
+      "x": 0.4297,
+      "y": 0.7024,
+      "trim": "all",
+      "notes": "The main toy — a golden lamp on a low-friction rotating disc, dead center on the playfield. Spinning it builds Lamp Spins toward Lightning Lamp and real end-of-ball bonus."
+    },
+    {
+      "id": "genie",
+      "name": "The Genie",
+      "type": "bash-toy",
+      "x": 0.5,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "A big blue genie hinged to swing slightly on contact. Starts Modes, spells G-E-N-I-E to light Multiball locks, and is the main jackpot shot once multiball starts."
+    },
+    {
+      "id": "hidden-treasure",
+      "name": "Hidden Treasure",
+      "type": "standup",
+      "x": 0.56,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "A very small, easy-to-miss standup buried behind the Lamp, offset from the Genie. Registers as a Genie hit when found."
+    },
+    {
+      "id": "lock",
+      "name": "Lock Lane",
+      "type": "lock",
+      "x": 0.48,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A narrow lane, obscured by the Lamp, that bends into the Harem Lane. Missing this shot when Lock isn't lit dumps the ball into the Harem for a small random bonus instead."
+    },
+    {
+      "id": "bazaar",
+      "name": "Bazaar",
+      "type": "scoop",
+      "x": 0.58,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "A scoop that awards a random prize once B-A-Z-A-A-R is fully spelled, and doubles as the Make A Wish shot. Rebounds easily on a weak hit."
+    },
+    {
+      "id": "bazaar-standup",
+      "name": "Bazaar Standup",
+      "type": "standup",
+      "x": 0.64,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "A small target beside the Bazaar entrance. Spots a Bazaar letter."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.8,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Three bumpers tucked in the far upper right corner. Each hit adds to the Harem Jackpot, and they shut off automatically during any timed shot."
+    },
+    {
+      "id": "harem-sneak-in",
+      "name": "Harem Sneak-In",
+      "type": "saucer",
+      "x": 0.68,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "A small trough near the back of the playfield that occasionally catches a lucky bounce out of the Jet Bumpers, kicking the ball back out through the Bazaar."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Three-Basket Skill Shot",
+      "category": "skillshot",
+      "summary": "Three holes sit lined up front to back in the plunger lane, and plunge strength alone decides which one the ball drops into.",
+      "difficulty": 3,
+      "reward": "50K climbing to a 125K cap",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Choose your basket with plunge strength",
+          "detail": "A full-strength pull clears both nearer baskets for the top one; barely clearing the launch ramp at all lands the easiest, bottom basket; the middle basket needs something in between and is the hardest of the three to land on purpose. Worth 50K the first time, climbing 25K per success to a 125K cap — you only get this shot at the start of a ball and right after locking one, not on a ball that's been saved and re-served."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-skillshot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Land any of the three baskets and the Ramp lights for a follow-up shot worth double on top of what you already banked.",
+      "difficulty": 2,
+      "reward": "Doubles the Skill Shot value",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the skill shot is made with a flipper."
+        },
+        {
+          "shot": "ramp",
+          "action": "Hit the Ramp immediately as the ball reaches your flipper",
+          "detail": "Landing any of the three Skill Shot baskets first arms this — it doesn't matter which one. A Super Skill Shot pays double your Skill Shot value on top of what you already collected, effectively tripling the original basket award if you catch the window in time.",
+          "technique": [
+            "on-the-fly"
+          ]
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "the-lamp",
+      "title": "Spinning The Lamp",
+      "category": "progression",
+      "summary": "A low-friction rotating disc holds the Lamp dead center on the playfield — a good hard shot can spin it around a dozen times in one go, and post angle changes everything about how it behaves.",
+      "difficulty": 1,
+      "reward": "10,000 bonus per spin, more from Lightning Lamp",
+      "steps": [],
+      "instructions": [
+        "The Lamp sits on a low-friction rotating disc dead center on the playfield — a good, hard shot to either post can spin it around a dozen times in one go. Every roughly 180-degree turn counts as one Lamp Spin.",
+        "Fourteen blue lights track your spins toward the next Lightning Lamp; each spin lights one, worth 10,000 bonus apiece. There are also fixed lights for 15, 30 and 60 total spins, which stick around across balls even though the blue path itself resets every ball.",
+        "The Lamp's post angle matters a lot: aligned horizontally, like a clock reading 9 and 3, a solid flipper shot can clear the whole blue path in one hit, and threading the ball right between the posts sends it straight into the Genie. Aligned vertically, it's nearly impossible to spin cleanly and becomes a drain risk instead — leave it alone and go for the Genie or the standups, which are wide open when the Lamp sits that way.",
+        "Multiball makes the Lamp far easier to work, since rebounding balls keep knocking it into better positions on their own."
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "lightning-lamp",
+      "title": "Lightning Lamp",
+      "category": "mode",
+      "summary": "Complete the blue path of fourteen spins and the Lamp itself turns into a scoring frenzy, retriggering every 15 spins for the rest of the game.",
+      "difficulty": 2,
+      "reward": "250K+ per spin while it runs",
+      "steps": [
+        {
+          "shot": "lamp",
+          "action": "Complete the blue path of fourteen spins",
+          "detail": "Every 15th cumulative Lamp Spin across the game re-triggers this, not just the first time you fill the path."
+        },
+        {
+          "shot": "lamp",
+          "action": "Keep spinning through Lightning Lamp itself",
+          "detail": "It runs on a roughly 10-second timer that resets with every spin. Spinning starts at 250K per hit, and hitting hard enough for multiple spins in one shot pays more than the same spins would individually — you'll know it worked when lightning bolts fill the display."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Spell G-E-N-I-E to light three separate locks, fill them, then hit the lit Genie to start — the Lamp raises Jackpot value the whole time it runs.",
+      "difficulty": 2,
+      "reward": "Jackpots that relight easily",
+      "steps": [
+        {
+          "shot": "genie",
+          "action": "Hit the Genie five times to spell G-E-N-I-E",
+          "detail": "This lights Lock at three places at once — the Left Orbit, the Right Orbit, and the center Lock lane."
+        },
+        {
+          "shot": "lock",
+          "action": "Lock two balls at any of the three lit spots",
+          "detail": "Any combination works. After the first lock of the game, the lights stay lit; lock a second ball and they go dark, but the Genie lights instead."
+        },
+        {
+          "shot": "genie",
+          "action": "Hit the lit Genie to start multiball",
+          "detail": "This fires the Genie Magnet, which catches the ball and pulls it into the playfield. If the magnet misses, you don't get credit — you'll need to hit the Genie again."
+        },
+        {
+          "shot": "genie",
+          "action": "Chase Jackpots on the Genie",
+          "detail": "Spinning the Lamp raises the Jackpot value while multiball runs; hitting the Genie collects it and lights Lock on one random orbit to relight the next one. There's no ball saver at the start, so be ready."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "tiger-loops",
+      "title": "Tiger Loops",
+      "category": "progression",
+      "summary": "Each inlane lights the opposite orbit for a Tiger Loop, and enough of them across the game lights an Extra Ball — sometimes two.",
+      "difficulty": 1,
+      "reward": "Extra Ball around six loops, a second around twenty",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the left inlane to light the right orbit",
+          "detail": "Each inlane lights the Tiger Loop on the opposite orbit — an easy shot once the ball's already headed to that flipper."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Loop it to keep the light on",
+          "detail": "A made orbit relights itself for another Tiger Loop, so a machine that loops smoothly can be run over and over."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Watch the loop counts for Extra Ball",
+          "detail": "Extra Ball usually lights around six total Tiger Loops, with a second one around twenty — Tiger Loops don't count while a Mode is actively using the orbits, though."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "harem",
+      "title": "Light Harem",
+      "category": "mode",
+      "summary": "The Left Orbit spells H-A-R-E-M one letter per shot whenever Harem is lit — a second, independent route into Harem Multiball.",
+      "difficulty": 2,
+      "reward": "Opens the Jet Bumpers, then a shot at Harem Multiball",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Orbit while Harem is lit",
+          "detail": "Harem is lit automatically at the start of every ball. Each hit adds one letter toward H-A-R-E-M and opens the diverter, sending the ball into the Jet Bumpers."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Let it relight on its own between shots",
+          "detail": "The Left Orbit's Harem light won't come back until every other feature lit there — Tiger Loops, the Jet Bumpers path — has timed out first, so cradling the ball and waiting is often faster than forcing it."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Complete all five letters to start Harem Multiball",
+          "detail": "Spelling H-A-R-E-M this way is a second, independent route into Harem Multiball on top of the three Jet Bumper Sneak-Ins."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "harem-multiball",
+      "title": "Harem Multiball",
+      "category": "multiball",
+      "summary": "Three lucky bounces into the Harem Sneak-In — or spelling HAREM at the Left Orbit — starts it, and every shot you make pays the Jackpot once it's running.",
+      "difficulty": 2,
+      "reward": "10K-25K Jackpot on every shot",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Boost the Jackpot in the bumpers first",
+          "detail": "Each bumper hit adds 1K to the Harem Jackpot before multiball even starts — worth padding, since the Jackpot opens small: 10K, or 25K on easier settings."
+        },
+        {
+          "shot": "harem-sneak-in",
+          "action": "Catch three lucky bounces into the Sneak-In",
+          "detail": "A lucky bounce out of the Jet Bumpers into this trough scores a Harem Sneak-In and kicks the ball out through the Bazaar. Three of these — or spelling HAREM at the Left Orbit — starts the multiball."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Keep making shots once it starts",
+          "detail": "There's no dedicated jackpot shot — every shot you make while Harem Multiball runs pays the Jackpot value."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "bonus-system",
+      "title": "Bonus & Bonus X",
+      "category": "progression",
+      "summary": "A real count-up bonus: 10,000 per Lamp Spin and Genie hit, 50,000 per Jewel, all multiplied by a Bonus X that climbs on the captive balls.",
+      "difficulty": 2,
+      "reward": "Over 14 million possible from the Lamp alone",
+      "steps": [],
+      "instructions": [
+        "This is one of the few modern-era games with a real, count-up bonus: 10,000 for every Lamp Spin (up to 119), 10,000 for every Genie hit, and 50,000 for every Jewel collected — all multiplied by your Bonus X at the end of the ball.",
+        "Bonus X climbs by fully hitting a lit captive ball, the Left Orb or the Right Orb, up to a cap of 12x. On harder settings only one captive ball is lit at a time, alternating sides with every slingshot hit.",
+        "Both the raw bonus count and the numbered 15/30/60 lights carry over from ball to ball, so working the Lamp hard on your first ball or two pays off for the rest of the game. Bonus X resets every ball unless a Bazaar award holds it.",
+        "The Lamp alone can be worth over 14 million in bonus at full spins and full multiplier — more than the replay score on most machines, which makes it the single most important system for total score."
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bazaar",
+      "title": "The Bazaar",
+      "category": "secret",
+      "summary": "Spell B-A-Z-A-A-R from the standups or an unlit scoop shot, then cash in a genuinely random award once the word is complete.",
+      "difficulty": 2,
+      "reward": "One of a wide list of random awards",
+      "steps": [
+        {
+          "shot": "bazaar-standup",
+          "action": "Spot letters from either standup target",
+          "detail": "A standup hit spots 3 letters of B-A-Z-A-A-R the first time through, 2 the second time you spell it, then just 1 every time after that."
+        },
+        {
+          "shot": "bazaar",
+          "action": "Or hit the scoop directly while it's unlit",
+          "detail": "An unlit Bazaar shot also spots letters toward the word, same as the standups.",
+          "link": "none"
+        },
+        {
+          "shot": "bazaar",
+          "action": "Collect the random award once BAZAAR is spelled",
+          "detail": "Awards run from small and big point pickups to Hold Bonus X, Light Locks, extra Bonus X, more Lamp Spins, or — rarely — an outright Extra Ball. The scoop rebounds easily on a miss, so this is a genuinely risky shot to force."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "make-a-wish",
+      "title": "Make A Wish",
+      "category": "strategy",
+      "summary": "The same Bazaar scoop, hit while Make A Wish is lit, offers a choice between Jewels on the left flipper or a random award on the right — Jewels almost always win.",
+      "difficulty": 2,
+      "reward": "A Jewel, or a situational random award",
+      "steps": [
+        {
+          "shot": "bazaar",
+          "action": "Shoot the Bazaar while Make A Wish is lit",
+          "detail": "This is a separate light from the regular Bazaar award and always wins out over it — Make A Wish overrides an unlit Bazaar award if both happen to be live."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Take Jewels on the left flipper",
+          "detail": "One Jewel normally, two if the Ruby is lit — collecting Jewels this way is almost always the stronger of the two choices, since it can finish a Mode outright without having to play it.",
+          "link": "none"
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Or take the random award on the right",
+          "detail": "Worth going for only in specific situations — three Tiger Loops when you're close to an Extra Ball, a big Collect Bonus with a high Bonus X already built up, or 3X Lamp Scoring heading into multiball.",
+          "link": "none"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "fireball",
+      "title": "Fireball",
+      "category": "mode",
+      "summary": "A Ramp shot while the purple light is lit starts a 20-second countdown to hit the Genie, worth more every time it's lit again.",
+      "difficulty": 2,
+      "reward": "400K base, +200K per saucer hit needed to light it",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Shoot the Ramp while its purple light is lit",
+          "detail": "Fireball lights after landing in the captive-ball saucers a set number of times — usually one or two the first time, going up by one after every Fireball you complete."
+        },
+        {
+          "shot": "genie",
+          "action": "Hit the Genie within about 20 seconds",
+          "detail": "The base award is 400K, plus 200K for every saucer hit it took to light this Fireball — so later ones, which need more saucer hits, pay considerably more."
+        },
+        {
+          "shot": "ramp",
+          "action": "A repeat Ramp shot adds time, not extra value",
+          "detail": "Hitting the Ramp again during the countdown puts more time on the clock, but the award stays at the value this Fireball started with."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "shooting-stars",
+      "title": "Keep The Shooting Stars Lit",
+      "category": "strategy",
+      "summary": "The standup banks light the Shooting Stars, which try to grab a draining ball before it reaches the outlane — a used star stays lit, so relighting them is a habit worth building.",
+      "difficulty": 1,
+      "reward": "Ball saves at both outlanes",
+      "steps": [
+        {
+          "shot": "left-standups",
+          "action": "Light the left star from the left standups",
+          "detail": "Hitting any of the three left standup targets lights the Left Shooting Star."
+        },
+        {
+          "shot": "right-standups",
+          "action": "Light the right star from the right standups",
+          "detail": "The right bank is tucked behind the Lamp and genuinely harder to hit — worth extra care, since right-side drains are common on this game."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Let a lit star catch the ball for you",
+          "detail": "A lit Shooting Star will try to grab a draining ball before it reaches the outlane switch; if it misses, the game normally reshoots the ball for you — except during multiball, where that compensation is turned off. Once used, a star remains lit, which is why relighting both of them regularly should become routine."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "ruby",
+      "title": "Light The Ruby",
+      "category": "secret",
+      "summary": "Line up one Shooting Star already lit, Make A Wish already lit, and then light the second Shooting Star — do all three at once and the next Wish is worth two Jewels.",
+      "difficulty": 3,
+      "reward": "Two Jewels on the next Make A Wish",
+      "steps": [
+        {
+          "shot": "left-shooting-star",
+          "action": "Get one Shooting Star lit",
+          "detail": "Either side works as the starting point."
+        },
+        {
+          "shot": "right-shooting-star",
+          "action": "Light the second Shooting Star while Make A Wish is already lit",
+          "detail": "All three conditions — one star already lit, Make A Wish lit, and lighting the second star — have to line up together for this to trigger."
+        },
+        {
+          "shot": "bazaar",
+          "action": "Cash in two Jewels instead of one",
+          "detail": "Once lit, the Ruby doubles your next Make A Wish jewel pick to two — and it burns out the instant you use it, so spend it on a Jewel pick rather than letting it go to waste on a random award."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "modes-overview",
+      "title": "Modes & Jewels",
+      "category": "progression",
+      "summary": "Five Golden Symbol shots mark whatever Mode is running; complete it, shoot the Ramp for the Jewel, and Make A Wish can shortcut the whole thing.",
+      "difficulty": 1,
+      "reward": "One Jewel per Mode, seven total",
+      "steps": [],
+      "instructions": [
+        "Five Golden Symbol lights mark the shots that matter during whichever Mode is running: both standup banks, the Ramp, and both orbits. A separate, easy-to-miss Mode Start light sits just below and left of the Genie Magnet — hit the lit Genie there to actually begin a Mode.",
+        "At the start of a ball with no Mode running, tap the left flipper to cycle through which of the seven is lit and waiting; hitting a slingshot also advances the selection, so start the ball and go for the Genie quickly if you have a specific Mode in mind.",
+        "Only one Mode runs at a time, and Modes are never timed — losing the ball just picks the same Mode back up on your next ball. Complete whatever the Mode asks, then shoot the Ramp to collect its Jewel; you can't start the next Mode until that Jewel is in hand.",
+        "Make A Wish is the fast path through all of this: choosing to Collect A Jewel there either ends whatever Mode is currently running and hands you its Jewel outright, or awards the currently-selected Mode's Jewel if nothing is running yet."
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "sinbad-rocs",
+      "title": "Tale: Sinbad And The Rocs",
+      "category": "mode",
+      "summary": "The Left Orbit forces the ball into the Jet Bumpers, and a single bumper hit is all it takes to light the Jewel.",
+      "difficulty": 1,
+      "reward": "Jewel on the first bumper hit",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Orbit to send the ball into the bumpers",
+          "detail": "Sinbad lights the Left Orbit and forces its diverter open, so every shot there goes straight to the Jet Bumpers."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Smash one Roc to light the Jewel",
+          "detail": "A single bumper hit is all this Mode actually requires — every hit after that is just bonus points and feathers on the display."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "ali-baba",
+      "title": "Tale: Ali Baba",
+      "category": "mode",
+      "summary": "Both standup banks spell S-E-S-A-M-E one letter per hit — a genuinely hard mode that's a completely reasonable one to Wish away.",
+      "difficulty": 3,
+      "reward": "Jewel once SESAME is complete",
+      "steps": [
+        {
+          "shot": "left-standups",
+          "action": "Spell letters from the left bank",
+          "detail": "Ali Baba lights both standup banks at once; any hit — left or right — spots one letter of S-E-S-A-M-E."
+        },
+        {
+          "shot": "right-standups",
+          "action": "Or the right bank, whichever you can reach",
+          "detail": "The right bank is the harder of the two to hit cleanly since it's tucked behind the Lamp.",
+          "link": "none"
+        },
+        {
+          "shot": "ramp",
+          "action": "Collect the Jewel once SESAME is spelled",
+          "detail": "This is one of the harder Modes in the game — Wishing it away with Make A Wish is a completely reasonable choice if it's dragging on."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "flying-horse",
+      "title": "Tale: The Flying Horse",
+      "category": "mode",
+      "summary": "Five statues, one per Golden Symbol shot, hide the Jewel randomly inside one of them — often frustratingly the last one you try.",
+      "difficulty": 3,
+      "reward": "Jewel hidden in one random statue",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Hit any Golden Symbol shot to smash a statue",
+          "detail": "Five statues correspond to the five Golden Symbol shots — the standup banks, the Ramp, and both orbits."
+        },
+        {
+          "shot": "ramp",
+          "action": "Keep smashing statues to find the prize",
+          "detail": "The Jewel is hidden randomly inside one specific statue — often, frustratingly, the last one you happen to try. This is another Mode that's very reasonable to Wish away."
+        }
+      ],
+      "fx": "quest",
+      "ordered": false
+    },
+    {
+      "id": "scheherazade",
+      "title": "Tale: Scheherazade",
+      "category": "mode",
+      "summary": "Every Golden Symbol shot lights at once, and a single hit anywhere technically completes it — the rest is just extra points if you want them.",
+      "difficulty": 1,
+      "reward": "Jewel on the first Symbol hit",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Hit any lit Golden Symbol",
+          "detail": "Every Golden Symbol shot lights at once for this Mode — a single hit anywhere is all it technically needs.",
+          "link": "none"
+        },
+        {
+          "shot": "ramp",
+          "action": "Keep hitting Symbols for points, or collect whenever you're ready",
+          "detail": "Nothing about this Mode forces you to stop — bank extra points on the Symbols as long as you like before cashing in the Jewel."
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "camel-race",
+      "title": "Tale: The Great Camel Race",
+      "category": "mode",
+      "summary": "All five Golden Symbols light at once, and it doesn't matter which ones you hit — four or five total shots usually wins the race.",
+      "difficulty": 1,
+      "reward": "Jewel after roughly four or five Symbol hits",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Hit yellow Golden Symbol shots to get ahead",
+          "detail": "All five light at once, and it doesn't matter which ones you hit — repeat shots to a single favorite Symbol count just as well as spreading them around.",
+          "link": "none"
+        },
+        {
+          "shot": "ramp",
+          "action": "Finish the race and collect the Jewel",
+          "detail": "Usually takes four or five total Symbol hits, win the race and the Ramp is waiting for you."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "flying-carpet",
+      "title": "Tale: The Flying Carpet",
+      "category": "mode",
+      "summary": "The easiest Mode by far — one Ramp shot lights the carpet, and the very next one collects the Jewel.",
+      "difficulty": 1,
+      "reward": "Jewel on the second Ramp shot",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Shoot the Ramp to light the carpet",
+          "detail": "This is the easiest Mode in the game by a wide margin — a single Ramp shot is the entire requirement."
+        },
+        {
+          "shot": "ramp",
+          "action": "Shoot it again to collect the Jewel",
+          "detail": "The very next Ramp shot after the carpet lights banks the Jewel — no other shots involved at all."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "cyclops",
+      "title": "Tale: Cyclops",
+      "category": "mode",
+      "summary": "Golden Symbols sit this one out — it's specifically the captive balls, with one hit lighting the Jewel and every hit after worth more than the last.",
+      "difficulty": 1,
+      "reward": "Jewel on the first Orb hit, climbing 10K per hit after",
+      "steps": [
+        {
+          "shot": "left-orb",
+          "action": "Hit either captive ball to launch an Orb",
+          "detail": "Golden Symbols aren't used for this Mode — it's specifically the Left Orb or Right Orb, or landing in the saucer next to the Left Orb on a weak shot."
+        },
+        {
+          "shot": "left-orb",
+          "action": "One hit lights the Jewel; more hits pay more",
+          "detail": "A single Orb hit is enough to complete the Mode, but it stays live afterward — each hit during the Mode is worth more than the last, starting at 10K and climbing 10K per hit."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "genie-battle",
+      "title": "Genie Battle",
+      "category": "wizard",
+      "summary": "Collect all seven Jewels to unlock the wizard mode — kill Skeletons across the whole playfield, lock a ball, then fight the Genie with unlimited balls for the Princess herself.",
+      "difficulty": 3,
+      "reward": "20 million for the win — the biggest award in the game",
+      "steps": [
+        {
+          "shot": "genie",
+          "action": "Collect all seven Jewels to light it",
+          "detail": "The Genie lights at the Mode Start position once the seventh Jewel is in hand — this is the wizard mode."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Kill Skeletons on any Golden Symbol or Orb shot",
+          "detail": "The Genie has taken the Princess and summoned Skeletons in her place; every Golden Symbol shot and both Orbs kill one, and the Genie keeps summoning more to replace them."
+        },
+        {
+          "shot": "lock",
+          "action": "Lock the ball after enough Skeletons fall",
+          "detail": "Somewhere around six to eight kills, the game locks the ball and serves another — the final Skeleton is always a shot the game can use for exactly this."
+        },
+        {
+          "shot": "genie",
+          "action": "Fight for the Princess with unlimited balls",
+          "detail": "Every shot pulls her slightly toward you; the Genie pulls back on his own. Shooting Stars are completely disabled here, so balls will drain often — launch every ball the moment it's served, since leaving one sitting in the plunger lane speeds up the Genie's pull. Win, and it's a flat 20 million points — the single biggest award in the game."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "secrets-grab-bag",
+      "title": "Buried Secrets",
+      "category": "secret",
+      "summary": "A free lock from a mis-hit ramp shot, and a hidden million-point Cow for anyone paying close attention to the Bazaar.",
+      "difficulty": 3,
+      "reward": "A free Lock, and 1 million for A New Cow",
+      "steps": [],
+      "instructions": [
+        "A weak shot off the Ramp's spiral section sometimes falls through instead of completing the loop — the game rewards this by lighting all three Locks and crediting one automatically, once per game.",
+        "Getting four Bazaar awards in a row without watching the animation play out — tap both flippers immediately after each one to skip it — turns the fourth into A New Cow, worth a flat 1 million points.",
+        "There's a second route to the same Cow: start the Great Camel Race while Bazaar happens to be lit, hit the first Golden Symbol, and listen for a quiet moo. Shoot the Bazaar right away and skip the animation the same way to claim it."
+      ],
+      "fx": "cow"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "totan-skillshot",
+      "title": "Snake Charmer",
+      "desc": "Land any of the three plunger skill shot baskets.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "totan-super-skillshot",
+      "title": "Triple Threat",
+      "desc": "Collect a Super Skill Shot right after the basic Skill Shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skillshot"
+    },
+    {
+      "id": "totan-lightning-lamp",
+      "title": "Rub The Lamp",
+      "desc": "Complete the blue path and trigger Lightning Lamp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "lightning-lamp"
+    },
+    {
+      "id": "totan-multiball",
+      "title": "G-E-N-I-E",
+      "desc": "Spell GENIE and start Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "totan-tiger-loops-20",
+      "title": "Loop Runner",
+      "desc": "Rack up twenty Tiger Loops in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tiger-loops"
+    },
+    {
+      "id": "totan-harem-mb",
+      "title": "Sneak Right In",
+      "desc": "Start Harem Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "harem-multiball"
+    },
+    {
+      "id": "totan-bazaar",
+      "title": "B-A-Z-A-A-R",
+      "desc": "Spell BAZAAR and collect a random award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bazaar"
+    },
+    {
+      "id": "totan-ruby",
+      "title": "Ruby and Jewels",
+      "desc": "Light the Ruby and collect two Jewels in one wish.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ruby"
+    },
+    {
+      "id": "totan-fireball",
+      "title": "Fireball",
+      "desc": "Light and collect a Fireball award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fireball"
+    },
+    {
+      "id": "totan-seven-jewels",
+      "title": "Seven Jewels",
+      "desc": "Collect the Jewel from all seven Tales.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "modes-overview"
+    },
+    {
+      "id": "totan-flying-carpet",
+      "title": "FLY",
+      "desc": "Complete the Flying Carpet Tale.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "flying-carpet"
+    },
+    {
+      "id": "totan-cyclops",
+      "title": "Cyclops Cleared",
+      "desc": "Complete the Cyclops Tale.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "cyclops"
+    },
+    {
+      "id": "totan-genie-battle",
+      "title": "Unlimited Balls",
+      "desc": "Reach the final Genie Battle multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "genie-battle"
+    },
+    {
+      "id": "totan-genie-battle-win",
+      "title": "Rescue The Princess",
+      "desc": "Win the Genie Battle and free the Princess.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "genie-battle"
+    },
+    {
+      "id": "totan-new-cow",
+      "title": "A New Cow",
+      "desc": "Skip four straight Bazaar animations and claim A New Cow.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "secrets-grab-bag"
+    }
+  ],
+  "drills": [
+    {
+      "id": "basket-then-ramp",
+      "title": "Pick A Basket, Then The Ramp",
+      "text": "Three baskets sit front to back in the plunger lane and nothing but plunge strength decides which one you land in — full strength clears both near ones, barely clearing the launch ramp takes the bottom one. Landing any of them arms the Ramp, so have that follow-up ready as the ball reaches your flipper rather than deciding once it gets there.",
+      "reps": "10 plunges per basket",
+      "focus": "skill-shot",
+      "goal": "super-skillshot",
+      "shots": [
+        "shooter-lane",
+        "ramp"
+      ]
+    },
+    {
+      "id": "read-the-lamp-posts",
+      "title": "Read The Lamp Posts",
+      "text": "Before every shot at the centre, look at where the Lamp's posts are sitting. Horizontal like a clock reading nine and three, a solid flipper shot spins the whole blue path and a threaded ball carries into the Genie; vertical, leave it alone entirely and take the Genie or the standups, which are wide open when it sits that way.",
+      "reps": "one ball, calling the post angle out loud before each shot",
+      "focus": "accuracy",
+      "goal": "the-lamp",
+      "shots": [
+        "lamp",
+        "genie",
+        "left-standups",
+        "right-standups"
+      ]
+    },
+    {
+      "id": "genie-and-hidden-treasure",
+      "title": "Five Genie Hits",
+      "text": "Spell G-E-N-I-E in as few visits as you can manage, and go hunting for the tiny standup buried behind the Lamp while you do — a hit there registers as a Genie hit. Knowing that second target exists gives you a second angle on the shot that lights every lock.",
+      "reps": "5 full spellings",
+      "focus": "accuracy",
+      "goal": "multiball",
+      "shots": [
+        "genie",
+        "hidden-treasure"
+      ]
+    },
+    {
+      "id": "tiger-loop-repeats",
+      "title": "Tiger Loop Repeats",
+      "text": "Each inlane lights the Tiger Loop on the opposite orbit, and a made orbit relights itself, so the shot is built to be run back to back. Take it off the inlane feed you are already getting rather than manufacturing a fresh look at it.",
+      "reps": "10 consecutive loops",
+      "focus": "flow",
+      "goal": "tiger-loops",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "shooting-star-relights",
+      "title": "Relight Both Stars",
+      "text": "Any hit on a standup bank relights the Shooting Star on that side, and a lit star grabs a draining ball before it reaches the outlane. The right bank is the one that matters, because it is tucked behind the Lamp and right-side drains are common here — make relighting it a habit before you go chasing anything else.",
+      "reps": "one ball, both stars kept lit",
+      "focus": "ball-control",
+      "goal": "shooting-stars",
+      "shots": [
+        "left-standups",
+        "right-standups",
+        "left-outlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "fireball-ramp-to-genie",
+      "title": "Ramp, Then Genie",
+      "text": "Take the Ramp while its purple light is on and go straight at the Genie — you have about twenty seconds and no reason to spend any of them cradling. A repeat Ramp shot inside the countdown only buys more time and will not raise the award, so treat the Genie as the shot you were always making.",
+      "reps": "8 Fireballs",
+      "focus": "flow",
+      "goal": "fireball",
+      "shots": [
+        "ramp",
+        "genie"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "magic",
+  "actionButton": {
+    "present": false,
+    "how": "Flippers and a shooter rod, nothing more. The Shooting Stars magnets beside the outlanes do the job a magna-save button would do on an older game, but they arm and fire themselves — you never get to press anything."
+  },
+  "howItPlays": {
+    "objective": "Rub the magic Lamp and work through seven Tales from the Arabian Nights, banking a Jewel from each one. Collect all seven Jewels to reach the Genie Battle, and spin the center Lamp all game, because it feeds both a scoring frenzy and the largest end-of-ball bonus on the table.",
+    "loop": [
+      "Spin the center Lamp on every trip through the middle -- each half turn banks bonus and fills the ring of blue lights toward Lightning Lamp.",
+      "Start a Tale at the lit Genie, finish what it asks on the Golden Symbol shots, then take the Ramp for its Jewel.",
+      "Hit the Genie to spell G-E-N-I-E, which lights the three locks; lock two balls and shoot the Genie again for Multiball.",
+      "Keep both Shooting Stars lit off the standup banks so a wild ball is caught before it reaches an outlane.",
+      "Gather a Jewel from all seven Tales to light the Genie Battle for the Princess."
+    ],
+    "lights": [
+      {
+        "id": "genie-letters",
+        "name": "G-E-N-I-E Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "genie"
+          }
+        ],
+        "lit": "Every Genie strike lights the next letter of G-E-N-I-E, and the tiny Hidden Treasure standup buried behind the Lamp counts as a Genie hit toward it.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the word and Lock turns on at three spots at once -- both orbits and the center lane. Lock two balls, then hit the lit Genie so its magnet drags the ball into play and Multiball begins.",
+        "goals": [
+          "multiball"
+        ]
+      },
+      {
+        "id": "lock-shots",
+        "name": "Lit Lock Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "lock"
+          }
+        ],
+        "lit": "With the word spelled, all three lock shots glow together; after the first lock of the game they hold their light, and the second lock darkens them and lights the Genie instead.",
+        "flashing": null,
+        "control": null,
+        "then": "Drop two balls in any mix of the orbits and the center lane, then take the lit Genie for Multiball. If the magnet misses the ball you get no credit, so line the Genie up and shoot it again.",
+        "goals": [
+          "multiball"
+        ]
+      },
+      {
+        "id": "golden-symbols",
+        "name": "Golden Symbol Tale Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-standups"
+          },
+          {
+            "shot": "right-standups"
+          },
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Five Golden Symbol shots glow to mark whichever Tale is live, with a separate Start light tucked just below the Genie magnet, and only one Tale ever runs at a time.",
+        "flashing": null,
+        "control": {
+          "input": "left-flipper",
+          "effect": "before the ball is in play, tap the left flipper to walk the selection through the seven Tales and settle on the one you want (a slingshot hit nudges it along too)",
+          "when": "at the start of a ball with nothing else running"
+        },
+        "then": "Choose a Tale, begin it by hitting the lit Genie, clear what it asks on the glowing symbols, then shoot the Ramp for the Jewel -- the next Tale stays locked until that Jewel is banked.",
+        "goals": [
+          "modes-overview",
+          "genie-battle"
+        ]
+      },
+      {
+        "id": "lamp-spins",
+        "name": "Lamp Spins",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "lamp"
+          }
+        ],
+        "lit": "The ring of blue lights around the Lamp tracks your spins, lighting one per half turn for bonus; that ring resets each ball while fixed markers for your running totals stay lit across balls.",
+        "flashing": null,
+        "control": null,
+        "then": "Fill the blue ring to set off Lightning Lamp, a spinning frenzy that pays heavily and keeps retriggering as your spin total climbs. Read the post angle first: flat like a clock at nine and three, one clean shot clears the ring; stood upright, leave it be and take the Genie instead.",
+        "goals": [
+          "the-lamp",
+          "lightning-lamp"
+        ]
+      },
+      {
+        "id": "harem-letters",
+        "name": "H-A-R-E-M Orbit",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Harem lights the Left Orbit at the top of every ball, and each shot there banks a letter of H-A-R-E-M while flipping the diverter so the ball rides up into the Jet Bumpers.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell all five letters for a second, self-standing way into Harem Multiball. That orbit light only returns once anything else lit there has run down, so it is often quicker to trap and wait than to force the shot.",
+        "goals": [
+          "harem",
+          "harem-multiball"
+        ]
+      },
+      {
+        "id": "bazaar-letters",
+        "name": "B-A-Z-A-A-R Scoop",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "bazaar-standup"
+          },
+          {
+            "shot": "ramp-standup"
+          },
+          {
+            "shot": "bazaar"
+          }
+        ],
+        "lit": "The two small targets beside the Ramp and Bazaar, plus an unlit Bazaar scoop shot, all spot letters of B-A-Z-A-A-R, with the first spelling spotting several a hit and fewer each later time.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the word and the scoop pays a genuinely random award -- points, Hold Bonus X, Light Locks, extra Lamp spins, even a rare Extra Ball. When Make A Wish lights the same scoop, the left flipper takes Jewels and the right takes the random award, and a Jewel usually wins since it can finish a Tale without playing it.",
+        "goals": [
+          "bazaar",
+          "make-a-wish"
+        ]
+      },
+      {
+        "id": "tiger-loops",
+        "name": "Tiger Loops",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Rolling an inlane lights the Tiger Loop on the far orbit -- left inlane lights the right orbit, right inlane lights the left -- and a made loop relights itself so a smooth table runs it again and again.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank loops all game toward Extra Ball, which tends to light around a half-dozen loops with a second waiting far deeper. Loops stop counting while a Tale is using the orbits, so run them between Tales.",
+        "goals": [
+          "tiger-loops"
+        ]
+      },
+      {
+        "id": "shooting-stars",
+        "name": "Shooting Star Saves",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-standups"
+          },
+          {
+            "shot": "left-shooting-star"
+          },
+          {
+            "shot": "right-standups"
+          },
+          {
+            "shot": "right-shooting-star"
+          }
+        ],
+        "lit": "Any hit on a standup bank lights the Shooting Star on that side, whose spikes punch up to grab a draining ball, and it holds its light until it is actually used.",
+        "flashing": null,
+        "control": null,
+        "then": "Make relighting both a habit -- especially the right bank hidden behind the Lamp -- since right-side drains come often and a spent star sits dark until you relight it. During Multiball the game stops re-serving balls a star misses, so they matter most when they help least.",
+        "goals": [
+          "shooting-stars"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Land the three-basket skill shot off the plunge, then go straight to the Ramp for the Super Skill Shot stacked on top. Start spinning the Lamp early, because its bonus carries from ball to ball, and keep both Shooting Stars lit so a loose ball is caught instead of lost.",
+        "goals": [
+          "skillshot",
+          "super-skillshot",
+          "the-lamp",
+          "shooting-stars"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell G-E-N-I-E for Multiball and work the Tales for Jewels, Wishing the ugly ones away at the Bazaar. Run Tiger Loops between Tales for Extra Balls, and fill the blue ring for a Lightning Lamp frenzy.",
+        "goals": [
+          "multiball",
+          "modes-overview",
+          "tiger-loops",
+          "lightning-lamp"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Gather a Jewel from all seven Tales to light the Genie Battle. Clear the Skeletons, take the forced lock, then duel the Genie with balls served endlessly until the Princess is freed -- a flat twenty million, the biggest single score the game gives up.",
+        "goals": [
+          "genie-battle"
+        ]
+      }
+    ]
+  }
+}

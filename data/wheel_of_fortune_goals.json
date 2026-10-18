@@ -1,0 +1,1202 @@
+{
+  "machine": "Wheel of Fortune (Stern, 2007)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Manual plunger. A firm-but-not-full plunge carries the ball around the Toss-Up loop; a hard plunge sends it into the pop bumpers instead."
+    },
+    {
+      "id": "toss-up-loop",
+      "name": "Toss-Up Loop",
+      "type": "loop",
+      "x": 0.84,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "The skill shot path. Its switch pays 1M outside the skill shot, climbing 250K per hit to a 2.5M ceiling — worth knowing if you have the plunge dialled in."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane / Free Spin Lanes",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Non-standard. A drained ball passes two rollover lanes marked Free Spin. Draining down a lit one instantly relaunches the ball, so a nudge here can save a ball outright."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane / Free Spin Lanes",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same two-rollover arrangement as the left. Unlit Free Spins carry over to the next ball, so you can end up with all four lit at once."
+    },
+    {
+      "id": "wild-card",
+      "name": "Wild Card Lane",
+      "type": "lane",
+      "x": 0.1,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "A C-shaped lane on the far left. Lit by the third inline drop target, it pays a random award plus the Wild Card value the bumpers have been building."
+    },
+    {
+      "id": "mu-targets",
+      "name": "M and U Standups",
+      "type": "standup",
+      "x": 0.17,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Two green standups from the MULTIBALL set, sitting left of the ramp entrance."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.09,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "A rollover switch further up the lane is what registers this one. Hit it hard and the ball comes back to your right flipper; the bumpers dribble balls into this lane too.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.3,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Three of them, fed by right orbit shots and hard plunges. Base value 1K, and every hit also feeds the Wild Card value."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Only a strong shot registers — a weak one misses the loop at the top and counts for nothing. Returns to the left flipper and doubles your next shot.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "l-target",
+      "name": "L Standup",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Left-hand guard on the scoop and another MULTIBALL letter."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop",
+      "type": "scoop",
+      "x": 0.5052,
+      "y": 0.6567,
+      "trim": "all",
+      "notes": "The decision shot. Buy a Vowel, Solve Puzzle, start Wheel of Fortune Multiball, take a lit extra ball or jackpot, and stop the Bonus Wheel light to pick a mode all happen here."
+    },
+    {
+      "id": "t-target",
+      "name": "T Standup",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Right-hand guard on the scoop, and another MULTIBALL letter."
+    },
+    {
+      "id": "lonnie",
+      "name": "Lonnie (Red Contestant)",
+      "type": "standup",
+      "x": 0.3755,
+      "y": 0.8358,
+      "trim": "all",
+      "notes": "Red bobblehead and standup. His banked points come from whatever the red arrow is sitting on when he guesses a letter."
+    },
+    {
+      "id": "maria",
+      "name": "Maria (Yellow Contestant)",
+      "type": "standup",
+      "x": 0.5026,
+      "y": 0.8358,
+      "trim": "all",
+      "notes": "The middle contestant, tied to the yellow arrow. Yellow is the wedge most modes lean on, so Maria matters more than her position suggests."
+    },
+    {
+      "id": "keith",
+      "name": "Keith (Blue Contestant)",
+      "type": "standup",
+      "x": 0.6297,
+      "y": 0.8358,
+      "trim": "all",
+      "notes": "Blue bobblehead and standup on the right of the trio."
+    },
+    {
+      "id": "wheel",
+      "name": "The Wheel",
+      "type": "toy",
+      "x": 0.5007,
+      "y": 0.9552,
+      "trim": "all",
+      "notes": "Twenty-four wedges behind the contestants, with three coloured arrows on top. Values are randomised each game, and two of the wedges — Bankrupt and Lose A Turn — actively hurt you."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "The ball turns 180 degrees and feeds the left flipper. Use it to respin the Wheel: its values are replaced with a fresh set, both in normal play and inside most modes.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.74,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Blocked by three inline drop targets until they are down. Feeds the right flipper and doubles whatever you shoot next.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "inline-drops",
+      "name": "Inline Drop Targets",
+      "type": "drop-target",
+      "x": 0.7,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Three in a row guarding the right ramp: Light Free Spin, Light Big Money, Light Wild Card, front to back. Each one is a separate feature, not just a gate."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Feeds the pop bumpers. Each orbit shot also steps the bumper multiplier up, to a 5X ceiling.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "ball-targets",
+      "name": "BALL Standup Bank",
+      "type": "target-bank",
+      "x": 0.84,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Four green standups low on the right, the last chunk of the MULTIBALL set. Extra hits here before you start multiball push the jackpot base up."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "The left ramp feeds it, and Super Bumpers can be lit here."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Lights the left loop for Super Loops — a five-second window, so the follow-up shot has to be immediate."
+    },
+    {
+      "id": "big-money",
+      "name": "Big Money Rollovers",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Two lanes between the flippers, split by a post. Draining down a lit one spins the Wheel and pays what it lands on — the only drain in pinball you should be happy about."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "toss-up-skillshot",
+      "title": "Toss-Up Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge hard but not full so the ball rides the Toss-Up loop. It pays a million, plus another million for every skill shot you have already made this game. Then shoot the scoop for a hurry-up starting at double what the skill shot paid.",
+      "difficulty": 2,
+      "reward": "1M and climbing, plus a doubled hurry-up",
+      "steps": [
+        {
+          "shot": "toss-up-loop",
+          "action": "Plunge just short of full to ride the loop",
+          "detail": "Too hard and the ball skips into the bumpers; too soft and it never reaches the loop switch. One million, plus one million for each skill shot already collected this game."
+        },
+        {
+          "shot": "scoop",
+          "action": "Cash the hurry-up at the scoop",
+          "detail": "The scoop hurry-up starts at twice the skill shot value and counts down from there."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "solve-the-puzzle",
+      "title": "Solving Puzzles",
+      "category": "progression",
+      "summary": "The puzzle is the spine of the game. Hitting a contestant makes them guess a consonant, and the value of that letter is whatever their coloured arrow is sitting on. Clear all the consonants for a one million bonus and all the vowels for two.",
+      "difficulty": 2,
+      "reward": "1M for all consonants, 2M for all vowels, 50K to bonus per puzzle",
+      "steps": [
+        {
+          "shot": "lonnie",
+          "action": "Hit a contestant to guess a letter",
+          "detail": "The letter's value is the wedge their arrow currently points at."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Respin when the arrows are on junk",
+          "detail": "The center ramp gives all three contestants a fresh set of values."
+        },
+        {
+          "shot": "scoop",
+          "action": "Solve at the scoop",
+          "detail": "Each solved puzzle also adds 50K to your end-of-ball bonus."
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "flashing-contestant",
+      "title": "Control The Flashing Contestant",
+      "category": "strategy",
+      "summary": "One contestant always flashes instead of sitting solid, and everything bankable goes to that one. Since only the flashing contestant's prize bank pays out when you solve, deciding who is flashing at the moment of the solve is the single most valuable habit on this machine.",
+      "difficulty": 2,
+      "reward": "Directs every banked award",
+      "steps": [
+        {
+          "shot": "maria",
+          "action": "Hit a solidly lit contestant to switch",
+          "detail": "Whoever you just hit becomes the flashing one."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Or switch with the center ramp",
+          "detail": "Spinning the Wheel also changes who is flashing.",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Check before you solve",
+          "detail": "The bank that pays is the one belonging to the last contestant you lit."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "buy-a-vowel",
+      "title": "Buy A Vowel",
+      "category": "strategy",
+      "summary": "Once enough consonants are down, the scoop lights to buy a vowel. The points go to the flashing contestant like everything else, but a vowel also takes 25K back off that contestant's bank — so buy them when the arrows are on big wedges, not small ones.",
+      "difficulty": 2,
+      "reward": "Wedge value minus 25K, 2M for all vowels",
+      "steps": [
+        {
+          "shot": "lonnie",
+          "action": "Guess consonants first",
+          "detail": "Vowels only unlock after enough of the puzzle is filled in."
+        },
+        {
+          "shot": "scoop",
+          "action": "Buy at the scoop",
+          "detail": "Every vowel costs the flashing contestant 25K off their bank."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Time it with a good spin",
+          "detail": "A respin before buying can be worth several times the purchase.",
+          "link": "none"
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "prize-banks",
+      "title": "Load A Prize Bank",
+      "category": "strategy",
+      "summary": "Three items can drop into a contestant's prize bank: Extra Ball, Special and Trip. They arrive from lucky Wheel spins or from Wild Card awards. You only collect the bank of the contestant who was flashing when the puzzle was solved, so a Trip in the wrong bank is a Trip you never take.",
+      "difficulty": 3,
+      "reward": "Extra Ball, Special, or a Trip Multiball",
+      "steps": [
+        {
+          "shot": "wheel",
+          "action": "Land a prize wedge",
+          "detail": "Extra Ball, Special and Trip all sit on the Wheel among the point values."
+        },
+        {
+          "shot": "keith",
+          "action": "Make that contestant flash",
+          "detail": "Hit them while they are solidly lit so they hold the flashing state into the solve."
+        },
+        {
+          "shot": "scoop",
+          "action": "Solve with the loaded contestant",
+          "detail": "Watch for Bankrupt — it wipes that contestant's points and prizes immediately."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "spell-bonus",
+      "title": "Spell B-O-N-U-S",
+      "category": "progression",
+      "summary": "Every major shot carries a BONUS letter: left ramp, center ramp, right ramp, left loop and right orbit. Collect all five and the scoop lights up, ready to launch any one of the seven Bonus Wheel modes.",
+      "difficulty": 2,
+      "reward": "Lights a Bonus Wheel mode at the scoop",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Work the ramps",
+          "detail": "Left, center and right ramps each hold a letter.",
+          "link": "none"
+        },
+        {
+          "shot": "left-loop",
+          "action": "Add the loop and orbit",
+          "detail": "The left loop and right orbit carry the other two.",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Stop the light at the scoop",
+          "detail": "The Bonus Wheel inserts chase like a spinning wheel; the scoop stops them and you get whatever they land on."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "bonus-wheel-modes",
+      "title": "Bonus Wheel Modes",
+      "category": "mode",
+      "summary": "Seven modes, one at a time, roughly thirty seconds each. Every one of them uses the Wheel — usually the three arrow values become the mode's scoring values — and the center ramp respins those values mid-mode. You cannot start one during multiball, but you can start one just before and stack them.",
+      "difficulty": 2,
+      "reward": "Varies by mode; bonus multiplier on tournament code",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start the mode",
+          "detail": "Which of the seven you get is effectively random; you cannot time the scoop to pick one."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Respin bad values",
+          "detail": "Bankrupt and Lose A Turn count as zero, so a spin that leaves them under an arrow is worth replacing."
+        },
+        {
+          "shot": "scoop",
+          "action": "Stack before a multiball",
+          "detail": "Start the mode first, then start multiball, and both run together."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "ramp-rampage",
+      "title": "Ramp Rampage",
+      "category": "mode",
+      "summary": "The cleanest of the Bonus Wheel modes. Left ramp scores ten times the red wedge, center ramp ten times the yellow, right ramp ten times the blue. Each hit on a ramp adds another ten to that ramp's own multiplier, so repeating one ramp compounds fast.",
+      "difficulty": 2,
+      "reward": "10x wedge value per ramp, climbing 10x per repeat",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Open with the center ramp",
+          "detail": "It scores off the yellow wedge and respins the Wheel at the same time."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Repeat whichever ramp got the big wedge",
+          "detail": "The multiplier is per ramp, so alternating throws away compounding."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep the drops down",
+          "detail": "The right ramp is unreachable until the three inline drops are cleared."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "risky-spinning",
+      "title": "Risky Spinning",
+      "category": "mode",
+      "summary": "All five BONUS shots light for a jackpot worth the sum of the currently lit wedge values. Hitting an unlit contestant lights them and adds their wedge into the total; hitting a lit one turns them off and takes it back out. Land on Bankrupt and the jackpot value goes with it.",
+      "difficulty": 3,
+      "reward": "Sum of lit wedges, with a climbing multiplier",
+      "steps": [
+        {
+          "shot": "lonnie",
+          "action": "Light contestants first",
+          "detail": "Every unlit contestant you hit folds their wedge into the jackpot."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Then start collecting",
+          "detail": "The multiplier climbs each time you collect, and resets once all five shots are made."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish the set",
+          "detail": "Avoid re-hitting a lit contestant — that removes their value from the jackpot."
+        }
+      ],
+      "fx": "dice",
+      "ordered": false
+    },
+    {
+      "id": "contestant-hurry-up",
+      "title": "Contestant Hurry-Up",
+      "category": "mode",
+      "summary": "Hit a contestant and the five BONUS shots light briefly for a hurry-up worth ten times that contestant's wedge. Every hurry-up you complete adds another five to the wedge multiplier, so this mode rewards a fast contestant-then-shot rhythm rather than hunting for one big shot.",
+      "difficulty": 2,
+      "reward": "10x wedge, +5x per completion",
+      "steps": [
+        {
+          "shot": "maria",
+          "action": "Hit a contestant to arm the hurry-up",
+          "detail": "Pick the one whose arrow is on the largest wedge."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Collect before the value drops",
+          "detail": "Any of the five BONUS shots takes it; the center ramp is the easiest repeat."
+        },
+        {
+          "shot": "keith",
+          "action": "Re-arm immediately",
+          "detail": "The multiplier only grows on completed hurry-ups, not attempted ones."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "wof-multiball",
+      "title": "Wheel of Fortune Multiball",
+      "category": "multiball",
+      "summary": "Complete the nine MULTIBALL standups, then shoot the scoop. Three balls, four lit jackpots starting at 750K and working from the left side across. Second is doubled, third tripled, fourth is a five-times Super Jackpot.",
+      "difficulty": 2,
+      "reward": "750K base, doubling to a 5x Super Jackpot",
+      "steps": [
+        {
+          "shot": "ball-targets",
+          "action": "Finish the MULTIBALL targets",
+          "detail": "First time round any target spots a letter; the second time each letter needs its own target once, and the third time twice."
+        },
+        {
+          "shot": "scoop",
+          "action": "Start it at the scoop",
+          "detail": "Extra target hits before you start add 7.5K to the base jackpot each, as does every Wheel revolution."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect the ladder",
+          "detail": "Jackpot, Double, Triple, then the 5x Super."
+        },
+        {
+          "shot": "lonnie",
+          "action": "Restart the sequence",
+          "detail": "The Super lights the three contestants; hitting one lights all six major shots for half a jackpot, and clearing those relights four jackpots."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "trip-multiball",
+      "title": "Trip Multiball",
+      "category": "multiball",
+      "summary": "Solve a puzzle with a contestant who is holding a Trip, or solve a Prize Puzzle. Three balls with the left ramp, scoop, center ramp and right ramp lit from 500K. The base value grows by 100K each time you clear a wave, and back-to-back jackpots double the next one.",
+      "difficulty": 3,
+      "reward": "500K base rising 100K per wave, up to a 5x Super",
+      "steps": [
+        {
+          "shot": "wheel",
+          "action": "Get a Trip into a bank",
+          "detail": "A Trip wedge or the right Wild Card award drops one in."
+        },
+        {
+          "shot": "scoop",
+          "action": "Solve with that contestant flashing",
+          "detail": "Starting Trip Multiball overrides a lit Bonus Wheel mode at the scoop, so cash the mode first if you want both."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Chain the jackpots",
+          "detail": "Each collection unlights that shot; the remaining ones pay Double, Triple and a 5x Super."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Combo them",
+          "detail": "A jackpot taken immediately after another adds a 2x multiplier to the next one."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "ramp-multipliers",
+      "title": "Ramp Multipliers",
+      "category": "multiplier",
+      "summary": "Either outer ramp doubles your very next shot. Combo the left ramp into the right ramp — which needs all three inline drops already down — and the next shot is quadrupled instead. Set this up before a jackpot rather than spending it on a standup.",
+      "difficulty": 2,
+      "reward": "2x next shot, or 4x from a ramp-to-ramp combo",
+      "steps": [
+        {
+          "shot": "inline-drops",
+          "action": "Clear the drops first",
+          "detail": "The 4x combo is impossible while the right ramp is still guarded."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Left ramp, then right ramp",
+          "detail": "Both ramps in sequence arms the 4x."
+        },
+        {
+          "shot": "scoop",
+          "action": "Spend it on something big",
+          "detail": "Point the multiplied shot at a jackpot or a hurry-up, not at a target."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "free-spins",
+      "title": "Free Spins",
+      "category": "strategy",
+      "summary": "Knock down the first inline drop target and the outlane rollovers light for Free Spin — a drain down a lit lane relaunches the ball immediately. Two light per target hit, and unused ones carry to the next ball, so you can be playing with all four banked.",
+      "difficulty": 1,
+      "reward": "Instant ball save on a lit outlane",
+      "steps": [
+        {
+          "shot": "inline-drops",
+          "action": "Take the front drop target",
+          "detail": "Light Free Spin is the first of the three."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Nudge into a lit lane",
+          "detail": "Each outlane has two rollovers; only the lit one saves you."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Bank them",
+          "detail": "Unused Free Spins carry over, so relighting on a later ball can leave all four live.",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wild-card",
+      "title": "Wild Card",
+      "category": "secret",
+      "summary": "The third inline drop lights the C-shaped lane on the far left. The award is random in normal play but comes in a fixed order under competition rules, opening with a ten-times bonus, then Complete Puzzle, then Light Bank Specials. The lane also cashes the Wild Card value the bumpers have been stacking, up to 500K.",
+      "difficulty": 2,
+      "reward": "Random award plus the banked Wild Card value",
+      "steps": [
+        {
+          "shot": "inline-drops",
+          "action": "Take the back drop target",
+          "detail": "Light Wild Card is the deepest of the three inline drops."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Build the value first",
+          "detail": "Every bumper hit adds to the Wild Card value, which resets at end of ball unless you have held it.",
+          "link": "none"
+        },
+        {
+          "shot": "wild-card",
+          "action": "Collect the lane",
+          "detail": "If a Prize Puzzle is already running when the Wild Card hands you Complete Puzzle, the code is known to break — expect odd behaviour."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "big-money",
+      "title": "Big Money",
+      "category": "multiplier",
+      "summary": "The middle inline drop lights the two lanes between the flippers. Drain down a lit one and the Wheel spins for whatever it lands on, with a multiplier that grows by five every time you collect. Knock the target down while both lanes are already lit and you take a flat million instead.",
+      "difficulty": 2,
+      "reward": "Wheel value, multiplier climbing 5x per collect",
+      "steps": [
+        {
+          "shot": "inline-drops",
+          "action": "Take the middle drop target",
+          "detail": "Light Big Money sits between Free Spin and Wild Card."
+        },
+        {
+          "shot": "big-money",
+          "action": "Let it drain down a lit lane",
+          "detail": "A post splits the two lanes, so a straight centre drain is not automatic — steer it."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Watch for an extra ball",
+          "detail": "If Big Money hands you an extra ball the ball returns to the plunger with your modes still running, and no end-of-ball bonus is paid."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "pop-bumper-value",
+      "title": "Feed The Bumpers",
+      "category": "strategy",
+      "summary": "Bumpers open at 1K and add 100 points every ten hits to a 1.5K ceiling, and that base is multiplied by a factor that grows with every right orbit shot up to five times. Every hit also feeds the Wild Card value, which is the real reason to care.",
+      "difficulty": 1,
+      "reward": "Up to 1.5K x 5, and a growing Wild Card value",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Step the multiplier",
+          "detail": "Each orbit shot raises the bumper multiplier, capping at 5X."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball work",
+          "detail": "Orbits and hard plunges both feed the bumper nest."
+        },
+        {
+          "shot": "wild-card",
+          "action": "Cash the stack",
+          "detail": "The Wild Card value tops out at 500K and resets at end of ball unless held."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "super-modes",
+      "title": "Super Bumpers And Super Loops",
+      "category": "multiplier",
+      "summary": "The inlanes each arm a short super. Super Bumpers lifts the bumpers to 25K a hit, climbing a thousand at a time, and ends the moment the ball leaves the nest. Super Loops makes the left loop worth 125K up to 250K, doubled, on a five-second timer.",
+      "difficulty": 2,
+      "reward": "25K bumpers, or a doubled 125K-250K loop",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right inlane",
+          "detail": "This lights the left loop for Super Loops."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Shoot the loop immediately",
+          "detail": "Five seconds is not much — be ready before the ball reaches the flipper."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Use Super Bumpers differently",
+          "detail": "It runs until the ball leaves the bumpers, so a shot that parks the ball up there is what you want.",
+          "link": "none"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "left-loop-holds",
+      "title": "Left Loop Hold Awards",
+      "category": "strategy",
+      "summary": "Every fourth left loop shot pays a Hold award, in a fixed order: Bonus Value, Bumper Value, Wild Card Value, Bumper X, Bonus X, Left Loop Value, Right Orbit Value. Loop totals carry from ball to ball, which makes this a slow-burn feature worth starting early.",
+      "difficulty": 2,
+      "reward": "One held value or multiplier every four loops",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Bank loops in fours",
+          "detail": "The count carries between balls, so partial progress is never wasted."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Time Hold Wild Card Value well",
+          "detail": "Holding the Wild Card value stops it resetting at end of ball — build it first, then hold it.",
+          "link": "none"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Stack Super Loops on top",
+          "detail": "Super Loops makes the same shots pay while still counting toward the next Hold.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "extra-balls",
+      "title": "Extra Balls And Specials",
+      "category": "progression",
+      "summary": "Two routes to an extra ball and only one to a Special, and both of the good ones run through the prize banks. Know them before you spend a solve on the wrong contestant.",
+      "difficulty": 2,
+      "reward": "Extra ball or Special",
+      "steps": [],
+      "instructions": [
+        "Ten ramp shots light the extra ball — any mix of left, center and right counts.",
+        "An Extra Ball wedge from the Wheel, or the right Wild Card award, drops one into a contestant's prize bank instead.",
+        "Banked prizes only pay out for the contestant who is flashing at the moment you solve the puzzle.",
+        "The Special works the same way and has no other route: bank it, then solve with that contestant.",
+        "Under tournament rules an extra ball is scored as five million rather than an actual ball."
+      ],
+      "fx": "crown"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "wof-skillshot",
+      "title": "Toss-Up",
+      "desc": "Ride the Toss-Up loop off the plunge and collect the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "toss-up-skillshot"
+    },
+    {
+      "id": "wof-puzzle",
+      "title": "I'd Like To Solve",
+      "desc": "Complete a puzzle at the scoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "solve-the-puzzle"
+    },
+    {
+      "id": "wof-free-spin",
+      "title": "Saved By The Lane",
+      "desc": "Drain down a lit Free Spin rollover and get the ball straight back.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "free-spins"
+    },
+    {
+      "id": "wof-mode",
+      "title": "Spin For A Mode",
+      "desc": "Spell BONUS and start any Bonus Wheel mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-wheel-modes"
+    },
+    {
+      "id": "wof-quad",
+      "title": "Four Times Over",
+      "desc": "Combo both outer ramps to arm the 4x multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ramp-multipliers"
+    },
+    {
+      "id": "wof-multiball",
+      "title": "Nine Green Targets",
+      "desc": "Complete the MULTIBALL standups and start Wheel of Fortune Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "wof-multiball"
+    },
+    {
+      "id": "wof-bigmoney",
+      "title": "Big Money",
+      "desc": "Collect a Big Money award by draining down a lit centre lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "big-money"
+    },
+    {
+      "id": "wof-super-jackpot",
+      "title": "Super Jackpot",
+      "desc": "Climb the multiball ladder all the way to the 5x Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wof-multiball"
+    },
+    {
+      "id": "wof-trip",
+      "title": "Pack Your Bags",
+      "desc": "Bank a Trip and solve the puzzle with that contestant to start Trip Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "trip-multiball"
+    },
+    {
+      "id": "wof-rampage",
+      "title": "Rampage",
+      "desc": "Stack ramp multipliers inside Ramp Rampage for a compounded ramp value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ramp-rampage"
+    },
+    {
+      "id": "wof-special",
+      "title": "Bank The Special",
+      "desc": "Put a Special into a prize bank and collect it by solving with that contestant.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "extra-balls"
+    }
+  ],
+  "drills": [
+    {
+      "id": "toss-up-plunge-reps",
+      "title": "Toss-Up Plunge Reps",
+      "text": "Find the firm-but-not-full pull that carries the ball around the Toss-Up loop instead of skipping into the bumpers or dying short of the switch. Once the plunge is repeatable, add the scoop hurry-up on the end so the whole opener is one routine.",
+      "reps": "12 plunges, then 5 with the scoop follow-up",
+      "focus": "skill-shot",
+      "goal": "toss-up-skillshot",
+      "shots": [
+        "shooter-lane",
+        "toss-up-loop",
+        "scoop"
+      ]
+    },
+    {
+      "id": "left-ramp-full-strength",
+      "title": "Left Ramp, Full Strength",
+      "text": "Shoot the left ramp only at full power and watch for the ball making the loop at the top, because a weak one misses it and registers nothing at all. Judge each rep by whether it counted, not by whether it went up the ramp.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "ramp-multipliers",
+      "shots": [
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "flashing-contestant-control",
+      "title": "Pick Who Is Flashing",
+      "text": "Decide which of Lonnie, Maria and Keith you want holding the payout, hit that one while they are solidly lit, and only then take the scoop. Practise checking who is flashing before every solve, and use the center ramp to respin when all three arrows are parked on junk.",
+      "reps": "5 solves, naming your contestant first",
+      "focus": "accuracy",
+      "goal": "flashing-contestant",
+      "shots": [
+        "lonnie",
+        "maria",
+        "keith",
+        "center-ramp",
+        "scoop"
+      ]
+    },
+    {
+      "id": "ramp-multiplier-combo",
+      "title": "Left Ramp Into Right Ramp",
+      "text": "Clear the three inline drops first, then run left ramp straight into right ramp to arm the four-times multiplier and put it on the scoop. Spending a 4x on a standup is the most common way players waste this combo.",
+      "reps": "8 combos",
+      "focus": "flow",
+      "goal": "ramp-multipliers",
+      "shots": [
+        "inline-drops",
+        "left-ramp",
+        "right-ramp",
+        "scoop"
+      ]
+    },
+    {
+      "id": "super-loop-window",
+      "title": "Five-Second Super Loop",
+      "text": "Roll the right inlane and fire the left loop without a beat in between — the window is five seconds and the decision has to already be made when the ball reaches your flipper. Hit it hard so the ball comes back to the right flipper and you are set up for the next one.",
+      "reps": "10 windows",
+      "focus": "flow",
+      "goal": "super-modes",
+      "shots": [
+        "right-inlane",
+        "left-loop"
+      ]
+    },
+    {
+      "id": "drain-lane-steering",
+      "title": "Steer Your Drains",
+      "text": "This is the rare machine where the bottom of the playfield pays. Practise nudging a lost ball into a lit Free Spin rollover in the outlane and steering a centre drain past the post into a lit Big Money lane rather than letting it pick a side on its own.",
+      "reps": "one ball spent only on steering drains",
+      "focus": "ball-control",
+      "goal": "free-spins",
+      "shots": [
+        "left-outlane",
+        "right-outlane",
+        "big-money"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "cash",
+  "actionButton": {
+    "present": false,
+    "how": "The Wheel spins itself — there is no spin button to hunt for. Stern had not started fitting a lockdown-bar button in 2007, so it is flippers and the shooter rod, and the rod is the one worth practising: a firm but not full plunge rides the Toss-Up loop for a million that grows with every skill shot you have already banked."
+  },
+  "howItPlays": {
+    "objective": "Wheel of Fortune is a TV-show game where you solve word puzzles for points set by a spinning wheel. Make the contestants guess letters, steer prizes into the right bank, and stop the wheel on its big wedges while chasing Multiball and the Bonus Wheel modes.",
+    "loop": [
+      "Hit a contestant to make them guess a consonant worth whatever their colored arrow points at on the Wheel; respin junk values on the center ramp.",
+      "Keep the contestant holding your prizes flashing, then solve the puzzle at the scoop so the payout lands in the right bank.",
+      "Spell B-O-N-U-S across the five major shots to light a Bonus Wheel mode at the scoop.",
+      "Finish the nine MULTIBALL standups and shoot the scoop for the three-ball jackpot ladder.",
+      "Knock down the inline drops to open the right ramp and light Free Spin, Big Money and Wild Card."
+    ],
+    "lights": [
+      {
+        "id": "bonus-letters",
+        "name": "B-O-N-U-S Shots",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Each of the five major shots -- the three ramps, the left loop and the right orbit -- carries one letter of BONUS, and a lit letter is simply one you have not collected.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete BONUS and the scoop lights, with the mode inserts chasing round like a game-show wheel. Stop them at the scoop to launch one of the seven Bonus Wheel modes -- and start it just before a multiball if you want the two stacked.",
+        "goals": [
+          "spell-bonus",
+          "bonus-wheel-modes"
+        ]
+      },
+      {
+        "id": "contestants-puzzle",
+        "name": "The Contestants",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lonnie"
+          },
+          {
+            "shot": "maria"
+          },
+          {
+            "shot": "keith"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Lonnie, Maria and Keith each track a colored arrow on the Wheel, hitting one makes that contestant guess a consonant worth the wedge under their arrow, and whoever you last struck becomes the flashing contestant -- the only one whose banked prizes pay out when you solve.",
+        "flashing": null,
+        "control": null,
+        "then": "Set the flashing contestant on purpose before you solve at the scoop, and respin the arrows off the center ramp when they park on junk or a Bankrupt wedge. Clear the consonants for a bonus and buy the vowels once enough of the puzzle shows.",
+        "goals": [
+          "solve-the-puzzle",
+          "flashing-contestant",
+          "buy-a-vowel",
+          "prize-banks"
+        ]
+      },
+      {
+        "id": "the-wheel",
+        "name": "The Wheel",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "wheel"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "The Wheel's two dozen wedges are reshuffled every game and its three colored arrows set the value of every letter and most mode shots, but two wedges bite -- Bankrupt wipes a contestant's points and prizes, and Lose A Turn pays nothing.",
+        "flashing": null,
+        "control": null,
+        "then": "Respin a bad spread on the center ramp, which swaps in a fresh set of values. Land Extra Ball, Special or Trip wedges into a contestant's bank, then solve with that contestant flashing to collect -- a Trip banked that way starts Trip Multiball.",
+        "goals": [
+          "prize-banks",
+          "trip-multiball",
+          "buy-a-vowel"
+        ]
+      },
+      {
+        "id": "multiball-standups",
+        "name": "MULTIBALL Standups",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "mu-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "l-target"
+          },
+          {
+            "shot": "t-target"
+          },
+          {
+            "shot": "ball-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "The green MULTIBALL standups are spread left, center and right, and the first pass lets any target spot the next letter, the second pass makes each letter want its own target, and the third asks for it twice.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the word and start three-ball Multiball at the scoop. Bang extra targets and spin the Wheel a few more times first to raise the base jackpot, then climb the ladder -- Jackpot, Double, Triple and a five-times Super.",
+        "goals": [
+          "wof-multiball"
+        ]
+      },
+      {
+        "id": "inline-drop-features",
+        "name": "Inline Drop Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "inline-drops",
+            "lamps": 3
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "big-money"
+          },
+          {
+            "shot": "wild-card"
+          }
+        ],
+        "lit": "Three drop targets stack in front of the right ramp, each one a feature rather than a plain gate -- front to back they Light Free Spin, Light Big Money and Light Wild Card -- and while any stand the right ramp stays blocked.",
+        "flashing": null,
+        "control": null,
+        "then": "The front drop lights the outlane Free Spins that relaunch a drained ball; the middle lights the Big Money lanes between the flippers that spin the Wheel on a drain; the back lights the far-left Wild Card lane. Clear all three to open the right ramp for its multiplier and jackpots.",
+        "goals": [
+          "free-spins",
+          "big-money",
+          "wild-card"
+        ]
+      },
+      {
+        "id": "ramp-multipliers-2x4x",
+        "name": "Ramp Multipliers",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Either outer ramp lights your very next shot for double, though the right ramp only opens once the three inline drops are down.",
+        "flashing": null,
+        "control": null,
+        "then": "Combo the left ramp straight into the right ramp to arm a 4X instead of a 2X, then spend it on something worth multiplying -- a jackpot or a hurry-up, never a standup. Set it up ahead of a big shot rather than wasting it on a target.",
+        "goals": [
+          "ramp-multipliers"
+        ]
+      },
+      {
+        "id": "bumpers-supers",
+        "name": "Pop Bumpers & Supers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "wild-card"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-loop"
+          }
+        ],
+        "lit": "Right-orbit shots feed the pop bumpers and step their multiplier toward 5X, every bumper hit also grows the Wild Card value that the far-left lane cashes, and the two inlanes each arm a short Super.",
+        "flashing": null,
+        "control": null,
+        "then": "Stack the Wild Card value in the bumpers, then collect it at the Wild Card lane before it resets at the end of the ball. Pass the right inlane and shoot the left loop inside five seconds for Super Loops; the left inlane instead lifts the bumpers to Super Bumpers until the ball leaves the nest.",
+        "goals": [
+          "pop-bumper-value",
+          "super-modes",
+          "wild-card",
+          "left-loop-holds"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Ride the Toss-Up loop off a firm plunge for the skill shot, then cash its doubled hurry-up at the scoop. Start solving puzzles -- hit contestants, respin bad values, solve -- and knock the front inline drop to bank Free Spins as insurance.",
+        "goals": [
+          "toss-up-skillshot",
+          "solve-the-puzzle",
+          "free-spins"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell BONUS for a Bonus Wheel mode, set up the ramp multipliers, and steer Extra Ball, Special or Trip prizes into the flashing contestant's bank. Feed the bumpers to grow the Wild Card value as you build toward multiball.",
+        "goals": [
+          "spell-bonus",
+          "bonus-wheel-modes",
+          "ramp-multipliers",
+          "prize-banks",
+          "pop-bumper-value"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The multiballs are the top end. Finish the MULTIBALL standups for the three-ball jackpot ladder up to its five-times Super, and bank a Trip to start Trip Multiball off a solve. A Special routed into the right contestant's bank is the game's rarest collect.",
+        "goals": [
+          "wof-multiball",
+          "trip-multiball",
+          "extra-balls"
+        ]
+      }
+    ]
+  }
+}

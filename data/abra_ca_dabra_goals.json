@@ -1,0 +1,817 @@
+{
+  "machine": "Abra Ca Dabra (Gottlieb, 1975)",
+  "defaultFx": "magic",
+  "shots": [
+    {
+      "id": "plunger-lane",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Manual spring plunger, right outer edge. Feeds the ball up the right rail and over the top arch into whichever of top lanes 1-4 it settles in. Strategy: aim for lane 2 or 3 — lanes 1 and 4 are SDTM-prone off a hard plunge."
+    },
+    {
+      "id": "top-lane-1",
+      "name": "Top Lane 1",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Outermost of four top rollover lanes. Part of the 1-2-3-4 sequence. Also reachable by direct flipper shot up the left channel.",
+      "flipper": "left"
+    },
+    {
+      "id": "top-lane-2",
+      "name": "Top Lane 2",
+      "type": "lane",
+      "x": 0.42,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Second from left; primary plunge target, low drain risk."
+    },
+    {
+      "id": "top-lane-3",
+      "name": "Top Lane 3",
+      "type": "lane",
+      "x": 0.55,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Second from right; primary plunge target, mirrors lane 2."
+    },
+    {
+      "id": "top-lane-4",
+      "name": "Top Lane 4",
+      "type": "lane",
+      "x": 0.66,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Outermost right top lane; flipper shot up the right channel, riskier off the plunge.",
+      "flipper": "right"
+    },
+    {
+      "id": "left-drop-bank",
+      "name": "Left Drop Target Bank",
+      "type": "target-bank",
+      "x": 0.26,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "5 standard drop targets angled diagonally, upper-left playfield. One target lit at a time, cycling with hits (lamp sequencing, no physical motion). Unlit target = 500 pts; lit target = current Bonus Value. Clearing this bank alone lights the center bullseye — true on both 3-ball and 5-ball settings."
+    },
+    {
+      "id": "right-drop-bank",
+      "name": "Right Drop Target Bank",
+      "type": "target-bank",
+      "x": 0.74,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Mirror of the left bank, upper-right playfield. Clearing this bank alone also lights the center bullseye — true on both 3-ball and 5-ball settings."
+    },
+    {
+      "id": "center-bullseye",
+      "name": "Center Bullseye (Special target)",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Round standup target with rubber ring, centered over the wizard-figure artwork. Lights when the required bank(s) are cleared. Scores/advances Bonus Value; at 5000 cap, scores a Special/Replay instead. A dangerous center shot — misses tend to rebound straight down the middle."
+    },
+    {
+      "id": "center-rollover",
+      "name": "Center Rollover (upper)",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "A flush oval rollover switch just above the bullseye, in the gap between the two drop-target banks. Physically distinct from the bullseye in playfield photos but rules text sources describe only one 'center target' — genuine unresolved ambiguity (no schematic access), flagged rather than asserted. Not referenced by any goal step to avoid overstating certainty."
+    },
+    {
+      "id": "left-pop",
+      "name": "Left Pop Bumper",
+      "type": "bumpers",
+      "x": 0.22,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Cap reads '1000 SCORES WHEN LIT'. Also cycles which drop target is lit in the nearby bank."
+    },
+    {
+      "id": "right-pop",
+      "name": "Right Pop Bumper",
+      "type": "bumpers",
+      "x": 0.78,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Mirrors left pop bumper."
+    },
+    {
+      "id": "left-sling",
+      "name": "Left Slingshot",
+      "type": "mech",
+      "x": 0.29,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Unlabeled flame-graphic kicker, scores 500, immediately above the left flipper."
+    },
+    {
+      "id": "right-sling",
+      "name": "Right Slingshot",
+      "type": "mech",
+      "x": 0.71,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Mirrors left slingshot."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3114,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "3-inch standard flipper, pivot lower-left. Best way to shoot lane 1 safely."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6909,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "3-inch standard flipper, pivot lower-right. Best way to shoot lane 4 safely."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.09,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Labeled 'BONUS'. Scores the currently-lit Bonus Value when the ball drains here — a genuinely useful mechanic since there is no end-of-ball bonus collect otherwise."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.91,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Mirrors left outlane; also scores lit Bonus Value on drain."
+    },
+    {
+      "id": "left-inlane-1",
+      "name": "Bottom Lane 1",
+      "type": "lane",
+      "x": 0.17,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Lower rollover lane numbered '1', between left outlane and left inlane 2. Wired into the same 1-2-3-4 sequence as the top lanes."
+    },
+    {
+      "id": "left-inlane-2",
+      "name": "Bottom Lane 2",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Lower rollover lane numbered '2', just outboard of the left slingshot."
+    },
+    {
+      "id": "right-inlane-3",
+      "name": "Bottom Lane 3",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Lower rollover lane numbered '3', just outboard of the right slingshot."
+    },
+    {
+      "id": "right-inlane-4",
+      "name": "Bottom Lane 4",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Lower rollover lane numbered '4', between right inlane 3 and right outlane."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-lane-2",
+      "title": "Skill Shot — Lane 2",
+      "category": "skillshot",
+      "summary": "There's no named 'Skill Shot' feature on this 1975 EM, but the manual plunge is a real skill choice: a controlled shot landing center-left in lane 2 is far safer than the outer lanes.",
+      "difficulty": 1,
+      "reward": "Lights lane 2 toward the 1-2-3-4 sequence, low drain risk",
+      "steps": [
+        {
+          "shot": "top-lane-2",
+          "action": "Plunge with controlled, medium-soft strength aimed slightly left of center",
+          "detail": "Avoid a full-strength plunge toward the outer lanes — lane 1 is the worst of the four for straight-down-the-middle drains. Lit lane numbers carry over ball-to-ball, so only plunge for a number you haven't already collected."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-lane-3",
+      "title": "Skill Shot — Lane 3",
+      "category": "skillshot",
+      "summary": "The mirror-image plunge choice: a controlled shot landing center-right in lane 3 is just as safe as lane 2, and lights a different number toward the sequence.",
+      "difficulty": 1,
+      "reward": "Lights lane 3 toward the 1-2-3-4 sequence, low drain risk",
+      "steps": [
+        {
+          "shot": "top-lane-3",
+          "action": "Plunge with controlled, medium-soft strength aimed slightly right of center",
+          "detail": "Avoid a full-strength plunge toward the outer lanes — lane 1 is the worst of the four for straight-down-the-middle drains. Lit lane numbers carry over ball-to-ball, so only plunge for a number you haven't already collected."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-bank-clear-bullseye",
+      "title": "Bank-Clear → Bullseye Loop",
+      "category": "combo",
+      "summary": "The one fully self-repeating scoring circuit on the table: clear a drop-target bank, then cash in the bullseye it lights. This is the core money loop.",
+      "difficulty": 2,
+      "reward": "Scores current Bonus Value, bumps it one tier, resets the bank",
+      "steps": [
+        {
+          "shot": "left-drop-bank",
+          "action": "Hit the lit target in the bank first",
+          "detail": "The lit target (cycles as you hit it) scores full Bonus Value; unlit targets in the same bank only score 500 — always prioritize the lit one"
+        },
+        {
+          "shot": "left-drop-bank",
+          "action": "Clear the rest of the bank",
+          "detail": "Clearing just ONE bank (either side) is enough to light the bullseye — true on both 3-ball and 5-ball settings. The ball-count setting only changes what a completed bank resets"
+        },
+        {
+          "shot": "center-bullseye",
+          "action": "Shoot the now-lit bullseye standup target",
+          "detail": "Scores current Bonus Value, advances it a tier, and resets the bank for another lap — take this shot deliberately, because a rushed rebound off the bank tends to come straight back down the middle"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "combo-1234-lane-cycle",
+      "title": "1-2-3-4 Lane Cycle",
+      "category": "combo",
+      "summary": "A second, independent feed into the same Bonus Value ladder — lets you keep scoring while a drop bank is mid-rebuild. Outer lanes are flipper shots; inner lanes come off bank rebounds.",
+      "difficulty": 2,
+      "reward": "Instantly scores current Bonus Value, bumps it a tier, resets the sequence",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Shoot up the left channel into lane 1",
+          "detail": "Outer lanes 1 and 4 are best taken as direct flipper shots, not plunges — much safer"
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Shoot up the right channel into lane 4",
+          "detail": "Mirrors the lane-1 shot from the right flipper"
+        },
+        {
+          "shot": "top-lane-2",
+          "action": "Collect lane 2 off a rebound through the left drop bank",
+          "detail": "Once the center drops on that side are down, deflections feed lane 2; a trapped/controlled bounce technique players call 'shatzing' also works"
+        },
+        {
+          "shot": "top-lane-3",
+          "action": "Collect lane 3 the same way off the right bank",
+          "detail": "Completing all four numbers in any order instantly scores current Bonus Value, bumps it a tier, and resets the sequence for another lap"
+        }
+      ],
+      "fx": "magic",
+      "ordered": false
+    },
+    {
+      "id": "multiplier-bonus-ladder",
+      "title": "Build & Cash the Bonus Value Ladder",
+      "category": "multiplier",
+      "summary": "This game has no 2X/3X bonus multiplier unit — instead a single escalating Bonus Value (1000 to 5000 cap) is what every lit target, the bullseye, and 1-2-3-4 pay out. There's no end-of-ball bonus collect, so cash in as you go.",
+      "difficulty": 2,
+      "reward": "Escalates Bonus Value one tier per collection, up to the 5000 cap",
+      "steps": [
+        {
+          "shot": "left-drop-bank",
+          "action": "Hit whichever target is lit in either bank",
+          "detail": "Lit = full Bonus Value; unlit = only 500. Don't spray the bank — go for the lit switch"
+        },
+        {
+          "shot": "center-bullseye",
+          "action": "Take the bullseye shot the moment it lights, on a clean look",
+          "detail": "Scores current Bonus Value and bumps it one tier (1000→2000→3000→4000→5000 cap), then resets the bank"
+        },
+        {
+          "shot": "top-lane-1",
+          "action": "Complete 1-2-3-4 as a parallel bonus feed",
+          "detail": "A second independent path to the same ladder — keep advancing Bonus Value while a drop bank is mid-rebuild",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "strategy-opening-30sec",
+      "title": "Opening Sequence: First 30 Seconds",
+      "category": "strategy",
+      "summary": "The safest, highest-percentage way to start a ball on this unforgiving EM: confirm your flippers, plunge conservatively, then work the nearer bank.",
+      "difficulty": 1,
+      "reward": "A controlled start with minimal early-drain risk",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Flip both flippers once before you plunge",
+          "detail": "One test flip tells you whether both flippers are strong and even. On this game the 1 and 4 lanes are only reachable from the flippers when both are healthy, so it is worth knowing before the ball is live"
+        },
+        {
+          "shot": "plunger-lane",
+          "action": "Take a controlled manual plunge into lane 2 or 3",
+          "detail": "Lowest drain risk of the four top lanes; save 1 and 4 for flipper shots"
+        },
+        {
+          "shot": "left-drop-bank",
+          "action": "Work the nearer drop-target bank, targeting only the lit switch",
+          "detail": "Don't spray the bank randomly — always go for whichever target is currently lit"
+        },
+        {
+          "shot": "center-bullseye",
+          "action": "Take the bullseye shot once it lights, only on a clean look",
+          "detail": "Biggest per-shot value on the table and biggest drain risk — wait for a controlled shot, not a rushed rebound"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "strategy-outlane-routing",
+      "title": "Route the Dying Ball to the Outlane",
+      "category": "strategy",
+      "summary": "Because there's no end-of-ball bonus and no other way to salvage a doomed ball, steering it toward an outlane instead of the center gap is the single highest-value defensive move on this machine.",
+      "difficulty": 1,
+      "reward": "Banks the currently-lit Bonus Value instead of scoring nothing",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Steer a doomed ball toward the left outlane instead of letting it drain center",
+          "detail": "Outlanes score whatever Bonus Value is currently lit, so a doomed ball should always be steered to one — a dead-center drain scores nothing extra"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Use the same technique on the right side",
+          "detail": "Bonus Value matters most in exactly the moment a ball feels lost — route it to either outlane rather than the center gap"
+        }
+      ],
+      "fx": "magic",
+      "ordered": false
+    },
+    {
+      "id": "wizard-special",
+      "title": "Light and Collect the Special",
+      "category": "wizard",
+      "summary": "The one real capstone on this machine: once Bonus Value is walked all the way to its 5000 cap, the same bank-clear/bullseye and 1-2-3-4 paths pay a Special (free game/replay credit) instead of a tier bump.",
+      "difficulty": 3,
+      "reward": "Special / Replay — a free game credit",
+      "steps": [
+        {
+          "shot": "left-drop-bank",
+          "action": "Walk Bonus Value to its 5000 cap via repeated bank-clear + bullseye laps and/or 1-2-3-4 completions",
+          "detail": "Each cycle bumps Bonus Value one tier; get it maxed out before hunting the Special"
+        },
+        {
+          "shot": "center-bullseye",
+          "action": "At 5000, clear either bank and hit the lit bullseye",
+          "detail": "Now pays a Special/Replay — an added free game — instead of a tier bump, and the bank resets for another lap",
+          "link": "none"
+        },
+        {
+          "shot": "top-lane-1",
+          "action": "Alternatively, complete 1-2-3-4 while Bonus Value sits at the 5000 cap",
+          "detail": "Also scores a Special via the lane-sequence path",
+          "link": "none"
+        },
+        {
+          "shot": "left-drop-bank",
+          "action": "If both banks happen to be down simultaneously at 5000, cash the bullseye for a double award",
+          "detail": "With both banks down together the center target is good for two replays at once",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "combo-both-banks-bullseye",
+      "title": "Flatten Both Banks",
+      "category": "combo",
+      "summary": "Clearing one bank is enough to light the bullseye, but holding both banks down at the same time is the setup that pays double at the Bonus Value cap. Alternate sides instead of cashing the bullseye the instant it lights.",
+      "difficulty": 3,
+      "reward": "Both banks down together — the setup for a double award at the 5000 cap",
+      "steps": [
+        {
+          "shot": "left-drop-bank",
+          "action": "Clear the left bank, prioritizing whichever target is lit",
+          "detail": "The lit target pays full Bonus Value; unlit targets only pay 500, so lead with the lit one on every pass"
+        },
+        {
+          "shot": "right-drop-bank",
+          "action": "Switch sides and clear the right bank before cashing the bullseye",
+          "detail": "Cashing the bullseye resets a bank, so hold that shot until both sides are flat if you are chasing the double award"
+        },
+        {
+          "shot": "center-bullseye",
+          "action": "With both banks down, take the bullseye on a clean, deliberate look",
+          "detail": "Center shots on this table rebound straight down the middle when missed, so shoot from a settled ball rather than off a bank kickback"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "strategy-pop-cycle-lit-target",
+      "title": "Let the Bumpers Pick Your Target",
+      "category": "strategy",
+      "summary": "The pop bumpers do double duty: they pay 1000 when their cap lamp is lit, and they also advance which drop target in the nearby bank is lit. Time to spend in the bumpers is not wasted time.",
+      "difficulty": 2,
+      "reward": "1000 per lit bumper hit plus a repositioned lit drop target",
+      "steps": [
+        {
+          "shot": "left-pop",
+          "action": "Let the ball rattle in the left bumper rather than rushing it out",
+          "detail": "Scores 1000 while its cap lamp is lit and steps the lit target in the nearby bank",
+          "link": "none"
+        },
+        {
+          "shot": "right-pop",
+          "action": "Use the right bumper the same way on that side of the playfield",
+          "detail": "Mirrors the left bumper for both scoring and lamp stepping",
+          "link": "none"
+        },
+        {
+          "shot": "left-drop-bank",
+          "action": "Once the lamp lands on a target you have a clean angle to, take it",
+          "detail": "That single hit is worth full Bonus Value, which is the whole reason to watch which target is lit before shooting"
+        }
+      ],
+      "fx": "magic"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "controlled-opening-plunge",
+      "title": "Controlled Opening Plunge",
+      "desc": "Plunge the ball so it settles in top lane 2 or top lane 3 instead of an outer lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-lane-2"
+    },
+    {
+      "id": "first-bank-cleared",
+      "title": "First Bank Down",
+      "desc": "Knock down all five targets in either drop-target bank to light the center bullseye.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-bank-clear-bullseye"
+    },
+    {
+      "id": "lit-target-collector",
+      "title": "Lit Target Discipline",
+      "desc": "Score the currently lit drop target in each bank at least once, taking full Bonus Value instead of the 500-point unlit hit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-bonus-ladder"
+    },
+    {
+      "id": "bullseye-collected",
+      "title": "Bullseye Cashed",
+      "desc": "Hit the center bullseye while it is lit to score the current Bonus Value and bump it a tier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-bank-clear-bullseye"
+    },
+    {
+      "id": "bonus-banked-on-drain",
+      "title": "Nothing Wasted",
+      "desc": "Send a doomed ball out through either outlane so it banks the lit Bonus Value instead of draining dead center.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strategy-outlane-routing"
+    },
+    {
+      "id": "lane-sequence-complete",
+      "title": "All Four Numbers",
+      "desc": "Collect lanes 1, 2, 3 and 4 in any order to complete the sequence and score Bonus Value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-1234-lane-cycle"
+    },
+    {
+      "id": "pop-bumper-cycle-payoff",
+      "title": "Bumper Roulette",
+      "desc": "Use the pop bumpers to advance which drop target is lit, then collect that lit target for full Bonus Value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-pop-cycle-lit-target"
+    },
+    {
+      "id": "bonus-value-3000",
+      "title": "Halfway Up the Ladder",
+      "desc": "Advance Bonus Value to the 3000 tier in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-bonus-ladder"
+    },
+    {
+      "id": "three-bullseye-laps",
+      "title": "Three Laps of the Loop",
+      "desc": "Complete the clear-a-bank then hit-the-bullseye circuit three times in one game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-bank-clear-bullseye"
+    },
+    {
+      "id": "both-banks-down",
+      "title": "Both Banks Flat",
+      "desc": "Have every target in the left and right banks down at the same moment.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-both-banks-bullseye"
+    },
+    {
+      "id": "double-lane-sequence",
+      "title": "Twice Around the Numbers",
+      "desc": "Complete the 1-2-3-4 lane sequence twice in the same game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-1234-lane-cycle"
+    },
+    {
+      "id": "bonus-value-maxed",
+      "title": "Bonus Value Maxed",
+      "desc": "Walk Bonus Value all the way to its 5000 cap.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-bonus-ladder"
+    },
+    {
+      "id": "special-collected",
+      "title": "Free Game Earned",
+      "desc": "With Bonus Value at the 5000 cap, collect a Special for a replay credit.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-special"
+    },
+    {
+      "id": "special-via-lanes",
+      "title": "Special the Long Way",
+      "desc": "Earn a Special by completing the 1-2-3-4 lane sequence while Bonus Value sits at the 5000 cap.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-special"
+    },
+    {
+      "id": "double-special",
+      "title": "Two Credits at Once",
+      "desc": "With Bonus Value maxed and both banks down together, hit the bullseye for a double replay award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-special"
+    }
+  ],
+  "drills": [
+    {
+      "id": "controlled-plunge",
+      "title": "Controlled Plunge, Inner Lanes",
+      "text": "Medium-soft and controlled, landing center-left or center-right. A full-strength plunge into the outer lanes tends to feed the ball straight back down the middle. Lit lane numbers carry over ball to ball, so pick the plunge that gives you a number you do not already have rather than repeating one.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-lane-2",
+      "shots": [
+        "plunger-lane",
+        "top-lane-2",
+        "top-lane-3"
+      ]
+    },
+    {
+      "id": "shoot-the-lit-one",
+      "title": "Shoot Only the Lit Target",
+      "text": "One target in a bank is lit at a time and only that one pays the full Bonus Value — the rest pay a token. Find the lit lamp before you shoot, and find it again after every hit, because it steps. Play a whole ball without ever firing at an unlit target.",
+      "reps": "1 full ball",
+      "focus": "accuracy",
+      "goal": "multiplier-bonus-ladder",
+      "shots": [
+        "left-drop-bank",
+        "right-drop-bank"
+      ]
+    },
+    {
+      "id": "settled-bullseye",
+      "title": "Bullseye From a Settled Ball",
+      "text": "A missed bullseye rebounds straight back down the middle, which makes this a drill in waiting rather than shooting. Clear a bank, then let the ball come to rest on a flipper before you take the shot that bank just lit — never off the rebound that knocked the last target down.",
+      "reps": "10 deliberate attempts",
+      "focus": "ball-control",
+      "goal": "combo-bank-clear-bullseye",
+      "shots": [
+        "center-bullseye",
+        "left-drop-bank",
+        "right-drop-bank"
+      ]
+    },
+    {
+      "id": "outlane-routing",
+      "title": "Route the Lost Ball",
+      "text": "There is no end-of-ball bonus on this game — the outlanes are the collect, paying whatever Bonus Value is lit. When a ball is genuinely gone, nudge it toward either outlane instead of letting it split the flippers, because a center drain pays nothing. Practice it on balls you have already given up on so the reflex exists when it matters.",
+      "reps": "every lost ball, one full game",
+      "focus": "ball-control",
+      "goal": "strategy-outlane-routing",
+      "shots": [
+        "left-outlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "four-numbers",
+      "title": "Chase All Four Numbers",
+      "text": "Lane 1 comes off the left flipper up the left channel and lane 4 off the right, while 2 and 3 arrive on deflections once the center drops on that side are down. Work the two flipper shots cold, then play a ball where completing all four numbers is the only thing you go after.",
+      "reps": "2 full balls",
+      "focus": "flow",
+      "goal": "combo-1234-lane-cycle",
+      "shots": [
+        "top-lane-1",
+        "top-lane-2",
+        "top-lane-3",
+        "top-lane-4",
+        "left-flipper",
+        "right-flipper"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "A 1975 Gottlieb electromechanical — cabinet buttons with in-game jobs were still decades off. Two flippers, a spring plunger, and nudging are the entire interface. The nearest thing to an extra control is plunge strength, and it is worth respecting: a hard plunge into the outer top lanes tends to feed the ball straight back down the middle."
+  },
+  "howItPlays": {
+    "objective": "A single-player electromechanical wedgehead themed around a magician, where every scoring path feeds one escalating Bonus Value ladder. Winning means driving that ladder to its 5000 cap and collecting the Special replay award.",
+    "loop": [
+      "Hit the currently lit target in either drop bank -> scores the full Bonus Value and steps the lit position to another target.",
+      "Clear all five targets in either bank -> lights the center bullseye standup.",
+      "Shoot the lit bullseye -> scores the current Bonus Value, bumps it one tier, and resets the banks for another lap.",
+      "Complete the four numbered rollover lanes -> scores the current Bonus Value, bumps it a tier, and resets the sequence.",
+      "At the 5000 cap, the same bank-clear/bullseye or 1-2-3-4 completion -> awards a Special instead of a tier bump."
+    ],
+    "lights": [
+      {
+        "id": "drop-target-banks",
+        "name": "Drop Target Banks",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-drop-bank",
+            "lamps": 5
+          },
+          {
+            "shot": "right-drop-bank",
+            "lamps": 5
+          }
+        ],
+        "lit": "One target in each bank is lit at a time; only that target pays the full Bonus Value, while unlit targets pay 500.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the lit target in either bank to collect the current value and step the lit position.",
+        "goals": [
+          "combo-bank-clear-bullseye",
+          "multiplier-bonus-ladder",
+          "strategy-pop-cycle-lit-target"
+        ]
+      },
+      {
+        "id": "center-bullseye",
+        "name": "Center Bullseye",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "center-bullseye"
+          }
+        ],
+        "lit": "Lit after clearing either drop bank; hitting it scores the current Bonus Value and advances the ladder one tier.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the bullseye while lit to step Bonus Value and reset the banks.",
+        "goals": [
+          "combo-bank-clear-bullseye",
+          "multiplier-bonus-ladder",
+          "wizard-special"
+        ]
+      },
+      {
+        "id": "numbered-lanes",
+        "name": "Numbered Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lane-1"
+          },
+          {
+            "shot": "top-lane-2"
+          },
+          {
+            "shot": "top-lane-3"
+          },
+          {
+            "shot": "top-lane-4"
+          },
+          {
+            "shot": "left-inlane-1"
+          },
+          {
+            "shot": "left-inlane-2"
+          },
+          {
+            "shot": "right-inlane-3"
+          },
+          {
+            "shot": "right-inlane-4"
+          }
+        ],
+        "lit": "Each numbered lane lights as part of the 1-2-3-4 sequence; completing all four scores the current Bonus Value and bumps it a tier.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect missing numbers, using the plunge to target lanes 2 or 3 safely.",
+        "goals": [
+          "combo-1234-lane-cycle",
+          "skillshot-lane-2",
+          "skillshot-lane-3",
+          "multiplier-bonus-ladder"
+        ]
+      },
+      {
+        "id": "outlanes",
+        "name": "Outlanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Both outlanes are labeled BONUS and score the currently-lit Bonus Value when the ball drains through them.",
+        "flashing": null,
+        "control": null,
+        "then": "Steer a dying ball to an outlane to bank the lit value instead of scoring nothing.",
+        "goals": [
+          "strategy-outlane-routing"
+        ]
+      },
+      {
+        "id": "pop-bumpers",
+        "name": "Pop Bumpers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-pop"
+          },
+          {
+            "shot": "right-pop"
+          }
+        ],
+        "lit": "Each pop bumper scores 1000 when its cap lamp is lit and also advances the lit drop target in the nearby bank.",
+        "flashing": null,
+        "control": null,
+        "then": "Use bumper hits to reposition the lit target before shooting the bank.",
+        "goals": [
+          "strategy-pop-cycle-lit-target"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge for top lane 2 or 3 to start the 1-2-3-4 sequence safely, then hit the lit drop target in the nearer bank for full Bonus Value.",
+        "goals": [
+          "skillshot-lane-2",
+          "skillshot-lane-3",
+          "strategy-opening-30sec"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Clear either drop bank to light the bullseye, shoot it to step Bonus Value from 1000 toward 5000, and complete the 1-2-3-4 lanes as a second independent path.",
+        "goals": [
+          "multiplier-bonus-ladder",
+          "combo-bank-clear-bullseye",
+          "combo-1234-lane-cycle"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Once Bonus Value reaches 5000, clearing a bank and hitting the lit bullseye, or completing 1-2-3-4, awards a Special (free game) instead of a tier bump.",
+        "goals": [
+          "wizard-special",
+          "combo-both-banks-bullseye"
+        ]
+      }
+    ]
+  }
+}

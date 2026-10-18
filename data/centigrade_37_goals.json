@@ -1,0 +1,874 @@
+{
+  "machine": "Centigrade 37 (Gottlieb, 1977)",
+  "defaultFx": "sparkle",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Full-length shooter lane on the right edge; the plunge feeds the top arch into the A-B-C top lanes and pop nest. EM soft-plunge is controllable — pick your lane."
+    },
+    {
+      "id": "top-lane-a",
+      "name": "A Top Lane",
+      "type": "lane",
+      "x": 0.32,
+      "y": 0.9,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Leftmost of the three top rollover lanes (A-B-C). Reachable by skill plunge or by lobbing from the right flipper up top just left of the leftmost pop. Each letter stays lit all game: +1,000 permanent saucer value, one thermometer advance, and lights the matching drop-target spot."
+    },
+    {
+      "id": "top-lane-b",
+      "name": "B Top Lane",
+      "type": "lane",
+      "x": 0.44,
+      "y": 0.92,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Center top rollover lane. Same letter rules as A."
+    },
+    {
+      "id": "top-lane-c",
+      "name": "C Top Lane",
+      "type": "lane",
+      "x": 0.63,
+      "y": 0.91,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Rightmost top rollover lane. Same letter rules as A."
+    },
+    {
+      "id": "d-rollover",
+      "name": "D Rollover",
+      "type": "lane",
+      "x": 0.17,
+      "y": 0.72,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Separate upper-left rollover just left of the leftmost pop bumper; makeable from two directions, habitually a right-flipper lob back up the lane. Nudging at the center red pop can also send the ball over D. Completes the A-B-C-D letter set."
+    },
+    {
+      "id": "kickout-hole",
+      "name": "Kickout Hole (Saucer)",
+      "type": "saucer",
+      "x": 0.75,
+      "y": 0.78,
+      "trim": "all",
+      "flipper": "left",
+      "feeds": {
+        "shot": "bagatelle-lanes"
+      },
+      "notes": "Upper-right kickout hole — the shot to master, made from the left flipper 'all day'. Scores 1,000 base + 1,000 per lit green A-B-C-D light (up to 5,000+), advances the thermometer one step per lit letter, and collects the Special when lit. Ejects into the right-side bagatelle lanes."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.49,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Three-pop triangle below the top lanes; the lower point is the center red pop. Bank shot: from the left flipper hit the center pop at ~7 o'clock and it can fire the ball into the drop bank, sometimes taking out two drops. Pop exits can go straight down the middle — hands on."
+    },
+    {
+      "id": "drop-targets",
+      "name": "4-Bank Drop Targets",
+      "type": "drop-target",
+      "x": 0.15,
+      "y": 0.54,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Vertical 4-bank on the left-center, faced from the right flipper. 500 each (one source reports 5,000 per completed letter when lit; disputed/settings-dependent). Clearing all four lights the two bullseye standups and the Double Advance alternation."
+    },
+    {
+      "id": "bullseye-standups",
+      "name": "Bullseye Standups",
+      "type": "standup",
+      "x": 0.64,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Two stand-up targets on the lower-right, lit for 5,000 each after the drop bank is cleared; they alternate between Double Advance and the GREEN drop-bank reset. Hitting green before collecting Double Advance resets the bank (still pays 5,000). Bounce-backs often go straight down the middle — shoot only lit and from control."
+    },
+    {
+      "id": "bagatelle-lanes",
+      "name": "Bagatelle / Waterfall Lanes",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.57,
+      "trim": "all",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "notes": "Two vertical columns of three serial rollovers (inner x~0.82, outer x~0.90) cascading down the right side, fed by the saucer eject and saucer misses. Lit (white flashing) rollover = 5,000 and one thermometer advance; unlit = 500. Side-nudge to switch columns and chase lit lanes; a perfect run is ~20,000 + 4 advances. Exits to the right inlane — or the right outlane, the game's main drain."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Left return lane, lit for 5,000. The shatz/alley-pass target from the right flipper: one move collects the lit 5,000 AND delivers the ball to the left flipper, the only flipper with a clean saucer line."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Right return track receiving the bagatelle exit. Open-elbow gap to the outlane — never hold the right flipper up to roll-cradle here, the ball rides up and out through the gap."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.92,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Bottom-most right lane under the bagatelle field — the game's main drain risk. A timed sideways nudge when the ball is partway in can flick it onto the return track (~1 in 5). EM tilt ends the whole game, so nudge with margin."
+    },
+    {
+      "id": "thermometer",
+      "name": "Backbox Thermometer",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.98,
+      "trim": "all",
+      "notes": "Mechanical backbox animation — the game's progression track. 24 advance steps to 37°C. The thermometer is driven by the bonus unit: advances come from lit bagatelle rollovers (1 each) and the saucer (1 per lit letter, up to 4), Double Advance doubles them, and the accumulated bonus counts down and scores at the end of the game. Topping it lights the perpetual Special at the kickout hole."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-plunge-abc",
+      "title": "A-B-C Skill Plunge",
+      "category": "skillshot",
+      "summary": "The EM skill shot: a soft, controlled plunge that drops into an unlit A, B, or C top lane instead of ripping through the arch.",
+      "difficulty": 1,
+      "reward": "One A-B-C letter — a permanent +1,000 on every future saucer shot, one thermometer advance, and a lit drop-target spot",
+      "steps": [
+        {
+          "shot": "top-lane-a",
+          "action": "Soft-plunge into an unlit letter lane",
+          "detail": "Gauge the spring so the ball just crests the arch and falls into the top lanes rather than flying past them — there is no alternate plunge award to weigh. Pick whichever of A/B/C is unlit; letters stay lit for the entire game, so every plunge should target a new one."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "spell-abcd",
+      "title": "Spell A-B-C-D",
+      "category": "mode",
+      "summary": "The game's core standing feature: light all four letters to max out the kickout hole at 5,000 per shot and light the drop-target spots.",
+      "difficulty": 2,
+      "reward": "+1,000 saucer value per letter (5,000 max), one thermometer advance per letter, letters stay lit all game",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Soft plunge to an unlit top lane",
+          "detail": "Start each ball by banking a fresh letter from the plunge."
+        },
+        {
+          "shot": "top-lane-b",
+          "action": "Collect the remaining A-B-C lanes",
+          "detail": "From the right flipper, lob up top just left of the leftmost pop bumper to re-feed the top lanes; pops can also carom the ball through them.",
+          "link": "none"
+        },
+        {
+          "shot": "d-rollover",
+          "action": "Aim the D rollover from the right flipper",
+          "detail": "D is a separate upper-left rollover, makeable from two directions — the habitual shot is a right-flipper lob back up the lane; a nudge off the center red pop also works.",
+          "link": "none"
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Cash the raised saucer",
+          "detail": "With all four letters lit the hole pays 5,000 and advances the thermometer 4 steps per shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "clear-the-drop-bank",
+      "title": "Clear the Drop Bank",
+      "category": "mode",
+      "summary": "Knock down the left 4-bank of drop targets to light the two bullseye standups and start the Double Advance alternation.",
+      "difficulty": 2,
+      "reward": "Bullseye standups lit for 5,000 each, alternating Double Advance / bank reset",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Shoot the 4-bank from the right flipper",
+          "detail": "Work through all four targets in one campaign; each is 500. This is a one-time detour, not a farm — the payoff is what it lights."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Or bank it off the center red pop",
+          "detail": "From the left flipper, hit the center pop at about 7 o'clock — the pop can fire the ball into the bank and take out two drops at once.",
+          "flipper": "left",
+          "link": "none"
+        },
+        {
+          "shot": "bullseye-standups",
+          "action": "Confirm the bullseyes light",
+          "detail": "With all four drops down, the two right-side standups light for 5,000 each and alternate between Double Advance and the green reset target."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "top-saucer-all-day",
+      "title": "Top Saucer All Day",
+      "category": "combo",
+      "summary": "The tournament farm: control on the left flipper, shoot the upper-right kickout hole, ride the eject through the waterfall, recover, repeat forever.",
+      "difficulty": 2,
+      "reward": "1,000–5,000 per saucer shot plus 500–5,000 per bagatelle rollover on every eject",
+      "steps": [
+        {
+          "shot": "kickout-hole",
+          "action": "Trap on the left flipper and shoot the kickout hole",
+          "detail": "The hole pays 1,000 base + 1,000 per lit green letter — up to 5,000 with A-B-C-D complete — and advances the thermometer per lit letter."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Steer the eject through lit waterfall lanes",
+          "detail": "The saucer kicks out into the bagatelle field; nudge the ball into white-flashing 5,000 lanes instead of the 500s."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Take the return on the right flipper",
+          "detail": "The waterfall exits to the right return track. Do not hold the flipper up to roll-cradle — the open elbow dumps the ball to the outlane."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Alley pass back to the left flipper",
+          "detail": "Shatz right-to-left through the lit left inlane (5,000 when lit) to reset into saucer position, then shoot the hole again."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "abcd-build-then-farm",
+      "title": "A-B-C-D Build, Then Farm",
+      "category": "combo",
+      "summary": "The max-value setup: front-load all four letters from the right flipper, then switch permanently to farming the full-value 5,000 saucer.",
+      "difficulty": 2,
+      "reward": "Every future saucer shot pays the full 5,000 and advances the thermometer 4 steps",
+      "steps": [
+        {
+          "shot": "d-rollover",
+          "action": "Lob up top from the right flipper",
+          "detail": "Shoot just left of the leftmost bumper — through D into the top-lane area. Reaching the upper arch off the right flipper takes some skill; each letter is worth another 1,000 on every later saucer shot."
+        },
+        {
+          "shot": "top-lane-c",
+          "action": "Run the remaining A-B-C lanes",
+          "detail": "Repeat the up-top lob (and use soft plunges on new balls) until all four letters are lit."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Shatz to the left flipper",
+          "detail": "Once letters are done, pass right-to-left through the lit inlane to reach saucer position."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Farm the saucer at full value",
+          "detail": "5,000 per shot plus the waterfall cascade on every eject — this is where the game's points live."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "shatz-saucer-loop",
+      "title": "Shatz Loop (Collect + Reposition)",
+      "category": "combo",
+      "summary": "The game's one true 'combo': the alley pass from right flipper to left collects the lit 5,000 inlane AND positions the ball for the saucer — up to ~10K per full cycle.",
+      "difficulty": 3,
+      "reward": "~10,000 per cycle with everything lit (5,000 inlane + up to 5,000 saucer + waterfall)",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Shatz from the right flipper through the lit left inlane",
+          "detail": "Cradle on the right, then alley-pass across — one move collects 5,000 and delivers the ball to the left flipper. Post transfers from the left are dangerous on this game; the alley pass is the safe transfer."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Catch on the left and shoot the saucer",
+          "detail": "Live catch or drop catch, then the saucer line. Do not dead-bounce off the left flipper — the gapped inlane makes bounce-overs dangerous here."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Nudge the eject through lit lanes",
+          "detail": "Work the waterfall on the way down, then repeat the loop whenever the ball ends up right."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "drops-once-then-saucer",
+      "title": "Drops Once, Back to the Saucer",
+      "category": "combo",
+      "summary": "The right-flipper priority sequence: finish the drop bank one time for the 5K bullseyes and Double Advance, then shatz left and resume the saucer farm.",
+      "difficulty": 2,
+      "reward": "Bullseyes lit at 5,000 each + Double Advance available, then back to the money shot",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Finish the 4-bank once from the right flipper",
+          "detail": "The drops themselves are only 500 each — clear them once for what they light, then leave them alone."
+        },
+        {
+          "shot": "bullseye-standups",
+          "action": "Take the lit bullseye only when safe",
+          "detail": "5,000 each; the lit alternating target lights Double Advance, but the green one resets the bank and bounce-backs go straight down the middle — shoot from control."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Shatz to the left flipper",
+          "detail": "Alley pass through the lit return lane — one move collects the lit 5,000 and delivers the ball to the left flipper, where the saucer is always the shot."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Resume the saucer",
+          "detail": "Back to top-saucer-all-day at whatever letter value you've built."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "waterfall-management",
+      "title": "Waterfall Management",
+      "category": "combo",
+      "summary": "Turn every saucer eject and miss into points: nudge the ball down the lit 5,000 bagatelle lanes and save it at the outlane elbow.",
+      "difficulty": 2,
+      "reward": "Up to ~20,000 + 4 thermometer advances on a perfect lit run; ~10K average",
+      "steps": [
+        {
+          "shot": "kickout-hole",
+          "action": "Shoot the saucer",
+          "detail": "The eject — and most saucer misses — feed the right-side waterfall, making every attempt a second scoring event."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Nudge into the lit 5,000 lanes",
+          "detail": "Side-nudge to alternate columns and ride white-flashing rollovers; unlit lanes are only 500. This is the game's main point source — hitting the lit lanes is what separates a 30K game from a 100K one."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Save at the outlane elbow if needed",
+          "detail": "Keep the ball out of the bottom-most right lane; if it gets there, wait until it is partway in and side-nudge it onto the return track (~1 in 5). Tilt ends the game on this era — margin matters."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "light-double-advance",
+      "title": "Light Double Advance",
+      "category": "multiplier",
+      "summary": "The game's only multiplier: clear the drops, then hit the lit alternating bullseye — dodging the green reset target — to double every thermometer advance.",
+      "difficulty": 3,
+      "reward": "Double Advance: every thermometer step counts twice (factory default: rest of game; operator-settable to ball)",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Clear the 4-bank",
+          "detail": "All four drops down lights the bullseye alternation."
+        },
+        {
+          "shot": "bullseye-standups",
+          "action": "Hit the lit alternating bullseye",
+          "detail": "Collects Double Advance. The trap: the GREEN target pays 5,000 but resets the drop bank — hit it before collecting Double Advance and you start over."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Run lit lanes with Double Advance on",
+          "detail": "Each lit rollover now advances the thermometer two steps — this is how you speed the climb to 37°C."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "complete-temperature-check",
+      "title": "Complete the Temperature Check",
+      "category": "wizard",
+      "summary": "The de-facto wizard goal: drive the backbox thermometer all 24 steps to 37°C, lighting the perpetual Special at the kickout hole.",
+      "difficulty": 3,
+      "reward": "Special lit at the kickout hole for the entire rest of the game; the backglass bulb pulsates",
+      "steps": [
+        {
+          "shot": "top-lane-a",
+          "action": "Spell A-B-C-D early",
+          "detail": "Letters gate the saucer's advance rate — with all four lit, every saucer shot is worth 4 thermometer steps.",
+          "link": "none"
+        },
+        {
+          "shot": "d-rollover",
+          "action": "Finish the letter set with D",
+          "detail": "Right-flipper lob up the left lane, or nudge off the center red pop.",
+          "link": "none"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Clear the drop bank",
+          "detail": "Qualifies the bullseye alternation for Double Advance."
+        },
+        {
+          "shot": "bullseye-standups",
+          "action": "Collect Double Advance",
+          "detail": "Hit the lit alternating bullseye, not the green reset — advances now count double."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Grind lit waterfall rollovers",
+          "detail": "One step each (two with Double Advance); combined with 4-step saucer shots, work through all 24 steps. Advances score zero points — this chase is for the Special, not the score."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Watch the thermometer top out at 37°C",
+          "detail": "At 24 steps the Special lights at the hole and stays lit for the rest of the game."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "collect-the-special",
+      "title": "Collect the Special",
+      "category": "wizard",
+      "summary": "Cash in the temperature check: with the thermometer topped out and Special pulsing, shoot the kickout hole to collect.",
+      "difficulty": 3,
+      "reward": "Special — a replay (credit) at factory setting; points in tournament setups",
+      "steps": [
+        {
+          "shot": "thermometer",
+          "action": "Top out the thermometer",
+          "detail": "Complete all 24 advance steps (see Complete the Temperature Check) — the Special lights at the hole and never goes out."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Get to the left flipper",
+          "detail": "Shatz across if the ball is on the right; the hole is under the left flipper's control."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Shoot the saucer to collect the Special",
+          "detail": "The lit Special is collectable on every subsequent saucer shot for the rest of the game."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "beginner-first-30-seconds",
+      "title": "Beginner's First 30 Seconds",
+      "category": "strategy",
+      "summary": "The simple call for a fresh ball: soft plunge a letter, then left flipper = saucer, right flipper = drops or up top — hands on for every waterfall descent.",
+      "difficulty": 1,
+      "reward": "A letter banked, the money shot found, and the ball alive past the danger zones",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Soft plunge to an unlit top lane",
+          "detail": "Bank a free A-B-C letter before touching a flipper."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Left flipper: shoot the kickout hole",
+          "detail": "If the ball reaches the left flipper, the saucer is always the shot."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Right flipper: drops or lob up top",
+          "detail": "If the ball is on the right, take a drop target or lob up top just left of the leftmost bumper for letters."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Ride the waterfall with hands on",
+          "detail": "Every pop exit and waterfall descent needs nudging — steer toward lit lanes and away from the bottom-most right lane."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "tournament-line",
+      "title": "The Tournament Line",
+      "category": "strategy",
+      "summary": "What competition players actually do: letters early, drops once, then shatz-and-saucer every game all the way through — ignore the thermometer for score.",
+      "difficulty": 2,
+      "reward": "Feast-or-famine ceiling: the 100,000 light and beyond ride the lit bagatelle + full-value saucer",
+      "steps": [
+        {
+          "shot": "top-lane-b",
+          "action": "Front-load the A-B-C-D letters",
+          "detail": "They are permanent value multipliers on the saucer — every letter is +1,000 per shot for the rest of the game."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Finish the drop bank exactly once",
+          "detail": "For the 5K bullseye lights; the drops themselves are not the goal for points."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Alley pass on every right-side recovery",
+          "detail": "Collect the lit 5,000 inlane and get back to the left flipper — the every-game plan."
+        },
+        {
+          "shot": "kickout-hole",
+          "action": "Shoot the saucer, all day",
+          "detail": "Up to 5,000 per shot plus the waterfall on every eject. Thermometer advances score zero — skip the Special chase unless it is set to points."
+        },
+        {
+          "shot": "bagatelle-lanes",
+          "action": "Nudge every descent into lit lanes",
+          "detail": "The game's scoring is heavily weighted here; sub-30K games happen when the lit lanes are missed."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "survive-the-right-side",
+      "title": "Survive the Open Elbow",
+      "category": "strategy",
+      "summary": "Drain control on Centigrade 37: the right outlane under the waterfall, the SDTM bullseye bounce, and the gapped inlanes are what end games.",
+      "difficulty": 2,
+      "reward": "Longer balls — and on an EM, a saved ball is a saved game (tilt ends everything)",
+      "steps": [
+        {
+          "shot": "right-outlane",
+          "action": "Nudge-save at the outlane elbow",
+          "detail": "When the ball heads for the bottom-most right lane, wait until it is partway in and side-nudge it through the open elbow onto the return track."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Never roll-cradle the right flipper",
+          "detail": "Holding the right flipper up lets the ball ride the open inlane gap up and out to the outlane. Live catch or shatz instead."
+        },
+        {
+          "shot": "bullseye-standups",
+          "action": "Shoot bullseyes only lit and from control",
+          "detail": "The bounce-back often goes straight down the middle; unlit they are not worth the risk."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Cover the pop exits",
+          "detail": "Center-drain exits off the pop nest are a main killer — hands on the machine for every exit, and don't dead-bounce the gapped left flipper."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "letters-complete",
+      "title": "Alphabet Thaw",
+      "desc": "Light all four A-B-C-D letters in a single game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "spell-abcd"
+    },
+    {
+      "id": "bank-cleared",
+      "title": "Four Down",
+      "desc": "Knock down all four drop targets in the left bank.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "clear-the-drop-bank"
+    },
+    {
+      "id": "double-advance-lit",
+      "title": "Twice the Heat",
+      "desc": "Clear the drop bank and hit the lit alternating bullseye to turn on Double Advance without touching the green reset target first.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "light-double-advance"
+    },
+    {
+      "id": "full-value-saucer",
+      "title": "Five Grand Drop-In",
+      "desc": "With all four letters lit, land the kickout hole for its full 5,000-point value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "abcd-build-then-farm"
+    },
+    {
+      "id": "perfect-waterfall",
+      "title": "Clean Cascade",
+      "desc": "Run the bagatelle waterfall with every rollover lit for a full-value pass worth about 20,000 points.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "waterfall-management"
+    },
+    {
+      "id": "special-collected",
+      "title": "Warm Reception",
+      "desc": "Shoot the kickout hole with the Special lit and collect it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "collect-the-special"
+    },
+    {
+      "id": "hundred-k-light",
+      "title": "Six Digits of Fever",
+      "desc": "Score past 100,000 points and turn on the game's 100,000 light.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tournament-line"
+    },
+    {
+      "id": "temperature-check",
+      "title": "37 Degrees Exactly",
+      "desc": "Advance the backbox thermometer all 24 steps to the top, lighting the perpetual Special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "complete-temperature-check"
+    },
+    {
+      "id": "roll-the-reels",
+      "title": "Past the Top of the Scale",
+      "desc": "Roll the score reels by scoring beyond the 199,990 maximum displayed score.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "tournament-line"
+    }
+  ],
+  "drills": [
+    {
+      "id": "unlit-lane-plunge",
+      "title": "Plunge for an Unlit Lane",
+      "text": "Gauge the spring so the ball just crests the arch and falls into the top lanes rather than flying past them. Letters stay lit for the entire game, so aim every plunge at one you do not already have — the skill here is picking the lane, not scoring the plunge.",
+      "reps": "every ball until all three are lit",
+      "focus": "skill-shot",
+      "goal": "skill-plunge-abc",
+      "shots": [
+        "plunge",
+        "top-lane-a",
+        "top-lane-b",
+        "top-lane-c"
+      ]
+    },
+    {
+      "id": "alley-pass-transfer",
+      "title": "The Alley Pass Transfer",
+      "text": "Cradle on the right, then alley-pass across through the lit left inlane. One move collects the lane and delivers the ball to the left flipper, which is the only flipper with a clean line at the saucer. Post transfers are dangerous on this game, so this pass is the transfer — drill it until it is automatic, then catch on the left and take the hole.",
+      "reps": "20 passes",
+      "focus": "ball-control",
+      "goal": "shatz-saucer-loop",
+      "shots": [
+        "left-inlane",
+        "left-flipper",
+        "right-flipper",
+        "kickout-hole"
+      ]
+    },
+    {
+      "id": "saucer-all-day",
+      "title": "Saucer All Day",
+      "text": "From a trapped ball on the left flipper the kickout hole is a shot you can take all day, and it pays more with every letter you have lit. Trap, shoot, ride the eject down the waterfall, recover, repeat. Count how many consecutive cycles you complete before you lose the ball.",
+      "reps": "note your longest cycle count over 5 balls",
+      "focus": "accuracy",
+      "goal": "top-saucer-all-day",
+      "shots": [
+        "kickout-hole",
+        "left-flipper",
+        "bagatelle-lanes"
+      ]
+    },
+    {
+      "id": "own-the-right-side",
+      "title": "Own the Right Side",
+      "text": "Every saucer eject and most misses drop into the right-side waterfall, where the lit lanes pay ten times the unlit ones, so side-nudge to switch columns on the way down. Never hold the right flipper up to roll-cradle the return — the open elbow rides the ball straight out. If it does reach the bottom-most right lane, wait until it is partway in and nudge it onto the return track, leaving margin because a tilt ends the whole game on this era.",
+      "reps": "2 full balls with hands on for every descent",
+      "focus": "ball-control",
+      "goal": "waterfall-management",
+      "shots": [
+        "bagatelle-lanes",
+        "right-inlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "bank-two-ways",
+      "title": "Two Ways Into the Drop Bank",
+      "text": "Clear the four-bank once from the right flipper — the drops pay little themselves, the point is what clearing them lights. There is also a bank shot: from the left flipper, hit the center red pop at about seven o'clock and it can fire the ball into the bank and take two drops at once. Work both routes and use whichever one the ball actually hands you.",
+      "reps": "5 clears, alternating routes",
+      "focus": "accuracy",
+      "goal": "clear-the-drop-bank",
+      "shots": [
+        "drop-targets",
+        "pop-bumpers",
+        "right-flipper",
+        "left-flipper"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Nothing to press on this 1977 Gottlieb except the flippers and the plunger. Beyond flipping, your only real inputs are plunge strength into the A/B/C top lanes and how carefully you nudge — the thermometer and the drop targets are all worked with shots, not buttons."
+  },
+  "howItPlays": {
+    "objective": "Centigrade 37 is a 1977 Gottlieb built around a backbox thermometer you drive from cold up to thirty-seven degrees. Light the A-B-C-D letters, farm the upper-right kickout hole for its rising value, and push the thermometer all the way to the top to light a perpetual Special.",
+    "loop": [
+      "Soft-plunge for a top lane you have not lit yet -- A, B or C -- then lob the right flipper back up top for the others and for the separate D rollover; each letter holds all game and raises what the kickout hole pays.",
+      "With the ball settled on the left flipper, fire at the upper-right kickout hole -- a thousand points for each lit letter, up to five -- and let its eject pour the ball into the right-side waterfall.",
+      "Side-nudge the ball down the white-flashing waterfall rollovers for five thousand apiece, take the right return, then alley-pass across to the left flipper to line the saucer up again.",
+      "Clear the left drop bank once to light the two bull's-eye standups, and collect Double Advance there so each thermometer step counts twice.",
+      "Every lit letter, saucer shot and lit waterfall rollover nudges the thermometer higher -- reach thirty-seven degrees and the game lights a Special that never switches off."
+    ],
+    "lights": [
+      {
+        "id": "abcd-letters",
+        "name": "A-B-C-D Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "top-lane-a"
+          },
+          {
+            "shot": "top-lane-b"
+          },
+          {
+            "shot": "top-lane-c"
+          },
+          {
+            "shot": "d-rollover"
+          }
+        ],
+        "lit": "Each lit letter -- A, B and C across the top lanes, D at its own upper-left rollover -- stays lit for the whole game and adds a permanent extra thousand to every future kickout-hole shot, plus one step on the thermometer.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank a fresh one off a soft plunge at the start of each ball, and lob the right flipper back up top -- aiming to the inside of the leftmost pop bumper -- for the rest. With all four lit the kickout hole pays its full five thousand and moves the thermometer four steps a shot.",
+        "goals": [
+          "spell-abcd",
+          "skill-plunge-abc"
+        ]
+      },
+      {
+        "id": "kickout-hole-saucer",
+        "name": "Kickout Hole Saucer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "kickout-hole"
+          }
+        ],
+        "lit": "The upper-right kickout hole is the shot the whole game is built on: it pays a thousand base plus a thousand for each lit A-B-C-D letter, up to five thousand and beyond, and it holds the Special once the thermometer tops out.",
+        "flashing": null,
+        "control": null,
+        "then": "It is a left-flipper shot you can take all day, and its eject feeds straight into the right-side waterfall, so every attempt is really two scoring chances. Front-load your letters first and this single hole is where the bulk of your score comes from.",
+        "goals": [
+          "top-saucer-all-day",
+          "abcd-build-then-farm",
+          "collect-the-special"
+        ]
+      },
+      {
+        "id": "drop-bank-double-advance",
+        "name": "Drop Bank & Double Advance",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "drop-targets"
+          },
+          {
+            "shot": "bullseye-standups"
+          }
+        ],
+        "lit": "Knock down the left four-bank of drops and the two bull's-eye standups on the lower right light for five thousand each, alternating between Double Advance and a green target that resets the bank.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the lit bull's-eye from control -- its bounce-back tends to head straight down the middle -- and grab Double Advance before you ever touch the green one, which sends you back to the start. With Double Advance running, each thermometer step is worth two, the fastest way up the scale to thirty-seven.",
+        "goals": [
+          "clear-the-drop-bank",
+          "light-double-advance"
+        ]
+      },
+      {
+        "id": "waterfall-lanes",
+        "name": "Bagatelle Waterfall Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "bagatelle-lanes"
+          }
+        ],
+        "lit": "The right-side waterfall is two columns of three rollovers cascading down: a lit one, flashing white, is worth five thousand and one thermometer step, while an unlit one pays only five hundred.",
+        "flashing": "A rollover flashing white is the five-thousand one to chase; the lit column and lit rollover shift as the ball falls, so a side-nudge to switch columns is how you catch them.",
+        "control": null,
+        "then": "This waterfall is the game's main point source, fed by every saucer eject and most misses, so nudge the ball into the lit lanes on the way down -- a fully lit run is around twenty thousand and four thermometer steps. Then mind the exit: it feeds the right return, or the right outlane, which is the game's main drain.",
+        "goals": [
+          "waterfall-management"
+        ]
+      },
+      {
+        "id": "backbox-thermometer",
+        "name": "Backbox Thermometer",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "thermometer"
+          }
+        ],
+        "lit": "The mechanical thermometer in the backbox is the game's progression track -- twenty-four steps from cold to thirty-seven degrees, driven up one notch per lit waterfall rollover and one per lit letter at the saucer, with Double Advance doubling each notch.",
+        "flashing": null,
+        "control": null,
+        "then": "That built-up total is what pays out, counting down for points as the game ends, though the individual advances score nothing while you rack them up -- this climb is a chase for the award, not the points. Hit thirty-seven and a Special lights at the kickout hole and never switches off again for the remainder of your game.",
+        "goals": [
+          "complete-temperature-check",
+          "collect-the-special"
+        ]
+      }
+    ],
+    "laneChange": "none",
+    "laneChangeNote": "The flippers cannot move a lit A-B-C top lane on this electromechanical table; plunge strength picks the lane, and each letter stays lit for the rest of the game once you roll it.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Start every ball by soft-plunging a fresh letter before you touch a flipper. Then keep it simple -- from the left flipper the saucer is always your shot, from the right take the drop bank or lob up top for a letter -- and keep hands on the machine for every waterfall descent.",
+        "goals": [
+          "skill-plunge-abc",
+          "spell-abcd",
+          "beginner-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Front-load all four letters so the kickout hole pays its full five thousand, then settle into the farm: alley-pass right-to-left, shoot the saucer, and nudge its eject down the lit waterfall lanes. Clear the drop bank once and take Double Advance to make the thermometer climb twice as fast.",
+        "goals": [
+          "abcd-build-then-farm",
+          "top-saucer-all-day",
+          "shatz-saucer-loop",
+          "waterfall-management",
+          "light-double-advance"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The game's summit is the thermometer itself: drive it all twenty-four steps to thirty-seven degrees to light a Special that never goes out at the kickout hole. Those advances score nothing, so it is a chase for the award -- the biggest points, meanwhile, come from a full-value saucer and a completely lit waterfall run.",
+        "goals": [
+          "complete-temperature-check",
+          "collect-the-special",
+          "waterfall-management"
+        ]
+      }
+    ]
+  }
+}

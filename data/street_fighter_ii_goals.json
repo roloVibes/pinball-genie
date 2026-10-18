@@ -1,0 +1,733 @@
+{
+  "machine": "Street Fighter II (Gottlieb, 1993)",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper-Left Flipper",
+      "type": "flipper",
+      "x": 0.12,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "A full-size flipper facing sideways, halfway up the left side. Feeds the Bracelet target and is the intended way to reach the spiral.",
+      "bat": {
+        "size": "full"
+      }
+    },
+    {
+      "id": "car-crunch-flipper",
+      "name": "Car Crunch Flipper",
+      "type": "flipper",
+      "x": 0.5,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The sole flipper inside the Car Crunch mini-playfield, used to batter the car model itself.",
+      "playfield": "deck-car-crunch"
+    },
+    {
+      "id": "ramp-rotor",
+      "name": "Right-Ramp Auto-Flipper",
+      "type": "mech",
+      "x": 0.8,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "A rotating paddle at the top of the raised right ramp, spinning at constant speed with no player control. Miss sneaking a ball past it and you get nothing off that shot — no points, no switches."
+    },
+    {
+      "id": "lower-left-sinkhole",
+      "name": "E. Honda Hole",
+      "type": "saucer",
+      "x": 0.2,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "When E. Honda isn't lit, this hole spots a TORPEDO letter. It's also the standard destination for the skill-shot plunge, the left ramp's kickout, the left underpass kickout, and the left sinkhole kickout."
+    },
+    {
+      "id": "lower-right-sinkhole",
+      "name": "M. Bison / Balrog Hole",
+      "type": "saucer",
+      "x": 0.8,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Carries two opponents at once. Unlit, it spots a TORPEDO letter until the first Torpedo Multiball, scores an escalating award, and resets each ball. Also receives the spiral's kickout."
+    },
+    {
+      "id": "left-lane",
+      "name": "Blanka Hole",
+      "type": "saucer",
+      "x": 0.16,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Just past the upper-left flipper. Unlit, it advances the Car Crunch count."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Zangief Ramp",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Active when lowered. Unlit, scores 3M and kicks out through the E. Honda hole. An unlit hit raises the ramp, exposing the underpass below for a shot at Sagat.",
+      "feeds": {
+        "shot": "lower-left-sinkhole"
+      }
+    },
+    {
+      "id": "left-underpass",
+      "name": "Sagat Underpass",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Only open while the left ramp is raised. Unlit, worth 4M and kicks one barrel toward Multiball — four barrels starts it outright. Kicks out through the E. Honda hole.",
+      "feeds": {
+        "shot": "lower-left-sinkhole"
+      }
+    },
+    {
+      "id": "left-sinkhole",
+      "name": "Dhalsim Sinkhole",
+      "type": "saucer",
+      "x": 0.32,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Just right of the left ramp. Unlit, scores the Flame award for 2M and kicks out through the E. Honda hole."
+    },
+    {
+      "id": "vertical-loopback",
+      "name": "Guile Loopback",
+      "type": "loop",
+      "x": 0.55,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Just right of the top pop bumper and one of the toughest shots on the table — a very small sweet spot, built for the left flipper though an occasional right-flipper backhand can reach it. Unlit, it spots a GUILE letter.",
+      "feeds": {
+        "x": 0.75,
+        "y": 0.08
+      }
+    },
+    {
+      "id": "spiral",
+      "name": "Ken & Ryu Spiral",
+      "type": "loop",
+      "x": 0.85,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Designed for the upper-left flipper; a stray ball off the right flipper can occasionally ricochet in off the post above E. Honda. Both opponents light together, but a lit shot only scores one of them at a time. Kicks out through the M. Bison hole.",
+      "feeds": {
+        "shot": "lower-right-sinkhole"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Chun-Li Ramp",
+      "type": "ramp",
+      "x": 0.78,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Active when lowered. A shot up sends the ball onto the raised mini-playfield with the auto-flipper; get past it and you drop into the left inlane, scoring Chun-Li when lit or an escalating unlit award otherwise. An unlit hit raises the ramp, exposing Vega below.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-underpass",
+      "name": "Vega Underpass",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Only open while the right ramp is raised. Unlit, scores a random award — points, extra ball, multiball, or letters toward GUILE, TORPEDO or FIGHTER. Feeds the top pop bumper on the way out.",
+      "feeds": {
+        "shot": "top-pop-bumper"
+      }
+    },
+    {
+      "id": "bracelet-target",
+      "name": "Bracelet Target",
+      "type": "standup",
+      "x": 0.83,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "A plastic target with a metal pin at its center, sitting just above the spiral's entrance. The second half of the skill shot.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "eb-target",
+      "name": "Extra Ball Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "The white target between two red ones near the back center. Only the white center counts, and only while the purple light is flashing."
+    },
+    {
+      "id": "green-targets",
+      "name": "Green Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three plastic targets behind the Extra Ball target, marked by green lights. A single pop bumper sits with them."
+    },
+    {
+      "id": "fighter-targets",
+      "name": "Fighter Targets",
+      "type": "target-bank",
+      "x": 0.68,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Two sideways targets just left of the right ramp."
+    },
+    {
+      "id": "slingshots",
+      "name": "Slingshots",
+      "type": "slingshot",
+      "x": 0.5,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "The standard pair above the lower flippers. Score little on their own, but roll the double light and pay 3M each during Torpedo Multiball."
+    },
+    {
+      "id": "top-pop-bumper",
+      "name": "Top Pop Bumper",
+      "type": "bumpers",
+      "x": 0.48,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Fed by the Vega underpass eject hole; sits with the Green Targets and can chain several hits from a single feed."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger, timed to a 'Ready, Set, Shoot' callout. The ball always rides the habitrail down into the Blanka hole — timing only changes the value it sets, not the destination."
+    },
+    {
+      "id": "car-crunch-playfield",
+      "name": "Car Crunch Mini-Playfield",
+      "type": "mini-playfield",
+      "x": 0.4946,
+      "y": 0.3768,
+      "trim": "all",
+      "notes": "A walled sub-playfield under the main one, with its own flipper, ball, and a model car that crunches up as you hit it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-bracelet",
+      "title": "Skill Shot: The Bracelet",
+      "category": "skillshot",
+      "summary": "One continuous skill shot rather than a menu of them: time the plunger release to the callout, then finish it on the Bracelet as the ball feeds off the upper-left flipper.",
+      "difficulty": 2,
+      "reward": "Doubled bracelet value, from 10M up to 40M",
+      "steps": [
+        {
+          "shot": "bracelet-target",
+          "action": "Time your release to the 'Shoot!' callout, then catch the feed on the upper-left flipper and hit dead center",
+          "detail": "A clean-timed release sets a 20M bracelet value (5-15M if you're early or late); a dead-center hit doubles whatever value you set. Miss and it turns into a Hurry-Up counting down to zero — nothing banks from the release alone. Lit on the way through, this also defeats your first opponent."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "opponent-prize-ladder",
+      "title": "Defeat Opponents, Pick Your Prize",
+      "category": "progression",
+      "summary": "Defeating opponents is the spine of the whole game — every one you beat hands you a flipper-selectable choice, and the valuable pick is almost never the points.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Three opponents are lit at a time; make the matching shot to defeat whoever's lit",
+        "Every defeat offers two choices, selected with the flippers — the left-flipper choice is usually flat points, the right-flipper choice is usually the better prize",
+        "Prizes run in order: Car Crunch, Multiball, Roaming Ninjas, Multiball, Hurry-Up Extra Ball, add 3 letters to TORPEDO, Multiball, add 2 letters to GUILE, Double Score, complete FIGHTER outright — the 11th opponent gives only a message, and the 12th starts the Champion Challenge",
+        "Wait more than 5 seconds and the game locks in the left-flipper choice for you",
+        "When in doubt, take Multiball whenever it's on offer"
+      ],
+      "reward": "A meaningful prize — Multiball, a mode, or a free letter — every second opponent, flat points the rest of the time",
+      "fx": "quest"
+    },
+    {
+      "id": "double-light-roaming",
+      "title": "Chase the Double Light",
+      "category": "multiplier",
+      "summary": "A red 'double' light rides on one unlit opponent at a time, doubling whatever that shot would normally pay. Clip a slingshot or the top pop bumper to roll it onto someone else.",
+      "difficulty": 2,
+      "reward": "Double the shot's normal unlit reward",
+      "steps": [
+        {
+          "shot": "slingshots",
+          "action": "Hit a slingshot or the top pop bumper to roll the double light",
+          "detail": "It jumps to a different unlit opponent each time you clip one"
+        },
+        {
+          "shot": "lower-left-sinkhole",
+          "action": "Shoot whichever opponent is currently carrying the double light",
+          "detail": "Two TORPEDO letters instead of one, two barrels instead of one, 6M instead of 3M, two random awards instead of one — whatever that shot normally pays, doubled"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "guile-spelled",
+      "title": "Spell GUILE",
+      "category": "progression",
+      "summary": "The loopback next to the pop bumper has the smallest sweet spot on the table, and it's the only place GUILE ever gets spelled.",
+      "difficulty": 3,
+      "reward": "First completion: extra ball, or 50M with extra balls off. Every completion after: 50M",
+      "steps": [
+        {
+          "shot": "vertical-loopback",
+          "action": "Loop the ball through while unlit",
+          "detail": "Spots one GUILE letter; the shot is built for the left flipper, though a backhand off the right can reach it in a pinch"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "fighter-spelled",
+      "title": "Spell FIGHTER",
+      "category": "progression",
+      "summary": "Two sideways targets by the right ramp spell FIGHTER a letter at a time, lighting a flipper-selectable Special once it's complete.",
+      "difficulty": 2,
+      "reward": "Special, lit at a flipper-selectable in/outlane",
+      "steps": [
+        {
+          "shot": "fighter-targets",
+          "action": "Complete both targets",
+          "detail": "Spots one FIGHTER letter per completed pair"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "green-targets-eb",
+      "title": "Light the Extra Ball",
+      "category": "mode",
+      "summary": "Work the three Green Targets enough and the white center target lights for 10-15 seconds — hit anything but dead center in that window and it's wasted.",
+      "difficulty": 2,
+      "reward": "Extra ball, repeatable as many times as you can relight it",
+      "steps": [
+        {
+          "shot": "green-targets",
+          "action": "Work all three Green Targets",
+          "detail": "A couple of full passes lights the Extra Ball target"
+        },
+        {
+          "shot": "eb-target",
+          "action": "Hit the white center target while it's flashing",
+          "detail": "The red side targets don't count, and there's no grace period once the light stops"
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "car-crunch",
+      "title": "Car Crunch",
+      "category": "mode",
+      "summary": "A mini-playfield below the main one: crunch the car with its own flipper before the clock runs out, and the clock gets tighter with every round you clear.",
+      "difficulty": 2,
+      "reward": "5M round one, 10M round two, 30M round three and beyond",
+      "steps": [
+        {
+          "shot": "car-crunch-flipper",
+          "action": "Batter the car with the mini-playfield flipper",
+          "detail": "2 to 5 hits crunches it, depending on how hard you're hitting"
+        },
+        {
+          "shot": "car-crunch-flipper",
+          "action": "Finish before time runs out",
+          "detail": "About 8 seconds on round one, 5-6 on round two, only 2-3 by round three and beyond"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "roaming-ninjas",
+      "title": "Roaming Ninjas",
+      "category": "mode",
+      "summary": "Two of the eight opponent shots light at random, one on each half of the table, for five seconds at a time — chain as many as you can before the round ends.",
+      "difficulty": 3,
+      "reward": "5M, 20M, 50M, then 100M for the first through fourth hits; there's no fifth shot",
+      "steps": [
+        {
+          "shot": "spiral",
+          "action": "Take whichever shot lights on your side",
+          "detail": "Value climbs with each hit across the whole round: 5M, then 20M, then 50M, then 100M",
+          "link": "none"
+        },
+        {
+          "shot": "vertical-loopback",
+          "action": "Stay ready on both halves of the table",
+          "detail": "A lit shot stays lit for its full five seconds, so the same hole can pay twice in a row on a lucky rebound",
+          "link": "none"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "count-up",
+      "title": "Count-Up",
+      "category": "mode",
+      "summary": "The reverse of a Hurry-Up: the M. Bison hole's value climbs from a 3M floor, with no grace period for a miss.",
+      "difficulty": 3,
+      "reward": "Up to 48M, all or nothing",
+      "steps": [
+        {
+          "shot": "lower-right-sinkhole",
+          "action": "Time your shot for the peak value",
+          "detail": "Climbs 100K at a time up to 10M, pauses, then jumps 1M at a time up to 48M — miss the top by a hair and you get nothing"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "one-two-punch",
+      "title": "1-2 Punch",
+      "category": "combo",
+      "summary": "A genuine two-shot combo on the clock: Blanka, then Ken & Ryu, inside about twenty seconds.",
+      "difficulty": 2,
+      "reward": "Extra ball the first time; 25M then 50M afterward",
+      "steps": [
+        {
+          "shot": "left-lane",
+          "action": "Complete Blanka first",
+          "detail": null
+        },
+        {
+          "shot": "spiral",
+          "action": "Finish at the spiral within about twenty seconds",
+          "detail": "First time through in a game pays an extra ball outright"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "double-score",
+      "title": "Double Score Round",
+      "category": "mode",
+      "summary": "Four shots light for the double light's other trick: clear all four inside twenty seconds and your entire score doubles. The game deliberately picks the hardest shots it can find.",
+      "difficulty": 3,
+      "reward": "Your whole score, doubled",
+      "steps": [
+        {
+          "shot": "vertical-loopback",
+          "action": "Clear the first three lit shots",
+          "detail": "Worth 5M, 10M and 15M in order — expect Guile or the spiral to be among them",
+          "link": "none"
+        },
+        {
+          "shot": "spiral",
+          "action": "Hit the fourth lit shot before time runs out",
+          "detail": "Doubles your entire score instead of paying points"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "regular-multiball",
+      "title": "Multiball: The Jackpot Ladder",
+      "category": "multiball",
+      "summary": "A progressive jackpot multiball with a fixed shot order — clear it in sequence and the eighth jackpot becomes a repeatable Super Jackpot.",
+      "difficulty": 3,
+      "reward": "5M through 35M in order, then a repeatable 300M Super Jackpot",
+      "steps": [
+        {
+          "shot": "lower-left-sinkhole",
+          "action": "Clear the first opener — either one, in any order",
+          "detail": "Multiball itself usually starts as the right-flipper prize after your 2nd, 4th, 6th, 8th or 10th opponent, though four barrels or a lucky random roll also qualify it. This opener is worth 5M.",
+          "link": "none"
+        },
+        {
+          "shot": "lower-right-sinkhole",
+          "action": "Clear the other opener",
+          "detail": "Worth 10M",
+          "link": "none"
+        },
+        {
+          "shot": "left-underpass",
+          "action": "The third jackpot is forced by which opener you hit first",
+          "detail": "Worth 15M",
+          "flipper": null
+        },
+        {
+          "shot": "right-underpass",
+          "action": "The fourth jackpot finishes that pair",
+          "detail": "Worth 20M"
+        },
+        {
+          "shot": "left-sinkhole",
+          "action": "The fifth jackpot is always the same shot",
+          "detail": "Worth 25M"
+        },
+        {
+          "shot": "left-lane",
+          "action": "Sixth jackpot, same order every time",
+          "detail": "Worth 30M"
+        },
+        {
+          "shot": "vertical-loopback",
+          "action": "Seventh jackpot — one of the harder shots to land on purpose",
+          "detail": "Worth 35M"
+        },
+        {
+          "shot": "spiral",
+          "action": "The eighth jackpot is the repeatable Super Jackpot",
+          "detail": "Worth 300M and reshootable until the multiball ends — tournament settings reset the ladder back to 5M after one instead"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "torpedo-multiball",
+      "title": "Torpedo Multiball",
+      "category": "multiball",
+      "summary": "A three-ball frenzy where every single switch pays 3M. Getting there is just a matter of spelling TORPEDO at the two starting holes.",
+      "difficulty": 2,
+      "reward": "Every switch worth 3M for the duration (roughly 100M on an average run) — this is the only end-of-ball bonus in the game, so don't tilt once it's qualified",
+      "steps": [
+        {
+          "shot": "lower-left-sinkhole",
+          "action": "Spot TORPEDO letters while unlit",
+          "detail": "One letter per hit before the first Torpedo Multiball; the double light adds a second letter, and choosing 'add 3 to TORPEDO' after your 6th opponent adds three at once",
+          "link": "none"
+        },
+        {
+          "shot": "lower-right-sinkhole",
+          "action": "Either hole spots a letter",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "lower-left-sinkhole",
+          "action": "Complete TORPEDO to start the frenzy",
+          "detail": "Both holes flash once only one letter remains; a plunge that lands lit banks it instantly"
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "champion-challenge",
+      "title": "Champion Challenge",
+      "category": "wizard",
+      "summary": "Defeat all twelve opponents once to unlock the Challenge, then defeat all twelve again on the very same ball to become the new Master.",
+      "difficulty": 3,
+      "reward": "500M, a Special, and your initials go up as the new Master",
+      "steps": [
+        {
+          "shot": "lower-left-sinkhole",
+          "action": "Defeat all twelve opponents once to reach the Challenge",
+          "detail": "Only two opponents are lit at a time on your second pass through, instead of three"
+        },
+        {
+          "shot": "lower-right-sinkhole",
+          "action": "Clear the dual opponents together with one shot",
+          "detail": "All eight shots are lit simultaneously during the Challenge"
+        },
+        {
+          "shot": "spiral",
+          "action": "Clear the spiral's dual opponents together with one shot",
+          "detail": null
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to raise it and expose the underpass below",
+          "detail": null
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to raise it and expose its underpass",
+          "detail": "Ten total shots clears all twelve opponents"
+        },
+        {
+          "shot": "left-underpass",
+          "action": "Finish both raised shots to complete the Challenge",
+          "detail": "Lose the ball mid-Challenge and you forfeit it — the whole thing restarts next ball"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-torpedo-farm",
+      "title": "Strategy: Two-Shot Farm",
+      "category": "strategy",
+      "summary": "A repeatable line for building TORPEDO fast: park on two easy shots, one per side, and just keep feeding them.",
+      "difficulty": 2,
+      "reward": null,
+      "steps": [
+        {
+          "shot": "left-underpass",
+          "action": "Lean on the underpass as your left-side shot",
+          "detail": "An easy, controllable shot that also parks a ball briefly out of play, and it passes three switches for 9M a hit versus one or two on most other shots"
+        },
+        {
+          "shot": "right-underpass",
+          "action": "Lean on the other underpass as your right-side shot",
+          "detail": "Feeds the top pop bumper, which together with the Green Targets often nets five or more switch hits — roughly 15M — off a single shot, and repeated visits can light the extra ball too"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "strategy-super-jackpot",
+      "title": "Strategy: Save the Hard Shots",
+      "category": "strategy",
+      "summary": "Take your easy jackpots early in the ladder and save the tough ones for the middle, so an easy shot is what's left over for the repeatable Super Jackpot.",
+      "difficulty": 3,
+      "reward": null,
+      "steps": [
+        {
+          "shot": "vertical-loopback",
+          "action": "Take the loopback jackpot early in the ladder rather than saving it",
+          "detail": "It's one of the toughest shots in the game — you don't want it left over as your Super Jackpot target"
+        },
+        {
+          "shot": "spiral",
+          "action": "Take the spiral jackpot early too, for the same reason",
+          "detail": null
+        },
+        {
+          "shot": "left-underpass",
+          "action": "Aim to have an easy hole left over for the Super Jackpot",
+          "detail": "An easy leftover shot means reshooting 300M repeatedly instead of fighting for a single one"
+        }
+      ],
+      "fx": "coin"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "extreme",
+  "achievements": [
+    {
+      "id": "bracelet-doubled",
+      "title": "Perfect Timing",
+      "desc": "Land a dead-center Bracelet hit off a perfectly timed plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-bracelet"
+    },
+    {
+      "id": "fighter-completed",
+      "title": "Special Delivery",
+      "desc": "Complete FIGHTER and light a Special at a flipper-selectable lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "fighter-spelled"
+    },
+    {
+      "id": "car-crunch-cleared",
+      "title": "Total Wreck",
+      "desc": "Crunch the car before time runs out in the mini-playfield.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "car-crunch"
+    },
+    {
+      "id": "guile-spelled-first",
+      "title": "Sonic Boom",
+      "desc": "Spell GUILE for the first time in a game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "guile-spelled"
+    },
+    {
+      "id": "eb-target-lit",
+      "title": "Green Light Special",
+      "desc": "Light and collect the Extra Ball target off the Green Targets.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "green-targets-eb"
+    },
+    {
+      "id": "one-two-punch-landed",
+      "title": "Combo Breaker",
+      "desc": "Land the 1-2 Punch — Blanka into Ken & Ryu inside twenty seconds.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "one-two-punch"
+    },
+    {
+      "id": "torpedo-started",
+      "title": "Fire The Torpedo",
+      "desc": "Complete TORPEDO and start the three-ball frenzy multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "torpedo-multiball"
+    },
+    {
+      "id": "roaming-ninjas-max",
+      "title": "Fourth Ninja Down",
+      "desc": "Chain all four Roaming Ninjas hits in a single round.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "roaming-ninjas"
+    },
+    {
+      "id": "count-up-maxed",
+      "title": "Perfect Count",
+      "desc": "Time the Count-Up hole for its full 48M peak value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "count-up"
+    },
+    {
+      "id": "double-score-doubled",
+      "title": "Everything Doubled",
+      "desc": "Clear all four Double Score shots before time runs out.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "double-score"
+    },
+    {
+      "id": "super-jackpot-collected",
+      "title": "Eighth Jackpot",
+      "desc": "Reach and collect the 300M Super Jackpot at the spiral.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "regular-multiball"
+    },
+    {
+      "id": "champion-challenge-won",
+      "title": "The New Master",
+      "desc": "Complete the Champion Challenge and enter your initials as Master.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "champion-challenge"
+    }
+  ],
+  "playfields": [
+    {
+      "id": "deck-car-crunch",
+      "name": "Car Crunch Sub-Playfield",
+      "kind": "lower",
+      "bounds": {
+        "x": 0.42,
+        "y": 0.28,
+        "w": 0.16,
+        "h": 0.14
+      },
+      "entries": [],
+      "exits": []
+    }
+  ]
+}

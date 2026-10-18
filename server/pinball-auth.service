@@ -1,0 +1,53 @@
+[Unit]
+Description=Pinball Genie Web server-side auth (session gate in front of /var/www/pinballgenie)
+After=network.target
+
+[Service]
+Type=simple
+User=pinball-auth
+Environment=PINBALL_ROOT=/var/www/pinballgenie
+Environment=PINBALL_AUTH_SECRET_FILE=/etc/pinball-auth/secret
+# D2 (2026-07-30 security review): the canonical origin embedded in every
+# emailed magic-link URL. REQUIRED — pinball_auth.py's main() refuses to
+# start without it (outside --dev, which this unit never passes). Before
+# this fix, the link was built from the request's own Host header, so
+# `Host: evil.example` put an attacker-chosen domain into a real, working,
+# emailed sign-in credential — a one-click takeover of any address the
+# attacker could get to click the link in their OWN inbox.
+Environment=PINBALL_PUBLIC_ORIGIN=https://pinball-genie.com
+# Phase 5 (2026-07-30): magic-link auth replaces auth.json + PBKDF2 hashes —
+# there is no PINBALL_AUTH_JSON anymore, and none should be re-added; see
+# pinball_auth.py's module docstring. Resend's API key (if/when rolo creates
+# an account) lives at this path — missing/empty is a supported, non-fatal
+# state (mail_sender.DevLogSender; see that module's docstring), so this
+# points at the path even before the file exists.
+Environment=PINBALL_RESEND_KEY_FILE=/etc/pinball-auth/resend_key
+Environment=PINBALL_STATE_DIR=/var/lib/pinball-auth
+# Writable per-user state (achievements, the user registry, live magic-link
+# tokens) — the one write path the hardened unit allows; systemd creates it
+# owned by User=pinball-auth (2026-07-29 achievements; 2026-07-30 users/tokens).
+StateDirectory=pinball-auth
+# D12 (2026-07-30 security review): systemd creates StateDirectory 0755 by
+# default, and pinball_auth.py's own per-file chmod(0600) (see UserStore/
+# TokenStore._write_locked) doesn't help if the DIRECTORY itself is
+# world-readable+executable — anything on the box could still list
+# users.json's name and stat it. 0700 keeps the whole directory readable
+# only by User=pinball-auth.
+StateDirectoryMode=0700
+ExecStart=/usr/bin/python3 /opt/pinball-auth/pinball_auth.py
+Restart=on-failure
+RestartSec=2
+
+# Hardening
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ReadOnlyPaths=/etc/pinball-auth /var/www/pinballgenie
+ProtectKernelTunables=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+MemoryDenyWriteExecute=yes
+
+[Install]
+WantedBy=multi-user.target

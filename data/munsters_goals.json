@@ -1,0 +1,1516 @@
+{
+  "machine": "The Munsters (Stern Pinball, 2019)",
+  "defaultFx": "ghost",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left flipper",
+      "type": "flipper",
+      "x": 0.3932,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard lower-left flipper; forms a V with the right flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right flipper",
+      "type": "flipper",
+      "x": 0.6057,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard lower-right flipper; fed by the right ramp turn-around."
+    },
+    {
+      "id": "lower-left-flipper",
+      "name": "Lower-PF left mini-flipper",
+      "type": "flipper",
+      "x": 0.51,
+      "y": 0.13,
+      "trim": "premium-le",
+      "notes": "Grandpa's Laboratory lower playfield; own left cabinet button. Local frame.",
+      "playfield": "munsters-grandpa-lab-zone"
+    },
+    {
+      "id": "lower-right-flipper",
+      "name": "Lower-PF right mini-flipper",
+      "type": "flipper",
+      "x": 0.57,
+      "y": 0.13,
+      "trim": "premium-le",
+      "notes": "Lower playfield right mini-flipper; own right cabinet button. Local frame.",
+      "playfield": "munsters-grandpa-lab-zone"
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Raven/Spot ramp. THE Raven Multiball shot (3x when lit); blue SPOT insert.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right ramp",
+      "type": "ramp",
+      "x": 0.66,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Marilyn/Spot ramp; metal U-turn that feeds the right flipper; re-raises Spot.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Eddie loop; contains the spinner; re-raises Spot; advances Raven clock in MB.",
+      "feeds": {
+        "shot": "right-orbit"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right orbit",
+      "type": "orbit",
+      "x": 0.89,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Eddie loop; during Super Pops stops the ball at top to feed the pop bumpers.",
+      "feeds": {
+        "shot": "left-orbit"
+      }
+    },
+    {
+      "id": "herman",
+      "name": "Herman bash toy",
+      "type": "bash-toy",
+      "x": 0.5,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Center sculpted Herman; bash to start Herman Hurry-Up → Multiball."
+    },
+    {
+      "id": "herman-magnet",
+      "name": "Herman magnet",
+      "type": "magnet",
+      "x": 0.5,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "In front of Herman; catches the ball (the lock); shoot it off to start Herman MB."
+    },
+    {
+      "id": "grandpa-scoop",
+      "name": "Grandpa's Laboratory scoop",
+      "type": "scoop",
+      "x": 0.57,
+      "y": 0.41,
+      "trim": "all",
+      "notes": "Center scoop lit by purple targets; starts Enlarging Ray (Pro) or drops to lower PF (Prem/LE). Also the Munster Madness start."
+    },
+    {
+      "id": "kitty-target",
+      "name": "Kitty target",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Playfield multiplier target (1X/2X/3X/6X); lights Raven, bonus-X, outlane Special."
+    },
+    {
+      "id": "spot",
+      "name": "Spot pop-up toy",
+      "type": "bash-toy",
+      "x": 0.31,
+      "y": 0.29,
+      "trim": "all",
+      "notes": "Hidden under the left ramp; pops up in Spot mode; re-raised by right ramp or left orbit. SDTM-prone."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.1,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Mounted in the left orbit; advances the Raven clock and super-spinner value."
+    },
+    {
+      "id": "teeth-target-1",
+      "name": "Chattering-teeth target 1 (outer-left)",
+      "type": "standup",
+      "x": 0.21,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Purple mini-target outboard of the left ramp; charges Zap; feeds teeth milestones."
+    },
+    {
+      "id": "teeth-target-2",
+      "name": "Chattering-teeth target 2 (inner-left)",
+      "type": "standup",
+      "x": 0.37,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Purple mini-target inboard of the left ramp; charges Zap; feeds teeth milestones."
+    },
+    {
+      "id": "teeth-target-3",
+      "name": "Chattering-teeth target 3 (inner-right)",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Purple mini-target inboard of the right ramp; charges Zap; feeds teeth milestones."
+    },
+    {
+      "id": "teeth-target-4",
+      "name": "Chattering-teeth target 4 (outer-right)",
+      "type": "standup",
+      "x": 0.74,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Purple mini-target outboard of the right ramp; charges Zap; feeds teeth milestones."
+    },
+    {
+      "id": "lily-standup-left",
+      "name": "Long left standup",
+      "type": "standup",
+      "x": 0.16,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Long left mode/LILY standup; exact letter assignment lower-confidence."
+    },
+    {
+      "id": "lily-standup-right",
+      "name": "Long right standup (Lily target)",
+      "type": "standup",
+      "x": 0.84,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Long right standup; the Lily target referenced as the 'right target' for Lily frenzy."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop bumpers (x3)",
+      "type": "bumper",
+      "x": 0.78,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Cluster of 3 upper-right behind the right ramp; Super Pops; fast switch hits for Lily."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top lanes (skill-shot lanes)",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Plunge into the lit right top lane for the standard skill shot."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Return lane carrying a rotating Marilyn/Eddie light; inner-left lights the right ramp (Marilyn)."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Return lane with a rotating Marilyn/Eddie light."
+    },
+    {
+      "id": "third-return-lane",
+      "name": "Third return lane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Third lit-able return lane cycled by the flipper buttons; placement lower-confidence."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far-left drain lane; can be lit for Special via Kitty."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right outlane",
+      "type": "lane",
+      "x": 0.93,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far-right drain lane; can be lit for Special."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter lane / plunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger feeding the top lanes / right orbit. Short plunge to the right flipper is the standard opener."
+    },
+    {
+      "id": "dragula-hole",
+      "name": "Drag-U-La hole",
+      "type": "scoop",
+      "x": 0.13,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Left-side kicker lane with the Drag-U-La car; where the stacked Super Jackpot arrow is collected."
+    },
+    {
+      "id": "dragula-bank",
+      "name": "Drag-U-La bank",
+      "type": "target-bank",
+      "x": 0.17,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "D-R-A-G-U-L-A standup bank; completing lights 5X Dragula at the hole."
+    },
+    {
+      "id": "zap-button",
+      "name": "Zap button",
+      "type": "lockbar-button",
+      "x": 0.5,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "RGB lockbar action button (front rail, off the playfield). Charges the Zap meter; hold to cancel a Dragula collect."
+    },
+    {
+      "id": "the-machine",
+      "name": "THE MACHINE",
+      "type": "bash-toy",
+      "x": 0.54,
+      "y": 0.46,
+      "trim": "premium-le",
+      "notes": "Center bash target of the lower playfield; qualified by both lower orbits; starts Grandpa MB and charges Zap. Local frame.",
+      "playfield": "munsters-grandpa-lab-zone"
+    },
+    {
+      "id": "lower-left-orbit",
+      "name": "Lower-PF left orbit",
+      "type": "orbit",
+      "x": 0.39,
+      "y": 0.46,
+      "trim": "premium-le",
+      "notes": "Left orbit of the lower PF; LITE MACHINE insert. Local frame.",
+      "playfield": "munsters-grandpa-lab-zone"
+    },
+    {
+      "id": "lower-right-orbit",
+      "name": "Lower-PF right orbit",
+      "type": "orbit",
+      "x": 0.69,
+      "y": 0.46,
+      "trim": "premium-le",
+      "notes": "Right orbit of the lower PF; LITE MACHINE insert. Local frame.",
+      "playfield": "munsters-grandpa-lab-zone"
+    },
+    {
+      "id": "lower-ramp",
+      "name": "Lower-PF ramp (add-time)",
+      "type": "ramp",
+      "x": 0.63,
+      "y": 0.4,
+      "trim": "premium-le",
+      "notes": "Right ramp of the lower PF; adds time (award decreases 1s each use). Local frame.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "playfield": "munsters-grandpa-lab-zone"
+    },
+    {
+      "id": "lower-saucer",
+      "name": "Lower-PF saucer (Mystery)",
+      "type": "saucer",
+      "x": 0.45,
+      "y": 0.4,
+      "trim": "premium-le",
+      "notes": "Left ball popper of the lower PF; collects Mystery and spots a LITE MACHINE shot. Local frame.",
+      "playfield": "munsters-grandpa-lab-zone"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-standard",
+      "title": "Standard Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "Plunge lightly into the lit right top lane for points and a guaranteed +1 Bonus Multiplier within the ~10-second window — the lit lane is always the right one and cannot be changed.",
+      "reward": "~250K + 1 Bonus Multiplier (+25K/sec remaining)",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Plunge lightly into the lit lane",
+          "detail": "The lit lane is always the right one and can't be changed, so aim a light plunge for it within the ~10-second window — worth ~250K + 1 Bonus X + 25K per second remaining. A short plunge straight to the right flipper followed by a shot up the left ramp scores the same skill shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-super",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Hold the left flipper during the plunge, then shoot the right ramp for roughly double value.",
+      "reward": "~500K + Bonus X",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Hold the left flipper during the plunge",
+          "detail": "Holding the left flipper button in as you plunge arms the Super Skill Shot; it redirects the ball up the right ramp for roughly double value (~500K) plus a Bonus Multiplier.",
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-kitty-6x",
+      "title": "6X Playfield Build & Hold (Kitty)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "The master money loop: drive the Kitty target to 6X and keep tapping it to hold the multiplier indefinitely under everything else.",
+      "reward": "6X playfield multiplier held",
+      "steps": [
+        {
+          "shot": "kitty-target",
+          "action": "Collect lit Kitty",
+          "detail": "Each mode start lights Kitty; collecting it advances the playfield multiplier as far as it can (1X→2X→3X→6X) and starts a ~1-minute timer."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Repeat to 6X",
+          "detail": "Three lit-Kitty collects while the timer runs reaches the 6X maximum."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Tap to hold",
+          "detail": "Even an unlit Kitty hit resets the timer — tap it periodically to hold 6X while you cash bigger things."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-super-stack",
+      "title": "Stack Supers, Hold Zap, Dump at Dragula",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The single highest-EV sequence: qualify many Super Jackpots, cancel-and-restack with the Zap button, then dump the whole stack at Dragula under 6X.",
+      "reward": "Massive stacked Super Jackpot cash-out (up to ~23X on 10-super stack)",
+      "steps": [
+        {
+          "shot": "zap-button",
+          "action": "Hold to bank stacks",
+          "detail": "As each of the 10 (Pro)/11 (Prem/LE) Supers qualifies, hold Zap ~1/3 sec at Dragula to cancel the collect. Blink rate shows stack size (none=1, slow=2, fast=3, very fast=4+)."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Get to 6X first",
+          "detail": "Drive the playfield multiplier to 6X so the entire cash-out is multiplied."
+        },
+        {
+          "shot": "dragula-hole",
+          "action": "Cash the stack",
+          "detail": "Shoot the Dragula lane to collect all stacked Super Jackpots at once at 6X — the game's biggest single collect."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-raven-6x",
+      "title": "Raven Multiball at 6X",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The premier padding loop — start Raven, hold 6X at Kitty, pump the clock with the spinner, and cash 4 jackpots at Dragula.",
+      "reward": "6X Raven Multiball — the single biggest score-padding window on the machine",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light Raven x3",
+          "detail": "Shoot the left ramp three times to collect the three Raven advances — each one qualified by starting another family member's mode — and the 3-ball Raven Multiball begins."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Hold 6X",
+          "detail": "During the multiball keep tapping Kitty to reach and hold 6X."
+        },
+        {
+          "shot": "spinner",
+          "action": "Pump the clock",
+          "detail": "The left-orbit spinner advances the Raven clock; each hour raises jackpot value toward midnight."
+        },
+        {
+          "shot": "dragula-hole",
+          "action": "Cash at 6X",
+          "detail": "Collect all 4 jackpots to qualify the Raven Super Jackpot, then dump the stack at Dragula under 6X."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-spot-into",
+      "title": "Combo Into Spot",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "The only combo that materially changes a scoring decision: approach Spot with a live combo to boost his value.",
+      "reward": "Boosted Spot values (150K/250K/350K/450K ladder)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Live combo feed",
+          "detail": "Keep a combo alive going into the Spot shot — comboing into Spot boosts his award value."
+        },
+        {
+          "shot": "spot",
+          "action": "Bash Spot",
+          "detail": "Hit the popped-up Spot toy under the left ramp for the higher combo-boosted value."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-madness-cascade",
+      "title": "Munster Madness Hurry-Up Cascade",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "Stage 3 of the wizard mode: four sequential hurry-ups in a fixed order, each adding the previous value.",
+      "reward": "Cascading Munster Madness hurry-ups (~938M perfect at 6X)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Hurry-up 1",
+          "detail": "The cascade opens at the left ramp; value is based on jackpots collected in Stages 1-2."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Hurry-up 2",
+          "detail": "Whatever the last hurry-up was worth gets folded into this countdown on top."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hurry-up 3",
+          "detail": "Continues the compounding cascade."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hurry-up 4",
+          "detail": "Final hurry-up; complete all four for the biggest cash — only worthwhile at 6X."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mb-herman",
+      "title": "Herman Multiball",
+      "category": "multiball",
+      "difficulty": 1,
+      "summary": "The fastest multiball on the machine (~3 shots). Bash Herman, lock on the magnet, release for a 3-ball multiball. Once per level.",
+      "reward": "Herman Multiball (3 balls, 2X hurry-up value)",
+      "steps": [
+        {
+          "shot": "herman",
+          "action": "Start the hurry-up",
+          "detail": "Bash Herman to arm the Herman Hurry-Up (Level 1 needs ~1 shot)."
+        },
+        {
+          "shot": "herman",
+          "action": "Lock on the magnet",
+          "detail": "Shoot Herman again during the hurry-up; the ball is captured on the magnet in front of him and a second ball auto-plunges straight to the flippers."
+        },
+        {
+          "shot": "herman-magnet",
+          "action": "Release for multiball",
+          "detail": "Knock the ball clear of the magnet: that doubles the hurry-up you had built and kicks off Herman Multiball."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mb-raven",
+      "title": "Raven Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Start a level of any other family member to qualify a Raven advance at the left ramp; collect 3 of them to start the 3-ball multiball, then work the 4 jackpots.",
+      "reward": "Raven Multiball (3 balls) + Raven Super Jackpot",
+      "steps": [
+        {
+          "shot": "kitty-target",
+          "action": "Light advances",
+          "detail": "Starting a level of any of the other four family members qualifies a Raven advance at the left ramp once that mode ends; the same mode start separately qualifies the Kitty target for the playfield multiplier."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect 3 advances",
+          "detail": "Shoot the left ramp three times to collect 3 Raven advances and start the 3-ball multiball."
+        },
+        {
+          "shot": "dragula-hole",
+          "action": "Super Jackpot",
+          "detail": "Collect all 4 jackpots (left orbit/left ramp/right ramp/right orbit), boosted by the spinner clock, to light the Raven Super at Dragula."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mb-grandpa-lab",
+      "title": "Grandpa's Laboratory Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Premium/LE only: light and enter the scoop to drop balls to the lower mini-playfield, qualify THE MACHINE with both orbits, then start the multiball.",
+      "reward": "Grandpa Multiball + Machine Super Jackpot (11th qualifier)",
+      "steps": [
+        {
+          "shot": "teeth-target-1",
+          "action": "Light the scoop",
+          "detail": "Collect chattering teeth at the purple targets until GRANDPA'S LABORATORY blinks at the scoop."
+        },
+        {
+          "shot": "grandpa-scoop",
+          "action": "Drop to lower PF",
+          "detail": "Shoot the lit scoop; the main ball holds up top and mini-balls drop to Grandpa's Laboratory on a countdown timer."
+        },
+        {
+          "shot": "lower-left-orbit",
+          "action": "Qualify the Machine",
+          "detail": "Using the mini-flippers, shoot both lower orbits (LITE MACHINE) to light THE MACHINE."
+        },
+        {
+          "shot": "the-machine",
+          "action": "Start the multiball",
+          "detail": "Bash THE MACHINE to start Grandpa Multiball; each hit advances lit jackpots, and the Machine Jackpot lights the Grandpa Super."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-spot",
+      "title": "Spot Mode (S-P-O-T)",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Spell SPOT by alternating the ramps, then bash the popped-up Spot toy four times for escalating points. Beware center drains.",
+      "reward": "Spot Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Spell SPOT",
+          "detail": "Alternate left and right ramps (red inserts) to collect S-P-O-T letters, roughly one per lit ramp shot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate ramp",
+          "detail": "Keep alternating; hitting the raised Spot toy can grant a bonus letter."
+        },
+        {
+          "shot": "spot",
+          "action": "Bash Spot 4x",
+          "detail": "Completing SPOT pops him up; hit him four times (150K/250K/350K/450K) for the Spot Super Jackpot."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-lily",
+      "title": "Lily 'Everything Scores' Frenzy",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Shoot the Lily target 4x to start a frenzy where every switch hit scores; it stacks with almost everything.",
+      "reward": "Lily frenzy + Lily Super Jackpot (100 switch hits)",
+      "steps": [
+        {
+          "shot": "lily-standup-right",
+          "action": "Shoot Lily 4x",
+          "detail": "Hit the Lily target four times to start the 'Everything Scores' frenzy — keep the hits close together, because unfinished LILY progress resets if you leave the targets alone."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Rack switch hits",
+          "detail": "Every switch hit scores and decrements a counter from 100; the pop bumpers rack hits fast."
+        },
+        {
+          "shot": "lily-standup-right",
+          "action": "Extend value",
+          "detail": "Each further Lily shot raises the per-switch value; reaching 0 (100 hits) lights the Lily Super Jackpot."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-enlarging-ray",
+      "title": "Enlarging Ray (Grandpa, Pro)",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "The Pro Grandpa mode on the main playfield: light the scoop with purple targets, then collect stacked purple jackpots (great for charging Zap).",
+      "reward": "Enlarging Ray Super Jackpot + Zap charge",
+      "steps": [
+        {
+          "shot": "teeth-target-2",
+          "action": "Charge the purple targets",
+          "detail": "The purple targets pay out chattering teeth; bank enough of them and the scoop opens up, with the Enlarging Ray insert blinking to tell you so."
+        },
+        {
+          "shot": "grandpa-scoop",
+          "action": "Start the mode",
+          "detail": "Shoot the lit scoop to start Enlarging Ray on the main playfield (Pro only)."
+        },
+        {
+          "shot": "teeth-target-3",
+          "action": "Collect jackpots",
+          "detail": "Shooting a flashing standup target or a white shot qualifies a jackpot at one of the major shots and turns that shot's insert purple; let several build up, then collect them together at the purple shots for a bigger total. Four collected jackpots light the Enlarging Ray Super, and the standups keep the Zap button flashing."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-marilyn",
+      "title": "Marilyn Boyfriend Departures",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Roll the flashing inner-left inlane to light the right ramp; every 2 departures grants a rotating Super buff and lights the Marilyn Super.",
+      "reward": "Marilyn Super Jackpot + rotating buff (Super Pops/Spinner/Loops)",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll inner-left inlane",
+          "detail": "Roll the flashing inner-left inlane to light the right ramp for a boyfriend departure."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Departure shot",
+          "detail": "Shoot the lit right ramp; every 2 departures grants a rotating Super buff and lights the Marilyn Super Jackpot."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mult-kitty-playfield",
+      "title": "Playfield Multiplier (Kitty)",
+      "category": "multiplier",
+      "difficulty": 1,
+      "summary": "The core multiplier: starting any family area lights Kitty, and collecting it advances the playfield multiplier up to 6X on a ~1-minute timer.",
+      "reward": "Up to 6X playfield multiplier",
+      "steps": [
+        {
+          "shot": "kitty-target",
+          "action": "Light via a mode",
+          "detail": "Starting or completing any family area lights the Kitty target."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Advance PF-X",
+          "detail": "Collect lit Kitty to advance 1X→2X→3X→6X and start a ~1-minute timer (unlit hits reset the timer)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-dragula-5x",
+      "title": "5X Dragula Shot Multiplier",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Complete the D-R-A-G-U-L-A standup bank to light 5X Dragula, then collect a boosted award at the hole.",
+      "reward": "5X Dragula shot multiplier + bonus multipliers",
+      "steps": [
+        {
+          "shot": "dragula-bank",
+          "action": "Spell DRAGULA",
+          "detail": "Complete the D-R-A-G-U-L-A standup bank to light 5X Dragula for a limited time."
+        },
+        {
+          "shot": "dragula-hole",
+          "action": "Collect at 5X",
+          "detail": "Enter the Dragula hole to collect 1X or 5X the current bank value (up to ~500K), plus bonus multipliers and a random area boost."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wiz-munster-madness",
+      "title": "Munster Madness (Wizard Mode)",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Start one level of all five family areas to reach 'Munster Madness Ready', then shoot the scoop to begin the 4-ball wizard multiball.",
+      "reward": "Munster Madness — 4-ball wizard multiball",
+      "steps": [
+        {
+          "shot": "herman",
+          "action": "Start Herman",
+          "detail": "Start (one level of) Herman — one of the five required family areas.",
+          "link": "none"
+        },
+        {
+          "shot": "spot",
+          "action": "Start Spot",
+          "detail": "Start Spot; players often let it time out to bank the progress safely.",
+          "link": "none"
+        },
+        {
+          "shot": "grandpa-scoop",
+          "action": "Start Grandpa",
+          "detail": "Start Grandpa (Enlarging Ray on Pro / Laboratory on Prem/LE).",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start Raven",
+          "detail": "Collect 3 Raven advances at the left ramp to start Raven — the fourth area.",
+          "link": "none"
+        },
+        {
+          "shot": "lily-standup-right",
+          "action": "Start Lily",
+          "detail": "Start Lily, the fifth area, to reach 'Munster Madness Ready'.",
+          "link": "none"
+        },
+        {
+          "shot": "grandpa-scoop",
+          "action": "Begin the wizard",
+          "detail": "Once current modes end, shoot the scoop / Munster Madness arrow to begin the 4-ball wizard multiball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wiz-secret-mania",
+      "title": "Secret Mania (Hidden Mini-Wizard)",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Bank 130 chattering teeth (or take a Mystery award) to light all 7 family areas for escalating scores.",
+      "reward": "Secret Mania — all 7 areas lit for escalating scores",
+      "steps": [
+        {
+          "shot": "teeth-target-4",
+          "action": "Bank 130 teeth",
+          "detail": "Collect 130 chattering teeth across the purple targets to qualify Secret Mania.",
+          "link": "none"
+        },
+        {
+          "shot": "grandpa-scoop",
+          "action": "Or trigger via Mystery",
+          "detail": "Alternatively a Mystery award (collected at the scoop) can light Secret Mania directly.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Score all areas",
+          "detail": "With Secret Mania running, shoot the lit areas for escalating scores (~200K +25K/shot); the playfield multiplier applies."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-safe-opener",
+      "title": "Beginner Safe Opener",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Control first, then bank the fast Herman multiball, pivot to Lily during it, and start climbing the multiplier at Kitty.",
+      "reward": "Safe early multiball + multiplier start",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Short plunge & trap",
+          "detail": "Short plunge to the right flipper and trap — control first, since tournament copies run with ball save OFF."
+        },
+        {
+          "shot": "herman",
+          "action": "Start Herman",
+          "detail": "Shoot Herman until the Hurry-Up starts, complete it, and release off the magnet into Herman Multiball."
+        },
+        {
+          "shot": "lily-standup-right",
+          "action": "Pivot to Lily",
+          "detail": "During Herman MB shoot the Lily target to start the stacking 'Everything Scores' frenzy, inflating the whole multiball."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Light the multiplier",
+          "detail": "Completing Lily lights Kitty — collect it to begin climbing the playfield multiplier and light Raven."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strat-tournament-opener",
+      "title": "Tournament Risk-First Opener",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "Dispatch the dangerous areas early (Spot, Grandpa), weave in Herman and Lily, then build 6X and cash a stacked Super Jackpot.",
+      "reward": "Risk-first path into 6X stacked cash-outs",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Short plunge, control",
+          "detail": "Short plunge and trap; get ball control before any aggressive shot."
+        },
+        {
+          "shot": "spot",
+          "action": "Start & time out Spot",
+          "detail": "Start Spot and deliberately let it time out rather than fighting its SDTM-prone shot."
+        },
+        {
+          "shot": "grandpa-scoop",
+          "action": "Clear Grandpa",
+          "detail": "Chip through the purple targets and clear Grandpa early so the dangerous slog isn't hanging over a good ball."
+        },
+        {
+          "shot": "kitty-target",
+          "action": "Drive to 6X",
+          "detail": "Weave Herman (once per level) and Lily in, then drive Kitty to 6X."
+        },
+        {
+          "shot": "dragula-hole",
+          "action": "Cash stack at 6X",
+          "detail": "Build a Super Jackpot stack, cancel-and-restack with Zap, then dump at Dragula under 6X — ideally during Raven MB or Munster Madness."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strat-zap-flow",
+      "title": "Zap Button Flow",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "Charge the Zap meter off the purple targets, spend charges on jackpot shots to spawn Zap Jackpots, and qualify the Zap Super for the stack.",
+      "reward": "Zap Super Jackpot qualifier (folds into the Dragula stack)",
+      "steps": [
+        {
+          "shot": "teeth-target-1",
+          "action": "Hit a mini-target",
+          "detail": "Hit any of the 4 purple mini-targets (or THE MACHINE on Prem/LE) to make the Zap button blink electric-blue."
+        },
+        {
+          "shot": "zap-button",
+          "action": "Charge the meter",
+          "detail": "Press the blinking Zap button to add a charge; the meter holds up to 5."
+        },
+        {
+          "shot": "dragula-hole",
+          "action": "Spend on jackpots",
+          "detail": "Each jackpot shot with a charged meter leaves a lit Zap Jackpot; every 4 Zap Jackpots lights the Zap Super to fold into the Dragula stack."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-rotating-buffs",
+      "title": "Cycle the Rotating Super Buffs",
+      "category": "combo",
+      "summary": "Every second Marilyn departure hands out the next rotating buff (pops, spinner, loops) — bank departures, then immediately spend each buff on the shot it boosts.",
+      "difficulty": 2,
+      "reward": "Super Pops / Super Spinner / Super Loops scoring windows",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Arm a departure",
+          "detail": "Roll the flashing inner-left inlane to light the right ramp for the next departure."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Bank the departure",
+          "detail": "Shoot the lit right ramp; every second departure awards the next buff in the rotation."
+        },
+        {
+          "shot": "spinner",
+          "action": "Spend the spinner buff",
+          "detail": "With the spinner buffed, keep feeding the left orbit — each rip is worth far more and also pushes the Raven clock.",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Spend the pops buff",
+          "detail": "With the pops buffed, send the ball around the right orbit; it holds at the top and drops into the three-bumper cluster for a burst of hits.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Spend the loops buff",
+          "detail": "With loops buffed, keep the ball cycling the orbit lanes back to the flippers — each full trip around counts while the window is open.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "secret-attract-mode-menu",
+      "title": "Hidden Play-Style Menu (Hold Both Flippers)",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "The Munsters hides an alternate-rules layer behind its attract display that anyone who has only ever pressed Start will never see. Holding both flipper buttons while the machine idles opens a menu of play styles, from a randomness-free tournament setup to a hard mode that will not let you cradle.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "While the machine is idle in attract mode with no game in progress, hold both flipper buttons together",
+        "Keep holding until the menu appears on the display",
+        "Competition is Standard with the random elements, Dragula and Kitty among them, removed",
+        "Impossible disables extra balls, sets the game rules to very hard, and stops the flippers being held for over 2 seconds",
+        "Monster puts player 1 in impossible mode while everyone else plays with regular rules",
+        "Couch Potato Challenge is a standalone two-ball multiball frenzy",
+        "DJ Mixer is not a way to play — it works like a jukebox for the music in the machine"
+      ],
+      "reward": "Standard, Competition, Impossible, Monster, Couch Potato Challenge, and a DJ Mixer jukebox"
+    },
+    {
+      "id": "secret-couch-potato-challenge",
+      "title": "Couch Potato Challenge (Hidden Mode)",
+      "category": "secret",
+      "altMode": "ruleset",
+      "summary": "Tucked inside the same hidden attract-mode menu, Couch Potato Challenge throws the normal game out entirely and replaces it with a short two-ball frenzy. Its scores live on their own table that every player on the machine competes against.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Open the hidden menu by holding both flipper buttons while the machine idles in attract mode",
+        "Select Couch Potato Challenge from the list",
+        "Shoot shots to add balls into play",
+        "Shoot the targets to keep the shots lit",
+        "The challenge ends after 20 shots are made",
+        "High scores for the challenge are kept across players rather than per player"
+      ],
+      "reward": "A standalone two-ball multiball frenzy ending after 20 shots, with high scores kept across players"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "lit-lane-plunge",
+      "title": "Lit Lane Plunge",
+      "desc": "Land a full plunge in the lit top lane to collect the standard skill shot and its bonus multiplier bump.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-standard"
+    },
+    {
+      "id": "held-flipper-opener",
+      "title": "Held-Flipper Opener",
+      "desc": "Hold the left flipper through the plunge and cash the redirected shot up the right ramp for the bigger skill-shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-super"
+    },
+    {
+      "id": "herman-turned-loose",
+      "title": "Herman Turned Loose",
+      "desc": "Bash Herman, let the magnet lock the ball, and release it to get the three-ball Herman multiball running.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-herman"
+    },
+    {
+      "id": "everything-counts",
+      "title": "Everything Counts",
+      "desc": "Hit the Lily target enough times to start the frenzy where every switch on the playfield pays.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-lily"
+    },
+    {
+      "id": "dog-flattened",
+      "title": "Dog Flattened",
+      "desc": "Spell out the pet's name across the two ramps and then beat the popped-up toy all four times for its super jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-spot"
+    },
+    {
+      "id": "experiment-running",
+      "title": "Experiment Running",
+      "desc": "Light the center scoop off the purple targets and start the Grandpa main-playfield mode, then collect its stacked purple jackpots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-enlarging-ray"
+    },
+    {
+      "id": "suitors-sent-home",
+      "title": "Suitors Sent Home",
+      "desc": "Bank two Marilyn departures up the lit right ramp to earn a rotating super buff and light her super jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-marilyn"
+    },
+    {
+      "id": "bird-set-loose",
+      "title": "Bird Set Loose",
+      "desc": "Collect three Raven advances at the left ramp to start Raven multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-raven"
+    },
+    {
+      "id": "six-times-held",
+      "title": "Six Times Held",
+      "desc": "Drive the Kitty target all the way to a six-times playfield multiplier and keep it alive by re-tapping the target before the timer expires.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-kitty-6x"
+    },
+    {
+      "id": "boosted-car-collect",
+      "title": "Boosted Car Collect",
+      "desc": "Complete the car standup bank to arm the five-times shot multiplier, then collect the boosted award in the car lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-dragula-5x"
+    },
+    {
+      "id": "buff-rotation-cycled",
+      "title": "Buff Rotation Cycled",
+      "desc": "Earn the rotating super buffs and actually cash each one on the shot it boosts: the pop cluster, the spinner, and the loops.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-rotating-buffs"
+    },
+    {
+      "id": "clock-run-to-midnight",
+      "title": "Clock Run To Midnight",
+      "desc": "During Raven multiball, pump the spinner to climb the clock, collect all four jackpots, and cash the super jackpot with the playfield multiplier up.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-raven-6x"
+    },
+    {
+      "id": "downstairs-multiball",
+      "title": "Downstairs Multiball",
+      "desc": "On a Premium or LE, enter the lit scoop to drop to the mini playfield, qualify the center bash target with both lower orbits, and start the laboratory multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-grandpa-lab"
+    },
+    {
+      "id": "button-super-armed",
+      "title": "Button Super Armed",
+      "desc": "Charge the lockbar button off the purple targets, spend charges on jackpot shots, and collect enough button jackpots to qualify its super.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strat-zap-flow"
+    },
+    {
+      "id": "whole-family-started",
+      "title": "Whole Family Started",
+      "desc": "Start one level of every family area, then take the scoop to launch the four-ball wizard multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wiz-munster-madness"
+    },
+    {
+      "id": "stack-dumped-at-the-car",
+      "title": "Stack Dumped At The Car",
+      "desc": "Hold off multiple qualified super jackpots with the lockbar button and collect the whole stack in one car-lane shot at six times playfield.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "combo-super-stack"
+    },
+    {
+      "id": "cascade-cleared",
+      "title": "Cascade Cleared",
+      "desc": "Reach the wizard mode's hurry-up stage and complete all four hurry-ups in order so each one compounds into the next.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "combo-madness-cascade"
+    },
+    {
+      "id": "hidden-mania-unlocked",
+      "title": "Hidden Mania Unlocked",
+      "desc": "Bank enough chattering teeth (or draw the right mystery award) to trigger the hidden mode with all seven areas lit at once.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-secret-mania"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-hold-left-plunge",
+      "title": "Hold Left, Take The Right Ramp",
+      "text": "Hold the left flipper in as you plunge so the ball is redirected up the right ramp. It pays roughly double the plain top-lane skill shot and hands you a bonus multiplier on top, for the price of one held button.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-super",
+      "shots": [
+        "shooter-lane",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "drill-kitty-hold-6x",
+      "title": "Keep Touching Kitty",
+      "text": "Collect the lit Kitty target three times to climb the multiplier to its top, then keep tapping the same target to reset the timer whether it is lit or not. Holding the multiplier here is a habit, not a shot you take once.",
+      "reps": "1 full ball at 6X",
+      "focus": "accuracy",
+      "goal": "combo-kitty-6x",
+      "shots": [
+        "kitty-target"
+      ]
+    },
+    {
+      "id": "drill-herman-three-shots",
+      "title": "Herman In Three Shots",
+      "text": "Bash Herman to start the hurry-up, shoot him again to stick the ball on the magnet, then knock it clear to launch. It is the fastest multiball on the machine and the release doubles whatever hurry-up you had built, so it should be three shots and no deliberating.",
+      "reps": "5 starts",
+      "focus": "accuracy",
+      "goal": "mb-herman",
+      "shots": [
+        "herman",
+        "herman-magnet"
+      ]
+    },
+    {
+      "id": "drill-spot-from-a-cradle",
+      "title": "Spot From A Cradle",
+      "text": "Alternate the ramps to spell SPOT, then bash the popped toy only off a settled ball. He sits under the left ramp and is the shot here most likely to send one straight back down the middle, so the cradle is the drill.",
+      "reps": "4 bashes per pop-up",
+      "focus": "ball-control",
+      "goal": "mode-spot",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "spot"
+      ]
+    },
+    {
+      "id": "drill-spinner-clock",
+      "title": "Flush The Left Orbit",
+      "text": "Feed the left orbit clean enough that the spinner really rips instead of rattling the lane mouth. Those spins push the Raven clock toward midnight, and the clock is what every jackpot in that multiball is worth.",
+      "reps": "15 orbits",
+      "focus": "accuracy",
+      "goal": "combo-raven-6x",
+      "shots": [
+        "left-orbit",
+        "spinner"
+      ]
+    },
+    {
+      "id": "drill-madness-cascade-order",
+      "title": "Cascade In Order",
+      "text": "Rehearse the four hurry-ups in their fixed order: left ramp, right orbit, right ramp, left orbit. Each one folds the previous value into the next, so a hesitation in the middle costs the whole compounding tail.",
+      "reps": "3 full cascades",
+      "focus": "flow",
+      "goal": "combo-madness-cascade",
+      "shots": [
+        "left-ramp",
+        "right-orbit",
+        "right-ramp",
+        "left-orbit"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "munsters-grandpa-lab-zone",
+      "name": "Grandpa's Laboratory",
+      "kind": "lower",
+      "bounds": {
+        "x": 0.38,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.35
+      },
+      "trim": "premium-le",
+      "entries": [
+        "grandpa-scoop"
+      ],
+      "exits": null
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Zap Button",
+    "location": "center of the lockdown bar, on the front rail",
+    "how": "The lit button on the front rail is the Zap button, and it does two unrelated jobs on this game. Most of the time you are tapping it to bank charges that turn your ordinary jackpots into extra Zap Jackpots. Late in a good ball it becomes a hold button that stops Dragula from paying out so you can keep piling supers on top of each other.",
+    "uses": [
+      {
+        "when": "Right after any purple mini-target",
+        "what": "The button blinks electric blue for a few seconds — tap it in that window to bank one charge. The meter holds five."
+      },
+      {
+        "when": "Grandpa Multiball, after hitting THE MACHINE",
+        "what": "The Machine arms the button too, so you can keep charging mid-multiball on a Premium or LE."
+      },
+      {
+        "when": "Charges banked, jackpot shots lit",
+        "what": "Each jackpot you collect leaves a Zap Jackpot behind and spends a charge; four Zap Jackpots light the Zap Super Jackpot."
+      },
+      {
+        "when": "Several Super Jackpots stacked up",
+        "what": "Hold it about a third of a second as you shoot Dragula to cancel the collect and keep stacking instead of cashing out."
+      },
+      {
+        "when": "Waiting on 6X playfield to build",
+        "what": "Cancel-and-restack until the multiplier is up, then dump the whole stack at Dragula in one shot."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Run the five Munster family members' modes at 1313 Mockingbird Lane. Drive the Kitty target to a 6X playfield, stack Super Jackpots to dump at Dragula, and light the Munster Madness wizard multiball.",
+    "loop": [
+      "Start a mode at any of the five family areas -- Herman, Spot, Grandpa, Lily, or the Raven ramp -- and every start lights the Kitty target.",
+      "Collect the lit Kitty to climb the playfield multiplier 1X, 2X, 3X, 6X, and tap it even unlit to keep 6X alive on its timer.",
+      "Bank Zap charges off the purple teeth targets so your jackpots leave Zap Jackpots behind, building toward the Zap Super.",
+      "Hold the Zap button at the Dragula hole to cancel each Super Jackpot collect and keep stacking the Supers instead of cashing out.",
+      "Once the multiplier is up, empty the whole stack at Dragula with one shot for the biggest score, and start all five areas to light Munster Madness."
+    ],
+    "lights": [
+      {
+        "id": "family-areas",
+        "name": "The Five Family Areas",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "herman"
+          },
+          {
+            "shot": "spot"
+          },
+          {
+            "shot": "grandpa-scoop"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "lily-standup-right"
+          }
+        ],
+        "lit": "Herman, Spot, Grandpa's Laboratory, Raven at the left ramp, and Lily are the five family areas; each lights to start, and any start also lights the Kitty target.",
+        "flashing": null,
+        "control": null,
+        "then": "Start a level of all five to reach Munster Madness Ready. Each area plays differently -- a hurry-up, a letter chase, a frenzy, a mini-playfield -- and every start also feeds a Raven advance and your playfield multiplier.",
+        "goals": [
+          "mode-spot",
+          "mode-lily",
+          "wiz-munster-madness"
+        ]
+      },
+      {
+        "id": "kitty-multiplier",
+        "name": "Kitty Playfield Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "kitty-target"
+          }
+        ],
+        "lit": "The Kitty target lights whenever you start or finish a family area, and collecting it lit advances the playfield multiplier one step -- 1X, 2X, 3X, then 6X -- while starting a roughly one-minute timer.",
+        "flashing": null,
+        "control": null,
+        "then": "Three lit collects reach 6X. Even an unlit tap on Kitty resets the timer, so pat it every so often to hold 6X while you set up and cash your biggest shots -- almost everything worth collecting on this game wants to be taken at 6X.",
+        "goals": [
+          "mult-kitty-playfield",
+          "combo-kitty-6x"
+        ]
+      },
+      {
+        "id": "dragula-super-stack",
+        "name": "Dragula & the Super Stack",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "dragula-bank"
+          },
+          {
+            "shot": "dragula-hole"
+          }
+        ],
+        "lit": "Completing the DRAGULA standup bank lights 5X at the Dragula hole, and the hole is also where every Super Jackpot on the game gets collected.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "press and hold the Zap button for roughly a third of a second while you shoot the Dragula hole to cancel the Super Jackpot collect and keep the Supers stacking on top of one another -- the button's blink rate shows how deep the stack has grown",
+          "when": "several Super Jackpots stacked and 6X not yet up"
+        },
+        "then": "Cancel-and-restack until the Kitty multiplier is at 6X, then release and shoot Dragula once to dump the entire stack multiplied -- the biggest single shot you can score. Spelling DRAGULA first lays a 5X on top of that collect.",
+        "goals": [
+          "combo-super-stack",
+          "mult-dragula-5x"
+        ]
+      },
+      {
+        "id": "chattering-teeth",
+        "name": "Chattering-Teeth Targets & Zap",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "teeth-target-1"
+          },
+          {
+            "shot": "teeth-target-2"
+          },
+          {
+            "shot": "teeth-target-3"
+          },
+          {
+            "shot": "teeth-target-4"
+          },
+          {
+            "shot": "grandpa-scoop"
+          }
+        ],
+        "lit": "The four purple chattering-teeth targets pay out teeth and, right after each hit, set the Zap button blinking to bank a charge.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "tap the blinking Zap button in its short window to bank one charge, up to a meter of five; with charges banked, every jackpot you then collect leaves a Zap Jackpot behind, and four Zap Jackpots light the Zap Super",
+          "when": "right after any purple target"
+        },
+        "then": "Bank enough teeth and Grandpa's Laboratory lights at the scoop; keep collecting toward the big teeth total and Secret Mania comes into reach. The Zap Supers you build fold into the Dragula stack.",
+        "goals": [
+          "strat-zap-flow",
+          "mb-grandpa-lab",
+          "wiz-secret-mania"
+        ]
+      },
+      {
+        "id": "herman-multiball",
+        "name": "Herman Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "herman"
+          },
+          {
+            "shot": "herman-magnet"
+          }
+        ],
+        "lit": "Bashing the Herman toy arms the Herman Hurry-Up, and shooting him again during it captures the ball on the magnet in front of him while a second ball plunges down to your flippers.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock the held ball off the magnet to double the hurry-up you built and start Herman Multiball. Stacking Lily's everything-scores frenzy on top inflates the entire thing.",
+        "goals": [
+          "mb-herman",
+          "strat-safe-opener"
+        ]
+      },
+      {
+        "id": "raven-multiball",
+        "name": "Raven Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "dragula-hole"
+          }
+        ],
+        "lit": "Playing a level of another family member lights a Raven advance to collect back at the left ramp, and three of them start the three-ball Raven Multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip the left-orbit spinner to run the Raven clock toward midnight and raise the jackpots, collect all four, then dump the Super at Dragula under 6X, the best window all game for piling on points.",
+        "goals": [
+          "mb-raven",
+          "combo-raven-6x"
+        ]
+      },
+      {
+        "id": "grandpa-lab-lower",
+        "name": "Grandpa's Laboratory & The Machine",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "grandpa-scoop"
+          },
+          {
+            "shot": "lower-left-orbit"
+          },
+          {
+            "shot": "lower-right-orbit"
+          },
+          {
+            "shot": "the-machine"
+          }
+        ],
+        "lit": "Enough chattering teeth lights Grandpa's Laboratory at the scoop, and shooting it drops mini-balls onto the lower playfield on a countdown.",
+        "flashing": null,
+        "control": null,
+        "then": "Down below, use the mini-flippers to shoot both lower orbits and light THE MACHINE, then bash it to start Grandpa Multiball and climb its jackpots to the Machine Super. On a Pro the same teeth start Enlarging Ray up top instead.",
+        "goals": [
+          "mb-grandpa-lab",
+          "mode-enlarging-ray"
+        ]
+      },
+      {
+        "id": "marilyn-buffs",
+        "name": "Marilyn & Rotating Buffs",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Rolling the flashing inner-left inlane lights the right ramp for a Marilyn boyfriend departure.",
+        "flashing": null,
+        "control": null,
+        "then": "Every second departure hands you a rotating buff -- Super Pops, Super Spinner, or Super Loops -- so spend a spinner buff ripping the left orbit, a pops buff around the right orbit into the bumpers, and a loops buff cycling the orbits. Every second departure also lights the Marilyn Super.",
+        "goals": [
+          "mode-marilyn",
+          "combo-rotating-buffs"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "One of the three return lanes is always lit outside Munster Madness, and a tap of either flipper button moves which one. Slide the blinking MARILYN lane under the ball to briefly light the right ramp for a MARILYN award, or the blinking EDDIE lane to briefly light both orbits for EDDIE loops.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Short-plunge and trap up, since tournament copies run with the ball save turned off. Start Herman and complete his hurry-up into Herman Multiball, then pivot to the Lily target for the everything-scores frenzy to inflate it, which also lights Kitty.",
+        "goals": [
+          "skillshot-super",
+          "strat-safe-opener",
+          "mb-herman",
+          "mode-lily"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start a level of each family area to work toward Munster Madness while driving the Kitty target to 6X and tapping it to hold. Bank Zap charges off the purple targets, and spell DRAGULA for a 5X shot.",
+        "goals": [
+          "mult-kitty-playfield",
+          "combo-kitty-6x",
+          "strat-zap-flow",
+          "mult-dragula-5x"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Start all five family areas to light Munster Madness, the four-ball wizard. The real points come from stacking Super Jackpots -- cancel each collect with a held Zap, get Kitty to 6X, then unload the entire stack at Dragula in a single shot, ideally during Raven Multiball or the wizard itself.",
+        "goals": [
+          "wiz-munster-madness",
+          "combo-super-stack",
+          "combo-raven-6x",
+          "wiz-secret-mania"
+        ]
+      }
+    ]
+  }
+}

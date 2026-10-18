@@ -1,0 +1,1057 @@
+{
+  "machine": "Gorgar (Williams, 1979)",
+  "defaultFx": "sparkle",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.05,
+      "trim": "all",
+      "apex": {
+        "x": 0.6,
+        "y": 0.97
+      },
+      "feeds": {
+        "x": 0.56,
+        "y": 0.8
+      },
+      "notes": "Arch rail carries the ball right-to-left over the top: a soft/medium plunge drops into the A-B-C lanes; a full plunge can ride the rail all the way to the Snake Pit mouth. No programmed skill shot — plunge strength is your only lane control (no lane change on stock ROM)."
+    },
+    {
+      "id": "lane-a",
+      "name": "A Lane",
+      "type": "lane",
+      "x": 0.48,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Top rollover: 1,000 + 1 bonus advance; a letter toward the A-B-C bonus multiplier (2X, then 3X max)."
+    },
+    {
+      "id": "lane-b",
+      "name": "B Lane",
+      "type": "lane",
+      "x": 0.56,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Center top rollover: 1,000 + 3 bonus advances — the best plunge target; also spots B toward the A-B-C multiplier."
+    },
+    {
+      "id": "lane-c",
+      "name": "C Lane",
+      "type": "lane",
+      "x": 0.65,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Top rollover: 1,000 + 1 bonus advance; a letter toward the A-B-C bonus multiplier."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.46,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Three jets (left/top/bottom) below the top lanes: 100 points each, 1,000 when lit — lit one at a time by G-A-R completions. Balls can exit the nest toward the right outlane."
+    },
+    {
+      "id": "snake-pit",
+      "name": "Snake Pit (Magnet)",
+      "type": "mech",
+      "x": 0.15,
+      "y": 0.91,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Signature toy: an under-playfield stop magnet grabs the ball at the snake's head, scores 1,000 unlit or the highest flashing value (20K/30K/50K via G-O-R completions; 50K instantly when 1-2-3-4 is complete), then releases it down the left channel. Values of 20,000+ reset to 1,000 when collected; the release can fall dangerously — be ready to control it."
+    },
+    {
+      "id": "gor-bank",
+      "name": "G-O-R Drop Targets",
+      "type": "drop-target",
+      "x": 0.1,
+      "y": 0.68,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Upper-left 3-bank below the Pit, shot from the right flipper: 1,000 per target + 5,000 series. Completing spells GOR, advances the Snake Pit magnet lamps, and advances the eject-hole lamps toward Extra Ball."
+    },
+    {
+      "id": "gar-bank",
+      "name": "G-A-R Drop Targets",
+      "type": "drop-target",
+      "x": 0.47,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Center 3-bank, makeable from either flipper: 1,000 per target (5,000 each when GAR 5,000 is lit) + 5,000 series. Completions light the jet bumpers, then GAR 5,000, then the alternating outlane Special, and advance the eject-hole lamps. Rebounds often finish GOR targets for free — but hit it from a trap, not on the fly."
+    },
+    {
+      "id": "eject-hole",
+      "name": "Eject Hole (Kicker)",
+      "type": "saucer",
+      "x": 0.1,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "The game's only kick-out hole, mid-left wall: scores 5,000 or the highest flashing value. GOR/GAR completions advance its lamps 10,000 → 15,000 → X-TRA BALL (max one extra ball per ball in play). The value does not reset on collect below the EB step, and the kickout toward the flippers is usually safe."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner Lane",
+      "type": "spinner",
+      "x": 0.72,
+      "y": 0.52,
+      "trim": "all",
+      "flipper": "left",
+      "apex": {
+        "x": 0.88,
+        "y": 0.82
+      },
+      "feeds": {
+        "x": 0.6,
+        "y": 0.82
+      },
+      "notes": "The only spinner, at the mouth of the right-side 'castle doorway' lane, shot from the left flipper: 100 per spin, 1,000 when lit. Lit ONLY while your bonus is between 10,000 and 20,000. The lane carries the ball up and around to the A-B-C top lanes."
+    },
+    {
+      "id": "target-1",
+      "name": "1 Target",
+      "type": "standup",
+      "x": 0.09,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Lower-left bullseye standup: 1,000 (2,000 lit) + 1 bonus advance. Direct shots rebound side-to-side toward the outlanes — spot numbers via D+E inlanes instead."
+    },
+    {
+      "id": "target-2",
+      "name": "2 Target",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Mid-right bullseye standup with a red arrow lamp: 1,000 (2,000 lit) + 1 bonus advance. Part of the 1-2-3-4 set."
+    },
+    {
+      "id": "target-3",
+      "name": "3 Target",
+      "type": "standup",
+      "x": 0.69,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Mid-right bullseye standup with a red arrow lamp: 1,000 (2,000 lit) + 1 bonus advance. Part of the 1-2-3-4 set."
+    },
+    {
+      "id": "target-4",
+      "name": "4 Target",
+      "type": "standup",
+      "x": 0.72,
+      "y": 0.28,
+      "trim": "all",
+      "flipper": "left",
+      "notes": "Lowest of the right-side bullseye column, faces the left flipper: 1,000 (2,000 lit) + 1 bonus advance. The deliberate 'closer' shot once 1-2-3 are already spotted."
+    },
+    {
+      "id": "inlane-d",
+      "name": "D Inlane (Left)",
+      "type": "lane",
+      "x": 0.14,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Left return lane: 3,000 + 1 bonus advance + spots D. Completing D+E spots one 1-2-3-4 number — the famous cross-shatz (alley-pass) lane."
+    },
+    {
+      "id": "inlane-e",
+      "name": "E Inlane (Right)",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Right return lane: 3,000 + 1 bonus advance + spots E. Completing D+E spots one 1-2-3-4 number."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.07,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "5,000; awards SPECIAL when lit (alternates with the right outlane, lit by the G-A-R ladder). The outlanes are Gorgar's main drain path."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.84,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "5,000; awards SPECIAL when lit (alternates with the left outlane). Bumper exits feed this lane — nudge early."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-b-lane",
+      "title": "B Lane Soft Plunge",
+      "category": "skillshot",
+      "summary": "There is no programmed skill shot, but the plunge feeds the A-B-C lanes and B is worth triple the bonus advances — a soft plunge into B is the pro pick every ball.",
+      "difficulty": 1,
+      "reward": "1,000 + 3 bonus advances + the B toward your 2X/3X multiplier",
+      "steps": [
+        {
+          "shot": "lane-b",
+          "action": "Pull the plunger to about three-quarters",
+          "detail": "A soft/medium plunge drops off the arch rail into the B lane — no lane change exists on stock ROM, so plunge strength is your only way to pick a lane. B awards 3 bonus advances (A and C give 1) plus its A-B-C multiplier letter; late in a ball, aim for whichever letter you're missing instead. Let the ball come out of the bumper nest below and dead-bounce or trap on a flipper, since an uncontrolled exit can feed the right outlane."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-full-plunge-pit",
+      "title": "Full Plunge to the Snake Pit",
+      "category": "skillshot",
+      "summary": "The arch rail terminates at the Snake Pit mouth, so a full-strength plunge can carry the ball all the way around to the magnet at the upper left.",
+      "difficulty": 2,
+      "reward": "Snake Pit collect (1,000 or the flashing value) straight off the plunge",
+      "steps": [
+        {
+          "shot": "snake-pit",
+          "action": "Launch at full strength",
+          "detail": "The ball rides the metal arch right-to-left across the top; at full power it carries past the A-B-C lanes to the Pit mouth — plunger strength varies from machine to machine, so find the pull that works on the one in front of you. The magnet holds the ball while the lit value scores, then releases it down the left channel, so be set to control the release."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-cross-shatz-50k",
+      "title": "Cross-Shatz to 50,000",
+      "category": "combo",
+      "summary": "The tournament farm: alley-pass the D and E inlanes four pairs in a row to bank 24,000, build base bonus, complete 1-2-3-4 by spotting, and light the Snake Pit for its 50,000 maximum — without ever shooting a dangerous target.",
+      "difficulty": 3,
+      "reward": "24,000 in passes + bonus built toward max + Snake Pit lit for 50,000",
+      "steps": [
+        {
+          "shot": "inlane-d",
+          "action": "Alley-pass through the D inlane",
+          "detail": "From a right-flipper cradle, pass the ball across the playfield so it rolls through the left inlane: 3,000 + 1 bonus advance. Don't shoot too hard — an overhit pass hops into the outlane."
+        },
+        {
+          "shot": "inlane-e",
+          "action": "Alley-pass back through the E inlane",
+          "detail": "3,000 + 1 bonus advance. Each completed D+E pair spots one 1-2-3-4 number."
+        },
+        {
+          "shot": "inlane-d",
+          "action": "Repeat until four D+E pairs are done",
+          "detail": "Eight passes = 24,000, base bonus climbing toward its 29,000 cap, and 1-2-3-4 complete — which lights the Snake Pit for 50,000. Only works when the inlanes have rubbers."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Shoot the Snake Pit for 50,000",
+          "detail": "Right flipper up the left channel; the magnet holds, scores 50K with the demon's speech callout, and releases. Control the release and restart the whole cycle — it repeats indefinitely."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-gor-snake-pit",
+      "title": "G-O-R Build-and-Collect",
+      "category": "combo",
+      "summary": "The normal-play money loop: hammer the G-O-R bank to climb the magnet ladder, then cash the Snake Pit, rebuild, and cash again.",
+      "difficulty": 2,
+      "reward": "Snake Pit collects up the 20,000 / 30,000 / 50,000 ladder",
+      "steps": [
+        {
+          "shot": "gor-bank",
+          "action": "Complete the G-O-R bank",
+          "detail": "Right flipper up the left side: 1,000 per target + 5,000 series. Each completion spells GOR and advances the magnet lamps 20K → 30K → 50K (lamps are remembered ball to ball)."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Collect the flashing Snake Pit",
+          "detail": "Below 20,000 the value re-collects without resetting; at 20,000+ it resets to 1,000 after collect — so cash it whenever it's lit high, then rebuild via G-O-R and repeat."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-spinner-rip",
+      "title": "Lit Spinner Rip",
+      "category": "combo",
+      "summary": "The spinner lights at 10,000 bonus and goes dark again at 20,000 — a limited window each ball. Rip it from the left flipper while it's hot; the lane feeds the top lanes for free multiplier letters.",
+      "difficulty": 2,
+      "reward": "1,000 per spin while lit + A-B-C letters on every rip",
+      "steps": [
+        {
+          "shot": "inlane-d",
+          "action": "Build your bonus to 10,000",
+          "detail": "Inlanes, A/C rollovers, 1-4 targets and the eject hole each advance bonus 1,000; the B lane advances it 3,000. At 10K bonus the spinner lights."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the spinner from the left flipper",
+          "detail": "1,000 per spin while lit versus 100 unlit. Front-load your rips — the window slams shut when bonus reaches 20,000."
+        },
+        {
+          "shot": "lane-c",
+          "action": "Collect a top lane on the way through",
+          "detail": "The spinner lane carries the ball up and around into the A-B-C lanes, so every rip also works on your 2X/3X bonus multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-gorgar-eject-farm",
+      "title": "GORGAR 15K Eject Farm",
+      "category": "combo",
+      "summary": "Spell G-O-R-G-A-R twice to park the eject hole at 15,000, then loop the hole: the value doesn't reset on collect, and the kickout is usually safe to catch and reshoot.",
+      "difficulty": 3,
+      "reward": "15,000 per eject collect, repeatable; a third GORGAR lights Extra Ball",
+      "steps": [
+        {
+          "shot": "gor-bank",
+          "action": "Complete G-O-R",
+          "detail": "It takes both banks — a whole GORGAR — to step the eject-hole lamps, which climb 10,000, then 15,000, then X-TRA BALL."
+        },
+        {
+          "shot": "gar-bank",
+          "action": "Complete G-A-R to finish the second spell",
+          "detail": "Two full GORGAR spellings park the eject value at 15,000. GAR rebounds frequently knock down GOR targets for free progress."
+        },
+        {
+          "shot": "eject-hole",
+          "action": "Shoot the eject hole repeatedly",
+          "detail": "Catch the safe kickout, re-trap and fire again — 15,000 every time. Players deliberately stop at two spellings to keep the farm running, because a third GORGAR swaps the 15,000 for X-TRA BALL."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-finish-with-4",
+      "title": "1-2-3 Then the 4",
+      "category": "combo",
+      "summary": "Never hunt the standups early — but once play has spotted 1-2-3, one deliberate shot at the 4 target completes the set and instantly lights the Snake Pit for 50,000.",
+      "difficulty": 2,
+      "reward": "1-2-3-4 complete → Snake Pit lit for 50,000",
+      "steps": [
+        {
+          "shot": "target-4",
+          "action": "Hit the 4 standup once 1-2-3 are lit",
+          "detail": "The lower standups rebound violently side-to-side, so only take this as a clean, deliberate left-flipper shot when it's the last number you need."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Cash the 50,000 Snake Pit immediately",
+          "detail": "50K is the biggest single shot in the game — always collect it as soon as 1-2-3-4 lights it."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-snake-pit-ladder",
+      "title": "Snake Pit Value Ladder",
+      "category": "mode",
+      "summary": "Gorgar has no timed modes — its 'modes' are persistent lamp ladders. The signature one: G-O-R completions walk the magnet value up 20K → 30K → 50K, and completing 1-2-3-4 jumps it straight to 50K.",
+      "difficulty": 2,
+      "reward": "Snake Pit flashing at up to 50,000, remembered ball to ball",
+      "steps": [
+        {
+          "shot": "gor-bank",
+          "action": "Complete G-O-R to advance the magnet lamps",
+          "detail": "Each bank completion climbs the green 20,000 / 30,000 / 50,000 inserts on the snake's body. Progress carries over between balls."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Beware of the Pit — collect it lit",
+          "detail": "The magnet grabs the ball on the playfield surface, scores the flashing value with a speech callout, then releases it. At 20,000+ the value resets to 1,000 after collect, so there's no reason to hoard it."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-eject-extra-ball",
+      "title": "Eject Hole Extra Ball",
+      "category": "mode",
+      "summary": "Every G-O-R or G-A-R completion advances the eject-hole lamps: 10,000 → 15,000 → X-TRA BALL. Shoot the lit hole to collect — maximum one extra ball per ball in play.",
+      "difficulty": 2,
+      "reward": "Extra ball, maximum one per ball",
+      "steps": [
+        {
+          "shot": "gor-bank",
+          "action": "Spell G-O-R",
+          "detail": "Right-flipper shot up the left side; each completed bank steps the eject-hole value lamps upward.",
+          "link": "none"
+        },
+        {
+          "shot": "gar-bank",
+          "action": "Spell G-A-R",
+          "detail": "Either flipper works on the center bank; keep completing banks until X-TRA BALL lights at the hole.",
+          "link": "none"
+        },
+        {
+          "shot": "eject-hole",
+          "action": "Shoot the lit eject hole",
+          "detail": "Collects the extra ball; the lamps reset after collect and you can't earn a second EB on the same ball. If EB is disabled by the operator, the hole still pays its flashing value."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-gar-ladder",
+      "title": "G-A-R Ladder: Jets, 5000s, Special",
+      "category": "mode",
+      "summary": "Repeated G-A-R completions climb their own ladder: light the jet bumpers to 1,000 each, then light GAR 5,000 (each GAR target worth 5,000), then light the alternating outlane Special.",
+      "difficulty": 2,
+      "reward": "Lit jets, 5,000-per-target GAR bank, and an outlane Special",
+      "steps": [
+        {
+          "shot": "gar-bank",
+          "action": "Complete G-A-R repeatedly",
+          "detail": "First completions light the jet bumpers (100 → 1,000 each, factory setting lights top and bottom together), then the GAR 5,000 lamp, then the bottom outside Special lamps."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Let the lit jets work",
+          "detail": "Three lit jets at 1,000 a hit turn the bumper nest into real points — but watch exits toward the right outlane."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Know where the Special waits",
+          "detail": "The lit Special alternates between left and right outlanes and pays on the way down (credit at factory settings). It's drain insurance, not a shot to aim for."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-1-2-3-4-stars",
+      "title": "1-2-3-4, Stars & Arrows",
+      "category": "mode",
+      "summary": "Two ways to make each number: hit the bullseye standup, or complete both D and E inlanes to spot one. Each full 1-2-3-4 lights the Snake Pit for 50,000 and climbs Star 1 → Star 2 → the Special arrows.",
+      "difficulty": 3,
+      "reward": "50,000 Snake Pit + star ladder toward the 1-4 Target Special",
+      "steps": [
+        {
+          "shot": "inlane-d",
+          "action": "Spot numbers the safe way",
+          "detail": "Completing D+E spots one 1-2-3-4 number — far safer than shooting the rebound-happy standups directly."
+        },
+        {
+          "shot": "inlane-e",
+          "action": "Pair E with D",
+          "detail": "3,000 + a bonus advance per pass; every pair is another spotted number."
+        },
+        {
+          "shot": "target-4",
+          "action": "Pick off a straggler only when set up",
+          "detail": "Lit targets score 2,000. Take a clean left-flipper shot at the 4 to close a set; never flail at the lower standups."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Complete the set and cash 50,000",
+          "detail": "Each full 1-2-3-4 also advances Star 1, then Star 2, then the red Special arrows — progress remembered ball to ball until the Special is made."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-abc-2x",
+      "title": "Light 2X: Complete A-B-C",
+      "category": "multiplier",
+      "summary": "Completing the A-B-C top lanes advances your bonus multiplier to 2X. The plunge and the spinner lane are your two ways in — there is no lane change.",
+      "difficulty": 1,
+      "reward": "2X end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Soft plunge for a missing letter",
+          "detail": "Plunge strength picks your lane; take B when you can for its 3 bonus advances."
+        },
+        {
+          "shot": "spinner",
+          "action": "Loop the spinner lane to re-feed the top",
+          "detail": "The left-flipper spinner shot travels up and exits into the top lanes — the repeatable mid-ball way to finish A-B-C."
+        },
+        {
+          "shot": "lane-b",
+          "action": "Roll through the letter you're missing",
+          "detail": "Partial A-B-C progress is remembered ball to ball, so every letter counts."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-3x-max-bonus",
+      "title": "Max It: 3X and the 29K Bonus",
+      "category": "multiplier",
+      "summary": "A second A-B-C completion caps the multiplier at 3X. With base bonus maxed at 29,000, end-of-ball bonus pays 87,000 — bigger than any single shot in the game. Bonus is king on Gorgar.",
+      "difficulty": 3,
+      "reward": "Up to 87,000 end-of-ball bonus (29,000 × 3X)",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Finish A-B-C a second time for 3X",
+          "detail": "Get the multiplier early each ball — it compounds every rollover, inlane, and target you hit afterward."
+        },
+        {
+          "shot": "inlane-d",
+          "action": "Stack bonus advances",
+          "detail": "A/C/D/E rollovers, each 1-4 target, and the eject hole give 1 advance; the B lane gives 3."
+        },
+        {
+          "shot": "inlane-e",
+          "action": "Cap the base at 29,000",
+          "detail": "Shatz the inlanes to finish the climb safely. Bonus pays automatically at end of ball and doesn't carry over — cap it every ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-target-special",
+      "title": "The 1-4 Target Special",
+      "category": "wizard",
+      "summary": "Gorgar has no wizard mode — this is its closest quest. Complete 1-2-3-4 repeatedly to climb Star 1, then Star 2, then light the red arrows on the standups; a lit-arrow target awards SPECIAL.",
+      "difficulty": 3,
+      "reward": "SPECIAL — a free game at factory settings",
+      "steps": [
+        {
+          "shot": "inlane-d",
+          "action": "Spot 1-2-3-4 the safe way, again and again",
+          "detail": "Each D+E completion spots a number; each full 1-2-3-4 climbs the ladder: Star 1, then Star 2, then the Special arrows."
+        },
+        {
+          "shot": "inlane-e",
+          "action": "Keep pairing E with D",
+          "detail": "Star and arrow progress is remembered ball to ball until the Special is made — the grind carries across your whole game."
+        },
+        {
+          "shot": "target-4",
+          "action": "Hit a target with its red arrow lit",
+          "detail": "Once the arrows light, any lit 1-4 standup awards the Special. Take one controlled left-flipper shot at the 4 rather than spraying at the lower playfield."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-beat-gorgar",
+      "title": "You Beat Gorgar: The High Score",
+      "category": "wizard",
+      "summary": "The machine's ultimate tracked feat: beat the High Score to Date (500,000 at factory) and Gorgar himself concedes — 'You beat GORGAR.' The qualification path is the full scoring plan, every ball.",
+      "difficulty": 3,
+      "reward": "3 credits + 'You beat GORGAR'; replay ladder 300K/430K/550K along the way",
+      "steps": [
+        {
+          "shot": "lane-b",
+          "action": "Open every ball through the top lanes",
+          "detail": "B-lane plunges and A-B-C completions get you to 3X early — the multiplier is worth more than any shot."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip every lit spinner window",
+          "detail": "1,000 a spin between 10K and 20K bonus, with A-B-C letters on the exit."
+        },
+        {
+          "shot": "gor-bank",
+          "action": "Keep the Pit fed with G-O-R",
+          "detail": "Magnet lamps carry over between balls, so bank progress is never wasted."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Cash every lit Snake Pit, especially 50Ks",
+          "detail": "Repeat collects below 20K; rebuild after big ones."
+        },
+        {
+          "shot": "inlane-d",
+          "action": "Shatz the inlanes to cap bonus at 29,000",
+          "detail": "87,000 a ball in bonus plus pit collects clears the 300K/430K/550K replay ladder and runs down the 500,000 high score."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-multiplier-opener",
+      "title": "Opener: Multiplier First",
+      "category": "strategy",
+      "summary": "The recommended tournament line: multiplier before everything, because 29K × 3X = 87K beats any single shot. B plunge, spinner for A-B-C, then G-O-R and the Pit.",
+      "difficulty": 2,
+      "reward": "3X locked early + Snake Pit value building + bonus climbing",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Soft plunge for the B lane",
+          "detail": "3 bonus advances and the middle A-B-C letter."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Trap the ball out of the jets",
+          "detail": "Dead-bounce or trap on a flipper — control before ambition."
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the spinner lane to finish A-B-C",
+          "detail": "One or two loops gets 2X, then repeat for 3X. Once bonus passes 10K the spinner itself is paying 1,000 a spin."
+        },
+        {
+          "shot": "gor-bank",
+          "action": "Work the G-O-R bank from the right flipper",
+          "detail": "Builds the Snake Pit value; GAR rebounds often help finish it."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Collect the Pit when lit",
+          "detail": "Then settle into inlane shatzing to cap the bonus at 29,000."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "strategy-beginner-30-seconds",
+      "title": "Beginner: First 30 Seconds",
+      "category": "strategy",
+      "summary": "The safety line for a fresh ball: soft plunge, controlled exits, center drops from a trap, free inlane points — and stay away from the lower standups, the death shots of this game.",
+      "difficulty": 1,
+      "reward": "A live ball, early bonus, and Snake Pit progress without risk",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Soft plunge toward the B lane",
+          "detail": "Let the ball exit the jets and dead-bounce to a flipper — keeping the ball alive matters more than aiming on a game this old."
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the spinner lane once or twice",
+          "detail": "Works on A-B-C for 2X and re-feeds the top safely."
+        },
+        {
+          "shot": "gar-bank",
+          "action": "Pound the center G-A-R drops from a trap",
+          "detail": "The safest big targets on the playfield; rebounds often knock down G-O-R targets for free."
+        },
+        {
+          "shot": "inlane-d",
+          "action": "Take every free inlane",
+          "detail": "3,000 + a bonus advance + a D/E letter each time; alley-pass between the inlanes when the machine's rubbers allow it."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Collect the Pit whenever it's lit",
+          "detail": "The magnet holds the ball while scoring, then ejects — be ready to control the release, and never flail at the 1-2-3-4 standups."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "strategy-eject-loop",
+      "title": "The Eject Loop Line",
+      "category": "strategy",
+      "summary": "On a machine with a consistent kickout: spell GORGAR twice to park the eject at 15,000, then trap, shoot, transfer the kickout, and repeat — an endless loop that also has Extra Ball waiting whenever you want it.",
+      "difficulty": 3,
+      "reward": "Repeatable 15,000 collects with Extra Ball on demand",
+      "steps": [
+        {
+          "shot": "gor-bank",
+          "action": "Complete G-O-R",
+          "detail": "Each bank completion steps the eject-hole lamps upward; the right-flipper shot up the left side is your bread and butter.",
+          "link": "none"
+        },
+        {
+          "shot": "gar-bank",
+          "action": "Complete G-A-R to finish two full spellings",
+          "detail": "GAR rebounds help finish GOR. Two GORGAR spells put the eject hole at 15,000.",
+          "link": "none"
+        },
+        {
+          "shot": "eject-hole",
+          "action": "Loop the 15K eject hole",
+          "detail": "Trap, shoot the hole, post-transfer the safe kickout back to a trap, and repeat. When you're ready, a third GORGAR completion lights X-TRA BALL at the hole. Weaker in the digital version, where the eject angle is more random."
+        }
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "window-open",
+      "title": "Window Open",
+      "desc": "Advance your end-of-ball bonus to 10,000 so the spinner lights.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-spinner-rip"
+    },
+    {
+      "id": "spell-the-name",
+      "title": "Spell the Name",
+      "desc": "Complete both the G-O-R and G-A-R drop-target banks in one game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-eject-extra-ball"
+    },
+    {
+      "id": "grabbed-by-the-snake",
+      "title": "Grabbed by the Snake",
+      "desc": "Have the Snake Pit magnet catch the ball and pay out a flashing value.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-gor-snake-pit"
+    },
+    {
+      "id": "three-hot-jets",
+      "title": "Three Hot Jets",
+      "desc": "Light all three jet bumpers to 1,000 a hit by completing the G-A-R bank.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-gar-ladder"
+    },
+    {
+      "id": "first-rung",
+      "title": "First Rung",
+      "desc": "Score at least 300,000 points, the machine's first factory replay level.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-multiplier-opener"
+    },
+    {
+      "id": "triple-stack",
+      "title": "Triple Stack",
+      "desc": "Complete the A-B-C lanes twice in one ball to reach the 3X bonus multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-3x-max-bonus"
+    },
+    {
+      "id": "twenty-nine-grand",
+      "title": "Twenty-Nine Grand",
+      "desc": "Build the base bonus all the way to its 29,000 cap.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-cross-shatz-50k"
+    },
+    {
+      "id": "wound-the-demon",
+      "title": "Wound the Demon",
+      "desc": "Light the eject hole through repeated bank completions and collect the extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-eject-extra-ball"
+    },
+    {
+      "id": "fifty-from-the-pit",
+      "title": "Fifty from the Pit",
+      "desc": "Complete the 1-2-3-4 targets and collect the Snake Pit at its 50,000 maximum.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-finish-with-4"
+    },
+    {
+      "id": "arrows-reward",
+      "title": "Arrow's Reward",
+      "desc": "Climb both stars by repeating 1-2-3-4, then hit a lit-arrow target to earn the Special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-target-special"
+    },
+    {
+      "id": "top-of-the-ladder",
+      "title": "Top of the Ladder",
+      "desc": "Score at least 550,000 points, the highest factory replay level.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-beat-gorgar"
+    },
+    {
+      "id": "champion-of-the-lair",
+      "title": "Champion of the Lair",
+      "desc": "Beat the machine's stored high score to date (500,000 at factory settings).",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-beat-gorgar"
+    }
+  ],
+  "drills": [
+    {
+      "id": "two-pulls",
+      "title": "Two Pulls Worth Knowing",
+      "text": "There is no lane change on this game, so plunge strength is the entire lane selection. About three-quarters drops into B, which is worth triple the bonus advances of A or C. Full strength can ride the arch rail all the way around to the Snake Pit mouth, and the pull that does it differs from machine to machine, so find it on the one in front of you.",
+      "reps": "10 pulls at each strength",
+      "focus": "skill-shot",
+      "goal": "skillshot-b-lane",
+      "shots": [
+        "plunge",
+        "lane-b",
+        "snake-pit"
+      ]
+    },
+    {
+      "id": "cross-shatz-pairs",
+      "title": "Cross-Shatz the Inlanes",
+      "text": "From a right-flipper cradle, pass the ball across so it rolls through the left inlane, then pass it back. Every completed pair spots one of the numbers, so eight passes finishes the whole set without ever shooting a standup. Do not overhit the pass — too hard and it hops the inlane into the outlane.",
+      "reps": "8 passes without a miss",
+      "focus": "ball-control",
+      "goal": "combo-cross-shatz-50k",
+      "shots": [
+        "inlane-d",
+        "inlane-e"
+      ]
+    },
+    {
+      "id": "gor-build-cash",
+      "title": "G-O-R Build and Cash",
+      "text": "Right flipper up the left side into the G-O-R bank, and finish the bank before going anywhere else. Each completion steps the magnet's value, so treat it as the build half of a two-part loop whose other half is a single shot at the Pit. Cash whenever the value is sitting high, then rebuild.",
+      "reps": "5 build-and-cash cycles",
+      "focus": "accuracy",
+      "goal": "combo-gor-snake-pit",
+      "shots": [
+        "gor-bank",
+        "snake-pit"
+      ]
+    },
+    {
+      "id": "catch-the-release",
+      "title": "Catch the Pit Release",
+      "text": "The magnet grabs the ball, scores the lit value with a callout, then drops it down the left channel — and that release comes off awkwardly. Take the Pit over and over with catching the release cleanly as the only goal, not the score. What you are training is not losing the ball on the shot you just made.",
+      "reps": "10 collects",
+      "focus": "ball-control",
+      "goal": "mode-snake-pit-ladder",
+      "shots": [
+        "snake-pit"
+      ]
+    },
+    {
+      "id": "close-with-the-four",
+      "title": "Close With the 4",
+      "text": "The lower standups rebound violently side to side, so most of this drill is not shooting them. Let the inlane passes spot the first three numbers, then take one deliberate left-flipper shot at the 4 to close the set and light the Pit at its maximum. Practice the restraint as hard as the shot.",
+      "reps": "5 sets closed this way",
+      "focus": "accuracy",
+      "goal": "combo-finish-with-4",
+      "shots": [
+        "target-4",
+        "inlane-d",
+        "inlane-e",
+        "snake-pit"
+      ]
+    },
+    {
+      "id": "spinner-window",
+      "title": "Rip the Spinner Window",
+      "text": "The spinner is only lit while bonus sits between ten and twenty thousand, a window you pass through once a ball. Rip it from the left flipper the moment it lights rather than saving it. The lane carries the ball up and around into the top lanes, so every rip is also working on the multiplier.",
+      "reps": "one window per ball, 3 balls",
+      "focus": "flow",
+      "goal": "combo-spinner-rip",
+      "shots": [
+        "spinner",
+        "lane-a",
+        "lane-b",
+        "lane-c"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Gorgar is 1979 Williams — two flippers, a plunger, and your hips, with nothing on the cabinet to press but Start. Your one pre-shot decision is the plunge: dropping the ball into the B lane is how you begin building toward the 3X multiplier before you go hunting the Snake Pit."
+  },
+  "howItPlays": {
+    "objective": "Gorgar is Williams' 1979 talking machine, a fast, bonus-driven early solid-state game with no timed modes. Grow your bonus and its multiplier, work the two lettered drop-target banks, and cash the magnet Snake Pit for the biggest shots on the table.",
+    "loop": [
+      "Soft-plunge into the B lane for triple bonus advances and a letter toward your A-B-C multiplier; how hard you pull is your only lane control, since the game carries no lane change.",
+      "Complete the A-B-C top lanes for a second-pass multiplier of two, then three, so every rollover, inlane, and target you strike afterward pays more.",
+      "Work the G-O-R drops from the right flipper to walk the Snake Pit magnet value up its ladder and to step the eject hole toward an extra ball; the G-A-R drops light the jets, the five-thousand targets, and an outlane Special.",
+      "Cash the lit Snake Pit for up to its fifty-thousand top -- take it high, since a big value falls back after you collect it -- and finish 1-2-3-4 the safe way through the D and E inlanes to jump the Pit straight to that maximum.",
+      "Cap your base bonus near its ceiling so the end-of-ball count, once multiplied, outscores any single shot on the playfield."
+    ],
+    "lights": [
+      {
+        "id": "abc-top-lanes",
+        "name": "A-B-C Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "lane-a"
+          },
+          {
+            "shot": "lane-b"
+          },
+          {
+            "shot": "lane-c"
+          }
+        ],
+        "lit": "A lit letter over the three top lanes is one you still need for A-B-C, and partial progress is kept from ball to ball. No flipper cycle steers these -- your plunge strength, and looping the spinner lane, are the only ways into a lane, and the middle B is worth triple the bonus of A or C.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete A-B-C once for a doubled bonus and a second time for a tripled one that caps the multiplier; lock it in early, because it magnifies every rollover, target, and inlane for the rest of the ball.",
+        "goals": [
+          "multiplier-abc-2x",
+          "multiplier-3x-max-bonus",
+          "skillshot-b-lane"
+        ]
+      },
+      {
+        "id": "gor-snake-pit",
+        "name": "G-O-R Bank and Snake Pit",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "gor-bank"
+          },
+          {
+            "shot": "snake-pit"
+          }
+        ],
+        "lit": "Green value inserts on the snake's body -- twenty, thirty, then fifty thousand -- light as you clear the upper-left G-O-R bank, and where the ladder sits is remembered between balls.",
+        "flashing": "The lit Pit value flashes at whatever rung you have reached.",
+        "control": null,
+        "then": "Shoot the Snake Pit and its under-playfield magnet grabs the ball, pays the flashing value with a growl, then drops it down the left channel -- be set to steer that release. A collected value above the low rung falls to a token amount, so cash it whenever it sits high and rebuild through G-O-R.",
+        "goals": [
+          "combo-gor-snake-pit",
+          "mode-snake-pit-ladder"
+        ]
+      },
+      {
+        "id": "gar-ladder",
+        "name": "G-A-R Bank Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "gar-bank"
+          },
+          {
+            "shot": "jet-bumpers"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Each time you clear the center G-A-R bank you climb its own list of awards: first the jet bumpers light to a thousand a hit, then the G-A-R targets themselves pay five thousand, then a Special lights out in the alleys.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep completing G-A-R to work down that list; three lit jets turn the nest into real points, and the lit Special hops between the two outlanes as drain insurance rather than a shot to chase.",
+        "goals": [
+          "mode-gar-ladder"
+        ]
+      },
+      {
+        "id": "eject-hole-ladder",
+        "name": "Eject Hole",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "eject-hole"
+          },
+          {
+            "shot": "gor-bank"
+          },
+          {
+            "shot": "gar-bank"
+          }
+        ],
+        "lit": "The kicker's value lamps climb ten, then fifteen thousand, then Extra Ball as your G-O-R and G-A-R completions add up; two full GORGAR spellings park it at fifteen thousand, and that value does not fall when you collect below the Extra Ball rung.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the lit hole and catch its gentle kickout to farm the fifteen-thousand award on a loop; many hold at exactly two GORGAR spellings so the value never flips, because a third spelling trades it for the Extra Ball -- and you can only bank one of those a ball.",
+        "goals": [
+          "mode-eject-extra-ball",
+          "combo-gorgar-eject-farm",
+          "strategy-eject-loop"
+        ]
+      },
+      {
+        "id": "one-two-three-four",
+        "name": "1-2-3-4 Targets, Stars and Special",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "target-1"
+          },
+          {
+            "shot": "target-2"
+          },
+          {
+            "shot": "target-3"
+          },
+          {
+            "shot": "target-4"
+          },
+          {
+            "shot": "inlane-d"
+          },
+          {
+            "shot": "inlane-e"
+          }
+        ],
+        "lit": "The four bullseye standups make up the 1-2-3-4 set, and you spot a number either by hitting a standup or, far more safely, by completing the D and E return lanes together. The lower standups kick back hard, so lean on the inlane pairs and save the 4 for a clean closing shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the set and the Snake Pit lights at its fifty-thousand top, while each sweep also climbs a longer quest -- Star one, Star two, then red arrows on the standups -- until a lit arrow on a target hands you the Special, a free game; that star and arrow progress rides across balls until you finally make it.",
+        "goals": [
+          "mode-1-2-3-4-stars",
+          "combo-finish-with-4",
+          "combo-cross-shatz-50k",
+          "wizard-target-special"
+        ]
+      },
+      {
+        "id": "lit-spinner",
+        "name": "Spinner Lane",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "The lone spinner lights only while your bonus climbs through a narrow band, and it pays ten times its dark value on every spin -- a chance that comes and goes just once each ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip it from the left flipper the instant it lights rather than saving it, and let the lane sweep the ball back up to the A-B-C rollovers at the top, so every rip also builds your multiplier.",
+        "goals": [
+          "combo-spinner-rip"
+        ]
+      }
+    ],
+    "laneChange": "none",
+    "laneChangeNote": "Gorgar carries no lane change. A flipper tap never moves the lit A-B-C top lane, so plunge strength and the spinner lane are your only ways to pick a letter.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Open every ball by soft-plunging the B lane and looping the spinner to complete A-B-C for your multiplier, keeping the ball alive out of the jets with a dead bounce or a trap. Steer clear of the lower standups -- they are the drain shots of this game.",
+        "goals": [
+          "skillshot-b-lane",
+          "multiplier-abc-2x",
+          "strategy-beginner-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Pound the G-O-R bank, then the G-A-R bank, from a trap to build the Snake Pit value and step the eject hole, cashing the Pit whenever it sits lit and high. Spot 1-2-3-4 through the safe D and E inlane passes to jump the Pit to its top, and loop the fifteen-thousand eject collect while the kickout stays clean.",
+        "goals": [
+          "combo-gor-snake-pit",
+          "mode-gar-ladder",
+          "combo-cross-shatz-50k",
+          "strategy-eject-loop"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Gorgar has no wizard mode, so its summit is beating the machine's own high score -- and the road there is the bonus. Lock the tripled multiplier in early, cap your base bonus so the end-of-ball count alone tops any single shot, cash every fifty-thousand Snake Pit, and climb the target quest to the Special; clear the high score and the demon himself concedes.",
+        "goals": [
+          "wizard-beat-gorgar",
+          "multiplier-3x-max-bonus",
+          "wizard-target-special"
+        ]
+      }
+    ]
+  }
+}

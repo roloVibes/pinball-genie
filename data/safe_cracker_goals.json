@@ -1,0 +1,963 @@
+{
+  "machine": "Safe Cracker (Bally, 1996)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The clock is already running. Every switch you hit adds a little time or briefly pauses the timer, so a plunge that keeps the ball busy is worth more than a clean one."
+    },
+    {
+      "id": "bottom-left-3bank",
+      "name": "Bottom Left 3-Bank",
+      "type": "drop-target",
+      "x": 0.16,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Two jobs: it spots other drop targets, and after the first ball is locked it lights additional entrances into the bank."
+    },
+    {
+      "id": "drop-sets",
+      "name": "Drop Target Sets",
+      "type": "drop-target",
+      "x": 0.36,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Shoot the blinking sets. Completing all blinking sets is what makes the lock shot available, and completing sets also lights the jets."
+    },
+    {
+      "id": "big-kick",
+      "name": "Big-Kick",
+      "type": "kicker",
+      "x": 0.06,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Left side. Pays Bob's Getaway — a random points value that climbs as the game goes on."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.26,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Collects donuts, locks balls and pays various jackpots. The right inlane can time this ramp out for two donuts."
+    },
+    {
+      "id": "sliding-target",
+      "name": "Sliding Target / Cellar",
+      "type": "mech",
+      "x": 0.3,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "Drive the target ALL the way back — only then does the hole behind it open up for the ball. Doubles as the bank's Cellar entrance."
+    },
+    {
+      "id": "main-entrance",
+      "name": "Main Entrance Scoop",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Centre of the playfield. Collects the current wheel award, starts the board game, and pays the Deposit Window gift when lit."
+    },
+    {
+      "id": "timer-lights",
+      "name": "Timer Lights",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Centre-playfield display of how much time you have left, mirrored as a life bar on the screen during score sweep."
+    },
+    {
+      "id": "alarm-targets",
+      "name": "A-L-A-R-M Targets",
+      "type": "standup",
+      "x": 0.71,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "Spelling ALARM disables an alarm spot on the board game — pinball play directly rewriting the board's rules."
+    },
+    {
+      "id": "wheel",
+      "name": "The Wheel",
+      "type": "spinner",
+      "x": 0.81,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "The best time source on the machine. Adds time proportional to how much it spins, and more when lit. A lit wheel also advances the current wheel award."
+    },
+    {
+      "id": "jets",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.62,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Every hit adds time. Lit jets add more than unlit ones, and they are lit by completing drop sets."
+    },
+    {
+      "id": "top-lanes",
+      "name": "A-B-C Top Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.89,
+      "trim": "all",
+      "notes": "Completing A-B-C adds five minutes to the timer."
+    },
+    {
+      "id": "roof-lane",
+      "name": "Roof Entrance",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "The centre top lane. When lit it is the third way into the bank — and the entrance you use decides how far you must travel on the board."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the Deposit Window at the Main Entrance for a free gift."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Times the left ramp out for two donuts."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries an Extra Time light. Rolling it while lit adds time even during sudden death — the one outlane you can be glad to see."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same Extra Time light as the left. Lit from a wheel award."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Also one of the two buttons used to stop the safe knob and pick items during the board game."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "The board game is played entirely on the flipper buttons — no ball is in play during it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "the-timer",
+      "title": "The Timer Is Your Ball",
+      "category": "progression",
+      "summary": "Safe Cracker is a timed game, not a three-ball game. You start with a set amount of time, it runs continuously during main play, and when it expires you enter sudden death. Understanding what feeds the clock is the whole game.",
+      "difficulty": 1,
+      "reward": "Survival",
+      "steps": [],
+      "instructions": [
+        "Almost every switch on the playfield adds a small amount of time or briefly pauses the timer — the game is deliberately rewarding you for keeping the ball moving.",
+        "The Wheel is the single best time source. Time added is proportional to how far it spins, and a LIT wheel adds more than an unlit one.",
+        "Jet bumpers add time on every hit, and lit jets add more. Complete drop sets to light them.",
+        "Completing the A-B-C top lanes adds five minutes outright.",
+        "Two readouts show what you have left: the timer lights in the centre of the playfield, and during score sweep, a life bar on the display.",
+        "In multiplayer, each player plays until their own clock runs out. New players can join at any point up until any player enters sudden death."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "sudden-death",
+      "title": "Sudden Death",
+      "category": "strategy",
+      "summary": "When the clock runs out you are not finished — but the next drain ends the game. The cruel part is that during sudden death most normal events stop adding time, so the usual ways out are closed. Only a few specific things can rescue you.",
+      "difficulty": 2,
+      "reward": "Escape back to normal play",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Roll a lit Extra Time light",
+          "detail": "The outlane Extra Time lights still add time during sudden death"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Or take Disable Computer from the wheel",
+          "detail": "That mode holds the timer and stops a drain from ending the game",
+          "link": "none"
+        },
+        {
+          "shot": "timer-lights",
+          "action": "Any successful time add ends sudden death",
+          "detail": "Once time is added the normal rules resume and time can be added freely again",
+          "link": "none"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "break-in",
+      "title": "Break Into The Bank",
+      "category": "progression",
+      "summary": "The core pinball objective. Knock down the blinking sets of drop targets and an entrance lights; from there, the lock shot is where you go. Lock the first ball and the bottom left 3-bank takes over the job of opening further entrances.",
+      "difficulty": 2,
+      "reward": "Starts the board game, advances bonus multiplier",
+      "steps": [
+        {
+          "shot": "drop-sets",
+          "action": "Clear every blinking drop set",
+          "detail": "The bottom left 3-bank spots targets in other sets, so it is worth hitting first"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take the lock shot",
+          "detail": "Available once all blinking sets are down"
+        },
+        {
+          "shot": "bottom-left-3bank",
+          "action": "Light further entrances",
+          "detail": "After the first lock, this bank opens up additional ways in"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "three-entrances",
+      "title": "Choose Your Entrance",
+      "category": "strategy",
+      "summary": "Three ways into the bank, and the choice genuinely matters: the sliding target hides the Cellar, the scoop is the Main Entrance, and the lane above the jets is the Roof. Whichever you pick sets how far you then travel on the board to reach the Vault.",
+      "difficulty": 2,
+      "reward": "A shorter path to the Vault",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Cellar",
+          "detail": "Behind the sliding target"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Main Entrance",
+          "detail": "The centre scoop — also the wheel award shot"
+        },
+        {
+          "shot": "roof-lane",
+          "action": "Roof",
+          "detail": "Centre lane above the jets, when lit. Your path is drawn from that entrance's light clockwise around the centre circle to the first unlit gate"
+        }
+      ],
+      "fx": "coin",
+      "ordered": false
+    },
+    {
+      "id": "wheel-awards",
+      "title": "The Wheel And Its Awards",
+      "category": "mode",
+      "summary": "A lit wheel advances the current wheel award, shown on four lights in the centre of the playfield — but advancing it is not collecting it. You have to shoot the Main Entrance scoop to actually take what the wheel is offering.",
+      "difficulty": 2,
+      "reward": "Light Locks, Disable Computer, Deposit Window or Call Guard",
+      "steps": [
+        {
+          "shot": "wheel",
+          "action": "Spin the lit wheel to advance the award",
+          "detail": "Also the best time source on the machine"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Collect at the scoop",
+          "detail": "Light Locks skips the drop sets entirely; Disable Computer holds the timer; Deposit Window gives a teller gift; Call Guard sometimes grants a free break-in"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "manhole-awards",
+      "title": "Sliding Target (Manhole) Awards",
+      "category": "mode",
+      "summary": "A two-part shot most players get wrong. Push the target fully back first; only after that does the hole behind it take the ball. What it pays out are the awards that swing the board game your way.",
+      "difficulty": 3,
+      "reward": "ATM Card, Note to Teller, Explosives, Safe #, Lite Outlanes",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Push the target fully back",
+          "detail": "A partial hit does not open the hole"
+        },
+        {
+          "shot": "sliding-target",
+          "action": "Then drop through the hole behind it",
+          "detail": "ATM Card multiplies board-game '$' spots; Note to Teller gets you past the teller; Explosives starts a drop-set frenzy; Safe # spells VAULT; Lite Outlanes arms Extra Time"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "vault-spell",
+      "title": "Spell V-A-U-L-T",
+      "category": "progression",
+      "summary": "The long game, and the rule that makes Safe Cracker unusual: VAULT letters are held from game to game. Letters come from Safe # awards off the sliding target and from Code spots on the board. Complete it and your next break-in to the Vault becomes Token Multiball.",
+      "difficulty": 3,
+      "reward": "Next Vault entry becomes Token Multiball",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Collect Safe # awards",
+          "detail": "Each one is a letter"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Or land on Code during the board game",
+          "detail": "Also awards a letter",
+          "link": "none"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Carry progress between games",
+          "detail": "Letters persist from game to game, so a session on the same machine compounds",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "board-game",
+      "title": "The Board Game",
+      "category": "wizard",
+      "altMode": "video",
+      "summary": "The main feature. No ball is in play — you stop a spinning safe knob with the flipper buttons to move, while a guard chases you with a purely random roll. Get caught and the board game ends. Everything you did in pinball was setting the odds for this.",
+      "difficulty": 3,
+      "reward": "A stash of money, and a route to the Vault",
+      "steps": [
+        {
+          "shot": "main-entrance",
+          "action": "Start it from any entrance",
+          "detail": "Cellar, Main Entrance or Roof — the entrance sets the distance to the Vault"
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Stop the safe knob",
+          "detail": "On the default setting the knob stops based on when you press; there is an adjustment that makes it truly random instead"
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Watch the guard",
+          "detail": "He starts chasing after you have moved several spots, from the entrance you used, and his movement is pure dice",
+          "link": "none"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Consider quitting with the stash",
+          "detail": "If the continue-or-quit adjustment is on, you may stop after any successful spin and bank what you have",
+          "link": "none"
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "board-spots",
+      "title": "Board Game Spots Worth Knowing",
+      "category": "progression",
+      "summary": "The board is not random noise — several spots are items you can stockpile, and knowing which ones save your run changes how you play the pinball half.",
+      "difficulty": 2,
+      "reward": "A survivable board run",
+      "steps": [],
+      "instructions": [
+        "**Key** — unlocks a locked gate. You can hold several, and without one a locked gate stops you dead.",
+        "**Dog Biscuit** — defeats the CyberDog. One is consumed each time you land on that spot, so stockpiling matters.",
+        "**Time** — the stopwatch adds clock even during sudden death.",
+        "**$ and Money Bag** — add to your stash; the '$' value is multiplied by how many ATM Cards you collected in pinball.",
+        "**Code** — another VAULT letter.",
+        "**Move Cop Backwards** — usually good, but if it moves the guard backwards ONTO you, you are caught and the run ends.",
+        "**?** — a random item box stopped with the flippers; the items can be bad as well as good.",
+        "**Winged Shoe** — a chance to run around the board, decelerating to a stop with the flippers."
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "the-vault",
+      "title": "The Vault",
+      "category": "wizard",
+      "summary": "The end of the board game and the point of the machine. Reaching it wins at least one token — Safe Cracker physically dispenses collectable tokens, twenty of them including a silver one — along with a large points award.",
+      "difficulty": 3,
+      "reward": "At least one token, plus big points",
+      "steps": [
+        {
+          "shot": "main-entrance",
+          "action": "Complete the board game",
+          "detail": "The Vault sits at the end of the path"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Collect your token",
+          "detail": "This is the first pinball machine to dispense collectable tokens as an award"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "token-multiball",
+      "title": "Token Multiball",
+      "category": "wizard",
+      "summary": "The hidden top end. With V-A-U-L-T fully spelled — and remember those letters carry across games — the next break-in that reaches the Vault becomes Token Multiball instead of an ordinary Vault award.",
+      "difficulty": 3,
+      "reward": "Token Multiball",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Finish spelling VAULT first",
+          "detail": "Safe # awards and board-game Code spots"
+        },
+        {
+          "shot": "main-entrance",
+          "action": "Then break in and reach the Vault",
+          "detail": "The next Vault entry after completing VAULT is the multiball"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "donuts",
+      "title": "Collect Donuts",
+      "category": "combo",
+      "summary": "Donuts come off the left ramp, and the right return lane times the ramp out for two at once. The board game's Donuts spot dumps twelve into your collection in one go, which is the fastest way to build them.",
+      "difficulty": 1,
+      "reward": "Donut collection",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right return lane",
+          "detail": "This times the ramp out for two donuts"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the ramp",
+          "detail": "The board game's Donuts spot adds twelve at once"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bobs-getaway",
+      "title": "Bob's Getaway",
+      "category": "strategy",
+      "summary": "The Big-Kick on the left pays Bob's Getaway, a random points value that ascends as the game goes on. Later in a long game it is worth considerably more than it is at the start.",
+      "difficulty": 1,
+      "reward": "Ascending random points",
+      "steps": [
+        {
+          "shot": "big-kick",
+          "action": "Hit the Big-Kick",
+          "detail": "The value climbs during play, so this shot is worth more the longer you survive"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "explosives",
+      "title": "Explosives Frenzy",
+      "category": "mode",
+      "summary": "A sliding-target award that turns the drop sets into big points for a short frenzy. Best taken when you already have sets standing, since the mode scores off knocking them down.",
+      "difficulty": 2,
+      "reward": "Drop sets score big points",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Collect Explosives",
+          "detail": "Target fully back, then the hole behind it"
+        },
+        {
+          "shot": "drop-sets",
+          "action": "Hammer the drop sets",
+          "detail": "Ideally with a full set standing when the frenzy starts"
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "atm-card",
+      "title": "ATM Cards",
+      "category": "multiplier",
+      "summary": "Collected from the sliding target, and they do nothing on the playfield — they multiply the '$' spots in the board game. This is pinball play directly buying a better board result, so stack them before you break in.",
+      "difficulty": 2,
+      "reward": "Multiplies board-game '$' awards",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Collect ATM Cards before breaking in",
+          "detail": "They multiply the '$' spots you land on later — collecting them after the board game has started is too late"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "alarm-and-teller",
+      "title": "Disable The Alarms And The Teller",
+      "category": "strategy",
+      "summary": "Two obstacles on the board can be removed in advance from the playfield. Spelling A-L-A-R-M disables an alarm spot, and a Note to Teller from the sliding target gets you past the teller. Both are cheap insurance against a run ending early.",
+      "difficulty": 2,
+      "reward": "Fewer board-game hazards",
+      "steps": [
+        {
+          "shot": "alarm-targets",
+          "action": "Spell A-L-A-R-M",
+          "detail": "Disables one alarm spot on the board"
+        },
+        {
+          "shot": "sliding-target",
+          "action": "Collect a Note to Teller",
+          "detail": "Gets you past the teller when you land there"
+        }
+      ],
+      "fx": "coin",
+      "ordered": false
+    },
+    {
+      "id": "extra-time-outlanes",
+      "title": "Extra Time Outlanes",
+      "category": "secret",
+      "summary": "A genuine inversion of normal pinball instinct. Once the outlanes are lit for Extra Time, rolling one adds time to the clock — and it works even in sudden death, making a lit outlane a rescue rather than a disaster.",
+      "difficulty": 2,
+      "reward": "Time added, even during sudden death",
+      "steps": [
+        {
+          "shot": "sliding-target",
+          "action": "Take the Lite Outlanes award",
+          "detail": "From the sliding target"
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Roll a lit outlane",
+          "detail": "One of the few things that still adds time once you are in sudden death"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Every entrance into the bank steps the bonus multiplier, shown at the bottom of the playfield. Unlike most games the bonus is only computed at the very end — which is exactly why tilting during sudden death is so expensive.",
+      "difficulty": 1,
+      "reward": "Multiplied end-of-game bonus",
+      "steps": [
+        {
+          "shot": "main-entrance",
+          "action": "Break in repeatedly",
+          "detail": "Each entrance advances the multiplier"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "tilt-rules",
+      "title": "Know The Tilt Rule",
+      "category": "strategy",
+      "summary": "Safe Cracker punishes tilting in an unusual, two-tier way. Tilt while you still have time and the game continues — but you are dropped straight into sudden death. Tilt while already in sudden death and the game ends with no bonus at all.",
+      "difficulty": 1,
+      "reward": "Not losing the whole bonus",
+      "steps": [
+        {
+          "shot": "timer-lights",
+          "action": "Check the clock before you nudge hard",
+          "detail": "With time left, a tilt costs you the rest of your clock"
+        },
+        {
+          "shot": "timer-lights",
+          "action": "Never nudge hard in sudden death",
+          "detail": "A tilt there ends the game and forfeits the bonus, which is only computed at the end"
+        }
+      ],
+      "fx": "watch",
+      "ordered": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "sc-first-breakin",
+      "title": "Inside Job",
+      "desc": "Clear the blinking drop sets and break into the bank for the first time.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "break-in"
+    },
+    {
+      "id": "sc-abc",
+      "title": "Five More Minutes",
+      "desc": "Complete the A-B-C top lanes for five minutes of clock.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "the-timer"
+    },
+    {
+      "id": "sc-wheel",
+      "title": "Spin To Win",
+      "desc": "Advance a wheel award and collect it at the Main Entrance.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "wheel-awards"
+    },
+    {
+      "id": "sc-manhole",
+      "title": "All The Way Back",
+      "desc": "Drive the sliding target fully back and drop through the hole behind it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "manhole-awards"
+    },
+    {
+      "id": "sc-board",
+      "title": "Play The Board",
+      "desc": "Break in and start the board game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "board-game"
+    },
+    {
+      "id": "sc-escape-sudden-death",
+      "title": "Back From The Brink",
+      "desc": "Add time while in sudden death and return to normal play.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "sudden-death"
+    },
+    {
+      "id": "sc-atm",
+      "title": "Bring The Card",
+      "desc": "Collect an ATM Card before starting a board game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "atm-card"
+    },
+    {
+      "id": "sc-vault",
+      "title": "The Vault",
+      "desc": "Complete the board game and reach the Vault for a token.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "the-vault"
+    },
+    {
+      "id": "sc-vault-spell",
+      "title": "V-A-U-L-T",
+      "desc": "Complete the VAULT spell-up — letters carry between games.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "vault-spell"
+    },
+    {
+      "id": "sc-token-multiball",
+      "title": "Token Multiball",
+      "desc": "Reach the Vault with VAULT already spelled.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "token-multiball"
+    }
+  ],
+  "drills": [
+    {
+      "id": "busy-plunge",
+      "title": "Plunge to Keep It Busy",
+      "text": "The clock is already running when you plunge, and every switch the ball touches adds a little time or briefly pauses the timer. That makes a plunge that keeps the ball rattling around up top worth more than a clean one. Work the strengths that put it through the jets and the top lanes rather than the one that delivers it neatly to a flipper.",
+      "reps": "10 plunges, comparing the clock after each",
+      "focus": "skill-shot",
+      "goal": "the-timer",
+      "shots": [
+        "shooter-lane",
+        "jets",
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "push-it-all-the-way",
+      "title": "Push It All the Way Back",
+      "text": "This is two shots in one. Drive the sliding target the whole way back — a partial hit opens nothing — and only then does the hole behind it accept the ball. Drill the full-power push first and the follow-up second, because everything that swings the board game your way comes out of that hole.",
+      "reps": "10 completed pairs",
+      "focus": "accuracy",
+      "goal": "manhole-awards",
+      "shots": [
+        "sliding-target"
+      ]
+    },
+    {
+      "id": "advance-then-collect",
+      "title": "Advance, Then Collect",
+      "text": "Advancing the award and collecting it are two different things. Spin the lit wheel to move the award along, then shoot the Main Entrance scoop to actually take what it is offering. Drill the pair together — the wheel is also the best time source on the machine, so no spin on the way is wasted.",
+      "reps": "5 advance-and-collect cycles",
+      "focus": "flow",
+      "goal": "wheel-awards",
+      "shots": [
+        "wheel",
+        "main-entrance"
+      ]
+    },
+    {
+      "id": "bank-first",
+      "title": "Bottom Bank First",
+      "text": "The bottom left bank spots targets in the other sets, which makes it the shot that makes everything after it cheaper — take it before you start working the blinking sets. Clear every blinking set, then go to the lock. After the first lock that same bank changes jobs and starts opening more entrances instead.",
+      "reps": "3 full break-ins",
+      "focus": "accuracy",
+      "goal": "break-in",
+      "shots": [
+        "bottom-left-3bank",
+        "drop-sets",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "nudge-to-the-clock",
+      "title": "Nudge to the Clock",
+      "text": "Check the timer before you nudge hard. With time still on it, a tilt costs you the rest of your clock and drops you straight into sudden death; once you are in sudden death, a tilt ends the game and forfeits the bonus entirely. Play a whole game sizing every nudge to the clock reading rather than to the ball.",
+      "reps": "one full game",
+      "focus": "ball-control",
+      "goal": "tilt-rules",
+      "shots": [
+        "timer-lights"
+      ]
+    },
+    {
+      "id": "outlane-inversion",
+      "title": "Aim for the Lit Outlane",
+      "text": "With the Extra Time lights on, an outlane roll adds time instead of costing you the ball, and it keeps working even in sudden death. Take the Lite Outlanes award off the sliding target whenever it comes up, then practice steering a ball you have already lost into a lit outlane rather than fighting it back to the flippers.",
+      "reps": "5 lit-outlane collects",
+      "focus": "ball-control",
+      "goal": "extra-time-outlanes",
+      "shots": [
+        "sliding-target",
+        "left-outlane",
+        "right-outlane"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "coin",
+  "actionButton": {
+    "present": false,
+    "how": "No action button on Safe Cracker — a manual plunger, two flippers and a clock counting down on you. The flipper buttons do get a second job in the board game: with no ball in play, you stop the spinning safe knob with them to decide how far you move."
+  },
+  "howItPlays": {
+    "objective": "Safe Cracker runs on a clock, not three balls: keep time on the timer by staying busy, break into the bank, and win the no-ball board game to reach the Vault for a physical token. Spell V-A-U-L-T across games and your next trip to the Vault becomes Token Multiball.",
+    "loop": [
+      "Feed the clock -- the wheel is the best time source, the jets add time on every hit, and rolling A-B-C across the top lanes drops five minutes on at once.",
+      "Knock down the blinking drop sets to light a way into the bank, then take the lock; after the first lock the bottom-left bank starts opening more entrances.",
+      "Rig the board before you go in: stack ATM Cards, spell VAULT letters, and disable the alarm and teller from the sliding target and standups.",
+      "Break in through the Cellar, Main Entrance or Roof -- the door you use sets your distance to the Vault -- then play the safe-knob board game to the end."
+    ],
+    "lights": [
+      {
+        "id": "abc-top-lanes",
+        "name": "A-B-C Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "The three top lanes each carry a letter, A, B and C; a lit letter is one you have already rolled this time through, and the unlit ones are what remains to complete the set.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll all three to bank a flat five minutes on the timer, which on a game where the clock IS your ball is one of the biggest single time awards going. Then start the set over for another five.",
+        "goals": [
+          "the-timer"
+        ]
+      },
+      {
+        "id": "break-in-drops",
+        "name": "Drop Target Sets",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "drop-sets"
+          },
+          {
+            "shot": "bottom-left-3bank"
+          }
+        ],
+        "lit": "The blinking drop sets are your way in -- clear every blinking set and an entrance lights. The bottom-left three-bank spots targets in the other sets, so hitting it first makes the whole job cheaper.",
+        "flashing": null,
+        "control": null,
+        "then": "Down all the blinking sets, then take the lock to start the board game; completing sets also lights the jets for extra time. After your first lock the bottom-left bank changes jobs and begins lighting additional entrances into the bank.",
+        "goals": [
+          "break-in"
+        ]
+      },
+      {
+        "id": "bank-entrances",
+        "name": "Cellar, Main Entrance & Roof",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "sliding-target"
+          },
+          {
+            "shot": "main-entrance"
+          },
+          {
+            "shot": "roof-lane"
+          }
+        ],
+        "lit": "Three doors lead into the bank: the Cellar behind the sliding target, the Main Entrance scoop, and the Roof lane above the jets when it is lit. A lit entrance is a live way in.",
+        "flashing": null,
+        "control": null,
+        "then": "Which door you take genuinely matters -- your starting point on the board is drawn from that entrance around the center to the first open gate, so the right door is a shorter path to the Vault. Every break-in also steps your end-of-game bonus multiplier.",
+        "goals": [
+          "three-entrances",
+          "break-in",
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "id": "wheel-awards",
+        "name": "The Wheel & Its Awards",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "wheel"
+          },
+          {
+            "shot": "main-entrance"
+          }
+        ],
+        "lit": "Four award lamps in the middle of the playfield show what the wheel is currently offering. A lit wheel steps that award along as it spins, but moving it forward is a separate act from actually taking it.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect it by shooting the Main Entrance scoop. One offer holds the timer to buy you a sudden-death escape; another throws the locks open so the drop sets can be skipped outright; a third pays a teller gift; and the last can wave you in for a free break-in. The wheel doubles as your best clock, so no spin toward it goes to waste.",
+        "goals": [
+          "wheel-awards"
+        ]
+      },
+      {
+        "id": "sliding-target-awards",
+        "name": "Sliding Target (Manhole)",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "sliding-target"
+          }
+        ],
+        "lit": "Drive the sliding target all the way back and the hole behind it opens; a partial push opens nothing. When it is lit it hands over the awards that quietly rig the board game in your favor.",
+        "flashing": null,
+        "control": null,
+        "then": "Take an ATM Card to multiply the board's dollar spots, a Note to Teller to slip past the teller, Explosives for a drop-set frenzy, Safe # for a VAULT letter, or Lite Outlanes to arm the Extra Time saves. Stack these BEFORE you break in, because once the board game starts it is too late.",
+        "goals": [
+          "manhole-awards",
+          "atm-card"
+        ]
+      },
+      {
+        "id": "vault-letters",
+        "name": "V-A-U-L-T",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "sliding-target"
+          },
+          {
+            "shot": "main-entrance"
+          }
+        ],
+        "lit": "The V-A-U-L-T letters light one at a time as you earn them, and here is the twist: they are held from one game to the next, so a session on the same machine keeps building the word.",
+        "flashing": null,
+        "control": null,
+        "then": "Letters come two ways: a Safe # award driven out of the sliding target, or landing on a Code square inside the board game. Once VAULT is complete, the following break-in that gets you to the Vault opens as Token Multiball rather than paying the usual Vault award.",
+        "goals": [
+          "vault-spell",
+          "token-multiball"
+        ]
+      },
+      {
+        "id": "extra-time-outlanes",
+        "name": "Extra Time Outlanes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Both outlanes carry an Extra Time lamp, armed by the Lite Outlanes award from the sliding target. Lit, an outlane you would normally dread instead adds time to your clock as the ball rolls out.",
+        "flashing": null,
+        "control": null,
+        "then": "Better still, a lit outlane keeps adding time even in sudden death -- one of the few things that does -- so it can pull you back from the brink. When a ball is already heading out, aim it at whichever outlane is lit rather than clawing it up toward the flippers.",
+        "goals": [
+          "extra-time-outlanes",
+          "sudden-death"
+        ]
+      },
+      {
+        "id": "bonus-multiplier",
+        "name": "Bonus Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "main-entrance"
+          }
+        ],
+        "lit": "Each break-in bumps the bonus multiplier up a notch, and its readout sits low on the playfield. What makes it unusual is that the bonus goes uncounted until the game is completely over.",
+        "flashing": null,
+        "control": null,
+        "then": "Break in as often as you can to climb it. Because nothing is banked until the end, a tilt in sudden death is doubly expensive -- it ends the game AND wipes the multiplied bonus you spent all game building, so never nudge hard once the clock is gone.",
+        "goals": [
+          "bonus-multiplier",
+          "tilt-rules"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "There is no ball to preserve, only the clock, so plunge to keep the ball busy and feed time early. Rip the wheel, churn the jets, and roll A-B-C for a five-minute block, then clear the blinking drop sets and break in for the first time.",
+        "goals": [
+          "the-timer",
+          "break-in"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Set the board up from the playfield before you commit. Stack ATM Cards to multiply the dollar spots, gather VAULT letters, disable the alarm and the teller, and arm the Extra Time outlanes. Advance and collect wheel awards, and step your bonus multiplier with each entrance.",
+        "goals": [
+          "manhole-awards",
+          "atm-card",
+          "vault-spell",
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Reaching the Vault at the end of the board game is the whole point -- it dispenses a real collectible token and a large score. The top end is Token Multiball: finish spelling VAULT, and because those letters carry across games, your next successful Vault run breaks open into multiball.",
+        "goals": [
+          "token-multiball",
+          "the-vault",
+          "vault-spell"
+        ]
+      }
+    ]
+  }
+}

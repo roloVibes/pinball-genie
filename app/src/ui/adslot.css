@@ -1,0 +1,123 @@
+/* ui/adslot.css — the app shell's single bottom ad strip. Sits between
+ * #main-content and .tab-bar (app.ts's root.append order), a flex sibling of
+ * both, height pinned to --ad-h (styles.css :root) so #map-host's calc and
+ * this strip's own box always agree on one number.
+ *
+ * NO third-party script, NO iframe here (adslot.ts's own header comment) —
+ * the only thing ever rendered by THIS file today is a self-hosted "house"
+ * banner (plain DOM, same styles.css tokens as the rest of the shell), so
+ * this stylesheet needs zero CSP allowance beyond what the app already has. */
+
+.ad-slot {
+  flex-shrink: 0;
+  height: var(--ad-h);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border-top: 1px solid var(--line);
+  background: var(--bg-raised);
+  overflow: hidden;
+}
+
+/* THE COPY SITS ON THE ROW'S CENTRE (2026-08-14, rolo: "I see the follow
+ * pinball genie text on a bottom banner is not centered, make sure that gets
+ * centered").
+ *
+ * THE OLD SHAPE AND WHY IT COULD NOT BE CENTRED. The row was [label][link],
+ * with the "Follow" pill inside the link and `justify-content: space-between`
+ * holding the two apart. The copy therefore started wherever the label
+ * happened to end, so its centre was displaced by half the label's width — 10px
+ * left of the viewport centre at 390, and (because the copy also ellipsizes
+ * there) 11px right of it at 320. Both measured in Chrome.
+ *
+ * THE FIX IS THE TWO END SLOTS, and it carries no measured constants: the
+ * label and the pill are siblings now (adslot.ts), and `flex: 1 1 0` makes
+ * them resolve to the SAME width out of the leftover space. Equal ends put the
+ * middle on the true centre at any width, whatever either end's text happens
+ * to measure — a font swap or a longer CTA word cannot un-centre it.
+ *
+ * WHEN THERE IS NOT ROOM (320px), the ends fall back to their content widths
+ * rather than clipping: a flex item's automatic minimum is its min-content, and
+ * both ends are `white-space: nowrap`, so they never shrink below their own
+ * text. The copy takes what is left and ellipsizes — which is exactly what the
+ * old layout did at that width, minus the overlap risk. The disclosure label
+ * is never the thing that gets cut. */
+.ad-slot-label {
+  flex: 1 1 0;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.ad-slot-creative {
+  flex: 0 1 auto;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text);
+  border-radius: 10px;
+}
+
+.ad-slot-creative:active {
+  background: rgba(255, 176, 46, 0.08);
+}
+
+.ad-slot-creative:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.ad-slot-copy {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ad-slot-copy b {
+  color: var(--amber);
+}
+
+/* The right END SLOT — same `flex: 1 1 0` as the label, which is what makes
+ * the two ends equal and the copy centred. `justify-content: flex-end` keeps
+ * the pill itself on the strip's right edge while its SLOT stays as wide as
+ * the label's; the pill is sized by its own padding, not by the slot. */
+.ad-slot-cta {
+  flex: 1 1 0;
+  /* FULL STRIP HEIGHT, like the banner link beside it. The pill is 25px tall;
+     when it lived inside the banner link the whole strip height around it was
+     still part of that link's hit area, and a thumb aiming at "Follow" got all
+     of it. Sizing the slot rather than the capsule keeps that. */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* The pill itself. A child rather than the slot, so the slot can be as wide as
+ * the label's without the amber capsule stretching to match it. */
+.ad-slot-cta-pill {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255, 176, 46, 0.14);
+  border: 1px solid rgba(255, 176, 46, 0.4);
+  color: var(--amber);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}

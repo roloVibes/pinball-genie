@@ -1,0 +1,1519 @@
+{
+  "machine": "Halloween (Spooky Pinball, 2021)",
+  "defaultFx": "ghost",
+  "shots": [
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.12,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Far-left outer lane; combo shot; feeds Boogeyman/wizard combo chains."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Reveals hedge figures; combo shot; part of Bob and Lynda's Demise sequence.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "5 hits qualifies House Attack (3 opens upper playfield access); combo shot.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Routes toward Smith's Grove Sanitarium access under HARD/MEDIUM timer settings.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Far-right outer lane; combo shot."
+    },
+    {
+      "id": "center-drop-bank",
+      "name": "3-Bank Center Drop Targets",
+      "type": "drop-target",
+      "x": 0.46,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Clear all 3 to light the Jack-O-Lantern scoop for mode select."
+    },
+    {
+      "id": "jackolantern-scoop",
+      "name": "Jack-O-Lantern (Pumpkin) Scoop",
+      "type": "scoop",
+      "x": 0.47,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Mode select, Blood Store, Jack-O-Lantern Multiball, Extra Ball award, Boogeyman Phase 2 lock."
+    },
+    {
+      "id": "judith-tombstone",
+      "name": "Judith Myers Tombstone",
+      "type": "drop-target",
+      "x": 0.26,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Ball lock behind a sculpted drop target; secret skill shot target; Tombstone Multiball and wizard-mode Super Jackpot."
+    },
+    {
+      "id": "lower-right-drop-target",
+      "name": "Lower-Right (Judith Lane) Target",
+      "type": "standup",
+      "x": 0.75,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "5 hits advances Judith Tombstone lock; secret skill-shot target."
+    },
+    {
+      "id": "sanitarium-entry-scoop",
+      "name": "Sanitarium Entry Scoop",
+      "type": "scoop",
+      "x": 0.62,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Lifts ball onto the Smith's Grove Sanitarium mini-playfield; Boogeyman Phase 2 lock."
+    },
+    {
+      "id": "top-hedge",
+      "name": "Top Hedge Scoop",
+      "type": "scoop",
+      "x": 0.16,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Highest of 3 hedge scoops; Hedge Multiball lock/jackpot; Boogeyman Phase 1 lock."
+    },
+    {
+      "id": "middle-hedge",
+      "name": "Middle Hedge Scoop",
+      "type": "scoop",
+      "x": 0.14,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Middle of 3 hedge scoops; Hedge Multiball lock/jackpot/Super Jackpot; Boogeyman Phase 1 lock."
+    },
+    {
+      "id": "bottom-hedge",
+      "name": "Bottom Hedge Scoop",
+      "type": "scoop",
+      "x": 0.12,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Lowest of 3 hedge scoops; Hedge Multiball lock/jackpot; Boogeyman Phase 1 lock."
+    },
+    {
+      "id": "left-sling",
+      "name": "Left Slingshot",
+      "type": "mech",
+      "x": 0.2,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Standard sling kicker beside left flipper."
+    },
+    {
+      "id": "right-sling",
+      "name": "Right Slingshot",
+      "type": "mech",
+      "x": 0.78,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Standard sling kicker beside right flipper."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.94,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Auto-launch; cycle flippers pre-plunge to select skill shot target."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlanes",
+      "type": "lane",
+      "x": 0.15,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "3 rollovers above left flipper."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlanes",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "3 rollovers above right flipper."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.05,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far-left drain lane."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Right drain lane, inboard of shooter lane."
+    },
+    {
+      "id": "knife-blade-targets",
+      "name": "Knife-Blade Standup Targets",
+      "type": "standup",
+      "x": 0.47,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Dagger-shaped standups studding the ramp/orbit mouths and hedge column; used in Escape the Kitchen and wizard-mode knife jackpots."
+    },
+    {
+      "id": "house-left-spinner",
+      "name": "House Left Spinner",
+      "type": "spinner",
+      "x": 0.63,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Upper Strode House mini-playfield; rip to lower Myers' health during House Attack.",
+      "playfield": "house-deck"
+    },
+    {
+      "id": "house-right-spinner",
+      "name": "House Right Spinner",
+      "type": "spinner",
+      "x": 0.76,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Upper Strode House mini-playfield; second spinner for House Attack.",
+      "playfield": "house-deck"
+    },
+    {
+      "id": "house-balcony",
+      "name": "House Balcony Drop Target",
+      "type": "drop-target",
+      "x": 0.73,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Topmost target on the House mini-playfield; the winning shot during The Night He Came Home.",
+      "playfield": "house-deck"
+    },
+    {
+      "id": "house-crossover",
+      "name": "House Crossover / Crossing Shot (Eye of the Needle / Dirty Pool)",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Diagonal ramp+drop-target chute; instant House Attack qualify (Dirty Pool loop) when threaded cleanly, House Multiball Super Jackpot, Boogeyman Phase 3 lock, wizard-mode relight shot.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "playfield": "house-deck"
+    },
+    {
+      "id": "house-upper-drop-target",
+      "name": "House Upper Drop Target",
+      "type": "drop-target",
+      "x": 0.7,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Near center of House mini-playfield; hits lower Laurie's health during House Attack.",
+      "playfield": "house-deck"
+    },
+    {
+      "id": "sanitarium-middle-left-target",
+      "name": "Sanitarium Middle-Left Target",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Left-center standup on Smith's Grove Sanitarium mini-playfield.",
+      "playfield": "sanitarium-deck"
+    },
+    {
+      "id": "sanitarium-middle-right-target",
+      "name": "Sanitarium Middle-Right Target",
+      "type": "standup",
+      "x": 0.52,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Right-center standup on Smith's Grove Sanitarium mini-playfield.",
+      "playfield": "sanitarium-deck"
+    },
+    {
+      "id": "sanitarium-middle-drop-target",
+      "name": "Sanitarium Middle Drop Target",
+      "type": "drop-target",
+      "x": 0.44,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Top-center drop target on Smith's Grove Sanitarium mini-playfield; part of qualify chain and multiball jackpot flow.",
+      "playfield": "sanitarium-deck"
+    },
+    {
+      "id": "sanitarium-super-exit",
+      "name": "Sanitarium Super Exit",
+      "type": "mech",
+      "x": 0.56,
+      "y": 0.24,
+      "trim": "all",
+      "notes": "Top-right exit chute off the Smith's Grove Sanitarium mini-playfield.",
+      "playfield": "sanitarium-deck"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-standard",
+      "title": "Standard Skill Shot",
+      "category": "skillshot",
+      "summary": "Cycle the flippers before the auto-launch fires to pick which lit shot counts as the skill shot — farther/harder shots score more.",
+      "difficulty": 1,
+      "reward": "Skill shot points; sets your first live shot of the ball.",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Cycle to a target, then let the auto-launch fire",
+          "detail": "Use the flipper buttons pre-plunge to move which shot is lit — harder/farther shots are worth more. The launch is automatic, so make the currently lit shot before the timer runs out."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-secret-judith",
+      "title": "Secret Skill Shot — Judith Tombstone",
+      "category": "skillshot",
+      "summary": "A hidden skill shot: plunge, then immediately shoot the Judith Tombstone — landing it locks the ball behind the drop target there on the spot.",
+      "difficulty": 2,
+      "reward": "Instant lock progress toward Tombstone Multiball with near-zero drain risk.",
+      "steps": [
+        {
+          "shot": "judith-tombstone",
+          "action": "Plunge, then shoot the Judith Tombstone at once",
+          "detail": "Scores the secret skill shot and instantly locks the ball behind the tombstone's drop target."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-four-way",
+      "title": "Four-Way Orbit/Ramp Combo Run",
+      "category": "combo",
+      "summary": "Left orbit, left ramp, center ramp, and right orbit all count as combo shots — alternate between them (never repeat the same one twice) to chain escalating combo value.",
+      "difficulty": 2,
+      "reward": "Escalating combo points; doubled if Jack-O-Lantern Mode I is active.",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Starts the combo chain."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp next",
+          "detail": "Must alternate shots — repeating the same lane breaks the combo."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp",
+          "detail": "Keeps the combo alive; value escalates each step."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish on the right orbit",
+          "detail": "Completes a full 4-way pass; also completes Jack-O-Lantern Mode I ('Death in the Driver's Seat') for double value if it's lit."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-dirty-pool",
+      "title": "Dirty Pool / Eye of the Needle Loop",
+      "category": "combo",
+      "summary": "Thread the ramp cleanly between the two House-Attack drop targets — a pass that knocks neither down qualifies House Attack instantly, skipping the five center-ramp shots.",
+      "difficulty": 3,
+      "reward": "~+100% scoring multiplier per clean loop (approximate), stackable across repeated passes.",
+      "steps": [
+        {
+          "shot": "house-crossover",
+          "action": "Thread the lane between the two drop targets",
+          "detail": "Thread the gap without knocking either drop down — a pass between them qualifies House Attack instantly."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Repeat the clean pass",
+          "detail": "Each additional clean loop stacks another multiplier increment."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-house-reset-loop",
+      "title": "House Multiball Crossover Jackpot Reset Loop",
+      "category": "combo",
+      "summary": "The single best repeatable bank in the game: cycle orbits/ramps into the crossover Super Jackpot, which resets its value and relights everything for another pass.",
+      "difficulty": 3,
+      "reward": "Super Jackpot = 2.5M + 250k/jackpot + 25k/spinner spin, effectively uncapped, repeatable while the multiball survives.",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot any lit orbit/ramp jackpot",
+          "detail": "During House Multiball all orbits and ramps are lit for jackpots."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Continue collecting lit jackpot shots",
+          "detail": "Work through as many lit shots as you can before cashing out.",
+          "link": "none"
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Shoot the crossover for the Super Jackpot",
+          "detail": "Value builds with every jackpot and spinner spin collected first."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Immediately re-run orbits/ramps then crossover again",
+          "detail": "Collecting the Super Jackpot resets its value and relights all jackpots — repeat the cycle."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-hedge-cycle",
+      "title": "Hedge Multiball Reveal-and-Jackpot Cycle",
+      "category": "combo",
+      "summary": "Reveal Michael behind each hedge with the left ramp, then bank the three hedge jackpots and the Super Jackpot at the scoop.",
+      "difficulty": 2,
+      "reward": "3 hedge jackpots plus a Super Jackpot worth their sum, plus an add-a-ball on the first Super Jackpot.",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to reveal Michael",
+          "detail": "Reveals a Myers figure behind a hedge for about 15 seconds."
+        },
+        {
+          "shot": "top-hedge",
+          "action": "Shoot the revealed hedge scoop for the jackpot",
+          "detail": "Cycle through top, middle, and bottom hedges as they're revealed."
+        },
+        {
+          "shot": "middle-hedge",
+          "action": "Collect the next revealed hedge jackpot",
+          "detail": "",
+          "link": "none"
+        },
+        {
+          "shot": "bottom-hedge",
+          "action": "Collect the third hedge jackpot",
+          "detail": "After all three, the middle scoop lights for the Super Jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "middle-hedge",
+          "action": "Shoot the lit scoop for the Super Jackpot",
+          "detail": "Worth the sum of jackpots collected; the first one also adds a ball."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-knife-double-jackpot",
+      "title": "Wizard Mode Knife Double-Jackpot Loop",
+      "category": "combo",
+      "summary": "In 'The Night He Came Home,' relight and re-collect knife inserts for doubled jackpots — the highest per-shot ceiling in the game.",
+      "difficulty": 3,
+      "reward": "Double jackpots plus a 10M x balls-in-play Super Jackpot at Judith Tombstone per location.",
+      "steps": [
+        {
+          "shot": "knife-blade-targets",
+          "action": "Shoot a lit knife insert",
+          "detail": "Scores a jackpot and turns the insert red."
+        },
+        {
+          "shot": "knife-blade-targets",
+          "action": "Shoot the same insert again while it's red",
+          "detail": "Scores a double jackpot."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Shoot the crossing shot to relight dark inserts",
+          "detail": "Relights every knife insert that's gone dark so the cycle can repeat."
+        },
+        {
+          "shot": "judith-tombstone",
+          "action": "Shoot Judith Tombstone for the location Super Jackpot",
+          "detail": "10 million x balls in play — once per location, the single biggest award in the ruleset."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "multiball-hedge",
+      "title": "Hedge Multiball",
+      "category": "multiball",
+      "summary": "Lock a ball at all three hedge scoops to start a 3-ball multiball — the most beginner-accessible of the three story multiballs.",
+      "difficulty": 2,
+      "reward": "3-ball multiball with jackpots at each hedge and a summed Super Jackpot.",
+      "steps": [
+        {
+          "shot": "top-hedge",
+          "action": "Lock a ball at the top hedge",
+          "detail": "Shoot the top hedge scoop to trap a ball."
+        },
+        {
+          "shot": "middle-hedge",
+          "action": "Lock a ball at the middle hedge",
+          "detail": ""
+        },
+        {
+          "shot": "bottom-hedge",
+          "action": "Lock a ball at the bottom hedge",
+          "detail": "Locking all three auto-starts Hedge Multiball (3-ball) — no separate start shot needed."
+        }
+      ],
+      "fx": "ghost",
+      "ordered": false
+    },
+    {
+      "id": "multiball-sanitarium",
+      "title": "Sanitarium Multiball",
+      "category": "multiball",
+      "summary": "On the Smith's Grove Sanitarium mini-playfield, complete a 4-step qualifying chain to arm the multiball, which begins on the next drain.",
+      "difficulty": 3,
+      "reward": "2-ball multiball: six 225k patient jackpots plus a 500k Super Jackpot.",
+      "steps": [
+        {
+          "shot": "sanitarium-entry-scoop",
+          "action": "Shoot the middle-playfield drop target then the scoop",
+          "detail": "Reach the mini-playfield via center or right ramp, depending on the SANITARIUM TIMER setting."
+        },
+        {
+          "shot": "sanitarium-middle-left-target",
+          "action": "Hit the left middle-playfield standup target",
+          "detail": "Part of the 4-step qualify chain."
+        },
+        {
+          "shot": "sanitarium-middle-right-target",
+          "action": "Hit the right middle-playfield standup target",
+          "detail": ""
+        },
+        {
+          "shot": "sanitarium-middle-drop-target",
+          "action": "Hit the drop target again, then the scoop",
+          "detail": "Completing all four shots arms Sanitarium Multiball, which starts on the next drain."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-house",
+      "title": "House Multiball",
+      "category": "multiball",
+      "summary": "Qualify House Attack, beat Myers' and protect Laurie's health bars on the upper House playfield, then finish drop target into crossover to start the multiball.",
+      "difficulty": 3,
+      "reward": "3-ball multiball with all orbits/ramps lit for jackpots and an escalating crossover Super Jackpot.",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp 5 times to qualify House Attack",
+          "detail": "Or complete Hedge + Sanitarium Multiball, or hit the Dirty Pool crossover shot for an instant qualify."
+        },
+        {
+          "shot": "house-left-spinner",
+          "action": "Rip the upper-playfield spinners",
+          "detail": "Lowers Myers' health within a hard 60-second timer once diverted to House Attack."
+        },
+        {
+          "shot": "house-upper-drop-target",
+          "action": "Hit the upper drop target",
+          "detail": "Lowers Laurie's health — middle-playfield standups restore it, so watch the balance."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Beat Myers, then shoot drop target then crossover",
+          "detail": "Starts House Multiball (3-ball)."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-tombstone",
+      "title": "Tombstone Multiball",
+      "category": "multiball",
+      "summary": "Trap a ball at the Judith Tombstone (via 5 standup hits or the secret skill shot) and release it to start a stackable 2-ball multiball with a flat 2x bonus.",
+      "difficulty": 2,
+      "reward": "2-ball multiball, orange jackpots, flat 2x scoring, stackable with other modes/multiballs.",
+      "steps": [
+        {
+          "shot": "lower-right-drop-target",
+          "action": "Hit the lower-right target 5 times",
+          "detail": "Or land the secret Judith skill shot for an instant trap instead."
+        },
+        {
+          "shot": "judith-tombstone",
+          "action": "Lock the ball behind the Judith Tombstone drop target",
+          "detail": "The locked ball releases to start Tombstone Multiball."
+        },
+        {
+          "shot": "judith-tombstone",
+          "action": "Shoot the Tombstone target during multiball for the Super Jackpot",
+          "detail": "Orange-lit shots score jackpots; the Super Jackpot increases future jackpot values."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-death-drivers-seat",
+      "title": "Jack-O-Lantern Mode I — Death in the Driver's Seat",
+      "category": "mode",
+      "summary": "Easy-tier story mode: hit the four combo shots in any order, doubled if chained as combos.",
+      "difficulty": 1,
+      "reward": "Mode win = 6 blood; progress toward Extra Ball and 'The Night He Came Home.'",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Clear the 3 center drop targets",
+          "detail": "Lights the Jack-O-Lantern scoop for mode select."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Shoot the scoop and select Mode I",
+          "detail": "Use the flippers to cycle to 'Death in the Driver's Seat.'"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit left orbit, left ramp, center ramp, right orbit in any order",
+          "detail": "Shooting them as combo shots doubles the value for each.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete the last of the four shots",
+          "detail": "Any order works, but combo-chaining doubles value.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-bob-lynda",
+      "title": "Jack-O-Lantern Mode II — Bob and Lynda's Demise",
+      "category": "mode",
+      "summary": "Easy-tier story mode: shoot the lit shots left-to-right; the center ramp transfers the ball to the House playfield for a bonus crossover shot.",
+      "difficulty": 1,
+      "reward": "Mode win = 6 blood; optional crossover 'special' shot bonus.",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Clear the center drop bank",
+          "detail": "Qualifies mode select at the scoop."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Select 'Bob and Lynda's Demise'",
+          "detail": ""
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the lit shots left-to-right",
+          "detail": "Follow the sequence strictly in order."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Finish on the center ramp",
+          "detail": "Transfers the ball to the House upper playfield for an optional crossover 'special' shot.",
+          "feeds": {
+            "x": 0.45,
+            "y": 0.88
+          }
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-counting-bodies",
+      "title": "Jack-O-Lantern Mode III — Counting Bodies",
+      "category": "mode",
+      "summary": "Medium-tier story mode: shoot alternating green shots between the left-ramp and center-ramp zones while avoiding red-lit shots.",
+      "difficulty": 2,
+      "reward": "Mode win = 6 blood; failing on too many red hits ends the mode early.",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Clear the center drop bank",
+          "detail": "Qualifies mode select."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Select 'Counting Bodies'",
+          "detail": ""
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the lit green shot on the left-ramp side",
+          "detail": "Alternates between left-ramp+targets and center-ramp+targets."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the other lit green shot",
+          "detail": "Avoid red-lit shots — too many red hits fails the mode."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-escape-kitchen",
+      "title": "Jack-O-Lantern Mode IV — Escape the Kitchen",
+      "category": "mode",
+      "summary": "Medium-tier story mode: hit all 6 lit standup targets, in any order, to win.",
+      "difficulty": 2,
+      "reward": "Mode win = 6 blood.",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Clear the center drop bank",
+          "detail": "Qualifies mode select."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Select 'Escape the Kitchen'",
+          "detail": ""
+        },
+        {
+          "shot": "knife-blade-targets",
+          "action": "Hit all 6 lit standup targets, any order",
+          "detail": "Complete all six to win the mode."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiplier-blood-store",
+      "title": "Light the Blood 2x Scoring Multiplier",
+      "category": "multiplier",
+      "summary": "Bank blood from qualifying/winning modes, then spend 10 at the store for 2x scoring for the rest of the ball.",
+      "difficulty": 1,
+      "reward": "Flat 2x scoring for the remainder of the ball.",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Qualify or win Jack-O-Lantern modes to earn blood",
+          "detail": "3 blood for lighting a mode, 6 for winning one."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Open the Blood Store at the scoop",
+          "detail": "It opens as soon as you hold any blood at all, and blood keeps building across the whole game rather than resetting each ball."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Spend 10 blood for 2x scoring",
+          "detail": "Time the purchase right before diving into a multiball so the 2x is live across jackpots and Super Jackpots."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-tombstone-stack",
+      "title": "Stack Tombstone Multiball's Flat 2x",
+      "category": "multiplier",
+      "summary": "Tombstone Multiball applies a flat 2x scoring bonus for its duration and is explicitly stackable with other running modes/multiballs.",
+      "difficulty": 2,
+      "reward": "Flat 2x on top of whatever else is running.",
+      "steps": [
+        {
+          "shot": "lower-right-drop-target",
+          "action": "Advance or hit the secret Judith skill shot",
+          "detail": "Builds toward a Judith Tombstone lock."
+        },
+        {
+          "shot": "judith-tombstone",
+          "action": "Release the lock to start Tombstone Multiball",
+          "detail": "Applies a flat 2x scoring bonus for its duration."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Stack it under another running multiball",
+          "detail": "Start Tombstone Multiball while House or Hedge Multiball is active for compounded scoring."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-boogeyman",
+      "title": "Boogeyman (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Score the Super Jackpot in all three story multiballs, then relock all six balls across three phases to fire a 6-ball finale.",
+      "difficulty": 3,
+      "reward": "6-ball multiball with all major shots lit yellow/blue for jackpots.",
+      "steps": [
+        {
+          "shot": "middle-hedge",
+          "action": "Score the Hedge Multiball Super Jackpot",
+          "detail": "One of three required story-multiball supers."
+        },
+        {
+          "shot": "sanitarium-entry-scoop",
+          "action": "Score the Sanitarium Multiball Super Jackpot",
+          "detail": "",
+          "link": "none"
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Score the House Multiball Super Jackpot",
+          "detail": "Completing all three qualifies Boogeyman.",
+          "link": "none"
+        },
+        {
+          "shot": "top-hedge",
+          "action": "Relock at the three hedge shots (Phase 1)",
+          "detail": "Hedge 1, 2, 3 — draining releases the most recently locked ball, which must be relocked."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Relock at the Jack-O-Lantern scoop (Phase 2)",
+          "detail": ""
+        },
+        {
+          "shot": "sanitarium-entry-scoop",
+          "action": "Relock at the Sanitarium scoop (Phase 2)",
+          "detail": ""
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Relock at the Crossing Shot (Phase 3)",
+          "detail": "The 6th and final lock fires the 6-ball Boogeyman multiball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-night-he-came-home",
+      "title": "The Night He Came Home (Wizard Mode)",
+      "category": "wizard",
+      "summary": "The final wizard mode: qualify by starting/completing a set number of Jack-O-Lantern modes, then race through story locations collecting jackpots against a fuel clock.",
+      "difficulty": 3,
+      "reward": "Location jackpots, double jackpots, and a 10M x balls-in-play Super Jackpot per location.",
+      "steps": [
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Start or complete the configured number of Jack-O-Lantern modes",
+          "detail": "Operator setting: START or COMPLETE 6 or 9 modes."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Hit the flashing-white hurry-up shot to lock in a location jackpot",
+          "detail": "Phase 1: uncollected it defaults to a 1M minimum."
+        },
+        {
+          "shot": "knife-blade-targets",
+          "action": "Shoot lit knife inserts and drop targets for jackpots",
+          "detail": "Phase 2: shoot a red-flashed insert again for a double jackpot."
+        },
+        {
+          "shot": "judith-tombstone",
+          "action": "Shoot Judith Tombstone for the location Super Jackpot",
+          "detail": "10 million x balls in play, once per location."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener — Secret Skill Shot into the Drop Bank",
+      "category": "strategy",
+      "summary": "The lowest-risk, highest structural-value opening sequence: bank a free lock, then get the mode economy rolling immediately.",
+      "difficulty": 1,
+      "reward": "Locked ball toward Tombstone progress plus a fast mode start.",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Cycle to the secret Judith lane skill shot",
+          "detail": "Lowest-risk opener — banks lock progress instead of raw points."
+        },
+        {
+          "shot": "lower-right-drop-target",
+          "action": "Hit it off the plunge to instantly trap the ball",
+          "detail": "Removes that ball from drain risk for a beat."
+        },
+        {
+          "shot": "center-drop-bank",
+          "action": "Chip down the center drop bank",
+          "detail": "3 hits lights the Jack-O-Lantern scoop for an easy-tier mode."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Start an Easy-tier mode",
+          "detail": "Death in the Driver's Seat or Bob and Lynda's Demise."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner Progression — First 30 Seconds",
+      "category": "strategy",
+      "summary": "A concrete shot-by-shot plan for a brand-new player's opening sequence.",
+      "difficulty": 1,
+      "reward": "Skill shot points, an Easy mode started, and Hedge lock progress banked.",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Take the skill shot",
+          "detail": "Secret Judith lane if you can hit it consistently, else the best-value standard target."
+        },
+        {
+          "shot": "center-drop-bank",
+          "action": "Chip down the center drop bank (3 hits)",
+          "detail": "Then shoot the lit scoop to start an Easy-tier pumpkin mode."
+        },
+        {
+          "shot": "top-hedge",
+          "action": "Work the left orbit/ramp into the three hedge scoops",
+          "detail": "Start banking Hedge Multiball locks — the most beginner-accessible multiball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Add the right ramp toward Sanitarium",
+          "detail": "Once comfortable, widen your shot rotation."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Build center-ramp hits toward opening the House playfield",
+          "detail": "Contributes toward the 5 hits needed to qualify House Attack."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-rush-super-jackpots",
+      "title": "Tournament Priority — Rush the Three Super Jackpots",
+      "category": "strategy",
+      "summary": "The competitive line: put the 8 story modes on the back burner and race Hedge, Sanitarium, and House Super Jackpots to reach Boogeyman fastest.",
+      "difficulty": 3,
+      "reward": "Fastest path to the game's two biggest scoring tiers: multiball supers, then Boogeyman.",
+      "steps": [
+        {
+          "shot": "middle-hedge",
+          "action": "Start Hedge Multiball and collect its Super Jackpot",
+          "detail": "First super jackpot of the run."
+        },
+        {
+          "shot": "sanitarium-entry-scoop",
+          "action": "Start Sanitarium Multiball and collect its Super Jackpot",
+          "detail": "A clean, low-variance 6-shot-then-cash sequence."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Start House Multiball and collect its Super Jackpot",
+          "detail": "Auto-qualifies once Hedge + Sanitarium are both done, skipping the 5-shot center-ramp path."
+        },
+        {
+          "shot": "house-crossover",
+          "action": "Relock all six balls to trigger Boogeyman",
+          "detail": "Three hedges, two scoops, one crossing shot — the backbone tournament route."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-earn-extra-ball",
+      "title": "Earn and Cash an Extra Ball",
+      "category": "strategy",
+      "summary": "Extra ball is awarded at the Jack-O-Lantern scoop off mode progress and banked blood — keep recycling the drop bank so the scoop stays available to collect it.",
+      "difficulty": 2,
+      "reward": "One extra ball, plus whatever blood-store award you buy on the same trip.",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Clear the three center drop targets",
+          "detail": "Lighting the scoop is the only way to reach mode select, the blood store, and the extra ball award."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Start and win story modes to build progress",
+          "detail": "Lighting a mode banks blood, winning one banks more — both feed the extra ball threshold."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Return to the scoop and take the extra ball when it is offered",
+          "detail": "Cycle the award list with the flippers and pick the extra ball over a points award."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-mode-sweep",
+      "title": "Sweep Every Jack-O-Lantern Mode",
+      "category": "strategy",
+      "summary": "The mode-count route: treat the drop bank and scoop as a loop and start every story mode in the stack, which is also the qualifier path for the final wizard mode.",
+      "difficulty": 3,
+      "reward": "Blood on every mode lit or won, and the fastest legitimate qualify for the final wizard mode.",
+      "steps": [
+        {
+          "shot": "center-drop-bank",
+          "action": "Chip the drop bank down as soon as it resets",
+          "detail": "Every reset is another mode start — treat it as your default shot between modes."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Start the next unplayed mode",
+          "detail": "Cycle past modes you have already run so the count keeps climbing."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Work the mode's lit shots instead of drifting off-plan",
+          "detail": "Most easy and medium modes live on the left ramp, center ramp, orbits, and the knife standups."
+        },
+        {
+          "shot": "center-drop-bank",
+          "action": "Go straight back to the drop bank when the mode ends",
+          "detail": "Lose a mode and the drops come back; each mode won on the same ball adds an orbit shot you must make first to raise them."
+        },
+        {
+          "shot": "jackolantern-scoop",
+          "action": "Repeat until every mode has been started",
+          "detail": "Operator settings decide whether the wizard mode wants started or completed modes, and how many."
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "hidden-grave-plunge",
+      "title": "Hidden Grave Plunge",
+      "desc": "Land the unadvertised lower-right lane target straight off the plunge to trap a ball at the tombstone instantly.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-secret-judith"
+    },
+    {
+      "id": "first-pumpkin-lit",
+      "title": "First Pumpkin Lit",
+      "desc": "Clear the three center drop targets and start any Jack-O-Lantern story mode from the scoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strategy-best-opener"
+    },
+    {
+      "id": "driver-seat-cleared",
+      "title": "Driver's Seat Cleared",
+      "desc": "Win the easy-tier car story mode by taking all four of its lit shots.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-death-drivers-seat"
+    },
+    {
+      "id": "six-blades-down",
+      "title": "Six Blades Down",
+      "desc": "Win the kitchen story mode by hitting all six of its lit standup targets.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-escape-kitchen"
+    },
+    {
+      "id": "spend-the-blood",
+      "title": "Spend the Blood",
+      "desc": "Bank ten blood from modes and buy the 2x scoring award at the scoop store.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-blood-store"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Earn and collect an extra ball award at the Jack-O-Lantern scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-earn-extra-ball"
+    },
+    {
+      "id": "three-hedges-locked",
+      "title": "Three Hedges Locked",
+      "desc": "Lock a ball at each of the three hedge scoops to launch the hedge multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-hedge"
+    },
+    {
+      "id": "grave-release",
+      "title": "Grave Release",
+      "desc": "Trap and release a ball at the tombstone to start its stackable two-ball multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-tombstone"
+    },
+    {
+      "id": "checked-in-upstairs",
+      "title": "Checked In Upstairs",
+      "desc": "Complete the four-step qualify chain on the sanitarium mini-playfield and start that multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-sanitarium"
+    },
+    {
+      "id": "porch-light-fight",
+      "title": "Porch Light Fight",
+      "desc": "Qualify the house attack, win the health-bar fight on the upper playfield, and start house multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-house"
+    },
+    {
+      "id": "threaded-needle",
+      "title": "Threaded Needle",
+      "desc": "Thread the upper crossover lane cleanly between both drop targets to stack a scoring multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-dirty-pool"
+    },
+    {
+      "id": "four-lane-chain",
+      "title": "Four-Lane Chain",
+      "desc": "Chain all four combo shots back to back without repeating a lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-four-way"
+    },
+    {
+      "id": "crossover-double-dip",
+      "title": "Crossover Double Dip",
+      "desc": "Collect the house multiball super jackpot twice in one multiball by relighting jackpots after the first cash-out.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-house-reset-loop"
+    },
+    {
+      "id": "all-three-supers",
+      "title": "All Three Supers",
+      "desc": "Score the super jackpot in the hedge, sanitarium, and house multiballs in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-rush-super-jackpots"
+    },
+    {
+      "id": "full-mode-sweep",
+      "title": "Full Mode Sweep",
+      "desc": "Start every Jack-O-Lantern story mode in one game by recycling the drop bank into the scoop.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-mode-sweep"
+    },
+    {
+      "id": "six-balls-relocked",
+      "title": "Six Balls Relocked",
+      "desc": "Qualify the mini-wizard mode and relock all six balls through its three lock phases to fire the six-ball finale.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-boogeyman"
+    },
+    {
+      "id": "he-came-home",
+      "title": "He Came Home",
+      "desc": "Qualify and start the final wizard mode by starting or completing the required number of story modes.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-night-he-came-home"
+    },
+    {
+      "id": "location-super-banked",
+      "title": "Location Super Banked",
+      "desc": "During the final wizard mode, double a knife jackpot and then cash the tombstone super jackpot for a location.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "combo-knife-double-jackpot"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-secret-skillshot",
+      "title": "Bank the Secret Skill Shot",
+      "text": "Groove the full-power plunge-to-tombstone timing until it's automatic -- this is the single highest-value, lowest-risk opener in the ruleset.",
+      "reps": "15 plunges",
+      "focus": "timing",
+      "goal": "skillshot-secret-judith",
+      "shots": [
+        "judith-tombstone"
+      ]
+    },
+    {
+      "id": "drill-house-attack-qualify",
+      "title": "Three Center-Ramp Reps",
+      "text": "Since three clean center-ramp hits is all it takes to open the House, drill the shot in sets of three until it's a reflex rather than a hopeful flip.",
+      "reps": "3-hit sets x5",
+      "focus": "accuracy",
+      "goal": "multiball-house",
+      "shots": [
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "drill-dirty-pool-threading",
+      "title": "Thread the Crossover Blind",
+      "text": "Practice the gap shot between the two crossover drop targets without knocking either one down -- land it clean and House Attack qualifies instantly, no ramp count needed.",
+      "reps": "10 attempts",
+      "focus": "precision",
+      "goal": "combo-dirty-pool",
+      "shots": [
+        "house-crossover"
+      ]
+    },
+    {
+      "id": "drill-hedge-cycle",
+      "title": "Three-Hedge Sweep",
+      "text": "Run all three hedge scoops back to back and stay ready for the kickback on each one instead of watching the shot land.",
+      "reps": "5 full sweeps",
+      "focus": "recovery",
+      "goal": "multiball-hedge",
+      "shots": [
+        "top-hedge",
+        "middle-hedge",
+        "bottom-hedge"
+      ]
+    },
+    {
+      "id": "drill-sanitarium-chain",
+      "title": "Sanitarium Chain, Start to Finish",
+      "text": "Once up on the deck, run the full standup-and-drop sequence without a miss -- there's no flipper up there to bail you out if you're off-line.",
+      "reps": "5 full chains",
+      "focus": "on-deck accuracy",
+      "goal": "multiball-sanitarium",
+      "shots": [
+        "sanitarium-entry-scoop",
+        "sanitarium-middle-left-target",
+        "sanitarium-middle-right-target",
+        "sanitarium-middle-drop-target"
+      ]
+    },
+    {
+      "id": "drill-house-deck-flippers",
+      "title": "Upper Flipper Control",
+      "text": "The House deck has its own flipper pair that only wakes up mid-battle -- the first few times House Attack triggers, spend the whole health fight just getting a feel for how those upper flippers aim before worrying about score.",
+      "reps": "until House Attack triggers naturally, then 10 shots per flipper",
+      "focus": "upper-deck control",
+      "goal": "multiball-house",
+      "shots": [
+        "house-left-spinner",
+        "house-right-spinner",
+        "house-balcony"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "house-deck",
+      "name": "Strode House",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.59,
+        "y": 0.65,
+        "w": 0.28,
+        "h": 0.28
+      },
+      "entries": [
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "sanitarium-deck",
+      "name": "Sanitarium",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.28,
+        "y": 0.16,
+        "w": 0.36,
+        "h": 0.26
+      },
+      "entries": [
+        "sanitarium-entry-scoop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Spooky did not put a button on the lockdown bar here. What Halloween does give you is a second flipper button on each side of the cabinet, wired to the pair of flippers up on the House playfield — they do nothing until the ball is up there for House Attack, then they are the only way to aim at the spinners. The plunge is automatic, so you pick your skill shot with the main flippers and the ball leaves on its own."
+  },
+  "howItPlays": {
+    "objective": "Michael Myers has come home to Haddonfield, and you hunt him across a graveyard, three hedges, an asylum deck and the Strode house itself. Bank blood to buy scoring, drive each of the three story multiballs to its Super Jackpot, and survive The Night He Came Home.",
+    "loop": [
+      "Knock down the three center drop targets to light the Jack-O-Lantern scoop, your hub for mode select, the blood store and any waiting extra ball.",
+      "Start an easy pumpkin mode off the scoop and win it to earn blood, then spend blood at that same scoop for doubled scoring you keep for the rest of the ball.",
+      "Lock balls at the three hedges, up on the asylum deck, and inside the Strode house to run the three story multiballs.",
+      "Cash the Super Jackpot in Hedge, Sanitarium and House multiball to qualify Boogeyman, the six-ball finale.",
+      "Start enough pumpkin modes to reach The Night He Came Home, where the knife jackpots and the tombstone super pay the most anywhere on the machine."
+    ],
+    "lights": [
+      {
+        "id": "pumpkin-scoop",
+        "name": "Jack-O-Lantern Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-drop-bank"
+          },
+          {
+            "shot": "jackolantern-scoop"
+          }
+        ],
+        "lit": "Clearing the three center drops lights the scoop, and while it is lit the mode select, the blood store and any earned extra ball are all waiting there; the drops reset after each trip so you can relight it over and over.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "cycle the scoop award list -- an unplayed pumpkin mode, a blood purchase, or a lit extra ball -- so you drop in on the one you want",
+          "when": "the scoop is lit and holding you at its award menu"
+        },
+        "then": "Start an easy pumpkin mode and win it to earn blood, then return to spend ten blood on doubled scoring right before a multiball so the boost rides across every jackpot. Blood keeps building all game rather than resetting, and every mode you start here also climbs you toward the final wizard.",
+        "goals": [
+          "mode-death-drivers-seat",
+          "multiplier-blood-store",
+          "strategy-earn-extra-ball",
+          "wizard-night-he-came-home"
+        ]
+      },
+      {
+        "id": "hedges",
+        "name": "The Three Hedges",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "top-hedge"
+          },
+          {
+            "shot": "middle-hedge"
+          },
+          {
+            "shot": "bottom-hedge"
+          }
+        ],
+        "lit": "Shooting the left ramp reveals Michael behind a hedge for a few seconds, which lights that hedge scoop to accept a lock; a locked ball stays locked, and trapping one at each of the three fires Hedge Multiball on its own.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock all three for the friendliest multiball on the machine, reveal-and-bank the three hedge jackpots, then cash the Super at the middle hedge -- the first Super also adds a ball, and that Super is one of the three you need for Boogeyman.",
+        "goals": [
+          "multiball-hedge",
+          "combo-hedge-cycle",
+          "wizard-boogeyman"
+        ]
+      },
+      {
+        "id": "tombstone",
+        "name": "Judith Myers Tombstone",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lower-right-drop-target"
+          },
+          {
+            "shot": "judith-tombstone"
+          }
+        ],
+        "lit": "Five hits on the lower-right lane target, or the hidden skill shot straight off the plunge, trap a ball behind the tombstone drop; the trapped ball releases into a two-ball multiball whose flat double scoring stacks on top of anything else you have running.",
+        "flashing": null,
+        "control": null,
+        "then": "Start it underneath a story multiball so the flat 2x compounds everything, and shoot the tombstone during the multiball for a Super that raises later jackpot values. In the final wizard this same target pays ten million times the balls in play -- the single largest award in the game.",
+        "goals": [
+          "multiball-tombstone",
+          "multiplier-tombstone-stack",
+          "skillshot-secret-judith"
+        ]
+      },
+      {
+        "id": "sanitarium",
+        "name": "Smith's Grove Sanitarium",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "sanitarium-entry-scoop"
+          },
+          {
+            "shot": "sanitarium-middle-left-target"
+          },
+          {
+            "shot": "sanitarium-middle-right-target"
+          },
+          {
+            "shot": "sanitarium-middle-drop-target"
+          }
+        ],
+        "lit": "The entry scoop lifts the ball onto the asylum deck, where a lit standup or drop is the next link in a four-step qualify chain; there is no flipper up there to save a miss, so an off-line shot just rattles until it settles.",
+        "flashing": null,
+        "control": null,
+        "then": "Run the left standup, the right standup and the drop-then-scoop to arm the multiball, which begins on your next drain. Its Super is the second of the three story supers that qualify Boogeyman.",
+        "goals": [
+          "multiball-sanitarium",
+          "wizard-boogeyman"
+        ]
+      },
+      {
+        "id": "strode-house",
+        "name": "The Strode House",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "house-crossover"
+          },
+          {
+            "shot": "house-left-spinner"
+          },
+          {
+            "shot": "house-upper-drop-target"
+          },
+          {
+            "shot": "house-balcony"
+          }
+        ],
+        "lit": "Five center-ramp shots qualify House Attack and divert the ball up to the house deck, where its own upper flippers wake up; rip the spinners to drain Myers' health while the upper drop chips Laurie's, and the middle standups heal her, all against a hard sixty-second clock.",
+        "flashing": null,
+        "control": null,
+        "then": "Beat Myers, then shoot the upper drop into the crossover to start House Multiball, where every orbit and ramp lights for jackpots feeding a climbing crossover Super. Threading that crossover clean between its two drops -- the Dirty Pool loop -- qualifies House Attack instantly and skips the five ramps.",
+        "goals": [
+          "multiball-house",
+          "combo-dirty-pool",
+          "combo-house-reset-loop",
+          "wizard-boogeyman"
+        ]
+      },
+      {
+        "id": "combo-shots",
+        "name": "Combo Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "The two orbits and the two ramps each count as combo shots; alternate them without repeating a lane and every link scores more than the last, and this same set is the win condition for the first easy pumpkin mode.",
+        "flashing": null,
+        "control": null,
+        "then": "Chain a full four-way pass for escalating points, doubled while Death in the Driver's Seat is running. Keeping the ball moving through these shots is also how you feed the hedges and grind center-ramp hits toward opening the house.",
+        "goals": [
+          "combo-four-way",
+          "mode-death-drivers-seat"
+        ]
+      },
+      {
+        "id": "knife-blades",
+        "name": "Knife-Blade Standups",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "knife-blade-targets"
+          },
+          {
+            "shot": "house-crossover"
+          },
+          {
+            "shot": "judith-tombstone"
+          }
+        ],
+        "lit": "Lit knife blades stud the ramp and orbit mouths; clearing all six wins the Escape the Kitchen mode, and once the final wizard is running a blade you collect turns red so a second hit on it doubles that jackpot.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep the six blades to win the kitchen mode for its blood. In The Night He Came Home, double a red blade, relight the dark ones at the crossover, then cash the tombstone super at ten million times the balls in play -- the biggest single hit on the table.",
+        "goals": [
+          "mode-escape-kitchen",
+          "combo-knife-double-jackpot",
+          "wizard-night-he-came-home"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Open with the hidden skill shot -- plunge and knock the lower-right target to trap a ball at the tombstone with almost no drain risk. Then chip the three center drops and start an easy pumpkin mode at the scoop, banking blood while you get a feel for the fast, save-less outlanes.",
+        "goals": [
+          "skillshot-secret-judith",
+          "strategy-first-30-seconds",
+          "multiplier-blood-store"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Bank ten blood and buy doubled scoring just before you dive into a multiball so the 2x carries across the jackpots. Lock the three hedges for the easiest multiball to reach, then start Tombstone Multiball underneath it so its flat 2x compounds on top.",
+        "goals": [
+          "multiplier-blood-store",
+          "multiball-hedge",
+          "multiplier-tombstone-stack"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Cash the Super Jackpot in Hedge, Sanitarium and House multiball, then relock all six balls across three lock phases for the six-ball Boogeyman finale. The Night He Came Home stands beside it as the final wizard, where the tombstone super pays ten million times the balls in play.",
+        "goals": [
+          "wizard-boogeyman",
+          "wizard-night-he-came-home",
+          "strategy-rush-super-jackpots"
+        ]
+      }
+    ]
+  }
+}

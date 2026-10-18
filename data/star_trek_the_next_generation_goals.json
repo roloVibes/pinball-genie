@@ -1,0 +1,1267 @@
+{
+  "machine": "Star Trek: The Next Generation (Williams, 1993)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger with five cycling choices — Start Mission, Flipper Skill Shot, Launch Probe, Light Lock, and Warp Factor 4. Tap the flippers to cycle faster, then pull the trigger to launch."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Backed by a kickback that's easy to keep lit through the yellow stand-up targets."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Starts Hurry Up once you've reached warp 6. There's no rollover switch here — it senses the ball electronically instead."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights Super Spinner once you've reached warp 6, and always lights the spinner to advance warp otherwise."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The right side's drain lane — like the left outlane, this is a shot to defend with a nudge, not aim for."
+    },
+    {
+      "id": "left-cannon",
+      "name": "Left Cannon",
+      "type": "mech",
+      "x": 0.043,
+      "y": 0.3704,
+      "trim": "all",
+      "notes": "One of two swing-out launchers mounted on the slingshots. Loads automatically when a ball lands in it; pull the trigger to fire toward Start Mission."
+    },
+    {
+      "id": "right-cannon",
+      "name": "Right Cannon",
+      "type": "mech",
+      "x": 0.957,
+      "y": 0.3704,
+      "trim": "all",
+      "notes": "The other swing-out launcher, aimed at the Neutral Zone. Leave it loaded too long and the machine fires it for you."
+    },
+    {
+      "id": "left-targets",
+      "name": "Left Targets",
+      "type": "target-bank",
+      "x": 0.15,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Three yellow stand-up targets that relight the kickback — tap whichever one of them is lit. They also add to the Ferengi Jackpot whenever that multiball is active."
+    },
+    {
+      "id": "right-targets",
+      "name": "Right Targets",
+      "type": "target-bank",
+      "x": 0.9,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Three yellow stand-ups that relight the kickback on the right side. Doubles as Klingon Assistance during Romulan."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.1,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The left orbit, taken through a spinner. Feeds warp factors, Super Spinner, and the first half of the Picard Maneuver combo."
+    },
+    {
+      "id": "time-rift-targets",
+      "name": "Time Rift Targets",
+      "type": "target-bank",
+      "x": 0.24,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A pair of red stand-up targets sits between the left ramp and the spinner lane. In normal play they add to the spinner's value, and during Time Rift they extend the clock."
+    },
+    {
+      "id": "delta-quadrant",
+      "name": "Delta Quadrant",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The left ramp, reached off the upper right flipper. Normally diverts across a habitrail to the right inlane; undiverted shots feed the Borg ship for a lock or a triple jackpot.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "command-decision",
+      "name": "Command Decision",
+      "type": "scoop",
+      "x": 0.38,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "A small sinkhole beside the left ramp. Lets you pick which mission runs next, and cashes in a lit Advance Rank.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "neutral-zone",
+      "name": "Neutral Zone",
+      "type": "target-bank",
+      "x": 0.4,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Three stand-up targets with a hole tucked behind the third. Hit all three to arm it, then hit it again to choose which of three modes starts.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "alpha-quadrant",
+      "name": "Alpha Quadrant",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "The center ramp. Feeds the left inlane and carries its own leg of Search the Galaxy.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "start-mission",
+      "name": "Start Mission",
+      "type": "saucer",
+      "x": 0.52,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "The main sinkhole, center-back. Launches whichever mission is flashing, and is the primary jackpot shot during multiball."
+    },
+    {
+      "id": "bumpers",
+      "name": "Bumpers",
+      "type": "bumpers",
+      "x": 0.68,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three bumpers in the top right corner. Fed from the right orbit or a weak spinner shot; advances the currently lit mode and the Borg jackpot."
+    },
+    {
+      "id": "multiplier-lanes",
+      "name": "Multiplier Lanes",
+      "type": "rollover",
+      "x": 0.68,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes above the bumpers. Completing all three steps up the bonus multiplier and lights Advance Rank."
+    },
+    {
+      "id": "q-target",
+      "name": "Q Target",
+      "type": "standup",
+      "x": 0.58,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "A single stand-up below the leftmost bumper. Advances whichever mode is lit, and adds a new shot during Q's Challenge."
+    },
+    {
+      "id": "beta-quadrant",
+      "name": "Beta Quadrant",
+      "type": "ramp",
+      "x": 0.78,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The right ramp, also called the Shuttle Ramp. Counts toward extra balls and lights Command Decision and Holodeck."
+    },
+    {
+      "id": "two-x-shuttle-targets",
+      "name": "2x Shuttle Targets",
+      "type": "target-bank",
+      "x": 0.74,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Two red stand-ups flanking the entrance to the right ramp. Hit one to double the next ramp shot, both to quadruple it, for about ten seconds."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "A drop target guards a sinkhole at the top. Handles the Hurry Up collect, Holodeck, and one leg of the multiball lock.",
+      "feeds": {
+        "shot": "multiplier-lanes"
+      }
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the spinner lane and the left cannon."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the right orbit and the right cannon; also steers during Shuttle Simulation."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.62,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Full-length flipper that reaches the left ramp, Command Decision, and the Neutral Zone.",
+      "bat": {
+        "size": "full"
+      }
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Plunger Choice",
+      "category": "skillshot",
+      "summary": "Five choices cycle in the display before you launch — pull the trigger the instant your pick is lit, or tap the flippers to cycle through them faster.",
+      "difficulty": 2,
+      "reward": "Whatever the lit choice pays",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Watch the display and pull the trigger when your pick is lit",
+          "detail": "Five choices cycle before you launch: Start Mission, Flipper Skill Shot, Launch Probe, Light Lock, and Warp Factor 4 — Warp Factor 2 instead if you've already reached warp 9 this game. Tap the flippers to cycle faster. If a Q's Challenge shot happens to be lit, take it — it's the single most lucrative mode in the game. Otherwise Warp Factor 4 is a strong default, since it unlocks real spinner money early without spending a mission attempt."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "picard-maneuver",
+      "title": "The Picard Maneuver",
+      "category": "combo",
+      "summary": "The signature shot of the game: rip the spinner shot hard, then follow it straight through to the left ramp before the ball settles. It builds warp factors, awards a triple jackpot in multiball, and feeds Q's Challenge better than anything else on the table.",
+      "difficulty": 2,
+      "reward": "Warp progress, triple jackpots, and huge Q's Challenge scores",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Rip the left orbit through the spinner",
+          "detail": "This is the first half of the combo — hit it hard enough to come all the way around rather than dying in the bumpers."
+        },
+        {
+          "shot": "delta-quadrant",
+          "action": "Follow immediately with the left ramp",
+          "detail": "The ramp is noticeably easier to hit right after a spinner shot. Together they build warp factors — double on your first trip to warp 9, plus a flat .2 during Factor Nine mode — and once you've already reached warp 9 for the game, completing it instead triggers its own animation. During Q's Challenge, each half of the combo relights a Q shot on the other half, which is how the biggest Q scores happen."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "warp-factors",
+      "title": "Climbing Warp Factors",
+      "category": "progression",
+      "summary": "Warp climbs from 1 to 9 off the spinner and the left ramp, and every step unlocks something new — bumper values, the spinner bonus, held multipliers, Hurry Up, double spinner, and an artifact at 8.",
+      "difficulty": 1,
+      "reward": "A new award at every factor",
+      "steps": [],
+      "instructions": [
+        "Every ball starts at Warp 1 unless a plunger or skill shot choice starts you higher. The spinner and the left ramp both advance it — the ramp only works until you reach warp 9 for the game.",
+        "Warp 2 pays a flat 5M. Warp 3 bumps the bumpers to 1M each for however long the ball lasts. Warp 4 turns on the spinner for real payouts. Warp 5 locks in your multiplier. Warp 6 lights the return lanes for Hurry Up and turns on Super Spinner at the right inlane.",
+        "Warp 7 doubles the spinner. Warp 8 pays an extra ball the first time you reach it, and an artifact every time after. Warp 9 launches Factor Nine mode outright.",
+        "After Factor Nine mode ends you return to warp 1, and the left ramp stops advancing warp for the rest of the game — only the spinner still counts."
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "factor-nine-mode",
+      "title": "Factor Nine Mode",
+      "category": "mode",
+      "summary": "Reaching warp 9 launches its own round: keep feeding the spinner and left ramp to climb from 9.1 to 9.9 in tenths, each one paying more than the last.",
+      "difficulty": 3,
+      "reward": "20M climbing to 60M per tenth",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Feed the spinner to climb the tenths",
+          "detail": "Once you hit warp 9, every spinner or left ramp shot adds .1 to the factor. The first tenth pays 20M, then 25M, 30M and up in 5M steps to 60M at warp 9.9."
+        },
+        {
+          "shot": "delta-quadrant",
+          "action": "The left ramp always counts here too",
+          "detail": "Unlike normal play, the ramp keeps advancing warp for the whole round even after you've already been to warp 9 once. You get 10 seconds per shot — 20 for the final one — and the clock does not pause for anything, including a ball sent into a hole."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "missions-and-artifacts",
+      "title": "Missions & Artifacts",
+      "category": "progression",
+      "summary": "Seven missions lead to an eighth, Final Frontier — and nearly every one of them can hand you an Artifact worth real points on its own and a lot more once you reach the end.",
+      "difficulty": 1,
+      "reward": "Progress toward Final Frontier, plus Artifacts",
+      "steps": [],
+      "instructions": [
+        "Start Mission launches whatever mission is currently flashing. Command Decision, the small hole beside the left ramp, lets you pick which available mission to run instead — including replaying one you've already cleared, if the operator allows reruns.",
+        "Clearing all seven missions lights the eighth and final one, Final Frontier — the actual goal of the game.",
+        "Each mission can also hand you an Artifact worth 50M on its own and a much bigger bonus once you reach Final Frontier. What earns one varies by mission: 3 shots in Time Rift, the left ramp in Worm Hole, all three ramps in Search the Galaxy, level 5 in Battle Simulation, 25 people in Rescue, the ninth cavern in Shuttle Simulation, 3 shots in Asteroid Threat, 5 shots in Q's Challenge, or a non-first trip to warp 8.",
+        "You can collect the same artifact more than once — Final Frontier pays extra for every complete set of all four types you're carrying, not just for having one of each."
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "time-rift",
+      "title": "Time Rift",
+      "category": "mode",
+      "summary": "Every shot on the table pays 10M with a 20-second clock running — and the two red targets in the middle are the only thing standing between you and running out of time.",
+      "difficulty": 2,
+      "reward": "10M per shot, extended by two red targets",
+      "steps": [
+        {
+          "shot": "start-mission",
+          "action": "Every hole and ramp is live for 10M",
+          "detail": "Time Rift lights the whole playfield at once with a 20-second clock running."
+        },
+        {
+          "shot": "time-rift-targets",
+          "action": "Hit the two red targets to stretch the clock",
+          "detail": "Each one adds a few seconds to the timer and 5M to every remaining shot's payout — the payout bonus only stacks three times, but the extra time keeps coming for as long as you can reach the targets."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "worm-hole",
+      "title": "Worm Hole",
+      "category": "mode",
+      "summary": "A straightforward build-and-bank mission: pile value onto the right ramp and spinner, then cash it all in on the left ramp before the 20-second clock runs out.",
+      "difficulty": 1,
+      "reward": "30M+, built by the ramp and spinner",
+      "steps": [
+        {
+          "shot": "beta-quadrant",
+          "action": "Build the payout on the right ramp",
+          "detail": "Worm Hole opens at 30M with a 20-second clock; the right ramp adds 10M each shot and the spinner adds 1M a spin."
+        },
+        {
+          "shot": "delta-quadrant",
+          "action": "Cash out on the left ramp",
+          "detail": "Shooting the left ramp both collects the built-up value and ends the mission — don't sit on it too long, and it also awards an Artifact."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "search-the-galaxy",
+      "title": "Search The Galaxy",
+      "category": "mode",
+      "summary": "Plot a course through all three quadrants in order — center ramp, then right ramp, then left ramp — and the Neutral Zone opens up for the biggest single shot in the mission.",
+      "difficulty": 2,
+      "reward": "10M to 50M per leg, two Artifacts possible",
+      "steps": [
+        {
+          "shot": "alpha-quadrant",
+          "action": "Start with the center ramp for 10M",
+          "detail": "This is the Alpha Quadrant leg of the mission; a 40-second clock is running the whole time."
+        },
+        {
+          "shot": "beta-quadrant",
+          "action": "Then the right ramp for 20M",
+          "detail": "This is Beta Quadrant — the mission tells you which quadrant to plot next, so follow the display."
+        },
+        {
+          "shot": "delta-quadrant",
+          "action": "Then the left ramp for 30M",
+          "detail": "This is Delta Quadrant. Hitting all three ramps in any order still banks an Artifact even if you stop here."
+        },
+        {
+          "shot": "neutral-zone",
+          "action": "Finish at the Neutral Zone for 50M",
+          "detail": "This is Gamma Quadrant, and it only lights if you hit the three ramps in the order the display asked for — do that and you earn a second Artifact on top of the first."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "battle-simulation",
+      "title": "Battle Simulation",
+      "category": "mode",
+      "summary": "Load either cannon at any of the four holes, then fire when ready — each hit climbs a level worth ten times its number in millions, capping at a big payout and often an extra ball on level six.",
+      "difficulty": 2,
+      "reward": "10M to 100M per level",
+      "steps": [
+        {
+          "shot": "start-mission",
+          "action": "Load a cannon at any hole",
+          "detail": "Battle Simulation starts a 20-second clock; shooting the right orbit, Start Mission, the Neutral Zone or Command Decision loads a launcher instead of scoring directly."
+        },
+        {
+          "shot": "right-cannon",
+          "action": "Pull the trigger to fire the loaded ball",
+          "detail": "The timer freezes entirely while a cannon is loaded, so a hot streak of makes buys real breathing room. Firing into the Neutral Zone only needs to hit a target, not the hole itself."
+        },
+        {
+          "shot": "left-cannon",
+          "action": "Keep climbing levels with either cannon",
+          "detail": "Each hit advances you a level, worth ten times its number in millions — level 3 is 30M, and level 6 caps it at 100M and often an extra ball. Five successful shots also bank an Artifact."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "qs-challenge",
+      "title": "Q's Challenge",
+      "category": "mode",
+      "summary": "Q keeps adding lit shots faster than you can clear them. There's no round timer, only a short fuse on each individual shot — and the Picard Maneuver run through here produces some of the biggest scores in the whole game.",
+      "difficulty": 2,
+      "reward": "10M climbing to a 100M cap per shot",
+      "steps": [
+        {
+          "shot": "q-target",
+          "action": "Hit Q to add another lit shot",
+          "detail": "Q's Challenge has no fixed overall timer, but each individual lit shot expires after 10-15 seconds if you ignore it — the round only ends once every lit shot has timed out."
+        },
+        {
+          "shot": "spinner",
+          "action": "Chain the Picard Maneuver through it",
+          "detail": "The first shot you complete is worth 10M, the second 20M, climbing to a 100M cap — working the spinner into left ramp combo over and over is how this mode produces the biggest single-mode scores in the game. Five shots also bank an Artifact."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "rescue",
+      "title": "Rescue",
+      "category": "mode",
+      "summary": "Thirty seconds to save fifty people: fill the shuttle by hitting anything, then empty it on either ramp.",
+      "difficulty": 1,
+      "reward": "5M to start, up to 50M for a full rescue",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Load the shuttle in the bumpers",
+          "detail": "Rescue gives you 30 seconds to save 50 people; any switch you close anywhere adds one person to the shuttle, and the bumpers rack those up fastest."
+        },
+        {
+          "shot": "alpha-quadrant",
+          "action": "Then save them on either ramp",
+          "detail": "The center or right ramp both empty the shuttle for a save; Start Mission alone rescues a flat 5 people regardless of how many are already aboard. Full numbers: 5M to start, 1M per person loaded, 1M per save, 2M if the save runs through Start Mission, 50M for clearing all 50, and an Artifact for any 25 people rescued or waiting."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "asteroid-threat",
+      "title": "Asteroid Threat",
+      "category": "mode",
+      "summary": "A countdown you can freeze on command, followed by a frantic seven-shot clean-up once it gets low enough.",
+      "difficulty": 2,
+      "reward": "Up to 20M per shot, 50M bonus for clearing all seven",
+      "steps": [
+        {
+          "shot": "start-mission",
+          "action": "Stop the counting 20M at Start Mission",
+          "detail": "Asteroid Threat counts 20M down on its own; hitting Start Mission collects the current value and freezes the timer, then relights every shot to collect that same amount again — each shot only pays once."
+        },
+        {
+          "shot": "neutral-zone",
+          "action": "Clear the second wave inside 30 seconds",
+          "detail": "Once the countdown reaches 5M, all seven shots reset to a flat 5M each with a fresh 30-second clock; clearing every one pays a 50M bonus on top, and three hits along the way bank an Artifact."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "final-frontier",
+      "title": "Final Frontier",
+      "category": "wizard",
+      "summary": "The actual finish line. Every mission cleared lights it, and it pays out based on every Artifact you've been stockpiling the whole game.",
+      "difficulty": 3,
+      "reward": "100M+ per Artifact, plus a shot value that scales with them",
+      "steps": [
+        {
+          "shot": "start-mission",
+          "action": "Light it by finishing all seven missions",
+          "detail": "Final Frontier is a six-ball multiball and the actual finish line of the game."
+        },
+        {
+          "shot": "start-mission",
+          "action": "Every shot pays out by Artifact count",
+          "detail": "You bank roughly 100M per Artifact you're carrying just for starting, then every individual shot pays about 25M times your Artifact count on top — with zero Artifacts, each shot is worth a flat 10M instead, so it's worth banking a few first."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Any lit shot counts, so keep firing",
+          "detail": "Every hole and ramp on the table lights at once, the same way Time Rift does. A complete set of all four Artifact types is worth a full billion on its own, and multiple complete sets stack."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "main-multiball",
+      "title": "Multiball: Enterprise vs. Borg",
+      "category": "multiball",
+      "summary": "Lock three balls to send the Enterprise into battle with the Borg — build the jackpot with the cannon first, then chase it through Start Mission and the left ramp while keeping the shields up.",
+      "difficulty": 2,
+      "reward": "20M+ jackpots, triple on the left ramp",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Lock a ball at the right orbit",
+          "detail": "A shot here lights the lock if it wasn't already, and locks the ball if it was — it also lights the left ramp lock at the same time."
+        },
+        {
+          "shot": "delta-quadrant",
+          "action": "Or lock it on the left ramp instead",
+          "detail": "Either shot works toward the same three locks, but the third lock specifically has to come from the right orbit.",
+          "link": "none"
+        },
+        {
+          "shot": "start-mission",
+          "action": "Work the loaded cannon once the third lock lands",
+          "detail": "Locking primes a cannon aimed at Start Mission — three good hits there add 30M to the base jackpot and pay out along the way, so it's worth taking slow if you can."
+        },
+        {
+          "shot": "start-mission",
+          "action": "Then chase jackpots at Start Mission",
+          "detail": "Multiball starts at a 20M base jackpot, raised by warp-factor bumper hits even mid-multiball. Jackpots cycle single, double, then triple as you collect them."
+        },
+        {
+          "shot": "delta-quadrant",
+          "action": "Take triple jackpots on the left ramp",
+          "detail": "The left ramp always pays the triple jackpot during multiball and shoots the ball back out at you from the Borg ship afterward."
+        },
+        {
+          "shot": "spinner",
+          "action": "Keep the shields up on the spinner",
+          "detail": "The Borg lower your shields over time; once they hit zero the jackpot goes dark until you raise them again. A hard spinner shot buys more time than a soft one, so it's worth working even before the shields fail."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "ferengi-multiball",
+      "title": "Ferengi",
+      "category": "multiball",
+      "summary": "Light the Neutral Zone three times, choose Ferengi, and keep it lit to add up to four more balls into play.",
+      "difficulty": 2,
+      "reward": "10M per ball in play, plus 2M per yellow target",
+      "steps": [
+        {
+          "shot": "neutral-zone",
+          "action": "Hit the Neutral Zone three times to arm it",
+          "detail": "Three target hits — the ball doesn't need to drop into the hole — sets all three lights flashing."
+        },
+        {
+          "shot": "neutral-zone",
+          "action": "Shoot it again to choose Ferengi",
+          "detail": "This loads the right cannon; missing the Neutral Zone with the cannon shot still leaves it lit for 10 more seconds to add balls the normal way."
+        },
+        {
+          "shot": "neutral-zone",
+          "action": "Keep adding balls while it's lit",
+          "detail": "Up to four balls can be added this way, and any ball that drains can be replaced by hitting the Neutral Zone again within that same 10-second window."
+        },
+        {
+          "shot": "start-mission",
+          "action": "Jackpots are at Start Mission",
+          "detail": "Worth 10M times however many balls are currently in play; any of the left-side yellow targets add 2M to that total. It ends once you're down to fewer than two balls."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "cardassian-multiball",
+      "title": "Cardassian",
+      "category": "multiball",
+      "summary": "A tense 2-ball fight where the jackpot itself is under fire — keep the spinner working or watch the payout crumble along with your shields.",
+      "difficulty": 2,
+      "reward": "5M to 50M depending on shield strength",
+      "steps": [
+        {
+          "shot": "neutral-zone",
+          "action": "Choose Cardassian at the Neutral Zone",
+          "detail": "A 2-ball multiball where the Enterprise is under direct fire — the jackpot opens at 50M but drops as your shields do."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rebuild shields on the spinner",
+          "detail": "Every spin raises shield strength and the jackpot with it: 50M at full shields down to just 5M if they hit zero."
+        },
+        {
+          "shot": "neutral-zone",
+          "action": "Collect the jackpot at the Neutral Zone targets",
+          "detail": "Check the shield percentage before you commit to a jackpot shot — it's worth topping shields off first if they're running low."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "romulan-challenge",
+      "title": "Romulan",
+      "category": "mode",
+      "summary": "Cloak all three Romulan ships — spinner, center ramp, right ramp — before their timers run out, and use Klingon Assistance to take a stubborn one off the board entirely.",
+      "difficulty": 3,
+      "reward": "10M per ship, 30M for cloaking all three",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Cloak the left ship on the spinner",
+          "detail": "Romulan lights three shots — the spinner, the center ramp and the right ramp — each tied to one of three ships on the display. Hitting one cloaks that ship for 10M; a timer brings it back if you don't cloak all three in time."
+        },
+        {
+          "shot": "alpha-quadrant",
+          "action": "Cloak the second on the center ramp",
+          "detail": "A 40-second clock covers the whole round."
+        },
+        {
+          "shot": "beta-quadrant",
+          "action": "Cloak the third on the right ramp",
+          "detail": "Getting all three cloaked at once is worth a 30M bonus on top of the individual awards. Hitting a lit Klingon Assistance target locks a side ship out of the round entirely, though it won't score you that ship's points."
+        }
+      ],
+      "fx": "magic",
+      "ordered": false
+    },
+    {
+      "id": "hurry-up",
+      "title": "Hurry Up",
+      "category": "mode",
+      "summary": "A classic countdown hurry-up, unlocked at warp 6 and started from the left return lane — the sooner you close it out at the right orbit, the more it's worth.",
+      "difficulty": 1,
+      "reward": "50M counting down to a 10M floor",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Start it from the left return lane",
+          "detail": "Hurry Up only becomes available once you've reached warp 6."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect it on the right orbit",
+          "detail": "It opens at 50M and counts down to a 10M floor, so the faster you get there the better it pays."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "holodeck",
+      "title": "Holodeck",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Right ramp shots light this one, and the choice at the right orbit is either a flat payout or a shot at a genuinely tough video mode with real prizes buried in it.",
+      "difficulty": 1,
+      "reward": "25M flat, or Shuttle Simulation's rewards",
+      "steps": [
+        {
+          "shot": "beta-quadrant",
+          "action": "Light it with right ramp shots",
+          "detail": "The third right ramp shot lights Holodeck the first time, the ninth lights it again, and so on — the plunger skill shot can also light it directly."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Choose your prize at the right orbit",
+          "detail": "A lit shot here offers a straight 25M or a shot at Shuttle Simulation, a video mode played on the flippers — steer with the buttons, grab the 10M pickups down the middle, and dodge the walls across ten caverns. There's an artifact buried in the ninth cavern and an extra ball for anyone who learns the layout."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "ranks",
+      "title": "Advance Rank",
+      "category": "progression",
+      "summary": "Complete the multiplier lanes to light Advance Rank at Command Decision — five ranks climbing from Ensign to Captain, each worth more at the bonus count, with Captain paying out immediately instead.",
+      "difficulty": 2,
+      "reward": "5M to 25M at bonus, 100M instant at Captain",
+      "steps": [],
+      "instructions": [
+        "Complete the three Multiplier Lanes above the bumpers to light Advance Rank at Command Decision, then shoot Command Decision while it's lit to actually rank up.",
+        "The ladder runs Ensign, Lieutenant, Lieutenant Commander, Commander, then Captain, worth 5M, 10M, 15M, 20M and 25M — added to your bonus at the end of the ball, not right away.",
+        "Once you're already Captain, shooting a lit Advance Rank at Command Decision instead pays a flat 100M immediately, no waiting for the bonus count."
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "super-spinner",
+      "title": "Super Spinner",
+      "category": "multiplier",
+      "summary": "Light it from the right inlane at warp 6 and the left orbit spinner turns into flat 10M-a-spin money for a short window.",
+      "difficulty": 2,
+      "reward": "10M per spin",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Light it from the right inlane",
+          "detail": "This only becomes available once you've reached warp 6."
+        },
+        {
+          "shot": "spinner",
+          "action": "Cash in on the left orbit while it's flashing",
+          "detail": "Every spin pays 10M for a timed window, shown by the right inlane light — rolling back through that inlane resets the clock before it runs out."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier Lanes",
+      "category": "multiplier",
+      "summary": "The three lanes above the bumpers build your end-of-ball multiplier from 2x up to a 10x cap — after that, every additional pass just pays straight millions instead.",
+      "difficulty": 1,
+      "reward": "Multiplier up to 10x, then climbing millions",
+      "steps": [
+        {
+          "shot": "multiplier-lanes",
+          "action": "Complete the three lanes for a step up",
+          "detail": "They sit directly above the bumpers; each full pass steps the multiplier: 2x, 4x, 8x, then 10x, which also lights an extra ball. A lit kickback target can spot one of the three on its own."
+        },
+        {
+          "shot": "multiplier-lanes",
+          "action": "Keep clearing passes after 10x",
+          "detail": "Once capped at 10x, every additional clear pays a flat, climbing 10M instead of raising the multiplier further — still worth doing if your bonus is already big."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "explosive-millions",
+      "title": "Explosive Millions",
+      "category": "combo",
+      "summary": "Center and right ramp shots share one climbing ladder — land one and both light for the next step, so you can lean on whichever ramp you trust.",
+      "difficulty": 1,
+      "reward": "5M climbing to an uncapped 50M",
+      "steps": [
+        {
+          "shot": "alpha-quadrant",
+          "action": "Start the ladder on either ramp",
+          "detail": "The value runs 5M, 10M, 20M, 30M, 40M, then an uncapped 50M for every shot after."
+        },
+        {
+          "shot": "beta-quadrant",
+          "action": "Keep it alive on the other ramp",
+          "detail": "Once one ramp scores, both light for the next step — alternating isn't required, so hammering a single ramp you're accurate on works just as well."
+        }
+      ],
+      "fx": "extreme",
+      "ordered": false
+    },
+    {
+      "id": "secret-mission",
+      "title": "Secret Mission",
+      "category": "secret",
+      "summary": "A well-hidden alternate to the normal Holodeck choice — skip both options and get a frenzy instead.",
+      "difficulty": 3,
+      "reward": "20 seconds of frenzy scoring",
+      "steps": [
+        {
+          "shot": "beta-quadrant",
+          "action": "Get Holodeck lit a third time",
+          "detail": "The display reads Holodeck x Ready — you want x to read 3."
+        },
+        {
+          "shot": "right-cannon",
+          "action": "Pull the trigger three times instead of shooting",
+          "detail": "That skips both normal Holodeck choices and drops you into a 20-second frenzy where every switch on the table pays an odd, specific point value and sets off the communicator sound."
+        }
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "sttng-skillshot",
+      "title": "Make It So",
+      "desc": "Pull the trigger with your pick lit at the shooter lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "sttng-picard-maneuver",
+      "title": "Nicely Done",
+      "desc": "Land the spinner into left ramp combo.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "picard-maneuver"
+    },
+    {
+      "id": "sttng-warp-9",
+      "title": "Maximum Acceleration",
+      "desc": "Reach warp factor 9 in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "warp-factors"
+    },
+    {
+      "id": "sttng-factor-nine",
+      "title": "Warp 9.9",
+      "desc": "Climb all the way to warp 9.9 in Factor Nine mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "factor-nine-mode"
+    },
+    {
+      "id": "sttng-first-artifact",
+      "title": "Away Team",
+      "desc": "Collect your first Artifact from any mission.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "missions-and-artifacts"
+    },
+    {
+      "id": "sttng-time-rift",
+      "title": "Distortion In The Continuum",
+      "desc": "Clear every shot during Time Rift.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "time-rift"
+    },
+    {
+      "id": "sttng-search-galaxy",
+      "title": "Plot A Course",
+      "desc": "Hit all three quadrant ramps in order and light the Neutral Zone.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "search-the-galaxy"
+    },
+    {
+      "id": "sttng-qs-challenge",
+      "title": "Q's Gauntlet",
+      "desc": "Clear five shots in a single Q's Challenge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "qs-challenge"
+    },
+    {
+      "id": "sttng-rescue-50",
+      "title": "Fifty Souls Saved",
+      "desc": "Rescue all fifty people in a single Rescue mission.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rescue"
+    },
+    {
+      "id": "sttng-main-multiball",
+      "title": "Borg Engagement",
+      "desc": "Lock three balls and start multiball against the Borg.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "main-multiball"
+    },
+    {
+      "id": "sttng-ferengi",
+      "title": "Four-Ball Ferengi",
+      "desc": "Stack all four balls in Ferengi multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ferengi-multiball"
+    },
+    {
+      "id": "sttng-cardassian",
+      "title": "Full Shields",
+      "desc": "Collect a Cardassian jackpot with shields at full strength.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "cardassian-multiball"
+    },
+    {
+      "id": "sttng-holodeck",
+      "title": "Holodeck Program Ready",
+      "desc": "Light and collect a Holodeck award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "holodeck"
+    },
+    {
+      "id": "sttng-captain",
+      "title": "Make It So, Captain",
+      "desc": "Reach the rank of Captain and collect the instant 100M award.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ranks"
+    },
+    {
+      "id": "sttng-secret-mission",
+      "title": "Off The Record",
+      "desc": "Trigger the hidden Secret Mission frenzy from the Holodeck choice.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "secret-mission"
+    },
+    {
+      "id": "sttng-final-frontier",
+      "title": "The Final Frontier",
+      "desc": "Complete all seven missions and start Final Frontier.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-frontier"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunger-choice-timing",
+      "title": "Take The Plunge You Want",
+      "text": "Tap the flippers to run the five choices past faster and squeeze the trigger the instant your pick is showing, rather than accepting whatever lands. Practise landing Warp Factor 4 on demand — it opens real spinner money without spending a mission attempt.",
+      "reps": "every ball, 5 games",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane"
+      ]
+    },
+    {
+      "id": "picard-maneuver-reps",
+      "title": "Picard Maneuver Reps",
+      "text": "Rip the left orbit hard enough to carry all the way round the spinner, then go straight to the left ramp before the ball settles anywhere. The ramp is noticeably easier immediately after a spinner shot, so shoot the pair as one motion rather than two decisions.",
+      "reps": "15 attempts",
+      "focus": "flow",
+      "goal": "picard-maneuver",
+      "shots": [
+        "spinner",
+        "delta-quadrant"
+      ]
+    },
+    {
+      "id": "cannon-trigger-timing",
+      "title": "Load, Aim, Squeeze",
+      "text": "Feed a cannon from the right orbit, Start Mission, the Neutral Zone or Command Decision, then take your time before pulling the trigger — the mission clock is frozen for as long as a cannon sits loaded. Fire both sides so neither the Start Mission nor the Neutral Zone launcher is the one you flinch at.",
+      "reps": "10 loads per cannon",
+      "focus": "ball-control",
+      "goal": "battle-simulation",
+      "shots": [
+        "start-mission",
+        "right-orbit",
+        "neutral-zone",
+        "command-decision",
+        "left-cannon",
+        "right-cannon"
+      ]
+    },
+    {
+      "id": "shuttle-target-doubles",
+      "title": "Both Shuttle Targets, Then The Ramp",
+      "text": "Clip one red target flanking the right ramp entrance and take the ramp doubled; clip both and take it quadrupled. The window is about ten seconds, so the second target and the ramp shot have to be one continuous plan.",
+      "reps": "10 doubles, 10 quadruples",
+      "focus": "accuracy",
+      "goal": "explosive-millions",
+      "shots": [
+        "two-x-shuttle-targets",
+        "beta-quadrant"
+      ]
+    },
+    {
+      "id": "search-the-galaxy-order",
+      "title": "Plot The Course In Order",
+      "text": "Center ramp, right ramp, left ramp — take them in the order the display asks rather than whichever is convenient, because only the correct order opens the Neutral Zone for Gamma. Any order still banks an Artifact, so the drill is about earning the second one.",
+      "reps": "5 clean runs",
+      "focus": "flow",
+      "goal": "search-the-galaxy",
+      "shots": [
+        "alpha-quadrant",
+        "beta-quadrant",
+        "delta-quadrant",
+        "neutral-zone"
+      ]
+    },
+    {
+      "id": "shield-spinner-reps",
+      "title": "Keep The Shields Up",
+      "text": "During multiball, work a hard spinner shot in between jackpot attempts instead of waiting for the shields to fail and the jackpot to go dark. A hard rip buys noticeably more time than a soft one, so this is a shot to make well rather than often.",
+      "reps": "3 multiballs, spinner between every jackpot",
+      "focus": "accuracy",
+      "goal": "main-multiball",
+      "shots": [
+        "spinner"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "space",
+  "actionButton": {
+    "present": true,
+    "label": "Gun Trigger",
+    "location": "a pistol grip on the front right of the cabinet, in the shooter-rod position",
+    "how": "Instead of a rod you get a gun handle with a trigger. Pulling it launches your ball, and once either swing-out cannon on the slingshots has swallowed a ball, that same trigger is what fires it back into the playfield. Learning when to squeeze it is a real part of playing this game well.",
+    "uses": [
+      {
+        "when": "Starting a ball",
+        "what": "Tap the flippers to cycle the five plunge choices, then pull the trigger to launch on the one you want."
+      },
+      {
+        "when": "When a cannon loads in Battle Simulation",
+        "what": "Fires at Start Mission or the Neutral Zone; each level cleared pays ten million times its number, up to a hundred million."
+      },
+      {
+        "when": "At the start of Borg Multiball",
+        "what": "Fires the loaded left cannon at Start Mission — three straight hits build the base jackpot and pay single, double, then triple."
+      },
+      {
+        "when": "Choosing a Holodeck award",
+        "what": "Keep the trigger squeezed and tap right flipper for a hidden poker hand against Riker."
+      },
+      {
+        "when": "The third time Holodeck reads Ready",
+        "what": "Pull the trigger three times instead of taking the shot to fall into a hidden Secret Mission where every switch pays."
+      },
+      {
+        "when": "When a cannon sits loaded too long",
+        "what": "The machine announces itself and fires for you, so a slow decision costs you the aim."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Play the Enterprise through seven missions -- each one banking Artifacts worth real points -- to light the Final Frontier wizard. Climb warp factors on the spinner and left ramp and fight the Borg, Ferengi, Cardassians, and Romulans along the way.",
+    "loop": [
+      "Start each ball by cycling the plunge to the choice you want -- a flipper tap speeds it -- then pull the gun trigger to launch.",
+      "Rip the spinner and follow immediately with the left ramp, the Picard Maneuver, to climb warp factors and unlock a new award at each step.",
+      "Pick a mission at Command Decision or start the flashing one at Start Mission, clear it, and pocket the Artifact it hands you.",
+      "Load a swing-out cannon at a hole and fire it with the trigger to feed Start Mission and the Neutral Zone.",
+      "Clear all seven missions to light Final Frontier, which pays out by your stockpiled Artifact count."
+    ],
+    "lights": [
+      {
+        "id": "plunge-choice",
+        "name": "Plunger Choice",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "shooter-lane"
+          }
+        ],
+        "lit": "Five choices cycle in the display before launch -- Start Mission, a Flipper Skill Shot, Launch Probe, a Light Lock, or Warp Factor 4 -- and only the one showing is what you get.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "the choices scroll on their own, but tapping a flipper button runs them past faster so you can pull the gun trigger on the one you want",
+          "when": "before you fire the launch"
+        },
+        "then": "Take a lit Q's Challenge shot if one shows, since it is the game's richest single mode, and if not, Warp Factor 4 makes a reliable pick that turns on genuine spinner scoring early without burning a mission attempt.",
+        "goals": [
+          "skillshot"
+        ]
+      },
+      {
+        "id": "warp-factors",
+        "name": "Warp Factors",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "delta-quadrant"
+          }
+        ],
+        "lit": "The spinner and the left ramp both climb warp from 1 to 9, and each factor turns on something new -- 5M, richer bumpers, live spinner payouts, a locked multiplier, then Hurry Up and Super Spinner at warp 6, a doubled spinner at warp 7, and an extra ball at warp 8.",
+        "flashing": null,
+        "control": null,
+        "then": "Run the Picard Maneuver -- a hard spinner shot followed straight into the left ramp -- to climb fastest, since the ramp opens up right after a hard spinner rip. Reaching warp 9 launches Factor Nine mode, and afterward the left ramp drops out of warp scoring for the rest of the game, leaving the spinner as the only way up.",
+        "goals": [
+          "warp-factors",
+          "picard-maneuver",
+          "factor-nine-mode",
+          "super-spinner"
+        ]
+      },
+      {
+        "id": "mission-select",
+        "name": "Mission Select",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "start-mission"
+          },
+          {
+            "shot": "command-decision"
+          }
+        ],
+        "lit": "Start Mission launches whatever mission is flashing, while the Command Decision sinkhole beside the left ramp instead lets you hand-pick which of the open missions starts next.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish every one of the seven missions and the eighth, Final Frontier, lights, and nearly every mission also drops an Artifact that scores 50M by itself and a great deal more at the end. You can re-collect the same Artifact, since the wizard pays a bonus for each full set of all four Artifact types in your stockpile.",
+        "goals": [
+          "missions-and-artifacts",
+          "final-frontier"
+        ]
+      },
+      {
+        "id": "neutral-zone",
+        "name": "Neutral Zone",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "neutral-zone"
+          }
+        ],
+        "lit": "Hitting the three Neutral Zone targets sets them flashing, and hitting it again chooses one of the modes waiting there.",
+        "flashing": "All three Neutral Zone lights flash once the targets are hit, meaning it is armed to select a mode.",
+        "control": null,
+        "then": "Choose Ferengi to add up to four balls with jackpots at Start Mission, or Cardassian for a two-ball fight where the 50M jackpot drops as the Borg lower your shields. Rebuild shields on the spinner before committing to a Cardassian jackpot shot.",
+        "goals": [
+          "ferengi-multiball",
+          "cardassian-multiball"
+        ]
+      },
+      {
+        "id": "cannons",
+        "name": "Swing-Out Cannons",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-cannon"
+          },
+          {
+            "shot": "right-cannon"
+          }
+        ],
+        "lit": "A ball that lands in either slingshot cannon loads it automatically, and the mission clock stops dead the whole time a cannon sits loaded.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "the gun-trigger pistol grip fires the loaded cannon at Start Mission or the Neutral Zone, so you can take your time lining up the shot, but sit on a loaded cannon too long and the game launches it on its own and you lose the aim",
+          "when": "whenever a cannon is loaded"
+        },
+        "then": "In Battle Simulation each cannon hit climbs a level worth ten million times its number, up to 100M and often an extra ball at level six. At the start of Borg Multiball, three trigger shots at Start Mission build up the base jackpot and score single, then double, then triple along the way.",
+        "goals": [
+          "battle-simulation",
+          "main-multiball"
+        ]
+      },
+      {
+        "id": "borg-multiball",
+        "name": "Enterprise vs. Borg Locks",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "delta-quadrant"
+          },
+          {
+            "shot": "start-mission"
+          }
+        ],
+        "lit": "Lock three balls at the right orbit and the left ramp, since either shot works toward the same locks, but the third lock has to come from the right orbit.",
+        "flashing": null,
+        "control": null,
+        "then": "Chase jackpots at Start Mission as they roll from single to double to triple, and take the triple on the left ramp, which then kicks the ball back at you out of the Borg ship. Keep the shields up with a hard spinner shot, because if they hit zero the jackpot switches off until you build them back up.",
+        "goals": [
+          "main-multiball"
+        ]
+      },
+      {
+        "id": "shuttle-doubles",
+        "name": "2x Shuttle Targets",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "two-x-shuttle-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "beta-quadrant"
+          }
+        ],
+        "lit": "Clipping one red target beside the right ramp entrance doubles the next ramp shot, and clipping both quadruples it, for about a ten-second window.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the right ramp inside the window for the doubled or quadrupled value, and note the right ramp also feeds extra balls, lights Command Decision and Holodeck, and shares the Explosive Millions ramp ladder with the center ramp.",
+        "goals": [
+          "explosive-millions",
+          "holodeck"
+        ]
+      },
+      {
+        "id": "multiplier-lanes",
+        "name": "Bonus Multiplier Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "multiplier-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "The three lanes above the bumpers build the end-of-ball bonus multiplier one full pass at a time, and a lit kickback target can spot one lane on its own.",
+        "flashing": null,
+        "control": null,
+        "then": "Walk the multiplier up through 2x, 4x, 8x and on to 10x, and reaching 10x also lights an extra ball, after which each further pass pays a flat, climbing 10M instead. Completing the lanes also lights Advance Rank at Command Decision.",
+        "goals": [
+          "bonus-multiplier",
+          "ranks"
+        ]
+      },
+      {
+        "id": "q-target",
+        "name": "Q Target",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "q-target"
+          }
+        ],
+        "lit": "The single Q standup below the bumpers advances whichever mode is currently lit, and adds a fresh lit shot during Q's Challenge.",
+        "flashing": null,
+        "control": null,
+        "then": "During Q's Challenge, hit Q to pile on more lit shots -- each expires on its own short fuse -- and chain the Picard Maneuver through them, where shots climb from 10M to a 100M cap for the biggest single-mode scores on the machine.",
+        "goals": [
+          "qs-challenge"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Cycle the plunge to Warp Factor 4 for early spinner money, or take a lit Q's Challenge shot if one shows -- the most lucrative mode on the machine. Then work the Picard Maneuver to climb warp and keep the kickback lit off the yellow side targets.",
+        "goals": [
+          "skillshot",
+          "picard-maneuver",
+          "warp-factors"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Pick missions at Command Decision and clear them for Artifacts, and load and fire the cannons in Battle Simulation for up to 100M a level. Lock three balls for the Enterprise vs. Borg multiball, building its base jackpot with the loaded cannon first.",
+        "goals": [
+          "missions-and-artifacts",
+          "battle-simulation",
+          "main-multiball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear all seven missions to light Final Frontier, a six-ball multiball that pays roughly 100M per Artifact just to start and about 25M times your Artifact count on every lit shot. Carrying one of every Artifact type at once is worth a billion by itself, and extra full sets stack on top, so bank a few Artifacts first.",
+        "goals": [
+          "final-frontier",
+          "missions-and-artifacts"
+        ]
+      }
+    ]
+  }
+}

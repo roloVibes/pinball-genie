@@ -1,0 +1,1274 @@
+{
+  "machine": "Terminator 2: Judgment Day (Williams, 1991)",
+  "defaultFx": "mecha",
+  "shots": [
+    {
+      "id": "skill-shot-target",
+      "name": "5-Bank Moving Target",
+      "type": "target-bank",
+      "x": 0.49,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Moving bank of 5 standups; skill-shot aim point at ball start, also the Cannon's Super Jackpot aim point during multiball. Moving bank of five standup targets; the skill-shot aim point at ball start and the Cannon's Jackpot/Super Jackpot target during multiball."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Escape Route Lane)",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Far-left outer lane; runs past 6 Escape Route inserts and feeds the upper-right kickout hole. Also a ball-lock feed.",
+      "feeds": {
+        "shot": "escape-route-kickout"
+      }
+    },
+    {
+      "id": "database-saucer",
+      "name": "Database / Left Eject Saucer",
+      "type": "scoop",
+      "x": 0.02,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Standalone round hole, farthest-left shot. Random Database award when lit; also a Jackpot-multiplier lock location during multiball.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Cyberdyne AI Lab)",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Shallower of the two ramps, returns to left inlane via wireform.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Skynet Command Center)",
+      "type": "ramp",
+      "x": 0.74,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Steeper ramp with a U-turn at top, returns to right inlane.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (Chase Loop)",
+      "type": "orbit",
+      "x": 0.94,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Escalating value ladder (250K to 5M) plus Million Plus consecutive-shot combo; crossover wireform returns toward left flipper.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "skull-drop-target",
+      "name": "Skull Drop Target",
+      "type": "drop-target",
+      "x": 0.51,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Center target below the flat Endoskeleton skull graphic; knocking it down fires an up-kicker feeding the skull saucer."
+    },
+    {
+      "id": "red-3-bank",
+      "name": "Red Center 3-Bank",
+      "type": "target-bank",
+      "x": 0.51,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Bank of three red standup targets in front of the bottommost pop bumper. Completing the bank advances the Escape Route award ladder."
+    },
+    {
+      "id": "skull-saucer",
+      "name": "Skull Saucer",
+      "type": "saucer",
+      "x": 0.55,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Saucer behind the skull; receives the ball from the drop target's up-kicker and loads the motorized Cannon. Also a Jackpot-multiplier lock location."
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "type": "mech",
+      "x": 0.86,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Motorized rotating/aiming toy fired via the gun-grip trigger; starts multiball and collects Jackpots/Super Jackpot at the lit target."
+    },
+    {
+      "id": "escape-route-kickout",
+      "name": "Escape Route Kickout Hole",
+      "type": "saucer",
+      "x": 0.89,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Upper-right hole above the pop bumpers, fed by the left orbit shot. Collects Escape Route awards and Video Mode; also a Jackpot-multiplier lock location."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Lanes",
+      "type": "lane",
+      "x": 0.51,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "3 flipper-button lane-change rollovers at the very back; advance the Bonus Multiplier."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.51,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "3 pop bumpers below the large 3D chrome skull toy; also feed Payback Time's 3-green-light shot group."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.13,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "One of the two return lanes that qualify Hurry-Up/Video Mode via the Escape Route ladder."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.01,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Left outlane, protected by the kickback."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.79,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "One of the two return lanes that qualify Hurry-Up/Video Mode via the Escape Route ladder."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.93,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Bears a partially-legible 'LITE KIC—' insert, most likely referencing the Escape Route kickout hole."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Gun-Grip Shooter Lane",
+      "type": "plunge",
+      "x": 1,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Pistol-grip trigger auto-launcher on the apron — no manual plunger rod. Same trigger fires the Cannon in play."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "standup",
+      "x": 0.18,
+      "y": 0.17,
+      "trim": "all",
+      "notes": "Kicker below left inlane/outlane."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "standup",
+      "x": 0.81,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Kicker below right inlane/outlane; used as the catch point for the Escape Route bounce loop."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "opening-skill-shot",
+      "title": "Opening Skill Shot",
+      "category": "skillshot",
+      "summary": "Pull the gun-grip trigger timed to strike the lit target on the moving 5-bank as the ball autoplunges — worth 1,000,000 with no drain risk.",
+      "difficulty": 1,
+      "reward": "1,000,000 skill shot, no drain risk",
+      "steps": [
+        {
+          "shot": "skill-shot-target",
+          "action": "Time the trigger pull to the lit target",
+          "detail": "T2 has no manual plunger — pulling the gun-grip trigger auto-launches the ball up the right lane onto the moving 5-bank. Any currently-lit target counts, but timing gets harder as the light speeds up each attempt."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-streak",
+      "title": "Skill Shot Streak",
+      "category": "skillshot",
+      "summary": "Make the skill shot on every ball of the game — each success is worth 1,000,000 more than the last.",
+      "difficulty": 2,
+      "reward": "1M on ball 1, +1M each successive ball (e.g. a 3-ball streak nets 1M+2M+3M = 6M)",
+      "steps": [
+        {
+          "shot": "skill-shot-target",
+          "action": "Time the trigger pull to the lit target, every ball",
+          "detail": "Always attempt it — there's no downside. 1st success pays 1,000,000, and each later ball's successful skill shot is worth 1,000,000 more than the previous ball's — a 3-ball streak nets 1M+2M+3M."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "security-ramp-alternation",
+      "title": "Security Ramp Alternation",
+      "category": "combo",
+      "summary": "Alternate the two ramps to light Security circles and bank 1,000,000 per consecutive shot — the gate into Payback Time.",
+      "difficulty": 2,
+      "reward": "1,000,000 per consecutive alternating ramp shot; all 10 Security lights auto-starts Payback Time",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp (Cyberdyne AI Lab)",
+          "detail": "First shot to either ramp counts as the start of the chain."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Immediately follow with the right ramp (Skynet Command Center)",
+          "detail": "Must alternate L-R-L-R — repeating the same ramp breaks the combo."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Return to the left ramp",
+          "detail": "Each consecutive alternating shot pays 1,000,000 and lights one more Security circle (5 per ramp, 10 total)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep alternating until all 10 Security lights are lit",
+          "detail": "Completing all 10 auto-starts Payback Time."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "chase-loop-million-plus",
+      "title": "Chase Loop Million Plus",
+      "category": "combo",
+      "summary": "Hit the right orbit repeatedly without breaking rhythm — the base ladder climbs to a sticky 5,000,000, then every fast consecutive shot stacks another +1,000,000 on top.",
+      "difficulty": 3,
+      "reward": "250K-5M ladder (sticky at 5M) + uncapped Million Plus bonus that grows another 1,000,000 with each fast consecutive make",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit (Chase Loop)",
+          "detail": "Starts a flashing 250,000 value; the wireform kicks the ball back toward the left flipper for a fast repeat shot."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot it again immediately",
+          "detail": "Ladder climbs 250K→500K→750K→1M→1.25M→5M, then sits sticky at 5,000,000 for the rest of the ball."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Keep shooting it back-to-back without missing",
+          "detail": "Once at 5M, each quick consecutive make adds +1,000,000 more (Million Plus) with no documented cap — breaking the chain resets Million Plus to zero, but the sticky 5M base is kept."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "load-the-cannon",
+      "title": "Load the Cannon",
+      "category": "combo",
+      "summary": "The core setup chain for multiball and jackpots: drop the skull target, let the saucer load the cannon, then fire it.",
+      "difficulty": 2,
+      "reward": "A good cannon hit pays a Jackpot, or (pre-multiball) starts 3-ball multiball",
+      "steps": [
+        {
+          "shot": "skull-drop-target",
+          "action": "Knock down the drop target below the T-800 skull",
+          "detail": "Wide, forgiving center shot — low risk."
+        },
+        {
+          "shot": "skull-saucer",
+          "action": "Let the ball feed into the saucer behind the skull",
+          "detail": "This arms/loads the motorized cannon via an internal up-kicker and habitrail."
+        },
+        {
+          "shot": "cannon",
+          "action": "Pull the trigger as the cannon swings across the lit target",
+          "detail": "A good hit fires the ball at the lit standup for a jackpot or (pre-multiball) starts 2-ball multiball."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "escape-route-bounce-loop",
+      "title": "Escape Route Target-Bounce Loop",
+      "category": "combo",
+      "summary": "A home-play farm: catch on the right flipper, carom through the escape-route standups, then shoot the left orbit so the ball feeds the kickout hole. Each lap collects the next award on the six-step ladder, so the extra ball and the 10,000,000 arrive on separate laps. Extra balls are disabled in most tournament settings.",
+      "difficulty": 3,
+      "reward": "Extra ball + 10,000,000 per completion cycle; up to about 6 laps per ball is achievable, though inconsistent",
+      "steps": [
+        {
+          "shot": "right-slingshot",
+          "action": "Catch the ball dead on the right flipper",
+          "detail": "Precise trap needed before starting the loop."
+        },
+        {
+          "shot": "red-3-bank",
+          "action": "Shoot the rightmost standup in the center 3-bank",
+          "detail": "Aim for the rebound, not just the hit.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to feed the Escape Route kickout",
+          "detail": "The kickout hole isn't directly shootable per the layout — the left orbit carries the ball up and over into it."
+        },
+        {
+          "shot": "escape-route-kickout",
+          "action": "Collect the Escape Route awards as they cycle",
+          "detail": "Working the ladder all the way through picks up the extra ball on its fifth step and the 10,000,000 on its sixth, and the ladder then restarts from Security Pass."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "payback-time-farm",
+      "title": "Payback Time Flat-Farm",
+      "category": "combo",
+      "summary": "Once Payback Time is running, hammer whichever of its 6 shots is most reliable on the machine — every one pays a flat 5,000,000 for about 20 seconds, in any order.",
+      "difficulty": 2,
+      "reward": "5,000,000 flat per shot for ~20 seconds, any of the 6 qualifying shots, any order",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "5,000,000 flat while Payback Time is active."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "5,000,000 flat."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the chase loop",
+          "detail": "5,000,000 flat, and if Million Plus is already stacking this shot can be worth much more."
+        },
+        {
+          "shot": "skull-drop-target",
+          "action": "Knock down the skull drop target",
+          "detail": "5,000,000 flat."
+        },
+        {
+          "shot": "escape-route-kickout",
+          "action": "Shoot the left escape route into the kickout hole at the top",
+          "detail": "5,000,000 flat."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Complete the 3 green bumper-timer lights at the pop bumpers",
+          "detail": "Counts as one of the six 5,000,000 shot groups."
+        }
+      ],
+      "fx": "mecha",
+      "ordered": false
+    },
+    {
+      "id": "cannon-multiball",
+      "title": "Cannon Multiball",
+      "category": "multiball",
+      "summary": "Light and start the signature 3-ball multiball by loading and firing the cannon.",
+      "difficulty": 2,
+      "reward": "Starts 3-ball Cannon Multiball",
+      "steps": [
+        {
+          "shot": "skull-drop-target",
+          "action": "Knock down the skull drop target to light the saucer",
+          "detail": "This is the qualifying step — 'light' the cannon load."
+        },
+        {
+          "shot": "skull-saucer",
+          "action": "Feed the saucer to lock the cannon load",
+          "detail": "Ball is captured and mechanically loaded into the swinging cannon."
+        },
+        {
+          "shot": "cannon",
+          "action": "Pull the trigger as the cannon swings past the lit white standup",
+          "detail": "A hit starts 2-ball multiball. Later multiballs reset the drop target on a timer and require repeating the sequence."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "jackpot-relock-collect",
+      "title": "Jackpot Re-Lock & Collect",
+      "category": "multiball",
+      "summary": "During an active multiball, re-lock balls at up to three saucers to multiply the Jackpot value before firing the cannon.",
+      "difficulty": 2,
+      "reward": "1x/2x/3x Jackpot = 10M/20M/30M depending on how many balls you re-lock",
+      "steps": [
+        {
+          "shot": "database-saucer",
+          "action": "Re-lock a ball at the left eject saucer",
+          "detail": "Timed lock — don't dawdle.",
+          "link": "none"
+        },
+        {
+          "shot": "escape-route-kickout",
+          "action": "Re-lock a second ball at the left orbit saucer",
+          "detail": "Also timed; locking here plus the eject saucer plus the Cannon ball = 3 balls locked, which sets up the max 3x Jackpot (30,000,000).",
+          "link": "none"
+        },
+        {
+          "shot": "skull-saucer",
+          "action": "Re-lock at the skull saucer if a ball is still live",
+          "detail": "Holds as long as a ball stays in play, unlike the two timed locks. The skull saucer is the third lock hole and its ball is the one that loads the Cannon, so filling all three — skull saucer, left eject and left orbit — sets up the max 3x Jackpot (30,000,000).",
+          "link": "none"
+        },
+        {
+          "shot": "cannon",
+          "action": "Fire the cannon at the lit target when 'Get the Jackpot' is called",
+          "detail": "1/2/3 balls locked = 1x/2x/3x Jackpot (10M/20M/30M)."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "super-jackpot",
+      "title": "Super Jackpot",
+      "category": "multiball",
+      "summary": "Chain a 2x or 3x Jackpot into the 50,000,000 Super Jackpot by reloading the cannon and hitting the independently-moving target — requires reloading the cannon while another ball is still live on the playfield, so there's real drain risk.",
+      "difficulty": 3,
+      "reward": "50,000,000 Super Jackpot; multiple collects possible per multiball if enough balls survive",
+      "steps": [
+        {
+          "shot": "cannon",
+          "action": "Collect a 2x or 3x Jackpot first",
+          "detail": "Super Jackpot only lights after a 2x or 3x collect, not the base 1x."
+        },
+        {
+          "shot": "skull-drop-target",
+          "action": "Send another ball through the drop target to reload the cannon",
+          "detail": "Must be done with at least one other ball still alive on the playfield."
+        },
+        {
+          "shot": "skill-shot-target",
+          "action": "Hit the moving target for the Super Jackpot",
+          "detail": "Worth 50,000,000; the target moves independently of the cannon's swing, so timing is the hardest shot in the game. Multiple Super Jackpots are possible if enough balls survive."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "payback-time",
+      "title": "Payback Time",
+      "category": "mode",
+      "summary": "The game's closest thing to a climactic mode: light all 10 Security circles via alternating ramps, then hammer any of 6 shots for a flat 5,000,000 during the ~20-second window.",
+      "difficulty": 2,
+      "reward": "5,000,000 flat per shot across 6 qualifying shots during the ~20-second window",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot either ramp to start the Security chain",
+          "detail": "First shot to either ramp counts."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate to the other ramp",
+          "detail": "Must keep alternating L-R-L-R; 5 hits per ramp, 10 total, each consecutive alternating shot also pays 1,000,000."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Continue alternating until all 10 Security lights are lit",
+          "detail": "Payback Time starts automatically the instant the 10th light comes on."
+        },
+        {
+          "shot": "skull-drop-target",
+          "action": "During the ~20-second window, hit any of the 6 qualifying shots",
+          "detail": "Left ramp, right ramp, chase loop, skull drop target, escape-route saucer, and the 3 green pop-bumper timer lights all pay a flat 5,000,000 in any order."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "escape-route",
+      "title": "Escape Route",
+      "category": "mode",
+      "summary": "A 6-step award ladder advanced at the center 3-bank and collected at the left orbit saucer — the path to Security lights, Hold Bonus, Video Mode/Hurry-Up unlocks, Multiball, an Extra Ball, and 10,000,000.",
+      "difficulty": 2,
+      "reward": "Security Pass, Hold Bonus, Return Lanes (Hurry-Up/Video Mode unlock), Multiball, Extra Ball, or 10,000,000 by ladder step",
+      "steps": [
+        {
+          "shot": "red-3-bank",
+          "action": "Complete the red center 3-bank of targets",
+          "detail": "Advances the Escape Route ladder one step (Security Pass → Hold Bonus → Return Lanes → Multiball → Extra Ball → 10,000,000)."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to feed the saucer",
+          "detail": "The orbit lane carries the ball up and over into the collecting saucer."
+        },
+        {
+          "shot": "escape-route-kickout",
+          "action": "Collect the flashing award at the saucer",
+          "detail": "From the fourth award onward (Multiball/Extra Ball/10M) you have to re-complete the 3-bank against a timer, though a generous one; the much tighter timer only arrives after you collect the 10,000,000 and the ladder restarts. The ladder itself carries over ball to ball."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "video-mode",
+      "title": "Video Mode",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Pinball's first-ever video mode: qualify it through the Escape Route return lanes or a Database award, then shoot down descending Terminators on the DMD.",
+      "difficulty": 2,
+      "reward": "Catching the falling Extra Ball box mid-mode nets an extra ball (one of T2's 4 extra-ball paths)",
+      "steps": [
+        {
+          "shot": "red-3-bank",
+          "action": "Advance the Escape Route ladder to step 3 (Return Lanes)",
+          "detail": "Or get lucky with a direct 'Video Mode' pull from a Database award instead."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Roll the qualifying return lane",
+          "detail": "With the return lanes lit, the right one is the lane that qualifies Video Mode; the left one qualifies Hurry-Up."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to start/collect Video Mode",
+          "detail": "Use the flipper buttons to move the crosshair and shoot the Terminators. The mode ends when you clear them all (bonus award) or when they hit you three times."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "hurry-up",
+      "title": "Hurry-Up",
+      "category": "mode",
+      "summary": "A fast-decaying points award — qualify it, then race to the right orbit before the value bottoms out.",
+      "difficulty": 2,
+      "reward": "15,000,000 decaying to a 3,000,000 floor over ~15 seconds - faster hits pay more",
+      "steps": [
+        {
+          "shot": "red-3-bank",
+          "action": "Advance the Escape Route ladder to step 3 (Return Lanes)",
+          "detail": "Or get a direct 'Light Hurry-Up' Database award instead."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll the other qualifying return lane",
+          "detail": "Lights Hurry-Up at the right orbit."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the chase loop while Hurry-Up is lit",
+          "detail": "Starts at 15,000,000 and decays to a 3,000,000 floor over about 15 seconds — the faster you hit it, the more it pays."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier (2X-8X)",
+      "category": "multiplier",
+      "summary": "Build end-of-ball bonus multiplier by repeatedly rolling the three top lanes; maxing it out also lights an Extra Ball.",
+      "difficulty": 1,
+      "reward": "Steps Bonus X 2X→4X→6X→8X (end-of-ball multiplier); maxing it lights an Extra Ball at the skull target",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Roll through the three top lanes",
+          "detail": "Use the flipper buttons to change which lane is lit if needed; completing all three top lanes (repeatedly) steps Bonus X up: 2X→4X→6X→8X."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Keep cycling the lanes across the ball",
+          "detail": "Reaching the top step (6X or 8X, operator-adjustable) lights an Extra Ball at the skull drop target."
+        },
+        {
+          "shot": "skull-drop-target",
+          "action": "Collect the Extra Ball once Bonus X maxes",
+          "detail": "Shoot the skull drop target while the Extra Ball light is on."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "jackpot-multiplier",
+      "title": "Multiball Jackpot Multiplier",
+      "category": "multiplier",
+      "summary": "A separate multiplier system from Bonus X: the number of balls you re-lock during multiball sets the Jackpot to 1x, 2x, or 3x before you fire the cannon.",
+      "difficulty": 2,
+      "reward": "Sets the pending Jackpot to 1x/2x/3x (10M/20M/30M) based on balls re-locked before firing the cannon",
+      "steps": [
+        {
+          "shot": "database-saucer",
+          "action": "Re-lock one ball at the left eject saucer",
+          "detail": "Raises the pending Jackpot from 1x (10,000,000) to 2x (20,000,000).",
+          "link": "none"
+        },
+        {
+          "shot": "escape-route-kickout",
+          "action": "Re-lock a second ball at the left orbit saucer",
+          "detail": "Raises it further to 3x (30,000,000) if the timer allows.",
+          "link": "none"
+        },
+        {
+          "shot": "cannon",
+          "action": "Fire the cannon at the lit target to cash in the multiplied Jackpot",
+          "detail": "Higher lock count = bigger single-shot payout; collecting a 2x or 3x also lights Super Jackpot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "payback-multiball-stack",
+      "title": "Payback Time + Multiball Stack",
+      "category": "wizard",
+      "summary": "T2 has no dedicated wizard mode — this is the closest thing: keep a cannon multiball alive while Payback Time is also running so every shot double-dips, the top human-executed scoring line in the game.",
+      "difficulty": 3,
+      "reward": "Stacks Jackpots with Payback Time's flat 5,000,000/shot - the game's top scoring line (no true wizard mode)",
+      "steps": [
+        {
+          "shot": "skull-drop-target",
+          "action": "Load and fire the cannon to start multiball early in the ball",
+          "detail": "Do this before chasing Security lights so the multiball window is still open when Payback Time lands."
+        },
+        {
+          "shot": "skull-saucer",
+          "action": "Confirm the cannon load",
+          "detail": "Ball feeds from the saucer into the cannon."
+        },
+        {
+          "shot": "cannon",
+          "action": "Fire the cannon to start 2-ball multiball",
+          "detail": "Now two balls are live to work with."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "With multiball running, alternate the ramps whenever both flippers are free",
+          "detail": "Keep progressing Security lights in parallel with chasing Jackpots."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Continue the ramp alternation",
+          "detail": "Every consecutive alternating shot still pays 1,000,000 even mid-multiball."
+        },
+        {
+          "shot": "cannon",
+          "action": "Fire the cannon for Jackpots/Super Jackpot as they come available",
+          "detail": "Re-lock at the three saucers between attempts if you can spare a ball."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "If Payback Time's 10th Security light lands mid-multiball, immediately start hammering the chase loop",
+          "detail": "Every qualifying shot now pays a flat 5,000,000, or more with Million Plus stacking, on top of whatever Jackpot progress you are making — the highest points-per-shot window on the machine."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "best-opener",
+      "title": "Best Opener",
+      "category": "strategy",
+      "summary": "The recommended first sequence off the plunger: free skill shot, then set up the cannon while you still have max time and balls to exploit it.",
+      "difficulty": 1,
+      "reward": "Free 1,000,000+ skill shot, plus a loaded cannon ready for a Jackpot or multiball start",
+      "steps": [
+        {
+          "shot": "skill-shot-target",
+          "action": "Take the skill shot",
+          "detail": "Free 1,000,000+, pure timing, no flipper risk — always attempt it."
+        },
+        {
+          "shot": "skull-drop-target",
+          "action": "Shoot the skull drop target",
+          "detail": "Low-risk, wide center target; arms the saucer for the cannon load."
+        },
+        {
+          "shot": "skull-saucer",
+          "action": "Let the ball feed the saucer",
+          "detail": "Loads the cannon."
+        },
+        {
+          "shot": "cannon",
+          "action": "Fire the cannon if you trust your aim, or bank the load and go to ramps instead",
+          "detail": "Sight down the cannon against the display; pull the trigger as it crosses the lit target for a multiball shot."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "beginner-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A concrete, timed shot-by-shot script for a new player's opening ball.",
+      "difficulty": 1,
+      "reward": "Skill shot banked (1M+), cannon loaded, and the Security ramp rhythm started toward Payback Time - all inside 30s",
+      "steps": [
+        {
+          "shot": "skill-shot-target",
+          "action": "0:00 — Auto-plunge and take the skill shot",
+          "detail": "Time the trigger pull to the lit target on the 5-bank."
+        },
+        {
+          "shot": "skull-drop-target",
+          "action": "~0:05-0:10 — Shoot the skull drop target down",
+          "detail": "Sets up the saucer/cannon."
+        },
+        {
+          "shot": "skull-saucer",
+          "action": "~0:10-0:15 — Let the ball feed the skull saucer",
+          "detail": "Loads the cannon."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "~0:15-0:25 — If not yet cannon-confident, go to the ramps instead",
+          "detail": "Wide, forgiving shots compared to the precision cannon/orbit."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate back to the right ramp",
+          "detail": "Builds the L-R-L-R Security rhythm toward Payback Time; by 0:30 you should have a skill shot banked, drop target down, cannon loaded, and be in the ramp rhythm."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "safe-scoring-escape-route",
+      "title": "Safe Scoring: Escape Route EB Loop",
+      "category": "strategy",
+      "summary": "A ball-preservation strategy: loop the Escape Route standups for extra balls before pivoting to points — more playtime compounds into a higher final score. Home/casual only; extra balls are disabled in most tournament settings.",
+      "difficulty": 2,
+      "reward": "Extra balls via the Escape Route ladder (repeatable, but not on every machine) before pivoting to Chase Loop/Jackpot points",
+      "steps": [
+        {
+          "shot": "right-slingshot",
+          "action": "Catch the ball on the right flipper",
+          "detail": "Trap control matters more than shot speed here."
+        },
+        {
+          "shot": "red-3-bank",
+          "action": "Shoot the rightmost standup in the center 3-bank",
+          "detail": "Let the rebound feed the other Escape Route standups in sequence.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to feed the kickout hole",
+          "detail": "The Escape Route kickout isn't directly shootable per the layout — it's fed via the left orbit."
+        },
+        {
+          "shot": "escape-route-kickout",
+          "action": "Collect Escape Route awards as they cycle",
+          "detail": "The ladder's fifth step is an Extra Ball and its sixth is 10,000,000; collecting the sixth restarts the ladder from Security Pass on a tighter timer."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Once extra balls are maxed, pivot to the chase loop",
+          "detail": "Switch to Million Plus stacking or Jackpots for raw points once ball preservation is secured."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "database-award-collect",
+      "title": "Database Award Collect",
+      "category": "strategy",
+      "summary": "The far-left standalone hole hands out a random award when its insert is lit — a cheap way to pull Video Mode, a Hurry-Up light, or points without setting anything up first.",
+      "difficulty": 2,
+      "reward": "One random Database award (points, a lit Hurry-Up, a Video Mode start, or other rule advances)",
+      "steps": [
+        {
+          "shot": "database-saucer",
+          "action": "Shoot the standalone hole at the far left of the playfield while its insert is lit",
+          "detail": "It is the leftmost shot on the game and needs a fairly flat left-flipper shot from a trap; the award is random, so treat it as a bonus rather than a plan."
+        },
+        {
+          "shot": "database-saucer",
+          "action": "Come back to it whenever the insert relights",
+          "detail": "Repeat collects are worth taking early in a ball, since the same hole doubles as a ball-lock spot once multiball is running."
+        }
+      ],
+      "fx": "mecha"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-trigger-timing",
+      "title": "Trigger Timing",
+      "desc": "Land the opening skill shot by pulling the gun-grip trigger as the moving light sits on a target in the 5-bank.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "opening-skill-shot"
+    },
+    {
+      "id": "skill-shot-every-ball",
+      "title": "Perfect Plunges",
+      "desc": "Make the skill shot on every ball of a single game so the escalating bonus pays out on each one.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-shot-streak"
+    },
+    {
+      "id": "cannon-loaded",
+      "title": "Cannon Loaded",
+      "desc": "Drop the skull target, feed the saucer behind it, and get the ball mechanically loaded into the cannon.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "load-the-cannon"
+    },
+    {
+      "id": "two-balls-live",
+      "title": "Two Balls Live",
+      "desc": "Fire the loaded cannon into the lit standup to start the 2-ball multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "cannon-multiball"
+    },
+    {
+      "id": "jackpot-collected",
+      "title": "Jackpot Collected",
+      "desc": "Cash a jackpot with a cannon shot during an active multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "jackpot-relock-collect"
+    },
+    {
+      "id": "triple-locked-jackpot",
+      "title": "Triple-Locked Jackpot",
+      "desc": "Have three balls locked when you fire the cannon so the jackpot pays at the maximum 3x value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jackpot-multiplier"
+    },
+    {
+      "id": "fifty-million-shot",
+      "title": "Fifty-Million Shot",
+      "desc": "Collect the Super Jackpot by reloading the cannon after a multiplied jackpot and timing the independently moving target.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-jackpot"
+    },
+    {
+      "id": "double-super-jackpot",
+      "title": "Twice in One Multiball",
+      "desc": "Collect two Super Jackpots inside a single multiball without letting the multiball end.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "super-jackpot"
+    },
+    {
+      "id": "all-ten-security-lights",
+      "title": "Ten Security Lights",
+      "desc": "Light all ten Security circles by alternating the two ramps, which starts Payback Time on its own.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "payback-time"
+    },
+    {
+      "id": "payback-five-shots",
+      "title": "Payback Sweep",
+      "desc": "Cash at least five of the qualifying shots inside one Payback Time window.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "payback-time-farm"
+    },
+    {
+      "id": "multiball-payback-stack",
+      "title": "Everything At Once",
+      "desc": "Have Payback Time running while a cannon multiball is still alive, and collect both a jackpot and a Payback shot during the overlap.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "payback-multiball-stack"
+    },
+    {
+      "id": "chase-loop-topped-out",
+      "title": "Chase Loop Topped Out",
+      "desc": "Climb the right orbit value ladder all the way to its sticky top value in a single ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "chase-loop-million-plus"
+    },
+    {
+      "id": "million-plus-chain",
+      "title": "Loop Chain",
+      "desc": "After topping the ladder, make five more back-to-back right orbit shots so the extra per-loop bonus stacks five times.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "chase-loop-million-plus"
+    },
+    {
+      "id": "bonus-multiplier-maxed",
+      "title": "Bonus Maxed",
+      "desc": "Cycle the top lanes until the end-of-ball bonus multiplier reaches its highest step.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bonus-multiplier"
+    },
+    {
+      "id": "extra-ball-earned",
+      "title": "One More Ball",
+      "desc": "Earn and collect an extra ball from any of the game's paths to one.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "safe-scoring-escape-route"
+    },
+    {
+      "id": "escape-route-ladder-cleared",
+      "title": "Escape Route Cleared",
+      "desc": "Work the center 3-bank and left-orbit saucer through every step of the Escape Route award ladder to its final ten-million award.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "escape-route"
+    },
+    {
+      "id": "video-mode-survived",
+      "title": "Screen Defense",
+      "desc": "Start the DMD video mode and shoot down a full wave of descending Terminators before any reaches you.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "video-mode"
+    },
+    {
+      "id": "hurry-up-caught-early",
+      "title": "Beat the Countdown",
+      "desc": "Collect a Hurry-Up at the right orbit while the value is still in the upper half of its decay.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hurry-up"
+    },
+    {
+      "id": "database-award-pulled",
+      "title": "Database Pull",
+      "desc": "Collect a lit award from the far-left Database saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "database-award-collect"
+    }
+  ],
+  "drills": [
+    {
+      "id": "trigger-lead-reps",
+      "title": "Trigger Lead Reps",
+      "text": "No rod to pull, so the skill shot is pure trigger lead against the moving bank. Pull early enough to cover the ball's travel up the lane, and reset your lead every ball — the light speeds up with each attempt, so what worked last ball is already too slow.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "opening-skill-shot",
+      "shots": [
+        "skill-shot-target",
+        "shooter-lane"
+      ]
+    },
+    {
+      "id": "ramp-alternation",
+      "title": "Strict L-R-L-R Alternation",
+      "text": "Alternate the two ramps and never repeat one — a repeat kills the chain. The left ramp returns to the left inlane and the right ramp returns to the right inlane, so every make already hands you the flipper for the next shot in the sequence.",
+      "reps": "run to 10 without a break, 3 times",
+      "focus": "flow",
+      "goal": "security-ramp-alternation",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "cannon-sight-line",
+      "title": "Cannon Sight Line",
+      "text": "Drop the skull target, let the saucer load the cannon, then sight along the barrel against the display instead of watching the toy swing, and squeeze as it crosses the lit standup. Run the whole chain end to end so the load becomes automatic and all your attention is on the pull.",
+      "reps": "10 full loads",
+      "focus": "accuracy",
+      "goal": "cannon-multiball",
+      "shots": [
+        "skull-drop-target",
+        "skull-saucer",
+        "cannon"
+      ]
+    },
+    {
+      "id": "chase-loop-repeats",
+      "title": "Chase Loop Repeats",
+      "text": "Shoot the chase loop and take the crossover return straight back into the same shot without cradling in between. The ladder only climbs on unbroken repeats, so the miss you are drilling out is the hesitation, not the aim.",
+      "reps": "6 chains, note your longest",
+      "focus": "accuracy",
+      "goal": "chase-loop-million-plus",
+      "shots": [
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "escape-route-carom",
+      "title": "Escape Route Carom",
+      "text": "Catch the ball dead on the right flipper first — the loop does not work off a moving ball. Shoot the rightmost standup in the center bank for the rebound rather than the hit, then take the left orbit, which is what actually carries the ball over into the kickout hole.",
+      "reps": "5 laps",
+      "focus": "ball-control",
+      "goal": "escape-route-bounce-loop",
+      "shots": [
+        "right-slingshot",
+        "red-3-bank",
+        "left-orbit",
+        "escape-route-kickout"
+      ]
+    },
+    {
+      "id": "database-flat-shot",
+      "title": "Database From a Dead Trap",
+      "text": "The leftmost shot on the game wants a flat left-flipper release from a fully stopped ball. Cradle first every time and work the trap-and-fire until it is one motion, rather than taking it on the fly and hoping.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "database-award-collect",
+      "shots": [
+        "database-saucer"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Gun-Grip Trigger",
+    "location": "front right of the cabinet, in place of the shooter rod",
+    "how": "T2 gives you a heavy pistol grip instead of a plunger, and the trigger stays live for the whole ball. It launches, it takes your skill shot, and it fires the motorized cannon — which means every Jackpot and the Super Jackpot in this game is collected by pulling the trigger, not by a flipper shot.",
+    "uses": [
+      {
+        "when": "Start of every ball",
+        "what": "Pull to launch — there is no rod. Time it so the moving 5-bank light sits on a target for a million."
+      },
+      {
+        "when": "Skull drop target knocked down",
+        "what": "The saucer behind it loads the cannon; pull the trigger as the cannon swings past the lit standup to start multiball."
+      },
+      {
+        "when": "During multiball, cannon reloaded",
+        "what": "Fire at the lit target for the Jackpot — 1x, 2x or 3x depending on how many balls you re-locked first."
+      },
+      {
+        "when": "Just collected a 2x or 3x Jackpot",
+        "what": "Reload, then fire at the moving target for the 50 million Super Jackpot while another ball is still alive."
+      },
+      {
+        "when": "Lining up a cannon shot",
+        "what": "Sight along the barrel against the display rather than watching the toy, then squeeze as it crosses."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Every ball launches from a pistol grip whose trigger also swings and fires the motorized Cannon, so this table lives and dies by that toy. Load the Cannon for multiball jackpots, trade the two ramps back and forth until Payback Time kicks in, and overlap the two for the fattest scoring.",
+    "loop": [
+      "Knock the skull drop target down so the kicker behind it drops the ball in the saucer and loads the swinging Cannon.",
+      "Sight the barrel against the display and squeeze the trigger as it sweeps past the lit standup, starting the multiball or banking a jackpot.",
+      "Re-lock balls in the eject, orbit and skull holes to push the pending jackpot to double or triple before the Cannon fires.",
+      "Swap the two ramps without repeating a side until all ten Security circles glow, tipping you straight into Payback Time at a flat five million a shot."
+    ],
+    "lights": [
+      {
+        "id": "security-circles",
+        "name": "Security Circles",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "A lit Security circle marks one banked alternating ramp shot, five owed to each side, and hitting the same ramp twice in a row breaks the run rather than adding to it.",
+        "flashing": null,
+        "control": null,
+        "then": "Light all ten and Payback Time fires on its own, opening a roughly twenty-second window where six scattered shots each pay a flat five million in any order. Get a multiball going first so those payouts land on top of your jackpots.",
+        "goals": [
+          "security-ramp-alternation",
+          "payback-time",
+          "payback-time-farm"
+        ]
+      },
+      {
+        "id": "cannon-jackpots",
+        "name": "Cannon Jackpot Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "skull-saucer"
+          },
+          {
+            "shot": "cannon"
+          },
+          {
+            "shot": "database-saucer"
+          },
+          {
+            "shot": "escape-route-kickout"
+          },
+          {
+            "shot": "skill-shot-target"
+          }
+        ],
+        "lit": "During multiball the Cannon's standup is the lit jackpot target, and how many balls you re-lock first sets the pending value to one, two or three times, with the two side holes timing out fast while the skull saucer holds its ball as long as one is still loose.",
+        "flashing": "After you collect a doubled or tripled jackpot the moving five-bank flashes for the fifty-million Super Jackpot.",
+        "control": {
+          "input": "action-button",
+          "effect": "pull the gun-grip trigger to fire the loaded Cannon at the lit standup the instant the swinging barrel crosses it",
+          "when": "the display calls to get the jackpot"
+        },
+        "then": "Fill all three lock holes for a thirty-million triple jackpot, then reload through the drop target with another ball still alive and time the independently moving target for the fifty-million Super. That reload-while-live demand is the real drain risk in the mode.",
+        "goals": [
+          "cannon-multiball",
+          "jackpot-relock-collect",
+          "jackpot-multiplier",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "escape-route-ladder",
+        "name": "Escape Route Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "red-3-bank"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "escape-route-kickout"
+          }
+        ],
+        "lit": "The red center three-bank arms the next rung, and whatever you have climbed stays put from ball to ball rather than resetting on a drain.",
+        "flashing": "The kickout hole flashes with whichever award is next in line to collect.",
+        "control": null,
+        "then": "Feed the left orbit so it loops the ball around the back and tips it into the kickout hole, banking the flashing award and climbing Security Pass, Hold Bonus and the return-lane unlock toward an extra ball and a ten-million payoff. From the fourth rung on you must re-clear the three-bank against a timer before each collect.",
+        "goals": [
+          "escape-route",
+          "escape-route-bounce-loop",
+          "safe-scoring-escape-route"
+        ]
+      },
+      {
+        "id": "return-lane-qualifiers",
+        "name": "Return Lane Qualifiers",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "Once the ladder reaches its return-lane rung both inlanes light, and rolling one arms a feature that then waits at an orbit to be started.",
+        "flashing": null,
+        "control": null,
+        "then": "The right inlane sets up Video Mode at the left orbit, where the buttons aim a crosshair at descending Terminators and a caught falling box is an extra ball; the left inlane lights Hurry-Up at the right orbit, a value that bleeds from fifteen million down to three.",
+        "goals": [
+          "video-mode",
+          "hurry-up"
+        ]
+      },
+      {
+        "id": "top-lane-bonus",
+        "name": "Top Lane Bonus Multiplier",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit top rollover is one you have already rolled, and clearing all three at once bumps your end-of-ball bonus a step up the 2X, 4X, 6X, 8X ladder before the lanes reset for another pass.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap a flipper button to shift which of the three back rollovers is lit so you can slide the unlit one into the path the ball is taking",
+          "when": "the ball rolls up toward the back lanes"
+        },
+        "then": "Complete the trio over and over to climb the bonus multiplier; reaching its top step lights an extra ball that you then collect at the skull drop target.",
+        "goals": [
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "id": "database-award",
+        "name": "Database Saucer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "database-saucer"
+          }
+        ],
+        "lit": "With its insert lit, the far-left hole is holding a random Database award, and it re-lights on its own through the ball for repeat pulls.",
+        "flashing": null,
+        "control": null,
+        "then": "Take it from a settled left-flipper shot for a cheap Video Mode start, a lit Hurry-Up or straight points; the same hole doubles as a jackpot re-lock spot once multiball is on.",
+        "goals": [
+          "database-award-collect"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "The three back rollovers are a flipper-button lane change: tap either flipper as the ball heads for them to slide the lit lane sideways under its path. Rolling all three steps your end-of-ball bonus up the 2X to 8X ladder, and topping that out lights an extra ball you collect at the skull drop target.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the free trigger-timed skill shot on every ball, since it only pays more each time you repeat it and carries no drain risk. Then drop the skull target and load the Cannon early, while you still have the most time and balls to cash it.",
+        "goals": [
+          "opening-skill-shot",
+          "skill-shot-streak",
+          "best-opener",
+          "load-the-cannon"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Grind the Escape Route ladder at the three-bank and left orbit for hold bonus and extra balls, and rip the right orbit back-to-back to lock its value at five million and pile Million Plus on top. Meanwhile trade the ramps to creep the Security circles toward Payback Time.",
+        "goals": [
+          "escape-route",
+          "chase-loop-million-plus",
+          "security-ramp-alternation",
+          "safe-scoring-escape-route"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "There is no true wizard mode here, so the ceiling is overlap: keep a Cannon multiball alive as the tenth Security circle lands so every shot pays both a jackpot and a flat five million. Chaining a doubled or tripled jackpot into the fifty-million Super on the moving target is the single biggest hit on the machine.",
+        "goals": [
+          "payback-multiball-stack",
+          "super-jackpot",
+          "payback-time"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1317 @@
+{
+  "machine": "WWF Royal Rumble (Data East, 1994)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Autoplunger, fired by the TAG button. A good plunge puts you in the rollover lanes; a weak one lets the ball drop back down the right orbit."
+    },
+    {
+      "id": "rollover-lanes",
+      "name": "Rollover Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Three lanes above the bumpers, reachable from the plunge or a right orbit shot. Either flipper button rotates the lit lanes to the right."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.4,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Three in a triangle. The ball leaves down the left side and often rolls the Left Lane. Keep these healthy — the wizard round is built on them."
+    },
+    {
+      "id": "left-lane",
+      "name": "Left Lane",
+      "type": "lane",
+      "x": 0.09,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Runs behind the left drop targets. A ball trickling down here catches the left slingshot on its top edge and gets thrown at the outlane, so keep a nudge ready."
+    },
+    {
+      "id": "left-drops",
+      "name": "D-E-A-D Drop Targets",
+      "type": "drop-target",
+      "x": 0.19,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Four targets facing right, with two globe lamps overhead. Yellow means Raise The Undertaker is running; red means either multiball or an available RIP jackpot."
+    },
+    {
+      "id": "left-mode-hole",
+      "name": "Left Start Mode Hole",
+      "type": "scoop",
+      "x": 0.25,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Starts the currently lit mode. Lit at the start of every ball, relit by the first center ramp shot, and briefly lit by the right inlane. A ball landing here is kicked out of the center hole.",
+      "feeds": {
+        "shot": "center-mode-hole"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.33,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Very steep, with a wide mouth that narrows toward the top, so it rejects often. One of the three wrestler shots. Diverters decide where the ball comes back out — either inlane, or upstairs onto the upper playfield."
+    },
+    {
+      "id": "center-mode-hole",
+      "name": "Center Start Mode Hole",
+      "type": "scoop",
+      "x": 0.44,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "A narrow scoop, reachable only from the left flipper and only if you flip early. The kickout drops the ball straight back on that same flipper, so the catch is easy.",
+      "feeds": {
+        "x": 0.33,
+        "y": 0.05
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.51,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "The second wrestler shot and the safest shot on the machine. Makeable from either flipper, returns to the left inlane, and relights the mode holes.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "tag-left-bank",
+      "name": "Left T-A-G Standups",
+      "type": "target-bank",
+      "x": 0.62,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Three standups on the left side of the right orbit entrance. Rebounds off these tend to head for the left outlane."
+    },
+    {
+      "id": "tag-right-bank",
+      "name": "Right T-A-G Standups",
+      "type": "target-bank",
+      "x": 0.8,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "The matching three standups on the other side of the orbit entrance."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.66,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Sits above the left-hand G standup. The switch is behind the ball, so a soft nudge does nothing — you have to drive it. A hard hit can also register on the right bumper."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.7,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "The third wrestler shot. More of a half orbit — it feeds the rollover lanes rather than coming back round.",
+      "feeds": {
+        "shot": "rollover-lanes"
+      }
+    },
+    {
+      "id": "right-lane",
+      "name": "Right Lane",
+      "type": "lane",
+      "x": 0.91,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "A shallow lane on the far right ending in a kicker that throws the ball to the upper playfield. The kicker must be strong or several modes become unplayable."
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flippers",
+      "type": "flipper",
+      "x": 0.72,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Two small flippers on the upper playfield. A ball draining between them is fed to the right inlane.",
+      "playfield": "upper-playfield"
+    },
+    {
+      "id": "top-drops",
+      "name": "Upper Drop Targets",
+      "type": "drop-target",
+      "x": 0.7,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three targets on the upper playfield, hittable from either upper flipper. Clear the bank and you earn a step of bonus multiplier plus an open Exit.",
+      "playfield": "upper-playfield",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "top-hole",
+      "name": "Top Hole",
+      "type": "scoop",
+      "x": 0.86,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "A depression at the end of a lane, reachable only from the right upper flipper. Spots MACHO MAN letters and holds the multiball Super Jackpot.",
+      "playfield": "upper-playfield",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper Loop",
+      "type": "loop",
+      "x": 0.58,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "The easiest shot up there, takeable from either flipper. Holding the left flipper up bounces the return to the right flipper for a free catch.",
+      "playfield": "upper-playfield",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "upper-exit",
+      "name": "Exit Diverter",
+      "type": "diverter",
+      "x": 0.56,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Opens in the Loop once you collect an upper playfield award. Taking it pays 5M and drops the ball back to the right inlane — but while it is open the Loop is not available.",
+      "playfield": "upper-playfield"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Briefly lights a green lamp at the top of the lane. Where center ramp shots return."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "If the left mode hole is not already lit, rolling through here lights it briefly — the escape route when a center ramp shot would unlight the mode you want."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "No kickback. Can be lit for a Special."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "No kickback. Lights for a Special at the same time as the left one, and both stay lit all ball."
+    },
+    {
+      "id": "tag-button",
+      "name": "TAG Button",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "The cabinet button. Fires the autoplunger and drives every button-mash video round on the machine."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot",
+      "title": "The Skill Shot Award",
+      "category": "skillshot",
+      "summary": "Three awards scroll on the display before you launch and you get the one being pointed at when you fire — regardless of which lane the ball goes down. It comes with ten million and lasts the whole ball. Hitting the flashing lane on top of that is worth another ten million, or twenty from the third time onward.",
+      "difficulty": 1,
+      "reward": "10M plus a ball-long award",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Pick your award with TAG, then plunge the flashing lane",
+          "detail": "Hit the TAG button while the award you want is showing, then plunge so the ball drops through the flashing rollover lane to collect it."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "wrestler-shots",
+      "title": "Collect The Nine Wrestlers",
+      "category": "progression",
+      "summary": "Three shots carry three wrestlers each: left ramp, center ramp and right orbit. Collecting all nine is what lights multiball, and the rules tighten every time. First time round any order works; second time you clear a whole group of three before moving on; after that it is strictly left ramp, center ramp, right orbit.",
+      "difficulty": 2,
+      "reward": "Lights multiball, 1M each at end of ball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Work the hardest shot first",
+          "detail": "The left ramp rejects often, and it is the shot you least want to be chasing under pressure later."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Take the center ramp",
+          "detail": "Reachable from either flipper, which makes it the shot you fall back on."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish on the orbit",
+          "detail": "Each wrestler you collect is also worth a million in the end-of-ball bonus."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "mode-grid",
+      "title": "Navigate The Mode Grid",
+      "category": "progression",
+      "summary": "Nine modes sit in a three-by-three grid, and the wrestler shots move the selection around it. The left column answers to the left ramp, the middle column to the center ramp, the right column to the right orbit. Whichever you shoot drags the selection into that column — and if the selection is already sitting there, it climbs one row instead.",
+      "difficulty": 2,
+      "reward": "Choose which mode you play",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Move into the column you want",
+          "detail": "Once a column is fully played out, its shot stops moving the selection."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Step up the rows",
+          "detail": "Repeat the same shot to climb within a column."
+        },
+        {
+          "shot": "left-mode-hole",
+          "action": "Start it at a lit hole",
+          "detail": "Every ball starts you with both mode holes lit, and hitting either one turns the pair off."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "get-back-in-the-ring",
+      "title": "Get Back In The Ring",
+      "category": "mode",
+      "summary": "Rolling down the unlit Left Lane starts a fifteen-second window. Shoot back up the lane inside it and you take a jackpot that carries over between players and games — anywhere from roughly eleven million to nearly a hundred.",
+      "difficulty": 3,
+      "reward": "A carry-over jackpot, 11M to 99M",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Let the bumpers spit the ball out",
+          "detail": "Balls leaving the nest often roll straight down the Left Lane and arm the timer for you."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Shoot back up the lane",
+          "detail": "Fifteen seconds, and the lane is narrow — this is a shot you take from a trapped ball."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Nudge away from the outlane",
+          "detail": "A slow ball down this lane bounces off the top of the slingshot and drifts left."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "chair-bashing",
+      "title": "Chair Bashing Round",
+      "category": "mode",
+      "summary": "A button round that runs at the Left Lane during single-ball play. Hammer the TAG button: the first five hits pay a million each and everything after is half a million. Hold a flipper up and each hit collapses to fifty thousand, so keep your hands off the flippers.",
+      "difficulty": 1,
+      "reward": "1M per hit, then 500K",
+      "steps": [
+        {
+          "shot": "left-lane",
+          "action": "Trigger it at the Left Lane",
+          "detail": "It runs while the ball is elsewhere, so it costs you nothing when the ball is stuck in the bumpers."
+        },
+        {
+          "shot": "tag-button",
+          "action": "Mash the button",
+          "detail": "Do not hold a flipper — the per-hit value drops by a factor of twenty if you do."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Keep half an eye on the ball",
+          "detail": "This is a round to play when the ball is safely rattling, not while it is heading for an outlane."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "tag-targets",
+      "title": "T-A-G Targets",
+      "category": "combo",
+      "summary": "Completing either bank of three fires a short button round worth five million. The banks do not reset until you finish both and then hit the captive ball, so progress across them accumulates.",
+      "difficulty": 2,
+      "reward": "5M per bank completion",
+      "steps": [
+        {
+          "shot": "tag-left-bank",
+          "action": "Clear the left three",
+          "detail": "These sit either side of the right orbit entrance."
+        },
+        {
+          "shot": "tag-button",
+          "action": "Hit the button inside three seconds",
+          "detail": "A few quick presses is all it takes for the five million."
+        },
+        {
+          "shot": "tag-right-bank",
+          "action": "Then clear the right three",
+          "detail": "Be aware that rebounds off these targets tend to run to the left outlane."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "captive-ball-award",
+      "title": "Collect Tag",
+      "category": "secret",
+      "summary": "Clear all six T-A-G targets and the Collect Tag lamp lights in front of the captive ball. Driving the ball back onto its switch resets the targets and pays an award — ten or twenty million, Hold Bonus, and sometimes a lit extra ball, a lit Special or a ready multiball.",
+      "difficulty": 3,
+      "reward": "10M-20M, Hold Bonus, or a lit feature",
+      "steps": [
+        {
+          "shot": "tag-right-bank",
+          "action": "Finish all six standups",
+          "detail": "Both banks have to be down before the captive ball lights."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Drive it onto the switch",
+          "detail": "The switch is behind the ball, so a glancing hit will not register."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Watch for lit Specials",
+          "detail": "A captive ball award is one of the two ways both outlanes light for the rest of the ball."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "upper-playfield",
+      "title": "Working The Upper Playfield",
+      "category": "strategy",
+      "summary": "The right lane kicks you upstairs, and there is real value up there in normal play. The Loop pays a million, then two, three, four and five, and that fifth shot also raises the multiball jackpot base to twenty million — twenty-five the next time, and so on.",
+      "difficulty": 2,
+      "reward": "15M from five loops plus a bigger jackpot base",
+      "steps": [
+        {
+          "shot": "right-lane",
+          "action": "Kick up to the upper playfield",
+          "detail": "The kicker at the end of the lane is what registers the shot."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Repeat the loop five times",
+          "detail": "Hold the left flipper up; the ball comes back off it onto the right flipper, where it is easy to catch."
+        },
+        {
+          "shot": "top-drops",
+          "action": "Clear the drops for bonus X",
+          "detail": "Completing the top drops advances the multiplier and opens the Exit."
+        },
+        {
+          "shot": "upper-exit",
+          "action": "Leave when you are done",
+          "detail": "The Exit pays five million and drops you at the right inlane — which is also how you relight the left mode hole."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "macho-madness",
+      "title": "Macho Madness",
+      "category": "mode",
+      "summary": "Spell MACHO MAN and the right lane and Top Hole light to start it. Your job is three separate clears of the upper drop targets, banking fifteen million per clear, after which a twenty million hurry-up arms at the Loop. Take that Loop shot and the round is over, with the Exit swinging open behind it.",
+      "difficulty": 3,
+      "reward": "45M from the belts plus a 20M hurry-up",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Spot letters in normal play",
+          "detail": "An unlit ramp, an unlit right lane or the Top Hole with no mode running all spot a letter."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Start it upstairs",
+          "detail": "Either the right lane or the Top Hole begins the round."
+        },
+        {
+          "shot": "top-drops",
+          "action": "Clear the drops three times",
+          "detail": "Hitting one target starts a three-second timer; letting it expire resets the bank and moves you on."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Close it out on the Loop",
+          "detail": "The hurry-up bottoms out at five million, so take it early."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "rip-jackpot",
+      "title": "RIP Jackpot",
+      "category": "mode",
+      "summary": "Each time you clear the D-E-A-D drop targets in single-ball, non-mode play you spot a letter in R-I-P. Spell it and you take another carry-over jackpot, which opens somewhere north of eleven million. Letters are kept per player.",
+      "difficulty": 2,
+      "reward": "A carry-over jackpot from 11M",
+      "steps": [
+        {
+          "shot": "left-drops",
+          "action": "Clear the bank three times",
+          "detail": "Each full clear spots one letter of R-I-P."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Keep taking the shot from the right flipper",
+          "detail": "The bank faces right, so it is a comfortable repeat from a trapped ball."
+        },
+        {
+          "shot": "left-drops",
+          "action": "Watch the red globe lamp",
+          "detail": "It is lit when the RIP jackpot is available as well as during multiball."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Collect the nine wrestlers, then shoot the left ramp, right lane, Loop or Top Hole. One wrestler shot at a time is lit for a jackpot starting at fifteen million and climbing five each time you collect one or clear the top drops. Let a jackpot timer expire and another ball is launched.",
+      "difficulty": 2,
+      "reward": "15M jackpots climbing 5M, 100M Super",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start it on any of the four shots",
+          "detail": "Later multiballs restrict the start to the Loop or Top Hole."
+        },
+        {
+          "shot": "top-drops",
+          "action": "Clear the upper drops early",
+          "detail": "You usually have time to do this before the autoplunged balls reach the lower flippers, and it bumps the jackpot."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Take the lit wrestler",
+          "detail": "The jackpot only sits on a wrestler you have not collected; shooting the others just costs you jackpots."
+        },
+        {
+          "shot": "top-hole",
+          "action": "Collect the Super",
+          "detail": "All nine wrestlers lights a Super at the Top Hole starting at a hundred million, which grows while you keep balls moving and shrinks if you hold the flippers."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "multiball-restart",
+      "title": "Multiball Restart",
+      "category": "strategy",
+      "summary": "Lose two balls without collecting a single jackpot and the game offers it back. Hit any of the four multiball start shots inside fifteen seconds and you get a two-ball restart — worth knowing about before it slips past you.",
+      "difficulty": 2,
+      "reward": "A two-ball restart",
+      "steps": [
+        {
+          "shot": "right-lane",
+          "action": "Go straight for a start shot",
+          "detail": "Fifteen seconds only, and only if no jackpot was collected."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Use the easiest one available",
+          "detail": "The Loop is by far the softest of the four if the ball is already upstairs.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Expect two balls, not three",
+          "detail": "A restarted multiball begins with two."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "pandemonium",
+      "title": "Pandemonium",
+      "category": "mode",
+      "summary": "A frenzy where every target is worth more the more balls are in play — 250K with one ball, rising through 350K, 500K and 750K to a million at five balls and two million at six. The Top Hole adds a ball, and the first one also adds five seconds.",
+      "difficulty": 2,
+      "reward": "Up to 2M per target",
+      "steps": [
+        {
+          "shot": "left-mode-hole",
+          "action": "Start the mode",
+          "detail": "Five million just for starting, and the twenty-five second clock begins immediately."
+        },
+        {
+          "shot": "top-hole",
+          "action": "Add balls fast",
+          "detail": "Each Top Hole shot launches another ball; once the timer expires you cannot add any more."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Then hit everything",
+          "detail": "The target value does not fall back down when balls drain, so a high ball count early pays all the way to the end."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "no-holds-brawl",
+      "title": "No Holds Brawl",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "A button-mash contest against the machine. Fill your energy bar before the computer fills its own and you take nearly eighteen million, plus a pin bonus of up to eleven million that shrinks the longer you take. The Video Bonus skill shot halves the presses you need.",
+      "difficulty": 1,
+      "reward": "17.9M plus a pin bonus up to 11M",
+      "steps": [
+        {
+          "shot": "center-mode-hole",
+          "action": "Start it and mash the flippers",
+          "detail": "Speed decides both whether you win and how big the pin bonus is."
+        },
+        {
+          "shot": "tag-button",
+          "action": "Three TAG presses on the kickout",
+          "detail": "Worth a quick five million bonus."
+        },
+        {
+          "shot": "left-mode-hole",
+          "action": "Be ready for dead flippers",
+          "detail": "The flippers stay disabled until the ball is already moving up the scoop, so do not expect to catch the kickout."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "search-for-doink",
+      "title": "Search For Doink",
+      "category": "mode",
+      "summary": "Doink is hiding in one of four shots — either mode hole, the right lane or the Top Hole — chosen at random. Finding him pays twenty-five million, and each of the wrong shots is still worth six.",
+      "difficulty": 2,
+      "reward": "25M for the right shot, 6M for the others",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "center-mode-hole",
+          "action": "Work through the candidates",
+          "detail": "Every miss still pays six million, so there is no cost to searching."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Include the right lane",
+          "detail": "It is one of the four and easy to forget under a timer."
+        },
+        {
+          "shot": "top-hole",
+          "action": "Finish upstairs",
+          "detail": "If the ball is already on the upper playfield the Top Hole is the cheapest guess to make."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "sleeper-hold",
+      "title": "Sleeper Hold Super Pops",
+      "category": "mode",
+      "summary": "A bumper round. Fourteen bumper hits pays thirty million, even though the display asks for fifteen. If multiball starts while this is running you are handed the full thirty regardless.",
+      "difficulty": 1,
+      "reward": "30M",
+      "steps": [
+        {
+          "shot": "left-mode-hole",
+          "action": "Start it",
+          "detail": "This is the mode to pick when the ball keeps finding the bumper nest anyway."
+        },
+        {
+          "shot": "rollover-lanes",
+          "action": "Feed the nest",
+          "detail": "The top lanes and the right orbit both drop the ball into the bumpers."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Count to fourteen",
+          "detail": "Weak bumpers make this and the wizard round much harder than they should be."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "raise-the-undertaker",
+      "title": "Raise The Undertaker",
+      "category": "mode",
+      "summary": "Shoot the D-E-A-D drop targets. The first is two million, then three, and so on up to a ten million ceiling, with the bank resetting after every hit. Sweep two at once and you get credit for both.",
+      "difficulty": 2,
+      "reward": "2M climbing to 10M per target",
+      "steps": [
+        {
+          "shot": "left-mode-hole",
+          "action": "Start the mode",
+          "detail": "The yellow globe lamp above the drops is lit while this runs."
+        },
+        {
+          "shot": "left-drops",
+          "action": "Hammer the bank",
+          "detail": "The targets pop straight back up after each hit, so it is a pure repeat shot."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Take them from the right flipper",
+          "detail": "A sweeping shot that catches two targets pays for both."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "tag-team-millions",
+      "title": "Tag Team Millions",
+      "category": "mode",
+      "summary": "Starting the mode pays five million, and every T-A-G standup is worth five million after that. Catch an unlit target on one bank with a shot that then caroms into an unlit one on the opposite bank and you collect a further five million bonus.",
+      "difficulty": 2,
+      "reward": "5M per target plus ricochet bonuses",
+      "steps": [
+        {
+          "shot": "center-mode-hole",
+          "action": "Start the mode",
+          "detail": "Five million lands immediately."
+        },
+        {
+          "shot": "tag-left-bank",
+          "action": "Play for cross-bank ricochets",
+          "detail": "Hitting one bank and bouncing into the other is where the extra money is."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Weigh the risk",
+          "detail": "These targets throw the ball toward the left outlane more than any other shot on the machine."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "championship-belt",
+      "title": "Championship Belt Round",
+      "category": "mode",
+      "summary": "Three belts, each won by clearing the upper drop targets. The clock resets to twenty seconds when you get the ball upstairs, and each belt starts at twenty million and sheds a million every second until you finish the bank. Collecting one resets the timer for the next.",
+      "difficulty": 3,
+      "reward": "Up to 60M across three belts",
+      "steps": [
+        {
+          "shot": "left-mode-hole",
+          "action": "Start it",
+          "detail": "Getting upstairs quickly is worth more here than in any other mode, because it resets the clock."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Get to the upper playfield",
+          "detail": "The kicker in the right lane is your only route up."
+        },
+        {
+          "shot": "top-drops",
+          "action": "Clear the bank three times",
+          "detail": "Speed is the score — every second is a million off the belt."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "banzai",
+      "title": "Banzai",
+      "category": "mode",
+      "summary": "The left ramp four times for five, ten, fifteen and twenty million. Take the 2x Banzai skill shot beforehand and it becomes twenty for the first shot and forty for the second, which is the whole round in two hits.",
+      "difficulty": 2,
+      "reward": "50M, or 60M in two shots with 2x Banzai",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Pick 2x Banzai if it is offered",
+          "detail": "It roughly halves the number of left ramp shots you need."
+        },
+        {
+          "shot": "left-mode-hole",
+          "action": "Start the mode",
+          "detail": "The yellow lamp above the left ramp is lit while Banzai runs, and takes priority over the upper playfield diverter."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Repeat the ramp",
+          "detail": "This is the rejecting ramp, so expect to need more attempts than shots."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "royal-rumble",
+      "title": "Royal Rumble",
+      "category": "wizard",
+      "summary": "Play all nine modes and both start holes flash. Hit either, then all three wrestler shots, and six balls come out. Eliminate all nine wrestlers by hitting twenty bumpers or clearing the upper drops — the two counters run independently — and all three wrestler shots light for 30, 40 and 50 million, climbing to a ninety million ceiling.",
+      "difficulty": 3,
+      "reward": "Six-ball multiball, shots up to 90M",
+      "steps": [
+        {
+          "shot": "center-mode-hole",
+          "action": "Hit a flashing hole",
+          "detail": "Both flash once all nine modes are done."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take all three wrestler shots",
+          "detail": "This is what actually launches the six balls."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Eliminate wrestlers two ways at once",
+          "detail": "Twenty bumper hits or a cleared upper drop bank each eliminate one, and neither resets the other's count."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Then cycle the wrestler shots",
+          "detail": "Each pass round all three raises the values ten million, up to ninety. There is no ball saver, and the round ends when one ball is left."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Completing the rollover lanes or the upper drop targets advances the multiplier to a ceiling of nine. Complete either again on the same ball and you get Bonus Hold instead; once more after that lights an extra ball at the left mode hole, and after that each completion just pays five million.",
+      "difficulty": 2,
+      "reward": "Up to 9x, then Bonus Hold, then an extra ball",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Complete the top lanes",
+          "detail": "Lane change with the flipper buttons rather than trying to steer the ball."
+        },
+        {
+          "shot": "top-drops",
+          "action": "Or clear the upper drops",
+          "detail": "Both routes advance the same multiplier, and upstairs is the more repeatable one.",
+          "link": "none"
+        },
+        {
+          "shot": "left-mode-hole",
+          "action": "Collect the extra ball",
+          "detail": "Bonus Hold carries your bonus across an extra ball too."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "combo-shot",
+      "title": "The Three-Shot Combo",
+      "category": "combo",
+      "summary": "Left ramp into center ramp into right orbit pays ten million. It is the three wrestler shots in order, so you are usually halfway through it by accident — worth finishing deliberately.",
+      "difficulty": 3,
+      "reward": "10M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Open with the left ramp",
+          "detail": "Balls off this ramp come back fast and are hard to control, so know where you are sending the next shot before it returns."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Straight into the center ramp",
+          "detail": "This one returns to the left inlane, which sets up the orbit."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Close on the orbit",
+          "detail": "It feeds the rollover lanes, which can advance your multiplier at the same time."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "extra-ball-route",
+      "title": "The Extra Ball Route",
+      "category": "strategy",
+      "summary": "Light Extra Ball is one of the nine modes, and it has a dependable route. Work the center ramp; once Search For Doink lights, pass over to the right flipper and put one up the left ramp, which slides the selection onto Light EB. Now you need a lit mode hole — and you have to reach it without shooting the center ramp again.",
+      "difficulty": 2,
+      "reward": "A lit extra ball at the left mode hole",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Move the selection to Search For Doink",
+          "detail": "The center column is where you stage this."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shift to Light EB",
+          "detail": "One left ramp shot moves the selection into the left column."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Go upstairs instead of re-ramping",
+          "detail": "Another center ramp would unlight Light EB. Go up the right lane, play the upper playfield, and drain from there."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Let the upper playfield feed you",
+          "detail": "A ball leaving upstairs returns to the right inlane, which relights the left mode hole for a clean shot."
+        }
+      ],
+      "fx": "battle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "wwf-skillshot",
+      "title": "Long Timers",
+      "desc": "Take a skill shot award and hit the flashing rollover lane on the same plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot"
+    },
+    {
+      "id": "wwf-brawl",
+      "title": "No Holds Brawl",
+      "desc": "Win the No Holds Brawl button round.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "no-holds-brawl"
+    },
+    {
+      "id": "wwf-undertaker",
+      "title": "Raise The Undertaker",
+      "desc": "Reach the 10M ceiling on the D-E-A-D targets during Raise The Undertaker.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "raise-the-undertaker"
+    },
+    {
+      "id": "wwf-loops",
+      "title": "Five Loops",
+      "desc": "Take five upper playfield loops in one visit to raise the jackpot base.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "upper-playfield"
+    },
+    {
+      "id": "wwf-multiball",
+      "title": "Nine Wrestlers",
+      "desc": "Collect all nine wrestlers and start multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "wwf-rip",
+      "title": "Rest In Peace",
+      "desc": "Spell R-I-P off the drop targets and collect the carry-over jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rip-jackpot"
+    },
+    {
+      "id": "wwf-ring",
+      "title": "Get Back In The Ring",
+      "desc": "Shoot back up the Left Lane inside the fifteen-second window for the jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "get-back-in-the-ring"
+    },
+    {
+      "id": "wwf-belts",
+      "title": "All Three Belts",
+      "desc": "Win all three belts — Heavyweight, Tag Team and Intercontinental — inside one round.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "championship-belt"
+    },
+    {
+      "id": "wwf-super",
+      "title": "Super Jackpot",
+      "desc": "Collect all nine wrestlers in multiball and take the Super at the Top Hole.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "wwf-rumble",
+      "title": "Royal Rumble",
+      "desc": "Complete all nine modes and start the six-ball wizard round.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "royal-rumble"
+    },
+    {
+      "id": "wwf-lastman",
+      "title": "Last Man Standing",
+      "desc": "Eliminate all nine wrestlers in Royal Rumble and cycle the shots to their 90M ceiling.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "royal-rumble"
+    }
+  ],
+  "drills": [
+    {
+      "id": "tag-award-plunge",
+      "title": "Pick The Award, Then The Lane",
+      "text": "Watch the three awards scroll and hit TAG on the one you want, because whichever is showing when you fire is the one you keep for the whole ball. Then work on landing the ball in the flashing rollover lane on top of it for the second half of the skill shot.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-shot",
+      "shots": [
+        "tag-button",
+        "shooter-lane",
+        "rollover-lanes"
+      ]
+    },
+    {
+      "id": "left-ramp-rejects",
+      "title": "Beat The Left Ramp",
+      "text": "The mouth is wide and the top is narrow, so this ramp rejects far more than it looks like it should. Shoot it from a cradle at full strength and count made shots against attempts until the ratio stops embarrassing you.",
+      "reps": "25 attempts",
+      "focus": "accuracy",
+      "goal": "banzai",
+      "shots": [
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "dead-bank-repeat",
+      "title": "D-E-A-D From The Right Flipper",
+      "text": "The bank faces right, which makes it a comfortable repeat from a trapped ball on the right flipper. Work a sweeping angle that catches two targets on one shot, because a double counts for both.",
+      "reps": "10 full clears",
+      "focus": "accuracy",
+      "goal": "raise-the-undertaker",
+      "shots": [
+        "left-drops",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "wrestler-three-shot-combo",
+      "title": "Ramp, Ramp, Orbit",
+      "text": "Left ramp into center ramp into right orbit, in that order, without a pause. Balls off the left ramp come back fast, so decide where the second shot is going before the first one lands, and let the center ramp's feed to the left inlane set up the orbit.",
+      "reps": "10 attempts",
+      "focus": "flow",
+      "goal": "combo-shot",
+      "shots": [
+        "left-ramp",
+        "center-ramp",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "left-lane-nudge",
+      "title": "Left Lane Save And Return",
+      "text": "Let the bumpers spit a ball down the Left Lane and practise the nudge that keeps it off the top edge of the left slingshot, which throws slow balls straight at the outlane. Once you have it trapped, shoot back up that narrow lane inside the fifteen-second window.",
+      "reps": "15 lane rolls",
+      "focus": "ball-control",
+      "goal": "get-back-in-the-ring",
+      "shots": [
+        "bumpers",
+        "left-lane",
+        "left-inlane"
+      ]
+    },
+    {
+      "id": "upper-loop-and-exit",
+      "title": "Five Loops, Then Leave",
+      "text": "Kick up the right lane, then run the Loop five times holding the left upper flipper so each return drops onto the right flipper for a free catch. Clear the top drops, take the Exit, and let it feed you the right inlane — which relights the left mode hole on the way down.",
+      "reps": "5 full trips upstairs",
+      "focus": "flow",
+      "goal": "upper-playfield",
+      "shots": [
+        "right-lane",
+        "upper-loop",
+        "upper-flipper",
+        "top-drops",
+        "upper-exit",
+        "right-inlane"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "battle",
+  "playfields": [
+    {
+      "id": "upper-playfield",
+      "name": "Upper Playfield",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.5,
+        "y": 0.62,
+        "w": 0.42,
+        "h": 0.28
+      },
+      "entries": [
+        "right-lane"
+      ],
+      "exits": [
+        {
+          "shot": "right-inlane"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "TAG Button",
+    "location": "on the front of the cabinet, standing in for a shooter rod",
+    "how": "There is no rod to pull on this one. A single big TAG button fires the auto-launcher, and Data East then built most of the game's mid-ball video rounds around mashing that same button. Expect to be hammering it while the ball is parked somewhere safe.",
+    "uses": [
+      {
+        "when": "Starting a ball",
+        "what": "Fires the auto-launcher — and whichever of the three scrolling awards is showing when you press is the one you keep all ball."
+      },
+      {
+        "when": "During the chair-bashing round",
+        "what": "Mash it. The first five hits pay 1M each and the rest 500K — but hold a flipper up and every hit collapses to 50K."
+      },
+      {
+        "when": "After clearing a T-A-G target bank",
+        "what": "A few fast presses inside the three-second window banks the five-million round award."
+      },
+      {
+        "when": "On the kickout in No Holds Brawl",
+        "what": "Three presses as the ball ejects add a quick five million; the flippers stay dead until it is climbing the scoop."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Work the WWF card: collect all nine wrestlers, play the nine modes laid out on a grid, and fight up to the six-ball Royal Rumble. Play spills onto an upper deck, and a cabinet TAG button drives every button-mash video round.",
+    "loop": [
+      "Hit the three wrestler shots -- left ramp, center ramp, right orbit -- to collect wrestlers; the same three shots slide the mode selection around a grid.",
+      "Start whichever mode is selected at a lit mode hole, then play out its objective before the ball drains.",
+      "Feed the D-E-A-D drops for the Undertaker and RIP jackpots, and clear both T-A-G banks to light the captive ball.",
+      "Ride the right lane up to the upper deck, loop for climbing points, and clear the top drops to step your bonus multiplier.",
+      "Collect all nine wrestlers to light multiball, then finish all nine modes to reach the Royal Rumble."
+    ],
+    "lights": [
+      {
+        "id": "wrestler-shots",
+        "name": "Wrestler Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "The three main shots carry three wrestlers each, and a lit arrow is a wrestler you still owe -- nine in all, and each one you bank is worth a million at end of ball.",
+        "flashing": null,
+        "control": null,
+        "then": "The same three shots drag the mode selection around a three-by-three grid, so choose your mode as you collect. Bank all nine wrestlers to light multiball, and run left-ramp-into-center-into-orbit for a clean ten-million combo along the way.",
+        "goals": [
+          "wrestler-shots",
+          "combo-shot",
+          "multiball"
+        ]
+      },
+      {
+        "id": "rollover-lanes",
+        "name": "Top Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "rollover-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit top rollover lane is one you have not completed yet, and clearing all three (or the upper drop bank) is one of the two ways to advance your bonus multiplier.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button shifts the lit top rollover lanes one step to the right, so you can line an uncompleted lane up with the ball as it drops from the plunge or spits out of the bumpers",
+          "when": "while the ball is rolling down through the top lanes"
+        },
+        "then": "Slide the lit lane onto the ball's path rather than steering the ball, and complete the set to climb the bonus multiplier toward nine. Do it again the same ball for Bonus Hold, and a third time lights an extra ball you collect at the left mode hole.",
+        "goals": [
+          "skill-shot",
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "id": "mode-holes",
+        "name": "Mode Start Holes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-mode-hole"
+          },
+          {
+            "shot": "center-mode-hole"
+          }
+        ],
+        "lit": "Both mode holes start lit on every ball and starting the selected mode at either one turns the pair off until you relight it, which the first center-ramp shot does and the right inlane does briefly.",
+        "flashing": null,
+        "control": null,
+        "then": "Steer the selection with the wrestler shots first, then drop into a lit hole to begin -- pick a bumper round like Sleeper Hold or Pandemonium when the ball keeps finding the nest, or a TAG-button round like No Holds Brawl when it is safely trapped. Finishing every mode is what flashes both holes for the Royal Rumble.",
+        "goals": [
+          "mode-grid",
+          "pandemonium",
+          "no-holds-brawl"
+        ]
+      },
+      {
+        "id": "dead-drops",
+        "name": "D-E-A-D Drops",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-drops",
+            "lamps": 4
+          }
+        ],
+        "lit": "Read the globe lamps over the bank: yellow means Raise The Undertaker is running and each hit climbs in millions, while red means a RIP jackpot or a multiball jackpot is standing there for you.",
+        "flashing": null,
+        "control": null,
+        "then": "In plain single-ball play each full clear of the bank spots a letter of R-I-P, and spelling it banks a carry-over jackpot that opens north of eleven million. The targets pop straight back up, so it is a pure repeat from the right flipper.",
+        "goals": [
+          "rip-jackpot",
+          "raise-the-undertaker"
+        ]
+      },
+      {
+        "id": "tag-standups",
+        "name": "T-A-G Standups",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "tag-left-bank",
+            "lamps": 3
+          },
+          {
+            "shot": "tag-right-bank",
+            "lamps": 3
+          }
+        ],
+        "lit": "Six standups spell T-A-G across two banks, a lit target is one still standing, and neither bank clears until you have finished both and then driven the captive ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Clearing a whole bank fires a short five-million TAG-button round, and clearing all six lights Collect Tag at the captive ball for ten to twenty million, a Hold Bonus, or a lit feature. Be ready for the rebound -- these standups sling the ball toward the left outlane worse than anything else on the machine.",
+        "goals": [
+          "tag-targets",
+          "captive-ball-award",
+          "tag-team-millions"
+        ]
+      },
+      {
+        "id": "upper-deck",
+        "name": "Upper Deck",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "top-drops",
+            "lamps": 3
+          },
+          {
+            "shot": "top-hole"
+          },
+          {
+            "shot": "upper-exit"
+          }
+        ],
+        "lit": "The right lane kicks you upstairs where the Loop pays a climbing one through five million, the top drops step the bonus multiplier and swing the Exit open, and the Top Hole holds the multiball Super and spots MACHO MAN.",
+        "flashing": null,
+        "control": null,
+        "then": "Loop five times to raise the multiball jackpot base and clear the top drops for a multiplier step, then take the Exit for five million back to the right inlane -- which also relights the left mode hole. Holding the left flipper up rebounds each Loop return to the right flipper so you can catch it clean.",
+        "goals": [
+          "upper-playfield",
+          "macho-madness",
+          "championship-belt"
+        ]
+      },
+      {
+        "id": "mb-jackpots",
+        "name": "Multiball Jackpots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-lane"
+          },
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "top-hole"
+          }
+        ],
+        "lit": "Once all nine wrestlers are in, one wrestler shot at a time lights for a jackpot that opens at fifteen million and climbs five million with every wrestler you bank or every upper-drop clear.",
+        "flashing": null,
+        "control": null,
+        "then": "Take only the lit jackpot shot -- firing an unlit one just costs you jackpots -- and clear the top drops early to bump the value while the balls are still up top. Collecting all nine lights the hundred-million Super at the Top Hole, which swells as long as you keep the balls busy and bleeds down if you sit on the flippers.",
+        "goals": [
+          "multiball",
+          "multiball-restart"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button shifts the lit top rollover lanes one step to the right, so instead of trying to steer the ball you slide an uncompleted lane under it as it drops from the plunge or the bumpers. Completing all three lanes -- or the upper drop bank -- advances your bonus multiplier toward nine, then Bonus Hold, and finally a lit extra ball collected at the left mode hole.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Set the skill-shot award you want with the TAG button before you plunge, then roll the flashing rollover lane for the extra points on top. Ease into the wrestler shots -- the center ramp is the safest and returns to the left inlane -- and pick a low-risk bumper mode like Sleeper Hold when the ball keeps finding the nest.",
+        "goals": [
+          "skill-shot",
+          "wrestler-shots",
+          "sleeper-hold"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Collect all nine wrestlers to light multiball while the wrestler shots walk you around the mode grid, and run the button-mash rounds like Chair Bashing when the ball is safely rattling. Clear both T-A-G banks for the captive-ball award, and climb the upper deck to raise the multiball jackpot base before you start it.",
+        "goals": [
+          "mode-grid",
+          "captive-ball-award",
+          "upper-playfield",
+          "chair-bashing"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Finish all nine modes to flash both mode holes, hit one and then take all three wrestler shots in turn, and the machine spits out six balls for the Royal Rumble. Eliminate all nine wrestlers on the bumpers and upper drops to light the wrestler shots for thirty, forty, then fifty million, climbing to a ninety-million ceiling; the hundred-million Super at the Top Hole is the other top score.",
+        "goals": [
+          "royal-rumble",
+          "multiball"
+        ]
+      }
+    ]
+  }
+}

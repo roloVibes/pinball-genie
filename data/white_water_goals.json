@@ -1,0 +1,1386 @@
+{
+  "machine": "White Water (Williams, 1993)",
+  "defaultFx": "raft",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.32,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Standard lower-left flipper"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.68,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Standard lower-right flipper"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.68,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Single flipper on the upper playfield; controls both Insanity Falls and Bigfoot Bluff shots",
+      "playfield": "deck-upper-playfield"
+    },
+    {
+      "id": "spine-chiller",
+      "name": "Spine Chiller",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Left ramp, climbs to the upper playfield; combo starter shot; skill-shot overshoot target",
+      "feeds": {
+        "shot": "upper-flipper"
+      }
+    },
+    {
+      "id": "disaster-drop",
+      "name": "Disaster Drop",
+      "type": "ramp",
+      "x": 0.58,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Center loop, runs under the upper playfield, drops ball out near Boulder Garden entrance",
+      "feeds": {
+        "x": 0.11,
+        "y": 0.2
+      }
+    },
+    {
+      "id": "insanity-falls",
+      "name": "Insanity Falls",
+      "type": "ramp",
+      "x": 0.45,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Upper-playfield ramp shot with the upper flipper; skill shot target and Multiball Jackpot shot",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "playfield": "deck-upper-playfield",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "bigfoot-bluff",
+      "name": "Bigfoot Bluff",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Upper-playfield ramp; diverted into the Whirlpool by Bigfoot unless distracted by Hotfoot",
+      "feeds": {
+        "shot": "whirlpool"
+      },
+      "playfield": "deck-upper-playfield",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "bigfoots-cave",
+      "name": "Bigfoot's Cave",
+      "type": "ramp",
+      "x": 0.75,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Only reachable when Bigfoot diverts away during Hotfoot; feeds down to the right inlane",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "playfield": "deck-upper-playfield"
+    },
+    {
+      "id": "boulder-garden",
+      "name": "Boulder Garden",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Left orbit, runs up the left rail around the back to the Jet Bumpers; a shot too weak to complete the loop can drop into the hidden Secret Passage lane low on the left, under the Spine Chiller ramp",
+      "feeds": {
+        "shot": "jet-bumpers"
+      }
+    },
+    {
+      "id": "boomerang-bend",
+      "name": "Boomerang Bend",
+      "type": "orbit",
+      "x": 0.91,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Right orbit, gated near the pop bumpers; hardest/riskiest shot in the game",
+      "feeds": {
+        "shot": "boulder-garden"
+      }
+    },
+    {
+      "id": "no-way-out",
+      "name": "No Way Out",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Center lock/VUK, flanked by the two green Lite Lock targets; single most important shot in the game",
+      "feeds": {
+        "shot": "upper-flipper"
+      }
+    },
+    {
+      "id": "lost-mine",
+      "name": "Lost Mine",
+      "type": "scoop",
+      "x": 0.17,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Kickout hole; collects Gold Rush items and is the Whirlpool's exit point"
+    },
+    {
+      "id": "whirlpool",
+      "name": "Whirlpool",
+      "type": "mech",
+      "x": 0.55,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Non-switched funnel under the upper playfield; ball drops here and re-emerges at Lost Mine",
+      "feeds": {
+        "shot": "lost-mine"
+      }
+    },
+    {
+      "id": "secret-passage",
+      "name": "Secret Passage",
+      "type": "lane",
+      "x": 0.35,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Hidden rollover tucked under the Spine Chiller ramp, running from just past the Boulder Garden entrance to the No Way Out entrance lane; a Boulder Garden shot with too little speed drops through it and advances the Raft."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Feeds left flipper; rolls the lit inlane for R-I-V-E-R progress"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Feeds right flipper; Bigfoot's Cave and Extra Ball target sit just above it; lights Multi-Millions"
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Has the Bounceback kickback mechanism"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.92,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Standard drain lane"
+    },
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Runs the full height of the widebody cabinet up to the upper playfield; plunge strength determines the skill shot"
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.78,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "3 pop bumpers cosmetically disguised as boulders; value scales with Boulder Garden hits and Boulder Bash"
+    },
+    {
+      "id": "river-targets",
+      "name": "R-I-V-E-R Targets",
+      "type": "target-bank",
+      "x": 0.18,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "5 blue standups on the left side; completing all 5 advances River Class"
+    },
+    {
+      "id": "lite-lock-targets",
+      "name": "Lite Lock Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "2 green standups flanking No Way Out; must be hit to light each of the 3 locks"
+    },
+    {
+      "id": "bounceback-targets",
+      "name": "Light Bounceback Targets",
+      "type": "target-bank",
+      "x": 0.58,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "3 red standups, center of playfield; relights the left-outlane kickback"
+    },
+    {
+      "id": "hotfoot-targets",
+      "name": "Hotfoot Targets",
+      "type": "target-bank",
+      "x": 0.65,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "2 white standups above the right flipper; qualifies Bigfoot Hotfoot"
+    },
+    {
+      "id": "extra-ball-target",
+      "name": "Extra Ball Target",
+      "type": "standup",
+      "x": 0.8,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Narrow standup between two posts above the right inlane; hard, high-drain-risk shot"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-insanity-falls",
+      "title": "Skill Shot — Insanity Falls",
+      "category": "skillshot",
+      "summary": "A gentle-medium plunge sends the ball onto the upper playfield and into Insanity Falls for an escalating bonus (1M-5M across the game).",
+      "difficulty": 1,
+      "reward": "1M-5M escalating skill shot value",
+      "steps": [
+        {
+          "shot": "insanity-falls",
+          "action": "Plunge gently onto the upper playfield, into Insanity Falls",
+          "detail": "Medium-soft plunge crests the ball onto the upper playfield without it screaming back down off Spine Chiller. Value escalates 1M→2M→3M→4M→5M across the game as you repeat the skill shot on later balls."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-2way-spine-chiller-insanity-falls",
+      "title": "2-Way Combo — Spine Chiller Slide",
+      "category": "combo",
+      "summary": "Every combo in the game starts with this pair: Spine Chiller straight into Insanity Falls.",
+      "difficulty": 1,
+      "reward": "2,000,000 pts",
+      "steps": [
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot the Spine Chiller ramp",
+          "detail": "Every White Water combo must begin here"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Take the ramp's own feed straight into Insanity Falls",
+          "detail": "No intervening switch hits allowed (left inlane is the only tolerated pass-through); scores 2,000,000"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "combo-3way-no-way-out",
+      "title": "3-Way Combo — into No Way Out",
+      "category": "combo",
+      "summary": "Extend the base 2-way combo by finishing at No Way Out for 5M.",
+      "difficulty": 2,
+      "reward": "5,000,000 pts",
+      "steps": [
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot Spine Chiller",
+          "detail": "Combo starter"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Flow into Insanity Falls off the ramp feed"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Finish with No Way Out",
+          "detail": "One of three legal 3-way finishers; scores 5,000,000"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "combo-3way-disaster-drop",
+      "title": "3-Way Combo — into Disaster Drop",
+      "category": "combo",
+      "summary": "Same opener, finished on Disaster Drop instead of No Way Out.",
+      "difficulty": 2,
+      "reward": "5,000,000 pts",
+      "steps": [
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot Spine Chiller"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Flow into Insanity Falls"
+        },
+        {
+          "shot": "disaster-drop",
+          "action": "Finish with Disaster Drop",
+          "detail": "Scores 5,000,000"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "combo-3way-boomerang-bend",
+      "title": "3-Way Combo — into Boomerang Bend",
+      "category": "combo",
+      "summary": "Same opener, finished on the tough right-orbit shot for 5M.",
+      "difficulty": 2,
+      "reward": "5,000,000 pts",
+      "steps": [
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot Spine Chiller"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Flow into Insanity Falls"
+        },
+        {
+          "shot": "boomerang-bend",
+          "action": "Finish with Boomerang Bend",
+          "detail": "The right orbit; riskiest of the three 3-way finishers but same 5,000,000 payout"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "combo-4way",
+      "title": "4-Way Combo — Double Falls",
+      "category": "combo",
+      "summary": "Loop back through Insanity Falls a second time off the No Way Out kickout for the 4-way tier.",
+      "difficulty": 3,
+      "reward": "8,000,000 pts (10M on some ROM revisions)",
+      "steps": [
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot Spine Chiller"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Flow into Insanity Falls (1st pass)"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Take the No Way Out branch"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Hit Insanity Falls again off the No Way Out kickout",
+          "detail": "Completes the 4-way; 8,000,000 on newer ROMs, 10,000,000 on older ones"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "combo-5way",
+      "title": "5-Way Combo — Full Run",
+      "category": "combo",
+      "summary": "The hardest and highest-value combo in the game: extend the 4-way with one more leg for a stacked ~25M total.",
+      "difficulty": 3,
+      "reward": "10,000,000 for the 5th leg, ~25M+ total stacked",
+      "steps": [
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot Spine Chiller"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Flow into Insanity Falls (1st pass)"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Take the No Way Out branch"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Hit Insanity Falls again (completes the 4-way)"
+        },
+        {
+          "shot": "disaster-drop",
+          "action": "Finish with Disaster Drop (or Boomerang Bend)",
+          "detail": "The second Insanity Falls returns the ball to the left inlane, so the fifth leg is a lower-flipper shot — take Disaster Drop or Boomerang Bend off the left flipper before the chain lapses. It scores 10,000,000 on top of the stacked combo total."
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "multiball-main",
+      "title": "Multiball — Lock 3 at No Way Out",
+      "category": "multiball",
+      "summary": "The core scoring engine: light lock with the green targets, lock all 3 balls at No Way Out, then hammer the opening Jackpot volley.",
+      "difficulty": 3,
+      "reward": "Jackpots at Insanity Falls, base ~10M +2M per Raft, Single/Double/Triple tier",
+      "steps": [
+        {
+          "shot": "lite-lock-targets",
+          "action": "Hit both green Lite Lock targets",
+          "detail": "One hit each lights lock 1"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Shoot No Way Out to lock ball 1"
+        },
+        {
+          "shot": "lite-lock-targets",
+          "action": "Hit both green targets again (two hits each)",
+          "detail": "Relights lock 2 (flashing→lit)"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Shoot No Way Out to lock ball 2"
+        },
+        {
+          "shot": "lite-lock-targets",
+          "action": "Hit both green targets a third time",
+          "detail": "Lights lock 3"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Shoot No Way Out to lock ball 3",
+          "detail": "Starts Multiball — all 3 balls kick out and feed the upper-right flipper"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Shoot all three balls through Insanity Falls before losing one",
+          "detail": "3/3 = Triple Jackpot, 2/3 = Double, 0-1/3 = Single — this locks the pay tier for the rest of the multiball"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "multiball-whirlpool-challenge",
+      "title": "Whirlpool Challenge (2-ball)",
+      "category": "multiball",
+      "summary": "First award in the Whirlpool cycle — light it at Insanity Falls, collect at Bigfoot Bluff, then farm repeat Bigfoot Bluff hits.",
+      "difficulty": 2,
+      "reward": "5M first hit, +2M per hit, 20M/40M/60M/80M every 6th hit (100M cap)",
+      "steps": [
+        {
+          "shot": "insanity-falls",
+          "action": "Shoot Insanity Falls while the yellow Whirlpool light is on",
+          "detail": "Lights Whirlpool Challenge, award #1 of 6 in the rotating cycle"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect the award at Bigfoot Bluff",
+          "detail": "A made shot collects it"
+        },
+        {
+          "shot": "lost-mine",
+          "action": "Let the ball settle at Lost Mine",
+          "detail": "Whirlpool Challenge (2-ball multiball) begins once the ball reaches the Lost Mine sensor"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Repeat Bigfoot Bluff shots to fill the Whirlpool",
+          "detail": "Trap on the left flipper and feed it repeatedly rather than risking combos — a known safe, repeatable farm"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "multiball-gold-rush",
+      "title": "Gold Rush (2-ball)",
+      "category": "multiball",
+      "summary": "Collect the 3 Lost Mine items — the shot that picks up the third one starts the 250K-per-switch multiball on the spot.",
+      "difficulty": 2,
+      "reward": "250K per playfield switch hit while running",
+      "steps": [
+        {
+          "shot": "lost-mine",
+          "action": "Shoot Lost Mine to collect items",
+          "detail": "Flashlight, map, key — collected one at a time"
+        },
+        {
+          "shot": "hotfoot-targets",
+          "action": "Or complete Bigfoot Hotfoot",
+          "detail": "Hotfoot also spots Lost Mine items in sequence as an alternate path",
+          "link": "none"
+        },
+        {
+          "shot": "lost-mine",
+          "action": "Collect the third item at Lost Mine",
+          "detail": "That shot starts Gold Rush right away — no extra hit needed. Every switch then scores 250K until one ball drains. If Bigfoot Hotfoot spotted your third item, one Lost Mine shot starts it."
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "mode-wet-willies",
+      "title": "Wet Willie's",
+      "category": "mode",
+      "summary": "The final Raft milestone — collect all 7 lit Hazards in Stage 1, then chase a single travelling hazard light in the 25-second Stage 2.",
+      "difficulty": 3,
+      "reward": "10M per Hazard (Stage 1); 100M per hit (Stage 2, 50M on early ROMs)",
+      "steps": [
+        {
+          "shot": "disaster-drop",
+          "action": "Collect Hazard: Disaster Drop",
+          "detail": "Stage 1 — all seven Hazards are lit simultaneously, 10M each, progress carries ball-to-ball"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Collect Hazard: No Way Out",
+          "link": "none"
+        },
+        {
+          "shot": "spine-chiller",
+          "action": "Collect Hazard: Spine Chiller",
+          "link": "none"
+        },
+        {
+          "shot": "boulder-garden",
+          "action": "Collect Hazard: Boulder Garden",
+          "link": "none"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Collect Hazard: Insanity Falls",
+          "link": "none"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect Hazard: Bigfoot Bluff",
+          "link": "none"
+        },
+        {
+          "shot": "boomerang-bend",
+          "action": "Collect Hazard: Boomerang Bend",
+          "detail": "Completing all 7 finishes Stage 1",
+          "link": "none"
+        },
+        {
+          "shot": "disaster-drop",
+          "action": "Chase the travelling hazard light through Stage 2",
+          "detail": "Light rotates Disaster Drop→No Way Out→Spine Chiller→Boulder Garden→Insanity Falls→Bigfoot Bluff→Boomerang Bend, ~3s per shot, 25s total; each hit while lit pays 100M; draining resets you to Raft #2"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "mode-bigfoot-hotfoot",
+      "title": "Bigfoot Hotfoot",
+      "category": "mode",
+      "summary": "Distract Bigfoot with the white standups so he stops diverting the ball, then farm repeat Bigfoot Bluff Jackpots for ~20 seconds.",
+      "difficulty": 2,
+      "reward": "10M per Bigfoot Bluff shot (50M under 5X); 6-7 shots possible",
+      "steps": [
+        {
+          "shot": "hotfoot-targets",
+          "action": "Hit both white Hotfoot targets 3-4 times",
+          "detail": "Operator-adjustable, default range ~3-4, up to 14"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Repeat Bigfoot Bluff shots for the ~20s window",
+          "detail": "10M each shot, kicks straight to the right inlane for an immediate reshot; also spots Lost Mine items flashlight→map→key→camera→cow in order",
+          "feeds": {
+            "x": 0.64,
+            "y": 0.1
+          }
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "mode-camera-craze",
+      "title": "Camera Craze",
+      "category": "mode",
+      "summary": "Collecting the 4th Hotfoot item (camera) triggers a flat 3M pay on any Hazard except No Way Out for the rest of the ball.",
+      "difficulty": 2,
+      "reward": "Flat 3M per Hazard shot (15M under 5X), regardless of lit state",
+      "steps": [
+        {
+          "shot": "hotfoot-targets",
+          "action": "Qualify Bigfoot Hotfoot",
+          "detail": "Hit the white targets to start the mode"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect items through Hotfoot until the 4th (camera)",
+          "detail": "Sequence: flashlight, map, key, camera — landing on camera triggers Camera Craze",
+          "feeds": {
+            "x": 0.64,
+            "y": 0.1
+          }
+        },
+        {
+          "shot": "spine-chiller",
+          "action": "Shoot any Hazard except No Way Out",
+          "detail": "Pays a flat 3M for the remainder of the ball regardless of whether the Hazard is lit"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "mode-boulder-bash",
+      "title": "Boulder Bash",
+      "category": "mode",
+      "summary": "Every 3rd Boulder Garden hit lights a 20-second escalating bonus in the Jet Bumpers.",
+      "difficulty": 1,
+      "reward": "Escalating jet bumper value, starts 50K +50K/hit",
+      "steps": [
+        {
+          "shot": "boulder-garden",
+          "action": "Hit Boulder Garden repeatedly",
+          "detail": "Every 3rd hit triggers the 20-second Boulder Bash window"
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Let the ball settle into the Jet Bumpers",
+          "detail": "The base jet value rises 50K for every Boulder Garden hit you make across the game, capping at 300K. During the 20-second Boulder Bash the jets pay a flat 500K per hit on top of that."
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "multiplier-river-class",
+      "title": "River Class — Build the Multiplier",
+      "category": "multiplier",
+      "summary": "Complete the R-I-V-E-R standups (or roll the lit inlane) to raise River Class, which multiplies Hazard value and end-of-ball bonus.",
+      "difficulty": 2,
+      "reward": "River Class 1-6, multiplies 500K×class Hazards and bonus",
+      "steps": [
+        {
+          "shot": "river-targets",
+          "action": "Hit the 5 blue R-I-V-E-R standups",
+          "detail": "Left-side bank, shot mainly across the table from the right flipper",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Or roll the currently-lit inlane",
+          "detail": "Either flipper button nudges the lit inlane one position to the right",
+          "link": "none"
+        },
+        {
+          "shot": "river-targets",
+          "action": "Repeat until all 5 letters complete",
+          "detail": "Advances River Class by one step (max 6); River Class resets to 1 each new ball, so build it before you drain"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-5x-playfield",
+      "title": "5X Playfield — Light the Big Multiplier",
+      "category": "multiplier",
+      "summary": "Cycle through the Whirlpool Award ladder to reach award #6, 5X Playfield, then time its 25-second window into Multiball or Hotfoot.",
+      "difficulty": 3,
+      "reward": "25 seconds of ~5x scoring on nearly everything",
+      "steps": [
+        {
+          "shot": "insanity-falls",
+          "action": "Shoot Insanity Falls to light the current Whirlpool Award",
+          "detail": "Cycle order: Whirlpool Challenge, Man Overboard, Light Extra Ball, Advance Raft, Mystery Canyon, then 5X Playfield"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect at Bigfoot Bluff to advance the cycle",
+          "detail": "Repeat the Insanity Falls / Bigfoot Bluff pair through awards 1-5"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Light award #6, 5X Playfield"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect 5X Playfield at Bigfoot Bluff",
+          "detail": "Hard 25-second timer, no grace period — don't light it unless you're about to be in Multiball or Hotfoot"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-vacation-bonus",
+      "title": "Wizard Mode — Vacation Bonus",
+      "category": "wizard",
+      "summary": "The 4-leg Vacation Planner: River Class 6, start Wet Willie's, collect all 6 Whirlpool Awards, then lock the 3rd ball to trigger the 200M+ Vacation Bonus and an elevated Multiball.",
+      "difficulty": 3,
+      "reward": "200M + 10K×prior games played, plus a Special, then Multiball starts",
+      "steps": [
+        {
+          "shot": "river-targets",
+          "action": "Complete R-I-V-E-R five times",
+          "detail": "Leg 1: reach River Class 6 — this leg stays banked once achieved, even across balls"
+        },
+        {
+          "shot": "disaster-drop",
+          "action": "Complete lit Hazard sets to advance the Raft to Wet Willie's",
+          "detail": "Leg 2: repeated Disaster Drop hits spot free Hazards and speed this up; you only need to START Wet Willie's, not finish it",
+          "link": "none"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Cycle Insanity Falls into Bigfoot Bluff through all 6 Whirlpool Awards",
+          "detail": "Leg 3: Whirlpool Challenge, Man Overboard, Light Extra Ball, Advance Raft, Mystery Canyon, 5X Playfield, all in one cycle",
+          "link": "none"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect each award at Bigfoot Bluff",
+          "detail": "Completes leg 3"
+        },
+        {
+          "shot": "lite-lock-targets",
+          "action": "Light lock at the green targets three times"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Lock all 3 balls at No Way Out",
+          "detail": "Leg 4: with legs 1-3 already banked, locking the 3rd ball pays the Vacation Bonus + a Special instead of starting a normal Multiball, then Multiball begins immediately with an elevated Jackpot base"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Strategy — First 30 Seconds",
+      "category": "strategy",
+      "summary": "The recommended beginner opener: skill shot, one opportunistic upper shot, then default to No Way Out and Hotfoot.",
+      "difficulty": 1,
+      "reward": "Fast, low-risk points and Multiball progress",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Gentle-medium plunge for the skill shot",
+          "detail": "Not full strength — you want it to crest onto the upper deck softly"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Roll into Insanity Falls",
+          "detail": "1M-5M scaling skill shot value"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Take one opportunistic upper-flipper shot if lined up",
+          "detail": "Don't force a second attempt — expect only one flip up top"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Default to No Way Out whenever nothing else is flashing",
+          "detail": "The single most important, most-repeated shot in the game; reachable from either flipper"
+        },
+        {
+          "shot": "hotfoot-targets",
+          "action": "Work the two Hotfoot targets",
+          "detail": "Forgiving and high-value for beginners, usually only 3-4 hits needed"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "strategy-tournament-priority",
+      "title": "Strategy — Tournament Priority Order",
+      "category": "strategy",
+      "summary": "The competitive order of operations: Multiball first, Hotfoot second, Gold Rush and River Class as supplementary value, Vacation Bonus deprioritized.",
+      "difficulty": 2,
+      "reward": "Maximizes points per ball within a time-boxed game",
+      "steps": [
+        {
+          "shot": "lite-lock-targets",
+          "action": "Build toward lock with the green targets",
+          "detail": "Your first priority every ball."
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Lock 3 balls to start Multiball ASAP"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Run the Jackpot loop under control",
+          "detail": "Trap the return and feed No Way Out to relock/recirculate rather than shooting blind"
+        },
+        {
+          "shot": "hotfoot-targets",
+          "action": "Second priority: complete Bigfoot Hotfoot"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Farm Bigfoot Bluff Jackpots during the Hotfoot window",
+          "detail": "6-7 shots possible in ~20 seconds",
+          "feeds": {
+            "x": 0.64,
+            "y": 0.1
+          }
+        },
+        {
+          "shot": "lost-mine",
+          "action": "Collect Gold Rush items as supplementary value",
+          "detail": "Lower priority than main Multiball/Hotfoot"
+        },
+        {
+          "shot": "river-targets",
+          "action": "Build River Class between bigger pushes",
+          "detail": "Protect the ball once River Class is built — don't push risky shots and lose it on a drain"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "strategy-5x-stack",
+      "title": "Strategy — Stack 5X into Multiball or Hotfoot",
+      "category": "strategy",
+      "summary": "The single highest-value play in the game: hold 5X Playfield and cash it during Multiball Jackpots or a Bigfoot Hotfoot run.",
+      "difficulty": 3,
+      "reward": "Jackpots in the 100M+ range per hit",
+      "steps": [
+        {
+          "shot": "insanity-falls",
+          "action": "Cycle the Whirlpool Award ladder toward 5X Playfield",
+          "detail": "Insanity Falls lights each award, Bigfoot Bluff collects it — repeat to award #6"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect 5X Playfield at Bigfoot Bluff"
+        },
+        {
+          "shot": "lite-lock-targets",
+          "action": "Have lock ready to go before you collect 5X",
+          "detail": "You want to be one shot from Multiball when the 25s timer starts"
+        },
+        {
+          "shot": "no-way-out",
+          "action": "Start or continue Multiball while 5X is active",
+          "detail": "Insanity Falls jackpots register at 5x, which is where the 100M+ hits come from."
+        },
+        {
+          "shot": "hotfoot-targets",
+          "action": "Alternatively, time 5X into a Bigfoot Hotfoot run",
+          "detail": "5X stacks with Hotfoot for 50M per Bigfoot Bluff shot"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "extra-secret-passage",
+      "title": "Secret Passage — The Soft Left Orbit",
+      "category": "strategy",
+      "summary": "A Boulder Garden shot without enough speed to complete the loop can drop through the hidden lane under the Spine Chiller ramp, which advances the Raft. It is largely luck — a backhanded left-loop shot is the usual way it happens, not a shot you can call.",
+      "difficulty": 2,
+      "reward": "Raft advance plus lane award",
+      "steps": [
+        {
+          "shot": "boulder-garden",
+          "action": "Shoot the left orbit softly, not flush",
+          "detail": "A full-power shot carries around to the jet bumpers; you want the ball to lag and lose speed near the top of the rail"
+        },
+        {
+          "shot": "secret-passage",
+          "action": "Let the slowed ball fall into the hidden lane",
+          "detail": "Rolling this lane advances the Raft, so it is a cheap way to feed Raft progress toward Wet Willie's"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "extra-ball-two-ways",
+      "title": "Extra Ball — Two Ways In",
+      "category": "strategy",
+      "summary": "Either thread the narrow standup above the right inlane, or take the extra ball rung of the Whirlpool award ladder, which is far safer.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "extra-ball-target",
+          "action": "Thread the narrow standup between the posts above the right inlane",
+          "detail": "High reward but a genuine drain risk — a miss rattles the ball back down the right side"
+        },
+        {
+          "shot": "insanity-falls",
+          "action": "Safer path: light Whirlpool awards at Insanity Falls until the extra ball rung comes up",
+          "detail": "The ladder runs Whirlpool Challenge, Man Overboard, then the extra ball award"
+        },
+        {
+          "shot": "bigfoot-bluff",
+          "action": "Collect the lit extra ball award at Bigfoot Bluff",
+          "detail": "A made Bigfoot Bluff shot banks whichever award is currently lit"
+        }
+      ],
+      "fx": "raft"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "crest-the-plunge",
+      "title": "Crest the Plunge",
+      "desc": "Make the skill shot by plunging softly enough to reach the upper playfield and roll the ball into Insanity Falls.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-insanity-falls"
+    },
+    {
+      "id": "first-slide",
+      "title": "First Slide",
+      "desc": "Score a two-shot combo by shooting Spine Chiller and taking its feed straight into Insanity Falls.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-2way-spine-chiller-insanity-falls"
+    },
+    {
+      "id": "singe-his-feet",
+      "title": "Singe His Feet",
+      "desc": "Hit the white standup targets enough times to start the Bigfoot Hotfoot window.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-bigfoot-hotfoot"
+    },
+    {
+      "id": "three-locks-away",
+      "title": "Three Locks Away",
+      "desc": "Light and lock all three balls at No Way Out to start the main multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-main"
+    },
+    {
+      "id": "into-the-funnel",
+      "title": "Into the Funnel",
+      "desc": "Light the Whirlpool award at Insanity Falls, collect it at Bigfoot Bluff, and start the two-ball Whirlpool Challenge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-whirlpool-challenge"
+    },
+    {
+      "id": "three-items-and-a-hole",
+      "title": "Three Items and a Hole",
+      "desc": "Collect all three Lost Mine items — the shot that picks up the third starts Gold Rush on the spot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-gold-rush"
+    },
+    {
+      "id": "snapshot-season",
+      "title": "Snapshot Season",
+      "desc": "Work the Hotfoot item sequence all the way to the camera so every hazard shot pays a flat bonus for the rest of the ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-camera-craze"
+    },
+    {
+      "id": "find-the-back-way",
+      "title": "Find the Back Way",
+      "desc": "Roll the hidden Secret Passage lane by feathering a soft left-orbit shot, and take the raft advance it awards.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-secret-passage"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Earn an extra ball, either by hitting the narrow standup above the right inlane or by taking the extra ball award off the Whirlpool ladder.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-two-ways"
+    },
+    {
+      "id": "double-falls-run",
+      "title": "Double Falls Run",
+      "desc": "Chain a four-shot combo: Spine Chiller, Insanity Falls, No Way Out, then Insanity Falls a second time off the kickout.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-4way"
+    },
+    {
+      "id": "all-three-through",
+      "title": "All Three Through",
+      "desc": "Send all three balls through Insanity Falls at the start of multiball, before you lose one, to lock in the top jackpot tier.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-main"
+    },
+    {
+      "id": "top-of-the-class",
+      "title": "Top of the Class",
+      "desc": "Complete the five blue standups enough times in one ball to reach the highest River Class.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-river-class"
+    },
+    {
+      "id": "whole-table-hot",
+      "title": "Whole Table Hot",
+      "desc": "Cycle the Whirlpool award ladder to its final award and collect the big playfield multiplier at Bigfoot Bluff.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-5x-playfield"
+    },
+    {
+      "id": "seven-hazards-down",
+      "title": "Seven Hazards Down",
+      "desc": "Reach Wet Willie's and collect all seven lit hazards to finish its first stage and open the timed chase stage.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-wet-willies"
+    },
+    {
+      "id": "chase-the-light",
+      "title": "Chase the Light",
+      "desc": "During Wet Willie's second stage, hit the travelling hazard light while it is lit for the huge per-shot award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mode-wet-willies"
+    },
+    {
+      "id": "five-leg-monster",
+      "title": "Five-Leg Monster",
+      "desc": "Complete a full five-shot combo, finishing the fourth-shot chain with a backhanded Disaster Drop or Boomerang Bend.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "combo-5way"
+    },
+    {
+      "id": "multiplied-jackpot",
+      "title": "Multiplied Jackpot",
+      "desc": "Hold the big playfield multiplier into multiball and cash an Insanity Falls jackpot while it is running.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "strategy-5x-stack"
+    },
+    {
+      "id": "trip-of-a-lifetime",
+      "title": "Trip of a Lifetime",
+      "desc": "Bank all four Vacation Planner legs in one game and lock the third ball to collect the Vacation Bonus and its Special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-vacation-bonus"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunge-band-reps",
+      "title": "Find the Plunge Band",
+      "text": "Full strength sends the ball screaming back down off Spine Chiller instead of cresting the deck. Work the gentle-to-medium band until the ball tops out softly on the upper playfield and rolls Insanity Falls on its own.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-insanity-falls",
+      "shots": [
+        "plunger-lane",
+        "insanity-falls",
+        "spine-chiller"
+      ]
+    },
+    {
+      "id": "spine-chiller-slide",
+      "title": "Spine Chiller Slide",
+      "text": "Every combo in this game opens the same way, so drill the opening pair alone: Spine Chiller, then Insanity Falls off the ramp's own feed with nothing hit in between. Once the pair is automatic, add No Way Out as the third leg.",
+      "reps": "10 pairs, then 5 with the finisher",
+      "focus": "flow",
+      "goal": "combo-3way-no-way-out",
+      "shots": [
+        "spine-chiller",
+        "insanity-falls",
+        "no-way-out"
+      ]
+    },
+    {
+      "id": "no-way-out-both-flippers",
+      "title": "No Way Out, Both Flippers",
+      "text": "This is the shot you take more than any other and it is reachable from either flipper, so cradle and shoot it in equal numbers from the left and the right. Watch what a near miss does — the two green lock targets flank the hole, so an off-line shot still does work.",
+      "reps": "15 from each flipper",
+      "focus": "accuracy",
+      "goal": "multiball-main",
+      "shots": [
+        "no-way-out",
+        "lite-lock-targets"
+      ]
+    },
+    {
+      "id": "second-stage-button",
+      "title": "Second-Stage Button",
+      "text": "The right flipper button is a two-stage switch: press it the rest of the way and the upper flipper fires. Send balls up to the deck and work only that deeper press until Insanity Falls and Bigfoot Bluff come off one clean stroke, because you generally get a single flip up there and no second attempt.",
+      "reps": "10 trips to the deck",
+      "focus": "ball-control",
+      "shots": [
+        "upper-flipper",
+        "insanity-falls",
+        "bigfoot-bluff"
+      ]
+    },
+    {
+      "id": "bluff-repeat-discipline",
+      "title": "Bigfoot Bluff Repeat Discipline",
+      "text": "Trap on the left flipper and feed Bigfoot Bluff again and again instead of chasing combos off it. During Hotfoot the shot kicks straight back to the right inlane, so the return is already set up — the thing being drilled is taking the same shot a sixth time rather than the flashier one.",
+      "reps": "one full Hotfoot window, twice",
+      "focus": "accuracy",
+      "goal": "mode-bigfoot-hotfoot",
+      "shots": [
+        "bigfoot-bluff",
+        "left-flipper",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "dying-orbit-read",
+      "title": "Read a Dying Orbit",
+      "text": "A full-power left orbit carries all the way around to the jets; the hidden lane under the Spine Chiller ramp only catches a ball that has run out of speed near the top of the rail. Backhand the loop soft and watch where it dies. This one is closer to luck than a called shot, so the point is recognizing a dying orbit, not commanding one.",
+      "reps": "15 soft loops",
+      "focus": "ball-control",
+      "goal": "extra-secret-passage",
+      "shots": [
+        "boulder-garden",
+        "secret-passage",
+        "jet-bumpers"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "deck-upper-playfield",
+      "name": "Upper Playfield",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.4,
+        "y": 0.55,
+        "w": 0.45,
+        "h": 0.35
+      },
+      "entries": [
+        "spine-chiller",
+        "no-way-out"
+      ],
+      "exits": [
+        {
+          "x": 0.22,
+          "y": 0.07
+        },
+        {
+          "x": 0.17,
+          "y": 0.2
+        },
+        {
+          "x": 0.78,
+          "y": 0.07
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "White Water has no cabinet button with an in-game job — two flipper buttons, a real spring plunger, and your hips are the whole interface. The one wrinkle worth knowing is that the right flipper button is a two-stage switch: a normal press works the lower right flipper, and pushing it the rest of the way also fires the upper flipper on Bigfoot's raised deck."
+  },
+  "howItPlays": {
+    "objective": "White Water is a widebody raft trip down a mountain river where you run the rapids, lock balls at No Way Out for Multiball, and climb toward the Vacation Bonus. Every hazard you clear and every River Class you raise feeds a fatter end-of-ball payout.",
+    "loop": [
+      "Feather the plunge so the ball crests onto the upper deck and rolls Insanity Falls for the skill shot, then keep defaulting to No Way Out any time nothing else is lit.",
+      "Tap the two green targets flanking No Way Out to light a lock and shoot the scoop; a third locked ball kicks off Multiball.",
+      "Trade Insanity Falls and Bigfoot Bluff back and forth to climb the Whirlpool award ladder up to a full-table multiplier, and sit on it until you can dump it into a multiball or a Hotfoot run.",
+      "Spot R-I-V-E-R on the blue standups or the lit return lane to step your River Class, which scales every hazard and your bonus.",
+      "Reach the top River Class, open Wet Willie's, sweep all of the Whirlpool awards, and lock a third ball to trigger the Vacation Bonus."
+    ],
+    "lights": [
+      {
+        "id": "lock-scoop",
+        "name": "Lock at No Way Out",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "lite-lock-targets"
+          },
+          {
+            "shot": "no-way-out"
+          },
+          {
+            "shot": "insanity-falls"
+          }
+        ],
+        "lit": "The two green targets on either side of No Way Out light a lock; a lit lock means the scoop will hold your next ball rather than kick it back out.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank three balls at No Way Out to erupt into Multiball, then send all three up Insanity Falls before you lose one - three of three sets the top jackpot tier for the rest of the round, so the opening volley is where the points are.",
+        "goals": [
+          "multiball-main"
+        ]
+      },
+      {
+        "id": "river-lanes",
+        "name": "R-I-V-E-R Return Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "One return lane glows as the next R-I-V-E-R letter; roll the ball through the lit one to spot that letter, while the dark lane does nothing for the word.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button walks the lit return lane one step to the side, so you can park it under whichever inlane the ball is dropping toward and catch the letter you still need",
+          "when": "before the ball settles into a return lane"
+        },
+        "then": "Spot all of R-I-V-E-R (the row of blue standups on the left spells it just the same) to raise your River Class one rung, which multiplies every hazard award and your end-of-ball bonus. River Class tumbles back to the bottom the instant a ball drains, so bank the rungs while you still hold the ball.",
+        "goals": [
+          "multiplier-river-class"
+        ]
+      },
+      {
+        "id": "whirlpool-ladder",
+        "name": "Whirlpool Award Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "insanity-falls"
+          },
+          {
+            "shot": "bigfoot-bluff"
+          }
+        ],
+        "lit": "Insanity Falls lights whichever Whirlpool award is next on the ladder, and a made Bigfoot Bluff collects it and steps you up one; each rung stays where it is until you cash it.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the pair upward through Whirlpool Challenge, an extra ball and the rest to reach the top rung, a full-table multiplier. Its timer is short and merciless, so only light it when you are a shot away from Multiball or a Hotfoot window to spend it inside.",
+        "goals": [
+          "multiball-whirlpool-challenge",
+          "extra-ball-two-ways",
+          "multiplier-5x-playfield"
+        ]
+      },
+      {
+        "id": "bigfoot-hotfoot",
+        "name": "Bigfoot Hotfoot",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "hotfoot-targets"
+          },
+          {
+            "shot": "bigfoot-bluff"
+          },
+          {
+            "shot": "lost-mine"
+          }
+        ],
+        "lit": "The pair of white standups above the right flipper light Bigfoot Hotfoot; once it starts, Bigfoot quits swatting the ball away and Bigfoot Bluff stays open for a short farming window.",
+        "flashing": null,
+        "control": null,
+        "then": "Hammer Bigfoot Bluff again and again in that window - it caroms back to the right return lane for a quick reshot and steps the Lost Mine item chain forward, and reaching the camera item switches on Camera Craze, which then pays a flat award on nearly every hazard through the end of that ball. Collect the mine items straight instead and you light the Gold Rush add-a-ball run.",
+        "goals": [
+          "mode-bigfoot-hotfoot",
+          "mode-camera-craze",
+          "multiball-gold-rush"
+        ]
+      },
+      {
+        "id": "wet-willies",
+        "name": "Wet Willie's Hazards",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "disaster-drop"
+          },
+          {
+            "shot": "no-way-out"
+          },
+          {
+            "shot": "spine-chiller"
+          },
+          {
+            "shot": "boulder-garden"
+          },
+          {
+            "shot": "insanity-falls"
+          },
+          {
+            "shot": "bigfoot-bluff"
+          },
+          {
+            "shot": "boomerang-bend"
+          }
+        ],
+        "lit": "Advancing the Raft far enough opens Wet Willie's, which lights all seven hazard shots at once; a lit hazard is one you have not collected, and the set carries from ball to ball until you finish it.",
+        "flashing": null,
+        "control": null,
+        "then": "Gather every lit hazard to close out the first stage, then chase the single travelling light around the same seven shots in the timed second stage, where each on-time hit pays the mode's biggest per-shot award. Draining knocks the Raft back rather than to zero, so it is worth restarting.",
+        "goals": [
+          "mode-wet-willies"
+        ]
+      },
+      {
+        "id": "boulder-jets",
+        "name": "Boulder Bash Jets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "boulder-garden"
+          },
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "Every boulder-garden hit nudges the jet value up for the rest of the game, and each third hit lights a brief Boulder Bash where the jets pay a flat premium on top.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep feeding the left orbit to grow the jets and to trip Boulder Bash, then let the ball ride the bumpers while the window is open. A shot that dies near the top of the rail can also slip the hidden Secret Passage lane and push the Raft along for free.",
+        "goals": [
+          "mode-boulder-bash"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "A tap of either flipper button walks the lit return lane one step to the side; line it up with the inlane the ball is heading down, roll through to spot an R-I-V-E-R letter, and finishing the word lifts your River Class multiplier for hazards and bonus.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Cash the soft-plunge skill shot at Insanity Falls, then lean on No Way Out - your bread-and-butter shot, makeable off either flipper - and work the forgiving Hotfoot targets. Spot R-I-V-E-R off the standups or the lit lane early to get the multiplier climbing.",
+        "goals": [
+          "skillshot-insanity-falls",
+          "strategy-first-30-seconds",
+          "multiplier-river-class"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Lock three at No Way Out for Multiball and run its jackpot loop under control. Cycle the Whirlpool ladder toward the full-table multiplier and hold it, then unload it during Multiball or a Bigfoot Bluff Hotfoot run for the game's fattest hits.",
+        "goals": [
+          "multiball-main",
+          "mode-bigfoot-hotfoot",
+          "multiplier-5x-playfield",
+          "strategy-5x-stack"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The Vacation Bonus is the summit: reach the top River Class, start Wet Willie's, collect all of the Whirlpool awards, and lock a third ball to bank a nine-figure bonus plus a Special before an elevated Multiball even begins. Stacking the full-table multiplier into that Multiball is where the hundred-million hits live.",
+        "goals": [
+          "wizard-vacation-bonus",
+          "mode-wet-willies",
+          "strategy-5x-stack"
+        ]
+      }
+    ]
+  }
+}

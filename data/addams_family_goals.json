@@ -1,0 +1,1275 @@
+{
+  "machine": "The Addams Family (Bally, 1992)",
+  "defaultFx": "ghost",
+  "shots": [
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Far right edge, curves left feeding Thing's Eject. Soft plunge = skill shot; too soft falls into Swamp; too hard flies into pop bumpers.",
+      "feeds": {
+        "shot": "thing-eject"
+      }
+    },
+    {
+      "id": "thing-eject",
+      "name": "Thing's Eject Saucer",
+      "type": "saucer",
+      "x": 0.57,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Animatronic hand mech (\"Thing's Box\"). Skill shot landing spot, THING bonus collect, extra balls, Quick/Thing Multiball start and locks.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "thing-ramp",
+      "name": "Thing Ramp",
+      "type": "ramp",
+      "x": 0.4,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Short hop-ramp immediately left of the Bear Kick ramp; feeds Thing's Eject Saucer.",
+      "feeds": {
+        "shot": "thing-eject"
+      }
+    },
+    {
+      "id": "bear-kick-ramp",
+      "name": "Bear Kick Ramp",
+      "type": "ramp",
+      "x": 0.46,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Center ramp (\"Center Staircase\"), also GRAVE letter \"V\". Shootable from either flipper; normally returns right inlane, diverts to Thing's mini-flipper when Thing Flips is lit. Advances Bear Kick counter and mansion-room milestones.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "million-plus-ramp",
+      "name": "Million Plus Ramp",
+      "type": "ramp",
+      "x": 0.16,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Left/side ramp (\"Staircase Ramp\", \"Left Staircase\"), full gated ramp scoring 1M-10M. Spots THING letters, feeds Thing's mini-flipper.",
+      "feeds": {
+        "shot": "thing-mini-flipper"
+      }
+    },
+    {
+      "id": "adv-x-loop",
+      "name": "Left Orbit / Adv X Loop",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Left flipper up-and-over outer lane, sweeps through the jet bumpers to the upper-right flipper. Lit via right inlane; hardest shot in the game; part of every named combo."
+    },
+    {
+      "id": "electric-chair",
+      "name": "Electric Chair",
+      "type": "scoop",
+      "x": 0.2,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Sinkhole above the left flipper. Yellow lit = collect mansion room; red lit = start multiball.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "swamp",
+      "name": "Swamp",
+      "type": "saucer",
+      "x": 0.76,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Wide sinkhole/kickout below the upper-right flipper (GRAVE letter \"E\" at its entrance). Pays Graveyard value (5x when lit), locks balls, mode-collect scoop.",
+      "flipper": "thing-mini-flipper"
+    },
+    {
+      "id": "vault",
+      "name": "Vault",
+      "type": "scoop",
+      "x": 0.53,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Sinkhole behind the Bookcase, revealed once GREED is spelled. Locks, Quick/Thing Multiball jackpots, Super Jackpot relight, Fester's Tunnel Hunt shot."
+    },
+    {
+      "id": "bookcase",
+      "name": "Bookcase",
+      "type": "mech",
+      "x": 0.53,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Rotating target/gate with GREED standups in front of the mansion art; swings open to expose the Vault once G-R-E-E-D is spelled."
+    },
+    {
+      "id": "train-wreck-target",
+      "name": "Train Wreck Target",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Single standup, high back-left corner. Easiest from the upper-right flipper. Carries the built Graveyard value into the next ball instead of resetting it (first Train Wreck needs 2 hits) and lights extra balls at thresholds; multiball Jackpot shot."
+    },
+    {
+      "id": "cousin-it-targets",
+      "name": "Cousin It Targets",
+      "type": "target-bank",
+      "x": 0.16,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Bank of 4 standups on the left wall above the Electric Chair; easiest from the upper-right flipper. Premium scoring during Hit Cousin It mode."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Graveyard Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.46,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Cluster of 5 spider-cap jets under a graveyard/tombstone plastic. Advances shared Graveyard value; central to Raise the Dead mode."
+    },
+    {
+      "id": "grave-gr-standups",
+      "name": "GRAVE \"G\" & \"R\" Standups",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "2 standups beneath the jet bumpers, part of the permanent GRAVE bonus (G-R-A-V-E)."
+    },
+    {
+      "id": "grave-a-standup",
+      "name": "GRAVE \"A\" Standup",
+      "type": "standup",
+      "x": 0.35,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "Single standup left of the Bear Kick ramp entrance; third letter of GRAVE."
+    },
+    {
+      "id": "swamp-millions-targets",
+      "name": "Swamp Millions Targets",
+      "type": "target-bank",
+      "x": 0.76,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "3 standups flanking the Swamp mouth; score 1M each as a bail-out during 5X Graveyard / Thing Flips."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Manual's \"Right Flipper Lane.\" Lights Adv X at the left orbit; temporarily relights the Electric Chair."
+    },
+    {
+      "id": "near-left-inlane",
+      "name": "Near-Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Lights \"2 Bear Kicks\" — a permanent award that persists until used."
+    },
+    {
+      "id": "far-left-inlane",
+      "name": "Far-Left Inlane",
+      "type": "lane",
+      "x": 0.14,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Manual's \"Left Outer Flipper Lane.\" Lights Thing Flips on the Bear Kick ramp; times out after a few seconds."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Can light \"Special\" after Tour the Mansion is started."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Can light \"Special\" after Tour the Mansion is started."
+    },
+    {
+      "id": "thing-mini-flipper",
+      "name": "Thing's Mini-Flipper",
+      "type": "flipper",
+      "x": 0.16,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Small upper-left corner flipper, left-button-controlled and also AI-auto-fired during \"Thing Flips\" to redirect Bear Kick ramp shots at the Swamp."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-soft-plunge",
+      "title": "Soft-Plunge Skill Shot",
+      "category": "skillshot",
+      "summary": "A gentle plunge crests the ramp and trickles into Thing's Eject for an escalating skill-shot bonus — the highest-EV free shot in the game.",
+      "difficulty": 1,
+      "reward": "2M the first time, then 3M, then 4M, up to a 5M maximum; the value carries forward for the rest of the game",
+      "steps": [
+        {
+          "shot": "thing-eject",
+          "action": "Trickle a soft plunge into Thing's Eject",
+          "detail": "Plunge just hard enough to crest the ramp — too soft drops short into the Swamp, too hard sails past into the pop bumpers. Scores 2M the first time, then 3M, 4M and a 5M maximum, and the value you have reached carries on for the rest of the game. THING letters come from the Million Plus ramp, not from here."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-bank-a-lock",
+      "title": "Bank a Lock Off the Plunger",
+      "category": "skillshot",
+      "summary": "When a Vault lock is lit, deliberately under-plunge into the Swamp instead of taking the skill shot to bank a free multiball lock.",
+      "difficulty": 2,
+      "reward": "Banks a free multiball lock at the Swamp (only when a lock is lit there; no points)",
+      "steps": [
+        {
+          "shot": "swamp",
+          "action": "Plunge slightly short into the Swamp on purpose",
+          "detail": "Aiming just short of Thing's Eject drops the ball into the Swamp instead of scoring the skill shot. Only worthwhile when a lock is lit at the Swamp — otherwise it's just a plain kickout with no award."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-chopping-wood",
+      "title": "\"Chopping Wood\" Money Loop",
+      "category": "combo",
+      "summary": "The single most-farmed sequence in the game: Thing Ramp into the Million Plus ramp into the Swamp, fully repeatable and worth 30M+ per rep once maxed.",
+      "difficulty": 2,
+      "reward": "30M+ per rep once maxed (1M-10M escalating ramp + current Graveyard value, 5x if 5X Graveyard lit)",
+      "steps": [
+        {
+          "shot": "thing-ramp",
+          "action": "Shoot Thing Ramp",
+          "detail": "The Thing Ramp is a short hop that drops the ball into Thing's Eject, which kicks it straight back out for your next shot."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "From the upper-right flipper, shoot the Million Plus ramp",
+          "detail": "Scores an escalating 1M-10M and feeds the upper-left flipper."
+        },
+        {
+          "shot": "swamp",
+          "action": "From the upper-left flipper, finish into the Swamp",
+          "detail": "Pays the current Graveyard value, 5x if 5X Graveyard is lit. Geometry resets every cycle — loop indefinitely."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-3way-bear-opener",
+      "title": "3-Way Combo — Bear Ramp Opener",
+      "category": "combo",
+      "summary": "The game's first named combo: Bear Ramp into the left orbit into the Million Plus ramp for a flat 5M combo award.",
+      "difficulty": 2,
+      "reward": "Flat 5M combo award",
+      "steps": [
+        {
+          "shot": "bear-kick-ramp",
+          "action": "Shoot the center Bear Kick ramp",
+          "detail": "Opens the combo; also advances the Bear Kick counter."
+        },
+        {
+          "shot": "adv-x-loop",
+          "action": "Follow immediately with the left orbit",
+          "detail": "Must be lit as \"Adv Bonus X\" by a prior right-inlane rollover to count toward the combo."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Finish on the Million Plus (left) ramp",
+          "detail": "Completes the 3-way for 5M."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-3way-loop-opener",
+      "title": "3-Way Combo — Loop Opener",
+      "category": "combo",
+      "summary": "The alternate 3-way: left orbit into the Million Plus ramp into the Swamp, same 5M award via a different opener.",
+      "difficulty": 2,
+      "reward": "Flat 5M combo award (interchangeable with the Bear Ramp opener)",
+      "steps": [
+        {
+          "shot": "adv-x-loop",
+          "action": "Shoot the left orbit while Adv X is lit",
+          "detail": "Lit by a right-inlane rollover beforehand."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Continue straight into the Million Plus ramp",
+          "detail": "Second leg of the combo."
+        },
+        {
+          "shot": "swamp",
+          "action": "Finish into the Swamp",
+          "detail": "Completes the 5M 3-way; functionally interchangeable with the Bear Ramp opener."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-4way",
+      "title": "4-Way Combo",
+      "category": "combo",
+      "summary": "The full chain — Bear Ramp, left orbit, Million Plus ramp, Swamp — stacks the 10M 4-way award on top of the embedded 5M 3-way for 16-25M in a single rep.",
+      "difficulty": 3,
+      "reward": "16-25M total once built up: embedded 5M 3-way + 10M 4-way bonus + ramp/Swamp values + a THING star",
+      "steps": [
+        {
+          "shot": "bear-kick-ramp",
+          "action": "Open with the Bear Kick ramp",
+          "detail": "Also bumps Bear Kick counter toward mansion-room milestones."
+        },
+        {
+          "shot": "adv-x-loop",
+          "action": "Shoot the left orbit (Adv X lit)",
+          "detail": "Second leg."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Continue into the Million Plus ramp",
+          "detail": "Third leg, scores its own escalating 1M-10M."
+        },
+        {
+          "shot": "swamp",
+          "action": "Finish into the Swamp",
+          "detail": "Pays the embedded 3-way (5M) plus the 4-way bonus (10M) plus ramp/Swamp values and a THING star — 16-25M total once built up."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-thing-star-farm",
+      "title": "THING Letters & Star Farm",
+      "category": "combo",
+      "summary": "Loop the left orbit through the pop bumpers into the Million Plus ramp to bank THING letters and Stars for free alongside any combo you're running.",
+      "difficulty": 2,
+      "reward": "Up to 2 Stars at 5M each + Thing Bonus (5M/10M/15M, escalating) once THING is spelled",
+      "steps": [
+        {
+          "shot": "adv-x-loop",
+          "action": "Shoot the left orbit through the pop bumpers",
+          "detail": "Lights a Star each time; up to 2 Stars bank at a flat 5M each."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Continue into the Million Plus ramp",
+          "detail": "Spots a THING letter each pass; completing T-H-I-N-G lights the Thing Bonus (5M/10M/15M, escalating across the game) at Thing's Eject."
+        },
+        {
+          "shot": "thing-eject",
+          "action": "Collect at Thing's Eject once THING is spelled",
+          "detail": "Pays the Thing Bonus together with any banked Stars."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-vault-first",
+      "title": "The Vault Multiball — First Lock",
+      "category": "multiball",
+      "summary": "Spell GREED to open the Vault, then bank all three locks (the first two can come from either Thing's Eject or the Vault on this one occasion) and start multiball.",
+      "difficulty": 2,
+      "reward": "Releases all 3 balls, activates The Power magnets, and starts multiball",
+      "steps": [
+        {
+          "shot": "bookcase",
+          "action": "Hit the Bookcase standups to spell G-R-E-E-D",
+          "detail": "5 hits swings the bookcase open and lights the Vault green for lock. A ball dropping in before it's spelled auto-completes GREED."
+        },
+        {
+          "shot": "thing-eject",
+          "action": "Lock ball 1 at Thing's Eject or the Vault",
+          "detail": "On the very first multiball of the game only, locks 1 & 2 can be earned at either shot."
+        },
+        {
+          "shot": "vault",
+          "action": "Lock ball 2 the same way",
+          "detail": "Repeat at either Thing's Eject or the Vault."
+        },
+        {
+          "shot": "vault",
+          "action": "Lock ball 3 at the Vault or the Electric Chair",
+          "detail": "With two balls locked, the third comes into play and both the Vault and the Electric Chair show red — either one takes the last lock and kicks off multiball. The Power is already live while you set this shot up, so expect the ball to swerve as it crosses the middle of the playfield."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Start multiball at the Electric Chair or the lit Vault",
+          "detail": "Whichever is red-lit."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-vault-repeat",
+      "title": "The Vault Multiball — Repeat Lock",
+      "category": "multiball",
+      "summary": "Every multiball after the first requires re-spelling GREED, and only the Vault locks balls — Thing's Eject no longer counts.",
+      "difficulty": 3,
+      "reward": "Jackpot at Train Wreck (+1M per Bear Kick ramp/Bookcase hit, caps at 25M) + Super Jackpot at Million Plus ramp pays triple",
+      "steps": [
+        {
+          "shot": "bookcase",
+          "action": "Re-spell G-R-E-E-D at the Bookcase",
+          "detail": "Required fresh for every multiball after the first."
+        },
+        {
+          "shot": "vault",
+          "action": "Lock all three balls at the Vault",
+          "detail": "On repeat multiballs, the Vault is the only lock location."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Start multiball at the Electric Chair or the lit Vault",
+          "detail": "Jackpot lights at the Train Wreck target, climbing +1M per Bear Kick ramp or Bookcase hit, capping at 25M; Super Jackpot at the Million Plus ramp pays triple on repeat multiballs."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-quick",
+      "title": "Quick Multiball",
+      "category": "multiball",
+      "summary": "A fast, separate award track at Thing's Eject that opens the Vault for direct scoring instead of a full lock sequence.",
+      "difficulty": 2,
+      "reward": "5M per Vault hit, +1M each repeat, capping at 10M, for the duration of Quick Multiball",
+      "steps": [
+        {
+          "shot": "thing-eject",
+          "action": "Shoot Thing's Eject when Quick Multiball is lit",
+          "detail": "Thing grabs the ball and serves it to the Swamp kickout; a second ball is delivered to the plunger lane for you to plunge, and multiball starts as soon as you launch it. Unavailable if regular Multiball is already running."
+        },
+        {
+          "shot": "vault",
+          "action": "Work the open Vault",
+          "detail": "Scores 5M per hit, +1M each repeat, capping at 10M, for as long as Quick Multiball runs."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-thing-countdown",
+      "title": "Thing Multiball (Hurry-Up Countdown)",
+      "category": "multiball",
+      "summary": "A mansion room that starts a fast-counting DMD hurry-up; shoot Thing's Eject before it bottoms out to lock in the value and start a 2-ball multiball.",
+      "difficulty": 2,
+      "reward": "Locked-in countdown value (~15M down to a 3M floor), paid for the whole 2-ball multiball",
+      "steps": [
+        {
+          "shot": "thing-eject",
+          "action": "Shoot Thing's Eject before the countdown bottoms out",
+          "detail": "Value starts around 15M and falls toward a 3M floor; shooting locks in whatever is showing and starts a 2-ball multiball. Overrides Quick Multiball if both are lit."
+        },
+        {
+          "shot": "vault",
+          "action": "Work the Vault for the locked-in value",
+          "detail": "Scores the fixed countdown value for the whole multiball — it doesn't climb further. Bear Kick ramp reroutes to the right inlane during the countdown."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-mamushka",
+      "title": "The Mamushka",
+      "category": "mode",
+      "summary": "A 20-second frenzy mode where every switch scores a flat 250K — pure speed, no precision required.",
+      "difficulty": 1,
+      "reward": "1M mode-start bonus + flat 250K per switch hit for 20 seconds",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the flashing Electric Chair (or Swamp) to start the room",
+          "detail": "Opens with a 1M bonus award."
+        },
+        {
+          "shot": "bear-kick-ramp",
+          "action": "Hit anything you can reach for 20 seconds",
+          "detail": "Every switch scores a flat 250K — Bear Ramp is the fastest reliable repeat shot."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-hit-cousin-it",
+      "title": "Hit Cousin It",
+      "category": "mode",
+      "summary": "A 20-second mode where the Cousin It standups pay a premium over any other switch.",
+      "difficulty": 2,
+      "reward": "1M mode-start bonus + Cousin It standups pay 2M plus a 50K per-hit bonus each (vs 200K base elsewhere) for 20 seconds",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the flashing Electric Chair (or Swamp) to start the room",
+          "detail": "Opens with a 1M bonus award."
+        },
+        {
+          "shot": "cousin-it-targets",
+          "action": "Focus the Cousin It standups for 20 seconds",
+          "detail": "+50K per-hit bonus plus a flat 2M each, versus 200K base for any other switch. Easiest to hit from the upper-right flipper."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-festers-tunnel-hunt",
+      "title": "Fester's Tunnel Hunt",
+      "category": "mode",
+      "summary": "Hit all three scoops in any order for escalating values before the 20-second timer runs out.",
+      "difficulty": 2,
+      "reward": "5M, then 10M, then 15M for the three tunnels — Electric Chair, Swamp and Vault — in any order, before the 20-second timer runs out; the value follows the order you hit them, not which one you hit",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the flashing Electric Chair (or Swamp) to start the room, then hit it again",
+          "detail": "Scores 5M; also awards that mansion room if it's simultaneously flashing."
+        },
+        {
+          "shot": "swamp",
+          "action": "Hit the Swamp",
+          "detail": "Scores 10M."
+        },
+        {
+          "shot": "vault",
+          "action": "Hit the Vault",
+          "detail": "Scores 15M; the Vault closes after this hit and relights for locks afterward. No locking is possible during this mode."
+        }
+      ],
+      "fx": "ghost",
+      "ordered": false
+    },
+    {
+      "id": "mode-seance",
+      "title": "Seance",
+      "category": "mode",
+      "summary": "Three ramp shots in a row — either the Million Plus ramp or the Bear Kick ramp — score 5M, 10M, 15M while The Power magnets actively fight your ball control.",
+      "difficulty": 3,
+      "reward": "5M, 10M, 15M for three straight ramp shots, either ramp (Gold: ~50% Super Seance chance for 10M/15M/20M)",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the flashing Electric Chair (or Swamp) to start Seance",
+          "detail": "The Power magnets activate for the entire 20-second round; Bear Kick ramp reroutes to Thing's mini-flipper."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Make three ramp shots in a row — either ramp counts",
+          "detail": "Scores 5M, then 10M, then 15M on the three successive hits. Gold edition has a ~50% Super Seance chance for 10M/15M/20M. Play centered, safe shots — this mode drains often."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiplier-adv-x",
+      "title": "Light & Advance Bonus X",
+      "category": "multiplier",
+      "summary": "The game's only general multiplier — advance it via the left orbit every time it's lit; it applies only to the end-of-ball bonus.",
+      "difficulty": 1,
+      "reward": "+1x Bonus X (up to 5x) applied to the end-of-ball bonus; resets every ball",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right inlane",
+          "detail": "Lights \"Adv X\" at the left orbit."
+        },
+        {
+          "shot": "adv-x-loop",
+          "action": "Shoot the left orbit while lit",
+          "detail": "Advances Bonus X one step, 1x up to 5x max; resets every ball. Grab it opportunistically — the lit window times out in a few seconds."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-5x-graveyard",
+      "title": "5X Graveyard at the Swamp",
+      "category": "multiplier",
+      "summary": "A shot-specific multiplier: build the Graveyard value in the jets, then cash it at 5x with a single Swamp shot.",
+      "difficulty": 2,
+      "reward": "5x the current Graveyard value instead of 1x + Swamp Millions standups light for 1M each under the same timer",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Build the Graveyard value in the jet bumpers",
+          "detail": "Unlit jets score 10K, lit 20K, flashing 30K per hit, and the value climbs from 1M at the start of each ball to a 4M ceiling. The Graveyard at Max room flips every jet to flashing so each hit adds 30K, but you still have to feed the nest to build the value."
+        },
+        {
+          "shot": "swamp",
+          "action": "Shoot the Swamp while 5X Graveyard is lit",
+          "detail": "Pays 5x the current Graveyard value instead of the normal 1x; the three Swamp Millions standups also light for flat 1M under the same timer."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-qualify-tour",
+      "title": "Qualify & Start Tour the Mansion",
+      "category": "wizard",
+      "summary": "Clear all 12 mansion rooms to light the \"?\" insert, then shoot it to trigger the game's wizard mode.",
+      "difficulty": 3,
+      "reward": "Instant 50,000,000 + relit 3M/6M/9M + Special in outlanes + Quick Multiball lit + Graveyard maxed + temp Extra Ball at Thing's Eject",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Collect mansion rooms by shooting the flashing Electric Chair (or Swamp)",
+          "detail": "Order doesn't matter; repeats simply re-flash the next uncollected room. Includes the 3M/6M/9M rooms, the 5 timed rooms, Quick/Thing Multiball rooms, Graveyard at Max, and Light Extra Ball.",
+          "link": "none"
+        },
+        {
+          "shot": "swamp",
+          "action": "Keep collecting until the \"?\" insert lights",
+          "detail": "Lights only after all 12 standard rooms have been cleared.",
+          "link": "none"
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the flashing Electric Chair or Swamp to start Tour the Mansion",
+          "detail": "Instantly awards 50,000,000, relights 3M/6M/9M, lights Special in the outlanes, lights Quick Multiball, maxes the Graveyard, and lights a temporary Extra Ball at Thing's Eject."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-tour-gauntlet",
+      "title": "Tour the Mansion: The 5-Mode Gauntlet",
+      "category": "wizard",
+      "summary": "Once Tour the Mansion starts, the five timed rooms run automatically back-to-back — clear as many as you can before the ball drains.",
+      "difficulty": 3,
+      "reward": "Points from each timed room cleared (Raise the Dead alone up to ~20M) + Thing Multiball if all five are cleared",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Clear The Mamushka",
+          "detail": "Hit anything for 20 seconds at 250K/switch."
+        },
+        {
+          "shot": "cousin-it-targets",
+          "action": "Clear Hit Cousin It",
+          "detail": "Prioritize the Cousin It standups for the premium payout."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Clear Seance",
+          "detail": "Three ramp shots for 5M/10M/15M while The Power magnets are live — play it safe."
+        },
+        {
+          "shot": "vault",
+          "action": "Clear Fester's Tunnel Hunt",
+          "detail": "Chair, Swamp, Vault each once for 5M/10M/15M."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Clear Raise the Dead",
+          "detail": "Hit each of the 5 jet bumpers 4 times; up to ~20M if fully cleared. Thing Multiball follows if you clear through all five."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener: Plunge, Bear Ramp, Left Ramp",
+      "category": "strategy",
+      "summary": "The highest-percentage opening sequence of the game, chaining the skill shot straight into the two most reliable ramp shots.",
+      "difficulty": 1,
+      "reward": "2-5M skill shot + THING letter progress + possible lock, then an escalating 1M-10M per Million Plus ramp shot",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Soft-plunge for the skill shot",
+          "detail": "2-5M, and a free lock if Thing's Eject is lit for one."
+        },
+        {
+          "shot": "bear-kick-ramp",
+          "action": "Take the Bear Ramp from the right flipper",
+          "detail": "Thing's kickout almost always feeds the right flipper next — it's the most reliable repeat shot from there.",
+          "flipper": "right"
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Follow with the Million Plus (left) ramp",
+          "detail": "Builds THING letters and scores an escalating 1M-10M per shot."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "First 30 Seconds — Beginner Progression",
+      "category": "strategy",
+      "summary": "A safe, concrete progression for a fresh ball that banks value while learning the flipper geometry.",
+      "difficulty": 1,
+      "reward": "Skill-shot value, early THING letters, and Bonus X banked safely while learning the flipper geometry",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Soft-plunge for the skill shot",
+          "detail": "Highest-EV free shot on the table — never full-plunge on purpose."
+        },
+        {
+          "shot": "bear-kick-ramp",
+          "action": "Take whichever ramp the feed gives you safely",
+          "detail": "Bear Ramp from the right flipper is the standard first real shot.",
+          "flipper": "right"
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Loop Bear Ramp into the Million Plus ramp 2-3 times",
+          "detail": "Banks early THING letters and starts the Bonus X climbing."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Take Chair or Swamp as soon as a mansion room is lit",
+          "detail": "Alternating the Bear Kick and the Chair is the classic beginner core loop and the path toward Tour the Mansion. Avoid low-percentage shots like Train Wreck until flipper control is established."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-rooms-before-vault",
+      "title": "Tournament Priority: Rooms Before Vault",
+      "category": "strategy",
+      "summary": "Competitive players delay GREED/Vault multiball until every mansion room is cleared, since rooms can't be collected during multiball.",
+      "difficulty": 3,
+      "reward": "All 12 mansion-room awards plus Tour the Mansion's 50M and extra balls banked before Vault Multiball becomes the endgame farm",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Clear mansion rooms via Chair/Swamp repeatedly",
+          "detail": "Rooms cannot be collected during multiball, so serious players clear all 12 before ever spelling GREED."
+        },
+        {
+          "shot": "train-wreck-target",
+          "action": "Bank a Train Wreck at the back-left standup early",
+          "detail": "Carries the built Graveyard value into the next ball (first Train Wreck needs 2 hits), which is what makes the Swamp shot worth farming later."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Reach and clear Tour the Mansion",
+          "detail": "50M instantly, plus relights everything and typically lights two extra balls."
+        },
+        {
+          "shot": "bookcase",
+          "action": "Only then spell GREED and run Vault Multiball",
+          "detail": "Once the rooms are exhausted, multiball is the main thing left worth chasing — it is the designated endgame farm."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "milestone-extra-ball",
+      "title": "Light and Collect the Extra Ball",
+      "category": "strategy",
+      "summary": "Among the twelve mansion rooms is one that puts an extra ball waiting for you at Thing's Eject; on standard settings it holds there through a drain and follows you into the next ball until you finally collect it. The exception is the Tour the Mansion extra ball, which won't wait — miss it and it's gone once that ball ends.",
+      "difficulty": 2,
+      "reward": "One extra ball (a second is typically lit by Tour the Mansion)",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Keep taking the flashing Chair or Swamp until the extra-ball room is awarded",
+          "detail": "Room order is fixed by what you have already cleared, so just keep collecting rooms — the extra-ball room comes up on its own."
+        },
+        {
+          "shot": "thing-eject",
+          "action": "Shoot Thing's Eject while the extra ball is lit",
+          "detail": "The saucer is the only place the extra ball is collected. Take it on the next clean feed to the right flipper instead of chasing another room first."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-raise-the-dead",
+      "title": "Raise the Dead",
+      "category": "mode",
+      "summary": "A jet-bumper room: each of the five bumpers has to be hit four times inside a 30-second timer. The round opens with 2M banked, every bumper hit adds 100K, and each bumper you finish off is worth 3M.",
+      "difficulty": 3,
+      "reward": "Up to roughly 20M for a full clear",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Start the room from the flashing Electric Chair or Swamp",
+          "detail": "Once it starts the jets do most of the work for you — the risk is the ball leaving the jet nest early."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Keep the ball alive in the jet nest until all five bumpers show four hits each",
+          "detail": "Feed the nest back off the left orbit if the ball escapes; a ball that rattles around the bumpers on its own is the fastest way to a full clear."
+        },
+        {
+          "shot": "swamp",
+          "action": "Cash whatever Graveyard value you built at the Swamp",
+          "detail": "Finishing the round does not top the Graveyard up — the bumper hits nudge it along like any other jet traffic, so the Swamp pays only what you actually built."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-super-jackpot",
+      "title": "Jackpot into Super Jackpot",
+      "category": "multiball",
+      "summary": "During multiball the Train Wreck target holds the jackpot; collect it and the Super Jackpot opens up on the Million Plus ramp, paying triple on any multiball after the first.",
+      "difficulty": 3,
+      "reward": "Jackpot up to 25M at the Train Wreck, then a Super Jackpot at triple that on repeat multiballs",
+      "steps": [
+        {
+          "shot": "bear-kick-ramp",
+          "action": "Pump the jackpot value with center-ramp and Bookcase hits",
+          "detail": "Each hit adds a million to the jackpot, capping at 25M. Build it while you still have all the balls in play."
+        },
+        {
+          "shot": "train-wreck-target",
+          "action": "Collect the jackpot at the Train Wreck standup",
+          "detail": "Awkward shot under multiball chaos — trap up if you can and take it deliberately rather than flailing at it."
+        },
+        {
+          "shot": "million-plus-ramp",
+          "action": "Take the Super Jackpot on the Million Plus ramp",
+          "detail": "It lights only after the jackpot is collected, and on repeat multiballs it pays triple, making it the single biggest shot of the sequence."
+        }
+      ],
+      "fx": "ghost"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "thing-box-opener",
+      "title": "Hand Delivered",
+      "desc": "Score the skill shot by trickling a soft plunge into Thing's Eject saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-soft-plunge"
+    },
+    {
+      "id": "thing-spelled",
+      "title": "Five Letters, One Hand",
+      "desc": "Spell T-H-I-N-G and collect the Thing Bonus at Thing's Eject.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-thing-star-farm"
+    },
+    {
+      "id": "first-timed-room",
+      "title": "One Room Down",
+      "desc": "Start and play out a timed mansion room from the flashing Electric Chair or Swamp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-mamushka"
+    },
+    {
+      "id": "quick-multiball-started",
+      "title": "Two Balls In A Hurry",
+      "desc": "Start Quick Multiball at Thing's Eject and score at least one hit on the opened Vault.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-quick"
+    },
+    {
+      "id": "thing-hurry-up-multiball",
+      "title": "Beat The Countdown",
+      "desc": "Start Thing Multiball by hitting Thing's Eject before the hurry-up countdown reaches its floor.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-thing-countdown"
+    },
+    {
+      "id": "vault-multiball-started",
+      "title": "Three In The Vault",
+      "desc": "Spell GREED, lock all three balls, and start Vault Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-vault-first"
+    },
+    {
+      "id": "bonus-x-maxed",
+      "title": "Multiplier Ceiling",
+      "desc": "Climb the bonus multiplier to 5x on a single ball using lit left-orbit shots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-adv-x"
+    },
+    {
+      "id": "graveyard-five-x-cashed",
+      "title": "Five Times Buried",
+      "desc": "Build the Graveyard value in the jets, then cash it in the Swamp while the 5X award is lit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-5x-graveyard"
+    },
+    {
+      "id": "cousin-it-cleared",
+      "title": "All Hair, No Face",
+      "desc": "Score the premium Cousin It standups during the Hit Cousin It room.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-hit-cousin-it"
+    },
+    {
+      "id": "tunnel-hunt-swept",
+      "title": "Three Holes, One Timer",
+      "desc": "Hit the Chair, the Swamp, and the Vault all in one run of Fester's Tunnel Hunt.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-festers-tunnel-hunt"
+    },
+    {
+      "id": "extra-ball-collected",
+      "title": "One More Turn",
+      "desc": "Light the extra ball from the mansion-room award and collect it at Thing's Eject.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "milestone-extra-ball"
+    },
+    {
+      "id": "seance-swept",
+      "title": "Three Under The Magnets",
+      "desc": "Make all three Million Plus ramp shots during Seance while The Power is grabbing the ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-seance"
+    },
+    {
+      "id": "raise-the-dead-cleared",
+      "title": "Every Grave Opened",
+      "desc": "Finish Raise the Dead by hitting all five jet bumpers four times each before the timer expires.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-raise-the-dead"
+    },
+    {
+      "id": "jackpot-collected",
+      "title": "Off The Rails",
+      "desc": "Collect a jackpot at the Train Wreck target during multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-vault-repeat"
+    },
+    {
+      "id": "super-jackpot-collected",
+      "title": "Triple Payout",
+      "desc": "Follow a collected jackpot with the Super Jackpot on the Million Plus ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-super-jackpot"
+    },
+    {
+      "id": "chopping-wood-chain",
+      "title": "Keep Chopping",
+      "desc": "Run the Thing Ramp into Million Plus ramp into Swamp cycle three times without losing the ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-chopping-wood"
+    },
+    {
+      "id": "all-twelve-rooms",
+      "title": "Whole House Toured",
+      "desc": "Clear all twelve mansion rooms so the question-mark insert lights, then start the wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-qualify-tour"
+    },
+    {
+      "id": "tour-fully-cleared",
+      "title": "Five Rooms, No Drain",
+      "desc": "Clear all five timed rooms inside Tour the Mansion on one ball and take the multiball that follows.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-tour-gauntlet"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-soft-plunge-thing",
+      "title": "Trickle It Into Thing",
+      "text": "Plunge just hard enough to crest the ramp so the ball dribbles into Thing's Eject. Too soft drops short into the Swamp and too hard sails into the pops, and the value you reach carries for the rest of the game, so this is the one shot worth grooving before anything else.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-soft-plunge",
+      "shots": [
+        "plunger-lane",
+        "thing-eject"
+      ]
+    },
+    {
+      "id": "drill-bear-ramp-off-kickout",
+      "title": "Bear Ramp Off The Kickout",
+      "text": "Take Thing's Eject, then put the return straight up the Bear Kick ramp. The kickout almost always feeds the right flipper, so this pairing is the most repeatable thing on the machine and the reason it opens most good balls.",
+      "reps": "15 pairs",
+      "focus": "accuracy",
+      "goal": "strategy-best-opener",
+      "shots": [
+        "thing-eject",
+        "bear-kick-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-chopping-wood",
+      "title": "Chopping Wood",
+      "text": "Run Thing Ramp into the Million Plus ramp into the Swamp, then go again. The geometry resets every cycle so the loop never runs out, which is exactly why it is the most farmed sequence on the machine.",
+      "reps": "5 cycles",
+      "focus": "flow",
+      "goal": "combo-chopping-wood",
+      "shots": [
+        "thing-ramp",
+        "million-plus-ramp",
+        "swamp"
+      ]
+    },
+    {
+      "id": "drill-adv-x-loop",
+      "title": "The Hardest Shot, Lit",
+      "text": "Roll the right inlane to light Adv X, then take the left orbit before the light times out. It is the hardest shot on the table and the window is only a few seconds wide, so both halves have to be one decision.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "multiplier-adv-x",
+      "shots": [
+        "right-inlane",
+        "adv-x-loop"
+      ]
+    },
+    {
+      "id": "drill-play-through-the-power",
+      "title": "Play Through The Power",
+      "text": "Run a Seance round taking only the Million Plus ramp and the Bear Kick ramp, and expect the ball to swerve as it crosses the middle. The magnets are live for the whole round, so the drill is holding your line while the machine actively works against it.",
+      "reps": "3 rounds",
+      "focus": "ball-control",
+      "goal": "mode-seance",
+      "shots": [
+        "million-plus-ramp",
+        "bear-kick-ramp"
+      ]
+    },
+    {
+      "id": "drill-four-way-chain",
+      "title": "The Four-Way",
+      "text": "Bear Kick ramp, left orbit, Million Plus ramp, Swamp, in that order, with Adv X lit before you start. The four-way pays on top of the three-way buried inside it, so the last leg into the Swamp is where the whole chain cashes.",
+      "reps": "3 complete chains",
+      "focus": "flow",
+      "goal": "combo-4way",
+      "shots": [
+        "bear-kick-ramp",
+        "adv-x-loop",
+        "million-plus-ramp",
+        "swamp"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Nothing extra to press on this cabinet — it is 1992, two flipper buttons and a manual shooter rod. The third flipper in the upper left corner runs off your left button (and the game fires it for you during Thing Flips), and the two playfield magnets are entirely the game's doing, not yours."
+  },
+  "howItPlays": {
+    "objective": "The Addams Family is a 1992 Bally romp through a haunted mansion. Tour all twelve mansion rooms to reach the game's wizard mode, and open the hidden Vault to run multiball.",
+    "loop": [
+      "Feather the plunge so the ball settles into Thing's Eject for the skill shot, then work the Bear Kick ramp and the Million Plus ramp to spot THING letters and bank a rising one to ten million.",
+      "Take the flashing Electric Chair or Swamp whenever a mansion room lights -- some rooms pay a flat award and five of them run a 20-second timed mode.",
+      "Feed the graveyard jets to raise the Graveyard value, then cash it at five times over with a single Swamp shot.",
+      "Spell GREED at the Bookcase to swing it open and expose the Vault, lock three balls, and start Vault Multiball.",
+      "Clear all twelve rooms to light the question-mark insert, then start Tour the Mansion for an instant fifty million."
+    ],
+    "lights": [
+      {
+        "id": "things-eject",
+        "name": "Thing's Eject",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "thing-eject"
+          }
+        ],
+        "lit": "Thing's animatronic hand lives in this saucer; a soft plunge trickles in for the skill shot, and later a lit insert here means a mansion-room extra ball is parked and waiting.",
+        "flashing": "Flashing means Quick Multiball or the Thing hurry-up is lit -- shoot it and Thing serves the ball to the Swamp to start a fast, separate multiball.",
+        "control": null,
+        "then": "Groove this plunge before anything else, since its value climbs from two million toward five and holds for the whole game. It is also the only place a lit extra ball is collected.",
+        "goals": [
+          "skillshot-soft-plunge",
+          "multiball-quick",
+          "multiball-thing-countdown",
+          "milestone-extra-ball"
+        ]
+      },
+      {
+        "id": "ramp-loop",
+        "name": "Ramp Loop",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "thing-ramp"
+          },
+          {
+            "shot": "bear-kick-ramp"
+          },
+          {
+            "shot": "million-plus-ramp"
+          }
+        ],
+        "lit": "These are your bread-and-butter shots: the Million Plus ramp lights a rising one-to-ten-million and spots a THING letter each pass, while the center Bear Kick ramp advances its counter toward mansion rooms.",
+        "flashing": "When Thing Flips lights off the far-left inlane, the Bear Kick ramp flashes and diverts to Thing's mini-flipper so you can send it at the Swamp.",
+        "control": null,
+        "then": "Chain Thing Ramp, then the Million Plus ramp, then finish in the Swamp -- the Chopping Wood loop -- and it resets each cycle, so you can farm it for tens of millions once the Graveyard value is built.",
+        "goals": [
+          "combo-chopping-wood",
+          "combo-thing-star-farm",
+          "strategy-best-opener"
+        ]
+      },
+      {
+        "id": "advance-bonus-x",
+        "name": "Advance Bonus X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "adv-x-loop"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A right-inlane rollover arms Adv X at the left orbit; a shot through the lit orbit steps your end-of-ball bonus multiplier up one, to a five-times ceiling.",
+        "flashing": null,
+        "control": null,
+        "then": "Grab it whenever it lights, because the window times out in seconds and the multiplier resets each ball. The left orbit is also the opening leg of every named combo, so the shot pulls double duty.",
+        "goals": [
+          "multiplier-adv-x",
+          "combo-3way-loop-opener",
+          "combo-4way"
+        ]
+      },
+      {
+        "id": "graveyard-value",
+        "name": "Graveyard Value & 5X Swamp",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "swamp"
+          }
+        ],
+        "lit": "The jet bumpers build a shared Graveyard value that climbs as you feed the nest; when 5X Graveyard lights, the Swamp pays that value five times over on one shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Pump the jets to raise the value, then cash it at the Swamp while 5X is lit. Bank a Train Wreck target first and the built value follows you into the next ball rather than resetting.",
+        "goals": [
+          "multiplier-5x-graveyard",
+          "mode-raise-the-dead"
+        ]
+      },
+      {
+        "id": "greed-vault",
+        "name": "GREED Bookcase & Vault",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "bookcase"
+          },
+          {
+            "shot": "vault"
+          }
+        ],
+        "lit": "The GREED standups on the Bookcase stay lit until you knock down all five letters, which swings the bookcase open and reveals the Vault glowing green for a lock.",
+        "flashing": "The Vault glows red once two balls are locked -- taking that last lock, or the red Electric Chair, kicks off Vault Multiball.",
+        "control": null,
+        "then": "Lock three balls to start multiball; every one after the first makes you re-spell GREED and locks only at the Vault. The jackpot waits at the Train Wreck target, and on repeat multiballs the Million Plus ramp Super Jackpot pays triple.",
+        "goals": [
+          "multiball-vault-first",
+          "multiball-vault-repeat",
+          "multiball-super-jackpot"
+        ]
+      },
+      {
+        "id": "mansion-rooms",
+        "name": "Mansion Rooms",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "electric-chair"
+          },
+          {
+            "shot": "swamp"
+          }
+        ],
+        "lit": "A yellow-lit Electric Chair or Swamp is a mansion room ready to collect; some pay a flat award, five start a 20-second timed mode, and every room you take stays banked toward the twelve.",
+        "flashing": "A red-lit Chair or Swamp starts a multiball instead of a room.",
+        "control": null,
+        "then": "Keep taking the lit Chair or Swamp until all twelve rooms are cleared, which lights the question-mark insert; shoot it to start Tour the Mansion for an instant fifty million that relights the playfield and runs the five timed rooms back to back.",
+        "goals": [
+          "wizard-qualify-tour",
+          "wizard-tour-gauntlet",
+          "mode-festers-tunnel-hunt"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the best free shot first -- the soft-plunge skill shot -- then settle into the Bear Kick ramp off the right flipper and up the Million Plus ramp. Collect a mansion room off the Chair or Swamp the moment one lights.",
+        "goals": [
+          "skillshot-soft-plunge",
+          "strategy-best-opener",
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Farm the Chopping Wood loop through Thing Ramp, the Million Plus ramp and the Swamp, and build the Graveyard value in the jets to cash at five times. Bank a Train Wreck target so that value carries between balls.",
+        "goals": [
+          "combo-chopping-wood",
+          "multiplier-5x-graveyard",
+          "combo-4way"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear all twelve rooms for Tour the Mansion and its instant fifty million, the largest single award on the game. Once the rooms are gone, Vault Multiball and its triple Super Jackpot become the endgame farm.",
+        "goals": [
+          "wizard-qualify-tour",
+          "wizard-tour-gauntlet",
+          "multiball-super-jackpot"
+        ]
+      }
+    ]
+  }
+}

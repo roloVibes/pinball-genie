@@ -1,0 +1,1017 @@
+{
+  "machine": "FunHouse (Williams, 1990)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Manual plunger. The skill shot is a soft plunge that dies in the top loop and rolls back into Rudy's Hideout rather than a full-power shot."
+    },
+    {
+      "id": "rudys-hideout",
+      "name": "Rudy's Hideout",
+      "type": "saucer",
+      "x": 0.5281,
+      "y": 0.7265,
+      "trim": "all",
+      "notes": "A kicker tucked behind Rudy's head. Target of the skill shot, and worth 75K any time you find it during normal play."
+    },
+    {
+      "id": "trapdoor-loop",
+      "name": "Trapdoor Loop",
+      "type": "loop",
+      "x": 0.86,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Running this loop is what opens the Trapdoor. It also advances the clock 10 minutes and flashes the right Gangway."
+    },
+    {
+      "id": "trapdoor",
+      "name": "Trapdoor",
+      "type": "mech",
+      "x": 0.6,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Open for roughly eight seconds after a loop. The big-ticket shot of the game and the Million-plus shot during Midnight Multiball. Disabled during Quick Multiball."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.49,
+      "trim": "all",
+      "notes": "Normally returns to the left inlane, but diverts to the Steps plunger when the blue STEPS light is on at its entrance. Reopens the Trapdoor during Midnight Multiball.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "rudy",
+      "name": "Rudy",
+      "type": "bash-toy",
+      "x": 0.5288,
+      "y": 0.7949,
+      "trim": "all",
+      "notes": "The dummy head. His jaw is hit from the side flipper; his mouth only falls open at midnight. He talks constantly, and that matters — see Rudy Gulp."
+    },
+    {
+      "id": "side-flipper",
+      "name": "Side Flipper",
+      "type": "flipper",
+      "x": 0.81,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "The upper flipper that feeds Rudy's jaw. Jaw hits build the end-of-ball bonus and relight the Mirror."
+    },
+    {
+      "id": "wind-tunnel",
+      "name": "Wind Tunnel / Mystery Mirror",
+      "type": "scoop",
+      "x": 0.27,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Awards 15 clock minutes normally, or the flashing Mirror award when the white MIRROR light is on. Once all six Mirror awards are collected it starts Super Frenzy instead."
+    },
+    {
+      "id": "hidden-hallway",
+      "name": "Hidden Hallway",
+      "type": "lock",
+      "x": 0.14,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "The ball lock, and where the extra ball light lives. Advances the clock 10 minutes. Above 11:30 this is the only shot that moves the clock at all."
+    },
+    {
+      "id": "steps-ramp",
+      "name": "Steps Ramp",
+      "type": "ramp",
+      "x": 0.2,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Reached from the Center Ramp or a left outlane drain once Steps Open has been awarded. Three lit steps sit on it; shooting all the way to the top buys 20 seconds of Superdog."
+    },
+    {
+      "id": "step-targets",
+      "name": "S-T-E-P Targets",
+      "type": "target-bank",
+      "x": 0.36,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "Complete all four to light one unlit step. The order is fixed — Light Frenzy first, 500K second, Light Extra Ball last. Every individual target you hit also adds 5 clock minutes, so a full pass through the bank is worth 20."
+    },
+    {
+      "id": "superdog-targets",
+      "name": "Superdog Targets",
+      "type": "standup",
+      "x": 0.43,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Add 5 clock minutes each. Superdog time freezes several of the game's timers while it runs."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers (3)",
+      "type": "bumpers",
+      "x": 0.3,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Worth 0 clock minutes unlit, 5 when lit and 10 when flashing. The lane between the bumpers and the right inlanes lights an unlit bumper or flashes a lit one."
+    },
+    {
+      "id": "manhole",
+      "name": "Manhole",
+      "type": "saucer",
+      "x": 0.29,
+      "y": 0.71,
+      "trim": "all",
+      "notes": "Below the jet bumpers. The single biggest clock advance in the game at 30 minutes, and it opens the Steps."
+    },
+    {
+      "id": "left-gangway",
+      "name": "Left Gangway",
+      "type": "lane",
+      "x": 0.19,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Set flashing by the inside right inlane. Hitting it while it flashes pays a value that carries between balls until the extra ball is lit."
+    },
+    {
+      "id": "right-gangway",
+      "name": "Right Gangway",
+      "type": "lane",
+      "x": 0.81,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Set flashing by the Trapdoor loop or the left inlane. Gangway lights only stay on a few seconds, so the follow-up has to be immediate."
+    },
+    {
+      "id": "right-center-lane",
+      "name": "Right Center Lane",
+      "type": "lane",
+      "x": 0.66,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Relights the MIRROR light for about four seconds — a cheap way to re-arm the Mystery Mirror without going near Rudy."
+    },
+    {
+      "id": "clock",
+      "name": "The Clock",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.89,
+      "trim": "all",
+      "notes": "Starts at 8:00 and holds its value between balls. Almost everything you do moves it. It resets to 5:00 after the Midnight Multiball sequence finishes."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.23,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Flashes the right Gangway. Where the Center Ramp returns the ball when Steps are not open."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Inside Right Inlane",
+      "type": "lane",
+      "x": 0.77,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Flashes the left Gangway."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Not always fatal — once Steps Open is awarded, a left outlane drain feeds the Steps plunger instead."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries the Special light once the clock reaches 11:30 for a second time in a game."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Trapdoor loop and the right side of the playfield."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Center Ramp, Wind Tunnel and Hidden Hallway."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Plunger Skill Shot",
+      "category": "skillshot",
+      "summary": "Not a full-power plunge. You want the ball to run out of speed in the top loop and roll back down into Rudy's Hideout. It pays 250K the first time, then 500K, 750K and a million every time after.",
+      "difficulty": 2,
+      "reward": "250K climbing to 1M",
+      "steps": [
+        {
+          "shot": "rudys-hideout",
+          "action": "Plunge softly so the ball stalls in the top loop",
+          "detail": "Not a full-power plunge — you want it to run out of speed in the loop and roll back down into the Hideout, where the kicker sits behind Rudy's head. Value climbs with each collection."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "the-clock",
+      "title": "Advance The Clock",
+      "category": "progression",
+      "summary": "The clock is FunHouse. It starts at 8:00, holds between balls, and getting it to midnight is the entire game. Almost every shot moves it, so knowing which ones move it most is the difference between reaching Rudy and running out of balls.",
+      "difficulty": 2,
+      "reward": "Progress toward Midnight Multiball",
+      "steps": [],
+      "instructions": [
+        "Biggest advances: the Manhole and starting a ball are both worth 30 minutes.",
+        "Middle tier: the Wind Tunnel and Center Ramp give 15 minutes — the ramp then climbs to 20, 25 and 30 on repeat hits.",
+        "Small change: Hidden Hallway and the Trapdoor and its loop give 10 each; STEP and Superdog targets give 5.",
+        "Jet bumpers give nothing unlit, 5 lit, 10 flashing — so lighting them first genuinely matters.",
+        "Frenzy and Quick Multiball both cap the clock at 11:25 — do not waste those seconds trying to push it further.",
+        "At 11:30 the only thing that advances it is locking a ball in the Hidden Hallway, which takes you to 11:45; the next lock is midnight."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "trapdoor-ladder",
+      "title": "The Trapdoor Ladder",
+      "category": "strategy",
+      "summary": "Run the Trapdoor loop and the Trapdoor opens for about eight seconds. The first is worth 500K off a single loop; after that it takes two consecutive loops for 750K, and three for a million. The price goes up as the prize does.",
+      "difficulty": 2,
+      "reward": "500K, then 750K, then 1M",
+      "steps": [
+        {
+          "shot": "trapdoor-loop",
+          "action": "Run the loop",
+          "detail": "One loop opens it the first time; later opens need two then three consecutive loops"
+        },
+        {
+          "shot": "trapdoor",
+          "action": "Hit it inside eight seconds",
+          "detail": "A ball rolling back over the loop sensor behind the Trapdoor also collects the award"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "center-ramp",
+      "title": "Center Ramp Repeat",
+      "category": "combo",
+      "summary": "75K and 15 minutes to start, climbing to 100K, 125K and 150K with 30 minutes from then on. It resets every ball and after Midnight Multiball, so the value is something you rebuild rather than bank.",
+      "difficulty": 1,
+      "reward": "75K to 150K plus 15-30 clock minutes",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Repeat the ramp",
+          "detail": "Each hit is worth more than the last until it caps"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Watch the STEPS light",
+          "detail": "With it lit at the ramp entrance, your ramp shot ends at the Steps plunger, not the left inlane"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "gangways",
+      "title": "Gangway Awards",
+      "category": "combo",
+      "summary": "The inlanes cross-light the Gangways — right inlane flashes the left one, left inlane and the Trapdoor loop flash the right. They pay 150K, 200K, 250K and then 250K plus the extra ball light. The lights die after a few seconds, so this is a reflex shot.",
+      "difficulty": 2,
+      "reward": "150K climbing to 250K, then lights extra ball",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the inside right inlane",
+          "detail": "This starts the left Gangway flashing"
+        },
+        {
+          "shot": "left-gangway",
+          "action": "Hit it while it is still flashing",
+          "detail": "You have only a few seconds; hitting an unlit Gangway just starts it flashing instead"
+        },
+        {
+          "shot": "right-gangway",
+          "action": "Work the other side too",
+          "detail": "That value survives from ball to ball right up until Extra Ball lights; every ball after that one starts the Gangway back at 75K",
+          "link": "none"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "mystery-mirror",
+      "title": "Mystery Mirror",
+      "category": "mode",
+      "summary": "With the white MIRROR light on, the Wind Tunnel pays whichever of six awards is flashing. The light is on at the start of every ball, goes out when you collect, and comes back on when you hit Rudy's jaw — or briefly from the right centre lane.",
+      "difficulty": 2,
+      "reward": "One of six awards",
+      "steps": [
+        {
+          "shot": "rudy",
+          "action": "Relight the Mirror off Rudy's jaw",
+          "detail": "The right centre lane also relights it, for about four seconds"
+        },
+        {
+          "shot": "wind-tunnel",
+          "action": "Shoot the Wind Tunnel while lit",
+          "detail": "Awards include Extra Ball Is Lit, Million Is Lit, Jet Bumpers At Maximum, Steps Open and Quick Multiball"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "steps",
+      "title": "The Steps",
+      "category": "mode",
+      "summary": "Three lit steps on their own ramp, reached via the Center Ramp or — unusually — a left outlane drain, once Steps Open has been awarded. The S-T-E-P targets light them in a fixed order, and the last one is the extra ball.",
+      "difficulty": 2,
+      "reward": "Light Frenzy, 500K, Light Extra Ball",
+      "steps": [
+        {
+          "shot": "step-targets",
+          "action": "Complete S-T-E-P",
+          "detail": "Each completion lights one step: Light Frenzy first, then 500K, then Light Extra Ball"
+        },
+        {
+          "shot": "steps-ramp",
+          "action": "Hit a flashing step",
+          "detail": "Collecting a step turns its light off; an unlit step is only worth 100K"
+        },
+        {
+          "shot": "steps-ramp",
+          "action": "Shoot to the very top for Superdog",
+          "detail": "Reaching the top of the ramp buys 20 seconds of Superdog time"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "frenzy",
+      "title": "Frenzy",
+      "category": "mode",
+      "summary": "Light Frenzy from the Steps, then hit the Trapdoor. Every playfield target adds 50K to a bonus that pays out at the end of the ball — which is the catch, because a tilt throws all of it away.",
+      "difficulty": 2,
+      "reward": "120K base, +50K per target, paid at end of ball",
+      "steps": [
+        {
+          "shot": "steps-ramp",
+          "action": "Collect Light Frenzy",
+          "detail": "The Trapdoor swings open and its Frenzy light comes on — that light will not go out until you cash it in"
+        },
+        {
+          "shot": "trapdoor",
+          "action": "Hit the Trapdoor to start Frenzy",
+          "detail": "Twenty seconds on the clock, paused whenever Superdog time would pause"
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Hit everything",
+          "detail": "Any target adds 50K. Collecting another Frenzy mid-Frenzy adds 20 seconds. Do not tilt — the bonus is only paid at end of ball"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-frenzy",
+      "title": "Super Frenzy",
+      "category": "secret",
+      "summary": "Hidden behind the Mirror. Once all six Mirror awards have been collected, the Wind Tunnel stops giving awards and starts Super Frenzy instead — 1.5M base with every target worth 100K.",
+      "difficulty": 3,
+      "reward": "1.5M base, +100K per target",
+      "steps": [
+        {
+          "shot": "wind-tunnel",
+          "action": "Collect all six Mirror awards first",
+          "detail": "This is the only way to arm it, and nothing on the playfield announces it"
+        },
+        {
+          "shot": "wind-tunnel",
+          "action": "Shoot the Wind Tunnel again",
+          "detail": "Starting Super Frenzy during a normal Frenzy adds 20 seconds and upgrades the whole thing"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "quick-multiball",
+      "title": "Quick Multiball",
+      "category": "multiball",
+      "summary": "A Mirror award. A second ball arrives, and the first launches as soon as the new one hits anything. While both are alive every Rudy hit is worth a million — but the Trapdoor is switched off and the clock will not pass 11:25.",
+      "difficulty": 2,
+      "reward": "All Rudy hits worth 1M",
+      "steps": [
+        {
+          "shot": "wind-tunnel",
+          "action": "Draw Quick Multiball from the Mirror",
+          "detail": "Ball two either gets served to you or fires out of the Hidden Hallway"
+        },
+        {
+          "shot": "rudy",
+          "action": "Hammer Rudy",
+          "detail": "Every hit is a million until you are back down to one ball"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "midnight-multiball",
+      "title": "Midnight Multiball",
+      "category": "wizard",
+      "summary": "The whole point of the machine. Get the clock to midnight, Rudy falls asleep and his mouth drops open — shoot it. The Trapdoor then becomes a ladder: 2M, then 3M, climbing a million each time up to ten.",
+      "difficulty": 3,
+      "reward": "2M climbing by 1M per Trapdoor hit, max 10M",
+      "steps": [
+        {
+          "shot": "hidden-hallway",
+          "action": "Lock at 11:30 and again at 11:45",
+          "detail": "Above 11:30 locking is the only thing that moves the clock"
+        },
+        {
+          "shot": "rudy",
+          "action": "Shoot Rudy's open mouth",
+          "detail": "Worth 1M, or 2M if Million was also lit from the Mirror"
+        },
+        {
+          "shot": "trapdoor",
+          "action": "Take the first Trapdoor for 2M",
+          "detail": "The hit closes the Trapdoor again"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Reopen it with the Center Ramp",
+          "detail": "Each cycle raises the value by a million, to a ceiling of 10M. Steps and Mirror are disabled throughout"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "midnight-relock",
+      "title": "The Midnight Relock",
+      "category": "strategy",
+      "summary": "A rule worth knowing before it happens to you. If Midnight Multiball ends without a single Trapdoor hit, the lock relights and a countdown starts on the playfield clock — relock the last ball in time and you get another ball. Nothing stops that timer.",
+      "difficulty": 3,
+      "reward": "A second attempt at Midnight Multiball",
+      "steps": [
+        {
+          "shot": "trapdoor",
+          "action": "Know which case you are in",
+          "detail": "One or more Trapdoor hits and the clock simply resets to 5:00 and play continues"
+        },
+        {
+          "shot": "hidden-hallway",
+          "action": "Relock before the countdown expires",
+          "detail": "The playfield clock shows the seconds left; the timer cannot be paused"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "rudy-jaw-bonus",
+      "title": "Build The Rudy Bonus",
+      "category": "strategy",
+      "summary": "Jaw hits from the side flipper are the quiet scoring engine of this game. The end-of-ball bonus is 50K per Rudy hit, hits carry from ball to ball, and you begin the game already holding one.",
+      "difficulty": 1,
+      "reward": "50K x total Rudy hits at end of ball",
+      "steps": [
+        {
+          "shot": "side-flipper",
+          "action": "Work the jaw from the side flipper",
+          "detail": "Each hit also relights the Mirror award"
+        },
+        {
+          "shot": "rudy",
+          "action": "Keep accumulating across balls",
+          "detail": "The count never resets during a game"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "rudy-gulp",
+      "title": "Rudy Gulp",
+      "category": "secret",
+      "summary": "Rudy comments on your play constantly, and while he is talking his mouth is open. Putting a ball in there while he is mid-sentence is a Rudy Gulp for 250K — a shot most players never realise is available outside of midnight.",
+      "difficulty": 3,
+      "reward": "250K",
+      "steps": [
+        {
+          "shot": "rudy",
+          "action": "Wait for him to start talking",
+          "detail": "His mouth is open while he speaks, not just at midnight"
+        },
+        {
+          "shot": "rudy",
+          "action": "Feed the open mouth",
+          "detail": "250K, and a genuinely satisfying thing to pull off in front of people"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "million-lit",
+      "title": "Million Is Lit",
+      "category": "multiplier",
+      "summary": "A Mirror award that turns the next Rudy jaw or mouth hit into a flat million. Stack it before Midnight Multiball and the opening mouth shot pays two million instead of one.",
+      "difficulty": 2,
+      "reward": "1M on the next Rudy hit, 2M stacked at midnight",
+      "steps": [
+        {
+          "shot": "wind-tunnel",
+          "action": "Draw Million Is Lit",
+          "detail": "Also lit by Quick Multiball"
+        },
+        {
+          "shot": "rudy",
+          "action": "Cash it on the jaw or mouth",
+          "detail": "Holding it into midnight doubles the mouth award"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "outlane-specials",
+      "title": "Light The Outlane Specials",
+      "category": "secret",
+      "summary": "Get the clock to 11:30 a second time in one game and both outlanes light for Special. The catch is that the lights toggle on and off every time the ball hits a slingshot, and an uncollected Special is gone at the end of the ball.",
+      "difficulty": 3,
+      "reward": "Special at both outlanes",
+      "steps": [
+        {
+          "shot": "clock",
+          "action": "Reach 11:30 for the second time",
+          "detail": "The clock resets to 5:00 after Midnight Multiball, so this means playing the sequence twice"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Watch the toggle",
+          "detail": "Every slingshot hit flips the lights on or off — check before you nudge"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "superdog",
+      "title": "Superdog Time",
+      "category": "strategy",
+      "summary": "Shooting the Steps ramp all the way to the top buys 20 seconds of Superdog, and while it runs the three Superdog targets pay 200K and climbing. Both the Superdog and Frenzy timers freeze whenever the ball is in the Wind Tunnel, on the Steps ramp or in the Hidden Hallway lock, and collecting Superdog again mid-Superdog adds another 20 seconds.",
+      "difficulty": 2,
+      "reward": "20 seconds of 200K Superdog targets",
+      "steps": [
+        {
+          "shot": "steps-ramp",
+          "action": "Shoot the full length of the ramp",
+          "detail": "Reaching the top is what awards the time"
+        },
+        {
+          "shot": "superdog-targets",
+          "action": "Feed the Superdog targets",
+          "detail": "Each adds 5 clock minutes as well"
+        }
+      ],
+      "fx": "dog"
+    },
+    {
+      "id": "manhole-clock",
+      "title": "The Manhole Shortcut",
+      "category": "strategy",
+      "summary": "The single most efficient shot on the machine. The Manhole under the jet bumpers advances the clock 30 minutes — as much as starting a whole ball — and opens the Steps at the same time.",
+      "difficulty": 2,
+      "reward": "30 clock minutes, opens the Steps",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Get the ball into the bumper area",
+          "detail": "The Manhole sits below them"
+        },
+        {
+          "shot": "manhole",
+          "action": "Drop in",
+          "detail": "Thirty minutes in one shot, and the Steps open as a bonus"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "you-can-have-it-back",
+      "title": "You Can Have It Back",
+      "category": "secret",
+      "summary": "FunHouse is unusually generous about bad plunges. A ball that goes from the plunger to the drain without hitting a scoring target is returned — and in practice the game often gives back weak plunges that dribbled through the bumper lane into the right outlane, even though those did touch switches.",
+      "difficulty": 1,
+      "reward": "Ball returned",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Do not panic on a bad plunge",
+          "detail": "The game is more liberal than most about what counts as a wasted ball"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Expect the return",
+          "detail": "Weak plunges down the bumper lane into the right outlane are frequently given back"
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "jets-at-maximum",
+      "title": "Jet Bumpers At Maximum",
+      "category": "multiplier",
+      "summary": "A Mirror award that leaves all three bumpers flashing for the rest of the ball. Flashing bumpers are worth 10 clock minutes each instead of nothing, which turns the bumper area from dead time into the fastest clock advance on the playfield.",
+      "difficulty": 2,
+      "reward": "All bumpers flashing, 10 clock minutes each",
+      "steps": [
+        {
+          "shot": "wind-tunnel",
+          "action": "Draw Jet Bumpers At Maximum",
+          "detail": "Lasts the rest of the ball"
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Feed the bumpers deliberately",
+          "detail": "Normally worth nothing unlit — now every rattle is 10 minutes"
+        }
+      ],
+      "fx": "watch"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "fh-skillshot",
+      "title": "Behind The Head",
+      "desc": "Land the plunger skill shot into Rudy's Hideout.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "fh-trapdoor-500",
+      "title": "Mind The Gap",
+      "desc": "Run the Trapdoor loop and collect the 500K Trapdoor award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "trapdoor-ladder"
+    },
+    {
+      "id": "fh-mirror",
+      "title": "Look In The Mirror",
+      "desc": "Collect any Mystery Mirror award from the Wind Tunnel.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mystery-mirror"
+    },
+    {
+      "id": "fh-manhole",
+      "title": "Down The Manhole",
+      "desc": "Find the Manhole for a 30-minute clock advance.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "manhole-clock"
+    },
+    {
+      "id": "fh-frenzy",
+      "title": "Frenzy",
+      "desc": "Light Frenzy from the Steps and start it at the Trapdoor.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "frenzy"
+    },
+    {
+      "id": "fh-gulp",
+      "title": "Rudy Gulp",
+      "desc": "Feed Rudy's open mouth while he is talking, outside of midnight.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "rudy-gulp"
+    },
+    {
+      "id": "fh-quick-mb",
+      "title": "Quick Multiball",
+      "desc": "Draw Quick Multiball from the Mirror.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "quick-multiball"
+    },
+    {
+      "id": "fh-super-frenzy",
+      "title": "All Six Mirrors",
+      "desc": "Collect every Mirror award, then start Super Frenzy.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-frenzy"
+    },
+    {
+      "id": "fh-midnight",
+      "title": "It's Midnight",
+      "desc": "Run the clock to midnight and start Midnight Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "midnight-multiball"
+    },
+    {
+      "id": "fh-trapdoor-max",
+      "title": "Ten Million",
+      "desc": "Climb the Midnight Multiball Trapdoor ladder to its 10M ceiling.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "midnight-multiball"
+    },
+    {
+      "id": "fh-specials",
+      "title": "Second Midnight",
+      "desc": "Reach 11:30 a second time in one game to light the outlane Specials.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "outlane-specials"
+    }
+  ],
+  "drills": [
+    {
+      "id": "stall-the-plunge",
+      "title": "Stall the Plunge",
+      "text": "Not a full-power pull — you want the ball to run out of speed up top and roll back down into the Hideout behind Rudy's head. Work the soft end of the plunger until it stalls in the right place. The value climbs with every collect, which makes this the cheapest big shot on the machine.",
+      "reps": "15 soft plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "rudys-hideout"
+      ]
+    },
+    {
+      "id": "loop-into-trapdoor",
+      "title": "Loop Into Trapdoor",
+      "text": "One loop opens the Trapdoor for about eight seconds. The next open costs two consecutive loops and the one after that costs three, but the window never gets any longer. Drill the loop-and-Trapdoor pair as a single motion so the eight seconds are spent shooting rather than deciding.",
+      "reps": "10 pairs",
+      "focus": "flow",
+      "goal": "trapdoor-ladder",
+      "shots": [
+        "trapdoor-loop",
+        "trapdoor"
+      ]
+    },
+    {
+      "id": "jaw-work",
+      "title": "Jaw Work",
+      "text": "Rudy's jaw comes off the side flipper, not the lower ones. Every hit is end-of-ball bonus that carries between balls and relights the Mirror at the same time, so treat it as the thing you always do when the ball is up there rather than a shot you go hunting for.",
+      "reps": "20 jaw hits",
+      "focus": "accuracy",
+      "goal": "rudy-jaw-bonus",
+      "shots": [
+        "side-flipper",
+        "rudy"
+      ]
+    },
+    {
+      "id": "find-the-manhole",
+      "title": "Find the Manhole",
+      "text": "Thirty minutes on the clock from one shot, which is as much as a whole ball of ordinary play, and it opens the Steps as well. It sits below the jet bumpers, so practice putting the ball into that area on purpose and then finding the hole, instead of waiting for the bumpers to spit it back out.",
+      "reps": "10 drops",
+      "focus": "accuracy",
+      "goal": "manhole-clock",
+      "shots": [
+        "jet-bumpers",
+        "manhole"
+      ]
+    },
+    {
+      "id": "gangway-reflex",
+      "title": "Gangway Reflex",
+      "text": "The inlanes cross-light: rolling the inside right flashes the left Gangway, and the left inlane flashes the right one. The light dies in a few seconds, so this is a reflex rather than a plan — take the Gangway straight off the inlane roll without cradling in between.",
+      "reps": "10 collects",
+      "focus": "flow",
+      "goal": "gangways",
+      "shots": [
+        "right-inlane",
+        "left-inlane",
+        "left-gangway",
+        "right-gangway"
+      ]
+    },
+    {
+      "id": "read-the-steps-light",
+      "title": "Read the STEPS Light",
+      "text": "Check the blue light at the Center Ramp entrance before you shoot. With it lit the ramp ends at the Steps plunger instead of returning the ball to your left inlane, so the feed you were expecting never arrives. Take ten ramps with it lit and ten without, and note where you end up each time.",
+      "reps": "10 of each",
+      "focus": "ball-control",
+      "goal": "center-ramp",
+      "shots": [
+        "center-ramp",
+        "steps-ramp",
+        "left-inlane"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "hotel",
+  "actionButton": {
+    "present": false,
+    "how": "FunHouse comes from well before cabinet buttons existed. A manual plunger, two flippers and a nudge are your whole toolkit, and even the skill shot is a matter of plunge strength — you want a soft one that stalls in the top loop, not a button press."
+  },
+  "howItPlays": {
+    "objective": "FunHouse is a Williams carnival ruled by Rudy, a wisecracking dummy head, and one relentless clock. Push that clock from eight in the evening around to midnight and Rudy nods off with his mouth hanging open, which is your cue to start Midnight Multiball.",
+    "loop": [
+      "Nearly every switch nudges the clock ahead, so chase the fat advances first -- the Manhole beneath the jets and each new ball are half-hour jumps on their own.",
+      "Run the right loop to swing the Trapdoor open for a breath under ten seconds, then bury the ball through it for a climbing award.",
+      "Feed Rudy's jaw off the upper side flipper to stack end-of-ball bonus and re-arm the Wind Tunnel mirror award.",
+      "Once the hands reach half past eleven, only a Hidden Hallway lock moves them, so lock there and again at eleven forty-five to hit the top of the hour.",
+      "At midnight, shoot Rudy's open mouth, then climb the Trapdoor ladder as it grows a million richer each cycle."
+    ],
+    "lights": [
+      {
+        "id": "clock-ladder",
+        "name": "The Clock",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "clock"
+          }
+        ],
+        "lit": "The clock face is the master progress bar; it opens in the evening, holds its reading between balls, and almost every switch you rattle walks it toward midnight.",
+        "flashing": null,
+        "control": null,
+        "then": "Chase the biggest jumps first, then respect the wall at half past eleven, where a Hidden Hallway lock becomes the only thing that moves the hands. Reach midnight and Rudy sleeps for the multiball this whole game is building toward.",
+        "goals": [
+          "the-clock",
+          "midnight-multiball"
+        ]
+      },
+      {
+        "id": "trapdoor-arrows",
+        "name": "Trapdoor",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "trapdoor-loop"
+          },
+          {
+            "shot": "trapdoor"
+          }
+        ],
+        "lit": "Running the right loop pops the Trapdoor open for roughly eight seconds; while it gapes it is the richest single target on the lower playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "Loop, then drop the ball through the open door for a reward that climbs from half a million to a full one as you chain more loops per opening. During Midnight Multiball this same hole becomes a ladder worth millions.",
+        "goals": [
+          "trapdoor-ladder",
+          "midnight-multiball"
+        ]
+      },
+      {
+        "id": "step-ladder",
+        "name": "The Steps",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "step-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "steps-ramp"
+          }
+        ],
+        "lit": "Clearing the S-T-E-P target bank lights one step on its own little ramp, always in a fixed order, and a lit step only pays while its lamp is on.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the letters to light Frenzy, then a points step, then the extra ball last; hit a lit step to bank it, or send the ball the whole length of the ramp to buy Superdog time.",
+        "goals": [
+          "steps",
+          "frenzy",
+          "superdog"
+        ]
+      },
+      {
+        "id": "mirror-award",
+        "name": "Mystery Mirror",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "wind-tunnel"
+          }
+        ],
+        "lit": "The white Mirror lamp glows as each ball begins and lets the Wind Tunnel pay one of six mystery awards; collect it and the lamp goes dark until you arm it again.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash whatever award is flashing, then relight the Mirror with a hit to Rudy's jaw or a quick roll through the right-center lane. Draw all six awards over a game and the Wind Tunnel upgrades into Super Frenzy instead.",
+        "goals": [
+          "mystery-mirror",
+          "super-frenzy"
+        ]
+      },
+      {
+        "id": "gangway-lanes",
+        "name": "The Gangways",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-gangway"
+          },
+          {
+            "shot": "right-gangway"
+          }
+        ],
+        "lit": "A Gangway starts flashing only when the opposite inlane feeds it, and the flash is gone within a couple of seconds, making this a snap collect rather than a shot you line up.",
+        "flashing": "A flashing Gangway is live for its climbing award; strike an unlit one and it merely begins flashing instead of paying.",
+        "control": null,
+        "then": "Roll the inside right inlane and immediately take the left Gangway, or use the left inlane and the loop to arm the right one. Its value grows across balls until it finally lights the extra ball.",
+        "goals": [
+          "gangways"
+        ]
+      },
+      {
+        "id": "jet-value",
+        "name": "Jet Bumpers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "jet-bumpers",
+            "lamps": 3
+          }
+        ],
+        "lit": "Unlit, the three jets add nothing to the clock; lit they are worth a few minutes each, and flashing they are worth double that.",
+        "flashing": "All three flash for the rest of the ball after the Jets At Maximum mirror award, turning dead bumper time into the fastest clock climb on the table.",
+        "control": null,
+        "then": "Light the jets from the lane beside them before you send the ball into the nest, or draw Jets At Maximum from the Mirror to leave them flashing. Every rattle then feeds the run to midnight.",
+        "goals": [
+          "jets-at-maximum",
+          "the-clock"
+        ]
+      },
+      {
+        "id": "rudy-head",
+        "name": "Rudy",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "rudy"
+          }
+        ],
+        "lit": "Rudy talks all game and his mouth hangs open while he speaks, not only at midnight; each jaw hit off the upper side flipper banks bonus that carries between balls.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the jaw to build bonus and relight the Mirror, feed his open mouth mid-sentence for a sneaky Rudy Gulp, and hold a Million Is Lit award so the first midnight mouth shot pays double. During Quick Multiball every Rudy hit is a flat million.",
+        "goals": [
+          "rudy-jaw-bonus",
+          "rudy-gulp",
+          "million-lit",
+          "quick-multiball"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank the safe, repeatable stuff and feed the clock. Take the soft-plunge skill shot into Rudy's Hideout, work the jaw for carry-over bonus, and grab the Manhole whenever you can for a half-hour jump that also opens the Steps.",
+        "goals": [
+          "skillshot",
+          "rudy-jaw-bonus",
+          "manhole-clock"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Turn shots into modes. Loop the Trapdoor for its climbing award, finish S-T-E-P to light Frenzy and the extra ball, and pull awards from the Wind Tunnel while keeping a Million Is Lit ready for later.",
+        "goals": [
+          "trapdoor-ladder",
+          "steps",
+          "frenzy",
+          "mystery-mirror"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Drive the clock to midnight, shoot Rudy's sleeping mouth, and climb the Trapdoor ladder as it grows by a million per cycle to its ten-million ceiling. Reopen the door with the center ramp each time to keep the ladder rising.",
+        "goals": [
+          "midnight-multiball"
+        ]
+      }
+    ]
+  }
+}

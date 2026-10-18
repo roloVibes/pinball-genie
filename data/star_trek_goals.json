@@ -1,0 +1,1340 @@
+{
+  "machine": "Star Trek (Stern Pinball, 2013)",
+  "defaultFx": "space",
+  "shots": [
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit / Left Loop",
+      "type": "orbit",
+      "x": 0.12,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Full-orbit lane along the left edge; houses the spinner; feeds the top BEAM-ME-UP lanes or back down to the left flipper."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.22,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Spinning target mounted in-line inside the left orbit channel; each spin adds value, boosted during Destroy the Drill Galactic Mode."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Entrance left-center, crests and exits to the left inlane/flipper; easily backhanded.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.67,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Entrance right-center, exits to the right inlane/flipper.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "warp-ramp",
+      "name": "Warp Ramp",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Steep diagonal ramp reachable only from the upper-right flipper; advances Warp Speed toward Extra Ball / Double Scoring / add-a-ball.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit / Right Loop",
+      "type": "orbit",
+      "x": 0.87,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Full-orbit lane along the right edge; feeds the upper-right flipper or top lanes.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      }
+    },
+    {
+      "id": "left-scoop",
+      "name": "Left Scoop (Mission Start)",
+      "type": "scoop",
+      "x": 0.12,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Starts missions and locks balls for Klingon Multiball. On Premium/LE a VUK feeds the left ramp/flipper directly; on Pro it's a simple, less reliable kickout."
+    },
+    {
+      "id": "vengeance",
+      "name": "Vengeance",
+      "type": "drop-target",
+      "x": 0.5,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Center marquee shot — resettable drop target on Pro, motorized animated ship on Premium/LE. Hub of all three Vengeance-multiball rounds and every wizard-mode qualification shot. Most dangerous shot on the table for drains."
+    },
+    {
+      "id": "away-team",
+      "name": "Away Team (upper flipper shot)",
+      "type": "lane",
+      "x": 0.82,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "Shot from/near the upper-right flipper; extends mission timers +20s and feeds Galactic Away Team / Galactic Mode bonus shots."
+    },
+    {
+      "id": "shield-targets",
+      "name": "Shield Targets",
+      "type": "standup",
+      "x": 0.16,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Bank of 2 standups just above the left inlane; re-light kickback (Premium/LE)."
+    },
+    {
+      "id": "green-lock-targets",
+      "name": "Green Lock Targets",
+      "type": "target-bank",
+      "x": 0.3,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Bank of 3 standups, center-left; completing lights locks at Vengeance and the left scoop for Klingon Multiball."
+    },
+    {
+      "id": "weapon-targets",
+      "name": "Weapon Targets",
+      "type": "target-bank",
+      "x": 0.68,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Bank of 3 orange standups; loads Photon Torpedoes fired at Vengeance via the Punch It button."
+    },
+    {
+      "id": "red-matter-targets",
+      "name": "Red Matter Standups",
+      "type": "target-bank",
+      "x": 0.4,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "5 standups scattered around the left orbit entrance, near the left ramp, and flanking the right ramp; Nero mode's targets, also light the Black Hole payout target."
+    },
+    {
+      "id": "black-hole-target",
+      "name": "Black Hole Target",
+      "type": "standup",
+      "x": 0.52,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "1.5\" rectangular payout standup near Vengeance; lit by hitting Red Matter standups; adds a 4th ball in Klingon Multiball."
+    },
+    {
+      "id": "beam-me-up-lanes",
+      "name": "BEAM-ME-UP Rollover Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "3 top rollover lanes below the pop bumpers; completing all three advances the ball's Bonus Multiplier by +1X."
+    },
+    {
+      "id": "plunger",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Manual/auto-plunge lane on the far right edge; plunge strength and held flipper determine which skill shot is armed."
+    },
+    {
+      "id": "punch-it",
+      "name": "Lockbar Fire Button (photon torpedoes)",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Lockdown-bar fire button that launches a loaded photon torpedo at Vengeance; safer than a direct Vengeance shot but does not advance mission shots. The same button also confirms mission selection."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower left flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower right flipper."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.84,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "The upper right flipper — the Away Team rollover sits just beneath it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper through a full plunge to light a Super Skill Shot at the right ramp (or Vengeance) — the safe, repeatable opening skill shot worth 1M+.",
+      "difficulty": 1,
+      "reward": "1,000,000 first time + 250,000 each repeat this ball",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Plunge through, then shoot the lit right ramp",
+          "detail": "Holding the left flipper in during the plunge routes the ball to rest on it — lights Super Skill Shot at either Vengeance or the right ramp. Right ramp is the safer target than Vengeance; pays 1,000,000 first time, +250,000 each repeat this ball.",
+          "plunge": "full"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-super-warp-skill-shot",
+      "title": "Super Warp Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the right flipper on a full-power plunge so the ball rejects off the top gate into the right orbit, then shoot the Warp Ramp for the game's highest-value skill shot.",
+      "difficulty": 3,
+      "reward": "1,500,000 — the game's highest-value skill shot",
+      "steps": [
+        {
+          "shot": "warp-ramp",
+          "action": "Plunge through, then shoot the Warp Ramp from the upper-right flipper",
+          "detail": "Ball must hit the upper gate hard enough to reject back into the right orbit and feed toward the upper-right flipper — too soft or too hard whiffs the shot. Pays 1,500,000 — the highest-value skill shot in the game, but plunge-strength dependent.",
+          "plunge": "full"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-kirk",
+      "title": "Kirk Combo",
+      "category": "combo",
+      "summary": "Left Loop into the Warp Ramp — the first of five named crew combos, each worth a flat 1,000,000 the first time and a permanent bump to all future combo values.",
+      "difficulty": 2,
+      "reward": "1,000,000 first time + permanently raises base value of future crew combos",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit (loop)",
+          "detail": "Starts the combo window — a red insert on the Warp Ramp flashes for about 4 seconds."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Backhand the Warp Ramp within the window",
+          "detail": "Landing it while lit pays the Kirk combo — first time ever: flat +1,000,000, plus raises base value of future combos."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-bones",
+      "title": "Bones Combo",
+      "category": "combo",
+      "summary": "Left Loop into the Left Ramp — second crew combo, easy to chain right off a left-orbit shot.",
+      "difficulty": 2,
+      "reward": "1,000,000 first time + raises base value of future crew combos",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Opens the 4-second combo window on the left ramp."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp before the window closes",
+          "detail": "Completes Bones for +1,000,000 the first time; must be a different shot than the last hit — repeating left orbit doesn't combo."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-sulu",
+      "title": "Sulu Combo",
+      "category": "combo",
+      "summary": "Right Loop into the Right Ramp — mirror of Bones on the right side of the playfield.",
+      "difficulty": 2,
+      "reward": "1,000,000 first time + raises base value of future crew combos",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Opens the combo window on the right ramp."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp within ~4 seconds",
+          "detail": "Completes Sulu for the first-time +1,000,000 bonus."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-uhura",
+      "title": "Uhura Combo",
+      "category": "combo",
+      "summary": "A 3-shot chain — right ramp into left ramp into right orbit — that pays a flat 1,000,000 the first time, same as the other crew combos.",
+      "difficulty": 3,
+      "reward": "1,000,000 first time + raises base value of future crew combos",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Opens the window on the left ramp."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp within the window",
+          "detail": "Chains the combo; opens the window on the right orbit next."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish with the right orbit",
+          "detail": "Completes Uhura — first time pays a flat 1,000,000, same as the other crew combos, and raises future combo base values."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-spock",
+      "title": "Spock Combo",
+      "category": "combo",
+      "summary": "The signature four-shot chain: left ramp, right ramp, left loop, Warp Ramp. It is the longest of the five crew combos and the one that flows best off a trapped ball.",
+      "difficulty": 3,
+      "reward": "1,000,000 first time + permanently raises future crew combo base values",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Opens the combo window on the right ramp."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Chains into the left loop next."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit (loop)",
+          "detail": "Chains into the final Warp Ramp shot."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Finish on the Warp Ramp from the upper-right flipper",
+          "detail": "Completing all four pays a flat 1,000,000 the first time, same as the other crew combos, and permanently raises future combo base values."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-vengeance-battle-sudden-death",
+      "title": "Vengeance Battle Sudden Death Squeeze",
+      "category": "combo",
+      "summary": "The single biggest repeatable payout in the game — land the Vengeance Battle final shot comboed for up to 40% of your total score.",
+      "difficulty": 3,
+      "reward": "Greater of 10,000,000 or 10% of score; doubles to 20% comboed, up to 40% with Double Scoring",
+      "steps": [
+        {
+          "shot": "vengeance",
+          "action": "Hit Vengeance 5 times to raise its drop target",
+          "detail": "Recurs every time you cycle back through all 3 Vengeance rounds — fully repeatable."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Knock the raised target back down",
+          "detail": "Opens a short window (about 6 seconds) for the sudden-death shot."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Shoot Vengeance again within the window, comboed if possible",
+          "detail": "Pays the greater of 10,000,000 or 10% of total score; doubles to 20% on a combo, up to 40% with Double Scoring (Warp 9.1/9.9) running."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiball-klingon",
+      "title": "Klingon Multiball",
+      "category": "multiball",
+      "summary": "Complete the green standups to light locks at Vengeance and the left scoop, lock 3 balls, then chase jackpots up to a 20,000,000 Double Super Jackpot at the Warp Ramp.",
+      "difficulty": 2,
+      "reward": "3-ball (4th via Black Hole target); jackpots climb to a 20,000,000 Double Super Jackpot at Warp Ramp + free Gold medal",
+      "steps": [
+        {
+          "shot": "green-lock-targets",
+          "action": "Complete the 3 green standup targets",
+          "detail": "Before your first Klingon Multiball every completion lights two locks, one at Vengeance and one at the left scoop; once you have played it, each completion lights only one."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Shoot Vengeance to lock a ball",
+          "detail": "One of two lockable shots once lit.",
+          "link": "none"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Shoot the left scoop to lock a ball",
+          "detail": "Lock the 3rd ball here or at Vengeance to start multiball instantly.",
+          "link": "none"
+        },
+        {
+          "shot": "black-hole-target",
+          "action": "Hit the lit Black Hole target for a 4th ball",
+          "detail": "Lit by hitting Red Matter standups around the playfield; optional add-a-ball."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Work all red-lit major shots for jackpots, save the Warp Ramp for the Double Super Jackpot",
+          "detail": "Jackpots start at 200,000 +175,000 each; 7th = 6,250,000 Super Jackpot, 14th = 10,000,000, then a 4,000,000 traveling Double Jackpot, then Warp Ramp pays a 20,000,000 Double Super Jackpot plus a free Gold medal."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiball-vengeance",
+      "title": "Vengeance Multiball",
+      "category": "multiball",
+      "summary": "Build damage on the Vengeance ship via direct hits and torpedoes to start the first of three Vengeance rounds, a 2-ball multiball built around the ship's magnet.",
+      "difficulty": 2,
+      "reward": "Starts 2-ball, adds a 3rd via the magnet catch; destroying Vengeance (10 hits) pays 5,000,000 (more if comboed) + Victory Laps",
+      "steps": [
+        {
+          "shot": "weapon-targets",
+          "action": "Complete the 3 orange Weapon standups",
+          "detail": "Loads 3 torpedoes, shown as yellow triangle inserts up the playfield spine."
+        },
+        {
+          "shot": "punch-it",
+          "action": "Press Punch It to fire a torpedo at Vengeance",
+          "detail": "Each torpedo hit counts as a Vengeance hit but doesn't advance mode shots — safer than shooting the ship directly."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Shoot Vengeance directly to build remaining hits and start the multiball",
+          "detail": "Vengeance is the single most dangerous shot on the table — it can rebound viciously toward the outlanes."
+        },
+        {
+          "shot": "vengeance",
+          "action": "With the ball magnet-captured under the ship, knock it free with the second live ball",
+          "detail": "Adds a 3rd ball and extends the ball-saver."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Land the final direct hit after 10 total shots",
+          "detail": "Destroys Vengeance for 5,000,000 (more if comboed); remaining shots become escalating Victory Laps."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiball-kobayashi-maru",
+      "title": "Kobayashi Maru",
+      "category": "multiball",
+      "summary": "The first stacked wizard round — finish Level I of all 6 missions to light Vengeance white and start a 2-ball multiball where every shot needs 2 hits.",
+      "difficulty": 3,
+      "reward": "2-ball; first hit on each shot scores 500,000 (arms it), second hit up to 7,500,000 based on Level I performance",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start and clear Level I of all 6 missions",
+          "detail": "Use Mission Start (left scoop) or Away Team to launch each mission; clear all 6 at Level I."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Shoot the glowing white Vengeance shot to start Kobayashi Maru",
+          "detail": "Qualifies as soon as all 6 missions have their Level I completed."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit each lit shot once to arm it",
+          "detail": "First hit on any shot (except Warp Ramp, which is dark) scores a flat 500,000 and arms it."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit the same shots again to score them",
+          "detail": "Second hit scores a value tied to how well that mission's Level I was played, capped at 7,500,000 per shot."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mode-prime-directive",
+      "title": "Prime Directive (Level I)",
+      "category": "mode",
+      "summary": "The default beginner-friendly first mode — shoot the 5 blue-lit shots to relight them all and extend with Away Team; the left scoop's permanent 2X award comes only from clearing this mission's Level III, not this Level I round.",
+      "difficulty": 1,
+      "reward": "Bronze/Silver/Gold medal (3/6/9 shots) + Galactic Mode's 2x right-ramp finish; permanent 2X award needs Level III",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Shoot the flashing Mission Start (left scoop) to launch Prime Directive",
+          "detail": "All six Level I missions are roughly interchangeable early — take whatever the game defaults to."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit the blue-lit shots around the playfield",
+          "detail": "Unlight 5 of the blue shots to relight them all; 30-second timer."
+        },
+        {
+          "shot": "away-team",
+          "action": "Take the Away Team shot around the 15-20 second mark",
+          "detail": "Adds +20 seconds and unlocks Galactic Mode bonus shots (lit lanes+orbits, final shot worth 2x at the right ramp)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish on the 2x-lit final shot",
+          "detail": "Bronze=3 shots, Silver=6, Gold=9 made during the timer."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-nero",
+      "title": "Nero (Level I)",
+      "category": "mode",
+      "summary": "Five main shots light purple — everything except the left scoop and the Warp Ramp. Unlight all five to relight the set, then take Away Team to switch the objective to the Red Matter standups and finish on the doubled Black Hole shot.",
+      "difficulty": 2,
+      "reward": "Galactic Mode's 2x Black Hole finish; clearing this mission's Level III permanently lights the left orbit for 2x scoring",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start Nero from Mission Start or Away Team",
+          "detail": "Purple-coded mission."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the five purple-lit main shots",
+          "detail": "Unlight all 5 to relight the set; watch the timer."
+        },
+        {
+          "shot": "away-team",
+          "action": "Take Away Team mid-timer to extend and enter Galactic Mode",
+          "detail": "Lights Red Matter standups as bonus shots; final shot worth 2x at the Black Hole target."
+        },
+        {
+          "shot": "black-hole-target",
+          "action": "Shoot the 2x-lit Black Hole target to close out Galactic Mode",
+          "detail": "Completing Level III permanently lights the left orbit for 2x scoring the rest of the game."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-destroy-the-drill",
+      "title": "Destroy the Drill (Level I)",
+      "category": "mode",
+      "summary": "Work the fanning lit shots left-to-right, then squeeze a right-ramp-into-left-scoop combo on the final 4x shot for one of the biggest documented mode payouts.",
+      "difficulty": 2,
+      "reward": "4x final shot at the left scoop, stacked on a spinner paying 75,000 a spin",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start Destroy the Drill",
+          "detail": "Teal/orange-coded mission; lit shots fan left-to-right over the timer."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit the lit shots as they fan across the playfield",
+          "detail": "Chase the marked shot rather than the one that was lit a second ago."
+        },
+        {
+          "shot": "away-team",
+          "action": "Take Away Team to enter Galactic Mode",
+          "detail": "Lights the left eject and left spinner worth 75,000/spin; final shot worth 4x at the left eject."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Time the final left-scoop shot for just before the timer runs out",
+          "detail": "Fire the right ramp timed to combo directly into the 4x left scoop — documented runs around 40,000,000 when stacked with spinner value."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-vengeance-scoring",
+      "title": "Vengeance Scoring (hurry-up)",
+      "category": "mode",
+      "summary": "The second Vengeance round — a 5-shot hurry-up at the ship that is the only repeatable extra-ball source in the game.",
+      "difficulty": 2,
+      "reward": "Repeatable Extra Ball — the only one in the entire ruleset",
+      "steps": [
+        {
+          "shot": "vengeance",
+          "action": "Cycle back to Vengeance to start round 2, Vengeance Scoring",
+          "detail": "Recurs every time you work through all 3 Vengeance rounds again."
+        },
+        {
+          "shot": "punch-it",
+          "action": "Fire torpedoes at Vengeance when available",
+          "detail": "Torpedoes fired from the button score Vengeance hits and are far safer than shooting the ship directly, though they do not advance mission shots."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Land 5 direct hits on Vengeance before time runs out",
+          "detail": "Destroying it awards a repeatable Extra Ball — the only one in the entire ruleset."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiplier-bonus-x",
+      "title": "Bonus Multiplier (BEAM-ME-UP)",
+      "category": "multiplier",
+      "summary": "Complete the three top rollover lanes spelling BEAM-ME-UP to add +1X to this ball's end-of-ball bonus.",
+      "difficulty": 1,
+      "reward": "+1X to this ball's end-of-ball bonus multiplier (resets each ball)",
+      "steps": [
+        {
+          "shot": "beam-me-up-lanes",
+          "action": "Roll through all 3 top lanes",
+          "detail": "Orbit shots that don't quite complete the loop feed these; completing the set advances BonusX by +1."
+        },
+        {
+          "shot": "beam-me-up-lanes",
+          "action": "Repeat as many times as possible before draining",
+          "detail": "BonusX applies only to the current ball and resets at the start of the next one."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-warp-speed",
+      "title": "Warp Speed / Double Scoring",
+      "category": "multiplier",
+      "summary": "Bank repeated Warp Ramp shots to climb the Warp Speed counter — 10 shots lights 60 seconds of global 2X scoring, 18 shots adds a ball on top of it.",
+      "difficulty": 2,
+      "reward": "7 shots = Extra Ball; 10 shots = 60s of 2X scoring; 18 shots = 2X scoring + an added ball (both repeatable)",
+      "steps": [
+        {
+          "shot": "warp-ramp",
+          "action": "Shoot the Warp Ramp from the upper-right flipper repeatedly",
+          "detail": "Each made shot advances the Warp Speed counter by one step."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Reach 7 shots made",
+          "detail": "Lights a one-time Extra Ball, collected by hitting Vengeance."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Reach 10 shots made",
+          "detail": "Lights 2X global scoring for 60 seconds — time this to land right before a jackpot-heavy multiball or wizard shot."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Reach 18 shots made",
+          "detail": "Re-lights 2X scoring for 60 seconds AND adds a ball into play; both awards are repeatable after the first time."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-enterprise-amok",
+      "title": "Enterprise Amok",
+      "category": "wizard",
+      "summary": "The second stacked wizard round — clear Level II of all 6 missions to unlock a switch-hit-driven 2-ball multiball across 6 escalating rounds.",
+      "difficulty": 3,
+      "reward": "2-ball MB across 6 rounds, adding a ball each round except the last; round 6 ends in a Super Jackpot at Vengeance",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Replay and clear Level II of all 6 missions",
+          "detail": "Each mission's 2nd playthrough uses more complex roving/attacker-pair shot patterns."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Shoot the glowing white Vengeance shot to start Enterprise Amok",
+          "detail": "Qualifies once all 6 missions have Level II completed."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the required number of switches to add a ball and light all shots white",
+          "detail": "Switch requirement rises each of the first 5 rounds; adds a ball each round except the final one."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Clear round 6's final shot for the Super Jackpot",
+          "detail": "Lights Vengeance for the round-6 Super Jackpot, then continues single-ball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-five-year-mission",
+      "title": "Five Year Mission",
+      "category": "wizard",
+      "summary": "The true final wizard mode — clear Level III of all 6 missions to start a 4-ball multiball with every major shot lit for a Super Jackpot.",
+      "difficulty": 3,
+      "reward": "4-ball MB with every major shot lit; clear them all for the Super Jackpot at Vengeance",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Replay and clear Level III of all 6 missions",
+          "detail": "Hardest tier — 45-55 second timers or tight-window untimed shot patterns; only 2x-marked shots count for medals."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Shoot the glowing white Vengeance shot to start Five Year Mission",
+          "detail": "Qualifies once all 6 missions have Level III completed — the rarest qualification in the game."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Clear every lit major shot around the playfield",
+          "detail": "All major shots are lit simultaneously in this 4-ball multiball."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Collect the Super Jackpot",
+          "detail": "Awarded once every lit shot/target has been cleared."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "The recommended concrete opener — cash the safe skill shot, launch a default mode, and start building toward Klingon Multiball and Warp Ramp awards.",
+      "difficulty": 1,
+      "reward": "Skill-shot cushion + mode progress; builds toward Klingon Multiball locks and Warp Ramp awards",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Hold left flipper, full plunge for the Super Skill Shot",
+          "detail": "Safer than the right-flipper Super Warp variant for a first ball.",
+          "flipper": "left",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Take the lit Super Skill Shot at the right ramp",
+          "detail": "Pays 1,000,000; avoid aiming at Vengeance until comfortable with the table.",
+          "plunge": "full"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Shoot Mission Start or Away Team to launch your first Level I mode",
+          "detail": "Accept the game's default suggestion (commonly Prime Directive) rather than picking."
+        },
+        {
+          "shot": "away-team",
+          "action": "Use Away Team around 15-20 seconds into the mode timer",
+          "detail": "Extends the mode +20 seconds and rolls to the next objective."
+        },
+        {
+          "shot": "green-lock-targets",
+          "action": "Opportunistically hit the left scoop and green standups",
+          "detail": "Builds toward the 3 lit locks needed for Klingon Multiball.",
+          "link": "none"
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Bank clean Warp Ramp shots whenever open",
+          "detail": "7 shots = Extra Ball, 10 = 60-sec 2x scoring, 18 = 2x scoring plus an added ball.",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "strategy-mode-multiball-stacking",
+      "title": "Stack a Mode Into Multiball",
+      "category": "strategy",
+      "summary": "The core tournament technique — start a mission mode right before locking the final multiball ball so the mode timer and jackpots run concurrently.",
+      "difficulty": 2,
+      "reward": "Concurrent mode + multiball scoring; a comboed Double Super Jackpot under Double Scoring reported up to 80,000,000",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start a Level I mode first",
+          "detail": "Get its shot pattern running and its timer active."
+        },
+        {
+          "shot": "green-lock-targets",
+          "action": "Complete the green standups to light Klingon locks",
+          "detail": "Do this while the mode is already running rather than before starting it."
+        },
+        {
+          "shot": "vengeance",
+          "action": "Lock the 2nd ball at Vengeance",
+          "detail": "One of the two lockable shots."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Lock the 3rd ball at the left scoop to start Klingon Multiball",
+          "detail": "Multiball now runs concurrently with the still-active mode timer and its shot value, maximizing combined jackpot and mode scoring."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Bank Warp Ramp shots to trigger Double Scoring before the Klingon Double Super Jackpot",
+          "detail": "A comboed Double Super Jackpot under Double Scoring can reach 80,000,000 in a single shot."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "strategy-captains-chair",
+      "title": "Chase Captain's Chair (Super Ramps)",
+      "category": "strategy",
+      "summary": "Complete three same-level missions in a row on the right side of the mission select to light the easiest, most valuable Captain's Chair award — Super Ramps.",
+      "difficulty": 2,
+      "reward": "Lights Super Ramps — boosted ramp scoring that stays lit across balls until collected",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start and clear three right-side missions at the same level in sequence",
+          "detail": "Right-side missions light Super Ramps on completion of the trio; the pick beginners should prioritize over Super Pops or Super Spinner."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash in the Super Ramps award once lit",
+          "detail": "Boosted ramp scoring stays lit across balls until collected."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-crew-roster",
+      "title": "All Five Crew Combos in One Game",
+      "category": "combo",
+      "summary": "Run the whole named-combo set in one game: the two left-orbit two-shotters, the right-side mirror, the three-shot chain, and the four-shot chain. Each pays its flat first-time bonus and permanently raises the base value of every later combo.",
+      "difficulty": 3,
+      "reward": "Flat first-time bonus on each of the five combos plus a permanent bump to all later combo values",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit, then backhand the Warp Ramp inside the window",
+          "detail": "Two-shot chain number one. Backhanding the Warp Ramp from the upper-right flipper is the whole trick here."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left orbit again, then take the left ramp inside the window",
+          "detail": "Two-shot chain number two. The second shot must be a different shot than the last one hit, so a repeated left orbit will not chain."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit, then the right ramp inside the window",
+          "detail": "The mirror-image pair on the right side; the easiest of the five to make consistently."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Chain right ramp into left ramp into right orbit",
+          "detail": "The three-shot chain. Keep each shot inside the roughly four-second window or the chain resets."
+        },
+        {
+          "shot": "warp-ramp",
+          "action": "Chain left ramp into right ramp into left orbit and finish on the Warp Ramp",
+          "detail": "The four-shot chain, and the hardest of the set. Finish it and all five named combos are done for the game."
+        }
+      ],
+      "ordered": false,
+      "fx": "space"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "safe-opening-skill-shot",
+      "title": "Clean Launch",
+      "desc": "Collect the held-flipper skill shot at the right ramp on a plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-super-skill-shot"
+    },
+    {
+      "id": "warp-ramp-skill-shot",
+      "title": "Rejected Into Warp",
+      "desc": "Reject the plunge into the right orbit and convert the Warp Ramp skill shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-super-warp-skill-shot"
+    },
+    {
+      "id": "bonus-multiplier-stack",
+      "title": "Transporter Regular",
+      "desc": "Complete the three top rollover lanes four times on a single ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-bonus-x"
+    },
+    {
+      "id": "first-mission-cleared",
+      "title": "Mission Logged",
+      "desc": "Start a mission from the left scoop and clear its first level.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-prime-directive"
+    },
+    {
+      "id": "gold-medal-mission",
+      "title": "Top Marks",
+      "desc": "Earn the highest of the three completion medals on any single mission.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-prime-directive"
+    },
+    {
+      "id": "galactic-bonus-finisher",
+      "title": "Bonus Round Closer",
+      "desc": "Extend a mission with the Away Team shot and cash the multiplied final shot of its bonus round.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-nero"
+    },
+    {
+      "id": "klingon-multiball-started",
+      "title": "Three Locked",
+      "desc": "Light the locks off the green standups and lock all three balls to start Klingon Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-klingon"
+    },
+    {
+      "id": "klingon-double-super-jackpot",
+      "title": "Doubled At The Ramp",
+      "desc": "Work Klingon Multiball all the way to the doubled super jackpot on the Warp Ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-klingon"
+    },
+    {
+      "id": "vengeance-ship-destroyed",
+      "title": "Ship Down",
+      "desc": "Build enough damage in Vengeance Multiball to land the final hit and destroy the ship.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-vengeance"
+    },
+    {
+      "id": "vengeance-extra-ball",
+      "title": "One More Ball",
+      "desc": "Beat the five-shot Vengeance hurry-up round to collect its extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-vengeance-scoring"
+    },
+    {
+      "id": "vengeance-sudden-death-combo",
+      "title": "Last-Second Strike",
+      "desc": "Convert the Vengeance battle's closing shot as a combo before its window expires.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-vengeance-battle-sudden-death"
+    },
+    {
+      "id": "all-crew-combos",
+      "title": "Full Crew Roster",
+      "desc": "Complete every one of the five named crew combos in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-crew-roster"
+    },
+    {
+      "id": "double-scoring-lit",
+      "title": "Everything Doubled",
+      "desc": "Bank ten Warp Ramp shots to light the timed global double-scoring window.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-warp-speed"
+    },
+    {
+      "id": "warp-speed-add-a-ball",
+      "title": "Deep Warp",
+      "desc": "Reach eighteen Warp Ramp shots in one game for the added ball plus another doubling window.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-warp-speed"
+    },
+    {
+      "id": "first-stacked-wizard-round",
+      "title": "No-Win Scenario",
+      "desc": "Clear the first level of all six missions and start the two-ball round that follows.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-kobayashi-maru"
+    },
+    {
+      "id": "second-wizard-round-finished",
+      "title": "Six Rounds Survived",
+      "desc": "Clear the second level of all six missions, then finish the sixth round of the wizard multiball that unlocks and take its super jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-enterprise-amok"
+    },
+    {
+      "id": "final-wizard-super-jackpot",
+      "title": "Five Years Out",
+      "desc": "Clear the third level of all six missions, start the final four-ball wizard mode, and collect its super jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-five-year-mission"
+    },
+    {
+      "id": "captains-chair-award",
+      "title": "Chair Earned",
+      "desc": "Complete three same-level right-side missions in sequence and cash the boosted-ramp award it lights.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-captains-chair"
+    }
+  ],
+  "drills": [
+    {
+      "id": "held-flipper-plunges",
+      "title": "Both Held-Flipper Plunges",
+      "text": "Hold the left flipper through a full plunge and the ball comes to rest on it with the right ramp lit — that is the safe one. Hold the right flipper instead and the plunge has to hit the top gate hard enough to reject back into the right orbit, where too soft or too hard leaves you with no shot at all. Alternate the two until both are muscle memory.",
+      "reps": "10 plunges of each",
+      "focus": "skill-shot",
+      "goal": "skillshot-super-warp-skill-shot",
+      "shots": [
+        "plunger",
+        "right-ramp",
+        "right-orbit",
+        "warp-ramp"
+      ]
+    },
+    {
+      "id": "warp-ramp-volume",
+      "title": "Warp Ramp Volume",
+      "text": "The Warp Ramp is only reachable from the upper right flipper and the counters that matter sit at ten shots and eighteen, so this is a volume shot before it is anything else. Feed the upper flipper off the right orbit and take the ramp every time it is available instead of looking for something better.",
+      "reps": "run the counter to 10 twice",
+      "focus": "accuracy",
+      "goal": "multiplier-warp-speed",
+      "shots": [
+        "warp-ramp",
+        "upper-right-flipper",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "torpedo-discipline",
+      "title": "Torpedo Before Target",
+      "text": "Vengeance rebounds viciously toward the outlanes, and that danger is the entire reason the button exists. Complete the orange Weapon standups to bank three torpedoes, then spend them on the ship instead of shooting it. Play a full ball taking the direct shot only where the rules demand it, which is the final blow, and let the button do everything else.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "goal": "multiball-vengeance",
+      "shots": [
+        "weapon-targets",
+        "punch-it",
+        "vengeance"
+      ]
+    },
+    {
+      "id": "two-shot-crew-pairs",
+      "title": "Two-Shot Crew Pairs",
+      "text": "Every crew combo runs on a window of roughly four seconds, and the second shot has to be a different shot than the last one you hit — a repeated orbit will not chain. Drill the three two-shot pairs before you touch the longer chains: left orbit into a backhanded Warp Ramp, left orbit into the left ramp, right orbit into the right ramp.",
+      "reps": "8 attempts at each pair",
+      "focus": "flow",
+      "goal": "combo-crew-roster",
+      "shots": [
+        "left-orbit",
+        "warp-ramp",
+        "left-ramp",
+        "right-orbit",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "ramp-into-scoop",
+      "title": "Ramp Into Scoop",
+      "text": "The biggest mode finish on this table is the right ramp fired straight into the left scoop while the scoop is carrying its multiplier. Drill the pair cold, outside any mode, until the only thing you are managing under the timer is when to start it rather than whether you can make it.",
+      "reps": "12 pairs",
+      "focus": "accuracy",
+      "goal": "mode-destroy-the-drill",
+      "shots": [
+        "right-ramp",
+        "left-scoop"
+      ]
+    },
+    {
+      "id": "away-team-clock",
+      "title": "Away Team on the Clock",
+      "text": "Away Team sits just beneath the upper right flipper and buys twenty more seconds, but only while the mode clock is still running. Take it at the fifteen-to-twenty-second mark of every mode — not at the start, where the extension is wasted, and not in a panic at the end.",
+      "reps": "every mode, for a full game",
+      "focus": "flow",
+      "goal": "mode-prime-directive",
+      "shots": [
+        "away-team",
+        "upper-right-flipper"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Punch It",
+    "location": "center of the lockdown bar, right under your thumbs",
+    "how": "Star Trek was one of the first Sterns to put a button on the lockdown bar, and here it is your photon torpedo trigger, labeled Punch It. You stock torpedoes by completing the bank of orange Weapon standups, then spend them on the Vengeance — the center ship that kicks back hard toward the outlanes when you shoot it for real. The button buys you damage on the most dangerous shot on the table without taking that shot.",
+    "uses": [
+      {
+        "when": "Torpedoes loaded, Vengeance in your way",
+        "what": "Fires one torpedo for a Vengeance hit, so you skip the drop-target shot that rebounds toward the outlanes."
+      },
+      {
+        "when": "Building toward a Vengeance mode",
+        "what": "Torpedo hits count toward the total that lights Vengeance Multiball, then Vengeance Scoring, then Vengeance Battle."
+      },
+      {
+        "when": "Mid-mode with colored shots lit",
+        "what": "Torpedoes never advance mode shots — press it for Vengeance damage only, and shoot the lit shots yourself."
+      },
+      {
+        "when": "During Vengeance Multiball",
+        "what": "Torpedoes clear damage shots, but the final blow that defeats the ship has to be a real Vengeance hit."
+      },
+      {
+        "when": "Choosing a mission at the scoop",
+        "what": "Cycle with the flippers, then press to lock your pick in instead of letting the timer choose for you."
+      },
+      {
+        "when": "Weapon standups just completed",
+        "what": "You bank three torpedoes; the row of yellow triangles on the playfield shows how many presses you have left."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Command the rebooted Enterprise across six away missions, each replayed at three rising levels, while you batter the Vengeance ship at center and bank Warp Ramp shots for double scoring. Clear every mission at all three levels to reach Five Year Mission, the four-ball final wizard.",
+    "loop": [
+      "Start a mission at the left scoop, shoot its colored shots, and take Away Team mid-timer to add seconds and roll into the multiplied Galactic bonus round.",
+      "Complete the green targets to light locks at the Vengeance and the left scoop, then lock three balls for Klingon Multiball.",
+      "Load photon torpedoes on the orange Weapon targets and fire them with Punch It to damage the Vengeance from a safe distance.",
+      "Bank Warp Ramp shots off the upper-right flipper to climb Warp Speed toward an extra ball, timed double scoring, and an added ball."
+    ],
+    "lights": [
+      {
+        "id": "mission-shots",
+        "name": "Mission Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-scoop"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "away-team"
+          }
+        ],
+        "lit": "A lit colored shot is a live objective in the mission you started at the left scoop; unlighting the required set relights the whole group for another pass while the timer runs.",
+        "flashing": "The Away Team shot flashes as the extend option, worth twenty more seconds when you take it.",
+        "control": null,
+        "then": "Shoot the lit shots for a Bronze, Silver or Gold medal by hit count, and grab Away Team around fifteen to twenty seconds in to add time and open Galactic Mode's doubled final shot. Clearing all six missions at a level lights the white Vengeance to start that level's stacked wizard round.",
+        "goals": [
+          "mode-prime-directive",
+          "mode-nero",
+          "mode-destroy-the-drill",
+          "multiball-kobayashi-maru"
+        ]
+      },
+      {
+        "id": "vengeance-ship",
+        "name": "Vengeance Ship",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "vengeance"
+          }
+        ],
+        "lit": "The center Vengeance lights as the damage target and the hub of all three Vengeance rounds, and it is the most drain-prone shot on the table, rebounding hard toward the outlanes.",
+        "flashing": null,
+        "control": null,
+        "then": "Build hits with direct shots and Punch It torpedoes to start Vengeance Multiball, then the Vengeance Scoring hurry-up with its repeatable extra ball, then the Vengeance Battle sudden-death worth up to forty percent of your score. The final blow always has to be a real ship shot, never a torpedo.",
+        "goals": [
+          "multiball-vengeance",
+          "mode-vengeance-scoring",
+          "combo-vengeance-battle-sudden-death"
+        ]
+      },
+      {
+        "id": "weapon-torpedoes",
+        "name": "Weapon Torpedoes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "weapon-targets"
+          }
+        ],
+        "lit": "Completing the three orange Weapon standups banks photon torpedoes, shown as a row of yellow triangle inserts up the middle of the playfield.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "pressing the lockbar Punch It button launches one banked torpedo at the Vengeance for a hit, letting you skip the ship shot that kicks back toward the outlanes",
+          "when": "any time a torpedo is loaded and the Vengeance is standing in your way"
+        },
+        "then": "Stock torpedoes on the orange targets and spend them on the Vengeance to build its rounds without taking the dangerous direct shot. Torpedoes never advance the lit mission shots, so keep shooting those yourself.",
+        "goals": [
+          "multiball-vengeance",
+          "mode-vengeance-scoring"
+        ]
+      },
+      {
+        "id": "klingon-locks",
+        "name": "Klingon Locks",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "green-lock-targets"
+          },
+          {
+            "shot": "vengeance"
+          },
+          {
+            "shot": "left-scoop"
+          },
+          {
+            "shot": "black-hole-target"
+          },
+          {
+            "shot": "warp-ramp"
+          }
+        ],
+        "lit": "Completing the three green standups lights locks at both the Vengeance and the left scoop, and a lit lock waits until you shoot a ball into it.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls to start Klingon Multiball, and light the Black Hole target off the scattered Red Matter standups to drop in a fourth. Work the red-lit shots for climbing jackpots and save the Warp Ramp for the twenty-million Double Super Jackpot.",
+        "goals": [
+          "multiball-klingon"
+        ]
+      },
+      {
+        "id": "warp-speed",
+        "name": "Warp Speed",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "warp-ramp"
+          }
+        ],
+        "lit": "Every Warp Ramp shot made off the upper-right flipper steps the Warp Speed counter one rung, and the counter holds its place for the whole game rather than resetting each ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Reach seven shots for an extra ball, ten for sixty seconds of global double scoring, and eighteen for double scoring plus an added ball, both repeatable after the first. Time the double-scoring window to land right on a jackpot-heavy multiball or a big wizard shot.",
+        "goals": [
+          "multiplier-warp-speed"
+        ]
+      },
+      {
+        "id": "beam-me-up",
+        "name": "BEAM-ME-UP Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "beam-me-up-lanes"
+          }
+        ],
+        "lit": "The three top rollover lanes spell BEAM-ME-UP and are fed by orbit shots that fall just short of a full loop.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete all three lanes to lift this ball's bonus multiplier by a step, then re-roll the set as often as you can before you drain. The boost counts only for the ball in play and starts back at base next ball.",
+        "goals": [
+          "multiplier-bonus-x"
+        ]
+      },
+      {
+        "id": "crew-combos",
+        "name": "Crew Combos",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "warp-ramp"
+          }
+        ],
+        "lit": "After a starting shot, a red combo insert flashes for roughly four seconds on the next link of a named crew chain, marking where to shoot next.",
+        "flashing": "The lit combo insert counts down its four-second window; miss it and the chain resets to the start.",
+        "control": null,
+        "then": "Chain the marked shots to complete Kirk, Bones, Sulu, Uhura and Spock -- the first time you land each one it pays a flat million and bumps every future crew combo's floor a little higher. Your next shot has to differ from the last you struck, so a repeated orbit shot will not extend the chain.",
+        "goals": [
+          "combo-kirk",
+          "combo-bones",
+          "combo-sulu",
+          "combo-uhura",
+          "combo-spock",
+          "combo-crew-roster"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Cup the left flipper during a full plunge for the safe Super Skill Shot, collected on the lit right ramp, then launch your first mission at the left scoop and grab Away Team mid-timer. Roll the top rollover lanes whenever you can to build this ball's bonus multiplier.",
+        "goals": [
+          "skillshot-super-skill-shot",
+          "mode-prime-directive",
+          "multiplier-bonus-x",
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Complete the green targets to stack Klingon Multiball into a mission you already have running, load torpedoes to fight the Vengeance rounds safely, and bank Warp Ramp shots toward a timed double-scoring window. Starting a mode just before the final lock runs its timer and the jackpots together.",
+        "goals": [
+          "multiball-klingon",
+          "multiball-vengeance",
+          "multiplier-warp-speed",
+          "strategy-mode-multiball-stacking"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear all six missions at Level I, then Level II, then Level III to light Kobayashi Maru, Enterprise Amok, and finally Five Year Mission. That last wizard is a four-ball multiball with every major shot lit at once, ending in a Super Jackpot at the Vengeance.",
+        "goals": [
+          "wizard-five-year-mission",
+          "wizard-enterprise-amok",
+          "multiball-kobayashi-maru"
+        ]
+      }
+    ]
+  }
+}

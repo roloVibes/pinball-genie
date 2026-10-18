@@ -1,0 +1,519 @@
+{
+  "machine": "RollerCoaster Tycoon (Stern, 2002)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Manual plunger with three real outcomes by power: soft drops into the skill-shot hole (or falls back to try again), medium settles the ball behind the maintenance-man drop target to trap a mode start, and full strength sends it around the right loop into the rollovers and pops."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper-Left Flipper",
+      "type": "flipper",
+      "x": 0.14,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Tucked below the Scrambled Eggs ride and feeds its loop; the quietest flipper on the machine, but it keeps balls out of the right outlane."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper-Right Flipper",
+      "type": "flipper",
+      "x": 0.84,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Handles the busy top section — a choice of loops, a row of drop targets, and grouped and individual standups."
+    },
+    {
+      "id": "skill-shot-hole",
+      "name": "Skill-Shot Hole",
+      "type": "saucer",
+      "x": 0.85,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "High up the shooter lane. A soft plunge either falls back to the plunger or drops in; you can try as many times as you like. A made shot routes internally down to the Info Scoop."
+    },
+    {
+      "id": "maintenance-man-drop",
+      "name": "Maintenance Man Drop Target",
+      "type": "drop-target",
+      "x": 0.85,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "A dual-function target behind the right loop. An opto senses a ball arriving from the loop side without dropping the target; hit normally from the flipper side, it drops as usual."
+    },
+    {
+      "id": "info-scoop",
+      "name": "Info Scoop",
+      "type": "scoop",
+      "x": 0.78,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Sits just above the lower-right flipper and hands out random awards — the only true sucker shot on the playfield. Also receives balls automatically from the skill-shot hole and can kick out unpredictably, usually onto the right flipper."
+    },
+    {
+      "id": "flying-ghost",
+      "name": "Flying Ghost",
+      "type": "ramp",
+      "x": 0.45,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "The centre ramp. Three hits build this coaster's traffic light from red to green; drains here are one of the game's more common ball-loss sources."
+    },
+    {
+      "id": "chicago-loop",
+      "name": "Chicago Loop",
+      "type": "ramp",
+      "x": 0.3407,
+      "y": 0.6711,
+      "trim": "all",
+      "notes": "The left ramp, angled so it's genuinely hard to send a ball straight down the right outlane from here. Three hits build this coaster."
+    },
+    {
+      "id": "flying-turns",
+      "name": "Flying Turns",
+      "type": "ramp",
+      "x": 0.6425,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "The right ramp. Three hits build this coaster; it's also the multiball start shot once two balls are locked, and the extra-ball collection point at 6x bonus."
+    },
+    {
+      "id": "lock-lane",
+      "name": "Lock Lane",
+      "type": "lock",
+      "x": 0.16,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Sits under a diverter near the lower-left flipper. Receives diverted balls from Flying Ghost and Chicago Loop once lock is lit, then relaunches them with its own kicker."
+    },
+    {
+      "id": "snack-booth-sinkhole",
+      "name": "Snack Booth Sinkhole",
+      "type": "saucer",
+      "x": 0.1,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "One of only two shots the lower-left flipper can reach. Builds Snack Booth value with every hit."
+    },
+    {
+      "id": "eat-standups",
+      "name": "E-A-T Standups",
+      "type": "target-bank",
+      "x": 0.1,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Three standups just below the Snack Booth sinkhole, easy to forget since only the lower-left flipper reaches them."
+    },
+    {
+      "id": "scrambled-eggs",
+      "name": "Scrambled Eggs",
+      "type": "disc",
+      "x": 0.15,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "A loop feeding a rotating table above the upper-left flipper. Scores Jackpots and turns up inside several attraction modes; a weak shot can dribble back out awkwardly, but it isn't a sucker shot.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.88,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "The destination of a full-strength plunge; continues on into the rollover lanes and pop bumpers."
+    },
+    {
+      "id": "rollover-lanes",
+      "name": "Rollover Lanes",
+      "type": "rollover",
+      "x": 0.8,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Steps the bonus multiplier with every completion, up to 6x."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.6,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Feed back toward the rollover lanes on a full-strength plunge."
+    },
+    {
+      "id": "billboard-stop-target",
+      "name": "Billboard Stop-n-Win Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Freezes the LED billboard's changing numbers. Best hit with the billboard in your line of sight if you can manage it."
+    },
+    {
+      "id": "upper-standups",
+      "name": "Upper Standups",
+      "type": "standup",
+      "x": 0.65,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "A mix of grouped and individual standups in the busy top section of the playfield.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "upper-drop-bank",
+      "name": "Upper Drop Bank",
+      "type": "target-bank",
+      "x": 0.72,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "A row of drop targets alongside the upper standups, part of what makes the top of this playfield worth learning shot by shot.",
+      "flipper": "upper-right-flipper"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-low-plunge",
+      "title": "Skill Shot: Soft Plunge to the Hole",
+      "category": "skillshot",
+      "summary": "The gentlest of the shooter lane's outcomes: a soft plunge that either drops into the skill-shot hole or falls back for another try, with no penalty for missing.",
+      "difficulty": 1,
+      "reward": "A random award at the Info Scoop",
+      "steps": [
+        {
+          "shot": "skill-shot-hole",
+          "action": "Plunge just hard enough to drop into the skill-shot hole",
+          "detail": "Miss and the ball simply falls back to the plunger for another attempt. A made shot routes down to the Info Scoop for a random award rather than a fixed score, so it isn't always your best-value opening shot.",
+          "plunge": "partial",
+          "plungeTo": 0.8
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "six-attraction-modes",
+      "title": "The Medium Plunge Trick",
+      "category": "secret",
+      "summary": "A plunge nobody signposts for you: send the ball at medium strength so it settles behind the maintenance-man drop target instead of knocking it down, and you're dropped straight into one of six named attractions.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "From the plunger, send the ball at medium strength toward the drop target behind the right loop, nicknamed the maintenance man",
+        "An opto behind the target senses the ball without it actually dropping, as long as the ball arrives from the loop side",
+        "Landing there launches one of six attractions immediately: Super Dunk, Power Ride, Toss Your Cookies, Dancing Digits, Spin and Bump, or Dunk the Dummy",
+        "A full-strength plunge instead sails past the target and continues around the loop, so it's the medium touch that makes this work",
+        "Play through all six across the game to open the Park Tycoon wizard mode"
+      ],
+      "reward": "Launches directly into one of six attractions; clearing all six opens Park Tycoon",
+      "fx": "lights"
+    },
+    {
+      "id": "snack-booths-eat",
+      "title": "Lower-Left Flipper: Snack Booths & E-A-T",
+      "category": "progression",
+      "summary": "The quiet lower-left flipper only reaches two things worth naming: a sinkhole that builds Snack Booth value, and a trio of E-A-T standups just below it.",
+      "difficulty": 1,
+      "reward": "Points toward Snack Booths with every sinkhole hit",
+      "steps": [
+        {
+          "shot": "snack-booth-sinkhole",
+          "action": "Drop the ball into the sinkhole from the lower-left flipper",
+          "detail": "Builds Snack Booth value with every hit"
+        },
+        {
+          "shot": "eat-standups",
+          "action": "Clip the three standups on the way past",
+          "detail": "Sit just below the sinkhole and are easy to forget about entirely"
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "three-coasters-multiball",
+      "title": "Build All Three Coasters, Then Multiball",
+      "category": "multiball",
+      "summary": "Turn each ramp's traffic light from red to green with three hits apiece, lock two balls at whichever ramp lights, and launch at the right ramp for the game's best animation.",
+      "difficulty": 2,
+      "reward": "Jackpots and Super Jackpots at the lit ramps",
+      "steps": [
+        {
+          "shot": "flying-ghost",
+          "action": "Shoot the centre ramp three times to build Flying Ghost",
+          "detail": "Each hit steps its traffic light a shade closer to green",
+          "link": "none"
+        },
+        {
+          "shot": "chicago-loop",
+          "action": "Shoot the left ramp three times to build Chicago Loop",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "flying-turns",
+          "action": "Shoot the right ramp three times to build Flying Turns",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "flying-ghost",
+          "action": "With all three built, lock a ball at the centre or left ramp",
+          "detail": "Both ramps divert into the lock lane once lock is lit",
+          "link": "none"
+        },
+        {
+          "shot": "chicago-loop",
+          "action": "Lock the second ball the same way",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "flying-turns",
+          "action": "With two balls locked, shoot the right ramp to start multiball",
+          "detail": "The best display animation in the game"
+        },
+        {
+          "shot": "flying-ghost",
+          "action": "Chase jackpots at whichever ramp is lit",
+          "detail": "Keep an eye on the inserts — it's easy to lose track mid-multiball of which one is hot. Scoring stays modest even across several Super Jackpots"
+        }
+      ],
+      "fx": "upside"
+    },
+    {
+      "id": "ramp-rhythm-combo",
+      "title": "Ramp Rhythm: Left, Centre, Left",
+      "category": "combo",
+      "summary": "Chicago Loop and Flying Ghost sit close enough together to build a real back-and-forth rhythm once you find it.",
+      "difficulty": 2,
+      "reward": "Steady ramp value with each completed exchange",
+      "steps": [
+        {
+          "shot": "chicago-loop",
+          "action": "Shoot the left ramp",
+          "detail": "The opening shot of the rhythm"
+        },
+        {
+          "shot": "flying-ghost",
+          "action": "Combo straight into the centre ramp",
+          "detail": null
+        },
+        {
+          "shot": "chicago-loop",
+          "action": "Back to the left ramp again",
+          "detail": "Keep the rhythm going as long as you can hold it"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "rollover-multiplier",
+      "title": "Build the Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "A full-power plunge sends the ball around the right loop into the rollovers, where each completion steps the bonus multiplier — six times over lights an extra ball at the right ramp.",
+      "difficulty": 1,
+      "reward": "Extra ball once the bonus multiplier reaches 6x",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Roll through the lanes to build the multiplier",
+          "detail": "A hard plunge around the right loop is one way in; the pop bumpers can also feed them"
+        },
+        {
+          "shot": "flying-turns",
+          "action": "With the multiplier at 6x, shoot the right ramp for the extra ball",
+          "detail": null
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "billboard-stop-n-win",
+      "title": "Stop-n-Win the Billboard",
+      "category": "mode",
+      "summary": "The Stop-n-Win target freezes the LED billboard's changing numbers — stop three of them and cash in whatever they add up to.",
+      "difficulty": 2,
+      "reward": "Stopped-number total x 100K",
+      "steps": [
+        {
+          "shot": "billboard-stop-target",
+          "action": "Hit the target to stop the first number",
+          "detail": "The billboard keeps cycling until you catch it"
+        },
+        {
+          "shot": "billboard-stop-target",
+          "action": "Hit it twice more to stop a second and third number",
+          "detail": "Each stopped number is worth that many points times 100K"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "park-tycoon-wizard",
+      "title": "Wizard Mode: Park Tycoon",
+      "category": "wizard",
+      "summary": "The payoff for playing the whole roster: clear all six attraction modes and Park Tycoon opens as the game's biggest scoring opportunity by a wide margin.",
+      "difficulty": 3,
+      "reward": "Over 5M without much effort — by far the biggest scoring mode in the game",
+      "steps": [
+        {
+          "shot": "maintenance-man-drop",
+          "action": "Play all six attraction modes at least once across the game",
+          "detail": "Each one starts by trapping a medium-strength plunge behind this target"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "scrambled-eggs-jackpots",
+      "title": "Ride the Scrambled Eggs",
+      "category": "progression",
+      "summary": "Tucked above the upper-left flipper, the Scrambled Eggs ride is a loop feeding a rotating table — worth Jackpots on its own and a recurring player inside several attraction modes.",
+      "difficulty": 2,
+      "reward": "Jackpots, plus appearances inside several attraction modes",
+      "steps": [
+        {
+          "shot": "scrambled-eggs",
+          "action": "Shoot the loop up onto the rotating table",
+          "detail": "A weak shot can dribble back out awkwardly, but it isn't the sucker shot on this game"
+        }
+      ],
+      "fx": "eggo"
+    },
+    {
+      "id": "info-scoop-random",
+      "title": "Take the Info Scoop Gamble",
+      "category": "progression",
+      "summary": "The one true sucker shot on the playfield — a scoop above the lower-right flipper that hands out a random award along with a curt 'Watch it!' warning.",
+      "difficulty": 1,
+      "reward": "A random award",
+      "steps": [
+        {
+          "shot": "info-scoop",
+          "action": "Shoot into the Info Scoop",
+          "detail": "It also receives balls automatically from the skill-shot hole and can kick back out unpredictably — usually onto the right flipper, occasionally straight down the middle"
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "strategy-build-order",
+      "title": "Strategy: Round-Robin the Ramps",
+      "category": "strategy",
+      "summary": "Work all three ramps evenly before chasing anything else, and stay alert around the game's real drain sources — missed centre-ramp shots, weak Scrambled Eggs exits, and Info Scoop kickouts.",
+      "difficulty": 2,
+      "reward": null,
+      "steps": [
+        {
+          "shot": "skill-shot-hole",
+          "action": "Take the soft plunge if you want a look at a random award",
+          "detail": "Optional, and it routes to a random-award scoop rather than fixed points — not necessarily your best-value opening shot"
+        },
+        {
+          "shot": "flying-ghost",
+          "action": "Work all three ramps round-robin",
+          "detail": "Three hits each builds every coaster toward lock without favoring one side"
+        },
+        {
+          "shot": "scrambled-eggs",
+          "action": "Take Scrambled Eggs shots at full strength",
+          "detail": "A weak dribble-out is one of the game's few real drain risks"
+        },
+        {
+          "shot": "flying-turns",
+          "action": "Lock two and launch at the right ramp once all three are built",
+          "detail": "Then chase jackpots carefully — it's easy to lose track of which ramp is lit"
+        }
+      ],
+      "fx": "train"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "train",
+  "achievements": [
+    {
+      "id": "skillshot-hole-landed",
+      "title": "First Drop",
+      "desc": "Land the soft plunge in the skill-shot hole.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-low-plunge"
+    },
+    {
+      "id": "medium-plunge-trapped",
+      "title": "Secret Ride Ticket",
+      "desc": "Trap a medium-strength plunge behind the maintenance man to launch straight into an attraction.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "six-attraction-modes"
+    },
+    {
+      "id": "scrambled-eggs-regular",
+      "title": "Rotating Table Regular",
+      "desc": "Shoot the Scrambled Eggs loop up onto the rotating table.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "scrambled-eggs-jackpots"
+    },
+    {
+      "id": "three-coasters-built",
+      "title": "Three Green Lights",
+      "desc": "Build all three rollercoasters and lock two balls to start multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "three-coasters-multiball"
+    },
+    {
+      "id": "six-x-bonus",
+      "title": "Six-Times Bonus",
+      "desc": "Build the bonus multiplier to 6x and collect the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rollover-multiplier"
+    },
+    {
+      "id": "billboard-frozen",
+      "title": "Billboard Stopped Cold",
+      "desc": "Stop three numbers on the LED billboard in a single Stop-n-Win.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "billboard-stop-n-win"
+    },
+    {
+      "id": "ramp-rhythm-held",
+      "title": "Full Rhythm",
+      "desc": "Chain Chicago Loop and Flying Ghost back and forth to build a real ramp rhythm.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ramp-rhythm-combo"
+    },
+    {
+      "id": "park-tycoon-opened",
+      "title": "Grand Opening",
+      "desc": "Clear all six attraction modes and reach Park Tycoon.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "park-tycoon-wizard"
+    }
+  ]
+}

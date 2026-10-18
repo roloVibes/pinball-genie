@@ -1,0 +1,516 @@
+{
+  "machine": "Terminator 3: Rise of the Machines (Stern, 2003)",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "No skill shot as such — instead a menu of launch awards to pick from before the ball reaches the flippers."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.08,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Carries a kickback that goes dark after a save and needs the three standups above it cleared to come back."
+    },
+    {
+      "id": "kickback-standups",
+      "name": "Kickback Standups",
+      "type": "target-bank",
+      "x": 0.1,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Three red standups above the left outlane; clearing all three relights the kickback."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.12,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "More often than not this doesn't complete a full loop — it falls into one of the sink holes at the top of the game instead."
+    },
+    {
+      "id": "mystery-target",
+      "name": "Mystery Target",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Sits next to the left loop."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Advances the left security level toward Payback Time and feeds the left inlane.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "tx-lock-lane",
+      "name": "TX Lock Lane",
+      "type": "lock",
+      "x": 0.4,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "A game-controlled drop target sits halfway along with a sink hole at the end. Real ball locks — a fresh ball launches after each one. Roughly 40% of shots here drained between the flippers on the reviewed unit, so aim it with intent."
+    },
+    {
+      "id": "tx-shooter-eject",
+      "name": "TX Shooter Eject",
+      "type": "kicker",
+      "x": 0.48,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A small ejector just right of the lock lane."
+    },
+    {
+      "id": "red-captive-ball",
+      "name": "Red Captive Ball",
+      "type": "captive-ball",
+      "x": 0.55,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Each hit throbs the red flashers with a matching bass hit; three hits starts the RED mode."
+    },
+    {
+      "id": "centre-ramp",
+      "name": "Centre Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Loops around behind Arnie's head, across the playfield, and into the left inlane.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "A sharp turnaround that feeds the right inlane.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.85,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Collects escape awards and feeds the upper sink holes. Lights for the RPG challenge once R-P-G is spelled.",
+      "feeds": {
+        "shot": "upper-sinkholes"
+      }
+    },
+    {
+      "id": "rpg-letter-standups",
+      "name": "R-P-G Standups",
+      "type": "target-bank",
+      "x": 0.82,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Three standups on the right, each lighting one letter. Completing the word lights the right loop to start the RPG challenge."
+    },
+    {
+      "id": "rpg-backbox-targets",
+      "name": "RPG Backbox Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.96,
+      "trim": "all",
+      "notes": "Five standup targets in an arc inside the backbox, fired at with a launcher that swings back and forth through about 60 degrees. Trigger a shot with the shooter button or a flipper button."
+    },
+    {
+      "id": "upper-sinkholes",
+      "name": "Upper Sink Holes",
+      "type": "saucer",
+      "x": 0.3,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "A cluster at the top of the game, most often fed by a left-loop shot that doesn't complete, and also reachable off the right loop."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.17,
+      "y": 0.09,
+      "trim": "all"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.79,
+      "y": 0.09,
+      "trim": "all"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.87,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "The only adjustable outlane on the machine, and still wide open on default settings — there's virtually no ball saver here."
+    }
+  ],
+  "goals": [
+    {
+      "id": "launch-award-choice",
+      "title": "Pick a Launch Award",
+      "category": "progression",
+      "summary": "No skill shot here — instead you choose from a menu of launch awards before the ball even reaches the flippers, and the menu grows as the game goes on.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Choose one of the launch awards offered at the start of each ball",
+        "Early choices are Bonus X, Mystery, and TX Challenge",
+        "Later in the game the menu adds Start RPG, Lock Ball, and others",
+        "TX Challenge is generally the strongest of the early picks — it feeds a fast, repeatable points run"
+      ],
+      "reward": "Whichever launch award you pick",
+      "fx": "gear"
+    },
+    {
+      "id": "tx-challenge",
+      "title": "TX Challenge",
+      "category": "mode",
+      "summary": "Picking TX Challenge feeds the ball to the TX sink hole for a 'Shoot anything' countdown — any loop, ramp, or the lock lane counts, and routing through the lock lane restarts the whole thing as Bonus Challenge.",
+      "difficulty": 2,
+      "reward": "Up to 2.5M per round, twice over if you route through the lock lane",
+      "steps": [
+        {
+          "shot": "tx-lock-lane",
+          "action": "The ball feeds into the TX sink hole to start the countdown",
+          "detail": "Value starts at 2.5M and ticks down in 0.5M chunks over about five seconds as Arnie counts from five to one"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot any loop, ramp, or the lock lane before the count runs out",
+          "detail": "Anything qualifies except the captive ball — but if multiball is already primed and waiting on a final lock shot, shots made here as part of the Challenge won't count toward it"
+        },
+        {
+          "shot": "tx-lock-lane",
+          "action": "Route the shot through the lock lane specifically for a bonus restart",
+          "detail": "The drop target lowers so the ball falls straight into the sink hole — you bank the current value and start Bonus Challenge, the same countdown again with the drop target raised this time"
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "kickback-relight",
+      "title": "Relight the Kickback",
+      "category": "progression",
+      "summary": "The left outlane's kickback goes dark after a save and only comes back once all three red standups above it are down.",
+      "difficulty": 1,
+      "reward": "A relit kickback save on the left outlane",
+      "steps": [
+        {
+          "shot": "kickback-standups",
+          "action": "Knock down all three standups above the left outlane",
+          "detail": "Relights the kickback for another save"
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "red-mode",
+      "title": "RED",
+      "category": "mode",
+      "summary": "Three hits on the captive ball starts RED — all three ramps and both loops light at once, and you're on the clock to collect all five before time runs out.",
+      "difficulty": 2,
+      "reward": "All five shots relight plus a weapon upgrade; stackable with multiball, and startable even while multiball is already running",
+      "steps": [
+        {
+          "shot": "red-captive-ball",
+          "action": "Hit the captive ball three times to start the mode",
+          "detail": "Each hit throbs the red flashers with a matching bass hit — one of the game's better sound moments"
+        },
+        {
+          "shot": "centre-ramp",
+          "action": "Shoot any of the five lit shots",
+          "detail": "All three ramps and both loops count, in any order",
+          "link": "none"
+        },
+        {
+          "shot": "right-loop",
+          "action": "Clear the rest of the five before the timer ends",
+          "detail": "Extra captive-ball hits and the kickback standups both extend the clock",
+          "link": "none"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "payback-time",
+      "title": "Payback Time",
+      "category": "mode",
+      "summary": "Alternate the left and right ramps to build a security level on each side — five clean hits apiece opens Payback Time, a timed run where the ramps pay a flat million every shot.",
+      "difficulty": 2,
+      "reward": "1M per ramp shot during the timed round",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Build the left security level with five ramp hits",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Build the right security level with five ramp hits",
+          "detail": "Working both sides quickly rather than one at a time is worth it",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "With both sides at five, Payback Time starts",
+          "detail": "Ramps pay a flat 1M each while the clock runs"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "multiball",
+      "title": "TX Multiball",
+      "category": "multiball",
+      "summary": "A real, physical lock — three balls into the TX Lock Lane launches multiball outright, then it's the same lane over and over for jackpots, and Super Jackpots once the drop target stays down.",
+      "difficulty": 2,
+      "reward": "Repeating jackpots, then Super Jackpots at the same lock lane",
+      "steps": [
+        {
+          "shot": "tx-lock-lane",
+          "action": "Lock three balls at the TX Lock Lane",
+          "detail": "Real locks — a fresh ball launches after each one, with no separate launch award along the way"
+        },
+        {
+          "shot": "tx-lock-lane",
+          "action": "Keep hammering the lock lane for jackpots",
+          "detail": "The same shot pays again and again once multiball is running"
+        },
+        {
+          "shot": "tx-lock-lane",
+          "action": "Once the drop target stays down, the same shot pays Super Jackpots",
+          "detail": "Watch for the TX's arm and head flashers strobing when you land one"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "rpg-qualify",
+      "title": "Spell R-P-G",
+      "category": "progression",
+      "summary": "Three standups on the right spell R-P-G one letter at a time — complete the word and the right loop lights to send you to the backbox challenge.",
+      "difficulty": 1,
+      "reward": "Lights the RPG challenge at the right loop",
+      "steps": [
+        {
+          "shot": "rpg-letter-standups",
+          "action": "Light one letter per standup hit",
+          "detail": "Completing the word lights the right loop"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "rpg-challenge",
+      "title": "RPG Backbox Challenge",
+      "category": "mode",
+      "summary": "The rocket-propelled-grenade minigame: a launcher swings through about 60 degrees while you fire at five arced standups against a countdown that starts at five million.",
+      "difficulty": 3,
+      "reward": "Countdown bonus, plus extra for using fewer than five shots and for hitting the targets in order",
+      "steps": [
+        {
+          "shot": "rpg-backbox-targets",
+          "action": "Time the swinging launcher and fire at the five arced targets",
+          "detail": "Trigger a shot with the shooter button or a flipper button; the countdown runs from 5M down to 1M, then gives three more seconds of grace"
+        },
+        {
+          "shot": "rpg-backbox-targets",
+          "action": "Clear all five before the grace period ends",
+          "detail": "The uppermost target is the hardest to line up"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "video-mode-secret",
+      "title": "Video Mode: Tank Assault",
+      "category": "secret",
+      "summary": "A tank-shooting video mode borrowed almost note for note from T2, with the robots swapped out for armor.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Steer the crosshairs left and right with the flippers",
+        "Shoot the tanks before they get a shot off at you",
+        "Taking three hits ends the mode",
+        "Clear every tank to win, and avoid all incoming fire for a flawless bonus"
+      ],
+      "reward": "Points per tank destroyed, plus a flawless bonus for a clean run",
+      "fx": "demo"
+    },
+    {
+      "id": "strategy-safe-start",
+      "title": "Strategy: Safe Opening",
+      "category": "strategy",
+      "summary": "This is a drain-prone machine on default settings — get the kickback armed early, treat the lock lane as a real shot rather than a rebound, and take TX Challenge at the launch menu for a reliable start.",
+      "difficulty": 1,
+      "reward": null,
+      "steps": [
+        {
+          "shot": "tx-lock-lane",
+          "action": "Pick TX Challenge from the launch menu",
+          "detail": "The most reliable of the early choices, and it can restart itself for a second run through the lock lane"
+        },
+        {
+          "shot": "kickback-standups",
+          "action": "Clear the three kickback standups early",
+          "detail": "Both outlanes run wide open by default, so get the save armed as soon as you can"
+        },
+        {
+          "shot": "tx-lock-lane",
+          "action": "Aim the lock lane with intent, not by accident",
+          "detail": "A weak exit here is one of the game's biggest drain sources"
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "strategy-stack-everything",
+      "title": "Strategy: Stack Everything",
+      "category": "strategy",
+      "summary": "RED stacks cleanly on top of multiball, Payback Time builds in the background whenever the ramps are open, and the RPG challenge is worth saving for a calmer single-ball moment.",
+      "difficulty": 3,
+      "reward": null,
+      "steps": [
+        {
+          "shot": "red-captive-ball",
+          "action": "Start RED even with multiball already running",
+          "detail": "The two stack cleanly, and RED's timer keeps you focused on five specific shots instead of just hammering the lock"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Work Payback Time's security levels between multiball attempts",
+          "detail": "Alternate ramps whenever the lock lane isn't the priority shot"
+        },
+        {
+          "shot": "right-loop",
+          "action": "Save the RPG challenge for a calm single-ball moment",
+          "detail": "It's a precision shot on a swinging launcher, not something to chase mid-multiball"
+        }
+      ],
+      "fx": "battle"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "mecha",
+  "achievements": [
+    {
+      "id": "tx-challenge-cleared",
+      "title": "Countdown Cashed",
+      "desc": "Collect the TX Challenge value before the countdown runs out.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "tx-challenge"
+    },
+    {
+      "id": "kickback-relit",
+      "title": "Reloaded",
+      "desc": "Clear all three kickback standups to relight the left outlane save.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "kickback-relight"
+    },
+    {
+      "id": "rpg-lettered",
+      "title": "R-P-G Spelled",
+      "desc": "Complete the R-P-G standups to light the backbox challenge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "rpg-qualify"
+    },
+    {
+      "id": "red-mode-started",
+      "title": "Red Alert",
+      "desc": "Hit the captive ball three times to start RED.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "red-mode"
+    },
+    {
+      "id": "payback-time-lit",
+      "title": "Security Clearance",
+      "desc": "Build both security levels to five and light Payback Time.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "payback-time"
+    },
+    {
+      "id": "multiball-locked",
+      "title": "Three Locked",
+      "desc": "Lock three balls at the TX Lock Lane to start multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "rpg-challenge-cleared",
+      "title": "Five For Five",
+      "desc": "Clear all five RPG backbox targets before the grace period ends.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "rpg-challenge"
+    },
+    {
+      "id": "video-mode-flawless",
+      "title": "Flawless Victory",
+      "desc": "Clear Tank Assault video mode without taking a single hit.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "video-mode-secret"
+    },
+    {
+      "id": "everything-stacked",
+      "title": "Everything At Once",
+      "desc": "Start RED mode while multiball is already running.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "strategy-stack-everything"
+    }
+  ]
+}

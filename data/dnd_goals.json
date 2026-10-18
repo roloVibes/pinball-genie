@@ -1,0 +1,1551 @@
+{
+  "machine": "Dungeons & Dragons: The Tyrant's Eye (Stern Pinball, 2025)",
+  "defaultFx": "dragon",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Full plunge feeds the upper playfield/right-orbit path around the back. Short plunge chooses among lit skill-shot targets."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Backhandable from the left flipper and one of the game's most important shots. It drops the ramp at its entrance so the following left-ramp shot can carry the ball through the cube; otherwise it alternates between that and feeding the upper flipper.",
+      "feeds": {
+        "x": 0.3,
+        "y": 0.7
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Starts Dragon Multiball when lit; wraps around the back to the left flipper. Ranged/damage shot in modes.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.32,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Only makeable from the RIGHT flipper. Part of Gelatinous Cube lock chain and the Tavern Brawl jackpot loop.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Road to Town Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Tough right ramp. Jackpot/hurry-up shot, where lit Extra Balls are collected, and a 'choose the next action' shot used to start town modes.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side (Bridge) Ramp",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Sits above the Red Cave loop. Alternate Dragon Multiball start (when no mode running), jackpot in several multiballs, one leg of the Super Skill Shot, and a blue wizard-start shot.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "upper-loop",
+      "name": "Red Cave Upper Loop",
+      "type": "loop",
+      "x": 0.55,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Main shot above the flippers, behind Rath; hit with late flips from the upper flipper. Super Jackpot in Dragon MB and Tavern Brawl; spots belongings.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "shortcut-loop",
+      "name": "Shortcut / Side Loop",
+      "type": "loop",
+      "x": 0.44,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Center mini-loop hittable from either lower flipper; collects the side-loop SUPER JACKPOT in Gelatinous Cube MB and Town Celebration MB. Feeds a controlled upper-flipper setup via the magnet."
+    },
+    {
+      "id": "center-spinner",
+      "name": "Tiny's Tavern Spinner",
+      "type": "spinner",
+      "x": 0.5,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Center shot straight up the middle. Rip it for spinner value; starts Tiny's Dice and Tavern Brawl when no mode is running, spots and starts Dungeon Crawl, and is one of the three blue wizard-start shots. Returns the ball to the right flipper.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "dragon-bank",
+      "name": "Dragon 3-Bank Standups",
+      "type": "target-bank",
+      "x": 0.52,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Three standups beneath Rath. Spell D-R-A-G-O-N to qualify Dragon Multiball; also add balls / advance phases. Rath's head drops to block them."
+    },
+    {
+      "id": "rath",
+      "name": "Rath the Relentless",
+      "type": "mech",
+      "x": 0.3615,
+      "y": 0.5357,
+      "trim": "all",
+      "notes": "Animatronic red dragon bash toy. Bash to deal dragon damage in Dragon MB. Pro = up/down only; Premium/LE = multi-axis motion, omnidirectional sensing, and spits balls during Dragon MB."
+    },
+    {
+      "id": "fizmo",
+      "name": "Fizmo's Shop (Left Eject)",
+      "type": "scoop",
+      "x": 0.17,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Left eject/kickout. Access Fizmo's store, collect treasure chests / Mimics, buy Bonus X and items. First leg of the Super Skill Shot. Feeds the upper flipper."
+    },
+    {
+      "id": "pop-up-scoop",
+      "name": "Pop-Up Dungeon Scoop",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.29,
+      "trim": "premium-le",
+      "notes": "Premium/LE only. Raises out of the playfield to start the Dungeon Crawl and to bump Tiny's Dice / stage Tavern Brawl super. Pro uses the center spinner instead."
+    },
+    {
+      "id": "gelatinous-cube",
+      "name": "Gelatinous Cube Lock",
+      "type": "mech",
+      "x": 0.36,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Electromagnet in the cube sculpt, reached by the left ramp. It freezes the ball as it passes through and holds it there as a lock for Gelatinous Cube Multiball."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Critical Hit Captive Ball",
+      "type": "captive-ball",
+      "x": 0.6,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Hit twice in quick succession for a Natural 20 / Critical Hit; spots a mode/damage shot, or when idle advances a DRAGON letter, a Gel Cube lock, or 2x progress. Flashes ~15 sec after the first hit."
+    },
+    {
+      "id": "dungeon-targets",
+      "name": "Dungeon Standup Targets",
+      "type": "standup",
+      "x": 0.83,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Near the right orbit / side ramp. Hit to light the Dungeon Crawl."
+    },
+    {
+      "id": "secret-door",
+      "name": "Secret Door Bar Target",
+      "type": "standup",
+      "x": 0.25,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Bar/standup in front of the hidden temple (upper-left). Hit to light/qualify the 2x Hidden Temple shot."
+    },
+    {
+      "id": "hidden-temple",
+      "name": "Hidden Temple",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Behind the upper flipper. The 2x-playfield scoring shot and the MXV skill-shot target. Opened by the secret door bar target."
+    },
+    {
+      "id": "shield",
+      "name": "The Shield",
+      "type": "mech",
+      "x": 0.3777,
+      "y": 0.0595,
+      "trim": "all",
+      "notes": "Retractable metal post between the flippers. Press the action button when it flashes to block center drains or to shield-stage a repeat of the left ramp. Charged by completing the return lanes."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "One of the four return lanes that charge/relight the Shield."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "One of the four return lanes that charge/relight the Shield."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.28,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Mid-playfield third flipper; the Hidden Temple lane sits directly behind it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "The highest-value plunge award: a three-shot combo out of a short plunge for 6M base plus combo value.",
+      "difficulty": 3,
+      "reward": "6M base + combo, scaling with ball multiplier",
+      "steps": [
+        {
+          "shot": "fizmo",
+          "action": "Short-plunge, then shoot the left eject",
+          "detail": "Soft-plunge instead of feeding the full orbit, then start the combo by hitting Fizmo's Shop — first leg of the super skill shot."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Combo the side ramp",
+          "detail": "Second leg — keep the combo alive."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish on the right ramp",
+          "detail": "Completes the 3-shot chain for the 6M super skill shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mxv-skill-shot",
+      "title": "MXV Skill Shot",
+      "category": "skillshot",
+      "summary": "The best safe skill shot for beginners: short-plunge straight into the Hidden Temple for 6M and it primes 2x playfield scoring.",
+      "difficulty": 2,
+      "reward": "6M, plus progress toward lighting the Hidden Temple for 2x scoring",
+      "steps": [
+        {
+          "shot": "hidden-temple",
+          "action": "Short-plunge into the Hidden Temple",
+          "detail": "Aim the short plunge toward the upper-left, behind the upper flipper. A normal skill shot is 2M x the ball number; the MXV and super versions start at 6M. The hit also counts toward lighting the temple — pair it with the secret door bar target in front of it, then shoot the temple once lit for 20 seconds of 2x scoring."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "tavern-brawl-loop",
+      "title": "Tavern Brawl — Left Ramp Jackpot Loop",
+      "category": "combo",
+      "summary": "The game's #1 money sequence: feed the center Tavern shot to lower the left ramp, then loop the left ramp for escalating 1x/2x/3x jackpots.",
+      "difficulty": 3,
+      "reward": "Jackpots start ~4M (+200k each); spelling DRAGON lights a one-time super jackpot at the upper loop",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Rip the Tavern shot 3 times",
+          "detail": "Each of the three center hits lowers/qualifies the left ramp."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Loop the left ramp",
+          "detail": "Collect the escalating 1x -> 2x -> 3x jackpots. Shield-stage off the right flipper to keep hammering it before the ~20-30s timer expires.",
+          "flipper": "right"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Collect the super jackpot",
+          "detail": "The upper-loop super has to be earned: spell DRAGON on the three-bank to light it, once per Tavern Brawl, along with a one-time add-a-ball at the right shortcut loop. Then re-feed the center spinner to relight the ramp, and expect each relight to cost one more center hit than the last."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "gel-cube-jackpot-cycle",
+      "title": "Gelatinous Cube — Four-Shot Jackpot Cycle",
+      "category": "combo",
+      "summary": "Inside Gel Cube Multiball, four shots are lit at a time; collect all four to light the side-loop super, which resets and repeats. Pros rate this above Dragon MB.",
+      "difficulty": 2,
+      "reward": "Jackpots start 5M, +3M each to 25M max; side-loop super = flat 20M",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Bang a lit jackpot shot",
+          "detail": "Each jackpot = the locked hurry-up value, which grows +3M per jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take the second lit shot",
+          "detail": "Orbits, upper loop, side ramp and right ramp rotate as the four lit shots.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Take the third lit shot",
+          "detail": "Keep the multiball wide and pick off lit shots.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Take the fourth lit shot",
+          "detail": "Completing all four lights the side loop.",
+          "link": "none"
+        },
+        {
+          "shot": "shortcut-loop",
+          "action": "Cash the side-loop SUPER JACKPOT",
+          "detail": "Flat 20M, then the four-shot cycle resets so you can repeat."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "dragon-rath-loop",
+      "title": "Dragon Multiball — 3-Bank -> Rath Loop",
+      "category": "combo",
+      "summary": "The core repeatable damage loop during Dragon Multiball: light Rath by hitting the 3-bank, bash Rath for a dragon-hit jackpot, then chase the upper-loop super.",
+      "difficulty": 2,
+      "reward": "Dragon-hit jackpot starts 1.5M (+0.5M/hit); super starts 3M +500k/level + prior jackpots",
+      "steps": [
+        {
+          "shot": "dragon-bank",
+          "action": "Hit the 3-bank under Rath",
+          "detail": "Lights Rath / advances the damage loop."
+        },
+        {
+          "shot": "rath",
+          "action": "Bash Rath",
+          "detail": "Deals dragon damage and scores the escalating dragon-hit jackpot. Paladin (Ardor) needs fewer hits."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Collect the super jackpot",
+          "detail": "Lights after a 1x jackpot is scored at each flashing shot; also grants a Shield use and damages the dragon. On Premium/LE level 6+ you must first move Rath out of the loop path."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "shield-stage-left-ramp",
+      "title": "Shield-Stage the Left Ramp",
+      "category": "combo",
+      "summary": "The signature repeat-a-shot trick: raise the Shield, settle the ball onto it off the right flipper, then flip for a clean, loopable left-ramp repeat.",
+      "difficulty": 3,
+      "reward": "Turns a single shot into a farmable money loop (Tavern Brawl, Gel Cube)",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Complete the return lanes",
+          "detail": "Charges/relights the Shield. Requirement rises each use (up to 5 lanes), so staging is rate-limited."
+        },
+        {
+          "shot": "shield",
+          "action": "Raise the Shield with the action button",
+          "detail": "There is a slight delay between the press and the post rising."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cradle off the shield and re-fire the left ramp",
+          "detail": "Let the ball settle against the raised post on the right flipper, then flip to repeat the left ramp shot.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "tiny-dice-farm",
+      "title": "Tiny's Dice Game — Spinner Farm",
+      "category": "combo",
+      "summary": "A pure point farm on the center spinner: every spin pays 25k times the number showing on the die. The other lit shots are what raise the die and buy extra time, so work them between rips — a die of 20 makes each spin worth 500k.",
+      "difficulty": 1,
+      "reward": "25k per spin scaling to 500k per spin at die value 20",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Rip the spinner repeatedly",
+          "detail": "Start it at the center spinner when no mode is running. A spin pays 25k times the die, so climb the die first by clearing the other lit shots, which also add time — at the cap of 20 each spin is worth 500k. Premium/LE: the pop-up scoop bumps the spinner value too."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "dragon-multiball",
+      "title": "Dragon Multiball",
+      "category": "multiball",
+      "summary": "The headline 6-ball (Pro) / 8-ball (Prem/LE) multiball with unlimited ball save. Spell DRAGON, then start it at the right orbit.",
+      "difficulty": 2,
+      "reward": "Big jackpots + a free Shield use at start; victory continues into Town Celebration MB",
+      "steps": [
+        {
+          "shot": "dragon-bank",
+          "action": "Spell D-R-A-G-O-N on the 3-bank",
+          "detail": "First letter every 2 targets, then all 3 targets per letter. Fizmo purchases and Critical Hits can spot a letter."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Optional: Critical Hit to spot a letter",
+          "detail": "Hit the captive ball twice for a Natural 20 to advance DRAGON safely."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start the multiball",
+          "detail": "Shoot the lit right orbit (or the side ramp when no mode is running) to launch Dragon Multiball."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "gelatinous-cube-multiball",
+      "title": "Gelatinous Cube Multiball",
+      "category": "multiball",
+      "summary": "The most lucrative multiball to invest in. Lock balls by looping left orbit into the left ramp, then release at the cube magnet.",
+      "difficulty": 2,
+      "reward": "25M-max jackpots, 20M side-loop super; relight by completing any campaign mode",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Backhand the left orbit",
+          "detail": "Start of the lock chain: it drops the ramp so the next left-ramp shot can reach the cube.",
+          "feeds": {
+            "shot": "gelatinous-cube"
+          },
+          "flipper": "left"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Follow with the left ramp",
+          "detail": "Repeat the orbit->ramp chain on the same ball. Locks per ball are operator-set (Easy 1 / Medium 1-4 / Hard 4)."
+        },
+        {
+          "shot": "gelatinous-cube",
+          "action": "Lock the ball at the cube magnet",
+          "detail": "The electromagnet freezes the ball. First lock starts a 5M hurry-up; bank a 2nd/3rd lock (+5M each), then the locked balls release into multiball."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "town-celebration-multiball",
+      "title": "Town Celebration Multiball",
+      "category": "multiball",
+      "summary": "The payoff multiball for defeating Rath in Dragon MB before draining; play continues with balls still in play.",
+      "difficulty": 3,
+      "reward": "500k jackpots (x prior Dragon jackpots), 4x side-loop super, and 50%-off next Fizmo buy",
+      "steps": [
+        {
+          "shot": "rath",
+          "action": "Defeat Rath during Dragon Multiball",
+          "detail": "Must beat the dragon before draining to game-over, or the party 'stays in town' and there is no celebration."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect a lit orbit jackpot",
+          "detail": "Two orbits, side ramp and right ramp light for jackpots.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect the second orbit jackpot",
+          "detail": "Jackpots = 500k x your prior Dragon jackpots.",
+          "link": "none"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Collect the side-ramp jackpot",
+          "detail": "Third of the four lit shots.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the right-ramp jackpot",
+          "detail": "Completing all four lights the side-loop super.",
+          "link": "none"
+        },
+        {
+          "shot": "shortcut-loop",
+          "action": "Cash the 4x side-loop super jackpot",
+          "detail": "Ends when you drop to a single ball."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "retrieve-potion-nighdaar",
+      "title": "Retrieve a Potion for Nighdaar",
+      "category": "mode",
+      "summary": "Arabel's simple, lucrative Purple 1 opener — a clean three-shot hurry-up sequence and a recommended beginner mode.",
+      "difficulty": 1,
+      "reward": "Hurry-up points; foundation campaign progress",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Choose the action to start the mode",
+          "detail": "In Arabel, hit the yellow 'choose action' shot while in town to launch the quest."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Hit the middle spinner",
+          "detail": "First hurry-up shot in the sequence."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Second hurry-up shot."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Finish on the side ramp",
+          "detail": "Third and final hurry-up shot completes the quest."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "rescue-missing-miners",
+      "title": "Rescue Missing Miners",
+      "category": "mode",
+      "summary": "Kobold Town's high-value Orange 1 Bulette battle. Damage the Bulette on red shots while rescuing Kobolds on the roaming orange shots.",
+      "difficulty": 1,
+      "reward": "5M + 500k per Kobold rescued (max 4)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start the mode from the action shot",
+          "detail": "Launch the quest from the yellow choose-action shot in Kobold Town."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Critical Hit to spot a damage shot",
+          "detail": "Hit the captive ball twice for a safe crit that spots the required battle shot.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Deal damage on the red arrow shot",
+          "detail": "Red shots roll each party member's d20 for Bulette damage.",
+          "link": "none"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rescue a Kobold on the orange roaming shot",
+          "detail": "Orange shots rescue miners for 5M + 500k each, up to four.",
+          "link": "none"
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "dungeon-crawl",
+      "title": "Dungeon Crawl",
+      "category": "mode",
+      "summary": "The roguelike sub-game: light it at the dungeon standups, start it at the spinner/scoop, then explore flashing orange (advance) and purple (direction) shots.",
+      "difficulty": 2,
+      "reward": "XP, gold, legendary equipment, an extra ball on level 1; also a Tavern Brawl requirement",
+      "steps": [
+        {
+          "shot": "dungeon-targets",
+          "action": "Light the crawl at the dungeon standups",
+          "detail": "Or spot it via the center spinner / Fizmo."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Qualify at the center spinner",
+          "detail": "Pro: hit the spinner again within 15s to start. Premium/LE: the spinner raises the pop-up scoop."
+        },
+        {
+          "shot": "pop-up-scoop",
+          "action": "Premium/LE: shoot the raised scoop within 15s",
+          "detail": "Edition-specific start. Pro skips this and starts from the spinner directly."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Explore the flashing shots",
+          "detail": "20s ball save; chase flashing orange (advance) and purple (choose direction) shots through 5 procedural levels."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "undead-cult-of-the-dragon",
+      "title": "Undead Cult of the Dragon",
+      "category": "mode",
+      "summary": "Greenest's three-phase Town Dungeon: clear cultists, use the 3-bank to light yellow search shots plus the spinner, then finish the cultists.",
+      "difficulty": 2,
+      "reward": "Town Dungeon completion; lights a treasure chest and progresses toward Darkhold",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start the Town Dungeon from the action shot",
+          "detail": "Enter from town via the choose-action shot."
+        },
+        {
+          "shot": "dragon-bank",
+          "action": "Hit the 3-bank to light the search shots",
+          "detail": "Phase 2: the standups light the yellow 'search' shots."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Complete the search at the spinner",
+          "detail": "Then finish the final cultist phase to clear the dungeon."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "hidden-temple-2x",
+      "title": "Hidden Temple 2x Playfield Scoring",
+      "category": "multiplier",
+      "summary": "The single biggest score lever: light 2x on ALL scoring by hitting the secret-door target then the Hidden Temple. Stack it over multiball.",
+      "difficulty": 2,
+      "reward": "20 sec of 2x on all scoring, extendable +5 sec per re-hit",
+      "steps": [
+        {
+          "shot": "secret-door",
+          "action": "Hit the secret-door bar target twice",
+          "detail": "Behind the upper flipper. Two hits within ~20s qualify the temple. A Critical Hit can advance (but never start) progress."
+        },
+        {
+          "shot": "hidden-temple",
+          "action": "Roll the Hidden Temple lane",
+          "detail": "Banks 20s of 2x on everything. Re-hit the secret door / temple for +5s each. Bard's perk extends the timer."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "bonus-x-fizmo",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Grow your end-of-ball bonus multiplier by spending gold on +1x and +3x Bonus X items at Fizmo's shop.",
+      "difficulty": 1,
+      "reward": "Permanently raises the Bonus X applied to end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "fizmo",
+          "action": "Buy a Bonus X item at Fizmo's shop",
+          "detail": "Shoot the left eject and spend gold on the +1x or +3x Bonus Multiplier item. Bonus itself is modest, so treat this as a secondary lever behind 2x and multiball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "the-undermountain",
+      "title": "The Undermountain (Xanathar)",
+      "category": "wizard",
+      "summary": "The campaign-ending wizard mode culminating in the Xanathar beholder boss — the title's 'Tyrant's Eye.' Unlocks the Ranger, Rhyme.",
+      "difficulty": 3,
+      "reward": "Title-boss battle; permanently unlocks the Ranger character",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Clear a qualifying Town Dungeon",
+          "detail": "Beat the Lich of Dragonspear and pick 'Stay and fight Sammaster,' OR the Battle of Gauntlgrym and pick 'Help King Raddok.'"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot blue start shot 1",
+          "detail": "Back in town, three blue shots (side ramp / center / right ramp) light to begin the chosen wizard mode.",
+          "link": "none"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Shoot blue start shot 2",
+          "detail": "Second of the three blue qualification shots.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot blue start shot 3 to begin",
+          "detail": "Starts the 8-phase mode.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Destroy Xanathar's eye stalks",
+          "detail": "Kill the 2-3 adjacent lit stalks in order (5M each) while dodging the beholder's ~10s-interval attacks (darkness, flipper reversal), then the Xanathar 'fake.'"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "ritual-of-the-chosen",
+      "title": "Ritual of the Chosen",
+      "category": "wizard",
+      "summary": "A campaign-ending wizard mode of five chromatic-dragon battles. Unlocks the Bard, Juniper Amari.",
+      "difficulty": 3,
+      "reward": "Campaign ending; permanently unlocks the Bard character",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Qualify via the Lich of Dragonspear",
+          "detail": "Beat the Town Dungeon and pick 'Go after the Scepter,' then defeat 3 Yugoloths."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot blue start shot 1",
+          "detail": "Three blue shots (side ramp / center / right ramp) start the mode from town.",
+          "link": "none"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Shoot blue start shot 2",
+          "detail": "Second blue qualification shot.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot blue start shot 3 to begin",
+          "detail": "Starts the five repeating dragon battles (White, Green, Blue, Black, Red).",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit green shots to lock/heal",
+          "detail": "Each 15s level: green shots lock balls and heal; timer expiry starts a 2-ball multiball."
+        },
+        {
+          "shot": "rath",
+          "action": "Land 5 red damage shots per level",
+          "detail": "Finish each chromatic dragon with five red damage shots."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "safe-beginner-opener",
+      "title": "Safe Beginner Opener (First 30 Seconds)",
+      "category": "strategy",
+      "summary": "The recommended low-risk start: bank the MXV skill shot, start an easy town mode, spell DRAGON, and use captive-ball crits to progress without risky shots.",
+      "difficulty": 1,
+      "reward": "Foundation points, 2x primed, campaign started safely",
+      "steps": [
+        {
+          "shot": "hidden-temple",
+          "action": "Plunge the MXV skill shot",
+          "detail": "Short plunge into the Hidden Temple for 6M and to prime 2x."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start an easy town mode",
+          "detail": "Pick Arabel or Kobold Town, then hit the yellow choose-action shot. Ardor (Paladin) is the beginner class."
+        },
+        {
+          "shot": "dragon-bank",
+          "action": "Feed the 3-bank to spell DRAGON",
+          "detail": "Work toward Dragon Multiball while completing the mode."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Use Critical Hits to spot progress",
+          "detail": "Hit the captive ball twice for a Natural 20 to advance safely instead of taking dangerous battle shots. Prefer ranged weapons (action button) over direct battle shots."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "tournament-score-opener",
+      "title": "Tournament Score Opener",
+      "category": "strategy",
+      "summary": "The high-score plan: open with the Super Skill Shot, then bank the three multiball/mode requirements that light Tavern Brawl while stacking 2x.",
+      "difficulty": 3,
+      "reward": "Points ceiling; a good game clears ~200M",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Bank the Super Skill Shot",
+          "detail": "Short plunge -> left eject -> side ramp -> right ramp (6M + combo)."
+        },
+        {
+          "shot": "dragon-bank",
+          "action": "Start and play Dragon Multiball",
+          "detail": "Spell DRAGON, start at the right orbit, and pound Rath to level the party under unlimited ball save."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Lock and play Gelatinous Cube Multiball",
+          "detail": "Backhand the left orbit into the left ramp to lock (25M jackpots, 20M side-loop super).",
+          "flipper": "left"
+        },
+        {
+          "shot": "dungeon-targets",
+          "action": "Start a Dungeon Crawl",
+          "detail": "Satisfies the third Tavern Brawl requirement; also grab legendary equipment."
+        },
+        {
+          "shot": "secret-door",
+          "action": "Light 2x scoring",
+          "detail": "Hit the secret door twice, roll the Hidden Temple, and stack the 2x over Gel Cube MB or Tavern Brawl."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Cash into Tavern Brawl",
+          "detail": "Start it at the center spinner, then push on toward the campaign wizard modes — Ritual of the Chosen, Rescue the King and The Undermountain."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "light-tavern-brawl",
+      "title": "Light Tavern Brawl (The Priority Path)",
+      "category": "strategy",
+      "summary": "The competitive consensus: Tavern Brawl is THE score mode. Light it by playing Dragon MB, Gel Cube MB, and starting a Dungeon Crawl, then start it at the spinner.",
+      "difficulty": 3,
+      "reward": "Access to the game's most reliable points engine",
+      "steps": [
+        {
+          "shot": "dragon-bank",
+          "action": "Play Dragon Multiball",
+          "detail": "One of the three requirements — spell DRAGON and start it.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Play Gelatinous Cube Multiball",
+          "detail": "Second requirement — lock via left orbit -> left ramp and start it.",
+          "link": "none"
+        },
+        {
+          "shot": "dungeon-targets",
+          "action": "Start a Dungeon Crawl",
+          "detail": "Third requirement — only needs to be started (you can't start Tavern Brawl until out of the dungeon). Avoid town dungeons that block Tavern Brawl access.",
+          "link": "none"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Start Tavern Brawl at the spinner",
+          "detail": "With all three done, the center spinner lights to start the mode when no other mode is running."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "critical-hit-window",
+      "title": "Critical Hit Window",
+      "category": "strategy",
+      "summary": "The safest way to make progress: hit the captive ball, then hit it again inside its flash window for a critical hit that spots a battle shot or idle progress.",
+      "difficulty": 2,
+      "reward": "Spots a mode/damage shot, or a DRAGON letter, cube lock, or 2x step when idle",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Take the first captive-ball hit",
+          "detail": "A short stab from either flipper starts a roughly 15-second flash window."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit it again before the flash stops",
+          "detail": "The second hit scores the critical hit. If a battle is running it spots a damage shot; with nothing running it advances a DRAGON letter, a cube lock, or 2x progress."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "collect-extra-ball",
+      "title": "Collect an Extra Ball",
+      "category": "strategy",
+      "summary": "Extra balls are awarded by dungeon progress and other milestones, then must be picked up at the lit right ramp.",
+      "difficulty": 2,
+      "reward": "One additional ball on the current player's turn",
+      "steps": [
+        {
+          "shot": "dungeon-targets",
+          "action": "Light and start a dungeon crawl",
+          "detail": "A dungeon crawl can hand you an extra ball, but only from an award room found on the first level, so it is luck of the draw. Starting two town modes lights one outright."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the lit right ramp to bank it",
+          "detail": "Awarded extra balls sit on the right ramp until collected, so take the shot before the ball drains."
+        },
+        {
+          "shot": "fizmo",
+          "action": "Alternative: shop the left eject",
+          "detail": "Gold spent at the shop is another route to milestone awards; keep visiting it while you build progress."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "class-select-flipper-cycle",
+      "title": "Pre-Game Class and Starting Town Select",
+      "category": "secret",
+      "summary": "Before the first ball is plunged, The Tyrant's Eye lets you choose both who leads your party and where the campaign begins. The two flipper buttons drive two separate lists, and the character you land on carries a mechanical edge through every dragon fight, undead battle and Shield press for the rest of the game.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Make the selection at the start of a new game, before the ball is plunged",
+        "Press the right flipper button to cycle through the available characters",
+        "Press the left flipper button to cycle through the starting locations for your party",
+        "Ardor the Dragonborn Paladin deals bonus damage to dragons, needing fewer shots to Rath to reach the town celebration, which makes him the softest opener for a new player",
+        "Anya the Halfling Rogue raises the odds of rarer items and richer treasure",
+        "Frey Curlyfoot the Dwarf Cleric deals bonus damage to undead enemies, ending many battles in fewer shots",
+        "Helenir Weavhart the High Elf Wizard keeps the Shield raised longer when the action button is pressed",
+        "Three more characters unlock by finishing wizard modes: Rhyme the Tiefling Ranger from The Undermountain, Juniper Amari the Wood Elf Bard from Ritual of the Chosen, and Goregath the Goliath Barbarian from Rescue the King"
+      ],
+      "reward": "A class perk that lasts the whole game, plus a chosen starting location for the party"
+    },
+    {
+      "id": "attract-mode-mode-select",
+      "title": "Hold-Both-Flippers Modes Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Sitting idle between games, the cabinet hides a second menu behind its attract loop. Holding both flipper buttons brings it up, and what you pick there swaps the whole ruleset before a ball is ever plunged.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Wait until the machine is idle in attract mode with no game in progress",
+        "Hold both flipper buttons together until a menu appears on the display",
+        "Standard starts a new campaign, and a logged-in player can resume a saved campaign or play a one-shot game",
+        "Competition saves no progress, disables legendary equipment, and runs a constant random seed",
+        "Cooperative/Team Play shares team scores across a range of player configurations",
+        "Reset Progress clears saved campaign data and character progression",
+        "Prolonged Competition Install makes competition the default until the machine reboots",
+        "DJ Mixer is a jukebox for the music in the machine rather than a way to play"
+      ],
+      "reward": "Standard, Competition, Cooperative/Team Play, DJ Mixer, Reset Progress, and Prolonged Competition Install"
+    },
+    {
+      "id": "character-and-city-select",
+      "title": "Pick Your Hero and Your Starting Town",
+      "category": "progression",
+      "summary": "Two decisions get made before the ball ever launches. The hero you take carries a perk that applies to the whole campaign, and the town you open in sets which quests are in front of you first. Four heroes are ready from the start, and more become selectable once you see a campaign through to the end.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "On the select screen at the start of a game, press the right flipper button to cycle through the available characters",
+        "Press the left flipper button on that same screen to cycle the starting town",
+        "Ardor, the dragonborn paladin, hits dragons harder, so Dragon Multiball needs fewer shots on Rath to finish",
+        "Anya, the halfling rogue, carries more luck, which makes rarer items turn up in treasure more often",
+        "Frey Curlyfoot, the dwarf cleric, tears through undead, ending those battles in fewer shots",
+        "Helenir, the high elf wizard, keeps the shield raised longer on every press of the action button",
+        "Arabel and Kobold Town are among the towns you can open in, and each town holds its own quests, so the choice decides what you can play first",
+        "Three more characters, a bard, a ranger and a barbarian, become selectable once you complete a campaign",
+        "Those unlocked characters are switched off in competition play, so tournament games use the starting four"
+      ],
+      "reward": "A campaign-long character perk plus control over where the story begins"
+    },
+    {
+      "id": "campaign-progress-save",
+      "title": "A Campaign That Survives the Game Over",
+      "category": "progression",
+      "summary": "This is one of the rare machines where the last game still counts. Sign in and your hero holds onto its level, its gear and its place on the map, so the next game picks up where the previous one stopped rather than starting over.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Scan into a Stern Insider Connected account before the game begins and progress is kept automatically",
+        "Experience accumulates from winning battles and finishing quests, and the character gains levels on its own without any input from you",
+        "Level, gold, equipment and campaign position are tracked separately for each character, so every hero runs its own campaign",
+        "Load a saved character and the party picks up in the town it was standing in when the last game ended",
+        "The level you have reached in Dragon Multiball is carried between games too",
+        "Play without signing in and none of it is held, so the campaign begins fresh every game"
+      ],
+      "reward": "A hero that keeps getting stronger between sessions, and a campaign you resume instead of restart"
+    },
+    {
+      "id": "gold-and-the-shop",
+      "title": "Gold, and the Shopkeeper's Stall",
+      "category": "progression",
+      "summary": "Money is a working resource here, not a scoring flourish. Gold earned in the field buys gear at the shop on the left eject, and because every town carries its own goods and that stock only turns over once a week, a player who pays attention knows exactly which town is holding the item worth saving up for.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Earn gold by winning battles and by working your way through dungeons",
+        "While the party is in a town and no mode is running, shoot the left eject to trade at the shop",
+        "Each town carries a different set of goods, so what is on offer depends on where you are standing",
+        "The stock holds steady for a whole week and rotates on a Sunday, so a shopping route learned early in the week still holds later on",
+        "Magical weapons, magical armour and trinkets are among the goods that appear",
+        "Trinkets cost heavily but grant a permanent buff that stays with you beyond the end of the current game",
+        "Complete Dragon Multiball and the next thing you buy costs half price",
+        "If you failed a level 3 quest, the shop can sell you another attempt at the artifact you missed"
+      ],
+      "reward": "Purchased weapons, armour and permanent trinket buffs, converting gold straight into game state"
+    },
+    {
+      "id": "dungeon-legendary-gear",
+      "title": "Deep Levels and Legendary Gear",
+      "category": "progression",
+      "summary": "The strongest equipment in the game is buried in the lower levels of the dungeon. Push past the first floor, read the junctions correctly, and a hidden treasure room hands over a piece of glass gear powerful enough to reshape the rest of the ball. It is on loan, though, and the clock on it is short.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Each level of the crawl opens with about twenty seconds of ball save",
+        "Shoot the orange shots to press deeper into the dungeon",
+        "A purple shot puts you at a junction, where you pick your route with a flipper button or the action button",
+        "Traps end the crawl where you stand, so a bad junction costs you the whole run",
+        "Take the stairs down to continue, through five levels in all",
+        "A treasure room is hidden somewhere on levels two through five, and that room is what hands over legendary equipment",
+        "The Glass Sword of Unmaking kills ordinary enemies with a single shot",
+        "The Glass Bow of All-Shot makes one ranged attack land across every shot",
+        "The Glass Armor of Immortality cancels the damage an enemy deals you",
+        "The Glass Shield of Endurance keeps the shield raised twice as long",
+        "Each legendary piece is good for about ten uses and then it is spent",
+        "Legendary gear never carries into the next game, even with an account signed in",
+        "The layouts, and which legendary piece sits on which level, hold steady for the whole week and reroll on Sunday",
+        "Clearing every enemy in a room lights the left eject for a treasure chest"
+      ],
+      "reward": "A legendary weapon, bow, armour or shield with a dramatic effect for the rest of the game"
+    },
+    {
+      "id": "artifacts-level-3-quests",
+      "title": "The Four Artifacts",
+      "category": "progression",
+      "summary": "Artifacts are the campaign's real upgrades. Each one is the payoff for a level 3 quest, and each permanently changes something you do on every ball afterwards, from how many shields you can bank to whether your sword heals you as it swings. Fail one and it is not gone forever, but you will pay for the second attempt.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Level 3 quests open up once you have cleared the lower-level quests that feed into them",
+        "Completing a level 3 quest awards an artifact",
+        "The Dragon Heart Shield lets you bank up to five lit shields at once instead of the usual two",
+        "Mercy the Broadsword doubles your damage and heals you for half of what you deal",
+        "The Oculus Bow of True Aim spreads the ranged attack across two shots instead of one and hits harder",
+        "The Lifeblood Armor adds two to your armour class and turns half of any damage you take back on the attacker",
+        "If you fail a level 3 quest, the shopkeeper can sell you another shot at the artifact you missed"
+      ],
+      "reward": "Permanent campaign upgrades to your shield, sword, bow and armour"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "temple-plunge",
+      "title": "Temple Plunge",
+      "desc": "Score the skill shot by soft-plunging the ball straight into the Hidden Temple lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mxv-skill-shot"
+    },
+    {
+      "id": "three-shot-plunge",
+      "title": "Three-Shot Plunge",
+      "desc": "Complete the full three-shot super skill shot chain off a single short plunge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "natural-twenty",
+      "title": "Natural Twenty",
+      "desc": "Land a critical hit by striking the captive ball twice before its flash window closes.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "critical-hit-window"
+    },
+    {
+      "id": "spell-the-dragon",
+      "title": "Spell The Dragon",
+      "desc": "Complete D-R-A-G-O-N on the three-bank and start Dragon Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "dragon-multiball"
+    },
+    {
+      "id": "first-quest-done",
+      "title": "First Quest Done",
+      "desc": "Start and finish one town quest from the choose-action shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "retrieve-potion-nighdaar"
+    },
+    {
+      "id": "double-everything",
+      "title": "Double Everything",
+      "desc": "Light 2x playfield scoring by opening the secret door and rolling the Hidden Temple.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "hidden-temple-2x"
+    },
+    {
+      "id": "frozen-in-slime",
+      "title": "Frozen In Slime",
+      "desc": "Lock the required balls at the cube magnet and start Gelatinous Cube Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "gelatinous-cube-multiball"
+    },
+    {
+      "id": "cube-cycle-cashed",
+      "title": "Cube Cycle Cashed",
+      "desc": "Collect all four lit jackpots in Gelatinous Cube Multiball, then cash the side-loop super jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "gel-cube-jackpot-cycle"
+    },
+    {
+      "id": "loaded-dice",
+      "title": "Loaded Dice",
+      "desc": "Rip the tavern spinner until the die reaches its top value during the dice game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "tiny-dice-farm"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Earn an extra ball and collect it at the lit right ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "collect-extra-ball"
+    },
+    {
+      "id": "shield-wall",
+      "title": "Shield Wall",
+      "desc": "Charge the shield through the return lanes and raise it with the action button to stop a center drain.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "shield-stage-left-ramp"
+    },
+    {
+      "id": "dungeon-cleared",
+      "title": "Dungeon Cleared",
+      "desc": "Clear a town dungeon from start to final phase in one visit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "undead-cult-of-the-dragon"
+    },
+    {
+      "id": "deepest-level",
+      "title": "Deepest Level",
+      "desc": "Push a dungeon crawl through all five procedural levels without draining out of it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dungeon-crawl"
+    },
+    {
+      "id": "brawl-super",
+      "title": "Brawl Super",
+      "desc": "Run the left-ramp jackpot ladder in the tavern brawl and collect the upper-loop super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tavern-brawl-loop"
+    },
+    {
+      "id": "dragon-felled",
+      "title": "Dragon Felled",
+      "desc": "Deal enough damage to defeat the animatronic dragon before Dragon Multiball ends.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dragon-rath-loop"
+    },
+    {
+      "id": "victory-party",
+      "title": "Victory Party",
+      "desc": "Win Dragon Multiball, reach Town Celebration Multiball, and cash its side-loop super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "town-celebration-multiball"
+    },
+    {
+      "id": "eye-of-the-tyrant",
+      "title": "Eye Of The Tyrant",
+      "desc": "Reach the beholder wizard mode and destroy every eye stalk to finish the boss.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "the-undermountain"
+    },
+    {
+      "id": "five-chromatics",
+      "title": "Five Chromatics",
+      "desc": "Reach the ritual wizard mode and defeat all five chromatic dragons.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "ritual-of-the-chosen"
+    }
+  ],
+  "drills": [
+    {
+      "id": "mxv-temple-plunge",
+      "title": "Short Plunge to the Temple",
+      "text": "Short-plunge toward the upper left, behind the upper flipper, into the Hidden Temple. It banks the plunge award and puts progress on the temple at the same time, which is the cheapest route to the playfield doubler on this machine.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "mxv-skill-shot",
+      "shots": [
+        "plunge",
+        "hidden-temple"
+      ]
+    },
+    {
+      "id": "shield-stage-ramp",
+      "title": "Shield-Stage the Left Ramp",
+      "text": "Complete the return lanes to charge the Shield, raise it with the button, let the ball settle against the raised post on the right flipper, then fire the left ramp from there. Allow for the delay between the press and the post coming up — pressing as the ball arrives is already too late.",
+      "reps": "10 staged shots",
+      "focus": "ball-control",
+      "goal": "shield-stage-left-ramp",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "shield",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "orbit-into-ramp-lock",
+      "title": "Orbit Into Ramp",
+      "text": "Backhand the left orbit to drop the ramp at its entrance, then follow immediately with the left ramp so the ball carries through to the cube. Miss the orbit and the ramp shot has nowhere to go, so the order is the whole drill.",
+      "reps": "10 pairs",
+      "focus": "accuracy",
+      "goal": "gelatinous-cube-multiball",
+      "shots": [
+        "left-orbit",
+        "left-ramp",
+        "gelatinous-cube"
+      ]
+    },
+    {
+      "id": "critical-hit-window",
+      "title": "Double-Tap the Captive Ball",
+      "text": "Stab the captive ball from either flipper to open its flash window, then land a second hit before the flashing stops. It is the safest progress on the machine, so the habit worth building is taking the second hit rather than wandering off to something riskier.",
+      "reps": "10 completed pairs",
+      "focus": "accuracy",
+      "goal": "critical-hit-window",
+      "shots": [
+        "captive-ball"
+      ]
+    },
+    {
+      "id": "cave-loop-late-flip",
+      "title": "Red Cave Late Flip",
+      "text": "Feed the upper flipper and work the late flip into the Red Cave loop behind the dragon. Hit the three-bank first so the dragon is lit, then bash it, then take the loop — the loop is the collect and it is the shot that needs the timing.",
+      "reps": "15 loop attempts",
+      "focus": "accuracy",
+      "goal": "dragon-rath-loop",
+      "shots": [
+        "upper-flipper",
+        "upper-loop",
+        "dragon-bank",
+        "rath"
+      ]
+    },
+    {
+      "id": "tavern-brawl-loop",
+      "title": "Center, Ramp, Loop",
+      "text": "Rip the center spinner three times to lower the left ramp, then loop the left ramp for the escalating jackpots and take the upper loop when the super lights. Every relight costs one more center hit than the last, so treat the spinner feed as part of the loop rather than a separate errand.",
+      "reps": "3 full run-throughs",
+      "focus": "flow",
+      "goal": "tavern-brawl-loop",
+      "shots": [
+        "center-spinner",
+        "left-ramp",
+        "upper-loop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Two systems hang off this button. The Shield is a metal post that rises between the flippers and stops a center drain dead. Ranged attacks are the other half: a held press sweeps a blue arrow across the playfield, and whatever shot it's sitting on when you let go takes the damage.",
+    "uses": [
+      {
+        "when": "Ball headed straight down the middle",
+        "what": "Press while the shield insert flashes to raise the post; the ball stops against it instead of draining."
+      },
+      {
+        "when": "Ball resting on the raised shield",
+        "what": "Settle it off the right flipper, then flip again for a clean, repeatable left ramp."
+      },
+      {
+        "when": "Battle shots are too dangerous to take",
+        "what": "Hold to sweep the blue arrow, release over the shot you want, and deal the damage without shooting it."
+      },
+      {
+        "when": "Purple shot made during a dungeon crawl",
+        "what": "Picks one of the doors on offer at a junction; the flipper buttons pick the others."
+      },
+      {
+        "when": "Character select with a saved character",
+        "what": "Hold here to run a one-shot campaign from the start instead of resuming saved progress."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Lead a party through a Forgotten Realms campaign - spell DRAGON to wake Rath, lock balls in the Gelatinous Cube, run town quests and dungeon crawls, and light Tavern Brawl for the biggest points. Beat the chromatic dragons or the Xanathar beholder to end the campaign.",
+    "loop": [
+      "Rip the center Tavern spinner and work the Dragon standups; spelling D-R-A-G-O-N qualifies Dragon Multiball while the spinner and standups start town, dice and dungeon features.",
+      "Backhand the left orbit so its ramp drops, then fire the left ramp and let the ball ride through into the Gelatinous Cube magnet to lock for Gel Cube Multiball.",
+      "Double-tap the Critical Hit captive ball for a Natural 20 to safely spot letters, locks and progress, and open the secret door to roll the Hidden Temple for 2x on everything.",
+      "Play Dragon Multiball, Gel Cube Multiball and a Dungeon Crawl to light Tavern Brawl at the spinner, then push the campaign to a wizard-mode finale."
+    ],
+    "lights": [
+      {
+        "id": "dragon-letters",
+        "name": "DRAGON Standups",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "dragon-bank",
+            "lamps": 3
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "Each lit letter of D-R-A-G-O-N is one you have banked on the standups beneath Rath, and spelling the whole word qualifies Dragon Multiball to start at the right orbit.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the standup bank to add letters - the first comes every couple of hits, then each letter wants the whole bank - and double-tap the Critical Hit captive ball for a Natural 20 to spot one safely. With DRAGON complete, the lit right orbit starts the headline multiball under unlimited ball save, or use the side ramp when nothing else is running.",
+        "goals": [
+          "dragon-multiball",
+          "critical-hit-window"
+        ]
+      },
+      {
+        "id": "gel-cube-lock",
+        "name": "Gelatinous Cube Lock",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "gelatinous-cube"
+          }
+        ],
+        "lit": "The cube magnet lights to freeze and hold a ball once you have run the orbit-into-ramp chain that reaches it, and a locked ball stays frozen in the cube until enough are banked to release them.",
+        "flashing": null,
+        "control": null,
+        "then": "Send the ball up the left orbit to drop its ramp, then fire the left ramp so it rides through into the cube and locks. The first lock starts a hurry-up, and banking the rest spills every held ball into Gelatinous Cube Multiball, the most lucrative one to invest in.",
+        "goals": [
+          "gelatinous-cube-multiball",
+          "gel-cube-jackpot-cycle"
+        ]
+      },
+      {
+        "id": "hidden-temple-doubler",
+        "name": "Hidden Temple 2x",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "secret-door"
+          },
+          {
+            "shot": "hidden-temple"
+          }
+        ],
+        "lit": "The Hidden Temple behind the upper flipper lights once the secret-door bar target that guards it goes down, and it stays lit for only a short window for you to roll the lane.",
+        "flashing": "The doubler insert winds down over about twenty seconds once it is running, and each re-hit tacks on more time.",
+        "control": null,
+        "then": "Hit the secret-door target to light the temple, then roll the Hidden Temple lane to double every point you score for about twenty seconds. Re-hit the door or temple to extend it, and stack it over a multiball or Tavern Brawl for the single biggest score swing on the machine.",
+        "goals": [
+          "hidden-temple-2x"
+        ]
+      },
+      {
+        "id": "shield-post",
+        "name": "The Shield",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "shield"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "The Shield insert lights once you have charged the post by rolling through the return lanes, and a lit Shield is a stored center-drain block waiting between the flippers.",
+        "flashing": "The Shield insert flashes when the post is armed and ready for the action button.",
+        "control": {
+          "input": "action-button",
+          "effect": "press while the Shield is flashing to raise the metal post between the flippers, stopping a ball headed straight down the middle so you can settle it for a repeat shot",
+          "when": "as the ball heads for the center drain"
+        },
+        "then": "Charge it through the return lanes, then press the button to block a center drain - or settle the ball on the raised post off the right flipper and re-fire the left ramp, turning one shot into a farmable Tavern Brawl loop. Each use asks for more return lanes than the last.",
+        "goals": [
+          "shield-stage-left-ramp"
+        ]
+      },
+      {
+        "id": "tavern-brawl",
+        "name": "Tavern Brawl Loop",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "center-spinner"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "upper-loop"
+          }
+        ],
+        "lit": "The left ramp lights as the Tavern Brawl jackpot loop after you rip the center Tavern spinner to lower it, and the lit ramp pays escalating jackpots until its short timer runs out.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip the center spinner to lower and light the left ramp, then loop it for its climbing 1x, 2x and 3x jackpots, staging the ball on the raised shield so you can keep firing the ramp. Spell DRAGON on the standups to light a one-time super at the upper loop, and each time you relight the ramp it demands another center hit on top of the last.",
+        "goals": [
+          "tavern-brawl-loop",
+          "light-tavern-brawl"
+        ]
+      },
+      {
+        "id": "town-quests",
+        "name": "Town Quests",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "center-spinner"
+          }
+        ],
+        "lit": "The yellow choose-action shot at the right ramp lights whenever your party is standing in a town with no mode running, and shooting it launches whichever quest that town is holding.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the right-ramp action shot to start a quest, then follow its colored shots - red rolls the party's dice for damage, orange chases the objective - to a hurry-up finish. Clearing the lower quests opens the level-three quests that award the campaign's permanent artifacts.",
+        "goals": [
+          "retrieve-potion-nighdaar",
+          "rescue-missing-miners",
+          "undead-cult-of-the-dragon",
+          "artifacts-level-3-quests"
+        ]
+      },
+      {
+        "id": "dungeon-crawl",
+        "name": "Dungeon Crawl",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "dungeon-targets"
+          },
+          {
+            "shot": "center-spinner"
+          },
+          {
+            "shot": "pop-up-scoop"
+          },
+          {
+            "shot": "upper-loop"
+          }
+        ],
+        "lit": "The dungeon lights at the standup targets near the right orbit, and once lit the center spinner - or the raised pop-up scoop on Premium and LE - is where you drop in.",
+        "flashing": null,
+        "control": null,
+        "then": "Light it at the dungeon standups and start it at the spinner or scoop, then chase flashing orange shots to press deeper and purple shots to pick your route, choosing the door with a flipper or the action button. A hidden treasure room down the lower levels hands over game-changing legendary gear.",
+        "goals": [
+          "dungeon-crawl",
+          "dungeon-legendary-gear"
+        ]
+      },
+      {
+        "id": "campaign-finale",
+        "name": "Campaign Finale",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "center-spinner"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "upper-loop"
+          }
+        ],
+        "lit": "After you clear a qualifying Town Dungeon, three blue shots light back in town - the side ramp, the center spinner and the right ramp - and taking all three starts the wizard mode you unlocked.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the three blue shots to begin the ending you earned: the Undermountain pits you against Xanathar the beholder - the title's Tyrant's Eye - at the upper loop, while Ritual of the Chosen runs the five chromatic dragons. Finishing one permanently unlocks a new hero for the next campaign.",
+        "goals": [
+          "the-undermountain",
+          "ritual-of-the-chosen"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Open safe with the MXV skill shot - a short plunge into the Hidden Temple for points that also primes 2x. Start an easy town quest at the right ramp and lean on the Critical Hit captive ball to spot DRAGON letters and progress instead of taking risky battle shots.",
+        "goals": [
+          "mxv-skill-shot",
+          "safe-beginner-opener",
+          "critical-hit-window"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Bank the big features - Dragon Multiball off the standups, Gelatinous Cube Multiball off the orbit-into-ramp lock, and a Dungeon Crawl - while stacking the Hidden Temple 2x over the top. Those same features light Tavern Brawl, the most reliable points engine, at the center spinner.",
+        "goals": [
+          "dragon-multiball",
+          "gelatinous-cube-multiball",
+          "dungeon-crawl",
+          "light-tavern-brawl"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Push the campaign to its finale: the Undermountain ends at Xanathar the beholder while Ritual of the Chosen battles all five chromatic dragons, and either one closes out the campaign. Get there on the back of Tavern Brawl, looping the left ramp under a live 2x for the fastest points the machine offers.",
+        "goals": [
+          "the-undermountain",
+          "ritual-of-the-chosen",
+          "tavern-brawl-loop"
+        ]
+      }
+    ]
+  }
+}

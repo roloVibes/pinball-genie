@@ -1,0 +1,1245 @@
+{
+  "machine": "Monopoly (Stern Pinball, 2001)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The plunge feeds Water Works if you get the strength right. Too hard and it carries on to the Roll & Collect saucer or all the way to the A-B-C lanes."
+    },
+    {
+      "id": "water-works",
+      "name": "Water Works Saucer",
+      "type": "saucer",
+      "x": 0.82,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "A saucer guarded by a small motorised flipper that sweeps back and forth over the entrance. The skill shot target, and it scores the same during normal play as it does off the plunge."
+    },
+    {
+      "id": "roll-collect-saucer",
+      "name": "Roll & Collect Saucer",
+      "type": "saucer",
+      "x": 0.72,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Upper right. Reachable from the shooter lane or from the Roll & Collect lane. This is where the dice actually get rolled."
+    },
+    {
+      "id": "roll-collect-lane",
+      "name": "Roll & Collect Lane",
+      "type": "lane",
+      "x": 0.46,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Sits just left of the Bank door. Guides run the ball around the vault and under both ramps into the saucer. Also the collect shot for a lit extra ball."
+    },
+    {
+      "id": "cop-target",
+      "name": "Cop Drop Target",
+      "type": "drop-target",
+      "x": 0.52,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Angled between the Roll & Collect lane and the Bank door, and it blocks that lane while it is up. Reachable from all three player flippers. Every hit adds five seconds to a running mode."
+    },
+    {
+      "id": "cop-standup",
+      "name": "Cop Standup",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Large yellow target beside the Railroad ramp entrance, taken from the upper right flipper. Hitting it raises the Cop drop target back up.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "bank-door",
+      "name": "Bank Vault Door",
+      "type": "mech",
+      "x": 0.56,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "A small door guarding the centre ramp. Hits on the closed door advance B-A-N-K. Shooting the centre ramp closes it again, which is exactly what you want."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Centre Ramp",
+      "type": "ramp",
+      "x": 0.56,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Behind the vault door. A diverter sends it back to the left inlane or into Jail for a lock. Advances your token one space, and builds houses during Land Grab.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "free-parking-ramp",
+      "name": "Free Parking Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A second entrance feeding onto the centre ramp before the diverter, and it can only be made from the upper right flipper. Moves your token three spaces, relights Chance, and is the jackpot shot in every multiball except Railroad.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "free-parking-target",
+      "name": "Free Parking Target",
+      "type": "standup",
+      "x": 0.17,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Sitting at the Free Parking ramp's top end is a small yellow standup. Hit it and you collect the current Free Parking value — 75,000 to begin with, climbing 25,000 each time — while the Free Parking jackpot creeps up separately."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Diverts either to the right inlane or to the shooter lane to fire off multiball. Its inserts read Move 2, Lite Roll and Multiball — you get whichever one is lit.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "railroad-ramp",
+      "name": "Railroad Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "An open wire ramp with a hard right turn that dumps the ball back just above the left flipper. Advances to the next railroad or relights the jackpot, depending on which sign light is on.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "chance-scoop",
+      "name": "Chance Scoop",
+      "type": "scoop",
+      "x": 0.09,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Far left, about a third of the way up. Pays a Chance card when lit, a Community Chest award when that is lit instead, and a trivial Pocket Change award when neither is."
+    },
+    {
+      "id": "jail",
+      "name": "Jail",
+      "type": "lock",
+      "x": 0.05,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "The physical lock at the far left. Balls arrive here when the centre ramp diverter is set. Landing on Go To Jail rips them straight back out."
+    },
+    {
+      "id": "electric-company",
+      "name": "Electric Company",
+      "type": "ramp",
+      "x": 0.36,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "A short speed-bump ramp from the upper right flipper that feeds the lower jets. Each shot adds 5% to the power meter. Also the super jackpot shot in Monopoly Multiball and the hotel shot in Land Grab.",
+      "feeds": {
+        "shot": "lower-jets"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "lower-jets",
+      "name": "Lower Jets",
+      "type": "bumpers",
+      "x": 0.15,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Three red-capped jets, fed by the Electric Company ramp and the outer loop. Every five hits moves your token one space by default."
+    },
+    {
+      "id": "upper-jets",
+      "name": "Upper Jets",
+      "type": "bumpers",
+      "x": 0.23,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Three white-capped jets under the A-B-C lanes. These also raise the Electric Company power level, which is where your extra ball is."
+    },
+    {
+      "id": "abc-lanes",
+      "name": "A-B-C Lanes",
+      "type": "lane",
+      "x": 0.18,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three rollovers in the top left. Completing all three advances the bonus multiplier and moves your token eight spaces — the biggest single token move outside a dice roll."
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Spinner",
+      "type": "spinner",
+      "x": 0.85,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Starts the right outer loop, which feeds the A-B-C lanes. Worth 2,000 a spin, or 3,000 once Lite Spinner has been collected from the top right standup."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.12,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Runs between the Chance scoop and the Railroad ramp entrance. Advances the bonus multiplier when its insert is lit, and an outer loop also lights Advance To Next Railroad."
+    },
+    {
+      "id": "top-right-standup",
+      "name": "Top Right Standup",
+      "type": "standup",
+      "x": 0.8,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Sits in front of the Roll & Collect saucer. Rotates through five awards: Advance To GO, Water Bonus X, Power Up, Lite Spinner and 100K."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.78,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Halfway up the right side. The only flipper that reaches the Free Parking ramp, and the easiest one for the Electric Company and the Cop standup."
+    },
+    {
+      "id": "game-board",
+      "name": "The Board",
+      "type": "mech",
+      "x": 0.5058,
+      "y": 0.0941,
+      "trim": "all",
+      "notes": "Thirty-two lit spaces on the diagonal with GO between the flippers. Your token's position drives everything — landing on a property pays 1,000 times its price and hands you the whole colour group."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Special lives here when Boardwalk lights it. The two outlanes alternate, so check which one is on before you commit to a nudge."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The other half of the alternating Special. Nothing else of value down here."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Water Works Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge into the Water Works saucer past a motorised flipper that sweeps across the entrance. The bonus starts at 25,000 with a 2X multiplier on the first one, and the multiplier climbs by one every time you make it again.",
+      "difficulty": 2,
+      "reward": "25,000 base at 2X, multiplier +1 per collection",
+      "steps": [
+        {
+          "shot": "water-works",
+          "action": "Time the sweeping flipper and drop it in the saucer",
+          "detail": "It changes speed and direction after every successful shot, so the timing you just used will not work twice. Making it also arms a short ball save, which matters because the kickout sometimes heads for the left outlane."
+        },
+        {
+          "shot": "lower-jets",
+          "action": "Feed the lower jets to grow it",
+          "detail": "Water Works jet hits raise the value of the bonus itself, not just the multiplier."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "roll-and-collect",
+      "title": "Roll & Collect",
+      "category": "progression",
+      "summary": "The engine of the whole game. Shoot the right ramp to light Roll & Collect, then take the lane beside the Bank door. The dice roll, your token moves, you get paid for the space you land on and any mode attached to it starts.",
+      "difficulty": 1,
+      "reward": "1,000x the property price, plus the colour group and its mode",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Light the roll",
+          "detail": "The right ramp is what relights Roll & Collect every time you spend it."
+        },
+        {
+          "shot": "cop-target",
+          "action": "Knock the Cop down",
+          "detail": "While the drop target is up it stands in the way of the lane. It comes back up off the Cop standup by the Railroad ramp."
+        },
+        {
+          "shot": "roll-collect-lane",
+          "action": "Take the lane",
+          "detail": "The ball runs around the vault and under both ramps into the saucer, and the dice roll from there."
+        },
+        {
+          "shot": "roll-collect-saucer",
+          "action": "Watch the display",
+          "detail": "The rolls are quietly weighted in your favour, aiming you at unowned groups, unowned railroads or a corner space."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "property-groups",
+      "title": "Own The Eight Groups",
+      "category": "progression",
+      "summary": "Landing on any property in a colour group hands you the whole group and starts that group's mode. Eight groups plus four railroads is the qualifier for Land Grab, so this is your scorecard for the entire game.",
+      "difficulty": 2,
+      "reward": "All eight monopolies qualifies Land Grab",
+      "steps": [],
+      "instructions": [
+        "Purple sets one bank of jets to maximum value — either the lower Water Works jets or the upper Electric Company jets.",
+        "Light blue starts Token Race, violet starts Free Money, orange starts Tax Refund.",
+        "Red starts Board Chase, yellow starts Utility Overload, green pays a flat one, two or three million depending on which green you hit.",
+        "Dark blue lights an award rather than a mode: Park Place lights extra ball, Boardwalk lights Special, and you only get one of the two per game.",
+        "Any property in a group gives you the entire group, so there is no value in revisiting a colour you already own.",
+        "Railroads are collected separately, on the Railroad ramp when Advance To Next Railroad is lit."
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "token-race",
+      "title": "Token Race",
+      "category": "mode",
+      "summary": "The light blue group. Your race car runs the dog across the display and every major playfield shot advances you. Win and you collect 800,000 plus 10,000 for each shot made, plus a race bonus on top. Lose and it is worth almost nothing.",
+      "difficulty": 2,
+      "reward": "870,000 and up for a win, around 40,000 for a loss",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Keep shooting anything major",
+          "detail": "Ramps, loops and the big lanes all move your token forward — accuracy matters more than which shot you pick."
+        },
+        {
+          "shot": "electric-company",
+          "action": "Aim at the Electric Company",
+          "detail": "It is a reliable repeat shot from the upper right flipper, and the dog gets a shock every time you make it."
+        },
+        {
+          "shot": "cop-target",
+          "action": "Buy yourself time",
+          "detail": "Each Cop hit adds five seconds, which is often the difference between winning and losing the race."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "free-money",
+      "title": "Free Money",
+      "category": "mode",
+      "summary": "The violet group. A timed mode where each Bank door hit locks one digit of the payout, scrolling on the Electric Company ticker — thousands, then ten thousands, then hundred thousands. Once all three are set, hit the door once more to bank it.",
+      "difficulty": 2,
+      "reward": "Up to 999,000, plus 1M for three of a kind",
+      "steps": [
+        {
+          "shot": "bank-door",
+          "action": "Lock three digits",
+          "detail": "Watch the ticker above the Electric Company rather than the main display — that is where the number is being built."
+        },
+        {
+          "shot": "bank-door",
+          "action": "Collect once the number is set",
+          "detail": "Matching digits pay an extra million, so 555 or 999 is worth chasing if the first two land the same."
+        },
+        {
+          "shot": "cop-target",
+          "action": "Extend the timer",
+          "detail": "Five seconds per Cop hit, and you need four Bank shots in total to finish this one."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "tax-refund",
+      "title": "Tax Refund",
+      "category": "mode",
+      "summary": "The orange group, and the simplest mode on the machine. A hurry-up starting at 500,000 that you collect at the Bank door. You can collect repeatedly while it runs, so this is a pure repeat-shot mode.",
+      "difficulty": 1,
+      "reward": "500,000 falling, collectable many times over",
+      "steps": [
+        {
+          "shot": "bank-door",
+          "action": "Hit the Bank immediately",
+          "detail": "The value drops from the moment the mode starts, so the first shot is worth far more than the fourth."
+        },
+        {
+          "shot": "bank-door",
+          "action": "Keep going back",
+          "detail": "Shots landing while an award animation is still playing sometimes fail to register — pause a beat between them."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "board-chase",
+      "title": "Board Chase",
+      "category": "mode",
+      "summary": "The red group. The cop chases your token from Jail toward Go To Jail and you score by hitting Cop targets. Each hit pays 250,000, rising 50,000 a time, and also speeds the token up and flips its direction.",
+      "difficulty": 2,
+      "reward": "250,000 per Cop hit, +50,000 each",
+      "steps": [
+        {
+          "shot": "cop-target",
+          "action": "Work the drop target",
+          "detail": "Every hit reverses the token's direction, which is what keeps it away from the Go To Jail corner.",
+          "link": "none"
+        },
+        {
+          "shot": "cop-standup",
+          "action": "Use the standup as well",
+          "detail": "The yellow standup by the Railroad ramp scores the same and is the natural upper-flipper answer.",
+          "link": "none"
+        },
+        {
+          "shot": "game-board",
+          "action": "Watch the token, not the display",
+          "detail": "The mode ends the moment you reach Go To Jail, so the direction changes are your clock."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "utility-overload",
+      "title": "Utility Overload",
+      "category": "mode",
+      "summary": "The yellow group. Jets are worth 10,000 a hit and climb 5,000 for every Electric Company or Water Works shot you complete. It also stacks with any non-multiball mode, which makes it the best mode on the machine to start early.",
+      "difficulty": 1,
+      "reward": "10,000 per jet, +5,000 per utility shot",
+      "steps": [
+        {
+          "shot": "electric-company",
+          "action": "Raise the jet value first",
+          "detail": "Each Electric Company shot also drops the ball straight into the lower jets, so it pays twice.",
+          "link": "none"
+        },
+        {
+          "shot": "water-works",
+          "action": "Take Water Works too",
+          "detail": "It counts toward the same climb, and the saucer is live during normal play.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-jets",
+          "action": "Let the jets run",
+          "detail": "Because this stacks, you can light and cash a dice roll without ending the mode."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "millions",
+      "title": "Green Millions",
+      "category": "mode",
+      "summary": "The green group is not really a mode — it is a flat payout that depends on which green you land on. Pacific pays a million, North Carolina two, Pennsylvania three. Nothing to shoot, and nothing you control.",
+      "difficulty": 1,
+      "reward": "1M, 2M or 3M",
+      "steps": [
+        {
+          "shot": "roll-collect-saucer",
+          "action": "Roll onto a green",
+          "detail": "The dice decide which one, so treat the difference as a bonus rather than a plan."
+        },
+        {
+          "shot": "game-board",
+          "action": "Bank the group",
+          "detail": "Whichever green you land on, you own all three and tick another group off the Land Grab list."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "blue-award",
+      "title": "Park Place Or Boardwalk",
+      "category": "mode",
+      "summary": "The dark blue group lights an award instead of running a mode. Park Place lights extra ball, Boardwalk lights Special, and the game will only give you one of the two in a game — so which square the dice pick genuinely matters.",
+      "difficulty": 2,
+      "reward": "Extra ball or Special",
+      "steps": [
+        {
+          "shot": "game-board",
+          "action": "Land on blue",
+          "detail": "Park Place lights extra ball; Boardwalk lights Special. You do not get to choose."
+        },
+        {
+          "shot": "roll-collect-lane",
+          "action": "Collect a lit extra ball here",
+          "detail": "The sign left of the lane tells you whether extra ball is waiting."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Collect a lit Special in an outlane",
+          "detail": "The two outlanes alternate, so look at which one is on before you tilt the machine trying to save it."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "cash-grab",
+      "title": "Cash Grab",
+      "category": "mode",
+      "summary": "Spell B-A-N-K on the closed vault door to blow it open. Every ramp, loop, lit shot and the Chance scoop then pays a value starting at 250,000 and climbing 25,000 per shot. Miss everything and you still get a 100,000 consolation.",
+      "difficulty": 2,
+      "reward": "250,000 per shot, +25,000 each",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Close the door",
+          "detail": "The vault door only takes hits while it is shut, and the centre ramp is what shuts it."
+        },
+        {
+          "shot": "bank-door",
+          "action": "Spell B-A-N-K",
+          "detail": "One letter is usually spotted at the start of the game and another is spotted each ball, so the real work is two or three hits."
+        },
+        {
+          "shot": "free-parking-ramp",
+          "action": "Shoot everything once it starts",
+          "detail": "Ramps and loops all count, so pick the repeat shot you trust rather than hunting for the biggest one."
+        },
+        {
+          "shot": "cop-target",
+          "action": "Keep adding time",
+          "detail": "Five seconds a hit, and the Cop sits right in the middle of the shots you are already taking."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "chance",
+      "title": "Chance Cards",
+      "category": "mode",
+      "summary": "The scoop on the far left pays 100,000 plus a card from a long deck. Some cards are small, some are enormous — Breakout or Ripoff multiball, Cash Grab, Light Lock, Light Extra Ball, or an advance that jumps your token to a specific property and starts its mode.",
+      "difficulty": 1,
+      "reward": "100,000 plus one card",
+      "steps": [
+        {
+          "shot": "chance-scoop",
+          "action": "Take the scoop when it is lit",
+          "detail": "Shooting it unlit only pays Pocket Change, which is barely worth the risk of the return."
+        },
+        {
+          "shot": "free-parking-ramp",
+          "action": "Relight Chance",
+          "detail": "The Free Parking ramp is what re-arms the scoop, on top of moving your token three spaces."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "community-chest",
+      "title": "Community Chest",
+      "category": "secret",
+      "summary": "A hidden second use for the Chance scoop that most players never see. Two things gate it: Land Grab has to be running, and you need at least one Chance collected already. Pay both and it awards a Land Grab Bonus — and that bonus DOUBLES on every successive Community Chest collect, which is what makes it worth going back for.",
+      "difficulty": 3,
+      "reward": "Around 100,000-300,000, doubling each time",
+      "steps": [],
+      "instructions": [
+        "It requires software level 2.33 or newer. On earlier code the Community Chest light never comes on during play at all.",
+        "You must have started Land Grab and collected at least one Chance award before it becomes available.",
+        "Once the Community Chest light is on, shoot the scoop again — the award doubles for each one you collect in a row.",
+        "Shooting an orbit before you take the scoop relights Chance instead and cancels the Community Chest award until you collect Chance again.",
+        "It is gone for good once the last Land Grab ball drains, so collect while the multiball is still alive."
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "monopoly-multiball",
+      "title": "Monopoly Multiball",
+      "category": "multiball",
+      "summary": "The main multiball. Move your token past GO to light lock, put two balls in Jail off the centre ramp, then take the right ramp to launch. Jackpots start at a million on the Free Parking ramp, and the Railroad ramp arms a two-million super at the Electric Company.",
+      "difficulty": 2,
+      "reward": "1M jackpots, 2M super jackpot",
+      "steps": [
+        {
+          "shot": "game-board",
+          "action": "Get your token past GO",
+          "detail": "A full circuit of the board is what lights lock, so the A-B-C lanes and the jets all help you get there."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lock two balls",
+          "detail": "The diverter sends the ball into Jail rather than back to the left inlane once lock is lit."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start it",
+          "detail": "The ramp diverts to the shooter lane and the autoplunger fires the multiball off."
+        },
+        {
+          "shot": "free-parking-ramp",
+          "action": "Collect jackpots",
+          "detail": "Every multiball jackpot except Railroad is on this ramp, and it needs the upper right flipper."
+        },
+        {
+          "shot": "electric-company",
+          "action": "Cash the super",
+          "detail": "Shoot the Railroad ramp to arm it, then the Electric Company for two million."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "railroad-multiball",
+      "title": "Railroad Multiball",
+      "category": "multiball",
+      "summary": "The only multiball whose jackpot is not on the Free Parking ramp. Collect all four railroads to light it, then take the Railroad ramp itself for a 250,000 jackpot. Each subsequent one needs more railroads than the last.",
+      "difficulty": 2,
+      "reward": "250,000 jackpots on the Railroad ramp",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Light the next railroad",
+          "detail": "An outer loop shot turns on Advance To Next Railroad above the ramp entrance."
+        },
+        {
+          "shot": "railroad-ramp",
+          "action": "Collect the railroad",
+          "detail": "Four of them light the multiball, and they also feed into the Land Grab qualifier."
+        },
+        {
+          "shot": "railroad-ramp",
+          "action": "Keep hitting the same ramp",
+          "detail": "Its return dumps the ball right above the left flipper, which makes it one of the easiest repeat shots on the game."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "breakout-multiball",
+      "title": "Breakout Multiball",
+      "category": "multiball",
+      "summary": "A corner mode, started by landing on Just Visiting. Jackpots begin at 400,000 and climb 50,000 each, collected on the Free Parking ramp like every other corner multiball.",
+      "difficulty": 2,
+      "reward": "400,000 jackpots, +50,000 each",
+      "steps": [
+        {
+          "shot": "roll-collect-saucer",
+          "action": "Land on Just Visiting",
+          "detail": "The dice are weighted toward corner spaces when there is no unowned group in range, so this often arrives late in a group sweep."
+        },
+        {
+          "shot": "free-parking-ramp",
+          "action": "Run the jackpot ramp",
+          "detail": "Trap up and use the upper right flipper rather than flailing at it from below."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "free-parking-multiball",
+      "title": "Free Parking Multiball",
+      "category": "multiball",
+      "summary": "The corner multiball with a memory. Its jackpot starts at whatever the Free Parking value has been built to, and that value carries from game to game up to a 500,000 ceiling — so a well-fed machine hands you a much better multiball than a fresh one.",
+      "difficulty": 2,
+      "reward": "Jackpot equal to the built-up Free Parking value",
+      "steps": [
+        {
+          "shot": "free-parking-target",
+          "action": "Feed the target during normal play",
+          "detail": "Each hit adds 5,000 to the multiball jackpot value and pays its own award starting at 75,000."
+        },
+        {
+          "shot": "free-parking-target",
+          "action": "Collect jackpots on the same target",
+          "detail": "Unusually, this multiball's jackpot is the standup itself rather than the ramp."
+        },
+        {
+          "shot": "railroad-ramp",
+          "action": "Relight the jackpot",
+          "detail": "The value resets to 100,000 once the multiball ends, so spend it while you have it."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "ripoff-multiball",
+      "title": "Ripoff Multiball",
+      "category": "multiball",
+      "summary": "Landing on Go To Jail empties Jail — it rips out whatever you had locked and puts it into play. Jackpots start at 400,000 and climb 50,000 each on the Free Parking ramp.",
+      "difficulty": 3,
+      "reward": "400,000 jackpots, +50,000 each",
+      "steps": [
+        {
+          "shot": "jail",
+          "action": "Know what you are about to lose",
+          "detail": "Any balls you had banked toward Monopoly Multiball are the ones being released here."
+        },
+        {
+          "shot": "free-parking-ramp",
+          "action": "Collect on the jackpot ramp",
+          "detail": "Same shot as the other corner multiballs, taken from the upper right flipper."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "land-grab",
+      "title": "Land Grab",
+      "category": "wizard",
+      "summary": "Own it all. Collect all eight colour groups and all four railroads, light Roll & Collect and take the shot to start a timed four-ball multiball where you build houses and hotels as fast as you can shoot. Water Works is set to 7X and both jet banks pay heavily.",
+      "difficulty": 3,
+      "reward": "Houses, hotels and a completion bonus",
+      "steps": [
+        {
+          "shot": "roll-collect-lane",
+          "action": "Start it",
+          "detail": "All eight groups and four railroads have to be banked first. There is only a very short ball save."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Build houses",
+          "detail": "One house per centre ramp shot, which is the safest repeat shot from the lower flippers."
+        },
+        {
+          "shot": "free-parking-ramp",
+          "action": "Build four at once",
+          "detail": "The Free Parking ramp gives four houses in one shot and adds time to the mode, so it is the shot to hunt."
+        },
+        {
+          "shot": "electric-company",
+          "action": "Build hotels",
+          "detail": "Hotels come only from the Electric Company, and both it and the Free Parking ramp want the upper right flipper."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Move on to the next property",
+          "detail": "The right ramp advances you, so alternate building and advancing rather than parking on one square."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "electric-power",
+      "title": "Power Up The Electric Company",
+      "category": "strategy",
+      "summary": "The power meter is where your extra ball is. Each Electric Company shot adds 5% and the upper jets nudge it further. Roll & Collect lights at 15% and again at 60%, extra ball lights at 30% by default, and Special waits at 100%.",
+      "difficulty": 2,
+      "reward": "Extra ball at 30%, Special at 100%",
+      "steps": [
+        {
+          "shot": "electric-company",
+          "action": "Take the shot every time it is available",
+          "detail": "Five percent a shot from the upper right flipper — six shots is your extra ball on default settings."
+        },
+        {
+          "shot": "upper-jets",
+          "action": "Let the upper jets add to it",
+          "detail": "The Electric Company jets raise the level slightly on top of the ramp shots."
+        },
+        {
+          "shot": "top-right-standup",
+          "action": "Take Power Up when it comes round",
+          "detail": "It is one of the five rotating awards on the standup in front of the Roll & Collect saucer."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "four-way-combo",
+      "title": "Four Way Combo",
+      "category": "combo",
+      "summary": "A four-shot chain added in the later software: left ramp, centre ramp, right ramp, then the Roll & Collect saucer. It is awkward because the first shot needs the upper right flipper and the next two need the lower ones.",
+      "difficulty": 3,
+      "reward": "Four Way Combo award",
+      "steps": [
+        {
+          "shot": "free-parking-ramp",
+          "action": "Start on the left ramp",
+          "detail": "Trap on the upper right flipper first — this shot is not available from below."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Follow with the centre ramp",
+          "detail": "The vault door has to be open or already knocked through for the ball to get up there cleanly."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Then the right ramp",
+          "detail": "Its return feeds the right inlane, which sets you up for the last shot."
+        },
+        {
+          "shot": "roll-collect-saucer",
+          "action": "Finish at Roll & Collect",
+          "detail": "The Cop drop target has to be down or it blocks the lane and kills the chain."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "bonus-x",
+      "title": "Build The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Six inserts run up from 2X to 6X and then Light Extra Ball. You advance them by completing the A-B-C lanes or by making an outer loop while its Bonus X insert is lit, and the bonus itself counts your board laps, railroads and monopolies.",
+      "difficulty": 1,
+      "reward": "Up to 6X bonus, then an extra ball light",
+      "steps": [
+        {
+          "shot": "abc-lanes",
+          "action": "Complete A-B-C",
+          "detail": "This also moves your token eight spaces, which is the largest token move on the machine outside a dice roll."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Run the left loop when lit",
+          "detail": "The Bonus X insert sits between the Chance scoop and the Railroad ramp entrance.",
+          "link": "none"
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Use the right loop too",
+          "detail": "The spinner starts the right outer loop, which feeds the A-B-C lanes and can advance the multiplier on the way.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "cop-stop",
+      "title": "Cop Stops",
+      "category": "strategy",
+      "summary": "The single most underrated target on the machine. Every Cop hit adds five seconds to whatever mode is running and pays a value starting at 125,000 that climbs 25,000 a hit to a 250,000 ceiling. It is reachable from all three flippers.",
+      "difficulty": 1,
+      "reward": "125,000 to 250,000 per hit, +5 seconds",
+      "steps": [
+        {
+          "shot": "cop-target",
+          "action": "Hit it during every timed mode",
+          "detail": "Five seconds is a lot on modes that only run twenty or thirty, and this target is on the way to several shots you already want."
+        },
+        {
+          "shot": "cop-standup",
+          "action": "Raise it again",
+          "detail": "The yellow standup by the Railroad ramp brings the drop target back up so you can keep collecting."
+        }
+      ],
+      "fx": "badge"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "mono-skillshot",
+      "title": "Turn On The Tap",
+      "desc": "Beat the sweeping flipper and land the Water Works skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "mono-first-roll",
+      "title": "Roll The Dice",
+      "desc": "Light Roll & Collect on the right ramp and cash it in the lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "roll-and-collect"
+    },
+    {
+      "id": "mono-cash-grab",
+      "title": "Crack The Vault",
+      "desc": "Spell B-A-N-K on the closed door and start Cash Grab.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "cash-grab"
+    },
+    {
+      "id": "mono-extra-ball",
+      "title": "Full Power",
+      "desc": "Push the Electric Company to 30% and light the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "electric-power"
+    },
+    {
+      "id": "mono-multiball",
+      "title": "Past GO",
+      "desc": "Lap the board, lock two balls in Jail and start Monopoly Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "monopoly-multiball"
+    },
+    {
+      "id": "mono-railroads",
+      "title": "All Aboard",
+      "desc": "Collect all four railroads and start Railroad Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "railroad-multiball"
+    },
+    {
+      "id": "mono-race",
+      "title": "Beat The Dog",
+      "desc": "Win Token Race outright.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "token-race"
+    },
+    {
+      "id": "mono-three-of-a-kind",
+      "title": "Three Of A Kind",
+      "desc": "Lock matching digits in Free Money for the million point bonus.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "free-money"
+    },
+    {
+      "id": "mono-combo",
+      "title": "Four Way",
+      "desc": "Chain the left, centre and right ramps into the Roll & Collect saucer.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "four-way-combo"
+    },
+    {
+      "id": "mono-community-chest",
+      "title": "Open The Chest",
+      "desc": "Find the hidden Community Chest award during Land Grab.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "community-chest"
+    },
+    {
+      "id": "mono-land-grab",
+      "title": "Own It All",
+      "desc": "Collect all eight monopolies and all four railroads to start Land Grab.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "land-grab"
+    }
+  ],
+  "drills": [
+    {
+      "id": "read-the-sweep",
+      "title": "Read The Sweep",
+      "text": "Plunge into the Water Works saucer past the little motorised flipper sweeping the entrance. It changes speed and direction after every make, so the timing that just worked will not work twice — read the sweep fresh on every ball instead of repeating the last plunge.",
+      "reps": "every plunge, one full game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "water-works"
+      ]
+    },
+    {
+      "id": "own-the-upper-flipper",
+      "title": "Own The Upper Right Flipper",
+      "text": "Every multiball jackpot except Railroad sits on the Free Parking ramp, and that ramp exists only from the upper right flipper. Trap up there and work the three shots it owns — Free Parking, the Electric Company and the Cop standup — until you stop flailing at them from below.",
+      "reps": "20 makes, split across the three shots",
+      "focus": "accuracy",
+      "goal": "monopoly-multiball",
+      "shots": [
+        "upper-right-flipper",
+        "free-parking-ramp",
+        "electric-company",
+        "cop-standup"
+      ]
+    },
+    {
+      "id": "roll-and-collect-loop",
+      "title": "Run The Roll & Collect Loop",
+      "text": "Right ramp to light the roll, knock the Cop down if it is standing in the lane, then take the lane beside the Bank door. Shoot the three as one loop — the dice roll is the engine of the whole game and every group, mode and multiball comes out of it.",
+      "reps": "5 rolls in a ball",
+      "focus": "flow",
+      "goal": "roll-and-collect",
+      "shots": [
+        "right-ramp",
+        "cop-target",
+        "roll-collect-lane"
+      ]
+    },
+    {
+      "id": "close-it-then-spell-it",
+      "title": "Close It, Then Spell It",
+      "text": "The vault door only takes hits while it is shut and the centre ramp is what shuts it, so alternate the two until B-A-N-K is done. Keep the centre ramp in hand afterwards — it is the safest repeat shot you have from the lower flippers.",
+      "reps": "spell B-A-N-K twice",
+      "focus": "accuracy",
+      "goal": "cash-grab",
+      "shots": [
+        "center-ramp",
+        "bank-door"
+      ]
+    },
+    {
+      "id": "lit-chance-only",
+      "title": "Lit Chance Only",
+      "text": "An unlit Chance scoop pays Pocket Change and is not worth the risk of the return from the far left. Relight it with the Free Parking ramp and leave the scoop alone otherwise — play a whole ball without taking a single unlit one.",
+      "reps": "one full ball, no unlit Chance shots",
+      "focus": "ball-control",
+      "goal": "chance",
+      "shots": [
+        "chance-scoop",
+        "free-parking-ramp"
+      ]
+    },
+    {
+      "id": "four-way-chain",
+      "title": "The Four-Way Chain",
+      "text": "Start trapped on the upper right flipper and take the Free Parking ramp, because that shot does not exist from below, then centre ramp, right ramp, and finish in the Roll & Collect saucer. Put the Cop down before you begin or it blocks the lane and kills the chain on the last shot.",
+      "reps": "10 attempts",
+      "focus": "flow",
+      "goal": "four-way-combo",
+      "shots": [
+        "free-parking-ramp",
+        "center-ramp",
+        "right-ramp",
+        "roll-collect-saucer",
+        "cop-target"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "cash",
+  "actionButton": {
+    "present": false,
+    "how": "The lockdown bar is bare. This is a 2001 Stern, built well before the era of a button in the middle of the bar, so you get a manual plunger, two flippers and a start button. Your token moves because you made a shot, never because you pressed something."
+  },
+  "howItPlays": {
+    "objective": "Monopoly turns the board game into pinball: a lit token laps the board between the flippers, and every property you land on hands you the whole colour group and starts its mode. Own all eight groups and all four railroads to reach Land Grab, the build-it-all wizard multiball.",
+    "loop": [
+      "Hit the right ramp to light Roll & Collect, knock the Cop drop target out of the lane, then take the lane by the Bank door -- the dice throw moves your token and pays you for the space it lands on.",
+      "Landing on a property gives you its whole colour group and starts that group's mode; landing on a corner or a railroad space starts a multiball or an award instead.",
+      "Lap the board past GO to light lock, drop a pair of balls into Jail with centre-ramp shots, and start Monopoly Multiball at the right ramp.",
+      "Feed the Electric Company from the upper right flipper to climb its power meter toward the extra ball, and complete the A-B-C lanes and the loops to build the bonus multiplier.",
+      "Own every colour group and all four railroads to qualify Land Grab, then race to raise houses and hotels across the board."
+    ],
+    "lights": [
+      {
+        "id": "property-groups",
+        "name": "Colour Groups & Land Grab",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "game-board"
+          }
+        ],
+        "lit": "Each colour group you own lights on the board, and an owned group is yours for the rest of the game -- there is nothing to defend and no reason to revisit a colour you already hold.",
+        "flashing": null,
+        "control": null,
+        "then": "Every group you land on adds itself here permanently and starts that group's mode. Own every colour group and all four railroads and Roll & Collect lights for Land Grab; because ownership never resets, each new group is one step closer to the wizard.",
+        "goals": [
+          "property-groups",
+          "land-grab"
+        ]
+      },
+      {
+        "id": "roll-and-collect",
+        "name": "Roll & Collect",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "roll-collect-lane"
+          },
+          {
+            "shot": "roll-collect-saucer"
+          }
+        ],
+        "lit": "The right ramp lights Roll & Collect, and while it is lit the lane beside the Bank door is armed to roll the dice; you relight it on the right ramp each time you spend it.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the lit lane -- the ball runs the vault into the saucer and the dice roll, quietly weighted toward the groups and railroads you do not own yet. Knock the Cop drop target down first, because while it stands it blocks the lane and kills the shot.",
+        "goals": [
+          "roll-and-collect"
+        ]
+      },
+      {
+        "id": "bank-letters",
+        "name": "B-A-N-K Vault Door",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "bank-door",
+            "lamps": 4
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "Each hit on the closed vault door lights the next letter of B-A-N-K, and the door only takes letters while it is shut -- an open door scores nothing until you close it again.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the centre ramp to slam the door shut, then bash it to finish B-A-N-K and blow the vault open for Cash Grab, where every ramp, loop and lit shot pays a rising value. The game usually spots you a letter at the start and one more each ball, so you rarely need more than a hit or two.",
+        "goals": [
+          "cash-grab"
+        ]
+      },
+      {
+        "id": "bonus-multiplier",
+        "name": "Bonus Multiplier & A-B-C Lanes",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "abc-lanes"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-spinner"
+          }
+        ],
+        "lit": "The bonus inserts climb 2X, 3X on up to 6X and then Light Extra Ball; the lit rung is your current multiplier on the end-of-ball bonus, which counts your board laps, railroads and monopolies.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the three A-B-C top lanes, or take a lit outer loop, to click the multiplier up a rung. Finishing A-B-C also jumps your token eight spaces -- your biggest move without a dice roll -- so those top lanes pay you twice.",
+        "goals": [
+          "bonus-x"
+        ]
+      },
+      {
+        "id": "electric-power",
+        "name": "Electric Company Power",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "electric-company"
+          },
+          {
+            "shot": "upper-jets"
+          }
+        ],
+        "lit": "The power meter fills five percent per Electric Company shot and holds its level between shots; its lit thresholds relight Roll & Collect, light your extra ball, and top out at Special.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the Electric Company from the upper right flipper -- about six shots reaches the extra ball at thirty percent, and the upper jets nudge the meter up on their own. Push it all the way to full for Special.",
+        "goals": [
+          "electric-power"
+        ]
+      },
+      {
+        "id": "monopoly-multiball",
+        "name": "Monopoly Multiball & Jackpot Ramp",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "game-board"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "free-parking-ramp"
+          },
+          {
+            "shot": "electric-company"
+          }
+        ],
+        "lit": "Lapping your token past GO lights lock; a lit lock resets the centre-ramp diverter to send balls into Jail instead of back to the inlane.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock a pair of balls into Jail with centre-ramp shots, then launch the multiball at the right ramp. Every jackpot but Railroad's lives on the Free Parking ramp, and the two-million super arms when you shoot the Railroad ramp and cash it at the Electric Company. Both of those shots are made only from the upper right flipper.",
+        "goals": [
+          "monopoly-multiball"
+        ]
+      },
+      {
+        "id": "railroads",
+        "name": "Railroads",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "railroad-ramp"
+          }
+        ],
+        "lit": "An outer loop lights Advance To Next Railroad above the Railroad ramp; a railroad you collect stays banked toward the four you need.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect the lit railroad on the Railroad ramp, whose return drops the ball right above the left flipper for an easy repeat. Four railroads light Railroad Multiball -- the one multiball whose jackpot is the Railroad ramp itself -- and they also tick toward Land Grab.",
+        "goals": [
+          "railroad-multiball",
+          "property-groups"
+        ]
+      },
+      {
+        "id": "free-parking",
+        "name": "Free Parking Value",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "free-parking-target"
+          }
+        ],
+        "lit": "The Free Parking standup pays a value opening at seventy-five thousand and rising each hit, while a separate jackpot figure builds alongside and persists between whole games up to a ceiling, so a machine fed across many games starts you far higher than one just switched on.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the target in normal play to bank both values, then start Free Parking Multiball -- the rare multiball that collects its jackpot right on the standup rather than up the ramp. That built figure resets low the moment the multiball is over, so cash it while it is high.",
+        "goals": [
+          "free-parking-multiball"
+        ]
+      },
+      {
+        "id": "chance-scoop",
+        "name": "Chance & Community Chest",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "chance-scoop"
+          }
+        ],
+        "lit": "Whatever insert glows under the far-left scoop sets its award -- a Chance card, or the Community Chest hidden behind it, and only a throwaway Pocket Change when neither is on.",
+        "flashing": null,
+        "control": null,
+        "then": "Take Chance only when it is lit -- relight it on the Free Parking ramp -- for a card that can be anything from small points to an instant multiball. During Land Grab, with a Chance already collected, the scoop hides Community Chest, whose award doubles on every successive collect until the last ball drains.",
+        "goals": [
+          "chance",
+          "community-chest"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Beat the sweeping flipper for the Water Works skill shot, then get Roll & Collect running on the right ramp -- the dice roll is the engine that banks colour groups, starts modes and feeds every multiball. Bank the groups the dice hand you as you go.",
+        "goals": [
+          "skillshot",
+          "roll-and-collect",
+          "property-groups"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Lap the board for Monopoly Multiball and gather railroads for Railroad Multiball, climb the Electric Company power meter to the extra ball, and build the bonus multiplier on the A-B-C lanes and the loops.",
+        "goals": [
+          "monopoly-multiball",
+          "railroad-multiball",
+          "electric-power",
+          "bonus-x"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Bank every colour group and each of the four railroads and Land Grab lights at the Roll & Collect lane: a four-ball, timed race to stack houses on the centre ramp, four at once on the Free Parking ramp, and hotels off the Electric Company. Chase the hidden Community Chest at the scoop while it runs, since its award doubles on each successive collect.",
+        "goals": [
+          "land-grab",
+          "community-chest"
+        ]
+      }
+    ]
+  }
+}

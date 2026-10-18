@@ -1,0 +1,829 @@
+{
+  "machine": "Fire! (Williams, 1987)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "A manual plunger on the right. The lane runs a little past halfway up the playfield and ends at a one-way gate set at about 45 degrees, which deflects a returning ball down toward the flippers."
+    },
+    {
+      "id": "skillshot-lane",
+      "name": "Skill Shot Lane",
+      "type": "rollover",
+      "x": 0.9,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Five rollover sensors past the gate with a standup at the far end. From the gate outward they read 20,000, 10,000, 30,000, 100,000 and 5,000, and the standup is worth only 1,000."
+    },
+    {
+      "id": "ladder-ramp",
+      "name": "Ladder Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "A short painted ramp in front of the main building that normally sits flush with the playfield. Flush, a centre shot just bounces off a post. Raised, it opens the window into the building."
+    },
+    {
+      "id": "turnaround",
+      "name": "The Turnaround",
+      "type": "loop",
+      "x": 0.5,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Two mouths flank the ladder ramp and both feed one U-shaped channel curling away behind it, and the lamp over each mouth tells you when that side is lit. Any pass pops the fire plug up for a few seconds; go in on the lit side and you also step the bonus level and raise the ladder."
+    },
+    {
+      "id": "left-side-targets",
+      "name": "Left Side Building Targets",
+      "type": "target-bank",
+      "x": 0.4,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Three standups on the small building immediately left of the ladder ramp, each with a flame insert. Fires always light in groups of three, and all three have to go out to clear the group."
+    },
+    {
+      "id": "right-side-targets",
+      "name": "Right Side Building Targets",
+      "type": "target-bank",
+      "x": 0.6,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "The matching three standups right of the ladder ramp. The upper slingshot kickers sit just below them, which makes clean shots here awkward."
+    },
+    {
+      "id": "west-building",
+      "name": "West Building",
+      "type": "lock",
+      "x": 0.16,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "The left lock, sitting about halfway up the playfield. When it gives a ball back, the ball leaves by the top right corner; the one-way gate it passes on the way out is mounted directly above this building's highest standup."
+    },
+    {
+      "id": "west-targets",
+      "name": "West Building Targets",
+      "type": "target-bank",
+      "x": 0.24,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Three flame standups on the inside face of the West building. Put every one of them out and the opposite loop entrance drops so you can lock a ball here."
+    },
+    {
+      "id": "east-building",
+      "name": "East Building",
+      "type": "lock",
+      "x": 0.84,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "The right lock. It releases locked balls out of the bottom, dropping them straight into the right inlane."
+    },
+    {
+      "id": "east-targets",
+      "name": "East Building Targets",
+      "type": "target-bank",
+      "x": 0.76,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Three flame standups on the inside face of the East building, working exactly like the West set."
+    },
+    {
+      "id": "left-save-ramp",
+      "name": "Left Save Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Starts about two thirds of the way up and climbs all the way to the back, rising until the ball nearly touches the glass. A sensor at the top registers the hit. This is one half of the extra ball."
+    },
+    {
+      "id": "right-save-ramp",
+      "name": "Right Save Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "The mirror ramp on the right, with the same sensor at the top."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop Entrance",
+      "type": "loop",
+      "x": 0.1,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The outermost entrance on the left. It raises and lowers, and that position decides whether a ball runs the lower loop, the upper loop, or ends up locked in a building.",
+      "feeds": {
+        "shot": "right-loop"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop Entrance",
+      "type": "loop",
+      "x": 0.9,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The matching entrance on the right. Any trip through the loop also puts out one lit flame target for free.",
+      "feeds": {
+        "shot": "left-loop"
+      }
+    },
+    {
+      "id": "slingshots",
+      "name": "Slingshot Kickers",
+      "type": "slingshot",
+      "x": 0.3,
+      "y": 0.17,
+      "trim": "all",
+      "notes": "There is a pair by the flippers and another pair up by the side building targets. Any kicker hit cycles which turnaround lamp is lit and which save ramp carries the extra ball light — so they are useful, not just noise."
+    },
+    {
+      "id": "fire-plug",
+      "name": "Fire Plug",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "A small post between the flippers that pops up to block a centre drain. It is up at the start of every ball, and the turnaround is the only way to bring it back."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Standard return lane. There is no lane change on this machine, so you cannot steer the lamps from here."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Where the East building drops your locked balls when it releases them."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Lights for special once you have reached 10x on the bonus level and taken another lit turnaround."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries the other special light under the same condition."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.2558,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the right save ramp, the right loop and the East building targets."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7558,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the left save ramp, the left loop and the West building targets."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "The Skill Shot Lane",
+      "category": "skillshot",
+      "summary": "Five sensors sit past the shooter lane gate, and their order is scrambled on purpose: 20,000, 10,000, 30,000, 100,000, 5,000. Whichever is highest among the ones your ball crosses is what you score, so aim for the fourth sensor and let the ball roll back into play.",
+      "difficulty": 2,
+      "reward": "100,000 for a perfect plunge",
+      "steps": [
+        {
+          "shot": "skillshot-lane",
+          "action": "Judge the strength to reach the fourth sensor, no further",
+          "detail": "Too soft and you stop short on 30,000; too hard and you carry past the 5,000 sensor into the standup for a thousand points. The ball then rolls back and drops into play, and the highest sensor it crossed is what pays."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "gate-trick",
+      "title": "The Gate Nudge",
+      "category": "secret",
+      "summary": "The one-way gate at the top of the shooter lane can be teased rather than cleared, which lets you score a sensor and keep the ball in the lane. It is a genuine trick with a genuine cost, and the cost is time.",
+      "difficulty": 3,
+      "reward": "A repeatable 20,000, or a blown skill shot",
+      "steps": [],
+      "instructions": [
+        "Plunge very lightly so the ball noses through the one-way gate far enough to trip the first sensor but not far enough to clear it.",
+        "The gate then pushes the ball back down the shooter lane and you can try again.",
+        "The first sensor is only worth 20,000, so this is fiddly money at best.",
+        "Get it slightly wrong and the ball clears the gate entirely, which is your skill shot gone.",
+        "The real cost is the clock. Every second in the shooter lane is a second the current fire is burning down your bonus level, so the fires you eventually put out are worth less."
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "put-out-fires",
+      "title": "Putting Out Fires",
+      "category": "progression",
+      "summary": "This is the entire game. Flame targets light in groups of three and you have to hit all three to clear the group. A trip through the loop puts one lit target out for free, which makes the loop the most efficient shot on the playfield.",
+      "difficulty": 1,
+      "reward": "Fire points at your current bonus level",
+      "steps": [
+        {
+          "shot": "left-side-targets",
+          "action": "Clear the whole group",
+          "detail": "Each hit kills that target's flame insert, and only a complete group counts as a fire put out."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Use the loop as a free hit",
+          "detail": "Any pass through the loop spots one lit flame target, which is a much safer shot than a direct standup."
+        },
+        {
+          "shot": "east-targets",
+          "action": "Expect a second fire",
+          "detail": "If you are slow, the machine either lights a second group alongside the first or, if you are lucky, relights the one you are already working on."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "bonus-level",
+      "title": "The Bonus Level Countdown",
+      "category": "multiplier",
+      "summary": "A column of multipliers runs 10x, 7x, 5x, 3x, 2x. At the start of a ball the 10x is blinking and the rest are solid. Take too long over a fire and the 10x drops out, the 7x starts blinking, and on down the column — so speed is worth more here than accuracy.",
+      "difficulty": 2,
+      "reward": "Up to 10x on the fire you put out",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Start the ball already moving",
+          "detail": "The countdown begins the moment the ball is in play, so time spent settling is time spent losing multiplier."
+        },
+        {
+          "shot": "west-targets",
+          "action": "Clear the group fast",
+          "detail": "Putting the fire out resets the timer and leaves the column at 10x for the next one."
+        },
+        {
+          "shot": "turnaround",
+          "action": "Raise the level from the lit side",
+          "detail": "Entering the turnaround from whichever side is lit raises the bonus level as well as saving your ball."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "loop-entrances",
+      "title": "Reading The Loop Entrances",
+      "category": "strategy",
+      "summary": "Both loop entrances raise and lower, and the combination decides where your ball ends up. This is the mechanism the whole machine is built on, and it is not signposted anywhere on the playfield.",
+      "difficulty": 2,
+      "reward": "Control over locks and loop routing",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Both entrances up: the lower loop",
+          "detail": "This is the starting position. A ball in the left comes out of the right and vice versa."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Both entrances down: the upper loop",
+          "detail": "Same in-and-out behaviour, just routed over the top."
+        },
+        {
+          "shot": "east-building",
+          "action": "One up, one down: a lock",
+          "detail": "Shoot the lowered side and the ball runs the top loop, crosses the raised entrance, and is dropped into a building. Shoot the raised side instead and the lowered one lifts to let it back out."
+        }
+      ],
+      "fx": "city",
+      "ordered": false
+    },
+    {
+      "id": "lock-firemen",
+      "title": "Trapping The Firemen",
+      "category": "progression",
+      "summary": "Locks here are not a shot you can simply take. Put out every fire on the building you want to fill, and the loop entrance on the opposite side drops. Shoot up that side, ride the top loop, and your fireman is trapped in the freshly extinguished building.",
+      "difficulty": 3,
+      "reward": "One locked ball per building",
+      "steps": [
+        {
+          "shot": "west-targets",
+          "action": "Clear the building you want to fill",
+          "detail": "All three flames on that building have to be out."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Shoot the opposite entrance",
+          "detail": "It is the far side that drops, not the near one — this is where most players shoot the wrong hole."
+        },
+        {
+          "shot": "east-targets",
+          "action": "Repeat on the other side",
+          "detail": "You need one ball in each building before anything happens."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "window-shot",
+      "title": "The Window Shot",
+      "category": "strategy",
+      "summary": "With the ladder ramp flush, a centre shot bounces off a post and comes straight back. Raise the ladder and the same shot goes through the window instead. The ladder only stays up for an operator-set time, and the machine ticks the seconds off audibly.",
+      "difficulty": 2,
+      "reward": "A fireman trapped in the East or West building",
+      "steps": [
+        {
+          "shot": "turnaround",
+          "action": "Take a lit turnaround",
+          "detail": "A lit turnaround pass is what raises the ladder."
+        },
+        {
+          "shot": "ladder-ramp",
+          "action": "Shoot the window before it drops",
+          "detail": "Listen for the ticking and watch the rescue lamp flash — that flashing is your remaining time, not decoration."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "multiball",
+      "title": "Rescue Multiball",
+      "category": "multiball",
+      "summary": "With a ball locked in each building, both loop entrances come back up and the rescue lights come on. Raising the ladder takes one trip through the lower loop; from there the window is your start shot — and with two balls alive, clearing every lit fire pays a million.",
+      "difficulty": 3,
+      "reward": "A million points for a clean sweep",
+      "steps": [
+        {
+          "shot": "west-building",
+          "action": "Fill both buildings first",
+          "detail": "The rescue lights only come on once each side is holding a ball."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Run the lower loop",
+          "detail": "That is what raises the ladder for the start shot."
+        },
+        {
+          "shot": "ladder-ramp",
+          "action": "Take the window to start it",
+          "detail": "The West building throws its ball out of a gate near its top target; the East drops its ball into the right inlane."
+        },
+        {
+          "shot": "right-side-targets",
+          "action": "Sweep every lit flame",
+          "detail": "Put out all the lit fires while at least two balls are still in play and the million is yours."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "save-the-girl",
+      "title": "Save The Girl",
+      "category": "progression",
+      "summary": "The extra ball, and it is a two-stage ask. Go all the way up each of the two long side ramps once, and one of them will then light at random. Hit the target at the top of the lit one and the extra ball is yours.",
+      "difficulty": 2,
+      "reward": "An extra ball",
+      "steps": [
+        {
+          "shot": "left-save-ramp",
+          "action": "Climb the left ramp",
+          "detail": "The sensor is right at the top where the ramp nearly touches the glass, so a weak shot does not count."
+        },
+        {
+          "shot": "right-save-ramp",
+          "action": "Climb the right ramp",
+          "detail": "One clean trip up each side is all the first stage asks for.",
+          "link": "none"
+        },
+        {
+          "shot": "slingshots",
+          "action": "Watch which side lights",
+          "detail": "The machine picks one at random, and slingshot hits then cycle which one carries the light — so check before you commit."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "turnaround-value",
+      "title": "Work The Turnaround",
+      "category": "strategy",
+      "summary": "The most underrated shot on the machine, because it does three jobs at once. Every pass raises the fire plug for a few seconds. A pass from the lit side also raises the bonus level and puts the ladder up for a window shot.",
+      "difficulty": 2,
+      "reward": "A ball save, a multiplier step and a raised ladder",
+      "steps": [
+        {
+          "shot": "turnaround",
+          "action": "Take it whenever it is available",
+          "detail": "Even an unlit pass buys you a few seconds of centre-drain protection."
+        },
+        {
+          "shot": "slingshots",
+          "action": "Let the slings cycle the lit side",
+          "detail": "Slingshot hits move which turnaround lamp is lit, so a rattle in the lower playfield can hand you the side you want."
+        },
+        {
+          "shot": "ladder-ramp",
+          "action": "Cash it as a window shot",
+          "detail": "A lit turnaround is the only route to the window, so plan the follow-up before you make the shot."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "fire-plug",
+      "title": "Living Off The Fire Plug",
+      "category": "strategy",
+      "summary": "There is a small post between the flippers that pops up and blocks the centre drain. It is up at the start of every ball, which is the only reason the game is playable at all — the skill shot lane dumps the ball straight back down the middle.",
+      "difficulty": 1,
+      "reward": "Saved balls",
+      "steps": [
+        {
+          "shot": "fire-plug",
+          "action": "Know when it is up",
+          "detail": "Every ball starts with it raised, which is what catches the ball coming out of the skill shot lane."
+        },
+        {
+          "shot": "turnaround",
+          "action": "Keep re-raising it",
+          "detail": "The turnaround is the only thing that puts it back up, and only for a few seconds. How many seconds is an operator setting, so it varies machine to machine."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "specials",
+      "title": "Light The Outlane Specials",
+      "category": "secret",
+      "summary": "There is a reward for pushing the bonus level all the way to the top and then not stopping. Get to 10x and take one more lit turnaround, and both outlanes come on for special.",
+      "difficulty": 3,
+      "reward": "Special at both outlanes",
+      "steps": [
+        {
+          "shot": "turnaround",
+          "action": "Climb the level to 10x",
+          "detail": "Lit turnaround entries are what raise the bonus level, so the route there is the same shot repeated."
+        },
+        {
+          "shot": "turnaround",
+          "action": "Take one more once you are capped",
+          "detail": "The extra lit pass at 10x is what turns the outlane specials on."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Then aim to drain",
+          "detail": "An unusual instruction on any machine, but with both outlanes lit for special it is the right one."
+        }
+      ],
+      "fx": "coin"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "fire-skillshot",
+      "title": "Fourth Sensor",
+      "desc": "Stop the plunge on the 100,000 sensor and roll back into play.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "fire-first-group",
+      "title": "Fire Out",
+      "desc": "Clear a full group of three flame targets.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "put-out-fires"
+    },
+    {
+      "id": "fire-10x",
+      "title": "Ten Times",
+      "desc": "Put a fire out while the bonus level is still blinking on 10x.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-level"
+    },
+    {
+      "id": "fire-window",
+      "title": "Break The Window",
+      "desc": "Raise the ladder from the turnaround and shoot the window before it drops.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "window-shot"
+    },
+    {
+      "id": "fire-lock",
+      "title": "Fireman Trapped",
+      "desc": "Clear a building and lock a ball inside it from the opposite loop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "lock-firemen"
+    },
+    {
+      "id": "fire-extra-ball",
+      "title": "Save The Girl",
+      "desc": "Climb both side ramps, then hit the lit one again for the extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "save-the-girl"
+    },
+    {
+      "id": "fire-multiball",
+      "title": "Rescue",
+      "desc": "Lock both buildings and start multiball at the window.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "fire-million",
+      "title": "One Million",
+      "desc": "Clear every lit fire during multiball with at least two balls alive.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "fire-specials",
+      "title": "Both Outlanes Lit",
+      "desc": "Reach 10x and take one more lit turnaround to light the specials.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "specials"
+    }
+  ],
+  "drills": [
+    {
+      "id": "fourth-sensor-plunge",
+      "title": "Stop On The Fourth Sensor",
+      "text": "The five sensors past the gate are scrambled on purpose and you score the highest one your ball crosses. Meter the plunge to reach the fourth for 100,000 and no further, because carrying on into the standup is worth a thousand.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "skillshot-lane"
+      ]
+    },
+    {
+      "id": "turnaround-lit-side",
+      "title": "Take The Lit Turnaround",
+      "text": "Check which of the two mouths beside the ladder ramp is lit before you shoot, because only the lit side raises the bonus level and puts the ladder up. Slingshot hits cycle which one is live, so a rattle down at the flippers can hand you the side you want.",
+      "reps": "15 passes",
+      "focus": "accuracy",
+      "goal": "turnaround-value",
+      "shots": [
+        "turnaround"
+      ]
+    },
+    {
+      "id": "loop-as-a-free-flame",
+      "title": "Loop Out The Fires",
+      "text": "Every trip through the loop puts out one lit flame target for free. Work a group of three down using loop passes rather than shooting the standups directly, and count how much less often the ball comes back at you.",
+      "reps": "3 fires put out",
+      "focus": "accuracy",
+      "goal": "put-out-fires",
+      "shots": [
+        "left-loop",
+        "right-loop",
+        "left-side-targets"
+      ]
+    },
+    {
+      "id": "plug-cadence",
+      "title": "Know Your Plug Timer",
+      "text": "Take a turnaround pass and count how long the fire plug actually stays up on this machine — the duration is an operator setting and it varies from one to the next. Then play a ball where you go back for another pass before it drops rather than after.",
+      "reps": "one full ball",
+      "focus": "ball-control",
+      "goal": "fire-plug",
+      "shots": [
+        "turnaround",
+        "fire-plug"
+      ]
+    },
+    {
+      "id": "opposite-entrance-lock",
+      "title": "Shoot The Far Entrance",
+      "text": "Put out all three flames on the West or East building you want to fill, then shoot the loop entrance on the opposite side, not the one beside it. The ball rides the top loop, crosses the raised entrance and drops into the building you just cleared.",
+      "reps": "5 locks",
+      "focus": "flow",
+      "goal": "lock-firemen",
+      "shots": [
+        "west-targets",
+        "east-targets",
+        "left-loop",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "ladder-then-window",
+      "title": "Ladder Up, Then The Window",
+      "text": "A lit turnaround raises the ladder, and a centre shot only goes through the window while it is up — flush, it bounces off a post and comes straight back. Line the follow-up shot up before you take the turnaround and listen to the ticking, because the flashing rescue lamp is your clock.",
+      "reps": "10 window attempts",
+      "focus": "flow",
+      "goal": "window-shot",
+      "shots": [
+        "turnaround",
+        "ladder-ramp"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "hero",
+  "actionButton": {
+    "present": false,
+    "how": "Fire! strips the controls back further than most machines of its age: no dedicated button, and no lane change either, so your flipper buttons will not shuffle any lit lamps. Flippers and a manual plunger are the whole interface, and the plunger is worth care because a feather-light pull can score the first skill shot sensor and roll the ball back for another go."
+  },
+  "howItPlays": {
+    "objective": "Fire! is a stripped-down late-80s Williams table about fighting a blaze: put flame targets out before your bonus multiplier burns down, trap a ball inside each building, and rescue everyone in a two-ball multiball worth a million.",
+    "loop": [
+      "Knock flame targets out in threes, or spot one for free by running either loop, to score fires at whatever multiplier the bonus column is showing.",
+      "Take the lit turnaround mouth to step that bonus column up and raise the ladder, while any turnaround pass pops the fire plug to shield the centre drain.",
+      "Clear all three flames on a building, then shoot the loop entrance on the far side to route a ball over the top and lock it inside.",
+      "Fill both buildings, stand the ladder up, and shoot the lit window to start Rescue Multiball, then douse every lit flame with the balls alive for a million."
+    ],
+    "lights": [
+      {
+        "id": "flame-inserts",
+        "name": "Flame Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-side-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "right-side-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "west-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "east-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit flame insert is a fire still burning on that standup; fires arrive three at a time and only a whole trio going dark counts as one fire out, and a target you have doused stays dark until the game lights a fresh group.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear a group to score fire points at whatever your bonus level is showing, and lean on the loop, since one trip around douses a lit flame with far less drain risk than a direct standup. Empty a whole West or East building of its fire and the far-side loop entrance lowers, opening that building up to trap a ball.",
+        "goals": [
+          "put-out-fires",
+          "lock-firemen"
+        ]
+      },
+      {
+        "id": "bonus-column",
+        "name": "Bonus Level Column",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "turnaround"
+          }
+        ],
+        "lit": "The multiplier column climbs from 2x up to a blinking 10x as each ball begins, with the lower rungs holding steady; the rung that blinks is what your next extinguished fire will pay out.",
+        "flashing": "Let a fire smoulder too long and the blink slides down a rung, 10x giving way to 7x and onward, so here a fast clear beats a pretty one.",
+        "control": null,
+        "then": "Put a fire out while the top rung still blinks to bank it at ten times, then start the timer over and keep the column pinned high. Drive it to the very top and take one further lit turnaround on top of that, and both outlanes wake up for special.",
+        "goals": [
+          "bonus-level",
+          "specials"
+        ]
+      },
+      {
+        "id": "turnaround-lamps",
+        "name": "Turnaround Lamps",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "turnaround"
+          }
+        ],
+        "lit": "A lamp glows over whichever of the two turnaround mouths is live, and entering from the lit mouth is the pass that steps your bonus level up and stands the ladder for a window shot; a run in on the dark side still counts, for less.",
+        "flashing": null,
+        "control": null,
+        "then": "Any pass at all pops the fire plug up between the flippers for a few seconds, so the shot doubles as a guard against a straight-down-the-middle drain. Glance at which mouth is lit before you commit, because a rattle in the slingshots quietly cycles the live side out from under you.",
+        "goals": [
+          "turnaround-value",
+          "fire-plug"
+        ]
+      },
+      {
+        "id": "rescue-lamps",
+        "name": "Rescue Lamps",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "ladder-ramp"
+          },
+          {
+            "shot": "west-building"
+          },
+          {
+            "shot": "east-building"
+          }
+        ],
+        "lit": "With the ladder raised a rescue lamp lights the window into the building, and once a ball sits in each building the rescue lamps come on to arm the multiball; a flush, unlit ladder just bounces a centre shot off its post.",
+        "flashing": "The rescue lamp flashes down a countdown while the ladder is up, and the ticking you hear is that same clock, so a flashing lamp means shoot now or lose the window.",
+        "control": null,
+        "then": "Trap a ball in each building first, by clearing its three flames and running the far loop entrance, then raise the ladder from a lit turnaround and take the lit window before the flash dies to begin Rescue Multiball. With at least two balls still in play, dousing every lit flame on the table is worth the full million.",
+        "goals": [
+          "window-shot",
+          "lock-firemen",
+          "multiball"
+        ]
+      },
+      {
+        "id": "extra-ball-ramps",
+        "name": "Save Ramp Lights",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-save-ramp"
+          },
+          {
+            "shot": "right-save-ramp"
+          }
+        ],
+        "lit": "Climb each of the two tall side ramps once and the game lights one of them at random for Save the Girl; a lit ramp top is the extra-ball collect while an unlit one only scores the climb.",
+        "flashing": null,
+        "control": null,
+        "then": "Check which ramp carries the light before you shoot, since slingshot hits cycle the extra ball between the two sides. Hit the sensor at the very top of the lit ramp, up where it nearly meets the glass, to take the extra ball.",
+        "goals": [
+          "save-the-girl"
+        ]
+      },
+      {
+        "id": "outlane-specials",
+        "name": "Outlane Specials",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Both outlanes stay dark through normal play and only wake up once you have pushed the bonus level to its 10x cap and then taken one further lit turnaround; after that, each outlane glows for special.",
+        "flashing": null,
+        "control": null,
+        "then": "This is the rare moment you actually want the ball to find an outlane, because a lit one cashes a special. With both of them burning, the safe centre is no longer where the ball is worth the most.",
+        "goals": [
+          "specials"
+        ]
+      }
+    ],
+    "laneChange": "none",
+    "laneChangeNote": "Fire! carries no lane change at all: a flipper tap never nudges a lit turnaround side, flame, or extra-ball ramp, and the only thing that shifts any of those is a slingshot rattle cycling it. Line the ball up for the side you need rather than trying to walk a lamp toward the ball.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Meter the plunge to stop on the fourth skill-shot sensor for a hundred thousand, then settle into the core rhythm: put fires out in threes while the column still blinks at the top, and take every lit turnaround to keep the fire plug up and the multiplier climbing.",
+        "goals": [
+          "skillshot",
+          "put-out-fires",
+          "bonus-level"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Clear a whole building's flames and shoot the far loop entrance to trap a ball inside, one per building. Climb both tall side ramps to light Save the Girl, then take the extra ball off the lit ramp once you have checked which side the slings left burning.",
+        "goals": [
+          "lock-firemen",
+          "save-the-girl"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "With a ball locked in each building, raise the ladder from a lit turnaround and take the window to open Rescue Multiball, then put every lit fire out with two balls alive for the million. Push the bonus column to its 10x cap, then a single extra lit turnaround past the top wakes both outlanes for special as the other marquee reward.",
+        "goals": [
+          "multiball",
+          "specials"
+        ]
+      }
+    ]
+  }
+}

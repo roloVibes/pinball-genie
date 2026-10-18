@@ -1,0 +1,974 @@
+{
+  "machine": "AC/DC (Stern, 2012)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A manual plunger. A plunge lands in the top saucer nearly every time."
+    },
+    {
+      "id": "top-saucer",
+      "name": "Top Saucer",
+      "type": "saucer",
+      "x": 0.55,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Kicks out into the AXE lanes on a plunge, or holds the ball briefly for a song change once eight are lit on the jukebox. Also reached by looping the right loop."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.15,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "War Machine's key shot, and it carries a spinner worth steady points on every pass. One of the two Tour Multiball feature shots.",
+      "feeds": {
+        "shot": "bumpers"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.85,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Hell Ain't a Bad Place to Be's key shot, and the path back up to the top saucer. The other Tour Multiball feature shot.",
+      "feeds": {
+        "shot": "top-saucer"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Rock N Roll Train's key shot, and backhandable from either flipper. One of the two Jam Multiball feature shots.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Highway to Hell's key shot, and the shot that starts every multiball once it's lit. Feeds the cannon after F-I-R-E is spelled.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "bell",
+      "name": "Bell",
+      "type": "bash-toy",
+      "x": 0.45,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Hells Bells' key shot — a close miss almost always costs the ball, and even a clean hit doesn't guarantee safety. Three hits light 2X playfield scoring; three more while it's running lights 3X."
+    },
+    {
+      "id": "ac-dc-targets",
+      "name": "AC/DC Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Back In Black's key shot. Standups on the Pro, drop targets on Premium and LE. One of three banks that fuel Album Multiball."
+    },
+    {
+      "id": "tnt-targets",
+      "name": "TNT Targets",
+      "type": "target-bank",
+      "x": 0.2,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "TNT's key shot, and another of the three Album Multiball banks."
+    },
+    {
+      "id": "rock-targets",
+      "name": "Rock Targets",
+      "type": "target-bank",
+      "x": 0.8,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Let There Be Rock's key shot, and the third of the three Album Multiball banks."
+    },
+    {
+      "id": "ramp-targets",
+      "name": "Ramp Targets",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Thunderstruck's key shot — the narrow blue standups flanking the ramps."
+    },
+    {
+      "id": "axe-lanes",
+      "name": "Axe Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Whole Lotta Rosie's key shot, up top. Where a plunge lands after kicking out of the top saucer, and the target of the game's easier skill shot."
+    },
+    {
+      "id": "fire-lanes",
+      "name": "Fire Lanes",
+      "type": "lane",
+      "x": 0.25,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "The inlanes and outlanes. For Those About to Rock's key shot, and spelling F-I-R-E here three times is what lights the cannon for a Song Jackpot shot."
+    },
+    {
+      "id": "bumpers",
+      "name": "Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "You Shook Me All Night Long's key shot — just keep hitting them."
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "type": "mech",
+      "x": 0.78,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Mounted above the right slingshot. Aims automatically at whichever lit target has a jackpot waiting; press Fire on the lockbar to take the shot."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the left loop, the left ramp and the bell."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the right loop, the right ramp, and can reach the bell too — backhands are available almost everywhere on this table."
+    },
+    {
+      "id": "underworld-left-flipper",
+      "name": "Underworld Left Flipper",
+      "type": "flipper",
+      "x": 0.42,
+      "y": 0.16,
+      "trim": "premium-le",
+      "notes": "Stern's Premium feature list: 'Underworld Lower Mini-Playfield W/2 Flippers and Targets'. Position estimated inside the zone's front edge.",
+      "playfield": "underworld",
+      "bat": {
+        "side": "left",
+        "size": "mini"
+      }
+    },
+    {
+      "id": "underworld-right-flipper",
+      "name": "Underworld Right Flipper",
+      "type": "flipper",
+      "x": 0.58,
+      "y": 0.16,
+      "trim": "premium-le",
+      "notes": "Second of the two Underworld flippers. Position estimated.",
+      "playfield": "underworld",
+      "bat": {
+        "side": "right",
+        "size": "mini"
+      }
+    },
+    {
+      "id": "underworld-left-loop",
+      "name": "Underworld Left Loop",
+      "type": "loop",
+      "x": 0.39,
+      "y": 0.24,
+      "trim": "premium-le",
+      "notes": "'a left and right loop shot' per Stern's Premium feature copy. Position estimated.",
+      "playfield": "underworld"
+    },
+    {
+      "id": "underworld-right-loop",
+      "name": "Underworld Right Loop",
+      "type": "loop",
+      "x": 0.61,
+      "y": 0.24,
+      "trim": "premium-le",
+      "notes": "Second Underworld loop. Position estimated.",
+      "playfield": "underworld"
+    },
+    {
+      "id": "underworld-targets",
+      "name": "Underworld Center Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.21,
+      "trim": "premium-le",
+      "notes": "Three targets ('2 flippers, 3 targets'); 'center targets score 400K+8K on the first trip below decks'. Position estimated.",
+      "playfield": "underworld"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Axe Lanes Skill Shot",
+      "category": "skillshot",
+      "summary": "The plunge nearly always kicks back out of the top saucer into the AXE lanes — flip to move the blinking lane before it lands for points, a bonus multiplier bump, and a VIP pass.",
+      "difficulty": 1,
+      "reward": "Small points, +bonus multiplier, 1 VIP pass",
+      "steps": [
+        {
+          "shot": "axe-lanes",
+          "action": "Plunge, then flip to land in the blinking lane",
+          "detail": "The plunge kicks back out of the saucer nearly every time — it's the default path for every start of ball. Landing in the flashing lane is what actually pays out; missing it still scores something, just less."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-two",
+      "title": "The Harder Skill Shot",
+      "category": "progression",
+      "summary": "Keep the right flipper held up when the ball exits the top saucer, and instead of dropping into the AXE lanes it falls straight to your flippers — any major shot from there pays extra and awards two VIP passes instead of just one.",
+      "difficulty": 2,
+      "reward": "More points, +more bonus multiplier, 2 VIP passes",
+      "steps": [],
+      "instructions": [
+        "Hold the right flipper button in as the ball exits the top saucer, instead of letting it fall naturally into the AXE lanes.",
+        "It drops straight down to the flippers from there.",
+        "Hit any major shot — either ramp, either loop, or the bell — to collect the bigger award."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "vip-passes",
+      "title": "Spend A VIP Pass",
+      "category": "strategy",
+      "summary": "The Fire button doesn't only fire the cannon. Press it any time to spend a VIP pass instead, for a free hit toward whatever you're currently chasing.",
+      "difficulty": 1,
+      "reward": "One free shot toward your current song, or an add-a-ball in multiball",
+      "steps": [
+        {
+          "shot": "cannon",
+          "action": "Press Fire to spend a VIP pass",
+          "detail": "During regular play it only spots one hit toward your current song's key feature, which is rarely worth saving for. In multiball, though, it instead spots one of five major shots toward an add-a-ball — that's the moment worth holding it for."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "song-selection",
+      "title": "Choose Your Song",
+      "category": "progression",
+      "summary": "Every song is also a mode with its own key shot. Whichever one you pick at the start of the game keeps running — through multiballs and everything else — until you deliberately change it.",
+      "difficulty": 1,
+      "reward": "Extra scoring on your song's key shot for the rest of the ball",
+      "steps": [],
+      "instructions": [
+        "For Those About to Rock: the FIRE lanes (inlanes/outlanes).",
+        "Back In Black: the AC/DC targets. Rock N Roll Train: the left ramp. War Machine: the left loop.",
+        "Hells Bells: the bell. Thunderstruck: the ramp targets. TNT: the TNT targets.",
+        "Highway to Hell: the right ramp. Hell Ain't a Bad Place to Be: the right loop.",
+        "Let There Be Rock: the rock targets. Whole Lotta Rosie: the AXE lanes. You Shook Me All Night Long: the bumpers.",
+        "None of this locks you in — you can keep the same song the entire game and never miss out on anything the other eleven offer, aside from variety."
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "changing-songs",
+      "title": "Change The Record",
+      "category": "mode",
+      "summary": "Key-shot hits for songs you aren't playing light them up on the jukebox in the back of the cabinet. Light eight of them and the right loop into the top saucer offers you a change.",
+      "difficulty": 2,
+      "reward": "A fresh song mode, or a reset jukebox if you decline",
+      "steps": [
+        {
+          "shot": "ac-dc-targets",
+          "action": "Hit key shots for songs you aren't playing",
+          "detail": "Lane and target-bank songs need their whole requirement cleared, not just one hit, to light on the jukebox."
+        },
+        {
+          "shot": "top-saucer",
+          "action": "Land in the saucer to change songs",
+          "detail": "You get a free shot here automatically on the plunge at the start of a ball, so eight lit songs going into a new ball means an instant chance to switch. Keeping your current song instead just resets the jukebox back to zero."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "song-jackpot",
+      "title": "Song Jackpot",
+      "category": "combo",
+      "summary": "All the points you score in your current song mode quietly build a separate Song Jackpot too. Spell F-I-R-E three times to light the cannon, then fire it at the blinking target to cash the whole thing in.",
+      "difficulty": 2,
+      "reward": "1M minimum, often 15-20M or more before multipliers",
+      "steps": [
+        {
+          "shot": "fire-lanes",
+          "action": "Spell F-I-R-E three times",
+          "detail": "One shot at the Song Jackpot is already available for free at the very start of the game."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the ramp once F-I-R-E is spelled",
+          "detail": "The ramp feeds the cannon mechanism mounted above the right slingshot, which then aims itself at the blinking AC/DC target."
+        },
+        {
+          "shot": "cannon",
+          "action": "Fire at the blinking target",
+          "detail": "Hit it and the jackpot resets to 1M. Miss, and you'll need to spell F-I-R-E three more times for another try — but the value stays exactly where it was."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "bell-multiplier",
+      "title": "Playfield Multiplier",
+      "category": "multiplier",
+      "summary": "The bell is the only source of playfield multipliers in the whole game, and it's also the single easiest shot to drain on. Three hits light 2X for 20 seconds; three more while it's running lights 3X.",
+      "difficulty": 3,
+      "reward": "2X, then 3X playfield scoring for 20 seconds",
+      "steps": [
+        {
+          "shot": "bell",
+          "action": "Hit it three times",
+          "detail": "Any bell hit resets the 20-second clock back to full, lit or not."
+        },
+        {
+          "shot": "bell",
+          "action": "Keep hitting it to escalate",
+          "detail": "Three more hits during 2X starts 3X instead — worth setting up before you cash in a big Song Jackpot or start a multiball."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "jam-multiball",
+      "title": "Jam Multiball",
+      "category": "multiball",
+      "summary": "Usually the fastest of the three multiballs to reach — not because the table has more ramps than loops or target banks, but because ramp shots are simply easier to repeat: both ramps backhand cleanly, so even stacking up something like fifteen ramp hits against one leftover target-bank shot, the ramps are still the faster route. A straightforward two-ball mode once it's running.",
+      "difficulty": 2,
+      "reward": "Ramp-shot jackpots for the duration",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot either ramp to build toward Jam",
+          "detail": "Backhanding the same ramp over and over is usually the quickest way to light it."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash it in at the lit ramp",
+          "detail": "It starts with a cannon shot for an opening jackpot, then both ramps stay lit for more."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "album-multiball",
+      "title": "Album Multiball",
+      "category": "multiball",
+      "summary": "A three-ball mode built on the three target banks. Jackpots come named after AC/DC's discography in chronological order — and playing the right song when they land is worth real money.",
+      "difficulty": 2,
+      "reward": "Target-bank jackpots, plus a full song bonus if it matches your album",
+      "steps": [
+        {
+          "shot": "ac-dc-targets",
+          "action": "Clear any of the three target banks",
+          "detail": "AC/DC, TNT and Rock targets all count toward lighting it."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start it at the right ramp once lit",
+          "detail": "Every jackpot is named for an album, oldest first. If your current song came from that album, you score a full song bonus on top without resetting the song jackpot."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "tour-multiball",
+      "title": "Tour Multiball",
+      "category": "multiball",
+      "summary": "A two-ball mode built on the two loops, with the same chronological song-bonus trick as Album Multiball but tied to tours instead of albums.",
+      "difficulty": 2,
+      "reward": "Loop jackpots, plus a full song bonus if it matches your tour",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Shoot either loop to build toward Tour",
+          "detail": "Loops usually take a bit longer to light than ramps, since there are only two of them on the table."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start it at the right ramp once lit",
+          "detail": "Same song-bonus rule as Album Multiball, just checked against tours instead of albums."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "super-jackpot",
+      "title": "Super Jackpot",
+      "category": "combo",
+      "summary": "Twenty jackpots into any multiball — just fourteen during Album, matching its shorter discography — lights the cannon for a Super worth the lump sum of every jackpot scored on the way there.",
+      "difficulty": 3,
+      "reward": "The lump sum of every jackpot scored on the way there",
+      "steps": [
+        {
+          "shot": "cannon",
+          "action": "Fire the cannon at the bell once you've hit twenty jackpots",
+          "detail": "Your progress toward which album or tour you're on carries through even after collecting a Super, so it's worth tracking across the whole game."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "multi-multiball",
+      "title": "Stack The Multiballs",
+      "category": "strategy",
+      "summary": "You can't start one multiball while another runs, but you can light two or three ahead of time and start them all together the moment the right ramp is ready.",
+      "difficulty": 2,
+      "reward": "A Double or Triple Multiball, plus a bonus jackpot at the bell",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Light more than one multiball before you start either",
+          "detail": "The opening cannon shot pays out once per multiball you're starting, so a Triple pays triple right out of the gate."
+        },
+        {
+          "shot": "bell",
+          "action": "Cash the Triple Multiball Jackpot",
+          "detail": "Only available during a Triple, and only after you've collected at least one jackpot of each type."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "hell-lower-playfield",
+      "title": "The Lower Playfield",
+      "category": "secret",
+      "summary": "Premium and LE cabinets hide a second playfield underneath the main one. Any song with \"Hell\" in the title drops you down there the first time you make its key shot.",
+      "difficulty": 2,
+      "reward": "Extra scoring, and a small boost to your upper-playfield mode shots",
+      "steps": [
+        {
+          "shot": "bell",
+          "action": "Shoot Hells Bells' key shot on Premium or LE",
+          "detail": "Highway to Hell does the same from the right ramp, and Hell Ain't a Bad Place to Be from the right loop — whichever of the three you make first drops the ball onto the lower playfield for that song only."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "song-completion",
+      "title": "Completing A Song",
+      "category": "progression",
+      "summary": "Changing away from a song completes it, whether or not you ever actually shot its key feature — and a completed song can never be picked again for the rest of the game.",
+      "difficulty": 2,
+      "reward": "A small bonus at end of ball, plus progress toward Encore",
+      "steps": [],
+      "instructions": [
+        "Light eight songs on the jukebox and choose to change, and whatever you were just playing counts as completed — even if you never touched its key shot all game.",
+        "A completed song adds a little to your end-of-ball bonus and drops off the list of songs you can pick from.",
+        "Completing all twelve is the only way to unlock one final song change into Encore.",
+        "There's no penalty for never completing a single song — sticking with one favorite the whole game, and never touching the jukebox, is a perfectly good way to play."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "encore",
+      "title": "Encore",
+      "category": "wizard",
+      "summary": "The final wizard mode, reached only by completing all twelve songs and then changing one last time. Three balls replay the shot sequence of every song from your entire game, in order.",
+      "difficulty": 3,
+      "reward": "Every song's value, re-scored, one shot at a time",
+      "steps": [
+        {
+          "shot": "top-saucer",
+          "action": "Complete all twelve songs, then change one final time",
+          "detail": "This is the only way in — there's no other route to Encore."
+        },
+        {
+          "shot": "ac-dc-targets",
+          "action": "Replay each song's shot in order",
+          "detail": "The game walks you back through every song you played this game, in the order you played them, re-scoring each one when you land its associated shot."
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "acdc-skillshot",
+      "title": "First Notes",
+      "desc": "Collect the top saucer skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "acdc-two-passes",
+      "title": "Two Passes",
+      "desc": "Collect the harder skill shot for two VIP passes.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot-two"
+    },
+    {
+      "id": "acdc-change-record",
+      "title": "Change The Record",
+      "desc": "Change your song at the top saucer.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "changing-songs"
+    },
+    {
+      "id": "acdc-fire",
+      "title": "Fire!",
+      "desc": "Collect a Song Jackpot with the cannon.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "song-jackpot"
+    },
+    {
+      "id": "acdc-triple-playfield",
+      "title": "Triple Playfield",
+      "desc": "Reach 3X playfield scoring at the bell.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "bell-multiplier"
+    },
+    {
+      "id": "acdc-jam-session",
+      "title": "Jam Session",
+      "desc": "Start Jam Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "jam-multiball"
+    },
+    {
+      "id": "acdc-track-list",
+      "title": "Track List",
+      "desc": "Start Album Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "album-multiball"
+    },
+    {
+      "id": "acdc-on-the-road",
+      "title": "On The Road",
+      "desc": "Start Tour Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "tour-multiball"
+    },
+    {
+      "id": "acdc-super-jackpot",
+      "title": "Super Jackpot",
+      "desc": "Collect a Super Jackpot at the bell.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-jackpot"
+    },
+    {
+      "id": "acdc-triple-threat",
+      "title": "Triple Threat",
+      "desc": "Light and start all three multiballs together.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multi-multiball"
+    },
+    {
+      "id": "acdc-down-below",
+      "title": "Down Below",
+      "desc": "Drop onto the Hell lower playfield on a Premium or LE.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hell-lower-playfield"
+    },
+    {
+      "id": "acdc-twelve-songs",
+      "title": "Twelve Songs",
+      "desc": "Complete all twelve songs in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "song-completion"
+    },
+    {
+      "id": "acdc-encore",
+      "title": "Encore",
+      "desc": "Light and start the final wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "encore"
+    }
+  ],
+  "drills": [
+    {
+      "id": "two-axe-skill-shots",
+      "title": "Two Ways Out Of The Saucer",
+      "text": "The plunge kicks back out of the top saucer nearly every time, so the skill is flipping to move the blinking AXE lane onto the one the ball is heading for. Then learn the harder version: hold the right flipper in as the ball leaves the saucer and it drops straight to your flippers for a major shot instead.",
+      "reps": "10 plunges each way",
+      "focus": "skill-shot",
+      "goal": "skill-shot-two",
+      "shots": [
+        "shooter-lane",
+        "top-saucer",
+        "axe-lanes"
+      ]
+    },
+    {
+      "id": "bell-from-a-cradle",
+      "title": "Only Take The Bell Cradled",
+      "text": "A close miss on the bell almost always costs the ball and even a clean hit gives you something fast coming back, so never swing at it off a moving ball. Cradle, shoot, and have the other flipper ready — three hits is 2X and three more inside the window is 3X, so the reward is worth the discipline.",
+      "reps": "15 cradled attempts",
+      "focus": "ball-control",
+      "goal": "bell-multiplier",
+      "shots": [
+        "bell"
+      ]
+    },
+    {
+      "id": "ramp-backhand-reps",
+      "title": "Backhand Both Ramps",
+      "text": "Both ramps backhand cleanly, which is why repeating a ramp is the fastest route to a multiball on this table. Work the backhand from each flipper until you can stack a dozen ramp shots without ever crossing the playfield to set one up.",
+      "reps": "15 backhands per ramp",
+      "focus": "accuracy",
+      "goal": "jam-multiball",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "fire-ramp-cannon",
+      "title": "F-I-R-E, Ramp, Fire",
+      "text": "Spell F-I-R-E three times through the lanes, then take the right ramp to feed the cannon and press Fire at the blinking target. Miss the cannon shot and the value survives but you owe three more spellings, so treat the button press as the real shot in the sequence.",
+      "reps": "5 full sequences",
+      "focus": "flow",
+      "goal": "song-jackpot",
+      "shots": [
+        "fire-lanes",
+        "right-ramp",
+        "cannon"
+      ]
+    },
+    {
+      "id": "stack-before-you-start",
+      "title": "Light Two Before You Start One",
+      "text": "Keep away from the lit right ramp until a second and ideally a third multiball is also lit, because the opening cannon shot pays once for every multiball you start together. Once you are in a Triple, collect a jackpot of each type and go to the bell for the Triple jackpot.",
+      "reps": "3 stacked starts",
+      "focus": "flow",
+      "goal": "multi-multiball",
+      "shots": [
+        "right-ramp",
+        "cannon",
+        "bell"
+      ]
+    },
+    {
+      "id": "three-bank-sweeps",
+      "title": "Sweep All Three Banks",
+      "text": "AC/DC, TNT and Rock all feed the same multiball, so practise clearing whichever bank the ball gives you an angle on rather than favouring one. A bank song only lights on the jukebox once its whole requirement is cleared, so half-finished banks are worth nothing there either.",
+      "reps": "5 clears per bank",
+      "focus": "accuracy",
+      "goal": "album-multiball",
+      "shots": [
+        "ac-dc-targets",
+        "tnt-targets",
+        "rock-targets"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "guitar",
+  "playfields": [
+    {
+      "id": "underworld",
+      "name": "The Underworld (Hell)",
+      "kind": "lower",
+      "bounds": {
+        "x": 0.36,
+        "y": 0.14,
+        "w": 0.28,
+        "h": 0.16
+      },
+      "trim": "premium-le",
+      "entries": [
+        "bell",
+        "right-ramp",
+        "right-loop"
+      ],
+      "exits": [
+        {
+          "x": 0.45,
+          "y": 0.35
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Fire Button",
+    "location": "on the lockdown bar",
+    "how": "AC/DC got a lockbar button a year before Stern made them standard, and it earns its keep twice over. When the cannon above the right slingshot is loaded, Fire shoots it; the rest of the time the same button spends a VIP pass. Check the cannon insert above the flippers to know which one you are about to do.",
+    "uses": [
+      {
+        "when": "Cannon loaded after spelling F-I-R-E",
+        "what": "Shoots at the blinking AC/DC target to cash your Song Jackpot, often fifteen or twenty million before multipliers."
+      },
+      {
+        "when": "Cannon loaded and the bell is an option",
+        "what": "Firing at the bell instead is the safer collect and builds toward the playfield multipliers."
+      },
+      {
+        "when": "At the start of any multiball",
+        "what": "The opening cannon shot pays once per multiball you stacked, so a triple start pays three jackpots."
+      },
+      {
+        "when": "Twenty jackpots into a multiball",
+        "what": "Fires the Super Jackpot at the bell, worth the sum of every jackpot you banked getting there."
+      },
+      {
+        "when": "Holding a VIP pass during multiball",
+        "what": "Spends the pass to spot one of the five shots toward an add-a-ball — the moment worth saving passes for."
+      },
+      {
+        "when": "Holding a VIP pass in single-ball play",
+        "what": "Spots one hit toward your current song's key feature, which is usually not worth burning a pass on."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "On AC/DC every track doubles as a mode tied to one key shot, and the one you choose keeps playing through everything until you swap it at the jukebox. Cash each song's hidden Song Jackpot with the cannon, stack the three multiballs, and finish all twelve tracks to reach the Encore wizard.",
+    "loop": [
+      "Pick a track at the plunge; its key shot pays a bonus for the rest of the ball while every point you score feeds a separate Song Jackpot underneath.",
+      "Run the F-I-R-E lanes three times over to load the cannon, then hit the right ramp and thumb the Fire button to launch the loaded shot at the blinking target and collect that Song Jackpot.",
+      "Feed the ramps, loops and target banks to arm Jam, Tour and Album -- and get two or three of them lit before you start any, because the cannon's opening shot pays out once for every multiball you stacked together.",
+      "Bang the bell three times for double playfield scoring, three more for triple, and get that lit right before a big cannon collect or a multiball.",
+      "Complete every one of the twelve tracks -- changing away from a song counts it done -- and one final jukebox change drops you into Encore."
+    ],
+    "lights": [
+      {
+        "id": "axe-lanes",
+        "name": "AXE Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "axe-lanes"
+          }
+        ],
+        "lit": "As the ball rebounds from the top saucer it heads for the AXE lanes overhead, one of them blinking; steering the ball into the blinking one is the game's gentler skill shot.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a flip nudges the blinking AXE lane sideways, letting you line the lit one up with whichever lane the ball is about to roll through",
+          "when": "as the ball comes down from the top saucer"
+        },
+        "then": "Land the blinking lane for a few points, a bump to your bonus multiplier and a VIP pass. Filling the whole AXE set is also Whole Lotta Rosie's key shot, and holding the right flipper as the ball leaves the saucer instead drops it straight to your flippers for a two-pass award.",
+        "goals": [
+          "skillshot",
+          "skill-shot-two",
+          "song-selection"
+        ]
+      },
+      {
+        "id": "song-key-shots",
+        "name": "Song Key Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "bell"
+          }
+        ],
+        "lit": "Every one of the twelve songs is bolted to a single key shot -- the ramps, the loops, the bell and the target banks each stand in for a track. The song you are on keeps scoring extra on its own shot, right through multiballs, until you choose to trade it.",
+        "flashing": null,
+        "control": null,
+        "then": "Completing the key feature for the songs you are NOT playing lights those tracks on the jukebox in the backbox. Once eight are lit, the top saucer -- reached by looping the right loop -- offers a swap next time you get there. On Premium and LE, the first key shot of any track with Hell in its title also tips the ball onto a hidden lower playfield.",
+        "goals": [
+          "song-selection",
+          "changing-songs",
+          "song-completion"
+        ]
+      },
+      {
+        "id": "song-jackpot-cannon",
+        "name": "F-I-R-E Cannon",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "fire-lanes"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "cannon"
+          }
+        ],
+        "lit": "Running F-I-R-E through the inlanes and outlanes three times over loads the auto-aiming cannon above the right sling.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "with the cannon loaded, a press of the Fire button on the lockbar launches it at the blinking AC/DC target to bank the Song Jackpot",
+          "when": "after F-I-R-E is spelled and the right ramp has fed the cannon"
+        },
+        "then": "Shoot the right ramp to feed the mechanism, then fire at the blinking target for a jackpot that is often fifteen or twenty million before multipliers; a miss keeps the value but costs you another three spellings. That same Fire button spends a banked VIP pass when the cannon is cold -- a free hit toward your song, or a step toward an add-a-ball in multiball.",
+        "goals": [
+          "song-jackpot",
+          "vip-passes"
+        ]
+      },
+      {
+        "id": "bell-multiplier",
+        "name": "Bell Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "bell"
+          }
+        ],
+        "lit": "Three clean hits on the bell switch on double playfield scoring for twenty seconds, and any bell hit at all resets that timer to full.",
+        "flashing": null,
+        "control": null,
+        "then": "Three more while double is running upgrades it to triple -- worth setting up just before you cash a fat Song Jackpot or tip off a multiball. The catch is that the bell is the easiest drain on the table, so only ever take it from a cradle.",
+        "goals": [
+          "bell-multiplier"
+        ]
+      },
+      {
+        "id": "jam-tour-shots",
+        "name": "Jam & Tour Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "Repeating the ramps builds Jam, the quickest multiball to light because both ramps take a clean backhand; the two loops build Tour. The right ramp starts whichever one is armed.",
+        "flashing": null,
+        "control": null,
+        "then": "Get two or three multiballs lit before you start any of them, so the cannon's first jackpot pays for every one you stacked -- a triple then cracks off three at once and opens a bell jackpot once you have banked one of each type. Rack up twenty jackpots in a single multiball, or just fourteen in Album, and the bell lights for a Super worth every jackpot collected on the way up.",
+        "goals": [
+          "jam-multiball",
+          "tour-multiball",
+          "multi-multiball",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "album-banks",
+        "name": "Album Target Banks",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "ac-dc-targets"
+          },
+          {
+            "shot": "tnt-targets"
+          },
+          {
+            "shot": "rock-targets"
+          }
+        ],
+        "lit": "The three standup or drop banks -- AC/DC, TNT and Rock -- all feed Album, a three-ball multiball whose jackpots are named for the band's records in release order.",
+        "flashing": null,
+        "control": null,
+        "then": "Start it at the right ramp once you clear a bank. If the album a jackpot is named after is the one your current song belongs to, you also collect that song's full bonus, and it leaves the Song Jackpot untouched -- so playing the matching track through Album pays twice.",
+        "goals": [
+          "album-multiball"
+        ]
+      },
+      {
+        "id": "encore-wizard",
+        "name": "Encore",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "top-saucer"
+          },
+          {
+            "shot": "ac-dc-targets"
+          }
+        ],
+        "lit": "Encore only opens once all twelve songs are done and you take one last jukebox change; there is no other road in.",
+        "flashing": null,
+        "control": null,
+        "then": "Over three balls it walks you song by song through your whole game, replaying each track in the sequence you tackled them and paying its value again as you make its shot. That is the reward for a complete twelve-song game, and the toughest thing the machine asks for.",
+        "goals": [
+          "encore",
+          "song-completion"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper as the ball spills out of the top saucer to slide the blinking AXE lane across into the path it is taking. Drop it into the lit lane to score, nudge the bonus multiplier up a step and pocket a VIP pass; clearing the full AXE set doubles as Whole Lotta Rosie's key shot.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the AXE-lane skill shot -- flip the blinking lane under the ball -- and settle on a song whose key shot you can actually hit. That shot scores extra all ball while a Song Jackpot quietly grows in the background.",
+        "goals": [
+          "skillshot",
+          "skill-shot-two",
+          "song-selection"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Load the cannon with F-I-R-E and fire the Song Jackpot off the right ramp, but light the bell for double or triple scoring first. Arm two or three multiballs before starting so the opening cannon pays per stack, and match your song to the album during Album multiball for a doubled-up bonus.",
+        "goals": [
+          "song-jackpot",
+          "bell-multiplier",
+          "multi-multiball",
+          "album-multiball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete all twelve songs and change one final time for Encore, which replays every track from your game for full value -- the biggest score the machine holds. A stacked triple multiball with a bell Super is the other way to a monster total.",
+        "goals": [
+          "encore",
+          "super-jackpot",
+          "multi-multiball"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1168 @@
+{
+  "machine": "Frank Thomas' Big Hurt (Gottlieb, 1995)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A manual plunger you can use before the game auto-launches. A soft plunge rolls into the Big Hurt pothole and then feeds the pops and the right flipper, which is a much friendlier start than a full-speed orbit."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Left Flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Where the plunge is delivered. Hold it up and the incoming ball bounces off the captive ball and drops back onto it, which turns the skill shot into a controlled shot."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.21,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Sits just above the upper left flipper. Interchangeable with the left scoop as a combo link."
+    },
+    {
+      "id": "card-standup",
+      "name": "Card Standup",
+      "type": "standup",
+      "x": 0.27,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "A narrow white target below the upper flipper. Half of Card Trade."
+    },
+    {
+      "id": "trade-standup",
+      "name": "Trade Standup",
+      "type": "standup",
+      "x": 0.25,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "The other half. Card plus Trade lights the right hole for a trading card exchange."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Field Loop",
+      "type": "loop",
+      "x": 0.09,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The left half of the loop. Its value ladder is the steepest thing on the machine — 500K, 5M, 50M, 500M and then a billion."
+    },
+    {
+      "id": "left-scoop",
+      "name": "Left Scoop",
+      "type": "scoop",
+      "x": 0.2,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "A wide inverted scoop that does not swallow the ball — it lifts it onto a habitrail and feeds the upper left flipper. Carries the walk and steal awards.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "A very wide metal ramp. Left, centre and right of the same ramp send the ball to three different places, and its centre section raises to expose the signs behind it.",
+      "feeds": {
+        "shot": "home-run"
+      }
+    },
+    {
+      "id": "glove",
+      "name": "The Glove",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A moving glove at the top of the ramp that blocks shots. A firm hit is a catch worth 1M; a weak one is a single worth 100K. With the ramp centre raised, the glove catches the ball and drops it out the other side."
+    },
+    {
+      "id": "warning-track",
+      "name": "Warning Track",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "The trench the ball must clear to reach the gaps, the home run hole and the signs. Fall short and the ball rolls out — left to the left flipper, right to the pop bumpers."
+    },
+    {
+      "id": "left-gap",
+      "name": "Left Gap",
+      "type": "lane",
+      "x": 0.39,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Behind the left side of the ramp. This is the innings shot and it returns the ball to the lower left flipper."
+    },
+    {
+      "id": "home-run",
+      "name": "Home Run Hole",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Straight up the middle and over the warning track. 10M for a home run, 40M with the bases loaded."
+    },
+    {
+      "id": "right-gap",
+      "name": "Right Gap",
+      "type": "lane",
+      "x": 0.61,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Behind the right side of the ramp. When lit during single-ball play outside a mode it stops the ball for Players Choice, then feeds the right flipper."
+    },
+    {
+      "id": "big-hurt-sign",
+      "name": "Big Hurt Sign",
+      "type": "bash-toy",
+      "x": 0.5,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Hit this little sign, mounted directly over the home run hole, and it pivots away so the ball tumbles in behind it. You will rarely get a look at it unless the ramp's centre section is up."
+    },
+    {
+      "id": "left-sign",
+      "name": "Left Sign",
+      "type": "standup",
+      "x": 0.39,
+      "y": 0.81,
+      "trim": "all",
+      "notes": "The broad rectangular face sitting to the Big Hurt sign's left. Every hit spells one more letter of GRAND SLAM."
+    },
+    {
+      "id": "right-sign",
+      "name": "Right Sign",
+      "type": "standup",
+      "x": 0.61,
+      "y": 0.81,
+      "trim": "all",
+      "notes": "The matching target on the right. Also a GRAND SLAM letter, and also only really available with the ramp raised."
+    },
+    {
+      "id": "load-bases",
+      "name": "Load Bases Lane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.87,
+      "trim": "all",
+      "notes": "A lane above the pop bumpers. Rolling through it loads the bases, which turns your next home run into a grand slam."
+    },
+    {
+      "id": "big-hurt-pothole",
+      "name": "Big Hurt Pothole",
+      "type": "saucer",
+      "x": 0.82,
+      "y": 0.87,
+      "trim": "all",
+      "notes": "The lane alongside Load Bases. Each drop-in adds a letter to BIG HURT and kicks the ball down into the pop bumpers."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.76,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Two of them. Every switch hit rotates the bullpen award. Holding both flipper buttons stops the bumpers firing, but the switches still cycle the award."
+    },
+    {
+      "id": "bullpen",
+      "name": "Bullpen Hole",
+      "type": "saucer",
+      "x": 0.76,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Beneath the bumpers. Entering it after bumper switch hits pays the current bullpen award, then feeds the right flipper. Entering with no bumper contact skips the award entirely."
+    },
+    {
+      "id": "drop-targets",
+      "name": "Drop Target Bank",
+      "type": "drop-target",
+      "x": 0.66,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Three targets right of and below the ramp, and the game can knock them down individually. Clearing the bank raises the ramp centre and puts a runner on base."
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Field Loop",
+      "type": "loop",
+      "x": 0.91,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The jackpot builder. Shoot it while it is flashing and the jackpot goes up 10M. With Big Hurt Shot lit, a diverter stops the ball at the top and sends it toward the pothole and Load Bases."
+    },
+    {
+      "id": "right-hole",
+      "name": "Right Hole",
+      "type": "scoop",
+      "x": 0.87,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Below the right loop. Lights for Start Round, Card Trade or both, and feeds the right flipper.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Roll through and two things happen at once — the home run ramp lifts and the right loop begins to flash. A ball handed to the flipper by the left gap slips past without tripping the switch."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Rolling through lifts the ramp's centre section for a spell and arms both the captive ball and the left scoop as combo links. Balls delivered here from the right gap, the bullpen or the right hole slide by without triggering any of it."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Pays three trading cards on the way out. There is no rubber on the post between it and the inlane, so the ball moves through here fast."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.35,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Lower left flipper. The Left Gap returns here, and so does a ball that rolls left out of the Warning Track."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.65,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Lower right flipper. The Right Gap, the Bullpen hole and the Right Hole all feed it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "The plunge is pitched at the upper left flipper. Hold the flipper up and the ball kicks off the captive ball and settles back down onto it, giving you a clean look at the raised drop target — which pays a home run for 10M, or a grand slam for 40M with the bases loaded.",
+      "difficulty": 2,
+      "reward": "10M home run or 40M grand slam",
+      "steps": [
+        {
+          "shot": "upper-left-flipper",
+          "action": "Hold the upper flipper up as you plunge",
+          "detail": "The bounce off the captive ball turns a fast pitch into a settled ball.",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Shoot the raised target",
+          "detail": "It is the only target standing, so aim rather than swing."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "combo-plunge",
+      "title": "Use The Manual Plunger",
+      "category": "strategy",
+      "summary": "During multiball and in modes that do not divert the ball, get to the plunger before the game auto-launches and plunge softly. A weak plunge drops into the Big Hurt pothole, and from there the ball goes through the pops and neatly onto the right flipper.",
+      "difficulty": 1,
+      "reward": "A BIG HURT letter and a safe feed",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge soft, and plunge first",
+          "detail": "Beat the auto-launch and you control where the ball lands."
+        },
+        {
+          "shot": "big-hurt-pothole",
+          "action": "Aim for the pothole",
+          "detail": "Missing into Load Bases instead is barely a loss — the bases get filled.",
+          "plunge": "partial",
+          "plungeTo": 0.87
+        },
+        {
+          "shot": "bullpen",
+          "action": "Take the tidy return",
+          "detail": "Beats a full-speed orbit that comes screaming back down the left side."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "innings",
+      "title": "Complete Innings",
+      "category": "progression",
+      "summary": "The left gap advances the inning during single-ball play outside a mode. Every inning raises the super jackpot by 100M, and finishing the sixth starts the 7th Inning Stretch. This is the single most valuable repeat shot in the game.",
+      "difficulty": 2,
+      "reward": "+100M super jackpot per inning",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the left side of the ramp",
+          "detail": "Clear the warning track on the left and you land in the left gap."
+        },
+        {
+          "shot": "left-gap",
+          "action": "Advance the inning",
+          "detail": "The gap feeds the lower left flipper, so a good shot sets up the next one."
+        },
+        {
+          "shot": "right-gap",
+          "action": "Alternate gaps after the ninth",
+          "detail": "Past the ninth inning the left gap pays 30M, then lights the right gap for the same, back and forth."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "seventh-inning-stretch",
+      "title": "7th Inning Stretch",
+      "category": "multiball",
+      "summary": "Finishing the sixth inning starts a four-ball multiball. The left loop pushes the jackpot up 10M a shot, and the right loop or a ramp shot past the glove adds a letter to BIG HURT — spell it and you collect a double jackpot.",
+      "difficulty": 3,
+      "reward": "Jackpots and a double jackpot",
+      "steps": [
+        {
+          "shot": "left-gap",
+          "action": "Complete six innings",
+          "detail": "It starts on its own the moment the sixth is banked."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Keep raising the jackpot",
+          "detail": "Every left loop is another 10M on the number you are about to collect."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Spell BIG HURT",
+          "detail": "The right loop or a ramp shot that beats the glove adds letters."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "jackpot-ladder",
+      "title": "Build The Jackpot",
+      "category": "strategy",
+      "summary": "The jackpot opens at 20M and carries between balls. During ordinary single-ball play, every flashing right loop adds 10M. Four things set it flashing: shooting it, scoring a home run, a warning-track roll-out to the left, and the left inlane switch.",
+      "difficulty": 2,
+      "reward": "+10M per flashing right loop",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Start it flashing",
+          "detail": "The left inlane sets the right loop flashing and raises the home run ramp at the same time."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Shoot it every time it flashes",
+          "detail": "This is the habit that separates a 20M multiball from a 200M one."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Use the left loop when a jackpot is lit",
+          "detail": "During the Stretch or regular multiball, the left loop also advances the jackpot 10M."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "super-jackpot",
+      "title": "Super Jackpot Value",
+      "category": "multiplier",
+      "summary": "The super jackpot is 100M multiplied by innings completed, so it tops out at 900M after the ninth. It can be collected in regular multiball, in World Series, or by trading in the right number of cards.",
+      "difficulty": 3,
+      "reward": "Up to 900M",
+      "steps": [
+        {
+          "shot": "left-gap",
+          "action": "Get to the ninth inning",
+          "detail": "Nothing else moves this number."
+        },
+        {
+          "shot": "home-run",
+          "action": "Collect it in multiball",
+          "detail": "The super jackpot sits at the end of the regular multiball shot sequence."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "left-loop-billion",
+      "title": "The Billion Point Loop",
+      "category": "combo",
+      "summary": "The left loop starts at 500K and climbs a full order of magnitude each time: 500K, 5M, 50M, 500M and finally one billion. Each shot flashes the value for a short window and a repeat hit both raises it and restarts the timer.",
+      "difficulty": 3,
+      "reward": "500K climbing to 1,000,000,000",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Open the ladder",
+          "detail": "The first shot is worth 500K and starts the flashing window."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Repeat before the flash dies",
+          "detail": "Each repeat multiplies the value tenfold and resets the timer."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "catches",
+      "title": "Catches And Glove Awards",
+      "category": "strategy",
+      "summary": "A firm hit on the glove is a catch worth 1M; a weak one is a single worth 100K. Catches also re-light the right hole for Start Round. They accumulate all game and pay out again at the end of every ball at 1M each.",
+      "difficulty": 1,
+      "reward": "1M each, plus 50M and 100M milestones",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Hit the glove firmly",
+          "detail": "Hit it hard enough to count as a catch rather than dribbling into it for a single."
+        },
+        {
+          "shot": "glove",
+          "action": "Bank the milestones",
+          "detail": "Ten catches lights a timed extra ball at either loop, twenty pays 50M, thirty pays 100M and lights the right orbit for another 100M."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Use catches to re-arm modes",
+          "detail": "A catch re-lights Start Round if it is not already lit."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "rounds",
+      "title": "Start A Round",
+      "category": "mode",
+      "summary": "Rounds start from the right hole when it is lit. Finish one and a catch on the glove re-lights the hole for the next. Four of the six rounds are multiball rounds, so a round in progress is rarely a bad time to also chase jackpots.",
+      "difficulty": 2,
+      "reward": "Access to all six rounds",
+      "steps": [
+        {
+          "shot": "right-hole",
+          "action": "Shoot the lit right hole",
+          "detail": "It also feeds the right flipper, so you keep control coming out."
+        },
+        {
+          "shot": "glove",
+          "action": "Re-light with a catch",
+          "detail": "Any solid glove hit does it."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "six-rounds",
+      "title": "The Six Rounds",
+      "category": "progression",
+      "summary": "Each round wants one specific thing. Learn which shot pays before it starts, because most of these are short and most are multiball, which is exactly when there is no time to read the display.",
+      "difficulty": 2,
+      "reward": "Completing all six lights World Series",
+      "steps": [],
+      "instructions": [
+        "Golden Glove: two balls out, shoot the glove. Every glove hit counts as a catch here regardless of how weak it was, worth 20M plus the normal catch award. A third ball joins after your first catch.",
+        "Frank's HR Derby: two balls out, shoot the home run hole for 10M, or 40M if the bases are loaded. A third ball joins after the first home run.",
+        "Steal Home: a timed single-ball round starting you on first base. Shoot the left scoop then the centre drop target to steal a base — 20M, then 30M, then an extra ball plus 40M. Each left scoop adds five seconds and each steal pays a trading card.",
+        "#35 All Stars: timed. Any ramp shot past the glove and any right scoop shot adds a player, pays 10M plus 10M, and adds two seconds. Nine players ends it and the whole round is worth 450M.",
+        "Frank Thomas Cards: two balls out, both orbits lit for 10M and a trading card each. A third ball joins after the first hit.",
+        "Night Game: two balls out with two of the five major shots lit at any moment and the lit pair moving around. A lit shot completes an inning; all five pay 3M lit or not."
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "multiball",
+      "title": "Regular Multiball",
+      "category": "multiball",
+      "summary": "Chosen at Players Choice or handed out as a bullpen award. The sequence is strict: home run for the jackpot, then an orbit, then home run again inside five seconds for a double jackpot, then orbit and home run once more for the super.",
+      "difficulty": 3,
+      "reward": "Jackpot, double jackpot, super jackpot",
+      "steps": [
+        {
+          "shot": "home-run",
+          "action": "Open with the home run hole",
+          "detail": "That scores the jackpot and starts the chain."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Take an orbit",
+          "detail": "The orbit re-arms the home run and raises the ramp."
+        },
+        {
+          "shot": "home-run",
+          "action": "Return inside five seconds",
+          "detail": "Beat the clock for the double, then repeat the pattern for the super jackpot."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Restart the timer if you miss",
+          "detail": "Another orbit resets the five seconds and raises the ramp again — the sequence is not lost, only delayed."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "grand-slam-derby",
+      "title": "Grand Slam Derby",
+      "category": "multiball",
+      "summary": "Spell GRAND SLAM off the two large signs behind the ramp, or take the letters from bullpen and Players Choice awards. Four balls come out together, and for the length of the round the home run hole upgrades every hit into a 40M grand slam.",
+      "difficulty": 3,
+      "reward": "40M per home run, four balls",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Raise the ramp centre",
+          "detail": "The signs are only really reachable with the centre section up."
+        },
+        {
+          "shot": "left-sign",
+          "action": "Work both signs",
+          "detail": "Each hit is one letter."
+        },
+        {
+          "shot": "home-run",
+          "action": "Hammer the home run hole",
+          "detail": "All four balls are launched at the start, so set up on the hole and stay there."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "big-hurt-letters",
+      "title": "Spell BIG HURT",
+      "category": "progression",
+      "summary": "Every trip into the pothole adds a letter. Completing the phrase collects a double jackpot, which is why a soft plunge into the pothole is worth so much more than it looks. During the Stretch the right loop and ramp add letters too.",
+      "difficulty": 2,
+      "reward": "Double jackpot",
+      "steps": [
+        {
+          "shot": "big-hurt-pothole",
+          "action": "Feed the pothole",
+          "detail": "Soft plunges land here, and so does a right loop with the Big Hurt Shot diverter set."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Add letters during the Stretch",
+          "detail": "During 7th Inning Stretch the right loop or a ramp shot past the glove also spells."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "trading-cards",
+      "title": "Trading Cards",
+      "category": "strategy",
+      "summary": "Cards come from steals, the Frank Thomas Cards round, bullpen awards, and three at a time from the left outlane. At the end of the game they pay 10M each, but trading them at the right hole is worth far more.",
+      "difficulty": 2,
+      "reward": "Jackpots, extra balls, or a doubled score",
+      "steps": [
+        {
+          "shot": "card-standup",
+          "action": "Hit Card and Trade",
+          "detail": "Both narrow white targets must be down to light the exchange."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Trade at the right hole",
+          "detail": "Ten to twelve cards buys an extra ball, seventeen to nineteen a super jackpot, thirty or more a double super jackpot."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Take the outlane consolation",
+          "detail": "A left outlane drain is worth three cards on the way past."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "sixteen-cards",
+      "title": "Exactly Sixteen Cards",
+      "category": "secret",
+      "summary": "The card exchange has one award that dwarfs everything else on the machine: exactly sixteen cards doubles your entire score. Not fifteen, not seventeen — sixteen. If you are carrying a big score and sitting near that number, stop everything else and get there.",
+      "difficulty": 3,
+      "reward": "Your whole score, doubled",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Grind steals to land on sixteen",
+          "detail": "Each steal pays exactly one card, which makes it the only way to control the count precisely."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Stay out of the pops while you are close",
+          "detail": "A bullpen award of three, five or ten cards will overshoot the number and cost you the double."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Cash it immediately",
+          "detail": "If you do overshoot, take the super jackpot trade instead and work back toward sixteen."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "bullpen-awards",
+      "title": "Bullpen Awards",
+      "category": "strategy",
+      "summary": "The bullpen hole pays whatever the bumpers have currently selected, and the selection rotates on every bumper switch hit. The list is fixed and each award is removed once taken, so the pool improves as the game goes on.",
+      "difficulty": 2,
+      "reward": "Extra ball, cards, innings, jackpot, multiball",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Rotate the award",
+          "detail": "Hold both flippers to stop the bumpers firing while the switches keep cycling the award."
+        },
+        {
+          "shot": "bullpen",
+          "action": "Drop in after bumper contact",
+          "detail": "Reach the hole without touching a bumper and no bullpen award is given — the ball rolls on to the right hole and pays whatever that is lit for."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "players-choice",
+      "title": "Players Choice",
+      "category": "strategy",
+      "summary": "A lit right gap stops the ball and offers two awards, picked with the flipper buttons. One side is always two GRAND SLAM letters. Take the other side — picking the letters again just re-offers the identical pair and stalls the list.",
+      "difficulty": 2,
+      "reward": "Multiball, doubles, innings, hurry-up extra ball",
+      "steps": [
+        {
+          "shot": "right-gap",
+          "action": "Shoot the lit right gap",
+          "detail": "Only available during single-ball play outside a mode."
+        },
+        {
+          "shot": "right-gap",
+          "action": "Take the non-letter award",
+          "detail": "That is what advances the list toward the next multiball offer."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "combos",
+      "title": "Combos",
+      "category": "combo",
+      "summary": "Every combo in this game funnels into the same two-shot finish. The first shot of a chain is unlit and only lights the next, so scoring starts on shot two: 20M, then 40M, then 80M. Touch any other switch and the chain dies.",
+      "difficulty": 3,
+      "reward": "20M, 40M, 80M",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Start the four-way at the right inlane",
+          "detail": "Right inlane, left field loop, left scoop or captive ball, then the centre drop target."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Link through the scoop or captive ball",
+          "detail": "Either one works as the same link in the chain."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Finish on the centre drop",
+          "detail": "The two-way is just the scoop and drop pair on its own for 20M."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "walks-steals",
+      "title": "Walks And Steals",
+      "category": "combo",
+      "summary": "The left scoop into the centre drop target is a combo and a base advance at once. It collects whatever the scoop had lit — a walk first, which then starts steal flashing. Repeat before it times out and you get a steal and a trading card.",
+      "difficulty": 2,
+      "reward": "A runner on base plus a trading card",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Shoot the scoop for the walk",
+          "detail": "The scoop hands the ball to the upper left flipper for the follow-up."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Take the centre drop",
+          "detail": "That collects the lit award; steal now starts flashing."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Repeat before it times out",
+          "detail": "The second pass converts the steal and pays a card on top of the combo value."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "world-series",
+      "title": "World Series",
+      "category": "wizard",
+      "summary": "Complete all six rounds and World Series lights. It is a timed single-ball wizard mode. Four targets pay 30M apiece — left loop, right loop, left gap, right gap — and once all four are down the home run hole opens for the super jackpot.",
+      "difficulty": 3,
+      "reward": "30M per shot plus the super jackpot",
+      "steps": [
+        {
+          "shot": "right-hole",
+          "action": "Light and start it at the right scoop",
+          "detail": "You need every round completed first."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Clear the four shots",
+          "detail": "Left loop and right loop, left gap and right gap, 30M each, with no multiball to help you."
+        },
+        {
+          "shot": "home-run",
+          "action": "Finish on the home run hole",
+          "detail": "It lights for the super jackpot once the four are done."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "champs",
+      "title": "Chase The Champ Boards",
+      "category": "progression",
+      "summary": "Beyond the high score list, this machine tracks four separate specialist boards. Beating any of them lets you put your initials in and pays a credit, and the running totals are visible on the status display while you play.",
+      "difficulty": 2,
+      "reward": "Initials plus a credit per board",
+      "steps": [],
+      "instructions": [
+        "Homerun Champ counts home runs, so the HR Derby round is the fast route.",
+        "Grand Slam Champ counts grand slams — load the bases before you shoot, or play Grand Slam Derby where every home run counts as one.",
+        "Catches Champ counts glove catches, which Golden Glove inflates because every glove hit counts there, weak or firm.",
+        "Stolen Bases Champ counts steals, so the left scoop into centre drop pair is the shot to drill.",
+        "End-of-ball bonus is catches times 1M; the end-of-game total adds trading cards times 10M and runs scored times 1M."
+      ],
+      "fx": "crown"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "bh-skillshot",
+      "title": "Batter Up",
+      "desc": "Convert the skill shot on the raised drop target for a home run.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot"
+    },
+    {
+      "id": "bh-catch",
+      "title": "Nice Catch",
+      "desc": "Hit the glove firmly enough to register a catch rather than a single.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "catches"
+    },
+    {
+      "id": "bh-round",
+      "title": "Play Ball",
+      "desc": "Start a round from the lit right hole.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "rounds"
+    },
+    {
+      "id": "bh-grand-slam",
+      "title": "Bases Loaded",
+      "desc": "Load the bases and convert the home run hole for a 40M grand slam.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "grand-slam-derby"
+    },
+    {
+      "id": "bh-stretch",
+      "title": "Seventh Inning",
+      "desc": "Complete six innings at the left gap to start the 7th Inning Stretch.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "seventh-inning-stretch"
+    },
+    {
+      "id": "bh-combo",
+      "title": "Four-Way Combo",
+      "desc": "Chain right inlane, left field loop, left scoop and centre drop without touching another switch.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combos"
+    },
+    {
+      "id": "bh-super",
+      "title": "Super Jackpot",
+      "desc": "Complete the multiball sequence through to the super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "bh-billion",
+      "title": "One Billion",
+      "desc": "Climb the left loop ladder all the way to its billion-point award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "left-loop-billion"
+    },
+    {
+      "id": "bh-sixteen",
+      "title": "Sixteen Cards",
+      "desc": "Trade in exactly sixteen trading cards to double your entire score.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "sixteen-cards"
+    },
+    {
+      "id": "bh-world-series",
+      "title": "World Series",
+      "desc": "Complete all six rounds and play the World Series.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "world-series"
+    }
+  ],
+  "drills": [
+    {
+      "id": "hold-the-upper-flipper",
+      "title": "Hold The Upper Flipper",
+      "text": "Hold the upper left flipper up through the plunge so the pitch kicks off the captive ball and settles back onto it. From that cradle the raised drop target is an aimed shot, not a swing.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-shot",
+      "shots": [
+        "upper-left-flipper",
+        "captive-ball",
+        "drop-targets"
+      ]
+    },
+    {
+      "id": "call-your-ramp-lane",
+      "title": "Call Your Ramp Lane",
+      "text": "One ramp, three destinations: left of centre is the left gap, dead centre is the home run hole, right of centre is the right gap. Name the lane out loud before each shot and only count the ones that go where you called.",
+      "reps": "10 called shots per lane",
+      "focus": "accuracy",
+      "goal": "innings",
+      "shots": [
+        "center-ramp",
+        "left-gap",
+        "home-run",
+        "right-gap"
+      ]
+    },
+    {
+      "id": "flashing-right-loop",
+      "title": "Shoot The Flashing Right Loop",
+      "text": "Play a ball where the right loop is the only thing you shoot whenever it flashes. The left inlane sets it flashing and raises the ramp at the same time, so watch that switch and answer it every single time.",
+      "reps": "one full ball",
+      "focus": "accuracy",
+      "goal": "jackpot-ladder",
+      "shots": [
+        "left-inlane",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "soft-plunge-pothole",
+      "title": "Beat The Auto-Launch",
+      "text": "Get to the manual plunger before the game launches for you and plunge softly enough to drop into the Big Hurt pothole. From there the ball runs the pop bumpers and arrives tidily on the right flipper, which beats a full-speed orbit coming back down the left side.",
+      "reps": "10 plunges",
+      "focus": "ball-control",
+      "goal": "combo-plunge",
+      "shots": [
+        "shooter-lane",
+        "big-hurt-pothole",
+        "pop-bumpers"
+      ]
+    },
+    {
+      "id": "walk-then-steal",
+      "title": "Walk, Then Steal",
+      "text": "Left scoop into the centre drop target collects the walk and starts steal flashing; go back to the scoop and repeat before it dies. The scoop hands the ball to the upper left flipper, so the follow-up is a controlled shot if you are ready for it.",
+      "reps": "8 pairs",
+      "focus": "flow",
+      "goal": "walks-steals",
+      "shots": [
+        "left-scoop",
+        "drop-targets"
+      ]
+    },
+    {
+      "id": "four-way-combo-chain",
+      "title": "The Four-Way Chain",
+      "text": "Right inlane, left field loop, left scoop or captive ball, centre drop. Scoring does not start until the second shot and any other switch kills the chain, so run it slowly and cleanly before you run it fast.",
+      "reps": "5 full chains",
+      "focus": "flow",
+      "goal": "combos",
+      "shots": [
+        "right-inlane",
+        "left-loop",
+        "left-scoop",
+        "captive-ball",
+        "drop-targets"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "hero",
+  "actionButton": {
+    "present": false,
+    "how": "No extra button to learn on this one. The cabinet gives you two flipper buttons, a start button and a manual plunger, and the plunger is the piece worth practising: pull it soft before the game launches for you and the ball settles into the Big Hurt pothole for a free letter."
+  },
+  "howItPlays": {
+    "objective": "Frank Thomas' Big Hurt is a baseball game where you work the innings, swing for home runs, and chase the World Series. Advance the batting order at the gaps, start the six rounds at the right hole, and stockpile trading cards toward a score-doubling trade.",
+    "loop": [
+      "As you plunge, keep the upper left flipper raised so the pitch bounces off the captive ball and settles into a cradle, leaving the lone raised target as an aimed home run rather than a swing.",
+      "Shoot the left of the wide ramp into the left gap to advance an inning - each one lifts the carried super jackpot - and roll the left inlane to set the right loop flashing for a chunk more.",
+      "Start rounds at the lit right hole and re-light it with a firm glove catch; four of the six are multiball rounds.",
+      "Spell BIG HURT at the pothole and GRAND SLAM off the two signs to fire their multiballs, and load the bases so a home run upgrades to a slam.",
+      "Bank trading cards from steals and awards and cash them at the right hole - a trade of exactly sixteen doubles everything you have scored."
+    ],
+    "lights": [
+      {
+        "id": "innings-ladder",
+        "name": "The Innings",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-gap"
+          },
+          {
+            "shot": "home-run"
+          },
+          {
+            "shot": "right-gap"
+          }
+        ],
+        "lit": "During single-ball play outside a mode the left gap advances the inning, and it is the busiest scoring shot on the machine - every inning banked lifts the super jackpot by a hundred million.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the left of the ramp to clear the warning track into the gap, which feeds the lower left flipper and sets up the next one. Past the ninth the gaps trade off for thirty million apiece, and finishing the sixth inning kicks straight into the four-ball 7th Inning Stretch.",
+        "goals": [
+          "innings",
+          "seventh-inning-stretch"
+        ]
+      },
+      {
+        "id": "jackpot-loops",
+        "name": "Jackpot Loops",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "left-loop"
+          }
+        ],
+        "lit": "A flashing right loop is worth another ten million on the jackpot, which carries between balls; the left inlane sets it flashing while it also raises the home run ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Answer the flash every time it comes up - that habit is the whole gap between a twenty-million multiball and a two-hundred-million one. Scoring a home run, rolling the warning track out to the left, or hitting the loop itself will set it flashing too, and once a multiball is going the left loop drives the very same jackpot up.",
+        "goals": [
+          "jackpot-ladder",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "left-loop-ladder",
+        "name": "Left Field Value Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-loop"
+          }
+        ],
+        "lit": "The left loop flashes its current worth after a hit, and the ladder is the steepest thing here - it jumps tenfold each rung, from five hundred thousand up to a full billion.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit it again before the flash dies and the value multiplies tenfold while the timer resets; let the flash lapse and you drop back to the bottom. Chaining it cleanly is how a single loop pays a billion points.",
+        "goals": [
+          "left-loop-billion"
+        ]
+      },
+      {
+        "id": "big-hurt-phrase",
+        "name": "Spell BIG HURT",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "big-hurt-pothole"
+          },
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "Every drop into the Big Hurt pothole adds a letter to the phrase, which is why a soft plunge into it is worth far more than it looks.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete BIG HURT to collect a double jackpot. During the 7th Inning Stretch the right loop and a ramp shot that clears the glove spell the letters too, so the phrase keeps building even when the pothole is out of reach.",
+        "goals": [
+          "big-hurt-letters"
+        ]
+      },
+      {
+        "id": "grand-slam-signs",
+        "name": "GRAND SLAM Signs",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-sign"
+          },
+          {
+            "shot": "right-sign"
+          },
+          {
+            "shot": "home-run"
+          }
+        ],
+        "lit": "The two broad signs behind the ramp each spell a letter of GRAND SLAM, but they only really open up with the ramp's centre section raised.",
+        "flashing": null,
+        "control": null,
+        "then": "Lift the centre with the right inlane or the drop targets, then work both signs; letters also drop out of bullpen and Players Choice awards. Finishing GRAND SLAM sends out a four-ball derby in which the home run hole turns every make into a forty-million slam.",
+        "goals": [
+          "grand-slam-derby"
+        ]
+      },
+      {
+        "id": "round-select",
+        "name": "Start A Round",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-hole"
+          },
+          {
+            "shot": "glove"
+          }
+        ],
+        "lit": "The right hole lights to start the next of the six rounds, and a firm catch on the glove re-lights it once a round is done.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the lit right hole to begin a round, most of which run as multiballs, so a round in progress is a fine time to chase jackpots too. Complete all six and the World Series wizard mode lights.",
+        "goals": [
+          "rounds",
+          "six-rounds"
+        ]
+      },
+      {
+        "id": "bullpen-award",
+        "name": "Bullpen Award",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "bullpen"
+          }
+        ],
+        "lit": "The bumpers show a rotating bullpen award, and it steps to the next option on every bumper switch hit; the pool only improves as the game goes, since each award is struck off once taken.",
+        "flashing": null,
+        "control": {
+          "input": "both-flippers",
+          "effect": "holding both flipper buttons freezes the bumpers so they stop batting the ball around, while their switches keep quietly rotating the award you are about to collect",
+          "when": "while the ball is loose in the bumper nest"
+        },
+        "then": "Rotate to an award worth having, then drop into the bullpen hole after touching a bumper to bank it. Reach that hole with no bumper contact and the award is skipped entirely - the ball just rolls on to the right hole.",
+        "goals": [
+          "bullpen-awards"
+        ]
+      },
+      {
+        "id": "card-exchange",
+        "name": "Trading Cards",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "card-standup"
+          },
+          {
+            "shot": "trade-standup"
+          },
+          {
+            "shot": "right-hole"
+          },
+          {
+            "shot": "left-scoop"
+          }
+        ],
+        "lit": "Knocking down both the Card and Trade standups lights the exchange at the right hole, where the cards you have hoarded from steals, rounds and awards can be cashed.",
+        "flashing": null,
+        "control": null,
+        "then": "A modest stack buys an extra ball, a bigger one a super jackpot, and a huge one a double super. The one that dwarfs them all is a trade of exactly sixteen, which doubles every point on your score - grind steals at the left scoop to land the count precisely.",
+        "goals": [
+          "trading-cards",
+          "sixteen-cards"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Hold the upper flipper through the plunge for a home run skill shot off the raised target, then pour shots into the left gap - every inning lifts the super jackpot. Build the left-loop value ladder and answer the flashing right loop each time it lights.",
+        "goals": [
+          "skill-shot",
+          "innings",
+          "jackpot-ladder"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start rounds at the right hole, four of which are multiballs, and complete six to arm the wizard. Spell BIG HURT and GRAND SLAM for their multiballs, reach the 7th Inning Stretch off the sixth inning, and keep banking trading cards.",
+        "goals": [
+          "rounds",
+          "six-rounds",
+          "grand-slam-derby",
+          "seventh-inning-stretch",
+          "trading-cards"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "World Series is the wizard - complete all six rounds to start the timed showdown, clear the two loops and two gaps for thirty million each, and finish on the home run hole for the super jackpot. The single largest swing on the machine, though, is a sixteen-card trade that doubles your whole score, with the billion-point left loop close behind.",
+        "goals": [
+          "world-series",
+          "sixteen-cards",
+          "left-loop-billion"
+        ]
+      }
+    ]
+  }
+}

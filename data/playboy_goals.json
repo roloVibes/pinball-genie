@@ -1,0 +1,852 @@
+{
+  "machine": "Playboy (Bally, 1978)",
+  "defaultFx": "sparkle",
+  "shots": [
+    {
+      "id": "key-lane-1",
+      "name": "Key Lane #1",
+      "type": "lane",
+      "x": 0.1271,
+      "y": 0.8506,
+      "trim": "all",
+      "notes": "Leftmost of 4 top rollover lanes under the arch, above the twin pop bumpers."
+    },
+    {
+      "id": "key-lane-2",
+      "name": "Key Lane #2",
+      "type": "lane",
+      "x": 0.2171,
+      "y": 0.8506,
+      "trim": "all",
+      "notes": "2nd from left of the 4 top lanes."
+    },
+    {
+      "id": "key-lane-3",
+      "name": "Key Lane #3",
+      "type": "lane",
+      "x": 0.3183,
+      "y": 0.8506,
+      "trim": "all",
+      "notes": "2nd from right of the 4 top lanes."
+    },
+    {
+      "id": "key-lane-4",
+      "name": "Key Lane #4",
+      "type": "lane",
+      "x": 0.4196,
+      "y": 0.8506,
+      "trim": "all",
+      "notes": "Rightmost of the 4 top lanes."
+    },
+    {
+      "id": "key-5-target",
+      "name": "#5 Key (Red Standup)",
+      "type": "standup",
+      "x": 0.2857,
+      "y": 0.5195,
+      "trim": "all",
+      "notes": "Center red standup target, directly below the bottom pop bumper; the 5th Key."
+    },
+    {
+      "id": "left-pop-bumper",
+      "name": "Left Thumper Bumper",
+      "type": "bumpers",
+      "x": 0.35,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Upper bumper cluster, left of the two side-by-side top bumpers."
+    },
+    {
+      "id": "right-pop-bumper",
+      "name": "Right Thumper Bumper",
+      "type": "bumpers",
+      "x": 0.56,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Upper bumper cluster, right of the two side-by-side top bumpers."
+    },
+    {
+      "id": "bottom-pop-bumper",
+      "name": "Bottom Thumper Bumper",
+      "type": "bumpers",
+      "x": 0.45,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Below and between the two upper bumpers, dead center."
+    },
+    {
+      "id": "playmate-standups",
+      "name": "Playmate Standup Targets",
+      "type": "target-bank",
+      "x": 0.12,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "5-target bank (Jan/Mar/May/Jul/Sep) down the left edge, between the Grotto and the left slingshot."
+    },
+    {
+      "id": "drop-target-bank",
+      "name": "5-Bank Drop Targets",
+      "type": "drop-target",
+      "x": 0.44,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Contiguous 5-bank (rabbit-head logos), horizontal 5-bank across the top-center, below the four top lanes, in front of the pop bumpers."
+    },
+    {
+      "id": "grotto",
+      "name": "Grotto",
+      "type": "scoop",
+      "x": 0.2,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Upper-left kickback lane/pocket. Entrance is at roughly (0.17,0.80); this coordinate marks the scoring kickback point. Reached via the right orbit or left chute.",
+      "feeds": {
+        "x": 0.44,
+        "y": 0.83
+      }
+    },
+    {
+      "id": "right-lane",
+      "name": "Right Lane (Orbit)",
+      "type": "orbit",
+      "x": 0.86,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Guide-railed flipper shot running up the right side, through a top-right gate (~0.75,0.85), curving left along the top arch into the Grotto."
+    },
+    {
+      "id": "left-chute",
+      "name": "Left Chute",
+      "type": "lane",
+      "x": 0.15,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Direct lane up the left edge past the Playmate standups toward the Grotto entrance; alternate feed into the Grotto."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.1342,
+      "y": 0.3247,
+      "trim": "all",
+      "notes": "Directly above the left flipper."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.6122,
+      "y": 0.3247,
+      "trim": "all",
+      "notes": "Directly above the right flipper."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.07,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Outer left lane guide; pure drain until the drop-target bank is cleared once (then scores 25,000)."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.12,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Inner left lane guide, feeds the left flipper."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Inner right lane guide, feeds the right flipper."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.86,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Outer right lane guide; pure drain until the drop-target bank is cleared once (then scores 25,000)."
+    },
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Far right shooter lane, full playfield height. No documented skill shot value on the plunge."
+    },
+    {
+      "id": "playmate-rollover",
+      "name": "Playmate Rollover Button",
+      "type": "lane",
+      "x": 0.1199,
+      "y": 0.5714,
+      "trim": "all",
+      "notes": "Small rollover arc just above the top Playmate standup; collects the Extra Ball / Special lit by clearing the Playmate bank."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "keys-grotto-loop",
+      "title": "Keys → Grotto Loop",
+      "category": "combo",
+      "summary": "The core repeatable farm: light all 5 Keys, then send the ball into the Grotto for a big payout that kicks it right back up to re-run the loop.",
+      "difficulty": 2,
+      "reward": "Up to 5,000 pts + 5 bonus advances + 25,000 pts per cycle",
+      "steps": [
+        {
+          "shot": "key-lane-1",
+          "action": "Roll any unlit top lane (Keys #1-4)",
+          "detail": "Order doesn't matter — work whichever of the 4 top lanes is still dark."
+        },
+        {
+          "shot": "key-5-target",
+          "action": "Hit the center red Key #5 standup",
+          "detail": "Completes the 5-key set; advances the Bonus Multiplier one step and lights the Grotto."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Send the right orbit shot at speed",
+          "detail": "The lane curves left along the top arch, above the bumpers, into the Grotto entrance."
+        },
+        {
+          "shot": "grotto",
+          "action": "Drive it into the lit Grotto",
+          "detail": "Pays 1,000-5,000 pts + 1-5 bonus advances (plus 25,000 if all 5 lit), then kicks the ball back to the top lanes — restart immediately."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "drop-bank-cleanup",
+      "title": "Drop-Target Bank Cleanup",
+      "category": "combo",
+      "summary": "Clearing the 5-bank of rabbit-head drop targets lights the outlanes for 25,000 the first time and a Special every time after.",
+      "difficulty": 2,
+      "reward": "25,000 pts (1st clear) then 50,000 Special (2nd+ clears)",
+      "steps": [
+        {
+          "shot": "drop-target-bank",
+          "action": "Clear the 5-bank of drop targets",
+          "detail": "First clear lights both outlanes for 25,000 instead of a plain drain — only chase this when 1-2 targets remain or the ball's already headed there."
+        },
+        {
+          "shot": "drop-target-bank",
+          "action": "Clear the reset bank again",
+          "detail": "Second and later completions award a 50,000-point Special directly; the bank resets and repeats."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "playmate-extra-ball",
+      "title": "Playmate Bank → Extra Ball",
+      "category": "combo",
+      "summary": "Completing the 5 Playmate standups the first time lights a free Extra Ball; the second completion re-lights it for a Special.",
+      "difficulty": 2,
+      "reward": "Extra Ball (1st clear), 50,000 Special (2nd+ clears)",
+      "steps": [
+        {
+          "shot": "playmate-standups",
+          "action": "Hit all 5 Playmate standups (Jan/Mar/May/Jul/Sep)",
+          "detail": "500 pts + a bonus advance per target; work it opportunistically, not head-on into the bumper field."
+        },
+        {
+          "shot": "playmate-rollover",
+          "action": "Roll through the lit rollover button above the bank",
+          "detail": "First full clear lights it for a free Extra Ball; second clear re-lights it for a 50,000 Special instead."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "stack-multiplier",
+      "title": "Stack the Bonus Multiplier to 5X",
+      "category": "multiplier",
+      "summary": "Running the Keys→Grotto loop climbs the Bonus Multiplier — 2X the first completion, 3X the second, 5X the third — and it holds for the rest of the game, so the completions do not have to land on the same ball.",
+      "difficulty": 3,
+      "reward": "5X Bonus Multiplier, held across every remaining ball",
+      "steps": [
+        {
+          "shot": "key-5-target",
+          "action": "Complete the 5-Key set once",
+          "detail": "The first full completion of the game lights the 2X Bonus Multiplier."
+        },
+        {
+          "shot": "key-5-target",
+          "action": "Complete the 5-Key set a second time",
+          "detail": "The second completion advances the multiplier to 3X, whether or not it lands on the same ball."
+        },
+        {
+          "shot": "key-5-target",
+          "action": "Complete the 5-Key set a third time",
+          "detail": "3rd completion caps the multiplier at 5X; every completion after that pays a 50,000 Special instead."
+        },
+        {
+          "shot": "grotto",
+          "action": "Cash each cycle through the Grotto between key sets",
+          "detail": "The multiplier holds across balls, not just the current one — locking 5X on ball one pays out for the whole game."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-bonus-lockin",
+      "title": "Lock In the 20,000 Super Bonus",
+      "category": "multiplier",
+      "summary": "Push base bonus past 20,000 before draining to lock a permanent bonus floor into every later ball.",
+      "difficulty": 2,
+      "reward": "20,000-pt Super Bonus floor, held ball-to-ball (up to 100,000)",
+      "steps": [
+        {
+          "shot": "key-5-target",
+          "action": "Run Keys→Grotto cycles to push base bonus upward",
+          "detail": "Every key and every Grotto shot advances bonus 1,000 pts at a time toward the 39,000 cap."
+        },
+        {
+          "shot": "grotto",
+          "action": "Cross 20,000 bonus before draining",
+          "detail": "Once base bonus hits 20,000, that value locks into memory and re-applies on every later ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "opening-30-seconds",
+      "title": "Opening 30 Seconds — Safe Key Hunting",
+      "category": "strategy",
+      "summary": "There's no skill shot on the plunge, so the opener is simple: get the ball to a flipper and start clearing Keys via the lowest-risk shots.",
+      "difficulty": 1,
+      "reward": "Clean start toward the Keys→Grotto loop",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Plunge the ball into play",
+          "detail": "No skill shot exists on this game — the plunge carries no scoring bonus, so lane placement doesn't matter."
+        },
+        {
+          "shot": "key-lane-1",
+          "action": "Shoot for whichever top lane or the center standup is reachable first",
+          "detail": "Prioritize any unlit Key over reflexive bumper or slingshot shots."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Use the right orbit as your repeatable safe shot",
+          "detail": "Feeds the top lanes and, once keys are lit, the Grotto — lower drain risk than fighting the bumper field."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bank-risk-management",
+      "title": "Risk Management — Leave the Banks Alone",
+      "category": "strategy",
+      "summary": "Both target banks sit in higher-drain territory than the Keys/Grotto loop; only clean them up opportunistically.",
+      "difficulty": 2,
+      "reward": "Fewer unnecessary drains",
+      "steps": [
+        {
+          "shot": "drop-target-bank",
+          "action": "Don't hunt the drop-target bank deliberately",
+          "detail": "Only take it when 1-2 targets remain or the ball is already heading that way — it sits in the pop-bumper danger zone."
+        },
+        {
+          "shot": "playmate-standups",
+          "action": "Apply the same discipline to the Playmate bank",
+          "detail": "Finish it off opportunistically, not as a primary early-game objective."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "protect-outlanes",
+      "title": "Protect the Ball — Outlane Awareness",
+      "category": "strategy",
+      "summary": "Outlanes are a total-loss drain until the drop-target bank is cleared once; know the state of that bank before playing loose.",
+      "difficulty": 1,
+      "reward": "Converts a future drain into 25,000 pts",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Avoid loose shots toward the outlanes before the drop bank is cleared once",
+          "detail": "An undefended outlane drain is a total loss with zero payout early in the game."
+        },
+        {
+          "shot": "drop-target-bank",
+          "action": "Clear the drop bank once, early, to arm the outlanes",
+          "detail": "After the first bank completion, an outlane drain still nets 25,000 points instead of nothing."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "chase-the-special",
+      "title": "Chase a Special",
+      "category": "strategy",
+      "summary": "The game's true capstone: past the initial unlocks, every one of the three scoring systems funnels into repeatable Specials — the top payout on the table.",
+      "difficulty": 3,
+      "reward": "Special (operator-set: free replay or 50,000 points)",
+      "steps": [
+        {
+          "shot": "key-5-target",
+          "action": "Complete the 5-Key set a 4th time",
+          "detail": "Every Key-set completion past the third scores a 50,000-point Special instead of more multiplier."
+        },
+        {
+          "shot": "drop-target-bank",
+          "action": "Or complete the drop-target bank a second time",
+          "detail": "Second and later bank clears award a Special directly on the last target."
+        },
+        {
+          "shot": "playmate-rollover",
+          "action": "Or re-light the Playmate rollover a second time",
+          "detail": "Second full Playmate-bank completion re-lights the rollover for a Special instead of an Extra Ball."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "max-out-base-bonus",
+      "title": "Run Base Bonus to the Ceiling",
+      "category": "multiplier",
+      "summary": "Every Key, Grotto collect, and Playmate target nudges base bonus up 1,000 at a time — stack enough of them in one ball to hit the 39,000 ceiling before the multiplier is applied.",
+      "difficulty": 3,
+      "reward": "39,000 base bonus, multiplied by the held 2X-5X multiplier",
+      "steps": [
+        {
+          "shot": "key-lane-2",
+          "action": "Farm the top lanes relentlessly",
+          "detail": "Each lit Key adds a bonus advance, so re-running the lanes is the fastest way to climb."
+        },
+        {
+          "shot": "key-5-target",
+          "action": "Close each set on the center red target",
+          "detail": "Completing the set adds its own advances and re-lights the Grotto for the next collect."
+        },
+        {
+          "shot": "grotto",
+          "action": "Cash every armed Grotto",
+          "detail": "A fully lit Grotto pays up to five bonus advances at once — the single biggest step toward the ceiling."
+        },
+        {
+          "shot": "playmate-standups",
+          "action": "Pick off Playmate targets on the way past",
+          "detail": "Each standup adds one more advance; take them only when the ball is already on that side.",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "special-hat-trick",
+      "title": "Specials From All Three Systems",
+      "category": "wizard",
+      "summary": "Playboy has no wizard mode, so this is its true endgame: in one game, drive all three scoring systems past their unlock stage and collect a Special from each.",
+      "difficulty": 3,
+      "reward": "Three Specials in a single game (operator-set replay or 50,000 each)",
+      "steps": [
+        {
+          "shot": "key-5-target",
+          "action": "Complete a fourth 5-Key set",
+          "detail": "The first three sets buy the multiplier; the fourth and beyond pay a Special outright.",
+          "link": "none"
+        },
+        {
+          "shot": "drop-target-bank",
+          "action": "Clear the drop bank a second time",
+          "detail": "The bank resets after the first clear — knocking it down again awards a Special on the final target.",
+          "link": "none"
+        },
+        {
+          "shot": "playmate-standups",
+          "action": "Sweep the Playmate bank a second time",
+          "detail": "The first sweep spends itself on the Extra Ball, so this one has to come after that is collected.",
+          "link": "none"
+        },
+        {
+          "shot": "playmate-rollover",
+          "action": "Collect the re-lit rollover button",
+          "detail": "The second sweep arms the rollover for a Special instead of another Extra Ball."
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-key-set",
+      "title": "All Five Keys",
+      "desc": "Light all four top Key lanes and the center red Key target to complete the 5-Key set once.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "keys-grotto-loop"
+    },
+    {
+      "id": "grotto-payday",
+      "title": "Grotto Payday",
+      "desc": "Collect the Grotto while all five Keys are lit for the full 25,000-point award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "keys-grotto-loop"
+    },
+    {
+      "id": "opening-ball-keys",
+      "title": "Clean Opener",
+      "desc": "Complete a full 5-Key set on ball one without draining first.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "opening-30-seconds"
+    },
+    {
+      "id": "arm-the-outlanes",
+      "title": "Outlanes Armed",
+      "desc": "Clear the 5-bank of drop targets once so both outlanes pay 25,000 instead of nothing.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "drop-bank-cleanup"
+    },
+    {
+      "id": "double-bonus",
+      "title": "Bonus Doubled",
+      "desc": "Reach a 2X bonus multiplier by completing the 5-Key set for the first time in a ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "stack-multiplier"
+    },
+    {
+      "id": "playmate-bank-cleared",
+      "title": "Left Bank Swept",
+      "desc": "Knock down all five Playmate standup targets in a single ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "playmate-extra-ball"
+    },
+    {
+      "id": "extra-ball-collected",
+      "title": "One More Ball",
+      "desc": "Light the Extra Ball off the Playmate bank and collect it through the rollover button.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "playmate-extra-ball"
+    },
+    {
+      "id": "five-times-bonus",
+      "title": "Multiplier Maxed",
+      "desc": "Push the bonus multiplier all the way to 5X by completing three 5-Key sets in one ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "stack-multiplier"
+    },
+    {
+      "id": "locked-super-bonus",
+      "title": "Super Bonus Locked",
+      "desc": "Carry base bonus past 20,000 before draining so the value holds into every later ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-bonus-lockin"
+    },
+    {
+      "id": "grotto-three-in-a-ball",
+      "title": "Triple Dip",
+      "desc": "Collect a lit Grotto three separate times within one ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "keys-grotto-loop"
+    },
+    {
+      "id": "drop-bank-special",
+      "title": "Special Off the Rabbits",
+      "desc": "Complete the drop-target bank a second time to take the Special it awards.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "drop-bank-cleanup"
+    },
+    {
+      "id": "key-set-special",
+      "title": "Fourth Set, Full Payout",
+      "desc": "Complete a fourth 5-Key set inside a single ball, past the 5X cap, to score the Special.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "chase-the-special"
+    },
+    {
+      "id": "playmate-special",
+      "title": "Second Sweep Special",
+      "desc": "Clear the Playmate bank twice in one game and collect the re-lit rollover for a Special.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "chase-the-special"
+    },
+    {
+      "id": "bonus-ceiling",
+      "title": "Bonus Ceiling",
+      "desc": "Advance base bonus all the way to its 39,000-point ceiling in a single ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "max-out-base-bonus"
+    },
+    {
+      "id": "maximum-cash-out",
+      "title": "Maximum Cash-Out",
+      "desc": "End a ball with base bonus at its ceiling and the multiplier sitting at 5X.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "max-out-base-bonus"
+    },
+    {
+      "id": "special-sweep",
+      "title": "Special From Every Direction",
+      "desc": "Score a Special from all three sources in one game: repeat Key sets, the drop bank, and the Playmate rollover.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "special-hat-trick"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-keys-then-grotto",
+      "title": "Five Keys, Then The Grotto",
+      "text": "Work whichever of the four top lanes is still dark, close the set on the centre red standup, then drive the right orbit at speed so it carries the arch into the lit Grotto. The Grotto kicks the ball straight back to the top lanes, so the loop restarts itself if you are ready for it.",
+      "reps": "3 full cycles",
+      "focus": "flow",
+      "goal": "keys-grotto-loop",
+      "shots": [
+        "key-lane-1",
+        "key-lane-2",
+        "key-lane-3",
+        "key-lane-4",
+        "key-5-target",
+        "right-lane",
+        "grotto"
+      ]
+    },
+    {
+      "id": "drill-right-orbit-safe-shot",
+      "title": "The Right Orbit At Speed",
+      "text": "Make the right orbit your default shot and hit it hard enough to carry the top arch rather than dying in the lanes. It feeds the Keys and, once they are lit, the Grotto, and it keeps you out of the bumper field entirely.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "opening-30-seconds",
+      "shots": [
+        "right-lane"
+      ]
+    },
+    {
+      "id": "drill-center-key-standup",
+      "title": "Close On The Red Standup",
+      "text": "Practise the centre red Key from both flippers, since it sits below the bumper and is what closes every key set. The first three sets are the whole bonus multiplier, and that multiplier is held for the rest of the game rather than reset each ball.",
+      "reps": "15 hits",
+      "focus": "accuracy",
+      "goal": "stack-multiplier",
+      "shots": [
+        "key-5-target"
+      ]
+    },
+    {
+      "id": "drill-leave-the-banks",
+      "title": "Leave The Banks Alone",
+      "text": "Play a whole ball taking only Keys, the right orbit and the Grotto, and touch the drop bank or the Playmate standups only when the ball is already over on that side. Both banks sit in the bumper danger zone, and the outlanes pay nothing at all until that drop bank has been cleared once.",
+      "reps": "1 full ball",
+      "focus": "ball-control",
+      "goal": "bank-risk-management",
+      "shots": [
+        "drop-target-bank",
+        "playmate-standups"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "A 1978 Bally has flippers and a shooter rod and that is the entire control set. Worth knowing because of the naming: the Playmate 'rollover button' you hear about for the Extra Ball is a lit target on the playfield that the ball rolls over — not something on the cabinet you can press."
+  },
+  "howItPlays": {
+    "objective": "Playboy is a 1978 Bally table with no wizard mode -- the whole game is a bonus farm. Light the five Keys and cash the Grotto over and over to bank a held 5X multiplier and a towering bonus, then turn every scoring bank into a repeatable special.",
+    "loop": [
+      "Roll the four top Key lanes and hit the center red standup to complete the five Keys, which lights the Grotto and steps the bonus multiplier.",
+      "Send the right orbit at speed into the lit Grotto for a big collect and a stack of bonus advances, and the pocket fires the ball back up top to run the loop again.",
+      "Clear the rabbit-head drop bank once to arm the outlanes for 25,000, and sweep the left Playmate standups to light an extra ball at the rollover button.",
+      "Push base bonus toward its 39,000 ceiling under a held 5X, and drive each scoring bank past its unlock into a repeatable 50,000 special."
+    ],
+    "lights": [
+      {
+        "id": "key-lights",
+        "name": "The Five Keys",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "key-lane-1"
+          },
+          {
+            "shot": "key-lane-2"
+          },
+          {
+            "shot": "key-lane-3"
+          },
+          {
+            "shot": "key-lane-4"
+          },
+          {
+            "shot": "key-5-target"
+          }
+        ],
+        "lit": "The five Keys are the four top rollover lanes plus the red center standup, and each lights as you collect it; order does not matter, and lighting the whole set steps the bonus multiplier and arms the Grotto.",
+        "flashing": null,
+        "control": null,
+        "then": "Close every set on the center red standup, then cash it out through the Grotto -- the loop's whole point. The first three completed sets step the multiplier to 2X, then 3X, then 5X and it stays put for the rest of the game, so it does not matter which ball they land on; every set past the third pays a 50,000 special instead.",
+        "goals": [
+          "keys-grotto-loop",
+          "stack-multiplier"
+        ]
+      },
+      {
+        "id": "grotto",
+        "name": "The Grotto",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "grotto"
+          },
+          {
+            "shot": "right-lane"
+          }
+        ],
+        "lit": "The Grotto lights once all five Keys are in, and a lit Grotto is a big collect; every Key and every Grotto shot also nudges your base bonus up a thousand at a time.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed it with the right orbit at speed so the ball rides the top arch into the pocket; a fully lit Grotto pays its award and as many as five bonus advances in one shot, then kicks the ball straight back up to the top lanes so the loop starts over. Ride that farm to push base bonus toward its 39,000 ceiling.",
+        "goals": [
+          "keys-grotto-loop",
+          "max-out-base-bonus",
+          "super-bonus-lockin"
+        ]
+      },
+      {
+        "id": "drop-bank",
+        "name": "Rabbit Drop Bank",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drop-target-bank"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "The five rabbit-head drops sit up in the pop-bumper zone, and clearing the bank the first time arms both outlanes so a drain out either one pays 25,000 instead of nothing.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear it once early to turn the outlanes from a dead loss into points, but only chase it when a target or two is left or the ball is already headed that way, since it sits in bumper country. Every clear after the first hands a 50,000 special on the final target as the bank resets and comes again.",
+        "goals": [
+          "drop-bank-cleanup",
+          "protect-outlanes"
+        ]
+      },
+      {
+        "id": "playmate-bank",
+        "name": "Playmate Standups",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "playmate-standups",
+            "lamps": 5
+          },
+          {
+            "shot": "playmate-rollover"
+          }
+        ],
+        "lit": "The five Playmate standups down the left edge each add a bonus advance when struck, and sweeping the whole bank lights the rollover button tucked just above it.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep the bank once and roll the lit button for a free extra ball; sweep it a second time and that same button re-lights for a 50,000 special instead. Pick the standups off only if the ball is already sitting on that side of the table, never head-on into the bumpers.",
+        "goals": [
+          "playmate-extra-ball",
+          "chase-the-special"
+        ]
+      },
+      {
+        "id": "bonus-multiplier",
+        "name": "Bonus & Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "key-5-target"
+          },
+          {
+            "shot": "grotto"
+          }
+        ],
+        "lit": "The bonus multiplier climbs 2X, 3X, then 5X across your first three completed Key sets and then holds for the whole game, not just the ball in hand; base bonus itself creeps up a thousand at a time toward a 39,000 cap.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock 5X early, even on ball one, because it pays out on every later ball, and push base bonus past 20,000 before a drain to freeze that value in as a floor under every ball after. Stack a ceiling base bonus under a held 5X for the biggest cash-out on the table.",
+        "goals": [
+          "stack-multiplier",
+          "super-bonus-lockin",
+          "max-out-base-bonus"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "There is no skill shot, so just plunge in, get to a flipper, and start the Keys-to-Grotto loop off the right orbit, the safest repeatable shot on the table. Complete a Key set to light 2X and clear the drop bank once early so a later outlane drain still pays 25,000.",
+        "goals": [
+          "opening-30-seconds",
+          "keys-grotto-loop",
+          "protect-outlanes"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Run the loop to lock the multiplier at 5X -- it holds for the whole game, so bank it early -- and push base bonus past 20,000 before a drain to lock that floor into the rest of your balls. Sweep the Playmate bank and roll the lit button for a free extra ball.",
+        "goals": [
+          "stack-multiplier",
+          "super-bonus-lockin",
+          "playmate-extra-ball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "With no wizard mode, the endgame is specials out of all three systems in one game: a fourth Key set, a second drop-bank clear, and a second Playmate sweep each pay a 50,000 special. Stack a 39,000 base bonus under the held 5X on top of that for the game's largest cash-out.",
+        "goals": [
+          "special-hat-trick",
+          "chase-the-special",
+          "max-out-base-bonus"
+        ]
+      }
+    ]
+  }
+}

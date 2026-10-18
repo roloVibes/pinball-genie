@@ -1,0 +1,945 @@
+{
+  "machine": "Cyclone (Williams, 1988)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger. The skill shot here is a soft plunge, not a full-power one — everything about your first shot is about control."
+    },
+    {
+      "id": "skill-holes",
+      "name": "Skill Shot Holes",
+      "type": "saucer",
+      "x": 0.52,
+      "y": 0.94,
+      "trim": "all",
+      "notes": "Five pockets in the area above the top lanes. Reading bottom to top they pay 10K, 25K, 100K, 25K and 5K — so the middle one is the target and the far one is the punishment for overshooting."
+    },
+    {
+      "id": "top-lanes",
+      "name": "1-2-3 Rollovers",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Three lanes across the top. Completing all three starts Double Score, and each individual rollover hit also adds 5K to the jackpot."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Three of them under the top lanes. Every bumper hit adds 3K to the Ferris Bonus, so time up here is not wasted."
+    },
+    {
+      "id": "ferris-wheel",
+      "name": "Ferris Wheel",
+      "type": "toy",
+      "x": 0.14,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "The toy in the back left corner. The right return lane lights it; shoot it lit and you collect the current Ferris Bonus, with the ball fed back into the left return lane."
+    },
+    {
+      "id": "comet-ramp",
+      "name": "Comet Ramp",
+      "type": "ramp",
+      "x": 0.44,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Near the middle of the playfield, just left of centre, returning to the right return lane. An underhit shot falls through a second hole into the bumpers rather than screaming back at your flippers.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "cat-targets",
+      "name": "Cat Targets",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Three standups to the left of the Comet ramp. They relight the Comet, pay 20K each, and light the HOLD half of Hold Bonus."
+    },
+    {
+      "id": "spot-target",
+      "name": "Spot Target",
+      "type": "standup",
+      "x": 0.7,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Half-hidden at the right edge of the Spook-House island, this small target spots one of the Cat targets for you — which makes relighting the Comet far cheaper than it looks."
+    },
+    {
+      "id": "spook-drop",
+      "name": "Spook-House Drop Target",
+      "type": "drop-target",
+      "x": 0.6,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A single drop target guarding the sinkhole. It stands back up on a timer, so once it is down you need to be quick."
+    },
+    {
+      "id": "spook-house",
+      "name": "Spook-House",
+      "type": "saucer",
+      "x": 0.6,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "The sinkhole behind the drop target. Dropping in spins the Mystery Wheel, and the ball is returned to you from the boomerang kickout."
+    },
+    {
+      "id": "cyclone-ramp",
+      "name": "Cyclone Ramp",
+      "type": "ramp",
+      "x": 0.78,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Right of the Spook-House and set further back. Three shots while lit pays the jackpot, and it also returns to the right return lane.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "duck-targets",
+      "name": "Duck Targets",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.24,
+      "trim": "all",
+      "notes": "Three standups above the right outlane. They relight the Cyclone ramp, and each full completion is worth more than the last."
+    },
+    {
+      "id": "boomerang-hole",
+      "name": "Boomerang Kickout",
+      "type": "kicker",
+      "x": 0.2,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The bonus multiplier hole, and also where the Spook-House spits your ball back out. It usually kicks to the left flipper, but it is not always polite about it."
+    },
+    {
+      "id": "bonus-x-wheel",
+      "name": "Bonus X Lights",
+      "type": "mech",
+      "x": 0.7119,
+      "y": 0.4565,
+      "trim": "all",
+      "notes": "The multiplier ladder just above the flippers. One of its numbers flashes, and reaching that number is what lights the special."
+    },
+    {
+      "id": "mystery-wheel",
+      "name": "Mystery Wheel",
+      "type": "mech",
+      "x": 0.72,
+      "y": 0.96,
+      "trim": "all",
+      "notes": "On the backglass, spun by the Spook-House. The machine tracks exactly where the wheel is sitting at all times."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Relights Advance X at the boomerang hole. Where the Ferris Wheel drops the ball."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the Ferris Wheel and relights Advance X. Both ramps return here, so a made ramp is a free Ferris Wheel light."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries an extra ball light that toggles with the right one. There is a post on the inside to stop balls rolling out of the return lane."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The other half of the toggling extra ball pair, and it sits directly under the Duck targets."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.36,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Spook-House, the Cyclone ramp and the Duck targets. There is a small post between the flippers."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.64,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Comet ramp, the Cat targets and the Ferris Wheel."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Soft Plunge Skill Shot",
+      "category": "skillshot",
+      "summary": "Five pockets sit above the top lanes and the middle one pays 100K. It takes a soft, measured plunge — too hard and the ball sails past the good pocket into the 5K one at the back.",
+      "difficulty": 2,
+      "reward": "100K multiplied by ball number, up to 5X",
+      "steps": [
+        {
+          "shot": "skill-holes",
+          "action": "Plunge softly into the centre hole",
+          "detail": "Full power overshoots the middle pocket entirely. Bottom to top the five pockets read 10K, 25K, 100K, 25K and 5K, and the award is multiplied by which ball you are on, up to five times — extra balls step the multiplier too, so save your best touch for late."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "comet-million",
+      "title": "The Comet Million",
+      "category": "progression",
+      "summary": "The Comet ramp climbs a ladder of values on the back panel in 20K steps, from 20K up to 100K. Collect the 100K step and the Million lights on the ramp. There is no limit on how many you can collect in a game as long as you keep relighting and rebuilding.",
+      "difficulty": 2,
+      "reward": "1M once the ladder is topped out",
+      "steps": [
+        {
+          "shot": "comet-ramp",
+          "action": "Climb the ladder",
+          "detail": "Each shot moves one step of 20K. Your starting step depends on how the machine is set."
+        },
+        {
+          "shot": "cat-targets",
+          "action": "Relight when the timer runs out",
+          "detail": "The Cat targets to the left of the ramp bring the Comet back."
+        },
+        {
+          "shot": "comet-ramp",
+          "action": "Take the Million",
+          "detail": "It lights on the ramp once the 100K step has been collected."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "cyclone-jackpot",
+      "title": "The Cyclone Jackpot",
+      "category": "mode",
+      "summary": "Three shots up the Cyclone ramp before the timer expires pays the jackpot shown in lights on the backglass. There is no cap on how many you can collect in a game, but every collection drops the value back to 500K.",
+      "difficulty": 3,
+      "reward": "The current jackpot, minimum 500K",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Relight the ramp",
+          "detail": "The three Duck targets above the right outlane are the only way to light the Cyclone."
+        },
+        {
+          "shot": "cyclone-ramp",
+          "action": "Three ramps against the clock",
+          "detail": "The ramp returns to the right return lane, which sets you up for the next one."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Build it before you take it",
+          "detail": "Every 1-2-3 rollover hit adds 5K to the jackpot, so bumper time is worth real money before you commit.",
+          "link": "none"
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "double-score",
+      "title": "Double Score",
+      "category": "multiplier",
+      "summary": "Complete the 1-2-3 lanes at the top and everything on the playfield doubles for a short window — twenty seconds on a factory machine, though operators can set it anywhere from off to ninety-nine. The jackpot is the one thing it does not double.",
+      "difficulty": 2,
+      "reward": "All playfield values doubled",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete 1-2-3",
+          "detail": "Shift the lit lanes with the flipper buttons before the ball comes down."
+        },
+        {
+          "shot": "comet-ramp",
+          "action": "Spend it on the Comet",
+          "detail": "The Comet Million becomes two million during Double Score, with different sound effects to match."
+        },
+        {
+          "shot": "cyclone-ramp",
+          "action": "Do not spend it on the jackpot",
+          "detail": "The jackpot is explicitly not doubled — collect that outside the window.",
+          "link": "none"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "double-comet",
+      "title": "The Two Million Shot",
+      "category": "combo",
+      "summary": "The biggest single score on this machine is a Comet Million collected inside a Double Score window. That means building the Comet ladder to the top first, then completing the top lanes, then making the ramp — in that order, with the clock running.",
+      "difficulty": 3,
+      "reward": "2M in one shot",
+      "steps": [
+        {
+          "shot": "comet-ramp",
+          "action": "Get the Million lit first",
+          "detail": "Do not start the doubler until the ladder is already topped out."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Then complete 1-2-3",
+          "detail": "You have about twenty seconds on a factory setting."
+        },
+        {
+          "shot": "comet-ramp",
+          "action": "Make the ramp",
+          "detail": "The ramp is left of centre and lives on the right flipper — practise it before you need it."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "ferris-wheel",
+      "title": "Ride The Ferris Wheel",
+      "category": "mode",
+      "summary": "The right return lane lights the wheel, and the wheel pays a bonus that grows in the bumpers: a 50K base plus 3K for every jet bumper hit. Since both ramps return down the right lane, a made ramp lights the wheel for free.",
+      "difficulty": 1,
+      "reward": "50K plus 3K per bumper hit, typically 100K-250K",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Feed the bumpers first",
+          "detail": "Every hit up there is 3K on the Ferris Bonus, so a long bumper session is worth cashing in."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Light the wheel",
+          "detail": "The right return lane is the only thing that lights it, and both ramps drop you there."
+        },
+        {
+          "shot": "ferris-wheel",
+          "action": "Collect it",
+          "detail": "The ball comes back down the left return lane, which relights Advance X on the way."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "spook-house",
+      "title": "The Spook-House",
+      "category": "mode",
+      "summary": "Knock down the single drop target, then put the ball in the sinkhole behind it to spin the Mystery Wheel on the backglass. The drop target stands back up on a timer, so the two halves of this shot have to come close together.",
+      "difficulty": 2,
+      "reward": "One Mystery Wheel spin",
+      "steps": [
+        {
+          "shot": "spook-drop",
+          "action": "Drop the target",
+          "detail": "It is a single target and it resets itself after a while, so do not wander off."
+        },
+        {
+          "shot": "spook-house",
+          "action": "Find the sinkhole behind it",
+          "detail": "The ball is returned to you out of the boomerang kickout on the other side of the playfield."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mystery-wheel",
+      "title": "The Mystery Wheel",
+      "category": "secret",
+      "summary": "The wheel on the backglass is the only route to several of this machine's best awards. Values run from a flat nothing up to 200K, and both the extra ball and the special live on it — which makes every Spook-House shot a genuine lottery ticket.",
+      "difficulty": 2,
+      "reward": "0 to 200K, or an extra ball or special",
+      "steps": [
+        {
+          "shot": "spook-house",
+          "action": "Spin it",
+          "detail": "Every trip into the sinkhole is one spin."
+        },
+        {
+          "shot": "mystery-wheel",
+          "action": "Know the spread",
+          "detail": "The worst outcome pays nothing at all, the smallest real award is 5K and the largest point award is 200K.",
+          "link": "none"
+        },
+        {
+          "shot": "mystery-wheel",
+          "action": "Take the free things",
+          "detail": "The extra ball and the special on this wheel are worth far more than any of its point values.",
+          "link": "none"
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "advance-bonus-x",
+      "title": "Advance Bonus X",
+      "category": "multiplier",
+      "summary": "The boomerang hole advances your bonus multiplier, but only when its Advance X light is on. That light is cheap to bring back — either return lane does it, and so does any ramp or the Ferris Wheel.",
+      "difficulty": 2,
+      "reward": "One multiplier step per lit shot",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Relight Advance X",
+          "detail": "Either return lane will do it, and so will a ramp or the Ferris Wheel — you have plenty of ways in."
+        },
+        {
+          "shot": "boomerang-hole",
+          "action": "Shoot the boomerang hole",
+          "detail": "An unlit hole does not advance anything, so check the light before you take the shot."
+        },
+        {
+          "shot": "boomerang-hole",
+          "action": "Be ready for the kickout",
+          "detail": "It generally throws to the left flipper, but it can find the right one, and on a badly set-up machine it can go straight down the middle.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "the-special",
+      "title": "Light The Special",
+      "category": "secret",
+      "summary": "One number on the Bonus X ladder above the flippers is flashing, and driving your multiplier all the way up to it lights the special. Where that flashing light sits varies from machine to machine — anywhere from three to seven — and a low one usually means a generous operator.",
+      "difficulty": 3,
+      "reward": "Special",
+      "steps": [
+        {
+          "shot": "bonus-x-wheel",
+          "action": "Check where the flashing light is",
+          "detail": "That number is how many multiplier steps you owe, and it can be as low as three or as high as seven."
+        },
+        {
+          "shot": "boomerang-hole",
+          "action": "Grind the boomerang hole",
+          "detail": "It is the only shot that advances the multiplier, so this is a repeat-shot goal."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "duck-targets",
+      "title": "The Duck Targets",
+      "category": "progression",
+      "summary": "Three standups above the right outlane that do more than relight the Cyclone ramp. The first completion pays 25K, the second 50K, and the third lights the extra ball on both outlanes. Every completion also lights the BONUS half of Hold Bonus.",
+      "difficulty": 2,
+      "reward": "25K, 50K, then an extra ball light",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Complete the bank",
+          "detail": "They sit right above the right outlane, so shots here carry some risk."
+        },
+        {
+          "shot": "duck-targets",
+          "action": "Keep completing",
+          "detail": "The third completion of the game is the one that lights the extra ball."
+        },
+        {
+          "shot": "cyclone-ramp",
+          "action": "Cash the relight",
+          "detail": "Every completion also brings the Cyclone ramp back for another jackpot attempt."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "cat-targets",
+      "title": "The Cat Targets",
+      "category": "combo",
+      "summary": "Three standups left of the Comet ramp, worth 20K each. They relight the Comet and light the HOLD half of Hold Bonus — and there is a shortcut: tucked against the right flank of the Spook-House island sits a small target that spots one of the three for you.",
+      "difficulty": 1,
+      "reward": "20K each, plus a Comet relight",
+      "steps": [
+        {
+          "shot": "cat-targets",
+          "action": "Sweep the bank",
+          "detail": "They sit in the natural rebound path off the Comet ramp entrance."
+        },
+        {
+          "shot": "spot-target",
+          "action": "Use the hidden spotter",
+          "detail": "The half-hidden target beside the Spook-House spots one Cat target, which turns a three-target job into a two-target one."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "hold-bonus",
+      "title": "Hold Bonus",
+      "category": "strategy",
+      "summary": "Hold Bonus is spelled out across two different target banks: the Cat targets light HOLD and the Duck targets light BONUS. Get both and your accumulated bonus carries into the next ball instead of resetting — which on a machine with no multiball is one of the few ways to compound a good ball.",
+      "difficulty": 2,
+      "reward": "Bonus carried into the next ball",
+      "steps": [
+        {
+          "shot": "cat-targets",
+          "action": "Light HOLD on the left",
+          "detail": "Completing the Cat targets is what does it."
+        },
+        {
+          "shot": "duck-targets",
+          "action": "Light BONUS on the right",
+          "detail": "Completing the Duck targets does the other half.",
+          "link": "none"
+        },
+        {
+          "shot": "boomerang-hole",
+          "action": "Have a multiplier worth holding",
+          "detail": "Hold Bonus is worth far more once you have driven the Bonus X ladder up.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "outlane-extra-ball",
+      "title": "The Toggling Extra Ball",
+      "category": "strategy",
+      "summary": "Both outlanes carry an extra ball light, and only one of them is on at a time. It flips sides constantly as the ball hits flippers, slingshots and bumpers — so the side you are protected on is changing while you play, and it is worth a glance before you nudge.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Light it first",
+          "detail": "The third Duck target completion of the game is what puts the extra ball on the outlanes."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Check which side is lit",
+          "detail": "Flippers, slingshots and jet bumpers all toggle it between left and right."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Steer toward the lit side",
+          "detail": "If a drain is coming anyway, nudge it toward the lit outlane rather than the dark one.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "safe-comet-miss",
+      "title": "The Safe Miss",
+      "category": "strategy",
+      "summary": "An underhit Comet ramp does not come back down the ramp at you. It falls through a second hole into the jet bumpers instead — which is why you can attack the Comet far more aggressively than the layout suggests.",
+      "difficulty": 1,
+      "reward": "A missed ramp that feeds the bumpers",
+      "steps": [
+        {
+          "shot": "comet-ramp",
+          "action": "Shoot it without hedging",
+          "detail": "A short shot is a bumper feed, not a drain."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Bank the consolation prize",
+          "detail": "Bumper hits build the Ferris Bonus and rollover hits build the jackpot, so a missed ramp still pays."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "jackpot-carryover",
+      "title": "The Jackpot Between Games",
+      "category": "secret",
+      "summary": "The jackpot on this machine is not entirely yours. Collect it and it drops back to 500K — but a game in which somebody collected the jackpot adds a million to the machine's jackpot once the credits run out. Look at what the backglass is showing before you decide how hard to chase it.",
+      "difficulty": 2,
+      "reward": "A larger jackpot on a machine that has been played",
+      "steps": [],
+      "instructions": [
+        "The jackpot value sits in lights beside the Mystery Wheel on the backglass — read it before you start.",
+        "A high number there means somebody before you collected and the machine has grown it since.",
+        "Collecting resets it to 500K, so back-to-back jackpots in one game are worth much less than the first.",
+        "You can still grow it inside your own game: every 1-2-3 rollover hit adds 5K.",
+        "After a jackpot the millions digit of your score flashes for the rest of the game — the same happens for the Comet Million."
+      ],
+      "fx": "wave"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "cy-skillshot",
+      "title": "Right Down The Middle",
+      "desc": "Land the soft plunge in the 100K skill shot pocket.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "cy-ferris",
+      "title": "Ride The Ferris Wheel",
+      "desc": "Light the wheel from the right return lane and collect the Ferris Bonus.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "ferris-wheel"
+    },
+    {
+      "id": "cy-spook",
+      "title": "Welcome In",
+      "desc": "Drop the Spook-House target and spin the Mystery Wheel.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "spook-house"
+    },
+    {
+      "id": "cy-double",
+      "title": "Double Score",
+      "desc": "Complete the 1-2-3 lanes to start Double Score.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "double-score"
+    },
+    {
+      "id": "cy-comet-million",
+      "title": "Ride The Comet",
+      "desc": "Climb the Comet ladder to 100K and collect the Million.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "comet-million"
+    },
+    {
+      "id": "cy-hold-bonus",
+      "title": "Hold Bonus",
+      "desc": "Light both halves of Hold Bonus in the same ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hold-bonus"
+    },
+    {
+      "id": "cy-jackpot",
+      "title": "Ride The Cyclone",
+      "desc": "Make three Cyclone ramps before the timer to collect the jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "cyclone-jackpot"
+    },
+    {
+      "id": "cy-extra-ball",
+      "title": "Three Ducks",
+      "desc": "Complete the Duck targets three times to light the outlane extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "duck-targets"
+    },
+    {
+      "id": "cy-two-million",
+      "title": "Two Million",
+      "desc": "Collect the Comet Million inside a Double Score window.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "double-comet"
+    },
+    {
+      "id": "cy-special",
+      "title": "Step Right Up",
+      "desc": "Drive the Bonus X ladder up to the flashing number and light the special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "the-special"
+    }
+  ],
+  "drills": [
+    {
+      "id": "soft-plunge-centre-pocket",
+      "title": "Soft Plunge, Centre Pocket",
+      "text": "Full power is the wrong answer here. Ease the plunge so the ball settles in the middle pocket for 100K rather than sailing past it into the 5K one at the back, and save your best touch for a late ball when the award is multiplied.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "skill-holes"
+      ]
+    },
+    {
+      "id": "comet-ladder-and-relight",
+      "title": "Climb The Comet, Then Relight It",
+      "text": "Shoot the Comet ramp hard every time — a short one drops through into the bumpers rather than coming back at you. When the ladder times out, sweep the Cat targets, and use the half-hidden target beside the Spook-House island to spot one of them for free.",
+      "reps": "3 full climbs to 100K",
+      "focus": "accuracy",
+      "goal": "comet-million",
+      "shots": [
+        "comet-ramp",
+        "cat-targets",
+        "spot-target"
+      ]
+    },
+    {
+      "id": "three-cyclone-ramps",
+      "title": "Three Cyclone Ramps",
+      "text": "Complete the Duck targets to light the ramp, then put three shots up the Cyclone before the timer expires. The ramp returns to the right return lane, so a made shot hands you the ball back for the next one.",
+      "reps": "5 attempts",
+      "focus": "accuracy",
+      "goal": "cyclone-jackpot",
+      "shots": [
+        "duck-targets",
+        "cyclone-ramp"
+      ]
+    },
+    {
+      "id": "boomerang-kickout-ready",
+      "title": "Be Ready For The Boomerang",
+      "text": "Relight Advance X in the left return lane, take the boomerang hole, and have a flipper waiting before the ball comes out. It usually throws to the left flipper, but it can find the right one and on a poorly set up machine it can come straight down the middle.",
+      "reps": "10 shots",
+      "focus": "ball-control",
+      "goal": "advance-bonus-x",
+      "shots": [
+        "left-inlane",
+        "boomerang-hole"
+      ]
+    },
+    {
+      "id": "two-million-order",
+      "title": "The Two Million, In Order",
+      "text": "Build the Comet ladder to the top first, then complete 1-2-3, then make the ramp while the doubler runs. Starting the doubler before the ladder is loaded wastes almost the whole window, and the jackpot is the one thing Double Score will not double.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "double-comet",
+      "shots": [
+        "comet-ramp",
+        "top-lanes"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "lights",
+  "actionButton": {
+    "present": false,
+    "how": "Cyclone keeps the cabinet plain: two flipper buttons, a start button and a manual plunger. The flipper buttons handle lane change on the top rollovers, and that is the only extra job they have."
+  },
+  "howItPlays": {
+    "objective": "Cyclone is a Coney Island midway with no multiball -- one ball at a time, and the payoffs come from two ramps, a Ferris wheel and a backglass lottery. Climb the Comet ramp to its Million, race three Cyclone ramps for the jackpot, and complete the top lanes to double everything on the table.",
+    "loop": [
+      "Soft-plunge the centre skill pocket for a multiplied opener, then settle in on the two ramps.",
+      "Climb the Comet ramp a rung at a time to light its Million, relighting it on the Cat targets whenever the timer lapses.",
+      "Complete the 1-2-3 top lanes to switch on Double Score, doubling everything on the table for a short stretch.",
+      "Relight the Cyclone ramp on the Duck targets and rip three shots up it against the clock for the jackpot.",
+      "Sink the Spook-House to spin the backglass wheel, and grind the boomerang hole to drive your bonus multiplier toward the special."
+    ],
+    "lights": [
+      {
+        "id": "top-rollovers",
+        "name": "1-2-3 Rollovers",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "Three rollover lanes cross the top of the table; a lane still dark is one you have not run through yet, and each one you catch drops another 5K onto the jackpot.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "either flipper button rolls the lit 1-2-3 lanes across a step, so you can line an unlit lane up with wherever the ball is dropping in from up top",
+          "when": "before the ball rolls back down through the top lanes"
+        },
+        "then": "Light all three and Double Score switches on, doubling every score on the table for roughly twenty seconds on a stock machine. The jackpot is the lone holdout it will not double, so collect that outside the window.",
+        "goals": [
+          "double-score",
+          "cyclone-jackpot"
+        ]
+      },
+      {
+        "id": "comet-ramp",
+        "name": "Comet Ramp",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "comet-ramp"
+          },
+          {
+            "shot": "cat-targets"
+          }
+        ],
+        "lit": "The Comet ramp climbs a back-panel ladder one 20K rung at a time up to a hundred thousand, and banking that top rung lights the Million on the ramp itself; when the ladder times out, the Cat targets bring it back.",
+        "flashing": null,
+        "control": null,
+        "then": "Top the ladder and take the Million -- there is no cap on how often you can rebuild and collect it. Caught inside a Double Score window it pays two million, the single biggest score here, and an underhit ramp is no punishment: it spills through a lower hole down into the nest instead of rocketing back at the flippers.",
+        "goals": [
+          "comet-million",
+          "double-comet",
+          "safe-comet-miss"
+        ]
+      },
+      {
+        "id": "cyclone-ramp",
+        "name": "Cyclone Ramp",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "cyclone-ramp"
+          },
+          {
+            "shot": "duck-targets"
+          }
+        ],
+        "lit": "Light the Cyclone ramp on the Duck targets, then land three shots up it before the timer runs out to collect the jackpot glowing on the backglass -- never less than a half million.",
+        "flashing": null,
+        "control": null,
+        "then": "Every collection knocks the jackpot back down to its floor, so the first one is the real money; build it higher first by tapping the 1-2-3 rollovers, and take it outside Double Score since that window leaves the jackpot alone. A game where somebody banks it seeds a bigger jackpot for whoever plays next.",
+        "goals": [
+          "cyclone-jackpot",
+          "jackpot-carryover"
+        ]
+      },
+      {
+        "id": "cat-duck-banks",
+        "name": "Cat & Duck Banks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "cat-targets"
+          },
+          {
+            "shot": "duck-targets"
+          },
+          {
+            "shot": "spot-target"
+          }
+        ],
+        "lit": "Two standup banks flank the middle: the Cat targets on the left spring the Comet back to life and mark the HOLD side of Hold Bonus, while the Duck targets on the right revive the Cyclone and mark BONUS -- and a small target hidden beside the Spook-House spots one Cat for you.",
+        "flashing": null,
+        "control": null,
+        "then": "Light both HOLD and BONUS in a ball and your built-up bonus carries into the next one instead of wiping -- with no multiball on this game, it is one of the only ways to compound a good ball. The third Duck completion of the game also arms the extra ball out on the outlanes.",
+        "goals": [
+          "cat-targets",
+          "duck-targets",
+          "hold-bonus",
+          "outlane-extra-ball"
+        ]
+      },
+      {
+        "id": "ferris-wheel",
+        "name": "Ferris Wheel",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "ferris-wheel"
+          },
+          {
+            "shot": "jet-bumpers"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "The right return lane is the only switch that lights the Ferris Wheel, and since both ramps drain back down that lane, a made ramp lights it for free; the award starts at a 50K floor and climbs 3K with every jet-bumper hit banked beforehand.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the bumpers to fatten the bonus, light the wheel at the right return lane, then collect at the wheel itself. The ball rolls back to you out of the left return lane, re-arming Advance X as it passes.",
+        "goals": [
+          "ferris-wheel"
+        ]
+      },
+      {
+        "id": "spook-house",
+        "name": "Spook-House",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "spook-drop"
+          },
+          {
+            "shot": "spook-house"
+          },
+          {
+            "shot": "mystery-wheel"
+          }
+        ],
+        "lit": "Knock the lone drop target down, then drop the ball into the sinkhole waiting behind it to set the backglass Mystery Wheel spinning; that drop resets itself on a short timer, so the two halves of the shot have to come almost together.",
+        "flashing": null,
+        "control": null,
+        "then": "The wheel is the only road to some of the best awards here -- its spread runs from a flat blank up to 200K, and it is where the extra ball and the special both hide, so treat every sink as a lottery pull. The ball comes back to you from the boomerang kickout across the table.",
+        "goals": [
+          "spook-house",
+          "mystery-wheel"
+        ]
+      },
+      {
+        "id": "bonus-x-ladder",
+        "name": "Bonus X Ladder",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "boomerang-hole"
+          },
+          {
+            "shot": "bonus-x-wheel"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "The boomerang hole is the only shot that steps your bonus multiplier up, and only while Advance X is lit -- either return lane, either ramp, or the Ferris Wheel switches that back on.",
+        "flashing": "One rung of that multiplier ladder up near the flippers strobes; hit that number and you have lit the special.",
+        "control": null,
+        "then": "Drive the multiplier up rung by rung until you reach the flashing one and the special lights -- where it sits ranges from three as high as seven. The kickout tends to feed the left flipper, so be set there before the ball pops back out.",
+        "goals": [
+          "advance-bonus-x",
+          "the-special"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button rolls the lit 1-2-3 lanes across a step, so tap it before the ball drops back down through the top to line an unlit lane up with its path. Completing all three switches on Double Score, doubling every score on the table for a short stretch -- though the jackpot is left out of the doubling.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Start with the soft plunge into the middle skill pocket for 100K, multiplied by your ball number, so your steadiest touch is worth the most late in the game. Then feed the two ramps and let a missed Comet fall safely into the bumpers, building the Ferris bonus while you find your range.",
+        "goals": [
+          "skillshot",
+          "safe-comet-miss",
+          "ferris-wheel"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Climb the Comet to its Million and complete the top lanes for Double Score, ideally lining the two up together. Relight and race the Cyclone ramp for the jackpot, and light both halves of Hold Bonus so a strong ball's total carries over -- the closest thing this machine has to banking progress.",
+        "goals": [
+          "comet-million",
+          "double-score",
+          "cyclone-jackpot",
+          "hold-bonus"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The one true monster score is the Two Million shot: build the Comet ladder to its Million first, switch on Double Score with the top lanes, then make the ramp while the clock runs. Chasing behind it are the Cyclone jackpot -- which quietly grows between games -- and the special, lit by driving your multiplier up to that flashing rung.",
+        "goals": [
+          "double-comet",
+          "cyclone-jackpot",
+          "the-special"
+        ]
+      }
+    ]
+  }
+}

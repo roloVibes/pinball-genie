@@ -1,0 +1,868 @@
+{
+  "machine": "Dr. Dude (Bally, 1990)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "A manual plunger that sends the ball up the Right Lane. A full-strength plunge reaches the Top Target and drops into the bumpers."
+    },
+    {
+      "id": "right-lane",
+      "name": "Right Lane",
+      "type": "orbit",
+      "x": 0.84,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A half-orbit up the right side to the Top Target and the bumpers. A one-way gate at the top stops the ball rolling back down.",
+      "feeds": {
+        "shot": "bumpers"
+      }
+    },
+    {
+      "id": "top-target",
+      "name": "Top Target",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "A lone standup above the bumpers. Its value cycles through five awards shown on the backpanel lights above it, and it is always available."
+    },
+    {
+      "id": "bumpers",
+      "name": "Bumpers",
+      "type": "bumpers",
+      "x": 0.38,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Three in a triangle. They do not build towards anything — the ball exits down the Left Lane or through the middle of the playfield."
+    },
+    {
+      "id": "left-lane",
+      "name": "Left Lane",
+      "type": "lane",
+      "x": 0.18,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "The bumper exit on the left. Shoot up it to reach the Left Saucer."
+    },
+    {
+      "id": "left-saucer",
+      "name": "Left Saucer",
+      "type": "saucer",
+      "x": 0.13,
+      "y": 0.71,
+      "trim": "all",
+      "notes": "The award hole. Bag O' Tricks, Reflex 1, Lock, Extra Ball and Special all live here, and one shot collects every one of them that is lit. It kicks up onto a habitrail to the left inlane."
+    },
+    {
+      "id": "magnetic-personality",
+      "name": "Magnetic Personality",
+      "type": "standup",
+      "x": 0.1,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "A short lane curves away to a single standup, and a magnet sitting halfway up it grabs the ball the moment the target takes a hit. One of the three Elements, and the Reflex 3 shot."
+    },
+    {
+      "id": "ramp",
+      "name": "The Ramp",
+      "type": "ramp",
+      "x": 0.4,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Extremely steep and only shootable from the right flipper. It runs around the back of the playfield and drops the ball into the Mix Master. Collects the Million award when lit.",
+      "feeds": {
+        "shot": "mix-master"
+      }
+    },
+    {
+      "id": "heart-of-rock",
+      "name": "Heart of Rock 'n Roll",
+      "type": "standup",
+      "x": 0.52,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "A single standup just right of the ramp entrance. The second Element of Coolness."
+    },
+    {
+      "id": "gift-of-gab",
+      "name": "The Gift of Gab",
+      "type": "saucer",
+      "x": 0.7625,
+      "y": 0.5714,
+      "trim": "all",
+      "notes": "A big gift-wrapped box hiding a short lane into a saucer. The third Element, and the Reflex 2 shot. Kicks out to a habitrail feeding the right inlane."
+    },
+    {
+      "id": "reflex-targets",
+      "name": "REFLEX Targets",
+      "type": "target-bank",
+      "x": 0.57,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Six standups right of the bumpers, angled so you can hit them from the flippers. Which ones you have hit is remembered between balls."
+    },
+    {
+      "id": "mix-master",
+      "name": "The Mix Master",
+      "type": "toy",
+      "x": 0.5778,
+      "y": 0.7857,
+      "trim": "all",
+      "notes": "A six-sided contraption suspended above the playfield with a spinning disc and a post inside. The ramp drops the ball onto the disc; a hole in the bottom feeds the right inlane."
+    },
+    {
+      "id": "mix-targets",
+      "name": "Mix Master Targets",
+      "type": "target-bank",
+      "x": 0.55,
+      "y": 0.94,
+      "trim": "all",
+      "notes": "Nine standups around the sides of the Mix Master in three colour-coded banks — red for the Heart, yellow for the Gift, green for Magnetic Personality."
+    },
+    {
+      "id": "drop-targets",
+      "name": "Drop Targets",
+      "type": "drop-target",
+      "x": 0.78,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Four drops facing directly left, below the entrance to the Right Lane."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Fed by the habitrail from the Left Saucer. Nothing is lit here."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Fed by both the Gift of Gab and the Mix Master exit."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "There is no kickback on this machine, so both outlanes are final."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same on the right — nothing protects it."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.2125,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Reaches Magnetic Personality, the Left Lane and the Gift of Gab. The place to park a ball during multiball."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6625,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "The only flipper that can make the ramp, which makes it the flipper you build your multiball around."
+    }
+  ],
+  "goals": [
+    {
+      "id": "top-target-plunge",
+      "title": "Plunge Into The Top Target",
+      "category": "skillshot",
+      "summary": "A full-strength plunge runs the Right Lane and clips the Top Target before dropping into the bumpers. The target's value cycles through five awards on the backpanel lights above it, from 5K up, and it is live at all times — so the plunge is free money if you watch the cycle.",
+      "difficulty": 1,
+      "reward": "5K up to the top of the cycle",
+      "steps": [
+        {
+          "shot": "top-target",
+          "action": "Plunge hard to clip the Top Target",
+          "detail": "A full-strength plunge runs the Right Lane and hits the standup before the ball drops into the bumpers. Watch the backpanel lights for its cycling value."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "elements-of-coolness",
+      "title": "The Three Elements of Coolness",
+      "category": "progression",
+      "summary": "Magnetic Personality, the Heart of Rock 'n Roll and the Gift of Gab. Each takes three hits: 5K, then 10K, then 25K to collect it. Values hold between balls and nothing times out, so this is a build you can never lose.",
+      "difficulty": 1,
+      "reward": "Collecting all three opens the lock",
+      "steps": [
+        {
+          "shot": "magnetic-personality",
+          "action": "Three hits on the green Element",
+          "detail": "Once an Element is collected you can keep shooting it — the value just cycles 5K, 10K, 25K again."
+        },
+        {
+          "shot": "heart-of-rock",
+          "action": "Three on the red Element",
+          "detail": "A globe light on the surrounding plastic flashes while an Element is uncollected and goes steady once it is done."
+        },
+        {
+          "shot": "gift-of-gab",
+          "action": "Three on the yellow Element",
+          "detail": "Repeated hits on the matching Mix Master target bank will also spot a shot to that Element."
+        }
+      ],
+      "fx": "dance",
+      "ordered": false
+    },
+    {
+      "id": "mix-master-targets",
+      "title": "Work The Mix Master Targets",
+      "category": "progression",
+      "summary": "Nine standups ring the Mix Master in three colour-coded banks, one per Element. They spot Element shots, they light the lock, and during multiball every one of them counts down the jackpot — which makes them the busiest scoring surface on the machine.",
+      "difficulty": 2,
+      "reward": "Spots Elements, lights Lock, builds the jackpot",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Feed the Mix Master with the ramp",
+          "detail": "The ramp is the only way in, and it drops the ball onto a spinning disc that rattles it around the targets."
+        },
+        {
+          "shot": "mix-targets",
+          "action": "Let the disc do the work",
+          "detail": "Red counts towards the Heart, yellow the Gift, green Magnetic Personality — roughly five hits on a bank spots a shot to that Element."
+        },
+        {
+          "shot": "mix-master",
+          "action": "Keep watching it",
+          "detail": "A ball that catches the post on the disc can be flung out of the exit and down the habitrail without warning."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "light-the-lock",
+      "title": "Light The Lock",
+      "category": "strategy",
+      "summary": "Once all three Elements are collected, the lock is one target away — but it has to be a Mix Master target. Simply making the ramp does not do it; the ball must hit at least one of the nine targets up there before Lock lights at the Left Saucer.",
+      "difficulty": 2,
+      "reward": "Lock lit at the Left Saucer",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Get the ball into the Mix Master",
+          "detail": "With all three Elements collected, any Mix Master target now lights the lock."
+        },
+        {
+          "shot": "mix-targets",
+          "action": "Make sure it actually hits something",
+          "detail": "A ball that drops through cleanly without touching a target has not lit anything."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Take the lock",
+          "detail": "The saucer collects every award lit on it at once, so check what else is showing before you shoot."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Simple and relentless: shoot the Mix Master as much as you physically can. The display shows how many target hits are left before the jackpot, starting at 15 and rising by 10 for every jackpot within the same multiball.",
+      "difficulty": 2,
+      "reward": "1M to 5M per jackpot",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Loop the ramp",
+          "detail": "During multiball all nine targets are equal — any hit takes one off the counter."
+        },
+        {
+          "shot": "mix-targets",
+          "action": "Count down to the jackpot",
+          "detail": "The jackpot value looks random between 1M and 5M each time."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Double it with the drops",
+          "detail": "Completing the four drop targets doubles the jackpot you are currently working on.",
+          "link": "none"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "multiball-control",
+      "title": "Hold One, Loop The Other",
+      "category": "strategy",
+      "summary": "The whole multiball comes down to ball control. Trap one ball on the left flipper and keep the other one cycling the ramp. Two balls in the Mix Master at once is the failure case — they hit each other instead of the targets and often come out together.",
+      "difficulty": 3,
+      "reward": "A multiball that actually pays out",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Catch a ball and keep it there",
+          "detail": "As soon as one ball goes into the Mix Master, get the other under control."
+        },
+        {
+          "shot": "ramp",
+          "action": "Loop the ramp with the free ball",
+          "detail": "Only the right flipper can make the ramp, which is why the left flipper is the parking spot."
+        },
+        {
+          "shot": "mix-master",
+          "action": "Do not send the second ball up",
+          "detail": "If both end up in there, expect them to come out together and be very hard to separate."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "double-scoring",
+      "title": "Double Scoring After Multiball",
+      "category": "multiplier",
+      "summary": "The rule most players never notice. When multiball ends and you are back to one ball, every score is doubled for as long as you keep that ball alive — and awards are displayed at their doubled value so you can see it happening.",
+      "difficulty": 2,
+      "reward": "Everything worth double",
+      "steps": [
+        {
+          "shot": "mix-targets",
+          "action": "Play carefully once the multiball ends",
+          "detail": "There is no restart shot, so the doubled ball is what you get."
+        },
+        {
+          "shot": "magnetic-personality",
+          "action": "Spend it on the Elements and the Reflex",
+          "detail": "A Reflex round completed under double scoring is worth more than most of the multiball that preceded it."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "reflex",
+      "title": "The REFLEX Round",
+      "category": "mode",
+      "summary": "Three shots in quick succession. Clearing the REFLEX targets puts Reflex 1 on the Left Saucer; the saucer then sends Reflex 2 to the Gift of Gab; and that one hands Reflex 3 to Magnetic Personality. The value opens at 500K and rides with you for the whole game.",
+      "difficulty": 3,
+      "reward": "500K and rising",
+      "steps": [
+        {
+          "shot": "reflex-targets",
+          "action": "Complete the six targets",
+          "detail": "Your progress on them is remembered between balls, and completing them again while Reflex 1 is lit adds 250K to the value."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Reflex 1 waits for you",
+          "detail": "This one stays lit until you hit it, so take your time and set the next shot up."
+        },
+        {
+          "shot": "gift-of-gab",
+          "action": "Reflex 2 times out fast",
+          "detail": "Very fast. If you miss it, let the timer expire and restart from Reflex 1 rather than taking a wild second shot — missing Reflex 2 relights Reflex 1 immediately."
+        },
+        {
+          "shot": "magnetic-personality",
+          "action": "Reflex 3 for the bonus",
+          "detail": "A slightly longer timer here, usually enough for two or three attempts. Completing the round adds 500K to the value for next time; missing Reflex 3 ends the round entirely."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "bag-of-tricks",
+      "title": "Bag O' Tricks",
+      "category": "secret",
+      "summary": "Shoot the Left Saucer for a random award. Every ball begins with it lit, the drop targets bring it back, and what comes out ranges from a joke ten points to a lit extra ball. Multiball locks it out — though clearing the drops during multiball parks it as lit for when the multiball ends.",
+      "difficulty": 1,
+      "reward": "One random award",
+      "steps": [
+        {
+          "shot": "left-saucer",
+          "action": "Take it early in the ball",
+          "detail": "The pool includes Light Mix Master, which spots every uncollected Element, plus Million Is Lit, Jackpot At Max, Bonus X At Max, Extra Ball and Special."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Relight it with the drops",
+          "detail": "Slingshots Score 100,000 also appears, and it pays well if you are willing to give up ball control for a while."
+        },
+        {
+          "shot": "magnetic-personality",
+          "action": "Know the Element order",
+          "detail": "When the Bag hands you an Element it always gives them in the same order: Magnetic Personality, then Gift of Gab, then Heart of Rock 'n Roll."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "drop-targets",
+      "title": "The Drop Targets",
+      "category": "multiplier",
+      "summary": "Four drops that do a different job every time you clear them. The first three completions give bonus multipliers of 2x, 4x and 6x, the fourth lights Million, and after that they simply pay points — plus they relight Bag O' Tricks every time.",
+      "difficulty": 2,
+      "reward": "2x, 4x, 6x bonus then Million",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Clear all four",
+          "detail": "They face directly left, so they are a natural left flipper shot."
+        },
+        {
+          "shot": "ramp",
+          "action": "Cash the Million on the fourth",
+          "detail": "The Million award is collected on the ramp while it is lit."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Use them in multiball",
+          "detail": "A completion during multiball doubles the jackpot you are counting down towards."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "million-award",
+      "title": "Million Is Lit",
+      "category": "strategy",
+      "summary": "Two routes to the same thing: complete the drop targets for the fourth time, or draw Million Is Lit from Bag O' Tricks. Either way the ramp pays a flat million — and since the ramp is where you want the ball anyway, there is no cost to holding it.",
+      "difficulty": 2,
+      "reward": "1M on the ramp",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Complete the drops a fourth time",
+          "detail": "Taking Bonus X At Max from the Bag also means your next drop completion lights Million."
+        },
+        {
+          "shot": "ramp",
+          "action": "Collect on the ramp",
+          "detail": "The ramp is only reachable from the right flipper, so set the shot up properly rather than slapping at it."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "left-saucer-stack",
+      "title": "Stack The Left Saucer",
+      "category": "strategy",
+      "summary": "The Left Saucer can hold several awards lit at once, and one shot collects every one of them. Instead of running to it the moment anything lights, let Bag O' Tricks, Reflex 1 and Lock pile up and take them together.",
+      "difficulty": 2,
+      "reward": "Several awards from one shot",
+      "steps": [
+        {
+          "shot": "left-lane",
+          "action": "Learn the approach",
+          "detail": "The Left Lane is the way up to the saucer, and the bumpers feed the same lane on their own."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Collect the pile",
+          "detail": "The saucer kicks the ball up onto a habitrail that returns it safely to the left inlane."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "magnetic-return",
+      "title": "Mind The Magnetic Return",
+      "category": "strategy",
+      "summary": "Hitting the Magnetic Personality target energises a magnet halfway up its lane that catches the ball. When it lets go the ball should roll onto the left flipper — but a lively slingshot can catch it on the way and fire it across the playfield instead.",
+      "difficulty": 1,
+      "reward": "Fewer surprise drains",
+      "steps": [
+        {
+          "shot": "magnetic-personality",
+          "action": "Expect the pause",
+          "detail": "The magnet holds the ball for a moment after the target registers."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Be ready for either return",
+          "detail": "Most of the time it lands on the left flipper; occasionally the slingshot sends it flying instead."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "free-extra-ball",
+      "title": "The Sympathy Extra Ball",
+      "category": "secret",
+      "summary": "A quiet piece of generosity. If you reach ball three having played badly, the game lights an extra ball at the Left Saucer for nothing. Make sure you actually go and collect it — it is not awarded automatically.",
+      "difficulty": 1,
+      "reward": "A free extra ball",
+      "steps": [
+        {
+          "shot": "left-saucer",
+          "action": "Check the saucer at the start of ball three",
+          "detail": "If the extra ball light is on, that is why."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Go and take it",
+          "detail": "Combine it with anything else lit at the saucer — one shot collects the lot."
+        }
+      ],
+      "fx": "magic"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "dd-elements",
+      "title": "Three Elements",
+      "desc": "Collect Magnetic Personality, the Heart of Rock 'n Roll and the Gift of Gab.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "elements-of-coolness"
+    },
+    {
+      "id": "dd-lock",
+      "title": "Mix It Up",
+      "desc": "Light the lock with a Mix Master target and take it at the Left Saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "light-the-lock"
+    },
+    {
+      "id": "dd-multiball",
+      "title": "Multiball",
+      "desc": "Start multiball and count the Mix Master targets down to a jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "dd-double-jackpot",
+      "title": "Double Jackpot",
+      "desc": "Complete the drop targets during multiball to double the jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "dd-reflex",
+      "title": "Reflex",
+      "desc": "Complete the full three-shot Reflex sequence.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "reflex"
+    },
+    {
+      "id": "dd-reflex-build",
+      "title": "Quick Hands",
+      "desc": "Build the Reflex value past its 500K starting point.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "reflex"
+    },
+    {
+      "id": "dd-bag",
+      "title": "Bag O' Tricks",
+      "desc": "Collect any Bag O' Tricks award at the Left Saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bag-of-tricks"
+    },
+    {
+      "id": "dd-million",
+      "title": "Million On The Ramp",
+      "desc": "Light Million and collect it on the ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "million-award"
+    },
+    {
+      "id": "dd-bonus-6x",
+      "title": "Six Times Cool",
+      "desc": "Complete the drop targets three times for a 6x bonus multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "drop-targets"
+    },
+    {
+      "id": "dd-double-scoring",
+      "title": "Still Doubled",
+      "desc": "Keep the last ball alive after multiball to score everything at double value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "double-scoring"
+    }
+  ],
+  "drills": [
+    {
+      "id": "clip-the-top-target",
+      "title": "Clip The Top Target",
+      "text": "A full-strength plunge runs the Right Lane and catches the Top Target before the ball drops into the bumpers. Watch the backpanel lights cycle through its five values and release when the one you want is showing.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "top-target-plunge",
+      "shots": [
+        "shooter-lane",
+        "right-lane",
+        "top-target"
+      ]
+    },
+    {
+      "id": "right-flipper-ramp-reps",
+      "title": "Right Flipper Ramp Reps",
+      "text": "The ramp is extremely steep and only the right flipper can make it, so everything you want from the Mix Master runs through one shot. Take it from a settled ball and count only the ones that actually land on the disc.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "mix-master-targets",
+      "shots": [
+        "ramp",
+        "mix-master"
+      ]
+    },
+    {
+      "id": "hold-one-loop-the-other",
+      "title": "Hold One, Loop The Other",
+      "text": "The second a ball goes into the Mix Master, trap the other one on the left flipper and leave it there. Only the right flipper makes the ramp, so the left flipper is the parking spot — two balls in the Mix Master hit each other instead of the targets and usually come out together.",
+      "reps": "3 multiballs",
+      "focus": "ball-control",
+      "goal": "multiball-control",
+      "shots": [
+        "left-flipper",
+        "ramp",
+        "mix-master"
+      ]
+    },
+    {
+      "id": "magnet-release-ready",
+      "title": "Wait Out The Magnet",
+      "text": "Hitting Magnetic Personality energises a magnet halfway up its lane, so expect the pause before the ball comes back. It usually rolls onto the left flipper, but a lively slingshot can catch it on the way and fire it across the playfield instead.",
+      "reps": "15 hits",
+      "focus": "ball-control",
+      "goal": "magnetic-return",
+      "shots": [
+        "magnetic-personality",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "let-the-saucer-stack",
+      "title": "Let The Saucer Stack",
+      "text": "Do not run to the Left Saucer the moment anything lights on it. Let Bag O' Tricks, Reflex 1 and Lock pile up, then take the Left Lane once and collect the lot in a single shot.",
+      "reps": "5 collections",
+      "focus": "accuracy",
+      "goal": "left-saucer-stack",
+      "shots": [
+        "left-lane",
+        "left-saucer"
+      ]
+    },
+    {
+      "id": "reflex-three-shots",
+      "title": "Reflex, One Two Three",
+      "text": "Reflex 1 at the saucer waits for you, so use that time to set up the Gift of Gab. Reflex 2 times out very fast — if you miss it, let the clock expire and restart from Reflex 1 rather than throwing a wild second shot, then finish on Magnetic Personality.",
+      "reps": "5 full rounds",
+      "focus": "flow",
+      "goal": "reflex",
+      "shots": [
+        "reflex-targets",
+        "left-saucer",
+        "gift-of-gab",
+        "magnetic-personality"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "dance",
+  "actionButton": {
+    "present": false,
+    "how": "Flippers, a start button and a manual plunger, and nothing else on the cabinet. The plunge runs the ball up the Right Lane; at full strength it reaches the Top Target and drops into the bumpers."
+  },
+  "howItPlays": {
+    "objective": "Bally's personality clinic turns a hopeless nerd into the coolest cat in town, one Element of Coolness at a time. Gather all three Elements, work them through the Mix Master to light the lock, and cash the multiball jackpots that follow.",
+    "loop": [
+      "Hit each of the three Element standups three times over -- Magnetic Personality, the Heart and the Gift -- and the values you bank hold from ball to ball, so the coolness build never slides backward.",
+      "Shoot the steep ramp to feed the Mix Master, whose colour-coded target rings spot Element hits for you and, once all three Elements are in, arm the lock.",
+      "Take the lit lock at the Left Saucer, then pour balls back into the Mix Master and count its targets down to a jackpot.",
+      "Clear the four drop targets to climb the bonus multiplier and light a flat million out on the ramp.",
+      "Keep the last ball alive once the multiball ends and every score doubles, which turns a Reflex round played right then into a fortune."
+    ],
+    "lights": [
+      {
+        "id": "elements-of-coolness",
+        "name": "Elements of Coolness",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "magnetic-personality"
+          },
+          {
+            "shot": "heart-of-rock"
+          },
+          {
+            "shot": "gift-of-gab"
+          }
+        ],
+        "lit": "A steady globe on an Element's surrounding plastic means that Element is collected and its value banked for the rest of the game, so a build here never slips backward.",
+        "flashing": "A globe still flashing is an Element you have not finished; three hits -- worth five, ten and twenty-five thousand -- turn it steady.",
+        "control": null,
+        "then": "Finish all three Elements, then put one more shot into a Mix Master target to arm the lock at the Left Saucer. Values keep cycling if you shoot a completed Element again, so there is no penalty for parking the ball on one while you set the lock up.",
+        "goals": [
+          "elements-of-coolness"
+        ]
+      },
+      {
+        "id": "left-saucer-awards",
+        "name": "Left Saucer Awards",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-saucer"
+          }
+        ],
+        "lit": "Several awards can sit lit on the Left Saucer at the same time -- Bag O' Tricks, Reflex 1, the lock, an extra ball, a special -- and a single shot rakes in every one of them that is showing.",
+        "flashing": null,
+        "control": null,
+        "then": "Rather than run to it the instant one thing lights, let a few awards stack up and take them together; the saucer kicks the ball up a habitrail back to your left inlane afterward. The lock needs all three Elements plus a Mix Master hit before it appears, while Bag O' Tricks is lit at the start of every ball and comes back off the drop targets.",
+        "goals": [
+          "bag-of-tricks",
+          "light-the-lock",
+          "left-saucer-stack"
+        ]
+      },
+      {
+        "id": "reflex-round",
+        "name": "The REFLEX Round",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "reflex-targets"
+          },
+          {
+            "shot": "left-saucer"
+          },
+          {
+            "shot": "gift-of-gab"
+          },
+          {
+            "shot": "magnetic-personality"
+          }
+        ],
+        "lit": "Sweep the six REFLEX standups and Reflex 1 lights at the Left Saucer; collecting it throws Reflex 2 over to the Gift of Gab, and that in turn hands Reflex 3 to Magnetic Personality. The three-shot chain starts at half a million and its value stays with you all game.",
+        "flashing": null,
+        "control": null,
+        "then": "Reflex 1 waits for you, so set the Gift up before you take it; Reflex 2 times out fast, so a miss is better let go and restarted than chased with a wild shot. Finishing all three grows the value for next time, and a full round banked while the post-multiball doubling is still live pays enormously.",
+        "goals": [
+          "reflex"
+        ]
+      },
+      {
+        "id": "drop-targets-bonus",
+        "name": "Drop Targets & Bonus X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "drop-targets"
+          }
+        ],
+        "lit": "Four drops facing left do a different job on each clear: the first three completions raise the bonus multiplier to two, four and six times, and the fourth lights a flat million out on the ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock all four down from the left flipper, then collect the million on the ramp while it stays lit. Every completion also relights Bag O' Tricks back at the saucer, and one made during multiball doubles whatever jackpot you are currently chasing.",
+        "goals": [
+          "drop-targets",
+          "million-award"
+        ]
+      },
+      {
+        "id": "mix-master-jackpot",
+        "name": "Mix Master Jackpot",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "mix-targets",
+            "lamps": 9
+          },
+          {
+            "shot": "mix-master"
+          }
+        ],
+        "lit": "The steep ramp -- makeable only from the right flipper -- drops the ball onto a spinning disc inside the Mix Master, and the nine standups ringing it are colour-coded so red spots the Heart, yellow the Gift and green Magnetic Personality.",
+        "flashing": null,
+        "control": null,
+        "then": "Outside multiball those target hits spot Element shots and, with the Elements done, light the lock. In multiball every standup takes one off the jackpot -- fifteen to start, ten more after each cash -- so keep feeding the ramp and let the disc rattle the ball around the targets for you.",
+        "goals": [
+          "mix-master-targets",
+          "multiball"
+        ]
+      },
+      {
+        "id": "top-target-award",
+        "name": "Top Target Award",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "top-target"
+          }
+        ],
+        "lit": "A lone standup above the bumpers, and the backpanel lights over it cycle the target's value through a series of awards, live at every moment of the ball.",
+        "flashing": null,
+        "control": null,
+        "then": "A full plunge runs the right lane and clips it before the ball drops into the bumpers, so watch the backpanel cycle and let the spring go when the value you want is showing. There is no lane to line up and no button to press -- this is your free skill shot on every ball.",
+        "goals": [
+          "top-target-plunge"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the safe, repeatable points first. Clip the Top Target off a full plunge, build the three Elements (their values never reset, so it is progress you cannot lose), grab an early Bag O' Tricks, and clear the drop targets to climb the bonus multiplier.",
+        "goals": [
+          "top-target-plunge",
+          "elements-of-coolness",
+          "bag-of-tricks",
+          "drop-targets"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Feed the Mix Master to spot the last Elements and light the lock at the Left Saucer, then lock up and start multiball. Park a ball safely on the left flipper while the other loops the ramp; two balls up in the Mix Master together just batter each other loose.",
+        "goals": [
+          "mix-master-targets",
+          "light-the-lock",
+          "multiball",
+          "multiball-control"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The biggest points live in Mix Master multiball: count the ringed targets down to a jackpot worth up to five million and complete the drop targets to double it. Then keep that single ball alive when the multiball ends, because everything after runs at double value -- a Reflex round banked in that window is the exclamation point.",
+        "goals": [
+          "multiball",
+          "drop-targets",
+          "double-scoring",
+          "reflex"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1175 @@
+{
+  "machine": "Apollo 13 (Sega, 1995)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "The ball heads for the 1 and 3 rollovers and usually drops into the bumpers, though it can slip down either orbit instead. Turning the plunger handle also locks in a flashing mission."
+    },
+    {
+      "id": "top-lanes",
+      "name": "1-3 Top Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Two rollovers labelled 1 and 3. Completing 13 adds 250K to both the bumper value and the spinner value, each capped at 2M."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.52,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Three strong bumpers in an enclosed nest. They start at 250K, step up with each 13 completion, and every hit also adds their value to the Shoot The Moon total."
+    },
+    {
+      "id": "top-saucer",
+      "name": "Top Saucer",
+      "type": "saucer",
+      "x": 0.38,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Where most spinner lane shots end up. This is where a lit Mystery is actually collected, and it also displays the current Shoot The Moon value."
+    },
+    {
+      "id": "dock-targets",
+      "name": "D-O-C-K Targets",
+      "type": "target-bank",
+      "x": 0.14,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Standups low on the left. Completing them lights Mystery at the spinner lane."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Comfortable from a trapped ball, awkward from a rolling one. Anything lit is collected by the switch inside the orbit — the ball does not need to travel all the way round.",
+      "feeds": {
+        "shot": "right-orbit"
+      }
+    },
+    {
+      "id": "food-target",
+      "name": "Food Standup",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Halfway up the left side between the orbit and the spinner lane. Small points in normal play, real points during Life Support."
+    },
+    {
+      "id": "spinner-lane",
+      "name": "Spinner Lane",
+      "type": "spinner",
+      "x": 0.33,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Feeds the top saucer. Each spin pays between 250K and 2M depending on the value the top lanes have built. Backhandable, which makes it one of the safer repeat shots."
+    },
+    {
+      "id": "rocket-ramp",
+      "name": "Rocket Ramp",
+      "type": "ramp",
+      "x": 0.44,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A short metal ramp with a magnet under the rocket that catches a hard shot and sends the ball back down at you. The post between the flippers pops up when this happens — let the ball hit the post and catch it.",
+      "feeds": {
+        "shot": "center-post"
+      }
+    },
+    {
+      "id": "rocket-led",
+      "name": "Multiball Counter",
+      "type": "mech",
+      "x": 0.4,
+      "y": 0.41,
+      "trim": "all",
+      "notes": "The LED under the Rocket ramp counting down the shots left to multiball. When it reads one, the next Rocket shot starts it."
+    },
+    {
+      "id": "battery-targets",
+      "name": "Battery Targets",
+      "type": "target-bank",
+      "x": 0.34,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Four yellow standups facing right at the bumper exit. A ball leaving the nest usually clips one. They only really come alive during Under Volt."
+    },
+    {
+      "id": "battery-lane",
+      "name": "Battery Lane",
+      "type": "lane",
+      "x": 0.4,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "The gap beside the Battery standups. Almost every ball leaves the bumper area through here."
+    },
+    {
+      "id": "moon-targets",
+      "name": "M-O-O-N Targets",
+      "type": "target-bank",
+      "x": 0.58,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Standups facing the flippers. They must be taken in order — the leftmost flashes first, and each hit flashes the next."
+    },
+    {
+      "id": "moon-magnet",
+      "name": "Moon Magnet",
+      "type": "magnet",
+      "x": 0.54,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "The plastic moon in the kink of the Blastoff ramp. It grabs the ball and swings it round into the hole beside the ramp whenever you hit the ramp with the yellow lamp lit in normal play."
+    },
+    {
+      "id": "blastoff-ramp",
+      "name": "Blastoff Ramp",
+      "type": "ramp",
+      "x": 0.64,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "A shallow blue ramp with a diverter that alternates between the two inlanes after every made shot. Two lamps above it: yellow for an available BLASTOFF letter, red for the Shoot The Moon hurry-up."
+    },
+    {
+      "id": "water-target",
+      "name": "Water Standup",
+      "type": "standup",
+      "x": 0.76,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The right-side twin of the Food target."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Advances the spacecraft when lit. Like the left orbit, the switch inside the lane is what scores — a slow ball rolling back over it can credit two orbits from one shot."
+    },
+    {
+      "id": "mission-saucer",
+      "name": "Mission Saucer",
+      "type": "saucer",
+      "x": 0.8,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "A short lane into a saucer on the right. Starts missions, collects lit extra balls, and bounces out more often than it should — treat it as a shot you commit to, not one you brush at."
+    },
+    {
+      "id": "center-post",
+      "name": "Center Post",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.03,
+      "trim": "all",
+      "notes": "The pop-up post between the flippers. It rises after Rocket ramp and mission saucer shots — bounce the ball off it and trap, rather than flipping at it."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "The switch sits low in the lane, parallel to the flipper, so it is easy to roll. It lights the opposite orbit for a few seconds."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Lights the opposite orbit briefly. Inlane passes are how you keep the spacecraft moving, so learning to feed these deliberately pays."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "One million and no kickback. Most drains here come off a slingshot rather than a missed shot."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "One million, no kickback."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot",
+      "title": "The Skill Shot Choice",
+      "category": "skillshot",
+      "summary": "No aiming involved — you pick an award before the plunge. The three options are Start Mission, Mystery, and either a Multiball Countdown step or 13 Million. Take Mystery until it hands you the two-orbit award, then start taking Start Mission.",
+      "difficulty": 1,
+      "reward": "A free mission, a Mystery, or 13M",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge when your pick is up",
+          "detail": "Choose before you launch — Multiball Countdown knocks one shot off the Rocket counter (or becomes 13 Million once the counter reads one). The award lands regardless of which lane the ball goes down, so Start Mission is the strongest pick once your orbit awards are already running."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mystery",
+      "title": "Mystery",
+      "category": "mode",
+      "summary": "Complete D-O-C-K to light Mystery at the spinner lane, then collect it at the top saucer. The common awards are two orbits, a BLASTOFF letter, hold bonus, double bonus and 13 Million, with a fifty million Washing Machine turning up occasionally.",
+      "difficulty": 2,
+      "reward": "Two orbits, a BLASTOFF letter, or up to 50M",
+      "steps": [
+        {
+          "shot": "dock-targets",
+          "action": "Clear D-O-C-K",
+          "detail": "Four standups low on the left — reachable but easy to brick, so take them from a trapped ball."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Shoot the spinner lane",
+          "detail": "The Mystery lights here but is not paid here."
+        },
+        {
+          "shot": "top-saucer",
+          "action": "Collect at the top saucer",
+          "detail": "Two orbits is the award you want, because it is worth a whole spacecraft mode."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "advance-spacecraft",
+      "title": "Advance The Spacecraft",
+      "category": "progression",
+      "summary": "The most valuable thread in the game. Both orbits start the game lit, and after that the inlanes relight them for a few seconds each. Collected orbits move the Odyssey around the moon and back toward Earth, and each stage hands you a mode.",
+      "difficulty": 2,
+      "reward": "Video Mode, Power Down, Power Up, then Splashdown",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll an inlane to light the far orbit",
+          "detail": "The switches sit low in the lane so an inlane pass registers easily."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take the lit orbit",
+          "detail": "The switch inside the lane scores it — the ball does not have to complete the circuit."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Alternate sides",
+          "detail": "A slow ball that rolls back over the same switch can credit a second orbit from one shot."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "video-mode",
+      "title": "Video Mode",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "The first spacecraft award. Land the lunar module using the flipper buttons — left and right for lateral thrust, both together for upward. Fifty million for a left landing, one hundred and nine for centre, eighty-four for right, and twenty-five if you crash.",
+      "difficulty": 2,
+      "reward": "25M to 109M",
+      "steps": [
+        {
+          "shot": "mission-saucer",
+          "action": "Start it at the right saucer",
+          "detail": "Advancing the spacecraft lights Video Mode; the saucer is where it begins."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Use the plunger handle",
+          "detail": "Turning the handle kills the module's lateral drift, which makes lining up a centre landing straightforward."
+        },
+        {
+          "shot": "center-post",
+          "action": "Be ready on the kickout",
+          "detail": "Aim for the centre pad; the close-up view is the one detailed enough to judge a safe landing."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "power-down",
+      "title": "Power Down",
+      "category": "mode",
+      "summary": "A timed round with six shots lit at once, paying 50, 60, 70, 80, 90 and 90 million. Starting the round is worth ten million on its own, so clearing it out completely lands around four hundred and fifty million.",
+      "difficulty": 2,
+      "reward": "10M to start, up to 450M complete",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start with the orbits",
+          "detail": "All six shots are live simultaneously, so take whatever the ball offers rather than forcing one."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Use the ramps for safety",
+          "detail": "Ramps return to an inlane, which keeps the clock ticking without risking a drain."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Finish the set",
+          "detail": "The values climb as you go, so the last shots are the ones worth chasing."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "power-up",
+      "title": "Power Up",
+      "category": "mode",
+      "summary": "The same scoring ladder as Power Down but only one shot is lit at a time, and each one you make lights the next. Harder, because the game chooses your order for you and the clock is still running.",
+      "difficulty": 3,
+      "reward": "Up to 450M",
+      "steps": [
+        {
+          "shot": "mission-saucer",
+          "action": "Watch which shot is lit",
+          "detail": "Only one arrow is live; hitting anything else does nothing for the mode."
+        },
+        {
+          "shot": "rocket-ramp",
+          "action": "Take it immediately",
+          "detail": "Every second of hesitation is money, because the round is timed."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Reset your position after each",
+          "detail": "Trap the return before looking for the next lit arrow."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "splashdown",
+      "title": "Splashdown",
+      "category": "wizard",
+      "summary": "The end of the spacecraft journey and the deepest thing on the machine. Two more orbits after Power Up brings the Odyssey home for a timed multiball with the orbits lit for jackpots.",
+      "difficulty": 3,
+      "reward": "Timed multiball with orbit jackpots",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Keep relighting the orbits",
+          "detail": "The last stage needs two more orbit collections, so inlane passes are the whole game here."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Bring it home",
+          "detail": "Both orbits count toward the last two."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot orbits in the multiball too",
+          "detail": "The orbits stay the scoring shots once Splashdown starts."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "shoot-the-moon",
+      "title": "Shoot The Moon",
+      "category": "mode",
+      "summary": "Take the M-O-O-N targets in their flashing order and the Blastoff ramp lights for a hurry-up. It counts down very slowly, so treat it as a shot you can set up properly rather than panic at — but do collect it, because an uncollected one drops back to twenty million.",
+      "difficulty": 2,
+      "reward": "20M base, far more in a long game",
+      "steps": [
+        {
+          "shot": "moon-targets",
+          "action": "Follow the flashing target",
+          "detail": "The leftmost flashes first; each hit moves the flash to the next one."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Build the value in the bumpers",
+          "detail": "Every bumper hit adds its current value to the Shoot The Moon total, which is why long games see enormous numbers here."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Collect at the ramp",
+          "detail": "The red lamp above the ramp shows the hurry-up is live."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "missions",
+      "title": "Running The Missions",
+      "category": "progression",
+      "summary": "Nine missions, started at the right saucer, which stays lit in normal play until Master Alarm is reached. Bumper hits rotate which one is flashing, and turning the plunger handle locks the flashing one in — but the lock is lost when you plunge your next ball.",
+      "difficulty": 2,
+      "reward": "10M base per mission, 100M-700M each",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Rotate to the one you want",
+          "detail": "Bumper hits cycle the flashing mission."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Lock it in with the plunger handle",
+          "detail": "The lock only survives the current ball, so do not bank one for later."
+        },
+        {
+          "shot": "mission-saucer",
+          "action": "Start it at the saucer",
+          "detail": "While a mission runs, almost everything else shuts off — the Rocket ramp toward multiball and a lit BLASTOFF letter are the exceptions."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "orbiter",
+      "title": "Orbiter",
+      "category": "mode",
+      "summary": "The left orbit lights for fifty million counting down fast to ten. Make it and a diverter feeds the ball back to the left inlane with the right orbit lit for triple whatever the left orbit just paid. Realistically only the first attempt is big.",
+      "difficulty": 2,
+      "reward": "Up to about 200M on the combo",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Take the left orbit fast",
+          "detail": "The value collapses quickly, so this is a mission to start with a ball already under control."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Catch the return",
+          "detail": "The diverter sends the ball up and back to the left inlane."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Triple it",
+          "detail": "The right orbit pays three times your left orbit value."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "manual-burn",
+      "title": "Manual Burn",
+      "category": "mode",
+      "summary": "The spacecraft is seven degrees off course and three shots are lit to correct it — either left orbit, spinner and Rocket ramp, or Blastoff ramp, right orbit and mission saucer. Each shot pays 50 to 90 million, and the round ends the moment you get back on course. It scores far more if you deliberately do not.",
+      "difficulty": 3,
+      "reward": "250M typical, 500M-plus if you avoid finishing",
+      "steps": [
+        {
+          "shot": "spinner-lane",
+          "action": "Read the lit trio",
+          "detail": "One of the three flashes and moves the craft three degrees; the solid ones move it one or two."
+        },
+        {
+          "shot": "rocket-ramp",
+          "action": "Shoot the solid ones",
+          "detail": "Every shot pays, and the values keep climbing until the mode ends."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Let it time out instead",
+          "detail": "Correcting the course ends the mode early and costs you the rest of the ladder."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "co2",
+      "title": "CO2",
+      "category": "mode",
+      "summary": "The carbon dioxide level is climbing and you have until it reaches twenty to gather four items, each collected on the spinner. They pay 10, 20, 30 and 40 million, and finishing all four adds a bonus the bumpers have been building during the mode.",
+      "difficulty": 2,
+      "reward": "100M plus a bumper-built bonus around 40M",
+      "steps": [
+        {
+          "shot": "spinner-lane",
+          "action": "Repeat the spinner",
+          "detail": "Every item is collected here, and the shot backhands, so you can keep cycling it."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball rattle",
+          "detail": "Bumper hits during the mode raise the completion bonus."
+        },
+        {
+          "shot": "top-saucer",
+          "action": "Come back down and repeat",
+          "detail": "Spinner shots end in the top saucer, which returns you to the flippers via the Battery lane."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "under-volt",
+      "title": "Under Volt",
+      "category": "mode",
+      "summary": "A forty-two million value starts falling and the Battery targets are lit to freeze it. Freeze it, and every major shot is worth that frozen value for twenty seconds. A second Battery hit resets the timer and pays the value again — the trick is not to burn that second hit on an accidental double bounce.",
+      "difficulty": 3,
+      "reward": "400M-700M played well",
+      "steps": [
+        {
+          "shot": "battery-targets",
+          "action": "Freeze the value high",
+          "detail": "Hit a Battery target while the number is still large — it starts at 42M and drops."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Cash every major shot",
+          "detail": "All the big shots pay the frozen value for twenty seconds."
+        },
+        {
+          "shot": "battery-targets",
+          "action": "Re-hit deliberately, not accidentally",
+          "detail": "A second Battery hit collects the value and buys another twenty seconds, but a quick rebound off the same target wastes it."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "life-support",
+      "title": "Life Support",
+      "category": "mode",
+      "summary": "The Food and Water standups are lit for 20, 30, 40 and 50 million. The centre post rises for a few seconds after each one, so let the ball come off the post and trap it rather than swinging at it.",
+      "difficulty": 2,
+      "reward": "140M plus a 150M completion",
+      "steps": [
+        {
+          "shot": "food-target",
+          "action": "Take the left standup",
+          "detail": "Food sits between the left orbit and the spinner lane."
+        },
+        {
+          "shot": "water-target",
+          "action": "Take the right standup",
+          "detail": "Water is the mirror shot on the right side."
+        },
+        {
+          "shot": "center-post",
+          "action": "Use the post",
+          "detail": "It comes up after each hit — bounce off it and trap before the next shot."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "docking",
+      "title": "Docking",
+      "category": "mode",
+      "summary": "Hit anything in the D-O-C-K bank four times for 10, 20, 30 and 40 million and an extra ball. Any target in the bank counts, so this is a mission you can bang out from a trapped ball without needing accuracy.",
+      "difficulty": 2,
+      "reward": "100M and an extra ball",
+      "steps": [
+        {
+          "shot": "dock-targets",
+          "action": "Hit the bank four times",
+          "detail": "It does not matter which target; the count is what matters."
+        },
+        {
+          "shot": "mission-saucer",
+          "action": "Collect the extra ball",
+          "detail": "Lit extra balls are always collected at the right saucer."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Expect it only once",
+          "detail": "The extra ball generally does not repeat on later trips through the mission set."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "rocket-2-ball",
+      "title": "Rocket 2-Ball",
+      "category": "multiball",
+      "summary": "A two-ball round where the Rocket ramp is the only scoring shot, paying 10, 20, 30, 40 and then 50 million a hit. If your bumper value is already high, the bumpers can be the better place to spend the round.",
+      "difficulty": 2,
+      "reward": "10M climbing to 50M per Rocket shot",
+      "steps": [
+        {
+          "shot": "rocket-ramp",
+          "action": "Repeat the Rocket",
+          "detail": "The magnet catches the ball and sends it back down at you, so the post-and-trap rhythm matters here."
+        },
+        {
+          "shot": "center-post",
+          "action": "Catch off the post",
+          "detail": "The post rises with every Rocket hit — use it rather than flipping at the return."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Compare against the bumpers",
+          "detail": "With the bumper value maxed at 2M, feeding the nest can outscore chasing the ramp.",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "master-alarm",
+      "title": "Master Alarm",
+      "category": "wizard",
+      "summary": "Play all nine missions and Master Alarm lights at the right saucer. Forty seconds where every target scores a million and pushes another million onto the jackpot waiting at the Blastoff ramp. Collecting that jackpot never knocks its value back down, so a player with the ramp dialled in can run this enormous.",
+      "difficulty": 3,
+      "reward": "1M per target, uncapped ramp jackpot",
+      "steps": [
+        {
+          "shot": "spinner-lane",
+          "action": "Relight the saucer",
+          "detail": "Once Master Alarm is reached, the mission saucer only lights after a spinner shot."
+        },
+        {
+          "shot": "mission-saucer",
+          "action": "Start the round",
+          "detail": "Forty seconds on the clock from the kickout."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Keep taking the ramp",
+          "detail": "Every target you hit in between raises the jackpot, and collecting it does not knock it back down."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "regular-multiball",
+      "title": "Regular Multiball",
+      "category": "multiball",
+      "summary": "The Rocket LED counts your shots down. Three shots start the first multiball, five the second, seven the third. Three balls, no ball saver, and four jackpots lit at the left orbit, spinner lane, right orbit and mission saucer.",
+      "difficulty": 2,
+      "reward": "20M-40M jackpots, then a Super at the ramp",
+      "steps": [
+        {
+          "shot": "rocket-ramp",
+          "action": "Count the LED down",
+          "detail": "When it reads one, your next Rocket shot launches the multiball."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Clear the four jackpots",
+          "detail": "Their value scales with balls in play and how much you are hitting, so keep three alive."
+        },
+        {
+          "shot": "moon-targets",
+          "action": "Or light the Super early",
+          "detail": "Completing M-O-O-N in order during multiball lights the Super Jackpot without clearing all four.",
+          "link": "none"
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Take the Super",
+          "detail": "Collecting it restarts another round of three-ball multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "thirteen-ball",
+      "title": "13-Ball",
+      "category": "multiball",
+      "summary": "Complete the eight BLASTOFF letters and the next multiball is thirteen balls instead of three. Three or four launch, then eight more arrive at once about five seconds later. The Rocket is lit for jackpots typically worth 100 to 250 million.",
+      "difficulty": 3,
+      "reward": "100M-250M jackpots, then a Super at the ramp",
+      "steps": [
+        {
+          "shot": "blastoff-ramp",
+          "action": "Collect BLASTOFF letters",
+          "detail": "The yellow lamp lights at the start of every ball; you also start the game holding one letter for free."
+        },
+        {
+          "shot": "rocket-ramp",
+          "action": "Shoot the Rocket for jackpots",
+          "detail": "The centre post is not raised after a 13-Ball jackpot, so the return heads straight down the middle — be ready to save it or knock it with another ball."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Take the Super after five",
+          "detail": "Five jackpots light the Super at the ramp; collecting it drops you into regular three-ball multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "blastoff-combos",
+      "title": "Blastoff Combos",
+      "category": "combo",
+      "summary": "When the yellow lamp is out, a BLASTOFF letter can still be taken as a combo. Which combo depends on where the ramp diverter is pointing: ramp into ramp, or ramp into left orbit into ramp. Any other switch in between kills it.",
+      "difficulty": 3,
+      "reward": "A BLASTOFF letter toward 13-Ball",
+      "steps": [
+        {
+          "shot": "blastoff-ramp",
+          "action": "Note where the diverter is pointing",
+          "detail": "It alternates inlanes after every made ramp shot, which decides which combo is available."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Take the orbit if it is the long version",
+          "detail": "Ramp into left orbit into ramp is the combo when the ball returns to the far side."
+        },
+        {
+          "shot": "blastoff-ramp",
+          "action": "Close it out",
+          "detail": "A weak ramp shot that falls back and trips an inlane can still be faked into a combo."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "spinner-value",
+      "title": "Build The Spinner",
+      "category": "strategy",
+      "summary": "Completing the 1 and 3 rollovers adds 250K to both the bumper value and the spinner value, each topping out at two million. Since the spinner backhands and CO2 runs entirely through it, getting that number up early quietly pays for the rest of the game.",
+      "difficulty": 1,
+      "reward": "Spinner and bumpers up to 2M each",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete 13 repeatedly",
+          "detail": "Each completion is 250K on both values."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Cash it on the spinner",
+          "detail": "Every spin pays the current value, and the shot is backhandable from the left flipper."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Remember the bumpers feed the Moon",
+          "detail": "A maxed bumper value makes Shoot The Moon climb far faster.",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "end-of-ball-bonus",
+      "title": "Fun With Bonus",
+      "category": "progression",
+      "summary": "The bonus is a straight count of the four things this game actually wants you to do. Knowing that changes what you shoot at when the ball is getting dangerous.",
+      "difficulty": 1,
+      "reward": "Millions per counted shot, doubled with the Mystery award",
+      "steps": [],
+      "instructions": [
+        "The bonus counts Rocket ramp shots, Blastoff ramp shots, orbits collected and missions started.",
+        "All four count equally, so a late safe ramp shot is worth as much as a hard orbit.",
+        "The Double Bonus award from Mystery doubles the whole figure.",
+        "Hold Bonus, also from Mystery, carries the count into your next ball."
+      ],
+      "fx": "space"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "a13-mystery",
+      "title": "Two Orbits Please",
+      "desc": "Light Mystery with D-O-C-K and collect it at the top saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mystery"
+    },
+    {
+      "id": "a13-moon",
+      "title": "Shoot The Moon",
+      "desc": "Complete M-O-O-N in order and collect the ramp hurry-up.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "shoot-the-moon"
+    },
+    {
+      "id": "a13-mission",
+      "title": "Go For Launch",
+      "desc": "Start any mission from the right saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "missions"
+    },
+    {
+      "id": "a13-video",
+      "title": "The Eagle Has Landed",
+      "desc": "Land the lunar module dead centre in Video Mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "video-mode"
+    },
+    {
+      "id": "a13-multiball",
+      "title": "Ignition",
+      "desc": "Count the Rocket LED down to one and start regular multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "regular-multiball"
+    },
+    {
+      "id": "a13-powerdown",
+      "title": "Power Down",
+      "desc": "Clear all six shots in Power Down before the clock runs out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "power-down"
+    },
+    {
+      "id": "a13-burn",
+      "title": "Off Course On Purpose",
+      "desc": "Run Manual Burn to the end of its timer without correcting the trajectory.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "manual-burn"
+    },
+    {
+      "id": "a13-undervolt",
+      "title": "Frozen At Forty-Two",
+      "desc": "Freeze the Under Volt value near its opening number and clear the majors.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "under-volt"
+    },
+    {
+      "id": "a13-13ball",
+      "title": "Thirteen Balls",
+      "desc": "Complete BLASTOFF and start 13-Ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "thirteen-ball"
+    },
+    {
+      "id": "a13-master-alarm",
+      "title": "Master Alarm",
+      "desc": "Play all nine missions and start the Master Alarm frenzy.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "master-alarm"
+    },
+    {
+      "id": "a13-splashdown",
+      "title": "Splashdown",
+      "desc": "Advance the spacecraft the whole way home and start Splashdown.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "splashdown"
+    }
+  ],
+  "drills": [
+    {
+      "id": "choose-before-you-plunge",
+      "title": "Choose Before You Plunge",
+      "text": "There is no aiming in this skill shot — you pick the award before launching and it lands no matter which lane the ball takes. Build the habit of choosing rather than defaulting: take Mystery until it hands you the two-orbit award, then switch to starting a mission. Turning the plunger handle locks whichever mission is flashing, bumper hits are what rotate it, and the lock only survives the current ball.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skill-shot",
+      "shots": [
+        "shooter-lane",
+        "pop-bumpers"
+      ]
+    },
+    {
+      "id": "post-and-trap",
+      "title": "Post and Trap",
+      "text": "The post between the flippers pops up after Rocket ramp and mission saucer shots, and the magnet under the rocket sends the ball straight back down at you. Let it hit the post and catch it there rather than swinging at it. Drill the rhythm — shoot, post, trap, shoot — until the return stops being a scramble.",
+      "reps": "15 returns",
+      "focus": "ball-control",
+      "goal": "rocket-2-ball",
+      "shots": [
+        "center-post",
+        "rocket-ramp",
+        "mission-saucer"
+      ]
+    },
+    {
+      "id": "inlane-then-far-orbit",
+      "title": "Inlane, Then Far Orbit",
+      "text": "Each inlane lights the opposite orbit for a few seconds, so the spacecraft only moves if you keep feeding those lanes. Alternate deliberately: inlane, far orbit, other inlane, other orbit. The switch inside the lane is what scores, so the ball never has to complete the circuit — and a slow one rolling back over that switch can credit two.",
+      "reps": "6 alternations without a break",
+      "focus": "flow",
+      "goal": "advance-spacecraft",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "build-then-backhand",
+      "title": "Build It, Then Backhand It",
+      "text": "Complete the 1 and 3 rollovers every time they come up — each completion raises what every later spin is worth, and the ceiling is high. Then drill the spinner itself as a left-flipper backhand, since it is one of the safer repeat shots on the table and an entire mission is collected there.",
+      "reps": "20 backhanded spinner shots",
+      "focus": "accuracy",
+      "goal": "spinner-value",
+      "shots": [
+        "top-lanes",
+        "spinner-lane"
+      ]
+    },
+    {
+      "id": "moon-in-order",
+      "title": "M-O-O-N in Order",
+      "text": "The targets only count in the order the game flashes them: leftmost first, and each hit moves the flash to the next. Work them from a trapped ball instead of spraying the bank, then collect at the Blastoff ramp. The hurry-up counts down slowly, so set that shot up properly rather than panicking into it.",
+      "reps": "5 completed sets",
+      "focus": "accuracy",
+      "goal": "shoot-the-moon",
+      "shots": [
+        "moon-targets",
+        "blastoff-ramp"
+      ]
+    },
+    {
+      "id": "commit-to-the-saucer",
+      "title": "Commit to the Saucer",
+      "text": "The mission saucer rejects more often than it should, which makes it a shot that punishes hesitation. Take it at full commitment from a cradle and never as a brush on the way past. Be set on the post when it kicks back out, because that is where the ball is going.",
+      "reps": "15 attempts, all committed",
+      "focus": "ball-control",
+      "goal": "missions",
+      "shots": [
+        "mission-saucer",
+        "center-post"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "space",
+  "actionButton": {
+    "present": false,
+    "how": "No button, but do not ignore the plunger handle — it is a control in its own right here. Twist it during the lunar landing to kill your sideways drift, and twist it before a plunge to lock in the flashing mission. The landing itself is flown on the flippers: one at a time to thrust sideways, both at once to thrust upward."
+  },
+  "howItPlays": {
+    "objective": "Apollo 13 is a rescue flight to bring the crippled Odyssey home. Steer the craft around the moon and back toward Earth through its mode ladder, run the emergency missions up to Master Alarm, and count the Rocket ramp down into multiball.",
+    "loop": [
+      "Choose your award before every plunge - keep taking Mystery until the two-orbit prize turns up, then start swapping over to a mission instead.",
+      "Roll a return lane to relight the far orbit, then collect that orbit to nudge the Odyssey one stage along, and each stage you reach hands you a fresh mode.",
+      "Let the bumpers rotate to the mission you want, lock it in with a twist of the plunger handle, and commit to the right saucer to start it.",
+      "Count the Rocket LED down and shoot the Rocket to launch multiball; finish the BLASTOFF letters and the next one becomes a thirteen-ball.",
+      "Play all nine missions to light Master Alarm and bring the craft the whole way home for Splashdown."
+    ],
+    "lights": [
+      {
+        "id": "spacecraft-orbits",
+        "name": "Spacecraft Orbits",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A lit orbit advances the spacecraft one notch; both start the game lit, and after that each return lane relights the orbit on the opposite side for a few seconds - it is the roll through the lane, not a flipper tap, that arms it.",
+        "flashing": null,
+        "control": null,
+        "then": "Alternate an inlane and the far orbit to keep the Odyssey moving; a slow ball that trickles back over the same orbit switch can even bank two. Each stage reached opens a mode - Video Mode, Power Down, Power Up - and the final leg brings the craft home for the Splashdown multiball.",
+        "goals": [
+          "advance-spacecraft",
+          "splashdown"
+        ]
+      },
+      {
+        "id": "mission-rotate",
+        "name": "Mission Select",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "mission-saucer"
+          }
+        ],
+        "lit": "The right saucer stays lit for a mission through normal play, and the flashing mission cycles every time the ball rattles a bumper.",
+        "flashing": null,
+        "control": {
+          "input": "plunger",
+          "effect": "twisting the plunger handle locks whichever mission is currently flashing, but the lock only lives for the ball in play - a fresh plunge wipes it, so there is no banking one for later",
+          "when": "with a mission flashing, before you launch the next ball"
+        },
+        "then": "Rotate to the mission you want, lock it with the handle, and commit fully to the saucer since it rejects a lazy shot. Grinding through all nine lights Master Alarm at the same saucer, a frenzy whose ramp jackpot has no ceiling.",
+        "goals": [
+          "missions",
+          "master-alarm"
+        ]
+      },
+      {
+        "id": "blastoff-letters",
+        "name": "BLASTOFF Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "blastoff-ramp"
+          }
+        ],
+        "lit": "The yellow lamp over the Blastoff ramp marks a BLASTOFF letter waiting to be taken; you open the game already holding one, and the lamp relights at the start of each ball.",
+        "flashing": "The red lamp over the same ramp means a Shoot The Moon hurry-up is standing by to collect.",
+        "control": null,
+        "then": "Spell all eight letters and the next multiball arrives as a thirteen-ball instead of a plain three. When the yellow lamp is dark a letter can still be stolen as a ramp-into-ramp combo, depending on which way the diverter is pointing.",
+        "goals": [
+          "thirteen-ball",
+          "blastoff-combos"
+        ]
+      },
+      {
+        "id": "moon-targets",
+        "name": "Shoot The Moon",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "moon-targets"
+          },
+          {
+            "shot": "blastoff-ramp"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "The M-O-O-N standups only count in the order they flash - the leftmost first, and every hit slides the flash to the next one along.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the word in order to light the red hurry-up at the Blastoff ramp, then collect it before it decays. Every bumper hit meanwhile has been piling its value onto that total, which is why a long game turns Shoot The Moon into a monster.",
+        "goals": [
+          "shoot-the-moon"
+        ]
+      },
+      {
+        "id": "rocket-countdown",
+        "name": "Rocket Multiball Counter",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "rocket-ramp"
+          },
+          {
+            "shot": "center-post"
+          }
+        ],
+        "lit": "The LED under the Rocket ramp shows how many Rocket shots are left before multiball; when it reads one, your next Rocket launches it.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the ramp to run the counter down, using the pop-up post between the flippers to catch the magnet-fed return rather than swinging at it. Multiball lights four jackpots across the orbits, spinner and saucer, with a Super waiting at the Blastoff ramp.",
+        "goals": [
+          "regular-multiball",
+          "rocket-2-ball"
+        ]
+      },
+      {
+        "id": "dock-mystery",
+        "name": "D-O-C-K Mystery",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "dock-targets"
+          },
+          {
+            "shot": "spinner-lane"
+          },
+          {
+            "shot": "top-saucer"
+          }
+        ],
+        "lit": "Clearing the D-O-C-K standups lights Mystery at the spinner lane, but the award itself is not paid there.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the lit spinner lane and let the ball ride up to the top saucer to collect. Hold out for the two-orbit award - it is worth a whole spacecraft stage - though a fifty-million Washing Machine turns up now and then.",
+        "goals": [
+          "mystery"
+        ]
+      },
+      {
+        "id": "spinner-value",
+        "name": "Spinner And Bumper Value",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "top-lanes"
+          },
+          {
+            "shot": "spinner-lane"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "The 1 and 3 rollovers at the top complete 13; every completion steps both the spinner value and the bumper value upward toward their ceiling.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish 13 whenever it comes around early, then cash the higher number on the backhandable spinner lane, which an entire CO2 mission is played through. A maxed bumper value also makes Shoot The Moon climb far quicker.",
+        "goals": [
+          "spinner-value"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Pick your skill-shot award every plunge and steer the spacecraft off the two lit orbits, relighting the far one with inlane passes. Complete 13 at the top rollovers early so the spinner and bumpers are worth real money later.",
+        "goals": [
+          "skill-shot",
+          "advance-spacecraft",
+          "spinner-value"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Run missions from the right saucer and count the Rocket LED down for regular multiball. Chase the spacecraft mode ladder through Power Down and Power Up, both of which pour out hundreds of millions when cleared.",
+        "goals": [
+          "missions",
+          "regular-multiball",
+          "power-down",
+          "power-up"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Master Alarm is the ceiling - play every mission to light it, then feed the Blastoff ramp for a jackpot that never ratchets back down. Splashdown crowns the spacecraft journey with an orbit-jackpot multiball, and completing BLASTOFF turns a multiball into a thirteen-ball worth hundreds of millions a shot.",
+        "goals": [
+          "master-alarm",
+          "splashdown",
+          "thirteen-ball"
+        ]
+      }
+    ]
+  }
+}

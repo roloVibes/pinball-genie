@@ -1,0 +1,44 @@
+/* ui/cookieWarning.css — D8's "browser blocked our sign-in cookie" banner.
+ * Sits at the very top of #app (main.ts prepends it), above the header —
+ * a real, dismissible warning, not a toast that auto-vanishes before a
+ * reader on a bad connection has time to read it. --danger-tinted (not
+ * amber): unlike the achievements sign-in invitation, this IS reporting
+ * something that went wrong. */
+.pg-cookie-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  padding-top: calc(12px + env(safe-area-inset-top));
+  background: rgba(255, 79, 94, 0.14);
+  border-bottom: 1px solid rgba(255, 79, 94, 0.4);
+}
+
+.pg-cookie-banner-text {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.pg-cookie-banner-close {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--text);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pg-cookie-banner-close:hover,
+.pg-cookie-banner-close:focus-visible {
+  border-color: var(--danger);
+  color: var(--danger);
+}

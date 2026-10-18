@@ -1,0 +1,1407 @@
+{
+  "machine": "Star Wars (Stern Pinball, 2017)",
+  "defaultFx": "space",
+  "shots": [
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Far-left lane hugging the left rail; a spinner sits in it. Hyperspace Hurry-up arms here."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.29,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Endor shot. Returns via left wireform. Extra Ball, Lightsaber Duel and Jedi Multiball light here.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "left-mini-loop",
+      "name": "Left Mini-Loop (Death Star Shot)",
+      "type": "loop",
+      "x": 0.36,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Left side of the center inner loop; the Death Star planet shot and Hyperspace Hurry-up collect. Pro locks a ball here; expands to the hyperloop on Prem/LE."
+    },
+    {
+      "id": "right-mini-loop",
+      "name": "Right Mini-Loop (Hoth Shot / Horseshoe)",
+      "type": "loop",
+      "x": 0.44,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Right entrance of the center inner loop; the Hoth planet shot and a favored multiplier-parking spot."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.65,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Steel ramp returning to the right inlane for clean loops; a blue shot in many modes.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Far-right lane; the 'right loop' completion shot for Hoth final and Lightsaber Duel."
+    },
+    {
+      "id": "death-star",
+      "name": "Death Star Lock / Center Shot",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Straight up center to the Death Star base; physical ball lock. Motorized exploding Death Star with interior standup on Prem/LE."
+    },
+    {
+      "id": "tie-target",
+      "name": "TIE Fighter Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Spring-mounted sculpted TIE Fighter; lit target starts the TIE hurry-up. Cumulative TIE count feeds Extra Ball and Jedi Multiball."
+    },
+    {
+      "id": "force-targets",
+      "name": "FORCE Drop Targets (5-Bank)",
+      "type": "drop-target",
+      "x": 0.19,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Diagonal 5-drop bank spelling F-O-R-C-E; each completion hands out the next FORCE award."
+    },
+    {
+      "id": "three-bank",
+      "name": "3-Bank Standup (Shot Multiplier)",
+      "type": "standup",
+      "x": 0.67,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Center standup bank below the TIE Fighter; builds the shot multiplier and is the primary skill-shot target. Rebounds feed straight down the middle."
+    },
+    {
+      "id": "right-scoop",
+      "name": "Right Eject (Mystery / Tatooine)",
+      "type": "scoop",
+      "x": 0.92,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Right eject hole; qualifies Tatooine modes and grants Mystery when lit."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner (Left Orbit Lane)",
+      "type": "spinner",
+      "x": 0.07,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Ripped by the Left Orbit shot."
+    },
+    {
+      "id": "left-standups",
+      "name": "Left Blue Standups (Jedi Training)",
+      "type": "standup",
+      "x": 0.29,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Center-left blue Jedi-Training standups; complete all within ~30s to level up."
+    },
+    {
+      "id": "right-standups",
+      "name": "Right Blue Standups (Jedi Training)",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Right-side blue Jedi-Training standups lining the right-ramp/orbit return."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Rollover Lanes",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three top lanes around the Death Star; completing them advances the Bonus multiplier."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane / Return Lane",
+      "type": "lane",
+      "x": 0.15,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Cycle inlane/outlane rollovers to arm the Hyperspace Hurry-up."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane / Return Lane",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Right return lane; part of the inlane/outlane rollover set."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumper Nest (Pict-o-Pops)",
+      "type": "bumper",
+      "x": 0.71,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Upper-center 2-pop + top-sling nest; random Pict-o-Pop awards including Extra Ball."
+    },
+    {
+      "id": "skill-shot-lane",
+      "name": "Plunge Skill Shot Rollover",
+      "type": "lane",
+      "x": 0.97,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Top of the shooter lane; soft-plunge rollover that spots the next FORCE award."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane (Escape)",
+      "type": "lane",
+      "x": 0.93,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Escape ball-save lights here (2nd FORCE award). Physical return gate on Prem/LE, virtual on Pro."
+    },
+    {
+      "id": "hyperloop",
+      "name": "Hyperspace Wireform Loop",
+      "type": "loop",
+      "x": 0.36,
+      "y": 0.7,
+      "trim": "premium-le",
+      "notes": "Premium/LE multi-level wireform that whips the ball around the playfield during Hyperspace Multiball; holds up to 5 balls."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-bonus-x",
+      "title": "Bonus X Skill Shot",
+      "category": "skillshot",
+      "summary": "Soft-plunge and hit the flashing center 3-bank to advance the end-of-ball Bonus multiplier.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier advance",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Soft-plunge and hit the lit flashing target of the center 3-bank",
+          "detail": "Middle target scores most; the target moves faster each time you make it."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-force-double",
+      "title": "Roving FORCE / Double Skill Shot",
+      "category": "skillshot",
+      "summary": "Pick off the roving lit FORCE drop to spot the next FORCE award, or ricochet the 3-bank into it for both awards at once.",
+      "difficulty": 3,
+      "reward": "Spot FORCE award (+ Bonus X on the double)",
+      "steps": [
+        {
+          "shot": "force-targets",
+          "action": "Plunge and pick off the moving lit FORCE drop target with the right flipper",
+          "detail": "Spots the next FORCE letter/award toward the ladder.",
+          "flipper": "right"
+        },
+        {
+          "shot": "three-bank",
+          "action": "For the secret double, ricochet the center-bank skill shot into the roving FORCE light",
+          "detail": "Collects Bonus X AND a FORCE letter in one shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-boba-fett-qualify",
+      "title": "Escape from Boba Fett (Qualify)",
+      "category": "combo",
+      "summary": "Chain lit combo shots so the ending shot lights white, then bank four white-arrow shots (last two in non-mode play).",
+      "difficulty": 3,
+      "reward": "Lights Escape from Boba Fett",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a combo: hit a lit shot, then the cyan-lit next shot, to end a chain",
+          "detail": "The shot that ended the combo lights with a white arrow."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the white-arrow shot to bank it"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Repeat until you bank four white-arrow shots total",
+          "detail": "The 3rd and 4th white shots must be collected outside any mode or multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-boba-fett-run",
+      "title": "Escape from Boba Fett (5-Shot Hurry-Up)",
+      "category": "combo",
+      "summary": "Fixed-order hurry-up chain; park the shot multiplier across it for a big finish (Han doubles it).",
+      "difficulty": 3,
+      "reward": "Big hurry-up score; Boba Fett complete (Jedi requirement)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp (hurry-up 1)"
+        },
+        {
+          "shot": "right-mini-loop",
+          "action": "Shoot the Right mini-loop (hurry-up 2)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp (hurry-up 3)"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Orbit (hurry-up 4)"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp again (hurry-up 5)",
+          "detail": "The 3-bank adds time; park the X (up to 40x) on the left ramp, which both opens and closes the chain."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-han-planet-stack",
+      "title": "Han Solo Planet Stack (Tatooine → Hoth → Endor)",
+      "category": "combo",
+      "summary": "Han's consistent multi-billion shot-by-shot line: start a planet mode solo right before its multiball so you exit with multipliers already built.",
+      "difficulty": 3,
+      "reward": "Consistent multi-billion planet stack",
+      "steps": [
+        {
+          "shot": "right-mini-loop",
+          "action": "Shoot the right horseshoe to light Hoth"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp to light Endor"
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Shoot the Right Scoop to qualify Tatooine and start Escape from Mos Eisley"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Work ramp shots plus the left mini-loop to complete the Tatooine mission",
+          "detail": "Escape from Mos Eisley completes at the left mini-loop."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Shoot the Right Scoop to start Tatooine Multiball; after Victory MB, run Hoth I at max multiplier into Hoth then Endor MB",
+          "detail": "Starting each mode solo just before its MB keeps the multiplier alive coming out."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-r2-death-star-endor",
+      "title": "R2-D2 Death Star + Endor Stack",
+      "category": "combo",
+      "summary": "The game-breaker: build the multiplier, stack Death Star I with Endor III, farm add-a-balls in Endor MB, then run Death Star MB and park 40x on the last shot.",
+      "difficulty": 3,
+      "reward": "1B+ ceiling",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Build the shot multiplier on the 3-bank"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Qualify Endor with 3 Left Ramp shots"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Qualify Death Star with 3 mini-loop shots and stack Death Star I with Endor III",
+          "detail": "Play Endor MB first to build multipliers and save the add-a-ball."
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Bring in Death Star MB with the add-a-balls; park the X (up to 40x) on the last remaining Death Star jackpot shot and repeat",
+          "detail": "Death Star MB scales harder than Endor."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-ramp-loop-flow",
+      "title": "Ramp Loop Flow Combo",
+      "category": "combo",
+      "summary": "Alternate the ramps, which feed back cleanly to a flipper, to extend the cyan combo chain toward Boba Fett white arrows.",
+      "difficulty": 2,
+      "reward": "Combo chain toward Boba Fett",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp; it feeds the right inlane/right flipper for a clean forehand at the Left Ramp"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Forehand the Left Ramp as the next cyan-lit shot",
+          "detail": "Continuing a cyan-lit shot re-lights the following shot.",
+          "flipper": "right"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep alternating ramps to extend the combo chain"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mb-tie-fighter",
+      "title": "TIE Fighter Multiball",
+      "category": "multiball",
+      "summary": "Destroy TIE Fighters at the 3-bank to light the TIE target, win the hurry-up, and start the 3-ball multiball.",
+      "difficulty": 2,
+      "reward": "3-ball TIE Fighter Multiball; Left Ramp Super Jackpot",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Hit the red-arrowed 3-bank standups to destroy TIE Fighters",
+          "detail": "5 destroyed (then 10, 15) lights the TIE Fighter target."
+        },
+        {
+          "shot": "tie-target",
+          "action": "Shoot the lit TIE Fighter target to begin the ~7-second hurry-up"
+        },
+        {
+          "shot": "tie-target",
+          "action": "Mash the action button through the hurry-up; destroy 35 TIE Fighters to start the 3-ball multiball",
+          "detail": "Roughly every 2nd press downs a fighter."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mb-hyperspace",
+      "title": "Hyperspace Multiball",
+      "category": "multiball",
+      "summary": "Cycle the inlanes to light a Hyperspace Hurry-up at the Left Orbit, collect it at the Death Star mini-loop, and bank two to start it.",
+      "difficulty": 3,
+      "reward": "Hyperspace Multiball",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Cycle the inlane/return-lane rollovers with the flippers to light the Hyperspace Hurry-up",
+          "detail": "Also uses the right inlane; re-completing them grows the value."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the lit Left Orbit — or the lit Right Ramp — to arm the Hyperspace Hurry-up",
+          "detail": "Both arrows turn yellow together, so take whichever one the ball lines up for."
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Collect the hurry-up at the Death Star (left mini-loop) shot; collect 2 to start the multiball",
+          "detail": "Premium/LE: the ball whips the physical hyperloop wireform."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mb-death-star",
+      "title": "Death Star Victory Multiball",
+      "category": "multiball",
+      "summary": "Complete the Death Star missions, then win Destroy the Death Star for the game's 6-ball Victory Multiball.",
+      "difficulty": 3,
+      "reward": "6-ball Victory Multiball + medals",
+      "steps": [
+        {
+          "shot": "left-mini-loop",
+          "action": "Shoot the Death Star (left mini-loop) 3× to light Mission Start"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Complete the required Death Star missions (e.g., Rescue the Princess) to light the final"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "In Destroy the Death Star, shoot ramps to light a 10-second hurry-up at the mini-loop"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Collect 3 escalating hurry-ups to destroy the Death Star and start the 6-ball Victory Multiball"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mb-hoth",
+      "title": "Escape from Hoth Victory Multiball",
+      "category": "multiball",
+      "summary": "Complete Hoth missions, then run the final: ion cannon at the Left Orbit, tow-cable the AT-AT at the mini-loop, ramps, then the Right Loop.",
+      "difficulty": 3,
+      "reward": "Hoth Victory Multiball",
+      "steps": [
+        {
+          "shot": "right-mini-loop",
+          "action": "Shoot the Hoth (right mini-loop) 3× to light Mission Start and finish its missions"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "In Escape from Hoth, shoot the Left Orbit 3× to prep the ion cannon"
+        },
+        {
+          "shot": "three-bank",
+          "action": "Hit any 3-bank shot to fire the ion cannon (runs concurrently)"
+        },
+        {
+          "shot": "right-mini-loop",
+          "action": "Tow-cable the AT-AT with 4 mini-loop shots, then make the last 2 ramp shots"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the Right Orbit to start Victory Multiball"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-rescue-princess",
+      "title": "Rescue the Princess (Death Star)",
+      "category": "mode",
+      "summary": "The all-character Death Star opener: complete four escalating hurry-up shots.",
+      "difficulty": 2,
+      "reward": "Death Star mission complete",
+      "steps": [
+        {
+          "shot": "left-mini-loop",
+          "action": "Qualify Death Star with 3 left mini-loop shots, then start Rescue the Princess"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Orbit (hurry-up 1)"
+        },
+        {
+          "shot": "right-mini-loop",
+          "action": "Shoot both sides of the mini-loop"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp to finish the four hurry-ups",
+          "detail": "First hurry-up 2M, escalates each time, caps at 25M."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-video-asteroid",
+      "title": "Video Mode (Asteroid Field)",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Lit by the 3rd FORCE completion (or Hoth); fly the Falcon dodging asteroids, with shot multipliers applying to the score.",
+      "difficulty": 1,
+      "reward": "Video Mode points",
+      "steps": [
+        {
+          "shot": "force-targets",
+          "action": "Complete the FORCE bank 3× (Mystery → Escape → Video Mode) to light Video Mode at the right mini-loop"
+        },
+        {
+          "shot": "right-mini-loop",
+          "action": "Shoot the lit right mini-loop to start Video Mode"
+        },
+        {
+          "shot": "right-mini-loop",
+          "action": "Fly the Millennium Falcon with the flippers; action button boosts speed",
+          "detail": "Score scales with asteroids dodged; shot multipliers apply."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-throne-room",
+      "title": "Throne Room Duel (Endor)",
+      "category": "mode",
+      "summary": "Luke's Endor mode: combo the left and right ramps three times each.",
+      "difficulty": 3,
+      "reward": "Endor mission complete",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Qualify Endor with 3 Left Ramp shots, then start Throne Room Duel"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Combo the Left Ramp three times"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Combo the Right Ramp three times",
+          "detail": "Right mini-loop raises ramp values; after the first ramp the other is on a short timer that FORCE targets relight."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-rancor",
+      "title": "The Rancor (Tatooine)",
+      "category": "mode",
+      "summary": "Luke's Tatooine mode: shoot ramps to light the 3-bank damage phase.",
+      "difficulty": 2,
+      "reward": "Tatooine mission complete",
+      "steps": [
+        {
+          "shot": "right-scoop",
+          "action": "Qualify Tatooine with 3 Right Scoop shots, then start The Rancor"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot ramps to light the 3-bank; value builds with each ramp shot"
+        },
+        {
+          "shot": "three-bank",
+          "action": "Hit the lit 3-bank to damage the Rancor",
+          "detail": "The 2nd 3-bank hit requires both ramps first."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mult-build-move-x",
+      "title": "Shot Multiplier: Build & Move the X",
+      "category": "multiplier",
+      "summary": "The core scoring loop: build the multiplier on the 3-bank, toggle the X movable, and flipper-walk it onto your money shot.",
+      "difficulty": 2,
+      "reward": "value × up to 20x",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Hit the 3-bank standups to raise the shot multiplier (+1x each, 2x → 20x base)",
+          "detail": "Backhand the center bank to reset the decay timer."
+        },
+        {
+          "shot": "three-bank",
+          "action": "Press the action/lockbar button to toggle the X red (off/movable)"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "With the X red, use the flippers to walk it onto your money shot (e.g., the Death Star jackpot), toggle green, and collect",
+          "detail": "Spread shrinks: 3 shots below 5x, 2 shots 5–9x, 1 shot at 10x+."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-double-40x",
+      "title": "Double Multipliers (40x Ceiling)",
+      "category": "multiplier",
+      "summary": "The 4th FORCE award doubles the shot-multiplier cap to 40x; complete the top lanes to compound the Bonus X too.",
+      "difficulty": 3,
+      "reward": "40x shot ceiling",
+      "steps": [
+        {
+          "shot": "force-targets",
+          "action": "Complete the FORCE bank 4× to collect Double Multipliers",
+          "detail": "Raises the shot-multiplier cap from 20x to 40x while the timer runs."
+        },
+        {
+          "shot": "three-bank",
+          "action": "Rebuild the shot multiplier past 20x toward the 40x ceiling on the 3-bank"
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Complete the Top Lanes to advance the Bonus multiplier",
+          "detail": "Bonus X compounds the end-of-ball bonus."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-lightsaber-duel",
+      "title": "Lightsaber Duel (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Qualified by the 5th FORCE completion: blue shots help allies escape, red shots add time, then the Right Loop wins it.",
+      "difficulty": 3,
+      "reward": "Lightsaber Duel complete (Jedi requirement)",
+      "steps": [
+        {
+          "shot": "force-targets",
+          "action": "Complete the FORCE bank 5× to light Lightsaber Duel at the Left Ramp"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the lit Left Ramp to start Lightsaber Duel (only if no mode is active)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot blue shots (both mini-loops + right ramp) to help 3 allies escape; red shots (left ramp + 3-bank) add time"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "After 3 allies escape, shoot the Right Loop to win",
+          "detail": "Luke doubles the scoring; lock 40x here for huge points."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-jedi-multiball",
+      "title": "Jedi Multiball (Wizard) — Qualification",
+      "category": "wizard",
+      "summary": "Meet all five requirements; the wizard mode then lights at the Left Ramp as a 2-ball, 4-phase duel with the Emperor.",
+      "difficulty": 3,
+      "reward": "Jedi Multiball (wizard mode)",
+      "steps": [
+        {
+          "shot": "left-standups",
+          "action": "Reach Jedi Master by completing all Jedi Training levels on the blue standups",
+          "detail": "Uses both the left and right blue standup banks.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Complete Lightsaber Duel and Escape from Boba Fett (both required)",
+          "link": "none"
+        },
+        {
+          "shot": "tie-target",
+          "action": "Destroy 100 TIE Fighters cumulatively",
+          "link": "none"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Start all four planet final multiballs (Death Star, Endor, Hoth, Tatooine)",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "With all 5 requirements met, shoot the lit Left Ramp to start Jedi Multiball",
+          "detail": "Banked medals pay out first; 2-ball, 4-phase duel with the Emperor."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-opener",
+      "title": "First-30-Seconds Opener",
+      "category": "strategy",
+      "summary": "The character-agnostic foundation: skill shot, seat the multiplier, chip FORCE, then qualify a planet.",
+      "difficulty": 1,
+      "reward": "Foundation set for the ball",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Take the center 3-bank skill shot, then keep hitting it to seat the shot multiplier off 2x"
+        },
+        {
+          "shot": "force-targets",
+          "action": "Chip 1-2 FORCE drops toward the award ladder (Mystery / Escape / Video Mode)"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Begin the ×3 planet qualify (R2-D2: Endor + Death Star)",
+          "detail": "Park the X on whatever main shot you are about to hammer."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "strat-r2-tournament",
+      "title": "R2-D2 Tournament Line",
+      "category": "strategy",
+      "summary": "The #1 tournament plan: light Endor and Death Star, play Endor MB first to build the multiplier, then run Death Star MB with add-a-balls.",
+      "difficulty": 3,
+      "reward": "Highest repeatable ceiling",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Pick R2-D2 and qualify Endor with 3 Left Ramp shots"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Qualify Death Star with 3 mini-loop shots and stack Death Star with Endor"
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Play Endor MB first to build multipliers, save the add-a-ball, then run Death Star MB with 2 add-a-balls",
+          "detail": "Death Star scales harder; park 40x on the last shot."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "strat-drain-safety",
+      "title": "Drain-Risk Discipline",
+      "category": "strategy",
+      "summary": "Protect ball control: don't mash TIE fighters blindly, keep TIE Assault under ~35 as a ball save, and time out the multiplier rather than force a risky cash.",
+      "difficulty": 2,
+      "reward": "Ball preservation",
+      "steps": [
+        {
+          "shot": "tie-target",
+          "action": "Only mash the TIE hurry-up when you know where the ball rebounds; keep destroyed count under ~35 to preserve it as an in-multiball ball save"
+        },
+        {
+          "shot": "three-bank",
+          "action": "Respect center 3-bank rebounds — they feed straight down the middle"
+        },
+        {
+          "shot": "three-bank",
+          "action": "Time out the multiplier below ~20x rather than forcing a drain-prone shot to cash it",
+          "detail": "Save 40x for the Boba Fett hurry-up chain or Lightsaber Duel."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "mb-tie-super-jackpot",
+      "title": "TIE Multiball Super Jackpot",
+      "category": "multiball",
+      "summary": "Inside TIE Fighter Multiball, collect the lit jackpot shots first, then cash the Super Jackpot at the Left Ramp.",
+      "difficulty": 3,
+      "reward": "TIE Fighter Multiball Super Jackpot",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Keep hitting the 3-bank standups during the multiball to raise the shot multiplier",
+          "detail": "A parked multiplier on the Super Jackpot shot is where the points come from."
+        },
+        {
+          "shot": "tie-target",
+          "action": "Collect the lit jackpot shots to arm the Super Jackpot",
+          "detail": "Continue downing fighters with the action button while the multiball runs."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp to collect the Super Jackpot",
+          "detail": "Walk the X onto the ramp before you cash it."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mb-endor",
+      "title": "Endor Victory Multiball",
+      "category": "multiball",
+      "summary": "Qualify Endor at the Left Ramp, clear its missions, then bring in the Endor victory multiball and farm its add-a-balls.",
+      "difficulty": 3,
+      "reward": "Endor Victory Multiball (Jedi requirement)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp three times to qualify Endor and start a mission",
+          "detail": "Endor is the R2-D2 line's first planet for a reason: the ramp repeats cleanly."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Complete the Endor missions with the ramp shots each mission calls for",
+          "detail": "The right mini-loop raises ramp values while you work them."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the lit Left Ramp again to start Battle Above Endor, the Endor final that leads into Victory Multiball",
+          "detail": "Play this multiball before Death Star to build multipliers and hold its add-a-ball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mb-tatooine",
+      "title": "Tatooine Victory Multiball",
+      "category": "multiball",
+      "summary": "Qualify Tatooine at the Right Scoop, finish its missions, then start the Tatooine victory multiball.",
+      "difficulty": 3,
+      "reward": "Tatooine Victory Multiball (Jedi requirement)",
+      "steps": [
+        {
+          "shot": "right-scoop",
+          "action": "Shoot the Right Scoop three times to qualify Tatooine and start a mission",
+          "detail": "The scoop kicks back to a flipper, so repeat shots are manageable."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Work the ramp and mini-loop shots the active Tatooine mission asks for",
+          "detail": "Escape from Mos Eisley finishes at the left mini-loop; The Rancor finishes on the 3-bank."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Shoot the Right Scoop again to start Tatooine Victory Multiball",
+          "detail": "Starting the mission solo just beforehand keeps your multiplier alive into the multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mode-jedi-training",
+      "title": "Jedi Training to Jedi Master",
+      "category": "mode",
+      "summary": "Clear the blue standup banks level after level until you reach Jedi Master, one of the five wizard requirements.",
+      "difficulty": 3,
+      "reward": "Jedi Master status (Jedi requirement)",
+      "steps": [
+        {
+          "shot": "left-standups",
+          "action": "Hit the lit left blue standups to advance the current training level",
+          "detail": "Every blue standup on the playfield, both banks, has to go down inside about 30 seconds or the level does not advance."
+        },
+        {
+          "shot": "right-standups",
+          "action": "Hit the lit right blue standups to finish the level",
+          "detail": "Rebounds off these targets are flipper-catchable; take them off the ramps' return feeds."
+        },
+        {
+          "shot": "left-standups",
+          "action": "Repeat through every level until Jedi Master is awarded",
+          "detail": "Progress carries across balls, so chip at it whenever no mode is running."
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "wizard-jedi-duel-run",
+      "title": "Jedi Multiball — Running the Phases",
+      "category": "wizard",
+      "summary": "In the wizard mode, collect the lit jackpot shots to clear each phase of the duel with the Emperor until the mode is finished.",
+      "difficulty": 3,
+      "reward": "Jedi Multiball completed",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start Jedi Multiball at the lit Left Ramp and collect your banked medals",
+          "detail": "It runs as a two-ball multiball, so ball control matters more than speed."
+        },
+        {
+          "shot": "three-bank",
+          "action": "Rebuild the shot multiplier on the 3-bank between jackpot collects",
+          "detail": "Phase values escalate, so a parked X is worth far more late than early."
+        },
+        {
+          "shot": "left-mini-loop",
+          "action": "Collect the lit jackpot shots to clear each phase of the duel",
+          "detail": "Complete every blue shot to clear a phase and add a ball. If the timer runs out the blue shots go dark and one or two red shots light on a short timer — hit one of those or the Emperor wins and the mode ends."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish the last phase to complete the mode",
+          "detail": "Keep a ball cradled while you set up each phase-ending shot."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "pregame-character-select",
+      "title": "Choose Your Character Before the First Ball",
+      "category": "secret",
+      "summary": "Star Wars hands you a character choice the moment the game starts, before the first ball is ever in play, and nothing on the playfield tells you a decision is being asked for. The pick reshapes which rules run in your favour for the whole game, and some planet modes are simply unreachable with the wrong character.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Press Start to begin the game",
+        "Use the left flipper button to cycle through the four characters shown on the display",
+        "Make your choice at the start of the first ball — it holds for the whole game",
+        "Finishing the wizard mode sends you back to the character screen, and the next loop has to be run with someone you have not used yet"
+      ],
+      "reward": "Locks in Luke, Leia, Han Solo, or R2-D2 for the game, each giving different scoring benefits and opening different planet modes"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "bonus-multiplier-opener",
+      "title": "Clean Opening Shot",
+      "desc": "Hit the flashing center 3-bank target off the plunge to bank a bonus multiplier advance.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-bonus-x"
+    },
+    {
+      "id": "asteroid-field-run",
+      "title": "Through the Asteroids",
+      "desc": "Light and play the asteroid-dodging video mode from the third FORCE bank completion.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-video-asteroid"
+    },
+    {
+      "id": "tie-swarm-multiball",
+      "title": "Swarm Broken",
+      "desc": "Down enough TIE fighters to arm the TIE target, win the hurry-up, and start TIE Fighter Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-tie-fighter"
+    },
+    {
+      "id": "first-planet-mission",
+      "title": "First Mission Down",
+      "desc": "Qualify a planet and complete a full planet mission, such as the Death Star princess rescue.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-rescue-princess"
+    },
+    {
+      "id": "tie-super-jackpot",
+      "title": "Squadron Super",
+      "desc": "Collect the Super Jackpot during TIE Fighter Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-tie-super-jackpot"
+    },
+    {
+      "id": "hyperspace-jump",
+      "title": "Jump to Hyperspace",
+      "desc": "Cycle the return lanes, arm two Hyperspace hurry-ups, and start Hyperspace Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-hyperspace"
+    },
+    {
+      "id": "twenty-x-shot",
+      "title": "Twenty Times Over",
+      "desc": "Build the shot multiplier to its base ceiling of 20x and cash it on a major shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-build-move-x"
+    },
+    {
+      "id": "bounty-hunter-lit",
+      "title": "Bounty Hunter Marked",
+      "desc": "Chain combos until four ending shots turn white, lighting the Boba Fett escape hurry-up.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-boba-fett-qualify"
+    },
+    {
+      "id": "tatooine-getaway",
+      "title": "Off the Desert World",
+      "desc": "Finish the Tatooine missions and start the Tatooine victory multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-tatooine"
+    },
+    {
+      "id": "forty-x-shot",
+      "title": "Doubled Ceiling",
+      "desc": "Collect the fourth FORCE award and push a single shot to the doubled 40x ceiling.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult-double-40x"
+    },
+    {
+      "id": "bounty-hunter-escape",
+      "title": "Bounty Hunter Shaken",
+      "desc": "Complete the full five-shot Boba Fett escape hurry-up chain.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-boba-fett-run"
+    },
+    {
+      "id": "battle-station-destroyed",
+      "title": "Battle Station Destroyed",
+      "desc": "Complete the Death Star missions and the final hurry-up sequence to start the six-ball victory multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-death-star"
+    },
+    {
+      "id": "ice-world-breakout",
+      "title": "Off the Ice World",
+      "desc": "Complete the Hoth missions and the escape final to start the Hoth victory multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-hoth"
+    },
+    {
+      "id": "forest-moon-strike",
+      "title": "Forest Moon Strike",
+      "desc": "Complete the Endor missions and start the Endor victory multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-endor"
+    },
+    {
+      "id": "saber-duel-won",
+      "title": "Duel Won",
+      "desc": "Reach the fifth FORCE award, start the lightsaber duel mini-wizard mode, and win it at the right loop.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-lightsaber-duel"
+    },
+    {
+      "id": "jedi-master-trained",
+      "title": "Training Complete",
+      "desc": "Clear every Jedi Training level on the blue standup banks to reach Jedi Master.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-jedi-training"
+    },
+    {
+      "id": "jedi-multiball-reached",
+      "title": "Called to the Throne",
+      "desc": "Satisfy all five wizard requirements and start Jedi Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-jedi-multiball"
+    },
+    {
+      "id": "jedi-multiball-finished",
+      "title": "Emperor Answered",
+      "desc": "Play Jedi Multiball all the way through its final phase.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-jedi-duel-run"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-three-bank-skill-shot",
+      "title": "Soft Plunge To The Flashing Target",
+      "text": "Soft-plunge and take the flashing target on the centre 3-bank, aiming for the middle one where it pays most. The lit target moves faster every time you make it, so the drill is really about reading it before the ball arrives.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-bonus-x",
+      "shots": [
+        "three-bank"
+      ]
+    },
+    {
+      "id": "drill-build-and-walk-the-x",
+      "title": "Build It, Walk It, Lock It",
+      "text": "Run the whole multiplier routine as one motion: hit the 3-bank to climb, press the button to turn the X red, walk it with the flippers onto the shot you are about to hammer, then press again to lock it green. The multiplier decays while you are deciding, so hesitation costs you the same as a miss.",
+      "reps": "10 full routines",
+      "focus": "accuracy",
+      "goal": "mult-build-move-x",
+      "shots": [
+        "three-bank"
+      ]
+    },
+    {
+      "id": "drill-three-bank-rebound",
+      "title": "Respect The Rebound",
+      "text": "Shoot the centre 3-bank from a settled cradle and be ready for the return, because rebounds off that bank come straight back down the middle. You will be feeding this bank all game, so make the recovery part of the shot rather than a surprise.",
+      "reps": "1 full ball on the bank",
+      "focus": "ball-control",
+      "goal": "strat-drain-safety",
+      "shots": [
+        "three-bank"
+      ]
+    },
+    {
+      "id": "drill-ramp-alternation",
+      "title": "Ramp Alternation",
+      "text": "Shoot the right ramp, let it feed the right inlane, and forehand the left ramp off that feed. Keep alternating without cradling; the cyan chain only extends while you keep taking the next lit shot.",
+      "reps": "10 alternations",
+      "focus": "flow",
+      "goal": "combo-ramp-loop-flow",
+      "shots": [
+        "right-ramp",
+        "right-inlane",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "drill-jedi-training-sweep",
+      "title": "Blue Standup Sweep",
+      "text": "Take every blue standup on both banks inside the level's short window, working the rebounds off the ramp return feeds where they are catchable. A level that does not complete in time does not advance, and Jedi Master is a wizard-mode requirement you cannot buy any other way.",
+      "reps": "5 level attempts",
+      "focus": "accuracy",
+      "goal": "mode-jedi-training",
+      "shots": [
+        "left-standups",
+        "right-standups"
+      ]
+    },
+    {
+      "id": "drill-boba-fett-order",
+      "title": "Boba Fett, In Order",
+      "text": "Rehearse the fixed chain cold: left ramp, right mini-loop, right ramp, left orbit, left ramp again. Park the multiplier on the left ramp before you start, since that shot both opens and closes the run.",
+      "reps": "5 full chains",
+      "focus": "flow",
+      "goal": "combo-boba-fett-run",
+      "shots": [
+        "left-ramp",
+        "right-mini-loop",
+        "right-ramp",
+        "left-orbit"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "The busiest button of its era. It parks and unparks your shot multiplier, confirms mode picks, and turns into a trigger during the TIE Fighter hurry-up. Learning it is most of learning this game's scoring.",
+    "uses": [
+      {
+        "when": "Multiplier sitting on the wrong shot",
+        "what": "Tap to turn the X red so the flippers can move it, then tap again to lock it green on your money shot."
+      },
+      {
+        "when": "Starting a planet mode",
+        "what": "Flippers scroll the available modes and the button confirms the one you want."
+      },
+      {
+        "when": "Right after the TIE hurry-up cashes",
+        "what": "Mash for 7 seconds — every second press downs a fighter, and 35 of them starts TIE Fighter Multiball."
+      },
+      {
+        "when": "FORCE completed in a final mode",
+        "what": "Hold it to spend the add-a-ball during that planet's victory multiball; it carries over if unused."
+      },
+      {
+        "when": "Flying the Falcon in video mode",
+        "what": "Flippers steer, the button gives you speed."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Star Wars runs fast and mean around a shot multiplier you build on the center bank and then slide onto whatever you are about to shoot. Choose Luke, Leia, Han, or R2-D2, take the four planets to their Victory Multiballs, and meet five requirements to reach Jedi Multiball.",
+    "loop": [
+      "Pound the center 3-bank to raise the shot multiplier, then tap the action button to unlock the X and drag it over your chosen shot with the flippers.",
+      "Knock down the FORCE drops for a fresh award every pass - Mystery, Escape, Video Mode, a 40x boost, then a Lightsaber Duel - while stray 3-bank hits blow up TIE Fighters.",
+      "Feed a planet its three qualifying shots, run the mission it hands you, and bring in that planet's Victory Multiball.",
+      "Start a mode right before its multiball with a big X parked, and re-roll the return-lane rollovers to arm a Hyperspace Hurry-up.",
+      "Reach Jedi Master, clear Lightsaber Duel and Boba Fett, down a hundred TIE Fighters, and start all four planet finals to light Jedi Multiball at the Left Ramp."
+    ],
+    "lights": [
+      {
+        "id": "shot-multiplier",
+        "name": "Shot Multiplier (The X)",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "three-bank"
+          },
+          {
+            "shot": "left-mini-loop"
+          }
+        ],
+        "lit": "Every hit on the center 3-bank steps the shot multiplier up a notch, from 2x toward a 20x base, and it bleeds back down on a timer unless you keep the bank fed.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "tap the button to turn the X red so it will move, drag it across the playfield with the flipper buttons, then press once more to set it green on the shot you picked",
+          "when": "just before you commit to a big shot"
+        },
+        "then": "Park the X on your money shot - the Death Star jackpot, a mode super, a hurry-up - so that one shot pays many times over. The fourth FORCE award doubles the ceiling to 40x, which is what you hold back for the Boba Fett chain or a wizard jackpot.",
+        "goals": [
+          "mult-build-move-x",
+          "mult-double-40x"
+        ]
+      },
+      {
+        "id": "force-drops",
+        "name": "FORCE Drop Targets",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "force-targets",
+            "lamps": 5
+          }
+        ],
+        "lit": "The FORCE bank stands as five red drop targets, a standing one is a letter you still need, and clearing the whole set once climbs you a rung up the award ladder.",
+        "flashing": "Off the plunge a single FORCE target roves lit for the skill shot, so pick it off to spot the next award.",
+        "control": null,
+        "then": "Complete the bank over and over to walk the ladder up - Mystery, Escape, Video Mode, the 40x Double Multipliers, and finally the Lightsaber Duel mini-wizard. Each level is its own reward, so keep chipping the drops between everything else.",
+        "goals": [
+          "skillshot-force-double",
+          "mode-video-asteroid",
+          "mult-double-40x",
+          "wizard-lightsaber-duel"
+        ]
+      },
+      {
+        "id": "tie-fighters",
+        "name": "TIE Fighter Assault",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "three-bank"
+          },
+          {
+            "shot": "tie-target"
+          }
+        ],
+        "lit": "Red arrows on the 3-bank standups mean each hit shoots down a TIE Fighter, and downing enough of them lights the TIE Fighter target.",
+        "flashing": "The lit TIE target opens a roughly seven-second hurry-up the moment you strike it.",
+        "control": {
+          "input": "action-button",
+          "effect": "mash the button through the hurry-up, where about every second press downs another fighter",
+          "when": "the instant the TIE hurry-up begins"
+        },
+        "then": "Down 35 fighters inside that window to launch TIE Fighter Multiball, then walk the X onto the Left Ramp for its Super Jackpot. A hundred fighters across the game is one of the five Jedi requirements, so keep the arrows working.",
+        "goals": [
+          "mb-tie-fighter",
+          "mb-tie-super-jackpot"
+        ]
+      },
+      {
+        "id": "planet-shots",
+        "name": "Planet Missions",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-scoop"
+          },
+          {
+            "shot": "right-mini-loop"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-mini-loop"
+          }
+        ],
+        "lit": "Each planet sits on its own shot - Tatooine at the Right Scoop, Hoth at the right horseshoe, Endor at the Left Ramp, Death Star at the left mini-loop - and three shots there qualifies that planet's mission.",
+        "flashing": null,
+        "control": null,
+        "then": "Run the mission a planet hands you, then take its final to start a Victory Multiball, up to six balls on the Death Star. Starting a mode solo just before its multiball keeps the multiplier alive into it, and all four planet finals are a Jedi requirement.",
+        "goals": [
+          "mb-endor",
+          "mb-death-star",
+          "mb-tatooine",
+          "mb-hoth"
+        ]
+      },
+      {
+        "id": "hyperspace-inlanes",
+        "name": "Hyperspace Return Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A lit return-lane rollover is one you have not yet banked toward the Hyperspace Hurry-up, roll it to collect it, and re-completing the pair grows the value each time.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap a flipper button to hop the lit rollover between the two return lanes, so you can set it under whichever inlane is about to feed the ball back",
+          "when": "as the ball drops toward the inlanes"
+        },
+        "then": "Complete both return lanes to arm the Hyperspace Hurry-up on the Left Orbit and Right Ramp, then gather it in at the Death Star mini-loop. Bank two of those hurry-ups to start Hyperspace Multiball, which whips the ball around a physical wireform on the fancier builds.",
+        "goals": [
+          "mb-hyperspace"
+        ]
+      },
+      {
+        "id": "jedi-training",
+        "name": "Jedi Training Standups",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-standups"
+          },
+          {
+            "shot": "right-standups"
+          }
+        ],
+        "lit": "The blue standups on both banks light for the current training level, and you clear every lit one inside a tight window to advance a rung toward Jedi Master.",
+        "flashing": null,
+        "control": null,
+        "then": "Chip these whenever no mode is running, since the progress carries from ball to ball. Reaching Jedi Master is the first of the five demands for Jedi Multiball.",
+        "goals": [
+          "mode-jedi-training",
+          "wizard-jedi-multiball"
+        ]
+      },
+      {
+        "id": "jedi-multiball",
+        "name": "Jedi Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "The Left Ramp lights for Jedi Multiball only once all five requirements are met - Jedi Master, Lightsaber Duel, Escape from Boba Fett, a hundred TIE Fighters, and all four planet finals.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the lit ramp to open a two-ball, four-phase duel with the Emperor that pays your banked medals out first. Rebuild the X on the 3-bank between phases, because the late phases are worth far more than the early ones.",
+        "goals": [
+          "wizard-jedi-multiball",
+          "wizard-jedi-duel-run"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to hop the lit rollover between the two return lanes; line it up with the inlane the ball is dropping into and roll through to bank it. Complete the pair to arm the Hyperspace Hurry-up, and re-completing it climbs the value toward Hyperspace Multiball.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the center 3-bank skill shot and keep hitting the bank to seat the multiplier off 2x, chip a FORCE award or two, and begin qualifying your first planet. Pick your character before the ball even launches, since that choice decides which planets and perks are yours.",
+        "goals": [
+          "strat-opener",
+          "skillshot-force-double",
+          "mult-build-move-x",
+          "pregame-character-select"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack a planet mode into its Victory Multiball with the X parked, run TIE Fighter Multiball off the 3-bank, and arm Hyperspace off the return lanes. The R2-D2 line is the strongest: light Endor and Death Star together, play Endor first to build multipliers, then run Death Star with its add-a-balls.",
+        "goals": [
+          "combo-han-planet-stack",
+          "mb-tie-fighter",
+          "mb-hyperspace",
+          "strat-r2-tournament"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Jedi Multiball is the summit - meet all five requirements to light it at the Left Ramp for the two-ball duel with the Emperor. Along the way the R2-D2 Death Star and Endor stack, with 40x parked on the last jackpot, is where a single ball tips past a billion.",
+        "goals": [
+          "wizard-jedi-multiball",
+          "wizard-jedi-duel-run",
+          "combo-r2-death-star-endor"
+        ]
+      }
+    ]
+  }
+}

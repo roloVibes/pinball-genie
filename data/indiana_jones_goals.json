@@ -1,0 +1,1313 @@
+{
+  "machine": "Indiana Jones: The Pinball Adventure (Williams, 1993)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Auto-launched from a six-shooter housing. There is no skill shot on this game, so nothing is lost by letting it fire."
+    },
+    {
+      "id": "gun-trigger",
+      "name": "Gun Trigger",
+      "type": "mech",
+      "x": 0.97,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "The trigger on the plunger gun is a real button. It fires your pick in Choose Wisely and can shoot the swordsman in Streets of Cairo for a token 2M."
+    },
+    {
+      "id": "mode-saucer",
+      "name": "Start Mode Saucer",
+      "type": "saucer",
+      "x": 0.26,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A short tunnel into a saucer just right of the left orbit. The hardest and most important shot on the machine — modes, Hand of Fate and most extra balls all live here."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.13,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Feeds around to the right flipper, or is stopped by a gate at the top depending on the mode. Worth 1M plus 2M for every lit Friend when it is lit.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "adv-targets",
+      "name": "A-D-V Targets",
+      "type": "target-bank",
+      "x": 0.11,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "Three standups on the left, the first third of ADVENTURE. Once this group is complete, a hit anywhere on it spots the next unlit letter elsewhere."
+    },
+    {
+      "id": "path-of-adventure",
+      "name": "Path of Adventure",
+      "type": "mini-playfield",
+      "x": 0.24,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "A raised playfield you tilt left and right with the flippers to steer the ball across eight rollovers, or into The Pit and the extra ball hole. Fifteen seconds per visit.",
+      "playfield": "path-of-adventure-zone"
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.38,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Steep, returns to the left inlane. Lights the multiball Jackpot, feeds Dogfight progress and cycles which mode is queued at the saucer.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "ent-targets",
+      "name": "E-N-T Drop Targets",
+      "type": "drop-target",
+      "x": 0.44,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Three drop targets guarding the sinkhole and the Raise Jackpot target. Drop just the T and the sinkhole is already reachable."
+    },
+    {
+      "id": "lock-sinkhole",
+      "name": "Lock / Hurry Up Sinkhole",
+      "type": "scoop",
+      "x": 0.46,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Behind the E-N-T targets. Locks balls, collects the Dogfight hurry-up, and multiplies the Jackpot during multiball. The second most valuable shot to learn."
+    },
+    {
+      "id": "raise-jackpot",
+      "name": "Raise Jackpot Target",
+      "type": "standup",
+      "x": 0.53,
+      "y": 0.69,
+      "trim": "all",
+      "notes": "A small target tucked behind the E and N drops. Adds to the jackpot total, collects Dogfight, and spots an ADVENTURE letter while the drops are down."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.42,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Three of them behind the sinkhole and under the left ramp. Seventy-five hits starts Super Pops, which then runs for the rest of the ball."
+    },
+    {
+      "id": "indy-rollovers",
+      "name": "I-N-D-Y Rollovers",
+      "type": "rollover",
+      "x": 0.44,
+      "y": 0.91,
+      "trim": "all",
+      "notes": "Four lanes behind the bumpers, moved left and right with the flippers. Completing them steps the bonus multiplier, lights a Friend and re-arms the inlanes."
+    },
+    {
+      "id": "captive-drop",
+      "name": "Captive Ball Drop Target",
+      "type": "drop-target",
+      "x": 0.59,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "A single drop guarding the captive ball. Three hits in a game leave it down and light Quick Multiball; during a mode it pays a 2M mode bonus."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.62,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Two switches: the front one always registers, the back one only on a genuinely hard hit and is worth substantially more. Super Jackpot is collected here."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Normally returns to the right flipper, but diverts to the left when it is lit for Jackpot or Path of Adventure. Collects both the multiball Jackpot and the Loop Jackpot.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.87,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Mirror of the left orbit. Both count as loops for Tank Chase and Monkey Brains, and both pay the lit loop value.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "ure-targets",
+      "name": "U-R-E Targets",
+      "type": "target-bank",
+      "x": 0.89,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "The last third of ADVENTURE, facing the A-D-V bank across the playfield."
+    },
+    {
+      "id": "idol",
+      "name": "The Idol",
+      "type": "lock",
+      "x": 0.84,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Holds up to three locked balls. An elephant call plays just before each ball is kicked out, which is genuinely useful warning during multiball."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.23,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights Hand of Fate when lit. Both inlanes start each ball lit for it."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.77,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Also lights Hand of Fate. A one-way gate in the lane divider lets balls returning from the Idol reach the flipper."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Collects Special when lit. Adjustable, though not as brutally as on Twilight Zone."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Home of the Narrow Escape. A post at the crook can bounce the ball back through the gate into the inlane, and the game credits the escape off the first rollover."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.36,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Full length. Feeds the right ramp, right orbit and captive ball. The gap between the flippers is small for a widebody."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.64,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the left ramp, left orbit and the Start Mode saucer."
+    }
+  ],
+  "goals": [
+    {
+      "id": "indy-lanes",
+      "title": "Spell I-N-D-Y",
+      "category": "multiplier",
+      "summary": "The four lanes behind the bumpers are the backbone of the game. Each completion steps the bonus multiplier to 2x, 4x, 6x and 8x, lights one of Indy's Friends, and relights both inlanes for Hand of Fate.",
+      "difficulty": 1,
+      "reward": "Bonus 2x to 8x, a lit Friend, inlanes relit",
+      "steps": [
+        {
+          "shot": "indy-rollovers",
+          "action": "Move the lanes with the flippers",
+          "detail": "Lit rollovers shift left and right on flipper presses, so most completions are free."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Cash the 8x extra ball",
+          "detail": "At 8x the saucer lights for extra ball; collecting it drops the multiplier back to 1x on the next ball."
+        },
+        {
+          "shot": "indy-rollovers",
+          "action": "Keep going past 8x",
+          "detail": "Further completions pay a 10M Maximum Bonus instead of another multiplier step."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "hand-of-fate",
+      "title": "The Hand of Fate",
+      "category": "mode",
+      "summary": "Both inlanes begin each ball lit for Hand of Fate. Roll either one and the Start Mode saucer holds a random award for a short time — the display shows four candidates and then picks one.",
+      "difficulty": 2,
+      "reward": "One random award from a large pool",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Light it in the inlane",
+          "detail": "Completing I-N-D-Y relights the inlanes once you have used them."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Collect at the saucer before it times out",
+          "detail": "The pool includes 10M, 20M, Light Extra Ball, Eternal Life, Quick Multiball, Bonus X, Dogfight, Loop Person, Lock Ball, Light Path and Super Pops."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Take the extra ball twice",
+          "detail": "If Light Extra Ball appears among the four candidates it is always the one awarded — then shoot the saucer again to collect the ball itself."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "modes-overview",
+      "title": "How The Twelve Modes Work",
+      "category": "progression",
+      "summary": "Twelve movie scenes, four from each film, started at the Start Mode saucer whenever no other mode or multiball is running. Understanding how they are queued and scored is worth more than any single one of them.",
+      "difficulty": 1,
+      "reward": "5M for starting any mode, plus mode score into end-of-ball bonus",
+      "steps": [],
+      "instructions": [
+        "Every mode pays 5M just for starting, and all mode scoring is added to your end-of-ball bonus rather than straight to your score.",
+        "Ramp shots — not the pop bumpers — change which mode is queued next, so you can count ramps to line up the one you want.",
+        "During a mode, the Start Mode saucer is worth a 1M mode bonus and the captive ball drop target is worth 2M.",
+        "Those bonuses do not apply during Castle Grunewald, during Streets of Cairo after you find Marion, or during any video mode where the ball is parked.",
+        "Modes are the practical route to extra balls: Survive the Rope Bridge and the Raven Bar video mode both light one.",
+        "Most modes cap out around 60M, so no single mode wins the game — starting all twelve does, because that is what lights the wizard mode."
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-select",
+      "title": "Pick Your Mode With The Ramps",
+      "category": "strategy",
+      "summary": "This game lets you choose. The queued mode advances on ramp shots, so count ramps until the mode you actually want is showing, then take the saucer. It is the single biggest skill edge available here.",
+      "difficulty": 2,
+      "reward": "Control over which mode you play",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Step the mode along",
+          "detail": "Each ramp moves the queued mode one place through the twelve."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Use either ramp",
+          "detail": "Alternating ramps also builds the 1M, 2M, 3M ramp ladder while you are stepping.",
+          "link": "none"
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Start it when the right one shows",
+          "detail": "Aim for Survive the Rope Bridge or the Raven Bar video mode early — both light an extra ball."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "adventure-targets",
+      "title": "Spell A-D-V-E-N-T-U-R-E",
+      "category": "progression",
+      "summary": "Nine letters across three banks: A-D-V on the left, E-N-T on the drop targets, U-R-E on the right. Completing all nine lights the right ramp for the Path of Adventure.",
+      "difficulty": 2,
+      "reward": "Lights Path of Adventure at the right ramp",
+      "steps": [
+        {
+          "shot": "adv-targets",
+          "action": "Finish a bank early",
+          "detail": "Once a group is complete, any further hit on it spots the next unlit letter anywhere on the playfield."
+        },
+        {
+          "shot": "ure-targets",
+          "action": "Sweep the right bank",
+          "detail": "The two standup banks face each other, so a missed shot at one often rattles into the other."
+        },
+        {
+          "shot": "raise-jackpot",
+          "action": "Use the shortcut",
+          "detail": "With the E-N-T drops down, the Raise Jackpot target spots a letter for you."
+        }
+      ],
+      "fx": "quest",
+      "ordered": false
+    },
+    {
+      "id": "path-of-adventure",
+      "title": "Path of Adventure",
+      "category": "mode",
+      "summary": "Complete ADVENTURE, shoot the right ramp, and you are steering the ball across a raised playfield by tilting it with the flippers. You get fifteen seconds a visit and the lit rollovers grow by one each time you clear a set.",
+      "difficulty": 2,
+      "reward": "5M+ per rollover, extra ball on the first completed set",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the lit ramp",
+          "detail": "The ramp diverts to the left flipper while Path of Adventure is lit."
+        },
+        {
+          "shot": "path-of-adventure",
+          "action": "Tilt the field over the yellow lights",
+          "detail": "Each lit rollover is 5M, plus 1M for every time you spelled ADVENTURE without actually playing the Path, to a 10M ceiling per rollover."
+        },
+        {
+          "shot": "path-of-adventure",
+          "action": "Clear the first set for an extra ball",
+          "detail": "Completing a set of rollovers lights the extra ball hole up there; the lit count then grows by one per completion, up to six."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "the-pit",
+      "title": "Build The Pit",
+      "category": "strategy",
+      "summary": "The Pit is the biggest single award on the machine at 150M, and it is a patience play. Every Path of Adventure you complete without dropping into The Pit raises its value by 25M. Bank the completions first, cash it later.",
+      "difficulty": 3,
+      "reward": "Up to 150M",
+      "steps": [
+        {
+          "shot": "path-of-adventure",
+          "action": "Complete the rollovers, avoid the hole",
+          "detail": "Each clean completion adds 25M to the Pit up to its 150M ceiling."
+        },
+        {
+          "shot": "path-of-adventure",
+          "action": "Drop into The Pit when it is maxed",
+          "detail": "After The Pit is collected the lit rollovers start travelling, which makes further Path work considerably harder."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "dogfight",
+      "title": "Dogfight Hurry-Up",
+      "category": "mode",
+      "summary": "Six lit ramp shots light six small winged inserts. When the last one lights, a hurry-up starts at 40M and falls fast — collect it in the sinkhole behind the drop targets or on the Raise Jackpot target.",
+      "difficulty": 2,
+      "reward": "Up to 40M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Alternate lit ramps",
+          "detail": "Each lit ramp shot also spots one winged light towards Dogfight."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Collect the countdown",
+          "detail": "Leave the T target standing and the countdown will not start, which is how you collect the full 40M."
+        },
+        {
+          "shot": "raise-jackpot",
+          "action": "Or take it on the small target",
+          "detail": "The Raise Jackpot target collects Dogfight too and is reachable once the drops are down.",
+          "link": "none"
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "ramp-ladder",
+      "title": "Alternating Ramps",
+      "category": "combo",
+      "summary": "A lit ramp pays 1M and lights the other one via the inlane. Keep alternating and the ladder climbs 1M, 2M, 3M, 4M with no ceiling in sight, while feeding Dogfight and stepping your mode selection at the same time.",
+      "difficulty": 1,
+      "reward": "1M climbing per alternated ramp",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start on the left",
+          "detail": "The return feeds the left inlane and lights the right ramp."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Come straight back",
+          "detail": "Breaking the alternation drops you back to the bottom of the ladder."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "lit-loops",
+      "title": "Lit Orbit Loops",
+      "category": "combo",
+      "summary": "A lit orbit pays 1M plus 2M for every lit Friend, so it is never worth less than 3M and can reach 11M. Consecutive lit loops then multiply that base by 2, 3, 4 and beyond — this is where a good looper makes a fortune.",
+      "difficulty": 2,
+      "reward": "3M to 11M per loop, multiplied on consecutive loops",
+      "steps": [
+        {
+          "shot": "indy-rollovers",
+          "action": "Light Friends first",
+          "detail": "Each I-N-D-Y completion lights one Friend, and each lit Friend adds 2M to every loop."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Run loops back to back",
+          "detail": "Consecutive lit loops multiply the base value; players have carried the streak past 7x."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take whichever side feeds cleanly",
+          "detail": "Both orbits pay the same and both count toward the streak.",
+          "link": "none"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "loop-jackpot",
+      "title": "Loop Jackpot",
+      "category": "strategy",
+      "summary": "Light every Friend from the I-N-D-Y lanes, then shoot lit loops to turn each flashing Friend solid, then cash the whole lot at the right ramp. It starts at 5M and tops out at 200M — but if you do not collect before the ball ends, the value goes to zero.",
+      "difficulty": 3,
+      "reward": "5M base up to 200M",
+      "steps": [
+        {
+          "shot": "indy-rollovers",
+          "action": "Light all the Friends",
+          "detail": "A flashing insert between the slingshots marks a Friend that is lit but not yet solid."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Solidify them with lit loops",
+          "detail": "The jackpot equals the total of every lit loop you collected before cashing."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect at the right ramp",
+          "detail": "Draining first resets both the Friends and the Loop Jackpot value to nothing."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "lock-balls",
+      "title": "Lock Three Balls",
+      "category": "multiball",
+      "summary": "Drop the E-N-T targets to open the path to the sinkhole and light the lock. Three locked balls starts multiball. You can also lock with the targets standing — the game calls you out for cheating and pays 5M anyway.",
+      "difficulty": 2,
+      "reward": "Starts 3-ball multiball, 5M for a cheat lock",
+      "steps": [
+        {
+          "shot": "ent-targets",
+          "action": "Drop the targets",
+          "detail": "You only need the T down to have a clear path to the hole."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Lock the ball",
+          "detail": "Locked balls are held in the Idol on the right side of the playfield."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Repeat to three",
+          "detail": "On the third lock the boulder animation plays and multiball begins, with all three balls fed to the right flipper."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-jackpots",
+      "title": "The Ark, The Stones, The Grail",
+      "category": "multiball",
+      "summary": "Three jackpots in sequence worth 20M, 30M and 40M at base. The left ramp or the sinkhole lights the jackpot; the right ramp collects it. Balls parked in the sinkhole multiply the whole value by two or three.",
+      "difficulty": 2,
+      "reward": "(base + raise total) x (balls in the Idol + 1)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light the jackpot",
+          "detail": "A successful sinkhole shot also lights it if it was not lit already."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Park balls for the multiplier",
+          "detail": "One ball in the hole makes it 2x, two balls 3x — but a 20-second timer or a collected jackpot releases them and resets the multiplier."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect at the right ramp",
+          "detail": "There is no multiball restart, though the jackpot stays lit through its timer if you drop to one ball."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "raise-jackpot-total",
+      "title": "Raise The Jackpot Total",
+      "category": "multiplier",
+      "summary": "Multiball jackpots are not fixed. A running raise total is added to every jackpot and super jackpot, and you build it with shots you are making anyway — the captive ball, the drop target in front of it, the Start Mode saucer and the Raise Jackpot target. Build it up before you lock the third ball, and keep working those targets during multiball, because the total is applied to each jackpot as you collect it.",
+      "difficulty": 2,
+      "reward": "A permanent addition to every jackpot",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Nail the captive ball",
+          "detail": "Worth 5M to the total, or 10M if you hit it hard enough to close the back switch."
+        },
+        {
+          "shot": "captive-drop",
+          "action": "Hit the drop target in front of it",
+          "detail": "Adds 3M to the raise total."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Feed the saucer",
+          "detail": "Adds 2M each time; the Raise Jackpot target behind the drops adds to it as well."
+        }
+      ],
+      "fx": "cash",
+      "ordered": false
+    },
+    {
+      "id": "super-jackpot",
+      "title": "Super Jackpot",
+      "category": "multiball",
+      "summary": "Collect all three jackpots and the captive ball lights for a Super Jackpot worth 80M, 90M and 100M for the Ark, Stones and Grail respectively. The left ramp lights each one, and the raise total is added on top.",
+      "difficulty": 3,
+      "reward": "80M to 100M plus the raise total",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light the super",
+          "detail": "Each of the three supers has to be lit from the left ramp in turn."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Collect on the captive ball",
+          "detail": "Supers cannot be multiplied by parked balls and there is no grace period at all — miss the window and it is gone."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Know when the sequence resets",
+          "detail": "Jackpots stay spotted until you take at least the first super and that multiball ends; the next multiball then restarts from the Ark."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "quick-multiball",
+      "title": "Quick Multiball And The Treasures",
+      "category": "multiball",
+      "summary": "Three hits on the drop target in front of the captive ball leave it down and light a twenty-second two-ball multiball. Every captive ball hit during it claims one of five treasures, worth 10M, 15M, 20M, 25M and 30M in order.",
+      "difficulty": 2,
+      "reward": "10M to 30M per treasure, then 40M each",
+      "steps": [
+        {
+          "shot": "captive-drop",
+          "action": "Take the drop target three times",
+          "detail": "The hits themselves pay 1M, 2M and 3M."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hammer the captive ball",
+          "detail": "A hard hit that closes the back switch adds 10M to whatever the treasure was worth."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Keep going past the fifth",
+          "detail": "Every further hit is a 40M All Treasures award, and the first of those lights both outlanes for Special."
+        },
+        {
+          "shot": "path-of-adventure",
+          "action": "Stack it if you can",
+          "detail": "Path of Adventure values are doubled while Quick Multiball is running. Uncollected treasures stay spotted for your next one.",
+          "link": "none"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "well-of-souls",
+      "title": "Well of Souls",
+      "category": "multiball",
+      "summary": "The wildest of the twelve modes: a six-ball multiball where each shot into the lock sinkhole pays 2M multiplied by the number of balls in play. Start it with the drop targets already down if you possibly can.",
+      "difficulty": 3,
+      "reward": "2M x balls in play per sinkhole shot",
+      "steps": [
+        {
+          "shot": "ent-targets",
+          "action": "Clear the drops before you start it",
+          "detail": "After six sinkhole shots the targets begin resetting on every hole, so a head start matters."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Feed the hole repeatedly",
+          "detail": "Balls are held briefly and then thrown back into play."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Understand when it ends",
+          "detail": "The mode runs as long as more than one ball is alive, and pays no end-of-mode bonus."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "rope-bridge",
+      "title": "Survive the Rope Bridge",
+      "category": "mode",
+      "summary": "A timed round where every ramp shot moves Indy further across the bridge for 10M. Four ramps get him across and a fifth cuts the rope — finish it and an extra ball lights at the Start Mode saucer.",
+      "difficulty": 2,
+      "reward": "10M per ramp plus a lit extra ball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Hit ramps quickly",
+          "detail": "Four ramp shots carry him across before the timer runs out."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Add the fifth",
+          "detail": "The fifth ramp cuts the rope and completes the round."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Collect the extra ball",
+          "detail": "Starting a multiball during this round makes the ramps far easier to find."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "video-modes",
+      "title": "The Video Modes",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Three of the twelve modes are played on the display with the flippers and the gun trigger. Two of them are among the easiest extra balls and point hauls on the machine if you know what you are doing.",
+      "difficulty": 2,
+      "reward": "Up to 55M, plus an extra ball in the Raven Bar",
+      "steps": [
+        {
+          "shot": "gun-trigger",
+          "action": "Choose Wisely",
+          "detail": "Track the true grail through the shuffle, select with the flippers and fire with the trigger — 20M right, 5M wrong."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Escape in the Cart",
+          "detail": "Steer with the flippers through 25 junctions; 5M to start, 1M a turn, a halfway bonus and 30M for completing."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Raven Bar",
+          "detail": "Aim with the flippers while the gun fires itself. An extra ball appears after enough hits, and the Medallion after twenty, for a 15M finish."
+        }
+      ],
+      "fx": "gun",
+      "ordered": false
+    },
+    {
+      "id": "super-pops",
+      "title": "Super Pops",
+      "category": "strategy",
+      "summary": "Seventy-five pop bumper hits turns every subsequent hit into a million, and it runs for the rest of the ball. Because it does not time out, a long ball in the bumpers with Super Pops running is one of the quietest ways to score enormously here.",
+      "difficulty": 2,
+      "reward": "1M per bumper hit for the rest of the ball",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Get the count up",
+          "detail": "Seventy-five hits by default, though operators can change it."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Feed the bumpers deliberately",
+          "detail": "Orbit shots that stop at the gate drop into the bumper nest."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Stack a multiball on top",
+          "detail": "Any multiball is worth far more while Super Pops is live. Each later Super Pops needs fifty more hits than the last."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "narrow-escape",
+      "title": "Narrow Escape",
+      "category": "secret",
+      "summary": "A ball that starts down the right outlane and gets saved through the gate into the inlane pays a Narrow Escape. The first is 1M, the second 2M, the third 3M and so on, with no known limit — and the value is held for the whole game.",
+      "difficulty": 2,
+      "reward": "1M, climbing by 1M per escape, all game",
+      "steps": [
+        {
+          "shot": "right-outlane",
+          "action": "Nudge the machine to the right",
+          "detail": "That knocks the ball onto the outlane post, which rebounds it back through the gate."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Take the free ones too",
+          "detail": "The game scores the escape off the first outlane rollover, so it often pays even on balls you actually lose."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "eternal-life",
+      "title": "Eternal Life Multiball",
+      "category": "wizard",
+      "summary": "Start all twelve modes and the Start Mode saucer lights for the wizard round: a six-ball multiball lasting around thirty seconds where every switch except the outlanes is worth 10M. Hit every one of them and it pays a billion.",
+      "difficulty": 3,
+      "reward": "10M per switch, 1B for a complete sweep",
+      "steps": [
+        {
+          "shot": "mode-saucer",
+          "action": "Start all twelve modes first",
+          "detail": "Starting counts, not completing — which is why mode selection with the ramps matters so much."
+        },
+        {
+          "shot": "mode-saucer",
+          "action": "Light the wizard round",
+          "detail": "Balls are pumped onto the playfield and everything on the machine is live."
+        },
+        {
+          "shot": "path-of-adventure",
+          "action": "Do not forget the raised playfield",
+          "detail": "The Path rollovers count towards the sweep; clearing every switch relights them all for another pass."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "extra-balls",
+      "title": "Where The Extra Balls Are",
+      "category": "progression",
+      "summary": "This machine gives away extra balls more freely than almost anything of its era, and every lit one is remembered between balls. Five separate routes are available, and on many settings they are unlimited.",
+      "difficulty": 2,
+      "reward": "Multiple extra balls per game",
+      "steps": [],
+      "instructions": [
+        "Complete I-N-D-Y four times to reach 8x bonus, which lights extra ball at the Start Mode saucer.",
+        "Complete a set of Path of Adventure rollovers — the second hole up there lights for extra ball, and relights every set once The Pit is collected.",
+        "Finish Survive the Rope Bridge, then shoot the Start Mode saucer to collect.",
+        "Play the Raven Bar video mode and shoot the extra ball when it appears among the targets.",
+        "Draw Light Extra Ball from the Hand of Fate, then take the saucer again to cash it.",
+        "Collecting the 8x extra ball resets your bonus multiplier to 1x on the following ball, so time it against the end of a good bonus build."
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "poa-multiball-warning",
+      "title": "Do Not Stack Multiball Onto The Path",
+      "category": "strategy",
+      "summary": "One rule that costs players real points: starting a multiball while Path of Adventure is lit is a trap. The raised playfield stays active, you cannot control it and several balls at once, and if it times out unused you have wasted the whole ADVENTURE build.",
+      "difficulty": 2,
+      "reward": "Avoids losing a lit Path of Adventure",
+      "steps": [
+        {
+          "shot": "path-of-adventure",
+          "action": "Spend the Path before you lock",
+          "detail": "Once a ball is up there you have to keep feeding it or the fifteen-second timer runs out."
+        },
+        {
+          "shot": "lock-sinkhole",
+          "action": "Hold the third lock",
+          "detail": "Take the Path, come back down, then finish the lock."
+        }
+      ],
+      "fx": "quest"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ij-first-mode",
+      "title": "Fortune And Glory",
+      "desc": "Start any of the twelve movie modes at the Start Mode saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "modes-overview"
+    },
+    {
+      "id": "ij-indy-8x",
+      "title": "Eight Times Bonus",
+      "desc": "Complete the I-N-D-Y lanes four times to reach 8x.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "indy-lanes"
+    },
+    {
+      "id": "ij-hand-of-fate",
+      "title": "Hand Of Fate",
+      "desc": "Light the Hand of Fate in an inlane and collect it at the saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "hand-of-fate"
+    },
+    {
+      "id": "ij-dogfight",
+      "title": "Forty Million Dogfight",
+      "desc": "Light Dogfight and collect the hurry-up before the countdown starts.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dogfight"
+    },
+    {
+      "id": "ij-multiball",
+      "title": "Boulder Chase",
+      "desc": "Lock three balls in the sinkhole and start multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "lock-balls"
+    },
+    {
+      "id": "ij-super-jackpot",
+      "title": "The Grail",
+      "desc": "Collect all three jackpots and take a Super Jackpot on the captive ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-jackpot"
+    },
+    {
+      "id": "ij-treasures",
+      "title": "All Treasures Collected",
+      "desc": "Claim all five treasures during Quick Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "quick-multiball"
+    },
+    {
+      "id": "ij-pit",
+      "title": "Into The Pit",
+      "desc": "Build The Pit to its 150M ceiling and collect it.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "the-pit"
+    },
+    {
+      "id": "ij-loop-jackpot",
+      "title": "Friends In High Places",
+      "desc": "Light every Friend and cash the Loop Jackpot at the right ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "loop-jackpot"
+    },
+    {
+      "id": "ij-narrow-escape",
+      "title": "Narrow Escape",
+      "desc": "Save a ball out of the right outlane back through the gate.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "narrow-escape"
+    },
+    {
+      "id": "ij-eternal-life",
+      "title": "Eternal Life",
+      "desc": "Start all twelve modes to reach the wizard multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "eternal-life"
+    }
+  ],
+  "drills": [
+    {
+      "id": "mode-saucer-only",
+      "title": "Saucer, Nothing Else",
+      "text": "Play a whole ball where the only shot you take is the Start Mode saucer off a cradled right flipper. It is the hardest shot on the machine and modes, Hand of Fate and most of the extra balls all come through it, so nothing else you learn here pays as well.",
+      "reps": "one full ball, saucer only",
+      "focus": "accuracy",
+      "goal": "modes-overview",
+      "shots": [
+        "mode-saucer",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "alternating-ramp-ladder",
+      "title": "Keep The Ramp Ladder Alive",
+      "text": "Alternate lit ramps off the inlane feed and count how long you can hold the alternation — break it and the ladder drops back to the bottom. The same reps step your queued mode along and light Dogfight's winged inserts, so this is the drill that pays for itself.",
+      "reps": "5 sets, note your longest streak",
+      "focus": "flow",
+      "goal": "ramp-ladder",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "count-ramps-pick-mode",
+      "title": "Count Ramps, Pick The Mode",
+      "text": "Step the queued mode along with ramp shots and hold the saucer until the one you want is showing — Survive the Rope Bridge and the Raven Bar both light an extra ball. Say the count out loud so the mode you start is a decision rather than an accident.",
+      "reps": "5 deliberate starts",
+      "focus": "accuracy",
+      "goal": "mode-select",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "mode-saucer"
+      ]
+    },
+    {
+      "id": "drop-the-t-only",
+      "title": "Drop The T, Take The Hole",
+      "text": "Knock the T down and leave the E and N standing, then shoot the sinkhole behind them. That is the whole path to the lock, so drill the hole with only the T cleared rather than waiting for the full bank to fall.",
+      "reps": "10 locks",
+      "focus": "accuracy",
+      "goal": "lock-balls",
+      "shots": [
+        "ent-targets",
+        "lock-sinkhole"
+      ]
+    },
+    {
+      "id": "steer-the-path",
+      "title": "Steer The Path, Skip The Pit",
+      "text": "Up on the raised playfield the flippers tilt the field rather than shoot it, and you have fifteen seconds a visit. Work the lit rollovers and keep the ball out of The Pit while its value climbs — every completion you bank without dropping in makes the eventual cash-out bigger.",
+      "reps": "every Path you earn, until you clear a full set",
+      "focus": "ball-control",
+      "goal": "the-pit",
+      "shots": [
+        "path-of-adventure"
+      ]
+    },
+    {
+      "id": "narrow-escape-nudge",
+      "title": "Nudge The Narrow Escape",
+      "text": "When a ball starts down the right outlane, nudge right to put it on the post at the crook and rebound it through the gate into the inlane. Practise the nudge on balls you have already lost — the escape scores off the first outlane rollover either way, and its value is held for the whole game.",
+      "reps": "every right-outlane ball",
+      "focus": "ball-control",
+      "goal": "narrow-escape",
+      "shots": [
+        "right-outlane",
+        "right-inlane"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "quest",
+  "playfields": [
+    {
+      "id": "path-of-adventure-zone",
+      "name": "Path of Adventure",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.14,
+        "y": 0.68,
+        "w": 0.22,
+        "h": 0.2
+      },
+      "trim": "all",
+      "entries": [
+        "right-ramp"
+      ],
+      "exits": [
+        {
+          "x": 0.35,
+          "y": 0.72
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Gun Trigger",
+    "location": "the trigger on the six-shooter that replaces the plunger",
+    "how": "The plunger is a six-shooter and it auto-launches, so the trigger does nothing clever at the start of a ball. It becomes a real control inside the display modes, where pulling it is how you actually fire at something.",
+    "uses": [
+      {
+        "when": "Choose Wisely, chalices being shuffled",
+        "what": "Track the true grail, select with the flippers, pull the trigger to commit. 20M right, 5M wrong."
+      },
+      {
+        "when": "Streets of Cairo once Marion turns up",
+        "what": "The trigger blasts the swordsman for a token 2M. The Mode saucer pays 20M for the same kill."
+      },
+      {
+        "when": "Launching any ball",
+        "what": "Pull it and the ball goes. There is no skill shot, so nothing is gained by timing it."
+      },
+      {
+        "when": "Get the Medallion video mode",
+        "what": "Hands off the trigger — the flippers aim Indy's gun and the firing happens by itself."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "A widebody trek through the three Indiana Jones films. Kick off all twelve film scenes one at a time from the tough Start Mode saucer, lock balls for multiball, and grow your bonus and loops as you go, then start every scene to light Eternal Life -- the billion-point wizard round.",
+    "loop": [
+      "Tap the flippers to sweep the I-N-D-Y top lanes -- each sweep steps your bonus, lights a Friend, and re-arms the inlanes.",
+      "Roll a lit inlane for Hand of Fate, then take the hard Start Mode saucer for a random award.",
+      "Alternate the ramps to climb the ramp ladder and step which mode is queued, then start the one you want at the saucer.",
+      "Drop the E-N-T targets and lock three balls in the sinkhole for multiball, building the jackpot raise total first.",
+      "Start all twelve modes to light Eternal Life at the saucer."
+    ],
+    "lights": [
+      {
+        "id": "indy-lanes",
+        "name": "I-N-D-Y Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "indy-rollovers"
+          }
+        ],
+        "lit": "The four lanes behind the bumpers light as the ball rolls them, and the unlit ones are all that is left to finish the set.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper shifts the lit I-N-D-Y rollovers sideways, so you can slide an unlit lane under the ball and close the set almost for free",
+          "when": "as the ball travels the top lanes"
+        },
+        "then": "Each completed sweep bumps the end-of-ball bonus a step higher, switches on one more of Indy's Friends, and re-arms the return lanes for Hand of Fate. Reach the top step and the Start Mode saucer lights for an extra ball; past that, each sweep pays a flat maximum bonus.",
+        "goals": [
+          "indy-lanes"
+        ]
+      },
+      {
+        "id": "hand-of-fate",
+        "name": "Hand of Fate",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "mode-saucer"
+          }
+        ],
+        "lit": "Both inlanes begin every ball lit for Hand of Fate, and finishing I-N-D-Y relights them once they are used.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll a lit inlane and the Start Mode saucer briefly holds a random award, flashing four candidates before it settles on one -- points and Bonus X up through Light Extra Ball, Quick Multiball or Lock Ball. If Light Extra Ball is among the four it is always the one you get.",
+        "goals": [
+          "hand-of-fate"
+        ]
+      },
+      {
+        "id": "mode-select",
+        "name": "Queued Movie Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "mode-saucer"
+          }
+        ],
+        "lit": "One movie mode sits queued at a time, and every ramp shot -- never a bumper hit -- advances which one comes next.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep count of your ramps and hold off on the saucer until the mode you want shows, then take that hard saucer to begin it; every mode scores just for starting, and what it earns feeds your end-of-ball bonus. Set up the Rope Bridge scene or the Raven Bar video early, because each one lights an extra ball.",
+        "goals": [
+          "mode-select",
+          "modes-overview"
+        ]
+      },
+      {
+        "id": "adventure-letters",
+        "name": "A-D-V-E-N-T-U-R-E Banks",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "adv-targets"
+          },
+          {
+            "shot": "ent-targets"
+          },
+          {
+            "shot": "ure-targets"
+          },
+          {
+            "shot": "raise-jackpot"
+          }
+        ],
+        "lit": "ADVENTURE is spelled over three target groups -- the left standups hold A-D-V, the drop targets hold E-N-T, the right standups hold U-R-E -- and once a group is done, more hits on it spot the next missing letter anywhere.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish all nine and the right ramp lights to send you onto the Path of Adventure. Drop the E-N-T bank and the small Raise Jackpot target behind it spots a letter as well.",
+        "goals": [
+          "adventure-targets",
+          "path-of-adventure"
+        ]
+      },
+      {
+        "id": "path-of-adventure",
+        "name": "Path of Adventure",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "path-of-adventure"
+          }
+        ],
+        "lit": "Once ADVENTURE is spelled the right ramp lights and diverts to the left flipper, feeding the raised Path playfield.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "up on the raised Path the flippers tilt the whole field left and right to roll the ball across the lit markers rather than shooting at them, with about fifteen seconds a visit",
+          "when": "a ball is on the Path"
+        },
+        "then": "Clear a set of rollovers for points and an extra ball. Bank each completion without dropping into the Pit to raise its value, because the Pit is the largest single award on the table -- cash it only once it is maxed.",
+        "goals": [
+          "path-of-adventure",
+          "the-pit"
+        ]
+      },
+      {
+        "id": "multiball-locks",
+        "name": "Sinkhole Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "ent-targets"
+          },
+          {
+            "shot": "lock-sinkhole"
+          },
+          {
+            "shot": "idol"
+          }
+        ],
+        "lit": "Drop the E-N-T targets to clear the way to the sinkhole and light the lock -- you only need the T down for a clean path in.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls, held in the Idol on the right, to start a three-ball multiball. You can even lock with the targets standing -- the game accuses you of cheating and pays a few million anyway.",
+        "goals": [
+          "lock-balls"
+        ]
+      },
+      {
+        "id": "multiball-jackpots",
+        "name": "The Ark, Stones and Grail",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "lock-sinkhole"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "In multiball, either the left ramp or the sinkhole arms the current jackpot -- the Ark, then the Stones, then the Grail -- which you bank at the right ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Park balls in the sinkhole to multiply the jackpot two or three times, and build the raise total at the captive ball and saucer beforehand, since it is added to each jackpot as you take it. Collect all three to light the Super Jackpot on the captive ball.",
+        "goals": [
+          "multiball-jackpots",
+          "raise-jackpot-total",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "lit-loops",
+        "name": "Lit Loops and Friends",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "indy-rollovers"
+          }
+        ],
+        "lit": "A lit orbit loop pays a base plus two million for every Friend you have lit from the I-N-D-Y lanes, and running loops back to back multiplies that base higher and higher.",
+        "flashing": "A flashing Friend insert between the slingshots is lit but not yet turned solid.",
+        "control": null,
+        "then": "Light every Friend, turn each one solid with lit loops, then collect the Loop Jackpot over at the right ramp -- it climbs toward two hundred million. Drain first and both the Friends and the jackpot fall back to nothing, so cash out before you risk the ball.",
+        "goals": [
+          "lit-loops",
+          "loop-jackpot"
+        ]
+      },
+      {
+        "id": "super-pops",
+        "name": "Super Pops",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Enough pop bumper hits kicks off Super Pops, which then keeps running for the rest of the ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Every bumper hit is a million from then on, so feed the nest on purpose with orbit shots that stall at the top gate. Stack any multiball on top, because a long stay in the bumpers with Super Pops live scores hugely and quietly.",
+        "goals": [
+          "super-pops"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to slide the lit I-N-D-Y rollovers left or right, so an unlit lane sits under the ball as it crosses the top lanes. Finishing I-N-D-Y nudges the bonus multiplier up a step, switches on one more of Indy's Friends, and relights the return lanes so you can take Hand of Fate again.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "There is no skill shot, so let the six-shooter auto-launch. Sweep the I-N-D-Y top lanes with the flippers to build bonus and light Friends, take Hand of Fate off a lit inlane, and start counting ramps so the mode you begin at the saucer is a decision rather than an accident.",
+        "goals": [
+          "indy-lanes",
+          "hand-of-fate",
+          "ramp-ladder",
+          "mode-select"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Play toward all twelve modes, locking three balls in the sinkhole for multiball and building the jackpot raise total first. Bank Path of Adventure completions to grow the Pit, light every Friend for the Loop Jackpot, and get Super Pops running for a quiet million a bumper.",
+        "goals": [
+          "modes-overview",
+          "lock-balls",
+          "multiball-jackpots",
+          "the-pit",
+          "loop-jackpot",
+          "super-pops"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Start all twelve modes -- starting counts, not finishing, which is why picking them with the ramps matters -- to light Eternal Life at the saucer. It is a six-ball round where nearly every switch is worth ten million, and sweeping them all pays a billion.",
+        "goals": [
+          "eternal-life"
+        ]
+      }
+    ]
+  }
+}

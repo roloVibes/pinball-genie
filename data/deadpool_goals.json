@@ -1,0 +1,1391 @@
+{
+  "machine": "Deadpool (Stern Pinball, 2018)",
+  "defaultFx": "hero",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left flipper",
+      "type": "flipper",
+      "x": 0.3103,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard ~3in flipper, pivot on the flipper line."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right flipper",
+      "type": "flipper",
+      "x": 0.6782,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Forms the V with the left flipper; fed by the Katana return."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left outlane (BOOM B)",
+      "type": "lane",
+      "x": 0.15,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Lights Regeneration ball save every 3rd DEADPOOL completion."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left inlane (BOOM O)",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Feeds the left flipper; part of B-O-O-M."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right inlane (BOOM O)",
+      "type": "lane",
+      "x": 0.68,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Katana ramp habitrail returns here."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right outlane (BOOM M)",
+      "type": "lane",
+      "x": 0.84,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Outside the right sling; drain risk from ramp/SNIKT rejects."
+    },
+    {
+      "id": "left-sling",
+      "name": "Left slingshot",
+      "type": "mech",
+      "x": 0.29,
+      "y": 0.16,
+      "trim": "all"
+    },
+    {
+      "id": "right-sling",
+      "name": "Right slingshot",
+      "type": "mech",
+      "x": 0.71,
+      "y": 0.16,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter lane / plunger",
+      "type": "plunge",
+      "x": 0.93,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Auto-launch; skill shot into the BAM top lanes."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left orbit",
+      "type": "orbit",
+      "x": 0.16,
+      "y": 0.27,
+      "trim": "all",
+      "notes": "Dazzler Team-Up shot; wraps around the top."
+    },
+    {
+      "id": "dazzler-spinner",
+      "name": "Dazzler spinner (left spinner)",
+      "type": "spinner",
+      "x": 0.19,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Spins drive Disco Multiball; on Premium/LE drives the disco ball."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left ramp",
+      "type": "ramp",
+      "x": 0.29,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Stainless ramp, returns to the left flipper; collects Disco Super Jackpot.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "u-turn",
+      "name": "U-Turn (Colossus loop)",
+      "type": "loop",
+      "x": 0.23,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Colossus Team-Up; feeds the Colossal Jackpot / Sauron Super Jackpot target."
+    },
+    {
+      "id": "dead-targets",
+      "name": "DEAD target bank",
+      "type": "target-bank",
+      "x": 0.33,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "4 standups; spell D-E-A-D to light a Battle."
+    },
+    {
+      "id": "center-scoop",
+      "name": "Center scoop (Battle scoop)",
+      "type": "scoop",
+      "x": 0.45,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Starts Battles/Quests, cashes weapons, finishes opponents."
+    },
+    {
+      "id": "wolverine-spinner",
+      "name": "Wolverine spinner (center spinner)",
+      "type": "spinner",
+      "x": 0.39,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Wolverine Team-Up (double damage); feeds up into the pops."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop bumpers (x3)",
+      "type": "bumpers",
+      "x": 0.46,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Hits light major shots blue for Ninja Stars; spawn ninjas."
+    },
+    {
+      "id": "center-loop",
+      "name": "Center loop",
+      "type": "loop",
+      "x": 0.5,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Threads between the drops and Katana feed; qualifies Berserker Rage."
+    },
+    {
+      "id": "snikt-target",
+      "name": "Snikt! target",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Ricochet into the Katana ramp boosts temporary Playfield X."
+    },
+    {
+      "id": "lil-dp-drops",
+      "name": "Lil' Deadpool drop targets (3-bank)",
+      "type": "drop-target",
+      "x": 0.5052,
+      "y": 0.5139,
+      "trim": "all",
+      "notes": "OOF drops; knock down to expose the bash toy."
+    },
+    {
+      "id": "lil-dp-bash",
+      "name": "Lil' Deadpool bash toy / lock",
+      "type": "mech",
+      "x": 0.58,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Bash target that also locks a ball for Lil' Deadpool MB; T-Rex bomb target."
+    },
+    {
+      "id": "katana-ramp",
+      "name": "Katana ramp (right ramp)",
+      "type": "ramp",
+      "x": 0.6,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "Ninja MB locks and Super Jackpot; returns to the right inlane.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "katana-lock",
+      "name": "Katana handle lock",
+      "type": "mech",
+      "x": 0.68,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Sword hilt at the top of the blade holds locked balls for Ninja MB."
+    },
+    {
+      "id": "pool-targets",
+      "name": "POOL target bank",
+      "type": "target-bank",
+      "x": 0.67,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "4 standups; spell P-O-O-L to relight a Ninja lock."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right orbit",
+      "type": "orbit",
+      "x": 0.84,
+      "y": 0.27,
+      "trim": "all",
+      "notes": "Domino Team-Up; advances the chimichanga truck; Ninjapocalypse feeder."
+    },
+    {
+      "id": "bam-lanes",
+      "name": "BAM top lanes",
+      "type": "lanes",
+      "x": 0.56,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Four top rollover lanes; completing the BAM! set raises the Bonus Multiplier."
+    },
+    {
+      "id": "disco-ball",
+      "name": "Motorized disco ball",
+      "type": "mech",
+      "x": 0.21,
+      "y": 0.83,
+      "trim": "premium-le",
+      "notes": "Spun by the Dazzler spinner; Premium/LE only."
+    },
+    {
+      "id": "actuated-ramp",
+      "name": "Actuated up/down feed ramp",
+      "type": "mech",
+      "x": 0.3,
+      "y": 0.72,
+      "trim": "premium-le",
+      "notes": "Diverter feeding the right flipper from the left orbit; Premium/LE only."
+    },
+    {
+      "id": "chimichanga-truck",
+      "name": "Chimichanga truck toy",
+      "type": "mech",
+      "x": 0.8,
+      "y": 0.83,
+      "trim": "premium-le",
+      "notes": "Time-machine toy; Pro has flame art/lamp here instead."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-lane-bam",
+      "title": "Lane Skill Shot (BAM! lanes)",
+      "category": "skillshot",
+      "summary": "The safe, repeatable skill shot: steer the flashing BAM! insert to a top lane, then soft-plunge through it. Worth 2.5M plus an escalating 250K per skill shot that persists all game, so bank it every ball.",
+      "difficulty": 1,
+      "reward": "2.5M + 250K per skill shot (persists across balls)",
+      "steps": [
+        {
+          "shot": "bam-lanes",
+          "action": "Soft-plunge through the lit BAM! lane",
+          "detail": "Before launching, tap the flipper buttons to move the flashing insert to the lane you want — it locks in once the ball passes the shooter-lane sensor. Also banks progress toward completing BAM! for the Bonus Multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-super-secret",
+      "title": "Super Secret Skill Shot (SNIKT! → Katana ramp)",
+      "category": "skillshot",
+      "summary": "The highest-value plunge. Hold the left flipper and thread SNIKT! into the Katana ramp off the launch for a huge award plus a free playfield multiplier to open the ball.",
+      "difficulty": 3,
+      "reward": "15M + 1M per skill shot + 1 Playfield X",
+      "steps": [
+        {
+          "shot": "snikt-target",
+          "action": "Hold the left flipper and full-plunge into SNIKT!",
+          "detail": "Timer window ~5s (v1.02) to complete the combo. The rebound redirects up toward the Katana ramp.",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Make the Katana ramp to collect",
+          "detail": "Grants +1 Playfield X immediately — spike scoring right after."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-ninjapocalypse",
+      "title": "Ninjapocalypse (Right Orbit → Katana ramp)",
+      "category": "combo",
+      "summary": "The signature money combo: the ball comes around the right orbit and is fired straight up the Katana ramp. Dumps a large batch of Ninja Stars that directly inflate Ninja Multiball jackpots — the single most-farmed two-shot pattern.",
+      "difficulty": 2,
+      "reward": "Big points + ~10 Ninja Stars (5M+/500K per combo); off the plunge this is the MXV Skill Shot",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit so the ball feeds around to the right flipper",
+          "detail": "Repeats cleanly — the orbit sets up the ramp shot."
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Immediately fire the Katana ramp within the combo window",
+          "detail": "Banks the Ninja Star batch; delaying Ninja MB lets these stars stack the pot higher."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "combo-snikt-pfx",
+      "title": "SNIKT! ricochet → Katana ramp (Playfield X combo)",
+      "category": "combo",
+      "summary": "Bank the SNIKT! standup into the Katana ramp during play to add temporary Playfield X and extend the multiplier timer. The core way to spike a multiplier right before a big scoring window.",
+      "difficulty": 2,
+      "reward": "Temporary Playfield X boost + timer extension",
+      "steps": [
+        {
+          "shot": "snikt-target",
+          "action": "Hit the SNIKT! standup at the mouth of the center loop",
+          "detail": "Watch the right outlane — a mis-hit rebound can feed the drain."
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Catch the rebound up the Katana ramp",
+          "detail": "At 5x, further combos only refresh the timer rather than stacking higher."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "combo-weapon-cashout",
+      "title": "Weapon combo → Scoop cash-out",
+      "category": "combo",
+      "summary": "Run a string of white weapon shots (ramps/orbits/spinner) to bank weapons, then drop the Scoop to cash out — the award scales with how many shots you made right before the scoop. This engine drives to Mechsuit MB and permanent multipliers.",
+      "difficulty": 2,
+      "reward": "Weapons banked (25 = Extra Ball, 45 = Mechsuit MB, every 100 = +1 Playfield X)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start a combo string on a white weapon shot",
+          "detail": "Any loop/ramp lights weapon inserts on the other major shots for ~5s."
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Continue the chain to another lit weapon shot within the window",
+          "detail": "Each successive combo shot adds a weapon."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Drop the Scoop to cash out the weapons",
+          "detail": "Award scales with shots made immediately before the scoop."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "combo-colossal-jackpot",
+      "title": "Colossal Jackpot (U-Turn loop)",
+      "category": "combo",
+      "summary": "Feed the U-Turn mini-loop under the left ramp to qualify the Colossal Jackpot; switch hits anywhere grow its value, and it is collected at the end-of-loop target — a strong shot that reaches the target doubles it, and any active Playfield X multiplies it again.",
+      "difficulty": 3,
+      "reward": "Colossal Jackpot, multipliable by Playfield X",
+      "steps": [
+        {
+          "shot": "u-turn",
+          "action": "Make two shots (+2 per requalification) all the way through the U-Turn",
+          "detail": "A strong shot can double the value; rejects drain — precision required."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "combo-basic-chain",
+      "title": "Basic combo chain (light weapons)",
+      "category": "combo",
+      "summary": "The foundational combo: hit two different major shots consecutively within the ~5s window. Any loop or ramp lights weapon inserts on the other shots — learning this geometry is the backbone of the whole game.",
+      "difficulty": 1,
+      "reward": "A weapon per successive combo shot",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Make a major shot to light the katana-on-white weapon inserts elsewhere",
+          "detail": "~5s window (operator-adjustable) opens on the other major shots."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit a different lit major shot before the window closes",
+          "detail": "Continue chaining orbits/ramps to stack weapons."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "mb-lil-deadpool",
+      "title": "Lil' Deadpool Multiball",
+      "category": "multiball",
+      "summary": "The cheap, controllable multiball used as stacking fuel. Knock down the OOF drops, hit the exposed Lil' Deadpool standup, and lock a ball behind the drops to start.",
+      "difficulty": 1,
+      "reward": "2-ball multiball; hurry-up jackpots (from 500K) collected at the Lil' Deadpool target",
+      "steps": [
+        {
+          "shot": "lil-dp-drops",
+          "action": "Knock down the OOF 3-bank drop targets to expose the standup",
+          "detail": "Insert glows green as you progress."
+        },
+        {
+          "shot": "lil-dp-bash",
+          "action": "Hit the Lil' Deadpool standup twice (+1 per prior activation) to qualify",
+          "detail": "A ball is physically locked behind the drops."
+        },
+        {
+          "shot": "lil-dp-drops",
+          "action": "With the lock ready, start multiball; release the captured ball to lock in the hurry-up jackpot",
+          "detail": "Best stacked INTO a Battle — start the Battle first, then launch this for the ball-save."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "mb-ninja",
+      "title": "Ninja Multiball (Katana locks)",
+      "category": "multiball",
+      "summary": "The value engine. Relight locks by completing P-O-O-L, lock three balls at the Katana ramp, and start. Jackpots scale with your banked Ninja Star count, so hoard stars and delay the start to fatten the pot.",
+      "difficulty": 2,
+      "reward": "3-ball multiball; jackpots scale with Ninja Stars, Super Jackpot = sum of jackpots at the Katana ramp",
+      "steps": [
+        {
+          "shot": "pool-targets",
+          "action": "Complete P-O-O-L to light a Ninja lock (locks are lit by default at game start)",
+          "detail": "Relight one lock per P-O-O-L after the first play."
+        },
+        {
+          "shot": "katana-lock",
+          "action": "Lock three balls at the Katana ramp handle",
+          "detail": "Farm Ninja Stars via Ninjapocalypse and blue pop-lit shots first to inflate jackpots."
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "With three locked, multiball starts; return to the ramp to bank each Super Jackpot",
+          "detail": "Stacks into Battles and Quests to kill villains faster."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "mb-disco",
+      "title": "Disco Multiball (Dazzler spinner)",
+      "category": "multiball",
+      "summary": "Spin the left (Dazzler) spinner ~60–70 times to qualify; it can only start when no other mode is running. Shoot lit shots for Disco Jackpots, with the Left Ramp collecting the Super Jackpot.",
+      "difficulty": 2,
+      "reward": "2-ball multiball; Super Jackpot at the Left Ramp (Premium/LE odd thresholds give Disco Loops instead)",
+      "steps": [
+        {
+          "shot": "dazzler-spinner",
+          "action": "Rip the left spinner ~60 spins (escalating 60/120/180…)",
+          "detail": "Display shows spins remaining in a top-left box; value is operator-adjustable."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Ensure no other mode is running so Disco can start",
+          "detail": "Disco is gated behind an empty mode slot."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Once a random wave lights the Super Jackpot, collect it at the Left Ramp",
+          "detail": "The left spinner then raises the Super Jackpot value."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "mb-mechsuit",
+      "title": "Mechsuit Multiball (weapon cash-outs)",
+      "category": "multiball",
+      "summary": "A big 4-ball mode earned by cashing out 45 total weapons, then started at the Scoop while no other mode runs. All shots light for jackpots from 5M with a Super Jackpot at the Scoop.",
+      "difficulty": 3,
+      "reward": "4-ball multiball; jackpots from 5M, Super Jackpot = 15M + 250K x jackpots collected",
+      "steps": [
+        {
+          "shot": "center-scoop",
+          "action": "Cash out 45 weapons at the Scoop (re-enables at 150/250/350)",
+          "detail": "Weapons come from combo strings dropped into the scoop."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Start Mechsuit by shooting the Scoop while no other mode is lit",
+          "detail": "After 5 jackpots the Super Jackpot lights at the Scoop and raises the base jackpot by 1M."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "mode-sabretooth",
+      "title": "Battle: Sabretooth",
+      "category": "mode",
+      "summary": "The easiest, lowest-risk Battle and the go-to first fight. Complete D-E-A-D to light it, start at the Scoop, then damage him with the two orbits, the center Wolverine spinner, and even pop-bumper hits before finishing at the Scoop.",
+      "difficulty": 1,
+      "reward": "Final Shot ~ remaining health (up to ~30M) at the Scoop",
+      "steps": [
+        {
+          "shot": "dead-targets",
+          "action": "Complete D-E-A-D to light a Battle",
+          "detail": "The scoop offers a fresh Battle opportunity at the start of every ball, not just the first, and only once that free shot is gone do you need D-E-A-D to open one instead."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Shoot the Scoop to start Sabretooth",
+          "detail": "A Battle only lights if none is currently active."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Damage him via the orbits and center spinner; pop hits also hurt him",
+          "detail": "Very forgiving — orbits feed the top lanes and pops for extra damage."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Finish at the Scoop within 10s of winning",
+          "detail": "Drain with the Final Shot lit still credits the kill; tilting with it lit does NOT."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-mystique",
+      "title": "Battle: Mystique",
+      "category": "mode",
+      "summary": "A spinner-and-ramps Battle. Shoot the center Wolverine spinner then both ramps to light all three shots for damage; the Wolverine Team-Up (double damage) makes spins count double and can finish her fast when paired with a BOOM bomb.",
+      "difficulty": 2,
+      "reward": "Final Shot ~ remaining health at the Scoop",
+      "steps": [
+        {
+          "shot": "center-scoop",
+          "action": "Start Mystique at the Scoop after lighting a Battle",
+          "detail": "Grab Dazzler (health) and Wolverine (double damage) first if easy."
+        },
+        {
+          "shot": "wolverine-spinner",
+          "action": "Shoot the center spinner to open the damage sequence",
+          "detail": "Wolverine Team-Up here doubles all damage dealt."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp as part of the ramp pair",
+          "detail": "Both ramps then keep all three shots lit for damage."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Finish at the Scoop within 10s",
+          "detail": "A strong spinner hit followed by the bomb button often ends her."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-juggernaut",
+      "title": "Battle: Juggernaut",
+      "category": "mode",
+      "summary": "The most valuable and most dangerous Battle. Hit any four D-E-A-D / P-O-O-L targets to taunt him and light all main shots for 20 seconds of damage; players stack Lil' Deadpool MB over it for a ball-save on the risky side targets.",
+      "difficulty": 3,
+      "reward": "Highest single-Battle Final Shot at the Scoop",
+      "steps": [
+        {
+          "shot": "dead-targets",
+          "action": "Hit any 4 D-E-A-D or P-O-O-L targets to taunt Juggernaut",
+          "detail": "Stops his attack and lights all main shots for 20s; re-taunt when it expires."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Start (and later finish) the Battle at the Scoop",
+          "detail": "Start the Battle FIRST, then launch Lil' Deadpool MB to stack with ball-save on."
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Hammer the lit main shots for damage while taunted",
+          "detail": "The side targets are the single riskiest requirement — hence the multiball stack."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-trex-quest",
+      "title": "T-Rex Quest",
+      "category": "mode",
+      "summary": "Advance the chimichanga truck via the Right Orbit to qualify, start at the Scoop, then shoot green shots to drop the Lil' Deadpool drops and bash the standup to throw bombs at the T-Rex. Throw 5 bombs, then collect the Mode Jackpot at the Scoop.",
+      "difficulty": 2,
+      "reward": "T-Rex tooth/DNA Mode Jackpot at the Scoop (part of the wizard path)",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Advance the chimichanga truck via the Right Orbit and collect orange shots",
+          "detail": "Need 3 chimichangas (+1 per Quest); qualifies the Quest at the Scoop."
+        },
+        {
+          "shot": "lil-dp-drops",
+          "action": "Shoot the lit green shots to drop the Lil' Deadpool drops",
+          "detail": "More green shots first = a bigger bomb value that decays over time."
+        },
+        {
+          "shot": "lil-dp-bash",
+          "action": "Hit the Lil' Deadpool standup hurry-up to throw a bomb at the T-Rex",
+          "detail": "Throw 5 bombs total, then Scoop to collect."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "mult-playfield-x",
+      "title": "Playfield X (SNIKT! multiplier build)",
+      "category": "multiplier",
+      "summary": "Playfield X runs 1x up to 5x. Build a permanent base off weapons (every 100 = +1x for the game), then spike temporary X with the SNIKT! → Katana ramp ricochet right before a big scoring window since higher temp X times out faster.",
+      "difficulty": 2,
+      "reward": "Up to 5x scoring during a scoring window",
+      "steps": [
+        {
+          "shot": "center-scoop",
+          "action": "Cash weapons at the Scoop to lock in permanent Playfield X (every 100 weapons = +1x)",
+          "detail": "Do this early to establish a durable base multiplier."
+        },
+        {
+          "shot": "snikt-target",
+          "action": "Spike temporary X via the SNIKT! standup ricochet",
+          "detail": "At 5x the SNIKT combo only refreshes the timer."
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Complete the ricochet into the Katana ramp, then immediately pour value shots in",
+          "detail": "Light it, then fire into Ninja/Sauron/Mechsuit so jackpots multiply."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "mult-bonus-bam",
+      "title": "Bonus Multiplier (BAM! lanes)",
+      "category": "multiplier",
+      "summary": "Completing the top BAM! lanes raises the Bonus Multiplier, which multiplies your end-of-ball bonus (chimichangas + Ninja Stars + weapons). The multiplier resets each ball, so re-complete the lanes every ball.",
+      "difficulty": 1,
+      "reward": "+1 Bonus Multiplier per completion",
+      "steps": [
+        {
+          "shot": "bam-lanes",
+          "action": "Roll through all four top lanes to complete BAM!",
+          "detail": "Use the flipper buttons to shift lit lanes toward the ball."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the pops shuffle the ball across remaining lanes",
+          "detail": "Bonus total holds between balls, but the multiplier resets each ball."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "wizard-sauron",
+      "title": "Sauron Multiball (mini-wizard gate)",
+      "category": "wizard",
+      "summary": "The first progression gate: win all three Level-1 Battles, then start at the Scoop. Shoot both ramps twice each for jackpots, then the U-Turn to the Colossal Jackpot target for the Super Jackpot. Finishing it unlocks the Level-2 Battles.",
+      "difficulty": 3,
+      "reward": "3-ball mini-wizard multiball; unlocks Level-2 Battles",
+      "steps": [
+        {
+          "shot": "center-scoop",
+          "action": "After winning Juggernaut, Mystique and Sabretooth, start Sauron at the Scoop",
+          "detail": "The opening 4-jackpot wave can be spotted with the BOOM button."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp x2 for jackpots",
+          "detail": "Two left-ramp jackpots and two right-ramp jackpots make up the opening wave.",
+          "link": "none"
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Shoot the Katana (right) ramp x2 for jackpots",
+          "detail": "Complete all four ramp jackpots to arm the Super.",
+          "link": "none"
+        },
+        {
+          "shot": "u-turn",
+          "action": "Shoot the U-Turn to the Colossal Jackpot target for the Super Jackpot",
+          "detail": "Draining/finishing Sauron unlocks the Level-2 Battles toward Clone MB."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-final-battle",
+      "title": "The Final Battle (Mr. Sinister wizard mode)",
+      "category": "wizard",
+      "summary": "The game's wizard mode, qualified by completing both mini-wizards (Megakrakolodonus Rex + Clone MB) AND playing Mechsuit MB. Phase 1 makes all four Team-Up shots; Phase 2 is a timed multiball of blue-shot jackpots that ends when the clock runs out.",
+      "difficulty": 3,
+      "reward": "Wizard mode; lights the Special on completion",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Phase 1 (45s): hit each of the four Team-Up shots — start with Dazzler at the left orbit",
+          "detail": "All four Team-Up shots have to be made inside the 45-second phase.",
+          "link": "none"
+        },
+        {
+          "shot": "u-turn",
+          "action": "Make the Colossus Team-Up at the U-Turn",
+          "detail": "Then Wolverine (center spinner) and Domino (right orbit) to clear Phase 1.",
+          "link": "none"
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Phase 2 (70s, 3-ball): shoot blue shots for jackpots",
+          "detail": "Lit Team-Up shots double the jackpot; the Final Shot pays big in the last 15s."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Keep banking blue-shot jackpots, and take the Final Shot before the 70s expires",
+          "detail": "Completing the mode is what lights the Special. When time runs out the balls drain, every mode resets, and a fresh ball is served."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-safe-opener",
+      "title": "Strategy: Safe beginner opener",
+      "category": "strategy",
+      "summary": "A low-risk opening sequence: bank the lane skill shot, grab the easiest Team-Up (Dazzler), then complete D-E-A-D and fight Sabretooth using forgiving orbit/spinner/pop damage while cycling BOOM! for the ball-save.",
+      "difficulty": 1,
+      "reward": "Steady points, an early Team-Up, and a ball-save net",
+      "steps": [
+        {
+          "shot": "bam-lanes",
+          "action": "Bank the Lane Skill Shot (2.5M + escalating 250K)",
+          "detail": "Safest opener; repeats every ball."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit for the Dazzler Team-Up and Disco spins",
+          "detail": "Dazzler is the easiest Team-Up and adds ~33% battle health."
+        },
+        {
+          "shot": "dead-targets",
+          "action": "Complete D-E-A-D to light Sabretooth",
+          "detail": "Shift the lit BOOM lanes with the flipper buttons on every return, then press the action button once BOOM is spelled."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Start Sabretooth at the Scoop and finish him there",
+          "detail": "Damage via orbits + Wolverine spinner + pops; safest early Battle."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "strategy-tournament-opener",
+      "title": "Strategy: Tournament scoring opener",
+      "category": "strategy",
+      "summary": "A high-value opener: Super Secret skill shot for an instant multiplier, grab Dazzler and Wolverine, then start Juggernaut FIRST and stack Lil' Deadpool MB over it for a ball-save while team-ups multiply the kill.",
+      "difficulty": 3,
+      "reward": "Big opening score, stacked multiball ball-save over the riskiest Battle",
+      "steps": [
+        {
+          "shot": "snikt-target",
+          "action": "Open with the Super Secret Skill Shot (SNIKT! → ramp) for 15M + 1 Playfield X",
+          "detail": "Hold the left flipper on the plunge.",
+          "flipper": "left"
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Complete the skill-shot combo up the Katana ramp",
+          "detail": "Banks the multiplier to open the ball."
+        },
+        {
+          "shot": "lil-dp-drops",
+          "action": "Arm Lil' Deadpool via the OOF drops while you set up the Battle",
+          "detail": "Stacking rule: start the Battle FIRST, then the multiball."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Start Juggernaut at the Scoop, THEN launch Lil' Deadpool MB to stack",
+          "detail": "Kill Juggernaut under multiball with team-ups re-lit and ball-save on."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "strategy-ninja-hoard",
+      "title": "Strategy: Hoard Ninja Stars, delay Ninja MB",
+      "category": "strategy",
+      "summary": "The core high-score engine. Farm Ninja Stars from pop-lit blue shots and Ninjapocalypse combos, delay Ninja Multiball until the pot is fat, then start it with a fresh temporary Playfield X spiked for multiplied jackpots.",
+      "difficulty": 3,
+      "reward": "Maximally inflated Ninja MB jackpots (scale with banked stars)",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed the pops to light major shots blue for Ninja Stars",
+          "detail": "Every blue shot collected banks a star that raises jackpot value."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Run Ninjapocalypse (right orbit → Katana ramp) to dump ~10 stars at once",
+          "detail": "The fastest way to inflate the star count."
+        },
+        {
+          "shot": "snikt-target",
+          "action": "Spike a fresh temporary Playfield X right before starting",
+          "detail": "Higher temp X times out faster — light it just in time."
+        },
+        {
+          "shot": "katana-lock",
+          "action": "Only now lock the third ball and start Ninja MB into the multiplier",
+          "detail": "Super Jackpot = sum of all jackpots collected that round."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "wizard-clone-mb",
+      "title": "Clone Multiball (second mini-wizard)",
+      "category": "wizard",
+      "summary": "The reward for clearing the harder second tier of Battles that unlocks after Sauron — winning all three lights it at the Scoop. Four shots light blue and carry a hurry-up starting at 10M; every blue shot you make resets the value to full and shuts that shot off until a different one relights it.",
+      "difficulty": 3,
+      "reward": "Battle-side mini-wizard multiball; completing it counts toward the final wizard",
+      "steps": [
+        {
+          "shot": "center-scoop",
+          "action": "Win the second-tier Battles, then start Clone Multiball at the Scoop",
+          "detail": "Sauron Multiball has to be finished first to open the harder Battles that feed this."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp for the opening jackpots",
+          "detail": "Both ramps stay the safest repeatable shots while several balls are in play.",
+          "link": "none"
+        },
+        {
+          "shot": "katana-ramp",
+          "action": "Alternate into the Katana ramp to keep the jackpot ladder climbing",
+          "detail": "Spike a temporary Playfield X off the SNIKT ricochet before the big shots land.",
+          "link": "none"
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Cash the Super Jackpot at the Scoop",
+          "detail": "Clearing this is one of the two mini-wizards required before The Final Battle."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-krako-rex",
+      "title": "Giant-Dinosaur Mini-Wizard (Quest chain payoff)",
+      "category": "wizard",
+      "summary": "The Quest-side mini-wizard: win both Quests (each qualified by feeding the chimichanga truck) and play Sauron Multiball, and the oversized dinosaur lights at the Scoop. Build the jackpot on the flashing blue shots, bash the Lil' Deadpool target while his weak spot is exposed, then finish him at the Scoop.",
+      "difficulty": 3,
+      "reward": "Quest-side mini-wizard; completing it counts toward the final wizard",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Feed the chimichanga truck through the right orbit to qualify each Quest",
+          "detail": "The chimichanga requirement grows by one for every Quest you have already played."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Start each Quest at the Scoop and win them to reach the dinosaur showdown",
+          "detail": "Only one mode slot at a time, so clear whatever is running before qualifying the next Quest."
+        },
+        {
+          "shot": "lil-dp-bash",
+          "action": "Bash the Lil' Deadpool standup hurry-ups to throw bombs at the dinosaur",
+          "detail": "Shoot the flashing blue shots first to build the jackpot and expose his weak spot, then you get ten seconds of bashing before he covers up again — fifteen hits in total finish him."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Finish the showdown at the Scoop",
+          "detail": "Completing this is the Quest-side requirement for The Final Battle."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "team-up-allies",
+      "title": "Recruiting Team-Up Allies",
+      "category": "progression",
+      "summary": "Four X-Men wait on four different shots, and each one bends a battle a different way - more health, double points, double damage, or a supercharged feature. Bank the ones you want before you ever step into the ring, because the right pairing turns a grind into a rout.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Shoot the left orbit to bring in Dazzler. She extends Deadpool's health bar, so you last longer before the fight ends.",
+        "Shoot the U-turn loop under the left ramp for Colossus. With him along, every point you score during the battle is doubled.",
+        "Shoot the spinner in the middle of the playfield for Wolverine. He doubles the damage each of your hits does to the opponent.",
+        "Shoot the right orbit for Domino. She supercharges a different feature depending on who you are fighting: the standup targets against Juggernaut, the spinner against Mystique, the pop bumpers against Sabretooth.",
+        "Hit an ally's shot more than once. The Team-Up insert in front of it lights when that ally is ready, and an ally you have already spent this game takes extra hits to bring back.",
+        "Line up the allies you want, then start the battle at the scoop. A qualified ally's shot also lights as a damage shot inside the fight, giving you one more way to hurt the opponent."
+      ],
+      "reward": "Longer, harder-hitting, or higher-scoring battles depending on which allies you bring in"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "lane-skill-bank",
+      "title": "Bank the Lane Plunge",
+      "desc": "Collect the top-lane skill shot by steering the flashing insert and soft-plunging through that lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-lane-bam"
+    },
+    {
+      "id": "threaded-plunge",
+      "title": "Thread the Hidden Plunge",
+      "desc": "Collect the hidden plunge award by banking the launch off the SNIKT standup and into the Katana ramp inside the combo window.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "skill-super-secret"
+    },
+    {
+      "id": "bonus-multiplier-raised",
+      "title": "Stack the End-of-Ball Bonus",
+      "desc": "Complete all four top lanes in a single ball to raise your bonus multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-bonus-bam"
+    },
+    {
+      "id": "star-dump-combo",
+      "title": "Orbit-to-Ramp Star Dump",
+      "desc": "Complete the right-orbit-into-Katana-ramp combo to dump a full batch of ninja stars at once.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-ninjapocalypse"
+    },
+    {
+      "id": "lil-deadpool-multiball",
+      "title": "Start the Small Multiball",
+      "desc": "Drop the OOF bank, bash the standup behind it, and start Lil' Deadpool Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-lil-deadpool"
+    },
+    {
+      "id": "first-villain-down",
+      "title": "First Villain Down",
+      "desc": "Win a Battle outright and cash the finishing Scoop shot - the clawed brawler is the easiest first kill.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-sabretooth"
+    },
+    {
+      "id": "unstoppable-villain-down",
+      "title": "Drop the Unstoppable One",
+      "desc": "Taunt and defeat the game's most dangerous first-tier Battle, finishing it at the Scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-juggernaut"
+    },
+    {
+      "id": "dinosaur-quest-cleared",
+      "title": "Clear a Chimichanga Quest",
+      "desc": "Qualify a Quest with chimichangas and win it, collecting the mode jackpot at the Scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-trex-quest"
+    },
+    {
+      "id": "ninja-multiball-started",
+      "title": "Lock Three and Go Ninja",
+      "desc": "Lock three balls at the Katana handle and start Ninja Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-ninja"
+    },
+    {
+      "id": "disco-multiball-started",
+      "title": "Spin Up the Disco",
+      "desc": "Rip the left spinner enough times to qualify Disco Multiball, then start it with the mode slot clear.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-disco"
+    },
+    {
+      "id": "max-playfield-multiplier",
+      "title": "Peg the Playfield Multiplier",
+      "desc": "Build the playfield multiplier all the way to its 5x ceiling in one ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-snikt-pfx"
+    },
+    {
+      "id": "colossal-jackpot-multiplied",
+      "title": "Multiply the Loop Jackpot",
+      "desc": "Requalify and collect the U-Turn loop jackpot at a multiplied value rather than its base.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-colossal-jackpot"
+    },
+    {
+      "id": "ninja-super-jackpot",
+      "title": "Cash a Fat Ninja Super",
+      "desc": "Hoard ninja stars, then collect the Ninja Multiball Super Jackpot after a round of banked jackpots.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-ninja-hoard"
+    },
+    {
+      "id": "mechsuit-multiball-started",
+      "title": "Suit Up",
+      "desc": "Cash out enough weapon combos to earn Mechsuit Multiball and start it at the Scoop.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-mechsuit"
+    },
+    {
+      "id": "first-mini-wizard-super",
+      "title": "Beat the Flying Reptile",
+      "desc": "Win all three first-tier Battles, start the first mini-wizard multiball, and collect its Super Jackpot through the U-Turn.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-sauron"
+    },
+    {
+      "id": "clone-multiball-cleared",
+      "title": "Clear the Clone Wave",
+      "desc": "Beat the second tier of Battles, start Clone Multiball, and take its Super Jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-clone-mb"
+    },
+    {
+      "id": "giant-dinosaur-down",
+      "title": "Down the Giant Dinosaur",
+      "desc": "Complete the full Quest chain and win the oversized-dinosaur mini-wizard.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-krako-rex"
+    },
+    {
+      "id": "final-battle-won",
+      "title": "End the Mastermind",
+      "desc": "Qualify and win the game's wizard mode - both mini-wizards plus Mechsuit Multiball, then clear both phases and light the Special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-final-battle"
+    }
+  ],
+  "drills": [
+    {
+      "id": "snikt-ramp-plunge",
+      "title": "SNIKT to Ramp",
+      "text": "Hold the left flipper and full-plunge into the SNIKT standup, then take the rebound up the Katana ramp before the window closes. The rebound redirects toward the ramp on its own — your job is to be ready for it rather than to aim it.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-super-secret",
+      "shots": [
+        "snikt-target",
+        "katana-ramp"
+      ]
+    },
+    {
+      "id": "u-turn-precision",
+      "title": "U-Turn Precision",
+      "text": "Feed the mini-loop under the left ramp and make sure the ball goes all the way through rather than half-committing. A strong shot that reaches the end target doubles the value; a reject comes back at you, so there is no such thing as a safe soft attempt here.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "combo-colossal-jackpot",
+      "shots": [
+        "u-turn"
+      ]
+    },
+    {
+      "id": "drop-bank-lock",
+      "title": "OOF Drops to Lock",
+      "text": "Clear the three drop targets, then hit the exposed standup behind them, then do it again. The whole sequence is cheap and controllable, which is exactly why it is the multiball you want banked and waiting rather than one you go hunting for mid-ball.",
+      "reps": "6 cycles",
+      "focus": "accuracy",
+      "goal": "mb-lil-deadpool",
+      "shots": [
+        "lil-dp-drops",
+        "lil-dp-bash"
+      ]
+    },
+    {
+      "id": "boom-lane-habit",
+      "title": "Move the Lit Lane",
+      "text": "On every return, tap the flipper buttons to slide the lit BOOM lane under the ball before it rolls through. Spelling it is nearly free once the habit is there, and without it the button never lights.",
+      "reps": "one full ball, every return",
+      "focus": "ball-control",
+      "shots": [
+        "left-outlane",
+        "left-inlane",
+        "right-inlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "ninjapocalypse-reps",
+      "title": "Orbit Into Katana",
+      "text": "Shoot the right orbit so the ball feeds around to the right flipper, then fire the Katana ramp immediately inside the combo window. It repeats cleanly, so treat it as one motion and count how many you can string together.",
+      "reps": "10 pairs",
+      "focus": "flow",
+      "goal": "combo-ninjapocalypse",
+      "shots": [
+        "right-orbit",
+        "katana-ramp"
+      ]
+    },
+    {
+      "id": "weapon-string-cashout",
+      "title": "String Then Scoop",
+      "text": "Start a chain on the left ramp, keep the string alive on lit majors — the Katana ramp is the safest continuation — then drop the scoop while it is still hot. The cash-out scales with how many shots you made right before it, so the temptation to bank early is the thing to train out.",
+      "reps": "8 cash-outs",
+      "focus": "flow",
+      "goal": "combo-weapon-cashout",
+      "shots": [
+        "left-ramp",
+        "katana-ramp",
+        "center-scoop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "BOOM Button",
+    "location": "center of the lockdown bar",
+    "how": "Deadpool's lockdown bar button is the BOOM button. Spell B-O-O-M in the return lanes — the flippers slide the lit lane toward wherever the ball is coming back — and the button starts flashing with a free shot waiting on it. One press takes the most valuable lit shot on the playfield, the scoop excepted.",
+    "uses": [
+      {
+        "when": "Button flashing during a Battle",
+        "what": "Collects the highest-value lit shot; with nothing lit or all values tied it takes the leftmost one."
+      },
+      {
+        "when": "Mystique nearly finished off",
+        "what": "Ends her after a strong spinner rip when the last hit is too risky to shoot for."
+      },
+      {
+        "when": "Sauron Multiball just started",
+        "what": "Grabs one of the opening four jackpots without you shooting a ramp."
+      },
+      {
+        "when": "Four BOOMs banked, button red",
+        "what": "Big Boom collects every lit shot at once; hold the button instead to spend a single ordinary BOOM."
+      },
+      {
+        "when": "During Berserker Rage",
+        "what": "Pays the Berserker BOOM value on top of the spotted shot, and 4x that value on a Super BOOM."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Deadpool is a fast, combo-hungry Stern about picking fights and stacking multipliers behind a wisecracking merc. Recruit Team-Up allies, win the villain Battles, and climb three mini-wizards to reach The Final Battle.",
+    "loop": [
+      "Spell B-O-O-M across the return lanes, tapping a flipper to slide the lit lane toward the incoming ball, to arm the lockbar button for a free hit on your best lit shot.",
+      "Finish the D-E-A-D targets to open a Battle at the center Scoop, recruit the Team-Up allies you want first, then start and end the villain there.",
+      "Chain the major shots to light weapons, cash them at the Scoop for permanent Playfield X, and spike a temporary one with the SNIKT into the Katana ramp right before a big shot.",
+      "Farm Ninja Stars off pop-lit blue shots and the right-orbit-into-Katana combo, then lock three balls at the Katana ramp for a fattened Ninja Multiball.",
+      "Clear Sauron, then the Clone and giant-dinosaur mini-wizards, and play Mechsuit Multiball to qualify The Final Battle."
+    ],
+    "lights": [
+      {
+        "id": "boom-return-lanes",
+        "name": "B-O-O-M Return Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "The four return lanes spell B-O-O-M, and a lit lane is a letter you still need to finish the word.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap a flipper button to slide the lit B-O-O-M lane across the inlanes and outlanes toward whichever return the ball is dropping into",
+          "when": "as the ball comes back down toward the lanes"
+        },
+        "then": "Spell B-O-O-M and the lockbar button starts flashing with a free shot on it - one press takes the highest-value lit shot on the playfield, the Scoop aside. Bank a fourth BOOM and the button turns red for a Big Boom that collects every lit shot at once.",
+        "goals": [
+          "strategy-safe-opener"
+        ]
+      },
+      {
+        "id": "bam-top-lanes",
+        "name": "BAM Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "bam-lanes",
+            "lamps": 4
+          }
+        ],
+        "lit": "One of the four top lanes shows a flashing BAM insert at any moment, and rolling the ball through the lit lane banks it toward the finished word.",
+        "flashing": "The flashing insert marks the lane you have not yet rolled through.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap a flipper button to move the flashing BAM insert to the lane you want, and off the plunge your pick is set the moment the ball trips the shooter-lane sensor",
+          "when": "before you launch, and as the ball crosses the top lanes"
+        },
+        "then": "Off the plunge, steering the insert and soft-plunging through it is the safe Lane Skill Shot, worth 2.5M plus a 250K bump that grows all game. Completing all four lanes raises the Bonus Multiplier, which resets every ball, so redo it each ball.",
+        "goals": [
+          "skill-lane-bam",
+          "mult-bonus-bam"
+        ]
+      },
+      {
+        "id": "villain-battles",
+        "name": "Villain Battles",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "dead-targets"
+          },
+          {
+            "shot": "center-scoop"
+          }
+        ],
+        "lit": "Completing the D-E-A-D targets lights a Battle at the Scoop, the Scoop also hands you one free Battle at the start of every ball, and only one Battle runs at a time.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank your Team-Up allies first, then start the villain at the Scoop, damage him on the lit shots, and take the Final Shot back at the Scoop within the closing window. Sabretooth is the gentle warm-up, while Juggernaut is the biggest and most dangerous fight on the machine.",
+        "goals": [
+          "mode-sabretooth",
+          "mode-juggernaut",
+          "team-up-allies"
+        ]
+      },
+      {
+        "id": "team-up-shots",
+        "name": "Team-Up Allies",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "u-turn"
+          },
+          {
+            "shot": "wolverine-spinner"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Four shots light for X-Men allies - Dazzler at the left orbit, Colossus at the U-Turn, Wolverine at the center spinner, Domino at the right orbit - and banking one carries its perk into your next fight.",
+        "flashing": null,
+        "control": null,
+        "then": "Pick the ally that fits the plan - Dazzler adds health, Wolverine doubles damage - and bring it in before you start a Battle to turn a grind into a rout. These same four shots are Phase 1 of The Final Battle.",
+        "goals": [
+          "team-up-allies",
+          "wizard-final-battle"
+        ]
+      },
+      {
+        "id": "playfield-multiplier",
+        "name": "Weapons and Playfield X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "katana-ramp"
+          },
+          {
+            "shot": "snikt-target"
+          },
+          {
+            "shot": "center-scoop"
+          }
+        ],
+        "lit": "Chaining the major shots lights weapon inserts for a few seconds, while Playfield X runs from 1x up to 5x on top of them.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed your weapon strings into the Scoop to bank permanent Playfield X - each hundred weapons adds another multiplier for the rest of the game - and a running tally of forty-five earns Mechsuit Multiball. Just before a big scoring window, ricochet the SNIKT standup into the Katana ramp to spike a temporary multiplier, then pour jackpots under it.",
+        "goals": [
+          "mult-playfield-x",
+          "combo-weapon-cashout",
+          "combo-snikt-pfx"
+        ]
+      },
+      {
+        "id": "ninja-multiball",
+        "name": "Ninja Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "pool-targets"
+          },
+          {
+            "shot": "katana-lock"
+          },
+          {
+            "shot": "katana-ramp"
+          }
+        ],
+        "lit": "Completing P-O-O-L lights a lock at the Katana ramp handle, and the locks are lit by default when the game begins.",
+        "flashing": "During the multiball the Katana ramp flashes for the Super Jackpot once you have collected the round's jackpots.",
+        "control": null,
+        "then": "Hoard Ninja Stars first - the right-orbit-into-Katana Ninjapocalypse dumps about ten at once - because jackpots scale with your banked star count, so a delayed start pays far more. Lock three balls, then keep returning to the Katana ramp to bank each Super Jackpot.",
+        "goals": [
+          "mb-ninja",
+          "combo-ninjapocalypse",
+          "strategy-ninja-hoard"
+        ]
+      },
+      {
+        "id": "lil-deadpool-multiball",
+        "name": "Lil' Deadpool Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "lil-dp-drops"
+          },
+          {
+            "shot": "lil-dp-bash"
+          }
+        ],
+        "lit": "Knocking down the OOF drop targets exposes the Lil' Deadpool standup, whose insert glows greener as you close in on the lock.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the exposed standup to lock a ball behind the drops and start a cheap two-ball multiball with hurry-up jackpots. Start a Battle first and launch this over it, and its ball save carries you through the riskiest fights.",
+        "goals": [
+          "mb-lil-deadpool"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap a flipper button to slide the lit B-O-O-M lane across the inlanes and outlanes toward the return the ball is dropping into, and roll through to bank that letter. Spell B-O-O-M and the lockbar button flashes with a free hit on the best lit shot; the top BAM lanes work the same way for the skill shot and Bonus Multiplier.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Steer a BAM insert and soft-plunge through it for the safe Lane Skill Shot, grab the easy Dazzler Team-Up off the left orbit, then finish D-E-A-D and take on Sabretooth with forgiving orbit, spinner, and pop-bumper damage. Cycle the B-O-O-M lanes as the ball returns so the button is armed as a ball save.",
+        "goals": [
+          "skill-lane-bam",
+          "strategy-safe-opener",
+          "mode-sabretooth",
+          "team-up-allies"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Bank a durable Playfield X off early weapon cash-outs, hoard Ninja Stars and hold Ninja Multiball back until the pot is fat, and start Juggernaut before launching Lil' Deadpool Multiball over it for a ball save. The right Team-Ups make every fight shorter and worth more.",
+        "goals": [
+          "mult-playfield-x",
+          "strategy-ninja-hoard",
+          "mode-juggernaut",
+          "mb-lil-deadpool"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear the mini-wizards - Sauron first, then the Clone and giant-dinosaur showdowns - and play Mechsuit Multiball to qualify The Final Battle, the wizard duel with Sinister himself. Finishing it is what lights the Special.",
+        "goals": [
+          "wizard-final-battle",
+          "wizard-sauron",
+          "wizard-clone-mb",
+          "wizard-krako-rex"
+        ]
+      }
+    ]
+  }
+}

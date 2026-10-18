@@ -1,0 +1,1507 @@
+{
+  "machine": "Beetlejuice (Spooky Pinball, 2025)",
+  "defaultFx": "beetle",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Right-edge plunge; feeds the right flipper on a good skill shot. A botched plunge draining the right outlane is auto-caught by the Magna-Save magnet without spending a charge.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Far-left lane sweeping up to the upper playfield; a perfect shot figure-8s through the right side of the Upper Loop to feed the upper flipper. Can be a purple mode-qualify shot.",
+      "feeds": {
+        "shot": "upper-flipper"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Wheel)",
+      "type": "ramp",
+      "x": 0.26,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Left-center ramp with a physical roulette wheel; repeated shots qualify the Wheel, then press the Action Button to stop it for Super Pops/Ramps/Spinner/Worm (5x), Extra Ball, points, or You Lose.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.36,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Center-left spinner; a clean rip carries through the pops into the Juno Scoop. Raises the multiplier in 'Til Death and is farmed during Super Spinner and Beetle Snake (30 spins).",
+      "feeds": {
+        "shot": "juno-scoop"
+      }
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.31,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Three pops above the left ramp/spinner, below the upper playfield. Hitting them spawns Lost Souls for the Returning Souls playfield multiplier."
+    },
+    {
+      "id": "juno-scoop",
+      "name": "Juno Scoop",
+      "type": "scoop",
+      "x": 0.16,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Upper-left 'Take a Number' scoop; fed by clean spinner shots through the pops. A Super Jackpot location for Afterlife Couch MB and Singing in the Stairwell (Action-Button collect)."
+    },
+    {
+      "id": "center-scoop",
+      "name": "Center (Multiplier) Scoop",
+      "type": "scoop",
+      "x": 0.5252,
+      "y": 0.6345,
+      "trim": "all",
+      "notes": "Center scoop with 1-2-3-4-5 inserts that display the Returning Souls playfield multiplier.",
+      "feeds": {
+        "shot": "spinner"
+      }
+    },
+    {
+      "id": "camera-targets",
+      "name": "Polaroid Camera Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Lydia's camera standups, center playfield; lit by rolling through the inlanes. Hitting each starts Strange and Unusual Multiball."
+    },
+    {
+      "id": "sandworm-targets",
+      "name": "Sandworm Wall Targets",
+      "type": "drop-target",
+      "x": 0.56,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Attack-from-Mars-style motorized target bank guarding the Sandworm; knock them down to start a Sandworm Battle."
+    },
+    {
+      "id": "sandworm-mouth",
+      "name": "Sandworm Mouth",
+      "type": "mech",
+      "x": 0.6691,
+      "y": 0.7862,
+      "trim": "all",
+      "notes": "Motorized creature that lowers so you can shoot its mouth to deplete its health bar. Battles include Gut Punch, Sharp Shooter, and Walk With Rhythm (rapid Action-Button presses)."
+    },
+    {
+      "id": "sandworm-scoop",
+      "name": "Sandworm Subway Scoop",
+      "type": "scoop",
+      "x": 0.56,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Scoop/subway beneath the worm with two standups struck as the ball enters."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Graveyard / Couch Lift)",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Dual-lift tombstone ramp right of the sandworm. Down = loopable, feeds the right flipper; Up = ball lock that loads the Afterlife Couch.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "handbook-target",
+      "name": "Handbook Target",
+      "type": "standup",
+      "x": 0.9137,
+      "y": 0.6138,
+      "trim": "all",
+      "notes": "'Handbook for the Recently Deceased' standup between the Right Ramp and Right Orbit; spawns a fly to re-qualify Magna-Save and starts Otho's Seance."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit / Deadend Vari-target",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Far-right convertible orbit/vari-target; the universal Mode Start and It's Showtime start shot. A wireform feeds the couch lock."
+    },
+    {
+      "id": "right-orbit-drop",
+      "name": "Right Orbit Drop Target",
+      "type": "drop-target",
+      "x": 0.88,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Drop target on the Right Orbit; in It's Showtime, hitting it ricochets a locked ball into the vari-target for the Super Jackpot."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Beetlejuice Captive Ball",
+      "type": "captive-ball",
+      "x": 0.86,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Beetlejuice sculpt rises from the gravestone, lifts a trapped ball and fires it back down the right wireform. Hit to stop Lydia in As Seen on TV.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "mystery-scoop",
+      "name": "Mystery Scoop (Coffin)",
+      "type": "scoop",
+      "x": 0.8,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Right 'coffin' scoop; hit to qualify, collect Mystery awards here (Lite Lock, points, Advance Now Serving, Lite Ball Save, Shooting Gallery video mode)."
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper Loop (Knock Loop)",
+      "type": "loop",
+      "x": 0.5,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Loops around the Afterlife Couch; shootable either direction. Lights the Knock inserts / locks and builds jackpot value in Afterlife Couch MB. Best taken with the upper flipper.",
+      "playfield": "waiting-room",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "afterlife-couch",
+      "name": "Afterlife Couch / Couch Lock",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Upper-playfield ball-lock couch; holds 3 balls then tips forward to release them for Afterlife Couch / Now Serving 3-ball multiball.",
+      "playfield": "waiting-room"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.6,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Full-size upper-right flipper serving the Waiting Room and the Upper Loop; fed by the Left Orbit figure-8.",
+      "playfield": "waiting-room",
+      "bat": {
+        "size": "full"
+      }
+    },
+    {
+      "id": "extra-ball-target",
+      "name": "Extra Ball Target",
+      "type": "standup",
+      "x": 0.34,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Standup target sitting under the Upper Loop's left entry."
+    },
+    {
+      "id": "now-serving-targets",
+      "name": "Now Serving Targets",
+      "type": "target-bank",
+      "x": 0.44,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Upper-playfield standup bank under the couch; part of the Take a Number -> Advance Counter -> Now Serving Juno chain.",
+      "playfield": "waiting-room",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "waiting-room-scoop",
+      "name": "Waiting Room Scoop",
+      "type": "scoop",
+      "x": 0.44,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "The upper playfield's own scoop; used to avoid being photographed in Ghosts in the Sheets.",
+      "playfield": "waiting-room",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "waiting-room-standups",
+      "name": "Waiting Room Standups",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Upper-right Waiting Room standups; these are believed to feed the end-of-ball bonus multiplier (unconfirmed).",
+      "playfield": "waiting-room",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "waiting-room-orbit",
+      "name": "Waiting Room Orbit",
+      "type": "orbit",
+      "x": 0.18,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "The upper playfield's own orbit lane feeding the upper flipper region.",
+      "playfield": "waiting-room",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "mode-change-switch",
+      "name": "Mode Change Switch",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Rebound switch above the left slingshot; cycles the qualified Beetlejuice mode before you lock it with the Launch Button."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Rolling through it lights the center Camera targets."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Rolling through it lights the center Camera targets."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "mech",
+      "x": 0.28,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Standard kicker above the left inlane."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "mech",
+      "x": 0.68,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Standard kicker above the right inlane."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Far bottom-left drain lane; paired with a lit kickback."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Far bottom-right; a switch raises a 'Bridge Out' diverter. Drains here are rescued by the between-flipper Magna-Save magnet."
+    },
+    {
+      "id": "magna-save",
+      "name": "Magna-Save Magnet",
+      "type": "mech",
+      "x": 0.4964,
+      "y": 0.1517,
+      "trim": "all",
+      "notes": "Magnet between/below the lower flippers, fired by the Action Button. Auto-saves outlane and center drains, and re-qualifies via the Handbook target."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower left flipper. The Magna-Save magnet sits below and between the pair, and can be fired from the lockdown-bar button."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower right flipper. A timed launch drops the ball here for the standard skill shot, and the Right Ramp returns to it while it is down."
+    }
+  ],
+  "goals": [
+    {
+      "id": "standard-skill-shot",
+      "title": "Standard Skill Shot",
+      "category": "skillshot",
+      "summary": "Time the plunge to the lit value to feed the right flipper. A miss is auto-caught by the magnet, so it's a near-free bonus.",
+      "difficulty": 1,
+      "reward": "Boosted skill shot value; ball fed to the right flipper",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge when a point value is lit",
+          "detail": "Release the launch the instant a value lights; a clean skill shot feeds the right flipper. A mistimed plunge draining the right outlane is auto-saved by the Magna-Save magnet without spending a charge."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Land the Standard Skill Shot on the plunge first — that arms the Super: Left Ramp, Right Ramp, then rip the Spinner to finish.",
+      "difficulty": 2,
+      "reward": "Highest-value plunge award (Super Skill Shot)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Land the standard skill shot, then shoot the Left Ramp",
+          "detail": "Immediately, while the combo inserts are lit — the window is short ('quickly')."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp",
+          "detail": "Continue the quick chain."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the Spinner to finish",
+          "detail": "Final shot of the lit Left Ramp -> Right Ramp -> Spinner combo."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "knock-loop-builder",
+      "title": "Knock Loop Value Builder",
+      "category": "combo",
+      "summary": "The signature repeatable loop: cycle the Upper Loop around the couch with the upper flipper to light locks and pump jackpot value.",
+      "difficulty": 2,
+      "reward": "Lights locks and builds Knock jackpot value",
+      "steps": [
+        {
+          "shot": "upper-flipper",
+          "action": "Catch the ball on the upper flipper",
+          "detail": "Get up top via the Left Orbit figure-8 or a Left Orbit feed."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Loop the Upper Loop around the couch",
+          "detail": "Shootable from either direction; each pass lights the Knock inserts."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Cycle it again to build value",
+          "detail": "In Afterlife Couch Multiball each Knock pass pumps jackpot value before you cash out — the closest thing to a farmable combo loop."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "right-ramp-farm",
+      "title": "Right Ramp Loop Farm",
+      "category": "combo",
+      "summary": "The safe repeat-flow shot: with the ramp down rather than raised for lock, the Right Ramp loops back to the right flipper for stacked jackpots.",
+      "difficulty": 2,
+      "reward": "Repeatable ramp jackpots / rising shot value",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp (down)",
+          "detail": "Lowered, the ramp is loopable and returns the ball to your right flipper; raised, it stops being a loop and becomes the Afterlife Couch lock."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot it again and repeat",
+          "detail": "Stacks ramp jackpots in Strange & Unusual and Grave Dig, and raises shot value in 'Til Death."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "super-spinner-rip",
+      "title": "Super Spinner Rip",
+      "category": "combo",
+      "summary": "Win Super Spinner off the Wheel, then rip the spinner during the 5x window for cheap multiplier growth.",
+      "difficulty": 1,
+      "reward": "5x spinner value during the boosted window",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Spin the Wheel to Super Spinner",
+          "detail": "Repeated Left Ramp shots light the Wheel, and the next Left Ramp shot spins it — stop it on Super Spinner with the Action Button."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the Spinner repeatedly",
+          "detail": "Farm spins during the 5x window; also feeds Beetle Snake's 30-spin requirement."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "showtime-ricochet",
+      "title": "It's Showtime Super Jackpot Ricochet",
+      "category": "combo",
+      "summary": "The highest single-hit payoff: lock a ball in the Right Orbit, then bank it off the drop target into the vari-target for a Super Jackpot.",
+      "difficulty": 3,
+      "reward": "Super Jackpot + Add-a-Ball on the first one",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Lock a ball in the Right Orbit / Deadend",
+          "detail": "After shooting 3 (+1) jackpots in It's Showtime, shoot the Right Orbit to lock a ball."
+        },
+        {
+          "shot": "right-orbit-drop",
+          "action": "Hit the Right Orbit Drop Target",
+          "detail": "Ricochets the locked ball into the vari-target for the Strength Test Super Jackpot; the first one Adds-a-Ball to keep the farm alive."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "dantes-wheel",
+      "title": "Left Ramp Wheel Spin",
+      "category": "combo",
+      "summary": "Repeatedly hit the Left Ramp to light the roulette wheel, then spin for a 5x Super, Extra Ball, or points.",
+      "difficulty": 1,
+      "reward": "Wheel award: 5x Super, Extra Ball, or points",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp repeatedly",
+          "detail": "Repeated ramp shots qualify and light the Wheel."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot again to spin, stop with the Action Button",
+          "detail": "Award pool: Super Pops/Ramps/Spinner/Worm (5x), Extra Ball, points (5M/25K/50K), or 'You Lose'."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "afterlife-couch-mb",
+      "title": "Afterlife Couch / Now Serving Multiball",
+      "category": "multiball",
+      "summary": "The easiest multiball to reach and the best beginner target: loop the couch to light locks, lock 3 on the Right Ramp, cash green-shot jackpots.",
+      "difficulty": 1,
+      "reward": "3-ball multiball; Super Jackpot at Spinner/Juno",
+      "steps": [
+        {
+          "shot": "upper-loop",
+          "action": "Loop the Upper Loop to light the Knock inserts",
+          "detail": "From either direction around the couch; the Knock inserts light locks."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp (raised) to lock 3 balls",
+          "detail": "Balls load onto the Afterlife Couch; it tips forward to release them.",
+          "feeds": {
+            "shot": "afterlife-couch"
+          }
+        },
+        {
+          "shot": "afterlife-couch",
+          "action": "Start the 3-ball multiball",
+          "detail": "Couch dumps the locked balls. Shoot green shots for jackpots; the Knock loop builds jackpot value."
+        },
+        {
+          "shot": "juno-scoop",
+          "action": "Re-lock, then collect the Super Jackpot",
+          "detail": "Re-lock a ball on the couch to light the Super Jackpot at the Spinner / Juno Scoop."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strange-unusual-mb",
+      "title": "Strange and Unusual Multiball",
+      "category": "multiball",
+      "summary": "Lydia's Camera 2-ball MB: light the Polaroid targets via the inlanes, hit each once, then farm ramp jackpots with add-a-ball sets.",
+      "difficulty": 2,
+      "reward": "2-ball multiball with add-a-ball loops",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the inlanes to light the Camera targets",
+          "detail": "Passing through either inlane lights the center Polaroid targets."
+        },
+        {
+          "shot": "camera-targets",
+          "action": "Hit each Camera target once to start",
+          "detail": "Begins the 2-ball multiball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Ramps for jackpots",
+          "detail": "Complete sets of flashing Camera targets to Add-a-Ball and keep it alive."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "its-showtime-mb",
+      "title": "It's Showtime Multiball",
+      "category": "multiball",
+      "summary": "Spell S-H-O-W-T-I-M-E on yellow shots between modes, start at the Right Orbit, then chase the Strength Test Super Jackpot.",
+      "difficulty": 3,
+      "reward": "Multiball + Strength Test Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Spell S-H-O-W-T-I-M-E on the yellow shots",
+          "detail": "Yellow shots (ramps, orbits, spinner) exist in one narrow window: after you have qualified a Beetlejuice mode and before you start it. Once the mode is running they are gone."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the Right Orbit to start",
+          "detail": "Same start shot as modes; press the Action Button — or say 'Beetlejuice' three times (SpookySpeak) — to begin."
+        },
+        {
+          "shot": "right-orbit-drop",
+          "action": "Cash the Strength Test Super Jackpot",
+          "detail": "Carousel shots qualify it; shoot 3(+1) jackpots, lock in the Right Orbit, then hit the drop target to ricochet for the Super (first Adds-a-Ball)."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "sandworm-battle-mb",
+      "title": "Sandworm Battle",
+      "category": "multiball",
+      "summary": "Bash the three wall targets to start a battle, lower the wall, and shoot the worm's mouth to deplete its health bar.",
+      "difficulty": 3,
+      "reward": "Battle jackpots; progress toward Extra Ball",
+      "steps": [
+        {
+          "shot": "sandworm-targets",
+          "action": "Knock down the three Sandworm wall targets",
+          "detail": "The motorized Attack-from-Mars-style bank guarding the worm; clearing it starts a Sandworm Battle."
+        },
+        {
+          "shot": "sandworm-mouth",
+          "action": "Lower the wall and shoot the Worm's mouth",
+          "detail": "Each battle (Gut Punch, Sharp Shooter, Walk With Rhythm) has its own way to line up the mouth; in Walk With Rhythm rapidly press the Action Button."
+        },
+        {
+          "shot": "sandworm-mouth",
+          "action": "Deplete the health bar to defeat it",
+          "detail": "Shots into the mouth are what deal the damage. Defeating enough Sandworms lights an Extra Ball."
+        }
+      ],
+      "fx": "worm"
+    },
+    {
+      "id": "start-a-mode",
+      "title": "Start a Beetlejuice Mode",
+      "category": "mode",
+      "summary": "The universal mode flow: three purple shots to qualify, cycle-and-lock your pick, then start at the Right Orbit.",
+      "difficulty": 2,
+      "reward": "Starts your selected Beetlejuice mode",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot purple-lit Beetlejuice shots 3 times",
+          "detail": "Three purple (Beetlejuice-face) hits light Mode Start."
+        },
+        {
+          "shot": "mode-change-switch",
+          "action": "Cycle to the mode you want and lock it",
+          "detail": "Hit the Mode Change switch to cycle; press the Launch Button while it blinks to lock it so the slings can't change it."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the Right Orbit to start",
+          "detail": "Universal mode-start shot. Modes cannot be qualified or started during a multiball."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "as-seen-on-tv",
+      "title": "As Seen on TV",
+      "category": "mode",
+      "summary": "An easy opener mode: shoot 7 easy lit shots, then hit the captive ball to stop Lydia and score jackpots.",
+      "difficulty": 2,
+      "reward": "Jackpots for stopping Lydia",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Start As Seen on TV",
+          "detail": "Qualify with 3 purple shots, select it, then shoot the Right Orbit."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the 7 easy lit shots",
+          "detail": "Hold the Action Button to maintain the current shot value."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball to stop Lydia",
+          "detail": "Scores the jackpots once the 7 shots are done."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "day-o-dinner-party",
+      "title": "Day-O (Dinner Party)",
+      "category": "mode",
+      "summary": "Timed survival mode where the machine takes the flippers: farm switch-dense targets to grow a multiplier, then cash before the timer dies.",
+      "difficulty": 3,
+      "reward": "Big multiplier-driven mode score",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Start Day-O (Dinner Party)",
+          "detail": "Timed mode; the machine takes over the flippers."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Farm switches to grow the multiplier",
+          "detail": "Hitting pops, slings, the couch, the sandworm, and Beetlejuice all raise the multiplier.",
+          "link": "none"
+        },
+        {
+          "shot": "afterlife-couch",
+          "action": "Keep hitting lit shots to stay alive and add balls",
+          "detail": "When the timer expires the flippers go dead but you keep the ball; cash the multiplier before it ends.",
+          "link": "none"
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "othos-seance",
+      "title": "Otho's Seance",
+      "category": "mode",
+      "summary": "Start and finish this mode at the Handbook target, clearing the green shots it spawns in between.",
+      "difficulty": 2,
+      "reward": "Completes the seance mode",
+      "steps": [
+        {
+          "shot": "handbook-target",
+          "action": "Shoot the Handbook target to start the seance",
+          "detail": "Standup between the Right Ramp and Right Orbit."
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the resulting green shots",
+          "detail": "Clear the lit green shots the seance spawns around the playfield."
+        },
+        {
+          "shot": "handbook-target",
+          "action": "Shoot the Handbook target again to finish",
+          "detail": "Completes Otho's Seance."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "returning-souls-x",
+      "title": "Returning Souls (Playfield Multiplier)",
+      "category": "multiplier",
+      "summary": "Hit the pops to spawn Lost Souls, return them via lit shots to light a brief playfield X, then dump it into a big scoring window.",
+      "difficulty": 2,
+      "reward": "Brief playfield multiplier (shown on Center Scoop 1-5)",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Hit the pop bumpers to spawn Lost Souls",
+          "detail": "Each pop cluster hit spawns souls."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Return souls via lit shots to raise Playfield X",
+          "detail": "Each soul you return banks another 1x and another 30 seconds, up to a maximum of 5x, and the level you are holding shows on the Center Scoop's 1-2-3-4-5 inserts."
+        },
+        {
+          "shot": "afterlife-couch",
+          "action": "Dump it into a big scoring window",
+          "detail": "Playfield X starts at your highest banked level and steps down 1x every 30 seconds, so open it right before a multiball Super Jackpot or a mode's high-value shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier (Upper Standups)",
+      "category": "multiplier",
+      "summary": "Tap the upper-right Waiting Room standups whenever you have upper-flipper control to climb the end-of-ball bonus multiplier.",
+      "difficulty": 2,
+      "reward": "Higher end-of-ball bonus multiplier",
+      "steps": [
+        {
+          "shot": "upper-flipper",
+          "action": "Get upper-flipper control",
+          "detail": "Via the Left Orbit figure-8 or the Upper Loop."
+        },
+        {
+          "shot": "waiting-room-standups",
+          "action": "Tap the upper-right Waiting Room standups",
+          "detail": "These are believed to feed the end-of-ball bonus multiplier (unconfirmed)."
+        },
+        {
+          "shot": "waiting-room-standups",
+          "action": "Raise it early, then protect the ball",
+          "detail": "Bonus X only pays at end of ball, so bank it early and avoid draining while it's high."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "singing-stairwell",
+      "title": "Singing in the Stairwell (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "The marquee scoring chase: complete 2 modes or start 4 to light this add-a-ball multiball, then collect the Super at the Juno Scoop with the Action Button.",
+      "difficulty": 3,
+      "reward": "Mini-wizard multiball; Super Jackpot at Juno",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Complete 2 modes or start 4 modes",
+          "detail": "Each mode qualifies via 3 purple shots and starts at the Right Orbit; reaching the threshold lights the mini-wizard."
+        },
+        {
+          "shot": "juno-scoop",
+          "action": "Start Singing in the Stairwell multiball",
+          "detail": "A multiball with built-in Add-a-Balls to keep it going."
+        },
+        {
+          "shot": "juno-scoop",
+          "action": "Collect the Super Jackpot at the Juno Scoop",
+          "detail": "You must press the Action Button to collect the Super Jackpot."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "best-opener",
+      "title": "Best Opener: Super Skill Shot into the Wheel",
+      "category": "strategy",
+      "summary": "The recommended opener: land the Super Skill Shot, bank a Wheel Super, then light couch locks up top.",
+      "difficulty": 2,
+      "reward": "Front-loaded guaranteed value plus an easy multiball lit",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge for the Standard Skill Shot",
+          "detail": "Release on a lit value; the ball feeds the right flipper."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Chain the Super Skill Shot",
+          "detail": "Left Ramp -> Right Ramp -> Spinner while lit."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the Wheel 1-2 times",
+          "detail": "Safest repeatable shot; bank a 5x Super or Extra Ball with a predictable return away from the outlanes."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Feed the Upper Loop",
+          "detail": "Light couch locks toward the easy Afterlife Couch multiball while keeping the ball in the safer upper playfield."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "beginner-first-30",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A safe, forgiving opening line: lean on the auto-save magnet, bank Wheel value, reach the easiest multiball, and start an easy mode.",
+      "difficulty": 1,
+      "reward": "Safe, high-value beginner progression",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge — a botched skill shot is auto-saved",
+          "detail": "The Magna-Save magnet catches outlane and center drains, so the game is unusually forgiving early."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp Wheel",
+          "detail": "Safest shot on the playfield; bank guaranteed value."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Work the Upper Loop for couch locks",
+          "detail": "Drive toward Afterlife Couch multiball — the easiest to reach."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Qualify an easy mode and start it",
+          "detail": "3 purple shots -> pick As Seen on TV or Grave Dig with the Mode Change switch -> lock with Launch -> shoot the Right Orbit."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "high-score-stack",
+      "title": "High-Score Stacking Line",
+      "category": "strategy",
+      "summary": "The score ceiling: stack Returning Souls playfield X and a Wheel Super onto Afterlife Couch Super Jackpots via the Knock loop.",
+      "difficulty": 3,
+      "reward": "Score ceiling — the 600M+ lines",
+      "steps": [
+        {
+          "shot": "upper-loop",
+          "action": "Qualify Afterlife Couch multiball",
+          "detail": "Knock loop lights locks; lock 3 balls on the Right Ramp."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Arm Returning Souls playfield X",
+          "detail": "Spawn Lost Souls at the pops and return them via lit shots just before the jackpot phase."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Bank a Wheel Super and stack it",
+          "detail": "e.g. Super Ramps before a ramp-heavy phase; stacking a Wheel Super into a multiball is the highest-leverage combo."
+        },
+        {
+          "shot": "afterlife-couch",
+          "action": "Cash Super Jackpots while Playfield X is lit",
+          "detail": "Farm the Knock loop to pump value, re-lock, and collect at Spinner/Juno with the multiplier active — big scores come from multiball + playfield-X stacking."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "extra-ball-collect",
+      "title": "Light and Collect an Extra Ball",
+      "category": "strategy",
+      "summary": "Three paths to a free ball: bank one off the wheel, defeat Sandworms until it lights, then cash it at the Extra Ball standup.",
+      "difficulty": 2,
+      "reward": "Extra Ball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Spin the wheel and hope for Extra Ball",
+          "detail": "Extra Ball sits in the wheel's award pool, so repeated Left Ramp shots are the cheapest chance at one.",
+          "link": "none"
+        },
+        {
+          "shot": "sandworm-mouth",
+          "action": "Defeat Sandworms to light Extra Ball",
+          "detail": "Beating enough worm battles lights an Extra Ball; each battle ends by depleting the health bar through the mouth.",
+          "link": "none"
+        },
+        {
+          "shot": "extra-ball-target",
+          "action": "Cash the lit Extra Ball at its target",
+          "detail": "Once lit, hit the Extra Ball standup to bank it. Do it before you drain — a lit award is worth nothing unclaimed."
+        }
+      ],
+      "fx": "worm"
+    },
+    {
+      "id": "multiball-sweep-plan",
+      "title": "All Three Multiballs in One Game",
+      "category": "strategy",
+      "summary": "The order that gets every multiball started in one game: easiest first, camera targets second, then spell out the Showtime letters between modes.",
+      "difficulty": 3,
+      "reward": "All three main multiballs started in a single game",
+      "steps": [
+        {
+          "shot": "upper-loop",
+          "action": "Start with the couch",
+          "detail": "Loop the couch to light locks, lock three on the Right Ramp, and clear the Afterlife Couch multiball first — it is the easiest to reach."
+        },
+        {
+          "shot": "camera-targets",
+          "action": "Bank the camera multiball next",
+          "detail": "Roll the inlanes to light the Polaroid targets and hit each one; the 2-ball start is cheap and can be reached on almost any ball."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Bank Showtime letters between modes",
+          "detail": "Yellow shots only exist while a mode is qualified but not started, so leave a mode qualified and chip away at the letters instead of starting it immediately."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start It's Showtime once the letters are done",
+          "detail": "Same start shot as modes. Multiballs lock out mode qualifying, so finish the letters before you fire off any multiball you already have lit."
+        }
+      ],
+      "fx": "beetle"
+    },
+    {
+      "id": "video-mode-shooting-gallery",
+      "title": "Shooting Gallery (Video Mode)",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "One of the Mystery awards is not points at all — it drops you into a shooting gallery on the display. It is the rare mode where the action button and the flippers do two different jobs at once: one fires, the other aims.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Hit the coffin to qualify a Mystery Award",
+        "Collect the award at the right scoop, and hope Shooting Gallery comes up",
+        "Press the action button to shoot",
+        "Press the flipper buttons to steer your aim onto the targets"
+      ],
+      "reward": "Points for the targets you hit during the video mode"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-summons",
+      "title": "First Summons",
+      "desc": "Qualify a Beetlejuice mode with three purple shots and start it at the Right Orbit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "start-a-mode"
+    },
+    {
+      "id": "spin-the-wheel",
+      "title": "Spin the Wheel",
+      "desc": "Light the Left Ramp roulette wheel and collect any award off a spin.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "dantes-wheel"
+    },
+    {
+      "id": "couch-call",
+      "title": "Couch Call",
+      "desc": "Lock three balls via the Right Ramp and start the Afterlife Couch multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "afterlife-couch-mb"
+    },
+    {
+      "id": "say-cheese",
+      "title": "Say Cheese",
+      "desc": "Light the Polaroid targets off the inlanes and hit each one to start the Strange and Unusual 2-ball multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strange-unusual-mb"
+    },
+    {
+      "id": "plunge-and-chain",
+      "title": "Plunge and Chain",
+      "desc": "Land the timed skill shot and finish the lit Left Ramp, Right Ramp, Spinner chain for the Super Skill Shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "bonus-climber",
+      "title": "Bonus Climber",
+      "desc": "Use upper-flipper control to tap the Waiting Room standups and raise your end-of-ball bonus multiplier before draining.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-multiplier"
+    },
+    {
+      "id": "signal-cut",
+      "title": "Signal Cut",
+      "desc": "Complete As Seen on TV: clear its seven lit shots, then hit the captive ball to stop Lydia and collect the jackpots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "as-seen-on-tv"
+    },
+    {
+      "id": "seance-closed",
+      "title": "Seance Closed",
+      "desc": "Complete Otho's Seance: start it at the Handbook target, clear the green shots, and hit the Handbook target again.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "othos-seance"
+    },
+    {
+      "id": "dinner-guest",
+      "title": "Dinner Guest",
+      "desc": "Survive Day-O with the flippers taken away and cash a grown multiplier before the mode timer runs out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "day-o-dinner-party"
+    },
+    {
+      "id": "loop-runner",
+      "title": "Loop Runner",
+      "desc": "String several Upper Loop passes around the couch in one ball to light locks and pump the Knock jackpot value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "knock-loop-builder"
+    },
+    {
+      "id": "ramp-regular",
+      "title": "Ramp Regular",
+      "desc": "Loop the Right Ramp back-to-back with the vari-target down to stack repeat ramp jackpots in a single ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "right-ramp-farm"
+    },
+    {
+      "id": "showtime-started",
+      "title": "Curtain Up",
+      "desc": "Spell S-H-O-W-T-I-M-E on the yellow shots and start It's Showtime multiball at the Right Orbit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "its-showtime-mb"
+    },
+    {
+      "id": "worm-wrangler",
+      "title": "Worm Wrangler",
+      "desc": "Clear the three wall targets, start a Sandworm Battle, and drain the worm's health bar through its mouth to defeat it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "sandworm-battle-mb"
+    },
+    {
+      "id": "strength-test-super",
+      "title": "Strength Test",
+      "desc": "During It's Showtime, lock a ball in the Right Orbit and bank it off the drop target into the vari-target for the Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "showtime-ricochet"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Light and collect an Extra Ball, whether from the wheel, the standup target, or defeating enough Sandworms.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "extra-ball-collect"
+    },
+    {
+      "id": "souls-multiplied",
+      "title": "Souls Multiplied",
+      "desc": "Return Lost Souls until the Center Scoop playfield multiplier inserts reach their top value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "returning-souls-x"
+    },
+    {
+      "id": "stairwell-summoned",
+      "title": "Stairwell Summoned",
+      "desc": "Reach the mini-wizard by completing two Beetlejuice modes or starting four, then start Singing in the Stairwell.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "singing-stairwell"
+    },
+    {
+      "id": "stairwell-super",
+      "title": "Top of the Stairs",
+      "desc": "Collect the Singing in the Stairwell Super Jackpot at the Juno Scoop with the Action Button.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "singing-stairwell"
+    },
+    {
+      "id": "multiball-sweep",
+      "title": "Multiball Sweep",
+      "desc": "Start all three main multiballs in one game: Afterlife Couch, Strange and Unusual, and It's Showtime.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "multiball-sweep-plan"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-chain",
+      "title": "Skill Shot Into the Chain",
+      "text": "Release the plunge on a lit value so the ball feeds the right flipper, then run left ramp, right ramp, spinner while the combo inserts are still lit. The window is short, so pre-decide the three shots rather than reading them off the playfield as you go.",
+      "reps": "12 plunges",
+      "focus": "skill-shot",
+      "goal": "super-skill-shot",
+      "shots": [
+        "shooter-lane",
+        "left-ramp",
+        "right-ramp",
+        "spinner"
+      ]
+    },
+    {
+      "id": "wheel-ramp-reps",
+      "title": "Wheel Ramp Reps",
+      "text": "Shoot the left ramp repeatedly and take each return off the left inlane straight back into it. It is the safest shot on the playfield and its return keeps you away from the outlanes, so this is the shot to fall back on whenever the ball is out of control.",
+      "reps": "20 ramp shots",
+      "focus": "accuracy",
+      "goal": "dantes-wheel",
+      "shots": [
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "upper-loop-cycles",
+      "title": "Upper Loop Cycles",
+      "text": "Get up top via the left orbit figure-8, cradle on the upper flipper, then loop around the couch and take the return to loop it again. It is shootable in either direction, so work both rather than only the one that feels natural.",
+      "reps": "10 loops per direction",
+      "focus": "ball-control",
+      "goal": "knock-loop-builder",
+      "shots": [
+        "left-orbit",
+        "upper-flipper",
+        "upper-loop"
+      ]
+    },
+    {
+      "id": "right-ramp-state",
+      "title": "Read the Right Ramp",
+      "text": "Check whether the tombstone ramp is down or raised before you shoot it. Down, it loops back to the right flipper and you can stack shots on it; raised, it stops being a loop and swallows the ball into the couch, which is a very different plan for the next five seconds.",
+      "reps": "10 shots in each state",
+      "focus": "accuracy",
+      "goal": "right-ramp-farm",
+      "shots": [
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "spinner-through-pops",
+      "title": "Rip Through to Juno",
+      "text": "Rip the spinner hard enough that the ball carries through the pops and lands in the Juno scoop. A soft spinner shot dies in the bumper nest; the clean rip is what turns one shot into a spinner, a bumper pass and a scoop award.",
+      "reps": "12 rips",
+      "focus": "flow",
+      "goal": "super-spinner-rip",
+      "shots": [
+        "spinner",
+        "pop-bumpers",
+        "juno-scoop"
+      ]
+    },
+    {
+      "id": "magna-save-timing",
+      "title": "Magna-Save Timing",
+      "text": "Press the button as the ball slips toward an outlane or straight down the middle — the magnet sits under and between the flippers and throws the ball back up at you. Re-qualify at the Handbook target after every use so you are never playing a ball without one banked.",
+      "reps": "10 saves",
+      "focus": "ball-control",
+      "shots": [
+        "magna-save",
+        "left-outlane",
+        "right-outlane",
+        "handbook-target"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "waiting-room",
+      "name": "The Waiting Room",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.14,
+        "y": 0.7,
+        "w": 0.5,
+        "h": 0.26
+      },
+      "entries": [
+        "left-orbit",
+        "right-ramp"
+      ],
+      "exits": [
+        {
+          "shot": "center-scoop"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Few games lean on a button this hard. Its headline job is the Magna-Save magnet tucked under the flippers, which grabs outlane and center drains and flings the ball back at you. Beyond that, modes borrow the button constantly — stopping the wheel, freezing values, and collecting Supers that the shot alone won't pay.",
+    "uses": [
+      {
+        "when": "Ball slipping into an outlane or the middle",
+        "what": "Fires the Magna-Save magnet and throws the ball back up between your flippers."
+      },
+      {
+        "when": "Magna-Save spent, fly buzzing on screen",
+        "what": "Hit the Handbook target to spawn the fly, then swat it with a press while the button glows green."
+      },
+      {
+        "when": "Wheel spinning after repeated left ramps",
+        "what": "Stops the wheel where you want it — Super Spinner, Super Ramps, Extra Ball, or a fat nothing."
+      },
+      {
+        "when": "As Seen on TV, shot value ticking down",
+        "what": "Hold to freeze the current shot value while you line up the next shot."
+      },
+      {
+        "when": "Walk With Rhythm sandworm battle",
+        "what": "Rapid presses lower the worm so you can put a ball in its mouth."
+      },
+      {
+        "when": "Super Jackpot lit at the Juno Scoop",
+        "what": "During Singing in the Stairwell you must press to collect it; making the shot alone doesn't."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Beetlejuice brings the Neitherworld to the playfield, leaning hard on a lockbar magnet that saves your drains and a stack of modes qualified by purple shots. Start the modes and three multiballs, build the Returning Souls playfield multiplier, and reach Singing in the Stairwell for the game's marquee scoring.",
+    "loop": [
+      "Hit three purple Beetlejuice shots to qualify a mode, cycle to your pick at the Mode Change switch and lock it with the Launch button, then start it at the Right Orbit.",
+      "Loop the couch on the Upper Loop to light locks, lock three up the Right Ramp for Afterlife Couch Multiball, and light the camera targets off the inlanes for Strange & Unusual.",
+      "Feed the pop bumpers to spawn Lost Souls and return them for a Returning Souls playfield multiplier, then open it right before a multiball Super or a mode's big shot.",
+      "Complete two modes or start four to light Singing in the Stairwell, then press the action button at the Juno Scoop to collect its Super Jackpot."
+    ],
+    "lights": [
+      {
+        "id": "mode-qualify",
+        "name": "Beetlejuice Mode Start",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "mode-change-switch"
+          }
+        ],
+        "lit": "Three purple Beetlejuice-face shots that roam the ramps, orbits and spinner light Mode Start, and a qualified mode holds at the Right Orbit until you begin it.",
+        "flashing": "The Mode Change switch blinks while a mode is qualified, and a Launch-button press during that blink locks your pick so the slingshots cannot bump it.",
+        "control": null,
+        "then": "Cycle the Mode Change switch to the mode you want, lock it with the Launch button, and shoot the Right Orbit to start it; modes cannot be qualified or run during a multiball, so fit them between multiballs.",
+        "goals": [
+          "start-a-mode",
+          "as-seen-on-tv",
+          "day-o-dinner-party",
+          "othos-seance"
+        ]
+      },
+      {
+        "id": "afterlife-couch",
+        "name": "Afterlife Couch Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "afterlife-couch"
+          },
+          {
+            "shot": "juno-scoop"
+          }
+        ],
+        "lit": "Looping the Upper Loop around the couch lights the Knock inserts for locks, the raised Right Ramp is the lock shot, and the couch holds three balls before it tips forward to release them.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three up the Right Ramp to start this three-ball multiball -- the easiest on the machine -- pump jackpot value on the Knock loop, then re-lock a ball and collect the Super at the Spinner or Juno Scoop.",
+        "goals": [
+          "afterlife-couch-mb",
+          "knock-loop-builder"
+        ]
+      },
+      {
+        "id": "camera-mb",
+        "name": "Strange & Unusual Camera Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "camera-targets"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Rolling either inlane lights Lydia's center Polaroid targets, and hitting each lit camera target once starts Strange and Unusual Multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank the camera targets for a cheap two-ball start, then farm ramp jackpots and clear the flashing camera sets for add-a-balls that keep it going.",
+        "goals": [
+          "strange-unusual-mb"
+        ]
+      },
+      {
+        "id": "showtime-letters",
+        "name": "SHOWTIME Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "right-orbit-drop"
+          }
+        ],
+        "lit": "The yellow SHOWTIME shots exist in one narrow window -- after you qualify a mode and before you start it -- and vanish the moment a mode begins.",
+        "flashing": "The letters glow yellow only in that gap between qualifying and starting, so a mode left waiting is your chance to bank them.",
+        "control": null,
+        "then": "Leave a mode qualified and chip the yellow letters on the ramps, orbits and spinner, then begin It's Showtime Multiball back at the Right Orbit. Lock a ball there and bank it off the drop target so it caroms into the vari-target and pays the Strength Test Super Jackpot.",
+        "goals": [
+          "its-showtime-mb",
+          "showtime-ricochet"
+        ]
+      },
+      {
+        "id": "sandworm",
+        "name": "Sandworm Battle",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "sandworm-targets"
+          },
+          {
+            "shot": "sandworm-mouth"
+          }
+        ],
+        "lit": "The motorized wall targets guard the Sandworm, and knocking all three down drops the wall and exposes the worm's mouth for a battle.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "in the Walk With Rhythm battle, rapid action-button presses lower the worm so you can feed a ball into its open mouth",
+          "when": "the Walk With Rhythm sandworm battle is running"
+        },
+        "then": "Shoot the exposed mouth to drain the worm's health bar and win the battle; defeating enough Sandworms lights an Extra Ball at its standup.",
+        "goals": [
+          "sandworm-battle-mb",
+          "extra-ball-collect"
+        ]
+      },
+      {
+        "id": "wheel",
+        "name": "The Roulette Wheel",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "Repeated Left Ramp shots light the roulette wheel and the next Left Ramp shot sets it spinning, and the Left Ramp is the safest repeatable shot on the playfield.",
+        "flashing": "The wheel spins after a lit ramp shot with a You Lose slice on it, so time your stop.",
+        "control": {
+          "input": "action-button",
+          "effect": "a press of the action button stops the spinning wheel where you want it -- Super Pops, Ramps, Spinner or Worm, an Extra Ball, or points -- while dodging the You Lose slice",
+          "when": "the wheel is spinning after a Left Ramp shot"
+        },
+        "then": "Stop the wheel on a five-times Super and stack it into a matching multiball phase, or bank the Extra Ball; a Super Spinner window turns cheap spinner rips into real multiplier value.",
+        "goals": [
+          "dantes-wheel",
+          "super-spinner-rip",
+          "super-skill-shot"
+        ]
+      },
+      {
+        "id": "returning-souls",
+        "name": "Returning Souls Playfield X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "center-scoop"
+          },
+          {
+            "shot": "afterlife-couch"
+          }
+        ],
+        "lit": "Hitting the pops spawns Lost Souls, and returning each soul on a lit shot banks another level of playfield multiplier up to five times, shown on the Center Scoop's numbered inserts.",
+        "flashing": null,
+        "control": null,
+        "then": "The multiplier opens at whatever level you banked and bleeds off a step every thirty seconds, so trigger it in the instant before a Super Jackpot lands in multiball or a mode reaches its marquee shot, and it doubles that whole burst.",
+        "goals": [
+          "returning-souls-x",
+          "high-score-stack"
+        ]
+      },
+      {
+        "id": "magna-save",
+        "name": "Magna-Save Magnet",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "magna-save"
+          },
+          {
+            "shot": "handbook-target"
+          }
+        ],
+        "lit": "The lockbar magnet sits between the flippers and, once charged, snatches balls headed for the outlanes or the middle and hurls them back into play, with a spent charge re-armed by swatting a fly at the Handbook target.",
+        "flashing": "A green button glow means a charge is ready; once it is spent, hit the Handbook target to put the fly on screen and recharge.",
+        "control": {
+          "input": "action-button",
+          "effect": "a press fires the Magna-Save magnet to catch a draining ball, and after it is spent, hitting the Handbook target spawns a fly that a green-lit button press swats to recharge the save",
+          "when": "a ball is slipping into an outlane or down the middle"
+        },
+        "then": "Keep a charge banked for the drains you cannot flip out of and re-arm it at the Handbook target, which also starts Otho's Seance, so the save is there when a big ball is on the line.",
+        "goals": [
+          "othos-seance"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Time the plunge to the lit value for the Standard Skill Shot -- a mistimed one gets grabbed by the magnet anyway, so it is nearly risk-free -- then chain the Super Skill Shot up the ramps and spinner. Bank a Wheel award or two off the safe Left Ramp and start looping the couch for locks.",
+        "goals": [
+          "standard-skill-shot",
+          "super-skill-shot",
+          "dantes-wheel",
+          "beginner-first-30"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Reach Afterlife Couch Multiball, the easiest on the machine, and the camera multiball off the inlanes, and start Beetlejuice modes in the gaps between them. Spawn Lost Souls at the pops and open the Returning Souls playfield multiplier just before a Super.",
+        "goals": [
+          "afterlife-couch-mb",
+          "strange-unusual-mb",
+          "start-a-mode",
+          "returning-souls-x",
+          "best-opener"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete two Beetlejuice modes or start four to light Singing in the Stairwell, an add-a-ball mini-wizard multiball, then press the action button at the Juno Scoop to collect its Super Jackpot -- making the shot alone will not pay it. The biggest games stack a Wheel Super and the Returning Souls multiplier onto Afterlife Couch supers.",
+        "goals": [
+          "singing-stairwell",
+          "high-score-stack"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1237 @@
+{
+  "machine": "Tales from the Crypt (Data East, 1993)",
+  "defaultFx": "skull",
+  "shots": [
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane (Crypt Kicker)",
+      "type": "lane",
+      "x": 0.1,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Houses the kickback; lit at start of each ball, relit by a KEEPER target hit, permanently lit by Lite Super Crypt Kicker CF."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Passing a ball here randomly lights the Guillotine drop targets for a 1M-3M door-prize award. Also the exit point of the Right Ramp."
+    },
+    {
+      "id": "kee-targets",
+      "name": "K-E-E Targets",
+      "type": "standup",
+      "x": 0.09,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Left half of the KEEPER eyeball-target spelling; vertical 3-target stack hugging the left rail."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.15,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Short-throw captive ball; needs a hard hit to register. Scoring target of Skull Cracking and Crypt Multiball ball-adds."
+    },
+    {
+      "id": "left-spinner",
+      "name": "Left Spinner (Left Orbit)",
+      "type": "spinner",
+      "x": 0.06,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Feeds the pop bumpers; relights the Electric Chair scoop for a new CF; advances Jackpot/Double Jackpot during multiball; loop partner of the right spinner."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Entrance from lower-left flipper; arcs across the top of the playfield and exits down the right side into the right inlane. Carries the 4 bat lights and scores the multiball Jackpot.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "electric-chair",
+      "name": "Electric Chair (Center Scoop)",
+      "type": "scoop",
+      "x": 0.56,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "The only scoop; starts a Creature Feature when lit; returns the ball directly to the upper-right flipper; scoring shot for Electric Chair Multiball and Crypt Jam.",
+      "feeds": {
+        "x": 0.8,
+        "y": 0.45
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "tombstone",
+      "name": "Tombstone",
+      "type": "standup",
+      "x": 0.47,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Large standup blocking the Crypt hole; each hit spots the next CRYPT letter; lowers once CRYPT is spelled."
+    },
+    {
+      "id": "crypt",
+      "name": "Crypt",
+      "type": "saucer",
+      "x": 0.4942,
+      "y": 0.6962,
+      "trim": "all",
+      "notes": "Eject hole/VUK behind the Tombstone; opens once the tombstone lowers; starts/feeds Crypt Multiball; scoring shot for Robbing the Crypt CF and Monster Jackpot. Meant to be shot from the upper-right flipper — lining it up from a lower flipper takes a lucky deflection off a post.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "guillotine-targets",
+      "name": "Guillotine Targets",
+      "type": "drop-target",
+      "x": 0.58,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "3-bank skull-face drop targets; also the skill-shot target; advances Bonus Multiplier when cleared."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.58,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "3-bumper triangle cluster top-center; scoring target of Psycho Pops CF; 'Chop Pops' boosted when lit from right inlane."
+    },
+    {
+      "id": "center-spinner",
+      "name": "Center Spinner",
+      "type": "spinner",
+      "x": 0.63,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Feeds a VUK to the upper-right flipper; Extra Ball collect point; alternate first-time Crypt Multiball start.",
+      "feeds": {
+        "x": 0.8,
+        "y": 0.45
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Entrance from lower-right flipper; vertical U-turn crossing the top of the playfield back down the left side into the left inlane. Partial shots score a Trick Shot bonus. Starts/advances Fast Goring frenzies; scores Double Jackpot.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Spinner (Right Orbit)",
+      "type": "spinner",
+      "x": 0.9,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Loops back down through the left spinner; escalating orbit-loop value; diverter routes to the center-spinner VUK during certain multiball/CF states."
+    },
+    {
+      "id": "per-targets",
+      "name": "P-E-R Targets",
+      "type": "standup",
+      "x": 0.78,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Right half of the KEEPER eyeball-target spelling, mirrors K-E-E."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Lights Chop Pops (boosted pop-bumper scoring). Exit point of the Left Ramp."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.88,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Scores a flat 3M; no kickback on this side."
+    },
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Far-right shooter lane; auto-plunge feeds the skill-shot approach into the Guillotine bank."
+    },
+    {
+      "id": "door-handle-button",
+      "name": "Door Handle Button",
+      "type": "mech",
+      "x": 0.97,
+      "y": 0.01,
+      "trim": "all",
+      "notes": "Cryptkeeper door-handle plunger button; press to launch, also locks/unlocks the flashing Creature Feature and selects doors in Door Prize Select video mode."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "The third flipper, up the right side. Fed by the center spinner's VUK and the right spinner's diverter; gives a far easier angle on the Electric Chair than the lower right flipper gets, and it's the direct route into the Crypt."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-guillotine",
+      "title": "Guillotine Skill Shot",
+      "category": "skillshot",
+      "summary": "Time the auto-plunge to land as a specific Guillotine drop target is lit for a bonus that grows every ball.",
+      "difficulty": 1,
+      "reward": "2M (ball 1), 3M (ball 2), +1M each ball after",
+      "steps": [
+        {
+          "shot": "guillotine-targets",
+          "action": "Press the door handle when the lit target lines up",
+          "detail": "There is no plunge power to control — it's an auto-launcher that always sends the ball into the Guillotine bank. Watch the light sweep across the 3 targets and time the press so the ball arrives on the lit one. Pays 2M on ball 1, 3M on ball 2, +1M each ball after; the ball saver covers your first two attempts of the game, so there's no downside to going for it early."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-crypt-multiball-jackpot-loop",
+      "title": "Crypt Multiball Jackpot Loop",
+      "category": "combo",
+      "summary": "The top money sequence in the game: Left Ramp Jackpot, Right Ramp Double Jackpot, respell CRYPT for Monster Jackpot, then loop.",
+      "difficulty": 3,
+      "reward": "25M+ Jackpot, then 50M+ Double Jackpot, then 100M+ Monster Jackpot (+50M every repeat, uncapped)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp for Jackpot",
+          "detail": "Base 25M, built up beforehand via left-spinner spins (+130K each) and Crypt/scoop hits (1M x balls in play)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp for Double Jackpot",
+          "detail": "Pays 2x the collected Jackpot, minimum 50M; can trigger the next Frenzy tier."
+        },
+        {
+          "shot": "tombstone",
+          "action": "Hit the Tombstone 5 times to respell CRYPT",
+          "detail": "No points for the letters themselves, but lights Monster Jackpot (50M + the Double Jackpot value, minimum 100M)."
+        },
+        {
+          "shot": "crypt",
+          "action": "Collect Monster Jackpot at the Crypt",
+          "detail": "+50M more every time you repeat this loop, uncapped."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Loop back to the Left Ramp and repeat",
+          "detail": "Keep cycling Left Ramp to Right Ramp to Tombstone for as long as multiball balls remain."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "combo-scoop-farming",
+      "title": "Scoop Return Farming",
+      "category": "combo",
+      "summary": "The Electric Chair scoop kicks straight back to the upper-right flipper, making it the most repeatable high-value shot in the game during Electric Chair Multiball or Crypt Jam.",
+      "difficulty": 2,
+      "reward": "1M x balls in play during Electric Chair Multiball; flat 1M per switch during Crypt Jam",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the center scoop",
+          "detail": "Ball ejects directly back to the upper-right flipper; pays 1M x balls in play during Electric Chair Multiball (factory ROM 3.03 — the unofficial v4.00 fan ROM doubles this to 2M x balls), flat 1M per switch during Crypt Jam."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Shoot it again immediately",
+          "detail": "Repeat as fast as you can control the return — the single most repeatable shot on the layout."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "combo-right-orbit-loop",
+      "title": "Right Orbit Loop Escalator",
+      "category": "combo",
+      "summary": "Uninterrupted right-orbit shots climb an escalating value ladder before capping.",
+      "difficulty": 2,
+      "reward": "0.5M climbing to 2.5M per uninterrupted orbit loop, then caps and repeats at 2.5M",
+      "steps": [
+        {
+          "shot": "right-spinner",
+          "action": "Shoot the right orbit",
+          "detail": "First hit pays 0.5M."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Let it loop through to the left orbit and shoot again",
+          "detail": "Value climbs 0.5M to 1M to 1.5M to 2M to 2.5M as long as no other switch is hit in between; caps and repeats at 2.5M."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "combo-fast-goring-frenzy-stack",
+      "title": "Fast Goring Frenzy Stack",
+      "category": "combo",
+      "summary": "Start a Frenzy off the Right Ramp during multiball so every switch on the playfield counts at the elevated per-hit rate for every ball in play.",
+      "difficulty": 3,
+      "reward": "250K-1M per switch on an escalating Frenzy tier, counted for every ball in play",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Land ~7-8 Left Ramp shots",
+          "detail": "Every other Left Ramp shot lights a bat, so collecting all 4 bat lights takes roughly 7-8 shots; advances the Frenzy tier by one step."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp to start the next Frenzy",
+          "detail": "Living Dead to Chainsaw Mode to Grave Digger to Play the Organ, escalating roughly 250K/500K/750K/1M per switch."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Hit anything reachable for the 15-second timer",
+          "detail": "Best done with 2-3 balls live in Crypt Multiball so every switch counts multiple times over."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "combo-right-ramp-trick-shot",
+      "title": "Right Ramp Trick Shot Fallback",
+      "category": "combo",
+      "summary": "A partial Right Ramp shot that doesn't complete the loop still pays out by rolling onto the Left Ramp's return habitrail.",
+      "difficulty": 1,
+      "reward": "Flat 5M Trick Shot bonus, even on a partial/missed loop",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp with medium power",
+          "detail": "If it doesn't make the full upside-down-U loop, it rolls back down onto the habitrail feeding from the left ramp.",
+          "feeds": {
+            "x": 0.64,
+            "y": 0.1
+          }
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Let the ball settle on the return habitrail",
+          "detail": "Still scores a flat 5M Trick Shot bonus even on the partial shot."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "multiball-crypt",
+      "title": "Crypt Multiball",
+      "category": "multiball",
+      "summary": "The main multiball. Spell CRYPT on the Tombstone to qualify, then start it at the Crypt or center spinner.",
+      "difficulty": 3,
+      "reward": "Starts the Left Ramp -> Right Ramp -> Tombstone loop: 25M+ Jackpot, 50M+ Double Jackpot, 100M+ Monster Jackpot (uncapped)",
+      "steps": [
+        {
+          "shot": "tombstone",
+          "action": "Hit the Tombstone repeatedly to spell C-R-Y-P-T",
+          "detail": "C is auto-spotted at game start; the game auto-spots letters between balls so CRYPT is nearly guaranteed complete by ball 3."
+        },
+        {
+          "shot": "crypt",
+          "action": "Shoot the Crypt to start multiball",
+          "detail": "Once CRYPT is spelled, both the Crypt VUK and center spinner light — shoot either to launch balls."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Or shoot the center spinner to start multiball",
+          "detail": "Alternate start location the first time only; after that, only the Crypt starts it.",
+          "link": "none"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "multiball-electric-chair",
+      "title": "Electric Chair Multiball",
+      "category": "multiball",
+      "summary": "Creature Feature #11 — an instant 6-ball multiball started at the center scoop.",
+      "difficulty": 2,
+      "reward": "Instant 6-ball multiball; every scoop shot after pays 1M x balls in play",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Cycle the Creature Feature to Electric Chair",
+          "detail": "Shoot the left or right spinner to change which CF is flashing at the door mechanism."
+        },
+        {
+          "shot": "door-handle-button",
+          "action": "Lock in Electric Chair",
+          "detail": "Press the door-handle plunger button to lock the flashing CF before it rotates away."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the lit scoop to start",
+          "detail": "Launches an instant 6-ball multiball; every scoop shot after pays 1M x balls in play."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "multiball-skull-cracking",
+      "title": "Skull Cracking Add-a-Ball",
+      "category": "multiball",
+      "summary": "Creature Feature #2 — a 20-second captive-ball add-a-ball mode that starts automatically once lit.",
+      "difficulty": 2,
+      "reward": "Adds a ball per captive-ball hit (up to 5-6 total); escalating 5M/10M/15M/20M+ per hit",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the lit scoop with Lite Skull Cracking flashing",
+          "detail": "Starting the CF begins the 20-second timer automatically — no extra shot needed to begin."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball repeatedly",
+          "detail": "Every hit inside the timer adds a ball (up to 5-6 total) and scores an escalating 5M/10M/15M/20M+."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mode-robbing-the-crypt",
+      "title": "Robbing the Crypt",
+      "category": "mode",
+      "summary": "A loopable Creature Feature scored at the lowered Crypt/tombstone that also spots CRYPT letters.",
+      "difficulty": 2,
+      "reward": "10M + a spotted CRYPT letter per loopable Crypt hit; completing T scores 25M and ends the mode",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Lock in Robbing the Crypt at the scoop",
+          "detail": "Cycle Creature Features with the spinners, then press the door handle to lock it."
+        },
+        {
+          "shot": "crypt",
+          "action": "Shoot the Crypt repeatedly",
+          "detail": "Each hit scores 10M and spots the next CRYPT letter; timer resets to 4 sec per hit so it can be looped. Completing T scores 25M and ends the mode."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mode-frightmare",
+      "title": "Frightmare",
+      "category": "mode",
+      "summary": "25 spinner hits inside 25 seconds pays 25M. One hard shot up the right orbit can register as many as 10 spins as it loops back through the left spinner, so this is one of the quickest Creature Features to cash.",
+      "difficulty": 2,
+      "reward": "25M total for landing 25 spinner hits within 25 seconds",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Lock in Frightmare at the scoop",
+          "detail": "Cycle with the spinners and lock with the door handle."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Rip the left spinner repeatedly",
+          "detail": "Each spin counts toward 25 hits within 25 seconds."
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Alternate to the right spinner when it's more available",
+          "detail": "The right orbit loops back through the left spinner, so shots from either side count.",
+          "link": "none"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mode-psycho-pops",
+      "title": "Psycho Pops",
+      "category": "mode",
+      "summary": "25 pop-bumper hits in 25 seconds for 25M, and easy to sustain because early hits reset the timer.",
+      "difficulty": 2,
+      "reward": "25M for 25 pop-bumper hits in 25 seconds; hits under 9 sec left reset the timer",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Lock in Psycho Pops at the scoop",
+          "detail": "Cycle and lock via the door handle."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Feed the left spinner into the pops",
+          "detail": "A left-spinner shot naturally feeds the pop bumper cluster above it."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball rattle in the pops",
+          "detail": "Any pop hit with under 9 seconds remaining resets the timer to 9 sec, making this mode very sustainable."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mode-super-keeper-targets",
+      "title": "Super Keeper Targets",
+      "category": "mode",
+      "summary": "Hit the K-E-E-P-E-R eyeball target banks for escalating value with a large bonus for clearing all six.",
+      "difficulty": 2,
+      "reward": "Each eyeball target starts at 2M and climbs 1M a hit to a 5M cap; clearing all six pays a 99M bonus",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Lock in Super Keeper Targets at the scoop",
+          "detail": "Cycle and lock via the door handle."
+        },
+        {
+          "shot": "kee-targets",
+          "action": "Hit the left K-E-E bank",
+          "detail": "Each target's value changes per hit within a capped range."
+        },
+        {
+          "shot": "per-targets",
+          "action": "Hit the right P-E-R bank",
+          "detail": "Clearing all 6 targets across both banks awards a large all-six completion bonus, repeatable.",
+          "link": "none"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "multiplier-bonus",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Raise the end-of-ball Bonus Multiplier from 2x up to 8x by completing the Guillotine bank or spelling KEEPER.",
+      "difficulty": 1,
+      "reward": "+1 step toward the 2x/4x/6x/8x end-of-ball Bonus Multiplier (flat 1M/hit once capped)",
+      "steps": [
+        {
+          "shot": "guillotine-targets",
+          "action": "Drop all 3 Guillotine targets",
+          "detail": "Completing the bank advances the multiplier one step (2x/4x/6x/8x, then flat 1M/hit once capped)."
+        },
+        {
+          "shot": "kee-targets",
+          "action": "Spell K-E-E",
+          "detail": "Left half of KEEPER."
+        },
+        {
+          "shot": "per-targets",
+          "action": "Finish with P-E-R to complete KEEPER",
+          "detail": "Completing the full spelling also advances the Bonus Multiplier one step; applies only to end-of-ball bonus, not in-mode scoring."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "multiplier-fast-goring",
+      "title": "Fast Goring Frenzy Tiers",
+      "category": "multiplier",
+      "summary": "Step up the Frenzy tier via repeated Right Ramp shots to raise the per-switch value from 250K toward 1M+.",
+      "difficulty": 2,
+      "reward": "Raises the per-switch Frenzy value: Living Dead 250K -> Chainsaw 500K -> Grave Digger 750K -> Play the Organ 1M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Collect all 4 bat lights via the Left Ramp",
+          "detail": "Every other left-ramp shot lights a bat; collecting all 4 advances the Frenzy progression by one tier."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp to start or advance a Frenzy tier",
+          "detail": "Living Dead (250K) to Chainsaw Mode (500K) to Grave Digger (750K) to Play the Organ (1M) per switch hit."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-crypt-jam",
+      "title": "Crypt Jam",
+      "category": "wizard",
+      "summary": "The single wizard mode — complete all 12 Creature Features at least once each to light Crypt Jam at the scoop.",
+      "difficulty": 3,
+      "reward": "6-ball wizard multiball, 25-sec ball saver; flat 1M per switch while 2+ balls remain in play",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Cycle and complete each of the 12 Creature Features",
+          "detail": "Lock each with the door handle, then finish it via its designated shot (ramps, spinners, captive ball, pops, target banks, scoop)."
+        },
+        {
+          "shot": "door-handle-button",
+          "action": "Keep locking in whichever CF is flashing",
+          "detail": "Repeat across multiple balls until all 12 have been completed at least once."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the lit scoop for Crypt Jam",
+          "detail": "Starts a 6-ball multiball with a 25-second ball saver; every switch hit scores a flat 1M while 2+ balls remain in play."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-beginner-30sec",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "The recommended opening sequence on a fresh ball, from plunge to mode stacking.",
+      "difficulty": 1,
+      "reward": "2M-3M+ skill shot plus a collected Creature Feature, often stacked into a second concurrent CF within 30 seconds",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Plunge for the skill shot",
+          "detail": "0:00 — there is no plunge strength to control, so time your press of the door handle to put the ball on the lit Guillotine target."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take a comfortable ramp or orbit shot",
+          "detail": "~0:05 — build toward a mode rather than risking the tighter center shots yet."
+        },
+        {
+          "shot": "door-handle-button",
+          "action": "Lock in a good Creature Feature",
+          "detail": "~0:10-0:15 — press the door handle before a favorable CF rotates away to a weak one."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Collect the locked Creature Feature",
+          "detail": "~0:15-0:25 — shoot its designated collection shot (ramp, spinner, or captive ball depending on mode)."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Stack a second mode if it lights",
+          "detail": "~0:25-0:30 — hit the spinner to light and collect a second CF; modes run concurrently and stack their per-switch values."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener: Chase Multiball",
+      "category": "strategy",
+      "summary": "Prioritize reaching Crypt Multiball over grinding single-ball modes — nearly every big number in the game scales with balls in play.",
+      "difficulty": 2,
+      "reward": "Access to the Crypt Multiball Jackpot loop (25M+ -> 50M+ -> 100M+, uncapped) instead of grinding single-mode points",
+      "steps": [
+        {
+          "shot": "tombstone",
+          "action": "Hit the Tombstone whenever it's open",
+          "detail": "Spells CRYPT; the game auto-spots letters between balls so a well-played ball 3 nearly guarantees multiball."
+        },
+        {
+          "shot": "kee-targets",
+          "action": "Keep KEEPER progress alive",
+          "detail": "Relights the left-outlane kickback so an unlucky bounce doesn't end the ball early while you chase multiball."
+        },
+        {
+          "shot": "crypt",
+          "action": "Start Crypt Multiball the moment it's lit",
+          "detail": "Don't wait to farm single-mode points once CRYPT is fully spelled — go start it."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "strategy-protect-outlanes",
+      "title": "Protect the Outlanes",
+      "category": "strategy",
+      "summary": "The left outlane is a live drain unless KEEPER is lit — manage it early instead of losing balls while chasing modes.",
+      "difficulty": 1,
+      "reward": "A relit left-outlane kickback (saved balls) instead of a live drain, plus Bonus Multiplier progress from KEEPER",
+      "steps": [
+        {
+          "shot": "kee-targets",
+          "action": "Hit any unlit K-E-E target early in the ball",
+          "detail": "The first hit each ball relights the left-outlane Crypt Kicker kickback."
+        },
+        {
+          "shot": "per-targets",
+          "action": "Finish P-E-R to fully spell KEEPER",
+          "detail": "Fully spelling KEEPER is the relight method for the kickback after your first free relight each ball, and also advances the Bonus Multiplier; it does not make the kickback stay lit for the rest of the ball — only the Lite Super Crypt Kicker Creature Feature does that."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Route center shots off the upper-right flipper",
+          "detail": "The scoop is a known drainer from the lower flippers — mishits feed straight down the middle. Use the 3rd flipper instead."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mode-door-prize",
+      "title": "Door Prize Award",
+      "category": "mode",
+      "summary": "Any ball through the left inlane lights the Guillotine bank for about five seconds; hit the targets inside that window for a random award of 1M to 3M. The door handle also picks doors when the game runs its door-select sequence.",
+      "difficulty": 1,
+      "reward": "1M-3M door prize off the Guillotine bank",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Pass a ball through the left inlane",
+          "detail": "This is also the Right Ramp exit, so a completed Right Ramp loop feeds it for free. The pass randomly arms the Guillotine bank for a door prize."
+        },
+        {
+          "shot": "guillotine-targets",
+          "action": "Hit the armed Guillotine bank",
+          "detail": "Collects the 1M-3M door-prize award; dropping the whole bank also advances the end-of-ball bonus multiplier."
+        },
+        {
+          "shot": "door-handle-button",
+          "action": "Use the door handle when the game asks you to pick a door",
+          "detail": "Presses select the door being offered; the same button locks in whichever Creature Feature is flashing."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "strategy-extra-ball",
+      "title": "Extra Ball Collect",
+      "category": "strategy",
+      "summary": "Light the extra ball off a Creature Feature award, then cash it in at the center spinner before losing the ball.",
+      "difficulty": 2,
+      "reward": "One extra ball",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Rotate the Creature Features until the extra-ball award is flashing",
+          "detail": "Either spinner rotates which feature the door mechanism is offering."
+        },
+        {
+          "shot": "door-handle-button",
+          "action": "Lock the extra-ball award in",
+          "detail": "Press the door handle before the flashing award rotates away to something weaker."
+        },
+        {
+          "shot": "electric-chair",
+          "action": "Shoot the lit scoop to bank the award",
+          "detail": "Collecting the feature at the scoop is what actually lights the extra ball; the scoop returns the ball to the upper-right flipper."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Shoot the center spinner to collect",
+          "detail": "The center spinner is the collect point once extra ball is lit. Take it from the upper-right flipper immediately rather than sitting on it."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "wizard-crypt-jam-scoring",
+      "title": "Milking Crypt Jam",
+      "category": "wizard",
+      "summary": "Wizard-mode scoring only pays while two or more balls are alive, so protect the second ball and hammer the most repeatable switches.",
+      "difficulty": 3,
+      "reward": "Flat 1M per switch hit for as long as 2+ balls stay in play",
+      "steps": [
+        {
+          "shot": "electric-chair",
+          "action": "Farm the scoop return",
+          "detail": "The scoop kicks straight back to the upper-right flipper, so it is the safest repeatable switch while the other balls are still bouncing."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed balls into the pop cluster",
+          "detail": "The bumpers rack up switch hits with no aiming required; a left-orbit shot feeds them."
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Rip spinners between scoop shots",
+          "detail": "Each spin is another switch. Spinners and pops are the cheapest way to pile up hits."
+        },
+        {
+          "shot": "kee-targets",
+          "action": "Keep the kickback alive as balls drain",
+          "detail": "Scoring stops the moment you are down to one ball, so a relit left-outlane kickback directly extends the mode."
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "video-mode-door-prize-select",
+      "title": "Door Prize Select Video Mode",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "One of the Creature Features is a genuine mini-game where you pick the doors yourself instead of watching an award roll by. It is the one mode where the door handle you launch balls with becomes your action button — and pushing your luck one door too far ends the round on the spot.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Shoot a spinner to cycle the Creature Features until Door Prize Select is flashing",
+        "Shoot the electric chair center scoop to start the mode",
+        "Use the flipper buttons to pick which of the doors on screen you want",
+        "Press the door handle — the same one you launch a ball with — to open the door you picked",
+        "Clear a set and another set of three doors is dealt",
+        "Avoid the door showing a person being hung, because opening it ends the mode immediately"
+      ],
+      "reward": "5 million or 10 million per money door on older code, and 5, 10, 15 or 20 million on newer code, with a fresh set of three doors each time you clear one"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "guillotine-timing",
+      "title": "Guillotine Timing",
+      "desc": "Land the plunged ball on the lit Guillotine drop target for the skill shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-guillotine"
+    },
+    {
+      "id": "habitrail-consolation",
+      "title": "Habitrail Consolation",
+      "desc": "Score the flat Trick Shot bonus from a Right Ramp attempt that falls short of the full loop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-right-ramp-trick-shot"
+    },
+    {
+      "id": "prize-behind-the-door",
+      "title": "Prize Behind the Door",
+      "desc": "Collect a door-prize award off the Guillotine bank after a left-inlane pass lights it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-door-prize"
+    },
+    {
+      "id": "tombstone-lowered",
+      "title": "Tombstone Lowered",
+      "desc": "Spell C-R-Y-P-T on the Tombstone and start Crypt Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-crypt"
+    },
+    {
+      "id": "eyeballs-all-six",
+      "title": "All Six Eyeballs",
+      "desc": "Spell K-E-E-P-E-R across both eyeball target banks in a single ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-bonus"
+    },
+    {
+      "id": "orbit-ladder-capped",
+      "title": "Orbit Ladder Capped",
+      "desc": "Chain uninterrupted orbit loops until the loop value reaches its cap.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-right-orbit-loop"
+    },
+    {
+      "id": "first-jackpot",
+      "title": "First Jackpot",
+      "desc": "Collect a Jackpot at the Left Ramp during Crypt Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-crypt-multiball-jackpot-loop"
+    },
+    {
+      "id": "six-ball-chair",
+      "title": "Six Balls in the Chair",
+      "desc": "Start the six-ball multiball from the Electric Chair scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-electric-chair"
+    },
+    {
+      "id": "captive-ball-stack",
+      "title": "Captive Ball Stack",
+      "desc": "Use the captive-ball add-a-ball window to put the maximum number of balls into play.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-skull-cracking"
+    },
+    {
+      "id": "spin-count-beaten",
+      "title": "Spin Count Beaten",
+      "desc": "Complete the 25-spin timed spinner Creature Feature before the clock runs out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-frightmare"
+    },
+    {
+      "id": "bumper-count-beaten",
+      "title": "Bumper Count Beaten",
+      "desc": "Complete the 25-hit timed pop-bumper Creature Feature before the clock runs out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-psycho-pops"
+    },
+    {
+      "id": "crypt-emptied",
+      "title": "Crypt Emptied",
+      "desc": "Loop the Crypt shot through the whole letter set to finish the crypt-robbing Creature Feature.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-robbing-the-crypt"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Light and collect an extra ball at the center spinner.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-extra-ball"
+    },
+    {
+      "id": "monster-payday",
+      "title": "Monster Payday",
+      "desc": "Respell CRYPT during multiball and collect the Monster Jackpot at the Crypt.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-crypt-multiball-jackpot-loop"
+    },
+    {
+      "id": "top-frenzy-tier",
+      "title": "Top of the Frenzy Ladder",
+      "desc": "Climb the Right Ramp frenzy tiers to the highest per-switch tier in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-fast-goring"
+    },
+    {
+      "id": "twelve-features",
+      "title": "Twelve Features Down",
+      "desc": "Complete all twelve Creature Features at least once each to light the wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-crypt-jam"
+    },
+    {
+      "id": "wizard-started",
+      "title": "Into the Jam",
+      "desc": "Start the wizard multiball from the lit scoop after every Creature Feature is done.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-crypt-jam"
+    },
+    {
+      "id": "wizard-milked",
+      "title": "Jam Milked Dry",
+      "desc": "Keep at least two balls alive deep into the wizard multiball while stacking flat per-switch scoring.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-crypt-jam-scoring"
+    }
+  ],
+  "drills": [
+    {
+      "id": "handle-timing-reps",
+      "title": "Door-Handle Timing Reps",
+      "text": "There is no plunge strength to meter here, so the entire skill shot is when you push the handle. Watch the light sweep the three Guillotine targets and press early enough that the ball arrives while the lit one is still lit, not after the sweep has moved on.",
+      "reps": "one attempt every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skillshot-guillotine",
+      "shots": [
+        "door-handle-button",
+        "guillotine-targets"
+      ]
+    },
+    {
+      "id": "scoop-return-farm",
+      "title": "Scoop Return Farm",
+      "text": "The Electric Chair kicks straight back to the upper-right flipper, so take it from up there and send it right back in. Count how many returns you can take in a row before the feed gets away from you.",
+      "reps": "5 sets, note your longest streak",
+      "focus": "accuracy",
+      "goal": "combo-scoop-farming",
+      "shots": [
+        "electric-chair",
+        "upper-right-flipper"
+      ]
+    },
+    {
+      "id": "upper-flipper-crypt-line",
+      "title": "Crypt From Up Top Only",
+      "text": "The Crypt is built to be shot from the upper-right flipper — from a lower flipper it only goes in off a lucky deflection. Ride the center-spinner VUK and the scoop return up there, settle the ball on that flipper, then work the Tombstone and the hole behind it without ever taking the shot from below.",
+      "reps": "10 controlled feeds",
+      "focus": "ball-control",
+      "goal": "multiball-crypt",
+      "shots": [
+        "upper-right-flipper",
+        "center-spinner",
+        "tombstone",
+        "crypt"
+      ]
+    },
+    {
+      "id": "jackpot-rotation",
+      "title": "Jackpot Rotation, Single Ball",
+      "text": "Run Left Ramp, Right Ramp, Tombstone, Crypt as one rotation on a single ball with no multiball to hide the misses. The ramps hand each other back — the left one exits to the right inlane and the right one exits to the left inlane — so each make already tells you which flipper the next shot comes off.",
+      "reps": "3 full rotations",
+      "focus": "flow",
+      "goal": "combo-crypt-multiball-jackpot-loop",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "tombstone",
+        "crypt"
+      ]
+    },
+    {
+      "id": "orbit-ladder-repeats",
+      "title": "Orbit Ladder Repeats",
+      "text": "Shoot the right orbit and let it loop through to the left spinner, then shoot again with nothing hit in between. The value ladder only climbs on clean consecutive shots, so this is a rhythm drill, not a power one.",
+      "reps": "8 chains",
+      "focus": "accuracy",
+      "goal": "combo-right-orbit-loop",
+      "shots": [
+        "right-spinner",
+        "left-spinner"
+      ]
+    },
+    {
+      "id": "kicker-relight-first",
+      "title": "Relight the Kicker First",
+      "text": "The left outlane is a live drain until KEEPER work relights it. Play a few balls where the first shot off the plunge is an unlit K-E-E target and nothing else, then finish P-E-R when a feed gives you the angle.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "goal": "strategy-protect-outlanes",
+      "shots": [
+        "kee-targets",
+        "per-targets",
+        "left-outlane"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Cryptkeeper Door Handle",
+    "location": "front right of the cabinet, where a shooter rod would normally be",
+    "how": "There is no plunger to pull on this one. A cast door handle with the Cryptkeeper's face on it launches every ball, and it keeps earning its keep afterward: it is the lock switch for whichever Creature Feature is flashing on the clock, and it is the button that opens doors in the video mode.",
+    "uses": [
+      {
+        "when": "Ball waiting in the shooter lane",
+        "what": "Push the handle like you are opening a door and the ball auto-launches."
+      },
+      {
+        "when": "A mode you score well on is flashing",
+        "what": "Press once to lock that Creature Feature in place so spinner hits cannot rotate it away; press again to unlock."
+      },
+      {
+        "when": "A second after launching each ball",
+        "what": "Lock the flashing feature before you hit any spinner — Lite Extra Ball is often sitting there on later balls."
+      },
+      {
+        "when": "Inside Door Prize Select video mode",
+        "what": "Flippers move between the three doors, then the handle opens the one you chose."
+      },
+      {
+        "when": "A bad feature is locked in",
+        "what": "Press again to release it, then hit a spinner to rotate the clock to something better."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "You emcee the Cryptkeeper's ghoulish variety show: pin down twelve Creature Features one grisly bit at a time, and dig into Crypt Multiball for the fattest jackpots. Clear every feature to open Crypt Jam, the closing wizard romp.",
+    "loop": [
+      "Batter the skull standup to spell CRYPT; once it sinks, the eject hole behind it opens and multiball is one shot away.",
+      "Rotate the door clock with a spinner rip until a feature you like blinks, pin it with the cast door handle, then cash it at the center scoop.",
+      "In Crypt Multiball, run the left ramp jackpot into the right ramp double, batter the letters back on, and empty the hole for the monster.",
+      "Bank each finished feature toward the dozen you need, and keep the left kicker armed so a stray bounce does not cut the ball short."
+    ],
+    "lights": [
+      {
+        "id": "crypt-letters",
+        "name": "CRYPT on the Tombstone",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "tombstone"
+          }
+        ],
+        "lit": "The big skull standup blocking the hole carries the C-R-Y-P-T spelling; a letter you have banged in stays spotted, and the game hands you leftovers between balls, so the word tends to finish itself by your final ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Bury the last letter and the stone drops, unblocking the eject hole. Dive in there -- or, the very first time only, the center spinner -- to spit out the extra balls and open the jackpot chain.",
+        "goals": [
+          "multiball-crypt",
+          "combo-crypt-multiball-jackpot-loop"
+        ]
+      },
+      {
+        "id": "keeper-eyeballs",
+        "name": "KEEPER Eyeball Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "kee-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "per-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "The eyeball standups hugging each side rail spell KEEPER -- K-E-E on the left, P-E-R on the right; every stack you round out counts, and your first eyeball of the ball re-arms the left kicker that is otherwise a straight drain.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the whole name to notch your end-of-ball bonus multiplier up a rung and relight that kicker once more. Only the Lite Super Crypt Kicker feature bolts the save on for keeps, so lean on these as your recurring insurance.",
+        "goals": [
+          "multiplier-bonus",
+          "strategy-protect-outlanes",
+          "mode-super-keeper-targets"
+        ]
+      },
+      {
+        "id": "creature-clock",
+        "name": "Creature Feature Clock",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "electric-chair"
+          }
+        ],
+        "lit": "One Creature Feature blinks on the Cryptkeeper's clock at any moment, and the electric-chair scoop is where you actually collect the one you have settled on; a feature you finish gets checked off toward the full dozen for good.",
+        "flashing": "The blinking feature is the one that will collect if you drive the scoop right now, and a spinner hit rolls the blink along to the next one on the clock.",
+        "control": {
+          "input": "action-button",
+          "effect": "a press of the cast door handle clamps whichever feature is blinking so a later spinner cannot spin it off, and pressing again turns it loose to hunt for a better award",
+          "when": "a beat after you launch, before you rip any spinner"
+        },
+        "then": "Pin the feature you want, drive the scoop, and the ball fires up to the third flipper for your next move. Check off all twelve and this same scoop lights for Crypt Jam.",
+        "goals": [
+          "multiball-electric-chair",
+          "mode-robbing-the-crypt",
+          "wizard-crypt-jam"
+        ]
+      },
+      {
+        "id": "guillotine-bank",
+        "name": "Guillotine Drop Targets",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "guillotine-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "The skull-faced drop trio lights as your skill goal on the launch, and a roll through the left return arms it again for a door prize for a few seconds; drops you already knocked stay down until the bank kicks back up.",
+        "flashing": null,
+        "control": null,
+        "then": "Time the handle-fired launch so the ball meets the lit drop for a skill award that grows every ball. Later, feed the left return and sweep the armed bank for a random one-to-three-million door prize, and clearing the whole trio also bumps your bonus multiplier a step.",
+        "goals": [
+          "skillshot-guillotine",
+          "mode-door-prize",
+          "multiplier-bonus"
+        ]
+      },
+      {
+        "id": "crypt-jackpots",
+        "name": "Multiball Jackpot Ramps",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "crypt"
+          }
+        ],
+        "lit": "With balls loose in Crypt Multiball the ramps and the hole light for the jackpot run; the left ramp pays the plain jackpot, the right ramp doubles whatever you just collected, and a freshly re-spelled stone lights the monster at the hole.",
+        "flashing": null,
+        "control": null,
+        "then": "Take left ramp, then right ramp, batter the stone through its letters again, and empty the hole for the monster -- then keep looping it, since each trip stacks more onto the monster with no ceiling. Pad the base first with left-orbit spins and scoop hits before you ever start.",
+        "goals": [
+          "combo-crypt-multiball-jackpot-loop",
+          "combo-fast-goring-frenzy-stack"
+        ]
+      },
+      {
+        "id": "crypt-kicker",
+        "name": "Left Outlane Kicker",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          }
+        ],
+        "lit": "The left outlane holds the only kicker on the whole machine, lit at the top of each ball and after any fresh eyeball hit; the right outlane has no such net, so the left side is the one you can actually defend.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep it armed with KEEPER work through the ball, and light the Lite Super Crypt Kicker feature to weld it on for the rest of the ball. A live kicker buys you the extra shots that reach multiball and stretch the closing jam.",
+        "goals": [
+          "strategy-protect-outlanes",
+          "wizard-crypt-jam-scoring"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank the dependable stuff first. Time the door handle so the launch drops the ball on a lit guillotine target, re-arm the left kicker off an eyeball, and pin one strong feature on the clock before a spinner rolls it away.",
+        "goals": [
+          "skillshot-guillotine",
+          "strategy-protect-outlanes",
+          "multiplier-bonus"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Drive toward multiball, where almost every large number scales with balls in play. Spell the stone for Crypt Multiball, cash Electric Chair for an instant six-ball, and step the Fast Goring frenzy up a tier off the right ramp so every switch is worth more.",
+        "goals": [
+          "multiball-crypt",
+          "multiball-electric-chair",
+          "multiplier-fast-goring"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear all twelve features to light Crypt Jam, the closing wizard jam, and keep a second ball alive to keep its flat per-switch pay flowing. The uncapped left-ramp-to-monster loop inside Crypt Multiball is the other road to the game's very biggest totals.",
+        "goals": [
+          "wizard-crypt-jam",
+          "wizard-crypt-jam-scoring",
+          "combo-crypt-multiball-jackpot-loop"
+        ]
+      }
+    ]
+  }
+}

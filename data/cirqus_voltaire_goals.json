@@ -1,0 +1,1146 @@
+{
+  "machine": "Cirqus Voltaire (Bally, 1997)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Manual plunger feeding the skill shot target. Worth learning precisely — the skill shot on this game grows every single time you collect it."
+    },
+    {
+      "id": "skill-shot-target",
+      "name": "Skill Shot Target",
+      "type": "standup",
+      "x": 0.87,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A sideways-facing target reached off the plunge. Pays 200K times the number of skill shots made, capping at 1M — after which the game starts calling you a show-off."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Part of the unusual open left side — no wireform divider, just posts. The outlane width is adjustable, so it varies machine to machine."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (Open Area)",
+      "type": "lane",
+      "x": 0.13,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Not a normal inlane. The usual wireform is missing, leaving one large open space full of rubber. This is the area that makes Cirqus Voltaire a nudging game."
+    },
+    {
+      "id": "menagerie",
+      "name": "Menagerie Cage",
+      "type": "captive-ball",
+      "x": 0.09,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "A caged ball with a slingshot-like switch beside it. Hits here build the Menagerie ladder and also raise the bonus multiplier."
+    },
+    {
+      "id": "white-standup",
+      "name": "White Standup",
+      "type": "standup",
+      "x": 0.15,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Just above the cage. Awards rings, counts toward bonus multiplier, and spots hits on the Menagerie — a useful shot when the cage switch is being stubborn."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.08,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Feeds the Juggler and the Side Show, and is where the extra ball is awarded. Also one of the three Highwire Multiball jackpots.",
+      "feeds": {
+        "shot": "juggler-magnet"
+      }
+    },
+    {
+      "id": "light-target",
+      "name": "LIGHT Standup",
+      "type": "standup",
+      "x": 0.21,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Left of the Left Ramp. Half of the pair that arms Highwire locks."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The workhorse: locks balls, starts Highwire Multiball, spots marvels and starts Strike-An-Arc Multiball."
+    },
+    {
+      "id": "lock-target",
+      "name": "LOCK Standup",
+      "type": "standup",
+      "x": 0.35,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Right of the Left Ramp. The other half of the LIGHT/LOCK pair."
+    },
+    {
+      "id": "lock-queue",
+      "name": "Highwire Lock Queue",
+      "type": "lock",
+      "x": 0.24,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Runs parallel to the Left Ramp. Weak ramp shots and stray Ringmaster flings can drop in here uninvited, which the game rewards as a sneaky lock."
+    },
+    {
+      "id": "juggler-magnet",
+      "name": "Juggler Magnet",
+      "type": "magnet",
+      "x": 0.22,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Catches balls on their way to the Juggler saucers, for locks and for extra ball awards."
+    },
+    {
+      "id": "juggler-locks",
+      "name": "Juggler Saucers (2)",
+      "type": "saucer",
+      "x": 0.19,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "The Juggler Multiball locks. There is no sneaky-lock equivalent here — a stray ball into the Juggler awards the Side Show instead if it is lit."
+    },
+    {
+      "id": "secret-passage",
+      "name": "Secret Passage",
+      "type": "lane",
+      "x": 0.12,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "Scores nothing on its own; it simply feeds the left Juggler lock. Useful only as a delivery route."
+    },
+    {
+      "id": "sideshow-scoop",
+      "name": "Side Show Scoop",
+      "type": "scoop",
+      "x": 0.31,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "A backward-facing, hidden scoop that diverts the ball to the Side Show. Also the shot that starts wizard mode."
+    },
+    {
+      "id": "ringmaster",
+      "name": "The Ringmaster",
+      "type": "bash-toy",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "The main toy, normally hidden below the playfield. Spell WOW to raise him, then beat him down. A magnet in his head grabs the ball and flings it somewhere unpredictable."
+    },
+    {
+      "id": "ballyhoo-targets",
+      "name": "Ballyhoo Standups (2, yellow)",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Either side of the Ringmaster. They relight the Side Show and spot hits on the Ringmaster while he is up."
+    },
+    {
+      "id": "wow-targets",
+      "name": "W-O-W Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Spell WOW to raise a Ringmaster. You do not have to hit each letter individually — any target counts toward the total."
+    },
+    {
+      "id": "inner-loop",
+      "name": "Inner Loop / Spinner",
+      "type": "spinner",
+      "x": 0.62,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "The loop that runs around the Ringmaster. Four passes spell S-P-I-N. Also where you pump up jackpot values during Ringmaster Special."
+    },
+    {
+      "id": "ringmaster-loop",
+      "name": "Ringmaster Loop",
+      "type": "loop",
+      "x": 0.75,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "A one-sided loop on the right. Lights the Spin marvel and is a Highwire jackpot — but only from the left entrance. Weak counter-clockwise shots can come straight back down the middle."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Builds Acrobats. The switch sits at the very start of the ramp, so a shot that only travels a few inches still scores — and it registers from either direction.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.9,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Feeds the Right Ramp — a way to score Acrobats without shooting the ramp directly.",
+      "feeds": {
+        "shot": "right-ramp"
+      }
+    },
+    {
+      "id": "neon-habitrail",
+      "name": "Neon Habitrail",
+      "type": "lane",
+      "x": 0.81,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Returns the ball to the right flipper from Left Ramp shots that do not lock. A suspended magnet above it diverts balls into the lock queue when locks are lit."
+    },
+    {
+      "id": "boom-balloon",
+      "name": "Boom! Balloon",
+      "type": "bumper",
+      "x": 0.5,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "A pop bumper that physically rises out of the playfield when charged. Only up for about ten seconds — and the timer pauses while the ball is out of play."
+    },
+    {
+      "id": "volt-rollovers",
+      "name": "V-O-L-T Rollovers",
+      "type": "rollover",
+      "x": 0.45,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Red rollovers at the top. Spell VOLT to charge the Boom! balloon; each later Boom! costs several VOLTs."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Conventional, unlike the left side."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Right Ramp, Ringmaster Loop and Right Loop."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Left Ramp, Left Loop and Menagerie."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge into the sideways skill shot target. It pays 200K times the number you have collected, so the fifth is worth five times the first. It caps at a million, and the game will let you know when you have overdone it.",
+      "difficulty": 1,
+      "reward": "200K x collections, max 1M",
+      "steps": [
+        {
+          "shot": "skill-shot-target",
+          "action": "Plunge for the sideways-facing skill shot target",
+          "detail": "Find the strength that catches it. Every successful collection permanently raises the value for the rest of the game, up to the 1M cap."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "nine-marvels",
+      "title": "The Nine Marvels",
+      "category": "progression",
+      "summary": "Everything on this machine points at one thing: collect all nine marvels and Join The Cirqus starts automatically. They can be taken in any order, which makes route planning the whole game.",
+      "difficulty": 3,
+      "reward": "Starts Join The Cirqus",
+      "steps": [],
+      "instructions": [
+        "The nine are Juggler, Acrobats, Ringmaster Frenzie, Defeat All Ringmasters, Spin, Boom!, Menagerie, Highwire Multiball and Side Show.",
+        "Acrobats is the cheapest — four taps on the front of the Right Ramp, and partial shots count from either direction.",
+        "Several marvels can be spotted rather than earned: the Menagerie ladder and Side Show both hand out Spot Marvel awards.",
+        "Spotting Juggler or Highwire awards the marvel but does NOT start the multiball, so do not rely on a spot if you wanted the balls.",
+        "Defeat All Ringmasters is the long pole — four Ringmasters, each needing WOW spelled and then five hits.",
+        "Collecting the ninth marvel arms Join The Cirqus, but it only starts once you shoot the left or right loop and a ball is locked in the Side Show."
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "marvel-acrobats",
+      "title": "Marvel: Acrobats",
+      "category": "mode",
+      "summary": "The easiest marvel on the game. Four Right Ramp hits — and because the switch sits flush at the very start of the ramp, shots that barely climb it still count, in either direction. Completing it lights Super Spinner on both spinners.",
+      "difficulty": 1,
+      "reward": "Marvel, plus Super Spinner at 10K per spin",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Hit the ramp entrance four times",
+          "detail": "The ball only needs to travel a few inches up — full ramp shots are not required"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "marvel-juggler",
+      "title": "Marvel: Juggler",
+      "category": "multiball",
+      "summary": "Three Left Loops light the Juggler, three more lock the balls and start the multiball. The real scoring is in speed: two balls into the Juggler inside ten seconds doubles the jackpot, and a third inside another ten doubles it again.",
+      "difficulty": 2,
+      "reward": "500K jackpots, 1M double, 2M super",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Shoot the Left Loop three times",
+          "detail": "This lights the Juggler"
+        },
+        {
+          "shot": "juggler-locks",
+          "action": "Lock three balls",
+          "detail": "Three more trips light and fill the saucers"
+        },
+        {
+          "shot": "juggler-locks",
+          "action": "Chain the jackpots quickly",
+          "detail": "Second ball within ten seconds pays 1M; third within another ten pays 2M"
+        },
+        {
+          "shot": "juggler-locks",
+          "action": "Do not let the clock run out",
+          "detail": "Missing the window ejects every locked ball and resets the jackpot to 500K"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "marvel-highwire",
+      "title": "Marvel: Highwire Multiball",
+      "category": "multiball",
+      "summary": "Work the LIGHT and LOCK standups to arm the lock queue beside the Left Ramp. For the first multiball only, lit locks can be stacked — every one after that has to be lit individually, and the target requirement climbs.",
+      "difficulty": 2,
+      "reward": "1M jackpots",
+      "steps": [
+        {
+          "shot": "light-target",
+          "action": "Hit LIGHT",
+          "detail": "Arms a lock"
+        },
+        {
+          "shot": "lock-target",
+          "action": "Hit LOCK",
+          "detail": "On the first multiball you can stack lit locks; later ones must be lit one at a time"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Lock three balls in the queue",
+          "detail": "The ramp delivers to the queue when the lock is lit"
+        },
+        {
+          "shot": "ringmaster-loop",
+          "action": "Collect 1M jackpots",
+          "detail": "Juggler, Acrobats and Ringmaster Loop are the jackpots — but the loop only counts from its left entrance"
+        },
+        {
+          "shot": "left-loop",
+          "action": "Follow the jackpots as they move",
+          "detail": "After a few collects they start relocating, specifically to stop you camping the loop"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "marvel-spin",
+      "title": "Marvel: Spin",
+      "category": "mode",
+      "summary": "Four passes through the inner loop around the Ringmaster spells S-P-I-N, and they have to come consecutively — about two seconds to send the ball back through before the count lapses. Prototype machines call this marvel Crank and award it slightly differently.",
+      "difficulty": 2,
+      "reward": "Marvel",
+      "steps": [
+        {
+          "shot": "inner-loop",
+          "action": "Run the inner loop four times",
+          "detail": "The loop encircles the Ringmaster; the two rollover switches inside it award the letters, so even a shot that only makes it part way round can spell one"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "marvel-boom",
+      "title": "Marvel: Boom!",
+      "category": "mode",
+      "summary": "Spell V-O-L-T on the red rollovers and a pop bumper physically rises out of the playfield for about ten seconds. Hit it enough and you light an extra ball — and crucially, that hit count carries across every Boom! in the game.",
+      "difficulty": 2,
+      "reward": "Marvel, progress toward an extra ball",
+      "steps": [
+        {
+          "shot": "volt-rollovers",
+          "action": "Spell V-O-L-T",
+          "detail": "Each later Boom! needs VOLT spelled several times over"
+        },
+        {
+          "shot": "boom-balloon",
+          "action": "Pound the raised balloon",
+          "detail": "Roughly ten seconds of uptime, and the timer pauses whenever the ball is out of play"
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "boom-extra-ball",
+      "title": "Boom! Extra Ball",
+      "category": "strategy",
+      "summary": "The hit counter on the Boom! balloon is cumulative for the whole game, not per visit. Six hits on your first Boom! and twelve on your second leaves you at eighteen — so a weak Boom! is never wasted, it is deposited.",
+      "difficulty": 3,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "volt-rollovers",
+          "action": "Recharge VOLT whenever you can",
+          "detail": "More Boom! visits means more deposits into the same counter"
+        },
+        {
+          "shot": "boom-balloon",
+          "action": "Bank every hit",
+          "detail": "Nothing resets between visits — fifteen hits across the whole game is what lights the extra ball"
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "marvel-menagerie",
+      "title": "Marvel: Menagerie",
+      "category": "mode",
+      "summary": "A caged ball with a false slingshot beside it. Hits build a ladder of awards, and after the marvel itself the ladder starts handing out Spot Marvel and Light Extra Ball — which makes the cage one of the best shortcuts on the game.",
+      "difficulty": 2,
+      "reward": "Marvel, then Spot Marvel / Light EB awards",
+      "steps": [
+        {
+          "shot": "menagerie",
+          "action": "Work the cage switch",
+          "detail": "Hits here also raise your bonus multiplier"
+        },
+        {
+          "shot": "white-standup",
+          "action": "Use the white standup as a backup",
+          "detail": "It spots Menagerie hits when the cage switch is not cooperating"
+        },
+        {
+          "shot": "menagerie",
+          "action": "Keep climbing past the marvel",
+          "detail": "The ladder runs Award Menagerie, Spot Marvel, Light EB, Spot Marvel, Spot Marvel, Big Points"
+        }
+      ],
+      "fx": "jungle",
+      "ordered": false
+    },
+    {
+      "id": "marvel-sideshow",
+      "title": "Marvel: Side Show",
+      "category": "secret",
+      "summary": "A hidden backward-facing scoop that acts as this game's random award. It is lit from the start of the game and relights every five or six Ballyhoo hits, and the award table includes a video mode, Neon Multiball and an extra ball.",
+      "difficulty": 2,
+      "reward": "Random award from a ten-item table",
+      "steps": [
+        {
+          "shot": "ballyhoo-targets",
+          "action": "Relight the Side Show",
+          "detail": "Roughly five or six hits on the yellow standups beside the Ringmaster"
+        },
+        {
+          "shot": "sideshow-scoop",
+          "action": "Take the scoop",
+          "detail": "Possible awards include the Roonie video mode, Cannonball Run, Popcorn Mania, Neon Multiball, Go For The Hat Trick, Light Spot Marvel, Light Lock, big points and an extra ball"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "video-mode-roonie",
+      "title": "The Amazing Roonie (Video Mode)",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "A Side Show award. Roonie is a kangaroo and the game is a jumping game in the same family as Dr. Who's — timing rather than aiming, played entirely on the flipper buttons.",
+      "difficulty": 2,
+      "reward": "About 2.9M for surviving all twenty seconds",
+      "steps": [
+        {
+          "shot": "sideshow-scoop",
+          "action": "Draw the video mode from the Side Show",
+          "detail": "You cannot select it — it is one of the ten awards"
+        },
+        {
+          "shot": "sideshow-scoop",
+          "action": "Jump the obstacles",
+          "detail": "Played on the flipper buttons; no ball is in play so there is nothing to drain"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "raise-ringmaster",
+      "title": "Raise The Ringmaster",
+      "category": "strategy",
+      "summary": "The Ringmaster hides under the playfield until you spell WOW. The first one costs a single target hit; every one after costs three. Once he is up, expect his head magnet to grab the ball and throw it somewhere you did not plan for.",
+      "difficulty": 1,
+      "reward": "Ringmaster raised and vulnerable",
+      "steps": [
+        {
+          "shot": "wow-targets",
+          "action": "Spell W-O-W",
+          "detail": "Any target counts — you do not have to hit each letter individually. First Ringmaster costs one hit, the rest cost three"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Survive the fling",
+          "detail": "A magnet in his head holds the ball, taunts you, then throws it at random. There is a ball saver afterwards in case it goes straight down the middle"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "marvel-defeat-ringmasters",
+      "title": "Marvel: Defeat All Ringmasters",
+      "category": "progression",
+      "summary": "The longest marvel. Four Ringmasters, each needing WOW spelled and then five hits, and each defeat plays a different multiball — Frenzie, Razz, then Special. Awards climb by a million per Ringmaster.",
+      "difficulty": 3,
+      "reward": "1M, 2M, 3M... per Ringmaster defeated",
+      "steps": [
+        {
+          "shot": "wow-targets",
+          "action": "Raise each Ringmaster",
+          "detail": "Repeat for all four"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Hit him five times",
+          "detail": "The two Ballyhoo standups beside him also spot hits, which is often safer than shooting him directly"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Play out each multiball",
+          "detail": "Frenzie for the second, Razz for the third, Special for the fourth"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "marvel-rmf",
+      "title": "Marvel: Ringmaster Frenzie",
+      "category": "multiball",
+      "summary": "Earned by defeating the second Ringmaster. A two-ball multiball where he lifts a few inches to open up the hole, and every shot at him pays 250K. Hitting him again while the jackpot animation is still playing pays substantially more.",
+      "difficulty": 2,
+      "reward": "250K per hit, more for quick repeats",
+      "steps": [
+        {
+          "shot": "ringmaster",
+          "action": "Defeat Ringmaster number two",
+          "detail": "Frenzie starts automatically"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Shoot him repeatedly",
+          "detail": "Each hit is 250K"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Stack hits inside the animation window",
+          "detail": "Back-to-back hits pay 250K then 500K; with four balls up, 750K and 1M are reachable"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "rm-razz",
+      "title": "Ringmaster Razz",
+      "category": "multiball",
+      "summary": "The third Ringmaster's multiball. Same shape as Frenzie but the jackpot is a hurry-up: it starts at 500K and counts down slowly to 250K, and wherever you stop it becomes the jackpot for the rest of the mode. There is also an extra ball lit.",
+      "difficulty": 3,
+      "reward": "250K-500K jackpots, extra ball lit",
+      "steps": [
+        {
+          "shot": "ringmaster",
+          "action": "Defeat the third Ringmaster",
+          "detail": "Razz starts automatically"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Stop the hurry-up early",
+          "detail": "The countdown is slow, but the sooner you land the shot the higher every later jackpot is"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "rm-special",
+      "title": "Ringmaster Special",
+      "category": "multiball",
+      "summary": "The fourth Ringmaster's multiball, with jackpots from 500K. Its distinguishing feature is that the spinner raises the jackpot value — but only until the ball drops under the Ringmaster, after which it is locked in. Despite the name there is no special.",
+      "difficulty": 3,
+      "reward": "500K+ jackpots, raisable via spinner",
+      "steps": [
+        {
+          "shot": "inner-loop",
+          "action": "Pump the spinner first",
+          "detail": "Every spin raises the jackpot value"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Then cash it in",
+          "detail": "Once the ball falls under him the value can no longer be increased"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Push him to full height",
+          "detail": "He inches upward over roughly four or five hits"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "rm-battle",
+      "title": "Ringmaster Battle",
+      "category": "secret",
+      "summary": "The fifth Ringmaster's multiball, and the one most players never find — it is not marked anywhere on the playfield, so you only get there if you know it exists. Beat him and no further Ringmaster can be defeated until you have played the wizard mode; lose and you can keep trying.",
+      "difficulty": 3,
+      "reward": "1M per hit, 10M for the win, plus an extra ball",
+      "steps": [
+        {
+          "shot": "wow-targets",
+          "action": "Raise a fifth Ringmaster",
+          "detail": "Nothing on the playfield tells you this is coming"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Defeat him",
+          "detail": "After Battle, no further Ringmaster can be defeated until Join The Cirqus has been played"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "neon-multiball",
+      "title": "Neon Multiball",
+      "category": "multiball",
+      "summary": "One of the Side Show's awards rather than something you can shoot for directly, which makes it the least predictable multiball on a game that already has eight of them.",
+      "difficulty": 2,
+      "reward": "Three-ball multiball; ten WOW hits light an extra ball",
+      "steps": [
+        {
+          "shot": "ballyhoo-targets",
+          "action": "Relight the Side Show",
+          "detail": "Hits on the yellow standups"
+        },
+        {
+          "shot": "sideshow-scoop",
+          "action": "Draw Neon Multiball",
+          "detail": "One of ten possible awards"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "strike-an-arc",
+      "title": "Strike-An-Arc Multiball",
+      "category": "multiball",
+      "summary": "Another multiball started from the Left Ramp. Cirqus Voltaire carries eight multiballs before the wizard mode adds four more, and up to three of them can run at the same time — stacking is where the huge scores on this machine come from.",
+      "difficulty": 3,
+      "reward": "Multiball, stackable",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start it from the Left Ramp",
+          "detail": "The first Strike-An-Arc needs five ramp shots and every one after needs five more; balls locked toward Highwire count toward it"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Stack it with another multiball",
+          "detail": "Three concurrent multiballs are permitted"
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "sneaky-lock",
+      "title": "Sneaky Lock",
+      "category": "secret",
+      "summary": "The lock queue sits right beside the Left Ramp, so a ramp shot that comes up short — or a ball the Ringmaster flings at random — can fall in when the lock was never lit. The game awards it anyway, and if it happens to be the third, Highwire Multiball simply begins.",
+      "difficulty": 2,
+      "reward": "Free lock; can start Highwire Multiball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Come up short on the ramp",
+          "detail": "Weak shots drift into the queue instead of returning down the habitrail"
+        },
+        {
+          "shot": "lock-queue",
+          "action": "Collect the unearned lock",
+          "detail": "The Ringmaster's random fling can also deposit a ball here"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "join-the-cirqus",
+      "title": "Join The Cirqus",
+      "category": "wizard",
+      "summary": "The wizard mode. The ninth marvel arms it, but it only begins once you shoot the left or right loop and the ball is physically held in the Side Show. What follows is multi-level and carries four more multiballs of its own on top of the eight in the main game.",
+      "difficulty": 3,
+      "reward": "Multi-level wizard mode with four further multiballs",
+      "steps": [
+        {
+          "shot": "sideshow-scoop",
+          "action": "Complete all nine marvels",
+          "detail": "Shoot the left or right loop after the ninth marvel — the mode starts only once a ball is held in the Side Show"
+        },
+        {
+          "shot": "ringmaster",
+          "action": "Work through the levels",
+          "detail": "After the mode, the Ringmaster ladder resets: the next one you defeat starts Frenzie again"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "nudge-the-left",
+      "title": "Learn The Open Left Side",
+      "category": "strategy",
+      "summary": "The left inlane and outlane are one continuous open area with no dividing wireform, just posts and a lot of rubber. It is genuinely one of the best machines in the hobby to learn nudging on — and the outlane post is adjustable, so no two machines drain the same.",
+      "difficulty": 2,
+      "reward": "Saved balls",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Read the post setting before you commit",
+          "detail": "The adjustable post decides how wide the outlane is on this particular machine"
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Nudge early, not late",
+          "detail": "With that much rubber in one open space, a ball heading left is still recoverable if you act before it settles"
+        }
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "cv-first-marvel",
+      "title": "Roll Up",
+      "desc": "Collect your first marvel.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "nine-marvels"
+    },
+    {
+      "id": "cv-acrobats",
+      "title": "Four Acrobats",
+      "desc": "Trip the Right Ramp switch four times to collect Acrobats.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "marvel-acrobats"
+    },
+    {
+      "id": "cv-raise-rm",
+      "title": "Meet The Ringmaster",
+      "desc": "Spell WOW and raise the Ringmaster out of the playfield.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "raise-ringmaster"
+    },
+    {
+      "id": "cv-juggler-super",
+      "title": "Three In Ten",
+      "desc": "Chain a super jackpot in Juggler Multiball by landing three balls inside the timing windows.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "marvel-juggler"
+    },
+    {
+      "id": "cv-highwire",
+      "title": "Walk The Highwire",
+      "desc": "Lock three balls in the queue and start Highwire Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "marvel-highwire"
+    },
+    {
+      "id": "cv-sneaky",
+      "title": "Sneaky Lock",
+      "desc": "Get a lock you never lit, off a short ramp shot or a Ringmaster fling.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "sneaky-lock"
+    },
+    {
+      "id": "cv-boom-eb",
+      "title": "Full Of Hot Air",
+      "desc": "Bank enough cumulative Boom! hits across the game to light the extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "boom-extra-ball"
+    },
+    {
+      "id": "cv-roonie",
+      "title": "The Amazing Roonie",
+      "desc": "Draw the video mode from the Side Show and play it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "video-mode-roonie"
+    },
+    {
+      "id": "cv-all-rms",
+      "title": "Four Down",
+      "desc": "Defeat all four Ringmasters in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "marvel-defeat-ringmasters"
+    },
+    {
+      "id": "cv-battle",
+      "title": "The Unmarked Fifth",
+      "desc": "Find and defeat the fifth Ringmaster for Ringmaster Battle.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "rm-battle"
+    },
+    {
+      "id": "cv-join",
+      "title": "Join The Cirqus",
+      "desc": "Collect all nine marvels and trigger the wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "join-the-cirqus"
+    }
+  ],
+  "drills": [
+    {
+      "id": "growing-skill-target",
+      "title": "The Growing Skill Target",
+      "text": "Find the plunge strength that catches the sideways-facing target. Every collect permanently raises the value for the rest of the game, up to its cap, which makes this one of the few shots where missing it on ball one still costs you on ball three. Take it on every plunge.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "skill-shot-target"
+      ]
+    },
+    {
+      "id": "open-left-nudging",
+      "title": "Nudge the Open Left",
+      "text": "The left inlane and outlane are one continuous open area with no dividing wireform, just posts and a lot of rubber. Read how wide the post is set on the machine in front of you before you commit to anything, then practice nudging early rather than late — with that much rubber in one space, a ball heading left is still recoverable if you move before it settles.",
+      "reps": "2 full balls, hands on",
+      "focus": "ball-control",
+      "goal": "nudge-the-left",
+      "shots": [
+        "left-inlane",
+        "left-outlane"
+      ]
+    },
+    {
+      "id": "spin-rhythm",
+      "title": "Four Loops, No Cradle",
+      "text": "Four passes through the loop around the Ringmaster, and they have to come consecutively — about two seconds to send the ball back through before the count lapses. That makes it a rhythm drill rather than an aiming one: the return has to go straight back in without stopping to trap.",
+      "reps": "5 completed sets",
+      "focus": "flow",
+      "goal": "marvel-spin",
+      "shots": [
+        "inner-loop"
+      ]
+    },
+    {
+      "id": "ramp-entrance-only",
+      "title": "Ramp Entrance Only",
+      "text": "The switch sits flush at the very start of the right ramp and registers from either direction, so a ball that climbs a few inches still scores. Take deliberately weak shots at the entrance and watch them count. The right loop feeds the ramp as well, which makes this the cheapest marvel on the machine once you stop trying to make full ramps.",
+      "reps": "10 entrance hits",
+      "focus": "accuracy",
+      "goal": "marvel-acrobats",
+      "shots": [
+        "right-ramp",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "ready-for-the-fling",
+      "title": "Ready for the Fling",
+      "text": "The magnet in his head grabs the ball, holds it, taunts you, then throws it somewhere you did not plan for. Be set on both flippers every time you hit him instead of watching the animation. When you want his hits without the fling, use the two yellow standups beside him — they spot hits and they are the safer shot.",
+      "reps": "one full Ringmaster, both routes",
+      "focus": "ball-control",
+      "goal": "marvel-defeat-ringmasters",
+      "shots": [
+        "ringmaster",
+        "ballyhoo-targets"
+      ]
+    },
+    {
+      "id": "cage-and-backup",
+      "title": "Cage, and the Backup",
+      "text": "The cage switch can be stubborn, so learn the white standup above it as your backup — it spots Menagerie hits. Keep climbing the ladder past the marvel itself, because that is where Spot Marvel and the extra ball sit. Both shots come off the right flipper, so drill them as one pair.",
+      "reps": "climb the ladder twice",
+      "focus": "accuracy",
+      "goal": "marvel-menagerie",
+      "shots": [
+        "menagerie",
+        "white-standup",
+        "right-flipper"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "crown",
+  "actionButton": {
+    "present": false,
+    "how": "There is no cabinet button on this one. You get a manual plunger the game can also fire for itself, two flippers and a lot of nudging. A couple of side shows — Roonie's jumping game among them — are played entirely on the flipper buttons with no ball live, but that is still just the flippers."
+  },
+  "howItPlays": {
+    "objective": "Run Voltaire's electric circus by rounding up all nine Marvels -- the game's mix of modes, multiballs and toy features. Light every Marvel to open Join The Cirqus, its multi-level wizard mode.",
+    "loop": [
+      "Take the ever-growing skill-shot target on each plunge, then knock out the cheapest Marvels first -- four taps at the mouth of the Right Ramp collect Acrobats.",
+      "Spell WOW to bring a Ringmaster up out of the playfield, then knock him down; the Ballyhoo standups beside him spot the safer hits.",
+      "Feed the LIGHT and LOCK standups to arm Highwire locks at the Left Ramp, and rip the Left Loop for Juggler locks.",
+      "Spell VOLT to raise the Boom! balloon and deposit its running hit count, and take the Side Show scoop for its random award.",
+      "Round up all nine Marvels, then shoot a loop with a ball held in the Side Show to open Join The Cirqus."
+    ],
+    "lights": [
+      {
+        "id": "nine-marvels",
+        "name": "The Nine Marvels",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "sideshow-scoop"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "ringmaster-loop"
+          }
+        ],
+        "lit": "Each Marvel you win stays lit toward the full set of nine, and you are free to take them in any order at all -- the two you simply shoot for in Acrobats and Spin, the Boom! balloon and the Menagerie cage, the Juggler and Highwire multiballs, Ringmaster Frenzie and Defeat All Ringmasters, and the Side Show.",
+        "flashing": null,
+        "control": null,
+        "then": "That ninth Marvel arms Join The Cirqus, though it holds off until you rip a loop and drop a ball into the Side Show. Open on Acrobats, and lean on the Menagerie and Side Show, which can spot Marvels outright.",
+        "goals": [
+          "nine-marvels",
+          "join-the-cirqus"
+        ]
+      },
+      {
+        "id": "raise-ringmaster",
+        "name": "Spell WOW",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "wow-targets"
+          },
+          {
+            "shot": "ringmaster"
+          },
+          {
+            "shot": "ballyhoo-targets"
+          }
+        ],
+        "lit": "Any WOW target you tag counts toward raising a Ringmaster up through the playfield -- one hit brings the first, three bring each one after.",
+        "flashing": null,
+        "control": null,
+        "then": "With him up, knock him down; the two yellow Ballyhoo standups at his sides spot hits far more safely than shooting him straight on, since his head magnet snatches the ball and hurls it anywhere. Downing four is a Marvel, and every one you beat kicks off a multiball of its own.",
+        "goals": [
+          "raise-ringmaster",
+          "marvel-defeat-ringmasters"
+        ]
+      },
+      {
+        "id": "highwire",
+        "name": "Highwire Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "light-target"
+          },
+          {
+            "shot": "lock-target"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "lock-queue"
+          }
+        ],
+        "lit": "The LIGHT and LOCK standups flanking the Left Ramp arm the lock lane beside it, and with a lock lit the next ramp shot peels off into that lane.",
+        "flashing": null,
+        "control": null,
+        "then": "Stack three to open Highwire Multiball, paying million-point jackpots at the Juggler, Acrobats and Ringmaster Loop shots. A soft ramp or a stray Ringmaster fling can slip in for a free Sneaky Lock, and if that one is the third, the multiball just starts.",
+        "goals": [
+          "marvel-highwire",
+          "sneaky-lock"
+        ]
+      },
+      {
+        "id": "juggler",
+        "name": "Juggler Multiball",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "juggler-locks"
+          }
+        ],
+        "lit": "Three trips up the Left Loop arm the Juggler, and three more drop the balls into the saucers to open the multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Rattle the jackpots off quickly, since a second ball in within ten seconds pays a million and a third inside another ten pays two. Let the clock die and it dumps every locked ball and knocks the jackpot back down.",
+        "goals": [
+          "marvel-juggler"
+        ]
+      },
+      {
+        "id": "spin",
+        "name": "Spin the Inner Loop",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "inner-loop"
+          }
+        ],
+        "lit": "The loop circling the Ringmaster holds two rollover switches, and four passes in a row spell SPIN.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed it straight back through without cradling -- you get roughly two seconds before the tally lapses -- to bank the Spin Marvel. That same loop is what fattens the jackpot during Ringmaster Special.",
+        "goals": [
+          "marvel-spin"
+        ]
+      },
+      {
+        "id": "boom",
+        "name": "Boom! Balloon",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "volt-rollovers"
+          },
+          {
+            "shot": "boom-balloon"
+          }
+        ],
+        "lit": "Spell VOLT on the red top rollovers and the Boom! balloon lifts bodily up out of the playfield and stays up roughly ten seconds, its clock frozen any time the ball is off the field.",
+        "flashing": null,
+        "control": null,
+        "then": "Hammer the raised balloon for the Marvel; its hit tally runs cumulative all game, so a short Boom! is money in the bank, and fifteen across the game light an extra ball. Recharging each later Boom! costs several VOLTs over.",
+        "goals": [
+          "marvel-boom",
+          "boom-extra-ball"
+        ]
+      },
+      {
+        "id": "menagerie",
+        "name": "Menagerie Cage",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "menagerie"
+          },
+          {
+            "shot": "white-standup"
+          }
+        ],
+        "lit": "Rapping the caged ball climbs the Menagerie ladder and steps your bonus multiplier up, and the white standup over it fills in hits when the cage switch sulks.",
+        "flashing": null,
+        "control": null,
+        "then": "Push on past the Marvel itself, because the ladder then begins paying Spot Marvel and Light Extra Ball awards. That turns the cage into one of the fastest routes to the full nine.",
+        "goals": [
+          "marvel-menagerie"
+        ]
+      },
+      {
+        "id": "sideshow",
+        "name": "Side Show Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "sideshow-scoop"
+          },
+          {
+            "shot": "ballyhoo-targets"
+          }
+        ],
+        "lit": "The hidden, rear-facing Side Show scoop lights from the opening and comes back every few Ballyhoo hits; it is the game's random award.",
+        "flashing": null,
+        "control": null,
+        "then": "Draw one prize from a deep table -- the Roonie video mode, Neon Multiball, Light Spot Marvel, an extra ball and more. It can simply gift Marvels you would otherwise grind out.",
+        "goals": [
+          "marvel-sideshow",
+          "neon-multiball"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the growing skill-shot target on every single plunge, since each hit locks in a higher value for the rest of the game. Open on the cheapest Marvels -- four taps at the front of the Right Ramp for Acrobats, and a WOW spelling to bring your first Ringmaster up for one hit.",
+        "goals": [
+          "skillshot",
+          "marvel-acrobats",
+          "raise-ringmaster"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Round up the nine Marvels however the ball falls: lock at the Left Ramp for Highwire, rip the Left Loop for Juggler, spell VOLT for Boom!, and rap the Menagerie cage that doubles as a Marvel spot. Running up to three multiballs at once is where the real numbers come from.",
+        "goals": [
+          "nine-marvels",
+          "marvel-highwire",
+          "marvel-juggler",
+          "marvel-boom"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Rounding up all nine Marvels arms Join The Cirqus, a multi-level wizard that carries four more multiballs of its own. Defeat All Ringmasters is the long haul on the way in, and an unmarked fifth Ringmaster Battle is there for anyone who knows to look.",
+        "goals": [
+          "join-the-cirqus",
+          "marvel-defeat-ringmasters",
+          "rm-battle"
+        ]
+      }
+    ]
+  }
+}

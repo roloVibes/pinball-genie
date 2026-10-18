@@ -1,0 +1,1445 @@
+{
+  "machine": "King Kong: Myth of Terror Island (Stern Pinball, 2025)",
+  "defaultFx": "kong",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.03,
+      "trim": "all",
+      "notes": "Manual plunger; the wireform feeds the ball to the top-left / mini-flipper area (not the lower playfield), enabling every left-side skill shot."
+    },
+    {
+      "id": "spider-pit",
+      "name": "The Pit (Spider Pit)",
+      "type": "target-bank",
+      "x": 0.13,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "3-bank standups with a captive magnet and giant-spider sculpt. Pit skill shot, creature battles, Spider Pit/Queen multiballs, island jackpots, T-Rex Pummel."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Far-left lane bottom-to-top; climb arrows, combos, banana lane, left spinner rips, Super Sweep entry (sweeps the drop bank)."
+    },
+    {
+      "id": "cliffs-ramp",
+      "name": "Cliffs Ramp",
+      "type": "ramp",
+      "x": 0.2,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Left side above the Pit; curls up and feeds the upper-right flipper. Skill shots, island scenes, cliffhanger, 2× jackpot in King Kong MB.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      }
+    },
+    {
+      "id": "river-lane",
+      "name": "River Lane / Log Bridge",
+      "type": "lane",
+      "x": 0.17,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Secret river path fed by the mini-flipper; player-controlled log diverter (action button). Ball-save checkpoint, Rapids, Deadeye jackpot, river 4× multiplier.",
+      "flipper": "mini-flipper"
+    },
+    {
+      "id": "mini-flipper",
+      "name": "Mini-Flipper (Upper-Left)",
+      "type": "flipper",
+      "x": 0.24,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Short fourth flipper serving the drops, cliffs ramp and river lane; target of full-plunge reflex skill shots."
+    },
+    {
+      "id": "lost-temple-drops",
+      "name": "Lost Temple Drop Targets (KONG bank)",
+      "type": "drop-target",
+      "x": 0.31,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "4-bank drops in the mini-flipper area; hidden Island Treasure standup behind the upper two. Kong locks, King Kombos, Lost Temple ciphers, Bonus X, Pterodactyl moving target."
+    },
+    {
+      "id": "island-treasure-target",
+      "name": "Island Treasure Target",
+      "type": "standup",
+      "x": 0.33,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Standup behind the upper drops; collects the six named island treasures and the Lost Temple Multiball super jackpot."
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper Loop / U-turn",
+      "type": "loop",
+      "x": 0.35,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Top-left off the mini-flipper; combos, mode multipliers (upper-loop 3× in Escape the Swamp).",
+      "flipper": "mini-flipper"
+    },
+    {
+      "id": "powerup-target",
+      "name": "Powerup Target",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Right of the KONG drops. Lit whenever a 2+ way Kombo is active; cash it for up to 100M plus stacked timed buffs. Also briefly lights all climb arrows."
+    },
+    {
+      "id": "center-spinner",
+      "name": "Center Spinner",
+      "type": "spinner",
+      "x": 0.42,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Optical spinner on the center path; lit for jackpots in King Kong MB, looped during Rapids to build value."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Rises through the mini-playfield, protected by the center post. Kong-lock progression, King Kombos, mode shots; relock here for 2× all jackpots (20s).",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "x-standups",
+      "name": "Island Arrow 'X' Standups",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Orange X standups around mid-playfield (near cliffs, center ramp, and flanking the gong). Light 2× playfield scoring; on Pro the white island arrows light the gong."
+    },
+    {
+      "id": "gong",
+      "name": "Gong (Bash Target)",
+      "type": "mech",
+      "x": 0.476,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Custom bash target that summons Kong and starts/extends island scenes. Premium/LE animate the gong toy; Pro lights it via the white island arrows."
+    },
+    {
+      "id": "gong-saucer",
+      "name": "Gong Saucer",
+      "type": "saucer",
+      "x": 0.62,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Scoop directly behind the gong; lights when the gong is hit to start an Island Scene (Premium/LE each gong shot enters the VUK during Save Ann)."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper-Right Flipper",
+      "type": "flipper",
+      "x": 0.52,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Full-size upper flipper; receives the cliffs-ramp feed and shoots the biplane, side and center ramps and cross-field into the river lane."
+    },
+    {
+      "id": "nyc-train",
+      "name": "NYC Train Car Lock",
+      "type": "mech",
+      "x": 0.55,
+      "y": 0.8,
+      "trim": "premium-le",
+      "notes": "Physical ball-lock atop the center-ramp path; an agitated Kong flips it to start King Kong Multiball. Pro uses virtual locks on the drops instead."
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Right side; primary King Kong MB super-jackpot source, Biplane Attack qualify (3 shots), Super Sweep payoff, combos.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Spinner",
+      "type": "spinner",
+      "x": 0.68,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Optical spinner gating the right orbit; repeated rips build a jackpot collected at the Kong Cave VUK, right loop for Super Spinners."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.78,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Center-right mouth sweeping up the right edge and over the top; NYC events, Lost Temple, Island Locks, climb. Spinner diverts to mini-flipper/river depending on what's lit."
+    },
+    {
+      "id": "biplane-ramp",
+      "name": "Biplane Ramp",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Helix ramp with custom biplane toy, upper-right; Biplane Attack jackpots, spots random shots in T-Rex, Crash the Gate super, 2×/4×/8× push.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "punchback",
+      "name": "Punchback Target",
+      "type": "mech",
+      "x": 0.8,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Kong's kicking target that launches the ball back to the upper flipper; can turn off to drop into a hidden island-lock sinkhole. Escape the Swamp jackpot, combos, Stage Fright chain-break."
+    },
+    {
+      "id": "king-kong",
+      "name": "King Kong Sculpt",
+      "type": "mech",
+      "x": 0.797,
+      "y": 0.932,
+      "trim": "all",
+      "notes": "Interactive animatronic (swings arms/torso) back-right; hidden 2.42M banana lane sits beneath it. All editions animatronic; LE adds cosmetic upgrades."
+    },
+    {
+      "id": "kong-cave",
+      "name": "Kong Cave VUK",
+      "type": "scoop",
+      "x": 0.937,
+      "y": 0.383,
+      "trim": "all",
+      "notes": "Far-right scoop with vertical up-kicker; Pterodactyl awards, island mystery, extra balls, treasure-hunt final shot, Rapids cash-out, Deadeye hold, right-spinner jackpot."
+    },
+    {
+      "id": "inner-left-inlane",
+      "name": "Inner-Left Inlane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Feeds the lower-left flipper; Secret Skill Shot; Deadeye 3× plunge multiplier."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.13,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Unusually sandwiched between the two left inlanes; Anti-Skill Shot target, Cliffhanger ball save, Deadeye 2× plunge multiplier."
+    },
+    {
+      "id": "outer-left-inlane",
+      "name": "Outer-Left Inlane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Leftmost bottom lane; Super Secret Skill Shot; Deadeye 5× plunge multiplier."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Feeds the lower-right flipper; roll here can light the pit; start of the Ricochet combo."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far lower-right outlane."
+    },
+    {
+      "id": "action-button",
+      "name": "Action Button (Lockbar)",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Cabinet lockbar button. Fires the river log diverter to route the ball to the mini-flipper; mashed for the T-Rex Pummel."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-basic",
+      "title": "Basic Skill Shot",
+      "category": "skillshot",
+      "summary": "The safe opener: plunge into the Pit for a free KING KONG letter and ball-save time, while banking a hit toward Spider Pit Multiball.",
+      "difficulty": 1,
+      "reward": "KING KONG letter + ball save",
+      "steps": [
+        {
+          "shot": "spider-pit",
+          "action": "Plunge into the pit targets",
+          "detail": "A short plunge is low-risk; if the ball dribbles back you get the Sneak-In award (1M) and can re-attempt. Every unique skill shot spots one KING KONG letter and adds initial ball-save time; this one also advances toward Spider Pit Multiball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-mega-secret",
+      "title": "Mega Secret Skill Shot",
+      "category": "skillshot",
+      "summary": "The high-value plunge farm: full-plunge to the mini-flipper, then reflex the cliffs ramp for 1.75M and 8 seconds of ball save.",
+      "difficulty": 3,
+      "reward": "1.75M + 8s ball save (2×/3× with follow-up)",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "The plunge feeds the mini-flipper; settle it for a clean angle and rip the cliffs ramp — 1.75M and 8 seconds of ball save."
+        },
+        {
+          "shot": "cliffs-ramp",
+          "action": "Full plunge, cradle the mini-flipper, then reflex the cliffs ramp",
+          "detail": "The plunge feeds the mini-flipper; settle it for a clean angle and rip the cliffs ramp — 1.75M and 8 seconds of ball save."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-super-sweep",
+      "title": "Super Sweep",
+      "category": "combo",
+      "summary": "The flagship combo: a single left-orbit shot that knocks down drops, then the side ramp. All four drops pays 50M plus a KING KONG letter.",
+      "difficulty": 2,
+      "reward": "10M (2 drops) / 50M + letter (all 4)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit through the drop bank",
+          "detail": "The pass must knock down at least 2 Lost Temple drops; aim for a full 4-drop sweep."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Immediately shoot the side ramp",
+          "detail": "10M for a partial sweep; a flawless 4-drop sweep scores 50M and instantly spells a KING KONG letter. Repeatable whenever the drops reset."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "combo-5way-powerup",
+      "title": "5-Way Kombo into Powerup Target",
+      "category": "combo",
+      "summary": "The #1 single-ball money play: chain five major shots, then cash the powerup target for up to 100M plus a full stack of timed buffs.",
+      "difficulty": 3,
+      "reward": "Up to 100M + 5-way buff stack",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start the chain at the left orbit",
+          "detail": "Any major shot begins the Kombo; the powerup target lights as long as a 2+ way is active."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Continue to the side ramp",
+          "detail": "2-way. Keep shots within the combo grace window."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Chain the center ramp",
+          "detail": "3-way. Use the center post to recover weak center-ramp shots."
+        },
+        {
+          "shot": "cliffs-ramp",
+          "action": "Chain the cliffs ramp",
+          "detail": "4-way; that is three awards banked in the powerup pool, with the fourth waiting on the fifth link."
+        },
+        {
+          "shot": "powerup-target",
+          "action": "Cash the lit powerup target on the 5th link",
+          "detail": "Award = (sum of Kombos) × Kombo length, capped 100M, plus climb arrows + 2× pit + right spinner/2× cipher + 2× letters. Single-ball only (disabled in multiball)."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "combo-ricochet",
+      "title": "Ricochet",
+      "category": "combo",
+      "summary": "A quick 5M single-ball combo: roll the right return lane, then bounce the rubber near the mini-flipper up the cliffs ramp.",
+      "difficulty": 2,
+      "reward": "5M",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll through the right return lane",
+          "detail": "This arms the Ricochet; single-ball only."
+        },
+        {
+          "shot": "cliffs-ramp",
+          "action": "From the right flipper, catch the rubber near the mini-flipper up the cliffs ramp",
+          "detail": "The bounce up the cliffs ramp scores 5M.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "combo-super-spinners",
+      "title": "Super Spinners",
+      "category": "combo",
+      "summary": "The safest high-value farm: after the Drillplate of Dunne treasure, alternate ripping the left orbit and right loop spinners for up to 25M per rip.",
+      "difficulty": 2,
+      "reward": "Up to 25M/rip (50M with 2×), 30s",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Rip the left orbit spinner",
+          "detail": "Unlocked by the first Lost Temple treasure (Drillplate of Dunne). 100K +50K per rip, cap 25M."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Rip the right loop spinner",
+          "detail": "Alternate left and right to keep milking; a cheap, low-risk, high-ceiling farm."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "combo-chandelle",
+      "title": "Chandelle Maneuver",
+      "category": "combo",
+      "summary": "A Biplane Attack combo that both boosts the next biplane kill and adds 15 seconds to the mode timer, making it farmable to extend the round.",
+      "difficulty": 2,
+      "reward": "+500K next biplane, +15s",
+      "steps": [
+        {
+          "shot": "river-lane",
+          "action": "Start at the river lane",
+          "detail": "It can be scored any time you are in single-ball play, so you can bank it before Biplane Attack even starts."
+        },
+        {
+          "shot": "punchback",
+          "action": "Hit the punchback target",
+          "detail": "Second link of the chain."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Finish on the side ramp",
+          "detail": "+500K to the next biplane destroyed and +15s to the mode timer; repeat to farm the timer."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "mb-king-kong",
+      "title": "King Kong Multiball",
+      "category": "multiball",
+      "summary": "The #1 tournament multiball: lock balls via the KONG drops, then work cliffs and side-ramp jackpots, relocking at the center ramp for a 2× window.",
+      "difficulty": 2,
+      "reward": "Super jackpots + 2× relock window",
+      "steps": [
+        {
+          "shot": "lost-temple-drops",
+          "action": "Complete the KONG drops while 'light kong lock' flashes",
+          "detail": "Clear the bank the first time and all three locks light at once; after that you have to clear it again for each additional lock."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lock the ball at the center ramp",
+          "detail": "Third lock starts the multiball. Premium/LE: Kong flips the NYC train, releasing 3 balls. Pro then lights the right orbit to start."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Cash the super jackpot at the side ramp",
+          "detail": "Hit cliffs ramp for 2× jackpots; the side-ramp super grows with green-arrow shots at left orbit/center ramp/cave."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Relock at the center ramp for the 2× window",
+          "detail": "After collecting all green arrows, relock to hold a ball ~20s = 2× all jackpots and supers. Chase this window for the biggest scores."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "mb-giant-spider",
+      "title": "Giant Spider (Spider Pit) Multiball",
+      "category": "multiball",
+      "summary": "The strongest of the three creature battles: light the Pit with the Giant Spider insert lit, then use ramp shots to pump the jackpot multiplier to 4×.",
+      "difficulty": 2,
+      "reward": "Max jackpot 25M × 4",
+      "steps": [
+        {
+          "shot": "spider-pit",
+          "action": "Hit the Pit to light and start it",
+          "detail": "First pit MB needs 4 pit hits (3 to light + 1 to start); time the ~10s rotating choice so the Giant Spider (bottom) insert is lit."
+        },
+        {
+          "shot": "cliffs-ramp",
+          "action": "Shoot ramps to raise the jackpot multiplier",
+          "detail": "Non-spinner switches raise the base value; ramp shots raise the multiplier to a max of 4×. Collect 30 switch hits to light the jackpot."
+        },
+        {
+          "shot": "spider-pit",
+          "action": "Collect the jackpot at the Pit",
+          "detail": "Knock the magnet-held ball into the targets; max jackpot 25M × 4. Island mystery gives a free add-a-ball the first time this game."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mb-spider-queen",
+      "title": "Spider Queen Multiball",
+      "category": "multiball",
+      "summary": "The fourth Spider Pit multiball and an 8th Wonder objective: defeat the Queen at random major shots, then bank the escalating super jackpot at the Pit.",
+      "difficulty": 3,
+      "reward": "Super = 5M + 50% of prior pit MBs",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Defeat the Queen at randomly-lit major shots",
+          "detail": "Available after the three creature-battle pit MBs; hit the lit shots to weaken her.",
+          "link": "none"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Keep hitting the roving lit shots",
+          "detail": "Each super needs 4 shots for the first two, 5/6/7+ after; +1M per super scored.",
+          "link": "none"
+        },
+        {
+          "shot": "spider-pit",
+          "action": "Score the super jackpot at the Pit",
+          "detail": "Playing it = wizard level 1; scoring 250M+ during it = level 2 plus a map segment."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mb-lost-temple",
+      "title": "Lost Temple Multiball",
+      "category": "multiball",
+      "summary": "Earned via the Heart of the Keepers treasure: solve the drop-target ciphers, claim the treasure, then play a 3-ball multiball with a super at the Island Treasure target.",
+      "difficulty": 3,
+      "reward": "3-ball MB + Island Treasure super",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Light Lost Temple at the right orbit",
+          "detail": "Hit the punchback or Kong Cave with at least one unlit drop; the right-orbit shot then feeds the mini-flipper."
+        },
+        {
+          "shot": "lost-temple-drops",
+          "action": "Hit unlit drops to advance the cipher glyph",
+          "detail": "Complete the glyph by hitting the 2 flashing drops."
+        },
+        {
+          "shot": "island-treasure-target",
+          "action": "Shoot the Island Treasure target for Heart of the Keepers",
+          "detail": "Claiming this treasure lights Lost Temple Multiball — start it at the gong once no other mode is running. One drop target is lit at a time: the first lights jackpots and each one after adds +1x to the multiplier (up to 4x), so knock down only the lit drop. The super scores back at this same target."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "mode-cross-chasm",
+      "title": "Island Scene: Cross the Chasm",
+      "category": "mode",
+      "summary": "An accuracy island scene best played single-ball: raise the river diverter, then save six sailors at the cliffs ramp, comboing the U-turn to multiply.",
+      "difficulty": 2,
+      "reward": "1.5M base +500K per save, growing ×",
+      "steps": [
+        {
+          "shot": "gong",
+          "action": "Start the scene at the gong",
+          "detail": "Pro: collect the blue island arrows first to light the scene start. Never save this mode for multiball — it's near-impossible in the chaos."
+        },
+        {
+          "shot": "river-lane",
+          "action": "Hit the lit river entrance (Log Bridge)",
+          "detail": "Raises the diverter and briefly lights the cliffs ramp; the right spinner auto-diverts to the mini-flipper during this mode."
+        },
+        {
+          "shot": "cliffs-ramp",
+          "action": "Shoot the cliffs ramp to save a sailor",
+          "detail": "1.5M base, +500K per save; a miss resets to 1.5M. Complete = rescue 6 sailors."
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Combo the U-turn after a save",
+          "detail": "Scores base × a growing multiplier."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "mode-pterodactyl",
+      "title": "Island Scene: Pterodactyl Attack",
+      "category": "mode",
+      "summary": "Defeat pterodactyls at the moving drop target to light the Kong Cave VUK; three cave awards complete it and the second spots a KING KONG letter.",
+      "difficulty": 2,
+      "reward": "5M/pterodactyl + 2×/3× cave awards",
+      "steps": [
+        {
+          "shot": "gong",
+          "action": "Start the scene at the gong",
+          "detail": "Pro: light the scene start by collecting the blue island arrows."
+        },
+        {
+          "shot": "lost-temple-drops",
+          "action": "Hit the moving drop target",
+          "detail": "Defeats a pterodactyl (5M) and lights the Kong Cave VUK."
+        },
+        {
+          "shot": "kong-cave",
+          "action": "Shoot the lit Kong Cave VUK",
+          "detail": "2× award; a clean rollover above the cave = 3×; hitting it without upper-flipper help adds 3M. Complete = 3 cave awards; the 2nd spots a KING KONG letter."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "mode-escape-swamp",
+      "title": "Island Scene: Escape the Swamp",
+      "category": "mode",
+      "summary": "Build a punchback jackpot from flashing shots, then multiply it with an upper-flipper shot — river gives the biggest 4× boost.",
+      "difficulty": 3,
+      "reward": "Punchback jackpot × up to 4×",
+      "steps": [
+        {
+          "shot": "gong",
+          "action": "Start the scene at the gong",
+          "detail": "Pro: light the scene start with the blue island arrows."
+        },
+        {
+          "shot": "punchback",
+          "action": "Build the punchback jackpot",
+          "detail": "Feed via flashing shots and the right loop."
+        },
+        {
+          "shot": "river-lane",
+          "action": "Multiply with an upper-flipper river shot",
+          "detail": "Side ramp 2× / upper loop 3× / river 4×. Complete = 3 punchback jackpots."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "mode-stage-fright",
+      "title": "NYC Event: Stage Fright",
+      "category": "mode",
+      "summary": "An NYC event lit at the right orbit after clearing climb shots: hit the lit feature each phase, break the chain at the punchback, and complete with right-orbit shots.",
+      "difficulty": 3,
+      "reward": "2.5M +250K/phase +500K biplane",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Start the NYC event at the right orbit",
+          "detail": "Lit after clearing all climb shots at the current level. Pick one of three single-use modifiers (3-ball 1×, limited-flips 2×, or single-ball timed 3×)."
+        },
+        {
+          "shot": "punchback",
+          "action": "Break the chain at the punchback",
+          "detail": "Shoot the lit feature each phase, then the punchback; a lit punchback makes red features +1× value and the biplane is always lit."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete with five right-orbit shots",
+          "detail": "Five right-orbit shots finish the event and award a map segment."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "mult-2x-scoring",
+      "title": "Light 2× Playfield Scoring",
+      "category": "multiplier",
+      "summary": "Hit the four orange X targets, then the roving orange X to double all scoring — bank it on top of a multiball or mode jackpot, never on stray singles.",
+      "difficulty": 2,
+      "reward": "2× scoring, timer extendable up to four times",
+      "steps": [
+        {
+          "shot": "x-standups",
+          "action": "Hit all four orange 'X' targets",
+          "detail": "Twice each for repeats. The Map 4 treasure later makes all targets light 2×."
+        },
+        {
+          "shot": "x-standups",
+          "action": "Collect the roving orange 'X'",
+          "detail": "Starts 2×; hitting the lit orange target during 2× extends the timer up to 4× per activation. Note: bananas, the 500M hunt and the 1B treasure can't be doubled."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "mult-king-kong-letters",
+      "title": "Spell KING KONG for Shot Multipliers",
+      "category": "multiplier",
+      "summary": "Bank a different skill shot each ball plus gong and cliffs hits to spell KING KONG, arming next-shot 2× multipliers (cliffs, river, pit, biplane).",
+      "difficulty": 2,
+      "reward": "Next-shot 2× on key shots + Kombo boosts",
+      "steps": [
+        {
+          "shot": "spider-pit",
+          "action": "Bank a unique skill shot each ball",
+          "detail": "Each unique skill shot instantly spots one letter — the most efficient early currency."
+        },
+        {
+          "shot": "gong",
+          "action": "Ring the gong to fill letters",
+          "detail": "Switch hits anywhere on the playfield fill the green bar and the letter is collected at the gong; even-numbered letters also add +50K to the base King Kombos value."
+        },
+        {
+          "shot": "cliffs-ramp",
+          "action": "Bank cliffs shots (3rd, 15th) for letters",
+          "detail": "Set 1 perks: N = next cliffs 2×, K = next river 2×, N = next pit 2×; Set 2 N = next biplane round 2×."
+        }
+      ],
+      "ordered": false,
+      "fx": "kong"
+    },
+    {
+      "id": "wizard-trex",
+      "title": "T-Rex Battle",
+      "category": "wizard",
+      "summary": "A mini-wizard: spell all 8 KING KONG letters, start it at the gong, clear colored pit shots to light Pummel, then mash the action button.",
+      "difficulty": 3,
+      "reward": "7.5M then 15M per T-Rex + add-a-ball",
+      "steps": [
+        {
+          "shot": "gong",
+          "action": "Spell KING KONG, then shoot the gong",
+          "detail": "Start it during single-ball, non-mode play once all 8 letters are lit."
+        },
+        {
+          "shot": "spider-pit",
+          "action": "Clear 3 lit pit shots of a color to light Pummel",
+          "detail": "Blue = left, green = right; the biplane ramp spots random shots. A red-arrow shot adds +500K, +1× and timer."
+        },
+        {
+          "shot": "action-button",
+          "action": "Mash the action button ~10s to Pummel",
+          "detail": "100K +2K/mash × multiplier. Each T-Rex needs 2 Pummel phases (7.5M then 15M); defeating both = level-2 wizard credit. Boss T-Rex (2nd spell) is a 4-ball multiball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-8th-wonder",
+      "title": "8th Wonder of the World (Qualification)",
+      "category": "wizard",
+      "summary": "The main wizard mode: fill all six gate objectives shown above the flippers — island scenes, climbing, NYC events, biplanes, King Kong MB, and Spider Queen.",
+      "difficulty": 3,
+      "reward": "Qualifies the 8th Wonder wizard mode",
+      "steps": [
+        {
+          "shot": "gong",
+          "action": "Play all five Island Scenes",
+          "detail": "Objective 1: play all five (L1) / complete all five (L2). Start each at the gong."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Climb the building via the yellow climb arrows",
+          "detail": "Objective 2: reach Climb Complete Level 1 at 1200 ft. Climb arrows appear across the orbits and ramps."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete the three NYC events",
+          "detail": "Objective 3: Stage Fright, Window Shopping and Manhattan Rampage, each started at the right orbit."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Destroy 5 biplanes (or 25M from one)",
+          "detail": "Objective 4: start Biplane Attack with 3 side-ramp shots and rip the spinners to pump each kill."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Score a King Kong Multiball super jackpot",
+          "detail": "Objective 5: fill its gate light by cashing a super jackpot."
+        },
+        {
+          "shot": "spider-pit",
+          "action": "Play Spider Queen Multiball",
+          "detail": "Objective 6: play Spider Queen (L1) / score 250M+ during it (L2)."
+        }
+      ],
+      "ordered": false,
+      "fx": "crown"
+    },
+    {
+      "id": "strat-competitive-opener",
+      "title": "Best Competitive Opener",
+      "category": "strategy",
+      "summary": "The tournament line: gong for an instant timed mode, pit for a letter and multiball progress, then drops to set up King Kong Multiball.",
+      "difficulty": 2,
+      "reward": "Mode + letter + MB setup stacked early",
+      "steps": [
+        {
+          "shot": "gong",
+          "action": "Shoot the gong to start an Island Scene",
+          "detail": "A 60s single-ball mode running immediately means you score a mode and everything else at once (Pro: collect the blue island arrows first)."
+        },
+        {
+          "shot": "spider-pit",
+          "action": "Hit the Pit",
+          "detail": "Make the pit skill shot if possible — banks a KING KONG letter and one of four hits toward Spider Pit Multiball."
+        },
+        {
+          "shot": "lost-temple-drops",
+          "action": "Work the drop targets",
+          "detail": "Complete the KONG drops to light Kong Lock at the center ramp — the strongest line is King Kong Multiball started early and stacked over the mode."
+        }
+      ],
+      "fx": "kong"
+    },
+    {
+      "id": "strat-beginner-30s",
+      "title": "Beginner: First 30 Seconds",
+      "category": "strategy",
+      "summary": "A safe beginner routine: soft-plunge a skill shot, start a mode, then keep climbing and building Bonus X on the center-field shots.",
+      "difficulty": 1,
+      "reward": "Ball save + mode + height + Bonus X",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Soft plunge for a skill shot",
+          "detail": "Any unmade variant gives a free letter and ball save; Sneak-In protects a weak plunge."
+        },
+        {
+          "shot": "gong",
+          "action": "Start an Island Scene at the gong",
+          "detail": "Prefer Cross the Chasm or Stegosaurus single-ball; play it out while everything else scores."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Keep hitting the yellow climb arrows",
+          "detail": "Always be climbing — height feeds the end-of-ball bonus and lights Island Locks/NYC events."
+        },
+        {
+          "shot": "lost-temple-drops",
+          "action": "Hit the drops to build Bonus X",
+          "detail": "Each drop-bank completion adds +1× to the end-of-ball bonus multiplier."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "strat-always-climbing",
+      "title": "Always Be Climbing",
+      "category": "strategy",
+      "summary": "Climbing height is the spine of the game — hit climb arrows constantly to light Island Locks, NYC events, an extra ball, and a huge bonus term.",
+      "difficulty": 1,
+      "reward": "Island Locks, NYC events, extra ball, bonus",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Hit lit yellow climb arrows on the left orbit",
+          "detail": "Start with 4 lit at random (25 ft each); complete a set to light the next."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Hit climb arrows on the right orbit",
+          "detail": "Milestones: 200 ft Island Lock + extra ball; 300/600/1000 ft NYC Events; 1200 ft Climb Complete."
+        },
+        {
+          "shot": "powerup-target",
+          "action": "Use the Powerup target to flash all climb arrows",
+          "detail": "The Powerup target briefly lights every climb arrow — grab it to bank a set fast."
+        }
+      ],
+      "ordered": false,
+      "fx": "jungle"
+    },
+    {
+      "id": "mode-biplane-attack",
+      "title": "Biplane Attack",
+      "category": "mode",
+      "summary": "Qualify the air battle with three shots to the side ramp, pump each kill's value on the alternating spinners, then shoot that same ramp again to cash the jackpot and down a plane.",
+      "difficulty": 2,
+      "reward": "Escalating value per biplane destroyed",
+      "steps": [
+        {
+          "shot": "side-ramp",
+          "action": "Make three side-ramp shots to qualify the air battle",
+          "detail": "The three shots do not have to be consecutive; the ramp lights for the kill once the third lands."
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Rip the spinner to pump the value of the next kill",
+          "detail": "Every rip raises what the next destroyed biplane pays, so build the value before you cash it."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the side ramp again to cash the jackpot and down a plane",
+          "detail": "It is the same ramp you just qualified with, so keep hammering it to stack kills before the timer runs out. Five planes downed lights Biplanes Destroyed above the flippers, and a single 25M kill pushes that insert to level 2. Running river into punchback and back to this ramp banks +500K on your next plane and buys 15 more seconds."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "secret-skill-shot-inner-inlane",
+      "title": "Secret Skill Shot — Inner Left Inlane",
+      "category": "secret",
+      "summary": "The Pit is not the only thing worth aiming a plunge at. Dropping the ball into the inner left inlane straight off the plunger scores its own separately named skill shot that the machine never advertises.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Plunge with less than full power so the ball falls short of the Pit",
+        "Aim to drop the ball into the inner left inlane",
+        "Collect the Secret Skill Shot award as it lands"
+      ],
+      "reward": "KING KONG letter (once per game) + ball save"
+    },
+    {
+      "id": "super-secret-skill-shot-outer-inlane",
+      "title": "Super Secret Skill Shot — Outer Left Inlane",
+      "category": "secret",
+      "summary": "One lane further out sits an even less obvious target. An even softer plunge that settles in the outermost left inlane rather than the inner one scores the rarer of this machine's two hidden plunge awards.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Plunge more gently than you would for the inner lane",
+        "Let the ball travel past the inner left inlane into the outer left inlane",
+        "Collect the Super Secret Skill Shot award as it lands"
+      ],
+      "reward": "KING KONG letter (once per game) + ball save"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-letter-plunge",
+      "title": "Opening Bell",
+      "desc": "Make the plunge into the Pit for a skill shot, banking a KING KONG letter and extra ball-save time.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-basic"
+    },
+    {
+      "id": "mega-secret-plunge",
+      "title": "Reflex Artist",
+      "desc": "Full-plunge to the mini-flipper and reflex the ball up the cliffs ramp to collect the highest-value skill shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-mega-secret"
+    },
+    {
+      "id": "clean-four-drop-sweep",
+      "title": "Clean Sweep",
+      "desc": "Knock down all four Lost Temple drops with one left-orbit pass, then complete the combo on the side ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-super-sweep"
+    },
+    {
+      "id": "five-link-cash-out",
+      "title": "Five Links Deep",
+      "desc": "Chain five major shots in one combo and cash the lit powerup target while it is still active.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-5way-powerup"
+    },
+    {
+      "id": "kong-lock-launch",
+      "title": "Three Locked",
+      "desc": "Lock three balls through the drops and center ramp to start King Kong Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-king-kong"
+    },
+    {
+      "id": "doubled-super-window",
+      "title": "Doubled Down",
+      "desc": "Score a King Kong Multiball super jackpot during the two-times window opened by relocking at the center ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-king-kong"
+    },
+    {
+      "id": "creature-pit-battle",
+      "title": "Into the Pit",
+      "desc": "Light and start a Spider Pit creature battle multiball at the Pit targets.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-giant-spider"
+    },
+    {
+      "id": "queen-of-the-pit",
+      "title": "Dethrone the Queen",
+      "desc": "Reach Spider Queen Multiball and collect its super jackpot at the Pit.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-spider-queen"
+    },
+    {
+      "id": "temple-treasure-run",
+      "title": "Keepers' Prize",
+      "desc": "Solve the drop-target ciphers, claim the Heart of the Keepers treasure, and start Lost Temple Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-lost-temple"
+    },
+    {
+      "id": "pterodactyl-cleared",
+      "title": "Skies Cleared",
+      "desc": "Complete Pterodactyl Attack by collecting all three Kong Cave awards before the scene ends.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-pterodactyl"
+    },
+    {
+      "id": "swamp-triple-jackpot",
+      "title": "Out of the Swamp",
+      "desc": "Complete Escape the Swamp by scoring three punchback jackpots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-escape-swamp"
+    },
+    {
+      "id": "stage-fright-cleared",
+      "title": "Curtain Down",
+      "desc": "Finish the Stage Fright NYC event with its five closing right-orbit shots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-stage-fright"
+    },
+    {
+      "id": "biplane-squadron",
+      "title": "Squadron Down",
+      "desc": "Start Biplane Attack and destroy five biplanes across the game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-biplane-attack"
+    },
+    {
+      "id": "max-playfield-multiplier",
+      "title": "Multiplier Maxed",
+      "desc": "Stack the orange X targets up to doubled playfield scoring in a single activation.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-2x-scoring"
+    },
+    {
+      "id": "full-kong-spelling",
+      "title": "All Eight Letters",
+      "desc": "Spell all eight KING KONG letters in one ball sequence to arm the next-shot multipliers.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-king-kong-letters"
+    },
+    {
+      "id": "trex-takedown",
+      "title": "Two Pummels, One Beast",
+      "desc": "Start T-Rex Battle and defeat both T-Rex by completing their Pummel phases.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-trex"
+    },
+    {
+      "id": "top-of-the-tower",
+      "title": "Twelve Hundred Feet",
+      "desc": "Climb to 1200 feet on the climb arrows to register Climb Complete.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strat-always-climbing"
+    },
+    {
+      "id": "eighth-wonder-gates",
+      "title": "Every Gate Lit",
+      "desc": "Fill all six gate objectives above the flippers to qualify and start the 8th Wonder wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-8th-wonder"
+    }
+  ],
+  "drills": [
+    {
+      "id": "mega-secret-reflex",
+      "title": "Mini-Flipper to Cliffs",
+      "text": "Full plunge so the ball feeds the mini flipper, settle it there for a clean angle, then rip the cliffs ramp. The plunge always goes to the top left on this machine, so treat the mini flipper as your real starting position every ball.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-mega-secret",
+      "shots": [
+        "shooter-lane",
+        "mini-flipper",
+        "cliffs-ramp"
+      ]
+    },
+    {
+      "id": "super-sweep-reps",
+      "title": "Sweep Then Side Ramp",
+      "text": "Send the left orbit through the drop bank hard enough to take all four down, then go straight to the side ramp. A partial sweep still pays, but the drill is the full clear — aim for the bank, not the orbit lane.",
+      "reps": "12 attempts",
+      "focus": "accuracy",
+      "goal": "combo-super-sweep",
+      "shots": [
+        "left-orbit",
+        "lost-temple-drops",
+        "side-ramp"
+      ]
+    },
+    {
+      "id": "kong-lock-line",
+      "title": "Drops Then Lock",
+      "text": "Clear the KONG drop bank, then put the ball up the center ramp to lock. Use the center post between the flippers to recover a weak center-ramp shot instead of letting it come back at you cold.",
+      "reps": "10 clear-and-lock cycles",
+      "focus": "accuracy",
+      "goal": "mb-king-kong",
+      "shots": [
+        "lost-temple-drops",
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "upper-flipper-menu",
+      "title": "Upper Flipper Menu",
+      "text": "Feed the cliffs ramp, cradle on the upper-right flipper, and take one of its shots per trip — biplane ramp, side ramp, then cross-field into the river lane. Learn the whole menu from up there before you start needing a specific one under a timer.",
+      "reps": "5 trips per shot",
+      "focus": "ball-control",
+      "shots": [
+        "cliffs-ramp",
+        "upper-right-flipper",
+        "biplane-ramp",
+        "side-ramp",
+        "river-lane"
+      ]
+    },
+    {
+      "id": "five-way-kombo",
+      "title": "Five-Link Kombo",
+      "text": "Left orbit, side ramp, center ramp, cliffs ramp, then cash the powerup target on the fifth link. Single ball only — the powerup target is dead during multiball, so this is a shot chain you have to hold together with no extra balls covering you.",
+      "reps": "6 attempts",
+      "focus": "flow",
+      "goal": "combo-5way-powerup",
+      "shots": [
+        "left-orbit",
+        "side-ramp",
+        "center-ramp",
+        "cliffs-ramp",
+        "powerup-target"
+      ]
+    },
+    {
+      "id": "spinner-alternation",
+      "title": "Orbit Spinner Alternation",
+      "text": "Rip the left orbit spinner, take the return, then rip the right loop, and keep alternating rather than favouring one side. Both are low-risk shots, and the habit of switching sides is what keeps the farm running instead of stalling on a brick.",
+      "reps": "10 alternations",
+      "focus": "flow",
+      "goal": "combo-super-spinners",
+      "shots": [
+        "left-orbit",
+        "right-orbit"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Mostly a steering control. The button fires a hidden log diverter that shunts a passing ball into the river lane and down to the mini flipper, where the drop targets and cliffs ramp are easy pickings. In the T-Rex fight it stops steering and becomes a mash button.",
+    "uses": [
+      {
+        "when": "Ball about to reach the river lane",
+        "what": "Fires the log diverter — press right after a right orbit shot, or even straight off the plunge."
+      },
+      {
+        "when": "Lost Temple drops or cliffs ramp needed",
+        "what": "Route the ball down to the mini flipper and pick those shots off at your own pace."
+      },
+      {
+        "when": "Ball held in the pit during Pummel",
+        "what": "Mash for ten seconds; each press stacks value before the pummel multiplier lands on the total."
+      },
+      {
+        "when": "Echo Horn collected on the third treasure hunt",
+        "what": "You get two extra diverter uses every ball, so stop hoarding them."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "King Kong sends you across Skull Island and up the Empire State Building, with an action button that steers the ball into a hidden river path and a spider-pit magnet that runs its creature battles. Play the island scenes, spell KING KONG for shot multipliers, capture the multiballs, and fill six gate objectives to reach the 8th Wonder of the World.",
+    "loop": [
+      "Ring the gong to summon Kong and start an Island Scene at the gong saucer, playing it out single-ball while everything else keeps scoring.",
+      "Bank a unique skill shot each ball and ring the gong to spell KING KONG, arming next-shot two-times multipliers on the cliffs, river, pit and biplane.",
+      "Clear the KONG drop bank to light Kong locks, lock three at the center ramp for King Kong Multiball, and hit the Pit to run the creature-battle multiballs.",
+      "Fill the six objectives above the flippers -- island scenes, climbing height, NYC events, biplanes, a King Kong super, and Spider Queen -- to qualify the 8th Wonder of the World."
+    ],
+    "lights": [
+      {
+        "id": "island-scenes",
+        "name": "Gong Island Scenes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "gong"
+          },
+          {
+            "shot": "gong-saucer"
+          },
+          {
+            "shot": "x-standups"
+          }
+        ],
+        "lit": "The white island arrows and orange X standups light the gong on Pro, and ringing it summons Kong and lights the Gong Saucer behind it to start an Island Scene that runs single-ball while everything else keeps scoring.",
+        "flashing": null,
+        "control": null,
+        "then": "Start scenes like Cross the Chasm and Pterodactyl Attack at the gong and never save them for a multiball, where they are near-impossible; playing all five is the first of the six gates to the 8th Wonder.",
+        "goals": [
+          "mode-cross-chasm",
+          "mode-pterodactyl",
+          "mode-escape-swamp"
+        ]
+      },
+      {
+        "id": "kong-letters",
+        "name": "KING KONG Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "spider-pit"
+          },
+          {
+            "shot": "gong"
+          },
+          {
+            "shot": "cliffs-ramp"
+          }
+        ],
+        "lit": "A unique skill shot each ball instantly spots one KING KONG letter, while switch hits anywhere fill a green bar you cash at the gong for the next letter, and every letter carries a shot-multiplier perk.",
+        "flashing": "The green bar under the current letter fills with switch hits; ring the gong to collect the letter once it tops out.",
+        "control": null,
+        "then": "Spell the first KING KONG for next-shot two-times perks on the cliffs, river and pit, and the second set for a two-times biplane round; all eight letters light the T-Rex Battle mini-wizard at the gong.",
+        "goals": [
+          "mult-king-kong-letters",
+          "wizard-trex"
+        ]
+      },
+      {
+        "id": "kong-mb",
+        "name": "King Kong Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lost-temple-drops"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "cliffs-ramp"
+          }
+        ],
+        "lit": "Clearing the KONG drop bank lights the Kong locks -- the first clear lights all three at once, each one after needs another clear -- and the center ramp is the lock shot.",
+        "flashing": "A light-kong-lock prompt flashes at the drops whenever the next lock is ready to work toward.",
+        "control": null,
+        "then": "Lock three at the center ramp to start King Kong Multiball, hit the cliffs ramp for two-times jackpots and grow the side-ramp super on green-arrow shots, then relock at the center ramp for a twenty-second window that doubles every jackpot.",
+        "goals": [
+          "mb-king-kong"
+        ]
+      },
+      {
+        "id": "spider-pit",
+        "name": "Spider Pit Battles",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "spider-pit"
+          },
+          {
+            "shot": "cliffs-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "The Pit's three standups sit in front of a captive magnet, and hitting the Pit lights and starts its creature multiballs.",
+        "flashing": "A rotating insert at the Pit cycles the monster choice for about ten seconds, so time it to leave the Giant Spider lit.",
+        "control": null,
+        "then": "Start the Giant Spider battle, raise its jackpot multiplier toward four times on ramp shots, then drive the magnet-trapped ball into the standups to collect; clearing the creature battles opens Spider Queen, an 8th Wonder objective.",
+        "goals": [
+          "mb-giant-spider",
+          "mb-spider-queen"
+        ]
+      },
+      {
+        "id": "river-diverter",
+        "name": "River Log Diverter",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "river-lane"
+          },
+          {
+            "shot": "mini-flipper"
+          },
+          {
+            "shot": "lost-temple-drops"
+          }
+        ],
+        "lit": "A hidden log diverter can kick a loose ball off into the secret river path, which feeds the mini flipper so the drop bank and cliffs ramp become gentle, deliberate shots.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "a press fires the log diverter to send a loose ball down the river lane -- fire it just after a right orbit shot, or even directly from the plunge -- so the ball arrives at the mini flipper and you can take the drops and cliffs ramp at your own pace",
+          "when": "a ball is about to reach the river entrance"
+        },
+        "then": "Use the river to set up the Lost Temple drop ciphers and cliffs-ramp shots calmly, leaning on the river's own four-times multiplier and its ball-save checkpoint; the Echo Horn treasure hands you a pair of extra diverter presses each ball.",
+        "goals": [
+          "mb-lost-temple"
+        ]
+      },
+      {
+        "id": "climb-arrows",
+        "name": "Building Climb Arrows",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "powerup-target"
+          }
+        ],
+        "lit": "Yellow climb arrows rove the orbits and ramps -- four lit at random to start -- and completing a set lights the next as your height climbs the building, with that height holding as the spine of your end-of-ball bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep hitting climb arrows to reach the milestones -- an Island Lock and extra ball near two hundred feet, NYC events higher up, Climb Complete at twelve hundred -- and grab the Powerup target to flash every arrow lit and bank a set fast.",
+        "goals": [
+          "strat-always-climbing",
+          "mode-stage-fright"
+        ]
+      },
+      {
+        "id": "biplane",
+        "name": "Biplane Attack",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "right-spinner"
+          },
+          {
+            "shot": "biplane-ramp"
+          }
+        ],
+        "lit": "Three side-ramp shots qualify the air battle and light the ramp for a kill, while the biplane's helix ramp and the alternating spinners set how much each downed plane is worth.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip a spinner to pump the next kill, then shoot the side ramp again to down a plane and stack kills before the timer dies; five planes lights the Biplanes Destroyed gate for the 8th Wonder.",
+        "goals": [
+          "mode-biplane-attack",
+          "combo-chandelle"
+        ]
+      },
+      {
+        "id": "powerup-kombos",
+        "name": "Powerup Kombos & 2X Scoring",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "powerup-target"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "x-standups"
+          }
+        ],
+        "lit": "The Powerup target lights whenever a two-way-or-better Kombo is running, and the orange X standups light two-times playfield scoring once you complete them and take the roving X.",
+        "flashing": "The Powerup target stays lit only while a Kombo chain is alive, so cash it before the chain lapses.",
+        "control": null,
+        "then": "Chain five major shots and cash the Powerup target for up to a hundred million plus a stack of timed buffs, and switch on two-times scoring during a multiball or a mode jackpot rather than wasting it on stray singles; both are single-ball only, since Kombos switch off in multiball.",
+        "goals": [
+          "combo-5way-powerup",
+          "combo-super-sweep",
+          "mult-2x-scoring"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Soft-plunge a skill shot -- the Pit spots a KING KONG letter and ball save, and the softer Secret and Mega Secret plunges pay more -- then ring the gong to start an Island Scene so a mode is scoring while you get on with everything else.",
+        "goals": [
+          "skill-basic",
+          "skill-mega-secret",
+          "secret-skill-shot-inner-inlane",
+          "strat-beginner-30s"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell KING KONG off skill shots and gong hits for shot multipliers, clear the KONG drops to lock up King Kong Multiball, and start the Spider Pit creature battles. Keep climbing height on the orbits to feed bonus and light NYC events, and cash five-way Kombos at the Powerup target.",
+        "goals": [
+          "mult-king-kong-letters",
+          "mb-king-kong",
+          "mb-giant-spider",
+          "strat-always-climbing",
+          "combo-5way-powerup",
+          "strat-competitive-opener"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Fill the six gate objectives above the flippers -- all five island scenes, Climb Complete, the three NYC events, five biplanes, a King Kong Multiball super, and Spider Queen -- to qualify the 8th Wonder of the World. Spelling KING KONG twice over stacks the T-Rex Battle and its boss four-ball multiball on the way there.",
+        "goals": [
+          "wizard-8th-wonder",
+          "wizard-trex",
+          "mb-spider-queen"
+        ]
+      }
+    ]
+  }
+}

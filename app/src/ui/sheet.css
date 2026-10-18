@@ -1,0 +1,60 @@
+@keyframes pgSheetUp{from{transform:translateY(100%)}to{transform:none}}
+.pg-sheet-backdrop{position:absolute;inset:0;z-index:9;background:var(--scrim)}
+.pg-sheet-panel{position:absolute;left:0;right:0;bottom:0;z-index:10;max-height:80dvh;display:flex;flex-direction:column;border-radius:18px 18px 0 0;background:var(--sheet-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--glass-border);padding:8px 0 calc(12px + env(safe-area-inset-bottom));animation:pgSheetUp .25s cubic-bezier(.2,.8,.2,1)}
+.pg-sheet-grabber{width:36px;height:4px;border-radius:2px;background:rgba(255,255,255,.25);margin:4px auto 10px;flex-shrink:0}
+.pg-sheet-header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:0 18px 10px;flex-shrink:0}
+/* A 36px round button cannot share a baseline with 15px title text — the
+ * title would ride the top of the row while the ✕ sat centred. Set from
+ * ui/sheet.ts only when opts.closeButton is on, so the meta-only sheets keep
+ * their designed title/meta baseline alignment untouched. */
+.pg-sheet-header-with-close{align-items:center}
+.pg-sheet-title{font-size:15px;font-weight:800;color:var(--text)}
+.pg-sheet-meta{font:700 10px ui-monospace,Menlo,monospace;color:rgba(233, 237, 247,.45);white-space:nowrap}
+.pg-sheet-body{overflow-y:auto}
+
+/* ✕ — same round-button recipe as ui/howto.css's .pg-howto-close and
+ * ui/account.css's .pg-account-close (36px visual). P4 note: this replaced
+ * ui/glossary.css's 32px .pg-glossary-close when the glossary moved onto this
+ * shell, so the app now has ONE close-button size instead of two. */
+.pg-sheet-close{position:relative;width:36px;height:36px;border-radius:50%;background:var(--hairline);border:1px solid var(--glass-border);color:var(--text);font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pg-sheet-close:hover,.pg-sheet-close:focus-visible{border-color:rgba(255, 176, 46,.5);color:var(--amber)}
+/* Hit expansion, NOT a size change (P4). 36 + 4 on every side = a 44x44 tap
+ * target — WCAG 2.5.5 AAA / the platform HIG minimum — with the drawn button
+ * unchanged at 36px. The only thing to its left in the header is the title
+ * text (not a tap target) and the panel's own 18px padding to its right, so
+ * this overlay cannot swallow a neighbouring control's taps. */
+.pg-sheet-close::after{content:'';position:absolute;inset:-4px;border-radius:50%}
+
+/* ---- variant: 'overlay' (ui/sheet.ts) ----
+ * Fixed to the viewport at ui/howto.css's z-index tier instead of absolute
+ * inside a host at 9/10, for sheets reachable from anywhere in the app — the
+ * app header and tab bar sit at z-index 20, so a `local` sheet would open
+ * UNDERNEATH them. This is the fork ui/glossary.ts used to carry as a whole
+ * private copy of this stylesheet. Everything else (glass recipe, radius,
+ * grabber, header, animation, reduced-motion guard) is inherited from the
+ * base rules above, which is the entire point. */
+.pg-sheet-backdrop.pg-sheet-overlay{position:fixed;z-index:200}
+.pg-sheet-panel.pg-sheet-overlay{position:fixed;z-index:201}
+
+/* Reduced-motion: instant show, no slide-up. Added 2026-08-14 (P2) — the
+ * bespoke Study LEARN sheet (styles.css .study-learn-panel) has had this
+ * guard since it was built, and this SHARED sheet, which every other sheet in
+ * the app goes through, did not. A user asking the OS for less motion was
+ * getting the animation everywhere except the one tab that hand-rolled its
+ * own panel.
+ *
+ * SAFE TO KILL THIS ANIMATION: nothing in the app is gated on it finishing.
+ * `animation: none` strands any handler waiting on animationend, so that was
+ * checked before adding this rather than assumed — app/src has no
+ * animationend / transitionend / getAnimations listener anywhere, and
+ * createSheet's destroy() (ui/sheet.ts) removes the backdrop and panel
+ * synchronously with no exit animation and no timeout. Every `animation:` in
+ * this app is an ENTER animation; there is no close choreography to break.
+ * Keep it that way: if a sheet ever grows a slide-DOWN dismissal, it must not
+ * wait on animationend without a reduced-motion path that fires immediately
+ * (matchMedia('(prefers-reduced-motion: reduce)').matches). */
+@media (prefers-reduced-motion: reduce) {
+  .pg-sheet-panel {
+    animation: none;
+  }
+}

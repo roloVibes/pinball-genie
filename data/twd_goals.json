@@ -1,0 +1,1318 @@
+{
+  "machine": "The Walking Dead Remastered (Stern Pinball, 2025)",
+  "defaultFx": "deadite",
+  "shots": [
+    {
+      "id": "left_flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.2561,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-left flipper; pivot ~0.37 → tip ~0.47. Two lower flippers only, no upper/mini flipper."
+    },
+    {
+      "id": "right_flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7195,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower center-right flipper; notoriously wide center gap (~x0.49) to the left flipper feeds straight-up-the-middle drains."
+    },
+    {
+      "id": "left_outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far lower-left drain path; lit for Escape ball-save or Bit collect."
+    },
+    {
+      "id": "left_inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.27,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Fed by the left ramp habitrail; rolls the lit shot-multiplier X."
+    },
+    {
+      "id": "right_inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.68,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Fed by the right ramp; rolls the lit shot-multiplier X."
+    },
+    {
+      "id": "right_outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.93,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far lower-right drain path; lit for Escape or Bit."
+    },
+    {
+      "id": "left_sling",
+      "name": "Left Slingshot",
+      "type": "sling",
+      "x": 0.29,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "RGB-illuminated zombie-head slingshot (Remaster)."
+    },
+    {
+      "id": "right_sling",
+      "name": "Right Slingshot",
+      "type": "sling",
+      "x": 0.71,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Illuminated zombie-head slingshot."
+    },
+    {
+      "id": "shooter_lane",
+      "name": "Shooter Lane / Plunge",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Far-right rail; auto/manual launch feeding the top. Standard and Woodbury skill shots plunge here; Woodbury U-turn returns the ball here."
+    },
+    {
+      "id": "prison",
+      "name": "Prison (Cell Block C)",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Dead-center scoop with drop-down doors; bash to spell PRISON. Central drain hazard; starts Prison Multiball."
+    },
+    {
+      "id": "prison_magnet",
+      "name": "Prison Magnet",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Electromagnet just below the Prison; flings balls down the middle drain. Premium/LE hardware present on all Remaster units."
+    },
+    {
+      "id": "stab_targets",
+      "name": "Stab / 2X Standup Targets",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.2331,
+      "trim": "all",
+      "notes": "Pair flanking the Prison (left ~0.40, right ~0.60); complete both to light the Tower for 2X Playfield."
+    },
+    {
+      "id": "well_walker",
+      "name": "Well Walker",
+      "type": "captive-ball",
+      "x": 0.63,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Center-right captive-ball toy ('KEEP OUT' grate + pop-up walker); spell WELL / smash to build and start Well Walker Multiball. Motorized pop-up is Premium/LE hardware, on all Remaster units."
+    },
+    {
+      "id": "left_orbit",
+      "name": "Left Orbit (Barn)",
+      "type": "orbit",
+      "x": 0.0931,
+      "y": 0.4135,
+      "trim": "all",
+      "notes": "Far-left orbit wrapping to the pops; starts/loops Barn mode. Also hosts the super spinner that builds the Flamethrower jackpot (lit by hitting the Woodbury drop target).",
+      "feeds": {
+        "shot": "pop_bumpers"
+      }
+    },
+    {
+      "id": "left_ramp",
+      "name": "Left Ramp (CDC)",
+      "type": "ramp",
+      "x": 0.2497,
+      "y": 0.5038,
+      "trim": "all",
+      "notes": "Wire ramp curving over the bumpers to the left inlane; starts CDC mode and the Bicycle-Girl hurry-up.",
+      "feeds": {
+        "shot": "left_inlane"
+      }
+    },
+    {
+      "id": "bicycle_girl_target",
+      "name": "Bicycle-Girl Target",
+      "type": "standup",
+      "x": 0.31,
+      "y": 0.56,
+      "trim": "premium-le",
+      "notes": "During the hurry-up the left ramp raises to expose this under-ramp target (1.25M→2M decaying). Raised-ramp mech is Premium/LE hardware, on all Remaster units."
+    },
+    {
+      "id": "left_drops",
+      "name": "Left Drop-Target Bank",
+      "type": "drop-target",
+      "x": 0.22,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "The single most important feature: clearing the drops qualifies Dead Features, builds Supplies, and qualifies Blood Bath. Primary drain hazard."
+    },
+    {
+      "id": "riot",
+      "name": "Riot / Tower Shot",
+      "type": "standup",
+      "x": 0.3854,
+      "y": 0.609,
+      "trim": "all",
+      "notes": "Inner-left Riot standup/loop; starts Riot mode, which rewards repeating this one shot for the whole mode. Position is approximate."
+    },
+    {
+      "id": "right_ramp",
+      "name": "Right Ramp (Arena)",
+      "type": "ramp",
+      "x": 0.66,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Returns to right inlane; starts Arena mode, builds Fish Tanks, and is the Crossbow-load shot.",
+      "feeds": {
+        "shot": "right_inlane"
+      }
+    },
+    {
+      "id": "right_orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.86,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Far-right orbit wrapping around the top past the crossbow."
+    },
+    {
+      "id": "woodbury",
+      "name": "Woodbury",
+      "type": "drop-target",
+      "x": 0.79,
+      "y": 0.41,
+      "trim": "all",
+      "notes": "Far-right single drop target guarding a lane through the town section that U-turns to the shooter lane. Woodbury award menu, Horde/Last Man Standing/Extra Ball start, super spinner light."
+    },
+    {
+      "id": "crossbow",
+      "name": "Crossbow",
+      "type": "mech",
+      "x": 0.82,
+      "y": 0.71,
+      "trim": "premium-le",
+      "notes": "Upper-right player-aimed ball-shooter; cradles a ball (loaded via right ramp) and fires at lit shots for 1.5M–2.5M. Re-engineered for the Remaster; on all Remaster units."
+    },
+    {
+      "id": "spinner",
+      "name": "Flamethrower / Super Spinner",
+      "type": "spinner",
+      "x": 0.74,
+      "y": 0.47,
+      "trim": "premium-le",
+      "notes": "Right-side spinner near Woodbury/right-ramp path; rip to build the Flamethrower jackpot. Premium/LE hardware, on all Remaster units."
+    },
+    {
+      "id": "tunnel",
+      "name": "Tunnel / Railroad Shot",
+      "type": "scoop",
+      "x": 0.6,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Right-of-center under-ramp shot; starts Tunnel mode and collects the Pop Bumper jackpot. Exact geometry lower-confidence."
+    },
+    {
+      "id": "pop_bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumper",
+      "x": 0.3,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three pops fed by both orbits and the left ramp; build the Pop jackpot collected at the Tunnel. Switch-hit farm for Well Walker/Riot."
+    },
+    {
+      "id": "top_lanes",
+      "name": "Top Lanes / Rollovers",
+      "type": "lane",
+      "x": 0.45,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "'Dead Inside' rollover lanes across the top; complete to advance Bonus X (max 250X) and light Bit. Standard skill-shot target."
+    },
+    {
+      "id": "tower",
+      "name": "Tower Standup (2X Playfield)",
+      "type": "standup",
+      "x": 0.34,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Above the top rollovers, reached only via a strong Riot shot; lit by completing both stab targets. Starts ~30s of 2X Playfield; 10 lit-Tower hits light Extra Ball."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill_standard",
+      "title": "Standard Skill Shot",
+      "category": "skillshot",
+      "summary": "Time the plunge so the ball passes the lit top rollovers, then flip it into the flashing top lane for escalating points.",
+      "difficulty": 1,
+      "reward": "250k base +150k/rollover (1st, max 550k); escalates to ~1.75M base on the 4th",
+      "steps": [
+        {
+          "shot": "top_lanes",
+          "action": "Plunge to pass the rollovers, then flip into the flashing lane",
+          "detail": "Soft-plunge so the ball passes the rollovers while the skill-shot lane is lit, then cycle it with the flippers into the flashing top lane to score; only the final lit lane counts."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill_woodbury",
+      "title": "Woodbury Skill Shot",
+      "category": "skillshot",
+      "summary": "Light a Fish Tank first (right ramp in normal play) to arm the Woodbury skill shot — the plunge then cycles five feature awards, and completing the lit rollover in time banks the one showing.",
+      "difficulty": 2,
+      "reward": "10k / 100k / 1M or a feature (Light Bit, Light Escape, Light X, Light Crossbow, Start Multi-Kill, Light Extra Ball)",
+      "steps": [
+        {
+          "shot": "top_lanes",
+          "action": "Plunge, then complete the lit rollover in time",
+          "detail": "The awards cycle on the Woodbury display as the ball sits in the lane — Light Escape and friends. Complete the flashing top rollover before the timer runs to bank the award that is showing."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo_lramp_lorbit",
+      "title": "Combo: Left Ramp → Left Orbit",
+      "category": "combo",
+      "summary": "One of only four chains that register as a combo — hit the left ramp then immediately the left orbit while the red arrow flashes.",
+      "difficulty": 2,
+      "reward": "500k + 37.5k per combo",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Combo only counts off flashing red arrows during single-ball play."
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Immediately shoot the left orbit",
+          "detail": "Chain in quick succession before the arrow clears."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo_lramp_riot",
+      "title": "Combo: Left Ramp → Riot",
+      "category": "combo",
+      "summary": "Second registering chain — left ramp into the Riot/Tower shot in quick succession.",
+      "difficulty": 2,
+      "reward": "500k + 37.5k per combo",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Start the chain off the flashing red arrow."
+        },
+        {
+          "shot": "riot",
+          "action": "Immediately shoot the Riot shot",
+          "detail": "Complete the two-shot combo."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo_tunnel_rramp_loop",
+      "title": "Combo Loop: Tunnel → Right Ramp → Tunnel",
+      "category": "combo",
+      "summary": "The repeatable oscillation combo — bounce Tunnel and Right Ramp to rack combos continuously (the only way to farm combos on this layout).",
+      "difficulty": 3,
+      "reward": "500k + 37.5k per combo, repeating; 10 combos start a Multi-Kill",
+      "steps": [
+        {
+          "shot": "tunnel",
+          "action": "Shoot the Tunnel",
+          "detail": "Begin the repeating loop while the red arrow flashes."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Continue the chain."
+        },
+        {
+          "shot": "tunnel",
+          "action": "Return to the Tunnel",
+          "detail": "Keep oscillating; each valid link scores another combo."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo_rramp_tunnel_loop",
+      "title": "Combo Loop: Right Ramp → Tunnel → Right Ramp",
+      "category": "combo",
+      "summary": "The other repeatable oscillation combo — start from the right ramp and bounce through the Tunnel and back.",
+      "difficulty": 3,
+      "reward": "500k + 37.5k per combo, repeating",
+      "steps": [
+        {
+          "shot": "right_ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Begin the repeating loop off the flashing red arrow."
+        },
+        {
+          "shot": "tunnel",
+          "action": "Shoot the Tunnel",
+          "detail": "Continue the chain."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Return to the right ramp",
+          "detail": "Keep the oscillation alive for continuous combos."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "combo_ten_multikill",
+      "title": "Combo Farm: 10 Combos → Multi-Kill",
+      "category": "combo",
+      "summary": "Grind the repeatable ramp↔tunnel loops to reach 10 combos in a game, which lights a Multi-Kill insert toward Horde.",
+      "difficulty": 3,
+      "reward": "Lights one of the six Multi-Kill inserts (toward Horde)",
+      "steps": [
+        {
+          "shot": "right_ramp",
+          "action": "Loop the right ramp",
+          "detail": "Use the Right Ramp → Tunnel → Right Ramp oscillation as your combo engine."
+        },
+        {
+          "shot": "tunnel",
+          "action": "Loop the Tunnel",
+          "detail": "Alternate to keep the red arrow chain alive."
+        },
+        {
+          "shot": "woodbury",
+          "action": "Bank the Multi-Kill toward Horde",
+          "detail": "At 10 combos a yellow Multi-Kill insert lights; lighting all six qualifies Horde at Woodbury."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mb_prison",
+      "title": "Prison Multiball",
+      "category": "multiball",
+      "summary": "Spell PRISON at the doors (first 5 letters spotted), clear the Prison Yard, then hit the zombie head to launch the 3-ball multiball — the highest-base MB and the path to Siege.",
+      "difficulty": 2,
+      "reward": "Base jackpot 350k +30k per lit PRISON letter; six Walker-head jackpots light Riot for a Super Jackpot = total of the jackpots banked. Playfield 2X is not part of this multiball — bring it in off the stab targets and Tower.",
+      "steps": [
+        {
+          "shot": "prison",
+          "action": "Bash the doors to spell PRISON",
+          "detail": "First attempt spots 5 letters, so only ~3 more prison shots finish the spellout."
+        },
+        {
+          "shot": "prison",
+          "action": "Clear the Prison Yard",
+          "detail": "All major shots light; hit the exposed zombie head to clear shots and re-spell PRISON."
+        },
+        {
+          "shot": "prison",
+          "action": "Start the multiball",
+          "detail": "The relit zombie head takes one final hit to launch the 3-ball Prison Multiball."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mb_wellwalker",
+      "title": "Well Walker Multiball",
+      "category": "multiball",
+      "summary": "Spell WELL by smashing the Well Walker toy, then a 5th activation engages the magnet and starts the 2-ball multiball; jackpots scale with switch hits, so feed the pops.",
+      "difficulty": 2,
+      "reward": "Jackpots start at 25k, +25k per switch hit; the four need 20/25/30/35 hits to light; Super = sum of prior jackpots",
+      "steps": [
+        {
+          "shot": "well_walker",
+          "action": "Spell WELL",
+          "detail": "Four Well Walker hits spell W-E-L-L. Each time you restart it later in the same game, the multiball needs 3 additional Well Walker shots to begin, and each shot's base value climbs by 2.5k."
+        },
+        {
+          "shot": "pop_bumpers",
+          "action": "Farm switch hits",
+          "detail": "Keep the ball in the pops between Well shots to pump jackpot size."
+        },
+        {
+          "shot": "well_walker",
+          "action": "Start the multiball",
+          "detail": "The 5th (flashing) Well shot combines all shot values, engages the magnet, and starts the 2-ball MB."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mb_bloodbath",
+      "title": "Blood Bath Multiball",
+      "category": "multiball",
+      "summary": "Collect a full Supply set at the drop bank (First Aid→Weapons→Food), then clear the drops to start the 2-ball multiball — the only MB with add-a-balls and the only one that stacks freely.",
+      "difficulty": 3,
+      "reward": "Switches 15k each; Super = total of all jackpots; two add-a-balls on first two clears, +1 per Super",
+      "steps": [
+        {
+          "shot": "left_drops",
+          "action": "Collect a full Supply set",
+          "detail": "Each drop clear locks the lit supply; complete First Aid→Weapons→Food to strobe the Blood Bath insert."
+        },
+        {
+          "shot": "left_drops",
+          "action": "Clear the bank to start",
+          "detail": "The next full drop-bank clear starts Blood Bath (long ball save)."
+        },
+        {
+          "shot": "prison",
+          "action": "Stack onto a running multiball",
+          "detail": "Blood Bath can start during Prison or Well Walker MB — bank the two add-a-balls for maximum balls in play."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode_cdc",
+      "title": "CDC Mode (Left Ramp)",
+      "category": "mode",
+      "summary": "The strongest single-ball mode and the #1 farm — clear the drops, start at the left ramp, then loop the left ramp and cash out the accumulated arrows.",
+      "difficulty": 2,
+      "reward": "750k +25k per cumulative ramp; Phase 2 second shot re-scores the total of all arrows (~30–40M if clean)",
+      "steps": [
+        {
+          "shot": "left_drops",
+          "action": "Qualify by clearing the drops",
+          "detail": "One bank completion lights your first mode of the game and two light each one after that; on competition settings one completion is always enough."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start CDC and loop the ramp",
+          "detail": "Each left-ramp shot scores and lays a white arrow across the playfield left→right."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Cash out",
+          "detail": "After building arrows, the second final ramp shot banks the entire accumulated arrow total again."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mode_arena",
+      "title": "Arena Mode (Right Ramp)",
+      "category": "mode",
+      "summary": "Highest base value of the modes but dangerous — start at the right ramp and loop it, collecting at the Woodbury lane between shots.",
+      "difficulty": 3,
+      "reward": "3M + 1.1M + 100k per cumulative right-ramp shot; Woodbury collects ~50% of total to end the mode",
+      "steps": [
+        {
+          "shot": "left_drops",
+          "action": "Qualify via the drops",
+          "detail": "Clear the drop bank to light Arena."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Start Arena and loop the ramp",
+          "detail": "Repeated right-ramp shots escalate; value halves if the ramp exits a combo."
+        },
+        {
+          "shot": "woodbury",
+          "action": "Collect between ramps",
+          "detail": "After each ramp the Woodbury lane briefly lights to collect a share of the mode total and end the mode."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mode_barn",
+      "title": "Barn Mode (Left Orbit)",
+      "category": "mode",
+      "summary": "The safest first mode — start at the left orbit and repeatedly loop it; three left-orbit shots also light a Multi-Kill.",
+      "difficulty": 1,
+      "reward": "Starts 2.5M, +500k per shot",
+      "steps": [
+        {
+          "shot": "left_drops",
+          "action": "Qualify via the drops",
+          "detail": "Clear the drop bank to light Barn."
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Start and loop Barn",
+          "detail": "Repeatedly shoot the left orbit; awards climb +500k each shot."
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Bank the Multi-Kill",
+          "detail": "Three left-orbit shots light a Multi-Kill insert (five in competition)."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mode_riot",
+      "title": "Riot Mode (Tower / Riot Shot)",
+      "category": "mode",
+      "summary": "The best mode to stack into a multiball — value grows on switch hits, so start it then let multiball chaos rattle switches while you feed the Riot shot.",
+      "difficulty": 2,
+      "reward": "Starts 1.5M–3M, +25k per switch hit +2.5k per Riot shot (accumulates between collects)",
+      "steps": [
+        {
+          "shot": "left_drops",
+          "action": "Qualify via the drops",
+          "detail": "Clear the drop bank to light Riot."
+        },
+        {
+          "shot": "riot",
+          "action": "Start Riot and keep it fed",
+          "detail": "Shoot the inner-left Riot/Tower shot over and over; value rises with every switch hit."
+        },
+        {
+          "shot": "pop_bumpers",
+          "action": "Pile up switch hits",
+          "detail": "Since value grows on switch hits, stack Riot into a multiball and let the pops rack switches."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mult_shot_x",
+      "title": "Shot Multiplier — Bank the Inlane X",
+      "category": "multiplier",
+      "summary": "Every 2 Walker kills lights an inlane X; skip it to bank +1X per extra 2 kills with no ceiling, then dump a huge X on a monster jackpot.",
+      "difficulty": 1,
+      "reward": "Next-shot 2X (or 4x–6x+ banked); resets to 2X on use, to zero on a drain",
+      "steps": [
+        {
+          "shot": "prison",
+          "action": "Kill Walkers on lit crosshairs",
+          "detail": "Every 2 kills lights an X at an inlane; the flipper buttons cycle which of the two inlanes is carrying it."
+        },
+        {
+          "shot": "left_inlane",
+          "action": "Hold or roll the X",
+          "detail": "Skip the inlane to bank +1X per extra 2 kills (no cap); roll it when ready to arm the next shot."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Dump the X on a monster",
+          "detail": "Cash a big banked X on a Prison jackpot in 2X playfield, an Arena ramp, or a Well Walker super — a 50M jackpot can come back worth roughly 300M."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "mult_2x_playfield",
+      "title": "2X Playfield via the Tower",
+      "category": "multiplier",
+      "summary": "Complete the stab targets flanking the Prison to light the Tower, then hit the Tower with a strong Riot shot to start ~30 seconds of 2X scoring.",
+      "difficulty": 2,
+      "reward": "~30s of 2X playfield scoring; 10 lit-Tower hits light Extra Ball",
+      "steps": [
+        {
+          "shot": "stab_targets",
+          "action": "Complete both stab targets",
+          "detail": "Hit the standups flanking the Prison to light the Tower."
+        },
+        {
+          "shot": "tower",
+          "action": "Shoot the lit Tower",
+          "detail": "Reached only via a strong Riot shot above the top rollovers; starts ~30s of 2X scoring."
+        },
+        {
+          "shot": "stab_targets",
+          "action": "Extend the timer",
+          "detail": "Completing the stab targets again before 2X starts adds +10s; completing them during 2X resets the timer."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard_last_man_standing",
+      "title": "Wizard: Last Man Standing",
+      "category": "wizard",
+      "summary": "The main wizard mode — kill all 115 Walkers to light it at Woodbury, then a 4-ball multiball where you kill another 115 for a 100M completion bonus.",
+      "difficulty": 3,
+      "reward": "1M +400k per kill; 100M completion bonus + 5.75M consolidated end-of-ball bonus; loopable",
+      "steps": [
+        {
+          "shot": "prison",
+          "action": "Kill 115 Walkers",
+          "detail": "Bank Walker kills at lit crosshairs across the game (killing 115 is the master progression goal)."
+        },
+        {
+          "shot": "woodbury",
+          "action": "Start Last Man Standing",
+          "detail": "At 115 kills the mode lights at the Woodbury shot; starting it cancels all active modes (4-ball MB)."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Kill another 115",
+          "detail": "A shot with all five inserts lit kills 5 Walkers; add-a-ball ~every 10 kills; mode doesn't end at a single ball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard_siege",
+      "title": "Wizard Path: Siege",
+      "category": "wizard",
+      "summary": "Fully spell PRISON in two separate Prison Multiballs (~12 total jackpots) to qualify the untimed Siege mini-wizard, which continues across drains.",
+      "difficulty": 3,
+      "reward": "Phase 1 jackpots 2.5M/5M; Phase 2 all five shots +Prison at 2.5M +250k per shot",
+      "steps": [
+        {
+          "shot": "prison",
+          "action": "Spell PRISON in the 1st multiball",
+          "detail": "Six jackpots at the walker head light all six PRISON inserts inside a single Prison Multiball; the sixth also lights Riot for the Super Jackpot and starts phase two."
+        },
+        {
+          "shot": "prison",
+          "action": "Spell PRISON in a 2nd multiball",
+          "detail": "Prioritize Prison early and re-start it to complete the second spellout — this lights Siege."
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Play out Siege",
+          "detail": "Untimed; left orbit/Barn, Prison, and right ramp/Arena light for 2.5M/5M jackpots, then all five shots. Draining continues Siege next ball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat_opener_safe",
+      "title": "Strategy: Safe Beginner Opener (Mode-First)",
+      "category": "strategy",
+      "summary": "A survival-first opening line: cash the skill shot, settle the ball, clear the drops for a mode, then run Barn while banking Walker kills.",
+      "difficulty": 1,
+      "reward": "Establishes Dead-Feature progress, walker count, and an early X safely",
+      "steps": [
+        {
+          "shot": "shooter_lane",
+          "action": "Cash the skill shot",
+          "detail": "Free 250k+ and sets up plunge control."
+        },
+        {
+          "shot": "left_drops",
+          "action": "Clear the left drop bank",
+          "detail": "Lights the first Dead Feature; hit deliberately, not by flailing (this bank is the primary drain hazard)."
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Start and loop Barn ×3",
+          "detail": "Safest first mode; 2.5M+ per shot, Multi-Kill on the 3rd."
+        },
+        {
+          "shot": "left_inlane",
+          "action": "Take the 2X early if dicey",
+          "detail": "Keep killing Walkers on lit crosshairs; roll the inlane X immediately if a drain looks likely."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "strat_opener_tournament",
+      "title": "Strategy: Tournament Stack Toward Prison/Siege",
+      "category": "strategy",
+      "summary": "The scoring line: skill shot for a safety award, clear drops, run CDC, then start Prison with CDC still running and dump a banked X during 2X playfield.",
+      "difficulty": 3,
+      "reward": "A CDC+Prison stack with a 4x+ X on a 2X jackpot; feeds toward Siege",
+      "steps": [
+        {
+          "shot": "woodbury",
+          "action": "Grab a safety award",
+          "detail": "Work the Woodbury skill shot for Light Escape or Light X before playing aggressive."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start CDC and loop the ramp",
+          "detail": "Clear the drop bank first, then loop the left ramp — the strongest single-ball mode keeps running into multiball."
+        },
+        {
+          "shot": "prison",
+          "action": "Start Prison Multiball with CDC running",
+          "detail": "Only ~3 prison shots start it (5 letters spotted); stack the timed mode into the multiball."
+        },
+        {
+          "shot": "left_inlane",
+          "action": "Dump the X in 2X playfield",
+          "detail": "Hold your X to 4x+ and cash it on a Prison jackpot during the 2X window; feed a 2nd PRISON spellout for Siege."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "strat_stacking",
+      "title": "Strategy: Multiball Stacking Order",
+      "category": "strategy",
+      "summary": "Pro stacking sequence — start Prison, add Blood Bath and spend both its add-a-balls, and hold Well Walker until the end (never Prison+Well Walker together).",
+      "difficulty": 2,
+      "reward": "Maximum balls in play before the highest-jackpot multiball",
+      "steps": [
+        {
+          "shot": "prison",
+          "action": "Start Prison first",
+          "detail": "Highest base value and the Siege path; opens the 2X playfield window."
+        },
+        {
+          "shot": "left_drops",
+          "action": "Add Blood Bath and spend its add-a-balls",
+          "detail": "Blood Bath stacks freely; bank both add-a-balls before starting the next multiball."
+        },
+        {
+          "shot": "well_walker",
+          "action": "Start Well Walker last",
+          "detail": "Weakest alone, so save it — and note Prison + Well Walker can NOT stack together."
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "wizard_horde",
+      "title": "Wizard: Horde at Woodbury",
+      "category": "wizard",
+      "summary": "Light all six yellow Multi-Kill inserts from different sources, then start the Horde multiball at the Woodbury shot.",
+      "difficulty": 3,
+      "reward": "Multiball with escalating kill values; each lit Multi-Kill insert banked also feeds end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "left_orbit",
+          "action": "Bank Multi-Kills from Barn",
+          "detail": "Three left-orbit shots inside Barn mode light one Multi-Kill insert; requalify the drops and repeat."
+        },
+        {
+          "shot": "tunnel",
+          "action": "Farm combos for more inserts",
+          "detail": "Oscillate the Tunnel and right ramp; every ten registered combos lights another Multi-Kill.",
+          "link": "none"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Keep the combo chain alive",
+          "detail": "The right ramp is the other half of the repeatable combo loop that supplies inserts fastest.",
+          "link": "none"
+        },
+        {
+          "shot": "woodbury",
+          "action": "Start Horde",
+          "detail": "With all six inserts lit, the Woodbury shot launches Horde; clear waves of walkers before the balls drain."
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "plunge-payoff",
+      "title": "Clean Plunge",
+      "desc": "Cash a top-lane skill shot off the plunge at the start of a ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill_standard"
+    },
+    {
+      "id": "fish-tank-favor",
+      "title": "Fish Tank Favor",
+      "desc": "Complete a fish tank at the right ramp and take a feature award from the Woodbury skill shot menu.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill_woodbury"
+    },
+    {
+      "id": "barn-runner",
+      "title": "Barn Runner",
+      "desc": "Start the left-orbit mode and make three orbit shots in it to light a Multi-Kill.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode_barn"
+    },
+    {
+      "id": "prison-doors-open",
+      "title": "Doors Wide Open",
+      "desc": "Spell PRISON at the doors and start the three-ball Prison Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb_prison"
+    },
+    {
+      "id": "well-walker-magnet",
+      "title": "Down The Well",
+      "desc": "Spell WELL on the Well Walker toy and start the two-ball Well Walker Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb_wellwalker"
+    },
+    {
+      "id": "supply-run",
+      "title": "Supply Run",
+      "desc": "Collect a full supply set on the drop bank and start Blood Bath Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb_bloodbath"
+    },
+    {
+      "id": "tower-double",
+      "title": "Double Everything",
+      "desc": "Complete the stab targets, hit the lit Tower, and run a full two-times playfield window.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult_2x_playfield"
+    },
+    {
+      "id": "ten-combo-multikill",
+      "title": "Ten Links",
+      "desc": "Register ten combos in one game to light a Multi-Kill insert.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo_ten_multikill"
+    },
+    {
+      "id": "cdc-cashout",
+      "title": "Lab Cashout",
+      "desc": "Run the left-ramp mode, build a full row of arrows, and bank the accumulated total with the closing ramp shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode_cdc"
+    },
+    {
+      "id": "riot-under-fire",
+      "title": "Riot Under Fire",
+      "desc": "Start the Riot mode and keep it running inside a multiball so switch hits inflate its value before you collect.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode_riot"
+    },
+    {
+      "id": "arena-collector",
+      "title": "Arena Collector",
+      "desc": "Loop the right ramp in Arena mode and collect the mode total at the Woodbury lane.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode_arena"
+    },
+    {
+      "id": "ball-pile",
+      "title": "Ball Pile",
+      "desc": "Have two multiballs running at the same time and spend both Blood Bath add-a-balls while stacked.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strat_stacking"
+    },
+    {
+      "id": "banked-x-dump",
+      "title": "Saved Up And Spent",
+      "desc": "Bank the inlane shot multiplier to at least six times, then cash it on a jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult_shot_x"
+    },
+    {
+      "id": "tower-extra-ball",
+      "title": "One More Ball",
+      "desc": "Hit the lit Tower ten times in a game to light and collect an extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult_2x_playfield"
+    },
+    {
+      "id": "horde-called",
+      "title": "The Horde Arrives",
+      "desc": "Light all six Multi-Kill inserts and start Horde at the Woodbury shot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard_horde"
+    },
+    {
+      "id": "one-hundred-fifteen",
+      "title": "One Hundred Fifteen",
+      "desc": "Kill 115 walkers in a game to qualify the main wizard mode at Woodbury.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard_last_man_standing"
+    },
+    {
+      "id": "siege-qualified",
+      "title": "Under Siege",
+      "desc": "Fully spell PRISON in two separate Prison Multiballs to qualify the untimed Siege mini-wizard and play it out.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard_siege"
+    },
+    {
+      "id": "last-man-complete",
+      "title": "Last One Standing",
+      "desc": "Start the main wizard mode and kill another 115 walkers inside it for the completion bonus.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard_last_man_standing"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-rollover-skill-shot",
+      "title": "Soft Plunge, Then Steer",
+      "text": "Soft-plunge so the ball rolls past the top lanes with the skill shot still lit, then cycle it with the flippers into the flashing lane. Only the lane lit at the end counts, so the plunge is half the shot and the steering is the other half.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skill_standard",
+      "shots": [
+        "shooter_lane",
+        "top_lanes"
+      ]
+    },
+    {
+      "id": "drill-drop-bank-deliberate",
+      "title": "Deliberate Drop Clears",
+      "text": "Clear the left drop bank from a cradle, one aimed shot at a time. Everything on this machine gates behind that bank and it is also the primary drain hazard, so flailing at it costs you the ball and the mode together.",
+      "reps": "5 full clears",
+      "focus": "accuracy",
+      "goal": "mb_bloodbath",
+      "shots": [
+        "left_drops"
+      ]
+    },
+    {
+      "id": "drill-cdc-ramp-loop",
+      "title": "CDC Ramp Loop",
+      "text": "Loop the left ramp off its own inlane return without cradling between shots. CDC pays for every arrow you lay down and then pays the whole total again on the cash-out, so the loop rhythm is worth more here than anywhere else on the machine.",
+      "reps": "10 consecutive ramps",
+      "focus": "accuracy",
+      "goal": "mode_cdc",
+      "shots": [
+        "left_ramp",
+        "left_inlane"
+      ]
+    },
+    {
+      "id": "drill-tunnel-ramp-oscillation",
+      "title": "Tunnel And Right Ramp Oscillation",
+      "text": "Bounce right ramp into Tunnel and back while the red arrows are still flashing. This oscillation is the only repeatable combo engine on the layout, and Multi-Kill inserts come from nowhere else this fast.",
+      "reps": "5 chains, note your longest",
+      "focus": "flow",
+      "goal": "combo_rramp_tunnel_loop",
+      "shots": [
+        "right_ramp",
+        "tunnel"
+      ]
+    },
+    {
+      "id": "drill-center-gap-recovery",
+      "title": "Mind The Center Gap",
+      "text": "Bash the Prison from a cradle and set your hands for a center feed before the kickout, not after. The gap between these two flippers is unusually wide and the Prison magnet exists to throw balls straight down it.",
+      "reps": "1 full ball, Prison only",
+      "focus": "ball-control",
+      "shots": [
+        "prison",
+        "prison_magnet"
+      ]
+    },
+    {
+      "id": "drill-crossbow-load-fire",
+      "title": "Load And Fire The Crossbow",
+      "text": "Feed the right ramp to park a ball in the crossbow, then aim and fire it deliberately instead of mashing the button the moment it loads. Three made crossbow shots start the frenzy, and in the frenzy every right ramp reloads you.",
+      "reps": "8 loads",
+      "focus": "accuracy",
+      "shots": [
+        "right_ramp",
+        "crossbow"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "This one is your bomb trigger. Supplies collected at the drop-target bank load the button with bombs you spend inside the two big multiballs, and the crossbow cannon that parks under the flippers only fires when you press it.",
+    "uses": [
+      {
+        "when": "First Aid supply, prison doors open",
+        "what": "Loads a Prison Bomb onto the button so you carry it into Prison Multiball."
+      },
+      {
+        "when": "Prison Multiball with a bomb loaded",
+        "what": "Spends the bomb: it either moves a jackpot one hit closer or takes the lit one outright."
+      },
+      {
+        "when": "Well Walker Multiball with a bomb",
+        "what": "Same deal from the Food supply — one hit of progress, or cash the jackpot without a shot."
+      },
+      {
+        "when": "Ball parked in the crossbow cannon",
+        "what": "Fires the crossbow for 1.5M to 2.5M; three made shots kick off Crossbow Frenzy."
+      },
+      {
+        "when": "During Crossbow Frenzy",
+        "what": "Every right ramp reloads the cannon, and a made crossbow shot buys you time before the next walker closes in."
+      },
+      {
+        "when": "Horde, with a Horde Bomb banked",
+        "what": "Cashes a banked bomb to spot a walker kill instead of risking a live shot."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "The Walking Dead is a brutal, wide-gapped survival machine: clear the left drop bank to unlock modes, spell your way into the Prison and Well Walker multiballs, and rack Walker kills the whole time. Kill 115 to reach Last Man Standing, the main wizard, with Siege and Horde as the other two summits.",
+    "loop": [
+      "Clear the left drop bank -- it gates every mode, banks Supplies toward Blood Bath, and is the main drain hazard, so hit it from a cradle rather than flailing.",
+      "Start a mode at its own shot -- Barn at the left orbit, CDC at the left ramp, Arena at the right ramp, Riot at the Tower shot -- then loop that shot to farm it.",
+      "Spell PRISON at the center doors and WELL on the captive toy to launch their multiballs, and stack Blood Bath on top for its add-a-balls.",
+      "Kill Walkers on lit crosshairs; every second kill lights an inlane X you can bank and later dump on a jackpot.",
+      "Push the kill count toward 115 for Last Man Standing, spell PRISON all the way through twice for Siege, and light six Multi-Kills for Horde."
+    ],
+    "lights": [
+      {
+        "id": "drop-bank",
+        "name": "Left Drop Bank",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left_drops"
+          }
+        ],
+        "lit": "The left drop bank is the engine of the whole game -- clearing it qualifies your next mode, banks the lit Supply toward Blood Bath, and steps toward that multiball -- and it is also the shot most likely to spit the ball down the middle.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear it deliberately from a cradle to light a mode, and string the First Aid, Weapons and Food Supplies so the next clear starts Blood Bath -- the only multiball that stacks freely and the only one handing out add-a-balls. Everything else on the machine waits behind this bank, so treat it as the priority shot it is.",
+        "goals": [
+          "mb_bloodbath"
+        ]
+      },
+      {
+        "id": "mode-shots",
+        "name": "Mode Start Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left_orbit"
+          },
+          {
+            "shot": "left_ramp"
+          },
+          {
+            "shot": "right_ramp"
+          },
+          {
+            "shot": "riot"
+          }
+        ],
+        "lit": "Once the drops qualify a mode, its start shot lights -- the left orbit for Barn, the left ramp for CDC, the right ramp for Arena, the inner Tower shot for Riot -- and every mode rewards looping that same shot rather than hunting around.",
+        "flashing": null,
+        "control": null,
+        "then": "Start the one whose shot you are already hitting clean and loop it: Barn stacks the left orbit, CDC lays a row of arrows then re-scores the whole row on its closing ramp, Arena escalates and cashes half at Woodbury, and Riot swells on switch hits. Because Riot climbs on switches, start it and let a multiball's chaos rattle it up before you collect.",
+        "goals": [
+          "mode_barn",
+          "mode_cdc",
+          "mode_arena",
+          "mode_riot"
+        ]
+      },
+      {
+        "id": "prison-doors",
+        "name": "Prison Doors",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "prison"
+          },
+          {
+            "shot": "prison_magnet"
+          }
+        ],
+        "lit": "Bashing the center Prison doors spells PRISON, and the first crack spots five letters so only a few more shots finish it; the magnet just above the scoop exists to sling the ball straight down the wide center gap.",
+        "flashing": null,
+        "control": null,
+        "then": "With PRISON spelled and the yard cleared, hit the exposed zombie head to start the three-ball multiball, the highest-base one on the game. Six head jackpots relight Riot for a Super worth every jackpot banked, and spelling PRISON all the way through in two separate multiballs qualifies the untimed Siege.",
+        "goals": [
+          "mb_prison",
+          "wizard_siege"
+        ]
+      },
+      {
+        "id": "well-walker",
+        "name": "Well Walker",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "well_walker"
+          }
+        ],
+        "lit": "Smashing the Well Walker captive toy spells WELL, and a fifth activation throws the magnet and starts its two-ball multiball; its jackpots grow with switch hits, so it is weak unless you feed the pops between shots.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell WELL, pump the jackpot size in the bumpers, then take the flashing Well shot to launch it. Each later restart in the same game demands a few more Well shots, and note it will not run stacked with Prison.",
+        "goals": [
+          "mb_wellwalker"
+        ]
+      },
+      {
+        "id": "inlane-x",
+        "name": "Shot-Multiplier Inlanes",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left_inlane"
+          },
+          {
+            "shot": "right_inlane"
+          },
+          {
+            "shot": "prison"
+          }
+        ],
+        "lit": "Every second Walker kill lights a shot-multiplier X at one of the two inlanes, and a lit inlane doubles the very next shot you take after rolling through it.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of a flipper button moves the lit X across to the other inlane, so you can park it on the return lane the ball is actually going to roll down",
+          "when": "before the ball reaches the inlanes"
+        },
+        "then": "Skip the inlane instead of cashing it and you bank another X for every further pair of kills, with no ceiling, then roll it to arm the multiplier and dump a fat X on a monster -- a Prison jackpot under 2X playfield can come back many times its size. The banked X drops to a single double when spent and clears entirely on a drain, so cash a big one before you risk the ball.",
+        "goals": [
+          "mult_shot_x"
+        ]
+      },
+      {
+        "id": "tower-2x",
+        "name": "Stab Targets & Tower",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "stab_targets"
+          },
+          {
+            "shot": "tower"
+          }
+        ],
+        "lit": "The two stab standups flanking the Prison light the Tower up above the top lanes, and a strong Riot shot into the lit Tower starts about half a minute of 2X playfield scoring.",
+        "flashing": null,
+        "control": null,
+        "then": "Double everything while it runs: completing the stab targets again before it starts adds time, and completing them during the window resets the clock. Ten lit-Tower hits banked across the game also light an extra ball.",
+        "goals": [
+          "mult_2x_playfield"
+        ]
+      },
+      {
+        "id": "combo-loops",
+        "name": "Combo Loops",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "tunnel"
+          },
+          {
+            "shot": "right_ramp"
+          },
+          {
+            "shot": "left_ramp"
+          },
+          {
+            "shot": "left_orbit"
+          },
+          {
+            "shot": "riot"
+          }
+        ],
+        "lit": "Red arrows mark the live combo links, and the one repeatable engine is oscillating the Tunnel and the right ramp back and forth; left ramp into left orbit and left ramp into Riot are the other two chains that register.",
+        "flashing": null,
+        "control": null,
+        "then": "Farm the oscillation, because every ten combos banked lights one of six Multi-Kill inserts, and lighting all six opens Horde at Woodbury. Three left-orbit shots inside Barn light a Multi-Kill too, so the mode and the combo farm feed the same wizard.",
+        "goals": [
+          "combo_tunnel_rramp_loop",
+          "combo_rramp_tunnel_loop",
+          "combo_lramp_lorbit",
+          "combo_lramp_riot",
+          "combo_ten_multikill",
+          "wizard_horde"
+        ]
+      },
+      {
+        "id": "walker-ladder",
+        "name": "Walker Kill Count",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "woodbury"
+          }
+        ],
+        "lit": "Walker kills bank on lit crosshairs from shots all over the playfield and ladder toward 115, the master count of the game; at 115 the Woodbury shot lights Last Man Standing.",
+        "flashing": null,
+        "control": null,
+        "then": "The count carries across balls, so even a short ball leaves progress you keep. Reach 115 and start the main wizard at Woodbury -- a four-ball fight to kill another 115 for a hundred-million completion bonus, where a single shot lighting all five of its inserts takes down five Walkers at once.",
+        "goals": [
+          "wizard_last_man_standing"
+        ]
+      },
+      {
+        "id": "skill-lanes",
+        "name": "Top Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top_lanes"
+          },
+          {
+            "shot": "shooter_lane"
+          }
+        ],
+        "lit": "The top rollover lanes are the standard skill-shot target off the plunge, and in play completing them advances Bonus X toward its cap and lights Bit at an outlane; lighting a Fish Tank first instead arms the Woodbury skill shot, which cycles feature awards as the ball waits.",
+        "flashing": null,
+        "control": null,
+        "then": "Soft-plunge and steer it into whichever top lane is flashing for points that escalate each ball -- and only the lane still lit when it settles will score. Completing the lanes in play banks Bonus X and lights Bit, a collect that turns an outlane drain into points instead of a lost ball.",
+        "goals": [
+          "skill_standard",
+          "skill_woodbury"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Every second Walker kill lights an X at an inlane; a flipper-button tap slides that lit X to the other inlane so you can set it on the return lane the ball will take. Roll through to arm a doubled next shot, or skip it to bank another X per extra pair of kills -- then cash a big banked X on a jackpot, ideally during 2X playfield.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Survive first, then set up. Cash the top-lane skill shot, clear the drop bank from a cradle for your opening mode, run Barn off the left orbit while banking Walker kills, and take an inlane X early if a drain looks likely.",
+        "goals": [
+          "skill_standard",
+          "mode_barn",
+          "mult_shot_x",
+          "strat_opener_safe"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Build the shot multiplier by holding the inlane X past a plain double, light the Tower for a 2X-playfield window, and start Prison Multiball -- stack CDC or Blood Bath onto it and spend Blood Bath's two add-a-balls before you start anything else.",
+        "goals": [
+          "mult_shot_x",
+          "mult_2x_playfield",
+          "mb_prison",
+          "mb_bloodbath",
+          "strat_stacking"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Three summits sit at the top. Kill 115 for Last Man Standing and its four-ball hunt for another 115, spell PRISON all the way through in two multiballs for the untimed Siege, and light all six Multi-Kills for Horde at Woodbury.",
+        "goals": [
+          "wizard_last_man_standing",
+          "wizard_siege",
+          "wizard_horde"
+        ]
+      }
+    ]
+  }
+}

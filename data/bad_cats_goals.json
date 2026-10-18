@@ -1,0 +1,875 @@
+{
+  "machine": "Bad Cats (Williams, 1989)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Delivers the ball into the top rollover lanes, where one lane is already flashing for the skill shot."
+    },
+    {
+      "id": "top-rollovers",
+      "name": "T-O-Y Rollovers",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Three lanes spelling TOY, and all of them dump into the bumpers. Complete the set and your bonus multiplier steps up; whichever lane is flashing is your skill shot. Working the flipper buttons will not walk that flashing lamp across to another lane."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Three of them, worth 500 each until the barbecue lamp in their middle is lit — then 5,000 apiece."
+    },
+    {
+      "id": "seafood-wheel",
+      "name": "SEAFOOD Wheel",
+      "type": "toy",
+      "x": 0.5,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "The spinning gimmick in the middle of the playfield. Eight fish in the pond, and whichever one lands in the net is your award."
+    },
+    {
+      "id": "fishbowl-ramp",
+      "name": "Fishbowl Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The centre ramp, comfortable from either flipper. It carries the value ladder up to the extra ball, and it is where the jackpot is collected."
+    },
+    {
+      "id": "tiger-ramp",
+      "name": "Tiger Ramp",
+      "type": "ramp",
+      "x": 0.12,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "The long left ramp that runs up over the top and empties into the right inlane. Not an easy shot, and a weak one comes straight back down the middle.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "bird-drops",
+      "name": "Bird Drop Targets",
+      "type": "drop-target",
+      "x": 0.17,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Five drop targets on the left. Clearing the bank awards a BAD CATS letter. They sit close enough to the Tiger Ramp that a stray shot can knock one over and break a ramp streak."
+    },
+    {
+      "id": "milk-drops",
+      "name": "Milk Bottle Drop Targets",
+      "type": "drop-target",
+      "x": 0.75,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Three drop targets on the right. Clearing this bank also awards a BAD CATS letter, and it is worth 20,000 in bonus."
+    },
+    {
+      "id": "trash-can",
+      "name": "Trash Can",
+      "type": "saucer",
+      "x": 0.28,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A curving lane on the Fish target's left side feeds this eject saucer. Pays 10K when empty, or whatever the Fish target has lit. It kicks the ball out toward the bumpers."
+    },
+    {
+      "id": "fish-target",
+      "name": "Fish Target",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A linear target — the harder you hit it, the higher the award it lights. It sets what the Trash Can is worth."
+    },
+    {
+      "id": "center-lane",
+      "name": "Center Lane",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A plain lane that curves up to the top rollovers. No award of its own, but a cheap way to reach the lanes and the bonus multiplier."
+    },
+    {
+      "id": "left-rubber",
+      "name": "Left Rubber Switch",
+      "type": "mech",
+      "x": 0.24,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "On the Tiger Ramp's right flank, a plain leaf switch hides behind a rubber band. Fifty points and a dog bark."
+    },
+    {
+      "id": "right-rubber",
+      "name": "Right Rubber Switch",
+      "type": "mech",
+      "x": 0.7,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Ride up the Center Lane and this one sits along its right-hand side, mirroring the left switch. Ten points and a meow, and either rubber switch can move the lit inlane to the other side."
+    },
+    {
+      "id": "doghouse",
+      "name": "Doghouse Scoop",
+      "type": "scoop",
+      "x": 0.8,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "The bulldog's scoop on the right. Shooting it while lit spins the SEAFOOD wheel; shooting it while unlit simply lights it for next time."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "When lit, it opens the bulldog's mouth and lights the Doghouse scoop."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "When lit, it arms the 10X multiplier at the Trash Can. The Tiger Ramp empties into this lane, which is a neat way to collect it."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Lit for Curiosity Spin on your last ball, which turns a drain into a free spin of the wheel."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The other Curiosity Spin lamp. Both light together, and any outlane switch is worth 30,000 in bonus regardless."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "One of the three top lanes is chosen at random and flashes. Send the ball through that lane and you collect 120K, a doubled bonus and a lit barbecue. The flashing lamp stays put no matter how you work the flipper buttons, so everything here rides on the plunge.",
+      "difficulty": 2,
+      "reward": "120K, 2X bonus, barbecue lit",
+      "steps": [
+        {
+          "shot": "top-rollovers",
+          "action": "Plunge to match the flashing top lane",
+          "detail": "One of the three lanes is chosen at random and flashes; lane-change buttons will not move it, so plunge strength is your only control. Passing through it doubles the bonus and lights the barbecue for free."
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "barbecue",
+      "title": "Light The Barbecue",
+      "category": "multiplier",
+      "summary": "The flashlamp in the middle of the bumpers is the difference between 500 points a hit and 5,000. Get it from the skill shot, or light it by clearing either drop target bank. Bumper time with it lit is genuinely worth having.",
+      "difficulty": 1,
+      "reward": "Jet bumpers go from 500 to 5,000",
+      "steps": [
+        {
+          "shot": "bird-drops",
+          "action": "Clear a drop bank",
+          "detail": "Either bank does it if the skill shot did not."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Feed the bumpers while it burns",
+          "detail": "Ten times the value, and the machine makes a lot more noise about it."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "tiger-ramp",
+      "title": "The Tiger Ramp Ladder",
+      "category": "combo",
+      "summary": "This ramp is always lit for something and the value climbs on consecutive shots — 50K, then 100K, then 200K, then a million with no cap on repeats. There is no timer at all, so you can trap up and take your time, but any other scoring switch resets you to the bottom.",
+      "difficulty": 3,
+      "reward": "50K climbing to 1M, unlimited",
+      "steps": [
+        {
+          "shot": "tiger-ramp",
+          "action": "Start the climb",
+          "detail": "The first shot is 50K on standard settings."
+        },
+        {
+          "shot": "tiger-ramp",
+          "action": "Repeat without hitting anything else",
+          "detail": "The ramp does not time out, so a clean trap between shots costs you nothing."
+        },
+        {
+          "shot": "bird-drops",
+          "action": "Avoid the bird targets",
+          "detail": "Clipping a drop target on a sloppy backhand is the usual way a climb ends."
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "twenty-million",
+      "title": "The 20 Million Lamp",
+      "category": "secret",
+      "summary": "There is a 20M lamp on the Tiger Ramp that the instruction card never explains. It only lights on your last ball, and only after you have climbed the ramp ladder consecutively from its base value all the way to a million. One collection per game.",
+      "difficulty": 3,
+      "reward": "20,000,000",
+      "steps": [
+        {
+          "shot": "tiger-ramp",
+          "action": "Save the climb for your last ball",
+          "detail": "The lamp will not light on any earlier ball no matter how well you shoot."
+        },
+        {
+          "shot": "tiger-ramp",
+          "action": "Climb clean to the million",
+          "detail": "Consecutive ramp shots with nothing else touched in between."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Know the loophole",
+          "detail": "An extra ball from a Curiosity Spin after collecting it has been known to make a second 20M possible."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "fishbowl-ramp",
+      "title": "Fishbowl Ramp Ladder",
+      "category": "progression",
+      "summary": "The centre ramp pays 30K, then 50K, then 100K, then an extra ball. On factory settings it is lit at the start of every ball until you have taken the extra ball, and one extra ball per ball is the limit. If it goes dark, a cleared drop bank relights it.",
+      "difficulty": 1,
+      "reward": "30K, 50K, 100K, extra ball",
+      "steps": [
+        {
+          "shot": "fishbowl-ramp",
+          "action": "Work the ladder early",
+          "detail": "The ramp is comfortable off either flipper, which makes this the safest scoring on the machine."
+        },
+        {
+          "shot": "milk-drops",
+          "action": "Relight it off a drop bank",
+          "detail": "Either bank puts the ramp back on."
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "bad-cats-letters",
+      "title": "Spell BAD CATS",
+      "category": "progression",
+      "summary": "Every clean sweep of either drop target bank awards one letter. Seven letters lights the jackpot on the centre ramp. There is no limit to how many times you can do it in a game, but the letters have to be earned again from scratch each time.",
+      "difficulty": 2,
+      "reward": "Lights the jackpot at the Fishbowl Ramp",
+      "steps": [
+        {
+          "shot": "bird-drops",
+          "action": "Sweep the five-bank",
+          "detail": "One letter per completed sweep, and 10,000 in bonus on top."
+        },
+        {
+          "shot": "milk-drops",
+          "action": "Sweep the three-bank",
+          "detail": "The easier of the two, and worth 20,000 in bonus."
+        },
+        {
+          "shot": "seafood-wheel",
+          "action": "Take letters from the wheel",
+          "detail": "One of the eight wheel awards spots a letter and pays 25K with it."
+        }
+      ],
+      "fx": "fin",
+      "ordered": false
+    },
+    {
+      "id": "jackpot",
+      "title": "The Progressive Jackpot",
+      "category": "multiplier",
+      "summary": "This jackpot does not reset between games — it carries on a machine until somebody collects it. It starts at a million and grows by roughly a tenth of every player's score, so a busy machine can be carrying eight figures. One ramp shot takes it.",
+      "difficulty": 3,
+      "reward": "1M up to roughly 20M",
+      "steps": [
+        {
+          "shot": "bird-drops",
+          "action": "Spell BAD CATS to light it",
+          "detail": "The backglass lamps give you a rough read on what the jackpot is currently worth."
+        },
+        {
+          "shot": "fishbowl-ramp",
+          "action": "Collect on the centre ramp",
+          "detail": "One hit takes it, and the jackpot drops back to a million and starts climbing again."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "seafood",
+      "title": "S-E-A-F-O-O-D",
+      "category": "mode",
+      "summary": "A lit Doghouse spins the wheel. Two things light it: a run through the lit left inlane, or a shot at the Doghouse while it is still dark. The lit window lasts about twenty seconds, and there are eight possible prizes on the wheel.",
+      "difficulty": 2,
+      "reward": "Up to 250K, a Special, an extra ball or a lit jackpot",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Light the Doghouse",
+          "detail": "A lit left inlane opens the bulldog's mouth."
+        },
+        {
+          "shot": "doghouse",
+          "action": "Shoot it inside twenty seconds",
+          "detail": "Shooting an unlit Doghouse just lights it, so a miss on timing is not a wasted shot."
+        },
+        {
+          "shot": "seafood-wheel",
+          "action": "Take what the net catches",
+          "detail": "The eight fish are 10K, 50K, 250K, a BAD CATS letter with 25K, Lites Jackpot, Spin Again with 100K, an extra ball, and a Special."
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "curiosity-spin",
+      "title": "Curiosity Spin",
+      "category": "secret",
+      "summary": "On your last ball both outlane lamps light together. Drain out either side and the game spins the SEAFOOD wheel as a parting gift — and if your game came in under the machine's average time, it will hand you a consolation extra ball on top.",
+      "difficulty": 2,
+      "reward": "A free wheel spin, and possibly a ball back",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Accept the drain on your last ball",
+          "detail": "There is nothing to shoot for here — the lamps light on their own."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Know it only fires once",
+          "detail": "If the spin gives you an extra ball, Curiosity Spin does not relight for that new last ball."
+        }
+      ],
+      "fx": "magic",
+      "ordered": false
+    },
+    {
+      "id": "trash-can-fish",
+      "title": "Fish Bone-Us",
+      "category": "combo",
+      "summary": "The Fish target and the Trash Can are one shot in two parts. Hit the linear Fish target hard and it lights an award ladder — 25K, 50K, 75K, 100K or 500K. Those lamps time out one at a time, about twenty seconds each, so shoot the Trash Can immediately.",
+      "difficulty": 2,
+      "reward": "10K empty, up to 500K loaded",
+      "steps": [
+        {
+          "shot": "fish-target",
+          "action": "Hit the Fish target hard",
+          "detail": "The harder the hit, the higher the lamp it lights."
+        },
+        {
+          "shot": "trash-can",
+          "action": "Go straight to the Trash Can",
+          "detail": "Every twenty seconds you wait, one lamp drops off the top of the ladder."
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "ten-x",
+      "title": "The 10X Trash Can",
+      "category": "multiplier",
+      "summary": "A lit right inlane arms the 10X lamp at the Trash Can, and that turns the Fish ladder into the biggest single shot on the playfield: 100K, 250K, 500K, 750K, 1M or 5M. The Tiger Ramp empties into the right inlane, which pairs the two nicely.",
+      "difficulty": 2,
+      "reward": "Up to 5,000,000 in one shot",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Collect the lit right inlane",
+          "detail": "The Tiger Ramp return runs straight through it."
+        },
+        {
+          "shot": "fish-target",
+          "action": "Load the top Fish lamp",
+          "detail": "The 500K lamp with 10X on it is a 5M award."
+        },
+        {
+          "shot": "trash-can",
+          "action": "Cash it before the lamps step down",
+          "detail": "The multiplier does not stop the ladder timing out."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "trash-can-carryover",
+      "title": "The Trash Can Carry-Over",
+      "category": "secret",
+      "summary": "The Trash Can light goes out at the start of every ball, which makes the shot look dead. It is not. The Fish and 10X lamps are not reset, and those two are what actually control the award — so a loaded Trash Can from last ball still pays in full.",
+      "difficulty": 2,
+      "reward": "Last ball's Fish and 10X values, kept",
+      "steps": [
+        {
+          "shot": "trash-can",
+          "action": "Shoot it anyway on a fresh ball",
+          "detail": "The unlit can is a display quirk, not a rule."
+        },
+        {
+          "shot": "fish-target",
+          "action": "Check the Fish and 10X lamps instead",
+          "detail": "Those are the lamps that decide what you get paid."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "inlane-lights",
+      "title": "Move The Inlane Light",
+      "category": "strategy",
+      "summary": "Exactly one inlane is lit at any time, and collecting it moves the light to the other side. Left lit means a Doghouse spin; right lit means the 10X Trash Can. Slingshots, the rubber switches and even the bumpers can shuffle it, so check before you commit to a shot.",
+      "difficulty": 1,
+      "reward": "Control over which award is armed",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Take the left when you want the wheel",
+          "detail": "It lights the Doghouse for about twenty seconds."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Take the right when the Fish ladder is loaded",
+          "detail": "10X on a 500K Fish lamp is worth far more than a wheel spin."
+        },
+        {
+          "shot": "right-rubber",
+          "action": "Expect it to move on its own",
+          "detail": "Slingshot and rubber switch hits can flip which side is lit without you doing anything."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "toy-lanes",
+      "title": "Complete T-O-Y",
+      "category": "multiplier",
+      "summary": "The three top lanes step the bonus multiplier every time you complete them, from 2X up to a ceiling of 7X. The Center Lane curves up into the same rollovers, so you have two different ways to feed them.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier up to 7X",
+      "steps": [
+        {
+          "shot": "top-rollovers",
+          "action": "Fill in the missing lanes",
+          "detail": "Each completion is another step on the multiplier."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Use the Center Lane to reach them",
+          "detail": "It scores nothing itself but it puts the ball back in the lanes."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus",
+      "title": "End-Of-Ball Bonus",
+      "category": "progression",
+      "summary": "Bonus here works the old-fashioned way: nothing carries between balls, and BAD CATS letters count for nothing at the end. What counts is the switch traffic, and the multiplier from the top lanes. The whole thing caps at 999,000.",
+      "difficulty": 1,
+      "reward": "Up to 999,000 x your multiplier",
+      "steps": [],
+      "instructions": [
+        "You open every ball with 1,000 in the bank.",
+        "1,000 each for a Fish target hit or any ramp entrance switch.",
+        "2,000 each for a lit Doghouse, any drop target knocked down, any top lane, or any inlane switch lit or not.",
+        "5,000 for the Tiger Ramp scoring switch and 15,000 for the Fishbowl Ramp one — the ramps are worth far more in bonus than they look.",
+        "10,000 for clearing the Bird bank or for the Trash Can lit or unlit, and 20,000 for clearing the Milk Bottles.",
+        "30,000 for any outlane switch, which is a small consolation on the way out.",
+        "Complete the top rollovers to raise the multiplier — it begins at 2X and stops climbing at 7X, and the bonus itself caps at 999,000."
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "bc-skillshot",
+      "title": "Right Lane",
+      "desc": "Plunge into the flashing top lane for the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot"
+    },
+    {
+      "id": "bc-barbecue",
+      "title": "Barbecue",
+      "desc": "Light the barbecue and take a full bumper rally at 5,000 a hit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "barbecue"
+    },
+    {
+      "id": "bc-fishbowl-eb",
+      "title": "Fishbowl Extra Ball",
+      "desc": "Climb the centre ramp ladder to the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fishbowl-ramp"
+    },
+    {
+      "id": "bc-seafood",
+      "title": "In The Net",
+      "desc": "Light the Doghouse and spin the SEAFOOD wheel.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "seafood"
+    },
+    {
+      "id": "bc-tiger-million",
+      "title": "Tiger Million",
+      "desc": "Climb the Tiger Ramp ladder all the way to the million.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tiger-ramp"
+    },
+    {
+      "id": "bc-ten-x",
+      "title": "Five Million",
+      "desc": "Load the top Fish lamp with 10X armed and cash it at the Trash Can.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ten-x"
+    },
+    {
+      "id": "bc-jackpot",
+      "title": "Spell BAD CATS",
+      "desc": "Sweep both drop banks enough times to light and collect the jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jackpot"
+    },
+    {
+      "id": "bc-multiplier",
+      "title": "Seven Times",
+      "desc": "Step the bonus multiplier to its 7X ceiling.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "toy-lanes"
+    },
+    {
+      "id": "bc-twenty-million",
+      "title": "Twenty Million",
+      "desc": "Light and collect the hidden 20M award on the Tiger Ramp.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "twenty-million"
+    }
+  ],
+  "drills": [
+    {
+      "id": "metered-plunge-lit-lane",
+      "title": "Meter The Plunge To The Lit Lane",
+      "text": "The flashing top lane will not walk across with the flipper buttons, so plunge strength is the entire shot. Pick the lane before you pull and keep plunging until you can put the ball through the one you picked rather than the one you got.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-shot",
+      "shots": [
+        "shooter-lane",
+        "top-rollovers"
+      ]
+    },
+    {
+      "id": "tiger-ramp-ladder-clean",
+      "title": "Tiger Ramp Ladder, Clean",
+      "text": "Climb the ramp consecutively from 50K up to the million with nothing else touched in between. Count how many climbs die on a clipped bird target rather than a plain miss; that bank sits close enough to the ramp entrance to be the usual killer.",
+      "reps": "5 climbs",
+      "focus": "accuracy",
+      "goal": "tiger-ramp",
+      "shots": [
+        "tiger-ramp",
+        "bird-drops"
+      ]
+    },
+    {
+      "id": "fish-then-can",
+      "title": "Fish Hard, Then The Can",
+      "text": "Hit the Fish target as hard as you can and go straight to the Trash Can with no detour in between. The ladder drops a lamp roughly every twenty seconds, so treat the pair as one shot instead of watching the first one land.",
+      "reps": "10 pairs",
+      "focus": "accuracy",
+      "goal": "trash-can-fish",
+      "shots": [
+        "fish-target",
+        "trash-can"
+      ]
+    },
+    {
+      "id": "ramp-return-cradle",
+      "title": "Cradle Every Ramp Return",
+      "text": "The Tiger Ramp empties into the right inlane and the ladder has no timer at all, so the trap costs you nothing. Catch every return dead on the right flipper and re-shoot from a standing ball instead of flipping at it live.",
+      "reps": "one full ball",
+      "focus": "ball-control",
+      "shots": [
+        "tiger-ramp",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "ten-x-chain",
+      "title": "Ten-X Chain",
+      "text": "Check that the right inlane is the lit one, then take the Tiger Ramp so its return runs you through it and arms 10X at the Trash Can. Load the Fish ladder and cash it immediately; with the left inlane lit instead, the same four shots pay a tenth as much.",
+      "reps": "5 chains",
+      "focus": "flow",
+      "goal": "ten-x",
+      "shots": [
+        "tiger-ramp",
+        "right-inlane",
+        "fish-target",
+        "trash-can"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "fin",
+  "actionButton": {
+    "present": false,
+    "how": "A 1989 Williams game with nothing but two flipper buttons, a manual plunger and your hips. The flipper buttons are unusually powerless here too — they will not walk the flashing skill-shot lane across the top, so your plunge is the only aim you get."
+  },
+  "howItPlays": {
+    "objective": "Bad Cats is a single-ball game built around four value ladders and a spinning SEAFOOD wheel. Winning means climbing the Tiger Ramp to its hidden 20 million lamp or collecting the carry-over progressive jackpot.",
+    "loop": [
+      "Shoot the Tiger Ramp repeatedly: each consecutive shot raises its value from 50K to 100K to 200K to 1M, and it never times out unless you hit another scoring switch.",
+      "Clear either drop target bank: each sweep awards a BAD CATS letter, and seven letters light the jackpot on the Fishbowl Ramp.",
+      "Collect the lit inlane: left lights the Doghouse for a SEAFOOD wheel spin, right arms the 10X multiplier at the Trash Can.",
+      "Hit the Fish target to set the Trash Can value, then shoot the Trash Can to collect it, possibly multiplied by 10X.",
+      "Complete the T-O-Y top rollovers to step the bonus multiplier from 2X up to 7X."
+    ],
+    "lights": [
+      {
+        "id": "top-rollovers",
+        "name": "T-O-Y Rollovers",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "top-rollovers",
+            "lamps": 3
+          }
+        ],
+        "lit": "Three lanes spell T-O-Y; completing the set steps the bonus multiplier from 2X up to 7X.",
+        "flashing": "One lane flashes for the skill shot at plunge.",
+        "control": null,
+        "then": "Shoot the Center Lane or plunge to feed the top rollovers.",
+        "goals": [
+          "toy-lanes",
+          "skill-shot",
+          "bonus"
+        ]
+      },
+      {
+        "id": "drop-target-banks",
+        "name": "BAD CATS Drop Banks",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "bird-drops",
+            "lamps": 5
+          },
+          {
+            "shot": "milk-drops",
+            "lamps": 3
+          }
+        ],
+        "lit": "Clearing either bank awards one BAD CATS letter; seven letters light the jackpot on the Fishbowl Ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the Fishbowl Ramp to collect the jackpot.",
+        "goals": [
+          "bad-cats-letters",
+          "jackpot"
+        ]
+      },
+      {
+        "id": "inlanes",
+        "name": "Inlane Lights",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "One inlane is always lit; left lights the Doghouse for a wheel spin, right arms the 10X Trash Can.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect the lit inlane, then shoot the corresponding target.",
+        "goals": [
+          "inlane-lights",
+          "seafood",
+          "ten-x"
+        ]
+      },
+      {
+        "id": "fish-trash",
+        "name": "Fish Target & Trash Can",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "fish-target"
+          },
+          {
+            "shot": "trash-can"
+          }
+        ],
+        "lit": "The Fish target sets the Trash Can value; hit it harder for higher awards, then shoot the Trash Can to collect.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the Trash Can immediately after the Fish target before the lamps time out.",
+        "goals": [
+          "trash-can-fish",
+          "ten-x"
+        ]
+      },
+      {
+        "id": "fishbowl-ladder",
+        "name": "Fishbowl Ramp Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "fishbowl-ramp"
+          }
+        ],
+        "lit": "The Fishbowl Ramp pays 30K, 50K, 100K, then an extra ball; it is lit at the start of each ball until the extra ball is collected.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the ramp to climb the ladder; if it goes dark, clear a drop bank to relight it.",
+        "goals": [
+          "fishbowl-ramp"
+        ]
+      },
+      {
+        "id": "tiger-ladder",
+        "name": "Tiger Ramp Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "tiger-ramp"
+          }
+        ],
+        "lit": "The Tiger Ramp is always lit; consecutive shots raise its value from 50K to 100K to 200K to 1M, and it does not time out.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the Tiger Ramp repeatedly without hitting other scoring switches to climb to the 20 million lamp on your last ball.",
+        "goals": [
+          "tiger-ramp",
+          "twenty-million"
+        ]
+      },
+      {
+        "id": "doghouse-scoop",
+        "name": "Doghouse Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "doghouse"
+          }
+        ],
+        "lit": "A lit Doghouse spins the SEAFOOD wheel; it is lit by a lit left inlane or by shooting it while dark.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the Doghouse when lit to spin the wheel for prizes.",
+        "goals": [
+          "seafood"
+        ]
+      },
+      {
+        "id": "jet-bumpers-barbecue",
+        "name": "Jet Bumpers & Barbecue",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "jet-bumpers",
+            "lamps": 3
+          }
+        ],
+        "lit": "The barbecue lamp in the middle of the bumpers raises their value from 500 to 5,000 per hit.",
+        "flashing": null,
+        "control": null,
+        "then": "Light the barbecue via the skill shot or by clearing a drop bank, then enjoy bumper points.",
+        "goals": [
+          "barbecue"
+        ]
+      }
+    ],
+    "laneChange": "none",
+    "laneChangeNote": "The flipper buttons cannot move the flashing skill shot lane; only plunge strength selects it.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Start with the skill shot: plunge to the flashing top lane for 120K, doubled bonus, and a lit barbecue. Then complete T-O-Y lanes to raise the bonus multiplier and shoot the Fishbowl Ramp for its ladder.",
+        "goals": [
+          "skill-shot",
+          "toy-lanes",
+          "fishbowl-ramp",
+          "barbecue"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack the 10X Trash Can with the Fish target ladder, and use the lit inlanes to arm either the Doghouse wheel spin or the 10X. Clear drop banks to earn BAD CATS letters and light the jackpot.",
+        "goals": [
+          "ten-x",
+          "trash-can-fish",
+          "inlane-lights",
+          "bad-cats-letters",
+          "seafood"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "On your last ball, climb the Tiger Ramp consecutively from 50K to 1M to light the hidden 20 million lamp, then shoot the ramp one more time to collect it. Alternatively, collect the progressive jackpot by spelling BAD CATS and shooting the Fishbowl Ramp.",
+        "goals": [
+          "twenty-million",
+          "tiger-ramp",
+          "jackpot",
+          "bad-cats-letters"
+        ]
+      }
+    ]
+  }
+}

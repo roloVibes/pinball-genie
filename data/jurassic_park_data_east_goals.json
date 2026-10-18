@@ -1,0 +1,829 @@
+{
+  "machine": "Jurassic Park (Data East, 1993)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Gun-handle plunger with a trigger; also fires the video skill shot. The thumb button is the Smart Missile, not a launch control."
+    },
+    {
+      "id": "turbo-bumpers",
+      "name": "Turbo Bumpers",
+      "type": "bumpers",
+      "x": 0.3,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Three bumpers on the left side; a clean plunge lands here. Rotates the flashing Computer Screen when Control Room is dark, and counts as the Visitor's Center shot in a few specific rounds."
+    },
+    {
+      "id": "boat-dock",
+      "name": "Boat Dock",
+      "type": "saucer",
+      "x": 0.88,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Back-right saucer, fed from the upper right flipper's half-orbit. Spots a species target when the left inlane lights it; launches the second ball for Raptor Two-Ball.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "power-shed",
+      "name": "Power Shed",
+      "type": "scoop",
+      "x": 0.74,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Small scoop above the upper right flipper. Relights Control Room indefinitely and is the S in CHAOS.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.62,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Runs across the back of the game and returns to either inlane. Lights Mr. DNA, builds the T-Rex Bounty, and is the O in CHAOS."
+    },
+    {
+      "id": "raptor-pit",
+      "name": "Raptor Pit",
+      "type": "kicker",
+      "x": 0.54,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Narrow near-vertical lane that kicks the ball back toward the flippers at speed. Starts Tri-Ball once it's lit; the Danger light doubles as its ball saver."
+    },
+    {
+      "id": "egg",
+      "name": "Egg",
+      "type": "captive-ball",
+      "x": 0.47,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Captive ball left of the Raptor Pit. Repeated hits crack it open for escalating awards."
+    },
+    {
+      "id": "trex-paddock",
+      "name": "T-Rex Paddock",
+      "type": "saucer",
+      "x": 0.4,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Lowered triangular area feeding a saucer beneath it. Spells T-REX toward the Paddock Jackpot and eats the ball whenever it's fed."
+    },
+    {
+      "id": "species-targets",
+      "name": "Species Targets",
+      "type": "target-bank",
+      "x": 0.34,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Six green-and-red standups scattered around the pop bumper gate and outlanes. Clearing all six lights Tri-Ball."
+    },
+    {
+      "id": "spitter-targets",
+      "name": "Spitter Targets",
+      "type": "target-bank",
+      "x": 0.16,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Three-target bank beneath Hammond's Bunker, facing right. Only meaningfully used during the Spitter Attack round."
+    },
+    {
+      "id": "hammonds-bunker",
+      "name": "Hammond's Bunker",
+      "type": "scoop",
+      "x": 0.2,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Scoop above the left slingshot. Awards Park Revenue or lights Mr. DNA; the C in CHAOS.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "control-room",
+      "name": "Control Room",
+      "type": "scoop",
+      "x": 0.34,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Scoop above the left flipper. Collects whichever Computer Screen is flashing; the A in CHAOS.",
+      "feeds": {
+        "shot": "hammonds-bunker"
+      }
+    },
+    {
+      "id": "visitors-center",
+      "name": "Visitor's Center",
+      "type": "orbit",
+      "x": 0.3,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Left orbit through the Turbo Bumpers to the upper right flipper. Needs the first rollover switch tripped for Advance X credit; the H in CHAOS.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      }
+    },
+    {
+      "id": "helicopter-pad",
+      "name": "Helicopter Pad",
+      "type": "loop",
+      "x": 0.85,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Loop shot from the upper right flipper around the back of the game and back to the same flipper. Holds the Raptor Pit value across two straight shots.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.14,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Briefly lights the Boat Dock for a species-target spot."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.86,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights Advance X at the Visitor's Center and, for a few seconds, Control Room."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "No rubber, no kickback — a bare drain. Carries the Special light when lit."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Carries the Special light when lit; slightly better protected than the left side."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Second-stage flipper on the right button. Shoots the Helicopter Pad loop and lines up Boat Dock returns toward T-Rex."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-video-mode",
+      "title": "Skill Shot: Stun The Dinosaur",
+      "category": "skillshot",
+      "summary": "A video-game skill shot: a dinosaur paces back and forth on the display, and you fire the trigger the instant it steps into your sights. The value climbs with the ball number.",
+      "difficulty": 2,
+      "reward": "2M on ball one, 3M on ball two, 4M on ball three; a miss pays a tenth of that, and a hit unlocks Super Pops the moment the ball reaches the Turbo Bumpers.",
+      "steps": [
+        {
+          "shot": "turbo-bumpers",
+          "action": "Full plunge and fire the trigger the instant the dinosaur crosses your sights",
+          "detail": "Lead it slightly — balls two and three add a brief pause meant to bait an early pull. A clean hit rides straight into the Turbo Bumpers for Super Pops."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "tri-ball-multiball",
+      "title": "Tri-Ball: Light, Start, First Jackpot",
+      "category": "multiball",
+      "summary": "The game's headline multiball: clear the six scattered species targets to light it, taunt the Raptor Pit to start it, then take either Jackpot to open the door to CHAOS.",
+      "difficulty": 2,
+      "reward": "Ramp Jackpot starts around 15M; the Helicopter Pad's Double Jackpot pays more. Collecting either one immediately starts the first CHAOS.",
+      "steps": [
+        {
+          "shot": "species-targets",
+          "action": "Clear the six scattered species targets",
+          "detail": "Any hit counts toward all six; a lit Boat Dock spots one for you, and the game spots a few automatically if you're still short heading into ball three."
+        },
+        {
+          "shot": "raptor-pit",
+          "action": "Taunt the Raptor Pit to start Tri-Ball",
+          "detail": "3 hits opens the first Tri-Ball, 5 the second, 7 the third — after that, only feeding T-Rex will start it."
+        },
+        {
+          "shot": "ramp",
+          "action": "Shoot the Ramp for the Jackpot",
+          "detail": "Every switch hit while Tri-Ball runs adds to both Jackpot values, so a fast first shot protects it from a ball loss.",
+          "link": "none"
+        },
+        {
+          "shot": "helicopter-pad",
+          "action": "Or loop the Helicopter Pad for the Double Jackpot",
+          "detail": "Worth more than the Ramp alone; either shot ends this phase and drops you straight into CHAOS.",
+          "link": "none"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "chaos-mode",
+      "title": "Spell CHAOS",
+      "category": "mode",
+      "summary": "Collecting either Jackpot opens the first CHAOS: five scoops and shots, each spotting one letter for 5M. Complete the set with at least two balls still up and six-ball play begins.",
+      "difficulty": 2,
+      "ordered": false,
+      "reward": "5M per letter, plus 10M for finishing the set — completion launches six-ball play.",
+      "steps": [
+        {
+          "shot": "hammonds-bunker",
+          "action": "Sink Hammond's Bunker for the C",
+          "detail": null
+        },
+        {
+          "shot": "turbo-bumpers",
+          "action": "Feed the Turbo Bumpers for the H",
+          "detail": "Any bumper hit counts here."
+        },
+        {
+          "shot": "control-room",
+          "action": "Drop into the Control Room for the A",
+          "detail": null
+        },
+        {
+          "shot": "ramp",
+          "action": "Loop the Ramp for the O",
+          "detail": "Usually the hardest of the five with balls bouncing everywhere."
+        },
+        {
+          "shot": "power-shed",
+          "action": "Find the Power Shed for the S",
+          "detail": "Often blocked by the upper right flipper — worth saving for a moment it's clear."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "six-ball-super-jackpots",
+      "title": "Six-Ball CHAOS & Twin Super Jackpots",
+      "category": "multiball",
+      "summary": "Six-ball CHAOS pays double, and finishing it a second time feeds T-Rex for 50M and lights twin Super Jackpots worth up to 600M between the two of them.",
+      "difficulty": 3,
+      "reward": "10M per CHAOS letter, 50M for feeding T-Rex, then twin Super Jackpots — the Ramp starts at 600M minus 100M for every ball already drained, and the Helicopter Pad adds another Jackpot's worth on top.",
+      "steps": [
+        {
+          "shot": "hammonds-bunker",
+          "action": "Spell the C again",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "turbo-bumpers",
+          "action": "Spell the H again",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "control-room",
+          "action": "Spell the A again",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "ramp",
+          "action": "Spell the O again",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "power-shed",
+          "action": "Spell the S again",
+          "detail": "This pass pays 10M a letter instead of 5M.",
+          "link": "none"
+        },
+        {
+          "shot": "trex-paddock",
+          "action": "Feed T-Rex for 50M",
+          "detail": "Needs at least two balls still on the playfield — trap what you can on the lower right flipper first, since every ball you lose costs the coming Super Jackpots 100M."
+        },
+        {
+          "shot": "ramp",
+          "action": "Collect the Super Jackpot",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "helicopter-pad",
+          "action": "Or take the matching Super Jackpot on the loop",
+          "detail": "Collecting one leaves the other lit — grab both if you can hold two balls in play, and the whole CHAOS-and-T-Rex loop repeats.",
+          "link": "none"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "computer-screens-overview",
+      "title": "The Eleven Computer Screens",
+      "category": "progression",
+      "summary": "Every ball starts with Control Room lit for one of eleven timed rounds, and clearing all eleven is the other half of this game's scoring, alongside Tri-Ball.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Control Room lights automatically at the start of every ball, and shooting Power Shed relights it any time after that",
+        "Either Inlane also flashes Control Room for a few seconds if the scoops feel too risky",
+        "The Turbo Bumpers spin through the eleven screens while Control Room sits dark — whichever one is flashing when you finally sink the scoop is the one you get",
+        "Stampede plays first no matter what: every switch scores an escalating 300K, with a bonus for landing T-Rex or the Galiminus target mid-round",
+        "Electric Fence asks for fifteen bumper-or-slingshot hits in twenty seconds for 30M — only worth chasing if your pops are lively",
+        "Spitter Attack pays 5M, then 10M, then 15M for three hits anywhere on the Spitter bank beneath Hammond's Bunker, the safest 30M in the game",
+        "System Boot lights all three scoops at once for 5M, 10M, then 15M — sinking one here can also relight and collect the next screen in the same motion",
+        "Raptors' Rampage and Mosquito Millions pay small, escalating amounts for repeated hits on the Raptor Pit or the Egg — low value, best left for when one is already flashing",
+        "Bone Busting wants three Ramp shots in twenty seconds for 20M, a tough ask on a ramp this narrow unless you're already rolling",
+        "One screen is simply Light Extra Ball — the Boat Dock hands it straight over the moment it comes up",
+        "Clearing all eleven arms System Failure at Control Room and Power Shed; after your first System Failure, only Power Shed relights Control Room, so the Inlane shortcut disappears for the second run"
+      ],
+      "reward": "Whichever screen is flashing — System Boot and Feed T-Rex are the easy wins, Electric Fence and Bone Busting are the traps, and the full set arms System Failure."
+    },
+    {
+      "id": "escape-isla-nubar",
+      "title": "Computer Screen: Escape Isla Nubar",
+      "category": "mode",
+      "summary": "The richest single Computer Screen: three shots — Boat Dock, Helicopter Pad, and the Turbo Bumpers — pay a counting-down value and re-arm each other as long as you keep landing them.",
+      "difficulty": 2,
+      "reward": "Starts at 21M counting down by 1M a second; each hit banks the current value and adds 10M back to the pool, typically worth 70-90M when chained cleanly.",
+      "steps": [
+        {
+          "shot": "control-room",
+          "action": "Collect Escape Isla Nubar when it's the flashing screen",
+          "detail": "It has no shot of its own to start — sink the lit Control Room while this is the screen on deck."
+        },
+        {
+          "shot": "boat-dock",
+          "action": "Trap on the upper flipper and take the Boat Dock first",
+          "detail": "The safest of the three shots to open with.",
+          "link": "none"
+        },
+        {
+          "shot": "helicopter-pad",
+          "action": "Follow with the Helicopter Pad",
+          "detail": "Feeds right back to the same flipper for the next shot.",
+          "link": "none"
+        },
+        {
+          "shot": "turbo-bumpers",
+          "action": "Finish by feeding the Turbo Bumpers",
+          "detail": "Just reaching the pops counts here — you don't need the full orbit around.",
+          "link": "none"
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "feed-trex-round",
+      "title": "Computer Screen: Feed T-Rex",
+      "category": "mode",
+      "summary": "The most straightforward Computer Screen on the list: thirty seconds to put the ball in front of T-Rex.",
+      "difficulty": 1,
+      "reward": "30M for one clean shot.",
+      "steps": [
+        {
+          "shot": "control-room",
+          "action": "Collect Feed T-Rex when it's the flashing screen",
+          "detail": null
+        },
+        {
+          "shot": "trex-paddock",
+          "action": "Make the shot within 30 seconds",
+          "detail": "No other requirement — one clean hit ends the round and books the 30M."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "raptor-two-ball",
+      "title": "Raptor Two-Ball",
+      "category": "multiball",
+      "summary": "A quick two-ball round: the Boat Dock launches a second ball, and every Raptor Pit hit after that pays an escalating Jackpot.",
+      "difficulty": 2,
+      "reward": "Jackpots starting around 7M and climbing roughly 2M a hit.",
+      "steps": [
+        {
+          "shot": "control-room",
+          "action": "Collect Raptor Two-Ball when it's the flashing screen",
+          "detail": null
+        },
+        {
+          "shot": "boat-dock",
+          "action": "Shoot the lit Boat Dock to launch the second ball",
+          "detail": "Starting Two-Ball cuts short whatever other Computer Screen round you had running."
+        },
+        {
+          "shot": "raptor-pit",
+          "action": "Work the Raptor Pit for repeat Jackpots",
+          "detail": "The ball saver only covers roughly the first ten seconds — after that, a drained ball stays gone."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mr-dna",
+      "title": "Mr. DNA's Menu",
+      "category": "progression",
+      "summary": "Ramp shots light Mr. DNA at Hammond's Bunker, offering a choice of three awards you pick with the flippers.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Light Mr. DNA at Hammond's Bunker by racking up Ramp shots — the first one needs only a few, and each later one costs a couple more",
+        "Once it's lit, three awards cycle past on the display",
+        "Flip a flipper or pull the trigger the instant the one you want is highlighted — waiting for a second pass through the list is safer than grabbing the first",
+        "Point awards and Runaway Score are always solid picks",
+        "Complete Egg advances your captive-ball egg toward its next crack without the risk of shooting it yourself",
+        "Later in the game, Lite Tri-Ball and Lite Special turn up in the rotation — either beats a plain point value"
+      ],
+      "reward": "A free pick from Mr. DNA's menu, repeatable all game — each award nudges you toward Tri-Ball, an Egg, or a chunk of points without a risky shot."
+    },
+    {
+      "id": "victory-lap",
+      "title": "Victory Lap",
+      "category": "mode",
+      "summary": "Earning a replay lights the Ramp for thirty seconds of Victory Lap — six shots, with the last one paying far more than the rest.",
+      "difficulty": 2,
+      "reward": "5M for each of the first five Ramp shots, 25M for the sixth — 50M total if you clear it.",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Rip the Ramp six times before the 30-second timer runs out",
+          "detail": "The first five pay 5M each; the sixth alone is worth 25M. Every other timer you had running pauses until Victory Lap ends."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "smart-missile",
+      "title": "The Smart Missile",
+      "category": "secret",
+      "summary": "One button, one use per game, and it collects everything lit or flashing on the playfield the instant you press it.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "You get exactly one Smart Missile for the entire game — there's no way to earn a second",
+        "Press its button and it instantly collects everything currently lit or flashing",
+        "It fires the next Computer Screen if Tri-Ball isn't lit, lights or starts Tri-Ball outright, collects Jackpots and Escape values, and — its best use — both twin Super Jackpots at once during six-ball CHAOS",
+        "It will not touch Runaway awards, Mr. DNA's menu, Park Revenue, the T-REX letters or Bounty, either hold award on the Ramp or Helicopter Pad, the Combo shots, or a lit Boat Dock — though it does spot every species target as a consolation",
+        "An outlane trip disables it until a successful Death Save re-enables it, so don't count on it mid-drain",
+        "Best saved for forcing Tri-Ball on ball three if you still haven't lit it, or for six-ball CHAOS and the twin Super Jackpots, where its payout is largest"
+      ],
+      "reward": "Instant credit for every lit award on the playfield — save it for six-ball CHAOS and it can be worth several hundred million in one press."
+    },
+    {
+      "id": "death-save-bang-back",
+      "title": "Death Save",
+      "category": "secret",
+      "summary": "Trip an outlane sensor and recover before the ball reaches the trough, and the game rewards you for it.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Any time in single-ball play an outlane sensor trips and then another switch closes before the ball lands in the trough, you've pulled off a Death Save",
+        "The display morphs a T-Rex skeleton into a living one and pays 3M",
+        "A Bang Back — nudging the machine as the ball drains — can trigger the same save, though it risks rattling the coin door",
+        "The Smart Missile can't help here — outlane sensors disable it the moment they trip, and only the save itself brings it back"
+      ],
+      "reward": "3M, one of the game's better animations, and your ball back."
+    },
+    {
+      "id": "combo-ramp-helipad-trex",
+      "title": "Combo: Ramp → Boat Dock → Helicopter Pad → T-Rex",
+      "category": "combo",
+      "summary": "The game's acknowledged combo: a Ramp shot that comes back through the Boat Dock, straight on to the Helicopter Pad, and — if you're feeling bold — right into T-Rex after that.",
+      "difficulty": 3,
+      "reward": "5M for the three-shot combo, another 10M if you extend it into T-Rex.",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Shoot the Ramp",
+          "detail": null
+        },
+        {
+          "shot": "boat-dock",
+          "action": "Let the return feed the Boat Dock",
+          "detail": "The kickout lands you on the upper right flipper."
+        },
+        {
+          "shot": "helicopter-pad",
+          "action": "Finish with the Helicopter Pad",
+          "detail": "Completes the base 5M combo."
+        },
+        {
+          "shot": "trex-paddock",
+          "action": "Extend it into T-Rex for the bonus",
+          "detail": "An extra 10M if you keep the chain alive one shot further."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "shoot-out-video",
+      "title": "Shoot Out",
+      "category": "secret",
+      "summary": "A random in-play video mode, unrelated to your opening skill shot: a dinosaur jogs across the display, and you fire the trigger to stun it.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "At random points during play, a dinosaur jogs across the display in front of a machine gun — that's the Shoot Out",
+        "Grab the trigger and fire four or five times to stun it for 3M",
+        "The grace period is generous, and if the animation has already ended you can still grab the trigger to restart it",
+        "Completing it turns on a gentler Super Pops — 100K a bumper, 1M for every set of three — that doesn't expire until you hit something outside the Turbo Bumpers",
+        "A lit Boat Dock shot is what spots a species target now, not the Shoot Out itself, so don't lean on this alone to build toward Tri-Ball"
+      ],
+      "reward": "3M plus an untimed run of Super Pops once you connect."
+    },
+    {
+      "id": "bonus-multiplier-advance-x",
+      "title": "Advance X: The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The Right Inlane arms Advance X, and a real orbit shot to the Visitor's Center — not just a bumper graze — cashes it in for a step up the bonus ladder.",
+      "difficulty": 2,
+      "reward": "Multiplier climbs 1x, 3x, 6x, 9x; two straight Ramp shots hold both bonus and multiplier into the next ball, though the base bonus itself caps at 2M (18M at 9x).",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the Right Inlane to arm Advance X",
+          "detail": null
+        },
+        {
+          "shot": "visitors-center",
+          "action": "Send a real orbit shot up the Visitor's Center",
+          "detail": "This one needs the actual first rollover switch tripped — credit from merely reaching the bumpers doesn't count here."
+        },
+        {
+          "shot": "ramp",
+          "action": "Hit the Ramp twice in a row to hold it over",
+          "detail": "Banks your bonus and multiplier for the start of the next ball."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "beginner-strategy",
+      "title": "Strategy: The Low-Risk Opener",
+      "category": "strategy",
+      "summary": "Work the video skill shot, lean on the Inlanes to light Control Room instead of the guarded Power Shed, and let the Boat Dock do your Tri-Ball qualifying for you.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Fire the skill shot on your first plunge",
+          "detail": "Lead the trigger slightly; a clean hit is worth 2-4M depending on ball number and drops you straight into Super Pops."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Take the Inlane feeds over risky scoops early",
+          "detail": "Both Inlanes light Control Room for a few seconds — safer than threading the guarded Power Shed while you're still learning the flipper gaps."
+        },
+        {
+          "shot": "control-room",
+          "action": "Cash in whatever Computer Screen is flashing",
+          "detail": "Skip Electric Fence and Bone Busting if you can help it; System Boot and Feed T-Rex are the friendliest early wins."
+        },
+        {
+          "shot": "boat-dock",
+          "action": "Let the lit Boat Dock spot species targets for you",
+          "detail": "The passive route to lighting Tri-Ball — no need to hunt down every scattered target yourself."
+        }
+      ],
+      "reward": null,
+      "fx": "jungle"
+    },
+    {
+      "id": "tournament-chaos-strategy",
+      "title": "Strategy: Bank The Missile, Chase Six-Ball CHAOS",
+      "category": "strategy",
+      "summary": "The score-chasing line: keep working Computer Screens toward System Failure, push into Tri-Ball for CHAOS, and save the Smart Missile for six-ball play, where it's worth the most.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "control-room",
+          "action": "Clear Computer Screens toward System Failure",
+          "detail": "A lively set of Turbo Bumpers alone can carry System Failure to 150M, so don't neglect this track just because Tri-Ball is flashier."
+        },
+        {
+          "shot": "species-targets",
+          "action": "Light Tri-Ball at the scattered species targets",
+          "detail": null
+        },
+        {
+          "shot": "raptor-pit",
+          "action": "Taunt the Raptor Pit to start it",
+          "detail": null
+        },
+        {
+          "shot": "ramp",
+          "action": "Take the first Jackpot fast to reach CHAOS",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "helicopter-pad",
+          "action": "Or take the Double Jackpot on the loop instead",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "hammonds-bunker",
+          "action": "Spell CHAOS, then spell it again in six-ball play",
+          "detail": "Save the Smart Missile for whichever pass is giving you trouble — it's worth far more here than on a single Jackpot."
+        },
+        {
+          "shot": "trex-paddock",
+          "action": "Feed T-Rex with as many balls trapped as you can manage",
+          "detail": "Every ball still in play when you make this shot adds 100M to the Super Jackpots waiting behind it."
+        }
+      ],
+      "reward": null,
+      "fx": "kaiju"
+    },
+    {
+      "id": "system-failure",
+      "title": "System Failure",
+      "category": "multiball",
+      "summary": "Clearing all eleven Computer Screens arms System Failure at Control Room and Power Shed: forty-five seconds of six-ball chaos where every switch pays 1M.",
+      "difficulty": 3,
+      "reward": "Roughly 1M per switch closure for 45 seconds — a lively set of Turbo Bumpers alone can be worth 100-150M.",
+      "steps": [
+        {
+          "shot": "control-room",
+          "action": "Sink either flashing scoop to start the 45-second round",
+          "detail": "Control Room or Power Shed both work once all eleven screens are cleared."
+        },
+        {
+          "shot": "turbo-bumpers",
+          "action": "Park the ball in the Turbo Bumpers and keep it moving",
+          "detail": "The busiest, highest-value spot for the full 45 seconds; drained balls relaunch automatically until the timer runs out."
+        }
+      ],
+      "fx": "military"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "kaiju",
+  "achievements": [
+    {
+      "id": "skill-shot-stunned",
+      "title": "Stunned On Sight",
+      "desc": "Land the video skill shot by firing the trigger the instant the dinosaur crosses your sights.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-video-mode"
+    },
+    {
+      "id": "advance-x-multiplied",
+      "title": "Full Throttle Bonus",
+      "desc": "Arm and collect Advance X at the Visitor's Center to step up the bonus multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bonus-multiplier-advance-x"
+    },
+    {
+      "id": "death-save-pulled",
+      "title": "Not Today",
+      "desc": "Pull off a Death Save by recovering the ball after an outlane sensor trips.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "death-save-bang-back"
+    },
+    {
+      "id": "trex-fed-round",
+      "title": "Dinner Is Served",
+      "desc": "Feed T-Rex within the 30-second window during its own Computer Screen round.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "feed-trex-round"
+    },
+    {
+      "id": "mr-dna-lit",
+      "title": "DNA Discovered",
+      "desc": "Light Mr. DNA at Hammond's Bunker and choose an award off the menu.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mr-dna"
+    },
+    {
+      "id": "tri-ball-jackpot-banked",
+      "title": "Dual Jackpot Opened",
+      "desc": "Start Tri-Ball and collect a Jackpot at the Ramp or Helicopter Pad.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "tri-ball-multiball"
+    },
+    {
+      "id": "chaos-first-spelled",
+      "title": "Spell It Out",
+      "desc": "Complete the first CHAOS sequence to launch six-ball play.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "chaos-mode"
+    },
+    {
+      "id": "escape-completed",
+      "title": "Off The Island",
+      "desc": "Chain Boat Dock, Helicopter Pad, and the Turbo Bumpers to run up the Escape Isla Nubar total.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "escape-isla-nubar"
+    },
+    {
+      "id": "four-shot-combo-landed",
+      "title": "Four-Shot Combo",
+      "desc": "Chain Ramp into Boat Dock into Helicopter Pad into T-Rex in one run.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-ramp-helipad-trex"
+    },
+    {
+      "id": "shoot-out-stunned",
+      "title": "Surprise Gunfight",
+      "desc": "Catch the random Shoot Out video mode and stun the dinosaur.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "shoot-out-video"
+    },
+    {
+      "id": "raptor-two-ball-jackpots",
+      "title": "Double Trouble",
+      "desc": "Launch Raptor Two-Ball and bank at least one escalating Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "raptor-two-ball"
+    },
+    {
+      "id": "victory-lap-cleared",
+      "title": "Six In A Row",
+      "desc": "Clear all six Victory Lap ramp shots inside the 30-second window.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "victory-lap"
+    },
+    {
+      "id": "system-failure-triggered",
+      "title": "Total System Failure",
+      "desc": "Clear all eleven Computer Screens and trigger the six-ball System Failure round.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "system-failure"
+    },
+    {
+      "id": "eleven-screens-cleared",
+      "title": "Eleven Screens Down",
+      "desc": "Collect every one of the eleven Computer Screens across a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "computer-screens-overview"
+    },
+    {
+      "id": "smart-missile-fired",
+      "title": "One Shot, Everything",
+      "desc": "Fire the Smart Missile at its best possible moment during six-ball CHAOS.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "smart-missile"
+    },
+    {
+      "id": "twin-super-jackpots-collected",
+      "title": "Twin Super Jackpots",
+      "desc": "Reach six-ball CHAOS a second time, feed T-Rex, and collect both Super Jackpots.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "six-ball-super-jackpots"
+    }
+  ]
+}

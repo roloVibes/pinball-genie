@@ -1,0 +1,1422 @@
+{
+  "machine": "Ghostbusters (Stern Pinball, 2016)",
+  "defaultFx": "ghost",
+  "shots": [
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Vertical lane at the far right edge, feeds the right orbit entrance. Plunge strength determines outcome: full-strength sends the ball fully around the orbit, medium drops it into the PKE top lanes, weak dribbles down the right orbit — basis of the two-part skill shot."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Entrance/spinner on the lower right; a shot here sweeps up and across the top of the playfield above the PKE lanes and exits low on the left side. Premium/LE houses the Ecto Goggles Pepper's-ghost effect here."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1527,
+      "y": 0.1196,
+      "trim": "all",
+      "notes": "Lower entrance/exit near the left slingshot. A shot INTO this lane hits a gate near the top and drops into the PKE lanes rather than completing a full loop."
+    },
+    {
+      "id": "left-scoop",
+      "name": "Left Scoop (the Librarian)",
+      "type": "scoop",
+      "x": 0.3069,
+      "y": 0.3876,
+      "trim": "all",
+      "notes": "VUK above the Triple Newton Ball; kicks out to the right flipper. Lights/collects Tobin's Spirit Guide, starts the Public Library ladder.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.2019,
+      "y": 0.6746,
+      "trim": "all",
+      "notes": "The single most important shot on the machine — flanked by the 2X/3X standup targets at its entrance. Backhandable from the left flipper, primary shot from the right flipper. Pro returns via overhead habitrail; Premium/LE routes part of the shot under the playfield through the subway/ball lock.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "The hardest shot on the table, rising toward Stay Puft. Pro feeds back to the right flipper via an overhead loop; Premium/LE crosses over to feed the left inlane via a separate wireform, making single-flipper repeats much harder.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-scoop",
+      "name": "Right Scoop / Subway",
+      "type": "scoop",
+      "x": 0.8081,
+      "y": 0.7033,
+      "trim": "all",
+      "notes": "Kicks out to the left flipper. Pro: standard saucer with a short lane. Premium/LE: VUK feeding the 3-ball Subway Ball Lock beneath the playfield for Storage Facility Multiball.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "ghost-target",
+      "name": "GHOST Standup",
+      "type": "standup",
+      "x": 0.4692,
+      "y": 0.6842,
+      "trim": "all",
+      "notes": "Dead-center standup; repeated hits spell G-H-O-S-T, which brings Slimer down. A wide miss here can dribble straight down the middle — a well-known drain risk."
+    },
+    {
+      "id": "terror-dog-target",
+      "name": "Terror Dog Target",
+      "type": "standup",
+      "x": 0.9176,
+      "y": 0.5502,
+      "trim": "all",
+      "notes": "Small red-domed bash toy between the right scoop and right ramp entrance; hurry-up collection point."
+    },
+    {
+      "id": "gozer-target",
+      "name": "Gozer Target",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Sits at the end of the Slimer Lane; hard to pick out visually."
+    },
+    {
+      "id": "scoleri-tony",
+      "name": "Tony Scoleri Drop Target",
+      "type": "drop-target",
+      "x": 0.3704,
+      "y": 0.4082,
+      "trim": "all",
+      "notes": "Blocks the Left Ramp shot when raised; part of the Scoleri Brothers duel. A hard center hit here can fly straight toward the drain."
+    },
+    {
+      "id": "scoleri-nunzio",
+      "name": "Nunzio Scoleri Drop Target",
+      "type": "drop-target",
+      "x": 0.5408,
+      "y": 0.445,
+      "trim": "all",
+      "notes": "Blocks the right orbit shot when raised; must drop within 10 seconds of Tony Scoleri to light 3 Super Jackpots."
+    },
+    {
+      "id": "captive-triple-newton",
+      "name": "Triple Newton Ball (Public Library)",
+      "type": "captive-ball",
+      "x": 0.14,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "3 captive balls in a long U-turn channel on the left edge; critical for lighting Storage Facility Multiball and the Gear Combo playfield-multiplier award."
+    },
+    {
+      "id": "captive-single-newton",
+      "name": "Single Newton Ball (Stacked Books)",
+      "type": "captive-ball",
+      "x": 0.62,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "One captive ball, right-center near Terror Dog/Nunzio; arms/starts Symmetrical Book Stacking (Scoleri Brothers, Terror Dog, Gozer hurry-ups) and toggles flipper reversal during Mass Hysteria."
+    },
+    {
+      "id": "library-standups",
+      "name": "Library / Proton Pack Standups",
+      "type": "target-bank",
+      "x": 0.16,
+      "y": 0.41,
+      "trim": "all",
+      "notes": "3-bank of standups just below the Triple Newton Ball; collection point for the Gear Combo and lights 'Playfield Multipliers' when cleared."
+    },
+    {
+      "id": "target-2x",
+      "name": "2X Playfield Target",
+      "type": "standup",
+      "x": 0.1536,
+      "y": 0.7129,
+      "trim": "all",
+      "notes": "Flanks the left side of the Left Ramp entrance; dangerous shot that can airball if mistimed."
+    },
+    {
+      "id": "target-3x",
+      "name": "3X Playfield Target",
+      "type": "standup",
+      "x": 0.34,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Flanks the right side of the Left Ramp entrance; combines multiplicatively with 2X for 6X total."
+    },
+    {
+      "id": "pke-lanes",
+      "name": "P-K-E Top Lanes",
+      "type": "lane",
+      "x": 0.48,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Three rollover lanes above the pop bumpers, labeled P/K/E; top-lane half of the two-part skill shot and PKE Frenzy multiplier refresh."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.71,
+      "trim": "all",
+      "notes": "Three bumpers, upper-center under the city skyline plastic; cycle mystery awards including Bonus X, ghosts, and multiplier lights."
+    },
+    {
+      "id": "slimer-toy",
+      "name": "Slimer",
+      "type": "mech",
+      "x": 0.37,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Bash toy above the Slimer Lane. Pro moves up/down only; Premium/LE also arcs left/right to block additional shots. Hit repeatedly to progress modes."
+    },
+    {
+      "id": "slimer-lane",
+      "name": "Slimer Lane",
+      "type": "lane",
+      "x": 0.36,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Short lane just right of the Left Ramp feeding the Gozer target then deflecting into the pop bumpers; can dribble SDTM if hit aggressively."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7804,
+      "y": 0.0048,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-two-part",
+      "title": "Two-Part Skill Shot",
+      "category": "skillshot",
+      "summary": "Select a top-lane P-K-E award with the left flipper and a playfield shot with the right flipper before you plunge — both can pay out on the same plunge.",
+      "difficulty": 1,
+      "reward": "1M + 5% of score per successful pick (both can pay out) + starts a scene immediately if the ladder-start shot lands",
+      "steps": [
+        {
+          "shot": "pke-lanes",
+          "action": "Cycle your P-K-E pick with the left flipper, then plunge it through the top lanes",
+          "detail": "Left flipper button cycles the top-lane pick; right flipper button cycles the blue-arrow playfield pick among six choices. Selections lock the instant you plunge."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Aim your blue-arrow pick at Left Scoop or Left Ramp",
+          "detail": "A gentle plunge carries the ball on around to the flipper instead of rattling unpredictably through the pops. Whichever ladder-start shot is already flashing pays the skill shot AND starts a scene in one hit — recommended over cycling to Right Orbit."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-right-scoop-exploit",
+      "title": "Right Scoop Skill Shot",
+      "category": "skillshot",
+      "summary": "A safe blue-arrow skill shot for flat points early in the ball. Older code started video mode straight off this plunge for a huge opener; current code does not, so take it for the points and the ball control, not a 60M head start.",
+      "difficulty": 2,
+      "reward": "1M + 5% of your score + 10 ghosts caught",
+      "steps": [
+        {
+          "shot": "right-scoop",
+          "action": "Cycle the blue arrow to Right Scoop, then plunge to lock it in",
+          "detail": "The right flipper button cycles the blue-arrow pick — tap it onto the Right Scoop before you plunge; untimed, so you don't have to lock it in immediately, just before the ball leaves the lane. Pays 1M + 5% of your score. Video mode no longer starts from the skill shot — it lights at this same scoop once you have caught 40 ghosts."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-gear",
+      "title": "Collecting Gear (Gear Combo)",
+      "category": "combo",
+      "summary": "The game's most repeatable combo: loop the Left Ramp as many times as you want to inflate a pending Gear award, then cash it in at the Library standups before it times out.",
+      "difficulty": 1,
+      "reward": "Lights the playfield multipliers at the left-ramp targets (2X, 3X, or 6X with both), plus the built-up hurry-up value collected at the left standups",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp",
+          "detail": "First hit arms the pending Gear award."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep looping the Left Ramp",
+          "detail": "No stated cap — each loop inflates the pending award and adds roughly 300 PKE. Great way to farm toward 2X/3X readiness."
+        },
+        {
+          "shot": "library-standups",
+          "action": "Cash in at the Library / Proton Pack standups",
+          "detail": "Collect before the pending award times out; awards one of five gear pieces plus points."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-river-of-slime",
+      "title": "River of Slime",
+      "category": "combo",
+      "summary": "Build a hurry-up at the Right Orbit, collect it at the Right Scoop — collecting relights the same award so you can repeat it.",
+      "difficulty": 1,
+      "reward": "Banks the River of Slime hurry-up value at the Right Scoop, which relights the award for repeat farming",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the Right Orbit",
+          "detail": "Builds the River of Slime hurry-up value."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Collect at the Right Scoop",
+          "detail": "Banks the value and relights the award — loop back to the Right Orbit to farm it again."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-loopin-supers",
+      "title": "Loopin' Supers",
+      "category": "combo",
+      "summary": "Once lit (60 ghosts, or a Tobin's award), Super Jackpots are continuously lit at the Left Ramp for roughly 21 seconds — loop it as many times as you can before the timer runs out.",
+      "difficulty": 2,
+      "reward": "5M+ Super Jackpot per Left Ramp loop (boosted by spinner level) for ~21 seconds; best stacked under 6X",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Light Loopin' Supers",
+          "detail": "Auto-starts at 60 ghosts collected, or can be awarded via Tobin's Spirit Guide."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Loop the Left Ramp repeatedly",
+          "detail": "Every completed loop collects a Super Jackpot inside the ~21-second window — base 5M, boosted by spinner level; best value stacked under a 6X playfield multiplier."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-symmetrical-book-stacking",
+      "title": "Symmetrical Book Stacking",
+      "category": "combo",
+      "summary": "Hit the right captive ball (Single Newton Ball) to arm a feature, then hit it again within 10 seconds to start it — first in the cycle is the Scoleri Brothers drop-target duel.",
+      "difficulty": 2,
+      "reward": "Dropping both Scoleri Brothers within the 10-second window lights 3 Super Jackpots",
+      "steps": [
+        {
+          "shot": "captive-single-newton",
+          "action": "Hit the right captive ball once",
+          "detail": "Arms the next feature in the fixed cycle (Scoleri Brothers, then Terror Dog x2, then Gozer) for a 10-second window."
+        },
+        {
+          "shot": "captive-single-newton",
+          "action": "Hit it again within 10 seconds",
+          "detail": "Starts the armed feature — first time through, this pops up both Scoleri Brothers drop targets."
+        },
+        {
+          "shot": "scoleri-tony",
+          "action": "Drop Tony Scoleri",
+          "detail": "Downing one target starts a 10-second timer on the other.",
+          "link": "none"
+        },
+        {
+          "shot": "scoleri-nunzio",
+          "action": "Drop Nunzio Scoleri within 10 seconds",
+          "detail": "Dropping both within the window lights 3 Super Jackpots; miss the timer and the felled one pops back up and you restart.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-pke-frenzy-farm",
+      "title": "PKE Frenzy Farm",
+      "category": "combo",
+      "summary": "A 40-second frenzy where every switch scores and an uncapped jackpot sits lit at the Right Ramp — trivially farmable on Pro since the ramp kicks straight back to the right flipper.",
+      "difficulty": 2,
+      "reward": "Jackpot = 1,000 x PKE level x multiplier (caps at 12x) per Right Ramp hit during the 40-second frenzy",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start PKE Frenzy",
+          "detail": "Auto-starts at 80 ghosts, via the Right Ramp skill shot, or a Tobin's award."
+        },
+        {
+          "shot": "pke-lanes",
+          "action": "Refresh the multiplier before it decays",
+          "detail": "Multiplier caps at 12x and decays 1x every 5 seconds — rebuild it by hitting 5 switches anywhere, completing a PKE top lane, or hitting the Library standups.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hammer the Right Ramp for jackpots",
+          "detail": "Jackpot = 1,000 x PKE level x multiplier. Pro's ramp returns to the right flipper for rapid single-flipper repeats; Premium/LE crosses to the left flipper and is slower to farm.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-storage-facility",
+      "title": "Storage Facility Multiball",
+      "category": "multiball",
+      "summary": "Light the lock at the Triple Newton Ball, lock three balls at the Left Ramp, then recapture every ghost for three Super Jackpots.",
+      "difficulty": 2,
+      "reward": "Scaling Jackpot per ghost recaptured, then 3 Super Jackpots at the Left Ramp once every ghost is back",
+      "steps": [
+        {
+          "shot": "captive-triple-newton",
+          "action": "Light Storage Facility",
+          "detail": "Drive balls into the Triple Newton Ball (Public Library) captive-ball channel, via a Pop Bumper award, or via Tobin's Spirit Guide."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp three times while lit",
+          "detail": "Locks are virtual on Pro (ball diverts to the Right Scoop); physical under-playfield locks on Premium/LE, released via the Right Scoop during multiball.",
+          "feeds": {
+            "shot": "right-scoop"
+          }
+        },
+        {
+          "shot": "ghost-target",
+          "action": "Recapture every lit ghost shot",
+          "detail": "Starting the multiball releases all ghosts; each hit scores a scaling Jackpot and re-awards that ghost."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect Super Jackpots at the Left Ramp",
+          "detail": "Recapturing every ghost lights three Super Jackpots there; use the Triple Newton Ball for rapid add-a-ball opportunities to extend the multiball."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-mass-hysteria",
+      "title": "Mass Hysteria Multiball",
+      "category": "multiball",
+      "summary": "Auto-starts at 100 ghosts collected — a 6-ball multiball that opens with the flipper buttons swapped, though hitting the right captive ball toggles the reversal off and on at will.",
+      "difficulty": 3,
+      "reward": "6-ball multiball; conventional jackpot shots build toward a Super Jackpot, played with flippers reversed",
+      "steps": [
+        {
+          "shot": "ghost-target",
+          "action": "Collect ghosts toward 100",
+          "detail": "Every lit ghost shot (orbits, ramps, scoops, GHOST target, Slimer, captive balls) counts toward the 100-ghost threshold that auto-starts Mass Hysteria."
+        },
+        {
+          "shot": "captive-single-newton",
+          "action": "Use the right captive ball to toggle flipper reversal",
+          "detail": "Flipper buttons are swapped for the whole mode (left button fires the right flipper); hitting this captive ball toggles the reversal on/off."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Chase flashing jackpot shots carefully",
+          "detail": "Conventional jackpot shots around the playfield build toward a Super Jackpot — go slow until reoriented to reversed controls; this mode drains more players than any other in the game.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-wcwsk",
+      "title": "We Came, We Saw, We Kicked Its... (Mini-Wizard)",
+      "category": "multiball",
+      "summary": "Complete any one ladder (Library, Sedgewick, or Apartment) to qualify a 2-4 ball multiball where every shot is lit for a jackpot that starts around 6.25M and climbs 750K a shot, with a 100M Super Jackpot once you have collected enough of them.",
+      "difficulty": 2,
+      "reward": "Every shot pays a jackpot: ~6.25M rising 750K/shot to a 30M cap, then a 100M Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Complete an entire scene ladder",
+          "detail": "Finish the Library ladder (2 scenes), Sedgewick Hotel ladder (3 scenes), or Dana's Apartment ladder (4 scenes) — any one qualifies this mini-wizard."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start it at the Left Ramp",
+          "detail": "Ball count scales 2-4 with however many scenes were in the ladder just finished; starting this takes priority over starting a fresh left-ramp scene."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Alternate shots — a collected shot goes dark until you hit another",
+          "detail": "Every shot starts lit, with values climbing from about 6.25M by 750K per shot to a 30M cap, and enough collects awards a 100M Super Jackpot. Hitting a shot unlights it until you make a different one, so alternate the Left Ramp with another lit shot rather than repeating the ramp."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mode-spooked-librarian",
+      "title": "Spooked Librarian",
+      "category": "mode",
+      "summary": "First scene of the Library ladder — 3 shots to any combination of four lit shots clears it fast.",
+      "difficulty": 1,
+      "reward": "Clears the scene for ~18.5M via 3 Left Ramp loops; advances the Public Library ladder",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start at the Left Scoop when lit",
+          "detail": "Opens the Public Library ladder."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Loop the Left Ramp for the fast clear",
+          "detail": "Left Ramp, Right Orbit, Right Ramp, and Right Scoop are all lit simultaneously — 3 total shots to any combo completes it; looping the ramp 3x is the quick ~18.5M clear."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Optional: hit the Left Orbit after your first shot",
+          "detail": "Lights with a blinking red arrow after shot 1 — spins here build the Super Jackpot base value for later.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-we-got-one",
+      "title": "We Got One!",
+      "category": "mode",
+      "summary": "First scene of the Sedgewick Hotel ladder — alternate left and right shots to move the Ecto-1 along.",
+      "difficulty": 1,
+      "reward": "Completes the scene, advancing the Sedgewick Hotel ladder toward He Slimed Me!",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start at the Left Ramp when lit",
+          "detail": "Opens the Sedgewick Hotel ladder."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit Left Orbit or Left Ramp (whichever is lit)",
+          "detail": "Shots alternate sides across the 3-shot sequence."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Hit Right Orbit or Right Ramp next",
+          "detail": "Second shot of the alternating sequence."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Finish back on Left Orbit / Left Ramp",
+          "detail": "Third shot completes the scene."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-okay-who-brought-the-dog",
+      "title": "Okay, Who Brought the Dog?",
+      "category": "mode",
+      "summary": "First scene of Dana Barrett's Apartment ladder — one hit each on three shots, themed around fleeing the Terror Dog.",
+      "difficulty": 1,
+      "reward": "~21M total for the scene; advances Dana Barrett's Apartment ladder toward Spook Central",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Start at the Right Orbit when lit",
+          "detail": "Opens the Dana Barrett's Apartment ladder."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit the Left Orbit",
+          "detail": "One hit each of the three lit shots completes the scene — order doesn't matter."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the Left Ramp",
+          "detail": "Worth roughly 21M total for the scene."
+        }
+      ],
+      "fx": "ghost",
+      "ordered": false
+    },
+    {
+      "id": "mode-stay-puft",
+      "title": "Stay Puft Marshmallow Man",
+      "category": "mode",
+      "summary": "The Apartment ladder's climactic 4th scene — pick a multiplier, unload unlimited shots, then finish at the Right Orbit.",
+      "difficulty": 3,
+      "reward": "3.5M + 125K per shot x your locked multiplier in Phase 2, plus a final Right Orbit payout off everything accrued",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Phase 1 — choose the multiplier",
+          "detail": "Four shots light, each carrying a different decaying multiplier; whichever you hit first locks it in for the rest of the mode."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Phase 2 — unload on any lit shot",
+          "detail": "~20-second window; unlimited shots score 3.5M + 125K per shot times your locked multiplier. Draining here forces a restart of this phase next ball."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Phase 3 — hit Right Ramp, Left Ramp, and Left Orbit",
+          "detail": "Three more shots build on the running value."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Phase 4 — cross the streams",
+          "detail": "Right Orbit lights, the ball catches on a post, then releases for a final Right Orbit hit valued off everything accrued across the mode."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiplier-playfield-6x",
+      "title": "Playfield Multiplier (2X/3X/6X)",
+      "category": "multiplier",
+      "summary": "Light both standups flanking the Left Ramp for a multiplicative 6X on nearly all scoring — save the cash-in for right before a mode or multiball.",
+      "difficulty": 2,
+      "reward": "Up to 6X multiplicative on nearly all scoring while both the 2X and 3X targets are lit",
+      "steps": [
+        {
+          "shot": "target-2x",
+          "action": "Light the 2X target",
+          "detail": "Lit via the K skill-shot lane, a Pop Bumper award, Tobin's Spirit Guide, or completing the Library standups then collecting at the Triple Newton Ball feature. Gear Combo shortcut: Left Ramp then immediately one-time the captive ball or gear targets."
+        },
+        {
+          "shot": "target-3x",
+          "action": "Light the 3X target",
+          "detail": "Second lit multiplier target; a repeat Gear Combo lights this one after 2X is already lit."
+        },
+        {
+          "shot": "target-2x",
+          "action": "Hit the lit target(s) to start the countdown",
+          "detail": "Hitting the same target again while flashing extends its timer. Both active at once = 6X, multiplicative, applies to nearly everything."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Dive into a mode or multiball while 6X is running",
+          "detail": "Save the cash-in for right before starting something lucrative — a decent mode at 6X outscores an entire game at 1X."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-bonus-x",
+      "title": "Bonus X (End-of-Ball Multiplier)",
+      "category": "multiplier",
+      "summary": "Stack Bonus X across balls via the P skill-shot lane, Pop Bumpers, and Tobin's, then hold your bonus to cash a big multiplied payout at ball end.",
+      "difficulty": 1,
+      "reward": "Stacks Bonus X from the P lane (+3 to +5), Pop Bumpers (+1X/+3X), and Tobin's (+3X) to multiply your end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "pke-lanes",
+          "action": "Take the P lane for +Bonus X",
+          "detail": "Left-flipper-selected top lane skill shot; awards +3 to +5 Bonus X depending on code revision."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Collect Pop Bumper Bonus X awards",
+          "detail": "Pop Bumper mystery pool includes +1X/+3X Bonus and 'Advance Bonus X.'"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Bank Tobin's Spirit Guide for +3X Bonus Multiplier",
+          "detail": "Collected at the Left Scoop when lit; also watch for a 'Bonus Held' award so an unused bonus carries to your next ball instead of scoring immediately."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "wizard-ready-to-believe",
+      "title": "We're Ready to Believe You! (Main Wizard Mode)",
+      "category": "wizard",
+      "summary": "Complete all 3 ladders (9 scenes total) to qualify it, then shoot the Left Ramp to start a 4-ball multiball racing to collect 100 ghosts in 60 seconds.",
+      "difficulty": 3,
+      "reward": "4-ball multiball racing to 100 ghosts in 60 seconds; each rank-up (Junior to 'Maybe a God?') adds a ball with ball-save",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Complete the Public Library ladder",
+          "detail": "2 scenes: Spooked Librarian, then Back Off, Man!",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Complete the Sedgewick Hotel ladder",
+          "detail": "3 scenes: We Got One!, He Slimed Me!, The Ballroom.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete Dana Barrett's Apartment ladder",
+          "detail": "4 scenes: Okay Who Brought the Dog?, Spook Central, Gozer the Gozerian, Stay Puft Marshmallow Man.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp to start it",
+          "detail": "Nine scenes only qualifies the mode — it waits at the left ramp until you shoot it. Then race to 100 ghosts in 60 seconds, ranking up Junior through 'Maybe a God?' — each rank-up adds a ball with brief ball-save."
+        },
+        {
+          "shot": "captive-single-newton",
+          "action": "Use the right captive ball to add time",
+          "detail": "Adds seconds to the 60-second clock (never exceeding 60) but re-raises the Scoleri Brothers targets as a tradeoff."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-are-you-a-god",
+      "title": "Are You a God? (Super Wizard Mode)",
+      "category": "wizard",
+      "summary": "Reach 100 ghosts inside We're Ready to Believe You! to trigger the final 3-level wizard mode, ending in a 6-ball victory-lap multiball.",
+      "difficulty": 3,
+      "reward": "1-billion-point bonus (x playfield multiplier) then a 6-ball victory-lap multiball with all shots lit for escalating jackpots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Level 1, combo A: shoot the Left Ramp",
+          "detail": "Starts the first named two-shot combo."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Follow with the Left Scoop within 10 seconds",
+          "detail": "Completes combo A; miss the window and it resets."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Combo B: shoot the Right Orbit",
+          "detail": "Starts the second two-shot combo.",
+          "link": "none"
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Follow with the Right Scoop within 10 seconds",
+          "detail": "Completes combo B and clears Level 1."
+        },
+        {
+          "shot": "slimer-toy",
+          "action": "Level 2: hit Slimer first",
+          "detail": "Opens the forced chain sequence; each shot is on its own 10-second clock, restarting the whole chain on a miss."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Then the Librarian (Left Scoop)",
+          "detail": "Second link in the chain."
+        },
+        {
+          "shot": "terror-dog-target",
+          "action": "Then Terror Dog",
+          "detail": "Third link in the chain."
+        },
+        {
+          "shot": "gozer-target",
+          "action": "Then Gozer",
+          "detail": "Fourth link — raises both Scoleri Brothers targets."
+        },
+        {
+          "shot": "scoleri-tony",
+          "action": "Drop Tony Scoleri",
+          "detail": "Fifth link in the chain.",
+          "link": "none"
+        },
+        {
+          "shot": "scoleri-nunzio",
+          "action": "Drop Nunzio Scoleri",
+          "detail": "Sixth link in the chain.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Then Right Orbit",
+          "detail": "Seventh link in the chain."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Finish on Left Ramp",
+          "detail": "Final link clears Level 2."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Level 3 — bank the completion bonus",
+          "detail": "A 1-billion-point bonus (multiplied by playfield X) fires, then a 6-ball victory-lap multiball starts with all shots lit for escalating jackpots."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner: First 30 Seconds",
+      "category": "strategy",
+      "summary": "The lowest-friction on-ramp: take whatever Start Scene shot is already lit, plunge into it, and let scene-chaining carry you.",
+      "difficulty": 1,
+      "reward": "Starts a scene immediately off the plunge and keeps the ladder chain going; GHOST hits on a whiff give a second on-ramp",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Leave the skill shot on the default flashing Start Scene pick",
+          "detail": "Left Scoop, Left Ramp, or Right Orbit — and cycle the P-K-E top-lane pick too, since both picks can pay on the same plunge and the K lane advances the playfield multiplier."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take a full plunge if unsure",
+          "detail": "A normal plunge naturally feeds the Right Orbit — the simplest, most beginner-tolerant skill shot; starts the Apartment ladder outright."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Follow the flashing arrows to finish the scene",
+          "detail": "Most opening scenes are only 2-3 shots."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Re-shoot the ladder-start shot to chain into scene 2",
+          "detail": "Completing a scene relights the same start shot — shoot it again immediately instead of returning to random play."
+        },
+        {
+          "shot": "ghost-target",
+          "action": "If you whiff, hit GHOST to bring Slimer down",
+          "detail": "Spelling G-H-O-S-T at the center standup drops Slimer; 3 hits chases him off and also lights scenes — a second on-ramp into the same loop."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-best-opener",
+      "title": "Best Opener Shot Sequence",
+      "category": "strategy",
+      "summary": "The concrete soft-plunge-and-backhand opener that banks the skill shot and starts a scene on the very first shot.",
+      "difficulty": 2,
+      "reward": "1M + 5% of score skill shot + starts the first scene in one hit; sets up 2X/3X readiness via Gear Combo loops",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Aim the blue arrow at Left Scoop or Left Ramp",
+          "detail": "The safer opening shot of the two — prefer it over the right orbit."
+        },
+        {
+          "shot": "plunger-lane",
+          "action": "Soft-plunge",
+          "detail": "A deliberately weak plunge sends the ball around the right orbit onto the right flipper, rather than rattling unpredictably through the pops."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Catch on the right flipper and backhand the Left Ramp (or shoot Left Scoop)",
+          "detail": "Banks the skill shot (1M + 5% of score) AND starts the first scene in one hit.",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Continue with Gear Combo loops once in control",
+          "detail": "Repeated Left Ramp loops build 2X/3X readiness for whenever you dive into your next mode or multiball."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-tournament-money-path",
+      "title": "Tournament Money Path",
+      "category": "strategy",
+      "summary": "The highest-percentage scoring plan: rush one full ladder to light We Came We Saw We Kicked Its rather than grinding for ghost-count multiballs cold.",
+      "difficulty": 2,
+      "reward": "Flat, predictable Super Jackpots via We Came We Saw We Kicked Its — one good run is enough for a good tournament score",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Pick the shortest ladder and finish it fast",
+          "detail": "The Library ladder is only 2 scenes — the fastest path to a guaranteed-payout multiball."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start We Came, We Saw, We Kicked Its at the Left Ramp",
+          "detail": "Flat, predictable jackpots with no RNG — a single strong We Came We Saw run is usually enough to post a competitive tournament score."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Alternate the Left Ramp with another lit shot",
+          "detail": "Every lit shot scores a jackpot, but a shot you collect stays dark until you hit another one, so alternating between two shots keeps something lit at all times."
+        },
+        {
+          "shot": "target-2x",
+          "action": "Bank 2X/3X beforehand if time allows",
+          "detail": "Only if confident you won't drain — do this before committing to the ladder's final scene, since playfield X multiplies the mini-wizard's jackpots too.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-captive-ball-cycle",
+      "title": "Right Captive Ball Cycle",
+      "category": "mode",
+      "summary": "The right captive ball hands out features in a fixed order — Scoleri Brothers, Terror Dog twice, then Gozer. Arm it, restart it inside ten seconds, and work all the way through the cycle.",
+      "difficulty": 2,
+      "reward": "Each stage of the cycle in turn: Scoleri Brothers duel, two Terror Dog features, then Gozer",
+      "steps": [
+        {
+          "shot": "captive-single-newton",
+          "action": "Hit the right captive ball once to arm the next feature",
+          "detail": "One hit opens a ten-second window and shows which feature is queued next."
+        },
+        {
+          "shot": "captive-single-newton",
+          "action": "Hit it again inside the window to start that feature",
+          "detail": "Miss the window and the arm times out — you have to start the two-hit sequence over."
+        },
+        {
+          "shot": "scoleri-tony",
+          "action": "Clear the Scoleri stage first",
+          "detail": "Both drop targets down inside their own timer finishes the first stage of the cycle."
+        },
+        {
+          "shot": "terror-dog-target",
+          "action": "Re-arm and take the two Terror Dog stages",
+          "detail": "The cycle serves Terror Dog twice before it moves on; each one needs its own arm-and-start pair at the captive ball."
+        },
+        {
+          "shot": "gozer-target",
+          "action": "Re-arm once more for the Gozer stage",
+          "detail": "Gozer is the last stage in the cycle; starting it also raises both Scoleri targets back up."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-tobins-spirit-guide",
+      "title": "Tobin's Spirit Guide",
+      "category": "strategy",
+      "summary": "The Left Scoop hands out a random award from a strong pool — bonus multiplier, lit playfield X, a queued multiball, a frenzy. Keep it lit and collect it whenever the scoop is free.",
+      "difficulty": 1,
+      "reward": "One random award from the Tobin's pool: +3X bonus, lit 2X, Storage Facility lit, Loopin' Supers, PKE Frenzy, and similar",
+      "steps": [
+        {
+          "shot": "library-standups",
+          "action": "Work the Library standups to light the award",
+          "detail": "Hits over on the standup bank are the routine way to get Tobin's lit at the scoop."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Collect at the Left Scoop while it is lit",
+          "detail": "The scoop kicks out to the right flipper, so you keep control after the collect."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Spend a good award immediately",
+          "detail": "If it lights playfield X or queues a multiball, go start something worth multiplying instead of drifting back to random play."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "video-mode-negative-reinforcement",
+      "title": "Negative Reinforcement on ESP Ability (Video Mode)",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Collect enough ghosts and the right scoop hides a mentalist mini-game instead of a points award. A card is chosen, you call which of the two it is, and every correct call doubles the money already on the table — the whole skill is knowing when to walk away with it.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Collect 40 ghosts to light video mode at the right scoop",
+        "Shoot the right scoop to start the mode",
+        "Watch the display as the card is chosen",
+        "Use the flipper buttons to call your card, or to cash out the bank you have already built",
+        "Every correct call doubles the bank, so decide how far you want to push it before cashing out"
+      ],
+      "reward": "A bank starting at 250,000 that doubles with every correct call, up to 64 million, collected when you cash out"
+    },
+    {
+      "id": "video-mode-dont-cross-streams",
+      "title": "Don't Cross The Streams (Video Mode)",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "The other mini-game at the right scoop puts a proton stream on each side of the display and ghosts in between. The detail that catches everyone out is that each flipper drives its own stream across to the opposite side, and both streams slide back to where they started the moment you let go.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Collect 40 ghosts to light video mode at the right scoop",
+        "Shoot the right scoop to start the mode",
+        "Hold the left flipper to drive the left stream across toward the opposite side",
+        "Hold the right flipper to drive the right stream across toward the opposite side",
+        "Keep holding — release a flipper and its stream gradually slides back to its starting position — but never let the two streams cross",
+        "Catch 15 ghosts before the timers run out to win the mode"
+      ],
+      "reward": "Roughly 2-3 million per ghost caught, plus a completion bonus of around 20 million — a clean run lands near 60 million"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "double-dip-plunge",
+      "title": "Two Picks, One Plunge",
+      "desc": "Cash both skill shot selections — the top-lane pick and the playfield blue-arrow pick — on the same plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-two-part"
+    },
+    {
+      "id": "stream-crossing-drill",
+      "title": "Stream Crossing Drill",
+      "desc": "Light the Don't Cross the Streams video mode off a Right Scoop skill shot and play it out.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-right-scoop-exploit"
+    },
+    {
+      "id": "slime-line-banked",
+      "title": "Slime Line Banked",
+      "desc": "Build the River of Slime hurry-up at the Right Orbit and collect it at the Right Scoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-river-of-slime"
+    },
+    {
+      "id": "bonus-stacked",
+      "title": "Padded Bonus",
+      "desc": "Reach at least 10X end-of-ball bonus multiplier in one game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-bonus-x"
+    },
+    {
+      "id": "spirit-guide-consulted",
+      "title": "Ask the Spirit Guide",
+      "desc": "Light and collect a Tobin's Spirit Guide award at the Left Scoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strategy-tobins-spirit-guide"
+    },
+    {
+      "id": "full-gear-locker",
+      "title": "Full Gear Locker",
+      "desc": "Make a Gear Combo — left ramp then the left captive ball / standup bank — and run the playfield multiplier it lights.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-gear"
+    },
+    {
+      "id": "both-brothers-down",
+      "title": "Both Brothers Down",
+      "desc": "Drop both Scoleri Brothers targets inside the ten-second window to light the three Super Jackpots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-symmetrical-book-stacking"
+    },
+    {
+      "id": "captive-cycle-cleared",
+      "title": "Work the Captive Cycle",
+      "desc": "Arm and start every stage of the right captive ball cycle in one game — Scoleri Brothers, both Terror Dog features, then Gozer.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-captive-ball-cycle"
+    },
+    {
+      "id": "six-times-cashed",
+      "title": "Six Times Over",
+      "desc": "Have both the 2X and 3X targets running at once and start a mode or multiball while 6X is live.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-playfield-6x"
+    },
+    {
+      "id": "supers-on-a-loop",
+      "title": "Supers on a Loop",
+      "desc": "Reach sixty ghosts to light continuous Super Jackpots and collect at least three Left Ramp loops inside the timer.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-loopin-supers"
+    },
+    {
+      "id": "one-ladder-down",
+      "title": "One Ladder Down",
+      "desc": "Complete an entire scene ladder and start the We Came, We Saw mini-wizard multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-wcwsk"
+    },
+    {
+      "id": "frenzy-topped-out",
+      "title": "Needle Pegged",
+      "desc": "Push the PKE Frenzy multiplier to its 12x ceiling and cash a Right Ramp jackpot at that level.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-pke-frenzy-farm"
+    },
+    {
+      "id": "storage-swept",
+      "title": "Storage Swept Clean",
+      "desc": "Recapture every ghost during Storage Facility Multiball and collect a Super Jackpot at the Left Ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-storage-facility"
+    },
+    {
+      "id": "backwards-and-alive",
+      "title": "Backwards and Alive",
+      "desc": "Start the six-ball reversed-flipper multiball at one hundred ghosts and collect its Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-mass-hysteria"
+    },
+    {
+      "id": "marshmallow-finished",
+      "title": "Marshmallow Finished",
+      "desc": "Clear all four phases of the Stay Puft scene, including the final Right Orbit payout.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-stay-puft"
+    },
+    {
+      "id": "all-nine-scenes",
+      "title": "All Nine Scenes",
+      "desc": "Complete every scene in all three ladders to trigger the main wizard multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-ready-to-believe"
+    },
+    {
+      "id": "godhood-reached",
+      "title": "Answer Yes",
+      "desc": "Collect one hundred ghosts inside the main wizard mode to trigger the final wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-ready-to-believe"
+    },
+    {
+      "id": "final-wizard-cleared",
+      "title": "Last Level Down",
+      "desc": "Clear both combo levels and the forced chain of the final wizard mode to bank the billion-point bonus and start the victory-lap multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-are-you-a-god"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-two-part-skill-picks",
+      "title": "Set Both Picks",
+      "text": "Cycle the top-lane pick with the left flipper and put the blue arrow on the left scoop or the left ramp with the right, then plunge. Both picks can pay on the same plunge, so leaving either one on whatever it happened to be is throwing away half the shot.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-two-part",
+      "shots": [
+        "pke-lanes",
+        "left-scoop",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "drill-left-ramp-both-ways",
+      "title": "Left Ramp, Both Ways",
+      "text": "Backhand the left ramp off the left flipper, then shoot it forehand from the right. It is the single most important shot on the machine, and being able to take it from whichever side the ball is on is worth more than any one big shot you can learn here.",
+      "reps": "15 from each flipper",
+      "focus": "accuracy",
+      "goal": "strategy-best-opener",
+      "shots": [
+        "left-ramp",
+        "left-flipper",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-gear-loop-and-cash",
+      "title": "Loop, Then Cash The Gear",
+      "text": "Loop the left ramp several times to inflate the pending Gear award, then go to the Library standups and collect before it expires. The temptation is one more loop; the discipline is banking it while it is still there.",
+      "reps": "5 collections",
+      "focus": "flow",
+      "goal": "combo-gear",
+      "shots": [
+        "left-ramp",
+        "library-standups"
+      ]
+    },
+    {
+      "id": "drill-ghost-target-square",
+      "title": "Hit GHOST Square",
+      "text": "Take the centre GHOST standup only from a settled ball and hit it flush. A wide or mistimed one comes straight back down the middle, and the flipper gap on this machine is wide enough to make that a drain rather than a scare.",
+      "reps": "15 hits",
+      "focus": "ball-control",
+      "shots": [
+        "ghost-target"
+      ]
+    },
+    {
+      "id": "drill-multiplier-targets",
+      "title": "Light It, Then Spend It",
+      "text": "Work the two standups flanking the left ramp entrance until both are lit, then start something worth multiplying rather than drifting back to random shots. Those targets can airball if you mistime them, so take them deliberately and cash the multiplier before it runs out.",
+      "reps": "5 six-times windows",
+      "focus": "accuracy",
+      "goal": "multiplier-playfield-6x",
+      "shots": [
+        "target-2x",
+        "target-3x",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "drill-river-of-slime-loop",
+      "title": "Orbit, Scoop, Repeat",
+      "text": "Build the hurry-up on the right orbit and collect it at the right scoop, then go straight back to the orbit. Collecting relights the award, so this is a two-shot loop you can keep running as long as you keep making both halves.",
+      "reps": "5 cycles",
+      "focus": "flow",
+      "goal": "combo-river-of-slime",
+      "shots": [
+        "right-orbit",
+        "right-scoop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Ghostbusters landed a year before Stern made the lockdown-bar button standard, so the front rail is bare. Everything selectable here runs through the flipper buttons: left picks your top-lane skill shot, right cycles the blue arrow through six playfield shots, and both of them get swapped on you for the whole of Mass Hysteria Multiball."
+  },
+  "howItPlays": {
+    "objective": "Ghostbusters (Stern, 2016) has you busting ghosts through scenes from the films. Run the three scene ladders to reach the main wizard mode, and let your rising ghost count trigger the big multiballs.",
+    "loop": [
+      "Set both skill-shot picks before you plunge -- the left flipper cycles the top-lane P-K-E pick and the right flipper cycles a blue-arrow playfield shot -- since both can pay on one launch.",
+      "Start a scene at its lit shot, follow the flashing arrows to clear it, then re-shoot the same shot to chain into the next scene.",
+      "Loop the Left Ramp to build a Gear award, then cash it at the Library standups to light the 2x and 3x playfield multipliers.",
+      "Collect ghosts everywhere on the playfield; the count auto-starts Storage Facility, PKE Frenzy and Mass Hysteria at fixed thresholds.",
+      "Complete all nine scenes across the three ladders to qualify the wizard mode at the Left Ramp."
+    ],
+    "lights": [
+      {
+        "id": "two-part-skill-picks",
+        "name": "Two-Part Skill Picks",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "pke-lanes"
+          },
+          {
+            "shot": "right-scoop"
+          }
+        ],
+        "lit": "Before the plunge you set two picks that can both score on the same launch: a P-K-E top-lane award and a blue-arrow playfield shot.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "the left flipper button steps the lit P-K-E top lane your skill shot will score at, while the right flipper button moves the blue arrow among six playfield shots; both lock the instant you plunge",
+          "when": "before you launch the ball"
+        },
+        "then": "Point the blue arrow at whichever scene-start shot is already flashing, so one plunge both banks the skill shot and kicks off a scene; picking the K lane also nudges the playfield multiplier along.",
+        "goals": [
+          "skillshot-two-part",
+          "skillshot-right-scoop-exploit"
+        ]
+      },
+      {
+        "id": "scene-start-shots",
+        "name": "Scene-Start Shots",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-scoop"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Three shots open the three ladders -- the Left Scoop starts the Public Library, the Left Ramp the Sedgewick Hotel, and the Right Orbit Dana's Apartment.",
+        "flashing": "A flashing start shot has its next scene ready; clearing a scene relights the same shot to chain straight into the one after it.",
+        "control": null,
+        "then": "Follow the flashing arrows through each two-to-four-shot scene, then re-shoot the start to chain. Finishing all nine scenes qualifies the wizard mode at the Left Ramp, We're Ready to Believe You!",
+        "goals": [
+          "mode-spooked-librarian",
+          "mode-we-got-one",
+          "mode-okay-who-brought-the-dog",
+          "mode-stay-puft",
+          "wizard-ready-to-believe"
+        ]
+      },
+      {
+        "id": "left-ramp-money",
+        "name": "Left Ramp",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "library-standups"
+          }
+        ],
+        "lit": "No shot on the machine matters more than the Left Ramp: loop it to inflate a pending Gear award, and it is where Super Jackpots and the mini-wizard jackpots are collected.",
+        "flashing": null,
+        "control": null,
+        "then": "Loop the ramp to build Gear, then collect it from the Library standups before it expires to light the 2x and 3x targets. Once Loopin' Supers is lit, every loop here banks a five-million-plus Super Jackpot for about twenty seconds.",
+        "goals": [
+          "combo-gear",
+          "combo-loopin-supers",
+          "strategy-best-opener"
+        ]
+      },
+      {
+        "id": "playfield-multiplier",
+        "name": "2X / 3X Playfield Targets",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "target-2x"
+          },
+          {
+            "shot": "target-3x"
+          }
+        ],
+        "lit": "The two standups flanking the Left Ramp light 2x and 3x playfield scoring; with both lit at once, nearly everything scores at six times.",
+        "flashing": "A lit target flashes as its countdown runs -- hit the same target again while it flashes to extend the timer.",
+        "control": null,
+        "then": "Light both, then dive into a mode or multiball while the multiplier is up. One strong mode played at six times can beat a whole game scored flat, so save the cash-in for something lucrative.",
+        "goals": [
+          "multiplier-playfield-6x",
+          "combo-gear"
+        ]
+      },
+      {
+        "id": "ghost-slimer",
+        "name": "GHOST Standup & Slimer",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "ghost-target"
+          },
+          {
+            "shot": "slimer-toy"
+          }
+        ],
+        "lit": "Repeated hits on the dead-center GHOST standup spell out GHOST, and Slimer drops down over his lane; three hits then chase Slimer off and light scenes.",
+        "flashing": null,
+        "control": null,
+        "then": "Use GHOST as a second way into the scene loop when you whiff a start shot -- but take it only from a settled ball, since a wide miss dribbles straight down the middle for a drain.",
+        "goals": [
+          "strategy-first-30-seconds"
+        ]
+      },
+      {
+        "id": "captive-ball-cycle",
+        "name": "Right Captive Ball Cycle",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "captive-single-newton"
+          },
+          {
+            "shot": "scoleri-tony"
+          },
+          {
+            "shot": "scoleri-nunzio"
+          }
+        ],
+        "lit": "Hitting the right captive ball arms the next feature in a fixed cycle -- Scoleri Brothers, then Terror Dog twice, then Gozer -- for a ten-second window; hit it again inside that window to start the feature.",
+        "flashing": null,
+        "control": null,
+        "then": "Drop both Scoleri Brothers inside their shared ten-second timer to light three Super Jackpots. This same captive ball toggles the reversed flippers on and off during Mass Hysteria Multiball.",
+        "goals": [
+          "mode-captive-ball-cycle",
+          "combo-symmetrical-book-stacking",
+          "multiball-mass-hysteria"
+        ]
+      },
+      {
+        "id": "storage-facility",
+        "name": "Storage Facility Lock",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "captive-triple-newton"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Drive balls into the Triple Newton Ball channel to light Storage Facility, then lock three at the Left Ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Starting the multiball releases every ghost; recapture them all for scaling jackpots to light three Super Jackpots at the Left Ramp, and tap the Triple Newton Ball for add-a-balls to stretch it out.",
+        "goals": [
+          "multiball-storage-facility",
+          "multiball-wcwsk"
+        ]
+      },
+      {
+        "id": "pke-frenzy",
+        "name": "PKE Frenzy (Right Ramp)",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "pke-lanes"
+          }
+        ],
+        "lit": "Reaching eighty ghosts, or a Tobin's award, starts PKE Frenzy -- a forty-second frenzy with an uncapped jackpot lit at the Right Ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Hammer the Right Ramp, which returns to the right flipper here for quick repeats, and refresh the multiplier by completing a P-K-E top lane or hitting five switches before it decays.",
+        "goals": [
+          "combo-pke-frenzy-farm",
+          "multiplier-bonus-x"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Set both skill-shot picks and point the blue arrow at a flashing scene-start shot, so a single plunge collects the skill shot and opens a scene. Then follow the arrows and chain scenes by re-shooting the same start shot.",
+        "goals": [
+          "skillshot-two-part",
+          "strategy-first-30-seconds",
+          "strategy-best-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Loop the Left Ramp to build Gear and light the 2x and 3x targets, collect Tobin's Spirit Guide at the Left Scoop for a random boost, and rush one short ladder to qualify We Came, We Saw, We Kicked Its, the mini-wizard with flat, predictable jackpots.",
+        "goals": [
+          "combo-gear",
+          "strategy-tobins-spirit-guide",
+          "multiball-wcwsk",
+          "strategy-tournament-money-path"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete all nine scenes to start We're Ready to Believe You! at the Left Ramp, then reach a hundred ghosts inside it to trigger Are You a God? -- a three-level finale that pays a one-billion-point bonus, times your playfield multiplier, into a six-ball victory lap.",
+        "goals": [
+          "wizard-ready-to-believe",
+          "wizard-are-you-a-god"
+        ]
+      }
+    ]
+  }
+}

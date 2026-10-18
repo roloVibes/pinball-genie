@@ -1,0 +1,976 @@
+{
+  "machine": "Diner (Williams, 1990)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "A plain manual plunger, but it is the whole skill shot — the plunge feeds the upper left saucer and collects whatever value the jukebox lights have stopped on."
+    },
+    {
+      "id": "jukebox",
+      "name": "Jukebox",
+      "type": "mech",
+      "x": 0.88,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "A miniature jukebox in the top right. With a ball in the shooter lane it cycles five values — 150K, 100K, 75K, 50K and 25K — and that is what your plunge is worth."
+    },
+    {
+      "id": "upper-left-saucer",
+      "name": "Upper Left Saucer",
+      "type": "saucer",
+      "x": 0.18,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "The single most important hole on the machine. Reachable from the plunge, the Cup, a lucky bounce through the EAT lanes, or the spinner. Multiball starts here and so does the Dine-Time jackpot."
+    },
+    {
+      "id": "eat-lanes",
+      "name": "E-A-T Lanes",
+      "type": "rollover",
+      "x": 0.48,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes across the top, steerable with the flippers. Completing them raises the bonus multiplier and lights both serve-food arrows plus an advance Dine-Time inlane."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.46,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Three of them right below the EAT lanes. They spit the ball out to either side and almost never drop it straight down the middle."
+    },
+    {
+      "id": "grill",
+      "name": "Grill Shot",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "A small target left of the jets, tucked under the Cash Register ramp. It lights for about ten seconds after a drop bank falls, and that window is the only time it is worth real points."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner Shot",
+      "type": "spinner",
+      "x": 0.24,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "A half orbit left of the jets with a mirrored spinner in it, worth 3,000 a spin when lit. Hit it hard and the ball carries into the upper left saucer; hit it soft and it dribbles into the EAT lanes."
+    },
+    {
+      "id": "todays-special",
+      "name": "Today's Special Hole",
+      "type": "scoop",
+      "x": 0.82,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "A sinkhole about two-thirds of the way down the right side. Lit at the start of the game and relit by the left inlane. It normally ejects to the upper left saucer, which is how the jackpot back door works.",
+      "feeds": {
+        "shot": "upper-left-saucer"
+      }
+    },
+    {
+      "id": "cash-register-ramp",
+      "name": "Cash Register Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The left ramp, with a model register on top, returning to the right inlane. Backhandable from the left flipper. Its diverter raises for the ball lock after the Cup ramp has been shot.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "cup-ramp",
+      "name": "Cup Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The right ramp, crossing over the Cash Register ramp and the jets to feed the left inlane. Its own diverter is what opens the route into the Cup.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "the-cup",
+      "name": "The Cup",
+      "type": "toy",
+      "x": 0.52,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "A big plastic coffee cup at the top centre. A ball dropped in there whips round the rim, tripping a sensor on every lap, and leaves down into the EAT lanes."
+    },
+    {
+      "id": "left-drops",
+      "name": "Left Drop Targets",
+      "type": "drop-target",
+      "x": 0.14,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Root Beer, Fries and Iced Tea sit on this bank of three drops. Knock one or two down, then drain, and all three are standing again when you come back."
+    },
+    {
+      "id": "right-drops",
+      "name": "Right Drop Targets",
+      "type": "drop-target",
+      "x": 0.6,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Three drops in front of the flippers below the jets, carrying Hot Dog, Burger and Chili. Both banks together are what serves a customer."
+    },
+    {
+      "id": "ball-lock",
+      "name": "Ball Lock",
+      "type": "lock",
+      "x": 0.24,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "A saucer hidden under the Cash Register ramp. Once the ramp diverter is raised the ball runs underneath and stays there — and the lock stays open between balls until you use it."
+    },
+    {
+      "id": "diner-lights",
+      "name": "D-I-N-E-R Lights",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Five inserts in the middle of the playfield that track your Cup progress. Every two laps of the Cup lights the next letter and raises what a lap is worth."
+    },
+    {
+      "id": "dine-time-clock",
+      "name": "Dine-Time Clock",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.97,
+      "trim": "all",
+      "notes": "The analog clock on the backglass, numbered 1 to 12. Whatever it reads is the Dine-Time jackpot in millions, so it is the closest thing this machine has to a score you build in advance."
+    },
+    {
+      "id": "customer-lights",
+      "name": "Customer Lights",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Five lights just in front of the flippers, one per customer. One is picked at random to order first, and the row tells you how close Dine-Time is."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Relights Today's Special. Also where the Cup ramp returns the ball."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Where the Cash Register ramp returns the ball, setting up the next left-flipper backhand."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "One of the two outlanes that can light for a ball save after a couple of bad balls. The lit one is steerable with the flippers."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The other half of the ball save. Whichever side is lit awards an extra ball if you drain into it."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.34,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Cup ramp, Today's Special and the right drops, and backhands the Cash Register ramp."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.66,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Cash Register ramp, the spinner and the left drops."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Jukebox Skill Shot",
+      "category": "skillshot",
+      "summary": "With a ball waiting in the shooter lane the jukebox cycles five values from 150K down to 25K. Plunge and the ball runs to the upper left saucer, paying whatever the lights stopped on. The first collection is worth face value, the second double and the third triple.",
+      "difficulty": 2,
+      "reward": "25K-150K, at 1x then 2x then 3x",
+      "steps": [
+        {
+          "shot": "upper-left-saucer",
+          "action": "Plunge on the value you want",
+          "detail": "The jukebox cycles five lights — 150K, 100K, 75K, 50K, 25K — while the ball waits in the shooter lane, so the rhythm is learnable. Plunge and the ball runs to the upper-left saucer, paying whatever the cycle stopped on; the multiplier climbs with each skill shot you land, so ball three is worth three times what ball one was."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "serve-customers",
+      "title": "Serve The Customers",
+      "category": "progression",
+      "summary": "Five customers, one order at a time. A customer is served by knocking down all six drop targets across both banks, and the banks reset the moment you do. Serve all five and Dine-Time starts — that is the whole game.",
+      "difficulty": 2,
+      "reward": "Progress toward Dine-Time",
+      "steps": [
+        {
+          "shot": "left-drops",
+          "action": "Clear the left bank",
+          "detail": "Root Beer, Fries and Iced Tea. If you leave one or two down and drain, the game stands all three back up."
+        },
+        {
+          "shot": "right-drops",
+          "action": "Clear the right bank",
+          "detail": "Hot Dog, Burger and Chili. All six down serves the customer and resets both banks for the next order."
+        },
+        {
+          "shot": "customer-lights",
+          "action": "Watch the row in front of the flippers",
+          "detail": "Five lights, one per customer. The first one is chosen at random when the game starts."
+        }
+      ],
+      "fx": "burger",
+      "ordered": false
+    },
+    {
+      "id": "serve-food-spot",
+      "title": "Spot A Bank With The Ramps",
+      "category": "strategy",
+      "summary": "Completing the E-A-T lanes lights a white arrow at the base of each ramp. While those are lit, every ramp shot spots an entire bank of drop targets — which turns serving five customers from a grind into a couple of ramp shots per order.",
+      "difficulty": 2,
+      "reward": "A whole drop bank per ramp shot",
+      "steps": [
+        {
+          "shot": "eat-lanes",
+          "action": "Finish E-A-T first",
+          "detail": "Steer the lit lane with the flippers as the ball comes down."
+        },
+        {
+          "shot": "cash-register-ramp",
+          "action": "Cash the arrows",
+          "detail": "One ramp shot per bank while the arrows are lit. The Cash Register ramp backhands, so this is cheap."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "dine-time",
+      "title": "Dine-Time",
+      "category": "wizard",
+      "summary": "Serve the fifth customer and the spinner lights for the jackpot: one million times whatever the backglass clock reads, up to twelve million. The ball has to finish in the upper left saucer to collect, and you have only ten to fifteen seconds.",
+      "difficulty": 3,
+      "reward": "1M per clock hour, to a 12M maximum",
+      "steps": [
+        {
+          "shot": "dine-time-clock",
+          "action": "Build the clock before you finish",
+          "detail": "The clock is your jackpot multiplier. Serving the last customer with the clock on 3 throws away most of the game."
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the spinner hard",
+          "detail": "The shot only counts if the ball carries all the way into the saucer — a weak spinner shot drops into the EAT lanes and misses."
+        },
+        {
+          "shot": "todays-special",
+          "action": "Or use the back door",
+          "detail": "Today's Special ejects into the upper left saucer, which also collects the jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-left-saucer",
+          "action": "Do not let it time out",
+          "detail": "Miss the window and the machine un-serves your last customer and makes you do that order again."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "advance-dine-time",
+      "title": "Advance The Clock",
+      "category": "multiplier",
+      "summary": "The backglass clock runs 1 to 12 and each hour is a million on the jackpot. Completing the E-A-T lanes lights an advance in one of the inlanes, and once the Cash Register ramp value has climbed past 100K every further ramp shot adds an hour on its own.",
+      "difficulty": 2,
+      "reward": "+1M on the Dine-Time jackpot per advance",
+      "steps": [
+        {
+          "shot": "eat-lanes",
+          "action": "Complete E-A-T",
+          "detail": "Each completion lights an advance Dine-Time light in one of the two inlanes."
+        },
+        {
+          "shot": "cash-register-ramp",
+          "action": "Ride the left ramp past 100K",
+          "detail": "Consecutive ramp shots climb 20K at a time; once the value passes 100K each shot bumps the clock by a full hour."
+        },
+        {
+          "shot": "todays-special",
+          "action": "Take Advance Dine-Time from the hole",
+          "detail": "It is one of the eight random awards at Today's Special."
+        }
+      ],
+      "fx": "watch",
+      "ordered": false
+    },
+    {
+      "id": "eat-lanes",
+      "title": "The E-A-T Lanes",
+      "category": "multiplier",
+      "summary": "Three steerable lanes across the top. Completing them takes the bonus multiplier to 2x, then 3x, 4x and 5x; after 5x each further completion is a flat 100K. Every completion also lights both ramp arrows and an advance Dine-Time inlane.",
+      "difficulty": 1,
+      "reward": "Up to 5x bonus, then 100K a time",
+      "steps": [
+        {
+          "shot": "eat-lanes",
+          "action": "Lane change on the way down",
+          "detail": "The flippers move the lit lane, so nothing here needs to be left to chance."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Use the jets to re-feed the lanes",
+          "detail": "The bumpers sit directly under the lanes and throw balls back up into them for free."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "cash-register-ramp",
+      "title": "Ring The Register",
+      "category": "combo",
+      "summary": "Consecutive shots up the left ramp pay 20K, 40K, 60K, 80K, 100K and keep climbing 20K a shot. Clear 80K and an extra ball lights at the Grill, which you may only take once per ball. Clear 100K and every further shot adds an hour to the Dine-Time clock. It backhands cleanly from the left flipper, which is what makes repeating it practical.",
+      "difficulty": 2,
+      "reward": "20K climbing 20K per shot, extra ball, clock hours",
+      "steps": [
+        {
+          "shot": "cash-register-ramp",
+          "action": "Repeat the ramp",
+          "detail": "It returns to the right inlane, so a right-flipper shot sets up the next one immediately."
+        },
+        {
+          "shot": "grill",
+          "action": "Take the extra ball past 80K",
+          "detail": "One per ball, so once you have it, keep going for the clock instead."
+        },
+        {
+          "shot": "dine-time-clock",
+          "action": "Keep ramping past 100K",
+          "detail": "Every shot from there is another million on the eventual jackpot."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "the-cup",
+      "title": "Stir The Cup",
+      "category": "mode",
+      "summary": "The first Cup ramp shot of the game swings its diverter open for about ten seconds, opening the route into the big plastic cup. A ball in there laps the rim fast, and every two laps lights the next letter of D-I-N-E-R and raises what a lap pays.",
+      "difficulty": 3,
+      "reward": "Up to 3.5M from a single Cup shot",
+      "steps": [
+        {
+          "shot": "cup-ramp",
+          "action": "Open the diverter",
+          "detail": "The window is roughly ten seconds. After the first Cup shot it takes five more right ramp shots to open it again."
+        },
+        {
+          "shot": "the-cup",
+          "action": "Drop it in and let it spin",
+          "detail": "Laps light D, then I, N, E and R, worth ten times 25K, 50K, 75K, 100K and 250K in turn."
+        },
+        {
+          "shot": "diner-lights",
+          "action": "Push past the R",
+          "detail": "Once R is lit each further lap is worth another ten times 100K, up to a 3.5M ceiling. The ball leaves down into the EAT lanes."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "A two-ball multiball, and by the standards of the era an easy one. The first Cup ramp shot raises the Cash Register ramp's diverter, the ball rolls under and locks, and the spinner then lights for the release — but the released ball still has to reach the upper left saucer to start it.",
+      "difficulty": 2,
+      "reward": "Two-ball multiball",
+      "steps": [
+        {
+          "shot": "cup-ramp",
+          "action": "Shoot the right ramp once",
+          "detail": "That is what raises the left ramp's diverter. The lock stays open between balls until you use it."
+        },
+        {
+          "shot": "ball-lock",
+          "action": "Lock under the left ramp",
+          "detail": "The ramp lowers again and another ball is served to the plunger."
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the spinner for the release",
+          "detail": "The shot has to carry the ball into the upper left saucer. A slow spinner shot falls into the EAT lanes and nothing starts."
+        },
+        {
+          "shot": "todays-special",
+          "action": "Or take Start Multiball from the hole",
+          "detail": "With a ball already locked, Today's Special will usually hand you multiball outright.",
+          "link": "none"
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "beat-the-rush",
+      "title": "Beat The Rush",
+      "category": "multiball",
+      "summary": "The hidden half of multiball. Once it starts, the upper left saucer and Today's Special both light for about ten to fifteen seconds — saucer first as Rush 1, sinkhole second as Rush 2. Make both in order and each ramp is worth 500K for the rest of the multiball.",
+      "difficulty": 3,
+      "reward": "500K per ramp for the rest of multiball",
+      "steps": [
+        {
+          "shot": "upper-left-saucer",
+          "action": "Take Rush 1 first",
+          "detail": "The order matters, and the lights die when a ball drains as well as when the timer expires."
+        },
+        {
+          "shot": "todays-special",
+          "action": "Follow with Rush 2",
+          "detail": "The sinkhole on the right side, hit with the left flipper."
+        },
+        {
+          "shot": "cup-ramp",
+          "action": "Cash the ramps",
+          "detail": "500K a shot on either ramp until the multiball ends — far more than the drop targets are paying you."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "todays-special",
+      "title": "Today's Special",
+      "category": "mode",
+      "summary": "A sinkhole on the right that hands out one of eight awards when lit: 25K, 50K, 75K, 100K, 250K, an extra ball, Advance Dine-Time or Serve Customer. It is lit at the start of the game and relit by the left inlane.",
+      "difficulty": 2,
+      "reward": "Points, extra ball, a clock hour or a free customer",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Relight it from the inlane",
+          "detail": "The Cup ramp returns to the left inlane, so a right ramp shot re-arms this for free."
+        },
+        {
+          "shot": "todays-special",
+          "action": "Hit it with the left flipper",
+          "detail": "Stray bounces occasionally find it, but a deliberate left-flipper shot is the only reliable way in."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "grill-shot",
+      "title": "The Grill Bonus",
+      "category": "combo",
+      "summary": "The Grill is worth almost nothing cold. Clear a full bank of drop targets and it lights for about ten seconds, and in that window it pays a value that escalates every time you do it: 100K, then 250K, then 500K, then 1.5M, and then back to the start.",
+      "difficulty": 2,
+      "reward": "100K climbing to 1.5M",
+      "steps": [
+        {
+          "shot": "right-drops",
+          "action": "Clear a bank",
+          "detail": "Either bank will do it — the machine announces the order is up and lights the Grill."
+        },
+        {
+          "shot": "grill",
+          "action": "Get there inside ten seconds",
+          "detail": "It sits left of the jets under the Cash Register ramp, so it is a tight shot under pressure."
+        },
+        {
+          "shot": "grill",
+          "action": "Chase the 1.5M",
+          "detail": "The value carries between balls on factory settings, so a missed one is not lost — but it does reset to 100K after you collect the 1.5M."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "spinner",
+      "title": "The Spinner Shot",
+      "category": "strategy",
+      "summary": "A mirrored spinner in a half orbit left of the jets, worth 3,000 a spin when lit. More importantly it is the delivery route to the upper left saucer — and both multiball and the Dine-Time jackpot depend on that ball actually getting there.",
+      "difficulty": 2,
+      "reward": "3K per spin and a route to the saucer",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Hit it hard, always",
+          "detail": "Speed decides the outcome: fast into the saucer, slow into the EAT lanes."
+        },
+        {
+          "shot": "upper-left-saucer",
+          "action": "Practise it before you need it",
+          "detail": "Both of the shots that decide your score end in this hole, and both come through the spinner."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "outlane-save",
+      "title": "The Outlane Ball Save",
+      "category": "secret",
+      "summary": "Diner watches your first two balls, and if they were bad enough it lights one outlane for a limited time. Draining into the lit lane awards an extra ball instead of taking one — and the lit lane is steerable with the flippers.",
+      "difficulty": 1,
+      "reward": "An extra ball off a drain",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Check which side is lit",
+          "detail": "The lane change moves it, so you can put it on whichever side you are more likely to lose the ball down."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Let the drain happen",
+          "detail": "This is the rare occasion where an outlane is where you want the ball to go."
+        }
+      ],
+      "fx": "burger",
+      "ordered": false
+    },
+    {
+      "id": "the-route",
+      "title": "The Standard Route",
+      "category": "strategy",
+      "summary": "Diner's rules are shallow enough that there is one efficient order of operations, and playing it makes the difference between a two-million game and a twenty-million one. It is built around loading the clock before you serve the fifth customer.",
+      "difficulty": 2,
+      "reward": "A repeatable high-scoring loop",
+      "steps": [
+        {
+          "shot": "cup-ramp",
+          "action": "Open with the right ramp",
+          "detail": "One shot opens the Cup diverter and raises the ball lock at the same time."
+        },
+        {
+          "shot": "the-cup",
+          "action": "Take the Cup while it is open",
+          "detail": "Push the laps past R for up to 3.5M before the diverter closes."
+        },
+        {
+          "shot": "ball-lock",
+          "action": "Lock a ball under the left ramp",
+          "detail": "The lock waits for you and survives a drain, so there is no rush to release it."
+        },
+        {
+          "shot": "cash-register-ramp",
+          "action": "Ring the register repeatedly",
+          "detail": "Past 80K it lights an extra ball at the Grill; past 100K every shot is another hour on the clock."
+        },
+        {
+          "shot": "spinner",
+          "action": "Release into multiball and take the Rush",
+          "detail": "Beat The Rush makes both ramps worth 500K for the rest of the multiball."
+        },
+        {
+          "shot": "eat-lanes",
+          "action": "Complete E-A-T, then serve",
+          "detail": "With the ramp arrows lit, one ramp shot spots a whole bank of drop targets per customer."
+        },
+        {
+          "shot": "upper-left-saucer",
+          "action": "Cash Dine-Time last",
+          "detail": "Serve the fifth customer only once the clock is loaded, then put the ball in the saucer for up to twelve million."
+        }
+      ],
+      "fx": "burger"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "diner-skillshot",
+      "title": "Number One",
+      "desc": "Land the jukebox skill shot on the 150K value.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "diner-order-up",
+      "title": "Order Up",
+      "desc": "Clear all six drop targets to serve a customer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "serve-customers"
+    },
+    {
+      "id": "diner-eat",
+      "title": "Five Times Bonus",
+      "desc": "Complete the E-A-T lanes enough times to reach 5x bonus.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "eat-lanes"
+    },
+    {
+      "id": "diner-grill",
+      "title": "Hot Off The Grill",
+      "desc": "Collect the 1.5M Grill bonus after clearing a drop bank.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "grill-shot"
+    },
+    {
+      "id": "diner-cup",
+      "title": "Stir The Cup",
+      "desc": "Light the R in D-I-N-E-R with laps around the Cup.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "the-cup"
+    },
+    {
+      "id": "diner-cup-max",
+      "title": "Three And A Half",
+      "desc": "Push the Cup all the way to its 3.5M ceiling.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "the-cup"
+    },
+    {
+      "id": "diner-multiball",
+      "title": "Table For Two",
+      "desc": "Lock a ball and start multiball through the spinner.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "diner-rush",
+      "title": "Beat The Rush",
+      "desc": "Make both Rush shots in order during multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "beat-the-rush"
+    },
+    {
+      "id": "diner-clock",
+      "title": "Full Clock",
+      "desc": "Run the Dine-Time clock up to twelve before serving the last customer.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "advance-dine-time"
+    },
+    {
+      "id": "diner-jackpot",
+      "title": "Dine-Time",
+      "desc": "Serve all five customers and collect the Dine-Time jackpot in the saucer.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "dine-time"
+    }
+  ],
+  "drills": [
+    {
+      "id": "jukebox-timing",
+      "title": "Plunge On The 150",
+      "text": "The jukebox cycles five values while the ball sits in the shooter lane, so the rhythm is learnable. Watch it for a few passes and release on 150K rather than plunging the moment the ball is served.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "jukebox",
+        "upper-left-saucer"
+      ]
+    },
+    {
+      "id": "register-backhand-loop",
+      "title": "Backhand The Register",
+      "text": "The Cash Register ramp returns to the right inlane, so a right-flipper shot sets up the next one immediately, and it backhands cleanly from the left flipper when the ball comes back that side. Chain consecutive shots and watch the value climb in 20K steps rather than resetting between attempts.",
+      "reps": "10 consecutive",
+      "focus": "accuracy",
+      "goal": "cash-register-ramp",
+      "shots": [
+        "cash-register-ramp",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "spinner-hard-only",
+      "title": "Hit The Spinner Hard",
+      "text": "Speed decides where this shot ends: fast carries into the upper left saucer, slow dribbles into the E-A-T lanes and nothing starts. Shoot it at full strength only, because both multiball and the jackpot are collected in that saucer.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "spinner",
+      "shots": [
+        "spinner",
+        "upper-left-saucer",
+        "eat-lanes"
+      ]
+    },
+    {
+      "id": "steer-the-lit-outlane",
+      "title": "Steer The Lit Outlane",
+      "text": "When the game lights an outlane for the save, move it with the flipper buttons onto whichever side you actually lose balls down. Then let the drain happen there instead of nudging away from it.",
+      "reps": "one full ball with the save lit",
+      "focus": "ball-control",
+      "goal": "outlane-save",
+      "shots": [
+        "left-outlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "cup-ramp-opening",
+      "title": "Open With The Cup Ramp",
+      "text": "One right ramp shot swings the Cup diverter open for about ten seconds and raises the lock under the left ramp at the same time. Drill the sequence cold: right ramp, straight back up into the Cup, laps past the R, then lock under the register.",
+      "reps": "5 openings",
+      "focus": "flow",
+      "goal": "the-route",
+      "shots": [
+        "cup-ramp",
+        "the-cup",
+        "ball-lock"
+      ]
+    },
+    {
+      "id": "rush-one-then-two",
+      "title": "Rush One, Then Rush Two",
+      "text": "The moment multiball starts, take the upper left saucer, then Today's Special, in that order and inside the window. Both ramps then pay 500K for the rest of the multiball, which is worth far more than the drop targets you would otherwise be bashing.",
+      "reps": "5 multiballs",
+      "focus": "flow",
+      "goal": "beat-the-rush",
+      "shots": [
+        "upper-left-saucer",
+        "todays-special",
+        "cash-register-ramp",
+        "cup-ramp"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "burger",
+  "actionButton": {
+    "present": false,
+    "how": "No extra control here — flippers, start and a plain manual plunger. That plunger carries the whole skill shot, feeding the upper left saucer to collect whatever value the jukebox lights have stopped on."
+  },
+  "howItPlays": {
+    "objective": "This is a roadside diner where the job is to serve all five customers and then cash the Dine-Time jackpot. Wind the backglass clock as high as it will go first, because that clock is exactly what the final payout gets multiplied by.",
+    "loop": [
+      "Flatten both drop-target banks -- all six food items -- to serve the customer in front of you, and the banks spring straight back up for the next order.",
+      "Roll the top E-A-T rollovers, tapping a flipper to drop the lit lane under the ball, to step your bonus multiplier and arm a ramp arrow that spots a whole bank.",
+      "Hammer the Cash Register ramp on repeat -- it backhands from the left flipper -- to drive its value up and, past a hundred thousand, tick the backglass clock ahead an hour at a time.",
+      "Pop the right ramp once to swing the Cup diverter open, then feed the Cup and let the ball whirl the rim to spell D-I-N-E-R and stash a ball for multiball.",
+      "Hold back the fifth serve until the clock is fully wound, then end the ball in the upper-left saucer to take Dine-Time."
+    ],
+    "lights": [
+      {
+        "id": "food-drops",
+        "name": "Food Drop Banks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-drops",
+            "lamps": 3
+          },
+          {
+            "shot": "right-drops",
+            "lamps": 3
+          }
+        ],
+        "lit": "A standing food target is part of the order you are filling right now; drop all three on the left bank and all three on the right to serve that customer, and both banks reset on the spot.",
+        "flashing": null,
+        "control": null,
+        "then": "Serving all five fills the final order and lights the Dine-Time jackpot. A bank you have just cleared also wakes the Grill for roughly ten seconds, where a quick shot pays a bonus that climbs each visit toward one and a half million.",
+        "goals": [
+          "serve-customers",
+          "grill-shot"
+        ]
+      },
+      {
+        "id": "eat-lanes",
+        "name": "E-A-T Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "eat-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit rollover up top is an E-A-T letter you still owe; carry the ball through all three to finish the word.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button shuttles the lit E-A-T rollover sideways across the three top lanes, so you can park it in whichever lane the ball is drifting toward and rake in the letter you are missing",
+          "when": "as the ball rolls down through the top lanes"
+        },
+        "then": "Finishing E-A-T bumps the bonus multiplier a notch -- as high as five times -- and lights a white arrow at the foot of each ramp, so a single ramp shot then knocks down an entire drop bank for you. Each completion also arms an Advance Dine-Time in one inlane, another hour on the eventual jackpot.",
+        "goals": [
+          "eat-lanes",
+          "serve-food-spot",
+          "advance-dine-time"
+        ]
+      },
+      {
+        "id": "register-ladder",
+        "name": "Cash Register Value",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "cash-register-ramp"
+          }
+        ],
+        "lit": "Back-to-back trips up the Cash Register ramp stack its value in twenty-thousand steps; break the chain and the climb starts over.",
+        "flashing": null,
+        "control": null,
+        "then": "Once the value clears eighty thousand an extra ball lights over at the Grill, yours to take a single time per ball. Push past a hundred thousand and every further ramp shot winds the backglass clock ahead an hour, and that clock is precisely what your Dine-Time jackpot is multiplied by.",
+        "goals": [
+          "cash-register-ramp",
+          "advance-dine-time"
+        ]
+      },
+      {
+        "id": "diner-cup",
+        "name": "D-I-N-E-R Cup",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "cup-ramp"
+          },
+          {
+            "shot": "the-cup"
+          }
+        ],
+        "lit": "The game's first Cup ramp shot throws the diverter open for a short window and sends the ball up into the big coffee cup. In there it whirls the rim, and each pair of laps both advances the DINER inserts and pushes up the payout on every lap after.",
+        "flashing": null,
+        "control": null,
+        "then": "Drive the laps past the R and a single Cup can be worth up to three and a half million before the diverter drops shut. The ball rolls out of the cup down into the E-A-T lanes, handing you a lane change on the way.",
+        "goals": [
+          "the-cup"
+        ]
+      },
+      {
+        "id": "lock-and-multiball",
+        "name": "Lock & Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "ball-lock"
+          },
+          {
+            "shot": "cup-ramp"
+          },
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "That same opening right-ramp shot also raises the Cash Register ramp's diverter, so the next ball rolls underneath and locks; the lock sits waiting between balls until you spend it.",
+        "flashing": null,
+        "control": null,
+        "then": "Free the locked ball by cracking the spinner hard enough to carry it into the upper-left saucer, which tips off a two-ball multiball. The instant it starts, grab the saucer for Rush 1 and Today's Special for Rush 2, in that order, and both ramps pay five hundred thousand each for whatever is left of the multiball.",
+        "goals": [
+          "multiball",
+          "beat-the-rush"
+        ]
+      },
+      {
+        "id": "todays-special",
+        "name": "Today's Special",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "todays-special"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "The Today's Special sinkhole on the right glows from the opening ball and relights off the left inlane; when it is lit it hands over one of a spread of awards -- a chunk of points, an extra ball, an hour on the clock, a customer served for free, or an outright start to multiball when a ball is already locked.",
+        "flashing": null,
+        "control": null,
+        "then": "Because the Cup ramp dumps the ball into the left inlane, one right-ramp shot re-lights this scoop at no cost. Save it for the awards that push your game forward -- a fresh hour on the clock or a customer handed to you -- rather than the token point values.",
+        "goals": [
+          "todays-special",
+          "advance-dine-time"
+        ]
+      },
+      {
+        "id": "dine-time",
+        "name": "Dine-Time Jackpot",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "upper-left-saucer"
+          },
+          {
+            "shot": "todays-special"
+          }
+        ],
+        "lit": "Serve the last customer and the spinner lights for Dine-Time, the machine's jackpot: a million points for every hour showing on the backglass clock, up to a ceiling of twelve.",
+        "flashing": null,
+        "control": null,
+        "then": "Crack the spinner hard so the ball runs all the way up into the upper-left saucer to collect, or sneak in the back way through Today's Special, which ejects into that same saucer. Let the ten-to-fifteen-second window lapse and the machine takes your last serve back and makes you fill that order again.",
+        "goals": [
+          "dine-time",
+          "advance-dine-time"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to slide the lit E-A-T rollover across the three top lanes; drop it under the lane the ball is heading for, roll through to bank that letter, and finishing the word steps your bonus multiplier and lights a ramp arrow that spots a whole drop bank. The lit outlane ball-save, when the game grants one, shifts side to side the same way.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Set the table before you cash anything in. Take the jukebox skill shot on its top value, then work the flipper-steered E-A-T lanes over and over to build the bonus multiplier and light the ramp arrows that make serving customers cheap.",
+        "goals": [
+          "skillshot",
+          "eat-lanes",
+          "serve-food-spot"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Open the Cup with the right ramp for D-I-N-E-R laps worth up to three and a half million, ring the Cash Register ramp past a hundred thousand to pile hours onto the clock, and lock a ball. Start the two-ball multiball and nail both Rush shots so the ramps pay five hundred thousand apiece.",
+        "goals": [
+          "the-cup",
+          "cash-register-ramp",
+          "multiball",
+          "beat-the-rush"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Hold the fifth serve until the backglass clock is wound as high as you can get it, then send the ball through the spinner into the upper-left saucer for Dine-Time -- a million per clock hour, up to a twelve-million jackpot, the biggest single score the game offers.",
+        "goals": [
+          "dine-time"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1104 @@
+{
+  "machine": "RoboCop (Data East, 1989)",
+  "defaultFx": "mecha",
+  "shots": [
+    {
+      "id": "right-ramp",
+      "name": "Jump Ramp (Right Ramp)",
+      "type": "ramp",
+      "x": 0.7108,
+      "y": 0.8087,
+      "trim": "all",
+      "notes": "The signature shot: entry lane runs up-right from the flippers, climbs over the Scanner lane, crests at the top-right corner, then runs as a girder bridge across the top with a deliberate gap. A clean shot flies the jump (100K); a weak shot falls off into the pop-bumper nest. With an arrest lit, a made jump locks the ball in the staged upper-left lock instead of returning.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "apex": {
+        "x": 0.75,
+        "y": 0.93
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "left-catch-ramp",
+      "name": "Catch Ramp (Landing Ramp)",
+      "type": "mech",
+      "x": 0.1122,
+      "y": 0.8087,
+      "trim": "all",
+      "notes": "Not player-shootable — it receives made ramp jumps at the police-van catch point and runs the ball down the left edge to the VUK. When a lock is lit, the ball is captured in the 3-position staged lock along this ramp instead.",
+      "feeds": {
+        "shot": "vuk"
+      },
+      "apex": {
+        "x": 0.15,
+        "y": 0.85
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner (Left Spinner Lane)",
+      "type": "spinner",
+      "x": 0.1121,
+      "y": 0.7217,
+      "trim": "all",
+      "notes": "The money shot — sits in the right flipper's sweet spot (a left-flipper backhand also works). Value rises from base spins to 3,000/spin as green/yellow/red spinner lamps light with color/lock progress; a maxed rip is worth ~140K. The lane wraps the top-left and feeds the 2-0-9 top lanes.",
+      "feeds": {
+        "shot": "top-lanes"
+      },
+      "apex": {
+        "x": 0.3,
+        "y": 0.78
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "top-lanes",
+      "name": "2-0-9 Top Lanes",
+      "type": "lane",
+      "x": 0.49,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Three rollover lanes (2=green, 0=yellow, 9=red). Each UNLIT lane spots one standup of its color — the safe way to complete the directive banks. Completing all three advances bonus X (2X-5X). Lane-change works on the inserts. Fed by the plunge, the spinner lane, and eject kickouts."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Turbo Bumpers (Pop Nest)",
+      "type": "bumpers",
+      "x": 0.53,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Triangle nest in the upper center, fed by the top lanes, the spinner lane, and failed ramp jumps. Hazard: many drains on this game are direct exits from the bumpers to the middle or right outlane."
+    },
+    {
+      "id": "green-bank",
+      "name": "Green Target Bank (Directive 1)",
+      "type": "target-bank",
+      "x": 0.25,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Four green standups, mid-left. Completing all four finishes the green directive and lights the first arrest. Danger shot — rebounds roll to the right outlane; spot them via the 2 lane instead. Only worth direct hits during multiball (jackpot build, post-jackpot Special, Target Practice sights)."
+    },
+    {
+      "id": "yellow-bank",
+      "name": "Yellow Target Bank (Directive 2)",
+      "type": "target-bank",
+      "x": 0.49,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Three yellow standups dead center below the lower pop. Completing all three finishes the yellow directive and lights the second arrest. Same warning: spot via the 0 lane, don't aim at them outside multiball."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Trap Ball (Laser Kick Captive Ball)",
+      "type": "captive-ball",
+      "x": 0.9819,
+      "y": 0.5478,
+      "trim": "all",
+      "notes": "Short captive-ball lane along the right wall below the ramp entrance. ONE hit completes the red directive (lights the third arrest) AND relights the Laser Kick kickback. The 9 top lane can spot red instead — but a lane spot does not relight the kickback if the third arrest is already lit.",
+      "flipper": "left"
+    },
+    {
+      "id": "scanner-hole",
+      "name": "Scanner (Right Eject Hole)",
+      "type": "scoop",
+      "x": 0.9109,
+      "y": 0.8609,
+      "trim": "all",
+      "notes": "Kickout hole at the top of the right letters lane, tucked under the ramp curve. Each visit awards the Mystery Scanner value and spots one R-O-B-O-C-O-P letter; the completed word awards an extra ball. Caveat: the ball frequently lips out and the awards are modest.",
+      "flipper": "left"
+    },
+    {
+      "id": "left-eject",
+      "name": "Left Eject (Lock Kicker)",
+      "type": "scoop",
+      "x": 0.0249,
+      "y": 0.7217,
+      "trim": "all",
+      "notes": "Upper-left kickout hole under the catch ramp run-out — one of the two kickers that hold arrested (locked) balls in the staged 3-ball lock. Not a direct flipper shot; balls arrive via made ramp jumps with a lock lit."
+    },
+    {
+      "id": "top-eject",
+      "name": "Top Eject (Lock Kicker)",
+      "type": "scoop",
+      "x": 0.262,
+      "y": 0.8609,
+      "trim": "all",
+      "notes": "Top-center-left kickout pocket behind the girder bridge — the other staged-lock kicker, and the destination the ramp return diverts to after the Jumpmaster jump streak. Kicks out into the top-lanes/pop area.",
+      "feeds": {
+        "shot": "top-lanes"
+      }
+    },
+    {
+      "id": "vuk",
+      "name": "Vertical Up-Kicker (Ramp Return)",
+      "type": "mech",
+      "x": 0.0249,
+      "y": 0.5826,
+      "trim": "all",
+      "notes": "Left-edge elevator with the red beacon dome. Receives the catch-ramp run-out and launches the ball onto a wireform that feeds the left inlane — the manual names the part 'VUK Left Flip. Feed Ramp'. Not a shot.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (Ramp Return Feed)",
+      "type": "lane",
+      "x": 0.0989,
+      "y": 0.0957,
+      "trim": "all",
+      "notes": "Where the made-jump return wireform delivers the ball — worth 30K on the way through and a live left-flipper feed, making it the connective tissue of the Sweet Jump loop (230K measured per doubled lap including this inlane)."
+    },
+    {
+      "id": "laser-kick",
+      "name": "Laser Kick (Left-Outlane Kickback)",
+      "type": "mech",
+      "x": 0.04,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Kickback in the left outlane; fires automatically on the outlane switch when lit. Relit by one captive-ball hit, or by lighting the third (red) arrest. Operator setting controls whether it starts lit each ball. No kickback on the right outlane."
+    },
+    {
+      "id": "plunge",
+      "name": "Shooter Lane & Wire Ramp",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Manual plunger; a chrome wire ramp carries the plunge over the top-right corner and drops it into the 2-0-9 top lanes from the right. Skill shot: plunge through the lane flanked by the two flashing ball-guide lamps for 100K x ball number. The natural plunge feeds the right lane; power-plunge for center/left.",
+      "feeds": {
+        "shot": "top-lanes"
+      },
+      "apex": {
+        "x": 0.94,
+        "y": 0.95
+      }
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot-100k",
+      "title": "100K Top Lane Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge through the top lane flanked by the two flashing ball guides for 100K multiplied by the ball number.",
+      "difficulty": 1,
+      "reward": "100,000 x ball in play (100K ball 1, 300K ball 3)",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Plunge through the flashing guide lane",
+          "detail": "At ball start two of the four ball-guide lamps flash around one top lane; completing the shooter-lane shot through it awards 100K x ball number. The plunge naturally feeds the right lane — power-plunge and nudge off the pops if the center or left lane is lit. The ball then falls through the pop nest, and every unlit 2-0-9 lane it crosses on the way down spots a colored standup target for free."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-double-dip",
+      "title": "Skill Shot Double-Dip",
+      "category": "skillshot",
+      "summary": "Lane-change before plunging so the same skill shot also spots a directive target — the guides can't move, but the lane inserts can.",
+      "difficulty": 2,
+      "reward": "100K x ball number PLUS one spotted standup target",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Lane-change before plunging, then plunge through the guide-lit lane",
+          "detail": "The flashing ball guides cannot be lane-changed, but the 2-0-9 lane inserts can — flip before plunging until the guide-lit lane sits over an unlit insert, then plunge through it. The single shot now scores the 100K x ball skill shot AND spots a standup in that lane's color — lock progress at zero risk."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-sweet-jump-loop",
+      "title": "Sweet Jump Loop → Double Scoring",
+      "category": "combo",
+      "summary": "The peak-scoring farm: jump ramp, left-inlane return, jump ramp again. Two consecutive jumps start Double Scoring, and the timer refreshes with every two more jumps.",
+      "difficulty": 3,
+      "reward": "~230K per doubled lap (200K ramp + 30K inlane), sustained indefinitely",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the jump ramp and make the jump",
+          "detail": "A clean shot clears the bridge gap for 100K base. Shoot only from a controlled left-flipper cradle — a weak shot falls into the pop nest, which direct-drains often."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Ride the return to the left flipper",
+          "detail": "The catch ramp drops into the VUK, which wireforms the ball to the left inlane for 30K and a live feed — this inlane pass is part of the combo's measured value."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the ramp again immediately",
+          "detail": "The second consecutive jump activates Double Scoring, and as long as you keep making jumps two-in-a-row the 2x never ends."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep looping",
+          "detail": "Each doubled lap pays about 230K, and every jump also counts toward the Jumpmaster record (default 14 jumps) that lights Everything Is Lit. Players have rolled the game purely on this loop."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-spinner-rip",
+      "title": "Maxed Spinner Rip",
+      "category": "combo",
+      "summary": "The low-variance tournament farm: raise the spinner to 3K/spin via color completions, then rip it all day — every rip recirculates through the top lanes and advances locks by itself.",
+      "difficulty": 2,
+      "reward": "Up to 3,000 per spin — roughly 140K per full rip when maxed",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Roll unlit 2-0-9 lanes",
+          "detail": "Unlit lanes spot targets in the matching color bank; each completed color lights another green/yellow/red spinner lamp, adding about 1K per spin up to the 3K max."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the spinner from the right flipper",
+          "detail": "The spinner sits in the right flipper's sweet spot; a left-flipper backhand also works. A maxed rip runs 40-50 spins at 3K — around 140K."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Steer the return through another unlit lane",
+          "detail": "The spinner lane feeds the top lanes, so every rip spots more targets — the farm advances locks and bonus X passively while you score."
+        },
+        {
+          "shot": "spinner",
+          "action": "Repeat all game",
+          "detail": "Rip the spinner all day — it qualifies multiball as a side effect."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-arrest-cycle",
+      "title": "Spinner → Lanes → Arrest Engine",
+      "category": "combo",
+      "summary": "The game's core cycle: spinner to reach the top lanes, lanes to spot targets and complete colors, ramp to lock when an arrest lights.",
+      "difficulty": 2,
+      "reward": "Lock progress plus compounding spinner value",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Shoot the spinner",
+          "detail": "The lane wraps the top-left and drops the ball into the 2-0-9 lanes — points on the way through."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Complete colors via lane spotting",
+          "detail": "Green needs 4 spots, yellow 3, red just 1. Never shoot the standup banks directly — green-bank rebounds feed the right outlane."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Jump the ramp when an arrest is lit",
+          "detail": "Each completed color lights one arrest at the ramp; a made jump with an arrest lit is diverted into the staged upper-left lock instead of returning to the inlane.",
+          "feeds": {
+            "shot": "left-eject"
+          }
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-2x-spinner-stack",
+      "title": "Double Scoring Spinner Stack",
+      "category": "combo",
+      "summary": "Start 2x All Scores with back-to-back ramp jumps, then rip the maxed spinner inside the doubled window — the stack strong players hunt.",
+      "difficulty": 3,
+      "reward": "A maxed rip pays roughly double — approaching 280K under 2x",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Make the first jump",
+          "detail": "From a left-flipper cradle; the return feeds the left inlane for the immediate follow-up."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make the second consecutive jump",
+          "detail": "Two consecutive ramp completions switch on 2x scoring on everything (factory window about 20 seconds)."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the maxed spinner while 2x runs",
+          "detail": "Have the spinner already at 3K/spin before starting the stack — the doubled rip is the payoff. Or keep jumping instead: every two consecutive jumps refresh the 2x window."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-light-arrests",
+      "title": "Light the Arrests (Complete the Directives)",
+      "category": "multiball",
+      "summary": "Qualify locks by completing the three colored directive groups — four green standups, three yellow standups, one captive-ball hit for red — ideally all via top-lane spotting.",
+      "difficulty": 2,
+      "reward": "Each completed color lights one arrest (lock) at the jump ramp",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Roll unlit lanes to spot targets",
+          "detail": "The 2 lane spots green, 0 spots yellow, 9 spots red — an unlit lane spots one target of its color, then lights until lane-changed. This is the recommended way to complete every bank."
+        },
+        {
+          "shot": "green-bank",
+          "action": "Finish all four green targets",
+          "detail": "The first directive. Take these via lane spots — direct hits rebound toward the right outlane.",
+          "link": "none"
+        },
+        {
+          "shot": "yellow-bank",
+          "action": "Finish all three yellow targets",
+          "detail": "The second directive, dead center below the lower pop bumper — also safest via the 0 lane.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the trap ball once for red",
+          "detail": "One hit completes the red directive and also relights the Laser Kick kickback — or let the 9 lane spot it if the kickback is already lit.",
+          "link": "none"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-lock-three",
+      "title": "Make Three Arrests — Start Multiball",
+      "category": "multiball",
+      "summary": "With an arrest lit, a made ramp jump locks the ball in the staged upper-left lock; the third lock starts the game's 3-ball multiball with Jackpot lit.",
+      "difficulty": 3,
+      "reward": "3-ball Multiball, Jackpot lit on the ramp; locks carry between balls",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Jump the ramp with the first arrest lit",
+          "detail": "The made jump is diverted into the staged lock under the catch ramp instead of returning to the left inlane. Shoot only from a controlled ball — the jump punishes rushed attempts.",
+          "feeds": {
+            "shot": "left-eject"
+          }
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Lock the second ball",
+          "detail": "Complete another color first (spinner-and-lanes cycle), then jump again; the game stages up to three balls in the left/top eject kickers.",
+          "feeds": {
+            "shot": "top-eject"
+          }
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Lock the third ball",
+          "detail": "The third arrest starts 3-ball Multiball and lights the Jackpot. A buy-in even preserves locks between games — a 1989 novelty.",
+          "feeds": {
+            "shot": "left-eject"
+          }
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-jackpot",
+      "title": "Build and Collect the Jackpot",
+      "category": "multiball",
+      "summary": "Everything scored during multiball pumps the Jackpot from ~500K toward its 1M cap — build it with the spinner first, then collect with a made ramp jump. One Jackpot per multiball.",
+      "difficulty": 3,
+      "reward": "Jackpot up to 1,000,000 — collected on a made ramp jump",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Rip the spinner during multiball",
+          "detail": "Do NOT shoot the ramp for the Jackpot immediately — spinner rips and target hits advance the value toward the 1M max first.",
+          "link": "none"
+        },
+        {
+          "shot": "yellow-bank",
+          "action": "Take standup bounces freely",
+          "detail": "Target hits also advance the Jackpot, and multiball is the only safe time to touch the banks.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Jump the ramp to collect",
+          "detail": "Cradle one ball, separate, and make the jump for the full value. Only one Jackpot per multiball, so max it before you shoot."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-ramp-special",
+      "title": "Post-Jackpot Ramp Special",
+      "category": "multiball",
+      "summary": "Phase two of multiball: after the Jackpot is collected, hitting five targets (default) lights Special on the ramp — worth 1M when set to points.",
+      "difficulty": 3,
+      "reward": "Special — 1,000,000 points (operator can set to credit or extra ball)",
+      "steps": [
+        {
+          "shot": "green-bank",
+          "action": "Shoot targets after collecting the Jackpot",
+          "detail": "Five target hits by default light the Ramp Special — the ONLY time outside jackpot-building that shooting the standups is correct, in the safety of multiball.",
+          "link": "none"
+        },
+        {
+          "shot": "yellow-bank",
+          "action": "Keep working the banks",
+          "detail": "Any standup counts toward the five; center-bank hits from a cradled second ball are the tidiest.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make the jump to collect Special",
+          "detail": "One more clean jump banks the 1M."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-target-practice",
+      "title": "Target Practice",
+      "category": "mode",
+      "summary": "Completing a color bank starts Target Practice — its crosshair sight lamps flash; hitting four flashing sights (default) lights ED 209 Million at the ramp.",
+      "difficulty": 3,
+      "reward": "Lights the timed 1,000,000 ramp shot",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete a color group first",
+          "detail": "Finishing green, yellow, or red (via lane spots) starts Target Practice on that bank — its crosshair sight lamps begin flashing. On hard settings only one sight flashes at a time."
+        },
+        {
+          "shot": "green-bank",
+          "action": "Hit four flashing sight targets",
+          "detail": "Factory setting is 4. Most players bank these from lucky bounces rather than aiming — deliberate standup shots are the game's biggest drain risk."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-ed209-million",
+      "title": "ED 209 Million",
+      "category": "mode",
+      "summary": "Once Target Practice completes, the ramp is worth 1,000,000 on a short timer — cash it immediately.",
+      "difficulty": 3,
+      "reward": "1,000,000 points on one made ramp jump",
+      "steps": [
+        {
+          "shot": "green-bank",
+          "action": "Finish Target Practice",
+          "detail": "The final flashing sight hit lights ED 209 Million at the ramp and starts a short timer (exact length undocumented)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the jump ramp immediately",
+          "detail": "Make the jump before the timer expires for the million. Tournament players don't hunt this mode, but if it starts from accidental bounces, cash the ramp fast."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-scanner",
+      "title": "Mystery Scanner & the R-O-B-O-C-O-P Extra Ball",
+      "category": "mode",
+      "summary": "Every visit to the right eject hole awards the Mystery Scanner value and spots one letter; completing all seven letters awards an extra ball.",
+      "difficulty": 2,
+      "reward": "Mystery value per visit; Extra Ball for the completed word",
+      "steps": [
+        {
+          "shot": "scanner-hole",
+          "action": "Shoot the right eject lane",
+          "detail": "Each shot awards the Mystery Scanner value shown on the display and spots one letter down the seven-insert lane."
+        },
+        {
+          "shot": "scanner-hole",
+          "action": "Repeat until all seven letters are lit",
+          "detail": "The completed word awards the extra ball. Caveats: the ball often lips out of the hole and the mystery awards are weak — fold this in only when the shot is safe."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-laser-kick",
+      "title": "Laser Kick Relight",
+      "category": "mode",
+      "summary": "Keep the left-outlane kickback alive: one captive-ball hit relights it, and lighting the third (red) arrest relights it too.",
+      "difficulty": 1,
+      "reward": "An automatic left-outlane save",
+      "steps": [
+        {
+          "shot": "laser-kick",
+          "action": "Let the kickback save you when lit",
+          "detail": "It fires automatically on the left-outlane switch. Depending on operator settings it may start lit each ball."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the trap ball once to relight",
+          "detail": "One hit relights the kickback and completes the red directive. Lighting the third arrest also relights it — so if the kickback is already lit, hold off on completing red and save the relight for after it fires. A 9-lane spot does NOT relight it if red is already done."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mult-bonus-x",
+      "title": "2-0-9 Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Completing all three top lanes advances the end-of-ball bonus multiplier one step: 2X, 3X, 4X, then the 5X max.",
+      "difficulty": 1,
+      "reward": "End-of-ball bonus multiplied up to 5X",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete all three top lanes",
+          "detail": "Use flipper lane-change to move lit inserts under the ball; each full 2-0-9 set steps the multiplier toward 5X. Build it early in the ball since it pays at end-of-ball bonus."
+        },
+        {
+          "shot": "spinner",
+          "action": "Recirculate via the spinner",
+          "detail": "Every spinner shot returns the ball through the top lanes, so multiplier progress comes free while farming spins and spotting targets."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-2x-scores",
+      "title": "2x All Scores (Double Playfield)",
+      "category": "multiplier",
+      "summary": "Two consecutive right-ramp completions start 2x scoring on everything — the game's only playfield multiplier.",
+      "difficulty": 3,
+      "reward": "All scoring doubled for the 2x window (factory ~20 seconds)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Make two consecutive jump ramps",
+          "detail": "Back-to-back completions activate Double Playfield. The doubled window runs about 20 seconds at factory settings (adjustable 5-25), though it may also be extended by switch activity — play it as timed."
+        },
+        {
+          "shot": "spinner",
+          "action": "Cash the window on your best shot",
+          "detail": "Rip the maxed spinner under 2x, or keep jumping — every two consecutive jumps refresh the doubled window, which is what makes the Sweet Jump loop compound."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wiz-everything-is-lit",
+      "title": "Everything Is Lit (Tie the Jumpmaster)",
+      "category": "wizard",
+      "summary": "The game's wizard-equivalent: accumulate enough successful ramp jumps in one game to tie the machine's stored Jumpmaster record (default 14, operator-adjustable to 5) and everything lights, including Special.",
+      "difficulty": 3,
+      "reward": "Everything lit (Special included); one-time 500K Jumpmaster bonus for beating the record",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Make sweet jumps all game",
+          "detail": "Every successful right-to-left jump counts — the total is cumulative across the game, not consecutive."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Use the inlane return to keep the streak alive",
+          "detail": "The made-jump return feeds the left flipper, so the fastest path to the record is the Double Scoring loop — you're stacking jump count and 2x value at once."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Tie the stored jump record",
+          "detail": "Default 14 jumps in one game lights Everything Is Lit with Special on the ramp; beating the record adds the 500K Jumpmaster bonus. Note: after the streak the ramp return diverts around to the top instead of the inlane, changing the loop geometry.",
+          "feeds": {
+            "shot": "top-eject"
+          }
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-first-30",
+      "title": "Beginner's First 30 Seconds",
+      "category": "strategy",
+      "summary": "The safe opener: skill shot with a spotted target, then live on the spinner and let the top lanes do the target work — ramp only when an arrest lights.",
+      "difficulty": 1,
+      "reward": "Guaranteed early points plus painless lock progress",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Take the skill shot",
+          "detail": "Lane-change to an unlit insert first, then plunge the flashing-guide lane — 100K x ball plus a spotted target."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the spinner from any controlled right-flipper ball",
+          "detail": "Points now, and the trip through the top lanes spots directive targets for you on the way back down."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Let the lanes complete the colors",
+          "detail": "Never aim at the standup banks — the lanes finish green, yellow, and red safely while you farm."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Ramp when an arrest is lit",
+          "detail": "Locks build toward the game's only multiball. If the ball heads for the left outlane, the Laser Kick saves it once — relight it at the captive ball.",
+          "feeds": {
+            "shot": "left-eject"
+          }
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "strat-tournament",
+      "title": "Tournament Game Plan",
+      "category": "strategy",
+      "summary": "The consensus competitive line: skill shot, establish the maxed spinner, let locks light themselves, pump the multiball Jackpot to 1M before collecting, then choose spinner or jump loop between multiballs.",
+      "difficulty": 3,
+      "reward": "The highest-percentage path to rolling the score",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Skill shot every ball",
+          "detail": "Free 100K-300K that stacks with lane spotting — never skip it."
+        },
+        {
+          "shot": "spinner",
+          "action": "Establish the maxed spinner early",
+          "detail": "Front-load color/lock progress — spinner value is based on locks, so early completions make every later rip worth ~140K."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Take locks on controlled balls only",
+          "detail": "The spinner-lane cycle qualifies arrests as a side effect; jump the ramp from a cradle when one lights.",
+          "feeds": {
+            "shot": "left-eject"
+          }
+        },
+        {
+          "shot": "spinner",
+          "action": "Pump the Jackpot in multiball",
+          "detail": "Build to the 1M cap with spinner rips and standup bounces before touching the ramp."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect, then pick your farm",
+          "detail": "One Jackpot per multiball, then five targets for the 1M Special. Between multiballs, loop sweet jumps if this machine's jump is consistent; otherwise stay on the spinner."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "strat-danger-map",
+      "title": "Danger Map: What Drains",
+      "category": "strategy",
+      "summary": "RoboCop's drains are predictable: standup rebounds to the right outlane, direct exits from the pop nest, and failed ramp jumps that fall into it. Play around all three.",
+      "difficulty": 2,
+      "reward": "Longer balls — the real currency on this game",
+      "steps": [
+        {
+          "shot": "green-bank",
+          "action": "Do not shoot the standups before the Jackpot",
+          "detail": "The universal rule: rebounds feed the right outlane, and the top lanes spot every target anyway. The only exceptions are during multiball."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Stay alive on bumper exits",
+          "detail": "Many drains are direct exits from the pop nest — including every bricked ramp jump, which drops straight into it. Be ready to nudge and never tunnel on the display."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bank the kickback relight",
+          "detail": "If the Laser Kick is already lit, avoid completing red — hold the relight (captive ball or third arrest) until after the kickback fires."
+        }
+      ],
+      "ordered": false,
+      "fx": "mecha"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "ach-guided-plunge",
+      "title": "Guided Launch",
+      "desc": "Send the plunge through the top lane flanked by the two flashing guide lamps to collect the ball-number-multiplied skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot-100k"
+    },
+    {
+      "id": "ach-kickback-reload",
+      "title": "Reload the Save",
+      "desc": "Relight the left-outlane kickback by striking the captive ball after the save has been spent.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-laser-kick"
+    },
+    {
+      "id": "ach-first-color",
+      "title": "First Directive Down",
+      "desc": "Complete any one colored target group — four green, three yellow, or the single captive-ball red — to light its lock at the ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-light-arrests"
+    },
+    {
+      "id": "ach-first-lock",
+      "title": "One in Custody",
+      "desc": "Clear the ramp jump with a lock lit to stage your first captured ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-lock-three"
+    },
+    {
+      "id": "ach-max-bonus",
+      "title": "Fifth Gear",
+      "desc": "Advance the end-of-ball bonus multiplier to its 5X maximum by repeatedly completing the three top lanes.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-bonus-x"
+    },
+    {
+      "id": "ach-back-to-back",
+      "title": "Back-to-Back Bridge Runs",
+      "desc": "Make two consecutive jump-ramp shots to switch on doubled scoring across the whole playfield.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-2x-scores"
+    },
+    {
+      "id": "ach-seven-letters",
+      "title": "Spell It Out",
+      "desc": "Light all seven letters at the right eject hole to earn the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-scanner"
+    },
+    {
+      "id": "ach-crosshair-drill",
+      "title": "Crosshair Drill",
+      "desc": "After finishing a color bank, hit the required number of flashing sight targets to complete the target-practice phase.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-target-practice"
+    },
+    {
+      "id": "ach-triple-arrest",
+      "title": "Full Roundup",
+      "desc": "Lock three balls at the ramp in one game to launch the three-ball multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-lock-three"
+    },
+    {
+      "id": "ach-million-jackpot",
+      "title": "Ceiling Cash-Out",
+      "desc": "Grow the multiball jackpot to its one-million cap and then collect it with a made ramp jump.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-jackpot"
+    },
+    {
+      "id": "ach-droid-timer",
+      "title": "Beat the Droid Clock",
+      "desc": "Start the timed million feature and cash the ramp shot before its short timer expires.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-ed209-million"
+    },
+    {
+      "id": "ach-phase-two-payday",
+      "title": "Phase-Two Payday",
+      "desc": "After collecting the jackpot, hit enough targets during multiball to light the ramp Special and then collect it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-ramp-special"
+    },
+    {
+      "id": "ach-house-record",
+      "title": "House Record",
+      "desc": "Finish a game with a score above the machine's top saved high-score entry.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "strat-tournament"
+    },
+    {
+      "id": "ach-all-lit",
+      "title": "Light the Whole Board",
+      "desc": "Tie the machine's stored jump-count record in a single game so that every feature lights at once.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-everything-is-lit"
+    }
+  ],
+  "drills": [
+    {
+      "id": "double-dip-plunge",
+      "title": "Double-Dip the Plunge",
+      "text": "The two flashing ball guides cannot be moved, but the lane inserts can. Flip before you plunge until the guide-lit lane sits over an unlit insert, then plunge through it — the same shot pays the skill shot and spots a directive target. The natural plunge feeds the right lane, so power-plunge when the center or left one is the one you want.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skill-shot-double-dip",
+      "shots": [
+        "plunge",
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "jump-return-jump",
+      "title": "Jump, Return, Jump",
+      "text": "Jump the ramp from a controlled left-flipper cradle, ride the return through the left inlane, and jump it again. Two consecutive jumps switch on doubled scoring and every two more refresh it, so the loop pays for itself. A weak shot falls into the pop nest, which drains directly, so take this one only from a settled ball.",
+      "reps": "6 consecutive jumps",
+      "focus": "flow",
+      "goal": "combo-sweet-jump-loop",
+      "shots": [
+        "right-ramp",
+        "left-inlane"
+      ]
+    },
+    {
+      "id": "rip-and-steer",
+      "title": "Rip and Steer",
+      "text": "The spinner sits in the right flipper's sweet spot, and a left-flipper backhand reaches it too. Rip it, then use lane change to steer the return through an unlit top lane so the same shot spots a target. Done right, this one shot advances directives and the bonus multiplier while it scores.",
+      "reps": "15 rips, steering each return",
+      "focus": "accuracy",
+      "goal": "combo-spinner-rip",
+      "shots": [
+        "spinner",
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "banks-off-limits",
+      "title": "Banks Off Limits",
+      "text": "Standup rebounds feed the right outlane, and the top lanes spot every one of those targets for free. Play a full ball with the colored banks off-limits and complete the directives entirely by rolling unlit lanes. The only time shooting them directly is correct is inside multiball.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "goal": "strat-danger-map",
+      "shots": [
+        "green-bank",
+        "yellow-bank",
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "bank-the-relight",
+      "title": "Bank the Kickback Relight",
+      "text": "One captive-ball hit relights the kickback, and lighting the third arrest relights it as well — which makes the relight a resource worth holding. When the kick is already lit, leave red alone and save the relight for after it has fired. The habit being drilled is checking that lamp before you pick a shot.",
+      "reps": "one full game tracking the lamp",
+      "focus": "ball-control",
+      "goal": "mode-laser-kick",
+      "shots": [
+        "captive-ball",
+        "laser-kick"
+      ]
+    },
+    {
+      "id": "pump-then-collect",
+      "title": "Pump, Then Collect",
+      "text": "There is one Jackpot per multiball, so the ramp is the last shot rather than the first. Rip the spinner and take the standup bounces until the value is at its cap, then cradle a ball, separate, and make the jump. What you are practicing here is waiting.",
+      "reps": "3 multiballs",
+      "focus": "accuracy",
+      "goal": "mb-jackpot",
+      "shots": [
+        "spinner",
+        "right-ramp"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Nothing extra here. RoboCop is a 1989 machine with a manual plunger, two flippers and your hips, and that is the entire interface. The only help that arrives without you asking is the Laser Kick in the left outlane, which fires itself when it is lit."
+  },
+  "howItPlays": {
+    "objective": "RoboCop hangs on ball control and one signature shot -- the jump ramp that flies the ball across a girder bridge with a gap in the middle. Complete the three colored directive banks to light arrests, lock three balls for multiball, and grind the spinner and the sweet-jump loop for score.",
+    "loop": [
+      "Rip the spinner and roll the 2-0-9 top lanes; every unlit lane you cross spots a standup in its color and nudges the spinner's per-spin value higher.",
+      "Clear a whole color -- the four green targets, the three yellow, or a single hit on the red captive ball -- and an arrest lights at the ramp.",
+      "Fly the ramp with an arrest lit to stage a locked ball; the third lock kicks off the three-ball multiball with the Jackpot lit.",
+      "Between multiballs, jump the ramp twice running to switch on doubled scoring, then keep the rhythm alive off the left-inlane return."
+    ],
+    "lights": [
+      {
+        "id": "top-lanes-209",
+        "name": "2-0-9 Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit 2-0-9 insert is a lane you have already banked this pass; an unlit lane is live, and rolling one spots a directive target -- roll the 2 for a green target, the 0 for yellow, the 9 for red.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap hops which of the three inserts is lit, sliding an unlit lane under the ball so its rollover spots the color you still need instead of one already collected",
+          "when": "as the ball drops from the plunge or the spinner toward the lanes"
+        },
+        "then": "Line an unlit lane up and roll it to spot a color target safely -- the standup banks rebound toward the outlane, so this is the clean way to finish green, yellow and red. Completing all three lanes also steps the end-of-ball bonus multiplier one rung toward its 5X ceiling.",
+        "goals": [
+          "mult-bonus-x",
+          "mb-light-arrests",
+          "skill-shot-double-dip"
+        ]
+      },
+      {
+        "id": "directive-arrests",
+        "name": "Directive Banks & Arrests",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "green-bank",
+            "lamps": 4
+          },
+          {
+            "shot": "yellow-bank",
+            "lamps": 3
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "Each color carries its own lit targets still standing -- four on the green bank, three on the yellow, one hit on the red captive ball -- and a color goes dark as you finish it.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish a whole color to light an arrest at the ramp; finishing one also opens a short Target Practice on that bank whose crosshair sights lead to a timed million. Spot the targets through the lanes rather than shooting the banks head-on, since green-bank rebounds run to the right outlane. The red captive-ball hit does double duty, also relighting the left-outlane kickback.",
+        "goals": [
+          "mb-light-arrests",
+          "mode-target-practice",
+          "mode-ed209-million"
+        ]
+      },
+      {
+        "id": "jump-ramp",
+        "name": "Jump Ramp",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "With an arrest lit the ramp is your lock shot: clear the girder-bridge jump and the ball is diverted into the staged lock rather than fed back to your flipper. In multiball the same ramp lights to collect the Jackpot, and afterward the Special.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls to start the three-ball multiball with the Jackpot lit. Pump that Jackpot toward its million-point ceiling on the spinner FIRST, then fly the ramp once to bank it -- there is only one per multiball. Hit five standups afterward to relight the ramp for a million-point Special.",
+        "goals": [
+          "mb-lock-three",
+          "mb-jackpot",
+          "mb-ramp-special"
+        ]
+      },
+      {
+        "id": "spinner-value",
+        "name": "Spinner Value Lamps",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "Green, yellow and red lamps beside the spinner lane light as you finish each matching color and stage locks, and each one lifts the worth of every spin toward a 3,000-per-spin cap.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip it from the right flipper -- a maxed spinner runs close to a hundred forty thousand a rip, and the lane feeds the ball straight back through the top lanes to spot more targets and climb the bonus multiplier while you score. It even qualifies multiball on its own as a side effect.",
+        "goals": [
+          "combo-spinner-rip",
+          "combo-arrest-cycle"
+        ]
+      },
+      {
+        "id": "double-scoring",
+        "name": "Double Scoring",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Two ramp jumps in a row switch on 2x scoring across the whole playfield -- the game's only ball-in-play multiplier -- running on a short timer.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash the doubled window on your best shot, ideally a maxed spinner rip, or simply keep jumping, because every second pair of jumps refreshes the timer. Ride the left-inlane return between jumps and this becomes the sweet-jump loop players have rolled entire games on.",
+        "goals": [
+          "mult-2x-scores",
+          "combo-2x-spinner-stack",
+          "combo-sweet-jump-loop"
+        ]
+      },
+      {
+        "id": "robocop-letters",
+        "name": "R-O-B-O-C-O-P Scanner",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "scanner-hole",
+            "lamps": 7
+          }
+        ],
+        "lit": "Seven letter inserts run down the right eject lane; each unlit one is a letter still needed, and every trip into the Scanner hole lights the next in line along with a mystery value.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell the whole name for an extra ball. The hole lips the ball out often and the mystery awards are thin, so take it only when the ball is already settled, and never go chasing it.",
+        "goals": [
+          "mode-scanner"
+        ]
+      },
+      {
+        "id": "laser-kick",
+        "name": "Laser Kick Kickback",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "laser-kick"
+          }
+        ],
+        "lit": "When the Laser Kick lamp is on, the left outlane is armed to kick a draining ball back into play; it fires by itself on the outlane switch, then goes dark until relit.",
+        "flashing": null,
+        "control": null,
+        "then": "Reload it with one strike on the trap ball, or by completing the red directive that lights the third arrest. Treat the reload as a resource: if the save already glows, leave red for later and hold that reload until after the kick has fired, because a 9-lane spot does nothing for it once red is finished.",
+        "goals": [
+          "mode-laser-kick"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to shift the lit 2-0-9 inserts across the three top lanes. Slide an unlit lane under the incoming ball so its rollover spots a directive standup in that lane's color -- the safe route to finishing green, yellow and red without shooting the rebound-prone banks -- and a completed set steps the end-of-ball bonus multiplier toward 5X. Set it before you plunge and the skill-shot lane spots a target too.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank the free, safe points first. Take the skill shot through the guide-lit lane -- lane-change it over an unlit insert so the same plunge spots a directive target -- then work the spinner, whose every rip sends the ball back across the lanes to finish your colors. Never swing at the standup banks outside multiball.",
+        "goals": [
+          "skill-shot-double-dip",
+          "mb-light-arrests",
+          "strat-first-30"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stage three arrests to start multiball, pump the Jackpot to its million ceiling before you collect, then take the five-target Special. Between multiballs, jump the ramp back to back for doubled scoring and loop it off the left inlane.",
+        "goals": [
+          "mb-lock-three",
+          "mb-jackpot",
+          "combo-sweet-jump-loop",
+          "mult-2x-scores"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The marquee is Everything Is Lit: pile up made jumps across a whole game until you tie the machine's stored Jumpmaster record, and every feature lights at once with the Special among them. The sweet-jump loop is both the fastest road there and the game's ceiling for score.",
+        "goals": [
+          "wiz-everything-is-lit",
+          "combo-sweet-jump-loop"
+        ]
+      }
+    ]
+  }
+}

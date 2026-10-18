@@ -1,0 +1,46 @@
+/* ui/footer.css — compact, low-chrome footer reused at the end of the Goals
+ * and Achievements panels' scrollable content. Deliberately NOT a fixed
+ * strip (app.ts's shell already has its two: the ad slot + the tab bar —
+ * see adslot.css's header comment) — this is a plain flow element, so it
+ * only ever costs the vertical space it actually takes, at the bottom of
+ * whatever the user has scrolled through. */
+
+.pg-footer {
+  margin-top: 22px;
+  /* Plain 18px, no env(safe-area-inset-bottom): unlike .tab-bar/.ad-slot,
+   * this footer lives INSIDE #main-content's scroll container, at the end
+   * of its content — not adjacent to the physical viewport edge (the ad
+   * slot + tab bar sit below #main-content and own that edge), so there's
+   * no device safe-area to clear here. */
+  padding: 18px 20px 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.pg-footer-copyright {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.pg-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 14px;
+}
+
+.pg-footer-link {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.pg-footer-link:hover,
+.pg-footer-link:focus-visible {
+  color: var(--amber);
+}

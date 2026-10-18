@@ -1,0 +1,1278 @@
+{
+  "machine": "Attack from Mars (Bally, 1995)",
+  "defaultFx": "martian",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Auto-launch via Launch button; feeds the TOP of the right orbit over the Bonus X lanes. Home of the skill shot. Hold LEFT flipper on launch to route down the left orbit for the Super Skill Shot."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Capture)",
+      "type": "orbit",
+      "x": 0.17,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Capture TA lamps. MB jackpot, combo shot, and the Super Skill Shot return route. Loops fully when its award set is complete and gate is open.",
+      "feeds": {
+        "shot": "top-lanes"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Big-O-Beam)",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Big-O-Beam TA lamps. Returns to left flipper. Combo/MB jackpot shot; cow easter-egg trigger.",
+      "feeds": {
+        "shot": "return-lanes"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center / Lock Ramp",
+      "type": "ramp",
+      "x": 0.44,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Ramp normally; diverter drops the ball into the lock hole when Lock is lit. Does huge work: Multiball lock, TA Annihilation Super Jackpot, MB jackpot, combo shot. Located immediately LEFT of the saucer.",
+      "feeds": {
+        "shot": "return-lanes"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Tractor Beam)",
+      "type": "ramp",
+      "x": 0.66,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Tractor Beam TA lamps. Smallest ramp; returns to right flipper. Combo/MB jackpot shot; cow easter-egg trigger.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (Atomic Blaster)",
+      "type": "orbit",
+      "x": 0.83,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Atomic Blaster TA lamps. The safest repeatable shot in the game (backhand from the right flipper) — used to farm TA jackpots and time roving supers. Autoplunger feeds the top of this orbit.",
+      "flipper": "right",
+      "feeds": {
+        "shot": "top-lanes"
+      }
+    },
+    {
+      "id": "force-field",
+      "name": "Motor Bank / Force Field",
+      "type": "target-bank",
+      "x": 0.51,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Motorized 3-target bank guarding the saucer. Knock all three down to lower it and expose the saucer. Also the Strobe Multiball bash target (50M/hit). #1 SDTM drain hazard — hit same-side target from matching flipper."
+    },
+    {
+      "id": "center-drop-target",
+      "name": "Saucer Drop Target",
+      "type": "drop-target",
+      "x": 0.51,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Rear drop target (with flanking standups) exposed once the force field is down. Repeated hits drain the saucer's health meter during Attack Waves."
+    },
+    {
+      "id": "saucer-hole",
+      "name": "Mars Saucer Hole",
+      "type": "saucer",
+      "x": 0.51,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Sinkhole behind the drop target. Destroys a saucer when its meter is empty; Conquer Mars = 10 hits at 100M, 10th destroys Mars for 2.5B. Also where TA hurry-ups sit. Popper-ejected."
+    },
+    {
+      "id": "sol-scoop",
+      "name": "Stroke of Luck Scoop",
+      "type": "scoop",
+      "x": 0.62,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "Right of the saucer, below the jets. Collects Stroke of Luck, starts Martian Attack, lights Extra Ball, and starts Rule the Universe. Fed from the flipper or as a back shot out of the jets."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.63,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three pop bumpers, upper center-right. 100 hits lights Super Jets (3M/hit); re-qualify at 125, 150. Exit down into the Stroke of Luck scoop or out the right orbit."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Bonus X Top Lanes",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Two rollover lanes at the very top, fed by either orbit. Advance the bonus multiplier (caps 250X) and award the standard skill shot. Steer with the flippers."
+    },
+    {
+      "id": "mar-targets",
+      "name": "M-A-R Martian Targets",
+      "type": "target-bank",
+      "x": 0.12,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Left 3-bank of green Martian standups. Part of spelling M-A-R-T-I-A-N to light Martian Attack; also a Martian to kill during Martian Attack/Multiball."
+    },
+    {
+      "id": "an-targets",
+      "name": "A-N Martian Targets",
+      "type": "target-bank",
+      "x": 0.88,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Right 2-bank of green Martian standups; completes the M-A-R-T-I-A-N set."
+    },
+    {
+      "id": "t-target",
+      "name": "Martian 'T' Target",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Single Martian standup low-center, left of the saucer. Drain-prone — bank off the opposite Martian rather than hitting head-on."
+    },
+    {
+      "id": "i-target",
+      "name": "Martian 'I' Target",
+      "type": "standup",
+      "x": 0.59,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Single Martian standup right of the force field, just left of the scoop. The other risky center Martian; bank off the opposite target."
+    },
+    {
+      "id": "return-lanes",
+      "name": "Inlane / Outlane Rollovers",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "The steerable inlane/outlane rollover set. Completing all lit positions lights Stroke of Luck at the scoop; 10 completions (14 on 5-ball) lights an Extra Ball."
+    },
+    {
+      "id": "launch-button",
+      "name": "Launch Button",
+      "type": "mech",
+      "x": 0.9,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Cabinet button; auto-launches the ball. Also detonates a Martian Bomb (kills a random Martian) and clears the screen once per game."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-regular",
+      "title": "Regular Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "Plunge with no button held and steer the flashing top lane onto the ball for points and a bonus-multiplier boost.",
+      "reward": "Points + 5X bonus multiplier",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Plunge with no flipper held and steer the flashing lane onto the ball",
+          "detail": "Press Launch straight so the ball feeds the top rollover lanes, then use the flipper buttons to move the lit lane onto the ball's path — safe way to bank +5X every ball"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-super",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Hold the left flipper on launch to route the ball down the left orbit and back to the flippers untouched, then hit the left ramp, the right ramp or either orbit for 50M and all three of that shot's Total Annihilation lamps — a force-field target also pays 50M and lowers the force field. The center lock ramp, the saucer hole and the Stroke of Luck scoop pay nothing here.",
+      "reward": "50M + spot one shot's award",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Plunge through, then immediately shoot the right ramp or an orbit",
+          "detail": "Sends the ball down the left orbit and back to the flippers untouched, arming a ~2 second window 50M and instantly completes that shot's award — e.g. right ramp finishes all three Tractor Beam TA lamps in one hit",
+          "plunge": "full",
+          "technique": [
+            "hold-flipper"
+          ]
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-5way",
+      "title": "5-Way Combo",
+      "category": "combo",
+      "difficulty": 1,
+      "summary": "Chain five consecutive ramp/orbit shots before the combo timer expires. One of the six Rule the Universe objectives.",
+      "reward": "5-Way Combo (RTU objective)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a ramp to start the combo",
+          "detail": "Any ramp lights the red combo arrows on the other shots"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the next lit arrow",
+          "detail": "Hit before the fixed combo timer runs out; unrelated targets don't extend it"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Continue the chain"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Continue — an orbit only counts if its TA lamps are complete, gate open, and Super Jets is off"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Fifth shot completes the 5-Way Combo",
+          "detail": "Trivial when you just combo the ramps"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "combo-ta-farm",
+      "title": "Total Annihilation Jackpot Farm",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "Inside Total Annihilation all shots stay lit — pump the safest shot, then cash the center-ramp super. The game's #1 money loop.",
+      "reward": "~2B routine, repeatable",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Backhand the right orbit repeatedly",
+          "detail": "Safest repeat shot; jackpots start ~50M and grow +5M, and every shot stays lit"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Keep pumping the same shot to build the pool"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Cash the Annihilation Super Jackpot",
+          "detail": "Center/lock ramp pays the Annihilation Jackpot, which climbs with every jackpot you collect and caps at 200M, then drops back to its base value once cashed — repeat the loop"
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "combo-mb-super",
+      "title": "Multiball Super Jackpot (Roving)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Collect all five lit jackpots in regular Multiball to light a traveling Super Jackpot, then fire when it lands on your best shot.",
+      "reward": "Super Jackpot 250M, +250M/super, cap 1B",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Collect the lit jackpots on the five major shots",
+          "detail": "Both ramps, both orbits and the center ramp start at 60M, +10M each",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Mop up the remaining jackpots",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Watch the roving Super Jackpot travel",
+          "detail": "It starts at the left orbit and cycles left-to-right with unlimited time",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Trap up and fire when the super light lands on the right orbit",
+          "detail": "Your most reliable shot; collecting resets the cycle"
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "combo-mars-farm",
+      "title": "Post-Conquer-Mars Saucer Farm",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Once Mars is conquered every saucer-hole hit pays a flat 100M — a safe, repeatable center shot for late-game padding.",
+      "reward": "100M per hit, repeatable rest of game",
+      "steps": [
+        {
+          "shot": "saucer-hole",
+          "action": "Shoot the open Mars saucer hole",
+          "detail": "After Conquering Mars the force field stays open and each hit is a flat 100M"
+        },
+        {
+          "shot": "saucer-hole",
+          "action": "Repeat the safe center shot",
+          "detail": "It returns the ball to a flipper, lining up the next hit"
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-regular",
+      "title": "Multiball (3-Ball)",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Light and lock three balls at the center ramp to start the 3-ball Multiball with all five major shots lit for jackpots.",
+      "reward": "3-ball Multiball",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to light the locks",
+          "detail": "On the first multiball one shot lights all three locks (Stroke of Luck can also give Light Lock)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lock three balls at the center ramp",
+          "detail": "The diverter drops each shot into the lock hole",
+          "feeds": {
+            "x": 0.44,
+            "y": 0.52
+          }
+        },
+        {
+          "shot": "center-ramp",
+          "action": "The third lock starts Multiball",
+          "detail": "All five major shots light for jackpots — start an Attack Wave first so saucers stack under it",
+          "feeds": {
+            "x": 0.44,
+            "y": 0.52
+          }
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-martian",
+      "title": "Martian Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Spell MARTIAN, start Martian Attack at the scoop, then kill the four wiggling Martians to launch the 2-ball multiball.",
+      "reward": "Martian Multiball (2-ball)",
+      "steps": [
+        {
+          "shot": "mar-targets",
+          "action": "Spell M-A-R-T-I-A-N on the green standups",
+          "detail": "Left MAR bank, right AN bank, plus the T and I singles"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Shoot the scoop to start Martian Attack",
+          "detail": "Lit after MARTIAN is spelled; begins a ~30s single-ball mode"
+        },
+        {
+          "shot": "t-target",
+          "action": "Kill the four wiggling Martians",
+          "detail": "Left bank, right bank, T and I — bank off the opposite target; killing all four launches 2-ball Martian Multiball (the one MB where combos still count)"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "mb-total-annihilation",
+      "title": "Total Annihilation (4-Ball)",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Complete three lamps on each of the four TA shots, stack the saucer hurry-ups, and finish the fourth for a billion and 4-ball multiball.",
+      "reward": "1 Billion + 4-ball multiball",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot each of the four TA shots three times",
+          "detail": "Left orbit=Capture, left ramp=Big-O-Beam, right ramp=Tractor Beam, right orbit=Atomic Blaster (a Super Skill Shot spots all three lamps on one lane)",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "The 3rd lamp on a shot starts a hurry-up at the saucer",
+          "detail": "Completing more shots restacks it: 100M -> 300M -> 500M",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish the fourth shot during the countdown",
+          "detail": "Awards 1 Billion and auto-starts 4-ball Total Annihilation"
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mb-strobe",
+      "title": "Strobe Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Win Strobe Multiball from Stroke of Luck, then bash the force field in the dark for 50M a hit.",
+      "reward": "3-ball Strobe Multiball (+ EB at 10 hits)",
+      "steps": [
+        {
+          "shot": "return-lanes",
+          "action": "Complete the inlane/outlane rollovers to light Stroke of Luck",
+          "detail": "Steer the lit positions with the flipper buttons"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Collect Stroke of Luck until it awards Strobe Multiball",
+          "detail": "Often the third Stroke; the lights go dark and 3 balls auto-plunge"
+        },
+        {
+          "shot": "force-field",
+          "action": "Bash the force field as many times as possible",
+          "detail": "50M per hit; Extra Ball at 10 hits, +250M at 20 hits"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "mode-attack-waves",
+      "title": "Attack Waves / Conquer Mars",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Drop the force field, damage the exposed saucer, then shoot the sinkhole to destroy it — five cities then Mars itself.",
+      "reward": "200M->600M per saucer; Mars = 2.5B",
+      "steps": [
+        {
+          "shot": "force-field",
+          "action": "Knock down the 3-target force field",
+          "detail": "Hit the same-side target from the matching flipper to avoid the SDTM rebound"
+        },
+        {
+          "shot": "center-drop-target",
+          "action": "Damage the exposed saucer",
+          "detail": "Repeatedly hit the rear drop target/standups to drain its health meter"
+        },
+        {
+          "shot": "saucer-hole",
+          "action": "Shoot the exposed sinkhole to destroy the saucer",
+          "detail": "1st=200M then +100M each; 2nd saucer lights Extra Ball. Destroy all five cities, then Conquer Mars (10 hits, 10th = 2.5B)"
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mode-stroke-of-luck",
+      "title": "Stroke of Luck",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Light the inlane/outlane rollovers and collect at the scoop for a mystery award — on v1.13 tournament code it is neutered to a flat 50M every time.",
+      "reward": "Mystery award (EB, Strobe MB, Attack Wave, Video Mode, +5X, Lock...)",
+      "steps": [
+        {
+          "shot": "return-lanes",
+          "action": "Light all the inlane/outlane rollovers",
+          "detail": "Steer the lit positions with the flippers; lit at game start for the first collect"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Shoot the scoop to collect",
+          "detail": "An on-screen saucer blasts options until one award remains — on v1.13 tournament/competition code the mystery is neutered to a flat 50M award every time"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "mode-video",
+      "title": "Video Mode",
+      "category": "mode",
+      "altMode": "video",
+      "difficulty": 2,
+      "summary": "A 'Sabotage'-style shooter won from Stroke of Luck; shoot down descending saucers, clear the screen once with Launch.",
+      "reward": "Up to ~635M + Extra Ball pod",
+      "steps": [
+        {
+          "shot": "sol-scoop",
+          "action": "Collect Stroke of Luck to win Video Mode",
+          "detail": "Typically the first Stroke awarded after Super Jets is achieved"
+        },
+        {
+          "shot": "launch-button",
+          "action": "Shoot down the saucers; press Launch once to clear the screen",
+          "detail": "~30 saucers = Extra Ball pod, ~40-50 = mothership (~80 hits), full clear ~635M"
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mode-super-jets",
+      "title": "Super Jets",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Rack up 100 pop-bumper hits to light Super Jets at 3M each — a Rule the Universe requirement.",
+      "reward": "3M/jet + RTU objective",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Rack up 100 pop-bumper hits",
+          "detail": "Feed the jets from the right orbit and the scoop area"
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Super Jets lights — jets now score 3M each",
+          "detail": "Re-qualify at 125 then 150 hits; note it holds the orbits in the top lanes, blocking combos while active"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "mult-bonus-lanes",
+      "title": "Build Bonus Multiplier",
+      "category": "multiplier",
+      "difficulty": 1,
+      "summary": "AFM's only multiplier is the bonus X — advance it through the top lanes and +5X skill shots for a huge end-of-ball payout.",
+      "reward": "Higher end-of-ball bonus (up to 250X)",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete the two top Bonus X lanes",
+          "detail": "Steer with the flippers; each completion advances the bonus multiplier"
+        },
+        {
+          "shot": "plunge",
+          "action": "Bank +5X with every normal lane skill shot",
+          "detail": "Multiplier caps at 250X and carries as you keep the ball alive — big bonuses reach billions"
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "mult-hold-bonus",
+      "title": "Hold / Boost Bonus X (Stroke of Luck)",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Steer Stroke of Luck to +5 Bonus Multiplier or Hold Bonus Multiplier so a large bonus survives a drain into the next ball.",
+      "reward": "+5X or Hold Bonus X",
+      "steps": [
+        {
+          "shot": "return-lanes",
+          "action": "Light Stroke of Luck at the rollovers"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Collect +5 Bonus Multiplier or Hold Bonus Multiplier",
+          "detail": "Hold carries your multiplier to the next ball so a pending big bonus isn't lost"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-rtu-qualify",
+      "title": "Rule the Universe — Qualify",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Complete all six objectives in one game to light the wizard mode, then start it at the scoop.",
+      "reward": "Lights Rule the Universe",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Collect at least one Super Jackpot in regular Multiball",
+          "detail": "Objective 1 of 6"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start Total Annihilation at least once",
+          "detail": "Objective 2"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Start Martian Multiball via Martian Attack",
+          "detail": "Objective 3"
+        },
+        {
+          "shot": "saucer-hole",
+          "action": "Conquer Mars — destroy all five cities plus Mars",
+          "detail": "Objective 4; do this first and the others tend to fall out on the way"
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Start Super Jets (100 jet hits)",
+          "detail": "Objective 5"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Score a 5-Way Combo",
+          "detail": "Objective 6 — with all six lit, shoot the scoop to start"
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "wizard-rtu-victory",
+      "title": "Rule the Universe — Victory",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Start the 4-5 ball wizard multiball where everything scores, and reach 5 billion before draining to one ball.",
+      "reward": "+5 Billion, Victory Laps",
+      "steps": [
+        {
+          "shot": "sol-scoop",
+          "action": "With all six objectives lit, shoot the scoop to start",
+          "detail": "4-5 ball multiball with a ~30s ball saver; Total Annihilation runs and everything scores"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Cash Annihilation Super Jackpots while everything scores",
+          "detail": "Saucer target pays 100M, Martians ~50M each",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Score 5 billion before draining to a single ball",
+          "detail": "Success awards a flat +5B, then shoot lit combo arrows for Victory Laps (100M up to ~500M)"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-aggressive-opener",
+      "title": "Aggressive Opener — Extra Ball Rush",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "Super Skill Shot into ramp progress, then destroy the first two saucers for the easiest Extra Ball in the game.",
+      "reward": "Early Extra Ball + multiball queued",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Hold left flipper and plunge a Super Skill Shot",
+          "detail": "Aim the loop return at a ramp/loop for 50M plus multiball progress",
+          "flipper": "left",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "force-field",
+          "action": "Trap, then hit the same-side force field target",
+          "detail": "Right target from the right flipper, left from the left — avoids the center SDTM drain"
+        },
+        {
+          "shot": "saucer-hole",
+          "action": "Destroy saucers #1 and #2",
+          "detail": "The 2nd saucer lights Extra Ball at the scoop — the easiest EB in the game"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Build Light Lock, but start an Attack Wave BEFORE multiball",
+          "detail": "So saucer destruction stacks on top of jackpots"
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "strategy-beginner-30s",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Control-first opener: bank a safe multiplier, feed the center ramp, and let the scoop do the dangerous work.",
+      "reward": "Safe, game-lengthening start",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Take the normal lane skill shot for +5X",
+          "detail": "Bank the bonus multiplier safely instead of flying at risky shots"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp for Light Lock progress",
+          "detail": "It looks tighter than it is and is high-value and relatively safe"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Collect Stroke of Luck for a free mode or Attack Wave start",
+          "detail": "Let the scoop hand you 'Start Attack Wave' so you avoid aiming center"
+        },
+        {
+          "shot": "force-field",
+          "action": "Only then chip at the force field with same-side targets",
+          "detail": "Establish ball control before flailing at the drain-prone center"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "strategy-tournament-money",
+      "title": "Tournament Money Plan (TA Farm)",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "The high-EV plan: make each TA shot 3x, stack the free billion, then farm right-orbit jackpots and cash center supers.",
+      "reward": "~2B+ safe and repeatable",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Make each of the four TA shots three times",
+          "detail": "Left orbit, right orbit, left ramp, right ramp — never scales in difficulty"
+        },
+        {
+          "shot": "saucer-hole",
+          "action": "Stack all four hurry-ups (100M -> 300M -> 500M -> 1B)",
+          "detail": "The 4th auto-starts Total Annihilation — basically a free billion"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Farm the right orbit for TA jackpots",
+          "detail": "Backhand from the right flipper — the lowest drain-risk repeatable shot",
+          "flipper": "right"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Cash the center-ramp Super Jackpot and repeat",
+          "detail": "Sum of jackpots since the last super; ~2B routine per Annihilation"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "strategy-extra-ball-hunt",
+      "title": "Extra Ball Sources",
+      "category": "strategy",
+      "summary": "Five separate systems hand out extra balls — the second saucer, ten rollover completions, the Extra Ball that descends in Video Mode, ten force-field hits in Strobe Multiball, and Stroke of Luck itself — so know all of them and never leave a free ball on the playfield.",
+      "difficulty": 2,
+      "reward": "Multiple Extra Balls per game",
+      "steps": [
+        {
+          "shot": "saucer-hole",
+          "action": "Destroy the second saucer of the game",
+          "detail": "The 2nd saucer lights Extra Ball — the earliest and cheapest one available"
+        },
+        {
+          "shot": "sol-scoop",
+          "action": "Shoot the scoop to collect the lit Extra Ball",
+          "detail": "Same hole that starts modes; take the ball before you chase anything riskier"
+        },
+        {
+          "shot": "return-lanes",
+          "action": "Complete the rollover set ten times (fourteen on five-ball settings)",
+          "detail": "Steer the lit positions with the flippers; every completion also relights Stroke of Luck"
+        },
+        {
+          "shot": "force-field",
+          "action": "Land ten force-field hits during Strobe Multiball",
+          "detail": "Ten hits in the dark awards another Extra Ball, and twenty adds 250M on top"
+        }
+      ],
+      "fx": "martian",
+      "ordered": false
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "lane-skill-shot",
+      "title": "Steady Hands on the Plunge",
+      "desc": "Collect the standard top-lane skill shot by steering the flashing lane onto the launched ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-regular"
+    },
+    {
+      "id": "left-loop-launch",
+      "title": "Loop the Plunge",
+      "desc": "Hold the left flipper on launch, ride the left orbit, and cash the 50M super skill shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-super"
+    },
+    {
+      "id": "first-saucer-down",
+      "title": "One City Saved",
+      "desc": "Knock the force field down, drain a saucer's health meter, and destroy your first saucer at the sinkhole.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-attack-waves"
+    },
+    {
+      "id": "five-shot-chain",
+      "title": "Five in a Row",
+      "desc": "Chain five consecutive ramp or orbit shots before the combo timer expires.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-5way"
+    },
+    {
+      "id": "hundred-jets",
+      "title": "Bumper Century",
+      "desc": "Take the pop bumpers to 100 hits in one game to light Super Jets.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-super-jets"
+    },
+    {
+      "id": "lucky-collect",
+      "title": "Roll the Dice",
+      "desc": "Light the inlane and outlane rollovers and collect a Stroke of Luck award at the scoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-stroke-of-luck"
+    },
+    {
+      "id": "three-locks-multiball",
+      "title": "Three in the Hole",
+      "desc": "Lock three balls at the center ramp and start the regular 3-ball Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-regular"
+    },
+    {
+      "id": "roving-super-collected",
+      "title": "Catch the Traveling Light",
+      "desc": "Collect all five lit multiball jackpots, then cash the roving Super Jackpot that follows.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-mb-super"
+    },
+    {
+      "id": "martian-sweep",
+      "title": "Green Sweep",
+      "desc": "Spell out the Martian targets, start Martian Attack at the scoop, and kill all four Martians to launch Martian Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-martian"
+    },
+    {
+      "id": "blackout-bash",
+      "title": "Bash in the Dark",
+      "desc": "Win Strobe Multiball from Stroke of Luck and land at least ten force-field hits while the lights are out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-strobe"
+    },
+    {
+      "id": "spare-ball-collector",
+      "title": "Borrowed Time",
+      "desc": "Earn and collect two extra balls in a single game from any of the game's extra ball sources.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-extra-ball-hunt"
+    },
+    {
+      "id": "screen-cleared",
+      "title": "Sky Swept Clean",
+      "desc": "Win the on-screen shooter mode from Stroke of Luck and shoot down every last saucer for the full clear.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-video"
+    },
+    {
+      "id": "four-beams-billion",
+      "title": "Free Billion",
+      "desc": "Complete all three lamps on each of the four beam shots to bank the billion-point award and start the 4-ball multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-total-annihilation"
+    },
+    {
+      "id": "annihilation-payday",
+      "title": "Two-Billion Loop",
+      "desc": "Inside the 4-ball multiball, pump jackpots and cash center-ramp super jackpots for at least two billion in one run.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-ta-farm"
+    },
+    {
+      "id": "mars-conquered",
+      "title": "Mars Falls",
+      "desc": "Destroy all five city saucers, then land the ten saucer-hole hits that finish Mars itself.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-attack-waves"
+    },
+    {
+      "id": "bonus-x-maxed",
+      "title": "Multiplier Ceiling",
+      "desc": "Push the bonus multiplier all the way to its 250X cap in a single ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult-bonus-lanes"
+    },
+    {
+      "id": "six-of-six-lit",
+      "title": "All Six Lit",
+      "desc": "Finish all six wizard-mode requirements in one game so the scoop lights for the final mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-rtu-qualify"
+    },
+    {
+      "id": "universe-ruled",
+      "title": "The Whole Universe",
+      "desc": "Start the wizard multiball and score five billion before it drops to a single ball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-rtu-victory"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-fan",
+      "title": "Super Skill Fan",
+      "text": "Hold the left flipper on the launch so the ball runs down the left orbit and back to the flippers untouched, then take a ramp or an orbit before the window closes. Pick a different one of the four Total Annihilation lanes each plunge — the hit completes all three of that lane's lamps in one go.",
+      "reps": "5 plunges per lane",
+      "focus": "skill-shot",
+      "goal": "skill-super",
+      "shots": [
+        "plunge",
+        "left-orbit",
+        "left-ramp",
+        "right-ramp",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "force-field-same-side",
+      "title": "Same-Side Force Field",
+      "text": "Trap first, then take the right force-field target from the right flipper and the left one from the left. Reaching across the bank is what turns a miss into a straight-down-the-middle rebound, and this is the most common way to lose a ball here.",
+      "reps": "20 target hits",
+      "focus": "accuracy",
+      "goal": "mode-attack-waves",
+      "shots": [
+        "force-field"
+      ]
+    },
+    {
+      "id": "right-orbit-farm",
+      "title": "Right Orbit Backhand Farm",
+      "text": "Backhand the right orbit from a cradled right flipper over and over, then break off and cash the center ramp. It is the lowest-risk repeat shot on the machine and the whole Total Annihilation farm runs through it, so build the reflex before you need it.",
+      "reps": "20 backhands, then one center ramp",
+      "focus": "accuracy",
+      "goal": "combo-ta-farm",
+      "shots": [
+        "right-orbit",
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "roving-super-patience",
+      "title": "Wait for the Super",
+      "text": "In multiball, trap a ball and hold it while the roving Super Jackpot cycles left to right. Let it come to the right orbit instead of chasing it across the playfield — the cycle has no timer, so the only thing that costs you is impatience.",
+      "reps": "3 multiballs",
+      "focus": "ball-control",
+      "goal": "combo-mb-super",
+      "shots": [
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "five-ramp-chain",
+      "title": "Five-Ramp Chain",
+      "text": "Chain five shots inside the combo timer using the ramps only — left ramp, center, right ramp, and back again. Orbits only continue a chain when their lamps are complete and the gate is open, so keep them out of it until the ramps are automatic.",
+      "reps": "8 attempts",
+      "focus": "flow",
+      "goal": "combo-5way",
+      "shots": [
+        "left-ramp",
+        "center-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "martian-banking",
+      "title": "Bank the Martians",
+      "text": "Sweep the two Martian banks first, then take the T and I singles by banking off the opposite target rather than aiming head-on. Both of those center standups reject straight down when you hit them square.",
+      "reps": "5 full MARTIAN spellings",
+      "focus": "accuracy",
+      "goal": "mb-martian",
+      "shots": [
+        "mar-targets",
+        "an-targets",
+        "t-target",
+        "i-target"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Launch Button",
+    "location": "front right of the cabinet, in the spot a shooter rod would normally occupy — this game auto-plunges",
+    "how": "No lockdown-bar button here; this is 1995. What AFM has instead is a Launch button that pulls double duty. Past firing the auto-plunger, it detonates a Martian Bomb during the attack phase and drops a smart bomb in video mode, and it flashes whenever a bomb is loaded.",
+    "uses": [
+      {
+        "when": "Martians flashing and the button flashing",
+        "what": "Detonates a Martian Bomb and kills one of the remaining Martians outright, no shot required."
+      },
+      {
+        "when": "One stubborn Martian left, ball just drained",
+        "what": "You can still bomb it after an outlane drain — it counts right up until the ball reaches the trough."
+      },
+      {
+        "when": "A saucer is about to touch down",
+        "what": "Once per video mode, wipes every saucer off the screen. It has nothing to do with your Martian Bombs."
+      },
+      {
+        "when": "A cow shows up after a ramp shot",
+        "what": "Tap it repeatedly for moos; do that on both the Big-O-Beam and Tractor Beam ramps to unlock Cow video mode."
+      },
+      {
+        "when": "Starting a ball for the skill shot",
+        "what": "Press with no flipper held to feed the top lanes; hold the left flipper first to route around for the Super Skill Shot."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Destroy the Martian saucers and conquer Mars, then stack multiballs and Total Annihilation to reach the Rule the Universe wizard mode.",
+    "loop": [
+      "Knock down the force field to expose the saucer drop target.",
+      "Damage the saucer via the drop target, then shoot the saucer hole to destroy it.",
+      "Destroy all five cities to open Mars, then hit Mars ten times for 2.5 billion.",
+      "Start an Attack Wave before multiball so saucer destruction stacks under jackpots.",
+      "Complete Total Annihilation lamps on all four shots to start the 4-ball multiball and farm jackpots."
+    ],
+    "lights": [
+      {
+        "id": "top-lanes",
+        "name": "Bonus X Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 2
+          }
+        ],
+        "lit": "The flashing lane awards the skill shot and +5X bonus multiplier when the ball rolls through it.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "Moves the flashing lane left or right",
+          "when": "after launch while the ball is in the top lanes"
+        },
+        "then": "Shoot the lit lane to collect the skill shot and advance the bonus multiplier.",
+        "goals": [
+          "skill-regular",
+          "mult-bonus-lanes"
+        ]
+      },
+      {
+        "id": "return-lanes",
+        "name": "Inlane / Outlane Rollovers",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "return-lanes",
+            "lamps": 4
+          }
+        ],
+        "lit": "Completing all lit positions lights Stroke of Luck at the scoop.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "Moves the lit rollover position",
+          "when": "while the ball is in the inlane/outlane area"
+        },
+        "then": "Collect the lit rollovers to light Stroke of Luck, then shoot the scoop.",
+        "goals": [
+          "mode-stroke-of-luck"
+        ]
+      },
+      {
+        "id": "shot-arrows",
+        "name": "Major Shot Arrows",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "A lit arrow indicates a combo shot, multiball jackpot, or Total Annihilation lamp.",
+        "flashing": "Flashing arrows indicate the next combo shot or the roving Super Jackpot.",
+        "control": null,
+        "then": "Shoot the lit arrow before the combo timer expires or to collect jackpots.",
+        "goals": [
+          "combo-5way",
+          "combo-mb-super",
+          "combo-ta-farm"
+        ]
+      },
+      {
+        "id": "bonus-multiplier",
+        "name": "Bonus Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 2
+          }
+        ],
+        "lit": "Each completion of the top lanes advances the bonus multiplier, up to 250X.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "Moves the flashing lane left or right",
+          "when": "after launch while the ball is in the top lanes"
+        },
+        "then": "Keep completing the top lanes and skill shots to build the multiplier before the ball drains.",
+        "goals": [
+          "mult-bonus-lanes",
+          "mult-hold-bonus"
+        ]
+      },
+      {
+        "id": "martian-targets",
+        "name": "M-A-R-T-I-A-N Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "mar-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "an-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "t-target",
+            "lamps": 1
+          },
+          {
+            "shot": "i-target",
+            "lamps": 1
+          }
+        ],
+        "lit": "Each target lights a letter in M-A-R-T-I-A-N; completing the word lights Martian Attack.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell M-A-R-T-I-A-N to light Martian Attack at the scoop.",
+        "goals": [
+          "mb-martian"
+        ]
+      },
+      {
+        "id": "saucer-attack",
+        "name": "Saucer Attack",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "force-field"
+          },
+          {
+            "shot": "center-drop-target"
+          },
+          {
+            "shot": "saucer-hole"
+          }
+        ],
+        "lit": "The force field is up; knock it down to expose the saucer drop target.",
+        "flashing": "When the saucer meter is empty, the saucer hole flashes to signal destruction.",
+        "control": null,
+        "then": "Drop the force field, damage the saucer via the drop target, then shoot the saucer hole to destroy it.",
+        "goals": [
+          "mode-attack-waves"
+        ]
+      },
+      {
+        "id": "stroke-of-luck-scoop",
+        "name": "Stroke of Luck Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "sol-scoop"
+          }
+        ],
+        "lit": "The scoop is lit when Stroke of Luck is ready to collect.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the scoop to collect the mystery award.",
+        "goals": [
+          "mode-stroke-of-luck",
+          "mode-video"
+        ]
+      },
+      {
+        "id": "super-jets",
+        "name": "Super Jets",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "After 100 bumper hits, Super Jets lights for 3M per hit.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep hitting the bumpers to collect Super Jets points.",
+        "goals": [
+          "mode-super-jets"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button after launch steers the flashing top lane onto the ball's path.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank the regular skill shot for +5X bonus multiplier and points, and use the Super Skill Shot for 50M and an instant award spot on a major shot.",
+        "goals": [
+          "skill-regular",
+          "skill-super"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack multiballs with Total Annihilation: lock three balls for Multiball, complete TA lamps for the 4-ball mode, and build the bonus multiplier via top lanes and skill shots.",
+        "goals": [
+          "mb-regular",
+          "mb-total-annihilation",
+          "mult-bonus-lanes"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete all six Rule the Universe objectives, then start the wizard mode at the scoop and score 5 billion to win a flat +5B.",
+        "goals": [
+          "wizard-rtu-qualify",
+          "wizard-rtu-victory"
+        ]
+      }
+    ]
+  }
+}

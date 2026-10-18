@@ -1,0 +1,1429 @@
+{
+  "machine": "Space Jam (Sega Pinball, 1996)",
+  "defaultFx": "space",
+  "shots": [
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.1,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Far left edge below left inlane, feeds the drain. Part of the SLAM lane set (letter overlay); no kickback on this machine."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Inside of left outlane, feeds left flipper. Part of the SLAM lane set."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Inside of right outlane, feeds right flipper. Part of the SLAM lane set."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Far right edge below right inlane, feeds the drain. Part of the SLAM lane set."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "mech",
+      "x": 0.3,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Standard slingshot above the left flipper."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "mech",
+      "x": 0.7,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Standard slingshot above the right flipper."
+    },
+    {
+      "id": "space-targets",
+      "name": "SPACE Targets",
+      "type": "target-bank",
+      "x": 0.16,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Bank of 5 standups spelling S-P-A-C-E, lower-left playfield. Pairs with JAM targets to light Superjam."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.06,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Far left edge loop/orbit. Spots Roadrunner; lightable for Jackpot; part of Fast Break (5 shots)."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.26,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Sits upper-left, tucked alongside the left ramp. Spotting IN YER FACE letters is its day job, and it becomes the Super Jackpot target once multiball reaches wave 3."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.32,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Narrow jump-ramp (not a loop) — a low-percentage, hard-to-make shot. Feeds the main basket (top-left backboard hoop) via a jump shot. Starts Final Jam once all planets lit.",
+      "feeds": {
+        "shot": "main-basket"
+      }
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.45,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "3-bumper cluster, upper-center. Feeds the REBOUND planet (25 hits)."
+    },
+    {
+      "id": "monstars-drops",
+      "name": "Monstars Drop Targets",
+      "type": "drop-target",
+      "x": 0.4,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Bank of 3 drop targets left-of-center, below the pop bumpers. 2nd completion triggers IN YER FACE."
+    },
+    {
+      "id": "super-duper-target",
+      "name": "Super Duper Jackpot Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.96,
+      "trim": "all",
+      "notes": "One standup target at the top-center of the playfield, behind the bumpers. Lit for 15s during multiball wave 4; mostly reached via bumper rebounds."
+    },
+    {
+      "id": "wabbit-hole",
+      "name": "Wabbit Hole",
+      "type": "saucer",
+      "x": 0.5,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Central mystery-award kickout saucer, lit by clearing both 23 targets. Known for aggressive bounce-outs."
+    },
+    {
+      "id": "jump-shot",
+      "name": "Jump Shot (Jump Ball lock lane)",
+      "type": "lane",
+      "x": 0.64,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Raised lane through a one-way gate, center-right. The lock shot and single most important shot in the game; feeds a VUK/magnet catch further upfield."
+    },
+    {
+      "id": "basket",
+      "name": "Skill Shot Basket (Right Hoop)",
+      "type": "mech",
+      "x": 0.85,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Mini basketball hoop toy fed from the shooter/plunger lane, right side, labeled SKILL SHOT on the playfield. Skill-shot target only — a separate hoop from the main basket at the top-left, which is the basket-points, FIRE, and Final Jam collect target."
+    },
+    {
+      "id": "main-basket",
+      "name": "Main Basket (Backboard Hoop)",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.9733,
+      "trim": "all",
+      "notes": "White backboard, red-rim basketball hoop at the top-left of the playfield, reached via the left ramp jump shot (not the shooter-lane skill-shot hoop). The basket-points collect target, FIRE's supercharged 10-points-per-shot target, and the Final Jam collect shot."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.75,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Right side ramp. Spots FIRE letters (4 shots); lightable for Double/Super Duper Jackpot; Fast Break's escalating-value shot.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "twenty-three-targets",
+      "name": "23 Targets",
+      "type": "target-bank",
+      "x": 0.75,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Pair of red standups flanking the right ramp entrance. Both lit = Wabbit Hole lights."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.94,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Far right edge loop/orbit, mirrors left orbit. Spots Tazmanian Devil; part of Fast Break."
+    },
+    {
+      "id": "jam-targets",
+      "name": "JAM Targets",
+      "type": "target-bank",
+      "x": 0.84,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Bank of 3 standups spelling J-A-M, lower-right playfield, mirrors SPACE bank."
+    },
+    {
+      "id": "plunger-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Standard shooter lane with spring plunger and software auto-launch; feeds directly toward the basket for the skill shot."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "basket-skill-shot",
+      "title": "Basket Skill Shot",
+      "category": "skillshot",
+      "summary": "Cycle the DMD-selected award while the ball sits in the shooter lane, then plunge into the mini basketball hoop to bank it — the safest guaranteed points or progress of the ball.",
+      "difficulty": 1,
+      "reward": "Banks the DMD-selected award — 300K, Lite Lock, Wabbit Hole, or Super Pops",
+      "steps": [
+        {
+          "shot": "basket",
+          "action": "Cycle the DMD award with a flipper tap, then plunge into the Skill Shot Basket",
+          "detail": "Tap either flipper before launching to cycle the DMD skill-shot award: 300,000 points / Lite Lock / Wabbit Hole / Super Pops. A clean make through the shooter-lane basket banks the selected award — or hold both flippers to auto-launch and bank it automatically even off a miss."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot Follow-Up",
+      "category": "skillshot",
+      "summary": "Immediately after banking a basket skill shot with 300k, Lite Lock, or Super Pops selected, follow up with the left ramp for bonus basket points.",
+      "difficulty": 2,
+      "reward": "+10 basket points added on top of the banked skill-shot award, if the left ramp lands within the window",
+      "steps": [
+        {
+          "shot": "basket",
+          "action": "Make the skill-shot basket",
+          "detail": "Must have 300,000 points, Lite Lock, or Super Pops selected (not Wabbit Hole)."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp within a few seconds",
+          "detail": "Left ramp is a narrow jump-shot — hit it fast for +10 basket points before the window closes."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "jackpot-wave-loop",
+      "title": "Full Jackpot Wave Loop",
+      "category": "combo",
+      "summary": "The core money sequence once multiball is running — four escalating jackpot waves that loop, with switch hits along the way inflating each payout.",
+      "difficulty": 3,
+      "reward": "Double Jackpot + Jackpot trio + Super Jackpot (3M) + Super Duper Jackpot (5M), then the loop restarts at wave 1",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Wave 1: both ramps lit for Double Jackpot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Either ramp collects wave 1 the first time through — both ramps are only required once the sequence restarts after a Super Duper Jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Wave 2: both orbits plus Jump Shot lit for Jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Second of the wave-2 trio.",
+          "link": "none"
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot the Jump Shot lane",
+          "detail": "Third wave-2 shot — completes the Jackpot trio.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball",
+          "detail": "Wave 3: Super Jackpot, base 3,000,000."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to light Super Duper Jackpot",
+          "detail": "Wave 4 setup — lights the center target for a 15-second window."
+        },
+        {
+          "shot": "super-duper-target",
+          "action": "Hit the center Super Duper Jackpot target",
+          "detail": "Base 5,000,000; re-shoot right ramp to relight if the 15s window expires. Loop restarts at wave 1 after collecting."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "superjam-chain",
+      "title": "Superjam Chain",
+      "category": "combo",
+      "summary": "Light every SPACE and JAM target to trigger Superjam, then chain every jackpot shot plus the captive ball before the 45-second timer runs out.",
+      "difficulty": 3,
+      "reward": "50,000 for the first shot, 150,000 for the second, and an extra 100,000 for each shot after — every lit shot counts once inside the 45-second timer",
+      "steps": [
+        {
+          "shot": "space-targets",
+          "action": "Complete the SPACE standup bank",
+          "detail": "All 5 letters."
+        },
+        {
+          "shot": "jam-targets",
+          "action": "Complete the JAM standup bank",
+          "detail": "All 3 letters — completes SPACE JAM and starts Superjam."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot left ramp",
+          "detail": "First unique Superjam shot scores 50,000.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot right ramp",
+          "detail": "Second unique shot scores 150,000.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot left orbit",
+          "detail": "+100,000 as a new unique shot.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot right orbit",
+          "detail": "+100,000 as a new unique shot.",
+          "link": "none"
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot",
+          "detail": "+100,000 as a new unique shot.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit captive ball",
+          "detail": "Final jackpot-geography shot; mode ends when all are hit once or after 45 seconds total.",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "fast-break-ramp-rush",
+      "title": "Fast Break Ramp Rush",
+      "category": "combo",
+      "summary": "Complete both orbits five times each to qualify Fast Break, then hammer the right ramp while its value climbs from 200k to a 700k cap.",
+      "difficulty": 2,
+      "reward": "Right ramp value climbs from 200,000 to a 700,000 cap per hit once Fast Break is qualified",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit repeatedly",
+          "detail": "5 hits required to complete this side."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit repeatedly",
+          "detail": "5 hits required — once both orbits reach 5, Fast Break qualifies.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hammer the right ramp",
+          "detail": "Starts at 200,000 and rises each hit to a 700,000 cap."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "space-jam-targets-combo",
+      "title": "SPACE JAM Target Combo",
+      "category": "combo",
+      "summary": "The lower-playfield bookend banks — clear SPACE on the left, then JAM on the right, to light Superjam and satisfy one of the Seven Planets.",
+      "difficulty": 2,
+      "reward": "Lights Superjam (the 45-second jackpot chain) and satisfies the SPACE JAM planet",
+      "steps": [
+        {
+          "shot": "space-targets",
+          "action": "Shoot the SPACE standup bank on the lower left",
+          "detail": "5 targets spelling S-P-A-C-E."
+        },
+        {
+          "shot": "jam-targets",
+          "action": "Shoot the JAM standup bank on the lower right",
+          "detail": "3 targets spelling J-A-M; completing both lights Superjam and the SPACE JAM planet."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "wabbit-hole-double-dip",
+      "title": "Wabbit Hole Double Dip",
+      "category": "combo",
+      "summary": "Light the Wabbit Hole by clearing both 23 targets, then dive in for a stacked mystery award — with a shot at drawing Full Court Frenzy, the biggest scoring opportunity in the game.",
+      "difficulty": 2,
+      "reward": "A stacked mystery award carried ball-to-ball until collected; chance at Full Court Frenzy or 2 on 2 multiball",
+      "steps": [
+        {
+          "shot": "twenty-three-targets",
+          "action": "Hit both red 23 targets beside the right ramp",
+          "detail": "Lights the Wabbit Hole saucer."
+        },
+        {
+          "shot": "wabbit-hole",
+          "action": "Shoot the Wabbit Hole",
+          "detail": "Awards stack and carry ball-to-ball until collected; hope for Full Court Frenzy or 2 on 2 multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "first-lock-multiball",
+      "title": "First Lock Multiball",
+      "category": "multiball",
+      "summary": "The fastest route to multiball — the first Jump Shot hit lights all three locks at once, so three more hits lock every ball and launch it.",
+      "difficulty": 1,
+      "reward": "Locks all 3 balls and starts Multiball in just 4 total Jump Shot hits",
+      "steps": [
+        {
+          "shot": "jump-shot",
+          "action": "Shoot the Jump Shot lane",
+          "detail": "First hit of the game lights ALL THREE locks simultaneously — no need to build them individually."
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot again to lock ball 1",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot again to lock ball 2",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot a fourth time to lock ball 3",
+          "detail": "Locking the third ball starts Multiball automatically."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "repeat-lock-multiball",
+      "title": "Repeat Multiball (Escalating Locks)",
+      "category": "multiball",
+      "summary": "Every multiball after the first raises the bar — each lock now needs its own dedicated Jump Shot hit, with the requirement climbing by one shot per replay up to a cap of five.",
+      "difficulty": 3,
+      "reward": "Starts another Multiball, with the per-lock shot requirement rising each time up to a 5-shot cap",
+      "steps": [
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot to light lock 1",
+          "detail": "2nd multiball: one dedicated hit per lock, no more one-shot freebie."
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot to light lock 2",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot to light lock 3 and start Multiball",
+          "detail": "3rd+ multiballs need even more shots per lock, capping at 5 total."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "full-court-frenzy",
+      "title": "Full Court Frenzy",
+      "category": "multiball",
+      "summary": "A Wabbit Hole mystery-award multiball — all six arrow shots light at once, five balls launch, and value climbs fast behind an unusually long ball-save.",
+      "difficulty": 3,
+      "reward": "5-ball multiball with all six arrow shots lit at 200,000 + 100 per switch hit, protected by an extended ball-save",
+      "steps": [
+        {
+          "shot": "twenty-three-targets",
+          "action": "Light the Wabbit Hole",
+          "detail": "Clear both 23 targets first."
+        },
+        {
+          "shot": "wabbit-hole",
+          "action": "Shoot the Wabbit Hole and hope for Full Court Frenzy",
+          "detail": "One of ~12 stacked mystery awards; not guaranteed every game."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot any lit arrow shot",
+          "detail": "All six arrow shots (both orbits, both ramps, captive ball, Jump Shot) are lit; value starts at 200,000 plus 100 per switch hit.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep shooting lit arrows while the long ball-save protects you",
+          "detail": "Milk the extended ball-save for maximum switch hits before it ends.",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "two-on-two-multiball",
+      "title": "2 on 2 Multiball",
+      "category": "multiball",
+      "summary": "A smaller two-ball Wabbit Hole award — right ramp or Jump Shot pay 100k and briefly light the left ramp for a bigger 300k grab.",
+      "difficulty": 2,
+      "reward": "2-ball multiball; Jump Shot or right ramp pays 100,000 and lights the left ramp for 300,000 within 10 seconds",
+      "steps": [
+        {
+          "shot": "twenty-three-targets",
+          "action": "Light the Wabbit Hole",
+          "detail": ""
+        },
+        {
+          "shot": "wabbit-hole",
+          "action": "Shoot the Wabbit Hole and draw 2 on 2",
+          "detail": "Launches a 2-ball multiball."
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot or right ramp",
+          "detail": "Worth 100,000 and lights left ramp for 10 seconds."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp while it's lit",
+          "detail": "Worth 300,000 within the short window."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "in-yer-face",
+      "title": "IN YER FACE",
+      "category": "mode",
+      "summary": "Knock down the Monstars drop targets twice to light the captive ball for a fast three-hit burst.",
+      "difficulty": 2,
+      "reward": "100,000 on the first drop-bank clear, then up to 450,000 (150,000 x3 captive-ball hits) and the IN YER FACE planet",
+      "steps": [
+        {
+          "shot": "monstars-drops",
+          "action": "Knock down all 3 Monstars drop targets",
+          "detail": "1st completion scores 100,000 and resets the bank."
+        },
+        {
+          "shot": "monstars-drops",
+          "action": "Knock down the bank a second time",
+          "detail": "Triggers IN YER FACE and lights the captive ball for 30 seconds."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball up to 3 times",
+          "detail": "150,000 per hit; 3 hits completes the mode and satisfies the IN YER FACE planet."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "fire-mode",
+      "title": "FIRE",
+      "category": "mode",
+      "summary": "Four right-ramp shots spell FIRE and temporarily supercharge the basket into a 10-points-per-shot machine.",
+      "difficulty": 2,
+      "reward": "Basket worth 10 basket points per shot for 23 seconds; satisfies the FIRE planet",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp 4 times",
+          "detail": "Each hit spots one letter of FIRE."
+        },
+        {
+          "shot": "main-basket",
+          "action": "Shoot the basket while FIRE is active",
+          "detail": "Worth 10 basket points per shot for 23 seconds after completion."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "rebound-mode",
+      "title": "REBOUND",
+      "category": "mode",
+      "summary": "A passive grind — 25 total pop bumper hits satisfies the REBOUND planet, no active shot-calling required.",
+      "difficulty": 1,
+      "reward": "Satisfies the REBOUND planet after 25 lifetime pop-bumper hits",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball bounce around the pop bumpers",
+          "detail": "A counter tracks lifetime hits; 25 total completes REBOUND. No precision shot needed — just keep the ball in the pops."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "fast-break-mode",
+      "title": "FAST BREAK",
+      "category": "mode",
+      "summary": "Five shots to each orbit qualifies Fast Break, converting the right ramp into a ramping 200k-to-700k moneymaker.",
+      "difficulty": 2,
+      "reward": "Satisfies the FAST BREAK planet and turns the right ramp into a 200,000-700,000 escalating shot",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit 5 times",
+          "detail": ""
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit 5 times",
+          "detail": "Completes Fast Break and satisfies its planet.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp for rising value",
+          "detail": "200,000 rising to a 700,000 cap per hit."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "bonus-x-slam",
+      "title": "Bonus X via SLAM Lanes",
+      "category": "multiplier",
+      "summary": "Roll through all four SLAM lanes to advance the end-of-ball Bonus multiplier, capping at 6X and unlocking a free Extra Ball at Jump Shot.",
+      "difficulty": 1,
+      "reward": "+1 Bonus X step (caps at 6X); 6X lights a free Extra Ball at Jump Shot, then 200,000 flat per completion after",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Roll the left outlane",
+          "detail": "Spots one SLAM letter. All four in-and-outlanes carry a letter, and SLAM cannot be spotted during a mode or a multiball, so collect it in single-ball play.",
+          "link": "none"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll the left inlane",
+          "detail": "Spots another SLAM letter.",
+          "link": "none"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right inlane",
+          "detail": "Spots another SLAM letter.",
+          "link": "none"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Roll the right outlane",
+          "detail": "Completing all 4 letters advances Bonus X by one step, up to 6X.",
+          "link": "none"
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot once Bonus X hits 6X",
+          "detail": "6X lights a free Extra Ball at Jump Shot; further SLAM completions past 6X just score a flat 200,000."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-pops-skill-shot",
+      "title": "Super Pops Skill Shot",
+      "category": "multiplier",
+      "summary": "Cycle the pre-plunge skill shot to Super Pops and bank it to boost pop bumper scoring value for the rest of the ball.",
+      "difficulty": 1,
+      "reward": "Raises pop bumper scoring value for the rest of the ball",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Tap a flipper to cycle the skill shot to Super Pops",
+          "detail": "DMD cycles 300k / Lite Lock / Wabbit Hole / Super Pops."
+        },
+        {
+          "shot": "basket",
+          "action": "Plunge into the basket to bank Super Pops",
+          "detail": "Increases pop bumper scoring value for the rest of the ball — pairs well with grinding toward REBOUND."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "seven-planets-qualification",
+      "title": "Light the Seven Planets",
+      "category": "wizard",
+      "summary": "The full qualification path to Final Jam — light all seven planets, then shoot the left ramp to start the game's sole wizard mode.",
+      "difficulty": 3,
+      "reward": "Lights all 7 planets and starts Final Jam, the game's sole wizard mode",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Complete all 4 SLAM lanes once",
+          "detail": "Planet 1: SLAM.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball 3 times during IN YER FACE",
+          "detail": "Planet 2: IN YER FACE.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp 4 times",
+          "detail": "Planet 3: FIRE.",
+          "link": "none"
+        },
+        {
+          "shot": "space-targets",
+          "action": "Complete SPACE then JAM targets",
+          "detail": "Planet 4: SPACE JAM (also triggers Superjam).",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Rack up 25 pop bumper hits",
+          "detail": "Planet 5: REBOUND.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot each orbit 5 times",
+          "detail": "Planet 6: FAST BREAK (left and right orbit).",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Score a Super Jackpot during regular Multiball",
+          "detail": "Planet 7: SUPER JACKPOT — satisfied at wave 3 of the jackpot loop.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "All 7 planets lit — this starts Final Jam."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "final-jam-wizard",
+      "title": "Final Jam",
+      "category": "wizard",
+      "summary": "The 60-second, 5-ball wizard mode — every switch hit builds a running award value, and every basket make collects it.",
+      "difficulty": 3,
+      "reward": "Collects the full running pot (+10,000 per switch hit) on every basket make across the 60-second, 5-ball finale",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to start",
+          "detail": "Only available once all 7 planets are lit; launches all 5 balls simultaneously."
+        },
+        {
+          "shot": "main-basket",
+          "action": "Shoot the basket repeatedly",
+          "detail": "Each switch hit anywhere adds 10,000 to a running value; each basket make collects the full accumulated total, then the value keeps building. Runs 60 seconds."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "beginner-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "The lowest-risk opener for a new player — bank the skill shot into Lite Lock, then treat Jump Shot as home base until multiball starts.",
+      "difficulty": 1,
+      "reward": "Banks a low-risk skill-shot award (Lite Lock feeds Multiball) plus steady Jump Shot progress toward locks",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Cycle the skill shot to Lite Lock (or leave on 300k if unsure of the basket shot)",
+          "detail": "Lite Lock feeds multiball progress directly."
+        },
+        {
+          "shot": "basket",
+          "action": "Plunge into the basket",
+          "detail": "Banks the selected skill-shot award."
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Return every rebound to the Jump Shot lane",
+          "detail": "Treat it as your default shot — it's the single most important, most reliable shot on the layout."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "best-opener-jump-shot-rush",
+      "title": "Best Opener – Jump Shot Rush",
+      "category": "strategy",
+      "summary": "The documented tournament approach — spam Jump Shot exclusively until multiball starts, ignoring the low-percentage left ramp entirely.",
+      "difficulty": 2,
+      "reward": "Zero-risk skill-shot award, then the fastest route to Multiball (4 Jump Shot hits), skipping the low-percentage left ramp",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Skill shot into Lite Lock",
+          "detail": "Zero-risk first move."
+        },
+        {
+          "shot": "basket",
+          "action": "Make the basket to bank it",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot — first hit lights all 3 locks at once",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot again to lock ball 1",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot again to lock ball 2",
+          "detail": ""
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot a fourth time to lock ball 3 and start Multiball",
+          "detail": "Leave the left ramp alone early — its sweet spot is tiny and most attempts fall short into the bumpers for nothing. Pick up SLAM, SPACE, JAM and bumper hits only when they come to you."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiball-priority-order",
+      "title": "Multiball Priority Shot Order",
+      "category": "strategy",
+      "summary": "Once multiball is live, follow the fixed jackpot wave order and let switch hits inflate value before collecting the two biggest jackpots.",
+      "difficulty": 2,
+      "reward": "Double Jackpot + Jackpot + Super Jackpot (3M) + Super Duper Jackpot (5M), inflated by extra switch hits banked first",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot either lit ramp for the Double Jackpot",
+          "detail": "Wave 1."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Completes wave 1.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot both orbits and Jump Shot for Jackpot",
+          "detail": "Wave 2 — take extra switch hits along the way to inflate later jackpot values."
+        },
+        {
+          "shot": "jump-shot",
+          "action": "Shoot Jump Shot",
+          "detail": "Completes wave 2's trio.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball for Super Jackpot",
+          "detail": "Wave 3, base 3,000,000."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to light Super Duper Jackpot",
+          "detail": "Wave 4 setup — don't rush this under the 15-second countdown; a fixed center post blocks death-saves, so a panicked shot risks a drain."
+        },
+        {
+          "shot": "super-duper-target",
+          "action": "Hit the center Super Duper Jackpot target",
+          "detail": "Base 5,000,000, within the 15-second window."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "start-league-wizard-select",
+      "title": "League and Wizard Mode — Set Them at Start",
+      "category": "secret",
+      "altMode": "ruleset",
+      "summary": "Holding a flipper down while you press Start puts this machine into one of two settings that nothing on the playfield or display ever advertises. It is a one-time choice made in the instant before Start is pressed, and it cannot be set once play has begun.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Do this before you press Start, at the very beginning of the game",
+        "Hold the left flipper button and press Start for League mode",
+        "Hold the right flipper button and press Start for Wizard mode",
+        "Release the flipper once the game has started"
+      ],
+      "reward": "Opens the game straight into League or Wizard mode. League changes the Wabbit Hole: every player draws from one shared set of awards rather than each getting their own"
+    },
+    {
+      "id": "video-mode-basket-catch",
+      "title": "Wabbit Hole Video Mode: Catch the Balls",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Hiding in the Wabbit Hole's pool of random prizes is a real mini-game rather than a points award. You move a basket along the bottom of the display and try to catch every ball thrown at you by Michael Jordan and four Looney Tunes characters.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Two red 23 targets flank the right ramp entrance — light them both and the Wabbit Hole opens.",
+        "Shoot the Wabbit Hole and hope Video Mode comes up among the awards offered",
+        "Use the flipper buttons to move the basket under each thrown ball",
+        "Sixteen balls are thrown in total — catch every one for the completion bonus on top of the per-catch award."
+      ],
+      "reward": "50,000 per ball caught, plus a 200,000 bonus for catching all 16"
+    },
+    {
+      "id": "trivia-game-award",
+      "title": "Wabbit Hole Trivia Game",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "A second non-pinball prize sits in the same Wabbit Hole pool: a multiple-choice quiz about Michael Jordan's career, answered with the flippers while the ball waits.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Light both red 23 targets beside the right ramp entrance to light the Wabbit Hole",
+        "Shoot the Wabbit Hole and hope the Trivia game comes up among the awards offered",
+        "Read the question about Michael Jordan's career on the display",
+        "Choose your answer with the flipper buttons"
+      ],
+      "reward": "An award for choosing the correct answer"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "swish-on-the-plunge",
+      "title": "Swish On The Plunge",
+      "desc": "Bank a skill shot by plunging the ball cleanly into the shooter-lane hoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "basket-skill-shot"
+    },
+    {
+      "id": "locks-loaded",
+      "title": "Locks Loaded",
+      "desc": "Start your first Multiball of the game by locking all three balls at the Jump Shot lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "first-lock-multiball"
+    },
+    {
+      "id": "bumper-grinder",
+      "title": "Bumper Grinder",
+      "desc": "Rack up 25 pop bumper hits to satisfy the REBOUND planet.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "rebound-mode"
+    },
+    {
+      "id": "letters-both-sides",
+      "title": "Letters On Both Sides",
+      "desc": "Clear the SPACE bank and the JAM bank in the same ball to light Superjam.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "space-jam-targets-combo"
+    },
+    {
+      "id": "hot-hand",
+      "title": "Hot Hand",
+      "desc": "Spell FIRE with four right-ramp shots, then cash the supercharged basket while it is still lit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fire-mode"
+    },
+    {
+      "id": "drop-bank-dunk",
+      "title": "Drop Bank Dunk",
+      "desc": "Clear the Monstars drops twice and finish the captive-ball burst for all three hits.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "in-yer-face"
+    },
+    {
+      "id": "second-plunge-award",
+      "title": "Second-Chance Award",
+      "desc": "Bank a skill shot and land the follow-up left ramp inside its window for the bonus basket points.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "ramp-at-the-cap",
+      "title": "Ramp At The Cap",
+      "desc": "Qualify Fast Break with five hits to each orbit, then push the right ramp all the way to its top value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fast-break-ramp-rush"
+    },
+    {
+      "id": "two-man-game",
+      "title": "Two-Man Game",
+      "desc": "Draw the two-ball Wabbit Hole multiball and collect the timed left-ramp bonus during it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "two-on-two-multiball"
+    },
+    {
+      "id": "five-balls-loose",
+      "title": "Five Balls Loose",
+      "desc": "Draw the five-ball Wabbit Hole multiball and collect at least one lit arrow shot during it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "full-court-frenzy"
+    },
+    {
+      "id": "bonus-topped-out",
+      "title": "Bonus Topped Out",
+      "desc": "Advance the end-of-ball bonus multiplier to its 6X ceiling with repeated SLAM lane completions.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-x-slam"
+    },
+    {
+      "id": "super-jackpot-collected",
+      "title": "Super Jackpot Collected",
+      "desc": "Reach wave three of the multiball jackpot order and collect the Super Jackpot at the captive ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-priority-order"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Earn the extra ball lit by hitting 6X bonus, then collect it at the Jump Shot lane.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "bonus-x-slam"
+    },
+    {
+      "id": "back-for-more",
+      "title": "Back For More",
+      "desc": "Start a second Multiball after the per-lock Jump Shot requirement has increased.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "repeat-lock-multiball"
+    },
+    {
+      "id": "superjam-sweep",
+      "title": "Superjam Sweep",
+      "desc": "Hit every unique Superjam shot before the mode timer expires.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "superjam-chain"
+    },
+    {
+      "id": "top-of-the-wave-loop",
+      "title": "Top Of The Wave Loop",
+      "desc": "Work all four jackpot waves in one multiball and collect the center-target Super Duper Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jackpot-wave-loop"
+    },
+    {
+      "id": "all-seven-lit",
+      "title": "All Seven Lit",
+      "desc": "Light every one of the seven planets in a single game to qualify the wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "seven-planets-qualification"
+    },
+    {
+      "id": "final-jam-payday",
+      "title": "Final Jam Payday",
+      "desc": "Start Final Jam off the left ramp and collect the built-up award at the basket at least three times before the timer ends.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-jam-wizard"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-cycle-then-basket",
+      "title": "Cycle It, Then Bank It",
+      "text": "Tap a flipper while the ball waits in the lane to put the award you actually want on the display, then plunge into the hoop. Lite Lock is the one that feeds multiball, so cycle to it rather than taking whatever happens to be showing.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "basket-skill-shot",
+      "shots": [
+        "plunger-lane",
+        "basket"
+      ]
+    },
+    {
+      "id": "drill-jump-shot-home-base",
+      "title": "Jump Shot Is Home Base",
+      "text": "Return every rebound to the Jump Shot lane and shoot nothing else. The first hit of a game lights all three locks at once, so four total makes is a multiball, and no other shot on this layout pays that well for the risk.",
+      "reps": "4 makes, five times",
+      "focus": "accuracy",
+      "goal": "first-lock-multiball",
+      "shots": [
+        "jump-shot"
+      ]
+    },
+    {
+      "id": "drill-jackpot-wave-order",
+      "title": "Waves In Order",
+      "text": "Learn the running order cold: the ramps, then both orbits and the Jump Shot, then the captive ball, then the right ramp to arm the centre target. Every switch you hit along the way inflates what the later jackpots pay, so the order is also the reason not to rush.",
+      "reps": "3 full loops",
+      "focus": "flow",
+      "goal": "jackpot-wave-loop",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "left-orbit",
+        "right-orbit",
+        "jump-shot",
+        "captive-ball",
+        "super-duper-target"
+      ]
+    },
+    {
+      "id": "drill-left-ramp-when-safe",
+      "title": "Left Ramp, When Nothing Is At Stake",
+      "text": "Work the left ramp on quiet balls rather than in the middle of something important. The sweet spot is narrow and a short one dies in the bumpers, but it feeds the main basket and it is the only shot that starts the wizard mode.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "final-jam-wizard",
+      "shots": [
+        "left-ramp",
+        "main-basket"
+      ]
+    },
+    {
+      "id": "drill-no-panic-super-duper",
+      "title": "Do Not Panic At The Countdown",
+      "text": "Take the centre Super Duper target only when you have a settled look at it, even with the clock running. There is no ball save here beyond the skill shot and the fixed post between the flippers rules out a death save, so a rushed shot costs far more than an expired window that the right ramp can relight.",
+      "reps": "5 windows",
+      "focus": "ball-control",
+      "goal": "multiball-priority-order",
+      "shots": [
+        "right-ramp",
+        "super-duper-target"
+      ]
+    },
+    {
+      "id": "drill-slam-lanes-single-ball",
+      "title": "SLAM In Single-Ball Play",
+      "text": "Work all four in and outlanes while you still have one ball in play, since the letters cannot be spotted during a mode or a multiball. Reaching the top of the multiplier lights a free extra ball at the Jump Shot, which is where you already live.",
+      "reps": "2 completions",
+      "focus": "accuracy",
+      "goal": "bonus-x-slam",
+      "shots": [
+        "left-outlane",
+        "left-inlane",
+        "right-inlane",
+        "right-outlane",
+        "jump-shot"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "No cabinet button beyond the basics — a spring plunger, two flipper buttons, start. The flippers carry the extra duties: they scroll the skill shot award while the ball waits in the lane, holding both of them hands the plunge over to the machine (and still credits the award), and they pick your answer in the trivia mode."
+  },
+  "howItPlays": {
+    "objective": "Space Jam (Sega, 1996) turns the table into a game of hoops against the Monstars. Light the seven planets to reach Final Jam, and run the four-wave jackpot multiball.",
+    "loop": [
+      "Tap a flipper to scroll the pre-plunge skill-shot award you want, then launch into the mini hoop to bank it.",
+      "Hammer the Jump Shot lane -- the game's very first Jump Shot lights every lock at once, so four makes in all start Multiball.",
+      "Once multiball is running, follow the four jackpot waves in their fixed order and let switch hits inflate each payout.",
+      "Satisfy the seven planet objectives spread across the playfield, from SLAM in the lanes to a Super Jackpot in multiball.",
+      "With all seven planets lit, shoot the left ramp to start Final Jam."
+    ],
+    "lights": [
+      {
+        "id": "skill-shot-basket",
+        "name": "Skill Shot Basket",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "basket"
+          }
+        ],
+        "lit": "The mini hoop beside the shooter lane is the skill-shot target, and its display cycles four awards -- three hundred thousand, Lite Lock, Wabbit Hole, or Super Pops.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a flipper tap while the ball waits in the shooter lane scrolls the display to the award you want, and holding both flipper buttons hands the plunge to the machine while still crediting that award",
+          "when": "before you launch"
+        },
+        "then": "Cycle to Lite Lock to feed multiball, then plunge the hoop to bank it. With points, Lite Lock, or Super Pops banked, a quick left-ramp shot within the window adds bonus basket points on top.",
+        "goals": [
+          "basket-skill-shot",
+          "super-skill-shot",
+          "super-pops-skill-shot"
+        ]
+      },
+      {
+        "id": "jump-shot-lock",
+        "name": "Jump Shot Lock Lane",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "jump-shot"
+          }
+        ],
+        "lit": "The raised Jump Shot lane matters more than any other shot here; the game's very first Jump Shot lights every lock at once, and it stays a jackpot shot during multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Make it four times to lock all three balls and launch Multiball, and treat it as home base by returning every rebound here. Reaching six-times bonus later opens a free extra ball at this same lane.",
+        "goals": [
+          "first-lock-multiball",
+          "repeat-lock-multiball",
+          "best-opener-jump-shot-rush"
+        ]
+      },
+      {
+        "id": "jackpot-waves",
+        "name": "Jackpot Waves",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "jump-shot"
+          },
+          {
+            "shot": "captive-ball"
+          },
+          {
+            "shot": "super-duper-target"
+          }
+        ],
+        "lit": "Multiball jackpots light in four fixed waves: both ramps for a Double Jackpot, then both orbits and the Jump Shot for the Jackpot trio, then the captive ball for the three-million Super Jackpot, then the right ramp arms the center target.",
+        "flashing": "The center Super Duper Jackpot target flashes for a fifteen-second window once the right ramp arms it; re-shoot the right ramp to relight it if that window runs out.",
+        "control": null,
+        "then": "Rack up spare switch hits as you go to swell every payout, then take the five-million Super Duper target last -- carefully, since a fixed center post leaves no room for a death save. Collecting it restarts the loop at wave one.",
+        "goals": [
+          "jackpot-wave-loop",
+          "multiball-priority-order",
+          "first-lock-multiball"
+        ]
+      },
+      {
+        "id": "space-jam-banks",
+        "name": "SPACE & JAM Banks",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "space-targets"
+          },
+          {
+            "shot": "jam-targets"
+          }
+        ],
+        "lit": "The SPACE bank on the lower left and the JAM bank on the lower right stay lit until spelled; completing both lights Superjam and satisfies the SPACE JAM planet.",
+        "flashing": null,
+        "control": null,
+        "then": "Superjam is a forty-five-second chain -- hit every jackpot-geography shot once for a climbing award that opens at fifty thousand and adds a hundred thousand per new shot.",
+        "goals": [
+          "space-jam-targets-combo",
+          "superjam-chain"
+        ]
+      },
+      {
+        "id": "monstars-drops",
+        "name": "Monstars Drops (IN YER FACE)",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "monstars-drops"
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "Knock down the three Monstars drop targets; a second full clear of the bank sets off IN YER FACE and opens the captive ball for a thirty-second window.",
+        "flashing": null,
+        "control": null,
+        "then": "Rattle the captive ball up to three times at a hundred fifty thousand each to finish the mode and satisfy the IN YER FACE planet.",
+        "goals": [
+          "in-yer-face"
+        ]
+      },
+      {
+        "id": "fire-fast-break",
+        "name": "Right Ramp (FIRE & Fast Break)",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "main-basket"
+          }
+        ],
+        "lit": "Four right-ramp shots spell FIRE and supercharge the main basket to ten points a shot for twenty-three seconds; five shots to each orbit instead qualify Fast Break and turn the right ramp into a rising two-hundred-to-seven-hundred-thousand shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell FIRE and unload on the main basket, or qualify Fast Break and hammer the right ramp -- each clears its own planet toward Final Jam.",
+        "goals": [
+          "fire-mode",
+          "fast-break-mode",
+          "fast-break-ramp-rush"
+        ]
+      },
+      {
+        "id": "wabbit-hole",
+        "name": "Wabbit Hole",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "twenty-three-targets"
+          },
+          {
+            "shot": "wabbit-hole"
+          }
+        ],
+        "lit": "Down both red 23 targets by the right ramp to light the Wabbit Hole saucer; diving in draws one of a dozen stacked mystery awards, and any you do not collect carry over ball to ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Hope for Full Court Frenzy, a five-ball multiball with all six arrows lit behind a long ball save, or the smaller 2 on 2 Multiball -- the saucer also hides a ball-catch mini-game and a Jordan trivia quiz.",
+        "goals": [
+          "wabbit-hole-double-dip",
+          "full-court-frenzy",
+          "two-on-two-multiball"
+        ]
+      },
+      {
+        "id": "slam-lanes-pops",
+        "name": "SLAM Lanes & Pops",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-outlane"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "Rolling all four in-and-outlanes spells SLAM to step the bonus multiplier up, and lifetime pop-bumper hits grind toward the REBOUND planet.",
+        "flashing": null,
+        "control": null,
+        "then": "You can only spell SLAM in single-ball play -- not in a mode, not in a multiball -- so wrap the lanes up early; reaching six-times bonus opens a free extra ball over at the Jump Shot lane, and enough pop hits clears REBOUND.",
+        "goals": [
+          "bonus-x-slam",
+          "rebound-mode"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Cycle the skill shot to Lite Lock and bank it at the hoop, then treat the Jump Shot as home base -- its opening hit lights every lock, so four makes is the quickest multiball here. Pick up SLAM, SPACE and JAM only as they come to you.",
+        "goals": [
+          "basket-skill-shot",
+          "first-lock-multiball",
+          "beginner-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Work the seven planet objectives -- FIRE at the right ramp, IN YER FACE off the Monstars drops, REBOUND in the pops, Fast Break through the orbits -- and light the Wabbit Hole off the 23 targets for a shot at Full Court Frenzy.",
+        "goals": [
+          "fire-mode",
+          "in-yer-face",
+          "fast-break-mode",
+          "wabbit-hole-double-dip"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Light all seven planets and start Final Jam at the left ramp: a sixty-second, five-ball finale where every switch builds a running pot and each basket make collects it. Underneath it, the four-wave jackpot loop ending in the five-million Super Duper Jackpot is the multiball payoff.",
+        "goals": [
+          "seven-planets-qualification",
+          "final-jam-wizard",
+          "jackpot-wave-loop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1519 @@
+{
+  "machine": "Iron Maiden: Legacy of the Beast (Stern Pinball, 2018)",
+  "defaultFx": "skull",
+  "shots": [
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.17,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Runs up the left side, feeds the mid-right flipper; a spinner sits on the lane. 2nd-most-important shot.",
+      "feeds": {
+        "shot": "mid-right-flipper"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.34,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Wire ramp returning to the left inlane; Mummy lock and Tomb collect on Premium/LE.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Pharaoh / Jump Ramp)",
+      "type": "ramp",
+      "x": 0.49,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The single most important shot; starts Eddie Battles, multiballs, and is the safe bailout.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "mummy-captive",
+      "name": "Mummy Captive Ball (Sarcophagus)",
+      "type": "captive-ball",
+      "x": 0.59,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Right of the center ramp; spell M-U-M-M-Y for Mummy Multiball; a Super Deathblow target."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.71,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Wire ramp returning to the right inlane.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.85,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Runs up the right side, feeds the upper-left mini flipper; Tomb collect on Pro (right loop area).",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "lower-side-loop",
+      "name": "Big Loop (Lower Side Loop)",
+      "type": "loop",
+      "x": 0.75,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Shot from the mid-right flipper; repeat-loops for the Loop Jackpot; play upper-left flipper DOWN for 2x.",
+      "feeds": {
+        "shot": "mid-right-flipper"
+      },
+      "flipper": "mid-right-flipper"
+    },
+    {
+      "id": "upper-side-loop",
+      "name": "Mini Loop (Upper Side Loop)",
+      "type": "loop",
+      "x": 0.33,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Shot from the upper-left mini flipper; hardest shot in the game; adds 3x loop value + 2x Loop insert.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "drop-targets",
+      "name": "3-Bank Drop Targets",
+      "type": "drop-target",
+      "x": 0.41,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Trooper drops; sweep for 2x value + two awards; cycles Bonus X / Mystery / Light Locks."
+    },
+    {
+      "id": "bullseye",
+      "name": "Pharaoh's Bullseye Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Center target; Soul Shard collect, Super Jackpot multiplier, Super Deathblow (center)."
+    },
+    {
+      "id": "orb-target",
+      "name": "Orb / Power Jackpot Target",
+      "type": "standup",
+      "x": 0.19,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Lower-left; cashes Power Jackpots. Standup on Pro, captive/Newton ball on Prem/LE."
+    },
+    {
+      "id": "super-jackpot-target",
+      "name": "Super Jackpot Target",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Upper-left; Super Skill Shot target, Trooper & 2MTM Super Jackpot, a Super Deathblow target.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "x-targets",
+      "name": "Orange X Targets (Playfield X)",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "~4 scattered standups; complete for 2X/3X Playfield; one doubles as Trooper super target."
+    },
+    {
+      "id": "extra-ball-target",
+      "name": "Extra Ball 'X' Target",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Where all three Extra Balls are collected; also a Deathblow target."
+    },
+    {
+      "id": "left-orbit-spinner",
+      "name": "Left-Orbit Spinner",
+      "type": "spinner",
+      "x": 0.15,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "On the left-orbit lane; cycles the queued Eddie Battle before EDDIE completes."
+    },
+    {
+      "id": "revive-spinner",
+      "name": "REVIVE Spinner",
+      "type": "spinner",
+      "x": 0.12,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Lower-left; spell R-E-V-I-V-E for outlane ball-saves; 2x during Fear of the Dark; a Super Deathblow."
+    },
+    {
+      "id": "gravestone",
+      "name": "Gravestone / Shatz Target",
+      "type": "standup",
+      "x": 0.13,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Far lower-left; shatz from the right flipper through the left inlane to spot an X target.",
+      "flipper": "right"
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (x3)",
+      "type": "bumpers",
+      "x": 0.42,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Top center-left behind the drops; a Power Feature (Power Bumpers)."
+    },
+    {
+      "id": "slingshots",
+      "name": "Slingshots (x2)",
+      "type": "mech",
+      "x": 0.28,
+      "y": 0.17,
+      "trim": "all",
+      "notes": "Above each lower flipper; boostable to 250k+ via the Super Slings Tomb Treasure."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane (Aces High plunge)",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Far-right plunger; source of all skill shots (standard, super, and secret outlane/inlane)."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Flipper-selectable; rolls over to activate Playfield X."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.1,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Drain lane; secret skill shot target (~25M); ball-saved by completed Revive."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Flipper-selectable; rolls over to activate Playfield X."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Very dangerous drain, especially off the Big Loop exit; saved by completed Revive."
+    },
+    {
+      "id": "lower-left-flipper",
+      "name": "Lower-Left Flipper",
+      "type": "flipper",
+      "x": 0.2907,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "lower-right-flipper",
+      "name": "Lower-Right Flipper",
+      "type": "flipper",
+      "x": 0.7093,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "mid-right-flipper",
+      "name": "Mid-Right Flipper",
+      "type": "flipper",
+      "x": 0.63,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Feeds the center ramp, captive ball, and Big Loop; catches balls from the left orbit."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper-Left Mini Flipper",
+      "type": "flipper",
+      "x": 0.27,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Shoots the Mini Loop; hold DOWN for 2x loop value, UP for easier 1x entrance."
+    },
+    {
+      "id": "underworld-scoop",
+      "name": "Underworld Pop-Up Scoop",
+      "type": "scoop",
+      "x": 0.49,
+      "y": 0.5,
+      "trim": "premium-le",
+      "notes": "Rises under the center ramp; mode-start / Cyborg / Soul Shard collect on Prem/LE."
+    },
+    {
+      "id": "dual-uppost-lock",
+      "name": "Dual Up-Post Ball Lock",
+      "type": "mech",
+      "x": 0.49,
+      "y": 0.44,
+      "trim": "premium-le",
+      "notes": "Physical center-ramp lock for multiball; Pro uses virtual locks."
+    },
+    {
+      "id": "mummy-sarcophagus-mech",
+      "name": "Mummy Sarcophagus Mech",
+      "type": "mech",
+      "x": 0.62,
+      "y": 0.5,
+      "trim": "premium-le",
+      "notes": "Animated coffin lock; holds the ball and doubles switch hits during Mummy MB on Prem/LE."
+    }
+  ],
+  "goals": [
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper and hard-plunge to feed the upper-left flipper, then hit the Super Jackpot target for points plus a free Playfield multiplier.",
+      "difficulty": 2,
+      "reward": "5M + lit Playfield X (free 2X) + 10s ball save",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the skill shot is made with a flipper."
+        },
+        {
+          "shot": "super-jackpot-target",
+          "action": "Plunge through, then from the upper-left flipper, shoot the Super Jackpot target",
+          "detail": "The ball takes the inner orbit and rolls to the upper-left mini flipper The free Playfield X is worth more than the raw points",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "secret-outlane-skill-shot",
+      "title": "Secret Left-Outlane Skill Shot",
+      "category": "skillshot",
+      "summary": "Soft-plunge the ball to roll directly into the left outlane for the big-points secret skill shot.",
+      "difficulty": 3,
+      "reward": "~20-25M + 10s ball save + EDDIE letter (often disabled in tournaments)",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Plunge through, then let the ball settle into the left outlane to collect the secret award",
+          "detail": "Frequently turned OFF in tournament settings"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "six-way-super-deathblow",
+      "title": "6-Way Combo into Super Deathblow",
+      "category": "combo",
+      "summary": "Chain all six distinct major shots (no combo timer) then cash into a Super Deathblow target for the 900M spike.",
+      "difficulty": 3,
+      "reward": "Up to 900M (20M x3 Super x3 Playfield X x5 Super Combos); lights a Tomb Treasure",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Left Ramp (combo shot 1)"
+        },
+        {
+          "shot": "lower-side-loop",
+          "action": "Shoot the Big Loop (combo shot 2)",
+          "detail": "From the mid-right flipper; take your time, there is no timer"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot Left Orbit (combo shot 3)"
+        },
+        {
+          "shot": "upper-side-loop",
+          "action": "Shoot the Mini Loop (combo shot 4)",
+          "detail": "From the upper-left flipper"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot Right Ramp (combo shot 5)"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot Right Orbit (combo shot 6) to complete the 6-way",
+          "detail": "6-way lights a Tomb Treasure"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Cash the combo into the center of the Bullseye for a Super Deathblow",
+          "detail": "Pre-stack 3X Playfield + 5x Super Combos for the max"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "loop-jackpot-farm",
+      "title": "Loop Jackpot Farm",
+      "category": "combo",
+      "summary": "Repeatedly loop the inner loops to build and cash the Loop Jackpot, feeding the mini loop to double values — the most reliable route past 200M.",
+      "difficulty": 3,
+      "reward": "200M+ when stacked with Playfield X; lights a Tomb Treasure on collect",
+      "steps": [
+        {
+          "shot": "lower-side-loop",
+          "action": "Repeatedly shoot the Big Loop to build +250K per loop toward the 2.5M cap",
+          "detail": "Play the upper-left flipper DOWN for 2x value"
+        },
+        {
+          "shot": "upper-side-loop",
+          "action": "Feed the Mini Loop to add 3x the current value and light the 2x Loop insert (~6s)"
+        },
+        {
+          "shot": "lower-side-loop",
+          "action": "Once qualified (red insert), keep looping — each consecutive loop scores 1x, 2x, 3x... over 12s",
+          "detail": "After 4x the ball auto-diverts to the upper-left flipper to keep the chain alive",
+          "feeds": {
+            "shot": "upper-left-flipper"
+          }
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "power-jackpot-stack",
+      "title": "Power Jackpot Stack",
+      "category": "combo",
+      "summary": "Complete multiple Power Features before cashing, stacking value and multipliers, then collect the Power Jackpot at the Orb.",
+      "difficulty": 2,
+      "reward": "Up to 5x Power Jackpot x Playfield X; +15M per Level-2 Eddie Card; also starts Cyborg MB",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Make ramp shots to build Power Ramps",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Make orbit shots to build Power Orbits",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit-spinner",
+          "action": "Make spinner shots to build Power Spinners",
+          "link": "none"
+        },
+        {
+          "shot": "x-targets",
+          "action": "Hit standups to build Power Targets",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed the pops to build Power Bumpers — each extra completed feature adds +3M and +1x",
+          "link": "none"
+        },
+        {
+          "shot": "orb-target",
+          "action": "Cash the multiplied Power Jackpot at the Orb",
+          "detail": "Multiplied by active Playfield X; beware the Orb is easy to hit prematurely"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "flight-of-icarus-ramp-farm",
+      "title": "Flight of Icarus Ramp Farm",
+      "category": "combo",
+      "summary": "In the Flight of Icarus battle, alternate the lit ramps under the 5-second escalating multiplier to farm points and bank the Soul Shard.",
+      "difficulty": 2,
+      "reward": "Soul Shard at 20M; long chains (15+ ramps) documented",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the lit ramp for 2M +150K"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate to the other lit ramp within 5s to escalate the combo multiplier (2x, 3x...)",
+          "detail": "Repeating the same ramp within 5s resets the timer"
+        },
+        {
+          "shot": "bullseye",
+          "action": "At 20M, shoot the Bullseye 'escape' to bank and light the Soul Shard"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "two-way-combo-builder",
+      "title": "2-Way Combo Builder",
+      "category": "combo",
+      "summary": "Hit two distinct major shots in succession to open the exponential combo ladder — no timer means you can set up carefully.",
+      "difficulty": 1,
+      "reward": "500K base, scaling exponentially toward the 6-way",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot Left Orbit as the first combo shot"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Immediately shoot a different major shot to score the 2-way combo",
+          "detail": "A repeated shot, a standup/drop, or 2 pops ends the combo"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "trooper-multiball",
+      "title": "Trooper Multiball",
+      "category": "multiball",
+      "summary": "Light locks by completing the drops, lock 3 balls at the lit orbit/loop shots, then work the jackpot color ladder to the Super Jackpot.",
+      "difficulty": 2,
+      "reward": "3-4 ball MB; Trooper Eddie Card; cannon add-a-ball; the priority multiball",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Complete the 3-bank drops while 'Light Lock' is lit (2 sweeps the first time) to light the locks"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Lock a ball at the green-arrow Left Orbit"
+        },
+        {
+          "shot": "lower-side-loop",
+          "action": "Lock the remaining balls at the green-arrow right loop; locking 3 starts the multiball",
+          "detail": "All shots start blue for 1x jackpots"
+        },
+        {
+          "shot": "super-jackpot-target",
+          "action": "After 3 jackpots, collect the Super Jackpot to relight shots +1x",
+          "detail": "Color ladder Blue-Green-Yellow-Orange-Red (1x-5x); awards the Trooper Eddie Card"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mummy-multiball",
+      "title": "Mummy Multiball",
+      "category": "multiball",
+      "summary": "Spell M-U-M-M-Y at the captive ball to light the lock, lock a ball, then spell MUMMY again to start the multiball.",
+      "difficulty": 2,
+      "reward": "Mummy Eddie Card; add-a-balls via yellow shots (max 3)",
+      "steps": [
+        {
+          "shot": "mummy-captive",
+          "action": "Hit the Sarcophagus captive ball to light the Mummy lock (two hits the first time, five for later multiballs)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lock the ball at the lit Mummy Lock (center ramp on Pro)",
+          "detail": "On Premium/LE the Mummy lock is the left ramp"
+        },
+        {
+          "shot": "mummy-captive",
+          "action": "Spell MUMMY again at the captive ball; the next hit starts the multiball"
+        },
+        {
+          "shot": "bullseye",
+          "action": "During the MB, spell MUMMY to light the Super Jackpot at the Bullseye",
+          "detail": "Multiplied by bullseye position; awards the Mummy Eddie Card"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "cyborg-multiball",
+      "title": "Cyborg Multiball",
+      "category": "multiball",
+      "summary": "Complete all five Power Features, cash the final Power Jackpot at the Orb, then start Cyborg Multiball at the lit Bullseye.",
+      "difficulty": 3,
+      "reward": "3-ball MB; Cyborg Eddie Card; escalating Supers with two add-a-balls",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete Power Ramps",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Complete Power Orbits",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit-spinner",
+          "action": "Complete Power Spinners",
+          "link": "none"
+        },
+        {
+          "shot": "x-targets",
+          "action": "Complete Power Targets",
+          "link": "none"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Complete Power Bumpers — all 5 Power Features done",
+          "link": "none"
+        },
+        {
+          "shot": "orb-target",
+          "action": "Cash the final Power Jackpot at the Orb before the start shot lights"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Start Cyborg MB at the lit Bullseye (Pro) / center-ramp scoop (Prem/LE)",
+          "detail": "Supers at the Orb; first two award add-a-balls; awards the Cyborg Eddie Card"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "fear-of-the-dark",
+      "title": "Fear of the Dark",
+      "category": "mode",
+      "summary": "Single-ball battle: light the two spinners via purple arrows and rip them for big points, boosting with the right ramp, three times to win.",
+      "difficulty": 2,
+      "reward": "Soul Shard",
+      "steps": [
+        {
+          "shot": "left-orbit-spinner",
+          "action": "Shoot purple-arrow shots to light the two spinners, then rip the left-orbit spinner"
+        },
+        {
+          "shot": "revive-spinner",
+          "action": "Rip the REVIVE spinner for 2x spinner value"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp before a spinner to add +2x to spinner value"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Repeat the purple-arrow-then-spinner round three times to win, then collect the Soul Shard at the lit Bullseye"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "hallowed-be-thy-name",
+      "title": "Hallowed Be Thy Name",
+      "category": "mode",
+      "summary": "Single-ball battle: complete the lit shots in order as fast as possible, ending at the Bullseye for a time bonus and the Soul Shard.",
+      "difficulty": 2,
+      "reward": "Soul Shard + 10M + 1M per second remaining",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a lit orange-arrow shot (3M)"
+        },
+        {
+          "shot": "mummy-captive",
+          "action": "Shoot the captive ball (5M)"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot another orange arrow (3M)"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Complete all three drop targets (10M)"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Take a third orange arrow (3M), then the Bullseye for 10M + 1M per second remaining + the Soul Shard"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "aces-high",
+      "title": "Aces High",
+      "category": "mode",
+      "summary": "Two-ball battle in three stages: down four fighters, two bombers via ramp-then-bullseye, then the Ace on a 5-second roving shot.",
+      "difficulty": 3,
+      "reward": "Soul Shard; add-a-ball from the first Mystery Award",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Stage 1: hit four jackpots at any major shots to defeat the fighters",
+          "detail": "Started as a 2-ball multiball"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Stage 2: shoot either ramp to lock onto a bomber"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Then shoot the Bullseye (jackpot x1-3 by position) to down each bomber"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Stage 3: shoot the roving strobing shot then the Bullseye within 5s to defeat the Ace and light the Soul Shard"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "rime-of-the-ancient-mariner",
+      "title": "Rime of the Ancient Mariner",
+      "category": "mode",
+      "summary": "Two-ball battle: lock the albatross hurry-up at center, drift jackpots to center on each side, and shoot the Bullseye when centered.",
+      "difficulty": 3,
+      "reward": "Soul Shard (two Supers to complete)",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the lit center shot to lock the albatross hurry-up value and start a 2-ball MB"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit two left-side shots to drift the jackpots toward center over ~20s"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Shoot the Bullseye/scoop once the jackpot is centered to collect the Super"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Repeat on the right side (including drops); two Supers finishes and lights the Soul Shard"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "playfield-x",
+      "title": "Playfield X (2X / 3X)",
+      "category": "multiplier",
+      "summary": "Complete the scattered orange X targets to qualify 2X (again for 3X), then activate it at a lit return inlane just before a big scoring event.",
+      "difficulty": 2,
+      "reward": "2x/3x all scoring for ~20-30s (+5s per flashing X hit)",
+      "steps": [
+        {
+          "shot": "x-targets",
+          "action": "Shoot the four flashing orange X targets to qualify 2X; complete them again to qualify 3X"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll over the lit return inlane (flipper-selectable) to start the ~20s timer",
+          "detail": "No on-screen timer; the insert flashes faster near expiry"
+        },
+        {
+          "shot": "gravestone",
+          "action": "Shatz from the right flipper through the left inlane into the Gravestone to spot an extra X target (outside modes)",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-x-ladder",
+      "title": "Bonus X (Drop-Target Ladder)",
+      "category": "multiplier",
+      "summary": "Advance the Bonus X multiplier through the drop-target award cycle, sweeping the bank to grab two awards at once, toward the 50x cap.",
+      "difficulty": 1,
+      "reward": "Up to 50x end-of-ball bonus multiplier",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Complete the 3-bank drops while 'Adv. Bonus X' is the lit award to raise Bonus X"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Sweep all three drops in one shot to collect 2x drop value and two awards at once",
+          "detail": "Bonus X maxes at 50x and multiplies the end-of-ball bonus"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "number-of-the-beast",
+      "title": "Number of the Beast",
+      "category": "wizard",
+      "summary": "Collect all four Eddie Cards (Trooper, Mummy, Cyborg, Soldier), then parry and counter-attack the Beast at the Bullseye.",
+      "difficulty": 3,
+      "reward": "100M + the value of all Soul Shards collected earlier",
+      "steps": [
+        {
+          "shot": "super-jackpot-target",
+          "action": "Earn the Trooper Eddie Card via a Trooper Super Jackpot",
+          "link": "none"
+        },
+        {
+          "shot": "mummy-captive",
+          "action": "Earn the Mummy Eddie Card via a Mummy Super Jackpot",
+          "link": "none"
+        },
+        {
+          "shot": "orb-target",
+          "action": "Earn the Cyborg Eddie Card by completing Power Features to start Cyborg MB",
+          "link": "none"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Earn the Soldier Eddie Card by starting 2 Minutes to Midnight (after all 5 battles)",
+          "link": "none"
+        },
+        {
+          "shot": "bullseye",
+          "action": "With all 4 cards, shoot a red-arrow shot then the Bullseye to parry; land 15 counter-attacks to defeat the Beast"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "run-to-the-hills",
+      "title": "Run to the Hills",
+      "category": "wizard",
+      "summary": "Work up the Tomb Treasure ladder via Loop Jackpots, combos, Supers and Soul Shards; collecting the 10th Tomb Treasure starts the 6-ball final wizard mode.",
+      "difficulty": 3,
+      "reward": "6-ball wizard multiball; +1x to all jackpots per Super",
+      "steps": [
+        {
+          "shot": "lower-side-loop",
+          "action": "Collect Loop Jackpots and combos, then collect Tomb Treasures at the Tomb shot (right loop on Pro / left ramp on Prem-LE)"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Win Eddie Battles to collect Soul Shards — each unique battle lights a Tomb Treasure"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Work up the 10-award Tomb ladder; the 10th Tomb Treasure starts Run to the Hills, then collect Power Features in order for center-ramp Supers"
+        },
+        {
+          "shot": "mummy-captive",
+          "action": "In the 6-ball MB, spell MUMMY at the captive ball to add balls into play"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "opener-free-playfield-x",
+      "title": "Opener B — Free Playfield X into Points",
+      "category": "strategy",
+      "summary": "High-score staple: take the Super Skill Shot for a free Playfield X, activate it immediately, and pour points in while building EDDIE and Trooper in the background.",
+      "difficulty": 1,
+      "reward": "Free 2X dumped into jackpots — the standard tournament opener",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Hold the left flipper and hard plunge for the Super Skill Shot",
+          "flipper": "left",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "super-jackpot-target",
+          "action": "Hit the Super Jackpot target for 5M + a lit Playfield X"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Activate Playfield X at the inlane and immediately go for points rather than bleeding the timer"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Build EDDIE and Trooper locks in the background while X runs"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "trooper-mode-stack",
+      "title": "Trooper + Mode Stack under Playfield X",
+      "category": "strategy",
+      "summary": "The core high-EV engine: cycle to a comfortable mode, start it BEFORE Trooper Multiball so it stacks, and collect multiplied Super Jackpots under an active Playfield X.",
+      "difficulty": 2,
+      "reward": "The consensus highest-EV routine",
+      "steps": [
+        {
+          "shot": "left-orbit-spinner",
+          "action": "Rip the left spinner to build REVIVE and cycle to a comfortable Eddie Battle"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Complete the drops to light Trooper locks; lock 3 to start Trooper MB"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start the single-ball Eddie Battle at the center ramp BEFORE the multiball so it stacks"
+        },
+        {
+          "shot": "x-targets",
+          "action": "Qualify Playfield X and activate it just before collecting Super Jackpots"
+        },
+        {
+          "shot": "super-jackpot-target",
+          "action": "Collect multiplied Trooper Super Jackpots under the stack"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "opener-safe-beginner",
+      "title": "Opener A — Safe Beginner with Revive Insurance",
+      "category": "strategy",
+      "summary": "Survival-first opener: take the standard skill shot, spell REVIVE early for outlane saves, spell EDDIE and start a mode, and keep the center ramp as your bailout.",
+      "difficulty": 1,
+      "reward": "A survival-first foundation that carries over between balls",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Soft plunge for the Standard Skill Shot, then hit the lit skill-shot target (1M + EDDIE + 5s save)"
+        },
+        {
+          "shot": "revive-spinner",
+          "action": "Rip the left/revive spinner to spell R-E-V-I-V-E for outlane ball-saves (carries between balls)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Spell EDDIE via the white arrows, then start a mode at the center ramp"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Keep the center jump ramp as your safe bailout whenever the ball gets loose"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "midnight-muster",
+      "title": "2 Minutes to Midnight (Soldier Card)",
+      "category": "mode",
+      "summary": "Play all five Eddie Battles to qualify the sixth song mode, start it at the center ramp for the Soldier Eddie Card, then work the lit shots before the clock runs out.",
+      "difficulty": 3,
+      "reward": "Soldier Eddie Card on start (the fourth card for the Beast) plus mode scoring",
+      "steps": [
+        {
+          "shot": "left-orbit-spinner",
+          "action": "Rip the spinner to cycle the battle selection and keep starting battles until all five have been played",
+          "detail": "Each battle won banks a Soul Shard and lights a Tomb Treasure"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "With all five battles won, start the sixth mode at the center ramp",
+          "detail": "Starting it is what awards the Soldier card, so start it even if you cannot finish it"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the lit shots as they cycle to build mode value"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep alternating lit shots while the timer runs"
+        },
+        {
+          "shot": "bullseye",
+          "action": "Close out the mode at the bullseye before time expires"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "extra-ball-collect",
+      "title": "Extra Ball Target",
+      "category": "strategy",
+      "summary": "Push game progress until the Extra Ball X target lights, then take a clean shot at it before the ball ends.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "left-orbit-spinner",
+          "action": "Build progress with spinners, combos and mode wins until the extra ball insert lights",
+          "detail": "Mystery awards can also hand you the extra ball"
+        },
+        {
+          "shot": "extra-ball-target",
+          "action": "Shoot the lit Extra Ball X target to collect it",
+          "detail": "Collect it as soon as it lights; do not carry it into a risky multiball"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "pregame-competition-mode-menu",
+      "title": "Attract-Mode Game Mode Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Iron Maiden keeps a menu behind its attract screen that most players walk right past. It switches the whole ruleset between the standard game, a Competition variant with the randomised elements stripped out for fair head-to-head play, and a jukebox.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both flipper buttons while the machine sits in attract mode with no game in progress",
+        "Keep holding until the menu appears on the display",
+        "Choose Standard, Competition, or DJ Mixer, then start your game",
+        "Competition is the full ruleset with random elements removed",
+        "DJ Mixer is a jukebox and does not affect scoring"
+      ],
+      "reward": "Switches the ruleset to Competition, with random elements removed, or DJ Mixer, instead of Standard"
+    },
+    {
+      "id": "progress-eddie-cards",
+      "title": "Collect Four Eddie Cards at Two Levels",
+      "category": "progression",
+      "summary": "Four cards stand between you and the Beast, and every one of them comes in a weak version and a strong version. The weak version drops for the headline achievement in its feature. The strong version wants that same feature multiplied or repeated. The difference only shows itself when the fight goes badly: a level 1 card disappears the moment you fail against the Beast, while a level 2 card stays exactly where it is. Bank all four at level 2 and a loss costs you nothing but time, because you can line up another attempt straight away. Cards also fatten the Power Jackpot while you hold them.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Trooper card: level 1 arrives with a Trooper Multiball super jackpot. Level 2 wants a 5x jackpot, or every jackpot advanced to 3x.",
+        "Mummy card: level 1 arrives with a Mummy Multiball super jackpot. Level 2 wants a second super jackpot in the same game.",
+        "Cyborg card: level 1 arrives with Cyborg Multiball, which finishing all five power features lights. Level 2 wants a 5x super jackpot inside that multiball.",
+        "Soldier card: level 1 drops for starting 2 Minutes to Midnight. Level 2 wants a 2x super jackpot during it.",
+        "All four cards qualify Number of the Beast at either level, so there is no penalty for taking the fight early with weak cards.",
+        "Lose the fight and every level 1 card you were holding is gone. Level 2 cards stay, and a full set of four lets you go back in without rebuilding anything."
+      ],
+      "reward": "Qualifies Number of the Beast; level 2 cards survive a failed attempt and raise the Power Jackpot"
+    },
+    {
+      "id": "progress-power-features",
+      "title": "Finish All Five Power Features",
+      "category": "progression",
+      "summary": "The playfield sorts its shots into five families - ramps, orbits, spinners, standup targets and bumpers - and each family tracks your hits on its own. Feed one family enough and that power feature switches on. Keep feeding the same family and it completes. Your first completion lights the Power Jackpot at the Orb, and this is where patience pays: finish another feature while that jackpot is still sitting there and it does not simply grow, it picks up a multiplier. Cash in too early and you take a fraction of what the same shot would have paid two features later. Clear all five and Cyborg Multiball opens up.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Pound one family of shots - ramps, orbits, spinners, targets or bumpers - until that power feature switches on.",
+        "Stay on the same family to finish the feature off rather than spreading hits across all five at once.",
+        "Your first completed feature lights the Power Jackpot at the Orb target.",
+        "Every extra feature you complete while that jackpot is still lit adds a multiplier instead of just more points, so leave it lit longer than feels comfortable.",
+        "Eddie cards you are holding and the +5x Tomb Treasure push the same jackpot up, so line those up before you collect.",
+        "Complete all five features to light Cyborg Multiball at the bullseye on the centre jump ramp."
+      ],
+      "reward": "A multiplying Power Jackpot at the Orb, plus Cyborg Multiball once all five features are finished"
+    },
+    {
+      "id": "progress-soul-shards",
+      "title": "Bank a Soul Shard From Every Battle",
+      "category": "progression",
+      "summary": "Winning a battle is only half the job. The instant it ends the bullseye at the centre jump ramp lights for a short hurry-up, and that is your one chance to claim that battle's Soul Shard. Drain or dither and it is gone. Hit the bullseye squarely rather than clipping it and the multiplier on the award climbs. Shards are the currency of the late game: each fresh one lights a Tomb Treasure, they feed the jackpots in 2 Minutes to Midnight, and beating the Beast pays every shard you hold all over again. There are five, one for each battle.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Shoot the white arrow shots to spell EDDIE, which lights a battle at the Pharaoh centre ramp.",
+        "While the mode start is still unlit, the left spinner rotates which of the five battles is queued, so pick your battle before you finish spelling EDDIE.",
+        "Shoot the centre ramp to start the battle and see it through - the shard only lights when you finish a battle successfully.",
+        "The bullseye at the centre jump ramp lights immediately afterwards for a short hurry-up. Go straight for it, and hit it clean, because accuracy multiplies the award.",
+        "Each new shard lights a Tomb Treasure, adds to what 2 Minutes to Midnight pays, and gets re-scored if you beat the Beast."
+      ],
+      "reward": "One Soul Shard per battle; each lights a Tomb Treasure and pays again later in the game"
+    },
+    {
+      "id": "progress-tomb-treasures",
+      "title": "Climb the Ten Tomb Treasures",
+      "category": "progression",
+      "summary": "The Tomb is a fixed ladder, not a random award, so you always know exactly what the next prize is worth before you shoot for it. Seven kinds of achievement light a treasure and each one only counts the first time you manage it, so repeating your favourite trick buys nothing. Count the five Soul Shards separately and there is one more way to light a treasure than there are treasures to hand out. The tenth is the whole reason to climb: it opens Run to the Hills.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Light a treasure the first time you collect each Soul Shard, score a loop jackpot, make a 6-way combo, land a Mummy super jackpot, land a Trooper super jackpot, beat the Beast, or hold all four Eddie cards at level 2.",
+        "Collect them at the right loop on a Pro, or at the left ramp on a Premium or LE.",
+        "Know the ladder before you shoot it: 15 million, super slingshots, Can I Play With Madness, super combos, extra ball lit, revive lit, 2x bonus, +5x Power Jackpot, then 50 million with a free level 2 Eddie card.",
+        "The tenth treasure starts Run to the Hills, the machine's final wizard mode."
+      ],
+      "reward": "Ten fixed awards in a known order, ending with Run to the Hills"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "plunge-with-purpose",
+      "title": "Plunge With Purpose",
+      "desc": "Land the held-flipper plunge into the Super Jackpot target to bank the free playfield multiplier off the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "outlane-insurance",
+      "title": "Outlane Insurance",
+      "desc": "Spell REVIVE on the spinner so a lost ball down an outlane is kicked back into play.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "opener-safe-beginner"
+    },
+    {
+      "id": "three-locks-loaded",
+      "title": "Three Locks Loaded",
+      "desc": "Light the locks on the drop bank and stack three balls at the lit orbit and loop to launch Trooper Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "trooper-multiball"
+    },
+    {
+      "id": "trooper-color-climb",
+      "title": "Trooper Color Climb",
+      "desc": "Collect a Trooper Super Jackpot to relight the shots and push the jackpot color ladder one rung higher.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "trooper-multiball"
+    },
+    {
+      "id": "sarcophagus-awakened",
+      "title": "Sarcophagus Awakened",
+      "desc": "Spell MUMMY twice at the captive ball, with a ball locked in between, to start Mummy Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mummy-multiball"
+    },
+    {
+      "id": "all-five-powers",
+      "title": "All Five Powers",
+      "desc": "Finish every one of the five Power Features and start Cyborg Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "cyborg-multiball"
+    },
+    {
+      "id": "orb-payday",
+      "title": "Orb Payday",
+      "desc": "Bank several completed Power Features before cashing at the Orb so one Power Jackpot lands multiplied.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "power-jackpot-stack"
+    },
+    {
+      "id": "first-shard-banked",
+      "title": "First Shard Banked",
+      "desc": "Win any single Eddie Battle and collect the Soul Shard it awards.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "hallowed-be-thy-name"
+    },
+    {
+      "id": "ramp-ladder-shard",
+      "title": "Ramp Ladder Shard",
+      "desc": "Chain alternating lit ramps in the Icarus battle to the escape value and bank that Soul Shard.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "flight-of-icarus-ramp-farm"
+    },
+    {
+      "id": "five-battles-answered",
+      "title": "Five Battles Answered",
+      "desc": "Win all five Eddie Battles in one game and start the mode they unlock for the fourth Eddie card.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "midnight-muster"
+    },
+    {
+      "id": "full-hand-of-cards",
+      "title": "Full Hand Of Cards",
+      "desc": "Hold all four Eddie cards at once by earning the Trooper, Mummy, Cyborg and Soldier awards in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "number-of-the-beast"
+    },
+    {
+      "id": "beast-put-down",
+      "title": "Beast Put Down",
+      "desc": "Land all fifteen counter-attacks in the Beast showdown to finish the mode and cash every Soul Shard you collected.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "number-of-the-beast"
+    },
+    {
+      "id": "six-shot-chain",
+      "title": "Six-Shot Chain",
+      "desc": "Hit all six distinct major shots in one unbroken combo and cash it into a Super Deathblow at the bullseye.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "six-way-super-deathblow"
+    },
+    {
+      "id": "loop-ladder",
+      "title": "Loop Ladder",
+      "desc": "Build the Loop Jackpot to its cap and collect it while the doubled loop insert is lit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "loop-jackpot-farm"
+    },
+    {
+      "id": "triple-scoring",
+      "title": "Triple Scoring",
+      "desc": "Complete the orange X targets twice to qualify 3X and run it live from an inlane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "playfield-x"
+    },
+    {
+      "id": "bonus-ceiling",
+      "title": "Bonus Ceiling",
+      "desc": "Ride the drop-target award cycle until the end-of-ball bonus multiplier reaches its maximum.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-x-ladder"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Light and collect an extra ball at the Extra Ball target.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-collect"
+    },
+    {
+      "id": "tenth-tomb-treasure",
+      "title": "Tenth Tomb Treasure",
+      "desc": "Climb the whole ten-award Tomb Treasure ladder to start the six-ball final wizard multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "run-to-the-hills"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-super-skill-hold-plunge",
+      "title": "Hold Left, Plunge Hard",
+      "text": "Hold the left flipper and plunge hard so the ball takes the inner orbit and rolls onto the upper-left mini flipper, then shoot the Super Jackpot target from there. The free Playfield X it hands you is worth more than the points, so have the inlane plan ready before you plunge.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "super-skill-shot",
+      "shots": [
+        "shooter-lane",
+        "upper-left-flipper",
+        "super-jackpot-target"
+      ]
+    },
+    {
+      "id": "drill-mini-loop-reps",
+      "title": "Mini Loop Reps",
+      "text": "Work the Mini Loop off the upper-left mini flipper over and over. It is the hardest shot on the machine and it is what multiplies the whole loop farm, so build it before you go hunting Loop Jackpots.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "loop-jackpot-farm",
+      "shots": [
+        "upper-left-flipper",
+        "upper-side-loop"
+      ]
+    },
+    {
+      "id": "drill-orbit-to-mid-flipper-catch",
+      "title": "Catch The Orbit Feed",
+      "text": "Shoot the left orbit and catch the return dead on the mid-right flipper instead of letting it roll off. Everything that flipper reaches, the centre ramp, the captive ball and the Big Loop, is a different shot from a cradle than from a moving ball.",
+      "reps": "15 catches",
+      "focus": "ball-control",
+      "shots": [
+        "left-orbit",
+        "mid-right-flipper"
+      ]
+    },
+    {
+      "id": "drill-gravestone-shatz",
+      "title": "Shatz The Gravestone",
+      "text": "From a right-flipper cradle, shatz the ball across through the left inlane into the Gravestone target. It spots an X target outside modes, which means one technique shot buys you real progress toward Playfield X.",
+      "reps": "15 attempts",
+      "focus": "ball-control",
+      "goal": "playfield-x",
+      "shots": [
+        "lower-right-flipper",
+        "left-inlane",
+        "gravestone"
+      ]
+    },
+    {
+      "id": "drill-revive-first",
+      "title": "Revive Before Anything Else",
+      "text": "Rip the REVIVE spinner on the first ball until the word is spelled. The outlanes are what end balls on this machine, the right one especially off the Big Loop exit, and a completed Revive carries between balls.",
+      "reps": "1 full ball",
+      "focus": "accuracy",
+      "goal": "opener-safe-beginner",
+      "shots": [
+        "revive-spinner",
+        "lower-side-loop",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "drill-six-way-combo",
+      "title": "Six-Way, No Rush",
+      "text": "Chain all six majors in any order you like: left ramp, Big Loop, left orbit, Mini Loop, right ramp, right orbit, then cash it into the centre of the Bullseye. There is no combo timer, so a missed link is a decision you made and not a clock that beat you.",
+      "reps": "3 complete chains",
+      "focus": "flow",
+      "goal": "six-way-super-deathblow",
+      "shots": [
+        "left-ramp",
+        "lower-side-loop",
+        "left-orbit",
+        "upper-side-loop",
+        "right-ramp",
+        "right-orbit",
+        "bullseye"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Iron Maiden's lockdown bar is bare — there is nothing to press. Everything here comes off the four flippers and a manual shooter rod: soft plunge into the skill-shot target, or hold the left flipper on the plunge for the Super Skill Shot. No award in the game is collected with a button."
+  },
+  "howItPlays": {
+    "objective": "Fight through Eddie's world by winning the five Eddie Battles for their Soul Shards and starting the four multiballs for their Eddie Cards. Hold all four cards to face the Beast, and climb the ten Tomb Treasures to reach the Run to the Hills finale.",
+    "loop": [
+      "Spell EDDIE on the white-arrow shots to light a battle at the center Pharaoh ramp, and rip the left-orbit spinner beforehand to pick which of the five battles is queued.",
+      "Start the queued battle at the center ramp and win it, then take the Bullseye hurry-up right after to bank that battle's Soul Shard and light a Tomb Treasure.",
+      "Complete the drops to arm Trooper, spell MUMMY at the captive ball, and finish the Power Features to start the multiballs, each of which awards an Eddie Card.",
+      "Hold all four Eddie Cards to fight the Beast at the Bullseye; keep lighting Tomb Treasures until the tenth opens Run to the Hills."
+    ],
+    "lights": [
+      {
+        "id": "eddie-battles",
+        "name": "Eddie Battles",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-orbit-spinner"
+          }
+        ],
+        "lit": "The center Pharaoh ramp lights once EDDIE is spelled, meaning a battle is queued and ready to start, and it stays lit until you shoot the ramp to begin it.",
+        "flashing": null,
+        "control": null,
+        "then": "Before EDDIE finishes, rip the left-orbit spinner to change the queued battle until it lands on one you can shoot cleanly. Win it to light the Bullseye for a short Soul Shard hurry-up, and see all five battles through to qualify the Soldier card mode.",
+        "goals": [
+          "progress-soul-shards",
+          "hallowed-be-thy-name",
+          "midnight-muster"
+        ]
+      },
+      {
+        "id": "revive-letters",
+        "name": "REVIVE Spinner",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "revive-spinner"
+          }
+        ],
+        "lit": "Each lit letter of R-E-V-I-V-E is one you have already banked on the left spinner, and the finished word stays lit from ball to ball rather than resetting.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip the REVIVE spinner early to spell it out, because the wide outlanes are what end balls here - especially the right one off the Big Loop exit. A completed Revive kicks a lost outlane ball back into play, and it doubles in value while Fear of the Dark runs.",
+        "goals": [
+          "opener-safe-beginner"
+        ]
+      },
+      {
+        "id": "playfield-x-lanes",
+        "name": "Playfield X Inlanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "x-targets"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A lit return inlane means Playfield X is qualified and waiting to switch on; you qualify it first by completing the scattered orange X targets, and again for 3X, before either inlane lights.",
+        "flashing": "The active multiplier insert flashes faster as its roughly twenty-second run nears the end.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button moves the lit return inlane from one side to the other, so you can slide it under whichever inlane the ball is dropping into and start the multiplier on your own terms",
+          "when": "before the ball reaches the return lanes"
+        },
+        "then": "Line the lit inlane up with a flipper, roll through it, and 2X or 3X runs on everything for about twenty seconds - time it just before a Super Jackpot or a big combo cash instead of bleeding the clock. A right-flipper shatz through the left inlane into the Gravestone spots an extra X target outside modes.",
+        "goals": [
+          "playfield-x"
+        ]
+      },
+      {
+        "id": "trooper-drops",
+        "name": "Trooper Drop Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drop-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "The award lit above the drop bank is whatever the drops will pay next time you clear them, cycling between Advance Bonus X, Mystery and Light Locks.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock the whole bank down in a single shot to grab the lit award plus a second one at doubled drop value. Clear it while Light Locks shows to arm Trooper Multiball, or while Advance Bonus X shows to climb your end-of-ball multiplier toward its cap.",
+        "goals": [
+          "bonus-x-ladder",
+          "trooper-multiball"
+        ]
+      },
+      {
+        "id": "mummy-letters",
+        "name": "Mummy Captive Ball",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "mummy-captive"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "Hitting the Sarcophagus captive ball lights the letters of M-U-M-M-Y, and once the word is spelled the Mummy lock lights at the center ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell MUMMY, lock a ball at the lit center-ramp lock, then spell MUMMY again to start Mummy Multiball and earn the Mummy Eddie Card. During the multiball, re-spelling it lights the Super Jackpot at the Bullseye.",
+        "goals": [
+          "mummy-multiball"
+        ]
+      },
+      {
+        "id": "power-features",
+        "name": "Power Features",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-orbit-spinner"
+          },
+          {
+            "shot": "x-targets"
+          },
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "orb-target"
+          }
+        ],
+        "lit": "Every kind of shot on the machine belongs to a Power Feature family - ramps, orbits, spinners, targets, bumpers - and each family lights on its own once you have fed it enough hits.",
+        "flashing": null,
+        "control": null,
+        "then": "Pound one family at a time to finish its feature; the first one you complete opens a Power Jackpot at the Orb, and any feature you finish while it still sits there stacks a multiplier onto it rather than just points. Finish every family to start Cyborg Multiball at the Bullseye.",
+        "goals": [
+          "progress-power-features",
+          "power-jackpot-stack",
+          "cyborg-multiball"
+        ]
+      },
+      {
+        "id": "eddie-cards",
+        "name": "Eddie Cards to the Beast",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "super-jackpot-target"
+          },
+          {
+            "shot": "mummy-captive"
+          },
+          {
+            "shot": "orb-target"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "bullseye"
+          }
+        ],
+        "lit": "Each Eddie Card lights as you earn it - Trooper from a Trooper super, Mummy from a Mummy super, Cyborg from finishing the Power Features, Soldier from starting 2 Minutes to Midnight - and a card banked at level two survives a failed Beast fight.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect all four cards to qualify Number of the Beast at the Bullseye, then shoot a red-arrow shot and the Bullseye to parry and land fifteen counter-attacks. Winning pays a hundred million plus the value of every Soul Shard you banked along the way.",
+        "goals": [
+          "progress-eddie-cards",
+          "number-of-the-beast"
+        ]
+      },
+      {
+        "id": "tomb-treasures",
+        "name": "Tomb Treasure Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "lower-side-loop"
+          }
+        ],
+        "lit": "The Tomb is a fixed ten-rung ladder collected at the right loop, so you always know what the next award is worth, and each of the seven qualifying feats only lights a treasure the first time you manage it.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank each new Soul Shard, loop jackpot, six-way combo, Mummy or Trooper super, Beast win, or a full hand of level-two cards to light the next treasure, then collect it at the loop. The tenth Tomb Treasure starts Run to the Hills, the six-ball final wizard mode.",
+        "goals": [
+          "progress-tomb-treasures",
+          "loop-jackpot-farm",
+          "run-to-the-hills"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to move the lit return inlane from one side to the other, so you can catch the ball on whichever side it returns. You must qualify Playfield X first at the orange X targets - once qualified, rolling the lit inlane starts about twenty seconds of 2X (or 3X) scoring on everything.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the Super Skill Shot with a held-flipper plunge for a free Playfield X and pour it straight into points. Spell REVIVE early for outlane insurance, then spell EDDIE and start an easy battle at the center ramp, keeping that ramp as your safe bailout.",
+        "goals": [
+          "super-skill-shot",
+          "opener-free-playfield-x",
+          "opener-safe-beginner"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start a single-ball battle before Trooper Multiball so the two stack, then collect multiplied Super Jackpots under a live Playfield X. Farm the Big Loop and Mini Loop for Loop Jackpots, and climb Bonus X on the drops in the background.",
+        "goals": [
+          "trooper-mode-stack",
+          "trooper-multiball",
+          "loop-jackpot-farm",
+          "bonus-x-ladder"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Hold all four Eddie Cards to fight the Beast at the Bullseye - landing every counter-attack pays a hundred million plus every Soul Shard you banked. Climb all ten Tomb Treasures to start Run to the Hills, the six-ball final wizard, and note that a single clean six-way combo cashed into a Super Deathblow can spike near nine hundred million on its own.",
+        "goals": [
+          "number-of-the-beast",
+          "run-to-the-hills",
+          "six-way-super-deathblow"
+        ]
+      }
+    ]
+  }
+}

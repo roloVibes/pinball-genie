@@ -1,0 +1,798 @@
+{
+  "machine": "Eight Ball Deluxe (Bally, 1981)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A plain manual plunger. There is no scored skill shot here — the plunge exists to put the ball in the top of the playfield."
+    },
+    {
+      "id": "ball-drops",
+      "name": "Ball Drop Targets",
+      "type": "drop-target",
+      "x": 0.8,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Seven drops down the right side, 2K each. Clearing all seven lights the 8 Ball target. In a multiplayer game each player has their own numbering on the same physical bank."
+    },
+    {
+      "id": "eight-ball-target",
+      "name": "8 Ball Target",
+      "type": "drop-target",
+      "x": 0.85,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Top right corner. Pays whatever value is lit on the playfield and steps that value up. Hitting it never resets the ball drops, whatever you may have been told."
+    },
+    {
+      "id": "corner-pocket",
+      "name": "Corner Pocket",
+      "type": "saucer",
+      "x": 0.7775,
+      "y": 0.7647,
+      "trim": "all",
+      "notes": "A pothole behind the 8 Ball target that pays your whole bonus — super bonus plus bonus, times the multiplier — without ending the ball. Some machines are set to pay bonus only, with no multiplier."
+    },
+    {
+      "id": "multiplier-drops",
+      "name": "Multiplier Drop Targets",
+      "type": "drop-target",
+      "x": 0.14,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "An inline bank up the top left. Each target sets the bonus multiplier to the value printed on it, up to 5x. They are much harder to hit safely than they look."
+    },
+    {
+      "id": "bank-shot",
+      "name": "Bank Shot",
+      "type": "standup",
+      "x": 0.1,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "A round target sitting behind the multiplier drops. Pays 50K or a Special depending on which is lit, and how that alternates is an operator setting."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.1,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Pays the lit value and lights the next one up the ladder — 10K, 30K, 50K, extra ball, 70K, Special. Unlit it is worth a token 500."
+    },
+    {
+      "id": "abcd-lanes",
+      "name": "A-B-C-D Lanes",
+      "type": "rollover",
+      "x": 0.48,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "A and B are the top rollovers. On most setups collecting either C or D spots both. Completing all four spots drop targets, starts a bumper flashing and raises the 8 Ball value."
+    },
+    {
+      "id": "bumpers",
+      "name": "Thumper Bumpers",
+      "type": "bumpers",
+      "x": 0.42,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Three of them, worth around 500 idle and 3,000 when flashing. Completing A-B-C-D lights them in a fixed order: upper left, then upper right, then bottom."
+    },
+    {
+      "id": "deluxe-targets",
+      "name": "Playfield DELUXE Targets",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Six round targets offset behind and between the ball drops, 3K each whether lit or not. Hitting a lit one puts its letter out."
+    },
+    {
+      "id": "backglass-deluxe",
+      "name": "Backglass DELUXE",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.97,
+      "trim": "all",
+      "notes": "Six letters on the backglass that light one at a time as you complete the playfield DELUXE. They stay lit between games, so you can walk up to a machine someone else has already loaded."
+    },
+    {
+      "id": "special-light",
+      "name": "Special Light",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Sits between the flippers and tells you when the next lit 8 Ball hit will also pay a Special. Worth glancing at before every 8 Ball shot."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Lights for Special once the 8 Ball value has been driven past 60K. The lit side flips back and forth on slingshot hits."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The other half of the outlane Special, alternating with the left."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Returns the ball to the left flipper, the flipper you want for the right-side drop bank."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Feeds the right flipper for the left loop and the multiplier drops."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.34,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Your route to the ball drops, the 8 Ball target and the corner pocket."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.66,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Your route to the left loop, the multiplier drops and the bank shot."
+    }
+  ],
+  "goals": [
+    {
+      "id": "rack-the-balls",
+      "title": "Rack The Balls",
+      "category": "progression",
+      "summary": "Seven drop targets on the right, 2K each, and clearing all seven is what lights the 8 Ball. The machine remembers exactly which of your targets were down and rebuilds that state at the start of your next ball, so nothing you knock down is ever wasted.",
+      "difficulty": 2,
+      "reward": "2K per target, lights the 8 Ball",
+      "steps": [
+        {
+          "shot": "ball-drops",
+          "action": "Work the bank down",
+          "detail": "In a multiplayer game the same physical targets carry different numbers for each player, so you are only ever clearing your own rack."
+        },
+        {
+          "shot": "eight-ball-target",
+          "action": "Take the 8 Ball once it lights",
+          "detail": "Hitting the 8 Ball does not put the drops back up, so a lit 8 Ball is free to shoot at whenever you like."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "eight-ball-ladder",
+      "title": "Climb The 8 Ball Value",
+      "category": "progression",
+      "summary": "The 8 Ball target pays whatever the playfield says it is worth and then raises that value: 20K, 40K, 60K. Hit it once 60K is lit and the corner pocket and both outlanes light for Special. Unlit it is worth a token few hundred.",
+      "difficulty": 2,
+      "reward": "20K to 60K, then outlane Specials",
+      "steps": [
+        {
+          "shot": "abcd-lanes",
+          "action": "Push the value with the lanes",
+          "detail": "Completing A-B-C-D raises the 8 Ball value as well, which can carry it past 60K without a single 8 Ball hit."
+        },
+        {
+          "shot": "eight-ball-target",
+          "action": "Collect at the top of the ladder",
+          "detail": "Once 60K is lit, hitting it opens the Specials at the corner pocket and both outlanes."
+        },
+        {
+          "shot": "special-light",
+          "action": "Watch the light between the flippers",
+          "detail": "When that light is on, the next lit 8 Ball hit pays a Special on top of its points."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "deluxe",
+      "title": "Complete DELUXE",
+      "category": "mode",
+      "summary": "Hitting the lit 8 Ball lights the six round DELUXE targets on the playfield. They pay 3K each either way, but hitting a lit one puts its letter out. Complete all six and you score 50K or a Special, reset the whole rack of ball drops, and add 56K to your super bonus.",
+      "difficulty": 3,
+      "reward": "50K or a Special, a fresh rack, +56K super bonus",
+      "steps": [
+        {
+          "shot": "eight-ball-target",
+          "action": "Light the targets",
+          "detail": "The lit 8 Ball is what arms DELUXE. Nothing else does."
+        },
+        {
+          "shot": "deluxe-targets",
+          "action": "Clear all six",
+          "detail": "They are offset behind and between the ball drops, so a clean angle matters."
+        },
+        {
+          "shot": "ball-drops",
+          "action": "Take the fresh rack",
+          "detail": "The drops reset, which is exactly what you want — a full rack is a full bonus."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "failed-deluxe",
+      "title": "Draining On A Live DELUXE",
+      "category": "secret",
+      "summary": "A rule that quietly protects you. If DELUXE is lit and you drain before finishing it, the machine still adds 56K to your super bonus and still resets the ball drops for your next ball. Depending on the setting, only the letters you missed relight.",
+      "difficulty": 1,
+      "reward": "+56K super bonus and a reset rack anyway",
+      "steps": [
+        {
+          "shot": "eight-ball-target",
+          "action": "Light DELUXE early in a ball",
+          "detail": "Even a failed attempt banks the super bonus, so lighting it is never a wasted shot."
+        },
+        {
+          "shot": "ball-drops",
+          "action": "Expect a fresh rack next ball",
+          "detail": "That is a full seven targets of bonus back on the table."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "backglass-deluxe",
+      "title": "Backglass DELUXE",
+      "category": "wizard",
+      "summary": "Every playfield DELUXE you complete lights the next letter of DELUXE on the backglass. Finish all six and the letters dance and the machine pays out a run of Specials — up to three, depending on how it is set. Those backglass letters stay lit between games.",
+      "difficulty": 3,
+      "reward": "Up to three Specials",
+      "steps": [
+        {
+          "shot": "deluxe-targets",
+          "action": "Complete DELUXE again and again",
+          "detail": "One backglass letter per completion. Some machines are set to only count completions that also paid a Special."
+        },
+        {
+          "shot": "backglass-deluxe",
+          "action": "Check the backglass before you start",
+          "detail": "Because the letters carry between games, a machine someone else was playing may already be most of the way there."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "multiplier-drops",
+      "title": "Set The Multiplier",
+      "category": "multiplier",
+      "summary": "The inline bank at the top left sets your bonus multiplier to whatever the target you hit says — 2x, 3x, 4x, 5x. Given that the bonus here is a real fraction of your score, this is the most valuable bank on the machine and also the most dangerous to shoot at.",
+      "difficulty": 3,
+      "reward": "Up to 5x on the bonus",
+      "steps": [
+        {
+          "shot": "multiplier-drops",
+          "action": "Work up the inline bank",
+          "detail": "Each target sets the multiplier outright rather than adding to it."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Shoot it from a cradle",
+          "detail": "The rebound out of this bank is unkind. Take the shot from a settled ball, not on the fly."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "super-bonus",
+      "title": "Build The Super Bonus",
+      "category": "progression",
+      "summary": "The super bonus is a separate pot that only ever holds 0, 56K or 112K, and it is added to your bonus before the multiplier is applied. Every DELUXE that resets the drops adds 56K, and so does a DELUXE you light but fail to finish.",
+      "difficulty": 2,
+      "reward": "Up to 112K multiplied",
+      "steps": [],
+      "instructions": [
+        "Your bonus is the super bonus plus 7K for every ball drop target currently down, all multiplied by your bonus multiplier.",
+        "A lit 8 Ball target counts toward the bonus when it is down; an unlit one does not.",
+        "Each completed DELUXE that resets the drops adds 56K to the super bonus, and it caps at 112K.",
+        "Lighting DELUXE and then draining before you finish it still adds 56K, so an attempt is never wasted.",
+        "Because the super bonus is added before multiplying, filling it and then setting 5x is worth far more than either on its own.",
+        "The corner pocket pays the whole thing without ending your ball, which is the point of that shot."
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "corner-pocket",
+      "title": "The Corner Pocket",
+      "category": "strategy",
+      "summary": "A pothole tucked behind the 8 Ball target that cashes your entire bonus — super bonus plus bonus, times the multiplier — while your ball keeps playing. If the Special light in front of it is lit, it pays that too.",
+      "difficulty": 3,
+      "reward": "Your full bonus, mid-ball",
+      "steps": [
+        {
+          "shot": "multiplier-drops",
+          "action": "Set the multiplier first",
+          "detail": "Shooting the pocket at 1x with an empty rack is throwing the shot away."
+        },
+        {
+          "shot": "ball-drops",
+          "action": "Get the rack down",
+          "detail": "7K per downed target, so a full rack is the difference between a small pocket and a large one."
+        },
+        {
+          "shot": "corner-pocket",
+          "action": "Take the pocket",
+          "detail": "Some machines are set to pay bonus only with no multiplier, so watch what it actually gives you the first time."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "left-loop",
+      "title": "The Left Loop Ladder",
+      "category": "progression",
+      "summary": "Each left loop pays the value currently lit and lights the next one up: 10K, 30K, 50K, extra ball, 70K, Special. Unlit it is worth a few hundred, so the whole point is keeping the ladder moving.",
+      "difficulty": 2,
+      "reward": "10K to 70K, an extra ball and a Special",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Run the ladder in order",
+          "detail": "10K, 30K and 50K always come first, in that order."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Take the extra ball",
+          "detail": "It sits between 50K and 70K on most setups. Some machines make you complete a whole second pass through the ladder before the Special becomes available."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "abcd-lanes",
+      "title": "A-B-C-D Lanes",
+      "category": "multiplier",
+      "summary": "Completing the four lanes does three useful things at once: it spots the highest unhit drop targets, it sets a thumper bumper flashing, and it raises the 8 Ball value. On most three-ball setups collecting either C or D spots both.",
+      "difficulty": 1,
+      "reward": "Spotted drops, a flashing bumper, a bigger 8 Ball",
+      "steps": [
+        {
+          "shot": "abcd-lanes",
+          "action": "Collect the letters",
+          "detail": "Bumpers get lit in a fixed order — upper left, upper right, then bottom."
+        },
+        {
+          "shot": "ball-drops",
+          "action": "Take the free spots",
+          "detail": "One or two of the uppermost unhit targets are knocked down for you, depending on the setting."
+        },
+        {
+          "shot": "eight-ball-target",
+          "action": "Ride the raised value",
+          "detail": "The lanes can push the 8 Ball past 60K on their own and open the outlane Specials that way."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "top-rollover-25k",
+      "title": "The 25K Rollover",
+      "category": "secret",
+      "summary": "A small rule almost nobody notices. If you have collected A and B but either C or D is still outstanding, one of the top rollover lanes lights for 25K. The lit one flips sides on every thumper bumper and slingshot hit, and once A-B-C-D is finished it goes out for good.",
+      "difficulty": 2,
+      "reward": "25K per collection",
+      "steps": [
+        {
+          "shot": "abcd-lanes",
+          "action": "Take A and B, then stall",
+          "detail": "Leaving C or D uncollected is what keeps the 25K light alive."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Let the bumpers move it",
+          "detail": "Every bumper or slingshot hit swaps which top lane is lit, so the ball coming out of the bumpers has a real chance of finding it."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bumpers",
+      "title": "Flashing Thumper Bumpers",
+      "category": "strategy",
+      "summary": "An idle bumper is worth about five hundred points. A flashing one is worth three thousand a hit — six times an idle one, and half again what a 2K ball drop target pays. Completing A-B-C-D is how you light them, one per completion.",
+      "difficulty": 1,
+      "reward": "3,000 per hit instead of 500",
+      "steps": [
+        {
+          "shot": "abcd-lanes",
+          "action": "Complete the lanes to light one",
+          "detail": "Upper left first, then upper right, then the bottom bumper."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Feed the bumper area deliberately",
+          "detail": "With all three flashing, time spent up there stops being dead time."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "specials",
+      "title": "Where The Specials Live",
+      "category": "secret",
+      "summary": "Eight Ball Deluxe hands out Specials from six different places, and several of them depend on how the operator has set the machine. Knowing the full list is worth more than any single shot on the playfield.",
+      "difficulty": 3,
+      "reward": "Free games",
+      "steps": [],
+      "instructions": [
+        "Drive the 8 Ball value past 60K and the corner pocket and both outlanes light for Special.",
+        "The outlane Special alternates sides with slingshot hits, so check which side is lit before you nudge.",
+        "The bank shot behind the multiplier drops pays 50K or a Special, and which comes first is a setting.",
+        "Completing the playfield DELUXE pays 50K or a Special on the same alternating basis.",
+        "The very top of the left loop ladder is a Special, though some setups make you run the ladder twice before it is available.",
+        "The second and third hits on a lit 8 Ball target also pay a Special — the light between the flippers tells you when."
+      ],
+      "fx": "coin"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ebd-rack",
+      "title": "Rack Cleared",
+      "desc": "Knock down all seven ball drop targets to light the 8 Ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "rack-the-balls"
+    },
+    {
+      "id": "ebd-eight-ball",
+      "title": "Eight Ball",
+      "desc": "Hit the lit 8 Ball target.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "eight-ball-ladder"
+    },
+    {
+      "id": "ebd-lanes",
+      "title": "A-B-C-D",
+      "desc": "Complete all four lanes to spot drops and light a bumper.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "abcd-lanes"
+    },
+    {
+      "id": "ebd-multiplier",
+      "title": "Five Times",
+      "desc": "Work the inline bank up to a 5x bonus multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-drops"
+    },
+    {
+      "id": "ebd-deluxe",
+      "title": "Deluxe",
+      "desc": "Complete all six playfield DELUXE targets.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "deluxe"
+    },
+    {
+      "id": "ebd-pocket",
+      "title": "Corner Pocket",
+      "desc": "Cash a full bonus in the corner pocket without losing the ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "corner-pocket"
+    },
+    {
+      "id": "ebd-super",
+      "title": "One Hundred And Twelve",
+      "desc": "Fill the super bonus to its 112K maximum.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-bonus"
+    },
+    {
+      "id": "ebd-loop-eb",
+      "title": "Round The Loop",
+      "desc": "Climb the left loop ladder to the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "left-loop"
+    },
+    {
+      "id": "ebd-special",
+      "title": "Clack",
+      "desc": "Collect a Special anywhere on the machine.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "specials"
+    },
+    {
+      "id": "ebd-backglass",
+      "title": "The Letters Dance",
+      "desc": "Light all six letters of DELUXE on the backglass.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "backglass-deluxe"
+    }
+  ],
+  "drills": [
+    {
+      "id": "clear-your-rack",
+      "title": "Clear Your Rack",
+      "text": "The seven drops on the right are a left flipper job. Work the bank down in sets and remember the machine rebuilds exactly what you left standing next ball, so nothing you knock over is wasted.",
+      "reps": "5 full racks",
+      "focus": "accuracy",
+      "goal": "rack-the-balls",
+      "shots": [
+        "ball-drops",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "left-loop-ladder",
+      "title": "Left Loop Ladder",
+      "text": "Run the loop from the right flipper and keep the ladder moving: 10K, 30K, 50K, extra ball, 70K. Unlit it pays a few hundred, so a loop you take out of order is a loop wasted.",
+      "reps": "15 loops",
+      "focus": "accuracy",
+      "goal": "left-loop",
+      "shots": [
+        "left-loop",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "multiplier-from-a-cradle",
+      "title": "Inline Bank From A Cradle",
+      "text": "The inline bank at the top left sets your multiplier outright, and its rebound is unkind. Only take it from a settled ball on the right flipper, and count the attempts that come back to a flipper rather than an outlane.",
+      "reps": "15 attempts",
+      "focus": "ball-control",
+      "goal": "multiplier-drops",
+      "shots": [
+        "multiplier-drops",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "rack-eight-deluxe",
+      "title": "Rack, 8 Ball, DELUXE",
+      "text": "Clear the rack, take the lit 8 Ball to arm DELUXE, then pick the six round targets out from between the drops. They are offset behind the bank, so the angle matters more than the power.",
+      "reps": "3 full runs",
+      "focus": "flow",
+      "goal": "deluxe",
+      "shots": [
+        "ball-drops",
+        "eight-ball-target",
+        "deluxe-targets"
+      ]
+    },
+    {
+      "id": "pocket-in-the-right-order",
+      "title": "Pocket It In Order",
+      "text": "Set the multiplier on the inline bank first, get the rack down second, and only then take the corner pocket behind the 8 Ball target. Shooting the pocket at 1x with an empty rack throws away the one shot that cashes your bonus without ending the ball.",
+      "reps": "5 full runs",
+      "focus": "flow",
+      "goal": "corner-pocket",
+      "shots": [
+        "multiplier-drops",
+        "ball-drops",
+        "corner-pocket"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "dice",
+  "actionButton": {
+    "present": false,
+    "how": "A 1981 cabinet, so the interface is two flipper buttons and a manual plunger. There is not even a scored skill shot to aim at — the plunge simply puts the ball at the top of the playfield and the game starts from there."
+  },
+  "howItPlays": {
+    "objective": "Eight Ball Deluxe is a 1981 Bally pool table built on its bonus: rack the seven ball drops, drive the 8 Ball value up, and complete DELUXE over and over. Spell DELUXE across all six backglass letters for a run of specials, the game's summit.",
+    "loop": [
+      "Knock down the seven right-side drops to light the 8 Ball, then hit it to collect its value and arm the DELUXE targets.",
+      "Complete the A-B-C-D lanes to spot your standing drops, flash a bumper, and push the 8 Ball value higher.",
+      "Set your bonus multiplier on the top-left inline bank, and build the super bonus by finishing DELUXE, each completion adding 56K.",
+      "Cash the entire bonus at the corner pocket while the ball keeps playing, and spell DELUXE on the backglass toward the special run."
+    ],
+    "lights": [
+      {
+        "id": "ball-rack",
+        "name": "Ball Drop Rack",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "ball-drops",
+            "lamps": 7
+          },
+          {
+            "shot": "eight-ball-target"
+          }
+        ],
+        "lit": "Each of the seven right-side drops you knock down stays down and feeds your bonus, and clearing the full rack lights the 8 Ball target in the corner; the game keeps your rack in memory and stands it back up when you return, so a knocked-over drop is never wasted.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the bank down from the left flipper, then take the lit 8 Ball whenever you like -- hitting it never stands the drops back up -- to collect its value and arm the DELUXE targets.",
+        "goals": [
+          "rack-the-balls"
+        ]
+      },
+      {
+        "id": "eight-ball-value",
+        "name": "8 Ball Value",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "eight-ball-target"
+          },
+          {
+            "shot": "special-light"
+          }
+        ],
+        "lit": "A lit 8 Ball pays whatever the playfield currently says it is worth -- 20K, then 40K, then 60K -- and each collect steps that value one notch higher, while an unlit one is worth only a token few hundred.",
+        "flashing": null,
+        "control": null,
+        "then": "Drive the value past 60K -- by 8 Ball hits or by completing the A-B-C-D lanes -- and the corner pocket opens for a bonus cash-out while both outlanes turn on for special. Glance at the lamp between the flippers first, because when it is on, your next 8 Ball collect adds a special to the points you score.",
+        "goals": [
+          "eight-ball-ladder"
+        ]
+      },
+      {
+        "id": "abcd-lanes",
+        "name": "A-B-C-D Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "abcd-lanes"
+          }
+        ],
+        "lit": "A lit lane letter is one you still need; on many machines a lit C or D quietly fills the other, and finishing all four spots your highest standing drops, sets a bumper flashing, and nudges the 8 Ball value up.",
+        "flashing": "With A and B in but C or D still open, one of the top lanes lights for 25K, and that lit lane jumps sides on every bumper or slingshot hit until the set is finished.",
+        "control": null,
+        "then": "Collect A and B, then milk that 25K top lane before you close C or D, since it goes dark for good once the set is done. Completing the lanes sets the three bumpers flashing in sequence -- the top-left, next the top-right, and finally the low middle one -- turning idle 500-point bumpers into 3000 a hit.",
+        "goals": [
+          "abcd-lanes",
+          "top-rollover-25k",
+          "bumpers"
+        ]
+      },
+      {
+        "id": "multiplier-bank",
+        "name": "Multiplier Inline Bank",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "multiplier-drops"
+          },
+          {
+            "shot": "corner-pocket"
+          }
+        ],
+        "lit": "Each target in the top-left inline bank sets your bonus multiplier outright to the number printed on it, up to 5x, and the bonus it multiplies is a genuine slice of your score.",
+        "flashing": null,
+        "control": null,
+        "then": "Take this bank only off a cradled ball on the right flipper, since its rebound is vicious, then cash the whole bonus at the corner pocket tucked behind the 8 Ball -- it hands you the super bonus and rack bonus multiplied together, and your ball plays right on. Set the multiplier and fill the rack before you take the pocket, or you are throwing the shot away.",
+        "goals": [
+          "multiplier-drops",
+          "corner-pocket",
+          "super-bonus"
+        ]
+      },
+      {
+        "id": "deluxe-targets",
+        "name": "DELUXE Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "deluxe-targets",
+            "lamps": 6
+          },
+          {
+            "shot": "backglass-deluxe"
+          }
+        ],
+        "lit": "A lit 8 Ball arms the six round DELUXE standups scattered behind the drops; striking a lit one knocks its letter dark, and each completed playfield DELUXE turns on one more letter of the backglass DELUXE -- and those backglass letters carry over between games.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete all six for 50K or a special, a fresh rack, and 56K added to your super bonus -- and even lighting DELUXE then draining still banks that 56K and the reset rack. Light the backglass DELUXE all the way through for a run of up to three specials, the deepest thing on the machine.",
+        "goals": [
+          "deluxe",
+          "backglass-deluxe",
+          "super-bonus",
+          "failed-deluxe"
+        ]
+      },
+      {
+        "id": "left-loop-ladder",
+        "name": "Left Loop Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-loop"
+          }
+        ],
+        "lit": "Each left loop pays the value lit at the moment and lights the next rung up: it climbs 10K, then 30K and 50K, an extra ball, 70K, and a special at the very top, while an unlit loop is worth only a few hundred.",
+        "flashing": null,
+        "control": null,
+        "then": "Run the ladder in order from the right flipper to reach the extra ball sitting between 50K and 70K, then the special at the top -- though some machines make you run the whole thing twice before that special comes live.",
+        "goals": [
+          "left-loop"
+        ]
+      },
+      {
+        "id": "outlane-specials",
+        "name": "Outlane & Bank Specials",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          },
+          {
+            "shot": "bank-shot"
+          }
+        ],
+        "lit": "Once the 8 Ball value is driven past 60K, both outlanes light for special, and the live side flips between them on slingshot hits; the bank shot behind the multiplier drops carries its own 50K-or-special, alternating on an operator setting.",
+        "flashing": null,
+        "control": null,
+        "then": "Check which outlane is lit before you nudge, since the live side swaps under you, and pick the bank shot off when it is showing its special rather than the 50K. These join the corner pocket, the top of the loop, and a DELUXE completion as the machine's many roads to a special.",
+        "goals": [
+          "specials",
+          "eight-ball-ladder"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Clear your rack of seven drops from the left flipper and take the lit 8 Ball, then complete A-B-C-D to spot drops and start the bumpers flashing. Milk the 25K top lane while C or D is still open.",
+        "goals": [
+          "rack-the-balls",
+          "abcd-lanes",
+          "top-rollover-25k"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Set the bonus multiplier on the inline bank -- only off a cradled ball, the rebound is brutal -- and build the super bonus by completing DELUXE, 56K a time. Run the left loop ladder for the extra ball, and drive the 8 Ball past 60K to open the specials.",
+        "goals": [
+          "multiplier-drops",
+          "super-bonus",
+          "deluxe",
+          "left-loop",
+          "eight-ball-ladder"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Cash your full super-plus-rack bonus at 5x through the corner pocket while the ball plays on, then complete DELUXE again and again to spell all six letters on the backglass for a run of up to three specials -- the deepest thing the machine offers, and it carries between games.",
+        "goals": [
+          "backglass-deluxe",
+          "corner-pocket",
+          "super-bonus"
+        ]
+      }
+    ]
+  }
+}

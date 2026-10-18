@@ -1,0 +1,191 @@
+/* ui/signupgate.css — the "unlock Achievements" prompt (ui/signupgate.ts).
+ * Charcoal/amber house palette, same recipe as howto.css and account.css.
+ * No inline styles anywhere: CSP is style-src 'self'. */
+
+@keyframes pgGateIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pgGateRise {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.pg-gate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300; /* above the how-to sheet (200) — this can open over it */
+  background: rgba(8, 9, 12, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: pgGateIn 0.16s ease-out;
+  overflow-y: auto;
+}
+
+.pg-gate-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  background: var(--bg-raised);
+  border: 1px solid rgba(255, 176, 46, 0.28);
+  border-radius: 18px;
+  padding: 24px 20px 20px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+  animation: pgGateRise 0.2s ease-out;
+  /* A short viewport (landscape phone) must scroll the card, not clip it. */
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+}
+
+.pg-gate-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--hairline);
+  border: 1px solid var(--glass-border);
+  color: rgba(233, 237, 247, 0.75);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pg-gate-close:hover,
+.pg-gate-close:focus-visible {
+  border-color: rgba(255, 176, 46, 0.5);
+  color: var(--amber);
+}
+
+.pg-gate-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--amber-faint);
+  border: 1px solid rgba(255, 176, 46, 0.45);
+  color: var(--amber);
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.pg-gate-title {
+  margin: 0 0 8px;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+
+.pg-gate-lead {
+  margin: 0 0 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(233, 237, 247, 0.78);
+}
+
+.pg-gate-why {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pg-gate-why li {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: rgba(233, 237, 247, 0.66);
+  padding-left: 16px;
+  position: relative;
+}
+
+/* Amber bullet drawn in CSS rather than an emoji or an <img> — one less
+ * asset, and it can't render as tofu on an Android that lacks the glyph. */
+.pg-gate-why li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+.pg-gate-why strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.pg-gate-note {
+  margin: 0 0 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.pg-gate-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-radius: 12px;
+  background: var(--amber);
+  color: var(--text-on-amber);
+  font-size: 14.5px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.pg-gate-primary:hover,
+.pg-gate-primary:focus-visible {
+  background: var(--amber-bright);
+}
+
+.pg-gate-secondary {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 8px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-soft);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.pg-gate-secondary:hover,
+.pg-gate-secondary:focus-visible {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--text);
+}
+
+.pg-gate-already {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(233, 237, 247, 0.45);
+}
+
+.pg-gate-already a {
+  color: rgba(255, 176, 46, 0.9);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pg-gate-already a:hover,
+.pg-gate-already a:focus-visible {
+  color: var(--amber);
+  text-decoration: underline;
+}

@@ -1,0 +1,1105 @@
+{
+  "machine": "Mario Andretti (Gottlieb, 1995)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Manual plunger up a short ramp that ends at a captive ball. Everything about the skill shot is decided by how hard you pull."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Skill Shot Captive Ball",
+      "type": "captive-ball",
+      "x": 0.88,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Your plunged ball strikes this one, and the captive ball travels up a short path before your ball is fed to the right inlane by habitrail."
+    },
+    {
+      "id": "skill-rollovers",
+      "name": "Skill Shot Rollovers",
+      "type": "rollover",
+      "x": 0.88,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three switches on the captive ball's path, plus a standup at the very top. Whichever switch the captive ball last touched decides your award."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "The Mystery and Race Strategy shot, and it lights Stop Watch at the right loop when the loop is not busy with something else."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.34,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Three in the usual triangle. Bumper hits advance cars around the race track and can toggle the Mystery light at the left ramp."
+    },
+    {
+      "id": "upper-hole",
+      "name": "Upper Hole",
+      "type": "saucer",
+      "x": 0.42,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Sits just below the pops and feeds the ball across to the right hole kickout."
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.84,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Lights, starts and scores the Stop Watch, feeds the left inlane, and raises the up post for a short spell if it is down. A diverter at the top can drop the ball into the scoop and on into the bumpers.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-hole",
+      "name": "Right Hole",
+      "type": "scoop",
+      "x": 0.9,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "The pit lane. Collects Victory Circle, Track Award or Pit Stop depending on what is lit, and kicks the ball back out."
+    },
+    {
+      "id": "hairpin-left",
+      "name": "Hairpin Turn (Left)",
+      "type": "loop",
+      "x": 0.38,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "One mouth of the horseshoe in the middle of the playfield. A ball in here comes out of the opposite side.",
+      "feeds": {
+        "shot": "hairpin-right"
+      }
+    },
+    {
+      "id": "hairpin-right",
+      "name": "Hairpin Turn (Right)",
+      "type": "loop",
+      "x": 0.62,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "The other mouth of the horseshoe. Either side spins the cars and, followed quickly by the Tach, advances the jackpot.",
+      "feeds": {
+        "shot": "hairpin-left"
+      }
+    },
+    {
+      "id": "spinning-cars",
+      "name": "Spinning Cars",
+      "type": "toy",
+      "x": 0.5,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Two cars on either end of a rod that sweeps around the hairpin. A prong under each car can be struck by the ball, or can knock the ball itself. They spin faster the better your lap is going."
+    },
+    {
+      "id": "tach-targets",
+      "name": "Tach Targets",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Two red standups between the horns of the hairpin. Cheap during normal play, but the whole point of the Redline Round."
+    },
+    {
+      "id": "turbo-targets",
+      "name": "Turbo Standups",
+      "type": "standup",
+      "x": 0.14,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Two yellow standups above the left slingshot. Hit one to start Turbo flashing, then hit it again before it dies."
+    },
+    {
+      "id": "eb-standup",
+      "name": "EB / Pass Standup",
+      "type": "standup",
+      "x": 0.2,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "White standup at the top of the left slingshot. Pays the extra ball or a Pass when it is lit."
+    },
+    {
+      "id": "jackpot-standup",
+      "name": "Jackpot / Yield Standup",
+      "type": "standup",
+      "x": 0.8,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "White standup at the top of the right slingshot. Pays a jackpot when lit for one, and costs you a position when it is red for Yield."
+    },
+    {
+      "id": "race-track",
+      "name": "Race Track Lights",
+      "type": "mech",
+      "x": 0.4629,
+      "y": 0.4989,
+      "trim": "all",
+      "notes": "Seventeen numbered car-shaped lights that form the circuit. Their numbers are what a Track Award pays you."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.0873,
+      "y": 0.3176,
+      "trim": "all",
+      "notes": "Advances cars around the track — and quietly swaps your ball saves: it enables the right outlane diverter and switches the left kickback off."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.7884,
+      "y": 0.3359,
+      "trim": "all",
+      "notes": "The mirror image: it turns the left outlane kickback on and the right outlane diverter off."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.32,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Where the right loop returns the ball. No award of its own."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.68,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Where the skill shot habitrail and the right outlane diverter both drop you. No award of its own."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Has a kickback, but only while the right slingshot was the last one hit."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Has a diverter that saves the ball into the right inlane, but only while the left slingshot was the last one hit."
+    },
+    {
+      "id": "up-post",
+      "name": "Up Post",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "A post between the flippers. Raised for a while at the start of each ball, briefly by the right loop, and by some awards."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.206,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the right loop, the right hole and the right side of the hairpin."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.755,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the left ramp and the left side of the hairpin."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Captive Ball Skill Shot",
+      "category": "skillshot",
+      "summary": "Your plunge drives a captive ball up a short path over three switches. The award is set by the last switch it touched, so plunge strength is the whole game: soft for Jackpot, medium for a ball lock, hard for Race Strategy, and full force sends it into the standup for a token award plus a gallon of fuel.",
+      "difficulty": 2,
+      "reward": "Jackpot, Lock Ball, Race Strategy or a gallon of fuel",
+      "steps": [
+        {
+          "shot": "skill-rollovers",
+          "action": "Choose your plunge strength",
+          "detail": "The captive ball climbs only as far as you hit it — soft stops it on the jackpot switch, medium locks a ball, hard lights Race Strategy, and full force carries it into the standup for a token award plus fuel. Once you collect one it is off the menu until you have taken the others, so plan the ball you want each award on."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "the-races",
+      "title": "Run The Race",
+      "category": "progression",
+      "summary": "Seventeen car lights make up the circuit and everything you do drives your car around it. The first race is one lap and every race after is two. Finish enough races and you are pointed at the World Championship, which is the reason to play this machine at all.",
+      "difficulty": 2,
+      "reward": "50M for a win, 30M for second, 10M for third",
+      "steps": [],
+      "instructions": [
+        "Lit yellow shots move your car around the track, and so do the spinning cars, the slingshots and the pop bumpers.",
+        "The cars on the rod spin faster and faster as your lap progresses — that is your speedometer.",
+        "The first race is a single lap; every race after it is two.",
+        "Finishing first pays fifty million and lights the extra ball standup for a while; second pays thirty, third pays ten, and fourth or worse pays nothing at all.",
+        "Each lap burns a gallon of fuel. With the tank empty your car stops moving no matter what you shoot."
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "pass-and-yield",
+      "title": "Pass And Yield",
+      "category": "strategy",
+      "summary": "You start every race in first place and the playfield is trying to take it off you. Green shots pass a car and move you up; red shots are a Yield and drop you a position. Once you are already leading, a green shot instead adds five million to the pass bonus.",
+      "difficulty": 2,
+      "reward": "+5M pass bonus per green shot while leading",
+      "steps": [
+        {
+          "shot": "eb-standup",
+          "action": "Take green shots",
+          "detail": "Each one is a position gained, or five million on the bonus if you are already first."
+        },
+        {
+          "shot": "jackpot-standup",
+          "action": "Leave red shots alone",
+          "detail": "A Yield costs you a place, and places are what pay at the flag."
+        },
+        {
+          "shot": "hairpin-left",
+          "action": "Protect first place",
+          "detail": "Only finishing first gives Victory Circle, and Victory Circles are the road to the World Championship."
+        }
+      ],
+      "ordered": false,
+      "fx": "car"
+    },
+    {
+      "id": "fuel-and-pit-stops",
+      "title": "Fuel And Pit Stops",
+      "category": "progression",
+      "summary": "You start with five gallons and burn one every lap. Empty means your car will not move, whatever you shoot. Fuel is also worth real money — the game pays ten million a gallon at the end, so there is a genuine reason not to run the tank dry.",
+      "difficulty": 1,
+      "reward": "10M per gallon at the end of the game",
+      "steps": [
+        {
+          "shot": "right-hole",
+          "action": "Pit in when the light comes on",
+          "detail": "The right hole is the only way to refuel by shooting, and it pays three gallons."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Top up from awards",
+          "detail": "Fuel also turns up away from the pit lane — the Crash and Burn standup, Track Awards, Mystery and the Pass/Yield Round all hand some over."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Use the Stop Watch as a pump",
+          "detail": "A stop watch time between three and four seconds is worth three gallons on its own."
+        }
+      ],
+      "ordered": false,
+      "fx": "car"
+    },
+    {
+      "id": "checkered-flag",
+      "title": "Checkered Flag Awards",
+      "category": "mode",
+      "summary": "Every finished race offers you a choice of two awards, one on each flipper button, and the two sides advance separately. Turn one down and it will be offered again next time, so this is a real decision rather than a formality.",
+      "difficulty": 2,
+      "reward": "Your pick of one round or award per race",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Left side ladder",
+          "detail": "Redline Round, then Race Strategy, then Super Jackpot, then Spin Cars Round."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Right side ladder",
+          "detail": "Multiball, then Pass/Yield Round, then five jackpots, then Multiball again."
+        },
+        {
+          "shot": "race-track",
+          "action": "Understand Complete",
+          "detail": "When one side reads Complete you have taken everything on it; choosing it just hands you the award from the other side instead."
+        }
+      ],
+      "ordered": false,
+      "fx": "crown"
+    },
+    {
+      "id": "redline-round",
+      "title": "Redline Round",
+      "category": "multiball",
+      "summary": "A two-ball round that opens with a skill shot at the top rollover, then asks you to hit the Tach five times for nothing much before every further Tach is worth fifty million. Know the trap: the moment the Tach lights for fifty, the up post and both outlane saves all switch off.",
+      "difficulty": 3,
+      "reward": "50M per Tach hit once lit",
+      "steps": [
+        {
+          "shot": "skill-rollovers",
+          "action": "Take the opening skill shot",
+          "detail": "The top rollover is lit before the balls come out."
+        },
+        {
+          "shot": "tach-targets",
+          "action": "Grind five Tach hits",
+          "detail": "These first five are worth essentially nothing — they are the entry fee."
+        },
+        {
+          "shot": "tach-targets",
+          "action": "Cash in, carefully",
+          "detail": "Every Tach after that is fifty million, but you are now playing with no post and no outlane saves at all."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "regular-multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Regular multiball starts from a skill shot, a Checkered Flag choice, a random award, or automatically on ball three if you have not played it yet. It begins with a skill shot for a third ball, then walks you up a jackpot ladder that gets richer as you clear each tier.",
+      "difficulty": 2,
+      "reward": "10M shots rising to 20M, then jackpots, then a Super Jackpot",
+      "steps": [
+        {
+          "shot": "skill-rollovers",
+          "action": "Make the lock skill shot",
+          "detail": "Miss it and multiball runs with two balls; make it and a third ball arrives along with a second skill shot."
+        },
+        {
+          "shot": "hairpin-left",
+          "action": "Clear the three ten-million shots",
+          "detail": "Both sides of the hairpin and the right loop, worth ten million each."
+        },
+        {
+          "shot": "tach-targets",
+          "action": "Take the twenty-million tier",
+          "detail": "The three shots relight at twenty million and the Tach joins them, with the right standup lit for jackpot and staying lit."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Finish on the Super Jackpot",
+          "detail": "The right hole joins the set for the jackpot tier, and clearing all five lights the left ramp for the Super Jackpot."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "multiball-carryover",
+      "title": "Carry Your Progress",
+      "category": "strategy",
+      "summary": "Where you stopped in the multiball ladder carries into your next multiball, so a short round is not wasted work. The one exception is a Super Jackpot — collect one and the next multiball restarts you at the bottom of the ladder.",
+      "difficulty": 2,
+      "reward": "Skip straight to the tier you reached",
+      "steps": [
+        {
+          "shot": "hairpin-right",
+          "action": "Bank the cheap tiers early",
+          "detail": "Ten and twenty million shots you have already made stay made."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Decide when to take the Super Jackpot",
+          "detail": "It is the biggest single award in the sequence, but collecting it resets the whole ladder for next time."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "pass-yield-round",
+      "title": "Pass/Yield Round",
+      "category": "mode",
+      "summary": "A single-ball round where every lit shot starts out green. Each green shot you make bumps the award up one step and flips that shot to red. Cash out at the right hole whenever you like — hit a red shot and the round ends, though you still have a window to collect.",
+      "difficulty": 2,
+      "reward": "A ladder from a gallon of fuel up to 100M, an extra ball and the Spin Cars Round",
+      "steps": [
+        {
+          "shot": "hairpin-left",
+          "action": "Take green, avoid red",
+          "detail": "The awards climb: one gallon, two gallons, fifty million, a hundred million, the extra ball, and then the Spin Cars Round."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Cash out when you are happy",
+          "detail": "The right hole ends the round and pays whatever step you reached."
+        },
+        {
+          "shot": "jackpot-standup",
+          "action": "Know the failure case",
+          "detail": "A red shot stops the round, but the current award stays collectable at the right hole for a short while."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "spin-cars-round",
+      "title": "Spin Cars Round",
+      "category": "multiball",
+      "summary": "The most lucrative round on the machine. Two skill shots come back to back before the round proper begins — take the first one, because Race Strategy and its doubled jackpots ride on it if that award is still outstanding — and then it is three balls, with every rotation of the cars paying a jackpot.",
+      "difficulty": 3,
+      "reward": "A jackpot every time the cars spin",
+      "steps": [
+        {
+          "shot": "skill-rollovers",
+          "action": "Take the first skill shot",
+          "detail": "It awards Race Strategy, and doubled jackpots for the rest of the ball if you have not already collected that one."
+        },
+        {
+          "shot": "hairpin-left",
+          "action": "Feed the horseshoe",
+          "detail": "Either mouth of the hairpin spins the cars, and every spin is a jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "spinning-cars",
+          "action": "Hit the cars directly",
+          "detail": "The prongs under each car count too, so a ball rattling around the horseshoe can rack up spins on its own.",
+          "link": "none"
+        },
+        {
+          "shot": "jackpot-standup",
+          "action": "Do not neglect the standup",
+          "detail": "The jackpot standup is lit throughout the round.",
+          "link": "none"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "race-strategy",
+      "title": "Race Strategy",
+      "category": "multiplier",
+      "summary": "Lit at the left ramp for a while after any lap that did not finish a race. It hands you a scoring boost that lasts the rest of the ball — usually ten million on a whole class of shot, thirty million on pit stops, or a doubling of the jackpot or super jackpot.",
+      "difficulty": 2,
+      "reward": "10M-30M per shot for the rest of the ball, or doubled jackpots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Ramp it while the light is on",
+          "detail": "You have a limited window after each incomplete lap, and Track Award eight also gives it."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Hope for the pit stop award",
+          "detail": "Thirty million per pit stop is the richest of the per-shot boosts."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Take doubled jackpots when offered",
+          "detail": "Doubling the super jackpot for the rest of the ball is the biggest of them all."
+        }
+      ],
+      "ordered": false,
+      "fx": "gear"
+    },
+    {
+      "id": "stop-watch",
+      "title": "The Stop Watch",
+      "category": "mode",
+      "summary": "Shooting the right loop is one way to put Stop Watch on it; the left ramp is the other, and that works whenever the loop is not already lit for something else. Your first loop shot starts a clock counting upward and the next one halts it — touch anything else in between and the round dies, leaving you to relight it.",
+      "difficulty": 3,
+      "reward": "+100M super jackpot under three seconds, fuel up to seven",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light it",
+          "detail": "The left ramp lights Stop Watch at the loop whenever the loop is free."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Start the clock",
+          "detail": "The loop returns to the left inlane, which sets you up to send it straight back."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Stop it fast",
+          "detail": "Under three seconds adds a hundred million to the super jackpot; three to four gives three gallons; four to seven gives one; over seven gives nothing."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "stop-watch-champ",
+      "title": "Stop Watch Champion",
+      "category": "secret",
+      "summary": "A shortest-stop-watch table sits next to the high scores here, and beating the record buys you a free game. Stranger still, the machine breaks off on the spot to collect your initials instead of holding the entry back until your ball is over.",
+      "difficulty": 3,
+      "reward": "Free game and an initials entry",
+      "steps": [],
+      "instructions": [
+        "You are shooting the same loop twice as fast as you can, from a left-inlane feed each time.",
+        "Trap the return on the left flipper and fire immediately rather than letting the ball settle.",
+        "Anything under three seconds also pays a hundred million onto the super jackpot, so a good attempt is never wasted.",
+        "The game also tracks a single-ball champion — highest score on one ball — which is worth an initials entry too."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "track-award",
+      "title": "Track Award",
+      "category": "mode",
+      "summary": "At the start of every lap the right hole lights for a Track Award, and the number next to your car light on the track decides what you get. They do not stack — one per lap, and it has to be collected before the next lap begins.",
+      "difficulty": 2,
+      "reward": "Fuel, 30M-50M, jackpots, extra ball or super jackpot advances",
+      "steps": [
+        {
+          "shot": "race-track",
+          "action": "Check where your car is",
+          "detail": "The numbered light you are sitting on is the award you will get."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Take it before the lap ends",
+          "detail": "Track Awards do not stack, so a missed one is simply gone."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Know the good numbers",
+          "detail": "The best of them are five gallons, fifty million, five jackpots, a hundred-million super jackpot advance, Complete Lap and the once-per-game extra ball."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mystery-award",
+      "title": "Mystery Award",
+      "category": "secret",
+      "summary": "Mystery flicks on and off at the left ramp as you hit slingshots, bumpers and the Tach — so it is genuinely random whether the light is there when you get a shot. The prize table runs from a gallon of fuel to five hundred million.",
+      "difficulty": 2,
+      "reward": "Fuel, jackpots, multiball, Race Strategy, or 500M",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the light toggle",
+          "detail": "Slingshot, bumper and Tach hits are what flip it."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the ramp when it is lit",
+          "detail": "Race Strategy outranks it: whenever the ramp is showing Race Strategy, Mystery stays dark."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "build-the-jackpot",
+      "title": "Build The Jackpot",
+      "category": "strategy",
+      "summary": "Jackpots start at thirty million and super jackpots at two hundred, and both are worth raising before you cash them. The jackpot climbs five million at a time from a hairpin shot followed by a Tach hit while it is still flashing; the super jackpot climbs a hundred million from a fast Stop Watch.",
+      "difficulty": 3,
+      "reward": "+5M jackpot per combo, +100M super jackpot per fast Stop Watch",
+      "steps": [
+        {
+          "shot": "hairpin-right",
+          "action": "Shoot either side of the hairpin",
+          "detail": "This sets the Tach flashing."
+        },
+        {
+          "shot": "tach-targets",
+          "action": "Hit the Tach before it stops",
+          "detail": "That combo is five million on the jackpot, and it is repeatable all game."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Feed the super jackpot",
+          "detail": "Track Awards and Stop Watch times under three seconds each add a hundred million."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "turbo",
+      "title": "Turbo",
+      "category": "combo",
+      "summary": "A two-part shot on the yellow standups above the left slingshot. The first hit sets Turbo flashing; a second hit before it times out pays five million, and the award climbs by five million each time you do it again.",
+      "difficulty": 2,
+      "reward": "5M, then 10M, 15M, 20M and up",
+      "steps": [
+        {
+          "shot": "turbo-targets",
+          "action": "Hit Turbo to arm it",
+          "detail": "The target starts flashing."
+        },
+        {
+          "shot": "turbo-targets",
+          "action": "Hit it again before it dies",
+          "detail": "Each successful pair raises the next award by another five million."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "ball-saves",
+      "title": "The Slingshot Ball Saves",
+      "category": "strategy",
+      "summary": "This machine's outlane saves are a see-saw and most players never notice. The left slingshot arms the right outlane diverter and disarms the left kickback; the right slingshot does exactly the reverse. You are almost never protected on both sides at once.",
+      "difficulty": 2,
+      "reward": "Knowing which side is safe",
+      "steps": [
+        {
+          "shot": "left-slingshot",
+          "action": "Left sling means the right side is covered",
+          "detail": "The right outlane diverter is on and the left kickback is off."
+        },
+        {
+          "shot": "right-slingshot",
+          "action": "Right sling means the left side is covered",
+          "detail": "The left kickback is on and the right diverter is off."
+        },
+        {
+          "shot": "up-post",
+          "action": "Use the loop to raise the post",
+          "detail": "At the start of a ball everything is enabled for a long while; after that, a right loop raises the post again briefly."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Count on the guaranteed ball time",
+          "detail": "If your third ball ends before the minimum ball time, the game keeps giving it back until you have had a fair go — extra balls are played first."
+        }
+      ],
+      "ordered": false,
+      "fx": "car"
+    },
+    {
+      "id": "world-championship",
+      "title": "World Championship",
+      "category": "wizard",
+      "summary": "Win three races outright — three Victory Circles — and you reach the championship. It opens with two skill shots at the top rollover, then a three-ball round where every major shot pushes your car around the track and every completed lap pays a super jackpot.",
+      "difficulty": 3,
+      "reward": "A super jackpot per lap",
+      "steps": [
+        {
+          "shot": "right-hole",
+          "action": "Collect three Victory Circles",
+          "detail": "That means finishing three separate races in first place, not merely finishing three races."
+        },
+        {
+          "shot": "skill-rollovers",
+          "action": "Take both opening skill shots",
+          "detail": "The top rollover is lit for Race Strategy on each."
+        },
+        {
+          "shot": "hairpin-left",
+          "action": "Drive the laps",
+          "detail": "Every major shot advances cars, so keep the ball moving through the middle of the playfield."
+        },
+        {
+          "shot": "spinning-cars",
+          "action": "Complete laps for super jackpots",
+          "detail": "Feed the super jackpot with fast Stop Watches beforehand and each lap here pays far more."
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ma-skillshot",
+      "title": "Off The Line",
+      "desc": "Stop the captive ball on the switch you were aiming for.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "ma-first-race",
+      "title": "First Lap Down",
+      "desc": "Complete your first race.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "the-races"
+    },
+    {
+      "id": "ma-turbo",
+      "title": "Turbo",
+      "desc": "Hit the Turbo standup twice before it stops flashing.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "turbo"
+    },
+    {
+      "id": "ma-pit-stop",
+      "title": "Pit In",
+      "desc": "Refuel at the right hole before your tank runs dry.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "fuel-and-pit-stops"
+    },
+    {
+      "id": "ma-victory-circle",
+      "title": "Victory Circle",
+      "desc": "Finish a race in first place.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "pass-and-yield"
+    },
+    {
+      "id": "ma-multiball",
+      "title": "Three Balls Out",
+      "desc": "Make the lock skill shot to start multiball with three balls instead of two.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "regular-multiball"
+    },
+    {
+      "id": "ma-super-jackpot",
+      "title": "Super Jackpot",
+      "desc": "Clear the whole jackpot ladder and collect the Super Jackpot at the left ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "regular-multiball"
+    },
+    {
+      "id": "ma-spin-cars",
+      "title": "Round And Round",
+      "desc": "Reach the Spin Cars Round and collect jackpots off the spinning cars.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "spin-cars-round"
+    },
+    {
+      "id": "ma-stopwatch",
+      "title": "Under Three Seconds",
+      "desc": "Start and stop the Stop Watch in under three seconds for a super jackpot advance.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "stop-watch"
+    },
+    {
+      "id": "ma-stopwatch-champ",
+      "title": "Stop Watch Champion",
+      "desc": "Post the machine's fastest Stop Watch time and take the free game.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "stop-watch-champ"
+    },
+    {
+      "id": "ma-mystery-500",
+      "title": "Five Hundred Million",
+      "desc": "Draw the top Mystery award at the left ramp.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mystery-award"
+    },
+    {
+      "id": "ma-world-champ",
+      "title": "World Champion",
+      "desc": "Win three races in first place to start the World Championship.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "world-championship"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunge-strength-blocks",
+      "title": "Plunge Strength Blocks",
+      "text": "Your plunge drives the captive ball up a path over three switches and the last one it touches is your award — soft for the jackpot, medium for a lock, hard for Race Strategy. Run each strength in its own block until you can call the switch before the captive ball gets there.",
+      "reps": "10 plunges per strength",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "captive-ball",
+        "skill-rollovers"
+      ]
+    },
+    {
+      "id": "track-award-every-lap",
+      "title": "One Track Award Every Lap",
+      "text": "Every lap lights the right hole and Track Awards do not stack — one a lap or it is gone. Look at which numbered car light you are sitting on, then take the hole from the left flipper before the lap turns over; the same shot is also the only way to shoot yourself some fuel.",
+      "reps": "one full ball, a Track Award on every lap",
+      "focus": "accuracy",
+      "goal": "track-award",
+      "shots": [
+        "right-hole",
+        "race-track",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "loop-inlane-loop",
+      "title": "Loop, Inlane, Loop",
+      "text": "Light the Stop Watch at the left ramp, then start the clock with the right loop — the return drops into the left inlane, which is exactly the feed you need to send it straight back. Touch anything else in between and the round dies, so shoot it as one continuous motion rather than two separate shots.",
+      "reps": "10 timed runs, chasing anything under three seconds",
+      "focus": "flow",
+      "goal": "stop-watch",
+      "shots": [
+        "left-ramp",
+        "right-loop",
+        "left-inlane"
+      ]
+    },
+    {
+      "id": "hairpin-then-tach",
+      "title": "Hairpin, Then Tach",
+      "text": "Either mouth of the horseshoe sets the Tach flashing, and hitting the Tach before it stops adds five million to the jackpot. It is repeatable all game, so drill the pair as one motion and keep feeding the hairpin from whichever flipper the ball lands on.",
+      "reps": "10 pairs",
+      "focus": "flow",
+      "goal": "build-the-jackpot",
+      "shots": [
+        "hairpin-left",
+        "hairpin-right",
+        "tach-targets"
+      ]
+    },
+    {
+      "id": "call-your-covered-side",
+      "title": "Call Your Covered Side",
+      "text": "The outlane saves see-saw: the left slingshot arms the right outlane diverter and switches the left kickback off, and the right slingshot does the reverse. Play a ball calling the covered side out loud every time a sling fires, so a draining ball finds you already knowing which side you can afford to lose it down.",
+      "reps": "one full ball, called out loud",
+      "focus": "ball-control",
+      "goal": "ball-saves",
+      "shots": [
+        "left-slingshot",
+        "right-slingshot",
+        "left-outlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "turbo-pairs",
+      "title": "Turbo Pairs",
+      "text": "The first hit on the yellow standups sets Turbo flashing and the second has to land before it dies, so shoot them as one two-hit burst rather than two separate visits. Every completed pair raises the next award, so the reps compound rather than just repeating.",
+      "reps": "10 pairs",
+      "focus": "accuracy",
+      "goal": "turbo",
+      "shots": [
+        "turbo-targets"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "car",
+  "actionButton": {
+    "present": false,
+    "how": "No extra button on the cabinet — a manual plunger and two flippers is everything. What this game does instead is hand the choice to your flipper buttons: finish a race and an award sits on each side, and you take one with a tap. Left and right advance separately, so it is a real decision every time."
+  },
+  "howItPlays": {
+    "objective": "Mario Andretti is a Gottlieb racing table where nearly every shot drives your car around a seventeen-light circuit. Win races outright to bank Victory Circles, and stack three of them to reach the World Championship.",
+    "loop": [
+      "Advance your car around each lap with lit yellow shots, the spinning rod cars, the slingshots and the jets; those rod cars whirl faster the better your lap is running.",
+      "Hold your lead by taking green shots and leaving red Yields alone, because only a first-place finish banks a Victory Circle.",
+      "Keep fuel in the tank at the right pit hole and from awards -- run dry and the car stops dead, while every leftover gallon pays ten million at the end.",
+      "Finish a race and pick one Checkered Flag award off a flipper button to open rounds, multiballs and Race Strategy.",
+      "Collect three Victory Circles to start the World Championship, where every completed lap pays a super jackpot."
+    ],
+    "lights": [
+      {
+        "id": "pit-hole",
+        "name": "The Pit Hole",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-hole"
+          }
+        ],
+        "lit": "The right pit hole lights each lap for a Track Award, and it also collects Victory Circle, Pit Stop refuels and Pass/Yield cash-outs depending on what is running.",
+        "flashing": null,
+        "control": null,
+        "then": "Read the numbered car light you are parked on, then take the pit before the lap turns over, since Track Awards never stack. It is your only shot for fuel and the spot a first-place finish pays its Victory Circle.",
+        "goals": [
+          "track-award",
+          "fuel-and-pit-stops"
+        ]
+      },
+      {
+        "id": "ramp-hub",
+        "name": "Left Ramp Award Hub",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "The left ramp is the award hub: it shows Race Strategy for a spell following each lap you ran without ending a race, holds Mystery when that toggles on, and lights the Stop Watch at the loop when the loop is free.",
+        "flashing": null,
+        "control": null,
+        "then": "Ramp it on Race Strategy for a scoring boost that lasts the ball, or on Mystery for anything up to five hundred million. Race Strategy outranks Mystery, so a lit Strategy hides the Mystery award entirely.",
+        "goals": [
+          "race-strategy",
+          "mystery-award"
+        ]
+      },
+      {
+        "id": "stopwatch-loop",
+        "name": "Stop Watch Loop",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "Lit for Stop Watch, the right loop starts a clock counting up on your first shot and halts it on the next; touch anything in between and the attempt dies.",
+        "flashing": null,
+        "control": null,
+        "then": "The loop returns to the left inlane, feeding you straight back for the stop shot, so trap and fire fast -- a sub-three-second stop drops a hundred million onto the super jackpot, a three-to-four buys three gallons of fuel, and the quickest time on the machine earns a free game.",
+        "goals": [
+          "stop-watch",
+          "stop-watch-champ",
+          "build-the-jackpot"
+        ]
+      },
+      {
+        "id": "tach-jackpot",
+        "name": "Tach Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "tach-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "hairpin-right"
+          }
+        ],
+        "lit": "A hairpin shot sets the Tach flashing; the Tach is a throwaway in normal play yet the entire objective of the Redline Round.",
+        "flashing": "While it flashes after a hairpin, a Tach hit adds five million to the jackpot -- a combo you can repeat all game.",
+        "control": null,
+        "then": "Chain hairpin-into-Tach to pump the jackpot, or open Redline Round for two balls where every Tach past the opening five is worth fifty million. Know the trap: once Redline's Tach lights for fifty, the post and both outlane saves switch off.",
+        "goals": [
+          "build-the-jackpot",
+          "redline-round"
+        ]
+      },
+      {
+        "id": "hairpin-cars",
+        "name": "Hairpin & Spinning Cars",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "hairpin-left"
+          },
+          {
+            "shot": "hairpin-right"
+          },
+          {
+            "shot": "spinning-cars"
+          }
+        ],
+        "lit": "The horseshoe in the middle sweeps the rod cars, and either mouth sends the ball out the far side; the cars whirl faster as your lap heats up.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed either side to drive laps and, during the Spin Cars Round, cash a jackpot on every rotation -- even the prongs under each car count, so a ball rattling the horseshoe racks up spins by itself. This is the richest round the machine offers.",
+        "goals": [
+          "spin-cars-round",
+          "the-races"
+        ]
+      },
+      {
+        "id": "pass-yield",
+        "name": "Pass & Yield Standups",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "eb-standup"
+          },
+          {
+            "shot": "jackpot-standup"
+          }
+        ],
+        "lit": "The two upper standups swing between friend and foe: green for a Pass that gains a place or a lit extra ball, red for a Yield or a position lost.",
+        "flashing": null,
+        "control": null,
+        "then": "Take green to hold the lead and, once you are already first, bank five million per green onto the pass bonus; leave red alone. In the Pass/Yield Round every lit shot opens green and climbs a ladder up to a hundred million, the extra ball and the Spin Cars Round.",
+        "goals": [
+          "pass-and-yield",
+          "pass-yield-round"
+        ]
+      },
+      {
+        "id": "skill-lock",
+        "name": "Skill Rollovers & Lock",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "skill-rollovers"
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "The captive ball's path over three switches sets your skill award, and the top rollover reopens as a skill shot at the front of multiballs and championship rounds.",
+        "flashing": null,
+        "control": null,
+        "then": "Plunge for a lock to open regular multiball with a third ball, then climb its jackpot ladder from ten to twenty million and on to a Super Jackpot at the left ramp. Where you stop on the ladder carries into your next multiball, unless you collect that Super Jackpot, which resets it.",
+        "goals": [
+          "skillshot",
+          "regular-multiball",
+          "multiball-carryover"
+        ]
+      },
+      {
+        "id": "turbo-standups",
+        "name": "Turbo Standups",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "turbo-targets",
+            "lamps": 2
+          }
+        ],
+        "lit": "The yellow standups above the left slingshot arm Turbo on the first hit and pay it on the second.",
+        "flashing": "A flashing Turbo target is live; land the second hit before it dies to score, and each completed pair raises the next award.",
+        "control": null,
+        "then": "Hit one to start it flashing, then hit it again quickly for five million, climbing another five million every time you repeat the pair.",
+        "goals": [
+          "turbo"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Set your skill shot by pull strength alone -- ease it for a jackpot, a medium hit to lock a ball, a hard one for Race Strategy -- and start driving laps. Learn the outlane see-saw early: the left slingshot arms the right diverter and drops the left kickback, the right slingshot does the reverse, so you are rarely covered on both sides.",
+        "goals": [
+          "skillshot",
+          "the-races",
+          "ball-saves"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Win races to stack Victory Circles while feeding the jackpots: pump the jackpot five million at a time with hairpin-into-Tach combos and a hundred million per fast Stop Watch. Open rounds off the Checkered Flag and keep the tank full so the car never stalls.",
+        "goals": [
+          "pass-and-yield",
+          "build-the-jackpot",
+          "stop-watch",
+          "checkered-flag"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Three first-place finishes light the World Championship, a three-ball race that opens with two skill shots and pays a super jackpot for every lap you complete. Bank fast Stop Watches beforehand so each championship lap pays far more.",
+        "goals": [
+          "world-championship"
+        ]
+      }
+    ]
+  }
+}

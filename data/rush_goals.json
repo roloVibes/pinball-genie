@@ -1,0 +1,1422 @@
+{
+  "machine": "Rush (Stern Pinball, 2022)",
+  "defaultFx": "guitar",
+  "shots": [
+    {
+      "id": "time-machine",
+      "name": "Time Machine",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Center hub ramp/portal with electromagnet. Starts modes, collects combo jackpots/albums, starts and powers up the three Time Machine multiballs. Best hit as a controlled shot from the lower-left flipper. Motorized ramp component is premium-le.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "scoop",
+      "name": "Side Scoop (double scoop)",
+      "type": "scoop",
+      "x": 0.4,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Mid-playfield, left of center. Two mouths: front (from lower flippers, backhandable) and side (from upper-right flipper). 3x skill-shot target; feeds the Far Cry subway lock on premium-le; used for Roll the Bones mystery. Extra-ball shot when lit."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.15,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Far-left lane up through the bumpers and around the top. Held upper-right flipper catches the return. A combo '1' shot for several albums."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.85,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Far-right lane up the right edge and around the top. Starts Headlong Flight once the clock hits midnight. Risky return per strategy guides — bad multiplier spot."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.69,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Bastille Day ramp, shot from the lower-right flipper. Gated by the two green LIGHT LOCK targets; site of the Bastille Day hurry-up and the Far Cry lock shot.",
+      "feeds": {
+        "shot": "right-inlane-inner"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp",
+      "type": "ramp",
+      "x": 0.2,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Left-side ramp, an upper-right-flipper backhand. 2x skill-shot target; lights for the Combo Super Jackpot; key Headlong Flight jackpot shot.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "inner-loop",
+      "name": "Side Loop (inner / upper loop)",
+      "type": "loop",
+      "x": 0.27,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Single loop between the side ramp and dead-end, shot from the upper-right flipper. Called side/inner/upper loop interchangeably. 1x skill-shot target and the premier repeatable money farm during Combo Super Jackpot (up to 6M/loop with a 2x).",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "dead-end",
+      "name": "Dead End Lane",
+      "type": "lane",
+      "x": 0.31,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Upper-left-center, directly above the scoop; upper-flipper shot. Changes which Time Machine multiball is lit. On premium-le it is a vertical up-kicker (VUK) with a wireform return; on Pro a blind dead-end lane.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner Lane",
+      "type": "spinner",
+      "x": 0.55,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Just right of the Time Machine; funnels to the upper-right flipper. Easiest upper-flipper feed. Drives Bonus X; Guitar adds +1x spinner value. Combo '1' shot for several albums."
+    },
+    {
+      "id": "instrument-drops",
+      "name": "Instrument Drop Targets (3-bank)",
+      "type": "drop-target",
+      "x": 0.15,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Lower-left angled bank: Bass / Guitar / Drumsticks. Completing collects an instrument. Premium-le has a secret physical Freewill ball-lock behind them; Pro lock is virtual."
+    },
+    {
+      "id": "instrument-standup",
+      "name": "Activate Instruments Standup / Instrument Lane",
+      "type": "standup",
+      "x": 0.12,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Behind the instrument drop bank. Activates the collected instrument and, once all three are collected, is the lane shot that starts Freewill Multiball. Premium-le holds the ball 20s (jackpot booster / add-a-ball)."
+    },
+    {
+      "id": "lock-targets",
+      "name": "Right-Ramp LIGHT LOCK Targets (2 green)",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.29,
+      "trim": "all",
+      "notes": "Two green standups at the right-ramp entrance. Hitting them lights the Far Cry lock at the right ramp."
+    },
+    {
+      "id": "rush-targets",
+      "name": "RUSH Standup Targets (4)",
+      "type": "standup",
+      "x": 0.84,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Spells R-U-S-H near the lower-right flipper. Completing lights the Bastille Day hurry-up at the right ramp; two completions light outlane ball-save."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers (3)",
+      "type": "bumpers",
+      "x": 0.26,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Upper-left/center, straddling the left-orbit lane. Hits advance the Clockwork Angels drum clock toward midnight for Headlong Flight. Drumsticks double bumper value and clock minutes. Deadly — feed deliberately."
+    },
+    {
+      "id": "drum-solo-lane",
+      "name": "Drum Solo Lane (behind upper flipper)",
+      "type": "lane",
+      "x": 0.71,
+      "y": 0.49,
+      "trim": "all",
+      "notes": "Immediately behind/above the upper-right flipper. Collects Drum Solo (bumper-scoring boost) and an alternate extra ball; enables another skill-shot attempt.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "plunger",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Soft-plunge to feed the upper-right flipper for skill shots. Never full-plunge (bumper collision risk)."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (Roll the Bones)",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "One of the three Roll the Bones inlanes; completing all three lights the Roll the Bones mystery at the scoop."
+    },
+    {
+      "id": "right-inlane-inner",
+      "name": "Right Inlane inner (Roll the Bones)",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Inner of the two right inlanes; part of the Roll the Bones set."
+    },
+    {
+      "id": "right-inlane-outer",
+      "name": "Right Inlane outer (Roll the Bones)",
+      "type": "lane",
+      "x": 0.68,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Outer of the two right inlanes; part of the Roll the Bones set."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Ball-save can be lit here via RUSH target completions in single-ball play."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Ball-save can be lit here via RUSH target completions in single-ball play."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower left flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower right flipper."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.68,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Skill-shot flipper fed by the plunger and the returning side loop. Reaches the upper scoop, side ramp and side loop, with the Drum Solo lane sitting just behind it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot-loop",
+      "title": "Skill Shot — Side Loop (1x)",
+      "category": "skillshot",
+      "summary": "Soft-plunge to the upper flipper and take the side loop for the base 1x skill-shot value plus extended ball save.",
+      "difficulty": 1,
+      "reward": "Base skill value x1 + added ball-save time",
+      "steps": [
+        {
+          "shot": "inner-loop",
+          "action": "Soft-plunge to feed the upper-right flipper, then shoot the side loop",
+          "detail": "Never full-plunge — a hard plunge rockets into the deadly pop bumpers. Side loop = 1x, side ramp = 2x, side scoop = 3x; every skill shot also adds ball-save time."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-ramp",
+      "title": "Skill Shot — Side Ramp (2x)",
+      "category": "skillshot",
+      "summary": "Soft-plunge to the upper flipper and hit the side ramp for the 2x skill-shot value plus extended ball save.",
+      "difficulty": 1,
+      "reward": "Base skill value x2 + added ball-save time",
+      "steps": [
+        {
+          "shot": "side-ramp",
+          "action": "Soft-plunge to feed the upper-right flipper, then shoot the side ramp",
+          "detail": "Never full-plunge — a hard plunge rockets into the deadly pop bumpers. Side loop = 1x, side ramp = 2x, side scoop = 3x; every skill shot also adds ball-save time."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-scoop",
+      "title": "Skill Shot — Side Scoop (3x)",
+      "category": "skillshot",
+      "summary": "Soft-plunge to the upper flipper and hit the side scoop for the highest 3x skill-shot value plus extended ball save.",
+      "difficulty": 1,
+      "reward": "Base skill value x3 + added ball-save time",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Soft-plunge to feed the upper-right flipper, then shoot the side scoop",
+          "detail": "Never full-plunge — a hard plunge rockets into the deadly pop bumpers. Side loop = 1x, side ramp = 2x, side scoop = 3x; every skill shot also adds ball-save time."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hit the side loop then combo into the side ramp or side scoop for double value and double the ball-save bonus.",
+      "difficulty": 2,
+      "reward": "2x skill value + double ball-save time",
+      "steps": [
+        {
+          "shot": "inner-loop",
+          "action": "Soft-plunge to the upper-right flipper, then shoot the side loop first"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Combo immediately into the side ramp (or the side scoop) to score the Super Skill Shot"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-123-jackpot",
+      "title": "1-2-3 Combo Jackpot",
+      "category": "combo",
+      "summary": "Shoot the flashing 1, then 2, then 3 inserts in order within the combo timer, then bank the Combo Jackpot at the Time Machine.",
+      "difficulty": 2,
+      "reward": "Combo Jackpot + one album + 1 Year",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the flashing '1' insert",
+          "detail": "30s combo timer (60s with Extended Timers). Scoring = value x shot# x2 quick x2 bass x rainbow multiplier."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Shoot the '2' insert that lights next"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the '3' insert to complete the chain"
+        },
+        {
+          "shot": "time-machine",
+          "action": "Shoot the Time Machine to collect the Combo Jackpot"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "rush-album-combo",
+      "title": "Rush Album Combo",
+      "category": "combo",
+      "summary": "The signature flow combo Left Orbit to Side Loop to Side Ramp — awards the Rush album (ties to Working Man).",
+      "difficulty": 2,
+      "reward": "Rush album + Combo Jackpot progress",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit ('1')",
+          "detail": "Left Orbit then Side Ramp as a combo also counts as +2 ramps toward the ramp count-up."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Combo into the side loop ('2')"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Finish on the side ramp ('3') to award the Rush album"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "hemispheres-weapon",
+      "title": "Hemispheres Combo (The Weapon)",
+      "category": "combo",
+      "summary": "The only two-shot album, Right Ramp to Right Orbit — farmed and held in reserve to arm The Weapon (spot all shots or add-a-ball).",
+      "difficulty": 1,
+      "reward": "Hemispheres album; arms The Weapon action button",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp ('1')"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Combo into the right orbit ('2') to complete the two-shot album",
+          "detail": "Hold The Weapon (blue = spot every lit shot in a mode, green = add-a-ball in multiball) right before dropping a big combo streak or banking a mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-super-sideloop-farm",
+      "title": "Combo Super Jackpot & Side-Loop Farm",
+      "category": "combo",
+      "summary": "Score the Combo Jackpot and the Side Ramp turns on for a Combo Super worth 2x, then farm the Side Loop over and over — the biggest repeatable money loop in the game.",
+      "difficulty": 3,
+      "reward": "Combo Super Jackpot (2x) + escalating side-loop value up to 6M/loop",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Collect the Combo Jackpot at the Time Machine"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the lit Side Ramp for the Combo Super Jackpot (2x the Combo Jackpot)"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Repeatedly farm the Side Loop while the Super is lit",
+          "detail": "500K + 100K per shot up to 1M base, x any shot multiplier — up to 6M/loop with a 2x rainbow record placed here."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "moving-pictures-combo",
+      "title": "Moving Pictures Album Combo",
+      "category": "combo",
+      "summary": "Right Ramp to Spinner to Side Loop — awards Moving Pictures (ties to Limelight, Red Barchetta, Tom Sawyer).",
+      "difficulty": 2,
+      "reward": "Moving Pictures album",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp ('1')"
+        },
+        {
+          "shot": "spinner",
+          "action": "Combo into the spinner lane ('2')"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Finish on the side loop ('3') to award Moving Pictures"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "time-machine-mb",
+      "title": "Time Machine Multiball",
+      "category": "multiball",
+      "summary": "Three separate multiballs live here — Red Barchetta, Subdivisions and Fly By Night — and the Time Machine flasher pattern tells you which one is currently lit.",
+      "difficulty": 2,
+      "reward": "2-ball MB (upgrades to 3+ balls with Years); super jackpots grant +2 to +5 Years",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Shoot the Time Machine ramp repeatedly to power it up",
+          "detail": "Three shots through the ramp powers it up, plus six more for each Time Machine multiball already played, minus one for each decade upgrade."
+        },
+        {
+          "shot": "dead-end",
+          "action": "Shoot the Dead End to change which multiball is lit (optional)",
+          "detail": "Red Barchetta = normal blink, Subdivisions = fast blink, Fly By Night = slow pulse."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Shoot the Time Machine once more to start the multiball"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "far-cry-mb",
+      "title": "Far Cry Multiball",
+      "category": "multiball",
+      "summary": "Hit the two green LIGHT LOCK targets, shoot the right ramp to light lock, lock two balls, then start Far Cry — the top tournament priority.",
+      "difficulty": 2,
+      "reward": "Colored 1x-5x jackpots; Super = jackpot total +5 Years (Flawless +10); triggers One Little Victory",
+      "steps": [
+        {
+          "shot": "lock-targets",
+          "action": "Hit the two green LIGHT LOCK targets flanking the right ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to light the lock"
+        },
+        {
+          "shot": "scoop",
+          "action": "Lock two balls (subway on Premium/LE, virtual at the scoop on Pro) to start",
+          "detail": "Collect 15 colored jackpots (blue 1x, green 2x, yellow 3x, orange 4x, red 5x), then shoot Time Machine for the Super."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "headlong-flight-mb",
+      "title": "Headlong Flight Multiball",
+      "category": "multiball",
+      "summary": "Advance the Clockwork Angels drum clock to midnight with the pop bumpers, then start at the right orbit — the only multiball that stacks with any other.",
+      "difficulty": 3,
+      "reward": "Jackpots = 1M x clock hour; side loop -> side ramp combo = 3x Super +5 Years",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Feed the pop bumpers to advance the drum clock toward midnight",
+          "detail": "White 1 / green 2 / yellow 3 / red 4 min per pop; drumsticks and right orbit advance pops. Feed deliberately — bumpers are dangerous."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit once the clock strikes midnight to start (stack it into any active MB)"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "During play, combo side loop into side ramp for the 3x Super Jackpot",
+          "detail": "Right ramp resets the clock to 12 and relights the side shots."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "freewill-mb",
+      "title": "Freewill Multiball",
+      "category": "multiball",
+      "summary": "Clear the drop bank for all three instruments, activate them, and Freewill starts on a shot to the instrument lane.",
+      "difficulty": 3,
+      "reward": "Player-picked Super Jackpots; every 3 unique Supers = +5 Years",
+      "steps": [
+        {
+          "shot": "instrument-drops",
+          "action": "Down the three drop targets to collect Bass, Guitar, and Drumsticks",
+          "detail": "Cycle the instrument standup to change which flashing instrument locks in before completing."
+        },
+        {
+          "shot": "instrument-standup",
+          "action": "Activate the collected instruments at the standup, then shoot the instrument lane to start",
+          "detail": "On Premium/LE the ball is held 20s here — re-shoot to raise the base jackpot / add a ball."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "tom-sawyer-mode",
+      "title": "Tom Sawyer",
+      "category": "mode",
+      "summary": "Easiest cyan song mode — collect cyan records, start at the Time Machine, then clear three phases (orbits, then ramps, then all shots).",
+      "difficulty": 2,
+      "reward": "+5 Years (+10 if 80M+) and a Rainbow Record",
+      "steps": [
+        {
+          "shot": "rush-targets",
+          "action": "Collect cyan records / rotate record color toward cyan",
+          "detail": "Untimed mode — bring it into a multiball to finish it (multiball fodder)."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Shoot the Time Machine (red-lit) to start Tom Sawyer"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Phase 1: clear both orbits"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Phase 2: clear both ramps, then Phase 3: all shots"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "working-man-mode",
+      "title": "Working Man",
+      "category": "mode",
+      "summary": "Orange mode — advance a workday clock from 9am to 5pm with orange shots, then end it by shooting the left orbit at 5pm.",
+      "difficulty": 2,
+      "reward": "+5 Years (+10 if 80M+) and a Rainbow Record",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Start Working Man at the Time Machine after collecting orange records"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit orange shots to advance the clock; left orbit / side loop / side ramp = +20 min + 3x value"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit at 5pm to win the mode"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "la-villa-mode",
+      "title": "La Villa Strangiato",
+      "category": "mode",
+      "summary": "Purple 12-shot combo mode — chain each next shot within 5 seconds to multiply it by the running streak; farm the side loop to spot shots 8-11.",
+      "difficulty": 3,
+      "reward": "+5 Years (+10 if 80M+), highest single-mode ceiling",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start the mode and shoot the right ramp (first two shots)"
+        },
+        {
+          "shot": "dead-end",
+          "action": "Continue the chain: dead end, then left orbit/spinner, side ramp/scoop, spinner",
+          "detail": "Combo into each next lit shot within 5 seconds to multiply by the streak length."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "At the Side Loop (shot 7), repeatedly shoot it to spot shots 8-11 without crossing the playfield"
+        },
+        {
+          "shot": "time-machine",
+          "action": "Close out at the Time Machine, side ramp and left orbit, then finish on the side scoop for shot 12"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "big-money-mode",
+      "title": "The Big Money",
+      "category": "mode",
+      "summary": "Pink mode — three phases of increasing shot counts feeding the Time Machine; bank or keep multiplying, collect the 3rd Big Money to win.",
+      "difficulty": 2,
+      "reward": "+5 Years (+10 if 80M+); max multiplier 13x",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Start The Big Money at the Time Machine after collecting pink records"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Clear the lit shots each phase (3 -> 4 -> 5 shots) to light the Time Machine"
+        },
+        {
+          "shot": "time-machine",
+          "action": "Shoot the Time Machine to collect; collect the 3rd Big Money to win"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "rainbow-record-multiplier",
+      "title": "Rainbow Record Shot Multipliers",
+      "category": "multiplier",
+      "summary": "Completing any song mode earns a Rainbow Record. Place each one on a safe, high-frequency inner shot for a permanent 2x there and keep spreading them around — they stay put right through to the 2112 wizard mode.",
+      "difficulty": 2,
+      "reward": "Permanent 2x shot multiplier that lasts until the 2112 wizard mode",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Complete a song mode to earn a Rainbow Record"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Shoot an inner shot (inner loop, dead-end, spinner, or right ramp) to place the 2x there",
+          "detail": "Avoid the right orbit — dangerous return, low frequency. A record can only be placed on a shot that does not already hold one, and once placed it stays there until the 2112 wizard mode."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-x-spinner",
+      "title": "Bonus X (Spin, Then Collect)",
+      "category": "multiplier",
+      "summary": "Rip the spinner to light Bonus X, then collect it at the side loop — up to 25x. Spins count double with Guitar active or a shot multiplier parked on the spinner.",
+      "difficulty": 1,
+      "reward": "Global end-of-ball Bonus X up to 25x",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Rip the spinner to light the next Bonus X",
+          "detail": "1->2x needs 100 spins, 2->3x 200, 3->4x 400, 4->5x 700, +100/level after; max 25x. Guitar active doubles the spins."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Shoot the side loop to collect the lit Bonus X",
+          "detail": "The spinner only lights it — nothing is banked until the loop shot lands, and it resets at the end of the ball unless you have held it with ramp shots. Take it before you drain."
+        },
+        {
+          "shot": "instrument-standup",
+          "action": "Activate the Guitar instrument first to double spinner-toward-Bonus-X value"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "cygnus-x1-wizards",
+      "title": "Cygnus X-1 (Book 1 & Book 2 Mini-Wizards)",
+      "category": "wizard",
+      "summary": "Two mini-wizard modes: Book 1 The Voyage qualifies by starting all six multiballs; Book 2 Hemispheres qualifies by completing all six song modes.",
+      "difficulty": 3,
+      "reward": "Book 2 completion is a required step toward the 2112 finale",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Book 1 path: start all six multiballs (three Time Machine MBs, Far Cry, Freewill, Headlong Flight)",
+          "detail": "Book 1 is a 3-planet (Yellow/Blue/Purple) escape-the-black-hole progression."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Book 2 path: complete all six song modes to light Hemispheres",
+          "detail": "Book 2 is five 120-second stages, each with a handicapped flipper configuration."
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "final-2112",
+      "title": "2112 Final Wizard Mode",
+      "category": "wizard",
+      "summary": "The finale — qualify by collecting 100 Years and playing both Cygnus X-1 books; a ~15-minute mode with a 6-ball Overture and six phases.",
+      "difficulty": 3,
+      "reward": "The game's ultimate wizard mode",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Accumulate 100 Years via modes, multiball supers, combos and instrument bonuses",
+          "detail": "Every 10 Years upgrades the Time Machine; Year 2112 unlocks the mode."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Complete both Cygnus X-1 books, then start 2112",
+          "detail": "3-min 6-ball Overture, then six phases (Temples of Syrinx through Grand Finale) requiring escalating shot counts."
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "strategy-safety-opener",
+      "title": "Strategy: Points + Safety Opener",
+      "category": "strategy",
+      "summary": "A concrete opening sequence that banks points, extends ball save, and begins Time Machine progress safely.",
+      "difficulty": 1,
+      "reward": "Early points + ball-save insurance + MB progress",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Soft-plunge and catch on the upper-right flipper"
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the side scoop for the 3x skill shot, then cradle",
+          "technique": [
+            "from-cradle"
+          ]
+        },
+        {
+          "shot": "time-machine",
+          "action": "Backhand/controlled shot the Time Machine from the left flipper to begin advancing toward a Time Machine MB",
+          "flipper": "left"
+        },
+        {
+          "shot": "rush-targets",
+          "action": "Chip the RUSH targets in single-ball play to light outlane ball saves"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strategy-far-cry-stack",
+      "title": "Strategy: Far Cry First, Stack Headlong Flight",
+      "category": "strategy",
+      "summary": "Tournament doctrine — prioritize Far Cry Multiball, then keep Headlong Flight ready to stack onto any multiball and take risky shots only during multiball.",
+      "difficulty": 2,
+      "reward": "Up to +10 Years from Far Cry; stacked multiball scoring",
+      "steps": [
+        {
+          "shot": "lock-targets",
+          "action": "Set up Far Cry: green lock targets -> right ramp -> lock at scoop",
+          "detail": "Far Cry is the top tournament priority after the early record/mode setup."
+        },
+        {
+          "shot": "bumpers",
+          "action": "In parallel, feed the pop bumpers (with drumsticks / right orbit) to build the drum clock toward midnight"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start Headlong Flight at the right orbit to stack it onto Far Cry (or any running MB)"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strategy-rainbow-engine",
+      "title": "Strategy: Rainbow-Record Stacking Engine",
+      "category": "strategy",
+      "summary": "The dominant high-score engine — complete multiple song modes without draining so Rainbow-Record multipliers stack and ride into every jackpot and combo.",
+      "difficulty": 3,
+      "reward": "Compounding universal multiplier + Years toward 2112",
+      "steps": [
+        {
+          "shot": "rush-targets",
+          "action": "Rotate blinking records toward a single color (cyan/orange are easiest)",
+          "detail": "Starting a mode with all 6 records one color makes all 6 shots 3x."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Start and complete each mode, then place the earned Rainbow Record on a safe inner shot"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Keep the ball alive and let stacked 2x/3x multipliers ride into multiball jackpots and 1-2-3 combos",
+          "detail": "Push mode totals over 80M for +10 Years each; the records you have already placed keep their 2x on those shots until the 2112 wizard mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "extra-ball-collect",
+      "title": "Collect an Extra Ball",
+      "category": "strategy",
+      "summary": "Two routes to an extra ball: the side scoop when its extra-ball insert is lit, and the drum solo lane behind the upper-right flipper.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Shoot the side scoop while its extra-ball light is on",
+          "detail": "The front mouth is backhandable from the lower-left flipper, so you can take it from a cradle instead of a risky cross-playfield shot."
+        },
+        {
+          "shot": "drum-solo-lane",
+          "action": "Alternate route: tuck the drum solo lane from the upper-right flipper",
+          "detail": "Feed the upper flipper via the spinner lane first, then flick the lane behind it; it also boosts bumper scoring."
+        }
+      ],
+      "fx": "guitar",
+      "ordered": false
+    },
+    {
+      "id": "album-sweep-combos",
+      "title": "Collect Every Album",
+      "category": "combo",
+      "summary": "Work through each album's combo string one at a time, banking the Time Machine between chains so a broken timer never costs you the whole set.",
+      "difficulty": 3,
+      "reward": "All ten albums plus stacked Combo Jackpots and Years — five albums lights an extra ball, all ten adds +1x to every later combo jackpot",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start with the shortest album: right ramp into right orbit",
+          "detail": "The two-shot chain is the safest to repeat while you learn the flow, and it arms the action button."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Run the three-shot chains: left orbit into side loop into side ramp",
+          "detail": "Cradle after each collect. A dropped combo timer only loses that album's progress, not the others."
+        },
+        {
+          "shot": "spinner",
+          "action": "Use the spinner as the middle link on the chains that call for it",
+          "detail": "It is the friendliest feed to the upper-right flipper, which sets up the side-shot finishers."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Bank the Time Machine after each completed chain",
+          "detail": "Collecting keeps the Combo Jackpot and Year credit even if you drain before finishing the remaining albums."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "far-cry-flawless-run",
+      "title": "Far Cry: Clean Jackpot Sweep",
+      "category": "multiball",
+      "summary": "Take the fifteen colored Far Cry jackpots without letting a single lit one time out, then cash the Super at the Time Machine for the doubled Years award.",
+      "difficulty": 3,
+      "reward": "Full jackpot total plus the larger Years bonus for a clean sweep",
+      "steps": [
+        {
+          "shot": "lock-targets",
+          "action": "Set the multiball up deliberately: green lock targets, then light the lock",
+          "detail": "Enter with a shot multiplier already parked on an inner shot so every jackpot rides it."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Take the fastest-expiring red and orange shots first, one cradle at a time",
+          "detail": "Trap up between shots instead of flailing; a miss is what ends the clean sweep, not a slow pace."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Use the safe inner shots for the mid-value jackpots",
+          "detail": "Avoid the right orbit here, its return is the most common source of a lost ball mid-multiball."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Finish with the Time Machine to collect the Super Jackpot",
+          "detail": "Hold the action button award in reserve to spot a stubborn last jackpot before you go for the Super."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "attract-mode-challenge-menu",
+      "title": "Attract-Mode Challenge Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Rush keeps the same kind of alternate-play menu behind its attract screen. Holding both flippers while the machine sits idle opens a list that lets you skip straight to the game's biggest set pieces instead of earning your way there across a full game.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both flipper buttons while the machine sits in attract mode with no game in progress",
+        "Keep holding until the menu appears on the display",
+        "Choose the mode you want, then start your game",
+        "Standard is the normal ruleset; Competition is the same game with random elements removed",
+        "Challenge plays either the Cygnus X-1 book or the 2112 wizard mode separately, without qualifying it first",
+        "DJ Mixer is a jukebox and does not affect scoring"
+      ],
+      "reward": "Access to Competition, a Challenge that plays either the Cygnus X-1 book or the 2112 wizard mode on its own, and a DJ Mixer jukebox"
+    },
+    {
+      "id": "progress-time-machine-years",
+      "title": "Advance the Time Machine to 2112",
+      "category": "progression",
+      "summary": "Rush keeps two currencies and the one that matters is years. The time machine opens the game at 2012 and the final mode sits a full century ahead at 2112, so the whole game is a hundred-year climb. Bank ten years and the time machine lights to hand you an upgrade, and these are not decoration: they push extra balls and extra ball save into multiballs that otherwise get two-ball starts, light an extra ball, double your record and ramp progress, and quietly compound by shaving a shot off lighting the next Time Machine multiball while raising its jackpots. Modes are the efficient engine, because a mode finished with a big total pays double.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Time Machine - Finish planet modes for the biggest single payouts. Completing one banks 5 years; completing one with a mode total of 80 million or more banks 10.",
+        "Time Machine - Cash multiball super jackpots, but know what each one pays for. Red Barchetta pays on each gear-advance super, Subdivisions and Fly By Night on their supers, Far Cry on a super scored without letting the shots time out, and Freewill only once you have collected unique super jackpots within the same multiball.",
+        "Right Orbit - Headlong Flight only pays years for its Super Jackpot, and that means comboing the side loop into the side ramp; the plain side loop and side ramp jackpots score points but no years.",
+        "RUSH Targets - Take the small repeatable years. Each 1-2-3 combo jackpot adds a year, up to fourteen in a game, and every Bastille Day hurry-up you see through by clearing all four RUSH targets during it adds more.",
+        "Instrument Drops - Sweep the instrument bonus across every lit shot once. It is a one-time award worth five years and it is easy to leave on the table.",
+        "Time Machine - Collect the upgrade the moment it lights. Ten banked years light the time machine to award the next rung, and how long that rung stays live depends on which one it is: some expire when the ball ends, others hold for the remainder of the game.",
+        "Time Machine - Learn the order of the ladder so you know what you are buying: extra ball and ball save for the Time Machine multiballs, then longer timers, then extra ball and ball save for Far Cry, then easier RUSH targets, then a lit extra ball, then two more balls and more ball save for the Time Machine multiballs, then double records per shot, then double ramp count-up, then extra ball and ball save for every multiball in the game. The tenth rung is 2112 itself.",
+        "Time Machine - Bank the compounding effect. Every upgrade permanently cuts a shot off lighting the next Time Machine multiball and raises the jackpot values inside it, so the ladder pays you twice."
+      ],
+      "reward": "A ten-rung upgrade ladder - more balls and ball save in multiball, a lit extra ball, doubled record and ramp progress, cheaper and richer Time Machine multiballs - ending at the 2112 final mode"
+    },
+    {
+      "id": "progress-instruments",
+      "title": "Collect and Activate the Three Instruments",
+      "category": "progression",
+      "summary": "The instrument drop targets are a two-stage system and most players only work the first stage. Whichever instrument is lit gets locked in the instant you knock down your first target, so the choice is made early whether you meant it or not. Clearing all three targets collects it and raises the baseline value of one playfield feature. The second stage is where the real value sits: shooting the instrument lane behind the drops switches on everything you have collected as timed perks that are far stronger than the passive boost. The three do completely different jobs, so lock in the one that suits whatever you are about to play. Gather all three and that same lane starts Freewill Multiball.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Instrument Drops - Understand the commitment. The first target you knock down locks in whichever instrument is currently lit, so line that shot up on purpose instead of flailing at the bank.",
+        "Instrument Standup - Change your mind before you commit. A shot to the instrument lane behind the drops cycles which instrument is locked in, and it works right up until you finish clearing the bank.",
+        "Instrument Drops - Clear all three targets to collect it. Bass raises 1-2-3 combo values, guitar raises spinner value, and drumsticks raise pop bumper values and light Drum Solo.",
+        "Instrument Standup - Switch it on, which is the step that pays. Shooting the instrument lane behind the drops activates every instrument you are holding: active bass makes combos score double and lets you score them during multiball, active guitar puts an extra multiplier on the spinner and spinner lane, and active drumsticks double both bumper scoring and the minutes each bumper feeds the drum clock.",
+        "Instrument Standup - Watch the shared timer. Activating another instrument resets the clock on everything you have active, so activate as a group rather than trickling them in.",
+        "Instrument Drops - Cash the instrument bonus. Each collection lights the major playfield shots for a bonus that carries its own multiplier, and taking it on every lit shot also pays a one-time five years toward the time machine.",
+        "Instrument Standup - Start Freewill Multiball. Once you hold all three instruments, the same lane behind the drops is lit to start it."
+      ],
+      "reward": "Three distinct perks - passive when collected, much stronger when activated - plus an instrument bonus across the major shots, and Freewill Multiball once all three are held"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-skill-shot",
+      "title": "Clean Opener",
+      "desc": "Soft-plunge and collect the top-value skill shot at the side scoop on a single ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot-scoop"
+    },
+    {
+      "id": "first-combo-jackpot",
+      "title": "Chain Of Three",
+      "desc": "Shoot the 1, 2 and 3 combo inserts in order and bank the Combo Jackpot at the Time Machine.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-123-jackpot"
+    },
+    {
+      "id": "first-time-machine-multiball",
+      "title": "Portal Open",
+      "desc": "Power up the center ramp and start any one of the three Time Machine multiballs.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "time-machine-mb"
+    },
+    {
+      "id": "far-cry-started",
+      "title": "Locked And Launched",
+      "desc": "Light the lock, trap two balls and start Far Cry Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "far-cry-mb"
+    },
+    {
+      "id": "first-song-mode-complete",
+      "title": "First Track Finished",
+      "desc": "Complete any one song mode from start to its final phase and earn the Rainbow Record.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "tom-sawyer-mode"
+    },
+    {
+      "id": "extra-ball-earned",
+      "title": "One More Ball",
+      "desc": "Collect an extra ball, either at the lit side scoop or through the drum solo lane award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-collect"
+    },
+    {
+      "id": "combo-super-jackpot",
+      "title": "Double Value Combo",
+      "desc": "After banking a Combo Jackpot, cash the lit side ramp for the doubled Combo Super Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-super-sideloop-farm"
+    },
+    {
+      "id": "freewill-started",
+      "title": "Full Kit Assembled",
+      "desc": "Collect and activate bass, guitar and drumsticks, then start Freewill Multiball at the instrument lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "freewill-mb"
+    },
+    {
+      "id": "headlong-flight-started",
+      "title": "Clock Strikes Twelve",
+      "desc": "Run the drum clock to midnight with the pop bumpers and start Headlong Flight at the right orbit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "headlong-flight-mb"
+    },
+    {
+      "id": "three-time-machine-multiballs",
+      "title": "Every Destination",
+      "desc": "Start all three Time Machine multiballs in one game, switching the lit song at the dead end between runs.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "time-machine-mb"
+    },
+    {
+      "id": "album-sweep",
+      "title": "Discography Complete",
+      "desc": "Collect all ten album awards in one game by completing each album's combo sequence.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "album-sweep-combos"
+    },
+    {
+      "id": "far-cry-flawless-super",
+      "title": "No Jackpot Missed",
+      "desc": "Collect all fifteen colored Far Cry jackpots without a miss, then cash the Super Jackpot at the Time Machine.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "far-cry-flawless-run"
+    },
+    {
+      "id": "headlong-triple-super",
+      "title": "Midnight Triple",
+      "desc": "In Headlong Flight, run the side loop and carry it straight into the side ramp for the tripled Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "headlong-flight-mb"
+    },
+    {
+      "id": "mode-over-eighty-million",
+      "title": "Eighty Million Track",
+      "desc": "Finish a single song mode worth more than 80 million for the doubled Years award.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-rainbow-engine"
+    },
+    {
+      "id": "cygnus-book-one",
+      "title": "The Voyage Begins",
+      "desc": "Start all six multiballs in one game to qualify and play the first Cygnus X-1 mini-wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "cygnus-x1-wizards"
+    },
+    {
+      "id": "cygnus-book-two",
+      "title": "Both Hemispheres",
+      "desc": "Complete all six song modes in one game to qualify and play the second Cygnus X-1 mini-wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "cygnus-x1-wizards"
+    },
+    {
+      "id": "hundred-years-collected",
+      "title": "A Century Of Years",
+      "desc": "Accumulate 100 Years in a single game to reach Year 2112 and light the finale.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-2112"
+    },
+    {
+      "id": "finale-conquered",
+      "title": "Grand Finale Cleared",
+      "desc": "Start 2112 and work all the way through its six phases to the last one.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-2112"
+    }
+  ],
+  "drills": [
+    {
+      "id": "soft-plunge-ladder",
+      "title": "Soft Plunge Ladder",
+      "text": "Never full-plunge — meter it so the ball settles on the upper-right flipper, then work the side loop, the side ramp and the side scoop in turn. Once all three are comfortable, take the loop first and combo it into the ramp for the Super version.",
+      "reps": "10 plunges per target",
+      "focus": "skill-shot",
+      "goal": "super-skill-shot",
+      "shots": [
+        "plunger",
+        "upper-right-flipper",
+        "inner-loop",
+        "side-ramp",
+        "scoop"
+      ]
+    },
+    {
+      "id": "time-machine-control",
+      "title": "Time Machine From a Cradle",
+      "text": "Take the center Time Machine as a controlled shot off the lower-left flipper, from a cradle, every single time. It is the hub the whole game runs through, and it is not a shot that rewards flipping at a moving ball.",
+      "reps": "20 attempts",
+      "focus": "ball-control",
+      "goal": "time-machine-mb",
+      "shots": [
+        "time-machine",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "spinner-then-collect",
+      "title": "Spin, Then Collect",
+      "text": "Rip the spinner to light the next Bonus X, then take the side loop to actually bank it. The spinner only lights it — nothing is banked until the loop shot lands, so the drill is finishing the pair rather than sitting on a lit meter.",
+      "reps": "5 collections",
+      "focus": "accuracy",
+      "goal": "bonus-x-spinner",
+      "shots": [
+        "spinner",
+        "inner-loop"
+      ]
+    },
+    {
+      "id": "far-cry-setup",
+      "title": "Lock Targets, Ramp, Lock",
+      "text": "Hit both green targets flanking the right ramp, shoot the ramp to light the lock, then lock at the scoop. Run the whole three-step setup as one sequence so it becomes something you can execute on demand rather than assemble mid-ball.",
+      "reps": "6 setups",
+      "focus": "accuracy",
+      "goal": "far-cry-mb",
+      "shots": [
+        "lock-targets",
+        "right-ramp",
+        "scoop"
+      ]
+    },
+    {
+      "id": "deliberate-bumper-feeds",
+      "title": "Deliberate Bumper Feeds",
+      "text": "Feed the pops through the left orbit on purpose and be set for whatever comes back out, then go again. The bumpers are dangerous on this machine, so the skill is deciding to go up there and covering the exit — not drifting in by accident.",
+      "reps": "10 deliberate feeds",
+      "focus": "ball-control",
+      "goal": "headlong-flight-mb",
+      "shots": [
+        "bumpers",
+        "left-orbit"
+      ]
+    },
+    {
+      "id": "combo-super-farm",
+      "title": "Combo, Bank, Farm",
+      "text": "Run the flashing 1, 2 and 3 inserts in order, bank at the Time Machine, take the side ramp for the doubled Super, then farm the side loop while it stays lit. Cradle after each collect so a dropped timer never costs you more than the link you were on.",
+      "reps": "4 full runs",
+      "focus": "flow",
+      "goal": "combo-super-sideloop-farm",
+      "shots": [
+        "inner-loop",
+        "side-ramp",
+        "time-machine"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "The Weapon",
+    "location": "center of the lockdown bar",
+    "how": "Rush keeps The Weapon on the lockdown bar button. Collect the album that matches the song mode or multiball you are playing and the button lights up; hold it for roughly three seconds to spend it. When no Weapon is armed the button glows red, and a press does something else entirely.",
+    "uses": [
+      {
+        "when": "Song mode running, button blue",
+        "what": "Hold about three seconds to sweep the lit mode shots, including ones that light as the sweep passes them."
+      },
+      {
+        "when": "Multiball running, button green",
+        "what": "The same hold gives you an add-a-ball rather than spotted shots."
+      },
+      {
+        "when": "Song mode and multiball stacked",
+        "what": "The hold takes the add-a-ball first, so plan on a second album if you also want shots spotted."
+      },
+      {
+        "when": "Button red, nothing armed",
+        "what": "A press swings the ramp diverter, which sets whether a later Weapon sweeps left-to-right or right-to-left."
+      },
+      {
+        "when": "One jackpot short of a Super",
+        "what": "Hemispheres is the cheap two-shot album — bank it and hold the Weapon to clean up that last shot."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Ride the Time Machine from 2012 to 2112 by banking Years from song modes, multiballs and combos, and place a Rainbow Record on a safe shot each time you finish a mode for a permanent multiplier. Reach Year 2112 and both Cygnus X-1 books to unlock the finale.",
+    "loop": [
+      "Soft-plunge to the upper-right flipper and take a skill shot on the side loop, ramp or scoop - never full-plunge into the deadly pop bumpers.",
+      "Play the center Time Machine as a controlled left-flipper shot to start modes, power up the multiballs, and collect Combo Jackpots.",
+      "Rotate the record color and finish song modes to bank Years and earn Rainbow Records, then park each record's permanent 2x on a safe inner shot.",
+      "Every ten Years lights a Time Machine upgrade; stack Far Cry and Headlong Flight, keep the ball alive, and climb toward Year 2112."
+    ],
+    "lights": [
+      {
+        "id": "combo-inserts",
+        "name": "1-2-3 Combo Inserts",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "inner-loop"
+          },
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "time-machine"
+          }
+        ],
+        "lit": "The 1, then 2, then 3 inserts light in order to mark the next shot in the chain, and each stays lit only while the combo timer is running.",
+        "flashing": "The lit number flashes on the shot you need next to keep the chain alive.",
+        "control": null,
+        "then": "Shoot 1, 2 and 3 in order inside the timer, then collect at the Time Machine to bank the Combo Jackpot and a Year. Once cashed, the side ramp lights for the Combo Super at double value, after which the side loop farms big points a loop.",
+        "goals": [
+          "combo-123-jackpot",
+          "combo-super-sideloop-farm"
+        ]
+      },
+      {
+        "id": "album-combos",
+        "name": "Album Combos",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "inner-loop"
+          },
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Each album is its own short combo string, the arrows showing the next shot, and a completed album stays collected while you work through the rest.",
+        "flashing": null,
+        "control": null,
+        "then": "Run one album's chain at a time - the two-shot Hemispheres, right ramp into right orbit, is the safe one and it arms the action-button Weapon - and bank the Time Machine between chains so a dropped timer never costs the whole set. Collecting every album adds a permanent extra multiplier to every later combo jackpot.",
+        "goals": [
+          "rush-album-combo",
+          "hemispheres-weapon",
+          "moving-pictures-combo",
+          "album-sweep-combos"
+        ]
+      },
+      {
+        "id": "time-machine-portal",
+        "name": "Time Machine Portal",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "time-machine"
+          },
+          {
+            "shot": "dead-end"
+          }
+        ],
+        "lit": "The Time Machine's flasher tells you which of its three multiballs is currently lit - a normal blink for Red Barchetta, a fast blink for Subdivisions, a slow pulse for Fly By Night - and it powers up a little with each ramp shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Power the ramp up with repeated shots, tap the Dead End to switch which multiball is lit if you want a different one, then shoot the Time Machine again to start it. Each one banks Years on its super jackpots.",
+        "goals": [
+          "time-machine-mb"
+        ]
+      },
+      {
+        "id": "far-cry-locks",
+        "name": "Far Cry Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lock-targets"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Hitting the two green LIGHT LOCK targets lights the lock at the right ramp, and that lock stays lit for you to trap a ball at the scoop.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the green targets, then the right ramp to light lock, then trap balls at the scoop to start Far Cry - the top-priority multiball. Take its colored jackpots climbing from blue through red without letting a lit one lapse, then collect the Super at the Time Machine to haul in Years.",
+        "goals": [
+          "far-cry-mb",
+          "far-cry-flawless-run"
+        ]
+      },
+      {
+        "id": "clockwork-clock",
+        "name": "Clockwork Angels Clock",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "bumpers"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "inner-loop"
+          }
+        ],
+        "lit": "The drum clock climbs toward midnight every time the pop bumpers fire, its white, green, yellow and red inserts marking how many minutes each pop is worth.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the pops deliberately - drumsticks and the right orbit speed the clock - until it strikes midnight, then the right orbit starts Headlong Flight, the one multiball you can layer onto anything already running. During it, a side loop carried straight into the side ramp pays the tripled Super and more Years.",
+        "goals": [
+          "headlong-flight-mb"
+        ]
+      },
+      {
+        "id": "instrument-drops",
+        "name": "Instrument Drops",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "instrument-drops",
+            "lamps": 3
+          },
+          {
+            "shot": "instrument-standup"
+          }
+        ],
+        "lit": "Whichever instrument is lit on the drop bank gets committed the moment your first target falls, so the lit one - bass, guitar or drumsticks - is the pick you are locking in whether you meant to or not.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the instrument lane behind the drops to change which is lit before you finish clearing the bank, down all three targets to collect it for a passive boost, then shoot that lane again to activate what you hold for the far stronger timed perks. Gather all three and the same lane starts Freewill Multiball.",
+        "goals": [
+          "freewill-mb",
+          "progress-instruments"
+        ]
+      },
+      {
+        "id": "record-modes",
+        "name": "Record Song Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "rush-targets"
+          },
+          {
+            "shot": "time-machine"
+          }
+        ],
+        "lit": "The record color you rotate to at the RUSH targets decides which song mode lights at the Time Machine, and starting a mode with every record one color makes all of its shots 3x.",
+        "flashing": null,
+        "control": null,
+        "then": "Rotate the blinking records toward a single color - cyan or orange are easiest - start the mode at the Time Machine, and finish it to bank Years and earn a Rainbow Record. Push a mode past a big total for doubled Years, and park each record's permanent 2x on a safe inner shot.",
+        "goals": [
+          "tom-sawyer-mode",
+          "working-man-mode",
+          "la-villa-mode",
+          "big-money-mode",
+          "rainbow-record-multiplier",
+          "strategy-rainbow-engine"
+        ]
+      },
+      {
+        "id": "bonus-x",
+        "name": "Bonus X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "inner-loop"
+          }
+        ],
+        "lit": "Ripping the spinner lights the next Bonus X, but nothing is banked yet - the lit level waits at the side loop, and unless ramp shots have locked it in it is gone when the ball ends.",
+        "flashing": null,
+        "control": null,
+        "then": "Rip the spinner to light the next level - Guitar active doubles the spins toward it - then shoot the side loop to actually collect it, climbing toward the cap on your end-of-ball bonus. Take it before you drain.",
+        "goals": [
+          "bonus-x-spinner"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Two RUSH target completions light an outlane ball save, and a flipper tap swaps it to the other outlane so you can guard the side the ball is heading for. Whether the flippers also cycle the three Roll the Bones inlanes is not documented.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Meter the plunge - never full-plunge into the deadly pops - and take the top-value scoop skill shot, then cradle. Play the center Time Machine as a controlled left-flipper shot to begin a multiball, and tap the RUSH standups during single-ball play so the outlanes light for a ball save.",
+        "goals": [
+          "skill-shot-scoop",
+          "super-skill-shot",
+          "strategy-safety-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Finish song modes to bank Years and Rainbow Records, parking each record's permanent 2x on a safe inner shot so it rides into everything. Prioritize Far Cry, keep Headlong Flight ready to stack on top, and climb the Time Machine's ten upgrades.",
+        "goals": [
+          "strategy-rainbow-engine",
+          "far-cry-mb",
+          "headlong-flight-mb",
+          "progress-time-machine-years"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Reach Year 2112 by hoarding Years, and play both Cygnus X-1 books - one wants all six multiballs started, the other all six song modes finished. Clearing both lights 2112, the roughly fifteen-minute six-ball finale the whole hundred-year climb has been building toward.",
+        "goals": [
+          "final-2112",
+          "cygnus-x1-wizards"
+        ]
+      }
+    ]
+  }
+}

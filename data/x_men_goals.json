@@ -1,0 +1,1455 @@
+{
+  "machine": "The Uncanny X-Men (Stern Pinball, 2024)",
+  "defaultFx": "hero",
+  "shots": [
+    {
+      "id": "x-jet-orbit",
+      "name": "X-Jet Orbit",
+      "type": "orbit",
+      "x": 0.12,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Farthest-left shot (Blackbird orbit). Strong shots divert into the Danger Room; feeds Danger Room training and lights super jackpots. Shoot late off the right flipper to avoid the center-drain kickout.",
+      "flipper": "right"
+    },
+    {
+      "id": "downtown-ramp",
+      "name": "Downtown Ramp",
+      "type": "ramp",
+      "x": 0.0305,
+      "y": 0.7143,
+      "trim": "all",
+      "notes": "Hybrid orbit/backwards-facing ramp hit late off the right flipper; feeds the same right flipper for the repeatable 5-Way Time Loop combo.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "uptown-ramp",
+      "name": "Uptown Ramp",
+      "type": "ramp",
+      "x": 0.092,
+      "y": 0.6229,
+      "trim": "all",
+      "notes": "Left ramp. A To Me, My X-Men Cerebro lock shot; also the Berzerker MB super-jackpot start and the left-ramp Cerebro skill shot.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "midtown-ramp",
+      "name": "Midtown Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Center ramp. Primary mission-start shot (lit blue); the Save the City lock. Feeds back to the right flipper for repeats.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "subway",
+      "name": "Subway",
+      "type": "ramp",
+      "x": 0.63,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Right-side ramp/loop, only hittable from the left flipper. Alternate mission-start/return shot. Nudge left to avoid the pop bumpers.",
+      "feeds": {
+        "shot": "gambit-bumper"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "highway-ramp",
+      "name": "Highway Ramp",
+      "type": "ramp",
+      "x": 0.7065,
+      "y": 0.4743,
+      "trim": "all",
+      "notes": "Steep upper-right ramp, only reachable with strong left-flipper shots. A To Me, My X-Men Cerebro lock shot when lit.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "sentinel-head",
+      "name": "Sentinel Head",
+      "type": "mech",
+      "x": 0.6491,
+      "y": 0.7657,
+      "trim": "all",
+      "notes": "Center-back articulated robot head; bash to spawn/defeat for Sentinel Multiball. Lowering mouth acts as a scoop/kickback and doubles the super jackpot when open."
+    },
+    {
+      "id": "sentinel-magnet",
+      "name": "Sentinel Magnet",
+      "type": "mech",
+      "x": 0.56,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Magnet in front of the Sentinel head; flings the ball when the Sentinel spawns."
+    },
+    {
+      "id": "sentinel-hands",
+      "name": "Sentinel Hands (Rising Body)",
+      "type": "mech",
+      "x": 0.56,
+      "y": 0.78,
+      "trim": "premium-le",
+      "notes": "Prem/LE only: full Sentinel rises from beneath the playfield and attacks the ball / blocks ramps with extended hands; can start Sentinel Attack."
+    },
+    {
+      "id": "cerebro",
+      "name": "Cerebro Post",
+      "type": "mech",
+      "x": 0.34,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Ball-lock post above the left flipper apex; holds virtual locks for To Me, My X-Men MB. Also the bonus-X build target area near the left flipper."
+    },
+    {
+      "id": "dr-mini-flipper",
+      "name": "Danger Room Mini-Flipper",
+      "type": "flipper",
+      "x": 0.08,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Third flipper inside the secluded lower-left Danger Room mini-playfield.",
+      "playfield": "danger-room"
+    },
+    {
+      "id": "dr-spinner",
+      "name": "Danger Room Spinner",
+      "type": "spinner",
+      "x": 0.05,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Novel outlane spinner on the left edge of the Danger Room; pays 1M/spin during the Save the City super.",
+      "playfield": "danger-room"
+    },
+    {
+      "id": "dr-targets",
+      "name": "Danger Room Targets",
+      "type": "standup",
+      "x": 0.11,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Three standups; one below the mini-flipper holds bonus when lit. Advance Danger Room training.",
+      "playfield": "danger-room"
+    },
+    {
+      "id": "dr-feed-ramp",
+      "name": "Danger Room Feed Ramp",
+      "type": "ramp",
+      "x": 0.12,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Small ramp inside the Danger Room that feeds Cerebro.",
+      "feeds": {
+        "shot": "cerebro"
+      },
+      "playfield": "danger-room"
+    },
+    {
+      "id": "dr-exit-ramp",
+      "name": "Danger Room Exit Ramp",
+      "type": "ramp",
+      "x": 0.18,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Exit lane out of the Danger Room; the universal 2x/3x jackpot multiplier and super-jackpot reset shot, and a Cerebro lock shot.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      },
+      "playfield": "danger-room"
+    },
+    {
+      "id": "nightcrawler-targets",
+      "name": "Nightcrawler Targets",
+      "type": "standup",
+      "x": 0.0946,
+      "y": 0.4171,
+      "trim": "all",
+      "notes": "Purple Nightcrawler standups; 5 hits light Cerebro, 20 earn the Nightcrawler perk."
+    },
+    {
+      "id": "kitty-pryde-lane",
+      "name": "Kitty Pryde Lane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Hidden sneak-in lane below the Downtown ramp entrance; builds bonus and spots the leftmost lit shot during missions. +10s to Save the City spinner timer."
+    },
+    {
+      "id": "beasts-lab",
+      "name": "Beast's Lab",
+      "type": "target",
+      "x": 0.44,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Just right of the Uptown ramp. Elevated captive-ball vari-target on Prem/LE; leaper/standup on Pro. Combo-advanced award levels (mystery, ball save, extra ball)."
+    },
+    {
+      "id": "x-mansion-target",
+      "name": "X-Mansion Target",
+      "type": "standup",
+      "x": 0.75,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Right side above the Gambit bumper; 4 hits light the right-outlane ball save, 10 earn the Jean Grey perk."
+    },
+    {
+      "id": "bishop-bumper",
+      "name": "Bishop Bumper",
+      "type": "bumper",
+      "x": 0.24,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Left pop bumper (where a left sling would be); charges the action-button ability meter to spot the most valuable shot."
+    },
+    {
+      "id": "gambit-bumper",
+      "name": "Gambit Bumper",
+      "type": "bumper",
+      "x": 0.7,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Right pop bumper below the X-Mansion target; every 3 hits sets the next mode/MB shot to 2x (3x with perk)."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3915,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Main lower-left flipper. Hold up as a reflex on any Danger-Room-bound ball."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7061,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Main lower-right flipper; feeds Downtown/Uptown/Midtown ramps."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the right flipper; lights Fastball Special and Extra Ball; alley-pass to the Gambit bumper."
+    },
+    {
+      "id": "plunger",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Right-edge shooter lane; four selectable skill shots (soft plunge, X-Jet, Downtown, Cerebro/Uptown)."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-cerebro",
+      "title": "Cerebro Skill Shot",
+      "category": "skillshot",
+      "summary": "The competitive-favorite plunge: the left/Uptown-ramp Cerebro skill shot settles the ball safely on the left flipper and spots one shot's worth of progress toward To Me, My X-Men multiball.",
+      "difficulty": 1,
+      "reward": "One Cerebro advance toward To Me, My X-Men multiball",
+      "steps": [
+        {
+          "shot": "uptown-ramp",
+          "action": "Full plunge with the Cerebro/Uptown skill shot selected",
+          "detail": "Cycle the flippers at the plunge until the left-ramp Cerebro skill is lit. The ball feeds the left ramp for the collect, spots one Cerebro advance, and settles safely on the left flipper."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-super",
+      "title": "Super Skill Shot (X-Jet → Danger Room Exit)",
+      "category": "skillshot",
+      "summary": "Full-plunge the X-Jet orbit for +3 Bonus X, then immediately catch the feed into the Danger Room exit ramp to upgrade it to a Super Skill Shot.",
+      "difficulty": 2,
+      "reward": "+3 Bonus X upgraded to a Super Skill Shot bonus",
+      "steps": [
+        {
+          "shot": "x-jet-orbit",
+          "action": "Full plunge with the X-Jet orbit skill selected",
+          "detail": "Ball runs the X-Jet orbit for +3 Bonus X and feeds toward the Danger Room.",
+          "feeds": {
+            "shot": "dr-exit-ramp"
+          }
+        },
+        {
+          "shot": "dr-exit-ramp",
+          "action": "Immediately catch the feed into the Danger Room exit ramp for the super upgrade"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-time-loop",
+      "title": "5-Way Time Loop Combo",
+      "category": "combo",
+      "summary": "The only truly repeatable loop: hit Downtown late off the right flipper up to 5 times for escalating awards; the 5th completion lights the left ramp for a 6th shot that adds +15s to the ball-save timer.",
+      "difficulty": 2,
+      "reward": "Escalating loop awards + 15s ball save",
+      "steps": [
+        {
+          "shot": "downtown-ramp",
+          "action": "Loop Downtown up to 5 times, hitting it late off the right flipper",
+          "detail": "It feeds back to the same right flipper, so it can be chained; each shot escalates.",
+          "flipper": "right"
+        },
+        {
+          "shot": "uptown-ramp",
+          "action": "After 5 loops, shoot the lit left ramp for the 6th shot",
+          "detail": "Adds +15 seconds to the ball-save timer."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "combo-fastball",
+      "title": "Fastball Special",
+      "category": "combo",
+      "summary": "A named 2-shot combo lit at the right inlane after completing standup-target sets: strobing left ramp then combo into the Sentinel, which also advances the Sentinel one defeat stage.",
+      "difficulty": 2,
+      "reward": "500k + 2.5M and advances the Sentinel one stage toward Sentinel MB",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Ball returns through the right inlane while Fastball Special is lit",
+          "detail": "Lights a strobing shot up the left ramp."
+        },
+        {
+          "shot": "uptown-ramp",
+          "action": "Shoot the strobing left ramp for 500k",
+          "detail": "Ball returns to the left flipper."
+        },
+        {
+          "shot": "sentinel-head",
+          "action": "Combo into the Sentinel for 2.5M",
+          "detail": "Also advances the next phase of defeating the Sentinel."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-berzerker-farm",
+      "title": "Berzerker Super-Jackpot Farm",
+      "category": "combo",
+      "summary": "The richest money loop on the game: collect five 5M major jackpots, take the X-Jet super (~30M), then combo the Danger Room exit ramp for a 2x super that resets the jackpots at a higher base.",
+      "difficulty": 3,
+      "reward": "~30M super (60M at 2x), then repeats at a higher base",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Collect 5 major-shot jackpots (5M each) across the lit majors",
+          "detail": "Any five lit major shots/Sentinel head; can't repeat a shot until another jackpot is made."
+        },
+        {
+          "shot": "x-jet-orbit",
+          "action": "Shoot the X-Jet orbit for the Super Jackpot",
+          "detail": "Super = total of the five jackpots that wave, ~30M, +1M base bump."
+        },
+        {
+          "shot": "dr-exit-ramp",
+          "action": "Immediately combo the Danger Room exit ramp for a 2x Super",
+          "detail": "Doubles the super and resets the jackpot process at higher values."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "combo-sentinel-loop",
+      "title": "Sentinel MB Jackpot Loop",
+      "category": "combo",
+      "summary": "Bump jackpots to orange/red at the Danger Room exit ramp, bank four major jackpots, then cash the super at the Sentinel head — doubled if you hit the open mouth.",
+      "difficulty": 3,
+      "reward": "Super = sum of the wave's jackpots, 2x on the open mouth",
+      "steps": [
+        {
+          "shot": "dr-exit-ramp",
+          "action": "Shoot the Danger Room exit ramp to relight jackpots at 2x (orange) then 3x (red)"
+        },
+        {
+          "shot": "midtown-ramp",
+          "action": "Collect 4 jackpots at the lit major shots"
+        },
+        {
+          "shot": "sentinel-head",
+          "action": "Shoot the Sentinel head into the open mouth for the super jackpot",
+          "detail": "Open mouth = 2x; then repeat, each cycle needing progressively more shots (up to ~6)."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-xmen-super",
+      "title": "To Me, My X-Men Super Loop",
+      "category": "combo",
+      "summary": "During To Me, My X-Men MB, chain six blue jackpots, take the Uptown-ramp super (5M base), then combo the Danger Room exit ramp for the 2x super.",
+      "difficulty": 2,
+      "reward": "5M+ super, doubled at the Danger Room exit ramp",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Collect 6 blue jackpots at the lit shots (can't repeat consecutively)",
+          "detail": "Each spawns one of the 12 X-Men."
+        },
+        {
+          "shot": "uptown-ramp",
+          "action": "Shoot the red-lit left ramp for the Super Jackpot (5M min)"
+        },
+        {
+          "shot": "dr-exit-ramp",
+          "action": "Combo the Danger Room exit ramp for the 2x Super"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "combo-city-spinner",
+      "title": "Save the City Spinner Farm",
+      "category": "combo",
+      "summary": "After collecting all five city jackpots, shoot the X-Jet to light the Danger Room spinner, then rip it for 1M per spin on a ~10-15s timer.",
+      "difficulty": 2,
+      "reward": "1M per spin for ~10-15 seconds (extendable via Kitty Pryde lane)",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Complete all five city-area jackpots via ramps, loops, targets and bumpers"
+        },
+        {
+          "shot": "x-jet-orbit",
+          "action": "Shoot the X-Jet to light the spinner super"
+        },
+        {
+          "shot": "dr-spinner",
+          "action": "Rip the Danger Room spinner for 1M per spin",
+          "detail": "Bounce into the Kitty Pryde lane to add +10s to the timer."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mb-sentinel",
+      "title": "Sentinel Multiball",
+      "category": "multiball",
+      "summary": "The top-scoring multiball: bash the giant Sentinel head to spawn it (~3 hits, +2 each subsequent time), damage it until the mouth opens, then keep hitting to start.",
+      "difficulty": 2,
+      "reward": "100M-200M+ when well played",
+      "steps": [
+        {
+          "shot": "sentinel-head",
+          "action": "Bash the Sentinel head ~3 times to spawn it",
+          "detail": "A Fastball Special instantly advances it one stage."
+        },
+        {
+          "shot": "sentinel-head",
+          "action": "Keep hitting to open the mouth"
+        },
+        {
+          "shot": "sentinel-head",
+          "action": "Hit the open mouth to start Sentinel Multiball",
+          "detail": "Level the Danger Room first to inflate the jackpots."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-save-city",
+      "title": "Save the City Multiball",
+      "category": "multiball",
+      "summary": "Qualify by hitting each of the six primary shots 3 times in single-ball play, then start at the lit Midtown or Subway ramp.",
+      "difficulty": 2,
+      "reward": "~70M+ even poorly played; supers 50M+",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Hit each of the six primary shots 3 times (progress shown upper-right)",
+          "detail": "Next cycles require 4 then 5 hits per area."
+        },
+        {
+          "shot": "subway",
+          "action": "Start at the lit Midtown or Subway ramp when no mode is active"
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "mb-xmen",
+      "title": "To Me, My X-Men Multiball",
+      "category": "multiball",
+      "summary": "Light Cerebro via 5 Nightcrawler purple targets (or a Cerebro skill shot), then advance/collect Cerebro 3 times at the Uptown or Highway ramp to start.",
+      "difficulty": 2,
+      "reward": "Blue jackpots spawning all 12 X-Men; supers at the left ramp",
+      "steps": [
+        {
+          "shot": "nightcrawler-targets",
+          "action": "Hit the purple Nightcrawler standups 5 times to light Cerebro"
+        },
+        {
+          "shot": "uptown-ramp",
+          "action": "Advance Cerebro at the lit Uptown ramp",
+          "link": "none"
+        },
+        {
+          "shot": "highway-ramp",
+          "action": "Advance Cerebro at the Uptown or Highway ramp two more times (3 total) to start",
+          "link": "none"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mb-berzerker",
+      "title": "Berzerker Multiball",
+      "category": "multiball",
+      "summary": "A gated mini-wizard reward: defeat 35 Sentinels cumulatively (fastest via Sentinel Facility Raid, The Future, Escape Nimrod, and Sentinel MB), then start at the Uptown ramp.",
+      "difficulty": 3,
+      "reward": "3-ball MB, 5M+ jackpots, ~30M supers (60M at 2x)",
+      "steps": [
+        {
+          "shot": "sentinel-head",
+          "action": "Defeat 35 Sentinels cumulatively across modes",
+          "detail": "Sentinel Facility Raid gives 1 per shot, up to 7 for the mission; The Future, Escape Nimrod (+4), and Sentinel MB unlit shots (+1) also count."
+        },
+        {
+          "shot": "uptown-ramp",
+          "action": "Once 35 reached and no mode is active, start Berzerker at the Uptown/left ramp"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-future",
+      "title": "The Future",
+      "category": "mode",
+      "summary": "The Sentinel mode triggered by completing an easy Tier-1 mission: destroy 6 Sentinels at flashing shots, then shoot Midtown/Subway to return to the past and claim the hero perk.",
+      "difficulty": 2,
+      "reward": "Hero perk + Sentinels toward Berzerker",
+      "steps": [
+        {
+          "shot": "sentinel-head",
+          "action": "Hit the Sentinel head to advance its value (white→green→yellow→red)",
+          "detail": "~40s with a 10s ball save; Danger Room Lvl 3 makes Sentinels count as 2 and doubles value."
+        },
+        {
+          "shot": "midtown-ramp",
+          "action": "Destroy 6 Sentinels at flashing shots, then shoot Midtown to return to the past",
+          "detail": "Subway also lights as the return shot."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-facility-raid",
+      "title": "Sentinel Facility Raid",
+      "category": "mode",
+      "summary": "A Tier-2 Rogue mission where shots move left-to-right and each destroys a Sentinel (up to 7-8); hitting the Sentinel head pauses the moving shots. Its add-a-ball is a key competitive lever.",
+      "difficulty": 2,
+      "reward": "Up to 7 Sentinels toward Berzerker + an add-a-ball usable in any multiball",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Qualify with white shots, then start at the blue Midtown/Subway shot"
+        },
+        {
+          "shot": "subway",
+          "action": "Hit the moving lit shots left→right; each destroys 1 Sentinel"
+        },
+        {
+          "shot": "sentinel-head",
+          "action": "Hit the Sentinel head to pause the moving shots when needed"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-genosha",
+      "title": "Genosha Under Siege",
+      "category": "mode",
+      "summary": "The challenging Magneto Tier-2 mission: red shots defeat Magneto/Avalanche and roving green shots defeat Toad at 2x; earn the Magneto perk (+10s to all game timers).",
+      "difficulty": 3,
+      "reward": "Magneto perk (+10s to all timers)",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Hit ~10 red shots to defeat Magneto and Avalanche"
+        },
+        {
+          "shot": "highway-ramp",
+          "action": "Hit the green shots (relocate every ~5s) to defeat Toad at 2x",
+          "detail": "Perfect bonus: hit only green shots."
+        }
+      ],
+      "fx": "psychic",
+      "ordered": false
+    },
+    {
+      "id": "mode-nimrod",
+      "title": "Escape Nimrod",
+      "category": "mode",
+      "summary": "The mode triggered by completing a Tier-2 challenging mission: hit 3 random red major-ramp shots, then take either the Midtown ramp or the Subway on a fresh timer to earn the perk plus 4 Sentinels.",
+      "difficulty": 2,
+      "reward": "Hero perk + 4 Sentinels toward Berzerker",
+      "steps": [
+        {
+          "shot": "highway-ramp",
+          "action": "Phase 1: hit 3 random red major-ramp shots for time-based bonuses",
+          "detail": "~35s + 10s ball save; the Bishop action button is disabled."
+        },
+        {
+          "shot": "midtown-ramp",
+          "action": "Phase 2: shoot the center ramp on a fresh 10s timer",
+          "link": "none"
+        },
+        {
+          "shot": "subway",
+          "action": "Or finish on the Subway — either shot ends it",
+          "detail": "Danger Room Lvl 3 adds +5s to this phase.",
+          "link": "none"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mult-gambit",
+      "title": "Gambit Shot Multiplier (2x/3x)",
+      "category": "multiplier",
+      "summary": "Charge the Gambit bumper (every 3 hits, or an alley pass to the right inlane) to make the next mode or multiball shot worth 2x (3x with the Smuggled Cargo perk). Time it onto the biggest shot.",
+      "difficulty": 1,
+      "reward": "Next mode/MB shot at 2x (3x with perk)",
+      "steps": [
+        {
+          "shot": "gambit-bumper",
+          "action": "Hit the Gambit bumper 3 times to arm the next-shot 2x",
+          "detail": "An alley pass through the right inlane also arms it."
+        },
+        {
+          "shot": "midtown-ramp",
+          "action": "Apply it to the highest-value / final shot of a mode or a super jackpot",
+          "detail": "Don't waste it on a small shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-bonus-x",
+      "title": "Bonus X (Cerebro Build)",
+      "category": "multiplier",
+      "summary": "Build the end-of-ball bonus multiplier at the Cerebro bonus targets near the left flipper and on the two plunges that pay it — a soft plunge for +1 and the X-Jet feed to X-Mansion for +3.",
+      "difficulty": 1,
+      "reward": "Higher end-of-ball bonus multiplier",
+      "steps": [
+        {
+          "shot": "cerebro",
+          "action": "Hit the Cerebro bonus-build targets near the left flipper to raise Bonus X"
+        },
+        {
+          "shot": "plunger",
+          "action": "Stack skill-shot Bonus X (soft plunge +1, X-Jet +3)",
+          "detail": "Capped by the bonus-X meter."
+        }
+      ],
+      "fx": "psychic",
+      "ordered": false
+    },
+    {
+      "id": "wiz-senator-kelly",
+      "title": "Save Senator Kelly",
+      "category": "wizard",
+      "summary": "The mini-wizard mode: complete all 8 missions to light Midtown + Subway, then clear escalating green→yellow→orange→red phases. The highest combo multiplier you reach multiplies the rest of the mode.",
+      "difficulty": 3,
+      "reward": "Highest combo multiplier reached multiplies all remaining mode scoring",
+      "steps": [
+        {
+          "shot": "midtown-ramp",
+          "action": "Complete all 8 missions, then start at the lit center + Subway ramps",
+          "detail": "Single-ball, 40s ball save, 60s final-phase timer."
+        },
+        {
+          "shot": "subway",
+          "action": "Clear P1 green (2 shots) → P2 yellow (3) → P3 orange (4) escalating phases"
+        },
+        {
+          "shot": "cerebro",
+          "action": "P4: hit all 6 majors lit red, then Cerebro to finish",
+          "detail": "Build a big combo multiplier beforehand — it multiplies all remaining scoring."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wiz-master-mold",
+      "title": "Master Mold (Final Wizard)",
+      "category": "wizard",
+      "summary": "The intended Sentinel-themed final wizard mode. It is a placeholder not yet fully implemented in current code, with no confirmed qualification path or ruleset documented.",
+      "difficulty": 3,
+      "reward": "TBD — not yet coded",
+      "steps": [
+        {
+          "shot": "sentinel-head",
+          "action": "Qualification path not finalized in shipped code (placeholder)",
+          "detail": "Expected to require completing the game's major Sentinel objectives in a later code update; treat as aspirational until implemented."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-danger-room-first",
+      "title": "Opener A — Danger Room Engine First",
+      "category": "strategy",
+      "summary": "The safe scoring foundation: take the Cerebro skill shot to cradle, feed the X-Jet twice to bank Danger Room Level 1 (2x next mission), then qualify and start an easy mission at 2x.",
+      "difficulty": 1,
+      "reward": "Next easy mission scores at 2x",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Cerebro/Uptown skill shot to cradle the left flipper safely"
+        },
+        {
+          "shot": "x-jet-orbit",
+          "action": "Feed the X-Jet orbit into the Danger Room to start filling the training bar"
+        },
+        {
+          "shot": "x-jet-orbit",
+          "action": "Second X-Jet feed to lock in Danger Room Level 1 (green, 2x next mission)"
+        },
+        {
+          "shot": "midtown-ramp",
+          "action": "Qualify an easy mission with white shots, then start it at the blue center ramp"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "strat-sentinel-rush",
+      "title": "Opener B — Sentinel Multiball Rush",
+      "category": "strategy",
+      "summary": "The highest-ceiling line: Cerebro skill shot, one or two Danger Room feeds to inflate jackpots, then poke the Sentinel head to Sentinel MB and drop the Facility Raid add-a-ball into it.",
+      "difficulty": 2,
+      "reward": "Fast route to the biggest multiball with inflated jackpots",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Cerebro/Uptown skill shot to cradle"
+        },
+        {
+          "shot": "x-jet-orbit",
+          "action": "1-2 Danger Room feeds to inflate future jackpots"
+        },
+        {
+          "shot": "sentinel-head",
+          "action": "Hit the Sentinel head ~3 times to open the mouth and start Sentinel MB",
+          "detail": "Cash the banked Sentinel Facility Raid add-a-ball into it and hunt supers at the open mouth (2x)."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "strat-combo-greedy",
+      "title": "Opener C — Combo / Ball-Save Greedy",
+      "category": "strategy",
+      "summary": "The risk-tolerant line: chain the Downtown 5-way Time Loop into the left ramp for +15s ball save, then immediately bank Danger Room Level 1 and start an easy mission at 2x.",
+      "difficulty": 3,
+      "reward": "+15s ball save plus a 2x mission",
+      "steps": [
+        {
+          "shot": "downtown-ramp",
+          "action": "Chain the 5-way Time Loop off the right flipper",
+          "flipper": "right"
+        },
+        {
+          "shot": "uptown-ramp",
+          "action": "Finish on the left ramp for +15s ball save"
+        },
+        {
+          "shot": "x-jet-orbit",
+          "action": "Immediately feed the X-Jet to bank Danger Room Level 1 (2x)"
+        },
+        {
+          "shot": "midtown-ramp",
+          "action": "Start an easy mission at 2x"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "dr-training-ladder",
+      "title": "Danger Room Training Ladder",
+      "category": "strategy",
+      "summary": "Bank all three Danger Room training levels: feed the X-Jet orbit to send balls into the mini-playfield, work the standups with the mini-flipper, and exit cleanly. Level 1 doubles the next mission, and the top level makes Sentinels count double and stretches mode timers.",
+      "difficulty": 2,
+      "reward": "2x mission scoring at Level 1; doubled Sentinel credit and extra mode time at Level 3",
+      "steps": [
+        {
+          "shot": "x-jet-orbit",
+          "action": "Hit the X-Jet orbit hard enough to divert the ball into the Danger Room",
+          "detail": "Hold the left flipper up as a reflex so the return does not slip past it."
+        },
+        {
+          "shot": "dr-mini-flipper",
+          "action": "Take control with the mini-flipper instead of flailing",
+          "detail": "Cradle first; every extra shot inside the room adds training progress."
+        },
+        {
+          "shot": "dr-targets",
+          "action": "Pick off the three standups to advance the training bar",
+          "detail": "Repeat X-Jet feeds across the ball until the bar clears Level 2 and reaches Level 3."
+        },
+        {
+          "shot": "dr-exit-ramp",
+          "action": "Leave through the exit ramp to bank the level",
+          "detail": "The same ramp is the jackpot-multiplier shot later, so learn its angle now."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "strat-standup-perks",
+      "title": "Standup Perks — Nightcrawler and Jean Grey",
+      "category": "strategy",
+      "summary": "Farm the two standup banks on purpose. The purple targets light Cerebro at 5 hits and pay off a perk at 20; the right-side mansion target lights the right-outlane save at 4 hits and a second perk at 10.",
+      "difficulty": 2,
+      "reward": "Both standup perks plus a lit right-outlane ball save",
+      "steps": [
+        {
+          "shot": "nightcrawler-targets",
+          "action": "Rattle the purple standups every time the ball is in that corridor",
+          "detail": "Five hits light Cerebro toward the team multiball; twenty earn the perk."
+        },
+        {
+          "shot": "x-mansion-target",
+          "action": "Work the mansion target on the right",
+          "detail": "Four hits arm the right-outlane save; ten hits earn the second perk."
+        },
+        {
+          "shot": "gambit-bumper",
+          "action": "Use the Gambit bumper's kickarounds to grind both banks for free",
+          "detail": "Alley passes into that side put the ball back near both targets."
+        }
+      ],
+      "fx": "psychic",
+      "ordered": false
+    },
+    {
+      "id": "strat-extra-ball",
+      "title": "Extra Ball via Beast's Lab",
+      "category": "strategy",
+      "summary": "Beast's Lab award levels climb with combos — mystery first, then ball save, then extra ball. Keep comboing into the lab, then collect the lit extra ball off the right inlane.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "beasts-lab",
+          "action": "Hit the lab off the back of combos to climb its award levels",
+          "detail": "Chained shots raise the level; single stray hits mostly do not."
+        },
+        {
+          "shot": "beasts-lab",
+          "action": "Push past the mystery and ball-save tiers to the extra-ball tier"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Collect the extra ball once the inlane lights it",
+          "detail": "The same inlane also arms the named two-shot combo, so watch which insert is lit."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "attract-mode-mode-select",
+      "title": "Hold-Both-Flippers Modes Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Away from the Danger Room and the Sentinel fight, the cabinet keeps a quieter menu tucked behind its attract loop. Holding both flipper buttons while the machine idles brings it up, and the choice made there governs the whole game before a single ball is plunged.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Wait until the machine is idle in attract mode with no game in progress",
+        "Hold both flipper buttons together until a menu appears on the display",
+        "The menu lists Standard, Competition, and DJ Mixer",
+        "Standard is the normal full ruleset",
+        "DJ Mixer is not a way to play at all — it works like a jukebox for the music in the machine, including a number of specific playlists"
+      ],
+      "reward": "Standard, Competition, and a DJ Mixer jukebox"
+    },
+    {
+      "id": "progression-perk-menu",
+      "title": "Eight Missions, Eight Upgrades",
+      "category": "progression",
+      "summary": "Missions are not just points on this machine. You choose which one you play, and each one is fronted by a different X-Man and attached to a different upgrade to the rest of your game. The catch is the payout is back-loaded: clearing the mission only buys you a trip to the future, and you have to get back out of the future before the upgrade is actually yours.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Shoot the white shots until a blue shot strobes, then hit it. The center ramp is always one of the shots that starts a mission.",
+        "Pick your mission with the flippers and the action button. There are eight — four standard, four harder — and each one hands over its own upgrade.",
+        "The standard four buy control: Rescue the Innocent charges the action button off fewer bumper hits, Bitter Rivalry lengthens single-ball ball saves, Smuggled Cargo raises the Gambit bumper multiplier from 2x to 3x, and Stopping a Juggernaut lets the Danger Room count toward scoring in the future and gives you a ball save the first time you enter it each ball.",
+        "The harder four buy firepower: Sentinel Facility Raid qualifies an add-a-ball you take by holding the action button during a multiball, A Fiery Assault extends the next Sentinel Multiball you play, Mayhem in Midtown lengthens multiball ball saves, and Genosha Under Siege puts extra time on mission and future timers.",
+        "Clearing the mission sends you to the future, and nothing is banked yet. Finish what the future asks of you and take the escape at the center ramp — the upgrade only lands when you get out.",
+        "Shop deliberately. Choose the mission whose upgrade fixes what your game is short on, and choose one you can realistically close out, because a mission you cannot escape from pays nothing."
+      ],
+      "reward": "A different upgrade for every mission you complete and escape"
+    },
+    {
+      "id": "progression-cyclops-unlock",
+      "title": "Train Enough to Bring Cyclops In",
+      "category": "progression",
+      "summary": "Danger Room training feels disposable, because your level gets wiped the moment you start a mission. It is not. The machine keeps a running count of the training levels you finish over the whole game, and once enough of them stack up Cyclops turns up for good and gives you more room to keep combos alive.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Feed the Danger Room with the X-Jet orbit. Balls also drop in there on their own, so be ready to play the mini-flipper whether you meant to go down or not.",
+        "Work the features inside it — the spinner, the targets, the ramp. Every shot you make advances the progress bar at the top of the display.",
+        "Fill the bar and you complete a training level. Starting a mission resets your level back to zero, but the level you finished still counts on the game's running total.",
+        "Keep going back down. Three completed training levels in one game brings Cyclops in, and every combo timer runs longer for the remainder of the game."
+      ],
+      "reward": "Longer combo timers for the rest of the game"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "wake-the-robot",
+      "title": "Wake the Robot",
+      "desc": "Start Sentinel Multiball by bashing the Sentinel head until its mouth opens.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-sentinel"
+    },
+    {
+      "id": "city-under-fire",
+      "title": "City Under Fire",
+      "desc": "Start Save the City Multiball by hitting each of the six primary shots three times in single-ball play.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-save-city"
+    },
+    {
+      "id": "team-assembled",
+      "title": "Team Assembled",
+      "desc": "Start To Me, My X-Men Multiball by lighting Cerebro and collecting three Cerebro locks.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-xmen"
+    },
+    {
+      "id": "perfect-launch",
+      "title": "Perfect Launch",
+      "desc": "Upgrade a plunge to the Super Skill Shot by running the X-Jet orbit and catching the feed into the Danger Room exit ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-super"
+    },
+    {
+      "id": "five-loops-deep",
+      "title": "Five Loops Deep",
+      "desc": "Complete all five Downtown time-loop shots on one ball and collect the sixth left-ramp award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-time-loop"
+    },
+    {
+      "id": "two-shot-tag-team",
+      "title": "Two-Shot Tag Team",
+      "desc": "Collect the named left-ramp-into-Sentinel combo while it is lit from the right inlane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-fastball"
+    },
+    {
+      "id": "spinner-payday",
+      "title": "Spinner Payday",
+      "desc": "Collect all five city jackpots during Save the City, light the Danger Room spinner, and rip it during the timed super.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-city-spinner"
+    },
+    {
+      "id": "trained-to-the-top",
+      "title": "Trained to the Top",
+      "desc": "Build Danger Room training all the way to its third level in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "dr-training-ladder"
+    },
+    {
+      "id": "two-mutant-powers",
+      "title": "Two Mutant Powers",
+      "desc": "Earn both standup-target perks in one game: 20 Nightcrawler hits and 10 X-Mansion hits.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strat-standup-perks"
+    },
+    {
+      "id": "one-more-ball",
+      "title": "One More Ball",
+      "desc": "Earn and collect an extra ball in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strat-extra-ball"
+    },
+    {
+      "id": "back-to-the-past",
+      "title": "Back to the Past",
+      "desc": "Finish The Future by destroying its six Sentinels and hitting the lit return shot before time runs out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-future"
+    },
+    {
+      "id": "outrun-the-hunter",
+      "title": "Outrun the Hunter",
+      "desc": "Complete Escape Nimrod through both phases, including the timed center-ramp and Subway finish.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-nimrod"
+    },
+    {
+      "id": "doubled-payoff",
+      "title": "Doubled Payoff",
+      "desc": "Collect a super jackpot at its doubled value during a multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-sentinel-loop"
+    },
+    {
+      "id": "thirty-five-down",
+      "title": "Thirty-Five Down",
+      "desc": "Defeat 35 Sentinels across a game and start Berzerker Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-berzerker"
+    },
+    {
+      "id": "island-defended",
+      "title": "Island Defended",
+      "desc": "Complete Genosha Under Siege and earn the timer-extending Magneto perk.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-genosha"
+    },
+    {
+      "id": "eight-for-eight",
+      "title": "Eight for Eight",
+      "desc": "Complete all eight missions in one game and start Save Senator Kelly.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wiz-senator-kelly"
+    },
+    {
+      "id": "senator-saved",
+      "title": "Senator Saved",
+      "desc": "Clear every phase of Save Senator Kelly, finishing with the six red majors and the Cerebro shot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-senator-kelly"
+    },
+    {
+      "id": "second-berzerker-wave",
+      "title": "Second Berzerker Wave",
+      "desc": "During Berzerker Multiball, cash a super jackpot, reset the jackpots at the Danger Room exit ramp, and cash a second super in the same multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "combo-berzerker-farm"
+    }
+  ],
+  "drills": [
+    {
+      "id": "cerebro-plunge",
+      "title": "Cerebro Plunge",
+      "text": "Cycle the flippers at the plunge until the left-ramp Cerebro skill is lit, then full-plunge. It spots progress toward the team multiball and settles the ball safely on the left flipper, which is why it beats the higher-value options as a default.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-cerebro",
+      "shots": [
+        "plunger",
+        "uptown-ramp"
+      ]
+    },
+    {
+      "id": "danger-room-control",
+      "title": "Danger Room Control",
+      "text": "Hit the X-Jet orbit hard enough to divert into the Danger Room, and hold the left flipper up as a reflex so the return does not slip past it. Down there, cradle on the mini-flipper before shooting, pick off the standups, and leave through the exit ramp to bank the level.",
+      "reps": "5 full trips",
+      "focus": "ball-control",
+      "goal": "dr-training-ladder",
+      "shots": [
+        "x-jet-orbit",
+        "dr-mini-flipper",
+        "dr-targets",
+        "dr-exit-ramp"
+      ]
+    },
+    {
+      "id": "exit-ramp-combo",
+      "title": "Exit Ramp Follow-Up",
+      "text": "Take the X-Jet super, then combo straight into the Danger Room exit ramp before the window closes. That one ramp doubles the super and resets the jackpot ladder at a higher base, so it is the single shot worth drilling hardest on this machine.",
+      "reps": "10 follow-ups",
+      "focus": "accuracy",
+      "goal": "combo-berzerker-farm",
+      "shots": [
+        "x-jet-orbit",
+        "dr-exit-ramp"
+      ]
+    },
+    {
+      "id": "sentinel-head-reps",
+      "title": "Sentinel Head Reps",
+      "text": "Bash the head until the mouth drops open, then put the ball in the open mouth. The open mouth doubles the super, so the drill is finishing on the mouth rather than settling for body hits once it is available.",
+      "reps": "6 spawn-and-start cycles",
+      "focus": "accuracy",
+      "goal": "mb-sentinel",
+      "shots": [
+        "sentinel-head"
+      ]
+    },
+    {
+      "id": "time-loop-chain",
+      "title": "Time Loop Chain",
+      "text": "Hit Downtown late off the right flipper so it feeds back to the same flipper, and keep going up to five. After the fifth, take the lit left ramp for the sixth shot — it buys ball-save time, which makes this the one loop worth chasing when the ball is behaving.",
+      "reps": "5 full runs",
+      "focus": "flow",
+      "goal": "combo-time-loop",
+      "shots": [
+        "downtown-ramp",
+        "uptown-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "fastball-pair",
+      "title": "Fastball Pair",
+      "text": "With the combo lit at the right inlane, take the strobing left ramp, then combo the return into the Sentinel. The ramp returns to the left flipper, so the second half is a clean look — the mistake is pausing between them.",
+      "reps": "10 pairs",
+      "focus": "flow",
+      "goal": "combo-fastball",
+      "shots": [
+        "right-inlane",
+        "uptown-ramp",
+        "sentinel-head"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "danger-room",
+      "name": "Danger Room",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.02,
+        "y": 0.08,
+        "w": 0.2,
+        "h": 0.36
+      },
+      "entries": [
+        "x-jet-orbit"
+      ],
+      "exits": [
+        {
+          "x": 0.36,
+          "y": 0.1
+        },
+        {
+          "shot": "cerebro"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Bishop (Action Button)",
+    "location": "center of the lockdown bar",
+    "how": "The left pop bumper — sitting where a left sling would normally be — charges Bishop's power into the lockdown bar button. Flashing red means a use is banked, and you can hold three at once. Perks earned from missions change how fast it charges and what else it can do.",
+    "uses": [
+      {
+        "when": "Button flashing red during a mode",
+        "what": "Spots the most valuable lit shot, but never the Sentinel head or anything in the Danger Room."
+      },
+      {
+        "when": "Escape Nimrod running",
+        "what": "Dead for the whole mode — every shot in it has to be made by hand."
+      },
+      {
+        "when": "Multiball, Rogue perk earned",
+        "what": "Hold it while flashing green for an add-a-ball, once per ball."
+      },
+      {
+        "when": "Missions lit and waiting",
+        "what": "Works with the flippers to choose which of the eight you start."
+      },
+      {
+        "when": "Rescue the Innocent completed",
+        "what": "Fewer bumper hits recharge the button from then on, so presses come around faster."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "The Uncanny X-Men pits the team against the Sentinels and Magneto across eight X-Man-led missions. Train in the Danger Room to multiply your missions, topple the towering Sentinel head, and assemble the team through Cerebro on the way to Save Senator Kelly.",
+    "loop": [
+      "Divert a hard X-Jet orbit shot into the secluded Danger Room and bank a training level so your next mission scores doubled.",
+      "Qualify a mission with white shots and start it at the blue center ramp, choosing which of the eight with the Bishop button and the flippers.",
+      "Clear the mission and escape the future to keep its permanent upgrade, since the payout is back-loaded.",
+      "Bash the Sentinel head for Sentinel Multiball, and after any super jackpot combo the Danger Room exit ramp to double it and reset the ladder higher.",
+      "Complete all eight missions to light Save Senator Kelly."
+    ],
+    "lights": [
+      {
+        "id": "mission-shots",
+        "name": "Mission Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "midtown-ramp"
+          },
+          {
+            "shot": "subway"
+          },
+          {
+            "shot": "highway-ramp"
+          }
+        ],
+        "lit": "White shots qualify a mission, then the blue center ramp -- or the Subway from the left flipper -- starts the one you have selected; each of the eight wears a different X-Man's colors and carries its own upgrade to the rest of your game.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "the Bishop lockbar button and the flippers together let you pick which of the eight you start, so you shop for the upgrade you want rather than taking whatever is lit",
+          "when": "when missions are lit and waiting"
+        },
+        "then": "The payout is back-loaded: clearing a mission only sends you into the future, and the upgrade stays out of reach until you fight your way back out of it. Complete all eight to light Save Senator Kelly.",
+        "goals": [
+          "mode-future",
+          "mode-facility-raid",
+          "mode-genosha",
+          "mode-nimrod",
+          "progression-perk-menu"
+        ]
+      },
+      {
+        "id": "danger-room",
+        "name": "Danger Room Training",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "x-jet-orbit"
+          },
+          {
+            "shot": "dr-targets"
+          },
+          {
+            "shot": "dr-exit-ramp"
+          }
+        ],
+        "lit": "Hitting the X-Jet orbit hard enough diverts the ball into the secluded lower-left mini-playfield; cradle on its mini-flipper, pick off the three standups to climb the training bar, then take the exit ramp out to lock the level in.",
+        "flashing": null,
+        "control": null,
+        "then": "Level 1 doubles your next mission and Level 3 doubles the credit each Sentinel gives while padding out your mode timers; the level wipes when a mission starts, but the game keeps a running total, and enough finished levels brings Cyclops in for good with longer combo timers.",
+        "goals": [
+          "dr-training-ladder",
+          "progression-cyclops-unlock"
+        ]
+      },
+      {
+        "id": "sentinels",
+        "name": "Sentinel Head & Berzerker",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "sentinel-head"
+          },
+          {
+            "shot": "sentinel-magnet"
+          },
+          {
+            "shot": "uptown-ramp"
+          }
+        ],
+        "lit": "Bashing the giant head spawns the Sentinel -- the magnet flings the ball as it appears -- and further hits open its mouth; only the open mouth starts the multiball, and it doubles the super jackpot too.",
+        "flashing": null,
+        "control": null,
+        "then": "Level the Danger Room first so Sentinel Multiball, the top scorer, launches with fat jackpots. Every Sentinel you destroy across modes and multiballs also feeds a running count -- reach thirty-five to start Berzerker Multiball at the left ramp.",
+        "goals": [
+          "mb-sentinel",
+          "mb-berzerker",
+          "combo-fastball"
+        ]
+      },
+      {
+        "id": "cerebro-xmen",
+        "name": "Cerebro & the Team",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "nightcrawler-targets"
+          },
+          {
+            "shot": "cerebro"
+          },
+          {
+            "shot": "uptown-ramp"
+          },
+          {
+            "shot": "highway-ramp"
+          }
+        ],
+        "lit": "Five hits on the purple Nightcrawler standups (or a Cerebro skill shot) light the Cerebro lock post above the left flipper; advancing and collecting it three times at the Uptown or Highway ramp starts the team multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "To Me, My X-Men pays blue jackpots that spawn all twelve X-Men, with supers at the left ramp. The same Cerebro area near the left flipper is where you build your end-of-ball Bonus X, so work it between locks.",
+        "goals": [
+          "mb-xmen",
+          "mult-bonus-x"
+        ]
+      },
+      {
+        "id": "save-the-city",
+        "name": "Save the City",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "midtown-ramp"
+          },
+          {
+            "shot": "x-jet-orbit"
+          },
+          {
+            "shot": "dr-spinner"
+          },
+          {
+            "shot": "kitty-pryde-lane"
+          }
+        ],
+        "lit": "Put three hits on all six primary shots in single-ball play to qualify the multiball; the later cycles ask for four then five hits per area, so early progress matters.",
+        "flashing": null,
+        "control": null,
+        "then": "Start it at the lit Midtown or Subway ramp, then once all five city jackpots are in take the X-Jet to arm the Danger Room spinner and rip it for a million per spin -- bounce the Kitty Pryde lane to add time to that clock.",
+        "goals": [
+          "mb-save-city",
+          "combo-city-spinner"
+        ]
+      },
+      {
+        "id": "exit-ramp-multiplier",
+        "name": "Danger Room Exit Ramp",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "dr-exit-ramp"
+          },
+          {
+            "shot": "x-jet-orbit"
+          },
+          {
+            "shot": "midtown-ramp"
+          }
+        ],
+        "lit": "The exit ramp is the universal jackpot multiplier and super-reset shot; it relights the jackpots at two times, then three times, and doubles a super rather than just paying it once.",
+        "flashing": null,
+        "control": null,
+        "then": "In every multiball, take the super at its home shot, then immediately combo the exit ramp to double it and reset the jackpot ladder at a higher base -- no other shot on the machine repays practice this richly.",
+        "goals": [
+          "combo-berzerker-farm",
+          "combo-sentinel-loop",
+          "combo-xmen-super"
+        ]
+      },
+      {
+        "id": "bumper-multipliers",
+        "name": "Gambit & Bishop Bumpers",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "gambit-bumper"
+          },
+          {
+            "shot": "bishop-bumper"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "Every third hit on the Gambit bumper -- or an alley pass through the right inlane -- arms the next mode or multiball shot at two times, while the Bishop bumper charges the lockbar button, and a red flash means a use is banked.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank the Gambit two-times onto your biggest shot or a super rather than wasting it small, and hold up to three Bishop charges to spot the most valuable lit shot (never the Sentinel or the Danger Room) or, with the Rogue perk, add a ball.",
+        "goals": [
+          "mult-gambit"
+        ]
+      },
+      {
+        "id": "perks-beasts-lab",
+        "name": "Standup Perks & Beast's Lab",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "x-mansion-target"
+          },
+          {
+            "shot": "beasts-lab"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "The right-side X-Mansion target arms the right-outlane save at four hits and earns a perk at ten, while Beast's Lab climbs its award levels off the back of combos rather than single stray hits.",
+        "flashing": null,
+        "control": null,
+        "then": "Climb Beast's Lab past its mystery and ball-save awards until the extra ball is lit, then collect it off the right inlane; farm the Nightcrawler and Jean Grey standups on purpose for their perks and the outlane save.",
+        "goals": [
+          "strat-standup-perks",
+          "strat-extra-ball"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the Cerebro skill shot -- it cradles the ball on the left flipper and spots a step toward the team multiball. Send two shots up the X-Jet to lock in the green training level so your first mission runs at two times, then qualify an easy mission and start it at the blue center ramp. The Downtown ramp keeps feeding the same flipper for the repeatable Time Loop, and a sixth shot after five buys fifteen seconds of ball save.",
+        "goals": [
+          "skill-cerebro",
+          "strat-danger-room-first",
+          "combo-time-loop"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Climb the Danger Room to Level 3 so Sentinels count double and timers stretch, and arm the Gambit bumper's two-times for your biggest shots. Poke the Sentinel head to the open mouth for Sentinel Multiball, the top scorer, and drop a banked Facility Raid add-a-ball into it. Take every super at its home shot, then immediately combo the Danger Room exit ramp to double it.",
+        "goals": [
+          "dr-training-ladder",
+          "mult-gambit",
+          "mb-sentinel",
+          "strat-sentinel-rush"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete all eight missions to light Save Senator Kelly, a single-ball gauntlet whose final score rides on the highest combo multiplier you build before it. Sentinel Multiball is the biggest points source when it is fed by a leveled Danger Room, and defeating thirty-five Sentinels opens the Berzerker super-jackpot farm. The intended final wizard, Master Mold, is not yet finished in the current code.",
+        "goals": [
+          "wiz-senator-kelly",
+          "mb-sentinel",
+          "mb-berzerker",
+          "wiz-master-mold"
+        ]
+      }
+    ]
+  }
+}

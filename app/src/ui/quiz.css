@@ -1,0 +1,76 @@
+/* ui/quiz.css — the KNOW THIS TABLE quiz's CONTENT only (ui/quiz.ts).
+ *
+ * The sheet chrome (backdrop, panel, grabber, header, close, slide-up and its
+ * reduced-motion guard) comes from ui/sheet.css via createSheet's 'overlay'
+ * variant, exactly like ui/glossary.css. Every colour here is a styles.css
+ * token: right is --cat-skillshot's green and wrong is --danger, the palette's
+ * own success/destructive pair (see the :root note on --danger), so this file
+ * adds no colour the token gate (tests/tokens.test.mjs) has not approved. */
+
+.pg-quiz-body{padding:2px 18px 18px}
+
+.pg-quiz-progress{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.pg-quiz-eyebrow{font:700 var(--fs-micro) var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim)}
+.pg-quiz-dots{display:flex;gap:6px}
+.pg-quiz-dot{width:8px;height:8px;border-radius:50%;background:var(--line-2)}
+.pg-quiz-dot.is-current{background:var(--amber);box-shadow:var(--glow-amber-soft)}
+.pg-quiz-dot.is-right{background:var(--cat-skillshot)}
+.pg-quiz-dot.is-wrong{background:var(--danger)}
+
+.pg-quiz-prompt{margin:0 0 14px;font-family:var(--display);font-size:var(--fs-5);font-weight:700;line-height:1.3;color:var(--text)}
+.pg-quiz-prompt:focus{outline:none}
+.pg-quiz-prompt:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:var(--r-1)}
+
+.pg-quiz-options{display:flex;flex-direction:column;gap:8px}
+.pg-quiz-opt{display:flex;align-items:flex-start;gap:10px;width:100%;min-height:48px;padding:11px 12px;text-align:left;border-radius:var(--r-2);background:var(--bg-card);border:1px solid var(--line-2);color:var(--text);font-size:var(--fs-3);line-height:1.45}
+.pg-quiz-opt:hover:not(.is-locked){border-color:var(--amber-border);background:var(--bg-card-hi)}
+.pg-quiz-opt:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
+.pg-quiz-opt.is-locked{cursor:default}
+.pg-quiz-opt.is-locked:not(.is-right):not(.is-wrong){color:var(--text-muted)}
+.pg-quiz-opt-key{flex-shrink:0;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 var(--fs-1) var(--mono);color:var(--text-dim);border:1px solid var(--line-2)}
+.pg-quiz-opt-text{flex:1;min-width:0}
+.pg-quiz-opt.is-right{border-color:var(--cat-skillshot);background:var(--bg-card-hi)}
+.pg-quiz-opt.is-right .pg-quiz-opt-key{background:var(--cat-skillshot);border-color:var(--cat-skillshot);color:var(--bg)}
+.pg-quiz-opt.is-wrong{border-color:var(--danger)}
+.pg-quiz-opt.is-wrong .pg-quiz-opt-key{background:var(--danger);border-color:var(--danger);color:var(--bg)}
+
+.pg-quiz-feedback{margin-top:12px}
+.pg-quiz-feedback:empty{display:none}
+.pg-quiz-verdict{margin:0;font-size:var(--fs-4);font-weight:800}
+.pg-quiz-verdict.is-right{color:var(--cat-skillshot)}
+.pg-quiz-verdict.is-wrong{color:var(--danger)}
+.pg-quiz-why{margin:4px 0 0;font-size:var(--fs-3);line-height:1.5;color:var(--text-soft)}
+
+.pg-quiz-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:10px;margin-top:14px}
+.pg-quiz-link{margin-right:auto;min-height:44px;padding:0 2px;background:none;border:0;color:var(--amber);font-size:var(--fs-3);font-weight:700}
+.pg-quiz-link:hover{color:var(--amber-bright)}
+.pg-quiz-link:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:var(--r-1)}
+.pg-quiz-btn{min-height:44px;min-width:96px;padding:0 18px;border-radius:11px;background:var(--hairline);border:1px solid var(--glass-border);color:var(--text);font-size:13.5px;font-weight:800;letter-spacing:.04em}
+.pg-quiz-btn:hover{border-color:var(--amber-border)}
+.pg-quiz-btn-primary{background:var(--amber);border-color:var(--amber);color:var(--text-on-amber)}
+.pg-quiz-btn-primary:hover,.pg-quiz-btn-primary:active{background:var(--amber-bright)}
+.pg-quiz-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+
+.pg-quiz-empty{margin:6px 0 0;font-size:var(--fs-3);line-height:1.5;color:var(--text-soft)}
+
+.pg-quiz-score{text-align:center;padding:6px 0 0}
+.pg-quiz-score-head{margin:0;display:flex;flex-direction:column;align-items:center;gap:2px}
+.pg-quiz-score-head:focus{outline:none}
+.pg-quiz-score-num{font-family:var(--display);font-size:var(--fs-7);font-weight:700;color:var(--amber);text-shadow:var(--glow-text)}
+.pg-quiz-score-label{font:700 var(--fs-1) var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim)}
+.pg-quiz-score-verdict{margin:10px 0 0;font-size:var(--fs-3);color:var(--text-soft)}
+.pg-quiz-missed{list-style:none;margin:14px 0 0;padding:0;text-align:left;border-top:1px solid var(--line)}
+.pg-quiz-missed-row{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px solid var(--hairline)}
+.pg-quiz-missed-q{font-size:var(--fs-2);color:var(--text-dim)}
+.pg-quiz-missed-a{font-size:var(--fs-3);font-weight:700;color:var(--text)}
+
+/* Answer reveal: a short pop on the right option and the verdict line. Enter-
+ * only, no listeners wait on it. Under reduced motion the motion is removed
+ * and the feature stays — the colours, borders and verdict text carry the
+ * whole answer without any animation. */
+@media (prefers-reduced-motion:no-preference){
+  .pg-quiz-opt.is-right{animation:pgQuizPop .28s cubic-bezier(.2,.8,.2,1)}
+  .pg-quiz-verdict{animation:pgQuizIn .2s ease-out}
+}
+@keyframes pgQuizPop{0%{transform:scale(1)}45%{transform:scale(1.02)}100%{transform:scale(1)}}
+@keyframes pgQuizIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}

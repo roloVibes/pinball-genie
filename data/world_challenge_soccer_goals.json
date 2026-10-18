@@ -1,0 +1,940 @@
+{
+  "machine": "World Challenge Soccer (Gottlieb, 1994)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Two completely different skill shots live here. A hard plunge runs the top rollover; a softer, timed plunge drops into the top hole. Use the time before you shoot to set the DROP TARGET award with the flipper buttons — that selection has to be made before the ball is live."
+    },
+    {
+      "id": "top-rollover",
+      "name": "Top Rollover",
+      "type": "rollover",
+      "x": 0.68,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "The velocity plunge target. Worth three goals and opens the goal unit for one shot. During multiball it spots every target and qualifies both jackpots."
+    },
+    {
+      "id": "top-hole",
+      "name": "Top Hole",
+      "type": "saucer",
+      "x": 0.84,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "The timed plunge target, holding whichever award is lit. A ball parked here when multiball starts makes it a two-ball multiball instead of three."
+    },
+    {
+      "id": "goal-unit",
+      "name": "Goal Unit",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "The goal itself. It is closed most of the time and opens for a single shot when you earn it. Hitting the unit spells CHALLENGE and advances the left soccer ball when lit."
+    },
+    {
+      "id": "center-target",
+      "name": "Center Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Advances the centre soccer ball lamp when lit, advances the goal value, and pays 10M a hit during Center Target Round."
+    },
+    {
+      "id": "left-targets",
+      "name": "Left Targets",
+      "type": "target-bank",
+      "x": 0.2,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Three targets on the left. Whichever one is lit advances the goal value by one step."
+    },
+    {
+      "id": "drop-targets",
+      "name": "Drop Target Bank",
+      "type": "drop-target",
+      "x": 0.34,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Completing the bank collects whichever of the five award lamps is lit. Losing a challenge match resets those lamps, which is worth planning around."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.73,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Advances the right soccer ball lamp when lit, and it is the ramp jackpot shot during multiball."
+    },
+    {
+      "id": "left-hole",
+      "name": "Left Hole",
+      "type": "saucer",
+      "x": 0.3,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "One of the two lower holes. Lit together they start challenge matches, the World Championship and multiball."
+    },
+    {
+      "id": "right-hole",
+      "name": "Right Hole",
+      "type": "saucer",
+      "x": 0.7,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "The other lower hole. Decide between the two before you shoot — the one you pick determines which flipper is holding the ball once the round starts."
+    },
+    {
+      "id": "left-rollover",
+      "name": "Left Side Rollover",
+      "type": "rollover",
+      "x": 0.08,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Where the Hurry-up Extra Ball is collected, on roughly a twenty second clock. In tournament play it no longer qualifies the penalty kick."
+    },
+    {
+      "id": "upper-flipper-lane",
+      "name": "Upper Flipper Lane",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Flashes when the penalty kick is available."
+    },
+    {
+      "id": "rollover-drop",
+      "name": "Rollover Drop Target",
+      "type": "drop-target",
+      "x": 0.58,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "A hidden target that resets whenever you hit the goal unit or score. Hitting it while the penalty kick is flashing opens the goal for one shot."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Kicking Rubber",
+      "type": "slingshot",
+      "x": 0.27,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Advances the left soccer ball lamp — the cheapest and least controllable way to move that column."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Kicking Rubber",
+      "type": "slingshot",
+      "x": 0.73,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Advances the right soccer ball lamp. Slingshot hits are the reason a lined-up set of lamps rarely stays lined up for long."
+    },
+    {
+      "id": "soccer-lamps",
+      "name": "Soccer Ball Lamps",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Three columns of lamps, left, centre and right. Line all three on the same row and you get either Superscore or a Hurry-up Extra Ball, depending on which row."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-rollover",
+      "title": "Skill Shot — Rollover",
+      "category": "skillshot",
+      "summary": "Hit the plunger hard enough to run the top rollover, the higher-impact half of the game's two plunge choices. Banks three goals immediately and opens the goal unit for one free shot.",
+      "difficulty": 1,
+      "reward": "Three goals + one open goal shot",
+      "steps": [
+        {
+          "shot": "top-rollover",
+          "action": "Plunge hard for the top rollover",
+          "detail": "Three goals banked immediately, and the goal unit opens for one free shot."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "skillshot-hole",
+      "title": "Skill Shot — Hole",
+      "category": "skillshot",
+      "summary": "Feather the plunger instead so the ball drops softly into the top hole and takes its lit award — Mystery, Advance Goal Value, or Hit All Targets.",
+      "difficulty": 2,
+      "reward": "The lit hole award (Mystery, Advance Goal Value, or Hit All Targets)",
+      "steps": [
+        {
+          "shot": "top-hole",
+          "action": "Plunge soft into the top hole",
+          "detail": "Takes whichever award is lit — Advance Goal Value alone moves the goal-value ladder three steps, which sets up much bigger goals later."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "goal-value",
+      "title": "Advance The Goal Value",
+      "category": "multiplier",
+      "summary": "Every goal you score pays the current goal value, and it resets to 1M at the start of each ball. The ladder runs 1M, 2M, 3M, 4M, 5M, 10M, 25M. Raise it before you score, not after — the same ten-goal jackpot is worth 20M at the bottom of the ladder and 250M at the top.",
+      "difficulty": 2,
+      "reward": "1M climbing to 25M per goal",
+      "steps": [
+        {
+          "shot": "left-targets",
+          "action": "Hit the lit left target",
+          "detail": "Each hit on the lit target is one step up the ladder."
+        },
+        {
+          "shot": "center-target",
+          "action": "Use the centre target too",
+          "detail": "It advances the value as well as the centre soccer ball lamp."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Take Advance Goal Value on the plunge",
+          "detail": "That award is worth three steps in one shot on standard settings."
+        }
+      ],
+      "fx": "cash",
+      "ordered": false
+    },
+    {
+      "id": "goals",
+      "title": "Score Goals",
+      "category": "progression",
+      "summary": "Goals are the spine of this machine. Each one pays the current goal value, twenty of them lights an extra ball, and fifty qualifies the mystery for Super Riot. The counter tops out at 99, and beating the all-time goal count awards a Special.",
+      "difficulty": 2,
+      "reward": "Goal value each, extra ball at 20, Super Riot at 50",
+      "steps": [
+        {
+          "shot": "goal-unit",
+          "action": "Score when the goal is open",
+          "detail": "The goal only opens for a single shot at a time, so nothing here is a free-form grind."
+        },
+        {
+          "shot": "soccer-lamps",
+          "action": "Track the count and the value together",
+          "detail": "Knowing both numbers is what tells you whether to shoot now or build first."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "soccer-lineup",
+      "title": "Line Up The Soccer Balls",
+      "category": "strategy",
+      "summary": "Three columns of lamps, each advanced by a different part of the playfield. Line them up on the white row and Superscore turns on, worth 10M, then 20M, then 40M, and it carries between balls. Line them up on the top purple row instead and a Hurry-up Extra Ball is qualified.",
+      "difficulty": 3,
+      "reward": "Superscore 10M/20M/40M, or a hurry-up extra ball",
+      "steps": [
+        {
+          "shot": "left-slingshot",
+          "action": "Move the left column",
+          "detail": "The left kicking rubber does it, and so does scoring or hitting the goal unit while lit.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Move the right column",
+          "detail": "The right kicking rubber or a lit right ramp.",
+          "link": "none"
+        },
+        {
+          "shot": "center-target",
+          "action": "Move the centre column",
+          "detail": "Only the lit centre target advances this one.",
+          "link": "none"
+        },
+        {
+          "shot": "left-rollover",
+          "action": "Collect a purple line-up fast",
+          "detail": "The Hurry-up Extra Ball runs about twenty seconds at the left side rollover."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "boo",
+      "title": "The Boo",
+      "category": "secret",
+      "summary": "Press both flipper buttons together and the goal opens for one shot. You get exactly one per ball, so spend it on something that matters — an extra ball, or a goal you cannot otherwise reach. Booing at the plunge still opens the goal and adds a letter in SOCCER on top, though if that letter completes SOCCER the game cancels the award lit at the plunger.",
+      "difficulty": 2,
+      "reward": "One open goal per ball",
+      "steps": [
+        {
+          "shot": "goal-unit",
+          "action": "Press both flippers",
+          "detail": "One boo per ball, and no way to earn a second."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Boo early only for a purple line-up",
+          "detail": "If the three purple lamps are already aligned at the plunge, an open goal waiting for you is worth the boo.",
+          "link": "none"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "drop-awards",
+      "title": "Drop Target Awards",
+      "category": "progression",
+      "summary": "Clearing the drop bank collects whichever award is lit — and you choose that award yourself with the flipper buttons before the ball is in play. There are five to work through: Extra Ball Round, Multi, Special Round, Ball and Points Round. Once all five are done the bank awards Light Challenge instead.",
+      "difficulty": 2,
+      "reward": "Rounds, multiball, and eventually Light Challenge",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Choose the award with the flipper buttons",
+          "detail": "Cycle to the one you want before you plunge; the selection cannot be changed once the ball is live."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Sweep the bank",
+          "detail": "Multi and Ball together are what light the holes for multiball."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Take your first challenge from the drops if you can",
+          "detail": "Losing a challenge match resets these lamps, so spending the drop-target challenge first leaves the goal unit route intact for a second one."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "three-words",
+      "title": "Spell All Three Words",
+      "category": "progression",
+      "summary": "Three separate words are being spelled at once. WORLD awards the Center Target Round, CHALLENGE lights the lower holes, and SOCCER awards Players Choice. Your outhole bonus grows 1M for each letter you complete, and it jumps to 100M once all three words are done.",
+      "difficulty": 2,
+      "reward": "Three round awards plus up to 100M in bonus",
+      "steps": [
+        {
+          "shot": "goal-unit",
+          "action": "Spell CHALLENGE off the goal unit",
+          "detail": "Completing it lights the lower holes for a challenge match."
+        },
+        {
+          "shot": "center-target",
+          "action": "Finish WORLD for the Center Target Round",
+          "detail": "Every hit in that round is worth 10M."
+        },
+        {
+          "shot": "left-hole",
+          "action": "Finish SOCCER for Players Choice",
+          "detail": "The choice is eight goals or a multiball — take goals when your goal value is high."
+        }
+      ],
+      "fx": "badge",
+      "ordered": false
+    },
+    {
+      "id": "challenge-matches",
+      "title": "Challenge Matches",
+      "category": "mode",
+      "summary": "A challenge match is a short round with exactly one objective: score a goal. Do it and you advance; let it time out and you have lost, the holes go dark, and you have to requalify. Five wins qualifies both holes for the World Championship.",
+      "difficulty": 2,
+      "reward": "Progress toward the World Championship",
+      "steps": [
+        {
+          "shot": "right-hole",
+          "action": "Enter from the hole that suits your flipper",
+          "detail": "Decide before you shoot which flipper you want the ball on when the match starts."
+        },
+        {
+          "shot": "goal-unit",
+          "action": "Score one goal, quickly",
+          "detail": "Trapping the ball and letting the clock run out loses the match here — there is no safe stall."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "world-championship",
+      "title": "World Championship",
+      "category": "wizard",
+      "summary": "Win all five challenge matches and both holes light for the final. It is a three-ball multiball and the target is three goals before it ends. The third one pays 50M, closes the round and rolls you straight into Riot.",
+      "difficulty": 3,
+      "reward": "50M and an immediate Riot",
+      "steps": [
+        {
+          "shot": "left-hole",
+          "action": "Start it from a lit hole",
+          "detail": "Winning five challenge matches is the only way in."
+        },
+        {
+          "shot": "goal-unit",
+          "action": "Score three goals",
+          "detail": "The match ends the moment the third one goes in."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Protect the multiball",
+          "detail": "Riot runs as long as multiball does, so draining down straight after the third goal throws away the best scoring in the game."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "riot",
+      "title": "Riot And Super Riot",
+      "category": "wizard",
+      "summary": "Riot follows the World Championship and lasts exactly as long as your multiball does — every shot is worth 30M. Super Riot is the upgraded version at 100M per shot, and it comes from the mystery award once you are past fifty goals.",
+      "difficulty": 3,
+      "reward": "30M per shot, or 100M in Super Riot",
+      "steps": [
+        {
+          "shot": "goal-unit",
+          "action": "Win the Championship to start Riot",
+          "detail": "It begins automatically on the third goal."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep every ball alive",
+          "detail": "The round has no timer of its own; the multiball is the timer."
+        },
+        {
+          "shot": "top-hole",
+          "action": "Bank fifty goals for Super Riot",
+          "detail": "Past fifty, the mystery award turns into Super Riot."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball And Jackpots",
+      "category": "multiball",
+      "summary": "Complete Multi and Ball from the drop targets to light the holes. It is a three-ball multiball, or only two if you had a ball parked in the top hole. The skill shot rollover spots every target and qualifies both jackpots straight away.",
+      "difficulty": 2,
+      "reward": "Goal jackpots up to 30 goals, ramp jackpots to 300M",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Light Multi and Ball",
+          "detail": "Players Choice and the mystery award can also hand you a multiball."
+        },
+        {
+          "shot": "top-rollover",
+          "action": "Take the multiball skill shot",
+          "detail": "It spots all targets and qualifies both jackpots, which makes the first one far easier."
+        },
+        {
+          "shot": "goal-unit",
+          "action": "Cash the goal jackpot",
+          "detail": "It pays 10 goals, then 20, then 30, then 30 again, and only within the same multiball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash the ramp jackpot",
+          "detail": "30M, then 100M, then 300M repeating. Collecting either jackpot resets the drops, and the two sides do not step each other.",
+          "link": "none"
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "penalty-kick",
+      "title": "Penalty Kick",
+      "category": "combo",
+      "summary": "Hitting the goal unit or scoring resets the hidden rollover drop target and starts the upper flipper lane flashing. Take the rollover drop while it is flashing and the goal opens for one shot — the standard way to convert a hurry-up extra ball when your boo is already spent.",
+      "difficulty": 2,
+      "reward": "One open goal shot",
+      "steps": [
+        {
+          "shot": "goal-unit",
+          "action": "Hit the goal unit to arm it",
+          "detail": "Scoring a goal arms it as well on standard settings."
+        },
+        {
+          "shot": "upper-flipper-lane",
+          "action": "Watch for the flash",
+          "detail": "The flashing lane is the tell that the hidden target is live."
+        },
+        {
+          "shot": "rollover-drop",
+          "action": "Take the hidden target",
+          "detail": "That opens the goal for one shot — the penalty kick into goal combo."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "feature-rounds",
+      "title": "Feature Rounds",
+      "category": "mode",
+      "summary": "Four timed rounds. Extra Ball Round, Special Round and Points Round all come off the drop targets and all want every flashing target cleared; the Points Round pays a value that climbs to 80M and puts time back on the clock each time you complete it. Center Target Round is the odd one out — it comes from spelling WORLD, and is simply 10M per hit on the centre target.",
+      "difficulty": 2,
+      "reward": "Extra ball, special, up to 80M, or 10M a hit",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Clear the flashing targets",
+          "detail": "That is the requirement for the Extra Ball, Special and Points rounds alike."
+        },
+        {
+          "shot": "center-target",
+          "action": "Grind the centre target",
+          "detail": "Center Target Round is pure repetition at 10M a hit.",
+          "link": "none"
+        },
+        {
+          "shot": "goal-unit",
+          "action": "Keep playing the rest of the game",
+          "detail": "Spelling, goal value, goals and the penalty kick all stay live during rounds — only the line-up, mystery, challenge matches, multiball and drop awards go dark."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "mystery",
+      "title": "The Mystery Award",
+      "category": "secret",
+      "summary": "Under tournament settings the mystery pays a token 1,000 points almost every time, which sounds worthless. It is not: past fifty goals it turns into Super Riot, and on your last ball it can hand you a consolation multiball if you have not had one yet.",
+      "difficulty": 2,
+      "reward": "Super Riot or a consolation multiball",
+      "steps": [
+        {
+          "shot": "top-hole",
+          "action": "Set Mystery on the plunge",
+          "detail": "Its real value is entirely conditional on your goal count and which ball you are on."
+        },
+        {
+          "shot": "goal-unit",
+          "action": "Get past fifty goals first",
+          "detail": "Below that threshold, the token award is exactly what it looks like."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "tournament-settings",
+      "title": "What Changes In Tournament Play",
+      "category": "progression",
+      "altMode": "ruleset",
+      "summary": "Competition settings remove most of the randomness from this machine, and several habits that work on a location game will actively cost you in a tournament. Know the differences before you step up.",
+      "difficulty": 2,
+      "reward": "Knowing what the game will and will not give you",
+      "steps": [],
+      "instructions": [
+        "Challenge Match progress no longer carries between balls — the lamps reset to three lit at the start of every ball, so reaching the World Championship means winning two matches on one ball.",
+        "The bottom three soccer ball lamps start lined up on every ball, so Superscore is on from the start and the skill shot choice becomes a real decision between Hit All Targets and Advance Goal Value.",
+        "That same change makes the extra ball harder, because the centre target now has to be hit at least five times.",
+        "Mystery is fixed at 1,000 points unless you are past fifty goals or on your last ball without a multiball.",
+        "The left side rollover no longer qualifies the penalty kick, which removes the trick of repeatedly milking the goal.",
+        "On reduced scoring, Riot shots drop from 30M to 20M, Super Riot from 100M to 50M, and Advance Goal Value on the plunge moves the value one step instead of three."
+      ],
+      "fx": "badge"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "wcs-velocity",
+      "title": "Velocity Shot",
+      "desc": "Run the top rollover from the plunge for three goals.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-rollover"
+    },
+    {
+      "id": "wcs-max-value",
+      "title": "Twenty Five Million",
+      "desc": "Climb the goal value ladder to its 25M maximum.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "goal-value"
+    },
+    {
+      "id": "wcs-boo",
+      "title": "Boo",
+      "desc": "Open the goal with both flippers and convert it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "boo"
+    },
+    {
+      "id": "wcs-superscore",
+      "title": "Superscore",
+      "desc": "Line the three soccer ball lamps up on the white row.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "soccer-lineup"
+    },
+    {
+      "id": "wcs-penalty",
+      "title": "Penalty Kick",
+      "desc": "Take the hidden rollover drop while the penalty kick is flashing, then score.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "penalty-kick"
+    },
+    {
+      "id": "wcs-words",
+      "title": "All Three Words",
+      "desc": "Complete WORLD, CHALLENGE and SOCCER in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "three-words"
+    },
+    {
+      "id": "wcs-ramp-jackpot",
+      "title": "Three Hundred Million",
+      "desc": "Work the ramp jackpot up to its 300M level during one multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "wcs-champion",
+      "title": "World Champion",
+      "desc": "Win five challenge matches and take the World Championship.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "world-championship"
+    },
+    {
+      "id": "wcs-super-riot",
+      "title": "Super Riot",
+      "desc": "Pass fifty goals and collect Super Riot from the mystery award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "riot"
+    }
+  ],
+  "drills": [
+    {
+      "id": "two-plunge-skill-shots",
+      "title": "Hard Plunge, Soft Plunge",
+      "text": "Alternate the two plunges: hard enough to run the top rollover, then feathered so the ball settles into the top hole. Learn both, and remember that a ball sitting in the top hole when multiball starts costs you a third ball.",
+      "reps": "10 plunges each way",
+      "focus": "skill-shot",
+      "goal": "skillshot-rollover",
+      "shots": [
+        "shooter-lane",
+        "top-rollover",
+        "top-hole"
+      ]
+    },
+    {
+      "id": "goal-value-before-goals",
+      "title": "Build The Ladder First",
+      "text": "Spend a full ball climbing the goal value on the lit left target and the centre target before you put a single ball in the net. The value resets every ball, so the habit you are building is refusing to score cheap goals at the bottom of the ladder.",
+      "reps": "one ball, value to 25M before scoring",
+      "focus": "accuracy",
+      "goal": "goal-value",
+      "shots": [
+        "left-targets",
+        "center-target",
+        "goal-unit"
+      ]
+    },
+    {
+      "id": "preset-drop-sweep",
+      "title": "Pick The Award, Then Sweep",
+      "text": "While the ball is still in the shooter lane, scroll the drop-target award to the one you actually want, then plunge and clear the whole bank in a single visit. The selection locks the instant the ball is live, so deciding late is deciding wrong.",
+      "reps": "8 sweeps, naming the award first",
+      "focus": "accuracy",
+      "goal": "drop-awards",
+      "shots": [
+        "shooter-lane",
+        "drop-targets"
+      ]
+    },
+    {
+      "id": "penalty-kick-chain",
+      "title": "Penalty Kick Chain",
+      "text": "Hit the goal unit to reset the hidden rollover drop, watch for the upper flipper lane flashing, take that hidden target, then put the open goal away. Run it as one sequence so you have a way to open the goal on a ball where your boo is already spent.",
+      "reps": "8 full chains",
+      "focus": "flow",
+      "goal": "penalty-kick",
+      "shots": [
+        "goal-unit",
+        "upper-flipper-lane",
+        "rollover-drop"
+      ]
+    },
+    {
+      "id": "challenge-hole-choice",
+      "title": "Choose Your Hole",
+      "text": "Before you shoot a lit lower hole, decide which flipper you want to be holding the ball when the match starts, and enter from the hole that gives you it. There is no safe stall here — you have to score one goal quickly, and letting the clock run out is a loss — so the shot after the kickout has to already be set up.",
+      "reps": "10 matches, calling the side first",
+      "focus": "ball-control",
+      "goal": "challenge-matches",
+      "shots": [
+        "left-hole",
+        "right-hole",
+        "goal-unit"
+      ]
+    },
+    {
+      "id": "lineup-hurryup-race",
+      "title": "Race A Purple Line-Up",
+      "text": "The kicking rubbers keep shoving the left and right columns out of alignment, so treat the lit centre target as the column you actually steer and time the other two around it. The moment the purple row lines up, go straight to the left side rollover — that hurry-up runs about twenty seconds.",
+      "reps": "5 line-ups",
+      "focus": "flow",
+      "goal": "soccer-lineup",
+      "shots": [
+        "center-target",
+        "left-slingshot",
+        "right-slingshot",
+        "right-ramp",
+        "left-rollover"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "hero",
+  "actionButton": {
+    "present": false,
+    "how": "No separate button, but the flipper buttons do more here than flip. While the ball still sits in the shooter lane they scroll through the drop-target awards, and that choice locks once you plunge. Squeeze both buttons together during play and the goal opens for one shot — once per ball, so spend it on an extra ball."
+  },
+  "howItPlays": {
+    "objective": "You are chasing the World Cup here, and a goal is only ever worth the value showing on the ladder at the moment it goes in -- so the game is really about driving that number up before you shoot. Win five challenge matches to light the World Championship, whose payoff spills straight into Riot at thirty million a shot.",
+    "loop": [
+      "Pump the goal value up first -- both the lit left standup and the centre target push it higher -- before you sink anything, because it resets to a single million each ball and that very jackpot pays far more from up top.",
+      "Score through the goal unit, which only cracks open for one shot at a time; put twenty goals away to light an extra ball, and reach fifty to arm Super Riot.",
+      "Sweep the drop-target bank -- its award chosen with the flippers before you ever plunge -- to bank rounds, and finish Multi and Ball there to light the two holes for multiball.",
+      "Win challenge matches out of the lit holes -- one goal before the clock dies -- and five wins throw both holes open for the World Championship.",
+      "Bury the Championship's three goals to kick off Riot, which burns for exactly as long as you keep the multiball alive, every shot worth thirty million."
+    ],
+    "lights": [
+      {
+        "id": "goal-value-ladder",
+        "name": "Goal Value Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "center-target"
+          }
+        ],
+        "lit": "Whichever left standup is lit, plus the centre target, steps the goal value one rung up a ladder that runs from a million to twenty-five; the whole thing resets to a million at the top of every ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Build it up before you shoot a single goal -- a ten-goal jackpot comes to twenty million from the bottom and two hundred and fifty from the top. Advance Goal Value taken off the plunge jumps three rungs in one go.",
+        "goals": [
+          "goal-value",
+          "goals"
+        ]
+      },
+      {
+        "id": "soccer-lamps",
+        "name": "Soccer Ball Lamps",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "center-target"
+          },
+          {
+            "shot": "left-slingshot"
+          },
+          {
+            "shot": "right-slingshot"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-rollover"
+          }
+        ],
+        "lit": "Three columns of soccer-ball lamps stand for left, centre and right, and each climbs from its own part of the table -- the left column off the left kicking rubber, the right column off the right rubber and the lit right ramp, the middle only off the lit centre target.",
+        "flashing": null,
+        "control": null,
+        "then": "Match all three lamps along the plain white row to switch Superscore on -- ten million a shot, then twenty, then forty, and it survives across balls -- or match them along the top purple row to ready a hurry-up extra ball instead. The kicking rubbers keep knocking the outer columns out of true, so lean on the lit centre target as your one dependable column and time the outer two around it, then rush any purple alignment to the left side rollover inside its roughly twenty-second window.",
+        "goals": [
+          "soccer-lineup"
+        ]
+      },
+      {
+        "id": "drop-award-bank",
+        "name": "Drop Target Bank",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drop-targets"
+          },
+          {
+            "shot": "shooter-lane"
+          }
+        ],
+        "lit": "Sweeping the entire drop bank hands you one lit award out of five -- Extra Ball, Multi, Special, Ball and Points Rounds -- and the pick is yours, dialed in on the flipper buttons while the ball still waits in the shooter lane.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "before the plunge, the flipper buttons scroll through the five drop-target awards; the one showing locks in the instant the ball goes live and cannot be changed after",
+          "when": "while the ball is still sitting in the shooter lane"
+        },
+        "then": "Knock down Multi and Ball to open the two lower holes for a three-ball multiball, whose ramp jackpot can climb to three hundred million. When all five awards are gone the bank starts giving Light Challenge, and a lost challenge match stands these lamps back up -- so spend the drop-target challenge before the goal-unit one to keep both routes alive.",
+        "goals": [
+          "drop-awards",
+          "feature-rounds",
+          "multiball"
+        ]
+      },
+      {
+        "id": "goal-unit",
+        "name": "Goal Unit",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "goal-unit"
+          },
+          {
+            "shot": "rollover-drop"
+          },
+          {
+            "shot": "upper-flipper-lane"
+          }
+        ],
+        "lit": "The goal stays closed nearly the whole time and pops open for just one shot whenever you earn the right -- from a skill shot, from a boo, or from the penalty-kick combo. Each one you score pays the current rung of the ladder, and the goal counter maxes out at ninety-nine.",
+        "flashing": null,
+        "control": {
+          "input": "both-flippers",
+          "effect": "squeezing both flipper buttons at once boos the crowd and throws the goal open for one shot",
+          "when": "once per ball, and a second one cannot be earned"
+        },
+        "then": "When your one boo is already spent, you can still force the goal open: poke the goal unit to re-arm the concealed rollover drop, wait for the upper flipper lane to flash, and grab that target to spring the goal for a penalty kick.",
+        "goals": [
+          "goals",
+          "boo",
+          "penalty-kick"
+        ]
+      },
+      {
+        "id": "challenge-holes",
+        "name": "Challenge Holes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-hole"
+          },
+          {
+            "shot": "right-hole"
+          },
+          {
+            "shot": "goal-unit"
+          }
+        ],
+        "lit": "Finishing CHALLENGE off the goal unit lights both lower holes for a challenge match; enter from whichever hole leaves the ball on the flipper you want when the round begins.",
+        "flashing": null,
+        "control": null,
+        "then": "Put one goal away before the timer expires to move on -- there is no stalling here, a run-out clock is a loss. Rack up five match wins and both holes light together for the World Championship.",
+        "goals": [
+          "challenge-matches",
+          "world-championship"
+        ]
+      },
+      {
+        "id": "words-lamps",
+        "name": "WORLD / CHALLENGE / SOCCER",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "goal-unit"
+          },
+          {
+            "shot": "center-target"
+          },
+          {
+            "shot": "left-hole"
+          }
+        ],
+        "lit": "Three words spell at once as you play: CHALLENGE off the goal unit, WORLD off the centre target, SOCCER off the lower holes. Each finished letter adds a million to your out-hole bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "CHALLENGE opens the holes for a match, WORLD hands over the Center Target Round at ten million a hit, and SOCCER gives Players Choice -- eight free goals or a fresh multiball, and you go for the goals whenever your value is sitting high. Complete all three words and the bonus leaps to a hundred million.",
+        "goals": [
+          "three-words"
+        ]
+      },
+      {
+        "id": "championship-riot",
+        "name": "Championship & Riot",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-hole"
+          },
+          {
+            "shot": "goal-unit"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "top-hole"
+          }
+        ],
+        "lit": "Five match wins throw both holes open for the World Championship, a three-ball multiball asking for three goals; the third pays fifty million, ends the round, and tips you straight into Riot.",
+        "flashing": null,
+        "control": null,
+        "then": "Riot then lasts precisely as long as you can keep the multiball alive, at thirty million per shot, so letting it drain the moment the third goal drops hands back the richest stretch of the whole game. Push past fifty goals and the mystery award flips into Super Riot, a hundred million a shot.",
+        "goals": [
+          "world-championship",
+          "riot",
+          "mystery"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Pick your plunge -- a hard one runs the top rollover for three goals and a free open goal, a soft one settles into the top hole for its lit award. Then spend the ball driving that goal value up -- work the lit left standup and the centre target -- instead of wasting shots on low-value goals down at the foot of the ladder.",
+        "goals": [
+          "skillshot-rollover",
+          "skillshot-hole",
+          "goal-value"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Sweep the drop bank for its rounds and to light multiball, match the soccer-ball lamps for Superscore, and begin taking challenge matches out of the holes. Remember that competition settings strip the luck out -- the bottom lamps begin already aligned and challenge wins stop carrying from one ball to the next.",
+        "goals": [
+          "drop-awards",
+          "soccer-lineup",
+          "challenge-matches",
+          "multiball",
+          "tournament-settings"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Win five challenge matches for the World Championship multiball and its three goals -- fifty million on the third -- then keep every ball alive through Riot, thirty million a shot for as long as the multiball lasts. Past fifty goals it becomes Super Riot at a hundred million a shot, the biggest scoring the machine will give you.",
+        "goals": [
+          "world-championship",
+          "riot",
+          "mystery"
+        ]
+      }
+    ]
+  }
+}

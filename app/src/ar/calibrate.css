@@ -1,0 +1,72 @@
+.pg-cal-stage { position:relative; width:100%; height:100%; min-height:60vh; overflow:hidden; background:#000; border-radius:12px; touch-action:none; -webkit-user-select:none; user-select:none; }
+.pg-cal-stage video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.pg-cal-canvas { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.pg-cal-tapzone { position:absolute; inset:0; }
+.pg-cal-handle { position:absolute; width:44px; height:44px; margin-left:-22px; margin-top:-22px; border-radius:50%; background:rgba(255, 176, 46,0.35); border:2px solid #ffb02e; touch-action:none; cursor:grab; }
+.pg-cal-handle:active { cursor:grabbing; }
+/* renderCornerOrderDiagram()'s SVG class — no longer used inside this
+ * module's own HUD (superseded by the progress dots + corner-guide rings,
+ * see below), but ui/howto.ts still renders it standalone for its
+ * corner-tapping step, so the rule stays here (calibrate.css is the only
+ * stylesheet that has ever styled it). */
+.pg-cal-diagram { display:block; margin:0 auto; }
+/* 2026-07-28 chrome redesign (design_handoff_shot_coach README §4 / binding
+ * correction 13): the old single bottom HUD bar (field-test fix 2026-07-27 —
+ * itself a replacement for a tall centered .pg-cal-card that hid the flipper
+ * corners) is now TWO thin bars, top instruction pill + bottom action row,
+ * both clear of the corner-guide rings drawn on the canvas
+ * (calibrate.ts's GUIDE_FRACS/drawCornerGuides()). Both bars are
+ * pointer-events:none at the container level so corner taps land THROUGH
+ * them onto the tapzone; only .pg-cal-hud-actions re-enables pointer-events
+ * for its buttons. */
+.pg-cal-hud {
+  position: absolute;
+  top: calc(12px + env(safe-area-inset-top));
+  left: 12px;
+  right: 12px;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.66);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.14);
+  pointer-events: none;
+}
+.pg-cal-hud-eyebrow { margin:0 0 3px; font:800 9px ui-monospace, Menlo, monospace; letter-spacing:.12em; color:#ffb02e; }
+.pg-cal-hud-text { flex:1; min-width:0; }
+.pg-cal-hud-step { margin:0; font-size:12.5px; font-weight:600; color:#e9edf7; line-height:1.35; text-wrap:pretty; }
+.pg-cal-hud-detail { margin:2px 0 0; font-size:11px; color:rgba(233, 237, 247,0.65); line-height:1.3; }
+.pg-cal-hud-dots { display:flex; flex-direction:column; gap:6px; flex-shrink:0; }
+.pg-cal-hud-dot { display:block; width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,0.22); }
+.pg-cal-hud-dot-filled { background:#34c759; }
+
+.pg-cal-hud-bottom {
+  position: absolute;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  left: 12px;
+  right: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+}
+.pg-cal-hud-hint { margin:0; font:700 9px ui-monospace, Menlo, monospace; letter-spacing:.08em; color:rgba(233, 237, 247,0.45); text-align:center; text-shadow:0 1px 4px rgba(0,0,0,0.9); }
+.pg-cal-hud-hint:empty { display:none; }
+/* Three always-present, equal-width buttons (Undo / Start over / Accept) —
+ * README's "40px-min" floor is satisfied by the existing 44px WCAG/HIG
+ * touch-target minimum below (44 >= 40), kept as-is rather than shrunk. */
+.pg-cal-hud-actions { display:flex; gap:8px; pointer-events:auto; }
+.pg-cal-btn { flex:1; padding:10px 12px; border-radius:11px; font-size:12px; font-weight:800; min-height:44px; min-width:0; border:1px solid transparent; }
+.pg-cal-btn-primary { background:#ffb02e; color:#1a1200; }
+.pg-cal-btn-outline { background:rgba(7, 12, 24,0.78); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-color:rgba(255,255,255,0.25); color:#e9edf7; }
+.pg-cal-btn:disabled { opacity:0.4; }
+/* Accept's disabled look is a specific literal recipe (README §4), not the
+ * generic dimming above — higher specificity (.pg-cal-btn-primary:disabled)
+ * wins over .pg-cal-btn:disabled. */
+.pg-cal-btn-primary:disabled { opacity:1; background:rgba(20,20,20,0.35); color:rgba(233, 237, 247,0.3); border-color:rgba(255,255,255,0.12); }

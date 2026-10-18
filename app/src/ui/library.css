@@ -1,0 +1,731 @@
+/* ui/library.css — the Machine Library overlay (P6, 2026-08-14).
+ *
+ * BACKGLASS rules apply in full (see styles.css's :root header):
+ *   - TOKENS ONLY. Not one colour literal in this file; app/tests/
+ *     tokens.test.mjs scans every stylesheet under src/ and this one is not on
+ *     the legacy-pin list, so its budget is zero.
+ *   - The display face (Chakra Petch, var(--display)) carries titles, chips,
+ *     the maker/year meta line and the section headers. Body copy — the one
+ *     error sentence and the empty-state line — stays on var(--body).
+ *   - GLOW IS STATE, and the restraint rule caps a screen at two or three lit
+ *     things. Here they are: the CURRENT-machine strip, the ACTIVE filter
+ *     chip, and a PINNED star. A row being pressed gets a fill change, not a
+ *     glow. Nothing else in this file emits light.
+ *   - NO SCANLINES. The texture is header/readout-only by rule, and this
+ *     overlay's header is a title bar, not a DMD.
+ */
+
+.pg-library-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--overlay-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.pg-library-overlay[hidden] {
+  display: none;
+}
+
+/* ---------- chrome ---------- */
+
+.pg-library-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: calc(14px + env(safe-area-inset-top)) 16px 10px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.pg-library-title {
+  font-family: var(--display);
+  font-size: var(--fs-5);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.pg-library-close {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--hairline);
+  border: 1px solid var(--glass-border);
+  color: var(--text);
+  font-size: var(--fs-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Hit expansion to 44x44 with the drawn button unchanged at 36 — the same
+   ::after recipe P4 applied to .pg-howto-close. Its only neighbour is the
+   title text, which is not a tap target. */
+.pg-library-close::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+}
+
+.pg-library-close:hover,
+.pg-library-close:focus-visible {
+  border-color: var(--amber-border);
+  color: var(--amber);
+}
+
+/* ---------- search ---------- */
+
+.pg-library-searchwrap {
+  flex-shrink: 0;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.pg-library-search {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line-2);
+  color: var(--text);
+  font-family: var(--display);
+  /* 16px, not the type scale's --fs-4 (15px): iOS Safari zooms the whole page
+     when a focused input's text is under 16px, which on this overlay would
+     shove the list sideways the moment somebody taps the field. This is the
+     one deliberate exception to the scale in the app, and it is a platform
+     rule, not a design choice. */
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.pg-library-search::placeholder {
+  color: var(--text-faint);
+  font-weight: 400;
+}
+
+.pg-library-search:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 1px;
+}
+
+/* ---------- scrolling body + the A-Z rail beside it ---------- */
+
+/* A ROW, not a stack: the rail is a SIBLING of the scrollport, so it cannot
+   scroll away with the list it indexes, and the list's own width shrinks by
+   exactly the rail's column when it appears rather than sliding underneath it. */
+.pg-library-scrollarea {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+/* NO PADDING-TOP, and that is the sticky letter header's doing rather than a
+   style preference. A sticky `top: 0` pins to the scrollport's CONTENT box, so
+   a 12px top padding leaves a 12px band above the pinned header that rows keep
+   scrolling through — a half-row of some other machine floating over the index.
+   The 12px moved onto the first child instead, where it scrolls away like the
+   content it belongs to. (Found by scrolling the real thing; a fake DOM has no
+   sticky positioning to get this wrong in.) */
+.pg-library-body {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 16px calc(20px + env(safe-area-inset-bottom));
+}
+
+.pg-library-body > :first-child {
+  margin-top: 12px;
+}
+
+/* With the rail up, the body gives back most of its right padding: 8px here
+   plus the rail's 28px is a 36px right gutter, and 8px is what keeps the pin
+   star's 5px of hit growth from reaching into the rail's own surface. */
+.pg-library-body-railed {
+  padding-right: 8px;
+}
+
+/* ---------- the current machine ---------- */
+
+/* THE ONE LIT ELEMENT of the default view (BACKGLASS §5): an amber left edge
+   and a soft bloom, the same "this is the live one" language the selected goal
+   row uses in the Goals list. */
+.pg-library-current {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--r-3);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--amber-border);
+  box-shadow: var(--glow-amber-soft);
+}
+
+.pg-library-current-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pg-library-current-eyebrow {
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--amber);
+}
+
+.pg-library-current-name {
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  font-weight: 700;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pg-library-guide-link {
+  align-self: flex-start;
+  /* A 44px row for a link that sits between two other tap targets. The text
+     itself is small; the padding is the target. */
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--amber);
+  text-decoration: none;
+}
+
+.pg-library-guide-link:hover,
+.pg-library-guide-link:focus-visible {
+  text-decoration: underline;
+}
+
+/* ---------- filter chips ---------- */
+
+.pg-library-chips {
+  display: flex;
+  gap: 7px;
+  margin: 14px 0 10px;
+  /* Horizontal scroll rather than a wrapping block: the maker list grows with
+     the catalog, and a wrapped row of a dozen chips would push the first row
+     off the screen on every open. Bleeds to the body's own padding edges so
+     the row visibly continues past the viewport instead of ending in a
+     mysterious gap. */
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 0 16px 2px;
+}
+
+.pg-library-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.pg-library-chip {
+  flex-shrink: 0;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: var(--r-pill);
+  background: var(--bg-card);
+  border: 1px solid var(--line-2);
+  color: var(--text-dim);
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Lit: the active filter is one of this screen's two or three glowing
+   elements. */
+.pg-library-chip-on {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--text-on-amber);
+  box-shadow: var(--glow-amber-soft);
+}
+
+.pg-library-chip:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* ---------- results ---------- */
+
+.pg-library-status {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+
+.pg-library-section {
+  margin-bottom: 18px;
+}
+
+.pg-library-section-title {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* ---------- the list ----------
+
+   NAMES FIRST. This replaced a 2-up grid of playfield cards, on rolo's report
+   from an arcade floor: the thumbnails were what made a name hard to find. A
+   list of compact rows puts every name in one column at one x, which is the
+   only shape a person can actually scan. */
+
+.pg-library-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* No gap and a hairline rule between rows, not a gap and a border per row:
+   134 separate card borders is 134 more things for the eye to parse, and the
+   flush column is what makes a sticky letter header sit ON the list rather
+   than float above a gap. */
+.pg-library-rowwrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.pg-library-list .pg-library-rowwrap:last-child {
+  border-bottom: 0;
+}
+
+.pg-library-row {
+  flex: 1;
+  min-width: 0;
+  /* 48px: the 40px accent plus its 4px of breathing room. Full-width, so the
+     tap target is the whole row and not the text inside it. */
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 2px;
+  background: none;
+  border: 0;
+  border-left: 2px solid transparent;
+  text-align: left;
+}
+
+.pg-library-row:active {
+  background: var(--bg-card-hi);
+}
+
+.pg-library-row:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: -2px;
+}
+
+/* The machine already loaded: marked, not lit. The strip at the top of the
+   overlay is where this machine glows; a second glow down in the list would
+   break the restraint rule for no new information. The amber left edge is the
+   same "this is the live one" language the selected goal row uses. */
+.pg-library-row-current {
+  border-left-color: var(--amber-border);
+  background: var(--amber-faint);
+}
+
+.pg-library-row-busy {
+  /* Dimmed while its dataset is in flight, so the spinner has something to
+     mean. Not `disabled`: a second tap on the same row is harmless (state.ts
+     early-returns) and disabling would move focus. */
+  opacity: 0.6;
+}
+
+.pg-library-thumb {
+  display: block;
+  width: 100%;
+  /* Roughly the proportions of a playfield seen from above. */
+  aspect-ratio: 3 / 4;
+  border-radius: var(--r-1);
+  background: var(--bg);
+  border: 1px solid var(--hairline);
+}
+
+/* No index entry (the fail-soft path) or a machine with no modelled shots:
+   the frame stays, so the list does not reflow when thumbnails do arrive. */
+.pg-library-thumb-empty {
+  background: var(--bg-raised);
+}
+
+.pg-library-thumb-lg {
+  width: 44px;
+  flex-shrink: 0;
+}
+
+/* THE ACCENT, not the subject: 40px tall, which is what sets the row's 48px
+   pitch. It is painted AT this size rather than shrunk from a card-size
+   bitmap — measured, that is 18.8 KB per thumbnail instead of 521 KB, and it
+   is the only version where the shot constellation survives the reduction
+   (see dotRadiusFor in library.ts). */
+.pg-library-thumb-row {
+  width: 30px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.pg-library-row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* THE SCAN ANCHOR. --fs-4 is the goal-row title step — the same size the app
+   uses for the one line you are meant to read first on a screen. The old card
+   name was --fs-2 clamped to two lines; this is bigger, on one line, at a
+   fixed x down the whole list. */
+.pg-library-row-name {
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pg-library-row-meta {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  color: var(--text-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Achievement progress, signed-in only. Quiet by default — it is a status,
+   not a call to action, and the restraint rule already spends this screen's
+   light on the current-machine strip and the active chip. */
+.pg-library-row-prog {
+  flex-shrink: 0;
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  padding: 1px 5px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--line-2);
+  white-space: nowrap;
+}
+
+/* Complete: amber ink and an amber edge, but NO glow. A list of finished
+   machines would otherwise be a list of lit things, which is exactly what the
+   restraint rule exists to stop. */
+.pg-library-row-prog-done {
+  color: var(--amber);
+  border-color: var(--amber-border);
+  background: var(--amber-faint);
+}
+
+/* ---------- letter headers ---------- */
+
+/* ONE BOX PER LETTER, and it is the sticky header's containing block.
+   Without it every header shares the list and they all pin to the top of the
+   scrollport at once — 22 opaque boxes on the same 24 pixels, repainted every
+   scroll frame, with only the last in DOM order visible. This is what gives a
+   header exactly its own group's travel: pinned while its letter is on screen,
+   pushed out by the next one. */
+.pg-library-lettergroup {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sticky, so the letter you are inside is always on screen — the half of the
+   contacts pattern that does the work while the rail is untouched. The ground
+   is opaque because rows scroll UNDER it. */
+.pg-library-letter {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 6px 0 4px;
+  background: var(--overlay-bg);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+/* ---------- the A-Z rail ----------
+
+   TOUCH WIDTH IS THE COLUMN, NOT THE LETTER — the platform convention, and
+   the only geometry that exists. 26 letters at the 44px-per-target minimum
+   needs 1144px of column; the tallest phone this app runs on offers about 700
+   after the header, the search field and the safe areas. A per-letter 44px
+   index is not a thing that can be built, which is why iOS builds ONE 28-ish
+   px surface and hit-tests along it: the target is the rail, the letters are
+   its scale. The whole column is live (pointerdown/move on .pg-library-rail),
+   so no tap inside it can land on nothing. */
+.pg-library-rail {
+  flex: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0 calc(12px + env(safe-area-inset-bottom));
+  /* The finger owns this column: no page-pan, no text selection, no callout —
+     a scrub down the index must not also drag the list behind it. */
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  border-left: 1px solid var(--hairline);
+}
+
+.pg-library-rail[hidden] {
+  display: none;
+}
+
+.pg-library-rail-btn {
+  /* Equal zones: each letter takes 1/n of the rail, which is exactly the
+     division railIndexAt() does in TS. Neither may drift from the other. */
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--text-dim);
+}
+
+/* A letter with no machines under it. Dimmed, and disabled — a scrub passing
+   over it changes nothing, which is what "skipped" means here. */
+.pg-library-rail-btn-off {
+  color: var(--text-faint);
+  opacity: 0.45;
+}
+
+.pg-library-rail-btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: -1px;
+}
+
+/* ---------- the pin star ---------- */
+
+.pg-library-pin {
+  /* RELATIVE, not absolute: in a row the star is a laid-out trailing sibling
+     rather than something floated over a card's corner. `position` is still
+     declared because the ::after hit overlay needs this element as its
+     positioning context — an absolutely positioned ::after on a statically
+     positioned control lands against the nearest positioned ancestor instead,
+     which is the exact bug hit-areas.test.mjs was written to catch. */
+  position: relative;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: var(--fs-3);
+  color: var(--text-faint);
+  background: none;
+  border: 1px solid transparent;
+}
+
+.pg-library-pin::after {
+  /* 34 -> 44 hit area, the P4 expansion recipe. Vertically it grows into the
+     row pitch: 48px of row less 34px of star leaves 7px of clear space above
+     and below, so 5px of growth never reaches the star in the next row.
+     Rightward it grows into the body's own right padding (16px normally, 8px
+     with the rail up), so it never reaches the rail's surface either. */
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+}
+
+.pg-library-pin-on {
+  color: var(--amber);
+  border-color: var(--amber-border);
+  text-shadow: var(--glow-text);
+}
+
+.pg-library-pin:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* The current-machine strip's own star.
+ *
+ * IT KEEPS `position: relative` FROM THE BASE RULE, and that is not tidiness —
+ * this line used to say `position: static` and it made the entire machine list
+ * untappable.
+ *
+ * The mechanism, because it is worth being able to recognise again: the star
+ * carries a hit-expanding `::after { position: absolute; inset: -5px }`. An
+ * absolutely positioned box resolves against its nearest POSITIONED ancestor.
+ * Un-position the star and that ancestor is no longer the star — it is
+ * `.pg-library-overlay`, which is `position: fixed; inset: 0`. So `inset: -5px`
+ * stopped meaning "44px around a 34px star" and started meaning "the whole
+ * screen, plus 5px". One transparent, full-overlay box, painted above every
+ * static in-flow element under it (absolutely positioned content paints in a
+ * later phase than in-flow content, so DOM order does not save the rows), and
+ * it swallowed every tap on every machine name in the list.
+ *
+ * Reported by rolo from the live site: "When I click the title of the name of
+ * the game list it doesn't select the game." Nothing threw, nothing looked
+ * wrong, and a synthetic `.click()` on the row button in a test passed the
+ * whole time — because a synthetic click skips hit-testing, which is the only
+ * thing this bug touches.
+ *
+ * The base rule's `position: relative` is now the ONLY thing that has to hold;
+ * app/tests/hit-areas.test.mjs fails any rule anywhere that un-positions a
+ * control owning a hit overlay. */
+.pg-library-current .pg-library-pin {
+  flex-shrink: 0;
+  background: none;
+}
+
+/* ---------- loading / error / empty ---------- */
+
+.pg-library-spinner {
+  align-self: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--line-2);
+  border-top-color: var(--amber);
+  animation: pgLibrarySpin 0.8s linear infinite;
+}
+
+@keyframes pgLibrarySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Remove the MOTION, keep the FEATURE: the ring stays, amber-topped, so a
+   reduced-motion visitor still sees which row is loading — it just does not
+   turn. (The standing rule: a reduced-motion path must remove motion, not
+   nullify the thing the motion was announcing.) */
+@media (prefers-reduced-motion: reduce) {
+  .pg-library-spinner {
+    animation: none;
+  }
+}
+
+.pg-library-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--danger);
+}
+
+.pg-library-error-text {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--body);
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-soft);
+}
+
+.pg-library-retry {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: var(--r-pill);
+  background: var(--amber);
+  color: var(--text-on-amber);
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pg-library-retry:active {
+  background: var(--amber-bright);
+}
+
+.pg-library-retry:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* "…and N more pinned" — the capped Pinned section's route to the uncapped
+   Pinned chip. A full-width row so it reads as a continuation of the list
+   above it rather than a stray control. */
+.pg-library-more {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 8px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px dashed var(--line-2);
+  color: var(--text-muted);
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.pg-library-more:active {
+  background: var(--bg-card-hi);
+}
+
+.pg-library-more:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.pg-library-empty {
+  padding: 24px 4px;
+  font-family: var(--body);
+  font-size: var(--fs-3);
+  line-height: 1.5;
+  color: var(--text-muted);
+}

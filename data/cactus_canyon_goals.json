@@ -1,0 +1,1327 @@
+{
+  "machine": "Cactus Canyon (Bally, 1998 / Chicago Gaming remake)",
+  "defaultFx": "cowboy",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Shooter Lane / Auto-Plunger",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Far-right edge; auto-plunge sends the ball up the right side into the Lasso skill-shot bowl. Home of the skill shot."
+    },
+    {
+      "id": "lasso",
+      "name": "Lasso Skill Shot",
+      "type": "mech",
+      "x": 0.82,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Wire 'lasso' bowl at the top-right end of the shooter lane. The ball circles and a spinning selector lands on one of 12 awards (Light Quick Draw, Rank Up, Light Lock, +3 Bonus X, Light EB, Complete a major shot, 1M, etc.). Lyman replaces the front of the rotation with the Runaway Stage Coach Hurry-Up."
+    },
+    {
+      "id": "bronco-loop",
+      "name": "Bronco Loop (Left Orbit)",
+      "type": "orbit",
+      "x": 0.09,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Far-left lane, fed by the RIGHT flipper. One of the 5 major shots (combo/Stampede/jackpot). A diverter feeds the upper rollovers on the first 3 shots, then opens to a full orbit. Home of Ride 'Em Cowboy and the Runaway Stage Coach Hurry-Up.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "beer-mug",
+      "name": "Beer Mug Target",
+      "type": "standup",
+      "x": 0.17,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Left side between the Bronco Loop and River ramp. Hit 5x to light; reacts to hit strength. Super Jackpot of Drunken Multiball and the collect point for Saloon Fight value."
+    },
+    {
+      "id": "river-ramp",
+      "name": "River Adventure Ramp (Left Ramp)",
+      "type": "ramp",
+      "x": 0.26,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Left-center ramp, fed by the RIGHT flipper; returns to the left inlane. The hardest shot on the playfield to hit consistently. One of the 5 major shots; a Save Polly (River) Shot Mode; used to stop the train in Save Polly Peril. Doubles as the 'left ramp' in the Continued ramp-combo chain.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "gold-mine",
+      "name": "Gold Mine",
+      "type": "scoop",
+      "x": 0.39,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Covered scoop with closeable mine door, just LEFT of the Train ramp, fed by the RIGHT flipper. The universal collect hole: ball-lock for Gold Mine Multiball, Motherlode, Extra Ball, and the lit High Noon start.",
+      "flipper": "right"
+    },
+    {
+      "id": "drop-targets",
+      "name": "Bad Guy Drop Targets (bank of 4)",
+      "type": "drop-target",
+      "x": 0.46,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Four pop-up 'bad guy' targets in the center. Quick Draw/Gun Fight raise one; Showdown MB and High Noon raise all four. Shared currency of the reflex modes and the 20-target High Noon win condition."
+    },
+    {
+      "id": "train-ramp",
+      "name": "Train Ramp (Center Ramp)",
+      "type": "ramp",
+      "x": 0.52,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Dead-center ramp with the moving train toy overhead. One of the 5 major shots; Save Polly (Train) Shot Mode; shooting it slows the train in Save Polly Peril. Caps the Continued ramp-combo chain (25K x chain length).",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "bart",
+      "name": "Bart Brothers / Saloon Scoop",
+      "type": "scoop",
+      "x": 0.63,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Upper center-right jump ramp that fires the ball into Bart's face; scoop behind captures it. Fed by the LEFT flipper. Where you fight the Barts, COLLECT a lit Bounty, and hit the Super Jackpot in Lyman Showdown. Rotating saloon doors (remake) close during Bart fights, blocking the scoop.",
+      "flipper": "left"
+    },
+    {
+      "id": "bank-ramp",
+      "name": "Bank Robbery Ramp (Right Ramp)",
+      "type": "ramp",
+      "x": 0.71,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Right-side ramp inboard of the right orbit, fed by the LEFT flipper. One of the 5 major shots; Save Polly (Bank) Shot Mode; used to stop the train in Save Polly Peril. The 'right ramp' in the Continued ramp-combo chain.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "trick-loop",
+      "name": "Trick Shooting Loop (Right Orbit)",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Far-right lane hugging the edge, fed by the LEFT flipper; feeds the pop bumpers. One of the 5 major shots; the Marksman Shot Mode. Contains the remake spinner. A weak loop shot can sneak a hit on a Bart from behind.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "spinner",
+      "name": "Right-Orbit Spinner (Marksman)",
+      "type": "spinner",
+      "x": 0.86,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "High-value spinner inside the Trick Shooting Loop, added on the CGC remake (all editions). Ripping it builds value and feeds Saloon Fight (spinner-count threshold mode)."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (Jets)",
+      "type": "bumpers",
+      "x": 0.76,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Two pop bumpers upper-right, fed by the Trick Shooting right orbit."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Upper Rollover / Bonus-X Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Top rollover lanes fed by the Bronco Loop diverter on early left-orbit shots. Completing the back-corner lane pair advances the end-of-ball Bonus Multiplier."
+    },
+    {
+      "id": "side-standups",
+      "name": "Center Upright / Return-Lane Standups",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Upright 'spot' targets flanking playfield center (also called the side orange stand-up banks near the ramp exits, approx left x0.22 and right x0.78). Completing them lights Quick Draw; two hits then a ramp feed pops up a Showdown drop target for the Mine+Showdown stack."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (Quick Draw / Gun Fight lane)",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Left return lane (River ramp feeds here). Rolling a lit inlane STARTS Quick Draw and is the collect point for the cached remake Gun Fight value; the lit-inlane insert toggles left/right for timing."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane (Quick Draw / Gun Fight lane)",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Right return lane. Rolling a lit inlane STARTS Quick Draw and collects the cached Gun Fight value; toggles with the left inlane."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane (Quick Draw / Deputy)",
+      "type": "lane",
+      "x": 0.12,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Outer-left drain lane; when lit it starts Gun Fight, and on the Deputy-rank ball-save it triggers the TNT drop-target mini-game to preserve built Gun Fight value."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.88,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Outer-right drain lane."
+    },
+    {
+      "id": "left-sling",
+      "name": "Left Slingshot",
+      "type": "mech",
+      "x": 0.28,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Lower-left slingshot with a decorative six-shooter toy mounted over it."
+    },
+    {
+      "id": "right-sling",
+      "name": "Right Slingshot",
+      "type": "mech",
+      "x": 0.72,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Lower-right slingshot with a decorative six-shooter toy over it."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-lasso",
+      "title": "Lasso Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "Auto-plunge into the wire lasso bowl and take whatever award the spinning selector lands on — anything from Rank Up to Light Lock.",
+      "reward": "1 of 12 awards (Rank Up, Light Bounty, Light Quick Draw, +3 Bonus X, Light Lock/EB, Complete a shot, 1M...)",
+      "steps": [
+        {
+          "shot": "lasso",
+          "action": "Auto-plunge into the wire lasso bowl",
+          "detail": "The ball travels up the right side into the lasso bowl Plunge strength / rotation count sets which award you land on; timing a nudge to change it is nearly impossible, so most players just take what's lit. Best early picks: Rank Up or Light Bounty."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-stagecoach",
+      "title": "Runaway Stage Coach Hurry-Up (Super Skill Shot)",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "The Lyman-code super skill shot: collect the Runaway Stage Coach hurry-up on the Bronco Loop — it starts near 3M and grows every time you collect it.",
+      "reward": "~3M and up; each collect raises future hurry-ups and the fixed 1M awards",
+      "steps": [
+        {
+          "shot": "bronco-loop",
+          "action": "Auto-plunge, then shoot the left orbit for the hurry-up",
+          "detail": "The auto-plunge drops out of the lasso bowl with the Stage Coach hurry-up already running — rush the left orbit while the value is high."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-badge",
+      "title": "10 Combos (Sheriff's Badge Combo segment)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Chain ramp/loop shots while the combo light is lit. The window shrinks as the chain grows; 10 total combos lights the Combo segment of the High Noon badge.",
+      "reward": "Lights the Combo segment of the Sheriff's Badge",
+      "steps": [
+        {
+          "shot": "river-ramp",
+          "action": "Shoot any of the 5 combo shots to open the timed window",
+          "detail": "Combo light sits on all 3 ramps and both loops"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Hit another ramp/loop while the light is still lit",
+          "detail": "Each lit hit counts toward your combo total"
+        },
+        {
+          "shot": "bank-ramp",
+          "action": "Keep chaining — the more combos you rack up, the faster the lights go out",
+          "detail": "Bank 10 combos over the ball to light the badge segment"
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "combo-ramp-chain",
+      "title": "Ramp Combo Chain (50K farm)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Ping-pong the left and right ramps to bank 50K per shot from the 2nd on, then cap it with the Center Ramp for a 25K x chain-length bonus.",
+      "reward": "50K per chained shot + Center Ramp bonus of 25K x chain length",
+      "steps": [
+        {
+          "shot": "river-ramp",
+          "action": "Start the chain on the left ramp",
+          "detail": "1st shot arms the chain"
+        },
+        {
+          "shot": "bank-ramp",
+          "action": "Shoot the right ramp — each shot from the 2nd on is worth 50K",
+          "detail": "Keep banking L -> R -> L -> R while the window is open"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Cap the chain with the Center Ramp",
+          "detail": "Adds 1 to the chain and pays 25K x chain length, then ends the chain — a clean low-risk points farm that also feeds combo/High-Noon progress"
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "combo-gunfight-stack",
+      "title": "Gun Fight Value Stack",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The signature remake farm: bank an uncapped Gun Fight value from every Shot Mode you finish and every Bart you beat, then cash it at a lit inlane before you risk a drain.",
+      "reward": "Uncapped cached value, +1x multiplier per finished mode / defeated Bart (resets on drain)",
+      "steps": [
+        {
+          "shot": "bronco-loop",
+          "action": "Finish Shot Modes to bank value",
+          "detail": "Ride 'Em Cowboy, Save Polly (River/Train/Bank) and Marksman each add to the cached value; 1st mode banks 1x, 2nd 2x, and the multiplier keeps climbing"
+        },
+        {
+          "shot": "bart",
+          "action": "Defeat a Bart Brother to add value and +1x",
+          "detail": "Every defeated Bart compounds the cached Gun Fight value"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll a lit Gun Fight inlane to cash the built value",
+          "detail": "The insert toggles left/right so you can time it. Value keeps growing until collected but RESETS at the start of the next ball if you drain first — bank before any drain risk (Deputy ball-save can preserve it)."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-motherlode-stack",
+      "title": "Gold Mine + Showdown Combined Multiball",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The biggest scoring play in the game: layer Showdown on top of Gold Mine Multiball for a 3-ball add-a-ball engine, then pump the Motherlode multiplier and cash at the Mine.",
+      "reward": "~850M–1B+; Motherlode base +250K per jackpot, +1x per 5-shot set (cap 10x)",
+      "steps": [
+        {
+          "shot": "gold-mine",
+          "action": "Lock 2 balls with the 3rd ready, then start Gold Mine Multiball",
+          "detail": "Clear the first three drop targets first but don't start Showdown yet"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Immediately hit the raised Showdown drop to layer Showdown on top",
+          "detail": "Two hits on the side standups then a ramp feed pops the drop up; shooting it stacks the two multiballs into a combined MB where normal shots also score"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Farm jackpots — each set is the ramp + orbit shots",
+          "detail": "Every jackpot adds 250K to the Motherlode; each completed 5-shot set adds +1x (caps 10x). Shoot all the drops to add a ball (max 3) and keep ball-save alive."
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Cash the Motherlode at the Mine with the multiplier maxed",
+          "detail": "All five shots relight after each set; a fully multiplied Motherlode is where the ball's score comes from."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "combo-bounty-farm",
+      "title": "Bounty Farm (feeder engine)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Bounties are the low-variance engine that lights everything: rank-ups, extra balls, Quick Draws and Gun Fights. Light them and collect at Bart on repeat.",
+      "reward": "Random: Rank Up, +5 Bonus X, +1M Bonus, Light EB / Quick Draw / Gun Fight / Lock, or points",
+      "steps": [
+        {
+          "shot": "lasso",
+          "action": "Light a Bounty via the Lasso Skill Shot",
+          "detail": "Or win a Quick Draw, which also lights a Bounty"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Win a Quick Draw to light another Bounty",
+          "detail": "Defeating a Bad Guy in Quick Draw lights a Bounty"
+        },
+        {
+          "shot": "bart",
+          "action": "Collect the lit Bounty at the Bart Brothers scoop",
+          "detail": "Collect bounties during Quick Draw or Save Polly so you rank up without launching modes you don't want — the fastest rank-up path"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mb-gold-mine",
+      "title": "Gold Mine Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Light the lock at the Mine, lock 3 balls, and start the multiball where each ramp and loop scores a jackpot and the Mine collects the Motherlode.",
+      "reward": "3-ball multiball; Motherlode collected at the Mine, multiplier grows per full sweep",
+      "steps": [
+        {
+          "shot": "gold-mine",
+          "action": "Shoot the Gold Mine to light the lock",
+          "detail": "A Bounty or the Lasso Skill Shot ('Light/Award Lock') can also light or award it"
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Lock 3 balls in the Mine to start the multiball",
+          "detail": "Lock shows on the elevated railroad track"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Shoot the 5 lit ramp/loop jackpots (each once until all reset)",
+          "detail": "Bronco, River, Train, Trick and Bank each score a jackpot; hitting all 5 relights them"
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Collect the Motherlode at the Mine",
+          "detail": "Every jackpot lights it; every full 5-jackpot sweep raises its multiplier. One Motherlode lights the badge segment."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "mb-showdown",
+      "title": "Showdown Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Win Quick Draw on all four Bad Guys to start Showdown, then knock the four drops down in sets for escalating jackpots — Lyman adds a Boss Bart Super Jackpot.",
+      "reward": "Multiball; also lights Extra Ball and the Showdown badge segment",
+      "steps": [
+        {
+          "shot": "side-standups",
+          "action": "Light Quick Draw at the upright targets",
+          "detail": "Or via Bounty / Lasso Skill Shot"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Win Quick Draw on all 4 Bad Guys",
+          "detail": "Each Bad Guy shot in Quick Draw stays lit; the 4th starts Showdown with all four popped up"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Shoot each Bad Guy; each set resets higher and brings in Boss Bart",
+          "detail": "All 4 stay down until all are shot, then pop back up with an increased value"
+        },
+        {
+          "shot": "bart",
+          "action": "Complete the sets to light the Super Jackpot at Bart, then Victory Laps",
+          "detail": "Lyman-enhanced Showdown finale"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mb-stampede",
+      "title": "Stampede Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Complete all five major shots — Bronco, River, Train, Trick Shooting and Bank — to trigger the Stampede, with all 3 ramps and both loops lit for jackpots.",
+      "reward": "Multiball; lights the Stampede badge segment (~250K/shot + a roving ~500K super)",
+      "steps": [
+        {
+          "shot": "bronco-loop",
+          "action": "Complete the Bronco Loop",
+          "detail": "One of the 5 major shots"
+        },
+        {
+          "shot": "river-ramp",
+          "action": "Complete the River Adventure Ramp"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Complete the Train Ramp"
+        },
+        {
+          "shot": "trick-loop",
+          "action": "Complete the Trick Shooting Loop"
+        },
+        {
+          "shot": "bank-ramp",
+          "action": "Complete the Bank Robbery Ramp to start Stampede",
+          "detail": "All 3 ramps and both loops light for jackpot with a single roving super"
+        }
+      ],
+      "fx": "train",
+      "ordered": false
+    },
+    {
+      "id": "mb-drunken",
+      "title": "Drunken Multiball (Beer Mug)",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Lyman's Drunken Multiball: hit the Beer Mug to light it, start it at the Saloon, and play with reversed flippers and the GI off — Super Jackpot back at the Beer Mug.",
+      "reward": "Multiball with reversed flippers; Super Jackpot at the Beer Mug",
+      "steps": [
+        {
+          "shot": "beer-mug",
+          "action": "Hit the Beer Mug 5x to light it",
+          "detail": "Five Beer Mug hits qualify the mode at the Saloon"
+        },
+        {
+          "shot": "bart",
+          "action": "Start Drunken Multiball at the Saloon",
+          "detail": "Flippers reverse and the GI turns off — hefty ball-save at start and on the last ball"
+        },
+        {
+          "shot": "beer-mug",
+          "action": "Shoot the Beer Mug for the Super Jackpot",
+          "detail": "The Beer Mug is the Super Jackpot shot"
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "mode-quick-draw",
+      "title": "Quick Draw",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "A fast reflex duel: light it, roll a lit inlane to trigger, and shoot the popped Bad Guy fast before the value decays — value scales with rank.",
+      "reward": "Rank-scaled points (Stranger 500K → Marshal 2M, decaying to 50K); winning lights a Bounty and advances Showdown",
+      "steps": [
+        {
+          "shot": "side-standups",
+          "action": "Light Quick Draw at the upright center targets",
+          "detail": "Also lightable via Bounty or the Lasso Skill Shot"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Roll a lit inlane to start the duel",
+          "detail": "The ball isn't stopped — it's an instant reflex mode"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Shoot the popped Bad Guy as fast as possible",
+          "detail": "Score counts down from the rank start value to 50K; each Bad Guy shot stays lit and all 4 starts Showdown MB"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode-gunfight",
+      "title": "Gun Fight",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "A rank-up duel: arm it (lit left outlane, Bounty, or beating a Bart), get trapped in the inlane, and shoot the released Bad Guy for a rank increase.",
+      "reward": "Winning increases your rank",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Arm Gun Fight via the lit outlane, a Bounty, or beating a Bart",
+          "detail": "Once armed it triggers in the inlane"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "The ball is trapped in the inlane, then released for your shot",
+          "detail": "Timed/reflex — miss and you get only a few seconds before the bad guy ducks"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Shoot the popped Bad Guy to win",
+          "detail": "Winning a Gun Fight increases your rank — a key path to Marshal"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode-save-polly",
+      "title": "Save Polly Peril",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Complete a ramp to start, then stop the train by hitting the Bank/River ramps the number of times shown — shooting the Train Ramp slows it to buy time.",
+      "reward": "Saving Polly lights the Extra Ball",
+      "steps": [
+        {
+          "shot": "train-ramp",
+          "action": "Complete one of the three ramps to start the mode",
+          "detail": "Bank, River (Whitewater) or Train"
+        },
+        {
+          "shot": "bank-ramp",
+          "action": "Hit the Bank / River ramp the number of times shown to stop the train",
+          "detail": "Each required hit brings the train closer to a stop"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Shoot the Train Ramp to slow the train and buy time",
+          "detail": "Saving Polly lights the Extra Ball (collect at the Gold Mine)"
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "mode-bart-brothers",
+      "title": "Bart Brothers",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Fight the Bart Brothers by firing the jump ramp into their faces (or sneak a weak hit from behind via the loops). Defeating them lights the Bart badge segment.",
+      "reward": "Defeat 3 Barts (4–5 in Lyman) → lights the Bart segment of the Sheriff's Badge",
+      "steps": [
+        {
+          "shot": "bart",
+          "action": "Shoot the jump ramp into the Bart's face",
+          "detail": "Base roster is Big Bart, Bandelero, Bubba Bart; Lyman adds Bella and completes Bionic Bart. Saloon doors close during fights, blocking the scoop."
+        },
+        {
+          "shot": "trick-loop",
+          "action": "Optionally sneak a weaker hit from behind via the loop",
+          "detail": "A weak loop shot can land on a Bart from behind"
+        },
+        {
+          "shot": "bart",
+          "action": "Finish off each Bart at the scoop",
+          "detail": "Also where you collect a lit Bounty; defeating all Barts lights the badge segment (and Saloon Party in Lyman)"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mult-bonus-x",
+      "title": "Build the Bonus Multiplier",
+      "category": "multiplier",
+      "difficulty": 1,
+      "summary": "CC's end-of-ball Bonus X — advance it through the back-corner lanes, the Skill Shot +3, and the Bounty +5 for a payout that can reach 200M+ (caps 99x).",
+      "reward": "Higher end-of-ball bonus (up to 99x, 200M+)",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete the back-corner lane pair",
+          "detail": "Each completion advances the Bonus Multiplier"
+        },
+        {
+          "shot": "lasso",
+          "action": "Bank +3 Bonus X from the Skill Shot",
+          "detail": "The 'Increase Bonus Multiplier by 3' award"
+        },
+        {
+          "shot": "bart",
+          "action": "Collect a Bounty for +5 Bonus X (or +1M Bonus)",
+          "detail": "Build it between modes and let it cash at end-of-ball — never drain reaching for one more shot"
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "mult-motherlode",
+      "title": "Grow the Motherlode Multiplier",
+      "category": "multiplier",
+      "difficulty": 3,
+      "summary": "CC's shot-value multiplier: during Gold Mine Multiball, sweep all 5 jackpots repeatedly to raise the Motherlode award multiplier (cap 10x) before collecting at the Mine.",
+      "reward": "Motherlode multiplier +1x per full 5-jackpot sweep, cap 10x (example 30M x 10 after 24 sets)",
+      "steps": [
+        {
+          "shot": "train-ramp",
+          "action": "Hit all 5 ramp/loop jackpots to complete a set",
+          "detail": "Every jackpot also adds 250K to the Motherlode base"
+        },
+        {
+          "shot": "bronco-loop",
+          "action": "Sweep the set again — each full set adds +1x",
+          "detail": "The multiplier persists for that multiball and caps at 10x, so do as many safe sets as you can"
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Collect the Motherlode at the Mine with the multiplier maxed",
+          "detail": "The multiplier is where the money is; individual jackpots stay flat"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "wizard-high-noon-qualify",
+      "title": "High Noon — Complete the Sheriff's Badge",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Light all five segments of the Sheriff's Badge — Mother Lode, Showdown, 10 Combos, Stampede and the Barts — to light the Gold Mine for High Noon.",
+      "reward": "Lights the Gold Mine for High Noon at the OK Corral",
+      "steps": [
+        {
+          "shot": "gold-mine",
+          "action": "Collect a Mother Lode (Gold Mine Multiball)",
+          "detail": "Segment 1"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Start Showdown Multiball",
+          "detail": "Segment 2 — win Quick Draw on all 4 Bad Guys"
+        },
+        {
+          "shot": "river-ramp",
+          "action": "Earn 10 Combos",
+          "detail": "Segment 3"
+        },
+        {
+          "shot": "bronco-loop",
+          "action": "Start Stampede Multiball (all 5 major shots)",
+          "detail": "Segment 4"
+        },
+        {
+          "shot": "bart",
+          "action": "Defeat the Bart Brothers",
+          "detail": "Segment 5 — 3 in Extended, 4–5 in Lyman. With the badge complete the Gold Mine lights for High Noon."
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "wizard-high-noon-win",
+      "title": "High Noon at the OK Corral — Win",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Shoot the lit Gold Mine to start the timed wizard mode where all balls auto-return; shoot 20 Bad Guy targets to win 20 million.",
+      "reward": "20,000,000 for 20 Bad Guys + jackpots; Lyman adds a 2nd Boss-Bart finale stage",
+      "steps": [
+        {
+          "shot": "gold-mine",
+          "action": "Shoot the lit Gold Mine to start High Noon",
+          "detail": "All balls kick into play and auto-return for the whole mode; all 4 Bad Guys pop up and all jackpots are lit"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Shoot Bad Guy targets — 20 wins the mode",
+          "detail": "Timed: 30s base +1s per Bad Guy you banked earlier in the game (Quick Draws, Gun Fights, Showdown). Use light plunges so missed drops return fast."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Keep hitting Bad Guys and jackpots until you hit 20",
+          "detail": "20 Bad Guys = 20M; high rank boosts the total. 3+ High Noons at Marshal is an excellent game."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-rank-to-marshal",
+      "title": "Strategy — Rank Up to Marshal ASAP",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "Rank multiplies everything: three High Noons are worth ~4x more at Marshal than at Stranger. Farm bounties, win duels, and reach Marshal before spending your High Noons.",
+      "reward": "Marshal rank (~2M Quick Draws, unlocks Marshall Multiball; three-High-Noon total ~285M vs ~69M at Stranger)",
+      "steps": [
+        {
+          "shot": "lasso",
+          "action": "Take Rank Up on the Skill Shot when offered",
+          "detail": "One of three rank-up methods"
+        },
+        {
+          "shot": "bart",
+          "action": "Collect bounties for rank-ups",
+          "detail": "Bounties are the fastest rank-up path; collect them during Quick Draw or Save Polly so you don't launch unwanted modes"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Win Gun Fights and Quick Draws to climb rank",
+          "detail": "Winning a Gun Fight increases rank. Deputy grants the Gun Fight Ball Save; Marshal unlocks the Marshall Multiball mini-wizard — rank up BEFORE spending your High Noons."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "strategy-beginner-opener",
+      "title": "Strategy — Beginner First 30 Seconds",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Control-first opener: take a safe skill award, then hammer the two automatic money shots — Bart on the left flipper, Gold Mine on the right — while vacuuming bounties.",
+      "reward": "Safe, game-lengthening start that builds Bart fights, the Mine lock, and Bonus X",
+      "steps": [
+        {
+          "shot": "lasso",
+          "action": "Take Rank Up / Light Bounty / the hurry-up",
+          "detail": "Safe, high-value skill picks"
+        },
+        {
+          "shot": "bart",
+          "action": "Left flipper → Bart",
+          "detail": "An automatic, repeatable, low-drain money shot that advances Bart fights",
+          "flipper": "left"
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Right flipper → Gold Mine",
+          "detail": "Builds the Gold Mine lock and piles up Bonus X; the right orbit spinner pays heavily",
+          "flipper": "right"
+        },
+        {
+          "shot": "bart",
+          "action": "Collect bounties as they light to rank up",
+          "detail": "Bounties feed rank-ups, +1M bonus, Bonus x5, extra balls and light Quick Draws/Gun Fights"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "strategy-huge-ball-stack",
+      "title": "Strategy — Combo Setup for a 1B+ Ball",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "The >1B engine: get a Gold Mine / Stampede lock ready with a Quick Draw running, start the multiball while the Quick Draw is active, then layer Showdown on top.",
+      "reward": "3-ball add-a-ball stack, climbing Motherlode multiplier, normal shots scoring — the ball that passes 1 billion",
+      "steps": [
+        {
+          "shot": "gold-mine",
+          "action": "Get a Gold Mine / Stampede lock ready",
+          "detail": "Don't start the multiball yet"
+        },
+        {
+          "shot": "side-standups",
+          "action": "Get a Quick Draw running",
+          "detail": "Light it and keep it active going into the multiball"
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Start the mine/Stampede multiball while the Quick Draw is still active",
+          "detail": "Timing the stack is the core play"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Hit the drop target to layer Showdown on top",
+          "detail": "Now you start 3-ball with add-a-ball whenever you drop to two, and normal shots score"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Farm jackpots to climb the Motherlode multiplier, then cash at the Mine",
+          "detail": "Bank Gun Fight value and cash the Motherlode before any drain; 99x Bonus X waits at end-of-ball"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "strategy-extra-ball",
+      "title": "Light and Collect the Extra Ball",
+      "category": "strategy",
+      "summary": "Cactus Canyon hands out extra balls four ways — a skill shot award, a bounty award, saving Polly, and starting Showdown Multiball — but every one of them still has to be collected at the Gold Mine.",
+      "difficulty": 2,
+      "reward": "One extra ball per collect",
+      "steps": [
+        {
+          "shot": "lasso",
+          "action": "Take the extra-ball award if the selector lands on it",
+          "detail": "One of the twelve lasso awards lights the extra ball outright"
+        },
+        {
+          "shot": "bart",
+          "action": "Collect bounties at the scoop until one awards an extra ball",
+          "detail": "The bounty pool includes a light-extra-ball award, so a steady bounty farm is the most reliable source"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Or finish Save Polly Peril to light it",
+          "detail": "Stopping the train lights the extra ball as the mode reward"
+        },
+        {
+          "shot": "gold-mine",
+          "action": "Shoot the Mine to bank the lit extra ball",
+          "detail": "Nothing is credited until you make the Mine shot — collect it before you take any drain risk"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "mb-marshal-rank",
+      "title": "Marshal Rank Multiball",
+      "category": "multiball",
+      "summary": "The updated code adds a mini-wizard at the top rank: reach Marshall and it starts on its own as a single-ball round where you shoot the five jackpots, guarded by the Bad Guy drops, to bring the train home — the bad guys then escape and Marshall Multiball begins.",
+      "difficulty": 3,
+      "reward": "Rank-gated bonus multiball on top of rank-scaled duel and High Noon values",
+      "steps": [
+        {
+          "shot": "bart",
+          "action": "Farm bounties at the scoop for rank-ups",
+          "detail": "Bounties are the fastest rank ladder — collect them during a running Quick Draw or Save Polly so you do not launch modes you are not ready for"
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Win Gun Fights and Quick Draws to keep climbing",
+          "detail": "Winning a Gun Fight advances rank directly, while winning a Quick Draw lights a Bounty that can award the rank-up; Deputy adds the duel ball save on the way up"
+        },
+        {
+          "shot": "bart",
+          "action": "Reach Marshal — the mini-wizard starts on its own, Phase 1 in single-ball play",
+          "detail": "Reaching the top rank is the only qualifier — get there before spending your High Noons so everything pays at the higher rank values"
+        },
+        {
+          "shot": "train-ramp",
+          "action": "Work the lit ramp and loop shots for jackpots",
+          "detail": "Treat it like the other multiballs: sweep the ramps and loops, and bank any cached Gun Fight value before the last ball drains"
+        }
+      ],
+      "fx": "cowboy"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "lasso-award-taken",
+      "title": "First Rope Trick",
+      "desc": "Collect any award from the lasso skill shot bowl on a plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-lasso"
+    },
+    {
+      "id": "stagecoach-caught",
+      "title": "Catch the Runaway Coach",
+      "desc": "Collect the runaway stage coach hurry-up on the left orbit before it counts down.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-stagecoach"
+    },
+    {
+      "id": "first-duel-won",
+      "title": "Faster on the Draw",
+      "desc": "Win a Quick Draw duel by shooting the popped bad guy before the value decays.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-quick-draw"
+    },
+    {
+      "id": "gun-fight-won",
+      "title": "Won the Street Fight",
+      "desc": "Win a Gun Fight from the inlane trap to earn a rank increase.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-gunfight"
+    },
+    {
+      "id": "train-stopped",
+      "title": "Polly Off the Tracks",
+      "desc": "Complete Save Polly Peril by stopping the train before it reaches her.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-save-polly"
+    },
+    {
+      "id": "extra-ball-banked",
+      "title": "One More Ball",
+      "desc": "Light an extra ball and actually collect it at the Gold Mine.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-extra-ball"
+    },
+    {
+      "id": "ten-combo-run",
+      "title": "Ten Chained Shots",
+      "desc": "Bank ten combos in a game to light the combo segment of the badge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-badge"
+    },
+    {
+      "id": "mine-multiball-started",
+      "title": "Three Balls Down the Mine",
+      "desc": "Lock three balls in the Gold Mine and start Gold Mine Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-gold-mine"
+    },
+    {
+      "id": "motherlode-maxed",
+      "title": "Dug Out the Whole Vein",
+      "desc": "Push the Motherlode multiplier to its 10x cap and then collect it at the Mine.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult-motherlode"
+    },
+    {
+      "id": "showdown-started",
+      "title": "All Four Called Out",
+      "desc": "Win Quick Draw against all four bad guys in one game to start Showdown Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-showdown"
+    },
+    {
+      "id": "stampede-started",
+      "title": "Five Shots, One Stampede",
+      "desc": "Complete all five major shots in a game to start Stampede Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-stampede"
+    },
+    {
+      "id": "drunken-super-collected",
+      "title": "Backwards Flippers, Full Mug",
+      "desc": "Start Drunken Multiball and collect its super jackpot at the beer mug with the flippers reversed.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-drunken"
+    },
+    {
+      "id": "barts-cleared",
+      "title": "Cleared the Bart Family",
+      "desc": "Defeat every Bart brother the installed code puts in front of you to light the Bart badge segment.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-bart-brothers"
+    },
+    {
+      "id": "badge-completed",
+      "title": "Sheriff's Badge Filled In",
+      "desc": "Light all five badge segments in one game so the Gold Mine lights for High Noon.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-high-noon-qualify"
+    },
+    {
+      "id": "marshal-rank-earned",
+      "title": "Pinned On the Marshal Star",
+      "desc": "Climb the rank ladder all the way to Marshal in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-rank-to-marshal"
+    },
+    {
+      "id": "high-noon-won",
+      "title": "Last One Standing at Noon",
+      "desc": "Win High Noon at the OK Corral by shooting twenty bad guy targets before time runs out.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-high-noon-win"
+    },
+    {
+      "id": "marshal-multiball-reached",
+      "title": "The Marshal's Own Multiball",
+      "desc": "Reach Marshal rank and start the rank-gated multiball it unlocks.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mb-marshal-rank"
+    },
+    {
+      "id": "billion-point-ball",
+      "title": "A Billion On One Ball",
+      "desc": "Stack multiballs and cash the Motherlode to score over a billion points on a single ball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "strategy-huge-ball-stack"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-stage-coach-rush",
+      "title": "Rush The Stage Coach",
+      "text": "The auto-plunge drops out of the lasso bowl with the Stage Coach hurry-up already running, so go straight at the Bronco Loop before the value bleeds off. Have the shot picked before the ball leaves the bowl.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-stagecoach",
+      "shots": [
+        "plunge",
+        "lasso",
+        "bronco-loop"
+      ]
+    },
+    {
+      "id": "drill-flipper-side-split",
+      "title": "Learn Which Flipper Owns What",
+      "text": "Left flipper feeds Bart and the right-side ramps; right flipper feeds the Bronco Loop, the River ramp and the Gold Mine. Cradle on one flipper at a time and shoot only what that side can actually reach until the split is automatic.",
+      "reps": "1 ball per flipper",
+      "focus": "accuracy",
+      "goal": "strategy-beginner-opener",
+      "shots": [
+        "left-flipper",
+        "bart",
+        "right-flipper",
+        "gold-mine"
+      ]
+    },
+    {
+      "id": "drill-river-ramp-reps",
+      "title": "River Ramp Reps",
+      "text": "Take the River Adventure ramp from a right-flipper cradle, one aimed shot at a time. It is the hardest shot on the playfield to hit consistently and Stampede will not start until you own it.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "mb-stampede",
+      "shots": [
+        "river-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-ramp-ping-pong",
+      "title": "Ramp Ping-Pong, Then Cap It",
+      "text": "Ping-pong the River and Bank ramps while the combo light holds, then cap the chain with the Train ramp. The cap pays by chain length, so the discipline is not stopping early and not reaching for a sixth link that is not there.",
+      "reps": "5 chains",
+      "focus": "flow",
+      "goal": "combo-ramp-chain",
+      "shots": [
+        "river-ramp",
+        "bank-ramp",
+        "train-ramp"
+      ]
+    },
+    {
+      "id": "drill-quick-draw-reflex",
+      "title": "Quick Draw Reflex",
+      "text": "Roll a lit inlane and shoot the popped Bad Guy immediately. The ball is never stopped for you and the award counts down from your rank value to nothing, so hesitation is the whole cost here.",
+      "reps": "10 duels",
+      "focus": "accuracy",
+      "goal": "mode-quick-draw",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "drop-targets"
+      ]
+    },
+    {
+      "id": "drill-soft-shot-control",
+      "title": "Half-Power Shots",
+      "text": "The Beer Mug reads how hard you hit it, and a weak shot up the Trick Shooting loop can sneak onto a Bart from behind. Work both from a dead cradle at half power and learn what your flipper does when you do not swing through it.",
+      "reps": "10 at each",
+      "focus": "ball-control",
+      "goal": "mb-drunken",
+      "shots": [
+        "beer-mug",
+        "trick-loop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Nothing extra on the front of this one. Cactus Canyon is a 1998 Bally and the Chicago Gaming version keeps the same interface, so the whole toolkit is two flippers, the shooter lane that feeds the lasso bowl for your skill-shot award, and clean nudging. Quick Draw duels, Gun Fights and High Noon are all won with shots, not a press."
+  },
+  "howItPlays": {
+    "objective": "Play a spaghetti-western gunslinger: win duels, fight the Bart Brothers, rob the bank and work the gold mine while you climb from Stranger to Marshal. Light all five Sheriff's Badge segments to reach the High Noon showdown at the OK Corral.",
+    "loop": [
+      "Take a safe Lasso award off the plunge, then lean on the two shots that almost play themselves: the Bart scoop from the left flipper and the Gold Mine from the right.",
+      "Light Quick Draw at the center standups and roll a lit inlane to fire a duel; winning lights a Bounty and ranks you up.",
+      "Collect Bounties at the Bart scoop for rank-ups, extra balls, and lit features, since rank multiplies everything you score.",
+      "Lock balls at the Mine for Gold Mine Multiball, then sweep the five major shots to grow the Motherlode before you cash it.",
+      "Light the five Sheriff's Badge segments -- Mother Lode, Showdown, ten Combos, Stampede, the Barts -- to arm High Noon at the Mine."
+    ],
+    "lights": [
+      {
+        "id": "major-shots",
+        "name": "Five Major Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "bronco-loop"
+          },
+          {
+            "shot": "river-ramp"
+          },
+          {
+            "shot": "train-ramp"
+          },
+          {
+            "shot": "bank-ramp"
+          },
+          {
+            "shot": "trick-loop"
+          }
+        ],
+        "lit": "The two loops and three ramps are the five major shots, they light as combo shots and mode shots, and completing the whole set is what triggers Stampede Multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete all five for Stampede, and in Gold Mine Multiball these same shots become your jackpots -- sweeping the full set relights them and raises the Motherlode multiplier a step each time. Chaining them left-to-right also farms fifty thousand a shot and feeds your combo count toward the badge.",
+        "goals": [
+          "mb-stampede",
+          "combo-ramp-chain",
+          "mb-gold-mine",
+          "mult-motherlode"
+        ]
+      },
+      {
+        "id": "bad-guy-drops",
+        "name": "Bad Guy Drop Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drop-targets",
+            "lamps": 4
+          }
+        ],
+        "lit": "A popped bad-guy target is your duel shot -- one rises for Quick Draw or Gun Fight, all four for Showdown and High Noon -- and its value counts down the longer you take, so shoot the lit one fast.",
+        "flashing": null,
+        "control": null,
+        "then": "Win Quick Draws and Gun Fights on the bad guys to light Bounties and climb rank, and win Quick Draw on all four to start Showdown Multiball. In the High Noon wizard these same targets are the win condition -- twenty bad-guy hits takes the mode.",
+        "goals": [
+          "mode-quick-draw",
+          "mb-showdown",
+          "wizard-high-noon-win"
+        ]
+      },
+      {
+        "id": "duel-lanes",
+        "name": "Quick Draw & Gun Fight Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "side-standups"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-outlane"
+          }
+        ],
+        "lit": "Completing the center standups lights Quick Draw, a lit inlane fires the duel the instant you roll it, and a lit left outlane arms a rank-up Gun Fight, with the lit-inlane insert flipping side to side on its own so you can time the roll.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll a lit inlane for an instant reflex duel at the bad-guy drops, or bank uncapped Gun Fight value from every mode and Bart you finish and cash it at a lit inlane. That cached value keeps growing but resets if you drain first, so bank it before any risk -- the Deputy ball save can rescue it.",
+        "goals": [
+          "mode-quick-draw",
+          "mode-gunfight",
+          "combo-gunfight-stack"
+        ]
+      },
+      {
+        "id": "gold-mine",
+        "name": "Gold Mine",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "gold-mine"
+          }
+        ],
+        "lit": "The Mine is the universal collect hole: it lights for a ball lock, then holds Gold Mine Multiball, the Motherlode collect, every lit extra ball, and the High Noon start.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls to start Gold Mine Multiball, sweep the major shots to build the Motherlode, then cash the fully multiplied Motherlode right here, because that single award is where a big ball's points really live. It is also the only place an extra ball or, finally, High Noon is collected.",
+        "goals": [
+          "mb-gold-mine",
+          "mult-motherlode",
+          "strategy-extra-ball",
+          "wizard-high-noon-win"
+        ]
+      },
+      {
+        "id": "bart-scoop",
+        "name": "Bart Brothers Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "bart"
+          }
+        ],
+        "lit": "The jump ramp fires the ball into a Bart's face and the scoop behind captures it, and it is where you start and finish Bart fights and collect a lit Bounty -- though the remake's saloon doors swing shut over it during a fight.",
+        "flashing": null,
+        "control": null,
+        "then": "Beat the Bart Brothers here to light the Barts' own Sheriff's Badge segment, and collect your lit Bounties at this same scoop between duels for the fastest rank-ups on the machine. A soft loop shot can also clip a Bart from behind when those doors are shut.",
+        "goals": [
+          "mode-bart-brothers",
+          "combo-bounty-farm",
+          "strategy-rank-to-marshal"
+        ]
+      },
+      {
+        "id": "bonus-lanes",
+        "name": "Bonus-X Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 2
+          }
+        ],
+        "lit": "The back-corner rollover pair fills from the Bronco Loop's diverter on your first few left-orbit shots, and completing that pair steps the end-of-ball Bonus Multiplier once.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the pair whenever the diverter feeds it, and stack the Lasso's plus-three award and a Bounty's plus-five on top, to drive the multiplier toward its ninety-nine-times ceiling. A fully built bonus can top two hundred million, so never drain reaching for one more shot when it is high.",
+        "goals": [
+          "mult-bonus-x"
+        ]
+      },
+      {
+        "id": "beer-mug",
+        "name": "Beer Mug",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "beer-mug"
+          }
+        ],
+        "lit": "Five hits on the Beer Mug light Drunken Multiball at the saloon, and the mug is also that multiball's Super Jackpot shot and the Saloon Fight collect point.",
+        "flashing": null,
+        "control": null,
+        "then": "Start Drunken Multiball and the flippers reverse and the general illumination cuts out, with a heavy ball save at the start and on the last ball. Shoot the Beer Mug again through the reversed controls for the Super Jackpot.",
+        "goals": [
+          "mb-drunken"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Off the plunge take a safe Lasso award -- Rank Up or Light Bounty are the best early picks -- then work Bart from the left flipper and the Mine from the right, the two lowest-risk repeat shots here. Vacuum up Bounties as they light, because they rank you up and feed extra balls, Quick Draws, and Bonus X at almost no drain risk.",
+        "goals": [
+          "skill-lasso",
+          "strategy-beginner-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Win Quick Draws and Gun Fights to climb toward Marshal, because rank multiplies every score and you want to reach it before spending anything big. Lock balls at the Mine for Gold Mine Multiball, start banking uncapped Gun Fight value from every mode and Bart you finish, and light the Sheriff's Badge segments one at a time.",
+        "goals": [
+          "strategy-rank-to-marshal",
+          "mb-gold-mine",
+          "combo-gunfight-stack",
+          "wizard-high-noon-qualify"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Light all five Sheriff's Badge segments to arm High Noon at the Gold Mine -- a timed OK Corral showdown where the balls auto-return and twenty bad-guy hits win twenty million, scaled up hard by your rank. The biggest raw score comes from layering Showdown on top of Gold Mine Multiball and cashing a fully multiplied Motherlode, which can carry one ball past a billion.",
+        "goals": [
+          "wizard-high-noon-win",
+          "wizard-high-noon-qualify",
+          "combo-motherlode-stack"
+        ]
+      }
+    ]
+  }
+}

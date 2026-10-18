@@ -1,0 +1,1287 @@
+{
+  "machine": "Medieval Madness (Williams, 1997)",
+  "defaultFx": "castle",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3019,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-left main flipper; no upper/mini flipper on this game."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6981,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-right main flipper."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.09,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Far lower-left; part of the F-I-R-E return lanes. Left drains less common than right."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Feeds the left flipper; made left ramp returns here (split-ramp anti-drain)."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Feeds the right flipper."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.91,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Far lower-right; right drains are more common on this game."
+    },
+    {
+      "id": "catapult",
+      "name": "Catapult",
+      "type": "mech",
+      "x": 0.1,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Lower-left corner spring catapult fed via VUK; flings items (bowling ball, cow, chicken, cat, skull) at the castle. Hardest and most drain-prone shot."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.11,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Left Joust orbit/loop; open by default, gate closes on 3rd Joust and feeds the pop bumpers."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.27,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Peasant Ramp; split wireform. Made shot wraps to the left inlane, miss feeds the right flipper. Easiest repeatable shot; 4 hits = Peasant Revolt.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "castle-lock",
+      "name": "Castle Lock",
+      "type": "ramp",
+      "x": 0.42,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Moat Jump left of the drawbridge; strong shot leaps the moat into the castle for locks/Castle Multiball and the Double Super Jackpot Lock. Blocked by the raised Left Troll.",
+      "feeds": {
+        "shot": "castle-entrance"
+      }
+    },
+    {
+      "id": "left-troll",
+      "name": "Left Troll",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Motorized pop-up target left of the castle; guards the Castle Lock. Ricochets into the saucer bank Troll Bombs."
+    },
+    {
+      "id": "moat",
+      "name": "Moat / Drawbridge Hit",
+      "type": "target",
+      "x": 0.5,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Front-center castle; moat hits lower the drawbridge. Hits needed = castle number."
+    },
+    {
+      "id": "drawbridge",
+      "name": "Castle Drawbridge",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Dead-center motorized drawbridge that lowers as it is hit."
+    },
+    {
+      "id": "castle-gate",
+      "name": "Castle Gate",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Solenoid portcullis behind the drawbridge; ~3 gate hits open the castle (each ≈200K × castle number)."
+    },
+    {
+      "id": "castle-entrance",
+      "name": "Castle Entrance",
+      "type": "saucer",
+      "x": 0.5,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Center castle mouth / lock VUK; one shot into the open castle destroys it. Also cashes Castle Hurry-Ups and starts Battle for the Kingdom."
+    },
+    {
+      "id": "right-troll",
+      "name": "Right Troll",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Motorized pop-up target right of the castle; guards Merlin's Saucer."
+    },
+    {
+      "id": "merlins-saucer",
+      "name": "Merlin's Saucer",
+      "type": "saucer",
+      "x": 0.61,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Right eject; awards Merlin's Magic mystery, starts Madness rounds, Multiball Madness and Royal Madness."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Dragon/Damsel ramp; diverter normally returns to the right flipper, opens after 3 shots to reach the Damsel tower. 4 hits = Save the Damsels.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.89,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Right Joust orbit/loop; open by default, gate closes on 3rd Joust and feeds the pop bumpers."
+    },
+    {
+      "id": "merlin-standups",
+      "name": "Merlin Standup Targets",
+      "type": "standup",
+      "x": 0.85,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Three-star standup bank lower-right; completing all three lights Merlin's Magic at the saucer."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumper",
+      "x": 0.54,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three jets just below the top rollovers; fed by the Joust orbits (gates closed) and the Damsel tower. Jet hits accumulate switches toward the end-of-ball bonus (which the Bonus X multiplier then scales). Three jets just below the top rollovers, toward the upper right; fed by the Joust orbits (gates closed) and the Damsel tower. Jet hits accumulate switches toward the end-of-ball bonus, which the Bonus X multiplier then scales."
+    },
+    {
+      "id": "top-rollovers",
+      "name": "Top Rollover Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Two flipper-changeable upper rollovers; the Normal Skill Shot target (+5 Bonus X)."
+    },
+    {
+      "id": "damsel-tower",
+      "name": "Damsel Tower",
+      "type": "target",
+      "x": 0.88,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Back-right target reached only when the right-ramp diverter is open; ball returns through the pops/right orbit."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Autoplunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Auto-plunger into the right orbit; hold left flipper during plunge for the Super Skill Shot.",
+      "flipper": "left"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-normal",
+      "title": "Normal Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "The safe default plunge: roll the flashing top rollover lane for points plus a compounding +5 Bonus X. The consistency/beginner choice.",
+      "reward": "50K +10K per successive skill shot, plus +5 Bonus X",
+      "steps": [
+        {
+          "shot": "top-rollovers",
+          "action": "Auto-plunge into the flashing top lane",
+          "detail": "Do not hold a flipper — one of the two top rollover lanes flashes. Awards 50K +10K per successive skill shot and +5 Bonus X, which compounds all game."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-super",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Hold the LEFT flipper during the plunge to feed the ball around the left orbit to the left flipper with all major shots lit; collect one for points and an instant Castle Hurry-Up.",
+      "reward": "100K and starts a Castle Hurry-Up",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the skill shot is made with a flipper."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Plunge through, then shoot any lit major shot to collect 100K and start a Castle Hurry-Up",
+          "detail": "The ball feeds around the left orbit to the left flipper, live, with all major shots lit — higher risk than the Normal Skill Shot since you receive a live ball, not a fed one. Caveat: the collected shot counts as one hit toward its own requirement, not a finished set — unlike Attack From Mars, a left ramp here is one Peasant ramp, not a completed Peasant Revolt.",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-castle-loop",
+      "title": "Castle Destruction Loop",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "The primary tournament money farm: moat to drop the drawbridge, gate to open it, castle to destroy it, repeat. The castle out-values almost every other shot, even in multiball.",
+      "reward": "Destroy 6 castles (~71M+ total); 2nd castle lights an Extra Ball on default 3-ball settings",
+      "steps": [
+        {
+          "shot": "moat",
+          "action": "Hit the moat to lower the drawbridge",
+          "detail": "Hits needed = castle number (1 for castle #1, up to the King of Payne's castle)."
+        },
+        {
+          "shot": "castle-gate",
+          "action": "Shoot the castle gate to open it",
+          "detail": "Gate hits = castle number + 1 (2 on the first castle, up to 7 on the King of Payne's); each gate hit ≈ 200K × castle number, capping at 1M for the 5th castle and the King."
+        },
+        {
+          "shot": "castle-entrance",
+          "action": "Shoot the open castle interior to destroy the castle, then repeat on the next castle",
+          "detail": "Destruction bonus ≈ 2M × castle number; the King of Payne's final castle is ~1M/gate + ~20M destroy."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "combo-peasant-hurryup",
+      "title": "Peasant Hurry-Up Stacking",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "The go-to filler farm: keep hammering the left ramp. Four left ramps light Peasant Revolt and a Castle Hurry-Up; keep stacking Madness completions to build the hurry-up millions at a time, then cash it at the castle.",
+      "reward": "Castle Hurry-Up cash-in, which can be built well past 50M; 10 hurry-ups light an Extra Ball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp four times to complete Peasant Revolt",
+          "detail": "Rabble Rouser 25K → Angry Mob 50K → Ugly Riot 75K → Peasant Revolt 100K; lights Peasant Madness and starts a Castle Hurry-Up."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep completing Madness tasks while the hurry-up runs to stack its value",
+          "detail": "Builds 1M → 3M → 5.5M → ~8M and up; bigger value also grants more timer."
+        },
+        {
+          "shot": "castle-entrance",
+          "action": "Cash the stacked hurry-up at the castle / Main Entrance",
+          "detail": "Stacking costs you nothing: every hurry-up folded into the stack still counts toward the ten that light an Extra Ball, so build the value up and cash it all at once."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-troll-bomb",
+      "title": "Troll Combo",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The only standard-playfield combo: ricochet the ball off a raised Troll into a scoring feature to bank a Troll Bomb — the key tool for clearing immortal trolls in Battle for the Kingdom.",
+      "reward": "1 Troll Bomb (3 Troll Bombs off both trolls into the saucer)",
+      "steps": [
+        {
+          "shot": "left-troll",
+          "action": "With a Troll popped up, shoot so the ball ricochets off the raised troll",
+          "detail": "The deflection into a scoring feature registers as a Troll Combo."
+        },
+        {
+          "shot": "merlins-saucer",
+          "action": "Bank the ricochet into Merlin's saucer (or the castle) to award a Troll Bomb",
+          "detail": "Banking off BOTH trolls into the saucer is a larger combo worth 3 Troll Bombs instead of 1."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "combo-ultra",
+      "title": "Ultra Combo (Victory Laps)",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The game's highest per-shot ceiling. After beating Battle for the Kingdom, all major shots light for Victory Laps; a second quick major shot doubles the current lap value as an Ultra Combo.",
+      "reward": "Up to ~4M per Ultra Combo; uncapped chain until it times out",
+      "steps": [
+        {
+          "shot": "castle-entrance",
+          "action": "First win Battle for the Kingdom to light Victory Laps on all major shots",
+          "detail": "A Victory Lap starts at 500K. Each Ultra Combo pays double the current lap value and adds 20K to the base, so the payouts climb 500K, 1M, 1.04M and onward with no known ceiling."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Make a major shot to score a Victory Lap",
+          "detail": "All major shots flash."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make a second major shot within ~10s for an Ultra Combo",
+          "detail": "Ultra Combo = double the current Victory Lap value; if the chain times out, earn another lap to restart."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "combo-damsel",
+      "title": "Damsel Save (Right Ramp Farm)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Mirror of the Peasant farm. Four right (dragon) ramps complete Save the Damsels and feed hurry-up stacking; the ramp geometry returns the ball to the flipper for easy repeats.",
+      "reward": "Lights Damsel Madness; feeds Multiball Madness and Battle for the Kingdom",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right (dragon) ramp four times to complete Save the Damsels",
+          "detail": "Lights Damsel Madness; the diverter opens after the required hits."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Repeat for hurry-up stacking",
+          "detail": "Ramp geometry feeds the ball back to the flipper for easy repeat shots."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mb-madness",
+      "title": "Multiball Madness",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "The signature multiball. Light as many of the five Madness modes as possible in single-ball play, then start at Merlin's saucer — ball count and jackpots scale with Madnesses lit.",
+      "reward": "2-ball (1 lit), 3-ball (2-4 lit), or 4-ball (all 5 lit) with escalating jackpots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light Madness modes in single-ball play before starting",
+          "detail": "1 lit = 2-ball, 2-4 lit = 3-ball, all 5 lit = 4-ball. Do NOT start with only one lit — it wastes the multiball."
+        },
+        {
+          "shot": "merlins-saucer",
+          "action": "Shoot Merlin's saucer to start Multiball Madness",
+          "detail": "Jackpots are 75K plus 25K for every Madness lit, from a 100K minimum to a 175K maximum. Super Jackpots are 250K plus 150K per Madness, running from 400K up to a full million."
+        },
+        {
+          "shot": "castle-lock",
+          "action": "Prioritize the Lock for the Double Super Jackpot",
+          "detail": "Best single shot in the multiball — up to 2M. Park balls in the pops for clean Lock shots."
+        },
+        {
+          "shot": "moat",
+          "action": "Fold in castle shots — a castle shot often out-values a jackpot",
+          "detail": "A good Multiball Madness can net 2-3 castles."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "mb-castle",
+      "title": "Castle Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "The lock-based multiball. Lock 3 balls in the castle, then run the 3-stage ramp-jackpot loop that compounds each cycle.",
+      "reward": "~14.25M per full 3-stage cycle; +250K jackpot / +500K super base each loop",
+      "steps": [
+        {
+          "shot": "merlins-saucer",
+          "action": "Light Lock via Merlin's Magic if it isn't already lit",
+          "detail": "Merlin awards include Light Lock / Award Lock / Start Castle Multiball."
+        },
+        {
+          "shot": "castle-lock",
+          "action": "Lock 3 balls in the castle to start Castle Multiball",
+          "detail": "First Castle MB needs 3 locks; subsequent ones need 6."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Stage 1: shoot ramps for Jackpots (~750K); collect 5 to light Super",
+          "detail": "Right ramp counts too."
+        },
+        {
+          "shot": "castle-lock",
+          "action": "Stage 2/3: collect the Super Jackpot (~1.5M) at the Lock, then all shots go Super and the loop repeats",
+          "detail": "A Super Jackpot can light an Extra Ball (setting-dependent)."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "mb-barnyard",
+      "title": "Barnyard Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "The hidden novelty multiball. Use the flipper buttons to cycle the catapult item and fling all five distinct items into the castle.",
+      "reward": "3-ball multiball; every switch worth 75,000",
+      "steps": [
+        {
+          "shot": "catapult",
+          "action": "Cycle the catapult item with the flipper buttons and fling each distinct item at the castle",
+          "detail": "Items cycle: bowling ball, cow, duck, cat, skull."
+        },
+        {
+          "shot": "catapult",
+          "action": "Get all five different items into the castle to start Barnyard Multiball",
+          "detail": "Barnyard-animal gags replace all audio/display; every switch = 75K."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-joust",
+      "title": "Joust Madness (Joust Victory)",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Joust the two orbits into each other three times to win a Joust Victory and light Joust Madness.",
+      "reward": "~100K; lights Joust Madness. 3 completions light the Joust Champion blue dot.",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot an orbit — 'jousting' is shooting one orbit through to the other",
+          "detail": "The orbits feed each other."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete 3 orbit shots to win Joust Victory",
+          "detail": "On the 3rd Joust the orbit gate closes, feeding the pop bumpers."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-catapult",
+      "title": "Catapult Madness (Catapult Slam)",
+      "category": "mode",
+      "difficulty": 3,
+      "summary": "Load and slam items off the far-left catapult at the castle three times. The single hardest, most drain-prone shot on the game.",
+      "reward": "~100K; lights Catapult Madness. 3 completions light the Catapult Ace blue dot.",
+      "steps": [
+        {
+          "shot": "catapult",
+          "action": "Shoot the catapult to load an item and slam it at the castle — 3 slams complete it",
+          "detail": "2 slams if a target is pre-hit. Not a first-30-seconds priority; save it once safer shots are done."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-trolls",
+      "title": "Trolls! (Troll Madness)",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Hit the two standup targets either side of the castle entrance to light Trolls! at Merlin's Saucer, then hit each raised troll three times to destroy it. Kills count toward Master of Trolls, which needs ten.",
+      "reward": "~1M completion; kills feed Master of Trolls (10 trolls) for the Trolls blue dot.",
+      "steps": [
+        {
+          "shot": "left-troll",
+          "action": "Hit the standups flanking the castle entrance (~8 hits default) to light Trolls!",
+          "detail": "Further hits bank progress and Troll Bombs."
+        },
+        {
+          "shot": "right-troll",
+          "action": "With Trolls! lit, hit each raised troll 3× to destroy them",
+          "detail": "Each 3-hit kill = one destroyed troll; Troll Bombs (launch button) also count as a single hit."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-peasant",
+      "title": "Peasant Madness (Revolting Peasants)",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Four left ramps cycle the Peasant awards to Peasant Revolt, lighting Peasant Madness. The safest high-percentage mode.",
+      "reward": "100K on the 4th; lights Peasant Madness. 3 completions light the Patron of the Peasants blue dot.",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp four times to complete Peasant Revolt",
+          "detail": "Rabble Rouser 25K → Angry Mob 50K → Ugly Riot 75K → Peasant Revolt 100K."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mult-bonusx",
+      "title": "Build Bonus X",
+      "category": "multiplier",
+      "difficulty": 1,
+      "summary": "Bonus X multiplies a switch bonus that builds all ball long, so it is worth real money on a long ball. Completing F-I-R-E across the inlanes and outlanes adds +2, completing both top rollovers adds +1, a Normal Skill Shot adds +5, and Merlin hands out both +5 Bonus X and Hold Bonus X.",
+      "reward": "End-of-ball Bonus × multiplier (players reach ~100×; 50-60M bonus on a long ball)",
+      "steps": [
+        {
+          "shot": "top-rollovers",
+          "action": "Take Normal Skill Shots for +5 Bonus X each",
+          "detail": "Compounds over the game; the beginner-safe way to build multiplier."
+        },
+        {
+          "shot": "merlins-saucer",
+          "action": "Collect Merlin's Magic +5 Bonus X and Hold Bonus X awards",
+          "detail": "Hold Bonus X keeps the multiplier for the next ball. When Bonus X is high late in a big ball, stop taking risky shots and keep the ball alive to collect it."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "mult-jets",
+      "title": "Jets Bonus Builder",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "MM has no separate playfield or shot multiplier — but during Multiball Madness you can keep the ball up top so the jets rack up bonus switches, which the end-of-ball Bonus X then scales, while you set up clean Lock shots.",
+      "reward": "Extra bonus switches (multiplied by Bonus X at end of ball) while you work clean Lock shots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot left ramp then right ramp to keep the ball at the top of the playfield",
+          "detail": "Ramps don't add to Bonus X, and the left ramp is just a return path back to the left inlane. Once Multiball Madness is running, the bumpers get fed from both orbits, and the right ramp joins them too whenever it's lit for Super Jackpot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Feed the ball toward the top via Damsel/Joust shots so it works the jets",
+          "detail": "Damsel and Joust shots feed the jets, adding bonus switches.",
+          "feeds": {
+            "shot": "pop-bumpers"
+          }
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Park balls in the pop bumpers to rack up bonus switches",
+          "detail": "Jet hits accumulate toward the end-of-ball bonus (multiplied by Bonus X) and free you to take clean Double Super Jackpot Lock shots."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "wizard-bfk",
+      "title": "Battle for the Kingdom",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The sole grand wizard mode. Light all six blue title dots, then shoot the lit castle to start a 4-ball battle: Battle Jackpots, then storm the King of Payne's castle clearing immortal trolls with Troll Bombs.",
+      "reward": "~97.5M scripted (2.5M jackpots, ~5M gate shots, ~50M finish) plus Victory Laps",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Light Joust Champion (3× Joust Victories)",
+          "detail": "Both orbits.",
+          "link": "none"
+        },
+        {
+          "shot": "catapult",
+          "action": "Light Catapult Ace (3× Catapult Slams)",
+          "detail": "",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Light Patron of the Peasants (3× Revolting Peasants) and Defender of Damsels via the ramps",
+          "detail": "Right ramp handles Damsels.",
+          "link": "none"
+        },
+        {
+          "shot": "right-troll",
+          "action": "Light Master of Trolls (destroy 10 trolls) — bank 3 Troll Bombs first for the castle phase",
+          "detail": "Immortal trolls in Phase 2 must be cleared with Troll Bombs between gate shots.",
+          "link": "none"
+        },
+        {
+          "shot": "castle-entrance",
+          "action": "Light Castle Crusher by destroying all six castles (moat → gate → castle interior)",
+          "detail": "The sixth blue dot; run the moat → gate → castle loop through the King of Payne's castle to earn Castle Crusher.",
+          "link": "none"
+        },
+        {
+          "shot": "castle-entrance",
+          "action": "With all six blue dots lit, shoot the lit castle to start, then run Phase 1 (six 2.5M Battle Jackpots) and Phase 2 (~6-7 gate shots ~5M) to the ~50M finish",
+          "detail": "4-ball multiball with ~15s ball-saver; Battle only lights in single-ball play, so guard the ball when one goal away."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-royal",
+      "title": "Royal Madness",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The mini-wizard mode. Complete all five Madness types and play Multiball Madness, then shoot the right eject to start a frantic 20-second-reset shot round.",
+      "reward": "Extra Ball on completion (some settings pay ~15M)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete all five Madness types (Joust, Catapult, Peasants, Damsels, Trolls) and play Multiball Madness",
+          "detail": "All five Madness lights must be lit."
+        },
+        {
+          "shot": "merlins-saucer",
+          "action": "Shoot the right eject with all five lit to start Royal Madness",
+          "detail": "Kill the left troll first while the ball saver is lit — orbit shots careen back SDTM if the jets aren't keeping the ball up top."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Clear all ten lit shots — catapult, left ramp, right ramp and the orbits twice each (either orbit counts), plus one hit on each troll — inside a 20s timer that RESETS on every made shot",
+          "detail": "The first shot to an area pays 200K and spots one of that area's regular awards, such as a Catapult Slam. The second pays a jackpot of 1.5M, rising 250K for every Royal Madness after the first. Clear all ten in time for the Extra Ball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-opener-a",
+      "title": "Opener A — Safe & Consistent",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Beginner opening line: bank Bonus X, hit the two safe ramps to light Peasant and Damsel, grab an orbit toward Joust, and begin banking Castle #1.",
+      "reward": "Peasant + Damsel lit, Joust progressed, first castle banked",
+      "steps": [
+        {
+          "shot": "top-rollovers",
+          "action": "Take the Normal Skill Shot for +5 Bonus X",
+          "detail": "Consistency and multiplier building."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp (safest high-percentage shot)",
+          "detail": "Lights toward Peasant Madness."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right (dragon) ramp",
+          "detail": "Lights toward Damsel Madness."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Grab an orbit toward Joust",
+          "detail": ""
+        },
+        {
+          "shot": "moat",
+          "action": "Begin moat → gate → castle to bank Castle #1",
+          "detail": "Getting the first 1-2 castles early establishes your score."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "strat-opener-b",
+      "title": "Opener B — Aggressive Points",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "Points-first opening: use the Super Skill Shot to collect a lit shot and arm a Castle Hurry-Up, then cash it immediately or grow it with left-ramp stacking.",
+      "reward": "Fast 100K + a Castle Hurry-Up to cash or stack",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Hold the left flipper for a Super Skill Shot",
+          "detail": "Ball fed to the left flipper with all shots lit.",
+          "flipper": "left",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect the lit shot for 100K and start a Castle Hurry-Up",
+          "detail": ""
+        },
+        {
+          "shot": "castle-entrance",
+          "action": "Cash the hurry-up at the castle, or run left-ramp stacking first to grow it",
+          "detail": "Grow it big before cashing if you're farming points."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "strat-tournament-loop",
+      "title": "Bowen 60-Second Tournament Loop",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "The canonical all-game line: moat to drop the drawbridge, gate to open, castle to destroy, repeat — weaving in ramp/orbit shots to light Madnesses for a big Multiball Madness where you dump more castles.",
+      "reward": "Highest reliable EV; the castle out-values most shots even in multiball",
+      "steps": [
+        {
+          "shot": "moat",
+          "action": "Shoot the moat to drop the drawbridge",
+          "detail": ""
+        },
+        {
+          "shot": "castle-gate",
+          "action": "Shoot the castle gate to open the castle",
+          "detail": ""
+        },
+        {
+          "shot": "castle-entrance",
+          "action": "Shoot the castle to destroy it and score big, then repeat",
+          "detail": "Weave in ramp/orbit shots to light Madnesses for a big Multiball Madness, then dump castles during multiball."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "extra-ball-routes",
+      "title": "Extra Ball Routes",
+      "category": "strategy",
+      "summary": "Three reliable ways this game hands you another ball: bank your second castle, run your Castle Hurry-Up count to ten, or finish the mini-wizard shot round.",
+      "difficulty": 2,
+      "reward": "Extra Ball (route-dependent; some also pay a Super Jackpot extra ball on operator settings)",
+      "steps": [
+        {
+          "shot": "castle-entrance",
+          "action": "Destroy your second castle of the game",
+          "detail": "Two castles light the Extra Ball at Merlin's Saucer on a standard three-ball game; five-ball setups ask for three, and an operator can set it anywhere from one to five. Keep the moat to gate to interior loop running early."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect ten Castle Hurry-Ups",
+          "detail": "Stacking does not cost you progress — a stacked hurry-up counts as more than one collection toward the ten, so there is no reason to cash them one at a time."
+        },
+        {
+          "shot": "merlins-saucer",
+          "action": "Start the mini-wizard shot round at the right eject and clear it",
+          "detail": "Completing every lit shot inside the resetting timer pays an Extra Ball; requires all five Madness modes lit and the signature multiball already played."
+        }
+      ],
+      "fx": "castle",
+      "ordered": false
+    },
+    {
+      "id": "video-mode-save-the-children",
+      "title": "Save the Children Video Mode",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Behind the FIRE rollovers sits a full video game most players never see. Complete FIRE eight times across a game to light it, then shoot Merlin's Saucer to start it — you steer a defender with the flippers and shoot down a flock of buzzards trying to carry off the children.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Complete the FIRE rollovers on the inlanes and outlanes eight times during the game, the factory default, to light Video Mode",
+        "Shoot Merlin's Saucer once Video Mode is lit",
+        "Steer your defender with the flipper buttons",
+        "Stay near the middle of the screen rather than drifting to the extreme left or right",
+        "Save your one bird bomb for a bird that has already grabbed a child and is out of reach",
+        "Kill all thirty buzzards before a child is carried off"
+      ],
+      "reward": "100,000 for each buzzard killed, plus a 1,000,000 bonus for completing the round"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "lane-marksman",
+      "title": "Lane Marksman",
+      "desc": "Plunge into the flashing top rollover lane to collect a Skill Shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-normal"
+    },
+    {
+      "id": "live-ball-plunge",
+      "title": "Live Ball Plunge",
+      "desc": "Hold the left flipper on the plunge and cash the fed ball on a lit major shot for the bigger skill award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-super"
+    },
+    {
+      "id": "first-keep-flattened",
+      "title": "First Keep Flattened",
+      "desc": "Destroy one castle: drop the drawbridge at the moat, open the gate, then shoot the castle interior.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-castle-loop"
+    },
+    {
+      "id": "six-keeps-down",
+      "title": "Six Keeps Down",
+      "desc": "Destroy all six castles in a single game, finishing with the King of Payne's castle.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-castle-loop"
+    },
+    {
+      "id": "bomb-in-the-bank",
+      "title": "Bomb in the Bank",
+      "desc": "Ricochet a shot off a raised troll into a scoring feature to bank a Troll Bomb.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-troll-bomb"
+    },
+    {
+      "id": "ten-trolls-down",
+      "title": "Ten Trolls Down",
+      "desc": "Destroy ten trolls across a game to light the troll qualifying dot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-trolls"
+    },
+    {
+      "id": "orbit-jouster",
+      "title": "Orbit Jouster",
+      "desc": "Win three Joust victories in one game to light the joust qualifying dot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-joust"
+    },
+    {
+      "id": "slingshot-siege",
+      "title": "Slingshot Siege",
+      "desc": "Complete the catapult round three times in one game to light the catapult qualifying dot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-catapult"
+    },
+    {
+      "id": "rabble-in-revolt",
+      "title": "Rabble in Revolt",
+      "desc": "Run the left ramp far enough to finish the peasant sequence three times in one game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-peasant"
+    },
+    {
+      "id": "three-rescues",
+      "title": "Three Rescues",
+      "desc": "Complete the damsel rescue sequence on the right ramp three times in one game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-damsel"
+    },
+    {
+      "id": "madness-unleashed",
+      "title": "Madness Unleashed",
+      "desc": "Start the signature multiball at the right eject with at least one Madness lit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-madness"
+    },
+    {
+      "id": "four-ball-frenzy",
+      "title": "Four Ball Frenzy",
+      "desc": "Light all five Madness modes before starting the multiball so it launches with four balls.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-madness"
+    },
+    {
+      "id": "locked-and-loaded",
+      "title": "Locked and Loaded",
+      "desc": "Lock balls to start Castle Multiball and collect a Super Jackpot in it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-castle"
+    },
+    {
+      "id": "full-menagerie",
+      "title": "Full Menagerie",
+      "desc": "Fling all five different catapult objects into the castle to trigger the hidden barnyard multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-barnyard"
+    },
+    {
+      "id": "spare-ball-secured",
+      "title": "Spare Ball Secured",
+      "desc": "Earn an extra ball by any of the game's routes.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-routes"
+    },
+    {
+      "id": "royal-round-cleared",
+      "title": "Royal Round Cleared",
+      "desc": "Start the mini-wizard shot round with all five Madness modes played and clear every lit shot inside the timer.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-royal"
+    },
+    {
+      "id": "kingdom-called",
+      "title": "Kingdom Called",
+      "desc": "Light all six qualifying dots and shoot the lit castle to start the grand wizard battle.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-bfk"
+    },
+    {
+      "id": "kingdom-taken",
+      "title": "Kingdom Taken",
+      "desc": "Finish the grand wizard battle: clear the battle jackpots, then storm the final castle to the closing award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-bfk"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-super-skill-hold",
+      "title": "Hold The Left Flipper",
+      "text": "Hold the left flipper through the auto-plunge so the ball comes around the left orbit and arrives live on that flipper with every major shot lit. It is fed moving, not cradled, so pick the shot before you press the button.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-super",
+      "shots": [
+        "shooter-lane",
+        "left-orbit",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "drill-castle-kill-loop",
+      "title": "Moat, Gate, Castle",
+      "text": "Run a whole castle as one sequence: moat until the drawbridge is down, gate until it opens, then one shot inside. Practising the three shots separately is not the same as running the loop, and the loop is where this machine's score lives.",
+      "reps": "2 full castles",
+      "focus": "flow",
+      "goal": "combo-castle-loop",
+      "shots": [
+        "moat",
+        "castle-gate",
+        "castle-entrance"
+      ]
+    },
+    {
+      "id": "drill-peasant-ramp-reps",
+      "title": "Four Left Ramps",
+      "text": "Shoot the left ramp four times in a row off its own inlane return. A made ramp wraps back to the left inlane and keeps the rhythm going, while a miss kicks across to the right flipper and hands you a different problem to solve.",
+      "reps": "5 sets of four",
+      "focus": "accuracy",
+      "goal": "mode-peasant",
+      "shots": [
+        "left-ramp",
+        "left-inlane"
+      ]
+    },
+    {
+      "id": "drill-troll-ricochet",
+      "title": "Ricochet Off A Raised Troll",
+      "text": "With a troll popped up, shoot so the ball deflects off it and into Merlin's saucer rather than trying to kill it head-on. Banking off both trolls into the saucer is worth three bombs instead of one, and bombs are what clear the immortal trolls later.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "combo-troll-bomb",
+      "shots": [
+        "left-troll",
+        "right-troll",
+        "merlins-saucer"
+      ]
+    },
+    {
+      "id": "drill-catapult-from-cradle",
+      "title": "Catapult From A Dead Cradle",
+      "text": "Take the far-left catapult only from a settled cradle, never off a live ball. It is the hardest and most drain-prone shot on the machine, and right drains are already the common ones here, so this is the shot you give up when something else is one hit from lighting.",
+      "reps": "3 slams in a row",
+      "focus": "ball-control",
+      "goal": "mode-catapult",
+      "shots": [
+        "catapult"
+      ]
+    },
+    {
+      "id": "drill-lock-during-madness",
+      "title": "Park The Balls, Take The Lock",
+      "text": "In Multiball Madness, feed balls into the pop bumpers off the orbits and then take the Castle Lock while they are still up there. The Double Super Jackpot is the best single shot in that multiball and it wants a clean look, not a scramble.",
+      "reps": "3 multiballs",
+      "focus": "ball-control",
+      "goal": "mb-madness",
+      "shots": [
+        "left-orbit",
+        "right-orbit",
+        "pop-bumpers",
+        "castle-lock"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Launch Button (Troll Bombs)",
+    "location": "the red ball-launch button on the cabinet front — this game auto-plunges, so there is no shooter rod",
+    "how": "The red button that fires your plunge is also a weapon. Bank Troll Bombs from the troll standups or from Merlin, and one press puts a troll down without you having to hit it — which is exactly what you want when both trolls are up and you have three balls to watch.",
+    "uses": [
+      {
+        "when": "Start of every ball",
+        "what": "Launches the ball. Hold the left flipper as you press for the Super Skill Shot feed to the left flipper."
+      },
+      {
+        "when": "Trolls! with bombs banked",
+        "what": "Detonates one bomb, worth a single hit on whichever troll is nearest to dying."
+      },
+      {
+        "when": "Multiball Madness with trolls up",
+        "what": "Spend bombs rather than aiming — each one still counts toward Master of Trolls while you juggle balls."
+      },
+      {
+        "when": "Battle for the Kingdom, second phase",
+        "what": "Bombs are how you clear the immortal trolls guarding the gate, so save a few for the wizard mode."
+      },
+      {
+        "when": "Save the Children video mode",
+        "what": "Keep a thumb on it here too — the button is documented as having a job in this mode, but no source spells out what it actually does."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Medieval Madness is a castle siege: drop each drawbridge, crack its gate, and storm the keep, over and over, while knocking out five separate kinds of Madness around it. Light all six title dots to reach Battle for the Kingdom, the grand wizard war that ends on the King of Payne's keep.",
+    "loop": [
+      "Work the moat to drop the drawbridge, the gate to crack it open, then the keep itself to level a castle -- the richest loop on the machine.",
+      "Farm the ramps: four left ramps light Peasant Madness, four right ramps complete Save the Damsels, and both stack a Castle Hurry-Up you cash at the keep.",
+      "Joust the orbits into each other, slam the catapult, and battle the trolls to light the rest of the five Madness types.",
+      "Light Madness modes in single-ball play, then start Multiball Madness at Merlin's saucer for more balls and bigger jackpots.",
+      "Earn all six blue title dots -- the five Madness types plus razing every castle -- to open Battle for the Kingdom."
+    ],
+    "lights": [
+      {
+        "id": "castle-siege",
+        "name": "Castle Siege",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "moat"
+          },
+          {
+            "shot": "castle-gate"
+          },
+          {
+            "shot": "castle-entrance"
+          }
+        ],
+        "lit": "The castle runs in three lit stages -- the moat to lower its drawbridge, the gate to blow it open, then the mouth of the keep to destroy it -- and each next castle wants more hits than the one before.",
+        "flashing": null,
+        "control": null,
+        "then": "Run moat to gate to keep to raze a castle, then move on to the next; the tally of fallen castles sticks all game, your second one lights an extra ball, and toppling all six is one of the wizard's title dots. The keep out-scores nearly every other shot, so keep this loop turning even inside a multiball.",
+        "goals": [
+          "combo-castle-loop",
+          "extra-ball-routes"
+        ]
+      },
+      {
+        "id": "peasant-ramp",
+        "name": "Peasant Ramp",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "The left ramp is the safest repeatable shot, and four of them climb the peasant awards up to Peasant Revolt, lighting Peasant Madness and a Castle Hurry-Up; a clean ramp returns down its wireform to set up the next shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep ramping while a hurry-up runs to stack its value millions higher, then cash the whole thing at the keep. Ten hurry-ups collected light an extra ball, and folding several into one stack still counts every one of them toward that ten.",
+        "goals": [
+          "mode-peasant",
+          "combo-peasant-hurryup"
+        ]
+      },
+      {
+        "id": "damsel-ramp",
+        "name": "Dragon Ramp & Damsel Tower",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "damsel-tower"
+          }
+        ],
+        "lit": "The right dragon ramp mirrors the left -- four shots complete Save the Damsels and light Damsel Madness -- and after enough hits its diverter opens to the Damsel tower tucked up the back right.",
+        "flashing": null,
+        "control": null,
+        "then": "Farm it the same way for hurry-up stacking, since the ramp keeps handing the ball back for quick repeats. Damsels is one of the five Madness types feeding the wizard, so this ramp is doing two jobs at once.",
+        "goals": [
+          "combo-damsel"
+        ]
+      },
+      {
+        "id": "joust-orbits",
+        "name": "Joust Orbits",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "The two orbits joust by feeding into one another, and three jousts win a Joust Victory to light Joust Madness; the third victory closes the orbit gate so the ball spills into the pop bumpers.",
+        "flashing": null,
+        "control": null,
+        "then": "Win three victories across the game to light the Joust Champion dot for the wizard. With the gate shut the orbits routing into the jets also rack bonus switches, which your end-of-ball Bonus X then multiplies.",
+        "goals": [
+          "mode-joust",
+          "mult-jets"
+        ]
+      },
+      {
+        "id": "troll-targets",
+        "name": "Trolls",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-troll"
+          },
+          {
+            "shot": "right-troll"
+          },
+          {
+            "shot": "merlins-saucer"
+          }
+        ],
+        "lit": "The two motorized trolls pop up to guard the lock and Merlin's eject; the standups flanking the castle light Trolls! at Merlin's saucer, and a ball glanced off a raised troll into a feature banks a Troll Bomb.",
+        "flashing": null,
+        "control": null,
+        "then": "With Trolls! lit, hit each raised troll three times to kill it; kills ladder toward Master of Trolls and its title dot. Bank Troll Bombs now off those ricochets, because those banked bombs are the only thing that drops the deathless trolls in the wizard fight.",
+        "goals": [
+          "mode-trolls",
+          "combo-troll-bomb"
+        ]
+      },
+      {
+        "id": "top-lanes",
+        "name": "Upper Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-rollovers"
+          }
+        ],
+        "lit": "The two upper rollover lanes light for Bonus X, but the lane the ball is drifting toward may not be the lit one.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a flipper tap walks the lit rollover across to the other top lane, so you can slide it beneath whichever lane the ball is heading for and finish the pair",
+          "when": "as the ball rolls through the upper lanes"
+        },
+        "then": "Complete both lanes to add to Bonus X, the multiplier on an end-of-ball bonus that builds all ball long; the same lit lane is the Normal Skill Shot for a bigger Bonus X jump off the plunge. Bonus X only holds for the ball unless Merlin gives you Hold Bonus X to carry it over.",
+        "goals": [
+          "mult-bonusx",
+          "skillshot-normal"
+        ]
+      },
+      {
+        "id": "merlin-eject",
+        "name": "Merlin's Saucer & Lock",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "merlins-saucer"
+          },
+          {
+            "shot": "merlin-standups"
+          },
+          {
+            "shot": "castle-lock"
+          }
+        ],
+        "lit": "Completing the three Merlin standups lights Merlin's Magic at the right eject, and the eject is also where Multiball Madness and the mini-wizard begin; the Moat Jump left of the castle is your ball lock.",
+        "flashing": null,
+        "control": null,
+        "then": "Take Merlin for a mystery award -- Light Lock, extra Bonus X, Hold Bonus X -- then lock three balls at the Moat Jump for Castle Multiball. Start Multiball Madness here with as many Madness types lit as you can, since ball count and jackpots both scale with how many are showing.",
+        "goals": [
+          "mb-madness",
+          "mb-castle",
+          "wizard-royal"
+        ]
+      },
+      {
+        "id": "catapult",
+        "name": "Catapult",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "catapult"
+          }
+        ],
+        "lit": "The far-left catapult flings loaded objects at the castle, and three slams into it light Catapult Madness; the flipper buttons cycle which object the catapult will hurl next.",
+        "flashing": null,
+        "control": null,
+        "then": "Land all five different objects to trip the hidden Barnyard Multiball, and three completed slams also light the Catapult Ace dot. It is the single toughest shot on the game and the likeliest to drain, so take it only from a dead cradle when nothing safer is a hit from lighting.",
+        "goals": [
+          "mode-catapult",
+          "mb-barnyard"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "A flipper tap walks the lit upper rollover across to the other top lane. Set it beneath whichever lane the ball is heading for to finish both, which steps up Bonus X and multiplies your end-of-ball bonus; Bonus X stays for the ball only, unless Merlin's Hold Bonus X carries it forward.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Get safe points and the multiplier going: take the Normal Skill Shot into a flashing top lane for Bonus X, hit both ramps to light Peasant and Damsels, grab an orbit toward Joust, and bank your first castle. Landing a castle or two early sets your score up for the rest of the game.",
+        "goals": [
+          "skillshot-normal",
+          "mode-peasant",
+          "combo-damsel",
+          "combo-castle-loop"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Light Madness types in single-ball play, then start Multiball Madness at Merlin with as many lit as you can for a four-ball start. Lock three balls for Castle Multiball, and keep razing castles the whole time, since the keep out-scores almost everything even during a multiball.",
+        "goals": [
+          "mb-madness",
+          "mb-castle",
+          "combo-castle-loop"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Battle for the Kingdom is the summit. Light all six blue dots -- the five Madness types plus Castle Crusher -- then storm the King of Payne's keep, clearing its immortal trolls with banked bombs between gate shots. Winning lights Victory Laps whose Ultra Combos double each Victory Lap as you chain them, climbing with no cap anyone has found; Royal Madness is the mini-wizard you pass on the way.",
+        "goals": [
+          "wizard-bfk",
+          "combo-ultra",
+          "wizard-royal"
+        ]
+      }
+    ]
+  }
+}

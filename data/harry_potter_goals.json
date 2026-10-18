@@ -1,0 +1,1555 @@
+{
+  "machine": "Harry Potter (Jersey Jack Pinball, 2025)",
+  "defaultFx": "sparkle",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper-Right Flipper",
+      "type": "flipper",
+      "x": 0.83,
+      "y": 0.32,
+      "trim": "all",
+      "bat": {
+        "side": "right",
+        "size": "full"
+      },
+      "notes": "Third full-size flipper, mid-right. Shoots the Library ramp and covers the inner loop / right orbit."
+    },
+    {
+      "id": "mini-flipper",
+      "name": "Mini Flipper (Quidditch Deck)",
+      "type": "flipper",
+      "x": 0.1,
+      "y": 0.86,
+      "trim": "all",
+      "playfield": "quidditch-deck",
+      "bat": {
+        "size": "mini"
+      },
+      "notes": "The upper deck's own flipper -- the fourth flipper on the machine. Makes the late snitch/broom catch up on the Quidditch deck, then sends the ball out toward the center ramp, near where the Grand Staircase sits."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Manual plunger. A full plunge rides up the right side and wraps through the right-orbit lane before dropping to a flipper — the skill-shot level (1/2/3) is pre-selected with the action button before you pull, then the plunge is aimed at whichever shot lights up for that level.",
+      "feeds": {
+        "shot": "left-flipper",
+        "loop": {
+          "shot": "right-orbit"
+        }
+      }
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Fawkes ball-save lane once armed by right-orbit shots."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.94,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Protego ball-save lane -- armed by inlane HARRY letters, but only while the Golden Trio wand lock is already active."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.36,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "One of the HARRY-spelling inlanes; rolling through during normal play advances the Harry letter of the Golden Trio spellout and arms Protego."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.64,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "The other HARRY-spelling inlane, paired with the left inlane."
+    },
+    {
+      "id": "ron-targets",
+      "name": "Ron Targets (3-Bank)",
+      "type": "target-bank",
+      "x": 0.26,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Three standups, lower-left. Completing the bank spells RON for the Golden Trio wand lock."
+    },
+    {
+      "id": "hermione-targets",
+      "name": "Hermione Targets (2-Bank)",
+      "type": "target-bank",
+      "x": 0.3,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Two standups directly above the Ron bank, right beside the left ramp. Completing the bank spells HERMIONE for the Golden Trio wand lock."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "First-shot-of-the-game Quidditch qualifier: the opening left-ramp shot sends the ball up to the Quidditch upper playfield to set tryout position. Every left-ramp shot afterward advances Quidditch position/matches instead of climbing the deck again.",
+      "feeds": {
+        "shot": "quidditch-spinner"
+      }
+    },
+    {
+      "id": "library-ramp",
+      "name": "Library Ramp",
+      "type": "ramp",
+      "x": 0.26,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Side ramp rising just above the Hermione targets. Builds the end-of-ball bonus multiplier (up to 10x) — the single biggest bonus lever in the game.",
+      "flipper": "left",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "death-eater-drop-target",
+      "name": "Death Eater Drop Target",
+      "type": "drop-target",
+      "x": 0.32,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Drops to open the hole behind it. Left side, between the Ron bank and the Whomping Willow."
+    },
+    {
+      "id": "death-eater-hole",
+      "name": "Death Eater Hole",
+      "type": "scoop",
+      "x": 0.34,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Behind the drop target. The motorized Death Eater sculpt fires the ball back out at you — two duels won here qualifies Death Eater Multiball. Distinct from the Under-Flipper Hole; this one is a violent kickback, not a hidden reach."
+    },
+    {
+      "id": "whomping-willow",
+      "name": "Whomping Willow",
+      "type": "mech",
+      "x": 0.63,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Fully animated tree with the flying Ford Anglia sculpt. Sits over the pop bumpers, upper-center — the car swings as the bumpers fire."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.6,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Bumper cluster under the Whomping Willow, upper-center."
+    },
+    {
+      "id": "staircase",
+      "name": "The Grand Staircase",
+      "type": "mech",
+      "x": 0.7,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "The signature kinetic sculpture: three entrances, thirteen exits, moving portraits. Rotates between shots so the same physical shot can exit to a different flipper each time. Feeds Explore Hogwarts progress and several hurry-ups; the deck routes to whichever flipper the display calls out before the ball drops.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "hagrid-target",
+      "name": "Hagrid Target",
+      "type": "standup",
+      "x": 0.56,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Standup between the center ramp and center lane. Cycles the currently-lit Diagon Alley shop and adds green Explore-Hogwarts add-a-ball progress."
+    },
+    {
+      "id": "center-lane",
+      "name": "Center Lane (Great Hall)",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "The main up-the-middle shot. Repeated hits spell D-I-A-G-O-N to unlock Diagon Alley shops."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Center VUK. Shoot it while 'Start Term' is lit (lit by the right spinner) to begin a school-year lesson set; later, it's the shot that starts OWLs Multiball and the final wizard mode.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "under-flipper-hole",
+      "name": "Under-Flipper Hole",
+      "type": "scoop",
+      "x": 0.86,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Under the upper-right flipper -- a blind, easy-to-whiff reach the lead programmer visibly missed several times in a row in the official gameplay video before landing it. Lights for Extra Ball and is one of the Level 2/3 skill-shot picks ('Under flipper')."
+    },
+    {
+      "id": "cauldron-hole",
+      "name": "Potion Cauldron",
+      "type": "scoop",
+      "x": 0.6,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Interactive cauldron sculpture beneath the wand lock — all three locked balls drop through it to start Golden Trio Multiball. Also the Potions-mode entry: any ball that falls in advances the potion-brewing requirement."
+    },
+    {
+      "id": "allies-target",
+      "name": "Allies Target",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Standup just below the inner loop. Repeated hits collect Allies (Dumbledore's Army / Order of the Phoenix sub-modes); 10 collected total awards the Locket horcrux."
+    },
+    {
+      "id": "inner-loop",
+      "name": "Inner Loop",
+      "type": "loop",
+      "x": 0.62,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Upper-middle loop shot. With a Golden Trio letter lit, feeds straight into the wand lock; otherwise loops back down to the right flipper.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "wand-lock",
+      "name": "Wand Multiball Lock",
+      "type": "mech",
+      "x": 0.7,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Three life-size wand sculptures (Harry/Ron/Hermione) form the physical 3-ball lock. Fed by the inner loop or the right orbit once a Golden Trio letter is spelled; holds up to three balls before dropping them together through the cauldron to start Golden Trio Multiball.",
+      "feeds": {
+        "shot": "cauldron-hole"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.86,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Mirrors the inner loop as the other Golden Trio lock feed; also the usual landing lane for a full plunge. Arms Fawkes (left-outlane save) after enough hits.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Spinner (Time-Turner)",
+      "type": "spinner",
+      "x": 0.88,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Spins on right-orbit-adjacent shots. Lights the scoop for 'Start Term' when unlit, and adds time to a running lesson's hourglass when it is."
+    },
+    {
+      "id": "left-spinner",
+      "name": "Left Spinner",
+      "type": "spinner",
+      "x": 0.2,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Left-side spinner in the lane feeding up toward the Whomping Willow bumpers. One of the three spinners whose combined unique-spin count fuels the Hexes & Jinxes ally mode."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.56,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Steeper ramp right of the staircase. Second Explore-Hogwarts collection shot and a common combo landing spot for Wizard Travel.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "quidditch-spinner",
+      "name": "Quidditch Spinner",
+      "type": "spinner",
+      "x": 0.16,
+      "y": 0.9,
+      "trim": "all",
+      "playfield": "quidditch-deck",
+      "notes": "The upper deck's own spinner. Rip it to catch the Golden Snitch (3 catches qualifies Quidditch World Cup Multiball) and to score goals during a running match.",
+      "feeds": {
+        "shot": "mini-flipper"
+      }
+    },
+    {
+      "id": "quidditch-target",
+      "name": "Quidditch Position Target",
+      "type": "standup",
+      "x": 0.28,
+      "y": 0.92,
+      "trim": "all",
+      "playfield": "quidditch-deck",
+      "notes": "Upper-deck standup used during opening tryouts (and by later potions) to advance Quidditch position beater -> chaser -> keeper -> seeker, which sets your end-of-game Quidditch Bonus multiplier."
+    }
+  ],
+  "playfields": [
+    {
+      "id": "quidditch-deck",
+      "name": "Quidditch Upper Playfield",
+      "kind": "upper",
+      "trim": "all",
+      "bounds": {
+        "x": 0.05,
+        "y": 0.82,
+        "w": 0.3,
+        "h": 0.16
+      },
+      "entries": [
+        "left-ramp"
+      ],
+      "exits": [
+        {
+          "shot": "center-ramp"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-level-1",
+      "title": "Skill Shot -- Level 1",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "The entry-level pick: cycle to it with the action button before you plunge, then land the ball on the lit shot.",
+      "reward": "Base skill-shot value; collecting it arms Level 2",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge with Level 1 selected",
+          "detail": "Tap the action button pre-plunge until the display reads Level 1, then pull. Level 1 is lit across the widest set of targets -- Left Ramp, the Hermione bank, the Death Eater hole, a HARRY inlane, or the Ron bank all qualify.",
+          "plunge": "full"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Use the flippers to hit whichever Level 1 target is lit -- Left Ramp is the flagship pick",
+          "detail": "This one is a flipper shot, not a lucky bounce off the plunge -- you cradle and aim at whichever of the five Level 1 options is flashing when the ball comes down. Left Ramp is the cleanest pick if nothing else is lit yet."
+        }
+      ]
+    },
+    {
+      "id": "skillshot-level-2",
+      "title": "Skill Shot -- Level 2",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Collecting Level 1 arms Level 2, which trades the easy options for a longer list that reaches deeper into the playfield -- including the Grand Staircase and the Under-Flipper Hole.",
+      "reward": "Higher skill-shot value; arms Level 3",
+      "requires": [
+        "skillshot-level-1"
+      ],
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge with Level 2 selected",
+          "detail": "Cycle to Level 2 with the action button. It shares most of Level 1's list plus the Staircase, the right orbit, the Under-Flipper Hole, and the center ramp.",
+          "plunge": "full"
+        },
+        {
+          "shot": "staircase",
+          "action": "Land on the lit Level 2 shot -- Staircase is the flagship pick",
+          "detail": "The Grand Staircase is one of the marquee Level 2 options; whichever shot is actually flashing when the ball arrives is the one that scores."
+        }
+      ]
+    },
+    {
+      "id": "skillshot-level-3",
+      "title": "Skill Shot -- Level 3",
+      "category": "skillshot",
+      "difficulty": 3,
+      "summary": "The advanced tier: fewer options, all of them precise. Center ramp, the Under-Flipper Hole, and the right spinner headline a short, harder list. Level 2 has to be banked before this tier is on offer.",
+      "reward": "Top skill-shot value",
+      "requires": [
+        "skillshot-level-2"
+      ],
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge with Level 3 selected",
+          "detail": "Cycle to Level 3. The list shrinks to center lane, center ramp, the Under-Flipper Hole, the right spinner, and progress toward Dumbledore's Army.",
+          "plunge": "full"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Land on the lit Level 3 shot -- center ramp is the flagship pick",
+          "detail": "Center ramp is the cleanest Level 3 target off a full plunge; land on whichever shot is actually lit."
+        }
+      ]
+    },
+    {
+      "id": "golden-trio-multiball",
+      "title": "Golden Trio Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Spell all three names -- HARRY at the inlanes, RON at the left 3-bank, HERMIONE at the left 2-bank -- to lock a ball at the wand sculpture for each. Three balls locked starts the multiball and drops them together through the cauldron.",
+      "reward": "Character jackpots (blue/Ron, red/Harry, yellow/Hermione) + escalating Wand Jackpots at 2x/3x; Super Jackpot after the third",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the inlanes to spell HARRY",
+          "detail": "Either inlane counts; a completed HARRY locks a ball at the wand sculptures."
+        },
+        {
+          "shot": "ron-targets",
+          "action": "Complete the left 3-bank to spell RON",
+          "detail": "Locks a second ball at the wands once finished."
+        },
+        {
+          "shot": "hermione-targets",
+          "action": "Complete the left 2-bank to spell HERMIONE",
+          "detail": "Locks the third ball -- three locked balls drop through the cauldron and the multiball begins.",
+          "link": "none"
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Send a spelled letter's ball to the wand lock via the inner loop",
+          "detail": "Inner loop and right orbit both feed the physical wand lockup once a name is complete."
+        },
+        {
+          "shot": "cauldron-hole",
+          "action": "All three locks drop through the cauldron to start",
+          "detail": "Multiball begins with all three balls in play."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect character jackpots at their color's shot, then chase the Wand Jackpot",
+          "detail": "Hitting a character's own target after their color jackpot relights that color; three same-color jackpots light the Wand Jackpot at the inner loop, center lane, or right orbit -- second Wand Jackpot pays 2x, third pays 3x and opens a 45-second Super Jackpot window.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "quidditch-world-cup-multiball",
+      "title": "Quidditch World Cup Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Your very first left-ramp shot sends you to the upper deck to set your Quidditch position. From then on, rip the deck spinner to catch the Snitch three separate matches to qualify the World Cup, then shoot the left ramp to start it.",
+      "reward": "Green (Ireland) and red (Bulgaria) jackpots; 5 jackpots lights a loopable, escalating Super Jackpot (up to 5x) on the upper-deck ramp -- awards the Diadem horcrux",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Take the opening left-ramp shot to reach the upper deck",
+          "detail": "Only the very first left-ramp shot of the game climbs the deck for tryouts -- every later left-ramp shot advances position or starts a match instead."
+        },
+        {
+          "shot": "quidditch-target",
+          "action": "Clear tryout targets to set your starting position",
+          "detail": "More clears mean a better position (beater -> chaser -> keeper -> seeker), which raises your end-of-game Quidditch Bonus."
+        },
+        {
+          "shot": "quidditch-spinner",
+          "action": "Rip the deck spinner to catch the Snitch, three matches running",
+          "detail": "A caught Snitch ends the match in your favor; three qualifying matches lights the World Cup at the left ramp."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to start Quidditch World Cup Multiball",
+          "detail": "Now a genuine multiball -- balls loop through the main playfield rather than climbing the deck again."
+        },
+        {
+          "shot": "quidditch-spinner",
+          "action": "Collect green and red jackpots, then chase the Super Jackpot",
+          "detail": "5 jackpots light a roving Super Jackpot on the upper-deck ramp that pays more each additional loop, up to 5x -- awards the Diadem horcrux.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "explore-hogwarts-multiball",
+      "title": "Explore Hogwarts Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Eight banners sit across the top of the display -- four houses, four castle features. Shoot the center ramp and the staircase to lower them; the green pair and the yellow pair (four of the eight) already start spotted, so as few as two solid shots can qualify the very first multiball.",
+      "reward": "Four jackpot families (Secret Passages, Classrooms, Castle Grounds, Towers); 4 jackpots lights an escalating, roving Super Jackpot -- awards the Ring horcrux",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to lower house and castle banners",
+          "detail": "Green and yellow start already lowered, so two clean shots between the center ramp and the staircase can be enough to qualify.",
+          "link": "none"
+        },
+        {
+          "shot": "staircase",
+          "action": "Shoot the Grand Staircase for the rest of the banners",
+          "detail": "Staircase and center lane both count toward the same eight-banner set.",
+          "link": "none"
+        },
+        {
+          "shot": "staircase",
+          "action": "With all eight down, shoot the staircase to start",
+          "detail": "Two-ball multiball; an add-a-ball lights green at the Hagrid target after two jackpots."
+        },
+        {
+          "shot": "hagrid-target",
+          "action": "Collect jackpots at lit shots, then chase the roving Super Jackpot",
+          "detail": "Four jackpots light an escalating Super Jackpot that keeps roving shot to shot -- it stays lit into your next ball even if the multiball itself ends first.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "death-eater-multiball",
+      "title": "Death Eater Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Beat two Death Eaters in single combat before the multiball even starts: shoot the drop target, then the hole behind it while it's open, twice each. The second win throws the flippers dark for a moment and the multiball begins.",
+      "reward": "A four-stage escalating hurry-up-into-jackpots-into-frenzy structure; first Death Eater defeated lights an Extra Ball",
+      "steps": [
+        {
+          "shot": "death-eater-drop-target",
+          "action": "Drop the target to open the hole",
+          "detail": "Standard drop target, left side."
+        },
+        {
+          "shot": "death-eater-hole",
+          "action": "Shoot the open hole twice within 20 seconds to defeat a Death Eater",
+          "detail": "The motorized sculpt fires the ball back at you between hits -- awards 20M and, the first time, an Extra Ball."
+        },
+        {
+          "shot": "death-eater-drop-target",
+          "action": "Repeat the drop-and-duel for a second Death Eater",
+          "detail": "Beating the second one starts the multiball outright.",
+          "link": "none"
+        },
+        {
+          "shot": "death-eater-hole",
+          "action": "Run the hurry-up, then the green jackpots, then the frenzy",
+          "detail": "Hurry-up value steps down the Death Eater health requirement at 800K and 400K; green shots after that are jackpots at half health; late-stage right-side shots (scoop, right spinner, behind the flipper) are Super Jackpots worth 5M per Death Eater already killed.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "owls-multiball",
+      "title": "O.W.L.s Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Finish a Final Exam -- six lessons completed for that school year -- and O.W.L.s lights at the center lane. Each spell you finished at Ollivander's along the way is baked into the jackpot multiplier before the ball even drops.",
+      "reward": "2-ball multiball, 30s ball save; base jackpot scales with lessons completed (8 lessons ~= 19M); 5 jackpots lights a Super, and 65 switch hits during it triples the next one",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start a school year and clear its Fall Term lessons",
+          "detail": "Shoot lit red/gold shots within each lesson's timer; five lessons make up a Fall Term."
+        },
+        {
+          "shot": "scoop",
+          "action": "Clear the Spring Term lessons the same way",
+          "detail": "Five more timed lessons -- ten total between the two terms."
+        },
+        {
+          "shot": "scoop",
+          "action": "Finish the six-lesson Final Exam",
+          "detail": "Completing it lights O.W.L.s Multiball right up the middle."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Shoot the center lane to start O.W.L.s",
+          "detail": "Jackpot value is already set by how many lessons you completed on the way in."
+        },
+        {
+          "shot": "allies-target",
+          "action": "Complete Flourish & Blotts spell-memory rounds beforehand for a fatter multiplier",
+          "detail": "Each spell finished at the Diagon Alley bookshop adds a permanent +1x that carries into O.W.L.s.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect 5 red jackpots, then push for the triple Super",
+          "detail": "Five jackpots lights the Super; 65 total switch hits during the multiball upgrades the next jackpot to triple.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "diagon-alley-shops",
+      "title": "Diagon Alley: Visit a Shop",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Repeated center-lane hits spell D-I-A-G-O-N; finishing it lets you pick one of four open shops (a fifth, Borgin & Burkes, unlocks later). Ollivander's is the one that feeds Golden Trio the hardest -- start there.",
+      "reward": "Ollivander's: choice of Golden Trio perks (longer ball save / bigger jackpots / easier Wand Jackpots / 2x-3x combos / auto-restart); other shops pay cash, hurry-ups, or Bombtastic Bombs",
+      "steps": [
+        {
+          "shot": "center-lane",
+          "action": "Shoot the center lane repeatedly to spell D-I-A-G-O-N",
+          "detail": "It takes three center-lane hits to spell it out, plus one more for each shop you've already visited, capping at six; finishing the word unlocks entry to one of the four base shops."
+        },
+        {
+          "shot": "hagrid-target",
+          "action": "Cycle to the shop you want with the Hagrid target or the action button",
+          "detail": "Whichever shop is flashing is the one your next qualifying shot enters."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Enter Ollivander's and shoot the flashing double-arrow shots",
+          "detail": "A 30-second timed mode; each shot made banks one of five Golden Trio Multiball perks for later in the game."
+        }
+      ]
+    },
+    {
+      "id": "allies-modes",
+      "title": "Collect Allies: Dumbledore's Army / Order of the Phoenix",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Repeated hits on the Allies target under the inner loop cycle through four short timed sub-modes at the inner loop and right orbit. Ten allies collected total, with all four sub-modes played along the way, awards the Locket horcrux.",
+      "reward": "Escalating-value repeat shots per sub-mode; 10th ally awards the Locket horcrux",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "allies-target",
+          "action": "Hit the Allies target to arm the next sub-mode",
+          "detail": "Cycles between Luna Loves Loops and Loopin' Lupin (inner loop / right orbit repeats), Hexes & Jinxes (all three spinners), and Heart's Desire (feed the bumpers)."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Luna Loves Loops: repeat the inner loop for 30 seconds",
+          "detail": "Each repeat scores more than the last.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Loopin' Lupin: repeat the right orbit for 30 seconds",
+          "detail": "Same escalating-repeat structure, mirrored to the right side.",
+          "link": "none"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Hexes & Jinxes: spin all three spinners for unique combinations",
+          "detail": "Left spinner, right spinner, and the Quidditch deck spinner all count toward the total.",
+          "link": "none"
+        },
+        {
+          "shot": "bumpers",
+          "action": "Heart's Desire: feed the pop bumpers via center lane or staircase",
+          "detail": "Each bumper hit while the mode runs adds value; the Mirror of Erised shows your reflection on the display.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "wizard-travel-combo",
+      "title": "Wizard Travel: Build Geminio",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Chain lit shots in quick succession anywhere on the table -- the insert in front of the scoop flashes when a combo is ready to extend. Each level of Wizard Travel hands out a real reward, and Geminio itself is the game's playfield-wide multiplier.",
+      "reward": "L2/L5/L8 arm Geminio at 2x/3x/4x for 30 seconds; L3/L4 light an Extra Ball; L6 is Extra Credit Mania; L7 is a Special",
+      "steps": [
+        {
+          "shot": "inner-loop",
+          "action": "Open a combo on any lit shot",
+          "detail": "The scoop-front insert flashes the instant you're within combo range of another lit shot."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Chain a second shot immediately",
+          "detail": "Speed matters more than which shots -- the combo window is short."
+        },
+        {
+          "shot": "library-ramp",
+          "action": "Keep the chain alive on a third shot to bank a Wizard Travel level",
+          "detail": "Every level completed advances the ladder from Broomstick up toward Apparition.",
+          "link": "none"
+        },
+        {
+          "shot": "cauldron-hole",
+          "action": "At Level 2, 5, or 8, cash the charm for a full-field Geminio multiplier",
+          "detail": "Geminio covers the display in trophies and multiplies every switch hit for 30 seconds -- its value climbs each time you trigger it in the same game."
+        }
+      ]
+    },
+    {
+      "id": "potions-mystery",
+      "title": "Potions: Brew a Mystery Award",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Any ball that drops into the cauldron starts a potion. The display offers three awards mapped to the left ramp, center ramp, and right orbit -- shoot one to lock it in, then hit that same shot twice more to collect.",
+      "reward": "One of twenty-plus possible awards, from a simple ball save to spotting a horcrux outright",
+      "steps": [
+        {
+          "shot": "cauldron-hole",
+          "action": "Drop a ball into the cauldron to arm a potion",
+          "detail": "The requirement grows by one hole-shot each time you restart the mode."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot one of the three lit shots to lock in its award",
+          "detail": "Left ramp, center ramp, and right orbit each carry a different potion on the display."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit that same shot twice more to collect",
+          "detail": "Locking in doesn't pay by itself -- you have to return to the same shot two more times."
+        }
+      ]
+    },
+    {
+      "id": "potter-frenzy",
+      "title": "Potter Frenzy",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Spell HARRY at the inlanes four separate times in a game -- it doesn't matter whether Golden Trio is already locked or not -- and every switch in the game scores big for 40 seconds while the cast shouts 'Potter!'",
+      "reward": "Every switch hit scores a random 50K-100K for 40 seconds",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll HARRY at the inlanes a fourth time this game",
+          "detail": "Golden Trio lock status doesn't matter -- this is a separate counter that just needs four completed HARRYs."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Once it starts, hit anything -- bumpers are the fastest filler",
+          "detail": "Every switch in the building pays out for the full 40 seconds; there's no wrong shot here.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "fawkes-ball-save",
+      "title": "Fawkes: Arm the Left Outlane Save",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Enough right-orbit hits lights Fawkes at the left outlane. Drain there and you get one shot at redemption: three different shots in 20 seconds, or the ball stays gone.",
+      "reward": "A saved ball plus a 10-second victory lap on each shot you complete; finishing all three lights a Super Jackpot",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Build right-orbit hits to arm Fawkes",
+          "detail": "Once armed, a left-outlane drain triggers the save instead of ending the ball."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Drain left to trigger the save",
+          "detail": "Not a shot you aim for on purpose -- Fawkes turns an unlucky bounce into a second chance."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Hit three different shots within 20 seconds to complete the save",
+          "detail": "Each unique shot made extends the window another 10 seconds; complete all three and a Super Jackpot lights.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "protego-ball-save",
+      "title": "Protego: Arm the Right Outlane Shield",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Rolling HARRY at the inlanes lights Protego at the right outlane, but only once the Golden Trio wand lock is already active -- after that it's a simple, no-challenge save that just sits there ready.",
+      "reward": "Any right-outlane drain while lit is saved automatically, no extra shots required",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Spell HARRY at the inlanes while the Golden Trio lock is already lit",
+          "detail": "Only counts while the Golden Trio wand lock is active; once armed, it lights colored LEDs below the shield insert at the right outlane."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Drain right while lit -- the gate saves it for you",
+          "detail": "Even a weak right-spinner dribble down the outlane during a ball save doesn't burn Protego."
+        }
+      ]
+    },
+    {
+      "id": "school-year-lesson",
+      "title": "Play a School-Year Lesson",
+      "category": "progression",
+      "difficulty": 1,
+      "summary": "Every year at Hogwarts breaks into a Fall Term, a Spring Term, and a Final Exam -- each a run of short, movie-scene lessons you clear by shooting whatever's blinking red and gold before the hourglass runs out.",
+      "steps": [],
+      "instructions": [
+        "Shoot the scoop while 'Start Term' is lit (the right spinner lights it) and pick your year with the flipper buttons and the action button",
+        "Watch for shots blinking red and gold -- those are the current lesson's targets, and they change from lesson to lesson within the same movie",
+        "Clear the lesson before its on-screen hourglass runs out, or it times out and the game moves you on anyway",
+        "The right spinner is your Time-Turner: rip it mid-lesson to add seconds to a tight timer",
+        "A Bombtastic Bomb from Weasley's Wizard Wheezes instantly clears whatever lesson is running if you press the action button",
+        "Clearing lessons back-to-back (no drains, no timeouts) pays a streak bonus on top of each lesson's own reward",
+        "Six lessons make a Final Exam; finishing one lights O.W.L.s Multiball at the center lane"
+      ],
+      "reward": "Time bonus (seconds left x25K, plus 25K per lesson cleared in a row); a finished Final Exam lights O.W.L.s"
+    },
+    {
+      "id": "horcrux-sweep",
+      "title": "Destroy Every Horcrux",
+      "category": "progression",
+      "difficulty": 3,
+      "summary": "Seven horcruxes are scattered across the game's biggest features -- one per multiball super jackpot, one for the ally sweep, one for the Diagon Alley bookshop, and one for surviving the Deathly Hallows mini-wizard. All seven lights the final wizard mode.",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "allies-target",
+          "action": "Diary: finish the spell-memory game at Flourish & Blotts",
+          "detail": "Diagon Alley bookshop mode -- memorize and repeat a spell sequence on the flippers.",
+          "link": "none"
+        },
+        {
+          "shot": "staircase",
+          "action": "Ring: score the Super Jackpot in Explore Hogwarts Multiball",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "allies-target",
+          "action": "Locket: collect ten Allies, playing all four sub-modes along the way",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "cauldron-hole",
+          "action": "Cup: score the Super Jackpot in Golden Trio Multiball",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "quidditch-spinner",
+          "action": "Diadem: score the Super Jackpot in Quidditch World Cup Multiball",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Harry: clear all three Deathly Hallows in the mini-wizard mode",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "death-eater-hole",
+          "action": "Nagini: start Death Eater Multiball",
+          "detail": null,
+          "link": "none"
+        }
+      ],
+      "reward": "All seven lights The Boy Who Lived at the center lane"
+    },
+    {
+      "id": "deathly-hallows-mini-wizard",
+      "title": "Mini-Wizard: The Deathly Hallows",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Earn all three Hallows through ordinary play -- HARRY x3 at the inlanes, 200 Quidditch points, and four lessons in one term -- and the scoop lights for a 90-second three-item chase with a real playfield multiplier riding on it.",
+      "reward": "Each item collected pays 50M-100M x the running multiplier, plus an extra ball and bonus seconds; the third item awards the Harry horcrux",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Qualify the Invisibility Cloak: spell HARRY three times",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "quidditch-spinner",
+          "action": "Qualify the Resurrection Stone: reach 200 Quidditch points",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Qualify the Elder Wand: clear four lessons in one term",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "With any set qualified, shoot the scoop to start",
+          "detail": "90 seconds on the clock, 18-second ball save."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Collect blue shots for the Cloak, purple for the Stone, red for the Wand",
+          "detail": "Five hits each; the upper-deck spinner can be looped repeatedly for the Stone's purple count.",
+          "link": "none"
+        },
+        {
+          "shot": "hagrid-target",
+          "action": "Yellow shots advance the Three Brothers story and the playfield multiplier",
+          "detail": "Each story beat adds +0.25x, up to 8x total.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "battle-of-hogwarts-mini-wizard",
+      "title": "Mini-Wizard: The Battle of Hogwarts",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Play any four of the five main multiballs in one game and this six-ball mini-wizard lights. Five staged badges count down as you complete banks of spinners, targets, ramps, bumpers, and orbits -- lose it down to one ball and it's over.",
+      "reward": "25M / 50M / 75M for stages 1-3; a timed Protego shield is available under the upper-right flipper throughout",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Play any four of the five multiballs -- Golden Trio, Quidditch World Cup, Explore Hogwarts, Death Eater, or O.W.L.s -- in the same game",
+          "detail": "Started counts -- they don't all need to be completed."
+        },
+        {
+          "shot": "staircase",
+          "action": "Start the mini-wizard when nothing else is running",
+          "detail": "Begins with six balls in play."
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Clear a mix of spinner, target, ramp, bumper, and orbit hits each stage",
+          "detail": "Requirements loosen as balls drain -- stage 2 might only need 3 of 5 feature types cleared.",
+          "link": "none"
+        },
+        {
+          "shot": "under-flipper-hole",
+          "action": "Shoot under the upper-right flipper to arm a 15-second Protego shield",
+          "detail": "Buys you time to keep multiple balls alive as the mode tightens."
+        }
+      ]
+    },
+    {
+      "id": "boy-who-lived-final-wizard",
+      "title": "Final Wizard: The Boy Who Lived",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "All seven horcruxes down lights the center lane for the endgame: destroy each horcrux in movie order, then finish Voldemort himself.",
+      "reward": "The game's biggest single-mode payout; a win is the top of the achievement ladder",
+      "steps": [
+        {
+          "shot": "center-lane",
+          "action": "Shoot the center lane with all seven horcruxes collected",
+          "detail": null
+        },
+        {
+          "shot": "cauldron-hole",
+          "action": "Diary: two orange shots",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "staircase",
+          "action": "Ring: three purple shots",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "allies-target",
+          "action": "Locket: four pink shots",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "wand-lock",
+          "action": "Cup: three white shots -- plays as its own multiball",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "quidditch-spinner",
+          "action": "Diadem: three blue shots",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Harry: three red shots",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "death-eater-hole",
+          "action": "Nagini, then Voldemort: destroying the seventh horcrux starts the final duel",
+          "detail": "Beat the duel to win the game's top wizard mode."
+        }
+      ]
+    },
+    {
+      "id": "game-changer-secret",
+      "title": "Secret: The Game Changer Difficulty Select",
+      "category": "secret",
+      "altMode": "ruleset",
+      "difficulty": 1,
+      "summary": "A patent-pending JJP feature hiding in plain sight at the start of every game: scan the QR code on the included fob (or use the on-screen prompt) to hand-pick how forgiving the ruleset is before you ever touch the plunger.",
+      "steps": [],
+      "instructions": [
+        "Before starting a game, scan the QR code on the Harry Potter fob with a phone, or step through the operator-facing prompt on the cabinet",
+        "Choose Easy, Normal, or Wizard -- the choice re-tunes ball saves, timers, and requirements across the whole ruleset for that game",
+        "Easy is built for newer players and kids; Wizard tightens everything back down for competitive play",
+        "The setting only applies for the game you start immediately after choosing it"
+      ],
+      "reward": "A full difficulty re-tune (ball saves, timers, requirements) without touching the coin door"
+    },
+    {
+      "id": "strategy-beginner-opener",
+      "title": "Strategy: First Ball, Keep It Simple",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Land an easy skill shot, get a school year running immediately so it keeps paying while you do other things, then bank a couple of Death Eater duels for the extra ball before you go looking for trouble.",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Take the Level 1 skill shot",
+          "detail": "Widest target list on offer -- easiest of the three to land clean.",
+          "plunge": "full"
+        },
+        {
+          "shot": "scoop",
+          "action": "Start a school year immediately",
+          "detail": "Lessons run in the background and reward you for shots you'd be taking anyway."
+        },
+        {
+          "shot": "death-eater-drop-target",
+          "action": "Work the Death Eater duel between other shots",
+          "detail": "Beating the first one lights an extra ball -- a safe, repeatable early goal."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take your opening left-ramp shot for Quidditch position",
+          "detail": "Only the very first one counts for tryouts, so don't waste it on a rebound."
+        }
+      ],
+      "reward": null
+    },
+    {
+      "id": "strategy-tournament-line",
+      "title": "Strategy: The Efficient Line",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "Bank Ollivander's perks before you ever lock a ball, keep a lesson running at all times for free value, and time Golden Trio to land while Explore Hogwarts' Super Jackpot is still roving so one shot can double-dip.",
+      "steps": [
+        {
+          "shot": "center-lane",
+          "action": "Spell D-I-A-G-O-N early and take Ollivander's first",
+          "detail": "Bank the Golden Trio perks -- longer ball save and easier Wand Jackpots pay off on every multiball after this one."
+        },
+        {
+          "shot": "scoop",
+          "action": "Keep a lesson running continuously",
+          "detail": "Idle shots you'd make anyway count toward lesson clears -- there's no reason to ever have Start Term sitting unlit."
+        },
+        {
+          "shot": "staircase",
+          "action": "Get Explore Hogwarts' Super Jackpot roving before you finish Golden Trio",
+          "detail": "A roving Super stays lit into the next multiball you start -- stack it under Golden Trio and collect twice for one qualifying run."
+        },
+        {
+          "shot": "inner-loop",
+          "action": "Chain combos toward Wizard Travel Level 2 for an early Geminio",
+          "detail": "A 2x field multiplier this early compounds everything that follows.",
+          "link": "none"
+        },
+        {
+          "shot": "library-ramp",
+          "action": "Bank library-ramp hits for bonus multiplier between bigger plays",
+          "detail": "Cheap, safe value that adds up over a full game.",
+          "link": "none"
+        }
+      ],
+      "reward": null
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "skillshot-level-3-landed",
+      "title": "Advanced Placement",
+      "desc": "Work the leveled skill shot all the way to Level 3 and land it in a single game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-level-3"
+    },
+    {
+      "id": "golden-trio-locked",
+      "title": "The Trio Assembles",
+      "desc": "Spell HARRY, RON, and HERMIONE to lock all three balls at the wand sculptures and start Golden Trio Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "golden-trio-multiball"
+    },
+    {
+      "id": "first-shop-visited",
+      "title": "Diagon Alley Regular",
+      "desc": "Spell D-I-A-G-O-N and step into a shop for the first time.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "diagon-alley-shops"
+    },
+    {
+      "id": "fawkes-save-landed",
+      "title": "A Phoenix's Tears",
+      "desc": "Arm Fawkes at the right orbit, then land a left-outlane drain safely.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "fawkes-ball-save"
+    },
+    {
+      "id": "quidditch-cup-started",
+      "title": "Up For The Cup",
+      "desc": "Catch the Snitch across three matches and start Quidditch World Cup Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "quidditch-world-cup-multiball"
+    },
+    {
+      "id": "explore-hogwarts-super",
+      "title": "Every Secret Passage",
+      "desc": "Light and collect the roving Super Jackpot during Explore Hogwarts Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "explore-hogwarts-multiball"
+    },
+    {
+      "id": "death-eater-defeated-twice",
+      "title": "Duelist",
+      "desc": "Beat two Death Eaters in single combat and start Death Eater Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "death-eater-multiball"
+    },
+    {
+      "id": "owls-super-jackpot",
+      "title": "Outstanding",
+      "desc": "Light and collect a Super Jackpot during O.W.L.s Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "owls-multiball"
+    },
+    {
+      "id": "potter-frenzy-triggered",
+      "title": "They Shout Your Name",
+      "desc": "Spell HARRY at the inlanes a fourth time in one game to trigger Potter Frenzy.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "potter-frenzy"
+    },
+    {
+      "id": "ten-allies-collected",
+      "title": "Dumbledore's Own",
+      "desc": "Collect ten Allies, playing all four sub-modes along the way, and claim the Locket horcrux.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "allies-modes"
+    },
+    {
+      "id": "geminio-4x-armed",
+      "title": "Duplication Charm",
+      "desc": "Build Wizard Travel to Level 8 and arm Geminio at its full 4x.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-travel-combo"
+    },
+    {
+      "id": "deathly-hallows-swept",
+      "title": "Master of Death",
+      "desc": "Collect all three Deathly Hallows in the mini-wizard mode in a single attempt.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "deathly-hallows-mini-wizard"
+    },
+    {
+      "id": "battle-of-hogwarts-survived",
+      "title": "Dumbledore's Army Rises",
+      "desc": "Reach and clear at least three stages of the Battle of Hogwarts six-ball mini-wizard.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "battle-of-hogwarts-mini-wizard"
+    },
+    {
+      "id": "all-horcruxes-destroyed",
+      "title": "Seven Pieces of a Soul",
+      "desc": "Collect all seven horcruxes in a single game to light The Boy Who Lived.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "horcrux-sweep"
+    },
+    {
+      "id": "boy-who-lived-won",
+      "title": "The Boy Who Lived",
+      "desc": "Beat the final wizard mode and defeat Voldemort.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "boy-who-lived-final-wizard"
+    },
+    {
+      "id": "game-changer-used",
+      "title": "Choose Your Path",
+      "desc": "Scan the Game Changer QR code and start a game on a difficulty you picked yourself.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "game-changer-secret"
+    }
+  ],
+  "drills": [
+    {
+      "id": "skill-shot-ladder",
+      "title": "Skill Shot Ladder",
+      "text": "Cycle through all three skill-shot levels back to back on fresh plunges. Get a feel for how far a full plunge actually carries and which shot lights for which level before you start caring about the reward -- both inlanes count as a valid HARRY-lane pick at Level 1.",
+      "reps": "6 plunges per level",
+      "focus": "skill-shot selection",
+      "goal": "skillshot-level-1",
+      "shots": [
+        "left-inlane",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "under-flipper-reps",
+      "title": "Under-Flipper Hole Reps",
+      "text": "From a cradled ball on the upper-right flipper, work the blind reach into the Under-Flipper Hole. This is the shot the game's own programmer whiffed repeatedly on camera -- expect the same.",
+      "reps": "15 attempts",
+      "focus": "blind aiming",
+      "goal": "battle-of-hogwarts-mini-wizard",
+      "shots": [
+        "under-flipper-hole",
+        "upper-right-flipper"
+      ]
+    },
+    {
+      "id": "death-eater-duel-drill",
+      "title": "Death Eater Duel, Start to Finish",
+      "text": "Drop the target, shoot the hole, catch the kickback, repeat until a Death Eater is down. Do it twice in a row without missing a drop-target hit.",
+      "reps": "2 full duels",
+      "focus": "composure under kickback",
+      "goal": "death-eater-multiball",
+      "shots": [
+        "death-eater-drop-target",
+        "death-eater-hole"
+      ]
+    },
+    {
+      "id": "wand-lock-feed-drill",
+      "title": "Wand Lock: Both Feeds",
+      "text": "Alternate inner-loop and right-orbit shots with a Golden Trio letter lit, so you're comfortable feeding the lock from either side rather than only your favorite.",
+      "reps": "10 shots each side",
+      "focus": "shot variety",
+      "shots": [
+        "inner-loop",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "combo-chain-drill",
+      "title": "Wizard Travel Chain",
+      "text": "String three lit shots together as fast as you can manage without a flipper hesitation in between. Track how many Wizard Travel levels you can bank in a single ball.",
+      "reps": "5 chains",
+      "focus": "combo speed",
+      "goal": "wizard-travel-combo"
+    },
+    {
+      "id": "willow-bumper-feed",
+      "title": "Whomping Willow Bumper Feed",
+      "text": "Feed the pop bumpers under the animated Whomping Willow from the center lane or the staircase and just watch where the ball tends to come out. The tree's swinging branches add enough extra chaos that a blind flip on the exit drains more often than it should.",
+      "reps": "2 minutes of feeds",
+      "focus": "bumper exit awareness",
+      "shots": [
+        "bumpers",
+        "whomping-willow"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar; RGB-lit, with a laser-cut spell-form applique on the Collector's Edition",
+    "how": "On this one the button is a chooser, not a weapon -- nearly everything it does is picking between options the game is already offering you. You press it before a plunge to set your skill-shot level, at the scoop to pick a school year, and mid-lesson to cash a Bombtastic Bomb. Several of those jobs run against a timer, so practice finding it without looking down.",
+    "uses": [
+      {
+        "when": "Ball waiting in the shooter lane",
+        "what": "Each tap moves the lit skill shot between Level 1, 2 and 3 before you pull the plunger."
+      },
+      {
+        "when": "Scoop lit for Start Term",
+        "what": "Works with the flipper buttons to choose which school year and term you take on next."
+      },
+      {
+        "when": "After spelling DIAGON at the center lane",
+        "what": "Steps the lit Diagon Alley shop directly, instead of waiting on Hagrid target hits to rotate it."
+      },
+      {
+        "when": "Mid-lesson holding a Bombtastic Bomb",
+        "what": "Spends one Bomb and instantly completes whatever lesson is running, hourglass and all."
+      },
+      {
+        "when": "Picking your Extra Credit book",
+        "what": "Changes the selected book; with the ball in the shooter lane you must hold the left flipper while pressing."
+      },
+      {
+        "when": "During the Flourish & Blotts spell test",
+        "what": "Supplies inputs alongside the flippers as you repeat the memorized spell order for an O.W.L.s multiplier."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Harry Potter is Jersey Jack's sprawling castle machine built around seven horcruxes, one banked from each of its biggest features. Assemble the Golden Trio, work through Hogwarts classes and multiballs, and destroy every horcrux to reach The Boy Who Lived.",
+    "loop": [
+      "Spell HARRY at the inlanes, RON on the left three-bank, and HERMIONE on the two-bank to lock balls at the wands and drop them through the cauldron for Golden Trio Multiball.",
+      "Shoot the scoop to start a school year, then clear its blinking red-and-gold lessons before the hourglass empties to build toward O.W.L.s.",
+      "Feed the center ramp and the Grand Staircase to lower castle banners, take the opening left ramp up to the Quidditch deck, and duel the Death Eaters -- each feature banks a horcrux.",
+      "Chain lit shots for Wizard Travel to arm the Geminio field multiplier, and collect all seven horcruxes to open the final wizard mode, The Boy Who Lived, up the center lane."
+    ],
+    "lights": [
+      {
+        "id": "golden-trio-letters",
+        "name": "Golden Trio Names",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "ron-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "hermione-targets",
+            "lamps": 2
+          }
+        ],
+        "lit": "A lit insert is a name letter you have not collected yet -- HARRY rides the two inlanes, RON the lower-left three-bank, HERMIONE the two-bank -- and each completed name locks a ball at its wand sculpture and stays locked.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the inner loop or right orbit once a name is done to bank each locked ball, and the third lock sends all three tumbling down through the cauldron to begin the multiball. Chase three same-color character jackpots to light the Wand Jackpot, which climbs to 3x and opens a Super Jackpot window that awards the Cup horcrux.",
+        "goals": [
+          "golden-trio-multiball"
+        ]
+      },
+      {
+        "id": "diagon-alley",
+        "name": "Diagon Alley Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "center-lane"
+          },
+          {
+            "shot": "hagrid-target"
+          }
+        ],
+        "lit": "Each center-lane shot lights another letter of D-I-A-G-O-N, the word holds its progress between shots, and finishing it opens one of Diagon Alley's shops.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "press to step the lit shop straight to the one you want -- the Hagrid target rotates it too -- so your next qualifying shot enters that shop",
+          "when": "after D-I-A-G-O-N is spelled at the center lane"
+        },
+        "then": "Take Ollivander's first and shoot its flashing double-arrow shots inside the timer to bank Golden Trio perks -- longer ball saves and easier Wand Jackpots that pay off in every later multiball. The bookshop's spell-memory game hands over the Diary horcrux.",
+        "goals": [
+          "diagon-alley-shops"
+        ]
+      },
+      {
+        "id": "explore-hogwarts-banners",
+        "name": "Explore Hogwarts Banners",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "staircase"
+          }
+        ],
+        "lit": "Eight banners across the top of the display are the four houses and four castle features, with the green and yellow pairs starting already lowered, so a lit banner is just one still standing.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock the banners down with the center ramp and the Grand Staircase, then shoot the staircase to start a two-ball multiball. Four jackpots light a roving Super that stays lit into your next ball and awards the Ring horcrux.",
+        "goals": [
+          "explore-hogwarts-multiball"
+        ]
+      },
+      {
+        "id": "quidditch-deck",
+        "name": "Quidditch Deck",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "quidditch-target"
+          },
+          {
+            "shot": "quidditch-spinner"
+          }
+        ],
+        "lit": "Your very first left-ramp shot climbs to the upper deck for tryouts, and from then on the deck spinner lights when the Golden Snitch can be caught during a match.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear the tryout target to raise your position from beater up to seeker for a bigger end-of-game bonus, then work the upper-deck spinner to snare the Golden Snitch across three separate matches. A third catch arms the World Cup back on the left ramp, whose Super Jackpot awards the Diadem horcrux.",
+        "goals": [
+          "quidditch-world-cup-multiball"
+        ]
+      },
+      {
+        "id": "death-eater-duel",
+        "name": "Death Eater Duel",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "death-eater-drop-target"
+          },
+          {
+            "shot": "death-eater-hole"
+          }
+        ],
+        "lit": "The Death Eater drop target guards a hole; dropping it opens the hole for a duel, and a lit hole means a Death Eater is waiting there.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the open hole twice inside the timer to win a duel -- the motorized Death Eater kicks the ball hard back at you between the two hits -- and the first win lights an Extra Ball. Beat a second Death Eater to start the multiball outright and bank the Nagini horcrux.",
+        "goals": [
+          "death-eater-multiball"
+        ]
+      },
+      {
+        "id": "school-years",
+        "name": "School-Year Lessons",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "scoop"
+          },
+          {
+            "shot": "right-spinner"
+          },
+          {
+            "shot": "center-lane"
+          }
+        ],
+        "lit": "The scoop lights for Start Term whenever the right spinner is ripped, and inside a lesson the blinking red-and-gold shots are the current targets, changing from lesson to lesson.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "press it with the flipper buttons to choose the year and term you play next",
+          "when": "with Start Term lit at the scoop"
+        },
+        "then": "Clear the blinking shots before the hourglass empties -- rip the right spinner as a Time-Turner to buy seconds -- and stack lessons back to back for a streak bonus. Six lessons finish a Final Exam and light O.W.L.s Multiball at the center lane, its jackpot already fattened by every lesson you cleared.",
+        "goals": [
+          "school-year-lesson",
+          "owls-multiball"
+        ]
+      },
+      {
+        "id": "allies-collect",
+        "name": "Collect the Allies",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "allies-target"
+          },
+          {
+            "shot": "inner-loop"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "The Allies standup under the inner loop lights to arm the next of four short ally sub-modes, each played at the loops, the spinners, or the bumpers.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the Allies target to start a sub-mode, then repeat its lit shot -- the inner loop, the right orbit, the three spinners, or the pop bumpers -- for escalating value. Collect ten allies across all four sub-modes to claim the Locket horcrux.",
+        "goals": [
+          "allies-modes"
+        ]
+      },
+      {
+        "id": "wizard-travel",
+        "name": "Wizard Travel & Geminio",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "inner-loop"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "library-ramp"
+          },
+          {
+            "shot": "cauldron-hole"
+          }
+        ],
+        "lit": "A combo insert by the scoop lights up the moment a second lit shot sits close enough to chain into, marking a combo ready to extend.",
+        "flashing": "A flashing combo insert is a live window, so speed matters more than which shot you take next.",
+        "control": null,
+        "then": "String lit shots together to climb the Wizard Travel ladder, which hands out Extra Balls, an Extra Credit round, and a Special along the way. Levels two, five, and eight arm Geminio, a thirty-second field multiplier that doubles, triples, then quadruples every switch and grows each time you fire it.",
+        "goals": [
+          "wizard-travel-combo"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take an easy Level 1 skill shot, then shoot the scoop to get a school year running so lessons pay you for shots you would take anyway. Work the Death Eater drop-and-duel between everything else, since the first win hands you an Extra Ball.",
+        "goals": [
+          "skillshot-level-1",
+          "strategy-beginner-opener",
+          "death-eater-multiball"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell D-I-A-G-O-N and bank Ollivander's perks before you lock a ball, then assemble the Golden Trio and lower the castle banners for Explore Hogwarts. Chain combos to an early Geminio so a field multiplier is compounding everything that follows.",
+        "goals": [
+          "diagon-alley-shops",
+          "golden-trio-multiball",
+          "explore-hogwarts-multiball",
+          "wizard-travel-combo"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Every major feature banks one of seven horcruxes; collect them all to open the endgame, The Boy Who Lived, up the center lane and duel Voldemort for the game's biggest payout. The six-ball Battle of Hogwarts and the Deathly Hallows chase sit just below it as the marquee mini-wizards.",
+        "goals": [
+          "horcrux-sweep",
+          "boy-who-lived-final-wizard",
+          "battle-of-hogwarts-mini-wizard"
+        ]
+      }
+    ]
+  }
+}

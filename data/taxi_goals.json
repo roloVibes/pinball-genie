@@ -1,0 +1,964 @@
+{
+  "machine": "Taxi (Williams, 1988)",
+  "shots": [
+    {
+      "id": "plunger",
+      "name": "Plunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.24,
+      "trim": "all",
+      "notes": "A manual plunger that feeds the SPINOUT saucer. How hard you pull it decides how many revolutions you get, and the revolutions decide the award."
+    },
+    {
+      "id": "spinout",
+      "name": "SPINOUT Saucer",
+      "type": "saucer",
+      "x": 0.8,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "The plunge target. Awards climb with revolutions and then wrap back around to the bottom, so an overcooked plunge is worse than a measured one."
+    },
+    {
+      "id": "cab-lanes",
+      "name": "C-A-B Rollovers",
+      "type": "rollover",
+      "x": 0.46,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes across the top centre. Completing them advances the bonus multiplier and, just as importantly, opens a ten-second window to raise the jackpot."
+    },
+    {
+      "id": "joyride",
+      "name": "JOYRIDE Eject Hole",
+      "type": "scoop",
+      "x": 0.26,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Left of the top lanes and reachable from two directions, which is unusual and matters — what you get depends on which way you arrived."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Semi-Orbit",
+      "type": "orbit",
+      "x": 0.87,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "The route into the JOYRIDE hole from above. Arriving this way counts as a GORBY pickup and collects the jackpot.",
+      "feeds": {
+        "shot": "joyride"
+      }
+    },
+    {
+      "id": "carry-target",
+      "name": "Carry Passengers Target",
+      "type": "standup",
+      "x": 0.35,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "A small target immediately right of the JOYRIDE hole. Available from both flippers, but a left flipper backhand is much the easier shot."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.1556,
+      "y": 0.4754,
+      "trim": "all",
+      "notes": "Entrance halfway down the playfield. Lit by the right inlane. Also the shot that starts multiball once a ball is locked. A weak attempt rolls back and can drain."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.8031,
+      "y": 0.4754,
+      "trim": "all",
+      "notes": "Mirror of the left, lit by the left inlane. Both ramps score and advance the AIRPORT value when lit."
+    },
+    {
+      "id": "lola-targets",
+      "name": "L-O-L-A Drop Targets",
+      "type": "drop-target",
+      "x": 0.4717,
+      "y": 0.5574,
+      "trim": "all",
+      "notes": "A bank of three in the centre of the playfield. All three inside ten seconds or the bank stands back up."
+    },
+    {
+      "id": "pinbot-targets",
+      "name": "PINBOT Drop Targets",
+      "type": "drop-target",
+      "x": 0.66,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Three drops on the centre right with a more forgiving fifteen-second window than LOLA."
+    },
+    {
+      "id": "drac-hole",
+      "name": "DRAC Hole",
+      "type": "scoop",
+      "x": 0.2,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "A U-loop ends here, centre left of the playfield. The catapult fires the ball out at the right ramp, so this is your route to the airport value when the left ramp is giving you trouble.",
+      "feeds": {
+        "shot": "right-ramp"
+      }
+    },
+    {
+      "id": "lock-hole",
+      "name": "Lock Hole",
+      "type": "lock",
+      "x": 0.72,
+      "y": 0.71,
+      "trim": "all",
+      "notes": "Centre right, above the PINBOT bank, and a straightforward shot. After the first multiball it needs a passenger collected before it will lock again."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.32,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Lights the right ramp for AIRPORT."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.68,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Does double duty: lights the left ramp for AIRPORT, and lights the JOYRIDE hole for about ten seconds."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.08,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "One of the two outlanes that light for special once you have dropped off all five passengers. Only one lights, and which one alternates."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.92,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "The other special outlane. Completing a second full pickup and drop-off sequence does not light this one as well."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3214,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Shoots the right ramp, the PINBOT bank and the lock, and backhands the Carry Passengers target."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6429,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Shoots the left ramp, the DRAC U-loop and the JOYRIDE hole from below."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "SPINOUT Skill Shot",
+      "category": "skillshot",
+      "summary": "The plunge feeds the SPINOUT saucer and the number of revolutions decides what you get: 1K, 5K, 10K, 25K, 50K, 75K and 100K. On default settings the award is multiplied by which ball you are on, which makes it worth serious points late in a game.",
+      "difficulty": 2,
+      "reward": "Up to 100K, multiplied by ball number",
+      "steps": [
+        {
+          "shot": "spinout",
+          "action": "Meter the plunge to the SPINOUT saucer",
+          "detail": "The revolutions decide the award — 1K, 5K, 10K, 25K (also picks up a passenger), 50K, 75K, 100K — and past the top rung the values wrap back to 1K, so overshooting costs you everything."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "the-fare-cycle",
+      "title": "The Fare Cycle",
+      "category": "progression",
+      "summary": "Taxi is one long loop: pick up five passengers, collect the jackpot, drop the same five off, and the loop starts again. Everything else on the playfield exists to feed that cycle or protect it.",
+      "difficulty": 1,
+      "reward": "Structure of the whole game",
+      "steps": [],
+      "instructions": [
+        "PINBOT and GORBY are lit for pickup as soon as the game starts. Collecting one lights the next.",
+        "The pickup order is GORBY, PINBOT, DRAC, LOLA, SANTA. Each pickup pays a 20K tip and adds 20K to your end-of-ball bonus.",
+        "All five aboard lights the jackpot at the JOYRIDE hole, reached from above by the right semi-orbit.",
+        "After the jackpot, drop off in the reverse-ish order SANTA, PINBOT, DRAC, LOLA, GORBY. That relights the jackpot and lights one outlane for special.",
+        "The second time through, only one passenger is lit at a time, and a second complete cycle will not light the other outlane."
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "passengers",
+      "title": "Pick Up Your Fares",
+      "category": "progression",
+      "summary": "Five passengers, five different shots, and each one is only collectable when its light is on. Knowing which shot belongs to which name saves you from wasting the lit window.",
+      "difficulty": 2,
+      "reward": "20K tip and 20K end-of-ball bonus per passenger",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "GORBY comes from above",
+          "detail": "A right semi-orbit into the JOYRIDE hole is a GORBY pickup."
+        },
+        {
+          "shot": "pinbot-targets",
+          "action": "PINBOT is the right drop bank",
+          "detail": "Three targets inside fifteen seconds."
+        },
+        {
+          "shot": "drac-hole",
+          "action": "DRAC is the U-loop hole",
+          "detail": "Centre left, and it catapults the ball back out at the right ramp."
+        },
+        {
+          "shot": "lola-targets",
+          "action": "LOLA is the centre drop bank",
+          "detail": "Three targets inside ten seconds, or they all come back up."
+        },
+        {
+          "shot": "joyride",
+          "action": "SANTA comes from below",
+          "detail": "The same JOYRIDE hole, but shot directly off the flippers rather than around the orbit."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "jackpot",
+      "title": "The Jackpot",
+      "category": "strategy",
+      "summary": "The only thing on this machine that scores real points. It starts at 500K, tops out at four million, and it carries over between balls, players and even games until somebody collects it. Everything else is a side hustle.",
+      "difficulty": 3,
+      "reward": "500K to 4M",
+      "steps": [
+        {
+          "shot": "cab-lanes",
+          "action": "Complete C-A-B to open the window",
+          "detail": "Raise Jackpot lights for ten seconds each time you spell it."
+        },
+        {
+          "shot": "lola-targets",
+          "action": "Hit everything in those ten seconds",
+          "detail": "Every switch on the playfield adds 2K while the window is open, so a ball in the drop banks or the bumpers is worth more than a careful aimed shot."
+        },
+        {
+          "shot": "joyride",
+          "action": "Collect from above",
+          "detail": "With all five passengers aboard the JOYRIDE hole pays the jackpot when entered from the right semi-orbit."
+        },
+        {
+          "shot": "joyride",
+          "action": "Do not dawdle",
+          "detail": "You have fifteen seconds once it lights. Miss it and LOLA gets out of the cab and has to be picked up all over again."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "drop-offs",
+      "title": "Drop Everybody Off",
+      "category": "progression",
+      "summary": "Collecting the jackpot reverses the cycle. Everyone now gets dropped off — SANTA goes first, then PINBOT, DRAC, LOLA, and GORBY last — which relights the jackpot and lights one outlane for special. Expect the rebuilt jackpot to be modest unless you worked the CAB lanes hard.",
+      "difficulty": 3,
+      "reward": "Relit jackpot plus one outlane special",
+      "steps": [
+        {
+          "shot": "joyride",
+          "action": "SANTA first, from below",
+          "detail": "The order is fixed and the game will not let you skip ahead."
+        },
+        {
+          "shot": "pinbot-targets",
+          "action": "Then PINBOT and DRAC",
+          "detail": "The same shots you picked them up with."
+        },
+        {
+          "shot": "lola-targets",
+          "action": "LOLA, then GORBY last",
+          "detail": "GORBY closes the sequence."
+        },
+        {
+          "shot": "cab-lanes",
+          "action": "Rebuild the jackpot as you go",
+          "detail": "A relit jackpot often sits barely above 600K, so keep spelling C-A-B during the drop-off run rather than after it.",
+          "link": "none"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "cab-lanes",
+      "title": "Spell C-A-B",
+      "category": "multiplier",
+      "summary": "Three top lanes doing two jobs at once. They push the bonus multiplier up to 5x, and after that each completion pays a 50K CAB Bonus. Either way they light Raise Jackpot for ten seconds, which is the part that actually matters.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier to 5x, then 50K per completion",
+      "steps": [
+        {
+          "shot": "cab-lanes",
+          "action": "Complete all three letters",
+          "detail": "The multiplier climbs one step per completion until it caps."
+        },
+        {
+          "shot": "cab-lanes",
+          "action": "Count your completions",
+          "detail": "Three completions in one ball lights the extra ball, collected at DRAC."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "airport",
+      "title": "The AIRPORT Run",
+      "category": "combo",
+      "summary": "The inlanes cross-light the ramps. Shooting a lit ramp collects the current airport value and advances it: 20K, 40K, 60K, 80K, and then 100K plus the airport million.",
+      "difficulty": 2,
+      "reward": "20K climbing to 100K, then lights the airport million",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Right inlane lights the left ramp",
+          "detail": "And the left inlane lights the right ramp. Rolling an inlane before the ramp shot is what makes it count."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take the lit ramp",
+          "detail": "A shot without enough on it will roll back down the ramp and can drain, so commit to it."
+        },
+        {
+          "shot": "drac-hole",
+          "action": "Use DRAC as a substitute",
+          "detail": "The DRAC catapult throws the ball at the right ramp, which advances the airport value for you. Handy if the left ramp is a problem shot on your machine.",
+          "link": "none"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "airport-million",
+      "title": "The Airport Million",
+      "category": "strategy",
+      "summary": "Five lit ramps takes the airport value to its top rung and lights a million at the JOYRIDE hole. On default settings there is no timer on it at all, so there is no excuse for losing it.",
+      "difficulty": 2,
+      "reward": "1M",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Work the value all the way up",
+          "detail": "Alternate inlanes and lit ramps until the value reaches 100K."
+        },
+        {
+          "shot": "joyride",
+          "action": "Collect at JOYRIDE",
+          "detail": "No time limit by default. Harder operator settings put twenty or fifteen seconds on it."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "joyride",
+      "title": "JOYRIDE Awards",
+      "category": "mode",
+      "summary": "Roll the right inlane and the JOYRIDE hole opens up for roughly ten seconds. Its awards are printed on the backglass and run from a near-worthless 10K all the way to an immediate extra ball or a special.",
+      "difficulty": 2,
+      "reward": "10K, Spot Passenger, Mystery 60K-290K, Extra Ball or Special",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right inlane",
+          "detail": "Ten seconds is enough for a controlled shot but not for indecision."
+        },
+        {
+          "shot": "joyride",
+          "action": "Take the hole from below",
+          "detail": "Shooting it directly off the flippers is the JOYRIDE collection. Extra balls here are awarded on the spot."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "drop-banks",
+      "title": "Clear The Drop Banks",
+      "category": "strategy",
+      "summary": "LOLA in the centre and PINBOT on the centre right, three targets each. LOLA gives you ten seconds and PINBOT fifteen before the bank resets, and either bank completed lights Carry Passengers whether it was lit for a pickup or not.",
+      "difficulty": 2,
+      "reward": "Passenger pickup when lit, and Carry Passengers",
+      "steps": [
+        {
+          "shot": "lola-targets",
+          "action": "Take LOLA in one visit",
+          "detail": "Ten seconds is tight — a stray shot elsewhere in the middle of it usually costs you the bank.",
+          "link": "none"
+        },
+        {
+          "shot": "pinbot-targets",
+          "action": "PINBOT is the friendlier bank",
+          "detail": "Fifteen seconds, and it is an easy target to reach during multiball.",
+          "link": "none"
+        },
+        {
+          "shot": "carry-target",
+          "action": "Cash the Carry light straight away",
+          "detail": "It only stays lit for about ten seconds after the bank falls."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "carry-passengers",
+      "title": "Carry Passengers",
+      "category": "strategy",
+      "summary": "The single most valuable habit on this machine. Hitting the small target after either drop bank keeps every passenger you are carrying into the next ball, which is the difference between rebuilding the fare cycle from scratch and finishing it.",
+      "difficulty": 2,
+      "reward": "Passengers held to the next ball, 20K-50K on repeats",
+      "steps": [
+        {
+          "shot": "pinbot-targets",
+          "action": "Light it off a drop bank",
+          "detail": "Either bank does it, and it does not matter whether that bank was lit for a pickup."
+        },
+        {
+          "shot": "carry-target",
+          "action": "Backhand it from the left flipper",
+          "detail": "It is reachable from both flippers but far easier as a left backhand."
+        },
+        {
+          "shot": "carry-target",
+          "action": "Repeat it on the same ball",
+          "detail": "Later hits on the same ball pay a Carry Bonus of 20K, then 30K, then 50K."
+        },
+        {
+          "shot": "carry-target",
+          "action": "Always take it on your last ball",
+          "detail": "Carrying on the final ball adds a Passenger Payoff of 20K per passenger to the end-of-ball bonus."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "multiball",
+      "title": "Express Lane Multiball",
+      "category": "multiball",
+      "summary": "Lock a ball in the right lock hole, then shoot the left ramp to start it. From there your whole job is the Express lanes — both balls have to go back in, and the order is fixed: lock hole first, then DRAC.",
+      "difficulty": 2,
+      "reward": "300K for the second lock, then both ramps lit for 100K",
+      "steps": [
+        {
+          "shot": "lock-hole",
+          "action": "Lock one ball",
+          "detail": "The lock carries between players, so you can start multiball on a ball somebody else locked."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start it with the left ramp",
+          "detail": "Any subsequent ball up the left ramp does it."
+        },
+        {
+          "shot": "lock-hole",
+          "action": "Express lane one is the lock hole",
+          "detail": "The relock order is not optional."
+        },
+        {
+          "shot": "drac-hole",
+          "action": "Express lane two is DRAC",
+          "detail": "The second lock pays 300K, both balls are kicked out, and both ramps light for a 100K Airport Ride."
+        },
+        {
+          "shot": "pinbot-targets",
+          "action": "Use the chaos productively",
+          "detail": "Two balls in play is the best time to take the PINBOT and LOLA banks, because the ramps are unforgiving and rarely pay well here.",
+          "link": "none"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "extra-ball",
+      "title": "Two Ways To An Extra Ball",
+      "category": "strategy",
+      "summary": "JOYRIDE can hand you one outright. The other route is three C-A-B completions inside a single ball, and that one has to be collected at DRAC — lose the ball first and it is simply gone.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "joyride",
+          "action": "Draw it from JOYRIDE",
+          "detail": "Awarded on the spot, no collection shot needed.",
+          "link": "none"
+        },
+        {
+          "shot": "cab-lanes",
+          "action": "Or spell C-A-B three times in one ball",
+          "detail": "Easier settings ask for two, harder ones for six or seven.",
+          "link": "none"
+        },
+        {
+          "shot": "drac-hole",
+          "action": "Collect it at DRAC before you drain",
+          "detail": "It does not carry to the next ball. Go and get it as soon as it lights."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "special",
+      "title": "Light The Special",
+      "category": "secret",
+      "summary": "Complete a full pickup, collect the jackpot, then drop all five passengers off. One outlane lights for special. The second time you run the cycle it will not light the other one, so this is a once-per-game prize.",
+      "difficulty": 3,
+      "reward": "Special on one outlane",
+      "steps": [
+        {
+          "shot": "joyride",
+          "action": "Finish the whole cycle",
+          "detail": "Pickups, jackpot and then all five drop-offs — nothing shorter counts."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Which lane lights, alternates",
+          "detail": "It will be one outlane or the other, not both."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Do not wait for a second one",
+          "detail": "A second full cycle relights the jackpot but adds nothing at the outlanes.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bonus",
+      "title": "End Of Ball Bonus",
+      "category": "strategy",
+      "summary": "Modest, but free. Most ramps, holes and inlanes add a few thousand up to a 99K ceiling, and that figure is multiplied before 20K per passenger is added on top. The theoretical maximum is 595K.",
+      "difficulty": 1,
+      "reward": "Up to 595K",
+      "steps": [
+        {
+          "shot": "cab-lanes",
+          "action": "Get the multiplier to 5x early",
+          "detail": "It is worth more than the base bonus, and the CAB lanes are free points anyway."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Let ordinary shots top it up",
+          "detail": "Ramps, holes and inlanes all add a little, and the cap is only 99K, so it fills fast."
+        },
+        {
+          "shot": "carry-target",
+          "action": "Know what does not count",
+          "detail": "A sequence you already finished leaves its passengers uncredited. Say you pick up all five, take the jackpot, drop SANTA off and then drain — the bonus counts a single passenger, not six.",
+          "link": "none"
+        }
+      ],
+      "fx": "car"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "taxi-spinout",
+      "title": "Full Spin",
+      "desc": "Meter a plunge that reaches the 100K SPINOUT award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "taxi-first-fare",
+      "title": "First Fare",
+      "desc": "Pick up your first passenger.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "passengers"
+    },
+    {
+      "id": "taxi-cab",
+      "title": "Five Times The Fare",
+      "desc": "Spell C-A-B enough times to reach a 5x bonus multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "cab-lanes"
+    },
+    {
+      "id": "taxi-carry",
+      "title": "Keep The Meter Running",
+      "desc": "Hit Carry Passengers to hold your fares into the next ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "carry-passengers"
+    },
+    {
+      "id": "taxi-multiball",
+      "title": "Express Lanes",
+      "desc": "Start multiball and relock both balls in the Express lanes.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "taxi-million",
+      "title": "Airport Million",
+      "desc": "Run the AIRPORT value to the top and collect the million at JOYRIDE.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "airport-million"
+    },
+    {
+      "id": "taxi-full-cab",
+      "title": "Full Cab",
+      "desc": "Pick up all five passengers in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "the-fare-cycle"
+    },
+    {
+      "id": "taxi-jackpot",
+      "title": "Collect The Jackpot",
+      "desc": "Load the cab and take the jackpot at the JOYRIDE hole.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jackpot"
+    },
+    {
+      "id": "taxi-max-jackpot",
+      "title": "Four Million",
+      "desc": "Raise the jackpot to its four-million ceiling before collecting it.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "jackpot"
+    },
+    {
+      "id": "taxi-special",
+      "title": "Everybody Home",
+      "desc": "Drop off all five passengers to light an outlane special.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "special"
+    }
+  ],
+  "drills": [
+    {
+      "id": "spinout-plunge-ladder",
+      "title": "SPINOUT Plunge Ladder",
+      "text": "Walk the plunge up one rung at a time and watch how many revolutions each pull buys in the saucer. The award climbs to 100K and then wraps straight back to 1K, so what you are hunting is the strongest pull that still stops short of the wrap.",
+      "reps": "12 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "plunger",
+        "spinout"
+      ]
+    },
+    {
+      "id": "carry-target-backhand",
+      "title": "Carry Target Backhand",
+      "text": "Drop the PINBOT bank, then backhand the small target beside the JOYRIDE hole off the left flipper before the Carry light goes out. It is reachable from both flippers, but the backhand is the shot that lands inside the window every time.",
+      "reps": "10 bank-then-backhand pairs",
+      "focus": "accuracy",
+      "goal": "carry-passengers",
+      "shots": [
+        "pinbot-targets",
+        "carry-target",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "inlane-ramp-airport",
+      "title": "Inlane Into Lit Ramp",
+      "text": "Alternate sides deliberately: roll the right inlane and take the left ramp, roll the left inlane and take the right ramp. The inlane is what makes the ramp count, so the drill is the pair, not the ramp on its own.",
+      "reps": "8 pairs each side",
+      "focus": "flow",
+      "goal": "airport",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "cab-jackpot-window",
+      "title": "Ten Seconds After C-A-B",
+      "text": "Spell C-A-B, then spend the Raise Jackpot window putting the ball into the LOLA and PINBOT banks instead of setting up one careful shot. Every switch adds to the jackpot while the window is open, so busy beats tidy for those ten seconds.",
+      "reps": "5 windows",
+      "focus": "flow",
+      "goal": "jackpot",
+      "shots": [
+        "cab-lanes",
+        "lola-targets",
+        "pinbot-targets"
+      ]
+    },
+    {
+      "id": "joyride-both-doors",
+      "title": "JOYRIDE From Both Doors",
+      "text": "Practise the hole two ways: around the right semi-orbit so the ball arrives from above, and straight up off the right flipper from below. Which door you come through decides what the hole pays, so both need to be shots you own.",
+      "reps": "10 each direction",
+      "focus": "accuracy",
+      "goal": "joyride",
+      "shots": [
+        "right-orbit",
+        "joyride",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "left-ramp-commit",
+      "title": "Commit To The Left Ramp",
+      "text": "Take the left ramp only from a cradled ball on the right flipper, at full strength, and never as a half-hearted stab. A weak attempt rolls back down the ramp and comes at you dead, which is how this shot drains people.",
+      "reps": "15 attempts",
+      "focus": "ball-control",
+      "goal": "airport",
+      "shots": [
+        "left-ramp",
+        "right-flipper"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "car",
+  "actionButton": {
+    "present": false,
+    "how": "Nothing to press but the flippers. This is a 1988 Williams with a manual plunger feeding the spinout lane and two flippers below — no third button, no trigger, no magna-save. Everything clever you do here you do with aim, cradling and nudging."
+  },
+  "howItPlays": {
+    "objective": "Taxi is one long fare run: pick up five passengers, load the cab, collect the jackpot, then drop everyone off to relight it and open an outlane special. That jackpot is where the real money lives, so almost everything you do is about growing it and getting a full cab to it.",
+    "loop": [
+      "Pick the five fares up in order, each at its own shot and each collectable only while its light is on.",
+      "Spell C-A-B up top to open a ten-second window, then bang every switch you can reach to drive the jackpot higher before it closes.",
+      "With the whole cab aboard, collect the jackpot at the JOYRIDE hole taken from above off the right semi-orbit.",
+      "Drop all five off in reverse to relight the jackpot and arm one outlane for special, tapping Carry Passengers off a drop bank so your riders ride along to the next ball."
+    ],
+    "lights": [
+      {
+        "id": "the-fares",
+        "name": "Five Passengers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "pinbot-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "drac-hole"
+          },
+          {
+            "shot": "lola-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "joyride"
+          }
+        ],
+        "lit": "A passenger can only be picked up while their own light is on; two of them start lit at the buzzer and collecting one arms the next, so the cab fills in a fixed order rather than in any order you please.",
+        "flashing": null,
+        "control": null,
+        "then": "GORBY rides in on the right semi-orbit, PINBOT is the right drop bank, DRAC is the U-loop hole, LOLA is the centre drops, and SANTA is the JOYRIDE hole shot straight from the flippers. Load all five and the jackpot lights.",
+        "goals": [
+          "passengers",
+          "the-fare-cycle",
+          "carry-passengers"
+        ]
+      },
+      {
+        "id": "the-jackpot",
+        "name": "The Jackpot",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "joyride"
+          },
+          {
+            "shot": "cab-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A full cab lights the jackpot at the JOYRIDE hole, but it only pays when the hole is entered from above via the right semi-orbit; the value opens around half a million, climbs toward a four-million ceiling, and holds over between balls, players and games until somebody finally takes it.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell C-A-B to open a ten-second Raise Jackpot window and pound every switch on the glass while it runs, since each one adds to the total. Then collect from above within the short window -- miss it and a rider bails from the cab, and you must fetch that fare from the start.",
+        "goals": [
+          "jackpot",
+          "cab-lanes",
+          "drop-offs"
+        ]
+      },
+      {
+        "id": "cab-rollovers",
+        "name": "C-A-B Rollovers",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "cab-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit letter across the top is one you have banked this pass; completing all three does three jobs at once, and you cannot steer which one you take with the flippers.",
+        "flashing": null,
+        "control": null,
+        "then": "Each completion steps the bonus multiplier toward five-times and then pays a running CAB bonus, and just as importantly it opens the ten-second jackpot-raise window every single time. Spell it three times in one ball and the extra ball lights over at the DRAC hole.",
+        "goals": [
+          "cab-lanes",
+          "jackpot",
+          "extra-ball",
+          "bonus"
+        ]
+      },
+      {
+        "id": "airport-run",
+        "name": "AIRPORT Ramps",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "joyride"
+          }
+        ],
+        "lit": "Each return lane cross-lights the far ramp -- the right one arms the left ramp, the left one arms the right ramp -- and shooting a lit ramp banks the standing airport value and pushes it one rung up the ladder, from twenty thousand toward a hundred.",
+        "flashing": null,
+        "control": null,
+        "then": "Alternate a return lane and the opposite lit ramp to walk the value up; if the left ramp fights you, the DRAC catapult fires the ball at the right ramp instead and advances it just the same. Five lit ramps light a flat million waiting at the JOYRIDE hole.",
+        "goals": [
+          "airport",
+          "airport-million"
+        ]
+      },
+      {
+        "id": "carry-target",
+        "name": "Carry Passengers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "carry-target"
+          },
+          {
+            "shot": "pinbot-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "lola-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "Knock over either drop bank and the small target beside the JOYRIDE hole lights Carry for about ten seconds; take it and every fare currently in your cab rides into the next ball instead of climbing out when you drain.",
+        "flashing": null,
+        "control": null,
+        "then": "Backhand it from the left flipper inside that window -- it is the single most valuable habit here, the line between rebuilding the fare run from nothing and finishing it. Repeat hits on one ball pay a climbing Carry bonus, and taking it on your last ball adds a payoff for every passenger aboard.",
+        "goals": [
+          "carry-passengers",
+          "drop-banks"
+        ]
+      },
+      {
+        "id": "express-multiball",
+        "name": "Express Lane Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "lock-hole"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "drac-hole"
+          }
+        ],
+        "lit": "Sink a ball in the lock hole, then the left ramp is lit to start the multiball; from there both balls have to go back into the Express lanes in a set order, the lock hole first and then DRAC.",
+        "flashing": null,
+        "control": null,
+        "then": "The second relock pays a few hundred thousand, kicks both balls back out, and lights both ramps for a hundred-thousand Airport Ride. Two balls loose is the moment to clear the PINBOT and LOLA banks, since the ramps rarely pay well and drain easily during it.",
+        "goals": [
+          "multiball"
+        ]
+      },
+      {
+        "id": "joyride-hole",
+        "name": "JOYRIDE Awards",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "joyride"
+          }
+        ],
+        "lit": "Roll the right return lane and the JOYRIDE hole opens for about ten seconds; the awards printed on the backglass run from a near-worthless ten thousand up to an outright extra ball or a special.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the hole from below off the flippers inside the window -- ten seconds is room for one controlled shot, not for dithering. An extra ball drawn here is handed over on the spot with no separate collect shot.",
+        "goals": [
+          "joyride",
+          "extra-ball"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Meter the SPINOUT plunge for its skill value, then start the fare run -- two passengers are already lit from the first ball. Spell C-A-B for a free bonus multiplier and keep the meter running by tapping Carry Passengers off every drop bank so nobody climbs out.",
+        "goals": [
+          "skillshot",
+          "passengers",
+          "cab-lanes",
+          "carry-passengers"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Cross-light the ramps from the return lanes to walk the airport value up to its million, lock a ball for Express Lane Multiball, and dip into the JOYRIDE hole for a crack at an extra ball. Two balls loose is also your best window on the drop banks.",
+        "goals": [
+          "airport",
+          "airport-million",
+          "multiball",
+          "joyride",
+          "extra-ball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Fill the whole cab and hammer C-A-B to drive the jackpot toward its four-million ceiling, then collect it from above at JOYRIDE for by far the biggest score on the machine. Drop all five off afterward to relight it and arm an outlane special.",
+        "goals": [
+          "jackpot",
+          "the-fare-cycle",
+          "drop-offs",
+          "special"
+        ]
+      }
+    ]
+  }
+}

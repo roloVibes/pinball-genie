@@ -1,0 +1,1181 @@
+{
+  "machine": "Doctor Who (Bally, 1992)",
+  "defaultFx": "space",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Main lower-left flipper; also cycles Doctor selection backward before plunge."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Main lower-right flipper; cycles Doctor selection forward before plunge; also used to collect a lit Extra Ball at the right inlane."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper-Left Flipper",
+      "type": "flipper",
+      "x": 0.13,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Mid-left flipper inside the left orbit lane, below the REPAIR bank and above the left slingshot; the primary flipper for reaching the Hang-On target and the Loop Ramp."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Launch Button",
+      "type": "plunge",
+      "x": 0.957,
+      "y": 0.3676,
+      "trim": "all",
+      "notes": "Electronic auto-launch (no spring plunger); cycle Doctor 1-7 with the flippers before pressing Launch. Feeds the right orbit into the Right Ramp."
+    },
+    {
+      "id": "top-ramp",
+      "name": "Loop Ramp (\"O\")",
+      "type": "loop",
+      "x": 0.15,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Cliffhanger/Loop Ramp. Entrance lower-left, arcs up the left edge and across the top, exits toward the jet bumpers. Builds Playfield X, scores 'O' in W-H-O, triggers Sonic Boom every 10th loop.",
+      "feeds": {
+        "shot": "jet-bumpers"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (\"W\")",
+      "type": "ramp",
+      "x": 0.92,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Scores 'W' in W-H-O. Entrance on the right wall beside the TARDIS toy.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "hang-on-target",
+      "name": "Hang-On Target (\"H\")",
+      "type": "standup",
+      "x": 0.2,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Left side just past the upper flipper. Scores 'H' in W-H-O; pays escalating Hang-On value when lit, flat Collision award when unlit.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "escape-bank",
+      "name": "E-S-C-A-P-E Target Bank",
+      "type": "target-bank",
+      "x": 0.665,
+      "y": 0.27,
+      "trim": "all",
+      "notes": "Six standups, center-right above the right flipper. Completing lights Video Mode at the Police Box."
+    },
+    {
+      "id": "repair-bank",
+      "name": "R-E-P-A-I-R Target Bank",
+      "type": "target-bank",
+      "x": 0.2,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Six standups along the left side, above the left slingshot. Completing unlocks escalating 'Unlimited Millions' repeat-hit scoring."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.62,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "3-bumper cluster below/right of the Time Expander. Builds Transmat charge and awards Bonus X (carries ball-to-ball, up to ~40X)."
+    },
+    {
+      "id": "transmat-target",
+      "name": "Transmat Target",
+      "type": "standup",
+      "x": 0.78,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Stationary target right of the jet bumpers; flashes when charged by bumper hits, spots the current unlit Doctor."
+    },
+    {
+      "id": "police-box",
+      "name": "Police Box Entryway (Opto Popper)",
+      "type": "scoop",
+      "x": 0.58,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Entryway below the jet bumpers, beside the TARDIS toy; starts Video Mode when lit, and spots an Escape letter."
+    },
+    {
+      "id": "time-expander-center-target",
+      "name": "Time Expander Center Target",
+      "type": "standup",
+      "x": 0.44,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Level 1 of the mini-playfield; hit to light or re-arm the lock lanes."
+    },
+    {
+      "id": "time-expander-lock-left",
+      "name": "Time Expander Left Lock",
+      "type": "scoop",
+      "x": 0.36,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Level 1 lock hole, left side."
+    },
+    {
+      "id": "time-expander-lock-right",
+      "name": "Time Expander Right Lock",
+      "type": "scoop",
+      "x": 0.52,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Level 1 lock hole, right side. Locking both raises the mini-playfield to Level 2."
+    },
+    {
+      "id": "time-expander-5bank",
+      "name": "Time Expander 5-Target Bank",
+      "type": "target-bank",
+      "x": 0.44,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Level 2 'Dalek button' dome targets, exposed once 2 balls are locked; 3 hits each to fully light, advances the 15-count Target Mode. Also the Davros round's force-field targets."
+    },
+    {
+      "id": "time-expander-gates",
+      "name": "Time Expander Flyaway Gates",
+      "type": "mech",
+      "x": 0.44,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Level 3, three flip-up Dalek gate doors; shoot to start multiball and to collect Dalek/Davros Jackpots."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane/Outlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Lights for Extra Ball collection after 2 completed W-H-O's; route the ball through via a right-flipper shot.",
+      "flipper": "right"
+    }
+  ],
+  "goals": [
+    {
+      "id": "doctor-selection",
+      "title": "Choose Your Doctor",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Doctor Who has no traditional plunge-lane skill shot — the pre-plunge choice of which of the 7 Doctors to play is the game's 'skill shot' decision, since it silently changes rules for the whole ball.",
+      "difficulty": 1,
+      "reward": "Rule modifier for the ball (varies by Doctor)",
+      "steps": [],
+      "fx": "sparkle",
+      "instructions": [
+        "Doctor Who's 'skill shot' happens before the plunge: choosing which of the 7 Doctors to play.",
+        "Cycle forward through the Doctors with the RIGHT flipper button; cycle backward with the LEFT if you overshoot.",
+        "Launch only once your Doctor is shown — each Doctor biases different awards, and the choice locks at launch."
+      ]
+    },
+    {
+      "id": "who-combo",
+      "title": "W-H-O Combo",
+      "category": "combo",
+      "summary": "The game's core three-shot chained combo: Right Ramp, Hang-On, Loop Ramp in order, each shot lighting the next on a timer.",
+      "difficulty": 2,
+      "reward": "Rising per-letter award each cycle; 2nd completion lights Extra Ball",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp for the 'W'",
+          "detail": "Lights the Hang-On target as 'H' next; the timer to continue is normally near-instant, extended to roughly 7-10 sec with Doctor 3."
+        },
+        {
+          "shot": "hang-on-target",
+          "action": "Hit the Hang-On target for the 'H'",
+          "detail": "Also pays the Hang-On/Collision award; now the Loop Ramp is lit as 'O'."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Loop the Cliffhanger Ramp for the 'O'",
+          "detail": "Completes W-H-O, bumps the per-letter award, and returns the ball to the lower flipper (upper flipper during a Sonic Boom round)."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "sonic-boom-cashin",
+      "title": "Sonic Boom Cash-In",
+      "category": "combo",
+      "summary": "Every ~10th completed Loop Ramp shot triggers Sonic Boom, turning the next W-H-O into a 10M-per-letter jackpot round — shot order matters or you cut it short.",
+      "difficulty": 3,
+      "reward": "10,000,000 per letter (~30M+ per round, more at higher Playfield X)",
+      "steps": [
+        {
+          "shot": "top-ramp",
+          "action": "Grind the Loop Ramp to trigger Sonic Boom",
+          "detail": "Every ~10th loop shot starts the round; timing on the trigger shot determines which flipper you land on."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot 'W' first for 10,000,000",
+          "detail": "Do not shoot the Loop Ramp yet — hitting it early ends the Boom round."
+        },
+        {
+          "shot": "hang-on-target",
+          "action": "Shoot 'H' second for another 10,000,000",
+          "detail": "Keep the Loop Ramp for last so the round doesn't end prematurely."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Save the Loop Ramp ('O') for last",
+          "detail": "Banks the full Sonic Boom value instead of cutting the round short."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "transmat-doctor-spot",
+      "title": "Jet Bumpers to Transmat",
+      "category": "combo",
+      "summary": "Feed the Jet Bumpers to charge Transmat, then cash it in to permanently spot a Doctor toward the 7-Doctor end-of-ball bonus.",
+      "difficulty": 1,
+      "reward": "750,000+ and one Doctor permanently spotted",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Pound the Jet Bumpers",
+          "detail": "Each hit adds 50,000 (100,000 with Doctor 5) to hidden Transmat charge; ~15 hits normally, ~8 with Doctor 5, lights the Transmat target."
+        },
+        {
+          "shot": "transmat-target",
+          "action": "Shoot the lit Transmat target",
+          "detail": "Pays 750,000+ and permanently spots your current unlit Doctor; shooting it unlit/uncharged risks the 'Cow' easter egg instead."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "repair-money-farm",
+      "title": "Repair Bank Unlimited Millions Farm",
+      "category": "combo",
+      "summary": "Once the R-E-P-A-I-R bank is fully lit, every further hit pays an escalating flat award — the fastest low-skill money farm in the game, especially under Doctor 4.",
+      "difficulty": 2,
+      "reward": "1,000,000 + 50,000/hit (doubled by Doctor 4) on every further hit until the bank resets",
+      "steps": [
+        {
+          "shot": "repair-bank",
+          "action": "Clear all six R-E-P-A-I-R targets",
+          "detail": "First five hits pay a fixed ladder 100K, 250K, 500K, 750K, 1M; much easier with Doctor 4 (extra credited hits per shot)."
+        },
+        {
+          "shot": "repair-bank",
+          "action": "Keep hitting the lit bank for 'Unlimited Millions'",
+          "detail": "Each further hit pays 1,000,000 + 50,000/hit (doubled by Doctor 4); farm until the bank's timer expires and resets."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "doctor2-who-grind",
+      "title": "Doctor 2 Tournament W-H-O Grind",
+      "category": "combo",
+      "summary": "The default competitive time-based strategy: pick Doctor 2 and loop Right Ramp - Hang-On - Loop Ramp continuously, banking Extra Balls instead of chasing multiball risk.",
+      "difficulty": 2,
+      "reward": "Extra Balls + steady W-H-O scoring, low drain risk",
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Select Doctor 2 before plunging",
+          "detail": "Doctor 2 doubles the Hang-On value and extends its timer — the safest ball-in-play Doctor for grinding."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot 'W'",
+          "detail": "Start of the loop."
+        },
+        {
+          "shot": "hang-on-target",
+          "action": "Shoot 'H'",
+          "detail": "Doubled value under Doctor 2."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Shoot 'O' and repeat",
+          "detail": "Skip chasing Multiball and Sonic Boom — just keep grinding the W-H-O loop instead."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Collect the lit Extra Ball",
+          "detail": "Lights after 2 W-H-O completions, then again at further completion intervals; route the ball through the lit lane.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "time-expander-multiball",
+      "title": "Time Expander Lock & Launch Multiball",
+      "category": "multiball",
+      "summary": "Light locks, lock two balls in the Time Expander, complete the 15-hit Target Mode, then shoot a gate to start Dalek multiball.",
+      "difficulty": 3,
+      "reward": "2-3 ball Dalek Jackpot multiball",
+      "steps": [
+        {
+          "shot": "time-expander-center-target",
+          "action": "Hit the center target to (re-)arm the locks",
+          "detail": "Only needed after your first multiball of the game — locks start pre-lit on the very first one."
+        },
+        {
+          "shot": "time-expander-lock-left",
+          "action": "Lock a ball in the left lock hole",
+          "detail": "Works toward Level 2 once both locks are filled."
+        },
+        {
+          "shot": "time-expander-lock-right",
+          "action": "Lock a ball in the right lock hole",
+          "detail": "With both balls locked, the mini-playfield rises to Level 2 Target Mode."
+        },
+        {
+          "shot": "time-expander-5bank",
+          "action": "Hit the 5-target bank repeatedly",
+          "detail": "Advances the Target Mode counter from 15 down to 0 (3 hits/target normally); Doctor 7 auto-spots the most-needed target."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Shoot any gate to start multiball",
+          "detail": "Reaching 0 raises Level 3; shooting into any of the three open gates launches Dalek Jackpot multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "dalek-jackpot-ladder",
+      "title": "Dalek Jackpot Ladder",
+      "category": "multiball",
+      "summary": "During multiball, clear all three Level-3 gates within the rolling time limit to collect each Jackpot and climb the Dalek rank ladder.",
+      "difficulty": 3,
+      "reward": "Bronze 30M / Silver 35M / Gold 40M / Supreme 45M / Emperor 50M",
+      "steps": [
+        {
+          "shot": "time-expander-gates",
+          "action": "Hit the first open gate",
+          "detail": "Starts/refreshes a ~10-15 sec rolling timer for the other two gates."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Hit the second gate before time runs out",
+          "detail": "Re-hitting an already-hit gate doesn't count."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Hit the third gate to collect the Jackpot",
+          "detail": "Missing a gate, or dropping from 3-ball to 2-ball, drops the Dalek rank one tier."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiball-relock-save",
+      "title": "Multiball Re-Lock Save",
+      "category": "multiball",
+      "summary": "If you fail to collect a Jackpot before losing balls, Re-Lock is briefly lit — use it to restart multiball instead of settling for single-ball play.",
+      "difficulty": 2,
+      "reward": "Restored 2-ball multiball at the last Dalek rank",
+      "steps": [
+        {
+          "shot": "time-expander-center-target",
+          "action": "Hit the center target to add time",
+          "detail": "Re-Lock is lit for 15 sec (20 with Doctor 7); a successful hit or lock adds +10 sec."
+        },
+        {
+          "shot": "time-expander-lock-left",
+          "action": "Re-lock a ball in either lock hole",
+          "detail": "A second ball auto-plunges as soon as you lock one. Let the re-lock timer lapse with that ball still alive and the locked ball kicks back out for a 2-ball multiball at the Dalek rank you left off on; drain it instead and the locked ball only returns for single-ball play. Lock both and 3-ball multiball restarts."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "video-mode",
+      "title": "Video Mode",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Complete the E-S-C-A-P-E bank to light Video Mode at the Police Box, then jump obstacles on the display for large wave bonuses multiplied by Playfield X — build the multiplier before starting it.",
+      "difficulty": 2,
+      "reward": "Up to 300M+ across a clean run, multiplied by Playfield X",
+      "steps": [
+        {
+          "shot": "escape-bank",
+          "action": "Clear all six E-S-C-A-P-E targets",
+          "detail": "Doctor 1 spots 2 letters per hit instead of 1, roughly halving the shots needed."
+        },
+        {
+          "shot": "police-box",
+          "action": "Shoot the lit Police Box entryway",
+          "detail": "Starts Video Mode; wave bonuses are multiplied by Playfield X, so build Playfield X before starting it — only the final Last-Wave/set-completion bonus is self-adjusting (equal to the sum of the previous wave bonuses) and isn't additionally multiplied."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Single-flip for a short jump",
+          "detail": "Clears a small obstacle on the video display."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Flip both flippers together for a long jump",
+          "detail": "Clears two small obstacles or one large one; chain waves for the escalating set bonus (Set 1 = 4 waves, up to Set 4 = 7).",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "repair-bank-complete",
+      "title": "R-E-P-A-I-R Bank Completion",
+      "category": "mode",
+      "summary": "Work the escalating-value REPAIR ladder up to full completion, ideally with Doctor 4 selected.",
+      "difficulty": 2,
+      "reward": "Unlocks 'Unlimited Millions' repeat-hit scoring",
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Select Doctor 4 if available",
+          "detail": "Doctor 4 credits extra hits per shot — the only realistic way to finish the bank before it times out."
+        },
+        {
+          "shot": "repair-bank",
+          "action": "Work the bank off the right-flipper carom",
+          "detail": "Pays a fixed ladder 100K, 250K, 500K, 750K, 1M on the first five hits.",
+          "flipper": "right"
+        },
+        {
+          "shot": "repair-bank",
+          "action": "Land the sixth hit to complete the bank",
+          "detail": "Unlocks 'Unlimited Millions' repeat-hit scoring — see the Repair Money Farm combo."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "hang-on-collision",
+      "title": "Hang-On / Collision",
+      "category": "mode",
+      "summary": "A single lit/unlit target that functions like its own scoring mode: the big escalating Hang-On value when lit, and a Collision award worth a fifth of it when unlit — so the unlit shot climbs too.",
+      "difficulty": 1,
+      "reward": "250,000 +250,000 per hit (Hang-On), or a fifth of that value starting at 20,000 (Collision)",
+      "steps": [
+        {
+          "shot": "hang-on-target",
+          "action": "Shoot the Hang-On target while lit",
+          "detail": "Pays a value that starts at 250,000 and permanently grows +250,000 per hit across the game (capped higher with Doctor 2); also scores 'H' toward W-H-O."
+        },
+        {
+          "shot": "hang-on-target",
+          "action": "Shoot it anyway when unlit",
+          "detail": "Pays the Collision award instead — a fifth of the current Hang-On value, opening at 20,000 and rising all game as Hang-On climbs, and still worth taking since it feeds W-H-O."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "playfield-x-build",
+      "title": "Build Playfield X on the Loop Ramp",
+      "category": "multiplier",
+      "summary": "Repeated Loop Ramp shots raise the global Playfield multiplier from 1X to a 4X cap, the lever behind every other big score in the game.",
+      "difficulty": 2,
+      "reward": "Up to 4X on all scoring, including Video Mode wave bonuses — build it before starting Video Mode",
+      "steps": [
+        {
+          "shot": "top-ramp",
+          "action": "Shoot the Loop Ramp repeatedly",
+          "detail": "+0.5X per shot normally (6 shots to 4X); Doctor 6 changes this to +1X per shot (3 shots to 4X)."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Stop banking loops once at 4X",
+          "detail": "Further loop shots only pay a flat 250,000 once capped — spend the ball on multiplied shots (Video Mode, Sonic Boom, Jackpots) instead."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-x-build",
+      "title": "Build the Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The Jet Bumpers separately build the end-of-ball Bonus multiplier, independent of Playfield X, and it carries over ball-to-ball.",
+      "difficulty": 1,
+      "reward": "Increased Bonus multiplier on the end-of-ball bonus total, up to ~40X",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Pound the Jet Bumpers to award Bonus X",
+          "detail": "Each jet bumper hit steps the end-of-ball Bonus multiplier. It is tracked separately from Playfield X, it does not reset between balls, and sustained bumper play can push it into the high thirties."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "reach-davros",
+      "title": "Reach Davros",
+      "category": "wizard",
+      "summary": "The full qualification chain from cold start to the Davros wizard-mode reveal.",
+      "difficulty": 3,
+      "reward": "All 7 Doctors spotted + Davros round begins",
+      "steps": [
+        {
+          "shot": "time-expander-lock-left",
+          "action": "Lock two balls in the Time Expander",
+          "detail": "See Time Expander Lock & Launch Multiball for the full lock sequence."
+        },
+        {
+          "shot": "time-expander-5bank",
+          "action": "Complete the 15-hit Target Mode",
+          "detail": "Raises the mini-playfield to Level 3 and starts Dalek multiball."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Climb the Dalek Jackpot ladder",
+          "detail": "Ranks climb Bronze 30M, Silver 35M, Gold 40M, Supreme 45M, then Emperor 50M. You rarely start at the bottom — the gates open at whatever rank you have already reached, and the middle gate sits one rank above the two outer ones, so taking it first skips a rung. The climb also runs backwards: let the gate timer lapse, or drop from 3-ball to 2-ball play, and you fall back to a lesser Dalek."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Collect the Emperor Dalek Jackpot (50,000,000)",
+          "detail": "Automatically spots all 7 Doctors and triggers the Davros reveal."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "triple-davros",
+      "title": "Triple Davros",
+      "category": "wizard",
+      "summary": "The game's true ceiling: break Davros's force field three escalating times for up to 300,000,000 a Jackpot, then repeat indefinitely.",
+      "difficulty": 3,
+      "reward": "100M / 200M / 300M Jackpots, then Triple Davros repeats forever",
+      "steps": [
+        {
+          "shot": "time-expander-5bank",
+          "action": "Hit each of the 5 targets once (Single Davros)",
+          "detail": "Doctor 7's auto-spot does NOT apply in Davros rounds — every hit must be real."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Clear all 3 gates for the Single Davros Jackpot",
+          "detail": "100,000,000, multiplied by Playfield X."
+        },
+        {
+          "shot": "time-expander-5bank",
+          "action": "Hit each target twice (Double Davros)",
+          "detail": "Immediately follows a successful Single Davros."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Clear all 3 gates for the Double Davros Jackpot",
+          "detail": "200,000,000, multiplied by Playfield X."
+        },
+        {
+          "shot": "time-expander-5bank",
+          "action": "Hit each target three times (Triple Davros)",
+          "detail": "The hardest tier — each target now needs 3 real hits."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Clear all 3 gates for the Triple Davros Jackpot",
+          "detail": "300,000,000 (1.2B at 4X) — the single highest-value shot in the game; Triple Davros then repeats indefinitely."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "beginner-first-30",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A concrete opening sequence for a new player: pick a forgiving Doctor, build a little multiplier, then start chipping at Escape/Video Mode.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Select Doctor 1",
+          "detail": "Doubles Escape-letter spotting, the fastest way to see Video Mode as a new player."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Launch the ball",
+          "detail": "No skill-shot lane to aim for — just launch once your Doctor is picked."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Take 1-2 Loop Ramp shots if it's on hand",
+          "detail": "Gets Playfield X off 1X early; don't force it if the shot isn't there."
+        },
+        {
+          "shot": "escape-bank",
+          "action": "Work the Escape bank off the right flipper",
+          "detail": "Doctor 1 spots 2 letters per Police Box shot, so this completes fast.",
+          "flipper": "right"
+        },
+        {
+          "shot": "police-box",
+          "action": "Shoot Video Mode once lit",
+          "detail": "Video Mode's wave scoring is multiplied by Playfield X, so grab a Loop Ramp shot or two beforehand if one's on hand before diving into Video Mode."
+        }
+      ],
+      "reward": "Video Mode reached fast with Playfield X already off 1X, via Doctor 1's doubled Escape-letter spotting",
+      "fx": "space"
+    },
+    {
+      "id": "tournament-safe-opener",
+      "title": "Tournament-Safe Opener",
+      "category": "strategy",
+      "summary": "The low-drain-risk approach for timed tournament rounds: keep the ball on the W-H-O loop rather than chasing multiball.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Select Doctor 2 or Doctor 3",
+          "detail": "Doctor 2 doubles Hang-On value; Doctor 3 extends the W-H-O shot timer — either makes the loop far more reliable."
+        },
+        {
+          "shot": "upper-left-flipper",
+          "action": "Use the upper flipper for H and O",
+          "detail": "Both the Hang-On target and Loop Ramp are most reliably reached from the upper-left flipper, not the lower flippers."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot 'W'",
+          "detail": "Opens the combo."
+        },
+        {
+          "shot": "hang-on-target",
+          "action": "Shoot 'H'",
+          "detail": "Avoid the Time Expander and Repair bank early — they are the only two shots on this machine that routinely send the ball straight down the middle."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Shoot 'O' and keep looping",
+          "detail": "Bank Extra Balls at each W-H-O completion interval (settings-dependent) rather than forcing locks."
+        }
+      ],
+      "reward": "Extra Balls banked via safe W-H-O looping while dodging the Time Expander/Repair-bank drain risks",
+      "fx": "space"
+    },
+    {
+      "id": "score-max-endgame",
+      "title": "Score-Maximizing Endgame",
+      "category": "strategy",
+      "summary": "Once ahead on time or balls, switch from safe looping to the two highest points-per-minute engines: Sonic Boom chasing or Video Mode wave-stacking under Doctor 1.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Select Doctor 1 or Doctor 6",
+          "detail": "Doctor 1 maximizes Video Mode value; Doctor 6 gets Playfield X to 4X in just 3 Loop Ramp shots to fuel either engine."
+        },
+        {
+          "shot": "top-ramp",
+          "action": "Build to 4X, then keep grinding for Sonic Boom",
+          "detail": "Every ~10th loop triggers Sonic Boom — see the Sonic Boom Cash-In combo for the shot order once it hits.",
+          "link": "none"
+        },
+        {
+          "shot": "escape-bank",
+          "action": "Or divert into Escape/Video Mode instead",
+          "detail": "A clean Video Mode run is worth around 300M, the biggest non-jackpot payout in the game — its wave bonuses are multiplied by Playfield X, so it pays best once you're already sitting at 4X.",
+          "link": "none"
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Only chase Davros once it's genuinely on hand",
+          "detail": "Forcing multiball or chasing Davros is rarely worth it: setup is slow and the drain risk is high — bank locks opportunistically rather than force them.",
+          "link": "none"
+        }
+      ],
+      "reward": "Sonic Boom jackpots or a 300M+ Video Mode wave-stacking run, maximized at 4X Playfield",
+      "fx": "space"
+    },
+    {
+      "id": "seven-doctor-bonus",
+      "title": "Collect All Seven Doctors",
+      "category": "strategy",
+      "summary": "The seven Doctor portraits are a game-long collection: each Transmat cash-in permanently spots the current unlit Doctor, and the top Dalek Jackpot spots whatever is left. Pick an unlit Doctor before each plunge so your Transmat hits are never wasted.",
+      "difficulty": 3,
+      "reward": "All seven Doctors spotted for the end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge on a Doctor you have not spotted yet",
+          "detail": "Cycle with the flipper buttons to a portrait that is still unlit so the ball's Transmat award adds a new Doctor instead of repeating one."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Charge the Transmat with bumper hits",
+          "detail": "Roughly fifteen hits normally, about half that under Doctor 5, until the Transmat target starts flashing.",
+          "plunge": "full"
+        },
+        {
+          "shot": "transmat-target",
+          "action": "Cash in the lit Transmat to spot that Doctor",
+          "detail": "The spot is permanent for the rest of the game; repeat this once per ball to chip away at the set."
+        },
+        {
+          "shot": "time-expander-gates",
+          "action": "Or take the top Dalek Jackpot to finish the set outright",
+          "detail": "Climbing the Dalek rank ladder to its highest Jackpot spots every remaining Doctor at once and reveals Davros.",
+          "link": "none"
+        }
+      ],
+      "fx": "space"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-who-cycle",
+      "title": "Spell It Once",
+      "desc": "Complete one full W-H-O cycle in order: Right Ramp, Hang-On target, Loop Ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "who-combo"
+    },
+    {
+      "id": "hang-on-lit-collect",
+      "title": "Take the Lit Hit",
+      "desc": "Collect the Hang-On award while the target is lit, rather than settling for the unlit flat award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "hang-on-collision"
+    },
+    {
+      "id": "transmat-cash-in",
+      "title": "Charge and Beam",
+      "desc": "Charge the Transmat with jet bumper hits, then shoot the lit Transmat target to spot a Doctor.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "transmat-doctor-spot"
+    },
+    {
+      "id": "light-video-mode",
+      "title": "Escape Route Open",
+      "desc": "Clear all six E-S-C-A-P-E targets to light Video Mode at the Police Box.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "video-mode"
+    },
+    {
+      "id": "repair-bank-cleared",
+      "title": "Fully Repaired",
+      "desc": "Complete the six-target R-E-P-A-I-R bank before it times out.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "repair-bank-complete"
+    },
+    {
+      "id": "bonus-multiplier-stack",
+      "title": "Bonus Stacker",
+      "desc": "Build the end-of-ball bonus multiplier well past its starting value with sustained jet bumper hits.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bonus-x-build"
+    },
+    {
+      "id": "playfield-x-maxed",
+      "title": "Multiplier Ceiling",
+      "desc": "Raise the playfield multiplier to its 4X cap with Loop Ramp shots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "playfield-x-build"
+    },
+    {
+      "id": "unlimited-millions-run",
+      "title": "Million a Hit",
+      "desc": "After completing the Repair bank, keep hitting it for the escalating repeat-hit millions award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "repair-money-farm"
+    },
+    {
+      "id": "video-mode-full-set",
+      "title": "Clean Getaway",
+      "desc": "Finish a full wave set in Video Mode without being caught, collecting the set-completion bonus.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "video-mode"
+    },
+    {
+      "id": "sonic-boom-swept",
+      "title": "Boom in Order",
+      "desc": "Trigger a Sonic Boom round off the Loop Ramp and bank all three letters, saving the Loop Ramp for last.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "sonic-boom-cashin"
+    },
+    {
+      "id": "extra-ball-banked",
+      "title": "One More Ball",
+      "desc": "Light Extra Ball off repeated W-H-O completions and collect it through the right inlane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "doctor2-who-grind"
+    },
+    {
+      "id": "multiball-started",
+      "title": "Gates Open",
+      "desc": "Lock two balls, clear the Time Expander target count, and shoot a gate to start Dalek multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "time-expander-multiball"
+    },
+    {
+      "id": "first-dalek-jackpot",
+      "title": "Three Gates Down",
+      "desc": "During multiball, clear all three Level-3 gates inside the timer to collect a Dalek Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "dalek-jackpot-ladder"
+    },
+    {
+      "id": "relock-recovery",
+      "title": "Second Wind",
+      "desc": "Use the brief Re-Lock window to restart multiball after losing balls without collecting a Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-relock-save"
+    },
+    {
+      "id": "dalek-ladder-climb",
+      "title": "Up the Ranks",
+      "desc": "Collect Jackpots at four rank tiers in one game without dropping back down a tier.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dalek-jackpot-ladder"
+    },
+    {
+      "id": "emperor-jackpot",
+      "title": "Top of the Ladder",
+      "desc": "Reach and collect the highest Dalek rank Jackpot, which spots every Doctor and reveals Davros.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "reach-davros"
+    },
+    {
+      "id": "seven-doctors-spotted",
+      "title": "All Seven Lit",
+      "desc": "Have all seven Doctors spotted at end of ball, whether by Transmat cash-ins or by the top Dalek Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "seven-doctor-bonus"
+    },
+    {
+      "id": "single-davros-broken",
+      "title": "Force Field Down",
+      "desc": "Break Davros's force field once and clear all three gates for the first Davros Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "triple-davros"
+    },
+    {
+      "id": "triple-davros-cleared",
+      "title": "Third Time Through",
+      "desc": "Clear Single, Double, and Triple Davros in sequence to collect the game's largest Jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "triple-davros"
+    }
+  ],
+  "drills": [
+    {
+      "id": "pick-before-launch",
+      "title": "Pick Before You Launch",
+      "text": "There is no plunger and no lane award — the whole opening decision happens before you press the button. Cycle the seven Doctors with the flippers, right to go forward and left to back up, and choose one you have not spotted yet so the ball's Transmat cash-in adds a new portrait instead of repeating one. Play a full game deliberately changing Doctor every ball and note what each one actually rewrites.",
+      "reps": "one full game, a different Doctor each ball",
+      "focus": "skill-shot",
+      "goal": "seven-doctor-bonus",
+      "shots": [
+        "shooter-lane",
+        "left-flipper",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "who-chain",
+      "title": "W-H-O in Order",
+      "text": "Right Ramp, Hang-On, Loop Ramp, in that order, with each shot lighting the next on a timer that is close to instant. Set up on the upper-left flipper, since that is what reliably reaches the H and the O. When a Sonic Boom round is running the same chain gets one hard rule on top: hold the Loop Ramp until last, because taking it early ends the round.",
+      "reps": "8 clean chains",
+      "focus": "flow",
+      "goal": "who-combo",
+      "shots": [
+        "right-ramp",
+        "hang-on-target",
+        "top-ramp",
+        "upper-left-flipper"
+      ]
+    },
+    {
+      "id": "loop-ramp-reps",
+      "title": "Loop Ramp Reps",
+      "text": "Six loops takes the playfield multiplier to its cap and every tenth loop trips Sonic Boom, so this one shot off the upper-left flipper is the lever under everything else on the table. Shoot it until the entrance stops surprising you, and stop banking loops once the multiplier caps — past that they only pay flat.",
+      "reps": "20 loops",
+      "focus": "accuracy",
+      "goal": "playfield-x-build",
+      "shots": [
+        "top-ramp",
+        "upper-left-flipper"
+      ]
+    },
+    {
+      "id": "center-drain-shots",
+      "title": "Learn the Two Bad Returns",
+      "text": "The Time Expander and the Repair bank are the two shots on this table that routinely send the ball straight down the middle. Take each of them a dozen times on purpose, early in a ball, with a nudge ready. You want that return mapped before you meet it while chasing something that matters.",
+      "reps": "12 of each",
+      "focus": "ball-control",
+      "goal": "tournament-safe-opener",
+      "shots": [
+        "time-expander-center-target",
+        "repair-bank"
+      ]
+    },
+    {
+      "id": "repair-carom",
+      "title": "Repair Bank Carom",
+      "text": "The bank is worked off the right-flipper carom rather than shot straight on. Clear all six, then keep hitting the lit bank — every further hit keeps paying until the timer resets it, so what you are drilling is sustaining the carom, not landing one good shot.",
+      "reps": "5 completions, then farm each one out",
+      "focus": "accuracy",
+      "goal": "repair-money-farm",
+      "shots": [
+        "repair-bank",
+        "right-flipper"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Doctor Who has no in-play button — it does not even have a plunger. In its place is an electric launch button that fires the ball out of the shooter lane and then does nothing for the rest of the ball. The trick that matters happens before you press it: the flipper buttons cycle the seven Doctors, right for forward and left to back up, and whichever one you launch on rewrites the rules for that ball."
+  },
+  "howItPlays": {
+    "objective": "Doctor Who is a quick Bally machine with no plunger and no in-play button, so before every launch you cycle which of the seven Doctors to play, and that pick quietly rewrites the ball's rules. You loop W-H-O for points, build the Time Expander toward Dalek multiball, and climb all the way to Davros.",
+    "loop": [
+      "Pick a Doctor with the flipper buttons before launch -- each one biases different awards for the whole ball -- then fire the ball with the launch button.",
+      "Chain W-H-O in order -- right ramp, then the Hang-On target, then the loop ramp up top -- and grind that loop to raise Playfield X and to trip Sonic Boom every tenth pass.",
+      "Feed the jet bumpers to charge Transmat and to build a separate bonus multiplier that carries between balls.",
+      "Lock two balls in the Time Expander, clear its target mode, and shoot a Dalek gate to open multiball and climb the jackpot ladder.",
+      "Spot all seven Doctors -- one per Transmat, the rest from the top Dalek jackpot -- to reveal Davros and chase his escalating jackpots."
+    ],
+    "lights": [
+      {
+        "id": "who-letters",
+        "name": "W-H-O Combo",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "hang-on-target"
+          },
+          {
+            "shot": "top-ramp"
+          }
+        ],
+        "lit": "The three W-H-O shots light one at a time in order -- the right ramp for W arms the Hang-On target for H, which arms the loop ramp for O -- each on a short timer that Doctor 3 stretches. Miss the window and the chain drops back to the start.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the trio to bump a rising per-letter award, and bank two full runs to light an extra ball at the right return lane. Every tenth loop-ramp shot springs Sonic Boom, which pays ten million for each letter you spell next -- take W and H first and hold the loop for last, or you cut the round short.",
+        "goals": [
+          "who-combo",
+          "sonic-boom-cashin",
+          "doctor2-who-grind"
+        ]
+      },
+      {
+        "id": "playfield-x",
+        "name": "Playfield Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "top-ramp"
+          }
+        ],
+        "lit": "Each loop-ramp shot steps the global Playfield multiplier up half a level toward a four-times cap, and Doctor 6 makes it a full level per shot. Once you are capped, further loops only pay a small flat award.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank this multiplier BEFORE you start Video Mode or a Sonic Boom, because it multiplies their entire payout -- sitting at four-times going into a clean Video Mode is where the biggest non-jackpot scores come from.",
+        "goals": [
+          "playfield-x-build"
+        ]
+      },
+      {
+        "id": "escape-video",
+        "name": "E-S-C-A-P-E Bank",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "escape-bank",
+            "lamps": 6
+          },
+          {
+            "shot": "police-box"
+          }
+        ],
+        "lit": "Each lit standup in the six-target ESCAPE bank is a letter still owed, and Doctor 1 spots two at a time. Clearing the whole bank lights Video Mode at the Police Box entryway.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the lit Police Box to run Video Mode, jumping obstacles for wave bonuses multiplied by Playfield X -- so pump the loop ramp to four-times first. A clean run is worth around three hundred million, the largest score here outside the Davros jackpots.",
+        "goals": [
+          "video-mode"
+        ]
+      },
+      {
+        "id": "repair-bank",
+        "name": "R-E-P-A-I-R Bank",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "repair-bank",
+            "lamps": 6
+          }
+        ],
+        "lit": "The six REPAIR standups down the left go dark as you hit them, paying a fixed ladder up to a million, and Doctor 4 credits extra hits per shot so you finish before the bank times out.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete all six to switch on Unlimited Millions -- from there every further hit on the lit bank pays a million-plus and keeps climbing until the timer lapses and resets it, the fastest low-skill farm on the machine.",
+        "goals": [
+          "repair-bank-complete",
+          "repair-money-farm"
+        ]
+      },
+      {
+        "id": "transmat-doctors",
+        "name": "Transmat & the Seven Doctors",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "transmat-target"
+          },
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "Bumper hits secretly charge Transmat until its target flashes, and cashing the lit target pays well while permanently spotting whichever Doctor you launched on -- so pick an unlit Doctor each ball and the award is never wasted. A spotted Doctor stays lit for the rest of the game.",
+        "flashing": "A flashing Transmat target is charged and ready; shooting it cold, before the bumpers have lit it, risks a joke award instead.",
+        "control": null,
+        "then": "Collect all seven Doctor portraits for a huge end-of-ball bonus -- one per Transmat cash-in, with the top Dalek jackpot spotting every one still missing in a single stroke.",
+        "goals": [
+          "transmat-doctor-spot",
+          "seven-doctor-bonus"
+        ]
+      },
+      {
+        "id": "bonus-x",
+        "name": "Bonus Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "The jet bumpers also step the end-of-ball bonus multiplier, tracked apart from Playfield X. It never resets between balls, so steady bumper time can push it into the high thirties by late game.",
+        "flashing": null,
+        "control": null,
+        "then": "Let the bumpers run whenever the ball wanders up there -- an inflated multiplier quietly magnifies every point of end-of-ball bonus you have piled up, and it costs the ball no risk to build.",
+        "goals": [
+          "bonus-x-build"
+        ]
+      },
+      {
+        "id": "time-expander",
+        "name": "Time Expander Locks",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "time-expander-center-target"
+          },
+          {
+            "shot": "time-expander-lock-left"
+          },
+          {
+            "shot": "time-expander-lock-right"
+          },
+          {
+            "shot": "time-expander-5bank"
+          },
+          {
+            "shot": "time-expander-gates"
+          }
+        ],
+        "lit": "The Time Expander is a stacked mini-playfield: the centre target arms the two lock holes, a ball locked in each raises it to the exposed five-target bank, and clearing that bank of its fifteen hits raises the three Dalek gates. Each level stays raised once you reach it.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot a raised gate to launch Dalek multiball, then clear all three gates against the rolling timer to collect each jackpot and climb the rank ladder from Bronze up to Emperor. Drop a jackpot before collecting and Re-Lock lights briefly to restart the multiball rather than fall to a single ball.",
+        "goals": [
+          "time-expander-multiball",
+          "dalek-jackpot-ladder",
+          "multiball-relock-save"
+        ]
+      },
+      {
+        "id": "hang-on",
+        "name": "Hang-On Target",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "hang-on-target"
+          }
+        ],
+        "lit": "With its insert on, the Hang-On target pays an escalating value that opens at 250k and climbs a further 250k each time you take it, all game long -- and it doubles as the H in W-H-O.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot it even when the light is off: an unlit hit still pays out -- the Collision award, worth a fifth of whatever Hang-On has climbed to -- and it still banks the H, so the target never wastes a shot and the value you grow stays put all game.",
+        "goals": [
+          "hang-on-collision"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Choose a forgiving Doctor and settle in. Doctor 1 doubles ESCAPE letters for a fast Video Mode; Doctor 2 fattens Hang-On for a safe W-H-O grind. Take a loop-ramp shot or two early to lift Playfield X, and steer clear of the Time Expander and Repair bank until you are set -- they are the two shots that spit the ball straight down the middle.",
+        "goals": [
+          "doctor-selection",
+          "beginner-first-30",
+          "who-combo"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Cash the multiplied features: run Video Mode with Playfield X already banked, chase Sonic Boom off the loop, spot Doctors through Transmat, and lock balls in the Time Expander toward Dalek multiball.",
+        "goals": [
+          "video-mode",
+          "sonic-boom-cashin",
+          "seven-doctor-bonus",
+          "time-expander-multiball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Climb the Dalek ladder to the Emperor jackpot, which spots the last Doctors and reveals Davros. Then break his force field three escalating times -- a hundred, two hundred, then three hundred million a jackpot, over a billion at four-times Playfield -- the single highest shot on the machine, and it then repeats forever.",
+        "goals": [
+          "reach-davros",
+          "triple-davros",
+          "dalek-jackpot-ladder"
+        ]
+      }
+    ]
+  }
+}

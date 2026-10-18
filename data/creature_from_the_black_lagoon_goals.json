@@ -1,0 +1,1085 @@
+{
+  "machine": "Creature from the Black Lagoon (Bally, 1992)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger. A full-strength shot around the Back Orbit is one skill shot path; dropping softer into a flashing P-A-I-D lane is the other."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Punches left during Video Mode; otherwise a standard flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Punches right during Video Mode; otherwise a standard flipper."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Awards FOCUS for a flat 500K, collectible more than once per ball. Can also light Special via the EXIT lights."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Carries 10M/20M/30M lights that only mean anything during Super Scoring."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Labeled Start Combo, but does nothing on its own — the Double Feature combo actually starts from a Left Ramp shot."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Awards FOCUS for a flat 500K, collectible more than once per ball. Can also light Special via the EXIT lights."
+    },
+    {
+      "id": "left-saucer",
+      "name": "Left Saucer",
+      "type": "saucer",
+      "x": 0.08,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The left saucer lane actually ends in a sinkhole. Spells K-I-S-S one hit at a time and feeds the Right Inlane."
+    },
+    {
+      "id": "back-orbit",
+      "name": "Back Orbit",
+      "type": "orbit",
+      "x": 0.15,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "A passage from the P-A-I-D lanes area down to the Left Saucer Lane. The second skill shot route, and the source of the Sneak-In Bonus on an unplunged lap.",
+      "feeds": {
+        "shot": "left-saucer"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.2,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A steep ramp normally diverting straight to the Right Inlane. When a Creature Feature is lit, the diverter instead sends the ball on a long swooping path to the Whirlpool.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "center-shot",
+      "name": "Center Shot",
+      "type": "lane",
+      "x": 0.42,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "A double-gated S-shaped lane leading up to the P-A-I-D lanes. Handles Move Your Car, the Double Feature collect, and the Extra Ball award."
+    },
+    {
+      "id": "menu-targets",
+      "name": "Menu Targets",
+      "type": "target-bank",
+      "x": 0.45,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Four targets — two facing left near the Snackbar, two facing right near the Left Ramp. The Jet Bumpers rotate which ones are lit."
+    },
+    {
+      "id": "snackbar",
+      "name": "Snackbar",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "This sinkhole sits at the playfield's center and ejects the ball out to the Right Inlane. Light all four Menu Targets to open it, and during multiball it doubles as the Search, Rescue, Jackpot, and Super Jackpot shot.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "whirlpool",
+      "name": "Whirlpool",
+      "type": "mech",
+      "x": 0.68,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Where the Left Ramp's diverted path ends up. Spots CREATURE letters during multiball, and Super Creature Feature points during Super Scoring."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.75,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "A large, shallow ramp returning to the Left Inlane. Counts toward Snack Attack, Video Mode and Super Scoring outside of multiball; becomes Movie Madness during it.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-saucer",
+      "name": "The Slide",
+      "type": "saucer",
+      "x": 0.88,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Known in-game as the Slide. Awards the M of F-I-L-M, then cycles through Mega Menu, Playground Award and Big Millions on later hits."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.65,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Three bumpers in a contained area below the P-A-I-D lanes, exiting down the Right Saucer Lane. Rotate the lit Menu Targets and build toward the multiball Super Jackpot."
+    },
+    {
+      "id": "paid-lanes",
+      "name": "P-A-I-D Lanes",
+      "type": "rollover",
+      "x": 0.65,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Four rollover lanes, steerable by either flipper in opposite directions. Completing all four spots F-I-L-M's L and advances the bonus multiplier."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-paid",
+      "title": "P-A-I-D Skill Shot",
+      "category": "skillshot",
+      "summary": "One of the four P-A-I-D lanes flashes before you plunge — landing the ball there completes the whole word instantly.",
+      "difficulty": 1,
+      "reward": "Instant P-A-I-D, bonus multiplier step, and the L letter",
+      "steps": [
+        {
+          "shot": "paid-lanes",
+          "action": "Drop the ball into the flashing P-A-I-D lane",
+          "detail": "One of the four P-A-I-D lanes flashes before you plunge — landing there completes P-A-I-D instantly, advances your bonus multiplier, and spots the L of F-I-L-M without needing to roll through the other three lanes first."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-kiss",
+      "title": "K-I-S-S Skill Shot",
+      "category": "skillshot",
+      "summary": "A full-strength plunge around the Back Orbit banks however many K-I-S-S letters happen to be cycling when the ball trips the sensor.",
+      "difficulty": 2,
+      "reward": "0 to 4 K-I-S-S letters at once",
+      "steps": [
+        {
+          "shot": "back-orbit",
+          "action": "Fire a full-strength plunge on a lap around the Back Orbit",
+          "detail": "Whatever number of K-I-S-S letters happen to be lit when the ball trips the sensor back there gets spotted at once — it's possible to get all four, or occasionally none, depending on timing. Once the F letter is already lit, or you collected a Jackpot during the most recent Multiball, this shot only ever spots one letter instead."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "double-film-letter-combo",
+      "title": "Double Film Letter Combo",
+      "category": "combo",
+      "summary": "Finish K-I-S-S to take the F, then land the Slide immediately after for the M, and the game pays a flat bonus on top of both.",
+      "difficulty": 2,
+      "reward": "4M on top of the F and M letters",
+      "steps": [
+        {
+          "shot": "back-orbit",
+          "action": "Complete K-I-S-S here first to take the F letter",
+          "detail": "This has to be the shot that finishes K-I-S-S and spots F — not one you already had lit."
+        },
+        {
+          "shot": "right-saucer",
+          "action": "Then hit the Slide immediately for the M letter",
+          "detail": "Landing the F and M letters back to back this way is the only combination that pays the Double Film Letter Combo — a flat 4M on top of the letters themselves. There's no Triple version."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "film-letters",
+      "title": "Spelling F-I-L-M",
+      "category": "progression",
+      "summary": "F-I-L-M has to be completed once per Multiball, with a different shot behind every letter — and a bonus for collecting them in order.",
+      "difficulty": 1,
+      "reward": "2M to 8M per letter, +8M for the right order",
+      "steps": [],
+      "instructions": [
+        "F-I-L-M has to be completed once for every Multiball you start, and it carries over across the whole game rather than resetting each ball.",
+        "Letters pay in order collected, not by which letter they are: 2M for the first, 4M for the second, 6M for the third, 8M for the fourth. Collect all four in the actual F-I-L-M order and you get an extra 8M Sequential Film Bonus on top — the order F-L-I-M seems to count too.",
+        "Every letter has its own shot to earn it — K-I-S-S for F, the Snackbar's Menu Targets for I, the P-A-I-D lanes for L, and the Slide for M — but any letter can also turn up as a random award from an already-open Snackbar."
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "kiss-f-letter",
+      "title": "K-I-S-S For The F",
+      "category": "mode",
+      "summary": "Four hits on the Left Saucer spell out K-I-S-S in order, lighting the F letter — and repeat completions eventually stack Extra Balls.",
+      "difficulty": 1,
+      "reward": "F letter, then an Extra Ball ladder",
+      "steps": [
+        {
+          "shot": "left-saucer",
+          "action": "Land in the Left Saucer to spell K-I-S-S",
+          "detail": "Each hit spots the next letter in order; four hits completes it and lights the F of F-I-L-M."
+        },
+        {
+          "shot": "center-shot",
+          "action": "Cash in the Extra Ball on the Center Shot",
+          "detail": "Completing K-I-S-S a second time lights an Extra Ball on most settings, collected here. It takes six completions for the next one, then four more for every one after that."
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "snackbar-i-letter",
+      "title": "Open The Snackbar For The I",
+      "category": "mode",
+      "summary": "Light all four Menu Targets — spotted early on by the unlit Snackbar itself — to open it and light the I letter.",
+      "difficulty": 2,
+      "reward": "I letter, opens the Snackbar for later awards",
+      "steps": [
+        {
+          "shot": "snackbar",
+          "action": "Hit the unlit Snackbar to spot a Menu Target",
+          "detail": "This only works before you've collected a Jackpot in Multiball on normal settings — after that, or on harder settings, the Snackbar stops spotting targets and you have to hit them directly."
+        },
+        {
+          "shot": "menu-targets",
+          "action": "Light all four Menu Targets to open it",
+          "detail": "The Jet Bumpers rotate which targets are lit as you play, so watch for the pattern to shift. Opening the Snackbar this way spots the I of F-I-L-M."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "paid-l-letter",
+      "title": "Roll P-A-I-D For The L",
+      "category": "mode",
+      "summary": "Either flipper steers the lit lanes in opposite directions — complete all four for the L letter and a step on the bonus multiplier.",
+      "difficulty": 2,
+      "reward": "L letter, bonus multiplier step, 5M once maxed",
+      "steps": [
+        {
+          "shot": "paid-lanes",
+          "action": "Steer the lit lanes with either flipper",
+          "detail": "Both flippers steer the lit P-A-I-D lanes, in opposite directions — the ball tends to bounce upward through the middle two lanes off a Jet Bumper, but check which lane is actually lit before committing to a shot."
+        },
+        {
+          "shot": "paid-lanes",
+          "action": "Complete all four to spot the L letter",
+          "detail": "This also advances your bonus multiplier, up to a 10x cap; completing P-A-I-D again after you're already at 10x pays a flat 5M instead."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "slide-m-letter",
+      "title": "Hit The Slide For The M",
+      "category": "mode",
+      "summary": "The Slide stays lit whenever the M letter is still needed, making it one of the most reliable letters on the board.",
+      "difficulty": 1,
+      "reward": "M letter, plus whatever's cycling on later hits",
+      "steps": [
+        {
+          "shot": "right-saucer",
+          "action": "Hit the Slide while it's lit",
+          "detail": "The Slide stays lit whenever the M letter is still needed, so this is one of the more reliable letters to grab. Later hits, once you've already collected M for an earlier Multiball, also award whatever bonus is currently cycling on the Slide."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "mega-menu",
+      "title": "Mega Menu",
+      "category": "mode",
+      "summary": "The first award after your first Slide hit — all four Menu Targets flash at once for 20 seconds, each worth 5M.",
+      "difficulty": 2,
+      "reward": "5M per target, up to 20M",
+      "steps": [
+        {
+          "shot": "right-saucer",
+          "action": "Collect your first Slide shot to arm it",
+          "detail": "Mega Menu is the first award that comes up on the Slide after your very first hit there."
+        },
+        {
+          "shot": "menu-targets",
+          "action": "Hit all four Menu Targets inside 20 seconds",
+          "detail": "All four flash at once here; each is worth 5M, so a clean run pays 5M, then 10M, 15M and 20M as the total climbs. The Jet Bumpers do not rotate the targets during this round, which makes it easier than usual to plan the shot."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "playground-award",
+      "title": "Playground Award",
+      "category": "secret",
+      "summary": "The Slide's second award is a genuine random draw — Jet Bumpers at 1M, Intermission Time, or the big one: Unlimited Millions.",
+      "difficulty": 1,
+      "reward": "One of three random outcomes",
+      "steps": [
+        {
+          "shot": "right-saucer",
+          "action": "Take the Slide again after Mega Menu",
+          "detail": "Playground Award follows Mega Menu in the cycle and is genuinely random."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hope for Unlimited Millions",
+          "detail": "The three possible outcomes are Jet Bumpers at 1M for 25 seconds, Unlimited Millions on the Left Ramp, or Intermission Time — Unlimited Millions is the one worth chasing hardest."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "big-millions",
+      "title": "Big Millions",
+      "category": "mode",
+      "summary": "The Slide's third award turns the Right Ramp into a climbing jackpot for ten fast seconds.",
+      "difficulty": 1,
+      "reward": "5M climbing with no known ceiling",
+      "steps": [
+        {
+          "shot": "right-saucer",
+          "action": "Cycle the Slide around to Big Millions",
+          "detail": "It follows Playground Award in the rotation, then loops back to Mega Menu after."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Ride the Right Ramp for climbing value",
+          "detail": "5M for the first hit, 10M for the second, 15M for the third and up from there with no known ceiling, all inside a 10-second window."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "unlimited-millions",
+      "title": "Unlimited Millions",
+      "category": "mode",
+      "summary": "The richest of the Slide's random awards — 24 full seconds of the Left Ramp climbing in value, uncapped.",
+      "difficulty": 2,
+      "reward": "3M climbing with no known ceiling",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Ride the Left Ramp for even bigger climbing value",
+          "detail": "3M for the first hit, 6M for the second, 9M for the third and onward with no known ceiling, over a full 24 seconds — the longest and richest of the three Slide rounds."
+        },
+        {
+          "shot": "center-shot",
+          "action": "Cash out on the Center Shot once it ends",
+          "detail": "Every Left Ramp shot during this round also counts toward the Double Feature combo, so shooting the Center Shot right as Unlimited Millions ends is worth doing on top of the ramp value itself."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "right-ramp-countup",
+      "title": "Count Up To Feature",
+      "category": "progression",
+      "summary": "Every Right Ramp shot builds toward three thresholds — Snack Attack, Video Mode, and Super Scoring — outside of multiball.",
+      "difficulty": 1,
+      "reward": "A new feature every few ramps",
+      "steps": [],
+      "instructions": [
+        "Every Right Ramp shot counts toward a running total, and the marquee above the ramp lists the awards in order, so you can see which two are coming up next.",
+        "The usual ladder runs Snack Attack at 4 hits, then Video Mode after 8 and Super Scoring after 12 — reaching Super Scoring resets the count back to 1 for the next lap through the same sequence.",
+        "None of this works during Multiball — the Right Ramp switches over to Movie Madness instead, which is a much smaller, flat-growing award."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "snack-attack",
+      "title": "Snack Attack",
+      "category": "mode",
+      "summary": "Four Right Ramp shots lights a countdown at the Snackbar — the sooner you get there, the bigger it pays.",
+      "difficulty": 1,
+      "reward": "20M counting down to a 3M floor",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Reach four Right Ramp shots to light it",
+          "detail": "Snack Attack lights at the Snackbar once the count-up hits four."
+        },
+        {
+          "shot": "snackbar",
+          "action": "Collect it before it bottoms out",
+          "detail": "It opens around 20M and counts down to a floor around 3M, so the sooner you get there after it lights, the better it pays."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "video-mode",
+      "title": "Video Mode",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Eight Right Ramp shots lights a Saucer for Video Mode — land 17 flipper punches on a Peeping Tom in 15 seconds to knock him out.",
+      "difficulty": 2,
+      "reward": "15M for a knockout",
+      "steps": [
+        {
+          "shot": "right-saucer",
+          "action": "Take Video Mode wherever it's lit",
+          "detail": "It starts lit at the Right Saucer, with the slingshots able to toggle it over to the Left Saucer instead — it'll sit there indefinitely until you take it."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Punch left with the left flipper button",
+          "detail": "You're fighting off a Peeping Tom — landing 17 hits in 15 seconds knocks him out for 15M. Every Video Mode after the first needs five more hits than the last, with no extra time."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Punch right with the right flipper button",
+          "detail": "Alternate buttons as he dodges — a clean knockout is worth watching for the flipper trick that follows.",
+          "link": "none"
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "super-scoring",
+      "title": "Super Scoring",
+      "category": "mode",
+      "summary": "Twelve Right Ramp shots, then a Snackbar hit before it times out, turns on nearly every feature in the game at once for 20-25 seconds.",
+      "difficulty": 2,
+      "reward": "Big Millions, Mega Menu, Intermission Time and Super Creature Feature all at once",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Reach twelve Right Ramp shots",
+          "detail": "This lights Super Scoring at the Snackbar."
+        },
+        {
+          "shot": "snackbar",
+          "action": "Shoot the Snackbar before it times out",
+          "detail": "This kicks off a genuinely everything-is-lit round — Big Millions, Mega Menu, Intermission Time, and Super Creature Feature all running together for only about 20-25 seconds. Pick one thing and commit to it rather than chasing all of them."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Go for the Left Ramp fast if you want Super Creature Feature",
+          "detail": "The diverter that feeds Super Creature Feature closes if you don't take it almost immediately, so this is the one shot in the round with a real time limit inside the time limit."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "super-creature-feature",
+      "title": "Super Creature Feature",
+      "category": "secret",
+      "summary": "Only reachable during Super Scoring — ride the Whirlpool for climbing value until the game cuts you off at 35M and tells you not to be greedy.",
+      "difficulty": 3,
+      "reward": "5M climbing per spin, capped at 35M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Only reachable during Super Scoring",
+          "detail": "Hitting the Left Ramp while Super Scoring is active feeds the ball into the Whirlpool for this instead of the normal Creature Ramp behavior."
+        },
+        {
+          "shot": "whirlpool",
+          "action": "Ride the Whirlpool for climbing value",
+          "detail": "The first spin pays 5M, the next 10M, climbing every revolution — until the total hits 35M, at which point the game simply stops paying and tells you not to be greedy."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "move-your-car",
+      "title": "Move Your Car",
+      "category": "mode",
+      "summary": "Five Center Shots start it, a countdown has to be beaten, and then a fast 15-second window lets you stack 2x, 3x and 4x follow-ups on top.",
+      "difficulty": 2,
+      "reward": "8M to 3M countdown, up to 80M with every multiplier",
+      "steps": [
+        {
+          "shot": "center-shot",
+          "action": "Hit the Center Shot five times to start it",
+          "detail": "How well you performed on the previous Move Your Car sets the bar for the next one: clear it and the following sequence needs 8 additional shots, but a miss drops that to just 3."
+        },
+        {
+          "shot": "center-shot",
+          "action": "Beat the countdown before it bottoms out",
+          "detail": "It counts down from 8M to a 3M floor — hit the Center Shot again before it runs out to bank that value."
+        },
+        {
+          "shot": "center-shot",
+          "action": "Keep firing for the 2x, 3x and 4x follow-ups",
+          "detail": "You get 15 seconds after the first hit to stack doubling bonuses on top, for a possible 1x+2x+3x+4x total of 80M. The Jet Bumpers pause this timer, but nothing else does, and there's no grace period at the very end — the round can cut off mid-shot."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "double-feature",
+      "title": "Double Feature",
+      "category": "combo",
+      "summary": "Repeat Left Ramp shots double a running value that doesn't reset between hits — cash it in on the Center Shot before the whole thing times out at once.",
+      "difficulty": 1,
+      "reward": "500K doubling to a 16M cap",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp to open the combo",
+          "detail": "The first hit sets the Double Feature value to 500K; unlike most combos, hitting something else in between doesn't reset it."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep hitting the Left Ramp to double it",
+          "detail": "Every additional Left Ramp shot before it times out doubles the running value, up to a cap of 16M on normal and hard settings."
+        },
+        {
+          "shot": "center-shot",
+          "action": "Cash it in on the Center Shot",
+          "detail": "The value disappears all at once when the timer runs out rather than counting down, so don't wait too long to collect."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Complete F-I-L-M, lock a ball, then search three shots for the stolen Girl before chasing Jackpots and Super Jackpots multiplied by the Whirlpool.",
+      "difficulty": 3,
+      "reward": "Jackpots that double every time you clear a Super",
+      "steps": [
+        {
+          "shot": "left-saucer",
+          "action": "Complete F-I-L-M, then lock at either sink",
+          "detail": "Both the Left Saucer and the Right Saucer can take the lock once F-I-L-M is done — heavy strobing at both marks that they're ready."
+        },
+        {
+          "shot": "snackbar",
+          "action": "Search all three lit spots for the Girl",
+          "detail": "The Left Saucer, Right Saucer and Snackbar all light as Search targets at the start of multiball. Which one is hiding the Creature is completely random — it might be the first one you try, or all three."
+        },
+        {
+          "shot": "snackbar",
+          "action": "Rescue her, then chase the Jackpot",
+          "detail": "Finding her pays 5M times your Playfield Multiplier; shooting the Snackbar again rescues her for 10M times the multiplier and lights the Jackpot, collected on a third Snackbar shot."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Build toward the Super Jackpot in the bumpers",
+          "detail": "Somewhere between 10 and 30 Jet Bumper hits lights the Super Jackpot at the Snackbar, worth exactly double the base Jackpot value."
+        },
+        {
+          "shot": "whirlpool",
+          "action": "Run the Whirlpool for Playfield Multiplier before you cash out",
+          "detail": "The Left Ramp's diverter feeds the Whirlpool during multiball; each spin spots a letter in CREATURE, and completing the word raises your Playfield Multiplier by one step, up to 4x on normal settings. It's worth trapping one ball and running the other through the ramp repeatedly before collecting anything, since the multiplier applies to every Jackpot and Super Jackpot that follows.",
+          "link": "none"
+        },
+        {
+          "shot": "snackbar",
+          "action": "Collect the multiplied Super Jackpot",
+          "detail": "Collecting it doubles the base Jackpot amount for as long as the game lasts, and restarts the Search sequence from the top — a second pass through pays double on Search and Rescue, a third pays triple."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "easter-eggs",
+      "title": "Flipper-Hold Secrets",
+      "category": "secret",
+      "summary": "Holding both flippers at exactly the right moment three separate times in the game turns up hidden gags — and completing P-A-I-D hides a cow in plain sight.",
+      "difficulty": 2,
+      "reward": "Hidden animations, no real points",
+      "steps": [],
+      "instructions": [
+        "Hold both flippers up right as the Snackbar's lights come on and the sign flips to \"OPEN\" for a \"NO MORE BAD FOOD\" gag that blows up the Snackbar animation — timing has to be before the sign changes, not after.",
+        "Hold the flippers again the next time the Snackbar attendant hands over a menu item award for a \"Choking Fatality\" bit that runs well past the end of the normal animation.",
+        "At the very end of a won Video Mode, when the display reads \"KNOCKOUT\" and your opponent is dazed, flip immediately for a gruesome finishing \"FATALITY.\"",
+        "Completing P-A-I-D triggers a \"Thank you, enjoy the film\" animation — watch the lower right corner as it smears out for a hidden cow, standing and facing left."
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "sneak-in-bonus",
+      "title": "Sneak-In Bonus",
+      "category": "secret",
+      "summary": "A ball that circles the Back Orbit without ever having been fired from the plunger scores a bonus most players never find.",
+      "difficulty": 2,
+      "reward": "1M the first time, climbing after",
+      "steps": [
+        {
+          "shot": "center-shot",
+          "action": "Send a fast shot up the Center Shot",
+          "detail": "A quick, hard Center Shot is the most reliable way to get the ball moving fast enough for this."
+        },
+        {
+          "shot": "back-orbit",
+          "action": "Let it carry all the way around the Back Orbit unplunged",
+          "detail": "A ball that circles the Back Orbit without ever having been fired from the plunger scores a Sneak-In Bonus — 1M the first time in a game, 2M the second, climbing from there."
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "bonus-hurry-up",
+      "title": "Bonus & The Multiplier Trick",
+      "category": "progression",
+      "summary": "The bonus multiplier's steps quietly double under the hood, and flipping while the bonus counts up speeds the whole thing along.",
+      "difficulty": 1,
+      "reward": "Effectively up to 32x on the base bonus",
+      "steps": [],
+      "instructions": [
+        "The bonus multiplier climbs 1x, 2x, 4x, 6x, 8x, up to a 10x cap — but it's actually applied as a doubling each step, so 6x really pays like 8x, 8x like 16x, and the 10x cap like 32x under the hood.",
+        "End-of-ball bonus itself tends to be modest on this game regardless, and there's no way to hold it across balls.",
+        "You can hurry the bonus count along by flipping while it counts up — a small but genuinely useful convenience most other machines of this era don't offer."
+      ],
+      "fx": "watch"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "cftbl-skillshot-paid",
+      "title": "Paid In Full",
+      "desc": "Land the P-A-I-D skill shot on the plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-paid"
+    },
+    {
+      "id": "cftbl-skillshot-kiss",
+      "title": "The Full Smooch",
+      "desc": "Bank all four K-I-S-S letters on a single skill shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-kiss"
+    },
+    {
+      "id": "cftbl-double-combo",
+      "title": "Double Feature Presentation",
+      "desc": "Score the Double Film Letter Combo.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "double-film-letter-combo"
+    },
+    {
+      "id": "cftbl-film-complete",
+      "title": "F-I-L-M",
+      "desc": "Complete F-I-L-M and light the locks for Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "film-letters"
+    },
+    {
+      "id": "cftbl-extra-ball-kiss",
+      "title": "Second Kiss",
+      "desc": "Complete K-I-S-S a second time and light the Extra Ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "kiss-f-letter"
+    },
+    {
+      "id": "cftbl-super-scoring",
+      "title": "Everything Is Lit",
+      "desc": "Start Super Scoring.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-scoring"
+    },
+    {
+      "id": "cftbl-super-creature-feature",
+      "title": "Don't Be Greedy",
+      "desc": "Ride the Whirlpool all the way to the 35M Super Creature Feature cap.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-creature-feature"
+    },
+    {
+      "id": "cftbl-move-your-car-perfect",
+      "title": "Nuclear Option",
+      "desc": "Land the full 1x-2x-3x-4x Move Your Car sequence.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "move-your-car"
+    },
+    {
+      "id": "cftbl-double-feature-max",
+      "title": "Maxed Out Feature",
+      "desc": "Push the Double Feature combo to its cap before collecting.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "double-feature"
+    },
+    {
+      "id": "cftbl-multiball",
+      "title": "Search And Rescue",
+      "desc": "Start Multiball and rescue the Girl.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "cftbl-super-jackpot",
+      "title": "Multiplied Super",
+      "desc": "Collect a multiplied Super Jackpot in Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "cftbl-cow",
+      "title": "Find the Hidden Cow",
+      "desc": "Spot the hidden cow after completing P-A-I-D.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "easter-eggs"
+    },
+    {
+      "id": "cftbl-sneak-in",
+      "title": "Free Ride",
+      "desc": "Score a Sneak-In Bonus on an unplunged lap around the Back Orbit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "sneak-in-bonus"
+    },
+    {
+      "id": "cftbl-fatality",
+      "title": "There's More Where That Came From",
+      "desc": "Flip at the right moment to trigger a hidden Video Mode Fatality.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "easter-eggs"
+    }
+  ],
+  "drills": [
+    {
+      "id": "two-plunge-routes",
+      "title": "Two Plunges, Two Payoffs",
+      "text": "Alternate the soft plunge into the flashing P-A-I-D lane, which finishes the whole word in one drop, with the full-strength lap around the Back Orbit that banks whichever K-I-S-S letters are cycling as the ball trips the sensor. Learn both, because they pay for completely different things.",
+      "reps": "10 plunges each route",
+      "focus": "skill-shot",
+      "goal": "skillshot-kiss",
+      "shots": [
+        "shooter-lane",
+        "paid-lanes",
+        "back-orbit"
+      ]
+    },
+    {
+      "id": "film-letter-combo",
+      "title": "F Then M, Back To Back",
+      "text": "Set up so the Back Orbit shot is the one that actually finishes K-I-S-S, then go straight to the Slide for the M with nothing in between. Only that back-to-back pair pays the Double Film Letter Combo, and there is no three-letter version to fall back on.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "double-film-letter-combo",
+      "shots": [
+        "back-orbit",
+        "right-saucer"
+      ]
+    },
+    {
+      "id": "right-ramp-countup-reps",
+      "title": "Twelve Right Ramps",
+      "text": "Watch the marquee above the ramp and grind the count all the way to twelve in a single run rather than stopping at Snack Attack. The ladder gives you Snack Attack at four and Video Mode at eight on the way, so nothing you shoot is wasted.",
+      "reps": "reach 12 twice",
+      "focus": "accuracy",
+      "goal": "right-ramp-countup",
+      "shots": [
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "double-feature-cashout",
+      "title": "Double, Then Cash",
+      "text": "Repeat the Left Ramp to double the running value — hitting something else in between does not reset it, so the only enemy is the clock. The whole value vanishes at once rather than counting down, so take the Center Shot while you still clearly have time.",
+      "reps": "8 runs, cashing every one",
+      "focus": "flow",
+      "goal": "double-feature",
+      "shots": [
+        "left-ramp",
+        "center-shot"
+      ]
+    },
+    {
+      "id": "paid-lane-steering",
+      "title": "Steer The P-A-I-D Lanes",
+      "text": "Both flippers move the lit lanes, in opposite directions, so practise checking which lane is actually lit before you touch a button. The ball tends to come up through the middle two lanes off a bumper, so steer for those rather than fighting for an outside lane.",
+      "reps": "one ball, completing P-A-I-D twice",
+      "focus": "ball-control",
+      "goal": "paid-l-letter",
+      "shots": [
+        "paid-lanes",
+        "jet-bumpers"
+      ]
+    },
+    {
+      "id": "whirlpool-before-jackpot",
+      "title": "Multiplier Before Jackpot",
+      "text": "Once multiball is running, trap one ball and send the other up the Left Ramp into the Whirlpool over and over to spell CREATURE and raise the Playfield Multiplier. Every Jackpot you then collect at the Snackbar is multiplied, so collecting first and building later is the expensive way round.",
+      "reps": "2 multiballs, multiplier raised before any collect",
+      "focus": "ball-control",
+      "goal": "multiball",
+      "shots": [
+        "left-ramp",
+        "whirlpool",
+        "snackbar"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "monster",
+  "actionButton": {
+    "present": false,
+    "how": "An early-nineties Bally with a plain control set: shooter rod, two flipper buttons, and whatever you can get away with nudging. Even the video mode is fought with the flipper buttons, throwing left and right punches at the Peeping Tom."
+  },
+  "howItPlays": {
+    "objective": "Creature from the Black Lagoon is a monster-movie night at the drive-in, built around spelling F-I-L-M. Finish the word to lock a ball and start the search-and-rescue Multiball, and grind the right-ramp marquee toward the game's big all-lit rounds.",
+    "loop": [
+      "Chase the four letters of F-I-L-M, each hidden behind its own shot: the K-I-S-S saucer, the Menu Targets that open the Snackbar, the steerable top lanes, and the Slide on the right.",
+      "Bank all four to arm a lock at either sinkhole, drop a ball to begin the search, and check the three lit spots until the Girl turns up.",
+      "In Multiball, cradle one ball and feed the loose one up the left ramp, which diverts into the Whirlpool; spell CREATURE there to lift your Playfield Multiplier.",
+      "Cash the rescue and Jackpot at the Snackbar, then let the jets stack a Super Jackpot that doubles the base for the rest of the night.",
+      "Between multiballs, keep feeding the right ramp toward Snack Attack, Video Mode and the everything-on Super Scoring round."
+    ],
+    "lights": [
+      {
+        "id": "film-letters",
+        "name": "F-I-L-M Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-saucer"
+          },
+          {
+            "shot": "menu-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "paid-lanes",
+            "lamps": 4
+          },
+          {
+            "shot": "right-saucer"
+          }
+        ],
+        "lit": "Each letter of F-I-L-M lights as you earn it and stays lit for the whole game rather than the ball, so an unlit letter is simply one you still owe -- and the word must be finished once for every Multiball you mean to play.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the F at the K-I-S-S saucer, the I by opening the Snackbar, the L across the top lanes and the M off the Slide. Collect them in movie order for a fat sequential bonus, and finishing the word lights a lock at either sinkhole to begin Multiball.",
+        "goals": [
+          "film-letters",
+          "kiss-f-letter",
+          "snackbar-i-letter",
+          "paid-l-letter",
+          "slide-m-letter"
+        ]
+      },
+      {
+        "id": "paid-top-lanes",
+        "name": "P-A-I-D Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "paid-lanes",
+            "lamps": 4
+          }
+        ],
+        "lit": "A lit P-A-I-D rollover above the jets is a letter you have not rolled yet, the set clears only when all four are knocked down, and the ball tends to pop up through the middle pair off a bumper -- so glance at which lane is lit before you commit.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "each button nudges the lit rollovers sideways and the two buttons push them opposite ways, so you can walk the lit lane over to wherever the ball is heading",
+          "when": "before the ball rolls back down through the lanes"
+        },
+        "then": "Slide the lit lane under the ball and roll through it; completing all four claims the L in F-I-L-M and clicks your bonus multiplier up a step. Once that multiplier maxes out, a finished P-A-I-D just pays a flat award instead.",
+        "goals": [
+          "paid-l-letter",
+          "skillshot-paid"
+        ]
+      },
+      {
+        "id": "slide-awards",
+        "name": "The Slide",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-saucer"
+          }
+        ],
+        "lit": "The Slide stays lit while the M of F-I-L-M is still owed, which makes it the surest letter on the board; once M is taken, repeat hits rotate through its award list instead.",
+        "flashing": null,
+        "control": null,
+        "then": "Grab M first, then keep coming back: the awards cycle Mega Menu, then the random Playground draw, then Big Millions. Playground can hand you Unlimited Millions on the left ramp, and Big Millions turns the right ramp into a fast climbing jackpot.",
+        "goals": [
+          "slide-m-letter",
+          "mega-menu",
+          "playground-award",
+          "big-millions",
+          "unlimited-millions"
+        ]
+      },
+      {
+        "id": "projector-marquee",
+        "name": "Right Ramp Marquee",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "snackbar"
+          }
+        ],
+        "lit": "Every right-ramp shot outside Multiball ticks a running counter, the lit marquee over the ramp names the next couple of rewards, and topping the ladder rolls the count back to the bottom for another lap.",
+        "flashing": null,
+        "control": null,
+        "then": "Four ramps light Snack Attack at the Snackbar, eight light Video Mode, and twelve light Super Scoring -- a brief window with nearly every feature on at once. Take Super Scoring at the Snackbar, then rush the left ramp for the capped Super Creature Feature before its diverter shuts.",
+        "goals": [
+          "right-ramp-countup",
+          "snack-attack",
+          "video-mode",
+          "super-scoring",
+          "super-creature-feature"
+        ]
+      },
+      {
+        "id": "menu-snackbar",
+        "name": "Menu Targets & Snackbar",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "menu-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "snackbar"
+          }
+        ],
+        "lit": "The four Menu Targets light around the central Snackbar and the jets keep rotating which ones are on, so the pattern drifts until you knock all four down and the sinkhole opens.",
+        "flashing": null,
+        "control": null,
+        "then": "Opening the Snackbar drops the I into F-I-L-M and makes it the hub shot -- it pays Snack Attack and Super Scoring, and during Multiball it is where you search for the Girl, rescue her and cash the Jackpot. Mega Menu relights all four targets at once for a quick sweep.",
+        "goals": [
+          "snackbar-i-letter",
+          "mega-menu",
+          "snack-attack"
+        ]
+      },
+      {
+        "id": "multiball-search",
+        "name": "Multiball Search & Whirlpool",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-saucer"
+          },
+          {
+            "shot": "right-saucer"
+          },
+          {
+            "shot": "snackbar"
+          },
+          {
+            "shot": "whirlpool"
+          },
+          {
+            "shot": "jet-bumpers"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Once F-I-L-M is done and a ball is locked, both sinkholes and the Snackbar light as Search spots with the Girl behind one of them at random, and a lit Whirlpool feed means the left ramp is diverting there instead of taking its usual return.",
+        "flashing": null,
+        "control": null,
+        "then": "Find and rescue the Girl at the lit spots, then run the left ramp into the Whirlpool again and again to spell CREATURE and step your Playfield Multiplier up. Build that first, because it multiplies the Snackbar Jackpot and the doubled Super Jackpot the jets are lighting -- and each Super you bank doubles the base for good.",
+        "goals": [
+          "multiball"
+        ]
+      },
+      {
+        "id": "center-shot-combos",
+        "name": "Center Shot",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-shot"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "The Center Shot is the collect point for two separate things at once -- Move Your Car arms after five center hits, and the Double Feature value you stack on the left ramp waits here to be cashed.",
+        "flashing": null,
+        "control": null,
+        "then": "Start Move Your Car, beat its countdown, and stack the 2X, 3X and 4X follow-ups inside the timer for its top total. For Double Feature, keep doubling on the left ramp -- other shots between do not reset it -- and collect at the Center before the whole value drops off at once.",
+        "goals": [
+          "move-your-car",
+          "double-feature"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button walks the lit P-A-I-D rollover sideways, and the two buttons move it opposite ways, so tap to line the lit lane up with the ball's path before it rolls through. Completing all four letters claims the L in F-I-L-M and steps your bonus multiplier, up to its cap.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Open with a skill shot: a soft drop nestled into a lit P-A-I-D lane finishes the word right off the plunge, or a full lap around the Back Orbit banks whatever K-I-S-S letters are cycling. Start earning F-I-L-M and feed the right-ramp marquee, and note the outlanes only hand you FOCUS, never a save.",
+        "goals": [
+          "skillshot-paid",
+          "skillshot-kiss",
+          "film-letters",
+          "right-ramp-countup"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Cash the Slide's rotating awards and the Center Shot combos, drive the marquee up to the all-lit Super Scoring round, and steer the P-A-I-D lanes to push your bonus multiplier while you set up a lock.",
+        "goals": [
+          "slide-m-letter",
+          "move-your-car",
+          "double-feature",
+          "super-scoring",
+          "paid-l-letter"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Multiball is the ceiling: rescue the Girl, spell CREATURE at the Whirlpool for a fat Playfield Multiplier, and collect a Super Jackpot that permanently doubles the base. Super Scoring's capped Super Creature Feature is the other big swing.",
+        "goals": [
+          "multiball",
+          "super-creature-feature"
+        ]
+      }
+    ]
+  }
+}

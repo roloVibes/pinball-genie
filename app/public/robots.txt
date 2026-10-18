@@ -1,0 +1,45 @@
+# robots.txt — pinball-genie.com (Pinball Genie LLC)
+# Added 2026-07-30 with the public launch. Before this the route 404'd.
+#
+# Two rules here are deliberate and must not be "tidied up":
+#
+#  1. Mediapartners-Google is the AdSense crawler. It is NEVER disallowed —
+#     blocking it is a documented cause of ads failing to serve / review being
+#     refused, and it is a separate agent from Googlebot.
+#  2. /login and /auth/ are disallowed because they're a sign-in form and its
+#     request/verify endpoints — nothing there to index, not because either is
+#     secret. Disallow is a crawling hint, NOT an access control: the real gate
+#     is the session check in pinball_auth.py. Never rely on this file to
+#     protect anything. (D16, 2026-07-30: Phase 5 replaced the old
+#     username+password form with passwordless magic-link sign-in — "a
+#     credential form" is the retired model; there is no credential entered
+#     here anymore, just an email address. /auth/ covers /auth/request and
+#     /auth/verify, neither of which existed when this file was first written
+#     and neither of which a crawler should ever be hitting anyway — a bot
+#     that fetched a real /auth/verify?token=... link from somewhere would
+#     otherwise burn someone else's single-use sign-in token.)
+#
+# Everything else is open on purpose: the study tool and the four legal pages
+# are exactly what we want crawled.
+#
+# The per-machine guide pages of Phase 4 (2026-07-30) live under /machines/ —
+# an explicit `Allow: /machines/` line is added below even though a bare
+# `Allow: /` with no matching Disallow already covers it: these pages ARE
+# this site's entire SEO strategy (see the Phase 4 build notes), so leaving
+# their crawlability implicit and dependent on nobody ever adding a broader
+# Disallow above them later is the wrong place to save one line.
+
+User-agent: *
+Allow: /
+Allow: /machines/
+Disallow: /login
+Disallow: /auth/
+Disallow: /whoami
+Disallow: /api/
+
+# AdSense crawler — must stay fully allowed (see note 1 above).
+User-agent: Mediapartners-Google
+Allow: /
+Allow: /machines/
+
+Sitemap: https://pinball-genie.com/sitemap.xml

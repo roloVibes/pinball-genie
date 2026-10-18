@@ -1,0 +1,1478 @@
+{
+  "machine": "Teenage Mutant Ninja Turtles (Stern Pinball, 2020)",
+  "defaultFx": "turtle",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.4,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Standard lower-left main flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Standard lower-right main flipper; used to backhand the right ramp safely."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper-Left Flipper",
+      "type": "flipper",
+      "x": 0.21,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "Mid-left, ~40% up; shoots the center/side ramp, right ramp, and Krang (upper) loop; fed by the left orbit."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Dimension X)",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Tight/precise shot guarded by two 'X' standups; lights episodes; Raphael skill-shot target; Ninja Pizza lock staged beneath (Prem/LE); Team-Up starts here.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Side / Krang Kombo Ramp)",
+      "type": "ramp",
+      "x": 0.57,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Primarily an upper-flipper shot; cashes the Krang Kombo; Donatello skill-shot target.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.67,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Very tight; hittable from either main flipper (backhand from right flipper preferred); 4th shot starts Turtle Power MB; cashes April/Weapon hurry-ups.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Far-left lane wrapping the back; exit guarded by the upper flipper."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.83,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Far right; almost always feeds the upper flipper; plunged balls route here into the bumpers.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper Loop (Krang Loop)",
+      "type": "loop",
+      "x": 0.46,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Loops the pop bumpers; upper-flipper shot; scores Mondo Jackpot in both multiballs; builds Krang Kombo.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "pizza-parlor",
+      "name": "Ninja Pizza Parlor",
+      "type": "scoop",
+      "x": 0.4471,
+      "y": 0.3851,
+      "trim": "all",
+      "notes": "Center scoop; starts episodes when lit, locks balls for Ninja Pizza MB, starts Final Battle; lights Extra Balls; ejects onto the upper flipper.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "pizza-disc",
+      "name": "Spinning Pizza Disc",
+      "type": "disc",
+      "x": 0.4,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Magnetic disc in front of the left ramp; grabs/holds/throws up to 3 balls during Ninja Pizza MB. Pro spins one way; Prem/LE bidirectional."
+    },
+    {
+      "id": "tmnt-van",
+      "name": "TMNT Van Lock",
+      "type": "lock",
+      "x": 0.287,
+      "y": 0.8867,
+      "trim": "premium-le",
+      "notes": "Sculpted mechanical side-door lock (up to 4 balls) for Turtle Power MB. Pro's lock is virtual."
+    },
+    {
+      "id": "lair",
+      "name": "Lair (Splinter's Lair)",
+      "type": "scoop",
+      "x": 0.07,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Far-left underarm/backhand shot; hidden ninja-training lock; scores Super Jackpot (Jackpoto Grande) in both multiballs."
+    },
+    {
+      "id": "lair-target",
+      "name": "LAIR Target",
+      "type": "standup",
+      "x": 0.0493,
+      "y": 0.288,
+      "trim": "all",
+      "notes": "Bar/mono standup in front of the Lair; spell L-A-I-R: odd completions light Training, even completions light 2x Playfield."
+    },
+    {
+      "id": "dimension-x-targets",
+      "name": "Dimension X Targets (x2)",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Pair flanking the left-ramp entrance; change episode selection; qualify Neutrino Pizza Party; used in Final Battle phases."
+    },
+    {
+      "id": "april-targets",
+      "name": "APRIL Target",
+      "type": "standup",
+      "x": 0.8,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Bar standup by the right orbit; spell A-P-R-I-L: odd = Battle Again outlane save, even = April Hurry-Up."
+    },
+    {
+      "id": "pizza-target",
+      "name": "Pizza / More-Time Target",
+      "type": "standup",
+      "x": 0.47,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Below the center ramp; adds time to timed rules; the topping standup where Ninja Pizza toppings are chosen at lock; feeds Pizza Eating Contest slices."
+    },
+    {
+      "id": "center-standup",
+      "name": "Center 2X Target",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "In front of the pop bumpers; activates/extends 2x (3x) Playfield (+5s per hit while running)."
+    },
+    {
+      "id": "foot-spinner",
+      "name": "Foot Clan Spinner",
+      "type": "spinner",
+      "x": 0.15,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Left-side lane spinner; each spin adds +1k to Foot Value (1-2-3 Foot)."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (Pict-o-Pops)",
+      "type": "bumper",
+      "x": 0.62,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Upper center-right cluster; match-picture awards including +Bonus X, Add Time, Light Extra Ball, Light Turtle Power MB."
+    },
+    {
+      "id": "rollover-lanes",
+      "name": "Top Rollover Lanes (x2)",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Above the bumpers; increase Bonus Multiplier; the flashing lane is the Pro-only +1x Bonus X skill shot."
+    },
+    {
+      "id": "krang-toy",
+      "name": "Krang Toy",
+      "type": "toy",
+      "x": 0.62,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Sculpt above the pop bumpers; animated on Prem/LE, static on Pro. Not a shootable target."
+    },
+    {
+      "id": "glider",
+      "name": "TMNT Glider Diverter",
+      "type": "diverter",
+      "x": 0.48,
+      "y": 0.67,
+      "trim": "premium-le",
+      "notes": "Player-steered sculpt above the ramp returns; build Glider Value on the left ramp, collect on the right ramp when lit."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.13,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Battle Again save alternates here."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Feeds left flipper; weapon toggle; 1-2-3 Foot lights via the inner-left inlane."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Weapon toggle."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.87,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Battle Again save alternates here."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter / Plunge Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Far-right lane; auto-plunge feeds the right orbit; skill-shot window opens on plunge.",
+      "feeds": {
+        "shot": "right-orbit"
+      }
+    }
+  ],
+  "goals": [
+    {
+      "id": "turtle-skill-shot",
+      "title": "Turtle Skill Shot",
+      "category": "skillshot",
+      "summary": "After the plunge a 15-second window lights your selected turtle's specific shot; hit it for 250k and to light the Weapon Hurry-Up insert.",
+      "difficulty": 2,
+      "reward": "250k + lights Weapon Hurry-Up at an inlane",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Plunge through, then shoot your turtle's lit skill-shot target",
+          "detail": "A 15-second window opens after the plunge for your turtle's lit shot Raphael = Left Ramp (shown); Leonardo = the Lair (under-flipper lane), Michelangelo = Pizza Parlor, Donatello = Center Ramp. Making it scores 250k and lights the Weapon insert at an inlane"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-x-skill-shot",
+      "title": "Bonus Multiplier Skill Shot (Pro)",
+      "category": "skillshot",
+      "summary": "Pro-only soft plunge into the flashing top-right rollover lane for +1x Bonus Multiplier.",
+      "difficulty": 1,
+      "reward": "+1x Bonus Multiplier",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Soft-plunge into the top lanes",
+          "detail": "Ease off the plunger so the ball dribbles up into the flashing top-right lane for +1x Bonus X. Pro editions only; LE handles the bonus-X skill shot differently"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "foot-123-combo",
+      "title": "1-2-3 Foot Combo",
+      "category": "combo",
+      "summary": "Once-per-ball named combo: open with the Right Ramp then chain two more flashing shots; pays 6x Foot Value and is a Cowabunga requirement.",
+      "difficulty": 2,
+      "reward": "6x Foot Value (base 50k +1k/spinner spin); Cowabunga objective",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the inner inlane to light 1-2-3 Combo (single-ball, once per ball)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Backhand the Right Ramp from the right flipper to open the combo",
+          "detail": "The live left-flipper shot risks a post-hit drain",
+          "flipper": "right"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Center Ramp (or the Upper Loop) as the second flashing shot"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Complete on the Left Ramp — path is Right→Center→Left OR Right→Upper Loop→Center"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "krang-kombo",
+      "title": "Krang Kombo",
+      "category": "combo",
+      "summary": "Repeatable money loop: hammer the Upper Loop three times to build to 500k, then cash on the upper-flipper-fed Center Ramp before it times out.",
+      "difficulty": 2,
+      "reward": "Up to 500k per loop; maxing & collecting once is a Cowabunga requirement",
+      "steps": [
+        {
+          "shot": "upper-loop",
+          "action": "Shoot the Upper Loop from the upper flipper to build Krang Kombo value"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Repeat the Upper Loop (maxes at 500k after 3 shots)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Cash the built value on the Center Ramp before the timer resets, then repeat"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "weapon-hurry-up",
+      "title": "Weapon Hurry-Up Chain",
+      "category": "combo",
+      "summary": "Skill-shot-fed hurry-up: roll the lit Weapon inlane, collect at an orbit, then take a second and larger hurry-up on the Center Ramp.",
+      "difficulty": 2,
+      "reward": "500k→50k (Pict-o-Pop +125k base); collecting one is a Cowabunga requirement",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the lit Weapon inlane to arm the hurry-up at an orbit"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the lit orbit to collect (500k counting down to 50k)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Center Ramp to collect the second hurry-up, worth the base value plus what the orbit just paid"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Either orbit can be the lit one — check which arrow is on before you commit",
+          "link": "none"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "april-hurry-up",
+      "title": "April Hurry-Up",
+      "category": "combo",
+      "summary": "Spell APRIL to an even completion to light April Hurry-Up, then cash it at the Right Ramp; five collections is a Cowabunga requirement.",
+      "difficulty": 1,
+      "reward": "100k+ (bigger in modes/MB); 5 collections = Cowabunga objective",
+      "steps": [
+        {
+          "shot": "april-targets",
+          "action": "Spell A-P-R-I-L to an even completion to light April Hurry-Up"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash out the April Hurry-Up at the Right Ramp (hitting APRIL again while lit adds value)"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "glider-value",
+      "title": "Glider Value (Premium/LE)",
+      "category": "combo",
+      "summary": "Premium/LE left-ramp-to-right-ramp money loop: build Glider Value on the Left Ramp, then bank it on the Right Ramp when 'Collect' is lit.",
+      "difficulty": 2,
+      "reward": "Banked Glider Value (Prem/LE exclusive)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp repeatedly to Build Glider Value (steer the sculpt with the action button)",
+          "detail": "Maxes after ~3 shots"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp while 'Collect Glider Value' is lit to bank it"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "turtle-power-mb",
+      "title": "Turtle Power Multiball",
+      "category": "multiball",
+      "summary": "Advance the Right Ramp three times so the 4th shot starts the multiball; collect green jackpots to light Mondo at the upper loop and the Super at the Lair.",
+      "difficulty": 2,
+      "reward": "Multiball; Donatello L1 lights it instantly, L4 = 3x scoring",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp 3 times during single-ball play to advance"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "The 4th Right Ramp shot starts Turtle Power Multiball",
+          "detail": "Prem/LE lock balls in the sculpted TMNT Van"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Collect 4 green jackpots (100k +25k, max 250k) to light Mondo at the Upper Loop"
+        },
+        {
+          "shot": "lair",
+          "action": "Score the Mondo, then shoot the Lair for the Super Jackpot (Jackpoto Grande)"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "ninja-pizza-mb",
+      "title": "Ninja Pizza Multiball",
+      "category": "multiball",
+      "summary": "The game's scoring engine: lock 3 at the Pizza Parlor, defeat 6 Foot Soldiers across the ramps to light Mondo at the upper loop, then bank the huge Super at the Lair.",
+      "difficulty": 3,
+      "reward": "Mondo ~500k+250k, Super 3M + 500k/Mondo; priority MB",
+      "steps": [
+        {
+          "shot": "pizza-parlor",
+          "action": "Lock 3 balls at the Pizza Parlor during single-ball play to start NPMB"
+        },
+        {
+          "shot": "pizza-target",
+          "action": "Choose pizza toppings at the standups as you lock (Ice Cream, Chili Peppers, Fudge juice the MB)"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Defeat 6 Foot Soldiers (Left Ramp=3, Krang Loop=2, Center Ramp=2, Parlor=1, Right Ramp=1)"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Once 6 are defeated, collect the Mondo Jackpot at the Upper Loop"
+        },
+        {
+          "shot": "lair",
+          "action": "After a Mondo, shoot the Lair for the Super Jackpot (3M + 500k per Mondo since last Super)"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "team-up-mb",
+      "title": "Team-Up Multiball",
+      "category": "multiball",
+      "summary": "Mini-wizard lit after 4 episodes: start at the Left Ramp, defeat the 6 Bad-Guy shots, then run Rescue and Shredder hurry-ups into the Pizza Party victory laps.",
+      "difficulty": 3,
+      "reward": "Rescue/Shredder hurry-ups + Pizza Party laps (up to ~10.4M/shot with Leo L4 + 2x); re-lights the main MBs",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "After completing 4 episodes, start Team-Up Multiball at the Left Ramp"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Defeat Bebop/Rocksteady on the orbits (500k, +25k/defeat)"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Defeat the second boss on the opposite orbit; ramps + Krang Loop are Foot Soldiers",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "After 3 Rescue Hurry-Ups, collect the Shredder Hurry-Up at the Right Ramp, then run Pizza Party laps"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "episode-pizza-o-meter",
+      "title": "Episode: Pizza-O-Meter",
+      "category": "mode",
+      "summary": "The easiest starter episode (Episode 1): light Start Episode at a ramp, begin at the Pizza Parlor, then shoot 3 of 6 lit shots to light the Turtle Shots.",
+      "difficulty": 1,
+      "reward": "275k start + lights Turtle Shots; counts toward Team-Up/Final Battle",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot both the left and right ramps to light 'Start Episode' (Raphael's first perk starts it lit)"
+        },
+        {
+          "shot": "pizza-parlor",
+          "action": "Shoot the Pizza Parlor to start Pizza-O-Meter (30s)"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot 3 of the 6 lit shots (both orbits, both ramps, Krang Loop, Center Ramp)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Complete the 3rd lit shot to light the Turtle Shots",
+          "link": "none"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "episode-night-of-mousers",
+      "title": "Episode: Night of the Mousers",
+      "category": "mode",
+      "summary": "Episode 4 has no global timer (per-shot timeouts): shoot 6 lit shots across the LAIR target, both ramps, and APRIL target, which relight each hit.",
+      "difficulty": 2,
+      "reward": "Standard episode value; prerequisite for Super Fly (Ep 7)",
+      "steps": [
+        {
+          "shot": "pizza-parlor",
+          "action": "Start the episode from the Pizza Parlor after lighting it at a ramp"
+        },
+        {
+          "shot": "lair-target",
+          "action": "Hit the LAIR target (one of the 6 relighting shots)",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the ramps as they relight",
+          "link": "none"
+        },
+        {
+          "shot": "april-targets",
+          "action": "Hit the APRIL target; fixed 150k orbits and 250k Center Ramp fill out the 6 shots",
+          "link": "none"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "episode-see-you-other-side",
+      "title": "Episode: See You On The Other Side Ray",
+      "category": "mode",
+      "summary": "Episode 5: one shot to any lit ramp unlights all three and lights the LAIR target. Hit LAIR, the ramps relight, and repeating that cycle to three LAIR hits lights the Turtle Shots.",
+      "difficulty": 2,
+      "reward": "Standard episode value + lights Turtle Shots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp (one of the 3 ramps) to begin unlighting them"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Center Ramp",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp once the ramps relight — one lit ramp shot re-lights the LAIR target",
+          "link": "none"
+        },
+        {
+          "shot": "lair-target",
+          "action": "Hit the LAIR target 3 times to light the Turtle Shots"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "neutrino-pizza-party",
+      "title": "Neutrino Pizza Party",
+      "category": "mode",
+      "summary": "Lit once per game after a Training completion: qualify by completing both Dimension X targets, then chase the rotating blue shot while reds build its value.",
+      "difficulty": 2,
+      "reward": "Blue shot 350k base, builds +200k per red (cap 5M)",
+      "steps": [
+        {
+          "shot": "dimension-x-targets",
+          "action": "Complete both Dimension X targets before timeout to qualify"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the rotating blue shot to collect and reset the 30s timer"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit red shots to unlight them and build future blue value (+200k each)",
+          "link": "none"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "training-2x-playfield",
+      "title": "Training → 2x/3x Playfield",
+      "category": "multiplier",
+      "summary": "Spell LAIR: odd completions light Training (global +10% scoring boost), even completions light 2x Playfield at the center target — Raphael L3 upgrades it to 3x.",
+      "difficulty": 2,
+      "reward": "2x (3x via Raphael L3) for 30s; Training = +10%→+30% global boost",
+      "steps": [
+        {
+          "shot": "lair-target",
+          "action": "Spell L-A-I-R once to light Training (a timed shot-completion mode)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Complete the lit Training shots (e.g. Right & Left Ramp) for +10% scoring and the next perk level"
+        },
+        {
+          "shot": "center-standup",
+          "action": "Spell LAIR again (even completion), then hit the center target to run 2x Playfield (+5s per hit)"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-x-build",
+      "title": "Bonus Multiplier Build",
+      "category": "multiplier",
+      "summary": "Grow the end-of-ball Bonus Multiplier via the Pro top-lane skill shot and Pict-o-Pop bumper awards (up to a ~10x cap), carried over by 'Bonus Held'.",
+      "difficulty": 1,
+      "reward": "Bonus X up to ~10x applied to end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Take the +1x top-lane skill shot (Pro) and roll the bonus-X lanes"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Work the pop bumpers for Pict-o-Pop '+1/+2/+3x Bonus Multiplier' and 'Bonus Held' awards"
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "final-battle",
+      "title": "Final Battle (Wizard)",
+      "category": "wizard",
+      "summary": "Qualification path: play all 8 episodes to light Final Battle at the Pizza Parlor, then clear its three phases — with 2x/3x Playfield applied to the huge episode-score start bonus.",
+      "difficulty": 3,
+      "reward": "Start bonus of accumulated episode scores (all 8 = 25M base) ×2x/3x PF; can exceed 60M",
+      "steps": [
+        {
+          "shot": "pizza-parlor",
+          "action": "After playing all 8 episodes, start Final Battle at the Pizza Parlor (bank a 2x first)"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Phase 1 (MB): shoot 3 ramps + side loop, then both Dimension X targets, then the Left Ramp"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Phase 2 (single ball): finish 4 Bebop shots → Bebop Hurry-Up at the left orbit"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Phase 2: finish 4 Rocksteady shots → Rocksteady Hurry-Up at the right orbit",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Phase 3 (MB): Left Ramp defeats Slash, Side Loop defeats Krang, Right Ramp defeats Shredder; final Left Ramp wins"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "cowabunga-mb",
+      "title": "Cowabunga Multiball (Final Wizard)",
+      "category": "wizard",
+      "summary": "Qualify by completing all seven objectives across the game — reach Final Battle plus the four hurry-up/combo checkboxes and the two super-jackpot milestones.",
+      "difficulty": 3,
+      "reward": "The celebratory all-in wizard multiball",
+      "steps": [
+        {
+          "shot": "pizza-parlor",
+          "action": "Objective 1: reach Final Battle (play all 8 episodes)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Objective 2: max and collect a Krang Kombo (cash at the Center Ramp)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Objectives 3-4: collect 5 April Hurry-Ups and a Weapon Hurry-Up"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Objective 5: complete a 1-2-3 Foot Combo"
+        },
+        {
+          "shot": "lair",
+          "action": "Objective 6: collect a Jackpoto Grande (a Super Jackpot in either main MB)"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Objective 7: collect a Triple Mondo Jackpot at the Upper Loop"
+        }
+      ],
+      "fx": "crown",
+      "ordered": false
+    },
+    {
+      "id": "strategy-raphael-opener",
+      "title": "Strategy: Raphael Opener",
+      "category": "strategy",
+      "summary": "The tournament default line — skill shot into the Weapon light, exploit Raphael's spotted ramps for an easy episode, bank a 2x, then set up Ninja Pizza Multiball.",
+      "difficulty": 2,
+      "reward": "Early episode + banked 2x + NPMB locked",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge and aim the Left Ramp skill shot (Raphael's target)"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Land the skill shot for 250k and to light the inlane Weapon"
+        },
+        {
+          "shot": "pizza-parlor",
+          "action": "With both ramps spotted, start an easy episode (Pizza-O-Meter) at the Pizza Parlor"
+        },
+        {
+          "shot": "lair-target",
+          "action": "Work LAIR → Training → 2x Playfield and leave the 2x banked"
+        },
+        {
+          "shot": "pizza-parlor",
+          "action": "Lock 3 balls at the Pizza Parlor to arm Ninja Pizza Multiball"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "strategy-npmb-2x-stack",
+      "title": "Strategy: NPMB with 2x Stacked",
+      "category": "strategy",
+      "summary": "The single most valuable action in the game — bank a 2x Playfield, trigger it the instant before starting Ninja Pizza Multiball, then farm Mondo and the 3M+ Super.",
+      "difficulty": 3,
+      "reward": "Multiplied NPMB jackpots — the biggest sustainable stack",
+      "steps": [
+        {
+          "shot": "lair-target",
+          "action": "Spell LAIR to an even completion and leave 2x Playfield lit (do not burn it early)"
+        },
+        {
+          "shot": "pizza-parlor",
+          "action": "Lock the 3rd ball to arm NPMB but hold before starting"
+        },
+        {
+          "shot": "center-standup",
+          "action": "Hit the center target to trigger 2x Playfield right as the multiball begins"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Defeat the Foot Soldiers, then collect Mondo at the Upper Loop under 2x"
+        },
+        {
+          "shot": "lair",
+          "action": "Bank the Super Jackpot (3M+) at the Lair while 2x is running"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "strategy-final-battle-line",
+      "title": "Strategy: Final Battle High-Score Line",
+      "category": "strategy",
+      "summary": "The late-game ceiling play — complete and bank all 8 episodes, hold a 2x/3x Playfield, and trigger it into Final Battle so accumulated episode scores are multiplied.",
+      "difficulty": 3,
+      "reward": "Final Battle start bonus ×2x/3x — can exceed 60M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete and bank all 8 episodes over the game (Raphael 3x Episodes juices the total)"
+        },
+        {
+          "shot": "lair-target",
+          "action": "Light and hold a 2x (or Raphael-L3 3x) Playfield without spending it"
+        },
+        {
+          "shot": "center-standup",
+          "action": "Activate the held Playfield multiplier just before starting Final Battle"
+        },
+        {
+          "shot": "pizza-parlor",
+          "action": "Start Final Battle so the accumulated episode-score bonus is multiplied"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "extra-ball-hunt",
+      "title": "Extra Ball Hunt",
+      "category": "strategy",
+      "summary": "Two reliable extra-ball sources: the pizza parlor lights an extra ball at set progress thresholds, and the pop bumpers can award 'Light Extra Ball' from the picture-match table — collect it at the parlor once lit.",
+      "difficulty": 1,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Work the bumpers for the picture-match award that lights an extra ball",
+          "detail": "The award table also hands out bonus multiplier and added time"
+        },
+        {
+          "shot": "lair-target",
+          "action": "Keep spelling LAIR and finishing training rounds to push overall progress",
+          "detail": "General progress is what turns the parlor's extra-ball insert on",
+          "link": "none"
+        },
+        {
+          "shot": "pizza-parlor",
+          "action": "Shoot the parlor while its extra-ball insert is lit to collect"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "mondo-triple-chain",
+      "title": "Triple Mondo Chain",
+      "category": "multiball",
+      "summary": "Inside one multiball, clear the Foot Soldier shots once and then take the upper-loop Mondo jackpot three times in a row — the first collect lights Double Mondo and the second lights Triple, both on short timers, so stay on the loop rather than leaving to rebuild anything.",
+      "difficulty": 3,
+      "reward": "Three Mondo collections in one multiball (a Cowabunga objective)",
+      "steps": [
+        {
+          "shot": "pizza-parlor",
+          "action": "Start Ninja Pizza Multiball with three locked balls",
+          "detail": "The pizza multiball is the easiest place to chain Mondos because the shot set relights"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Clear the Foot Soldier shots on the ramps to arm Mondo"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Collect Mondo at the upper loop from the upper flipper"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Skip the ramps here — collecting Mondo already lit Double Mondo, and both it and Triple are on short timers",
+          "link": "none"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Take the second and third Mondo at the upper loop while you still have multiple balls alive"
+        }
+      ],
+      "fx": "turtle"
+    },
+    {
+      "id": "pregame-turtle-select",
+      "title": "Choose Your Turtle",
+      "category": "secret",
+      "summary": "Before the first ball launches, the display offers a one-time choice of which turtle you play as for the entire game. Miss it and you will never notice a decision was on the table, but it sets your perks and changes which shot is your skill shot on every ball that follows.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Make your pick at the character-select prompt that appears when the game begins, before the first plunge",
+        "The choice holds for the entire game and is not offered again on later balls",
+        "Leonardo makes the Lair your skill shot and his first perk lights Training",
+        "Raphael makes the Left Ramp your skill shot and his first perk lights Start Episode",
+        "Michelangelo makes the Pizza Parlor your skill shot and his first perk lights Battle Again plus 5 pizza slices",
+        "Donatello makes the Center Ramp your skill shot and his first perk lights Turtle Power Multiball"
+      ],
+      "reward": "Locks in one of four turtles for the whole game, each with different perks and a different skill shot target"
+    },
+    {
+      "id": "turtle-select-perks",
+      "title": "Pick Your Turtle, Pick Your Opening",
+      "category": "progression",
+      "summary": "Before the first ball, the game asks which turtle you want, and the answer is not cosmetic. Each one hands you a different feature already lit at the plunge, so your pick decides which part of the game you get a free head start on — and it also fixes which shot counts as your skill shot on every ball you play.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Choose your turtle when the game prompts you, before the first ball",
+        "Leonardo starts with Training lit at the under-flipper lair lane, which puts him closest to levelling up",
+        "Raphael starts with Start Episode already qualified, so a single shot to the pizza parlor begins an episode right away",
+        "Michelangelo starts with the Battle Again ball save lit at an outlane and five pizza slices already collected",
+        "Donatello starts with Turtle Power Multiball lit at the right ramp — it normally takes four right ramp shots, so his perk is worth three of them",
+        "Your turtle also sets which shot is lit for the skill shot at the start of every ball",
+        "Making that skill shot lights a Weapon insert in one of the return lanes; roll through the lit lane to start the Weapon Hurry-Up"
+      ],
+      "reward": "A major feature lit for free from the plunge, plus a skill shot lane tied to your turtle"
+    },
+    {
+      "id": "turtle-training-levels",
+      "title": "Level Your Turtle Through Training",
+      "category": "progression",
+      "summary": "Training is how a turtle levels up, and every win pays twice over: your scoring goes up permanently and the next perk on your turtle's ladder switches on. The perks near the top of each ladder are the biggest multipliers you can carry into the rest of the game.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Spell LAIR at the LAIR target to light Training at the under-flipper lair lane",
+        "Training is a short timed mode — hit the flashing shots in the order the game gives them before the clock runs out",
+        "The right ramp is always the first shot of the sequence, and hitting the LAIR target during the mode adds time to the clock",
+        "Every training mode you win raises your turtle one level, up to a maximum of level four",
+        "Every win also adds ten percent to all scoring for the rest of the game",
+        "Winning a training mode qualifies Neutrino Pizza Party — complete the two Dimension X targets afterward to light it at the left ramp",
+        "Raphael's third level upgrades the playfield multiplier to 3x and his fourth triples episode scoring, and the two multiply together",
+        "Donatello's third level adds ten seconds to every ball save",
+        "Michelangelo's second level doubles the April Hurry-Up",
+        "Spelling LAIR again lights the 2x playfield target instead of Training, so the two features alternate",
+        "Levels reset when the game ends unless you are signed in to a Stern Insider Connected account, in which case they carry into your next game"
+      ],
+      "reward": "Up to thirty percent added to all scoring, plus three more turtle perks that hold for the rest of the game"
+    },
+    {
+      "id": "pizza-toppings",
+      "title": "Build Your Own Ninja Pizza Multiball",
+      "category": "progression",
+      "summary": "This game's scoring leans hard on Ninja Pizza Multiball, and you get to configure it before it starts. The toppings on the display are the rules you carry in, the pizza targets change which ones are on offer, and every ball you lock at the parlor freezes more of them — so the shape of the multiball is settled while you are still in single-ball play.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Watch the topping list in the top-right corner of the display during single-ball play",
+        "Shots to the two pizza standup targets advance which toppings are showing",
+        "Locking a ball at the pizza parlor freezes the toppings currently in position — change them before you lock, not after",
+        "Three locks at the parlor start the multiball, with the balls released onto the spinning pizza disc",
+        "Fudge makes every foot soldier shot defeat one extra foot soldier, shortening the path to Mondo Jackpot",
+        "Pineapple does the same thing but only at the pizza parlor, and only while that shot is lit",
+        "Ice cream starts the multiball with Mondo Jackpot already lit",
+        "Chili peppers start the multiball with the super jackpot, Jackpoto Grande, already lit",
+        "Gummy bears add a ball to the multiball",
+        "Marshmallows keep the triple Mondo Jackpot lit after you collect it, so you can take it again and again at a rising value until it times out",
+        "Pepperoni adds value to Mondo Jackpots, and sausage adds value for every foot soldier you defeat",
+        "Duplicates stack — two fudge means two extra foot soldiers per shot, and two pineapple means three foot soldiers at the parlor"
+      ],
+      "reward": "A multiball built around the toppings you chose rather than the ones you were dealt"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "turtle-target-on-the-plunge",
+      "title": "Turtle Target on the Plunge",
+      "desc": "Land your selected turtle's lit skill-shot target during the window that opens after a plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "turtle-skill-shot"
+    },
+    {
+      "id": "stack-the-bonus-ladder",
+      "title": "Stack the Bonus Ladder",
+      "desc": "Raise the end-of-ball bonus multiplier to 5x or higher in a single ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bonus-x-build"
+    },
+    {
+      "id": "cash-an-april-rush",
+      "title": "Cash an April Rush",
+      "desc": "Spell APRIL to an even completion and collect the resulting hurry-up at the right ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "april-hurry-up"
+    },
+    {
+      "id": "first-episode-in-the-books",
+      "title": "First Episode in the Books",
+      "desc": "Start and finish any one episode from the pizza parlor.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "episode-pizza-o-meter"
+    },
+    {
+      "id": "earn-a-spare-ball",
+      "title": "Earn a Spare Ball",
+      "desc": "Light and collect an extra ball in a single game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "extra-ball-hunt"
+    },
+    {
+      "id": "van-doors-open",
+      "title": "Van Doors Open",
+      "desc": "Advance the right ramp far enough to start Turtle Power Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "turtle-power-mb"
+    },
+    {
+      "id": "three-balls-in-the-parlor",
+      "title": "Three Balls in the Parlor",
+      "desc": "Lock three balls at the pizza parlor to start Ninja Pizza Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ninja-pizza-mb"
+    },
+    {
+      "id": "loop-it-to-the-ceiling",
+      "title": "Loop It to the Ceiling",
+      "desc": "Build the Krang combo value to its maximum and cash it on the center ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "krang-kombo"
+    },
+    {
+      "id": "weapon-in-hand",
+      "title": "Weapon in Hand",
+      "desc": "Arm the weapon hurry-up at an inlane and collect it at a lit orbit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "weapon-hurry-up"
+    },
+    {
+      "id": "trained-by-splinter",
+      "title": "Trained by Splinter",
+      "desc": "Spell LAIR and complete a training round for its permanent scoring boost.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "training-2x-playfield"
+    },
+    {
+      "id": "three-shot-street-chain",
+      "title": "Three-Shot Street Chain",
+      "desc": "Complete the once-per-ball three-shot Foot combo starting from the right ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "foot-123-combo"
+    },
+    {
+      "id": "party-with-the-neutrinos",
+      "title": "Party With the Neutrinos",
+      "desc": "Qualify the Neutrino pizza party at the Dimension X targets and collect at least one blue shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "neutrino-pizza-party"
+    },
+    {
+      "id": "bank-the-big-one",
+      "title": "Bank the Big One",
+      "desc": "Collect a super jackpot at the Lair during either main multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-npmb-2x-stack"
+    },
+    {
+      "id": "three-mondos-one-multiball",
+      "title": "Three Mondos, One Multiball",
+      "desc": "Collect the Mondo jackpot at the upper loop three times within a single multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mondo-triple-chain"
+    },
+    {
+      "id": "the-team-assembles",
+      "title": "The Team Assembles",
+      "desc": "Complete four episodes and start Team-Up Multiball at the left ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "team-up-mb"
+    },
+    {
+      "id": "all-eight-episodes-played",
+      "title": "All Eight Episodes Played",
+      "desc": "Play every one of the eight episodes in a single game to light the wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-final-battle-line"
+    },
+    {
+      "id": "clear-the-final-battle",
+      "title": "Clear the Final Battle",
+      "desc": "Start the wizard mode and finish all three of its phases, ending with the winning left-ramp shot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-battle"
+    },
+    {
+      "id": "every-objective-checked",
+      "title": "Every Objective Checked",
+      "desc": "Satisfy all seven game objectives to qualify and start the final celebration multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "cowabunga-mb"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-turtle-window",
+      "title": "Your Turtle's Window",
+      "text": "The plunge opens a short window on whichever shot belongs to the turtle you picked: left ramp for Raphael, the Lair for Leonardo, the parlor for Michelangelo, the centre ramp for Donatello. Plunge and take that shot cold, before the window closes and while you still have a ball save.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "turtle-skill-shot",
+      "shots": [
+        "shooter-lane",
+        "left-ramp",
+        "lair",
+        "pizza-parlor",
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "drill-right-ramp-backhand",
+      "title": "Backhand The Right Ramp",
+      "text": "Take the right ramp as a backhand off the right flipper rather than a live shot from the left. It is a very tight ramp, the fourth one starts Turtle Power, and the left-flipper version is the one that hands the ball back to you badly.",
+      "reps": "20 backhands",
+      "focus": "accuracy",
+      "goal": "turtle-power-mb",
+      "shots": [
+        "right-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-krang-kombo-cycle",
+      "title": "Loop Three, Then Cash",
+      "text": "From the upper flipper, hit the Krang loop three times to max the Kombo, then cash it on the centre ramp before the timer resets it. The cycle only works if the cash-out is automatic, so drill the whole thing rather than the loop alone.",
+      "reps": "5 cycles",
+      "focus": "flow",
+      "goal": "krang-kombo",
+      "shots": [
+        "upper-left-flipper",
+        "upper-loop",
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "drill-upper-flipper-feeds",
+      "title": "Own The Upper Flipper",
+      "text": "The parlor ejects onto the upper-left flipper and the right orbit feeds it too. Take both feeds over and over and shoot the Krang loop and centre ramp from up there, because in a multiball that flipper is where the jackpots live.",
+      "reps": "15 feeds",
+      "focus": "ball-control",
+      "shots": [
+        "pizza-parlor",
+        "right-orbit",
+        "upper-left-flipper",
+        "upper-loop"
+      ]
+    },
+    {
+      "id": "drill-lair-underarm",
+      "title": "Underarm To The Lair",
+      "text": "Work the Lair from the left flipper until the underarm angle stops feeling blind. Both multiballs put their Super Jackpot in that hole, so you will be asking for it with three balls loose on the playfield.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "ninja-pizza-mb",
+      "shots": [
+        "lair",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "drill-123-foot-chain",
+      "title": "One-Two-Three Foot",
+      "text": "Roll the inner left inlane to light it, backhand the right ramp to open, then run centre ramp into left ramp. It is once per ball and single-ball only, so treat the whole thing as one rehearsed sequence rather than three shots you happen to make.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "foot-123-combo",
+      "shots": [
+        "left-inlane",
+        "right-ramp",
+        "center-ramp",
+        "left-ramp"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Mostly a mash button. It is how you eat during the Pizza Eating Contest, which is one of the better quick scores in the game, and on a Premium or LE it also steers the glider diverter feeding off the left ramp.",
+    "uses": [
+      {
+        "when": "Pizza Eating Contest starts",
+        "what": "One slice per press for 6 seconds, up to 40 more slices — faster mashing pays more, usually 2 to 3 million."
+      },
+      {
+        "when": "Building Glider Value on Prem/LE",
+        "what": "Steers the diverter so repeated left ramps stack the value, which you then cash at the right ramp."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Pick a Turtle and fight the Foot Clan through eight animated episodes. Run the two main multiballs, build your Training and playfield multiplier, and finish every episode to reach Final Battle.",
+    "loop": [
+      "Pick a Turtle at the plunge for your perks and a personal skill-shot lane, then take the skill shot to light a Weapon at an inlane.",
+      "Shoot both ramps to light Start Episode at the Pizza Parlor and play through the eight episodes.",
+      "Lock three balls at the Pizza Parlor for Ninja Pizza Multiball, or hammer the right ramp for Turtle Power -- both climb to a Mondo at the upper loop and a Super at the Lair.",
+      "Spell LAIR to unlock Training, then spell it again and strike the center target to switch on 2x Playfield, and bank it before your biggest multiball.",
+      "Finish all eight episodes to reach Final Battle, ticking off the Cowabunga objectives along the way."
+    ],
+    "lights": [
+      {
+        "id": "episode-start",
+        "name": "Episode Ramps & Parlor",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "pizza-parlor"
+          }
+        ],
+        "lit": "Shooting both ramps lights Start Episode, and the Pizza Parlor then flashes to begin the episode you have queued up.",
+        "flashing": "A flashing Pizza Parlor means an episode is lit and ready to start.",
+        "control": null,
+        "then": "Each episode lights a set of shots to complete on a timer, and finishing one banks a score you keep. Play four episodes to open Team-Up Multiball and all eight to reach Final Battle.",
+        "goals": [
+          "episode-pizza-o-meter",
+          "episode-night-of-mousers",
+          "episode-see-you-other-side",
+          "team-up-mb"
+        ]
+      },
+      {
+        "id": "ninja-pizza-mb",
+        "name": "Ninja Pizza Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "pizza-parlor"
+          },
+          {
+            "shot": "pizza-target"
+          },
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "lair"
+          }
+        ],
+        "lit": "Locking three balls at the Pizza Parlor starts Ninja Pizza Multiball, and the topping standups you choose while locking decide which scoring boost the multiball carries.",
+        "flashing": "Once six Foot Soldiers are down the upper loop flashes for a Mondo Jackpot.",
+        "control": null,
+        "then": "Knock down six Foot Soldiers across the ramps and loops, collect a Mondo at the upper loop, and finish at the Lair for the Super Jackpot, the Jackpoto Grande. The shot set relights, so this is the easiest place to chain three Mondos in a row.",
+        "goals": [
+          "ninja-pizza-mb",
+          "mondo-triple-chain",
+          "pizza-toppings"
+        ]
+      },
+      {
+        "id": "turtle-power-mb",
+        "name": "Turtle Power Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "lair"
+          }
+        ],
+        "lit": "Three right-ramp shots in single-ball play arm Turtle Power Multiball and the fourth shot starts it.",
+        "flashing": "The upper loop flashes for Mondo once you have banked four of the green jackpots.",
+        "control": null,
+        "then": "Bank four green jackpots and Mondo lights at the upper loop; grab it, then take the Super Jackpot down at the Lair. Playing Donatello lights this multiball from the very first ramp shot.",
+        "goals": [
+          "turtle-power-mb"
+        ]
+      },
+      {
+        "id": "lair-training-2x",
+        "name": "LAIR, Training & 2x Playfield",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "lair-target"
+          },
+          {
+            "shot": "center-standup"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Spelling L-A-I-R lights Training, a timed round of lit shots that adds a permanent slice to all your scoring; spell it again and the center target lights 2x Playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "Run Training rounds to push your global scoring boost up level by level, and light 2x Playfield right before a multiball or Final Battle so the whole thing doubles. Do not spend the 2x early -- bank it.",
+        "goals": [
+          "training-2x-playfield",
+          "strategy-npmb-2x-stack"
+        ]
+      },
+      {
+        "id": "weapon-hurry-up",
+        "name": "Weapon Hurry-Up",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "Taking your Turtle's skill shot lights a Weapon at an inlane; roll the lit inlane and a Weapon Hurry-Up arms at a lit orbit.",
+        "flashing": "Only one orbit is lit at a time, so glance at which arrow is on before you take the shot.",
+        "control": null,
+        "then": "Cash the hurry-up at the lit orbit before it counts down, then take the second hurry-up at the center ramp for its base value plus whatever the orbit just paid. Collecting one is a Cowabunga objective.",
+        "goals": [
+          "weapon-hurry-up",
+          "turtle-skill-shot"
+        ]
+      },
+      {
+        "id": "april-letters",
+        "name": "APRIL Target",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "april-targets"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Hitting the APRIL target spells A-P-R-I-L, and an even completion lights the April Hurry-Up.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash the hurry-up at the right ramp, and hit APRIL again while it is lit to pump the value up. Collecting five of these is a Cowabunga objective.",
+        "goals": [
+          "april-hurry-up"
+        ]
+      },
+      {
+        "id": "foot-combo",
+        "name": "1-2-3 Foot Combo",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "foot-spinner"
+          }
+        ],
+        "lit": "Rolling the inner inlane lights the 1-2-3 Foot Combo once per ball; backhand the right ramp, then the center ramp or upper loop, then the left ramp to complete it.",
+        "flashing": "Each shot of the combo flashes in turn as the next one to hit.",
+        "control": null,
+        "then": "Complete the chain for a multiplied Foot Value fed by the Foot Clan spinner, and it ticks off a Cowabunga objective. Miss the timing and the live left-flipper shot can hop back for a drain, so shoot it in rhythm.",
+        "goals": [
+          "foot-123-combo"
+        ]
+      },
+      {
+        "id": "krang-kombo",
+        "name": "Krang Kombo",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "Shooting the upper loop from the upper flipper builds Krang Kombo value, which maxes after a few loops.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash the built value at the center ramp before its timer resets, then start the loop again. Maxing and collecting it once is a Cowabunga objective.",
+        "goals": [
+          "krang-kombo"
+        ]
+      },
+      {
+        "id": "top-lanes-pops",
+        "name": "Top Lanes & Pict-o-Pops",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "rollover-lanes"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "Rolling the top lanes steps up your bonus multiplier, and the Pict-o-Pop bumpers hand out matched-picture awards.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the bumpers for bonus multiplier, held bonus, and the picture match that lights an extra ball at the Pizza Parlor. Your bonus multiplier climbs high here and rides on the whole end-of-ball bonus.",
+        "goals": [
+          "bonus-x-build",
+          "bonus-x-skill-shot",
+          "extra-ball-hunt"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "After a skill shot one inlane lights its Weapon insert, and a flipper tap toggles it to the other inlane; roll the lit one to start a weapon hurry-up at an orbit. The lit Battle Again outlane moves with slingshot hits rather than the flippers unless the operator changes that setting.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Pick your Turtle at the plunge and take its skill shot -- Raphael's is the left ramp -- to light a Weapon at the inlane. Once both ramps are spotted, kick off an easy episode like Pizza-O-Meter at the Parlor and begin spelling LAIR.",
+        "goals": [
+          "pregame-turtle-select",
+          "turtle-skill-shot",
+          "episode-pizza-o-meter",
+          "strategy-raphael-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell LAIR for Training and leave a 2x Playfield banked, then lock three balls for Ninja Pizza Multiball and trigger the 2x as it starts. Chain Mondos at the upper loop into the Lair Super, and work the pop bumpers for the extra ball.",
+        "goals": [
+          "training-2x-playfield",
+          "ninja-pizza-mb",
+          "strategy-npmb-2x-stack",
+          "mondo-triple-chain",
+          "extra-ball-hunt"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Play all eight episodes to reach Final Battle, banking each episode's score, and hold a 2x or 3x Playfield to fire as it starts -- the accumulated bonus can top sixty million. Cowabunga Multiball sits alongside it as the all-objectives celebration.",
+        "goals": [
+          "final-battle",
+          "strategy-final-battle-line",
+          "cowabunga-mb"
+        ]
+      }
+    ]
+  }
+}

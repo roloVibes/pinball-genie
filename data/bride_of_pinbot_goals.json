@@ -1,0 +1,1268 @@
+{
+  "machine": "The Machine: Bride of Pin·Bot (Williams, 1991)",
+  "defaultFx": "mecha",
+  "shots": [
+    {
+      "id": "plunger-lane",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Far right edge, runs vertically from the bottom up almost straight to the skill-shot lanes rather than through the right orbit."
+    },
+    {
+      "id": "skill-shot-lanes",
+      "name": "Skill Shot Lanes (x5)",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Five rollover-switch pockets at the very top of the playfield, fed directly by the plunger. Right-to-left from the plunger: 50K, 75K, 100K, 200K, 25K."
+    },
+    {
+      "id": "left-standup",
+      "name": "Left Standup Target",
+      "type": "standup",
+      "x": 0.23,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Mounted directly above the left slingshot; one of 3 standups that raise the bonus multiplier when all are completed."
+    },
+    {
+      "id": "right-standup-1",
+      "name": "Right Standup Target A",
+      "type": "standup",
+      "x": 0.68,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "First of a stacked pair just under the Right Loop entrance."
+    },
+    {
+      "id": "right-standup-2",
+      "name": "Right Standup Target B",
+      "type": "standup",
+      "x": 0.7,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Second of the stacked right-side pair."
+    },
+    {
+      "id": "left-lane",
+      "name": "Left Lane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Hard against the far-left wall; feeds a tunnel to the Small Wheel. Also the shot for Power Charge (multiball) and Jackpot collection."
+    },
+    {
+      "id": "small-wheel",
+      "name": "Small Wheel (saucer)",
+      "type": "saucer",
+      "x": 0.22,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Ball is captured, an under-playfield wheel spins for a random award (Light Jackpot / 250K / Extra Ball / LIGHT Extra Ball / 50K / 100K), then it's kicked out. Fed via the Left Lane tunnel."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.36,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Entrance between the Shuttle Ramp and Heartbeat Ramp; arcs over the top-left and exits near (0.12, 0.20) back to the left lane/inlane. Value ladder 25K-50K-100K-500K then lights Extra Ball.",
+      "feeds": {
+        "x": 0.12,
+        "y": 0.2
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.68,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Entrance just right of the Jets/spinner passage; dives down and exits near (0.58, 0.18) above the right slingshot, crossing to the left flipper. Builds toward Jackpot and free bonus-multiplier advances.",
+      "feeds": {
+        "x": 0.58,
+        "y": 0.18
+      }
+    },
+    {
+      "id": "heartbeat-ramp",
+      "name": "Heartbeat Ramp",
+      "type": "ramp",
+      "x": 0.47,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Center U-turn ramp, apex near (0.50, 0.55), exits to the right flipper near (0.58, 0.16). Value 100K-500K-1M; the Billion collection shot when lit by the Big Wheel.",
+      "feeds": {
+        "x": 0.58,
+        "y": 0.16
+      },
+      "apex": {
+        "x": 0.5,
+        "y": 0.55
+      }
+    },
+    {
+      "id": "shuttle-ramp",
+      "name": "Shuttle Ramp",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Far-left ramp entrance, easy crossing shot from the right flipper. Upper track runs the left edge and feeds the rotating Head unit / Pin·Bot mini-playfield. The central progression shot of the whole game.",
+      "feeds": {
+        "shot": "pinbot-mini-playfield"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "jets",
+      "name": "Jets (pop bumpers)",
+      "type": "bumpers",
+      "x": 0.63,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "Cluster of 3 thumper bumpers upper-right-of-center, between the loop arches. Flat 10K/hit; builds Jets level tiers and the Jackpot value pool."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.73,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "In the Jets/spinner passage, just right of the Right Loop entrance. Flat 1,000 pts/spin, no other function."
+    },
+    {
+      "id": "pinbot-mini-playfield",
+      "name": "Pin·Bot Mini-Playfield",
+      "type": "mech",
+      "x": 0.68,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Raised bagatelle-style unit fed by a Shuttle Ramp shot while the Pin·Bot shot is lit; scoring ladder 100K-200K-300K-100K-200K-300K-600K, every 7th entry lights an Extra Ball.",
+      "playfield": "bagatelle"
+    },
+    {
+      "id": "rotating-face",
+      "name": "Rotating Face / Head Unit",
+      "type": "mech",
+      "x": 0.48,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "4-sided rotating cube (The Machine's face) fed by the Shuttle Ramp; states: Activate Voice -> 1st Eye -> 2nd Eye -> Metamorphosis (human face)."
+    },
+    {
+      "id": "mouth-lock",
+      "name": "Mouth Lock",
+      "type": "mech",
+      "x": 0.48,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Ball lock mechanism inside the rotating head unit; locks 2 balls via repeated lit Shuttle Ramp shots to trigger Metamorphosis / multiball."
+    },
+    {
+      "id": "big-wheel",
+      "name": "Big Wheel",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.97,
+      "trim": "all",
+      "notes": "Large motorized prize wheel near/behind the head unit; ball never strikes it directly. Spins for one of six awards (10M/50M/Special/5M/1M/Lights 1 Billion) once both balls lock during multiball."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-basic",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge into one of the five top lanes before the ball touches a flipper for near-free points, scored at the current skill-shot multiplier.",
+      "difficulty": 1,
+      "reward": "25K-200K lane value x current skill-shot multiplier",
+      "steps": [
+        {
+          "shot": "skill-shot-lanes",
+          "action": "Pull the plunger to medium-firm strength",
+          "detail": "Aim for one of the 5 top lanes (50K/75K/100K/200K/25K, ordered right-to-left from the plunger) — it scores the pocket value x current skill-shot multiplier (multiplier persists within a ball, including extra balls, and resets to 1x only at the start of each new ball)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-4-loop",
+      "title": "4-Loop Combo",
+      "category": "combo",
+      "summary": "Chain four shots into any mix of the Left Loop, Right Loop, or Heartbeat Ramp within about 3-4 seconds for a 500,000-point combo.",
+      "difficulty": 2,
+      "reward": "500K 4-combo score + callout",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Shoot the left loop",
+          "detail": "Any of the three loop/ramp shots count toward the same combo counter."
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Follow immediately with the Heartbeat Ramp",
+          "detail": "Keep it under roughly 4 seconds between makes; repeating the same shot back-to-back is legal."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Shoot the right loop",
+          "detail": "Third shot in the chain."
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Close with a 4th loop/ramp shot",
+          "detail": "Registers the 4-combo for 500,000 points with a callout."
+        }
+      ],
+      "fx": "mecha",
+      "ordered": false
+    },
+    {
+      "id": "combo-loop-escalation",
+      "title": "Loop Combo Escalation",
+      "category": "combo",
+      "summary": "After the four-loop combo the bar goes up: the next combo needs five loops in a row, then six, then seven, and every combo above the four pays a flat 1,000,000. Working all the way up to a ten-loop combo is what sets up the Backdoor Billion attempt.",
+      "difficulty": 3,
+      "reward": "1M per combo above the four-loop — each one needs one more loop in a row than the last",
+      "steps": [
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Continue the active 4-combo with another loop/ramp shot",
+          "detail": "The 5th shot in the chain scores 1M."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Keep alternating or repeating loop/ramp shots",
+          "detail": "Each additional shot (6, 7, 8, 9-combo) is worth 1M as long as the ~3-4s window never lapses."
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Bank the combo before it drops",
+          "detail": "A drain or a gap over ~4 seconds resets the counter entirely."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-left-loop-eb",
+      "title": "Left Loop Extra Ball Combo",
+      "category": "combo",
+      "summary": "Four consecutive quick shots up the Left Loop light an Extra Ball, the cheapest repeatable EB in the game.",
+      "difficulty": 2,
+      "reward": "500K on the 4th quick shot + lights an Extra Ball (once per ball)",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Shoot the left loop",
+          "detail": "Value ladder: 25K -> 50K -> 100K -> 500K per consecutive make."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Shoot it again quickly",
+          "detail": "Value times out after roughly 10s if you wait too long between shots."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Shoot it a third time",
+          "detail": "Climbing toward the 100K tier."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Shoot it a fourth time",
+          "detail": "Reaching the 500K tier lights an Extra Ball, once per ball."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-heartbeat-grind",
+      "title": "Heartbeat Ramp Backhand Grind",
+      "category": "combo",
+      "summary": "Repeat center-ramp shots, ideally backhanded off the right flipper, for a fast-ramping value and an easy way to keep a loop combo alive.",
+      "difficulty": 2,
+      "reward": "100K-1M ramp value ladder; ~2M/shot when multiball is active",
+      "steps": [
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Backhand the Heartbeat Ramp off the right flipper",
+          "detail": "Value ramps 100K -> 500K -> 1M with consecutive hits; resets after 5-8s idle.",
+          "flipper": "right"
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Catch the return and fire again immediately",
+          "detail": "Cradling on the right flipper and re-feeding is the standard technique; doubled to roughly 2M/shot if multiball is active.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "combo-right-loop-rebound",
+      "title": "Right Loop -> Left Flipper Rebound",
+      "category": "combo",
+      "summary": "The core physical technique for stacking loop combos: shoot the right loop, backhand-catch the return on the left flipper, and re-fire it repeatedly without needing to alternate shots.",
+      "difficulty": 3,
+      "reward": "Keeps the loop combo alive for 5-6 shots in a row, each worth 1M past the 4-combo tier",
+      "steps": [
+        {
+          "shot": "right-loop",
+          "action": "Shoot the right loop",
+          "detail": "Ball exits above the right slingshot and crosses over to the left flipper."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Catch it clean on the left flipper and immediately re-fire up the right loop",
+          "detail": "Timed right, the rebound sets up the same shot again — how players stack 5-6 loop combos without perfect alternation.",
+          "flipper": "left"
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-second-eye",
+      "title": "2-Ball Multiball — Second Eye",
+      "category": "multiball",
+      "summary": "Three Face hits progress The Machine through Activate Voice, First Eye and Second Eye, which starts 2-ball multiball — but ramp shots alternate between the Pin·Bot area and the Face, so expect roughly five to six Shuttle Ramp shots to get there.",
+      "difficulty": 2,
+      "reward": "250K + 250K then 1M starts 2-ball Multiball with all scoring doubled",
+      "steps": [
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp (light)",
+          "detail": "Face #1 -> 'Activate Voice': scores 250K, rotates to Face #2.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot it again (qualify)",
+          "detail": "Face #2 -> '1st Eye': scores 250K and launches a second ball into play.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot it a third time (start)",
+          "detail": "Face #2 -> '2nd Eye': scores 1M, starts 2-ball Multiball, all scoring doubles.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-metamorphosis",
+      "title": "Metamorphosis Double Lock",
+      "category": "multiball",
+      "summary": "During multiball, lock both balls at the Shuttle Ramp back-to-back to complete Metamorphosis and advance the Face to its final human state.",
+      "difficulty": 2,
+      "reward": "500K then 1.5M (both doubled), advances Face to #4 and releases both locked balls",
+      "steps": [
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp with multiball active (light)",
+          "detail": "Face #3, 1st ball — 'Human Influx': 500K (250K x2), ball is physically locked.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot it again (lock)",
+          "detail": "Face #3, 2nd ball — 'Metamorphosis': 1.5M (750K x2), Face changes to #4, both locked balls release back into play.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-big-wheel-jackpot",
+      "title": "Big Wheel Jackpot Spin",
+      "category": "multiball",
+      "summary": "Two more Shuttle Ramp locks at Face #4 release the balls and award a spin of the Big Wheel for a shot at Lights-1-Billion.",
+      "difficulty": 2,
+      "reward": "500K then 2M (doubled), releases both balls + awards a Big Wheel spin",
+      "steps": [
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp at Face #4 (qualify)",
+          "detail": "'Increased Pulse': 500K (250K x2), ball locked again.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot it a second time (start)",
+          "detail": "Scores 2M (1M x2), releases both balls, and awards a spin of the Big Wheel.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        },
+        {
+          "shot": "big-wheel",
+          "action": "Watch the Big Wheel resolve",
+          "detail": "Six outcomes: 10M / 50M / Special / 5M / 1M / 'Lights 1 Billion' — landing on Billion requires a follow-up Heartbeat Ramp shot within 12 seconds."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mb-power-charge",
+      "title": "Power Charge Ladder",
+      "category": "multiball",
+      "summary": "While multiball is running, repeated Left Lane shots build Power Charge from 100K up to a 1M cap, undoubled by the multiball 2x.",
+      "difficulty": 2,
+      "reward": "100K per shot, capping at 1M; not doubled by the multiball 2x",
+      "steps": [
+        {
+          "shot": "left-lane",
+          "action": "Confirm multiball is active, then shoot the Left Lane (light)",
+          "detail": "First shot scores 100K Power Charge."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Keep feeding the Left Lane (build)",
+          "detail": "Each additional shot adds 100K, capping at 1M; resets to 100K at the start of the next multiball."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-pinbot-ladder",
+      "title": "Pin·Bot Mini-Playfield Ladder",
+      "category": "mode",
+      "summary": "A Shuttle Ramp shot taken while the Pin·Bot shot is lit routes the ball into the mini-playfield for a repeating scoring ladder that lights an Extra Ball every seventh entry.",
+      "difficulty": 1,
+      "reward": "100K-600K repeating ladder per entry; every 7th entry lights an Extra Ball",
+      "steps": [
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp while the Pin·Bot shot is lit",
+          "detail": "Feeds the Pin·Bot mini-playfield (pachinko-style pins) instead of advancing the head."
+        },
+        {
+          "shot": "pinbot-mini-playfield",
+          "action": "Let the mini-playfield resolve",
+          "detail": "Ladder: 100K-200K-300K-100K-200K-300K-600K, then repeats; every 7th entry lights an Extra Ball."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-small-wheel",
+      "title": "Small Wheel Spin",
+      "category": "mode",
+      "summary": "Shoot the Left Lane, outside multiball and when Jackpot isn't lit, to spin the Small Wheel for one of six random awards.",
+      "difficulty": 1,
+      "reward": "Random award: Light Jackpot, 250K, Extra Ball, LIGHT Extra Ball, 50K, or 100K",
+      "steps": [
+        {
+          "shot": "left-lane",
+          "action": "Shoot the Left Lane",
+          "detail": "Only spins the Small Wheel when multiball is not running and Jackpot isn't already lit."
+        },
+        {
+          "shot": "small-wheel",
+          "action": "Take the award",
+          "detail": "Six positions: Light Jackpot / 250K / Extra Ball / LIGHT Extra Ball / 50K / 100K."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-jets-tiers",
+      "title": "Jets Level Tiers",
+      "category": "mode",
+      "summary": "Repeated pop-bumper hits build toward escalating tier awards even though each individual hit only pays a flat 10K.",
+      "difficulty": 1,
+      "reward": "10K per hit; ~50 hits advances the 25K-500K Jets tier ladder",
+      "steps": [
+        {
+          "shot": "jets",
+          "action": "Let the ball bounce through the Jets repeatedly",
+          "detail": "Flat 10K per hit; roughly 50 hits advances the Jets level tier (25K/50K/100K/500K award ladder). Jets don't count toward loop combos."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "mode-jackpot",
+      "title": "Jackpot: Light and Collect",
+      "category": "mode",
+      "summary": "Light Jackpot via the Small Wheel or four Right Loop shots, then collect it up the Left Lane within a 20-second window.",
+      "difficulty": 2,
+      "reward": "1M-8M Jackpot, value built by Jets hits",
+      "steps": [
+        {
+          "shot": "right-loop",
+          "action": "Shoot the Right Loop four times",
+          "detail": "Alternative to a Small Wheel 'Light Jackpot' award; also climbs the right-loop's own 25K-500K value ladder."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Shoot the Left Lane within 20 seconds of it lighting",
+          "detail": "Collects the Jackpot, worth 1M-8M depending on how much it has climbed from Jets hits."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "multiplier-bonus",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Complete all three standup targets to bump the bonus multiplier, and pick up a free advance any time the ball travels far enough backwards into the Right Loop's exit to trip the switch at the end.",
+      "difficulty": 1,
+      "reward": "+1 step on the bonus multiplier, applied to end-of-ball bonus (loop shots x10,000 base)",
+      "steps": [
+        {
+          "shot": "left-standup",
+          "action": "Hit the left standup target",
+          "detail": "Mounted directly above the left slingshot."
+        },
+        {
+          "shot": "right-standup-1",
+          "action": "Hit the first right standup target",
+          "detail": "Just under the Right Loop entrance."
+        },
+        {
+          "shot": "right-standup-2",
+          "action": "Hit the second right standup target",
+          "detail": "Completing all 3 (left + these two) advances the bonus multiplier one step."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Shoot the Right Loop for a free advance",
+          "detail": "Sending the ball backwards into the right loop's exit — far enough to trip the microswitch at the end — advances the bonus multiplier for free, independent of the standups."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "multiplier-skillshot",
+      "title": "Skill-Shot Multiplier",
+      "category": "multiplier",
+      "summary": "Every time the ball returns to the plunger lane, from Pin·Bot, a released lock, or a new extra ball, the skill-shot multiplier ticks up 1x; it persists within a ball (including extra balls) and resets to 1x only at the true start of each new ball.",
+      "difficulty": 1,
+      "reward": "+1x skill-shot multiplier; persists the whole ball (can reach 20x+) until the next ball starts",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Get the ball back to the shooter lane by any legal means",
+          "detail": "A Pin·Bot mini-playfield return, a Shuttle Ramp lock release, or starting an Extra Ball all trigger the +1x."
+        },
+        {
+          "shot": "skill-shot-lanes",
+          "action": "Take the skill shot again at the higher multiplier",
+          "detail": "Persists within a ball, including extra balls, and resets to 1x only at the start of each new ball; can run into the high teens or 20s+ within a long ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-big-wheel-billion",
+      "title": "Big Wheel Billion",
+      "category": "wizard",
+      "summary": "The primary route to a billion points: complete the full 4-stage Face/Metamorphosis progression through two double-locks, spin the Big Wheel, and cash a 'Lights 1 Billion' result on the Heartbeat Ramp.",
+      "difficulty": 3,
+      "reward": "Big Wheel spin: 10M / 50M / Special / 5M / 1M, or Lights 1 Billion if collected on the Heartbeat Ramp within 12s",
+      "steps": [
+        {
+          "shot": "shuttle-ramp",
+          "action": "Advance Face #1 -> #2 -> Second Eye",
+          "detail": "Three Shuttle Ramp shots pre-multiball: Activate Voice, 1st Eye (launches ball 2), 2nd Eye (starts 2-ball Multiball).",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Double-lock at Face #3",
+          "detail": "Human Influx (lock 1) then Metamorphosis (lock 2) — releases both balls, Face becomes #4.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Double-lock at Face #4",
+          "detail": "Increased Pulse (lock 1) then the final shot (lock 2) — releases both balls and awards a Big Wheel spin.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        },
+        {
+          "shot": "big-wheel",
+          "action": "Hope for 'Lights 1 Billion'",
+          "detail": "One of six outcomes."
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Immediately shoot the Heartbeat Ramp",
+          "detail": "Must collect within 12 seconds of the wheel landing on Billion, or the award is lost."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-backdoor-billion",
+      "title": "Backdoor Billion",
+      "category": "wizard",
+      "summary": "A secret alternate route to a billion points entirely outside the Big Wheel: chain a 10-loop combo through the Left Loop, Right Loop, and Heartbeat Ramp without breaking the chain.",
+      "difficulty": 3,
+      "reward": "Scores the Backdoor Billion (a billion points) outright, independent of the Big Wheel; counts toward the Billionaire's Club",
+      "steps": [
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Open a loop combo and reach the 4-combo tier",
+          "detail": "Any mix of Left Loop / Right Loop / Heartbeat Ramp within ~3-4s windows; scores 500K at 4."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Keep the chain alive through the 5, 6, 7-combo",
+          "detail": "Each level from 5-9 is worth 1M; use the right-loop-to-left-flipper rebound to keep feeding shots fast."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Push through the 8 and 9-combo",
+          "detail": "On the order of 49+ consecutive ramp/loop shots total without a drain — described as exceptionally hard."
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Land the 10th consecutive loop/ramp shot",
+          "detail": "Scores the Backdoor Billion outright, independent of the Big Wheel; still counts against the game's Billionaire's-Club cap."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-opener",
+      "title": "Best Opener — First 30 Seconds",
+      "category": "strategy",
+      "summary": "The concrete beginner sequence: take the skill shot, then hammer the Shuttle Ramp to rush toward 2-ball multiball rather than diverting to jets or the right loop early.",
+      "difficulty": 1,
+      "reward": "Banked skill-shot points + fast, low-risk progress to 2-ball Multiball (Second Eye)",
+      "steps": [
+        {
+          "shot": "plunger-lane",
+          "action": "Plunge for the skill shot",
+          "detail": "Aim for one of the 5 top lanes — banks multiplier-boosted points; the skill-shot multiplier itself only bumps up when the ball later returns to the plunger lane."
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp",
+          "detail": "The first Shuttle Ramp shot goes into the Pin·Bot area, so Activate Voice lands on the second one — an easy shot off the right flipper.",
+          "feeds": {
+            "shot": "rotating-face"
+          },
+          "flipper": "right"
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp again",
+          "detail": "Advances toward First Eye / ball launch.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Shoot the Shuttle Ramp a third time",
+          "detail": "Second Eye — locks in toward 2-ball multiball. Avoid the Small Wheel lane and Right Loop in this window; low value, not worth the drain risk.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        },
+        {
+          "shot": "left-loop",
+          "action": "Optional: left loop x4 if it's clean",
+          "detail": "A fast, repeatable extra ball if you can hit it without risking your ramp rhythm."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "strategy-eb-stacking",
+      "title": "Extra Ball Stacking Insurance",
+      "category": "strategy",
+      "summary": "Bank extra balls early from every available source so you can play out drains as free continuations instead of restarting your Shuttle Ramp progression.",
+      "difficulty": 2,
+      "reward": "Extra Balls stacked as insurance, each collected at the lit bottom return lane — use the flipper buttons to move the lit lane under the ball. Note the Heartbeat Ramp returns the ball below the return-lane switch, so it cannot collect one. (Add a 'Bottom Lane Change / Return Lanes' shot to the shots array to anchor this step.)",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Farm the Left Loop 4x each ball for its Extra Ball",
+          "detail": "Resets each ball, so re-stack it every time it's dark.",
+          "link": "none"
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Take Shuttle Ramp shots while the Pin·Bot shot is lit to cycle the ladder",
+          "detail": "Every 7th entry lights another Extra Ball.",
+          "link": "none"
+        },
+        {
+          "shot": "small-wheel",
+          "action": "Take a Small Wheel spin when Jackpot isn't lit",
+          "detail": "Two of six positions award Extra Ball / LIGHT Extra Ball outright.",
+          "link": "none"
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Cash in stacked EBs by continuing the Shuttle Ramp/multiball chain",
+          "detail": "Practical reserve cap is around 4 EBs; a mercy 'WIMP' award can also grant one if the game senses a bad ball.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "strategy-tournament-line",
+      "title": "Tournament Line — Shuttle Ramp to Big Wheel to Heartbeat Grind",
+      "category": "strategy",
+      "summary": "What competitive players actually optimize for: reach multiball/Big Wheel as fast as possible, then park on the Heartbeat Ramp for doubled, low-risk repeated points rather than chasing riskier shots.",
+      "difficulty": 2,
+      "reward": "Fastest path to the Big Wheel + sustained ~2M/shot doubled Heartbeat Ramp grinding for a low-risk high score",
+      "steps": [
+        {
+          "shot": "shuttle-ramp",
+          "action": "Rush the Shuttle Ramp every ball to reach 2-ball Multiball fastest",
+          "detail": "Faster and lower-variance than farming jets or bonus early.",
+          "feeds": {
+            "shot": "rotating-face"
+          }
+        },
+        {
+          "shot": "shuttle-ramp",
+          "action": "Double-lock through Metamorphosis and Face #4 for the Big Wheel spin",
+          "detail": "The single largest scoring event in the game when it lands Billion.",
+          "feeds": {
+            "shot": "mouth-lock"
+          }
+        },
+        {
+          "shot": "heartbeat-ramp",
+          "action": "Once locked into multiball, cradle-and-feed the Heartbeat Ramp repeatedly",
+          "detail": "Close, safe, doubled to roughly 2M/shot — the actual grind engine of a high score."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Skip the Small Wheel lane and Right Loop unless Jackpot is already lit",
+          "detail": "Both are low value and the bottom of the right loop is close to a guaranteed drain; only detour for a lit Jackpot collect."
+        }
+      ],
+      "fx": "mecha"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "lanes-on-the-plunge",
+      "title": "Lanes on the Plunge",
+      "desc": "Land a plunged ball in one of the five top lanes before it ever touches a flipper.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-basic"
+    },
+    {
+      "id": "loaded-plunger",
+      "title": "Loaded Plunger",
+      "desc": "Collect a skill shot while the skill-shot multiplier sits at 5x or higher on the same ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-skillshot"
+    },
+    {
+      "id": "all-three-standups",
+      "title": "All Three Standups",
+      "desc": "Complete the left standup and both right standups to advance the bonus multiplier at least once.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-bonus"
+    },
+    {
+      "id": "into-the-mini-playfield",
+      "title": "Into the Mini-Playfield",
+      "desc": "Send a ball into the Pin-Bot mini-playfield by shooting the Shuttle Ramp while the Pin-Bot shot is lit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-pinbot-ladder"
+    },
+    {
+      "id": "seventh-entry-payoff",
+      "title": "Seventh Entry Payoff",
+      "desc": "Reach the 600K rung of the mini-playfield ladder by making seven entries in one game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-pinbot-ladder"
+    },
+    {
+      "id": "spin-the-small-wheel",
+      "title": "Spin the Small Wheel",
+      "desc": "Feed the Left Lane outside multiball with Jackpot dark to take a Small Wheel award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-small-wheel"
+    },
+    {
+      "id": "four-up-the-left-loop",
+      "title": "Four Up the Left Loop",
+      "desc": "Make four quick consecutive Left Loop shots to light an Extra Ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-left-loop-eb"
+    },
+    {
+      "id": "extra-ball-reserve",
+      "title": "Extra Ball Reserve",
+      "desc": "Hold three or more unplayed extra balls at the same time.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-eb-stacking"
+    },
+    {
+      "id": "second-eye-open",
+      "title": "Second Eye Open",
+      "desc": "Advance the rotating face through its first three states to start 2-ball multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-second-eye"
+    },
+    {
+      "id": "she-changes",
+      "title": "She Changes",
+      "desc": "Lock both balls during multiball to complete Metamorphosis and turn the face to its final state.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-metamorphosis"
+    },
+    {
+      "id": "big-wheel-earned",
+      "title": "Big Wheel Earned",
+      "desc": "Double-lock again at the final face state to earn a spin of the Big Wheel.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-big-wheel-jackpot"
+    },
+    {
+      "id": "power-charge-capped",
+      "title": "Power Charge Capped",
+      "desc": "Build the multiball Left Lane Power Charge all the way to its 1M ceiling.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-power-charge"
+    },
+    {
+      "id": "jackpot-banked",
+      "title": "Jackpot Banked",
+      "desc": "Light the Jackpot and collect it up the Left Lane before the timer expires.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-jackpot"
+    },
+    {
+      "id": "four-shot-chain",
+      "title": "Four-Shot Chain",
+      "desc": "Link four loop or ramp shots inside the combo window for the 4-combo award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-4-loop"
+    },
+    {
+      "id": "six-shot-chain",
+      "title": "Six-Shot Chain",
+      "desc": "Keep a loop chain alive to six consecutive loop or ramp shots.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-loop-escalation"
+    },
+    {
+      "id": "billion-off-the-wheel",
+      "title": "Billion Off the Wheel",
+      "desc": "Land the Big Wheel's billion award and cash it on the Heartbeat Ramp inside the collect window.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-big-wheel-billion"
+    },
+    {
+      "id": "billion-the-hard-way",
+      "title": "Billion the Hard Way",
+      "desc": "Score the billion without the wheel by chaining ten unbroken loop and ramp shots.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-backdoor-billion"
+    },
+    {
+      "id": "hundred-million-game",
+      "title": "Hundred Million Game",
+      "desc": "Finish a game with a total score of at least 100 million.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-tournament-line"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-skill-lane-every-return",
+      "title": "Take The Lanes Every Time",
+      "text": "Plunge into the top lanes on every trip back to the shooter, whether it came from the mini-playfield, a released lock or a fresh extra ball. The skill-shot multiplier climbs on each return and holds all ball, so the last one of a long ball is worth many times the first.",
+      "reps": "every plunge, one full ball",
+      "focus": "skill-shot",
+      "goal": "multiplier-skillshot",
+      "shots": [
+        "plunger-lane",
+        "skill-shot-lanes"
+      ]
+    },
+    {
+      "id": "drill-shuttle-ramp-reps",
+      "title": "Shuttle Ramp Reps",
+      "text": "Take the Shuttle Ramp from the right flipper over and over. It is an easy crossing shot and it is the only thing that advances the head, so everything this machine builds toward is paid for one Shuttle Ramp at a time.",
+      "reps": "15 makes",
+      "focus": "accuracy",
+      "goal": "mb-second-eye",
+      "shots": [
+        "shuttle-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-heartbeat-cradle-feed",
+      "title": "Cradle And Feed The Heartbeat",
+      "text": "Backhand the Heartbeat Ramp off the right flipper, catch the return on the same flipper, and fire again straight away. The value ladder resets if you idle, so the whole drill is how quickly you can turn a caught ball back around.",
+      "reps": "10 consecutive",
+      "focus": "ball-control",
+      "goal": "combo-heartbeat-grind",
+      "shots": [
+        "heartbeat-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-right-loop-rebound",
+      "title": "Catch The Right Loop Rebound",
+      "text": "Shoot the right loop and catch the return clean on the left flipper, then send it straight back up the same loop. Done right you never have to alternate shots to keep a combo alive, which is how long chains actually get built here.",
+      "reps": "6 in a row",
+      "focus": "ball-control",
+      "goal": "combo-right-loop-rebound",
+      "shots": [
+        "right-loop",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "drill-four-loop-combo",
+      "title": "Four In The Window",
+      "text": "Chain any four shots across the left loop, right loop and Heartbeat Ramp without letting the gap between them stretch. Repeating the same shot counts, so use whichever of the three you are hitting cleanly rather than forcing variety.",
+      "reps": "5 chains",
+      "focus": "flow",
+      "goal": "combo-4-loop",
+      "shots": [
+        "left-loop",
+        "right-loop",
+        "heartbeat-ramp"
+      ]
+    },
+    {
+      "id": "drill-left-loop-four",
+      "title": "Four Up The Left Loop",
+      "text": "Take the left loop four times in quick succession. The value ladder climbs with each consecutive make and the fourth lights an extra ball, but it times out if you sit on a cradle deciding.",
+      "reps": "4 consecutive, five attempts",
+      "focus": "accuracy",
+      "goal": "combo-left-loop-eb",
+      "shots": [
+        "left-loop"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "bagatelle",
+      "name": "Pin·Bot Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.78,
+        "w": 0.2,
+        "h": 0.15
+      },
+      "entries": [
+        "shuttle-ramp"
+      ],
+      "exits": [
+        {
+          "shot": "jets"
+        },
+        {
+          "shot": "right-flipper"
+        },
+        {
+          "shot": "skill-shot-lanes"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "This one is pure early-90s Williams: two flipper buttons and a manual shooter rod, nothing else. The one place your buttons do something off-playfield is the bottom return lanes — tap a flipper to slide the lit lane under an incoming ball and collect a stacked Extra Ball."
+  },
+  "howItPlays": {
+    "objective": "The Machine has taken a bride and you are driving her transformation. Advance the rotating face through its stages to reach the head's multiball, then chase a billion points either off the Big Wheel or by chaining loops the back way.",
+    "loop": [
+      "Plunge into the top lanes for a skill shot, and know that every trip back to the shooter ratchets its multiplier up for the rest of the ball.",
+      "Feed the Shuttle Ramp off the right flipper to walk the face from Voice to First Eye to Second Eye, which opens a two-ball multiball and doubles everything.",
+      "During multiball, lock both balls at the mouth to trigger Metamorphosis, turn the face human, and set up a spin of the Big Wheel.",
+      "Chain combos across the two loops and the center ramp, backhanding and rebound-catching to keep long strings alive.",
+      "Cash the Big Wheel's billion on the center ramp, or take the back door by chaining ten loops in a row without a break."
+    ],
+    "lights": [
+      {
+        "id": "skill-shot-lanes",
+        "name": "Top Skill-Shot Lanes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "skill-shot-lanes",
+            "lamps": 5
+          },
+          {
+            "shot": "plunger-lane"
+          }
+        ],
+        "lit": "Each of the five top lanes carries a pocket value for a plunged ball scored before a flipper ever touches it, and the skill-shot multiplier riding on them steps up one every time the ball comes back to the shooter.",
+        "flashing": null,
+        "control": null,
+        "then": "Plunge a lane for its value times the current multiplier, then get the ball back to the shooter by any means -- a mini-playfield return, a released lock, a fresh extra ball -- to ratchet that multiplier before your next pull. It holds the whole ball and drops back only when a new ball begins.",
+        "goals": [
+          "skillshot-basic",
+          "multiplier-skillshot"
+        ]
+      },
+      {
+        "id": "rotating-face",
+        "name": "The Machine's Face",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "shuttle-ramp"
+          },
+          {
+            "shot": "rotating-face"
+          },
+          {
+            "shot": "mouth-lock"
+          }
+        ],
+        "lit": "The Shuttle Ramp is the single shot that turns the head, and each lit ramp steps the face forward one stage -- Activate Voice, First Eye, Second Eye -- with a stage you reach staying reached.",
+        "flashing": null,
+        "control": null,
+        "then": "Take Second Eye to open two-ball multiball with everything doubled, then double-lock at the mouth for Metamorphosis to turn her human, and double-lock once more to earn a wheel spin. Ramp shots alternate between the head and the bagatelle, so count on a couple of spare tries.",
+        "goals": [
+          "mb-second-eye",
+          "mb-metamorphosis",
+          "mb-big-wheel-jackpot"
+        ]
+      },
+      {
+        "id": "big-wheel",
+        "name": "Big Wheel",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "big-wheel"
+          },
+          {
+            "shot": "heartbeat-ramp"
+          }
+        ],
+        "lit": "Two double-locks at the final face state free the balls and hand you a spin of the motorized prize wheel; your ball never strikes it, the wheel simply resolves to one of its six awards.",
+        "flashing": null,
+        "control": null,
+        "then": "Hope the wheel stops on Lights 1 Billion, then fire the center ramp inside its short collect window to bank the billion. The other five faces still pay handsomely, from a million on up.",
+        "goals": [
+          "mb-big-wheel-jackpot",
+          "wizard-big-wheel-billion"
+        ]
+      },
+      {
+        "id": "loop-ramp-combos",
+        "name": "Loops & Center Ramp",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "heartbeat-ramp"
+          }
+        ],
+        "lit": "The two side loops and the center ramp all feed one shared combo counter and their own value ladders, and four quick left-loop shots also light an extra ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Chain any mix of the three inside the timing window for the four-combo, then keep it alive -- each shot past four pays a flat million. Rebound-catch the right loop on the left flipper and backhand the center ramp to stack strings, all the way to the ten-in-a-row Backdoor Billion.",
+        "goals": [
+          "combo-4-loop",
+          "combo-left-loop-eb",
+          "wizard-backdoor-billion"
+        ]
+      },
+      {
+        "id": "jackpot-and-jets",
+        "name": "Jackpot & Jets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "left-lane"
+          },
+          {
+            "shot": "jets"
+          }
+        ],
+        "lit": "The pop bumpers quietly swell the Jackpot's value as you play, four Right Loop shots (or a Small Wheel award) light the Jackpot, and once it is lit the Left Lane becomes the collect.",
+        "flashing": null,
+        "control": null,
+        "then": "Light the Jackpot up the Right Loop, then cash it up the Left Lane before its window shuts for a payout fattened by every jet hit. The bumpers climb their own tier ladder while they feed the pot.",
+        "goals": [
+          "mode-jackpot",
+          "mode-jets-tiers"
+        ]
+      },
+      {
+        "id": "small-wheel",
+        "name": "Small Wheel Award",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-lane"
+          },
+          {
+            "shot": "small-wheel"
+          }
+        ],
+        "lit": "Away from multiball and with the Jackpot dark, a Left Lane shot ducks the ball through a tunnel to the Small Wheel, which traps it and spins an under-playfield wheel for a random prize.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the spin for whatever it lands on -- a lit Jackpot, points, or an extra ball outright -- and it kicks the ball back to you. It is the cheapest source of an extra ball on the machine when the wheel is generous.",
+        "goals": [
+          "mode-small-wheel"
+        ]
+      },
+      {
+        "id": "pinbot-mini-playfield",
+        "name": "Pin-Bot Mini-Playfield",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "pinbot-mini-playfield"
+          }
+        ],
+        "lit": "When the Pin-Bot shot is lit in place of the face, a Shuttle Ramp shot drops the ball onto the raised bagatelle for a repeating points ladder.",
+        "flashing": null,
+        "control": null,
+        "then": "Let the pins score you up the rungs; every seventh trip up here lights another extra ball, and the ball comes back to the shooter, which bumps your skill-shot multiplier on the way.",
+        "goals": [
+          "mode-pinbot-ladder"
+        ]
+      },
+      {
+        "id": "bonus-multiplier-standups",
+        "name": "Bonus Multiplier Standups",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-standup"
+          },
+          {
+            "shot": "right-standup-1"
+          },
+          {
+            "shot": "right-standup-2"
+          },
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "The lone left standup and the stacked right pair light as the set that steps your end-of-ball bonus multiplier up a notch once all three have fallen.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete all three standups to advance the multiplier, and steal a free advance any time a ball rolls far enough back up the Right Loop to trip the switch at its end. That multiplier rides your loop-heavy bonus when the ball ends.",
+        "goals": [
+          "multiplier-bonus"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "The bottom return lanes double as your extra-ball collector: with an extra ball stacked, tap either flipper button to slide the lit return lane under the incoming ball and take it. A Heartbeat Ramp return drops in below that switch, so it cannot grab one -- feed the collect off a different shot.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge the top lanes for the skill shot, then pound the Shuttle Ramp off the right flipper to rush the face toward Second Eye and two-ball multiball. Farm four quick Left Loop shots for a cheap extra ball whenever it sits dark.",
+        "goals": [
+          "skillshot-basic",
+          "strategy-opener",
+          "combo-left-loop-eb"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Open two-ball multiball at Second Eye with scoring doubled, double-lock through Metamorphosis, and grind the center ramp cradle-and-fire for its doubled value. Stack extra balls off the loop, the mini-playfield and the Small Wheel, then collect the lit ones by tapping a flipper to slide the lit bottom return lane under the ball.",
+        "goals": [
+          "mb-second-eye",
+          "mb-metamorphosis",
+          "combo-heartbeat-grind",
+          "strategy-eb-stacking",
+          "mb-power-charge"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "A billion points is the summit, reachable two ways. Walk the face through both of its multiball double-locks to earn a wheel spin and land that spin's Lights 1 Billion on the center ramp, or ignore the wheel and string ten loops in a row for the Backdoor Billion.",
+        "goals": [
+          "wizard-big-wheel-billion",
+          "wizard-backdoor-billion",
+          "mb-big-wheel-jackpot"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,870 @@
+{
+  "machine": "Game Show (Bally, 1990)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A manual plunger that delivers the ball onto the raised skill shot plastic. A very weak plunge that never crests the Collect Ramp simply rolls back to you."
+    },
+    {
+      "id": "skill-shot-plastic",
+      "name": "Skill Shot Plastic",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "A raised plastic field above the CASH lanes with four holes in it, each dropping the ball into one of the four lanes below."
+    },
+    {
+      "id": "cash-lanes",
+      "name": "C-A-S-H Rollovers",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Four in-line rollovers across the top. The lane lights are repeated on the backboard because the skill shot plastic hides them. Completing them feeds the end-of-ball bonus."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers (2)",
+      "type": "bumpers",
+      "x": 0.42,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Two bumpers below the CASH rollovers, largely hidden under the Wheel Ramp. Bumper and slingshot hits swap which rear loop entrance carries the SPOT arrow."
+    },
+    {
+      "id": "wheel-ramp",
+      "name": "Wheel Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "A wide-mouthed ramp in the middle of the playfield. After the initial climb it turns right through 270 degrees and returns under its own entrance to the left inlane. Only a full loop counts.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "wheel",
+      "name": "The Wheel",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "A circle of lamps in the lower centre of the playfield holding values from about $25,000 up to $250,000, plus four feature awards on the rim. It spins itself to a random position at the start of every ball."
+    },
+    {
+      "id": "collect-ramp",
+      "name": "Collect Ramp",
+      "type": "ramp",
+      "x": 0.88,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Up the far right side, joining the plunger lane just past its first rise. A diverter decides whether the ball continues to the skill shot plastic or on to the Collect Saucer.",
+      "feeds": {
+        "shot": "skill-shot-plastic"
+      }
+    },
+    {
+      "id": "collect-saucer",
+      "name": "Collect Saucer",
+      "type": "saucer",
+      "x": 0.1,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "On the far left, directly opposite the Collect Ramp entrance and only reachable through it. This is where prizes are actually collected, and it doubles as the lock for multiball."
+    },
+    {
+      "id": "tv-targets",
+      "name": "T-V Targets",
+      "type": "standup",
+      "x": 0.36,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "A pair of targets sitting above the Wheel Ramp entrance and off to its left. The cheapest prize to light, and the first one the loops will spot for you."
+    },
+    {
+      "id": "truck-targets",
+      "name": "T-R-U-C-K Targets",
+      "type": "standup",
+      "x": 0.08,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Five targets along the left wall below the Collect Saucer. Each has its own lamp showing whether that letter is already spotted."
+    },
+    {
+      "id": "trip-targets",
+      "name": "T-R-I-P Targets",
+      "type": "standup",
+      "x": 0.92,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Four targets along the right wall below the Collect Ramp entrance."
+    },
+    {
+      "id": "car-target",
+      "name": "CAR Drop Target",
+      "type": "drop-target",
+      "x": 0.3,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Sits left of the CASH lanes and is reached by a shot just left of the T-V targets. It is the most valuable prize and it also guards the Big Bucks hole behind it."
+    },
+    {
+      "id": "big-bucks",
+      "name": "Big Bucks Hole",
+      "type": "scoop",
+      "x": 0.28,
+      "y": 0.91,
+      "trim": "all",
+      "notes": "A sinkhole behind the CAR target, only open once that target is down. It returns the ball under the playfield to the right inlane, which makes it repeatable.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop Entrance",
+      "type": "loop",
+      "x": 0.2,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "The left mouth of the big rear loop, just left of the CAR target. It holds the extra ball light and the first half of the two-million award.",
+      "feeds": {
+        "shot": "right-loop"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop Entrance",
+      "type": "loop",
+      "x": 0.66,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "The right mouth of the rear loop, threaded between the bumpers and the Collect Ramp entrance. A weak shot that fails to come out the other end drops the ball above the CASH lanes.",
+      "feeds": {
+        "shot": "left-loop"
+      }
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights NUDGE on the Wheel Ramp. The Wheel Ramp returns the ball here, which is exactly why nudging the wheel all the way round is so easy."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights SPIN on the Wheel Ramp. It is also where the Big Bucks hole returns the ball."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "No kickback and no save mechanism on either side. The posts are well rubberised, which is the only mercy you get."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.92,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same story as the left. Nudging is your only defence on this machine."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "The plunge drops you onto a raised plastic above the CASH lanes with four holes to choose from. Put the ball down the flashing lane and you advance the bonus multiplier. It starts at 2X and steps up by one each time, to a ceiling of 10X.",
+      "difficulty": 2,
+      "reward": "One bonus multiplier step, 2X up to 10X",
+      "steps": [
+        {
+          "shot": "cash-lanes",
+          "action": "Plunge onto the plastic and drop through the flashing CASH lane",
+          "detail": "The plunge lands the ball on a raised plastic above the CASH lanes; it falls through one of four holes. The flashing lane pays the bonus multiplier and cannot be steered — plunge strength decides everything."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "prizes",
+      "title": "Win The Four Prizes",
+      "category": "progression",
+      "summary": "The whole point of the game is prizes: a TV, a trip, a truck and a car. Each has its own target or bank of targets. Complete a set and that prize starts flashing at the base of the Collect Ramp, waiting to be cashed at the Collect Saucer.",
+      "difficulty": 2,
+      "reward": "Prize collects, and the path to multiball",
+      "steps": [
+        {
+          "shot": "tv-targets",
+          "action": "Light the TV",
+          "detail": "Two targets, the cheapest prize on the board."
+        },
+        {
+          "shot": "trip-targets",
+          "action": "Spell TRIP down the right wall",
+          "detail": "Four targets. Each has its own lamp so you can see what is left.",
+          "link": "none"
+        },
+        {
+          "shot": "truck-targets",
+          "action": "Spell TRUCK down the left wall",
+          "detail": "Five targets, the longest of the sets.",
+          "link": "none"
+        },
+        {
+          "shot": "car-target",
+          "action": "Drop the CAR target",
+          "detail": "One shot, but a long one, just left of the T-V targets.",
+          "link": "none"
+        },
+        {
+          "shot": "collect-ramp",
+          "action": "Collect at the ramp",
+          "detail": "A flashing prize lamp is ready to collect, a steady one is already banked. A prize cannot be won again until all the others have been collected too."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "spot-loops",
+      "title": "Spot Letters On The Loops",
+      "category": "combo",
+      "summary": "You do not have to hit every prize target. One of the two rear loop entrances always carries a SPOT arrow, and a full traversal spots a prize letter for you. Half a loop into the CASH lanes does not count.",
+      "difficulty": 2,
+      "reward": "One prize letter per full loop",
+      "steps": [
+        {
+          "shot": "right-loop",
+          "action": "Check which entrance has the arrow",
+          "detail": "The lit side alternates whenever you hit a bumper or a slingshot."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Loop it, then loop it again",
+          "detail": "The arrow does not move when you complete a loop, so a ball returning to the opposite flipper can be sent straight back through for another."
+        },
+        {
+          "shot": "tv-targets",
+          "action": "Know the pecking order",
+          "detail": "Letters are spotted cheapest first: the TV, then TRIP, then TRUCK, and finally the CAR."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "collect-ramp-diverter",
+      "title": "Reading The Collect Ramp",
+      "category": "strategy",
+      "summary": "One ramp with two destinations. With nothing lit, the Collect Ramp carries on to the skill shot plastic and the CASH lanes. Only when Collect is lit does the diverter let the ball through to the Collect Saucer — and even then a weak shot ends up on the plastic instead.",
+      "difficulty": 1,
+      "reward": "CASH lanes when unlit, prizes when lit",
+      "steps": [
+        {
+          "shot": "collect-ramp",
+          "action": "Shoot it whether it is lit or not",
+          "detail": "Unlit it is still the easiest route into the CASH lanes, which builds your bonus and works toward an extra ball."
+        },
+        {
+          "shot": "collect-saucer",
+          "action": "Give it full power when Collect is lit",
+          "detail": "The shot has to clear the entire skill shot area to reach the saucer. Under-hit it and you are back up top."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "showcase-bonanza",
+      "title": "Showcase Bonanza",
+      "category": "multiball",
+      "summary": "The moment the Collect Ramp could finish off all four prizes, Lock lights there as well. Shoot it and you get the prize sequence and then a two-ball multiball with the ramp lit for a jackpot that opens at $3,000,000.",
+      "difficulty": 3,
+      "reward": "A jackpot from $3,000,000 down to $1,000,000",
+      "steps": [
+        {
+          "shot": "collect-ramp",
+          "action": "Have all four prizes lit at once",
+          "detail": "It does not matter whether you have already collected some — what matters is that this shot could complete the set."
+        },
+        {
+          "shot": "collect-saucer",
+          "action": "Lock the first ball",
+          "detail": "While the prize award plays out, ball two is served to the plunger."
+        },
+        {
+          "shot": "collect-ramp",
+          "action": "Hit any switch, then take the jackpot",
+          "detail": "The diverter is closed until you hit something with the second ball, which is also what ejects the locked ball."
+        },
+        {
+          "shot": "collect-saucer",
+          "action": "Do not dawdle",
+          "detail": "The jackpot sits at $3,000,000 for a few seconds, then falls by about $100,000 every couple of seconds until it floors at $1,000,000."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "wheel-spin",
+      "title": "Spin The Wheel",
+      "category": "mode",
+      "summary": "The right inlane lights SPIN at the Wheel Ramp. Make a complete 270-degree loop around the ramp and the wheel spins, awarding whatever value it lands on. Going up the ramp and straight back down the return does not count.",
+      "difficulty": 1,
+      "reward": "The wheel value you land on",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Roll the right inlane to light SPIN",
+          "detail": "This is the only way to re-arm the wheel once a NUDGE sequence times out."
+        },
+        {
+          "shot": "wheel-ramp",
+          "action": "Make the full loop",
+          "detail": "The ramp is shootable from either flipper, which is what makes this so repeatable."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "wheel-nudge",
+      "title": "Nudge Around The Wheel",
+      "category": "combo",
+      "summary": "NUDGE lights straight after a successful spin. Every further loop while it is lit steps the wheel along one space and pays that value. Because the ramp returns to the left inlane and the left inlane relights NUDGE, you can walk the wheel a full circle.",
+      "difficulty": 2,
+      "reward": "A wheel value per loop, all the way round",
+      "steps": [
+        {
+          "shot": "wheel-ramp",
+          "action": "Loop again while NUDGE is lit",
+          "detail": "Any contact with the swinging gate at the ramp entrance resets the NUDGE timer if you need to buy a second."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Let the return relight it",
+          "detail": "The ramp feeds the left inlane and the left inlane lights NUDGE, so the loop keeps itself alive."
+        },
+        {
+          "shot": "wheel",
+          "action": "Stop when you reach a feature",
+          "detail": "Nudge round to the flashing feature award, take it, then go and cash whatever it lit."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "wheel-features",
+      "title": "The Wheel Features",
+      "category": "mode",
+      "summary": "Four spaces on the wheel rim carry feature awards rather than points, marked with clear round lamps. One of the four flashes at a time, and landing on the flashing one pays the feature as well as the points on that space.",
+      "difficulty": 2,
+      "reward": "$1 Million, the $2 Million loops, Light Extra Ball or Hold Bonus",
+      "steps": [
+        {
+          "shot": "wheel-ramp",
+          "action": "Spin or nudge onto the flashing feature",
+          "detail": "Only the flashing one pays. The others are just their point values until they come round."
+        },
+        {
+          "shot": "wheel",
+          "action": "Work through all four",
+          "detail": "Once a feature has been awarded or lit it stays steadily lit, and none of them come back until all four have been taken."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "two-million-loops",
+      "title": "The Two Million Loops",
+      "category": "combo",
+      "summary": "The wheel feature billed as four million is really two shots of two million. Collect it and the left loop entrance lights for $2,000,000; make that before it times out and the right loop lights for another. Both windows are short.",
+      "difficulty": 3,
+      "reward": "$2,000,000 twice",
+      "steps": [
+        {
+          "shot": "wheel",
+          "action": "Land the feature",
+          "detail": "This is the biggest single wheel award on the machine."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Take the left entrance first",
+          "detail": "It lights immediately and it does not stay lit long."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Then swing back for the right",
+          "detail": "A ball returning from the left loop lands on the opposite flipper, which is exactly the feed you need."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "extra-ball",
+      "title": "Light The Extra Ball",
+      "category": "strategy",
+      "summary": "One of the four wheel features lights the extra ball at the left loop entrance, and unlike most awards on this machine it stays lit for the rest of the ball. That makes it the one feature worth deliberately nudging the wheel toward.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "wheel-ramp",
+          "action": "Nudge the wheel to the extra ball feature",
+          "detail": "Nudging lets you choose where the wheel stops, but only the flashing feature pays - so the extra ball is only on offer when Light Extra Ball is the one flashing."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Collect at the left loop",
+          "detail": "No hurry — this one does not time out during the ball in play."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "hold-bonus",
+      "title": "Hold Bonus",
+      "category": "multiplier",
+      "summary": "Another wheel feature, and a better one than it sounds. It carries your bonus multiplier into the next ball rather than resetting it — and if you take it on your last ball, you get a second bonus count at the end instead.",
+      "difficulty": 2,
+      "reward": "The multiplier carried over, or a second bonus count",
+      "steps": [
+        {
+          "shot": "cash-lanes",
+          "action": "Build the multiplier first",
+          "detail": "Hold Bonus is only worth having if there is something to hold. Skill shots and CASH lanes are where the multiplier comes from."
+        },
+        {
+          "shot": "wheel",
+          "action": "Land the feature",
+          "detail": "With a 10X multiplier in hand this is easily the most valuable of the four."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "big-bucks",
+      "title": "Big Bucks",
+      "category": "strategy",
+      "summary": "Drop the CAR target and a sinkhole opens behind it. It pays $100,100 the first time each ball and adds another $100,100 every time you hit it again on the same ball. It returns the ball to the right inlane, so it feeds its own repeat.",
+      "difficulty": 3,
+      "reward": "$100,100 climbing by the same each hit",
+      "steps": [
+        {
+          "shot": "car-target",
+          "action": "Drop the CAR target",
+          "detail": "That target also happens to be your fourth prize, so this shot never goes to waste."
+        },
+        {
+          "shot": "big-bucks",
+          "action": "Thread the hole",
+          "detail": "It sits at the end of a long path and needs a well-centred shot to reach. It is not a big earner for the difficulty, so treat it as a bonus rather than a strategy."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Take the return and go again",
+          "detail": "The under-playfield route drops you back at the right inlane in position for another attempt — and with SPIN newly lit."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "cash-lanes-bonus",
+      "title": "Work The CASH Lanes",
+      "category": "multiplier",
+      "summary": "The four rollovers across the top feed your end-of-ball bonus and, with a big multiplier behind them, are where a quiet ball turns into a good one. The lane lamps are duplicated on the backboard because the skill shot plastic hides them.",
+      "difficulty": 1,
+      "reward": "Bonus, multiplied by up to 10X",
+      "steps": [
+        {
+          "shot": "collect-ramp",
+          "action": "Use the Collect Ramp as your feed",
+          "detail": "With nothing lit it delivers straight up to the plastic and into the lanes, which is far safer than shooting the loops for them."
+        },
+        {
+          "shot": "cash-lanes",
+          "action": "Complete the set",
+          "detail": "Look at the backboard, not the playfield, to see which letters you still need."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "safe-ramp",
+      "title": "The Ramp Is Safe",
+      "category": "strategy",
+      "summary": "Worth knowing because it changes how aggressively you can shoot. The Wheel Ramp is built so a ball that rolls back down the initial rise will not drain down the middle — a deformation right at the entrance kicks it out toward the base of a flipper instead.",
+      "difficulty": 1,
+      "reward": "A shot you can take without fear",
+      "steps": [
+        {
+          "shot": "wheel-ramp",
+          "action": "Shoot it freely",
+          "detail": "A rejected ramp shot is not a punished one, so there is no reason to be tentative with the wheel."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Be more careful with the loops",
+          "detail": "A weak loop shot that fails to come out the other end leaves the ball above the CASH lanes and coming back at you unpredictably."
+        }
+      ],
+      "ordered": false,
+      "fx": "gear"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "gs-skillshot",
+      "title": "Pick A Lane",
+      "desc": "Drop the plunged ball into the flashing CASH lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "gs-10x",
+      "title": "Ten Times",
+      "desc": "Run the bonus multiplier all the way to 10X.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "gs-all-prizes",
+      "title": "Clean Sweep",
+      "desc": "Light all four prizes at once.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "prizes"
+    },
+    {
+      "id": "gs-loop-spot",
+      "title": "Round The Back",
+      "desc": "Spot a prize letter with a full traversal of the rear loop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "spot-loops"
+    },
+    {
+      "id": "gs-bonanza",
+      "title": "Showcase Bonanza",
+      "desc": "Lock a ball at the Collect Saucer and start the two-ball multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "showcase-bonanza"
+    },
+    {
+      "id": "gs-full-jackpot",
+      "title": "Three Million",
+      "desc": "Collect the Showcase Bonanza jackpot before it starts counting down.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "showcase-bonanza"
+    },
+    {
+      "id": "gs-nudge-round",
+      "title": "All The Way Round",
+      "desc": "Nudge the wheel a full circle without letting the timer expire.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wheel-nudge"
+    },
+    {
+      "id": "gs-two-million",
+      "title": "Be A Contestant",
+      "desc": "Collect both halves of the two-million loop award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "two-million-loops"
+    },
+    {
+      "id": "gs-big-bucks",
+      "title": "Big Bucks",
+      "desc": "Find the sinkhole behind the CAR target.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "big-bucks"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunge-strength-only",
+      "title": "Plunge Strength Is The Whole Shot",
+      "text": "The plunge drops you onto the raised plastic and through one of four holes, and nothing you do with the flippers moves the flashing lane. Read the backboard lamps, then plunge for that lane until the strength is repeatable.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "skill-shot-plastic",
+        "cash-lanes"
+      ]
+    },
+    {
+      "id": "full-power-collect",
+      "title": "Full Power When Collect Is Lit",
+      "text": "The Collect Ramp has two destinations, and only a shot that clears the whole skill shot area reaches the saucer. Shoot it freely when nothing is lit — it feeds the CASH lanes — and hit it hard when a prize is waiting.",
+      "reps": "10 lit collections",
+      "focus": "accuracy",
+      "goal": "collect-ramp-diverter",
+      "shots": [
+        "collect-ramp",
+        "collect-saucer"
+      ]
+    },
+    {
+      "id": "check-the-spot-arrow",
+      "title": "Check The SPOT Arrow",
+      "text": "One rear loop entrance always carries the arrow and bumper or slingshot hits swap which. Look before you shoot, and make full traversals only — half a loop that dies into the CASH lanes spots nothing.",
+      "reps": "15 loops",
+      "focus": "accuracy",
+      "goal": "spot-loops",
+      "shots": [
+        "left-loop",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "ramp-free-loops-careful",
+      "title": "Ramp Freely, Loop Carefully",
+      "text": "A ball rejected off the Wheel Ramp's initial rise is kicked out toward the base of a flipper rather than down the middle, so there is no reason to be tentative with it. A weak loop shot is the opposite — it leaves the ball above the CASH lanes coming back at you unpredictably.",
+      "reps": "one full ball",
+      "focus": "ball-control",
+      "goal": "safe-ramp",
+      "shots": [
+        "wheel-ramp",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "walk-the-wheel",
+      "title": "Walk The Wheel",
+      "text": "Roll the right inlane for SPIN, make the full 270-degree loop, then keep looping while NUDGE is lit — each one steps the wheel exactly one space. The ramp returns to the left inlane and the left inlane relights NUDGE, so the wheel is a dial you turn rather than a gamble.",
+      "reps": "walk it a full circle",
+      "focus": "flow",
+      "goal": "wheel-nudge",
+      "shots": [
+        "right-inlane",
+        "wheel-ramp",
+        "left-inlane",
+        "wheel"
+      ]
+    },
+    {
+      "id": "left-loop-then-right",
+      "title": "Left Loop, Then Right",
+      "text": "Land the two-million feature and the left entrance lights immediately and briefly. Take it, then let the return drop you on the opposite flipper and swing straight back through the right entrance before that window closes too.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "two-million-loops",
+      "shots": [
+        "wheel",
+        "left-loop",
+        "right-loop"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "cash",
+  "actionButton": {
+    "present": false,
+    "how": "Game Show keeps its controls to the bare minimum — two flippers and a spring plunger, nothing else to press. Your one piece of aiming is the plunge itself: it drops the ball onto a raised plastic with four holes, and how hard you push decides which C-A-S-H lane it falls through. Push too softly and it just rolls back down to you."
+  },
+  "howItPlays": {
+    "objective": "Game Show turns the glass into a prize board where you win the TV, the trip, the truck and the car, then cash each one at the Collect Saucer across the table. Spin the big centre wheel for cash and feature awards, and arm every prize at once to trigger the Showcase Bonanza.",
+    "loop": [
+      "Finish a prize's target set, or let a full trip around the rear loop spot its letters for you, to leave that prize flashing at the foot of the Collect Ramp.",
+      "With a prize ready, drive the Collect Ramp hard enough to clear the whole skill-shot area and cash it at the saucer waiting on the far side.",
+      "Roll the right return lane to arm a spin, loop the wheel ramp to turn the wheel, then keep looping while the nudge light is on to walk the wheel onto the feature you want.",
+      "Get all four prizes flashing together so the saucer turns into a lock, then start the two-ball Showcase Bonanza and grab its jackpot before it drains away."
+    ],
+    "lights": [
+      {
+        "id": "the-prizes",
+        "name": "The Four Prizes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "tv-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "trip-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "truck-targets",
+            "lamps": 5
+          },
+          {
+            "shot": "car-target"
+          }
+        ],
+        "lit": "A prize insert blinking at the foot of the Collect Ramp is finished and waiting to cash; one glowing steady is already banked, and no prize returns until every other has been collected too.",
+        "flashing": "A blinking prize is collectable right now; a steady one is already spent until the whole board is swept again.",
+        "control": null,
+        "then": "Complete a set -- two targets for the TV, four down the right wall for the trip, five down the left for the truck, one drop for the car -- or spot the letters cheapest-first on the loops, then run each prize to the saucer through the ramp.",
+        "goals": [
+          "prizes",
+          "spot-loops"
+        ]
+      },
+      {
+        "id": "collect-diverter",
+        "name": "Collect Ramp & Saucer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "collect-ramp"
+          },
+          {
+            "shot": "collect-saucer"
+          }
+        ],
+        "lit": "One ramp, two destinations: with Collect dark the diverter runs the ball up to the skill-shot plastic and into the top rollovers, and only a lit Collect swings the path across to the saucer where prizes actually land.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot it freely when nothing is lit, because it is the safest feed into the top lanes for bonus. When a prize is ready, give it everything -- an under-cooked shot never clears the skill-shot area and dribbles back up top instead of reaching the saucer.",
+        "goals": [
+          "collect-ramp-diverter",
+          "cash-lanes-bonus"
+        ]
+      },
+      {
+        "id": "the-wheel",
+        "name": "The Wheel",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "wheel"
+          },
+          {
+            "shot": "wheel-ramp"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "The right return lane arms Spin and the left arms Nudge; a full loop around the wheel ramp spins the wheel and pays the value it stops on, and because the ramp feeds back to the left return lane the loop keeps re-arming itself.",
+        "flashing": "One of the four rim features flashes at a time, and only the flashing one pays out when the wheel lands there.",
+        "control": null,
+        "then": "Arm a spin, loop for the award, then keep looping under the nudge light to step the wheel one space at a time until the flashing feature sits under the pointer -- that is how you deliberately land the extra ball, Hold Bonus, or the pair of two-million loop shots rather than leaving it to chance.",
+        "goals": [
+          "wheel-spin",
+          "wheel-nudge",
+          "wheel-features",
+          "two-million-loops",
+          "extra-ball",
+          "hold-bonus"
+        ]
+      },
+      {
+        "id": "cash-rollovers",
+        "name": "C-A-S-H Rollovers",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "cash-lanes",
+            "lamps": 4
+          }
+        ],
+        "lit": "A lit rollover is a letter you have banked toward the end-of-ball bonus; read them off the backboard rather than the playfield, since the raised skill-shot plastic hides the lane lamps themselves.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed them off the Collect Ramp to fill the word for bonus, which is where a quiet ball turns into a paying one once a multiplier is stacked behind it. The plunge onto the plastic drops through one of the four holes, and pull strength alone -- not the flippers -- decides which letter you take and steps the bonus multiplier upward.",
+        "goals": [
+          "cash-lanes-bonus",
+          "skillshot"
+        ]
+      },
+      {
+        "id": "showcase-lock",
+        "name": "Showcase Bonanza",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "collect-saucer"
+          },
+          {
+            "shot": "collect-ramp"
+          }
+        ],
+        "lit": "When one shot could finish off the whole prize board, Lock comes on at the saucer; sinking it plays out the prize sequence and hands you a second ball for the multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock the first ball, hit any switch with ball two to close the diverter and eject the held ball, then take the ramp jackpot fast -- it sits at three million for a breath before sliding toward a one-million floor.",
+        "goals": [
+          "showcase-bonanza"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Lean on the Collect Ramp while nothing is lit -- it feeds the plastic and the top rollovers to build a multiplied bonus and works you toward an extra ball. Pick the cheap prizes off first and let full rear-loop trips spot letters so you are not chasing every target by hand.",
+        "goals": [
+          "cash-lanes-bonus",
+          "prizes",
+          "spot-loops",
+          "collect-ramp-diverter"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Work the wheel: arm a spin, loop it, then walk it under the nudge light onto the feature awards. Bank the extra ball and Hold Bonus when they flash, and drop the car target to open the repeatable sinkhole behind it for a climbing payout.",
+        "goals": [
+          "wheel-spin",
+          "wheel-nudge",
+          "wheel-features",
+          "extra-ball",
+          "hold-bonus",
+          "big-bucks"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Get all four prizes flashing at once so Lock appears at the saucer, then start Showcase Bonanza and cash its jackpot the instant it is available before the countdown bleeds it down. The two shots of the two-million loop feature are the other headline award on the machine.",
+        "goals": [
+          "showcase-bonanza",
+          "two-million-loops"
+        ]
+      }
+    ]
+  }
+}

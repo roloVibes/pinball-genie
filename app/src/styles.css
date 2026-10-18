@@ -1,0 +1,3775 @@
+/* Pinball Genie Web — shell styles.
+ * BACKGLASS (P5, 2026-08-14): the app is a lit backglass in a dark arcade.
+ * The chrome moved INTO the canvas's world — one cooled near-black-blue
+ * ground for both, ONE brand accent (electrified DMD amber), nine neon
+ * "insert" category colours, and glow spent only on STATE. Concept + the
+ * measurements behind every value: design3/backglass-concept.html and
+ * design3/BACKGLASS-NOTES.md.
+ * Mobile-first; big touch targets. No framework/CSS reset dependency beyond
+ * this file's own baseline reset below. */
+
+/* ===========================================================================
+ * THE DISPLAY FACE — Chakra Petch (SIL OFL 1.1), latin subset, SELF-HOSTED.
+ *
+ * Self-hosted is not a preference: this app ships under a strict CSP with no
+ * external origins allowed, so a Google Fonts <link> would simply not load.
+ * The three .woff2 files (29 KB total) live in app/public/fonts/ — Vite copies
+ * public/ into dist/ verbatim, so they land at /fonts/*.woff2 in the deployed
+ * webroot, which is also where server/login.css and the generated guide pages
+ * reference them from.
+ *
+ * OFL.txt travels WITH the files (app/public/fonts/OFL.txt, shipped): the SIL
+ * Open Font License requires the copyright notice and licence to accompany the
+ * font. Do not "clean up" that file out of the bundle.
+ *
+ * No further fonttools subsetting: every file is under 10.1 KB already (Google
+ * serves per-unicode-range slices and only `latin` was taken), and a tighter
+ * subset would break the `→ · × é` characters the dataset actually contains.
+ * =========================================================================== */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-Regular-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2122, U+2212,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-SemiBold-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2122, U+2212,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-Bold-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2122, U+2212,
+    U+FEFF, U+FFFD;
+}
+
+/* ===========================================================================
+ * THE PALETTE. This :root block is the SINGLE SOURCE for every colour this
+ * app ships. Three rules keep it that way, and all three are enforced by
+ * app/tests/tokens.test.mjs (the gate) rather than by convention:
+ *
+ *   1. CSS never re-literals a token value. If a stylesheet wants
+ *      rgba(16, 18, 23, 0.72) it writes var(--glass-bg). Only alphas with no
+ *      token (one-off .42 / .55 / .85 dims) stay literal — a near-miss is
+ *      NOT rounded onto a token, because that would be a visual change
+ *      smuggled in under a refactor.
+ *   2. The canvas renderers cannot read a custom property
+ *      (CanvasRenderingContext2D.fillStyle takes a string, and
+ *      getComputedStyle-per-frame is not something the render loop does), so
+ *      the handful of colours canvas needs are MIRRORED as TypeScript
+ *      constants — src/theme.ts for the playfield card/letterbox, and
+ *      overlay/drawing.ts's CATEGORY_COLOR for the nine goal categories.
+ *      Mirrors, not forks: styles.css is the source, the .ts side copies it,
+ *      and tokens.test.mjs fails the build when the two drift.
+ *   3. --canvas-letterbox / --card-gradient-a / --card-gradient-b are
+ *      declared here even though no CSS rule consumes them. That is
+ *      deliberate: they exist so the canvas palette has a home in the same
+ *      block as everything else, and so the parity test has something to
+ *      compare theme.ts against. Deleting them as "unused" breaks the gate.
+ *
+ * A reskin is therefore a value swap inside this block plus the same swap in
+ * theme.ts — never a hunt through nine stylesheets.
+ * =========================================================================== */
+:root {
+  /* ---- ground: cooled near-black blues (BACKGLASS §1) --------------------
+     The chrome moved into the canvas's world, not the other way round: --bg
+     is also what the 2D canvas letterboxes with (--canvas-letterbox below),
+     so the playfield card floats on the same ground the app itself is
+     painted on, with no seam between "app" and "map". */
+  --bg: #0a0b10; /* was #16181d (warm charcoal) */
+  --bg-raised: #12141c; /* header bar, tab bar, ad strip. was #1e2129 */
+  --bg-card: #171a24; /* goal rows, step cards, sheets. was #23262f */
+  --bg-card-hi: #1d2130; /* pressed / selected card fill (BACKGLASS --card-hi) */
+  /* Hairlines are BLUE-GREY now, not neutral white: a white hairline on a
+     blue-black ground reads as a warm scratch. --line is the general
+     separator/card border (BACKGLASS --line), --line-2 the heavier CONTROL
+     border (machine picker, chips, step buttons — BACKGLASS --line-2), and
+     --hairline stays this file's faintest divider, one step under --line
+     exactly as it was before. */
+  --line: rgba(142, 170, 222, 0.1);
+  --line-2: rgba(142, 170, 222, 0.2);
+  --hairline: rgba(142, 170, 222, 0.06);
+  /* ---- the ONE brand accent: electrified DMD amber (BACKGLASS §2) --------
+     There is no second structural accent. Success/destructive come from the
+     category family below if they are ever needed (--danger is
+     --cat-multiball's red for exactly that reason). */
+  --amber: #ffb02e; /* was #f5a623 */
+  --amber-bright: #ffc85f; /* gradient top / lit core. was #ffb84d */
+  --amber-dim: rgba(255, 176, 46, 0.11); /* selected-row / current-step wash */
+  --amber-border: rgba(255, 176, 46, 0.42); /* lit border */
+  --amber-faint: rgba(255, 176, 46, 0.07); /* the faintest amber tint */
+  /* Ink for text sitting ON an amber fill (the filled-button treatment) —
+     near-black with a warm cast so it doesn't read as a hard #000 hole.
+     Unchanged by the reskin, and re-measured against the NEW amber: 10.17:1
+     (BACKGLASS §2 claims 10.2). The only ink allowed on solid amber. */
+  --text-on-amber: #1a1200;
+  --text: #e9edf7; /* cooled from warm #f2f0ea. 14.8:1 on --bg-card */
+  --text-soft: rgba(233, 237, 247, 0.72);
+  --text-dim: rgba(233, 237, 247, 0.62); /* 6.6:1 on --bg-card */
+  --text-muted: rgba(233, 237, 247, 0.5);
+  --text-faint: rgba(233, 237, 247, 0.36); /* labels/captions only, never body copy */
+  --danger: #ff4f5e; /* = --cat-multiball: the family's red, not a 10th hue */
+
+  /* Glass surfaces — the blurred panel recipe (background + border) shared by
+     the goal pill, the settings popover, the readouts and the bottom sheets.
+     Three tints of the same charcoal, by how much the content behind must
+     survive: --glass-bg over live playfield, --glass-bg-strong over busier
+     chrome, --glass-bg-popover for a panel that must stay readable outright.
+     --sheet-bg is the bottom-sheet body (a different, cooler charcoal than
+     --bg, on purpose); --scrim is the modal backdrop behind it. */
+  /* BACKGLASS: the glass ground is a deep NAVY now, not the warm charcoal —
+     the panels float over the playfield's own world (concept
+     `.eyebrow-pill` rgba(7,12,24,.72) / `.readout` rgba(6,10,20,.82)), and
+     the border is the same blue-grey family as --line rather than white. */
+  --glass-bg: rgba(7, 12, 24, 0.72);
+  --glass-bg-strong: rgba(6, 10, 20, 0.82);
+  --glass-bg-popover: rgba(6, 10, 20, 0.92);
+  --sheet-bg: rgba(18, 20, 28, 0.96); /* --bg-raised at 96% */
+  --glass-border: rgba(150, 190, 255, 0.16);
+  --overlay-bg: #07080c; /* the deepest ground (BACKGLASS --void) */
+  --scrim: rgba(0, 0, 0, 0.5);
+
+  /* ---- the neon insert family (BACKGLASS §3) -----------------------------
+     Nine playfield-insert colours, BANDED on Helmholtz-Kohlrausch corrected
+     lightness (Lhk 70.6-82.2 — a 40% tighter spread than the iOS system
+     palette these replace) with a WCAG floor of 4.60:1 on --bg-card and a
+     chroma floor so none of them washes out to pastel. Every
+     category-vs-category hue pair is >= 25 degrees apart. The derivation,
+     the per-colour numbers, and why an EXACTLY equal-brightness set was
+     rejected (it turns red into salmon and yellow into olive) are in
+     design3/BACKGLASS-NOTES.md §3 and §D1/§D2. Do not eyeball a replacement
+     for one of these — re-run the measurement. */
+  --cat-skillshot: #00cf5d;
+  --cat-combo: #ff6b26; /* red-orange, deliberately 25.7deg off the brand amber (§D3) */
+  --cat-multiball: #ff4f5e;
+  --cat-mode: #33c2ff;
+  --cat-multiplier: #bf47ff;
+  --cat-wizard: #dcc200;
+  --cat-strategy: #00d3c1;
+  /* 'Secrets' (2026-07-31). Magenta — the one hue not already taken by the
+     other seven categories, so a Secrets chip is never confusable with a
+     Mode, Wizard or Multiplier chip at a glance in a dark arcade. */
+  --cat-secret: #ff3fa4;
+  /* 'Progression' (2026-07-31). Indigo — the remaining gap in the wheel,
+     sitting between Mode's cyan-blue and Multiplier's purple but bluer than
+     both, so the three stay separable in a dark room. Mirrored — like all
+     nine --cat-* above — in overlay/drawing.ts's CATEGORY_COLOR, because
+     canvas fillStyle cannot read a CSS custom property.
+     app/tests/tokens.test.mjs compares the two tables hex-for-hex, so a
+     change in one file without the other fails the build instead of shipping
+     two different colours for one category. */
+  --cat-progression: #788eff;
+
+  /* ---- canvas mirror: the playfield surface (src/theme.ts) ----------------
+   * Consumed by NO CSS rule — the only renderer that paints these is the 2D
+   * canvas (overlay/map2d.ts, ui/study.ts), which reads them as the exported
+   * constants in src/theme.ts. They live here anyway so the palette is one
+   * block, and so tokens.test.mjs has a source side to diff theme.ts against.
+   * The gate also asserts these three hexes appear in exactly two files under
+   * app/src (this one and theme.ts), i.e. no call site may re-literal them.
+   *
+   * BACKGLASS: --canvas-letterbox is now literally --bg. That is the whole
+   * "one ground" claim made real — the strip of canvas around the playfield
+   * card is the same colour as the app behind it, so there is no seam
+   * between the chrome and the map. The card gradient moved one step deeper
+   * into the same navy family it always used (#081a38 -> #0d294d became
+   * #071834 -> #0e2b52). */
+  --canvas-letterbox: #0a0b10;
+  --card-gradient-a: #071834;
+  --card-gradient-b: #0e2b52;
+
+  /* ---- type (BACKGLASS §4) ----------------------------------------------
+   * ONE 8-step scale replaces the 22 ad-hoc px sizes this app's stylesheets
+   * had grown. --fs-3 (13px) is the BODY FLOOR: nothing that is a sentence
+   * goes under it. Anything smaller in the list is display micro-type —
+   * uppercase labels, pills, tab words, numerals — which is set in the
+   * DISPLAY face, never in body copy.
+   *
+   * THE TWO FACES. --display (Chakra Petch, @font-face above) carries
+   * headings, readouts, all-caps labels, pills, tab labels and numerals: the
+   * squared-off DMD/backglass voice. --body stays the platform system stack
+   * for actual prose — summaries, step details, notes — because a display
+   * face at paragraph length is harder to read, not more characterful.
+   *
+   * --mono is what the readout/eyebrow micro-type used to be
+   * (`ui-monospace, Menlo, monospace`). It survives ONLY where a genuine
+   * fixed-advance is wanted; the readouts themselves moved to --display. */
+  --fs-micro: 10px; /* tab labels, provenance line, ad chip, readout sub-line */
+  --fs-1: 11px; /* group headers, pills, chips, category label */
+  --fs-2: 12px; /* meta lines, captions, step shot-name */
+  --fs-3: 13px; /* body copy, summaries, step detail — THE FLOOR */
+  --fs-4: 15px; /* goal row title, step action */
+  --fs-5: 17px; /* readout label, screen titles */
+  --fs-6: 21px; /* goal detail title */
+  --fs-7: 26px; /* hero numerals */
+
+  --display: 'Chakra Petch', 'DIN Alternate', system-ui, sans-serif;
+  --body:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji';
+  --mono: ui-monospace, Menlo, monospace;
+
+  /* ---- radii: four, not nine (BACKGLASS §4) ---------------------------- */
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-3: 14px;
+  --r-pill: 999px;
+
+  /* ---- glow as STATE (BACKGLASS §5) -------------------------------------
+   * All three are STATIC — no animation anywhere in this system, so they are
+   * identical under prefers-reduced-motion by construction.
+   *
+   * THE RESTRAINT RULE: at most 2-3 lit elements per screen. Goals list =
+   * the selected row + the active tab. Study = the lit shot + the LEARN pill
+   * (+ the tab underline). Goal detail = the current step card + the reward
+   * callout. Everything else is FLAT neon on dark. Neon stops meaning
+   * anything the moment everything glows — if you are adding a fourth lit
+   * thing to a screen, take one away first. */
+  --glow-amber-hard: 0 0 0 1px rgba(255, 176, 46, 0.55), 0 0 10px rgba(255, 176, 46, 0.34),
+    0 0 28px rgba(255, 176, 46, 0.13);
+  --glow-amber-soft: 0 0 10px rgba(255, 176, 46, 0.26);
+  --glow-text: 0 0 10px rgba(255, 176, 46, 0.45);
+
+  /* ---- texture (BACKGLASS §6) -------------------------------------------
+   * The DMD nod, at 2.4% / 5.5% contrast. Applied as ::after overlays with
+   * pointer-events:none, and ONLY on chrome bars that carry display type:
+   * the app header's scanlines and the readout pills' dot matrix. NEVER
+   * behind body copy — no summary, step detail or row meta line sits on
+   * texture. */
+  --scanlines: repeating-linear-gradient(to bottom, rgba(190, 215, 255, 0.024) 0 1px, transparent 1px 3px);
+  --dotmatrix: radial-gradient(rgba(190, 215, 255, 0.055) 0.55px, transparent 0.6px);
+
+  /* Shell chrome heights (2026-07-30, footer+ad-slot pass). Both strips are
+   * now real flex children of #app (see .tab-bar/.ad-slot below) instead of
+   * fixed overlays, so their heights are load-bearing tokens other layout
+   * math (#map-host's calc) reads by name instead of a second hardcoded
+   * copy of the same number. --tabbar-h is the bar's own intrinsic content
+   * height (excludes env(safe-area-inset-bottom), which is additive padding
+   * on top of it, same as before). No --footer-h: the footer is an ordinary
+   * flow element at the END of scrollable panel content (Goals/Achievements
+   * lists, How-To sheet), not a fixed strip, so nothing needs to reserve
+   * space for it — see ui/footer.ts's header comment. */
+  --tabbar-h: 38px; /* 2026-07-31: was 53px — see .tab-btn. Documentation
+                       only; the bar is sized by its own content, and #map-host
+                       no longer derives anything from this number. */
+  --ad-h: 50px;
+  /* Study tab's pill rail (P9). Sized to the widest pill label as MEASURED
+     from the shipped font, not to a fraction of the viewport — see
+     `.study-rail`, and app/tests/study.test.mjs, which fails if the type
+     changes out from under it. Stepped down under 360px. */
+  --study-rail-w: 158px;
+  /* The tab bar's bottom padding — roughly half the home-indicator inset,
+   * floored at .tab-btn's own top padding (that rule's comment argues both
+   * numbers at length). A TOKEN as of P7a, 2026-08-14, because a second
+   * element now has to clear the bar from outside the flow: .pg-toast sits
+   * `--ad-h + --tabbar-h + this` off the bottom edge. Copying the expression
+   * there would have been a guard that silently stops matching the thing it
+   * guards the moment this multiplier is tuned — which .tab-bar's comment
+   * openly invites ("this multiplier is the one number to turn"). */
+  --tabbar-pad-b: max(5px, calc(env(safe-area-inset-bottom) * 0.5));
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  /* Body copy stays on the system stack — see --display's note in :root for
+     why the display face is not the document default. */
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* iOS Safari hardening (README §6 / shotcoach-corrections.md #14): pin the
+   * body to the viewport instead of relying on 100dvh, so Safari's
+   * collapsing toolbar can't resize the layout mid-session and the page
+   * can't rubber-band. #app below fills it with height:100% — this doesn't
+   * change #app's own `max-width:640px; margin:0 auto` centering rule (still
+   * scoped to #app, unaffected by how body itself is positioned). */
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+select {
+  font: inherit;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* No min-height (2026-07-28 review finding 5): body above is `position:
+   * fixed; inset:0` (the iOS Safari hardening block), so #app's height:100%
+   * already fills the fixed viewport exactly. A min-height would win over
+   * that height under iOS Safari's collapsing toolbar (min-height clamps the
+   * box from growing past 100dvh/100vh even as the fixed body's actual box
+   * shrinks/grows), letting #app resize out from under the fixed body
+   * instead of staying pinned to it. */
+}
+
+/* ---------- Header ---------- */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg-raised) 92%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding-top: env(safe-area-inset-top);
+}
+
+/* DMD scanlines (BACKGLASS §6) — 2.4% contrast, static, and confined to the
+   header's GROUND. `pointer-events:none` so it never eats a tap on the
+   machine picker or the Help/Glossary pills underneath, and the header's own
+   children are lifted to z-index 1 so the texture sits behind them rather
+   than over the type. Nothing here animates, so there is no reduced-motion
+   case to answer. (`position: sticky` above is already a containing block
+   for an absolutely-positioned child, so no extra `position: relative` is
+   needed on the header itself.) */
+.app-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: var(--scanlines);
+}
+
+.app-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 8px;
+}
+
+/* NO BRAND MARK IN THE HEADER (2026-08-14, rolo). The 32px app-icon tile and
+ * its .brand wrapper are gone, and with them ~42px (32px tile + the
+ * .header-top 10px gap) that the machine picker now takes back through its own
+ * `flex: 1`. It sat at the top left of every screen as identity rather than
+ * function — not a link, not a control — while the picker beside it truncated
+ * at "Jaws (Stern …" on a 390px iPhone on the SHORTEST title in the catalog.
+ * The brand still greets the user everywhere it does work: the Home Screen
+ * icon, the install prompt, the generated guide pages and the 404.
+ *
+ * `.ar-idle-brand-mark` in ar/arview.css is a DIFFERENT control on a different
+ * surface and is untouched; the removed rule was used by nothing but
+ * app.ts's buildHeader (verified repo-wide before deleting it). */
+
+/* THE MACHINE PICKER (P6 L3, 2026-08-14). Was a native <select class=
+   "machine-picker"> holding 134 <option> rows — an OS wheel picker on a phone,
+   with no search and no way to tell one machine from another. It is now a
+   BUTTON that opens the Machine Library overlay (ui/library.ts), and this rule
+   is deliberately the old select's rule with the select-only parts removed
+   (the appearance reset, and the two background-image gradients that hand-drew
+   a dropdown caret — a real ▾ glyph element does that job now). Same slot,
+   same height, same fill, same border, same type: the header did not change
+   shape, only what tapping it does. */
+.machine-picker-btn {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-2);
+  padding: 10px 12px;
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  color: var(--text);
+  text-align: left;
+}
+
+.machine-picker-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.machine-picker-caret {
+  flex-shrink: 0;
+  font-size: var(--fs-2);
+  color: var(--text-dim);
+}
+
+.machine-picker-btn:active {
+  background: var(--bg-card-hi);
+}
+
+.machine-picker-btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 1px;
+}
+
+/* THE ONE-TIME PULSE (P6 L5). Present only until the visitor opens the
+   library by any route (app.ts's openMachineLibrary) or dismisses the hint
+   banner. Three slow breaths, then it stops on its own — `forwards` holds the
+   final keyframe, which is the button's ordinary border, so the animation
+   ending leaves nothing behind to clean up. */
+.machine-picker-hint {
+  animation: pgPickerHint 1.6s ease-in-out 3;
+}
+
+@keyframes pgPickerHint {
+  0%,
+  100% {
+    border-color: var(--line-2);
+    box-shadow: none;
+  }
+  50% {
+    border-color: var(--amber-border);
+    box-shadow: var(--glow-amber-soft);
+  }
+}
+
+/* Remove the MOTION, keep the FEATURE: a reduced-motion visitor still gets the
+   "look here" mark — a permanent amber edge, no breathing. Not `animation:
+   none` alone, which would leave the button looking exactly like every other
+   session and lose the nudge entirely. */
+@media (prefers-reduced-motion: reduce) {
+  .machine-picker-hint {
+    animation: none;
+    border-color: var(--amber-border);
+  }
+}
+
+/* The one-line first-run nudge under the how-to banner. Quieter than that
+   banner on purpose — no icon, no second line, no amber edge: the guide is
+   what a first-time visitor needs first, and two competing banners at the top
+   of the first screen is one too many. */
+.library-hint {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.library-hint-open {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.library-hint-open:active {
+  background: var(--bg-card-hi);
+}
+
+.library-hint-open:focus-visible,
+.library-hint-dismiss:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 1px;
+}
+
+.library-hint-text {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-2);
+  line-height: 1.35;
+  color: var(--text-soft);
+}
+
+.library-hint-arrow {
+  flex-shrink: 0;
+  font-size: var(--fs-4);
+  color: var(--amber);
+}
+
+.library-hint-dismiss {
+  flex-shrink: 0;
+  width: 44px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  color: var(--text-faint);
+  font-size: var(--fs-2);
+}
+
+.library-hint-dismiss:active {
+  background: var(--bg-card-hi);
+}
+
+/* BACKGLASS (§5, the restraint rule): Help and Glossary were amber-filled
+   pills with an amber badge. Amber is now spent on STATE only — the selected
+   goal, the current step, the active tab, the primary LEARN pill — so these
+   two become the concept's quiet outlined `.hpill`: display face, dim ink,
+   --line-2 hairline. They are still 40px tall and still the same tap target;
+   only the paint changed. */
+.help-btn {
+  flex-shrink: 0;
+  height: 40px;
+  padding: 0 12px 0 8px;
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line-2);
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.help-btn-mark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  color: var(--text-dim);
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-btn-text {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.help-btn:active {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.help-btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 1px;
+}
+
+/* Glossary chip — same .help-btn pill recipe, right next to Help. No leading
+ * circle mark (unlike Help's "?" badge) so the pair doesn't crowd the
+ * machine-picker <select> (which already truncates via ellipsis) any more
+ * than necessary on narrow phones. */
+.glossary-btn {
+  padding: 0 12px;
+}
+
+/* How-to banner — always at the top of the Goals list (first screen after
+   login). BACKGLASS: a card on --bg-card with ONE amber edge (the concept's
+   `.banner` border-left) instead of an all-over amber wash — the wash made
+   the banner compete with the selected goal row for the eye, which is the
+   thing the restraint rule exists to prevent. */
+.howto-banner {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 14px;
+  padding: 9px 12px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--amber-border);
+}
+
+.howto-banner:active {
+  background: var(--bg-card-hi);
+}
+
+.howto-banner-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--amber);
+  color: var(--text-on-amber);
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.howto-banner-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.howto-banner-title {
+  font-size: var(--fs-3);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.howto-banner-sub {
+  font-size: var(--fs-2);
+  line-height: 1.3;
+  color: var(--text-faint);
+}
+
+.howto-banner-arrow {
+  flex-shrink: 0;
+  font-size: var(--fs-5);
+  font-weight: 700;
+  color: var(--text-faint);
+}
+
+/* ---------- Main content ---------- */
+
+#main-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  /* 2026-07-30: the old hardcoded `padding-bottom: calc(64px + env(safe-area-
+   * inset-bottom))` approximated the fixed .tab-bar's footprint so scrolled
+   * content wouldn't end up hidden behind it. The tab bar (and the ad slot
+   * above it) are now real flex siblings of this element inside #app
+   * (app.ts's root.append order), not fixed overlays — flex:1 above already
+   * shrinks this element to exactly the space left after header+ad+tab-bar,
+   * so there is nothing left for scrolled content to clear and no constant
+   * to keep in sync with .tab-bar's actual height by hand. */
+}
+
+.tab-panel {
+  min-height: 100%;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+.state-message {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: var(--fs-3);
+}
+
+.state-message.error {
+  color: var(--danger);
+}
+
+/* Visually hidden, still announced — the class every live region in this app
+   wears. It arrived for the goals-tab skeleton (P6 L3): the skeleton bars
+   themselves are aria-hidden, because a screen reader reading out six empty
+   boxes is noise and one "Loading machine" is the whole message. ui/study.ts's
+   sheet announcement (P8) and app.ts's spoken mirror of the map readout (P9)
+   reuse it rather than each declaring their own copy. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Machine switching: skeleton + failure (P6 L3) ---------- */
+
+/* The Goals tab while a machine's dataset is in flight. Shaped like the list
+   it stands in for — a group header, then rows with a category bar, a title
+   and a meta line — so the page holds still through the swap instead of
+   collapsing to a centred word and springing back. */
+.goal-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.goal-skeleton-head {
+  width: 38%;
+  height: 11px;
+  margin: 4px 0 6px;
+  border-radius: var(--r-1);
+}
+
+.goal-skeleton-row {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  min-height: 58px;
+  padding: 11px 12px 11px 0;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.goal-skeleton-cat {
+  flex-shrink: 0;
+  width: 3px;
+  align-self: stretch;
+  background: var(--line-2);
+}
+
+.goal-skeleton-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.goal-skeleton-title {
+  width: 62%;
+  height: 12px;
+  border-radius: var(--r-1);
+}
+
+.goal-skeleton-meta {
+  width: 34%;
+  height: 9px;
+  border-radius: var(--r-1);
+}
+
+/* One shimmer recipe for every bar. The gradient's two stops are BOTH the
+   hairline token at different positions — no new colour enters the palette,
+   the sweep is a position animation. */
+.skeleton-bar {
+  background: linear-gradient(90deg, var(--hairline) 0%, var(--line-2) 50%, var(--hairline) 100%);
+  background-size: 300% 100%;
+  animation: pgSkeletonSweep 1.4s ease-in-out infinite;
+}
+
+@keyframes pgSkeletonSweep {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: -150% 0;
+  }
+}
+
+/* Remove the MOTION, keep the FEATURE (the standing rule): the bars stay, and
+   they park on the brighter middle stop so the placeholder is still visibly a
+   placeholder rather than an empty row. */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-bar {
+    animation: none;
+    background: var(--line-2);
+  }
+}
+
+/* A machine switch that FAILED, shown at the top of the goal list. The list
+   below it still works — state.ts leaves the loaded machine untouched on a
+   failure — so this is an interruption, not an error screen, and it takes the
+   danger colour only on its left edge. */
+.machine-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--danger);
+}
+
+.machine-error-text {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-soft);
+}
+
+.machine-error-retry {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: var(--r-pill);
+  background: var(--amber);
+  color: var(--text-on-amber);
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.machine-error-retry:active {
+  background: var(--amber-bright);
+}
+
+.machine-error-retry:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* ---------- Goals: grouped list ---------- */
+
+/* BACKGLASS goal list: rows are CARDS on the ground, not flat strips divided
+   by hairlines. The row keeps every element it had — nothing moved in the
+   DOM — but the category bar is now flush to the card's left edge (the row
+   is `overflow: hidden` with no padding of its own; the inner elements carry
+   it), which is what makes the bar read as a lit insert edge rather than a
+   floating tick. */
+.goal-groups {
+  padding: 10px 12px 24px;
+}
+
+.goal-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.goal-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 2px 0;
+}
+
+/* A rotated square, not a circle — a playfield insert shape (the same
+   language the canvas dots now speak; see overlay/map2d.ts's drawShotDots). */
+.goal-group-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.goal-group-title {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.goal-row {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  /* The category bar must sit FLUSH against the card's left edge (that is
+     what makes it read as a lit insert edge rather than a floating tick), so
+     the row carries no left padding and no gap before it — .goal-row-body's
+     own `padding-left` provides the inset instead. The RIGHT side still needs
+     breathing room for the chip/pips/✓ column, hence the asymmetry. */
+  gap: 9px;
+  padding: 0 11px 0 0;
+  overflow: hidden;
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-2);
+}
+
+.goal-row:active {
+  background: var(--bg-card-hi);
+}
+
+.goal-row-cat-bar {
+  width: 3px;
+  align-self: stretch;
+  border-radius: 0;
+  flex-shrink: 0;
+  /* Cancels the row's own flex gap on THIS side only — see .goal-row. */
+  margin-right: -9px;
+}
+
+.goal-row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px 0 9px 10px;
+}
+
+.goal-row-title {
+  font-size: var(--fs-4);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.goal-row-meta-line {
+  font-size: var(--fs-2);
+  line-height: 1.25;
+  color: var(--text-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Difficulty pips. In a goal ROW app.ts paints these the goal's own category
+   colour per-instance (`pips.style.color`, the same convention the category
+   bar already uses) so the row reads as one insert; this rule is the
+   fallback for every other place pips appear — the goal DETAIL header, where
+   the category already has its own coloured label right above and a second
+   coloured element would just be noise. */
+.pips {
+  color: var(--text-faint);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding: 10px 0 0;
+}
+
+.goal-row-check {
+  width: 18px;
+  flex-shrink: 0;
+  align-self: center;
+  text-align: center;
+  font-size: var(--fs-4);
+  font-weight: 700;
+  color: var(--amber);
+  text-shadow: var(--glow-text);
+}
+
+/* ===========================================================================
+   THE CHIP RECIPE — ONE base rule, three colour modifiers.
+   ===========================================================================
+   P4 (2026-08-14). This app's standard chip (999px pill, 800-weight uppercase
+   micro-type, hairline border) existed as THREE hand-copies that had already
+   drifted apart in the only way copies ever do — silently, and on the axis
+   nobody was looking at:
+
+     .goal-row-chip    (Goals list, PREM/LE)      9.5px
+     .goal-step-chip   (goal detail, technique)   9.5px
+     .study-learn-chip (Study LEARN sheet)        10px
+
+   Each rule's own comment said "same recipe as .goal-row-chip, copied rather
+   than shared", and by the time they were read together that claim was false.
+   The shared geometry now lives in the grouped rule below; each class keeps
+   ONLY what genuinely differs (its fill/text/border colours, its button-ness,
+   and .goal-step-chip's larger tap target).
+
+   ONE DELIBERATE VISUAL CHANGE: font-size unifies at 10px, so the two 9.5px
+   chips grow by half a pixel. That is a real, if sub-pixel, change and it is
+   the point — 9.5 vs 10 was the drift, and picking the larger keeps micro-type
+   legible in a dark arcade rather than shaving it further.
+
+   line-height is EXPLICIT (1.2) rather than left at the platform's `normal`,
+   which is a per-font metric: .goal-step-chip below makes a WCAG target-size
+   claim in CSS px, and a claim computed from an unknown line-height is not a
+   claim. Same discipline as .study-readout-*'s line-heights (tests/study.test.mjs
+   section l refuses a `font:` shorthand with no explicit line-height).
+
+   The horizontal padding stays per-class: .goal-row-chip's 7px vs the others'
+   8px is pre-existing and NOT this phase's to normalise — that would move
+   pixels nobody asked to move. */
+.goal-row-chip,
+.goal-step-chip,
+.study-learn-chip {
+  padding: 2px 8px;
+  border-radius: var(--r-pill);
+  font-family: var(--display);
+  font-size: 10px; /* = --fs-micro; literal because step-chips.test.mjs
+                      computes .goal-step-chip's rendered height from this
+                      value x line-height and a var() is unresolvable there. */
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--line-2);
+}
+
+/* PREM/LE chip (phase A3, 2026-08-10) — informational; the Goals tab never
+   hides a goal for trim reasons (map2d.ts's goal sheet does that instead). */
+.goal-row-chip {
+  flex-shrink: 0;
+  align-self: center;
+  padding: 2px 7px;
+  background: var(--amber-dim);
+  color: var(--amber);
+  border-color: var(--amber-border);
+}
+
+/* Stronger treatment when the current MODEL selector is 'pro' — this goal's
+   drawn route needs a shot that model doesn't have. */
+.goal-row-chip.not-on-trim {
+  background: rgba(255, 79, 94, 0.16);
+  color: var(--danger);
+  border-color: rgba(255, 79, 94, 0.4);
+}
+
+.goal-row-dimmed {
+  opacity: 0.55;
+}
+
+/* THE ONE LIT ROW (BACKGLASS §5). The goal currently selected — the same
+   state that already puts a ✓ in .goal-row-check — is the only glowing
+   element in the goals list besides the active tab. Its category BAR is what
+   glows, in the goal's OWN category colour: app.ts sets `--catglow` per
+   instance (`color-mix(in srgb, var(--cat-x) 55%, transparent)`, the same
+   per-instance convention the bar's background already uses), because a
+   box-shadow cannot pick a colour out of the element it decorates.
+   Three stacked shadows, not one: 8/18/34px is what reads as an insert lamp
+   behind glass rather than a blur. */
+.goal-row-sel {
+  background: linear-gradient(90deg, var(--amber-dim), rgba(255, 176, 46, 0) 62%), var(--bg-card-hi);
+  border-color: var(--amber-border);
+}
+
+.goal-row-sel .goal-row-cat-bar {
+  box-shadow: 0 0 8px var(--catglow), 0 0 18px var(--catglow), 0 0 34px var(--catglow);
+}
+
+/* THE ROW YOU JUST FINISHED (P7a, 2026-08-14). Returning from a goal's last
+   step drops the visitor back into a list of many rows with no clue which one
+   they were just in; app.ts scrolls that row into view and gives its ✓ the
+   skill-shot green for exactly ONE render (a transient local in mountApp — no
+   persistence, nothing stored, gone the next time anything re-renders).
+   Green, not amber: amber in this list means SELECTED, and the selection is
+   what completing the goal just cleared. No glow — the toast is the lit thing
+   on this screen for the next 2.4s, and the restraint rule allows one. */
+.goal-row-done .goal-row-check {
+  color: var(--cat-skillshot);
+  text-shadow: none;
+}
+
+/* ---------- Goal detail ---------- */
+
+.goal-detail {
+  padding-bottom: 24px;
+}
+
+.goal-detail-back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 16px;
+  color: var(--text-dim);
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Only the chevron carries the accent — the word "Goals" is navigation, not
+   state (BACKGLASS §5's restraint rule; the concept's `.back i`). */
+.goal-detail-back > :first-child {
+  color: var(--amber);
+  font-size: var(--fs-5);
+  line-height: 0.8;
+}
+
+.goal-detail-header {
+  padding: 4px 20px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.goal-detail-cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.goal-detail-title {
+  font-family: var(--display);
+  font-size: var(--fs-6);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.005em;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.goal-detail-pips-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* The detail header's pips sit inline with an uppercase count, so they take
+   the row's own baseline rather than the LIST row's top-aligned padding. */
+.goal-detail-pips-row .pips {
+  align-self: center;
+  padding: 0;
+  font-size: var(--fs-2);
+}
+
+.goal-detail-summary {
+  font-size: var(--fs-3);
+  line-height: 1.5;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+/* One of goal detail's two lit elements (the other is the current step card
+   below): a bordered amber callout, no glow — the border alone is enough
+   when the step card underneath is already carrying one. */
+.goal-detail-reward {
+  margin: 14px 20px 0;
+  padding: 9px 12px;
+  border-radius: var(--r-2);
+  background: linear-gradient(180deg, var(--amber-dim), rgba(255, 176, 46, 0.03));
+  border: 1px solid var(--amber-border);
+  font-size: var(--fs-3);
+  line-height: 1.42;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* The dependency chain line (dataset schema v8 — Goal.requires). NOT a second
+   amber callout: goal detail has exactly two lit elements (the reward above
+   and the current step card below), and a precondition is not a payoff — it is
+   a condition attached to this card. A quiet left rule in the hairline family
+   says "attached to" without competing with either of them. Body floor
+   (--fs-3), because both lines here are sentences. */
+.goal-detail-requires {
+  margin: 12px 20px 0;
+  padding: 1px 0 1px 10px;
+  border-left: 2px solid var(--line-2);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+}
+
+.goal-detail-requires-line {
+  color: var(--text-soft);
+}
+
+.goal-detail-requires-note {
+  color: var(--text-dim);
+}
+
+.goal-steps {
+  padding: 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.goal-step {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 9px 11px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+/* Tappable step rows (field feedback — "let me select any step manually",
+ * see app.ts's renderGoalDetail): role="button" rows, so :active/:hover/
+ * :focus-visible carry the same affordance a real <button> would. */
+.goal-step:hover {
+  background: color-mix(in srgb, var(--bg-card) 80%, white 6%);
+}
+
+.goal-step:active {
+  background: var(--bg-card-hi);
+}
+
+.goal-step:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* THE CURRENT STEP (BACKGLASS §5) — goal detail's primary lit element. The
+   glow is a THREE-stop amber box-shadow, not a border colour change: the
+   1px inner ring pins the card's edge, the 14px halo is what the eye finds
+   when it scans the list, and the 34px bleed is what makes it read as light
+   rather than as a thicker outline. Static — nothing to disable under
+   prefers-reduced-motion. */
+.goal-step.current {
+  border-color: var(--amber-border);
+  background: linear-gradient(180deg, var(--amber-dim), rgba(255, 176, 46, 0.02)), var(--bg-card-hi);
+  box-shadow: 0 0 0 1px rgba(255, 176, 46, 0.16), 0 0 14px rgba(255, 176, 46, 0.2), 0 0 34px rgba(255, 176, 46, 0.09);
+}
+
+.goal-step.current:hover,
+.goal-step.current:active {
+  background: linear-gradient(180deg, var(--amber-dim), rgba(255, 176, 46, 0.02)), var(--bg-card-hi);
+}
+
+.goal-step-index {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-dim);
+}
+
+.goal-step.current .goal-step-index {
+  background: var(--amber);
+  color: var(--text-on-amber);
+}
+
+.goal-step-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Set in the CATEGORY colour (concept `.step .shot`) — the step's own
+   identity line. BACKGLASS §9's honest note applies: bar + pips + this line
+   is a lot of one hue per screen; if goal detail ever reads shouty, THIS is
+   the first thing to return to var(--text-dim). app.ts paints the colour
+   per-instance. */
+.goal-step-shot {
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* CHOREOGRAPHY PROVENANCE (phase B1, 2026-08-10) — "FROM RIGHT FLIPPER ·
+ * LEFT-RAMP RETURN", ui/goalMeta.ts's stepProvenance. Sits between the shot
+ * label and the action text; dimmer than .goal-step-shot (var(--text-faint))
+ * on purpose — this is context for the action line below it, not a second
+ * headline. */
+.goal-step-provenance {
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  opacity: 0.75;
+}
+
+.goal-step-action {
+  font-size: var(--fs-4);
+  font-weight: 600;
+  line-height: 1.26;
+  color: var(--text);
+}
+
+.goal-step-detail {
+  font-size: var(--fs-3);
+  color: var(--text-dim);
+  line-height: 1.45;
+}
+
+/* TECHNIQUE CHIPS (phase B2, 2026-08-10) — ui/goalMeta.ts's stepChips,
+ * rendered under the action/detail. Small bordered pills; border color is
+ * set per-instance from the goal's own category color (app.ts's
+ * renderGoalDetail, the same `.style.` convention this app already uses for
+ * per-instance category dots/bars — see map2d.css's header note on why that
+ * isn't a CSP violation). Real <button>s (tap opens the glossary). */
+.goal-step-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+/* Geometry comes from the shared chip recipe above (search "THE CHIP
+   RECIPE"); this rule carries only what makes a step chip a step chip.
+   TAP TARGET (P4, 2026-08-14): 5px of vertical padding instead of the
+   recipe's 2px takes the rendered height to exactly 24px
+   (10px x 1.2 line-height + 5 + 5 + 2 x 1px border) — the WCAG 2.5.8 AA
+   "Target Size (Minimum)" floor. NOT 44px, and that is deliberate: these
+   chips are nested INSIDE .goal-step, itself a full-width tappable row, so
+   the 2.5.8 exception for a target "in a sentence or block of text" plus the
+   enclosing target's own generous size applies. Growing them to 44 would
+   turn a compact metadata line into three stacked buttons and push the step
+   text off a phone screen. The chips are only a shortcut to the glossary;
+   missing one costs a definition, not the step. */
+.goal-step-chip {
+  appearance: none;
+  padding: 5px 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-dim);
+  border-color: var(--line);
+  cursor: pointer;
+}
+
+.goal-step-chip:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.goal-step-chip:active {
+  background: var(--glass-border);
+}
+
+.goal-step-chip:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* PATHLESS GOALS (2026-07-31) — 'secret' and 'progression' entries whose
+ * instructions are prose rather than shots. app.ts's renderGoalDetail returns
+ * early with this list instead of the tappable step rows + ‹ › walker, because
+ * there is no route to step through. See Goal.instructions in models.ts.
+ *
+ * Deliberately styled as a plain numbered list rather than reusing .goal-step:
+ * a .goal-step LOOKS tappable (it has cursor:pointer and a hover state) and
+ * tapping one jumps the map to that shot. These are not tappable and have no
+ * map to jump to, so borrowing that look would promise an interaction that
+ * does not exist. Same type scale as .goal-step-action so the two read as
+ * siblings, not as different products. */
+.goal-instructions {
+  margin: 0;
+  padding: 16px 16px 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: decimal;
+}
+
+.goal-instruction {
+  font-size: var(--fs-4);
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.goal-instruction::marker {
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+.goal-instructions-note {
+  margin: 14px 16px 0;
+  padding: 10px 12px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
+.step-controls {
+  position: sticky;
+  bottom: 0;
+  /* 2026-07-30: explicit stacking above this panel's own scrolled content
+   * (goal-step rows etc., all z-index:auto) now that #main-content is a
+   * genuinely shorter scrollport (header+ad-slot+tab-bar are real flex
+   * siblings, not fixed overlays — see #main-content's own comment). Before
+   * this pass the fixed .tab-bar sat ON TOP of this sticky bar with no
+   * z-index on either side (pre-existing bug: the last step's ‹ › controls
+   * could end up hidden under the tab bar); that overlap is gone now that
+   * .tab-bar is in-flow, but this stays explicit rather than relying on
+   * default stacking order by accident.
+   */
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  /* 2026-07-31: dropped `+ env(safe-area-inset-bottom)` (was
+   * `calc(12px + env(safe-area-inset-bottom))`). This bar sticks to the bottom
+   * of #main-content — which since the 2026-07-30 de-fix pass ends ABOVE the
+   * ad slot and tab bar, both real flex siblings now. It therefore never
+   * touches the physical bottom edge, and the home-indicator strip is already
+   * reserved by .tab-bar's own padding further down. The inset here was left
+   * over from when .tab-bar was `position: fixed` and this bar really was the
+   * last thing above the screen edge; since then it has been ~34px of dead
+   * padding on every home-indicator iPhone, pushing the Goals tab's ‹ ›
+   * controls up and stealing a row of goal content for nothing.
+   * .map-step-controls already carries a comment making exactly this argument
+   * for the same reason — these two are now consistent. */
+  padding: 12px 16px;
+  background: color-mix(in srgb, var(--bg-raised) 94%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+}
+
+.step-btn {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-2);
+  background: var(--bg-card);
+  border: 1px solid var(--line-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-size: 20px;
+  color: var(--text);
+}
+
+.step-btn:disabled {
+  color: var(--text-faint);
+  opacity: 0.5;
+}
+
+.step-progress {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.step-btn.done {
+  background: var(--amber);
+  border-color: transparent;
+  color: var(--text-on-amber);
+  box-shadow: var(--glow-amber-soft);
+}
+
+/* ---------- Map mount point ----------
+ * overlay/map2d.ts reads real CSS-driven dimensions off this host (canvas
+ * backing-store sizing, cover-fit math) rather than forcing its own — needs
+ * an explicit (not just min-) height for percentage-sized children to
+ * resolve, and a positioning context for its absolutely-positioned layers
+ * (goal pill row, settings popover, step controls).
+ *
+ * 2026-07-29 (AR removal — UNIMPORT pattern, app.ts's header comment):
+ * `#ar-host` and `.ar-overlay-canvas` are dropped from these two selectors —
+ * the AR tab (and its "#ar-host" panel) no longer exist in this app's DOM,
+ * so both selectors matched nothing from here on; ar/arview.ts's own
+ * arview.css keeps its full AR-specific ruleset untouched on disk, just
+ * unimported now. */
+#map-host {
+  position: relative;
+  /* 2026-07-31 — ROOT-CAUSE FIX (rolo: "make the tabs and bottom bars thinner
+   * so the map is more visible"). This used to be
+   *   height: calc(100dvh - 190px - var(--ad-h))
+   * where 190px was a HAND-TUNED APPROXIMATION of header + tab bar + margins.
+   * That constant was the actual bug behind the complaint: every time the
+   * surrounding chrome changed, the map's height had to be re-derived by hand
+   * and re-verified at every viewport size, and any error showed up as either
+   * wasted space or clipped controls. It had already been patched twice — once
+   * to subtract the new ad slot, once to drop the min-height floor by the same
+   * amount after a 2px clip at 320x568 — and it would have needed patching a
+   * third time for this pass.
+   *
+   * #main-content is `flex: 1; min-height: 0` inside #app's column flex, so it
+   * is ALREADY exactly the space left after the header, ad slot and tab bar.
+   * Sizing off it directly means the map simply IS the leftover space: shrink
+   * the tab bar and the map grows by precisely that much, with no number to
+   * keep in sync and nothing to re-verify. The whole class of bug is gone
+   * rather than re-tuned.
+   *
+   * The floor is now a genuine collapse-guard (very short landscape), not a
+   * layout constant — deliberately far below any height at which it could
+   * push .map-step-controls out of #main-content's scrollport, which is what
+   * the old 420px floor did. */
+  height: 100%;
+  min-height: 240px;
+}
+
+/* A >=900px "card beside map" two-column layout (#map-host as a flex row,
+ * plus an #app:has(#map-host:not([hidden])) max-width widening to 1040px)
+ * lived here for one day (2026-08-11) and was REMOVED the same day (owner:
+ * "Remove all cards. That feature has been removed.") — #map-host has no
+ * width-conditional rule left; #app stays at its plain 640px cap
+ * (`@media (min-width:640px)` block above) at every viewport width, on
+ * every tab, same as before that feature existed. */
+
+/* iOS Safari hardening (README §6 / shotcoach-corrections.md #14): removes
+ * the 300ms double-tap-zoom delay on the map canvas, same as
+ * .map-step-btn/.step-btn already get via `manipulation`. */
+#map-host canvas {
+  touch-action: manipulation;
+}
+
+/* ---------- Map tab ‹ › step controls (manual highlight mode) ----------
+ * overlay/map2d.ts mounts this bar inside #map-host (position:relative
+ * above) alongside the map canvas, shown only while a goal is selected.
+ * Echoes ar/arview.css's .ar-step-btn / .ar-step-readout glass recipe so the
+ * Map and AR step controls read as the same control on both surfaces. */
+.map-step-controls {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  /* Plain 12px, NO env(safe-area-inset-bottom): #map-host never touches the
+   * viewport's bottom edge (#main-content's padding + the tab bar own that
+   * zone), and map2d.ts's CONTROLS_CLEARANCE assumes this exact geometry when
+   * it shrinks the playfield clear of the bar. (2026-08-14: that constant is
+   * 10, not the 40 this comment claimed — it was left behind by the
+   * 2026-07-31 40 -> 36 -> 10 retune and read as a 30px safety margin that
+   * does not exist.) */
+  /* 2026-07-31: 12px -> 8px. Small on its own, but it comes straight off the
+   * playfield: map2d.ts's CONTROLS_CLEARANCE shrinks the drawn rect clear of
+   * this bar, so every pixel here is a pixel of visible table. The 44x44
+   * buttons themselves are NOT shrunk — that is the WCAG 2.5.5 / Apple HIG
+   * minimum touch target, and these are the primary controls for stepping
+   * through a shot sequence one-handed at a machine. */
+  bottom: 8px;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  /* Only the three buttons intercept taps — the gaps between them fall
+   * through to the canvas's tap-to-identify hit test. */
+  pointer-events: none;
+}
+
+.map-step-controls[hidden] {
+  display: none;
+}
+
+.map-step-btn,
+.map-step-readout {
+  pointer-events: auto;
+}
+
+.map-step-btn {
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  color: var(--text);
+  font-size: 20px;
+}
+
+.map-step-btn:disabled {
+  opacity: 0.4;
+}
+
+/* The pill MUST NOT be taller than the 44px buttons it sits between: the bar
+ * is bottom-anchored, so anything taller grows UPWARD into the canvas, past
+ * the strip map2d.ts's CONTROLS_CLEARANCE / study.ts's BOTTOM_CLEARANCE
+ * reserved.
+ *
+ * BACKGLASS RE-DERIVATION (P5, 2026-08-14). The three lines moved to the
+ * DISPLAY face and up the type scale (7.5/10/8.5 -> 8/12/9), which alone
+ * would take the pill to 34.8 + 10 + 2 = 46.8px and push the bar over the
+ * canvas. The padding pays for it: 5px -> 3px, giving
+ * 9.6 + 14.4 + 10.8 + 6 + 2 = 42.8px, still under 44 with a px to spare.
+ * THE BUDGET, if these numbers are ever touched again: total type px must
+ * satisfy `sum(size) * 1.2 + 2*padding + 2*border <= 44`.
+ *
+ * WHY THIS PILL DEVIATES FROM THE SCALE. BACKGLASS §4 puts the readout label
+ * at --fs-5 (17px) and the sub-line at --fs-micro (10px) — which the STUDY
+ * pill takes, because it has TWO lines. This one has THREE (the phase-B1
+ * provenance line above the label), and three lines at the scale's 10px
+ * floor cannot fit in 44px at any padding: 30px of type is already 36px of
+ * leading. The label lands on --fs-2; meta/sub sit below the scale floor at
+ * 8/9px because they are one-word micro-type in a control, not copy.
+ * app/tests/study.test.mjs section (l) pins all of this. */
+.map-step-readout {
+  appearance: none;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 3px 8px;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}
+
+/* DMD dot-matrix on the readout GROUND only (BACKGLASS §6) — static, 5.5%
+   contrast, pointer-events:none, and the pill's own lines are lifted above
+   it. Never behind body copy: this pill carries nothing but display
+   micro-type. */
+.map-step-readout::after,
+.study-readout::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--dotmatrix);
+  background-size: 3px 3px;
+}
+
+.map-step-readout > *,
+.study-readout > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Choreography provenance + technique chips (phase B1/B2, 2026-08-10) — ONE
+ * dim line ABOVE .map-step-readout-label, hidden via the `hidden` attribute
+ * (map2d.ts's updateControls) when there's nothing to show. Smaller and
+ * dimmer than both readout-label and readout-sub below — this is the least
+ * important line in a pill that's already tight on space. */
+.map-step-readout-meta {
+  font: 600 8px var(--display);
+  /* EXPLICIT, not `normal` — see .map-step-readout's own height note above.
+   * The `font:` shorthand RESETS line-height to `normal`, which is a font
+   * metric, not a number: on a platform whose mono face reports ~1.4 these
+   * three stacked lines come to 36.4px + 12px chrome = 48.4px, which is
+   * TALLER than the 44px buttons beside them, so the flex bar grows UPWARD
+   * over the canvas and swallows the bottom of the playfield that
+   * map2d.ts's CONTROLS_CLEARANCE reserved space for. 1.2 pins it. */
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  /* WAS rgba(...,0.4), which computes to 3.42:1 on this pill over the
+     playfield's lightest gradient stop — under the 4.5:1 AA floor for text
+     this size, and it had been under it since long before the reskin (the
+     pre-BACKGLASS value was the same 0.4 in the old warm ink). Found by
+     MEASURING every readout line through the dot-matrix texture (K3
+     fast-follow #4) rather than by looking at it.
+     0.5 (= --text-muted, the same weight the sub-line below carries) takes
+     it to 4.59:1 through the texture. It is still the dimmest line in the
+     pill — the label above it is at full --text, 14.7:1 — so the hierarchy
+     the 0.4 was reaching for survives; it just no longer buys that hierarchy
+     below the legibility floor.
+     NOTE FOR ANYONE RE-TUNING THIS: the texture is NOT what makes this
+     tight. The dot matrix costs 0.01-0.11 of contrast ratio; exempting this
+     line from it would have moved 3.41 to 3.42 and fixed nothing. The alpha
+     is the whole story. tests/study.test.mjs section (l) pins the computed
+     ratio for every readout line. */
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.map-step-readout-label {
+  font: 700 12px var(--display);
+  /* Explicit — the `font:` shorthand resets it to `normal`; see -meta above. */
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  color: var(--text);
+}
+
+.map-step-readout-sub {
+  font: 600 9px var(--display);
+  /* Explicit — the `font:` shorthand resets it to `normal`; see -meta above. */
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+
+/* ---------- Tab bar ---------- */
+
+.tab-bar {
+  /* 2026-07-30 (de-fix pass, footer+ad-slot): was `position:fixed; left:0;
+   * right:0; bottom:0` — an OUT-OF-FLOW overlay, which is why #main-content
+   * used to need a hand-maintained bottom-padding constant to keep scrolled
+   * content clear of it (see #main-content's own comment) and why appending
+   * anything after it in the DOM (app.ts's root.append) would render BEHIND
+   * it instead of above it. Now a plain flex child of #app, sized by its own
+   * content (--tabbar-h documents that height as a token, not enforced here
+   * — the bar isn't given an explicit height, its padding+content determine
+   * it, same as before) and kept out of the scrolling flow by `flex-shrink:
+   * 0` below. Also fixes a latent desktop bug for free: a `fixed` bar always
+   * spans the full window width regardless of #app's `max-width:640px`
+   * centering (this file's own `@media (min-width:640px)` block) — a flow
+   * child inherits that column automatically. */
+  flex-shrink: 0;
+  z-index: 20;
+  display: flex;
+  /* The active tab's underline is `top: -7px` inside its button (see
+     .tab-btn[aria-selected] below) — it must not be clipped by the bar. */
+  overflow: visible;
+  background: color-mix(in srgb, var(--bg-raised) 96%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+  /* 2026-07-31 (rolo: "cut the bottom length to match the padding above the
+   * tab words"). This was the FULL env(safe-area-inset-bottom) — ~34px on a
+   * home-indicator iPhone — against only 5px of padding above the icons. The
+   * bar read as bottom-heavy, and all 34px of it was dead space stolen from
+   * the playfield.
+   *
+   * Now roughly half the inset, floored at 5px so it matches .tab-btn's top
+   * padding exactly on hardware with no inset at all (older iPhones, Android,
+   * desktop) — which is precisely the symmetry asked for.
+   *
+   * WHY NOT ZERO. The inset exists because the home indicator lives there and
+   * the OS reserves that strip for the swipe-up gesture. A tap target pushed
+   * flush against it gets swipes stolen mid-tap, which feels like the app
+   * ignoring you. ~17px keeps the labels clear of the indicator while giving
+   * the map back the other half. If it still reads bottom-heavy on device,
+   * this multiplier is the one number to turn.
+   *
+   * NOTE FOR THE REMAINING GAP: on iOS Safari there is ALSO the browser's own
+   * collapsing bottom toolbar below this, which no CSS here can reclaim —
+   * it belongs to Safari, not the page. Installing to the home screen (the
+   * How-To sheet's ON IPHONE card) removes that chrome entirely and is the
+   * only way to get those pixels.
+   *
+   * P7a (2026-08-14): the expression moved to --tabbar-pad-b in :root, byte
+   * for byte — the value is unchanged, it is just readable from outside the
+   * flow now (see that token's comment for who reads it). */
+  padding-bottom: var(--tabbar-pad-b);
+}
+
+/* 2026-07-31: slimmed (rolo — the bottom chrome was eating the playfield on a
+ * phone; see #map-host's comment for the sizing fix that makes this actually
+ * give the space BACK to the map instead of just leaving a gap).
+ * Was: gap 3px, padding 10px 4px 8px, label 11px, icon 18px -> ~53px tall.
+ * Now: ~38px. The row still clears 38px + the safe-area inset, which is above
+ * the ~30px at which a bottom tab bar starts to feel cramped to the thumb, and
+ * the LABELS ARE KEPT — icon-only tab bars test worse for exactly the audience
+ * standing at a machine in a dark arcade glancing down. This is the one piece
+ * of chrome where shaving further would cost usability rather than buy it. */
+.tab-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 5px 4px 4px;
+  font-family: var(--display);
+  font-size: 10px; /* = --fs-micro */
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  /* Containing block for the hit-area overlay below. No offsets, so nothing
+     about the rendered bar moves. */
+  position: relative;
+}
+
+/* TAP TARGET, NOT SIZE (P4, 2026-08-14). The bar is ~38px tall by a decision
+   made on 2026-07-31 and argued at length in .tab-bar's own comment above:
+   the bottom chrome was eating the playfield on a phone, and those pixels
+   were given back to the map on purpose. DO NOT REGROW IT — that is the one
+   thing this rule exists to avoid having to do.
+   Instead the button's HIT AREA extends 7px above its painted box, taking the
+   effective target to ~45px tall (38 + 7) at full width — clear of the 44px
+   platform minimum — while the drawn bar is pixel-for-pixel what it was.
+   Downward there is nothing to extend into: .tab-bar's own padding-bottom
+   already reserves half the safe-area inset below the labels.
+   WHAT SITS IN THOSE 7px: the ad strip (ui/adslot.css, 50px) when one is
+   mounted, otherwise the last 7px of #main-content's scrollport. Both are
+   siblings BELOW .tab-bar's z-index 20, so the overlay wins the hit test
+   there. That is the intended trade — it costs the bottom sliver of a
+   scrolled list (which scrolls) and makes a stray thumb near the tab bar
+   miss the ad creative instead of tapping it. */
+.tab-btn::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.tab-btn .tab-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+/* THE ACTIVE TAB (BACKGLASS §5) — one of every screen's 2-3 lit elements.
+   Amber ink + a glowing 26px underline bar. The bar is drawn with ::before,
+   which is free: ::after on this same element is already spoken for by the
+   hit-area overlay above, and the two never interact (::before takes no
+   pointer events of its own and sits inside the same box).
+   `top: -7px` puts it ON the bar's own top border, exactly where the concept
+   draws it; .tab-bar is `overflow: visible` so it is not clipped. */
+.tab-btn[aria-selected='true'] {
+  color: var(--amber);
+  text-shadow: var(--glow-text);
+}
+
+.tab-btn[aria-selected='true']::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--amber);
+  box-shadow: var(--glow-amber-soft);
+}
+
+/* ---------- Small screens polish ---------- */
+
+@media (min-width: 640px) {
+  #app {
+    max-width: 640px;
+    margin: 0 auto;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+  }
+}
+
+/* Chunk-load failure banner (2026-07-31) — ui/chunkError.ts.
+ * Shown when a lazily-loaded chunk 404s, which happens to anyone who had the
+ * app open across a deploy: deploy-prod.sh removes the whole assets/ directory,
+ * so the running bundle asks for filenames that no longer exist. Before this,
+ * those failures were completely silent and the tab just did nothing.
+ * Above everything (the overlays sit at 200) because it reports that the app
+ * cannot open what was tapped. */
+.pg-chunk-error {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px 12px 14px;
+  border-radius: var(--r-3);
+  background: var(--bg-card-hi);
+  border: 1px solid var(--amber-border);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+}
+
+.pg-chunk-error-text {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-3);
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.pg-chunk-error-btn {
+  flex-shrink: 0;
+  min-height: 36px;
+  padding: 8px 14px;
+  border-radius: var(--r-2);
+  border: none;
+  background: var(--amber);
+  color: var(--text-on-amber);
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.pg-chunk-error-dismiss {
+  flex-shrink: 0;
+  min-height: 36px;
+  min-width: 32px;
+  border: none;
+  background: none;
+  color: var(--text-dim);
+  font-size: var(--fs-4);
+  cursor: pointer;
+}
+
+/* ---------- Completion toast (P7a, 2026-08-14) — ui/toast.ts ----------
+ * "<goal title> — done", 2.4s, above the ad slot. See that module's header
+ * for why this exists and why it is NOT the removed celebration.
+ *
+ * POSITION. Fixed and centred on the same axis #app is (the 640px column is
+ * `margin: 0 auto`, so left:50% is the column's centre on any viewport). Its
+ * bottom offset is derived, not guessed: the ad strip and the tab bar are
+ * real flex children with known heights, and --tabbar-pad-b is the tab bar's
+ * OWN padding expression rather than a copy of it.
+ *
+ * ONE LIT THING. It borrows the amber edge + soft glow while it is up, which
+ * is legal under the restraint rule (BACKGLASS §5) precisely because it is
+ * transient and because the screen it lands on has just lost its lit element:
+ * completing a goal clears the selection, so the glowing selected row is
+ * gone by the time this appears.
+ *
+ * pointer-events: none — it overlaps the tab bar's top edge for a moment and
+ * must never swallow a tap. There is nothing on it to press. */
+.pg-toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(var(--ad-h) + var(--tabbar-h) + var(--tabbar-pad-b) + 10px);
+  /* ABOVE the sheets (K3 review, 2026-08-14). This started at 150 — over the
+     shell, under the 200/201 sheet tier — which meant a visitor who finished
+     a goal with the glossary open got the announcement (role="status" reaches
+     a screen reader regardless of paint order) but no pill. Sighted and
+     screen-reader users now see the same event. Still under the sign-up gate
+     (300) and the chunk-error banner (400): those two report that something
+     is BLOCKED or BROKEN, which outranks an acknowledgement. */
+  z-index: 210;
+  max-width: min(560px, calc(100vw - 32px));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: var(--r-pill);
+  background: var(--glass-bg-popover);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--amber-border);
+  box-shadow: var(--glow-amber-soft);
+  pointer-events: none;
+  animation: pgToastIn 0.18s ease-out;
+}
+
+.pg-toast-check {
+  flex-shrink: 0;
+  font-size: var(--fs-4);
+  line-height: 1;
+  color: var(--amber);
+}
+
+.pg-toast-text {
+  min-width: 0;
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Fade + a 4px rise. The keyframes carry the -50% X translation too, because
+   `transform` is one property: a keyframe animating only translateY would
+   drop the centring for the length of the animation. */
+@keyframes pgToastIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Remove the MOTION, keep the FEATURE (the standing rule): the pill still
+   appears, still announces (role="status"), still leaves after 2.4s — it just
+   arrives already in place. Nothing else is needed because the animation is
+   enter-only: teardown is a plain element removal, not a transition. */
+@media (prefers-reduced-motion: reduce) {
+  .pg-toast {
+    animation: none;
+  }
+}
+
+/* ---------- Offline pill (ui/offline.ts, 2026-10-14) ----------
+ * The toast's sibling: same glass pill in the same slot above the tab bar,
+ * but PERSISTENT for as long as the browser reports offline, and quieter —
+ * a hairline border and dim text instead of the amber glow, because it is a
+ * state, not an event. pointer-events: none for the toast's reason: it floats
+ * over content for minutes at a time and must never eat a tap.
+ * No animation at all, so reduced motion needs no rule here. */
+.pg-offline {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(var(--ad-h) + var(--tabbar-h) + var(--tabbar-pad-b) + 10px);
+  /* Just under the toast (210): if both are ever in the same place, the
+     event outranks the standing state. They are not, normally — see below. */
+  z-index: 205;
+  max-width: min(560px, calc(100vw - 32px));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  background: var(--glass-bg-popover);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line-2);
+  pointer-events: none;
+}
+
+.pg-offline-dot {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.pg-offline-text {
+  min-width: 0;
+  font-size: var(--fs-2);
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* While offline, the toast stacks one slot ABOVE the pill instead of landing
+   on top of it — a goal-done acknowledgement must not hide the offline state,
+   nor the pill hide the acknowledgement. 44px = the pill's height plus the
+   same 10px breathing room the toast keeps above the tab bar. */
+.pg-is-offline .pg-toast {
+  bottom: calc(var(--ad-h) + var(--tabbar-h) + var(--tabbar-pad-b) + 44px);
+}
+
+/* ---------- Study tab (ui/study.ts, wave 2, 2026-08-11) ----------
+ * "a step thru of everything on the playfield" — lazy-mounted like Map/
+ * Achievements, no goal/route/gauge/celebration involved. Follows the "no
+ * sibling .css file, every rule lives in styles.css" convention — this wave's
+ * file list was app.ts / NEW ui/study.ts / styles.css (additions) / tests,
+ * with no new CSS file in scope.
+ *
+ * `.study-*` are STANDALONE copies of `.map-goal-pill-row`/`.map-step-*`'s
+ * visual recipe (map2d.css), not shared classes — same per-surface-CSS-copy
+ * convention this app already uses throughout (see .goal-row-chip's own
+ * comment above for the precedent) rather than study.ts importing
+ * map2d.css.
+ */
+
+#study-host {
+  position: relative;
+  height: 100%;
+  min-height: 240px;
+  /* TWO COLUMNS (P9, 2026-08-14, owner: "What if we move the playfield to the
+     left side of the screen and have the buttons take like the right 1/6 of
+     the screen. There is a lot of overlap, maybe moving the playfield will
+     help users realize they are in a different tab too.")
+
+     WHAT THIS REPLACED: the canvas filled the host and `.study-top-row`
+     floated four solid amber pills over its top-right corner. On Jaws that
+     put them squarely on the Orca deck plate. Every previous pass treated the
+     overlap as a clearance problem to be measured around (TOP_PAD reserved a
+     band, STACK_CLEAR pushed the floating label out of the way); the owner's
+     read is that it is a LAYOUT problem, and he is right — no amount of
+     clearance stops a pill from being painted on the playfield.
+
+     The Shots tab deliberately KEEPS its centred canvas. Two tabs that draw
+     the same playfield needed to look like different screens, which is the
+     second half of the owner's note, and giving Study its own silhouette is
+     cheaper and more legible than any badge would be.
+
+     `.study-controls` and the sheet stay absolutely positioned against this
+     host, so they still span BOTH columns — the readout bar is full-width as
+     before, and the sheet is still a full-width bottom sheet. */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* The `display: flex` above OUTRANKS `.tab-panel[hidden]`'s display:none
+ * (ID specificity 1-0-0 beats class+attribute 0-2-0), which un-hid the Study
+ * panel on EVERY tab — study pills painted over Shots, every canvas split the
+ * leftover space and shrank (owner report, 2026-08-14 evening). Any panel that
+ * sets its own `display` MUST restate its [hidden] state at >= specificity. */
+#study-host[hidden] {
+  display: none;
+}
+
+#study-host canvas {
+  touch-action: manipulation;
+}
+
+/* The LEFT column: everything the rail does not take. `min-width: 0` is
+   load-bearing on a flex child — without it the canvas refuses to shrink
+   below its intrinsic width and pushes the rail off-screen. ui/study.ts's
+   resize() sizes the backing store from THIS element's box, not the host's,
+   which is what keeps the drawn playfield and its tap targets on the same
+   coordinates now that the two boxes differ. */
+.study-canvas {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
+
+/* THE RAIL — the right column, and the whole point of P9.
+ *
+ * WIDTH IS THE WIDEST PILL, NOT A FRACTION. The owner's "right 1/6" is
+ * intent, not arithmetic: a sixth of a 390px phone is 65px, which cannot hold
+ * 'ACTION BUTTON' at any size this app sets type in. So the rail is sized to
+ * the widest label plus its padding, MEASURED from the shipped font rather
+ * than guessed — app/public/fonts/ChakraPetch-Bold-latin.woff2 gives
+ * 'ACTION BUTTON' a 118.1px advance at 12px with 0.16em tracking, so the pill
+ * is 118.1 + 2x12 padding = 142.1 and the rail is that plus its own 6px/8px
+ * gutters = 156.1 -> 158. tests/study.test.mjs pins the rail against that
+ * measurement, so re-typing the pills fails the suite instead of clipping a
+ * label. On a 390px viewport that is 40% of the width, not a sixth — and it
+ * is what the labels actually need.
+ *
+ * PILL PADDING 16 -> 12: eight pixels of pure playfield, no tap target
+ * touched (the pills stay 36px tall and none is anywhere near 44px wide).
+ *
+ * WHAT IT COSTS THE CARD, measured at three viewports (host height =
+ * viewport - 154px of shell chrome; the card is playfieldRect's 20.25:45 fit
+ * inside `canvas width x (host - 16 - 60)`):
+ *   320x568  card 145x322 -> 145x322   UNCHANGED (height-limited both ways)
+ *   390x844  card 269x598 -> 216x480   -20%
+ *   430x932  card 309x686 -> 256x569   -17%
+ * The short phones — the ones where the playfield was already smallest — pay
+ * nothing, because their card was height-limited and still is. The tall ones
+ * trade ~20% of card for a card with nothing painted on top of it. */
+.study-rail {
+  flex: 0 0 var(--study-rail-w);
+  width: var(--study-rail-w);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  /* THE CARD ALIGNMENT MOVED TO `.study-rail-spacer` (LEVEL v2, 2026-08-15).
+     It used to be this element's `padding-top: var(--study-card-top)`, which
+     made the alignment UNCONDITIONAL — and a level whose card is short and
+     centred publishes a large card top (Halloween's Sanitarium at 375x667:
+     176px), which took 176 of the rail's 513 and pushed the column's own
+     content past the bottom, where `overflow: hidden` cut it off. The spacer
+     is the same offset as a SHRINKABLE flex item, so the alignment yields
+     before the controls do. See its rule below.
+     Bottom padding keeps the rail's own content out of the readout bar's band
+     (44px bar at bottom:8px, plus a gap). */
+  /* Longhands, not the shorthand: a `var()` inside a four-value shorthand is
+     unreadable to anything that parses by position — including this repo's
+     own CSS-reading tests. */
+  padding-top: 0;
+  padding-right: 8px;
+  padding-bottom: 60px;
+  padding-left: 6px;
+  /* ABOVE THE SHEET'S BACKDROP, and this is load-bearing rather than
+     decorative — it is the P4 contract moved to the new layout. The sheet's
+     transparent tap-catcher is `inset: 0` at z-index 9, so a rail left at
+     `auto` would have every pill covered by it the moment a sheet opened:
+     tapping ACTION BUTTON while LEARN was up would dismiss the sheet instead
+     of switching to it, which is exactly the "jumpy" two-tap behaviour P4
+     tracked down and fixed. z-index applies to a flex item even at
+     `position: static` (CSS Flexbox 1 §5.4), so no positioning is needed.
+     Level with the panel (also 10) and painted before it, so where the two
+     genuinely overlap the panel still wins — see the sheet note below. */
+  z-index: 10;
+  /* Pass-through, same recipe and same reason as `.study-controls`: the rail
+     is a full-height column and only its pills are controls. Its empty lower
+     two-thirds must not swallow taps — there is no canvas under it to reach,
+     but a column that eats events is also a column that cannot be dragged
+     over, and the rule keeps the two surfaces consistent. */
+  pointer-events: none;
+  /* A viewport short enough for the rail's own content to reach the readout
+     bar is below the 240px floor `min-height` above already treats as a
+     collapse guard; clip rather than scroll if it ever happens, because a
+     scrolling pill rail is worse than a clipped one. */
+  overflow: hidden;
+}
+
+/* THE CARD-ALIGNMENT SPACER (LEVEL v2, 2026-08-15) — owner, 2026-08-14: "Move
+ * the buttons down in the study tab so that the top of the first button aligns
+ * with the top of the playfield. Right now buttons are above the playfield."
+ *
+ * The card is centred vertically by playfieldRect inside the canvas column, so
+ * its top edge is a number only the draw path knows: 38px where the card is
+ * height-limited, ~97 on a tall phone where it is width-limited, 176 on a
+ * short wide deck card. ui/study.ts publishes it as `--study-card-top`
+ * (snapped to device pixels — the whole request is that two edges line up) and
+ * this reads it. The 12px fallback is the pre-alignment value, used only for
+ * the first frame before any render has happened.
+ *
+ * `flex-shrink: 1` + `min-height: 0` IS THE POINT, and it is what this rule
+ * exists for rather than the padding it replaced. This is the ONLY shrinkable
+ * item in the rail — every pill is `flex-shrink: 0` and the LEVEL and MODEL
+ * groups are `flex-shrink: 0` — so when the column's
+ * content does not fit, ALL of the deficit comes out of here and nothing else
+ * moves. Measured worst case (Halloween's Sanitarium level, 375x667): the rail
+ * has 453px of content box and wants 494, so the spacer gives back 41 and the
+ * pills sit 41px above the card's top edge. Alignment is cosmetic; the LEVEL
+ * control being painted across the readout bar with its lower half clipped —
+ * which is exactly what the unconditional padding did — is not. */
+.study-rail-spacer {
+  order: -1; /* the column's first item, whatever the DOM order */
+  /* SHRINK 1000, not 1, and it is an ORDERING statement rather than a
+     magnitude (2026-08-15, when the fifth pill made the column over-full on a
+     short viewport). Flexbox splits a deficit in proportion to
+     shrink-factor x base size, so with both this and `.study-pill-stack` at
+     factor 1 a 102.7px deficit at 390x553 would have come 15px off the
+     ALIGNMENT and 88px off the PILLS — scrolling two pills out of sight while
+     still holding 23px of purely cosmetic offset. 1000 makes this box give
+     everything it has (down to its min-height of 0) BEFORE the stack gives
+     anything, which is LEVEL v2's own rule applied to one more claimant:
+     alignment is cosmetic, a control you cannot reach is not.
+     It changes nothing where the column fits — at 390x667 this still yields
+     exactly the 26.7px the stack needs and keeps the rest. */
+  flex: 0 1000 auto;
+  height: var(--study-card-top, 12px);
+  min-height: 0;
+}
+
+/* THE PILL STACK (2026-08-15) — the pills as one SCROLLABLE group, so a short
+ * viewport takes a pill out of view instead of cutting a control in half.
+ * MEASURED IN CHROME when there were five of them: at 390x667 the column fitted
+ * exactly (spacer 38 -> 11.3, MODEL's bottom edge on the readout bar's top
+ * edge); at 390x553 it ran 42.7px past the rail and `.study-rail`'s
+ * `overflow: hidden` cut the MODEL control through the middle.
+ *
+ * IT DOES NOT TRIGGER TODAY, and that is stated rather than quietly enjoyed:
+ * the same day's LEARN/ALL SHOTS merge took the fifth pill away and the eyebrow
+ * removal took 37.2px more out of the pinned block, so four pills now clear
+ * even 390x553 with ~46px to spare. The box stays because it costs nothing
+ * idle, because a longer machine name or a future pill lands in it, and
+ * because deleting it means the next pill re-discovers the cut on a phone
+ * instead of in a scrollbar. tests/study.test.mjs section (w) pins it as
+ * headroom, with the numbers, so nobody reads it as load-bearing.
+ *
+ * WHY THE PILLS AND NOT SOMETHING ELSE. LEVEL is the control this rail's last
+ * two revisions exist to keep reachable, and MODEL is the one rolo could not
+ * find on a Pro. The pills are the only group where "some of them are below
+ * the fold" is a normal, recoverable state — you scroll, exactly like the
+ * sheet bodies they open.
+ *
+ * `min-height: 0` is load-bearing: a flex ITEM defaults to `min-height: auto`
+ * and refuses to shrink below its content, so without it this box would push
+ * LEVEL and MODEL out of the rail instead of scrolling. */
+.study-pill-stack {
+  pointer-events: auto; /* .study-rail is pass-through — see its own note */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* The gap the pills had as rail children, kept identical so nothing moves on
+     a viewport where the column already fitted. */
+  gap: 8px;
+  flex: 0 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  /* A scroll that reaches its end must not then scroll the page behind it —
+     the tab is `position: fixed` and has nowhere to go, and the rubber-band
+     would read as the layout coming apart. */
+  overscroll-behavior: contain;
+  /* Two pixels of thumb inside a 144px column is worth more than two pixels of
+     label, and the pills are `white-space: nowrap` — an overlay scrollbar
+     (iOS/macOS default) costs nothing here either way. */
+  scrollbar-width: thin;
+}
+
+/* SMALL PHONES (P9). One notch down — 11px type, 10px pill padding, tighter
+   tracking — which takes the rail from 158 to 137 and hands 21px back to the
+   card. Tokens only: the pills keep their 36px height, so no tap target
+   moves. Below 360px the card is height-limited on every real device anyway
+   (a 320px phone is also a short one), so this is insurance for the
+   wide-and-short case rather than a fix for a measured loss. */
+@media (max-width: 359px) {
+  :root {
+    --study-rail-w: 137px;
+  }
+
+  .study-learn-btn,
+  .study-action-btn,
+  .study-drills-btn,
+  .study-altmodes-btn,
+  .study-character-btn,
+  .study-howitplays-btn,
+  .study-quiz-btn {
+    padding: 0 10px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+  }
+}
+
+/* THE EYEBROW IS GONE (2026-08-15, owner: "the text study jaws under the
+   buttons is unnecessary. Remove that from all studys.").
+   `.study-eyebrow` was a glass pill at the foot of the rail reading
+   'STUDY · JAWS' — 29.2px of type box plus the column's 8px gap. It stated the
+   tab you were already on and the machine the app header already names on
+   every tab, which is what made it removable rather than movable.
+
+   WHAT WENT WITH IT, because it was doing one job that was not decorative: its
+   `margin-top: auto` was the RAIL'S FOOT ANCHOR — the column's only auto
+   margin, absorbing all free space so everything ordered after it was pinned
+   to the rail's bottom edge instead of drifting with `--study-card-top`. That
+   declaration moved onto `.study-level-group` below, which is the first item
+   that needs pinning. There is still exactly ONE auto margin in this column;
+   a second would split the free space and un-pin both.
+
+   THE 37.2px it freed (29.2 + gap) all goes to the rail's own slack, not to
+   the canvas: the rail's width is unchanged and the card is drawn in the other
+   column. What it buys is headroom — see `.study-pill-stack`. */
+
+/* THE STUDY PILL — one recipe, five classes, now rail children.
+ *
+ * P8 GROUPED THE FOUR RATHER THAN COPYING THE RECIPE TWICE MORE. LEARN and
+ * ACTION BUTTON shipped as two byte-identical rules under the
+ * per-surface-copy convention, and a test already had to assert they had not
+ * drifted apart — which is the same evidence THE CHIP RECIPE above acted on
+ * when three hand-copies of one chip turned out to disagree about font-size.
+ * The CLASSES stay separate (a DOM query for the LEARN button must not find
+ * another pill first, and each is the hook its own tests read); only the
+ * declarations are shared.
+ *
+ * P9 (2026-08-14) moved them out of a row floating over the canvas and into
+ * `.study-rail`. They stretch to the rail's content width — equal-width pills
+ * read as a menu rather than a ragged pile — and the rail is sized so the
+ * longest label cannot wrap at either type size.
+ *
+ * All five are CO-EQUAL: solid var(--amber) on var(--text-on-amber), no
+ * border (the glow recipe's inset ring is the edge). Every pill is 36px tall
+ * — `box-sizing: border-box` is global — so a longer label only ever grows a
+ * pill sideways, and the rail's width is the only thing that has to know. */
+.study-learn-btn,
+.study-action-btn,
+.study-drills-btn,
+.study-altmodes-btn,
+.study-character-btn,
+.study-howitplays-btn,
+.study-quiz-btn {
+  pointer-events: auto; /* .study-rail is pass-through — see its own note */
+  flex-shrink: 0;
+  /* 16 -> 12 (P9): the rail is exactly as wide as the widest pill, so every
+     pixel of horizontal padding is a pixel of playfield. Nothing about the
+     tap target moves — the pills stay 36px tall and the narrowest ('DRILLS')
+     is still ~76px wide. */
+  padding: 0 12px;
+  height: 36px;
+  /* Two-word labels ('ACTION BUTTON', 'ALT MODES') must never wrap inside a
+     fixed-36px pill. The rail is measured to fit the longest of them, and
+     this is the cheap proof rather than a layout argument. */
+  white-space: nowrap;
+  border-radius: var(--r-pill);
+  background: var(--amber);
+  color: var(--text-on-amber);
+  font-family: var(--display);
+  font-size: 12px; /* = --fs-2; literal so study.test.mjs can read it for the
+                      rail-width measurement. */
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* THE PRIMARY LIT CONTROLS on the Study screen (BACKGLASS §5) — the
+     three-stop hard glow. The 1px inset ring is part of the recipe, which is
+     why the pills need no border of their own. */
+  box-shadow: var(--glow-amber-hard);
+}
+
+/* The one pill that dies with the tour (ui/study.ts's updateControls) — two of
+   them until LEARN absorbed ALL SHOTS, which is the same rule with one door
+   fewer: a MODEL that leaves no visible shots leaves nothing for LEARN to show
+   in either half. */
+.study-learn-btn:disabled {
+  opacity: 0.4;
+}
+
+/* `display: flex` above beats the `hidden` attribute's UA display:none, so
+   the fail-soft hide for datasets with no `actionButton`, machines with no
+   `drills`, machines with no altMode-flagged goal and machines with no
+   character/progression goal (study.ts's updateConditionalPills) needs an
+   explicit rule. This is the [hidden] restatement every element with its own
+   `display` in this file owes — the cascade trap that took the whole Study
+   panel down on 2026-08-14. */
+.study-action-btn[hidden],
+.study-drills-btn[hidden],
+.study-altmodes-btn[hidden],
+.study-character-btn[hidden],
+.study-howitplays-btn[hidden],
+.study-quiz-btn[hidden] {
+  display: none;
+}
+
+.study-learn-btn:focus-visible,
+.study-action-btn:focus-visible,
+.study-drills-btn:focus-visible,
+.study-altmodes-btn:focus-visible,
+.study-character-btn:focus-visible,
+.study-howitplays-btn:focus-visible,
+.study-quiz-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* THE LEVEL CONTROL (2026-08-14; v2 2026-08-15) — which surface the Study tour
+ * walks: the main playfield, one of the machine's zones (a raised deck, a mini
+ * playfield, a below-deck window), or ALL of them at once.
+ *
+ * PARKED AT THE FOOT OF THE RAIL (`order: 3`), and that is a FIX, not a
+ * rearrangement. `.study-rail`'s padding-top is `--study-card-top` — the drawn
+ * card's own top edge — so anything laid out from the top of the rail MOVES
+ * WHEN THE CARD DOES, and the card's top edge is a function of the selected
+ * level's aspect. As a list under the pills this control therefore relocated
+ * itself on every press: measured in Chrome, Jaws at 390x780 threw the rows
+ * 171px down the screen the moment ORCA DECK was chosen (card top 38 ->
+ * 242.5), and Halloween at 375x667 pushed them onto the readout bar (rows at
+ * y444/480/516 against a bar top of 521) while the rail's own `overflow:
+ * hidden` clipped 74px of column. That is the owner's "I can't flip thru the
+ * different playfield levels here": a control that will not hold still.
+ * `margin-top: auto` HERE is what pins it: it is the column's ONE auto margin,
+ * so it eats all the free space and this group — plus MODEL, ordered after it
+ * — sits on the rail's BOTTOM edge, a box `--study-card-top` cannot move. The
+ * pills above keep their card alignment, which is the thing P9 was asked for.
+ * The anchor lived on the eyebrow until that element was removed on
+ * 2026-08-15; it moved here rather than being deleted with it, because it was
+ * never about the eyebrow. A SECOND auto margin anywhere in this column would
+ * split the free space between the two and un-pin both.
+ *
+ * DELIBERATELY QUIETER THAN THE PILLS. The pills are the tab's four primary
+ * actions and carry BACKGLASS's one lit treatment (solid amber + glow); this
+ * is a mode switch, and more solid-amber controls in a 158px rail would
+ * flatten that hierarchy completely. Glass by default, amber wash only when
+ * the tour has LEFT the main playfield — state, which is what the glow budget
+ * is for. */
+.study-level-group {
+  order: 3; /* the rail's foot: the pill stack (0) and the spacer (-1) precede it */
+  /* THE RAIL'S FOOT ANCHOR — see this rule's own note. `auto`, not the 8px it
+     carried while the eyebrow held the anchor: the gap to whatever is above is
+     `.study-rail`'s own 8px `gap`, so nothing lost a pixel of separation in
+     the swap. */
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.study-level-group[hidden] {
+  display: none;
+}
+
+.study-level-label {
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  text-align: right;
+  padding-right: 2px;
+}
+
+/* THE SCROLLER — map2d.css's `.map-settings-scroller` recipe (glass ‹ ›, a
+ * centred label, cyclic with no dead ends), re-proportioned for a PRIMARY
+ * control instead of a 230px settings popover. The one structural difference
+ * is that the name sits ABOVE the arrows rather than between them, and it is
+ * arithmetic rather than taste: the rail's content width is 144px, two 44px
+ * arrows leave 56px between them, and the shipped zone names need 65-78px
+ * ('SANITARIUM', 'STRODE HOUSE') before the long ones are even considered. A
+ * single row would have ellipsized the one word this control exists to show.
+ * Stacked, the name gets all 144px and the arrows get 70x44 each — well past
+ * the tap-target minimum in BOTH dimensions, which the popover's own 26x46
+ * fallback never managed (see its stated residual in map2d.css). */
+.study-level-scroller {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.study-level-name {
+  min-height: 26px;
+  padding: 4px 8px;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  color: var(--text-dim);
+  font-family: var(--display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  /* A zone name is prose from the dataset and can be a sentence ('Encounter
+     Mini-Playfield (Mando Helmet)'). Wrap to at most two lines and clip: a
+     rail that grew to fit the longest authored name would push the pills off
+     their card alignment. (The removed `.study-eyebrow` made the same contract
+     for the machine title — this rule is now the only one that needs it.) */
+  overflow-wrap: anywhere;
+  max-height: 3.1em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* THE TOUR HAS LEFT THE MAIN PLAYFIELD — the same amber-wash/amber-border
+   language a selected goal row and the LEARN sheet's current list row already
+   use. */
+.study-level-name-on {
+  background: var(--amber-dim);
+  border-color: var(--amber-border);
+  color: var(--amber);
+}
+
+.study-level-arrows {
+  display: flex;
+  gap: 4px;
+}
+
+.study-level-arrow {
+  pointer-events: auto; /* .study-rail is pass-through — see its own note */
+  appearance: none;
+  flex: 1;
+  min-width: 0;
+  /* 44px in BOTH directions, unpadded and unexpanded: this is the control the
+     owner flips levels with, so it gets a real target rather than a ::after
+     overlay standing in for one. */
+  height: 44px;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  color: var(--amber);
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* `display: flex` above beats the UA's `[hidden]` display:none, so any future
+   fail-soft hide of an arrow needs this stated rather than assumed — the
+   cascade trap that took the whole Study panel down on 2026-08-14. */
+.study-level-arrow[hidden] {
+  display: none;
+}
+
+/* NOTHING TO SCROLL TO = NO ARROWS (2026-08-14). The row itself is hidden when
+   the MODEL leaves exactly one level, so the rail shows the level's name and
+   the reason line and no dead affordance. `.study-level-arrows` sets its own
+   `display: flex`, so it MUST restate [hidden] at equal specificity — the same
+   cascade trap as the arrow rule above, and the reason this pair of rules is
+   never "obviously unnecessary". */
+.study-level-arrows[hidden] {
+  display: none;
+}
+
+.study-level-arrow:active {
+  background: var(--glass-border);
+}
+
+/* A DISABLED ARROW MUST NOT LOOK LIVE. Unreachable in the shipped app — the
+   row is hidden before any arrow can be disabled (refreshLevelControl sets
+   both) — but if a future path ever leaves one on screen, 0.4 opacity over
+   amber was NOT enough: an amber glyph in a rail of amber controls reads as
+   pressable, which is exactly what rolo reported ("the buttons on the side
+   still aren't changing the playfield"). Faint text, no amber, no glass. */
+.study-level-arrow:disabled {
+  opacity: 0.45;
+  color: var(--text-faint);
+  background: transparent;
+  border-color: var(--glass-border);
+}
+
+.study-level-reason {
+  font-size: 10px;
+  line-height: 1.3;
+  color: var(--text-faint);
+  text-align: right;
+  padding: 0 2px;
+  overflow-wrap: anywhere;
+}
+
+.study-level-arrow:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* THE MODEL CONTROL (2026-08-14) — Pro vs Premium/LE, in the rail.
+ *
+ * WHY IT IS IN STUDY AT ALL. The Shots tab's settings popover has owned this
+ * switch since phase A3, and that was the whole problem: the LEVEL control's
+ * reason line ended "…switch MODEL in settings", so a Pro owner looking for a
+ * deck he does own was told to leave the tab, open a popover on another one,
+ * find a segmented control and come back. rolo read the result as a bug ("the
+ * buttons on the side still aren't changing the playfield"). Same state, same
+ * predicate, second mount point — ui/study.ts's refreshModelControl.
+ *
+ * ORDERED LAST (4), directly under LEVEL. The two belong together and in this
+ * direction: LEVEL is what you came to the rail to change, MODEL is the reason
+ * a level might not be offered. Both sit after the column's one `margin-top:
+ * auto` (LEVEL's own, since 2026-08-15), so both are pinned to the rail's
+ * BOTTOM edge and neither one moves when the drawn card's top edge does (see
+ * .study-level-group's own note for the incident that rule exists for).
+ *
+ * QUIETER THAN LEVEL, which is quieter than the pills. Three tiers in a 158px
+ * column: solid amber for the four primary actions, an amber WASH on the level
+ * plate when the tour has left the main playfield, and here a glass track
+ * whose selected half is a dim amber tile. A fourth solid-amber control would
+ * flatten the hierarchy the pills depend on (BACKGLASS §5's glow budget). */
+.study-model-group {
+  order: 4;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* A machine with no trim-restricted content has nothing to switch between, so
+ * the whole group hides — and the group sets its own `display`, so [hidden] is
+ * restated here at equal specificity (tests/tab-panels.test.mjs owns the
+ * general form of this trap). */
+.study-model-group[hidden] {
+  display: none;
+}
+
+.study-model-label {
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  text-align: right;
+  padding-right: 2px;
+}
+
+.study-model-track {
+  display: flex;
+  gap: 4px;
+}
+
+/* 44px TALL, unpadded and unexpanded — the same call the LEVEL arrows make and
+ * for the same reason: this is a control the owner presses on a phone, so it
+ * gets a real target instead of a ::after overlay standing in for one. The
+ * label sizes DOWN rather than the button sizing up: 'PREM/LE' has to fit half
+ * of a 144px content column (70px), and half of the 137px narrow breakpoint's
+ * (66px), with its border and padding inside that. */
+.study-model-btn {
+  pointer-events: auto; /* .study-rail is pass-through — see its own note */
+  appearance: none;
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  padding: 0 2px;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  color: var(--text-dim);
+  font-family: var(--display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.study-model-btn[hidden] {
+  display: none;
+}
+
+/* THE SELECTED MODEL — the same amber-wash language the level plate uses when
+ * the tour has left MAIN, so "this is the state you chose" looks the same in
+ * both halves of the rail's lower block. */
+.study-model-btn.selected {
+  background: var(--amber-dim);
+  border-color: var(--amber-border);
+  color: var(--amber);
+}
+
+.study-model-btn:active {
+  background: var(--glass-border);
+}
+
+.study-model-btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* ‹ › tour controls — same recipe as .map-step-controls, standalone copy.
+ * Unlike Map's (conditional on a goal being selected), this bar is ALWAYS
+ * visible — Study always has a "current" shot to step from. */
+.study-controls {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 8px;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  /* Same pass-through recipe as .map-step-controls, and for the same reason:
+   * this is a full-width strip pinned OVER the canvas, so without it the
+   * container's own box (including the gaps between the three controls, and
+   * every pixel of the strip the ‹ › buttons and pill don't cover) eats the
+   * canvas's tap-to-inspect clicks — study.ts's canvas 'click' listener
+   * simply never fires for anything in the bottom band. Only the three real
+   * controls below take pointer events back. */
+  pointer-events: none;
+}
+
+.study-step-btn,
+.study-readout {
+  pointer-events: auto;
+}
+
+.study-step-btn {
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  color: var(--text);
+  font-size: 20px;
+}
+
+.study-step-btn:disabled {
+  opacity: 0.4;
+}
+
+.study-readout {
+  appearance: none;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Explicit line-height on both, same reason as .map-step-readout-*: the
+ * `font:` shorthand resets line-height to `normal` (a per-platform font
+ * metric), and this bar is bottom-anchored, so a pill taller than the 44px
+ * buttons grows UPWARD into the strip study.ts's BOTTOM_CLEARANCE reserved.
+ *
+ * BACKGLASS RE-DERIVATION (P5): two lines, so this pill CAN take the scale's
+ * intended readout sizes — --fs-5 label over --fs-micro sub, in the display
+ * face (BACKGLASS §4). 17 x 1.2 + 10 x 1.2 = 32.4px of type, which needs the
+ * padding at 4px rather than 5 to stay under the buttons:
+ * 32.4 + 8 + 2 = 42.4px. (At the old 5px padding it computes to 44.4 and the
+ * bar starts eating the playfield.) The MAP pill has a third line and cannot
+ * take these sizes at all — see its own note above. */
+.study-readout-label {
+  font: 700 17px var(--display);
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  color: var(--text);
+}
+
+.study-readout-sub {
+  font: 600 10px var(--display);
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+
+/* ---------- LEARN sheet — BESPOKE, not ui/sheet.ts's createSheet ----------
+ * See ui/study.ts's own header "LEARN SHEET" note for why: a transparent
+ * "exposed field" backdrop instead of createSheet's dark modal scrim. (It
+ * also used to be the only sheet in the app with a prefers-reduced-motion
+ * guard; as of 2026-08-14 ui/sheet.css gives the SHARED .pg-sheet-panel the
+ * same guard, so that is no longer a difference between the two.) Visual
+ * recipe otherwise deliberately echoes ui/sheet.ts's
+ * .pg-sheet-panel (same glass/blur/radius/animation language) so it still
+ * reads as "a sheet in this app", just this tab's own standalone copy. */
+.study-learn-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  /* Deliberately NOT dimmed — the spec calls the area above the sheet the
+     "exposed field": it must read as still fully part of the live view,
+     just tappable-to-dismiss, unlike the Goals/Map sheets' dark scrim. */
+  background: transparent;
+}
+
+.study-learn-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  /* ONE STANDARD HEIGHT for both sheet kinds (P5, 2026-08-14). This was
+     `max-height: 55dvh` with a content-driven height, which meant LEARN and
+     ACTION were genuinely different sizes and switching between them had to
+     ANIMATE the panel's top edge from one to the other — a height
+     transition, a pinned inline height, and a cleanup timer that raced in
+     four directions (see ui/study.ts's swapSheetBody). Fixing the height
+     deletes the problem rather than the symptom: the panel never resizes, so
+     there is nothing to animate, nothing to pin and no timer to own. A swap
+     is now purely a content change.
+     55dvh is the SAME number that was already the cap, deliberately: the
+     sheet can never take more of the playfield than it could before. The
+     cost is whitespace under a short LEARN body — that is the price of a
+     sheet that does not move, and it is the one number to turn if it reads
+     too tall on a phone. */
+  height: 55dvh;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--r-3) var(--r-3) 0 0;
+  background: var(--sheet-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--glass-border);
+  padding: 10px 0 calc(12px + env(safe-area-inset-bottom));
+  /* The ONE motion this sheet has: a single 0.25s slide-up on open. There is
+     no height transition any more — see the `height` note above; the panel is
+     a fixed size, so a LEARN <-> ACTION switch changes only the body's
+     contents (which cross-fades, .study-learn-body-swap below). */
+  animation: studySheetUp 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* The entrance animates TRANSFORM ONLY — never height/top/bottom. That is
+   what keeps it on the compositor instead of relaying out a blurred glass
+   panel full of text every frame, and it is why the "jumpy" report
+   (2026-08-14) was NOT this animation but the switch between the two sheets
+   replaying it from scratch. Do not "simplify" this into a height or
+   top animation. */
+@keyframes studySheetUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* CONTENT SWAP (P4 addendum, 2026-08-14) — LEARN <-> ACTION BUTTON while the
+   sheet is already open. study.ts inserts a NEW body element carrying this
+   class, which is what makes the fade play: a CSS animation runs when an
+   element with an animation-name enters the document, so there is no timer
+   and no class-toggling dance to get wrong. Opacity only, and 120ms — long
+   enough to read as a change of subject, short enough that a double-tap
+   between the two pills never queues up visible motion. */
+@keyframes studySheetSwapIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.study-learn-body-swap {
+  animation: studySheetSwapIn 120ms ease-out;
+}
+
+/* Reduced-motion: instant show/hide (owner spec, explicit) — createSheet's
+   shared sheet has no equivalent guard; this tab's own bespoke sheet does.
+   THE FEATURE SURVIVES, ONLY THE MOTION GOES: the sheet still opens, and a
+   LEARN <-> ACTION swap still replaces the content — it just arrives at full
+   opacity and final height immediately. study.ts's swapSheetBody makes the
+   same decision on the JS side (it skips the measure-and-transition entirely
+   when prefers-reduced-motion matches), so nothing here is fighting an
+   inline style. */
+@media (prefers-reduced-motion: reduce) {
+  .study-learn-panel {
+    /* `transition: none` used to sit here too, for the height transition that
+       no longer exists (the panel is a fixed size now). The slide-up is the
+       only motion left to remove. */
+    animation: none;
+  }
+
+  .study-learn-body-swap {
+    animation: none;
+  }
+}
+
+/* THE SHEET HEADER ROW (P8, 2026-08-14) — Back on the left, the in-sheet ‹ ›
+   on the right. Both live OUTSIDE the swapped body, which is what lets a kind
+   switch replace the body without destroying the element focus is sitting on
+   (ui/study.ts's swapSheetBody note; tests/study.test.mjs section p).
+
+   THE HEIGHT IS FIXED, and that is the point rather than an accident: the
+   steppers only show for the LEARN kind, so a content-sized head would be
+   44px for LEARN and ~30px for the other three, and the body's top edge would
+   JUMP on every switch — the exact class of motion P5 deleted when it gave
+   the panel one standard height. One head height, one panel height, nothing
+   moves but the content.
+
+   It also makes Back a full 44px tap target, which its old
+   `padding: 2px 18px 12px` box (~30px tall) never was. */
+.study-sheet-head {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  flex-shrink: 0;
+  padding-right: 12px;
+}
+
+.study-learn-back {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 5px;
+  padding: 0 18px;
+  margin-right: auto;
+  color: var(--amber);
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.study-learn-back:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* The ‹ › the bottom .study-controls bar cannot offer while a sheet covers it
+   — see ui/study.ts's header. Glass recipe copied from .study-step-btn (the
+   bar they stand in for), at the same 44px tap size; no `pointer-events`
+   line, because unlike that bar this row is not pinned over the canvas. */
+.study-sheet-steps {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.study-sheet-steps[hidden] {
+  display: none;
+}
+
+.study-sheet-step {
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: var(--r-2);
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  color: var(--text);
+  font-size: 20px;
+}
+
+.study-sheet-step:disabled {
+  opacity: 0.4;
+}
+
+.study-sheet-step:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* Fills whatever the fixed-height panel has left after the Back row, and
+   scrolls when a long ACTION uses-list overflows it. `min-height: 0` is
+   load-bearing, not defensive: a flex child's default `min-height: auto`
+   refuses to shrink below its content, so without it a long body would push
+   the panel past its own height instead of scrolling inside it. */
+.study-learn-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0 18px 14px;
+}
+
+/* PEEK (2026-10-14) — ui/study.ts's peekStudySheet. A shot name tapped in the
+ * prose lights a shot that is often BEHIND this 55dvh sheet (the lower half of
+ * the table), so the sheet ducks to its head plus the first lines of the body
+ * until the visitor taps back into it. 17dvh is head (~60px on a phone) plus
+ * about two lines of body: enough to see which sheet is still open and that
+ * the place is kept, small enough that the flippers are visible. Height, not
+ * transform, because the panel's bottom edge must stay pinned and the body's
+ * own scrollTop must survive — nothing is re-laid-out, only the box shrinks.
+ * NO `transition` and NO second `.study-learn-panel` rule: study.test.mjs pins
+ * the panel to one declared height with no height transition (the 2026-08
+ * variable-height timer bug), and that pin matches the bare selector only —
+ * so the duck lives on the COMPOUND selector, as a keyframe, and the restore
+ * is an instant snap (the visitor just tapped the sheet; answering at once is
+ * the right feel). The reduced-motion block cancels the duck keyframe the
+ * same way the base block cancels the open slide. */
+.study-learn-panel.study-sheet-peek {
+  height: 17dvh;
+  animation: studySheetDuck 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.study-learn-panel.study-sheet-peek .study-learn-body {
+  overflow-y: hidden;
+}
+@keyframes studySheetDuck {
+  from {
+    height: 55dvh;
+  }
+  to {
+    height: 17dvh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .study-learn-panel.study-sheet-peek {
+    animation: none;
+  }
+}
+
+/* ---- THE COMBINED LEARN BODY (2026-08-15) -------------------------------
+   Owner: "als learn and all shots are like the same thing, i think we can
+   combine those two buttons and their material." So the LEARN body is now two
+   stacked regions — the current shot's DETAIL over the whole tour's LIST — and
+   the ALL SHOTS pill is gone.
+
+   THE BODY STOPS SCROLLING AND ITS CHILDREN START. `.study-learn-body` above
+   is one scroll box, which is right for the three kinds that are one document.
+   Here it would be wrong twice over: the list would push the detail up out of
+   view as you scrolled, and a shot with long notes would push the list off the
+   bottom entirely. `overflow: hidden` + two scrollable children gives each half
+   its own gesture, and the panel's fixed 55dvh keeps the split from moving as
+   the tour walks.
+
+   THE SPLIT, in numbers (a 667px-tall viewport, where 1dvh = 6.67px):
+     panel   55dvh          = 366.9   (.study-learn-panel)
+     head    44             = 44      (.study-sheet-head, fixed)
+     padding 10 + 12        = 22      (the panel's own)
+     body                   = 300.9
+     detail  <= 22dvh       = 146.7   (40% of the panel — the cap below)
+     list    >= 300.9 - 146.7 = 154.1
+   The cap is expressed in dvh rather than as a percentage of the body because
+   the PANEL is what it is a fraction of, and the panel is the box whose height
+   is stated as a constant. A shot whose notes need more than the cap scrolls
+   inside the detail; every shipped shot's notes fit it at this viewport.
+
+   THE DETAIL IS `flex: 0 0 auto`, so it takes its natural height up to the cap
+   and never steals from the list; the list is `flex: 1` + `min-height: 0`, so
+   it takes the remainder and shrinks properly when the detail is at its cap. */
+/* ONE SCROLL (rolo 2026-09-08: "why does this break into 2 sets of scrolling
+   sections? too much going on"). The LEARN body was a split — the detail its
+   own 22dvh scroll box and the target/light lists each their own — which put
+   two or three independent scrollbars in one sheet. It is now a SINGLE
+   scrolling document (.study-learn-body's own overflow-y): the detail flows at
+   its natural height, then TARGETS, then LIGHTS, all scrolling together under
+   one scrollbar. The detail and list wrappers no longer scroll on their own. */
+.study-learn-detail {
+  flex: 0 0 auto;
+  padding-bottom: 10px;
+}
+
+.study-learn-list {
+  flex: 0 0 auto;
+  padding-bottom: 6px;
+}
+
+/* The section label the ALL SHOTS pill used to be — and THE SEAM between the
+   two halves. Quiet: a divider inside a sheet, not a second title competing
+   with the shot's own name, riding `.study-ab-heading`'s recipe, which is the
+   one this panel already uses for "a labelled list starts here".
+   IT IS A FIXED ROW OF THE SPLIT, not the list's first child, and that is a
+   Chrome measurement rather than a preference (2026-08-15, Jaws at 390x667):
+   inside the scroll container it scrolled away with the rows and, at any
+   non-zero offset, rendered as a half-cut amber sliver against the panel's
+   edge. Out here it is always legible and its border-top is the one line that
+   says where the detail ends. */
+.study-learn-list-title {
+  flex: 0 0 auto;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  margin-bottom: 6px;
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.study-learn-title {
+  font-family: var(--display);
+  font-size: var(--fs-5);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.study-learn-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+/* Geometry comes from the shared chip recipe (styles.css — search "THE CHIP
+   RECIPE"); only the colours are this surface's own. This chip is the one
+   that was already 10px, i.e. the size the other two moved TO. */
+.study-learn-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--line);
+  color: var(--text-dim);
+}
+
+.study-learn-chip-trim {
+  background: var(--amber-dim);
+  color: var(--amber);
+  border-color: var(--amber-border);
+}
+
+.study-learn-notes {
+  font-size: var(--fs-3);
+  line-height: 1.5;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+/* ---- ACTION sheet (machine action-button explainer, dataset schema v6) ----
+   Rides the .study-learn-* shell/typography above; only the when-to-use
+   list is new chrome. */
+
+.study-ab-heading {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.study-ab-uses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.study-ab-use {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: var(--r-2);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+}
+
+.study-ab-when {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.study-ab-what {
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
+/* ---- THE SHOT LIST (P8's ALL SHOTS body; LEARN's lower half since
+   2026-08-15) -------------------------------------------------------------
+   The tour as a list, in the same order the ‹ › walk uses. Rides the
+   .study-learn-* shell above. It had its own kind and its own panel-class hook
+   (`.study-index-panel`) until the merge; the hook carried no rules, so its
+   removal took nothing with it. The `.study-index-*` class names stay — these
+   are the same rows, and renaming a shipped surface to match a deleted button
+   would be churn with a cascade risk and no user-visible payoff.
+   The list scrolls inside `.study-learn-list` (its own scroll region — see the
+   combined-body block above), which is exactly why this is a body and not a
+   second sheet. */
+
+.study-index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 44px is the floor, not the height: a long shot name is allowed to grow the
+   row rather than be clipped, and `min-height` keeps the tap target honest
+   either way. */
+.study-index-row {
+  appearance: none;
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--r-2);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+/* THE ONE LIT ROW (BACKGLASS §5) — the tour's current shot, the same state
+   the ✓ marks and the same treatment .goal-row-sel gives the selected goal.
+   State is the only thing that gets amber here. */
+.study-index-row-current {
+  background: var(--amber-dim);
+  border-color: var(--amber-border);
+}
+
+.study-index-row:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* Fixed-width whether or not it holds the ✓ (the .goal-row-check convention,
+   same size and same glow): a mark that only existed on the current row would
+   shift every other row's name sideways as the tour moves. */
+.study-index-check {
+  width: 18px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--fs-4);
+  font-weight: 700;
+  color: var(--amber);
+  text-shadow: var(--glow-text);
+}
+
+.study-index-name {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-3);
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.study-index-type {
+  flex-shrink: 0;
+  font-family: var(--display);
+  font-size: var(--fs-micro);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ---- DRILLS (P8, 2026-08-14) --------------------------------------------
+   One card per authored drill. Card chrome is the .study-ab-use recipe (the
+   other list this sheet shell already shows), so the two bodies read as the
+   same surface. `.study-drills-panel` is a hook only, like the two above. */
+
+.study-drill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.study-drill {
+  padding: 10px 12px;
+  border-radius: var(--r-2);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+}
+
+.study-drill-title {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.study-drill-text {
+  margin: 4px 0 0;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
+/* `reps` is authored PROSE, not a count ("20", "5 chains — note your
+   longest", "3-hit sets x5"), so it is a labelled LINE rather than a chip and
+   carries no text-transform: the "REPS ·" prefix is already uppercase in the
+   string, and uppercasing the rest would shout a sentence. */
+.study-drill-reps {
+  margin-top: 6px;
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+}
+
+.study-drill .study-learn-chips {
+  margin: 8px 0 0;
+}
+
+/* Rides the neutral .study-learn-chip colours. text-transform is turned OFF
+   for the same reason the reps line has none: `focus` is free prose — the 30
+   authored drills carry 29 distinct values, from 'timing' to 'Avoiding the
+   SDTM reject on the bash toys' — so the chip recipe's uppercase (written for
+   closed vocabularies like a shot TYPE) would shout whole sentences. If the
+   dataset ever adopts a closed focus vocabulary, delete this line and colour
+   the chip by value.
+
+   THE THREE OVERFLOW PROPERTIES ARE LOAD-BEARING, and measured. At a 320px
+   viewport the panel is 320 wide, so the body's 18px padding leaves 284, the
+   card's 12px padding and border leave 258, and the chip's own padding and
+   border leave a 240px text box. The longest authored focus value —
+   'Reduced-power plunge control and the cradle catch' — renders 294px wide in
+   Chakra Petch SemiBold at 10px with 0.1em tracking. It OVERFLOWED the card
+   before this rule existed.
+     * WRAP RATHER THAN `text-overflow: ellipsis` + a `title`: this is
+       CONTENT (what to concentrate on), not a decorative tag, and `title` is
+       inert on the phone this app is read on at a machine — ellipsizing would
+       hide half a sentence behind a hover nobody there has.
+     * `min-width: 0` because the chip is a FLEX ITEM of .study-learn-chips,
+       and a flex item's default `min-width: auto` refuses to shrink below its
+       content — max-width alone would not hold it.
+     * `overflow-wrap: anywhere` so the guarantee survives ARBITRARY future
+       dataset strings, not just today's 30: normal wrapping breaks at spaces,
+       so one long unbroken token would still spill. (Today's longest single
+       word is 'Reduced-power' at 87px, which fits — that is luck, not a
+       property of the data.) */
+.study-drill-focus {
+  text-transform: none;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.study-drill-link {
+  appearance: none;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 10px;
+  border-radius: var(--r-2);
+  background: var(--amber-faint);
+  border: 1px solid var(--amber-border);
+  color: var(--amber);
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.study-drill-link:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* ---- ALT MODES (dataset schema v7, 2026-08-14) --------------------------
+   One card per goal carrying an `altMode` flag — the machine's video modes,
+   its attract-mode menus and its alternate rulesets, collected. Card chrome is
+   the .study-drill recipe (which is itself the .study-ab-use recipe), so all
+   three list bodies in this one sheet shell read as the same surface rather
+   than three designs. `.study-altmodes-panel` is a hook only, like the rest. */
+
+.study-altmode-list,
+.study-character-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.study-altmode,
+.study-character {
+  padding: 10px 12px;
+  border-radius: var(--r-2);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+}
+
+.study-altmode-title,
+.study-character-title {
+  font-family: var(--display);
+  font-size: var(--fs-1);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.study-altmode .study-learn-chips {
+  margin: 8px 0 0;
+}
+
+/* THE TYPE CHIP IS THE ONE LIT THING on the card, and it may be: unlike
+   `.study-drill-focus` (free prose from the dataset), this text comes from a
+   CLOSED three-value vocabulary — VIDEO MODE / MENU / RULESET — so it can
+   carry the chip recipe's uppercase and an amber outline without ever
+   shouting a sentence. BACKGLASS §5's faint-tint + lit-border pair, the same
+   two tokens `.study-drill-link` uses; no glow, because a chip is a label and
+   the hard glow is reserved for controls you press. */
+.study-altmode-chip {
+  background: var(--amber-faint);
+  border-color: var(--amber-border);
+  color: var(--amber);
+}
+
+.study-altmode-summary,
+.study-character-summary {
+  margin: 8px 0 0;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
+/* THE HOW LINES — the goal's `instructions` when it is pathless (a menu you
+   hold both flippers for), or its steps' `action` lines when it is routed
+   (Attack from Mars' video mode is two steps). An <ol>, because both authored
+   forms ARE ordered; the marker is drawn in amber via ::marker so the numbers
+   read as part of the card rather than browser furniture. */
+.study-altmode-how {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+  /* RESTATED, and it is load-bearing rather than redundant: this file opens
+     with a global `ul, ol { list-style: none; margin: 0; padding: 0 }` reset,
+     which wins on specificity ties and silently deletes every marker. Without
+     this line the ::marker rule below is dead code and the steps render as an
+     indented, unnumbered wall — measured in Chrome, 2026-08-15. Exactly the
+     restatement `.goal-instructions` already carries for the same reset, and
+     the same class of cascade trap as the [hidden] rules above. */
+  list-style: decimal;
+}
+
+.study-altmode-how li {
+  margin-top: 4px;
+}
+
+.study-altmode-how li::marker {
+  color: var(--amber);
+  font-family: var(--display);
+  font-size: var(--fs-2);
+}
+
+/* Authored prose, like a drill's `reps` — a labelled LINE, not a chip, and no
+   text-transform: the "REWARD ·" prefix is already uppercase in the string and
+   uppercasing a reward sentence ('Up to ~635M + Extra Ball pod') would shout
+   it. Same recipe as .study-drill-reps for exactly that reason. */
+.study-altmode-reward,
+.study-character-reward {
+  margin-top: 8px;
+  font-family: var(--display);
+  font-size: var(--fs-2);
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  overflow-wrap: anywhere;
+}
+
+/* ---- CHARACTER (2026-08-15) ---------------------------------------------
+   One card per 'progression' goal with no playfield route — the hero you pick,
+   the gear you bank, the XP and the account progress that outlive a ball. It
+   is the fourth list body this one sheet shell shows, and it is GROUPED into
+   the .study-drill / .study-altmode rules above rather than given a fourth
+   hand-copy of them: P8's own finding was that three hand-copies of one chip
+   had already drifted apart on font-size, and the pill recipe at the top of
+   this file has grouped five classes for the same reason since. The classes
+   stay separate — each is the hook its own tests read, and a DOM query for a
+   character card must not find a drill first — only the declarations are
+   shared. `.study-character-panel` is a hook only, like the rest.
+
+   WHAT IS GENUINELY NEW is below: the difficulty pips (this sheet is the only
+   screen that renders these goals as goals, so the one comparative fact the
+   dataset carries about them lives here) and a BULLETED how-list where the
+   alt-mode card's is numbered. See buildCharacterCard's own note for why the
+   marker differs — an alt mode's lines are a procedure, a character goal's are
+   an inventory. */
+
+.study-character-pips {
+  margin-top: 4px;
+  font-size: var(--fs-2);
+  letter-spacing: 0.18em;
+  color: var(--amber);
+}
+
+/* THE HOW LINES — the goal's `instructions`, verbatim. A <ul>: these are the
+   pieces of a system and what each one does, not steps in an order.
+   `list-style: disc` is RESTATED for the same reason .study-altmode-how
+   restates `decimal` — this file opens with a global `ul, ol { list-style:
+   none }` reset which wins the specificity tie and silently deletes every
+   marker, leaving an indented, unmarked wall. The ::marker rule below is dead
+   code without it. */
+.study-character-how {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+  list-style: disc;
+}
+
+.study-character-how li {
+  margin-top: 4px;
+}
+
+.study-character-how li::marker {
+  color: var(--amber);
+}
+
+/* ========================================================================
+   HOW IT PLAYS + LIGHTS (schema v9) — the two Study surfaces.
+   Panels are hooks on the shared .study-learn-panel shell (like
+   .study-character-panel); the rules below are the section/row recipes.
+   ======================================================================== */
+.study-hip-heading {
+  margin: 14px 0 4px;
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  letter-spacing: 0.08em;
+  color: var(--amber);
+}
+
+/* RESTATED against this file's global `ul, ol { list-style: none }` reset,
+   which wins on specificity and silently deletes markers — see
+   .study-altmode-how for the incident this line prevents. */
+.study-hip-loop,
+.study-hip-scoring {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-soft);
+  list-style: decimal;
+}
+.study-hip-loop li,
+.study-hip-scoring li {
+  margin-top: 4px;
+}
+.study-hip-loop li::marker,
+.study-hip-scoring li::marker {
+  color: var(--amber);
+  font-family: var(--display);
+}
+
+.study-hip-tier-label {
+  display: inline-block;
+  margin-right: 6px;
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  letter-spacing: 0.06em;
+  color: var(--amber-bright);
+}
+.study-hip-tier-text {
+  color: var(--text-soft);
+}
+
+.study-hip-lanechange {
+  margin: 6px 0 0;
+  font-size: var(--fs-3);
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
+/* ---- INLINE TERM LINKS (2026-10-14) — ui/linkTerms.ts ----------------------
+   A word in HOW IT PLAYS / LEARN prose that the app can explain: a glossary
+   entry, or one of this machine's shots. It must read as a WORD (same font,
+   same colour, same line) that is visibly tappable — hence a dotted amber
+   underline and nothing else; a pill or a chip mid-sentence breaks the
+   sentence.
+   THE TAP TARGET IS BIGGER THAN THE WORD WITHOUT MOVING THE LINE. A <button>
+   is laid out inline-block whatever `display` says, so its vertical padding
+   WOULD grow the line box — the negative margin of the same size cancels it in
+   layout while the padding still counts for hit-testing. MEASURED in Chrome
+   on the built app (Jaws, 400px wide): the word's own box is 18.8px tall
+   (--fs-3 at line-height 1.45); 3px a side gives 24.8px, which clears WCAG
+   2.5.8's 24px minimum for a target inside a sentence. Horizontally it grows
+   by 6px a side; a two-letter term (LE) is still narrower than 24, which
+   2.5.8 exempts for "Inline" targets — noted rather than padded until the
+   words around it are pushed apart.
+   WHY NOT 44px (the 2026-10-14 verifier's HIGH): 13px a side DID reach 44.8,
+   and also reached 13px into the line above and below. Two links on adjacent
+   lines then overlapped by ~26px, the later line painted on top, and a tap on
+   the centre of "left 3-bank" fired "Multiball" from the next line — measured
+   on 10 machines at two viewports, 94 mis-aimed centre points, 1+ on every
+   machine. A target that steals its neighbour's taps is worse than a smaller
+   one. 3px a side leaves ~6px of possible overlap between stacked links, all
+   of it in the leading between the two words, never on a glyph. */
+.term-link {
+  display: inline-block;
+  padding: 3px 6px;
+  margin: -3px -6px;
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: underline dotted var(--amber);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.term-link:active {
+  color: var(--amber);
+}
+.term-link:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: -2px;
+}
+
+.study-hip-glossary,
+.study-hip-crosslink {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 12px;
+  min-height: 44px;
+  background: var(--bg-card-hi);
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  color: var(--amber);
+  font-family: var(--display);
+  font-size: var(--fs-3);
+  text-align: left;
+}
+.study-hip-crosslink {
+  display: block;
+  margin-top: 18px;
+}
+
+.study-hip-goal-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.study-hip-goal-chip,
+.study-hip-partof-chip {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 6px 10px;
+  background: var(--bg-card-hi);
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  color: var(--text-soft);
+  font-size: var(--fs-3);
+}
+
+/* The KIND chip on a light — shown in the LEARN light detail. */
+.study-light-kind {
+  flex-shrink: 0;
+}
+.study-light-kv {
+  margin-top: 4px;
+}
+.study-light-kv-label {
+  display: inline-block;
+  min-width: 64px;
+  margin-right: 6px;
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  letter-spacing: 0.06em;
+  color: var(--amber);
+}
+.study-light-kv-value {
+  color: var(--text-soft);
+}
+
+/* LEARN "Part of" — the reverse link from a shot to its light groups. */
+.study-hip-partof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+.study-hip-partof-label {
+  font-family: var(--display);
+  font-size: var(--fs-4);
+  letter-spacing: 0.06em;
+  color: var(--amber);
+}
+
+/* ---- LEARN: TARGETS + LIGHTS sections (2026-09-08, rolo) ---------------- */
+/* The two section labels (TARGETS / LIGHTS) are the distinction rolo asked
+   for; this only gives the second heading room to breathe off the list above
+   it. Length only — no new colour token. */
+.study-learn-list-title-lights {
+  margin-top: 10px;
+}
+/* "See it on the playfield ›" — the Shots-tab door in each LEARN detail. It
+   rides the crosslink look (amber, bordered) but sits tighter under the
+   write-up it follows than the HOW IT PLAYS cross-link does. */
+.study-shots-link {
+  margin-top: 12px;
+}

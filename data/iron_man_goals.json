@@ -1,0 +1,963 @@
+{
+  "machine": "Iron Man (Stern Pinball, 2010)",
+  "defaultFx": "coin",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.4,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.09,
+      "y": 0.11,
+      "trim": "all"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.12,
+      "trim": "all"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.12,
+      "trim": "all"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.91,
+      "y": 0.11,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all"
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.11,
+      "y": 0.5,
+      "trim": "all"
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.89,
+      "y": 0.5,
+      "trim": "all"
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.57,
+      "trim": "all"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.57,
+      "trim": "all"
+    },
+    {
+      "id": "war-machine",
+      "name": "War Machine Shot",
+      "type": "mech",
+      "x": 0.34,
+      "y": 0.64,
+      "trim": "all"
+    },
+    {
+      "id": "whiplash-targets",
+      "name": "Whiplash Targets",
+      "type": "target-bank",
+      "x": 0.64,
+      "y": 0.58,
+      "trim": "all"
+    },
+    {
+      "id": "iron-monger",
+      "name": "Iron Monger",
+      "type": "bash-toy",
+      "x": 0.5,
+      "y": 0.42,
+      "trim": "all"
+    },
+    {
+      "id": "center-spinner",
+      "name": "Center Spinner",
+      "type": "spinner",
+      "x": 0.5,
+      "y": 0.51,
+      "trim": "all"
+    },
+    {
+      "id": "iron-man-targets-left",
+      "name": "Iron Targets (IRON)",
+      "type": "target-bank",
+      "x": 0.19,
+      "y": 0.4,
+      "trim": "all"
+    },
+    {
+      "id": "iron-man-targets-right",
+      "name": "Man Targets (MAN)",
+      "type": "target-bank",
+      "x": 0.81,
+      "y": 0.4,
+      "trim": "all"
+    },
+    {
+      "id": "drone-targets",
+      "name": "Drone Targets",
+      "type": "target-bank",
+      "x": 0.56,
+      "y": 0.72,
+      "trim": "all"
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.6,
+      "y": 0.82,
+      "trim": "all"
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Lanes",
+      "type": "lane",
+      "x": 0.45,
+      "y": 0.93,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-lit-lane",
+      "title": "Skill Shot -- Lit Lane",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Give it a full pull so the ball rolls the top lanes and the one lit lane collects the skill shot.",
+      "reward": "Skill-shot value plus a lane toward the S.H.I.E.L.D. set",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Full plunge to the top",
+          "detail": "A hard pull carries the ball up and around; holding the left flipper sends it a full loop.",
+          "plunge": "full"
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Roll the lit lane",
+          "detail": "Whichever top lane is lit pays the skill shot as the ball rolls through."
+        }
+      ]
+    },
+    {
+      "id": "skillshot-soft-plunge",
+      "title": "Soft Plunge for Control",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Feather the plunge instead so the ball dribbles to your right flipper and you pick your own first shot.",
+      "reward": "A controlled first shot in trade for the skill-shot points",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Ease it in short",
+          "detail": "A gentle plunge lets the ball settle on the right flipper -- worth more than a risky skill shot on a fast table."
+        }
+      ]
+    },
+    {
+      "id": "mode-iron-man",
+      "title": "Spell IRON MAN",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Knock down the red picture targets -- IRON on the left, MAN on the right -- to light Iron Man, then hit them again for double scoring.",
+      "reward": "Iron Man objective lit; second time through starts 2X scoring",
+      "steps": [
+        {
+          "shot": "iron-man-targets-left",
+          "action": "Finish IRON",
+          "detail": "Four red targets on the left spell the first word."
+        },
+        {
+          "shot": "iron-man-targets-right",
+          "action": "Finish MAN",
+          "detail": "Three red targets on the right spell the rest."
+        },
+        {
+          "shot": "iron-man-targets-left",
+          "action": "Sweep them again",
+          "detail": "With the word done, a second pass turns on double scoring for a while."
+        }
+      ]
+    },
+    {
+      "id": "mode-shields",
+      "title": "Light the S.H.I.E.L.D. Lanes",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Roll the lit shield rollovers through the inlanes, outlanes and top lanes; tap a flipper to slide the lit one under the ball.",
+      "reward": "Mystery award, a Mark, and a bonus multiplier",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll a lit shield",
+          "detail": "Each return lane can carry a lit shield rollover."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Cycle with a flip",
+          "detail": "Tapping a flipper button shifts which shield is lit so you can line up the one you still need."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Grab the top pair",
+          "detail": "Two of the six shields live in the upper lanes."
+        }
+      ]
+    },
+    {
+      "id": "mode-drones",
+      "title": "Clear the Drone Targets",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Hit the lit blue drone targets scattered across the playfield; the lit one hops each time, so chase it around.",
+      "reward": "Drones objective; qualifies War Machine Multiball",
+      "steps": [
+        {
+          "shot": "drone-targets",
+          "action": "Hit the lit drone",
+          "detail": "Whatever drone you strike goes dark and another lights, so keep re-aiming."
+        },
+        {
+          "shot": "war-machine",
+          "action": "Cash it at War Machine",
+          "detail": "Clearing the set arms the War Machine shot to start its multiball."
+        }
+      ]
+    },
+    {
+      "id": "mode-bogey",
+      "title": "Run the Bogey Ramps",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Comboing the two ramps climbs a 100k-to-400k meter and starts Bogey, one of the Mark objectives.",
+      "reward": "Bogey mode and a Mark toward Jericho",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Climb the meter",
+          "detail": "Each ramp shot bumps the percentage higher."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Top it off",
+          "detail": "Reaching the top of the meter starts the mode."
+        }
+      ]
+    },
+    {
+      "id": "combo-bogey-ramps",
+      "title": "The Ramp Shuffle",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "Backhand the left ramp, then feed the right ramp and rock the pair back and forth from the left flipper.",
+      "reward": "Fast Bogey progress and combo value",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Backhand the left ramp",
+          "detail": "Both ramps can be caught from the left flipper, so a backhand sets up the rhythm."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Swing to the right ramp",
+          "detail": "Send it straight across and back to keep the combo alive."
+        }
+      ]
+    },
+    {
+      "id": "combo-bank-to-whiplash",
+      "title": "Bank Into Whiplash",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "Glance the ball off the red Iron Man targets so it kicks sideways into the Whiplash shot.",
+      "reward": "A Whiplash hit you cannot make head-on",
+      "steps": [
+        {
+          "shot": "iron-man-targets-right",
+          "action": "Clip the red targets",
+          "detail": "A ball banked off the picture targets rebounds toward Whiplash."
+        },
+        {
+          "shot": "whiplash-targets",
+          "action": "Catch the rebound in",
+          "detail": "The angle feeds Whiplash from a spot the direct shot cannot reach."
+        }
+      ]
+    },
+    {
+      "id": "multiball-war-machine",
+      "title": "War Machine Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Clear the drones to arm War Machine, start it at the War Machine shot, then work drone shots to the jackpot and finish back at War Machine for the super.",
+      "reward": "War Machine objective, a Mark, and frequent add-a-balls",
+      "steps": [
+        {
+          "shot": "drone-targets",
+          "action": "Arm it",
+          "detail": "A cleared drone set lights the War Machine shot."
+        },
+        {
+          "shot": "war-machine",
+          "action": "Start the multiball",
+          "detail": "The mech fires the ball straight back, so be ready with both flippers."
+        },
+        {
+          "shot": "war-machine",
+          "action": "Finish the super",
+          "detail": "Bank the drone jackpot, light the red arrows, then close it out at War Machine."
+        }
+      ]
+    },
+    {
+      "id": "multiball-iron-monger",
+      "title": "Iron Monger Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Spell MONGER on the three purple shots to raise the toy, then bash it six times -- hitting the edge, never dead center -- and take the super up the middle.",
+      "reward": "Iron Monger objective, a Mark, and a center super jackpot",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Spell on the orbits",
+          "detail": "The two orbits and the center spinner are the purple MONGER shots."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Raise the toy",
+          "detail": "A purple shot with MONGER spelled lifts the Iron Monger up to be bashed."
+        },
+        {
+          "shot": "iron-monger",
+          "action": "Bash the edges",
+          "detail": "Six hits spell it out; aim for a corner so the magnet in front does not grab the ball."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Take the super",
+          "detail": "With the toy down, the super waits straight up the middle."
+        }
+      ]
+    },
+    {
+      "id": "multiball-whiplash",
+      "title": "Whiplash Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Hit the Whiplash targets five times to start it; a magnet flings the ball back hard, so keep both flippers under you.",
+      "reward": "Whiplash objective and a Mark",
+      "steps": [
+        {
+          "shot": "whiplash-targets",
+          "action": "Five to start",
+          "detail": "Each hit counts down; the magnet makes every return unpredictable."
+        },
+        {
+          "shot": "whiplash-targets",
+          "action": "Ride the returns",
+          "detail": "Balls come off Whiplash at speed and can drain through no fault of yours -- stay set."
+        }
+      ]
+    },
+    {
+      "id": "progression-marks",
+      "title": "Climb the Mark Ladder",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "Every objective you finish lights the next Mark suit, I through VI; all six lights Jericho.",
+      "reward": "Mark VI and Jericho lit",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Bank objectives",
+          "detail": "Iron Man, War Machine, Whiplash, Iron Monger, Bogey and the shields each light a Mark."
+        },
+        {
+          "shot": "iron-monger",
+          "action": "Reach Mark VI",
+          "detail": "The sixth Mark is what opens Jericho."
+        }
+      ]
+    },
+    {
+      "id": "progression-monger-raise",
+      "title": "Raise the Iron Monger",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "Rattle the purple orbit and center-spinner shots to spell MONGER and lift the toy out of the playfield.",
+      "reward": "Iron Monger raised and ready to bash",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Left orbit spins",
+          "detail": "Orbit shots carry a spinner and count toward MONGER."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Right orbit spins",
+          "detail": "The mirror orbit does the same from the other side."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Middle to finish",
+          "detail": "The center spinner is the third purple shot that spells it out."
+        }
+      ]
+    },
+    {
+      "id": "strategy-stack",
+      "title": "The Big Stack",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "Start Bogey on the ramps, bring up War Machine, then grind Whiplash while War Machine runs so one shot pays several ways.",
+      "reward": "The game's highest points-per-shot window",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Get Bogey going first",
+          "detail": "A running ramp mode keeps scoring while you set up the rest."
+        },
+        {
+          "shot": "war-machine",
+          "action": "Add War Machine",
+          "detail": "Its add-a-balls keep the stack alive."
+        },
+        {
+          "shot": "whiplash-targets",
+          "action": "Finish Whiplash inside it",
+          "detail": "Whiplash is far easier to complete during another multiball."
+        }
+      ]
+    },
+    {
+      "id": "strategy-ball-control",
+      "title": "Survive the Outlanes",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "The outlanes are set wide with no ball save, so tame every fast return with a nudge or a drop catch before you aim.",
+      "reward": "Longer ball times on a punishing layout",
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Catch before you shoot",
+          "detail": "Trap the ball and settle it rather than swinging at a live return."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Nudge off the side",
+          "detail": "A measured shove off the side rail keeps the ball out of the outlanes."
+        }
+      ]
+    },
+    {
+      "id": "strategy-monger-edge",
+      "title": "Bash the Monger's Edge",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "When the Iron Monger is up, hit it on a corner and never dead center, or the magnet in front snatches the ball.",
+      "reward": "Safe Monger hits instead of a magnet-fed drain",
+      "steps": [
+        {
+          "shot": "iron-monger",
+          "action": "Aim for a corner",
+          "detail": "An edge hit still counts but slips past the magnet's grab."
+        }
+      ]
+    },
+    {
+      "id": "wizard-do-or-die",
+      "title": "Do or Die",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Light all five objectives on a single ball, then shoot the flashing center spinner for a 50 million hurry-up and hit it again to bank it.",
+      "reward": "A 50 million hurry-up -- huge on a game where 30 million is a great score",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Shoot the flash",
+          "detail": "With all five up on one ball, the middle flashes for the hurry-up."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Bank it again",
+          "detail": "A second center shot collects the counting-down value before it drops."
+        }
+      ]
+    },
+    {
+      "id": "wizard-jericho",
+      "title": "Jericho",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Complete all six Marks across the game to light Jericho, a shoot-everything mode where finishing every task pays enormous.",
+      "reward": "The game's marquee mode and its biggest total",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Light it up the middle",
+          "detail": "Mark VI opens Jericho at the center shot."
+        },
+        {
+          "shot": "war-machine",
+          "action": "Clear every task",
+          "detail": "Jericho asks for the lanes, the ramps, the drones, War Machine, Whiplash and Iron Monger in turn."
+        }
+      ]
+    },
+    {
+      "id": "wizard-do-or-die-multiball",
+      "title": "Do or Die Multiball",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The deepest goal on the machine: complete the five objectives again and again, re-spelling the drones each cycle, until Do or Die Multiball itself lights.",
+      "reward": "The rarest achievement Iron Man offers",
+      "steps": [
+        {
+          "shot": "drone-targets",
+          "action": "Re-spell the drones",
+          "detail": "The drones must be spelled, banked through War Machine, and spelled again and again to qualify."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Open the multiball",
+          "detail": "Only after the objectives stack past Do or Die does the multiball light."
+        }
+      ]
+    },
+    {
+      "id": "combo-loop-pass",
+      "title": "Loop Pass for Control",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "Send a long shot around an orbit and drop your flipper as it comes back to catch it on the other side and calm a fast game.",
+      "reward": "Control on a table that fights to drain you",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Fire the long loop",
+          "detail": "An orbit shot comes around with pace."
+        },
+        {
+          "shot": "right-flipper",
+          "action": "Drop-catch the return",
+          "detail": "Lowering the flipper as it arrives cradles the ball instead of batting it away."
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "spelled-iron-man",
+      "title": "Suited Up",
+      "desc": "Spell IRON MAN and start double scoring.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-iron-man"
+    },
+    {
+      "id": "shields-done",
+      "title": "Level 7 Clearance",
+      "desc": "Complete all six S.H.I.E.L.D. lanes.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-shields"
+    },
+    {
+      "id": "bogey-run",
+      "title": "On Your Six",
+      "desc": "Start Bogey by comboing the ramps.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-bogey"
+    },
+    {
+      "id": "war-machine-started",
+      "title": "Heavy Ordnance",
+      "desc": "Start War Machine Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-war-machine"
+    },
+    {
+      "id": "whiplash-started",
+      "title": "Crack the Whip",
+      "desc": "Start Whiplash Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-whiplash"
+    },
+    {
+      "id": "monger-started",
+      "title": "Monster Mash",
+      "desc": "Raise the Iron Monger and start its multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-iron-monger"
+    },
+    {
+      "id": "mark-six",
+      "title": "Mark VI",
+      "desc": "Climb all six Marks to light Jericho.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "progression-marks"
+    },
+    {
+      "id": "do-or-die",
+      "title": "50 Million or Bust",
+      "desc": "Light and bank Do or Die.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-do-or-die"
+    },
+    {
+      "id": "jericho",
+      "title": "Jericho",
+      "desc": "Reach the Jericho mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-jericho"
+    },
+    {
+      "id": "do-or-die-mb",
+      "title": "One in a Thousand",
+      "desc": "Reach Do or Die Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-do-or-die-multiball"
+    }
+  ],
+  "drills": [
+    {
+      "id": "skill-shot-reps",
+      "title": "Skill-Shot Reps",
+      "text": "Alternate a full plunge for the lit lane and a soft plunge to the right flipper. Learn which one the ball rewards on this fast table.",
+      "reps": "10 plunges, alternating",
+      "focus": "skill-shot control",
+      "goal": "skillshot-lit-lane",
+      "shots": [
+        "shooter-lane",
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "ramp-shuffle-reps",
+      "title": "Ramp Shuffle",
+      "text": "Backhand the left ramp, then send the right, and keep the pair going. Feel the timing that keeps a Bogey combo alive.",
+      "reps": "Longest ramp streak you can hold",
+      "focus": "combo timing",
+      "goal": "combo-bogey-ramps",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "monger-edge-reps",
+      "title": "Monger Edge Hits",
+      "text": "With the Monger up, aim only for its corners. Groove the edge hit so the magnet never catches you.",
+      "reps": "12 bashes, edges only",
+      "focus": "bash-toy accuracy",
+      "goal": "strategy-monger-edge",
+      "shots": [
+        "iron-monger",
+        "center-spinner"
+      ]
+    },
+    {
+      "id": "iron-man-reps",
+      "title": "IRON MAN Sweep",
+      "text": "Work the red targets left then right until the word is spelled. Chase the last stubborn target instead of hoping for a bounce.",
+      "reps": "Spell it 3 times",
+      "focus": "target-bank accuracy",
+      "goal": "mode-iron-man",
+      "shots": [
+        "iron-man-targets-left",
+        "iron-man-targets-right"
+      ]
+    },
+    {
+      "id": "shield-cycle-reps",
+      "title": "Shield Cycling",
+      "text": "Roll a return lane, then flip to move the lit shield and roll the one you need. Make the lane-change second nature.",
+      "reps": "Complete the six shields twice",
+      "focus": "flipper lane-change",
+      "goal": "mode-shields",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-outlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "outlane-control-reps",
+      "title": "Outlane Control",
+      "text": "Practice trapping fast returns and nudging the ball off the side rails before it reaches a wide outlane.",
+      "reps": "Survive 10 fast returns",
+      "focus": "nudge and control",
+      "goal": "strategy-ball-control",
+      "shots": [
+        "left-flipper",
+        "right-flipper"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Iron Man comes from before the lockbar action button, so there is no extra button to press. You set up and fire everything with the two flipper buttons and the plunger -- and the flippers pull double duty as your lane change, sliding the lit S.H.I.E.L.D. rollover under the ball."
+  },
+  "howItPlays": {
+    "objective": "Iron Man is a fast, save-less John Borg machine built around five objectives -- Iron Man, War Machine, Whiplash, Iron Monger and Drones. Light all five on one ball for Do or Die, and finish six Mark suits across the game to reach Jericho.",
+    "loop": [
+      "Spell the red IRON MAN targets and hit each objective shot -- War Machine, Whiplash, the Monger, the drones -- to light its character insert.",
+      "Every objective you finish lights the next Mark suit, climbing I through VI.",
+      "Stack modes -- start Bogey on the ramps, then War Machine, then Whiplash inside it -- so single shots score several ways.",
+      "Land all five objectives on the same ball to flash Do or Die up the middle; complete all six Marks to light Jericho."
+    ],
+    "lights": [
+      {
+        "id": "objective-inserts",
+        "name": "Objective Inserts",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "war-machine"
+          },
+          {
+            "shot": "whiplash-targets"
+          },
+          {
+            "shot": "iron-monger"
+          },
+          {
+            "shot": "drone-targets"
+          },
+          {
+            "shot": "iron-man-targets-left"
+          }
+        ],
+        "lit": "Each lit character insert is one of the five objectives; it lights while that objective is running and stays on once you finish it FOR THIS BALL.",
+        "flashing": "A flashing insert is being held for you -- that objective's progress carries to your next ball instead of resetting.",
+        "control": null,
+        "then": "Finish the five -- Iron Man, War Machine, Whiplash, Iron Monger, Drones -- on the SAME ball and the center flashes for Do or Die. Drain before that and the started ones reset, so keep them alive together rather than banking one and losing the rest.",
+        "goals": [
+          "progression-marks",
+          "wizard-do-or-die"
+        ]
+      },
+      {
+        "id": "iron-man-letters",
+        "name": "IRON MAN Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "iron-man-targets-left",
+            "lamps": 4
+          },
+          {
+            "shot": "iron-man-targets-right",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit red target is a letter you still need; it goes dark once you have knocked it down, and the lit ones are all that is left to spell.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear IRON on the left and MAN on the right to light the Iron Man objective. Sweep the whole set a SECOND time and the game turns on double scoring for a stretch -- the easiest points multiplier on the machine.",
+        "goals": [
+          "mode-iron-man"
+        ]
+      },
+      {
+        "id": "monger-shots",
+        "name": "MONGER Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "center-spinner"
+          }
+        ],
+        "lit": "The two orbit arrows and the center spinner glow purple while you are still spelling MONGER; a letter you have banked stops lighting.",
+        "flashing": null,
+        "control": null,
+        "then": "Rattle all three purple shots to spell MONGER, which raises the Iron Monger toy up out of the playfield. Then bash it on a CORNER six times -- a dead-center hit feeds the magnet in front and throws the ball back at you -- to start Iron Monger Multiball.",
+        "goals": [
+          "multiball-iron-monger",
+          "progression-monger-raise"
+        ]
+      },
+      {
+        "id": "drone-lamps",
+        "name": "Drone Targets",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "drone-targets",
+            "lamps": 4
+          }
+        ],
+        "lit": "One blue drone is lit at a time -- only the lit one scores, and the lit one HOPS to a different drone the instant you hit it, so you cannot camp a single target.",
+        "flashing": null,
+        "control": null,
+        "then": "Chase the hopping light until the whole set is cleared, which arms War Machine at its shot. Once War Machine Multiball is running these same drones become your jackpot shots, so clearing them again pays far more.",
+        "goals": [
+          "mode-drones",
+          "multiball-war-machine"
+        ]
+      },
+      {
+        "id": "shield-lanes",
+        "name": "S.H.I.E.L.D. Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-outlane"
+          },
+          {
+            "shot": "top-lanes"
+          }
+        ],
+        "lit": "A lit lane rollover is a S.H.I.E.L.D. letter you have not collected yet; roll the ball through a lit one to bank it, and a banked letter stays collected so you only ever chase the ones still lit.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button slides the lit S.H.I.E.L.D. rollover sideways across the inlanes and outlanes, so you can move it under the lane the ball is about to take and collect the letter you still need",
+          "when": "any time before the ball reaches the return lanes"
+        },
+        "then": "Line up the lit rollover with a flipper, then let the ball roll through it. Spelling all six S.H.I.E.L.D. letters banks a mystery award, lights one of the six Marks toward Jericho, and steps up your bonus multiplier.",
+        "goals": [
+          "mode-shields"
+        ]
+      },
+      {
+        "id": "mark-ladder",
+        "name": "Mark Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "center-spinner"
+          }
+        ],
+        "lit": "The Mark suits I through VI light one rung at a time; a lit rung is a completed objective, and the rungs STAY lit from ball to ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Every objective you finish -- Iron Man, War Machine, Whiplash, Iron Monger, Bogey ramps, the shields -- lights the next Mark. Reach Mark VI and Jericho lights up the middle. Because the ladder persists, even a bad ball leaves progress you keep chipping at.",
+        "goals": [
+          "progression-marks",
+          "wizard-jericho"
+        ]
+      },
+      {
+        "id": "do-or-die-lamp",
+        "name": "Do or Die",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-spinner"
+          }
+        ],
+        "lit": "The center shot flashes for Do or Die only while all five objectives are lit on the SAME ball -- drain and the flash is gone.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the flashing center spinner to start a 50 million hurry-up, then trap up and shoot the center AGAIN before the value counts down to cash it out. That is enormous on a game where 30 million is a great whole game.",
+        "goals": [
+          "wizard-do-or-die"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tapping either flipper button slides the lit S.H.I.E.L.D. rollover sideways across the inlanes and outlanes. Move it under the lane the ball is about to take, roll through to collect that letter, and it stays collected -- spell all six and you bank a mystery award plus a Mark toward Jericho.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the safe, repeatable points first: spell the red IRON MAN targets for double scoring, and roll the flipper-cycled S.H.I.E.L.D. lanes for a Mark. Get every fast return under control before you aim, because the outlanes are wide and there is no ball save.",
+        "goals": [
+          "mode-iron-man",
+          "mode-shields",
+          "strategy-ball-control"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack modes so one shot pays several ways. Start Bogey on the ramps, bring up War Machine off the drones, and grind Whiplash while War Machine is running.",
+        "goals": [
+          "mode-bogey",
+          "multiball-war-machine",
+          "multiball-whiplash",
+          "strategy-stack"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Land all five objectives on one ball to flash Do or Die -- a 50 million hurry-up up the middle -- and complete all six Marks for Jericho. Do or Die Multiball sits above both as the near-impossible top.",
+        "goals": [
+          "wizard-do-or-die",
+          "wizard-jericho",
+          "wizard-do-or-die-multiball"
+        ]
+      }
+    ]
+  }
+}

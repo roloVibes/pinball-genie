@@ -1,0 +1,399 @@
+/* ui/achievements.css — Achievements tab (overview + per-machine checklist).
+ * De-trademarked design brief: keep the STRUCTURE of an Xbox-achievements-
+ * style tracker (overall progress header, per-machine rows with progress,
+ * per-machine detail list) but render it entirely in this app's own glass/
+ * category-color language — styles.css's --bg-card/--line/--amber/--cat-*
+ * tokens, the same .goal-row/.goal-detail rhythm the Goals tab already uses.
+ * No trophy/gamerscore iconography, no Xbox green, no emoji anywhere in this
+ * file — the tab icon itself (app.ts's buildTabBar) is a plain ✓ glyph, not
+ * a pictograph. */
+
+.ach-root {
+  padding: 10px 0 24px;
+}
+
+/* ---------- Sign-in banner (Phase 5: signed-out is the NORMAL case, not an
+ * error — see achievements.ts's header comment) ---------------------------
+ * Achievements are still fully browsable read-only; only saving is gated.
+ * Was --danger red (a 401 read as "something went wrong"); a red/alert tint
+ * on the thing every first-time visitor sees is exactly backwards once the
+ * site is public and most readers never had an account to begin with. Now
+ * the same amber-invitation recipe as .goal-detail-reward/.ach-showme — an
+ * upsell, not a warning. */
+.ach-signin-banner {
+  margin: 4px 16px 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--amber-dim);
+  border: 1px solid rgba(255, 176, 46, 0.4);
+  color: var(--text-dim);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.ach-signin-banner-text {
+  margin: 0 0 10px;
+}
+
+/* Real <a>, not a <button> (achievements.ts's own comment on why) — styled
+ * as a solid pill so it reads as the one actionable thing in the banner,
+ * same recipe as ui/howto.css's .pg-howto-install-btn/.pg-howto-gotit
+ * (solid amber fill + near-black text, the app's one "primary CTA" look). */
+.ach-signin-cta {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 10px;
+  background: var(--amber);
+  color: #1a1200;
+  font-size: 12.5px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ach-signin-cta:hover,
+.ach-signin-cta:active {
+  background: #ffc85f; /* same hover tone as .pg-howto-gotit */
+}
+
+/* ---------- Signed-in "manage account" banner (D3, 2026-07-29 review) ----
+ * Renders in the EXACT same slot .ach-signin-banner does (mutually
+ * exclusive — achievements.ts's render()), but deliberately a NEUTRAL card
+ * (--bg-card/--line), not the amber invitation recipe above: signed-in is
+ * the settled state here, nothing left to upsell. */
+.ach-account-banner {
+  margin: 4px 16px 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  font-size: 12.5px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ach-account-banner-text {
+  margin: 0;
+}
+
+.ach-account-cta {
+  flex-shrink: 0;
+  padding: 9px 16px;
+  border-radius: 10px;
+  background: rgba(255, 176, 46, 0.14);
+  border: 1px solid rgba(255, 176, 46, 0.4);
+  color: var(--amber);
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.ach-account-cta:hover,
+.ach-account-cta:active {
+  background: rgba(255, 176, 46, 0.24);
+}
+
+/* ---------- Overview header ---------- */
+
+.ach-overview-header {
+  margin: 4px 16px 18px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+}
+
+.ach-overview-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.ach-overview-count {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.ach-overview-pct {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* ---------- Overview: per-machine rows ---------- */
+
+.ach-machine-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.ach-machine-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.ach-machine-row:active {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ach-machine-row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ach-machine-row-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ach-machine-row.empty .ach-machine-row-name {
+  color: var(--text-dim);
+}
+
+.ach-machine-row-empty {
+  font-size: 12px;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.ach-machine-row-meta {
+  flex-shrink: 0;
+  font: 700 12px ui-monospace, Menlo, monospace;
+  color: var(--text-dim);
+  min-width: 44px;
+  text-align: right;
+}
+
+.ach-machine-row-chevron {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--text-faint);
+}
+
+/* ---------- Shared thin progress bar (header + rows) ---------- */
+
+.ach-progress-track,
+.ach-progress-track-lg {
+  width: 100%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.ach-progress-track {
+  height: 5px;
+}
+
+.ach-progress-track-lg {
+  height: 8px;
+}
+
+.ach-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--amber);
+}
+
+/* ---------- Per-machine detail page ---------- */
+
+.ach-detail {
+  padding-bottom: 24px;
+}
+
+.ach-detail-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 16px;
+  color: var(--amber);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ach-detail-header {
+  padding: 4px 20px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ach-detail-title {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.ach-detail-meta {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+}
+
+.ach-list {
+  padding: 16px 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ach-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid transparent;
+}
+
+/* Large touch target (feature spec item 4) — same 44px floor as
+ * .step-btn/.map-step-btn elsewhere in this app. Unchecked: a plain ring.
+ * Checked: filled in the linked goal's category color (set inline per-row —
+ * ./goalMeta.ts's CATEGORY_META — since it varies per achievement, not a
+ * fixed class); a dark glyph keeps contrast across every category hue. */
+.ach-check {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+/* Unchecking confirm state (feature spec item 4's "clears after a small
+ * inline confirm, avoid accidental loss") — a second, distinct ring color
+ * plus the row's meta line swaps to "Tap again to remove" (see
+ * renderAchievementRow in achievements.ts). Auto-cancels after a few
+ * seconds if the user doesn't confirm. */
+.ach-check.confirming {
+  border-color: var(--danger);
+  background: rgba(255, 79, 94, 0.12);
+  color: var(--danger);
+}
+
+.ach-check.disabled {
+  opacity: 0.4;
+}
+
+.ach-row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ach-row-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ach-row-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* "Subtle text chip, app palette" (feature spec item 4) — one neutral style
+ * for every tier rather than a distinct color per tier, deliberately, so
+ * this doesn't read as a rarity-badge system (Xbox bronze/silver/gold/
+ * platinum) — just a small label. */
+.ach-tier-chip {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.ach-row-desc {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.ach-row-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 14px;
+}
+
+.ach-row-time {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.ach-row-confirm {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--danger);
+}
+
+.ach-row-unsaved {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--danger);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* "SHOW ME" affordance — the .help-btn amber-outline pill recipe, shrunk. */
+.ach-showme {
+  flex-shrink: 0;
+  align-self: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 176, 46, 0.12);
+  border: 1px solid rgba(255, 176, 46, 0.4);
+  color: var(--amber);
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.ach-showme:active {
+  background: rgba(255, 176, 46, 0.22);
+}
+
+.ach-showme.disabled,
+.ach-showme:disabled {
+  opacity: 0.35;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--line);
+  color: var(--text-faint);
+}

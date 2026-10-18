@@ -1,0 +1,1277 @@
+{
+  "machine": "Wizard of Oz (Jersey Jack Pinball, 2013)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Manual plunger feeding the right orbit. A full-power plunge carries the ball through the one-way gate at the top into the Oz skill shot lane; a plunge that feeds the upper right flipper instead sets up the Witch, Haunted Forest or B-A-L-L skill shot."
+    },
+    {
+      "id": "oz-lanes",
+      "name": "Oz Lanes",
+      "type": "lane",
+      "x": 0.55,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Two lanes at the very top spelling O and Z. The default skill shot target, and every completed O-Z pair afterward adds 1x to the end-of-ball bonus multiplier, up to 10x."
+    },
+    {
+      "id": "throne-room",
+      "name": "Throne Room",
+      "type": "saucer",
+      "x": 0.8,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "A saucer beneath a lit etching of the Wizard. Spells W-I-Z-A-R-D for a random award, is one of the six Horse of a Different Color shots, and is the victory-lap shot during Emerald City Multiball."
+    },
+    {
+      "id": "collect-lane",
+      "name": "Collect Lane",
+      "type": "lane",
+      "x": 0.88,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "A hidden lane behind the raised upper right flipper that loops back to the plunger. The only way to cash in a full stack of collected horses for Horse of a Different Color points."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.82,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Starts past the upper right flipper, sweeps around behind the playfield, and exits down at the left orbit. It's one of the six horse shots, and it's also how the Winged Monkey carries a captured ball back to the castle.",
+      "feeds": {
+        "shot": "left-orbit"
+      }
+    },
+    {
+      "id": "rainbow-targets",
+      "name": "Rainbow Targets",
+      "type": "target-bank",
+      "x": 0.63,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Seven colored standups left of the right orbit. Spelling R-A-I-N-B-O-W here lights the ramp for the Twister mini-playfield, unless an Emerald City lock is already waiting there.",
+      "flipper": "right"
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Feeds Munchkinland for an Emerald City lock when that is lit, or diverts to the Twister mini-playfield otherwise. One of the six horse shots and a Yellow Brick Road advance.",
+      "flipper": "right"
+    },
+    {
+      "id": "glinda-target",
+      "name": "Glinda Target",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A bright pink standup relit by hitting the rubber near the spinner. Pays whatever the game decides is most useful right now for whatever mode is running."
+    },
+    {
+      "id": "castle-entrance-vuk",
+      "name": "Castle Entrance VUK",
+      "type": "kicker",
+      "x": 0.37,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "A vertical kickout behind the Winkie Guard drop target that feeds the Witch's Castle mini-playfield. Opens once Winkie is knocked down."
+    },
+    {
+      "id": "winkie-drop-target",
+      "name": "Winkie Drop Target",
+      "type": "drop-target",
+      "x": 0.39,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Guards the Castle Entrance kicker. Knocking it down is a required step toward Rescue Multiball. Also a Haunted Target and a Rescue Multiball jackpot shot."
+    },
+    {
+      "id": "witch-target",
+      "name": "Witch Target",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "The standup beside the raised-and-lowered Wicked Witch toy. Three hits start a hurry-up; enough completed hurry-ups arm Fireball Frenzy; and it both starts and repositions Battle the Wicked Witch.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.15,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Reached through the Haunted Forest pop bumpers. One of the six horse shots, advances the Yellow Brick Road, and is a Rescue Multiball jackpot shot.",
+      "flipper": "left"
+    },
+    {
+      "id": "winged-monkey-targets",
+      "name": "Winged Monkey Targets",
+      "type": "target-bank",
+      "x": 0.2,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Two blue standups flanking the left orbit. Hitting both enough times captures Dorothy, the prerequisite for starting Rescue Multiball."
+    },
+    {
+      "id": "haunted-forest-bumpers",
+      "name": "Haunted Forest Bumpers",
+      "type": "bumpers",
+      "x": 0.12,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Three pop bumpers on the left side. Completing H-A-U-N-T-E-D here queues up a Haunted Forest mode, started by dropping into the Crystal Ball from the bumper area."
+    },
+    {
+      "id": "crystal-ball-spinner",
+      "name": "Crystal Ball Spinner",
+      "type": "spinner",
+      "x": 0.14,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Guards the entrance to the Crystal Ball lane. One of the six horse shots and a right-inlane hurry-up target."
+    },
+    {
+      "id": "crystal-ball-vuk",
+      "name": "Crystal Ball VUK",
+      "type": "saucer",
+      "x": 0.13,
+      "y": 0.39,
+      "trim": "all",
+      "notes": "The saucer behind the spinner. Starts a queued Haunted Forest mode when the ball falls in from the bumpers, or collects Crystal Ball Multiball once B-A-L-L is spelled."
+    },
+    {
+      "id": "ball-targets",
+      "name": "Ball Targets",
+      "type": "target-bank",
+      "x": 0.1,
+      "y": 0.31,
+      "trim": "all",
+      "notes": "Four standups spelling B-A-L-L. Completing them lights the Crystal Ball VUK for Crystal Ball Multiball, and is also one of the four skill shot choices.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "tnplh-targets",
+      "name": "TNPLH Targets",
+      "type": "target-bank",
+      "x": 0.09,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Five targets ringing the State Fair Balloon Bumper. Light all five and a left outlane drain triggers the There's No Place Like Home ball-save sequence instead of ending the ball."
+    },
+    {
+      "id": "toto-rollovers",
+      "name": "Toto Rollovers",
+      "type": "rollover",
+      "x": 0.91,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Four button rollovers inside the right outlane spelling T-O-T-O. Light all four and a right outlane drain triggers a Toto Escape ball save instead."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Feeds the There's No Place Like Home save once its targets are lit; otherwise it drains like any outlane."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Home to the Toto rollovers. Feeds the Toto Escape save once T-O-T-O is lit; otherwise it drains like any outlane."
+    },
+    {
+      "id": "rescue-targets",
+      "name": "Rescue Targets",
+      "type": "target-bank",
+      "x": 0.18,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "R-E-S-C-U-E targets on the Witch's Castle mini-playfield. Each advance can come from a direct hit, a Search Orbit shot, or dropping into the Rescue Saucer, which counts double.",
+      "playfield": "witchs-castle-deck",
+      "flipper": "castle-flipper"
+    },
+    {
+      "id": "castle-door",
+      "name": "Castle Door",
+      "type": "saucer",
+      "x": 0.22,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "The saucer behind the castle doors on the mini-playfield. Breaking through starts Rescue Multiball, and later collects that multiball's Super and Mega Jackpots.",
+      "playfield": "witchs-castle-deck",
+      "flipper": "castle-flipper"
+    },
+    {
+      "id": "twister-orbit",
+      "name": "Twister Orbit",
+      "type": "loop",
+      "x": 0.85,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "The mini-flipper orbit on the Twister mini-playfield. Ten loops spin the house and hand you a random Munchkin Mode on your first visit; later visits need five more loops each.",
+      "playfield": "twister-deck",
+      "flipper": "twister-flipper"
+    },
+    {
+      "id": "character-rollovers",
+      "name": "Character Rollovers",
+      "type": "rollover",
+      "x": 0.55,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Three separate button rollovers — Lion, Tin Man and Scarecrow — scattered around the main playfield. Rolling one and then hitting the ramp before touching another qualifies that character for Emerald City Multiball; the same pairing collects that character's gift once inside the multiball."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the left orbit, the Haunted Forest bumpers and the Crystal Ball lane."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the right orbit, the ramp and the Rainbow targets."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Fed by the manual plunger and both orbits; lines up the Witch, Haunted Forest and B-A-L-L skill-shot targets, with the Collect Lane tucked in right behind it."
+    },
+    {
+      "id": "castle-flipper",
+      "name": "Witch's Castle Flipper",
+      "type": "flipper",
+      "x": 0.15,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Shoots the R-E-S-C-U-E targets, castle doors and search orbit atop the Witch's Castle mini-playfield.",
+      "playfield": "witchs-castle-deck"
+    },
+    {
+      "id": "twister-flipper",
+      "name": "Twister Mini-Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Works the Twister orbit to spin the house during It's a Twister mode.",
+      "playfield": "twister-deck"
+    },
+    {
+      "id": "castle-search-orbit",
+      "name": "Search Orbit",
+      "type": "orbit",
+      "x": 0.26,
+      "y": 0.93,
+      "trim": "all",
+      "playfield": "witchs-castle-deck",
+      "flipper": "castle-flipper"
+    }
+  ],
+  "goals": [
+    {
+      "id": "oz-skillshot",
+      "title": "Oz Lanes Skill Shot",
+      "category": "skillshot",
+      "summary": "The default skill shot at the start of every ball. Plunge into the flashing lane at the very top and it pays 5,000 points, climbing 1,000 with every skill shot you collect afterward — and it lights an Oz multiplier besides.",
+      "difficulty": 1,
+      "reward": "5,000 climbing by 1,000, plus an Oz multiplier",
+      "steps": [
+        {
+          "shot": "oz-lanes",
+          "action": "Plunge at full strength into the flashing lane",
+          "detail": "A firm plunge carries the ball through the one-way gate at the top of the right orbit and into the lane cluster. The flippers can't steer which lane is flashing — land in whatever lane is already lit when the ball arrives."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-shot-options",
+      "title": "Three More Ways To Start",
+      "category": "progression",
+      "summary": "The Oz Lanes are the default skill shot, but three harder options pay more and jump-start a feature — all three route the ball to the upper right flipper first.",
+      "difficulty": 2,
+      "reward": "7,500-10,000 to start, plus a jump-started feature",
+      "steps": [],
+      "instructions": [
+        "Witch Skill Shot: feed the upper right flipper off the plunge, then hit the Witch target. Worth 5,000 climbing by 1,000, and it starts a Wicked Witch hurry-up immediately.",
+        "Haunted Forest Skill Shot: same feed, then hit the standup near the pop bumpers on the left wall. Worth 7,500 and up, and it starts a Haunted Forest mode on the spot.",
+        "B-A-L-L Skill Shot: note which letter is flashing on the B-A-L-L bank before you plunge, feed the upper flipper, then hit that exact target. Worth 10,000 and up, and it spots every B-A-L-L letter at once.",
+        "Whichever you choose, the ball has to reach the upper right flipper cleanly first — none of these three can be hit directly off the plunger."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "oz-multiplier",
+      "title": "Build The Oz Multiplier",
+      "category": "multiplier",
+      "summary": "Every completed O-Z pair at the top lanes adds one full multiple to your end-of-ball bonus, up to the 10x cap.",
+      "difficulty": 1,
+      "reward": "+1x bonus multiplier per pair, up to 10x",
+      "steps": [
+        {
+          "shot": "oz-lanes",
+          "action": "Alternate the O and Z lanes",
+          "detail": "Each fresh pair adds another multiple to the bonus you collect at the end of the ball, up to a 10x cap."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "inlane-hurry-ups",
+      "title": "Inlane Hurry-Ups",
+      "category": "progression",
+      "summary": "Rolling either inlane arms one of five hurry-up shots elsewhere on the table. The value counts down fast, but whatever you collect becomes the new starting floor next time that hurry-up comes around.",
+      "difficulty": 2,
+      "reward": "A fast-decaying hurry-up, with a climbing floor on repeat",
+      "steps": [],
+      "instructions": [
+        "Left inlane arms one of: Rainbow (hit any Rainbow target), Oz (right orbit), or Wizard (Throne Room saucer).",
+        "Right inlane arms one of: Spinner (Crystal Ball spinner), Oz (left orbit), or Winkie (the drop target).",
+        "A slingshot hit can swap which hurry-up is currently live, so check the lit lamp before committing to a shot.",
+        "Hitting the skill target in the Haunted Forest bumpers adds another hurry-up into the active pool."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "glinda-awards",
+      "title": "Glinda's Awards",
+      "category": "mode",
+      "summary": "Hit the rubber between the spinner and the bumpers to relight Glinda, then hit her pink standup for whatever the game decides you need most right now.",
+      "difficulty": 2,
+      "reward": "Context-sensitive: add-a-ball, timer extension, hurry-up reset, or points",
+      "steps": [
+        {
+          "shot": "glinda-target",
+          "action": "Shoot Glinda while she's lit",
+          "detail": "During any multiball she leans toward an add-a-ball; during a timed mode she adds seconds; during a Witch hurry-up she resets it back to full value; with nothing running she spots letters, changes a horse color, or pays points outright."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "wizard-award",
+      "title": "Spell The Wizard",
+      "category": "mode",
+      "summary": "Every hit on the Throne Room saucer adds a letter toward W-I-Z-A-R-D. Finish the word and the Wizard hands you a random prize from a short, all-useful list.",
+      "difficulty": 2,
+      "reward": "Extra ball, Emerald City lock, special, points, or a tilt warning",
+      "steps": [
+        {
+          "shot": "throne-room",
+          "action": "Keep shooting the Throne Room",
+          "detail": "Possible awards: light extra ball, spot a character toward Emerald City, start Emerald City Multiball outright, points, light special, add a Rescue lock, or an extra tilt warning."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "hoadc",
+      "title": "Horse Of A Different Color",
+      "category": "progression",
+      "summary": "Six shots around the table are randomly lit for a colored horse. Stack a full set and cash them in at the hidden Collect Lane behind the upper right flipper for a payout that rewards matching colors far more than a mixed bag.",
+      "difficulty": 3,
+      "reward": "Base value x horse count x up to a 5x color bonus",
+      "steps": [],
+      "instructions": [
+        "The six horse shots are the Crystal Ball spinner, left orbit, Castle Entrance kicker, ramp, right orbit, and Throne Room.",
+        "Each shot adds whichever color is currently lit there; hitting the same color again raises that color's value instead of adding a new horse.",
+        "You need 4 to 7 horses to cash in, and the requirement shifts by one after every collection — up on a good set, down on a bad one.",
+        "All matching colors, or all different colors, counts as success and multiplies your base total by the horse count. Anything in between halves it.",
+        "An all-rainbow set multiplies again by 5x; an all-one-color set that isn't rainbow multiplies by 3x instead.",
+        "Once you've stacked the required number of horses, shoot the Collect Lane behind the raised upper right flipper to bank the payout — it doesn't cash in on its own."
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "light-the-lock",
+      "title": "Light The Ramp",
+      "category": "combo",
+      "summary": "Complete R-A-I-N-B-O-W on the seven colored standups and the ramp lights for the Twister mini-playfield — an Emerald City lock waiting there normally takes priority instead, except for a short grace window right after an early Twister exit, when the ramp itself stays lit.",
+      "difficulty": 1,
+      "reward": "Ramp lit for Twister",
+      "steps": [
+        {
+          "shot": "rainbow-targets",
+          "action": "Work through all seven letters",
+          "detail": "Easier difficulty settings can let one hit spot a neighboring letter, so a full pass can go faster than seven individual hits."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "twister-mode",
+      "title": "Spin The House",
+      "category": "mode",
+      "summary": "Once the ramp diverts you onto the Twister mini-playfield, loop the mini-flipper orbit to spin the house. Ten loops sends the ball back out into a random Munchkin Mode on your first visit — every visit after needs five more.",
+      "difficulty": 2,
+      "reward": "A random Munchkin Mode, plus progress toward Battle the Wicked Witch",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Take the ramp once Twister is lit",
+          "detail": "The ball diverts up onto the mini-playfield instead of its usual path back to the inlane."
+        },
+        {
+          "shot": "twister-orbit",
+          "action": "Loop the mini-flipper orbit",
+          "detail": "Ten completed loops spin the house and end the mini-playfield visit on your first trip; every later visit needs five more loops than the last."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "munchkin-modes",
+      "title": "The Munchkin Modes",
+      "category": "progression",
+      "summary": "Four modes come one at a time, each unlocked by a fresh Twister visit, and each scores differently — the fourth is always a multiball.",
+      "difficulty": 2,
+      "reward": "Escalating scoring modes, then Munchkin Multiball",
+      "steps": [],
+      "instructions": [
+        "Welcome to Munchkinland: 60 seconds, every shot scores 1,000, and Rainbow target hits add 100 to that value.",
+        "Munchkin Frenzy: 60 seconds, every switch scores 100, and Rainbow hits add 10.",
+        "Lollipop Lullaby: two groups of three dancer shots swap which group is lit roughly every 7 seconds. Stay on the lit group and the value climbs with every consecutive hit; hit the wrong group and you bank half value and reset the streak.",
+        "Munchkin Multiball is always the fourth mode and credits a jewel toward Somewhere Over The Rainbow the instant it starts.",
+        "Once Munchkin Multiball starts, the Twister orbit lights for a jackpot whose size reflects your performance across the earlier modes; relight it by hitting whichever shots on the main playfield are currently lit.",
+        "All of this scoring is banked at the end of the ball and multiplied by your bonus multiplier, so it's worth protecting from a tilt."
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "emerald-city-multiball",
+      "title": "Emerald City Multiball",
+      "category": "multiball",
+      "summary": "Qualify Scarecrow, Lion and Tin Man by pairing their rollover with an immediate ramp shot, and the third lock starts the multiball outright.",
+      "difficulty": 2,
+      "reward": "Multiball, plus progress toward Battle the Wicked Witch",
+      "steps": [
+        {
+          "shot": "character-rollovers",
+          "action": "Roll one of the three character lanes",
+          "detail": "Lion, Tin Man and Scarecrow can be qualified in any order."
+        },
+        {
+          "shot": "ramp",
+          "action": "Follow it straight to the ramp",
+          "detail": "You must hit the ramp before rolling any other character lane or the qualification is lost. Locking the third character starts the multiball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "ecmb-gifts",
+      "title": "Collect All Three Gifts",
+      "category": "combo",
+      "summary": "Once Emerald City Multiball is running, pair each character's rollover with a Throne Room shot to collect their gift. All three earns a jewel toward the final wizard mode and opens up rising victory laps.",
+      "difficulty": 3,
+      "reward": "A jewel toward the wizard mode, then escalating victory laps",
+      "steps": [
+        {
+          "shot": "character-rollovers",
+          "action": "Roll a qualified character's lane",
+          "detail": "This only works for characters you already qualified before or during the multiball."
+        },
+        {
+          "shot": "throne-room",
+          "action": "Follow it straight to the Throne Room",
+          "detail": "Scarecrow's gift is a diploma, Lion's a medal, Tin Man's a heart — collect all three and the multiball shifts into victory laps that alternate between the ramp and the Throne Room, climbing in value each time."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "wicked-witch-attack",
+      "title": "Wicked Witch Hurry-Up",
+      "category": "mode",
+      "summary": "Three hits on the Witch target start a hurry-up; two more hits before it expires cashes it in. Do that three times in a game and the Fireball insert lights for good.",
+      "difficulty": 2,
+      "reward": "Hurry-up value, building toward Fireball Frenzy",
+      "steps": [
+        {
+          "shot": "witch-target",
+          "action": "Hit the Witch target three times",
+          "detail": "The third hit starts the hurry-up countdown."
+        },
+        {
+          "shot": "witch-target",
+          "action": "Hit it twice more before time runs out",
+          "detail": "Glinda can reset an active hurry-up back to full value if you catch her lit in time."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "fireball-frenzy",
+      "title": "Fireball Frenzy",
+      "category": "mode",
+      "summary": "After three completed Witch hurry-ups, one more hit on the Witch target ignites Fireball Frenzy. Chase the blue arrow around the table and stay off the red ones.",
+      "difficulty": 3,
+      "reward": "Jackpots that build toward a jewel at 10, extra balls beyond that",
+      "steps": [
+        {
+          "shot": "witch-target",
+          "action": "Light Fireball Frenzy",
+          "detail": "Requires three completed Wicked Witch hurry-ups first; the Fireball insert flashes red once you're one hit away."
+        },
+        {
+          "shot": "witch-target",
+          "action": "Use it to relocate the arrows mid-frenzy",
+          "detail": "The blue jackpot arrow and the red danger arrows both roam around the table, and a Witch target hit is one way to shuffle them."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "battle-the-wicked-witch",
+      "title": "Battle The Wicked Witch",
+      "category": "wizard",
+      "summary": "The mini-wizard mode. Run Emerald City Multiball, Fireball Frenzy, a Munchkin Mode, and Rescue Multiball each at least once, and it becomes available — a two-ball fight to liquidate the Witch for good.",
+      "difficulty": 3,
+      "reward": "A jewel, plus a multiball payout sized by how you played it",
+      "steps": [
+        {
+          "shot": "witch-target",
+          "action": "Start the battle",
+          "detail": "Only unlocks once Rescue Multiball, Fireball Frenzy, a Munchkin Mode, and Emerald City Multiball have each been played once in the game."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Turn four lit shots red",
+          "detail": "The eligible shots are Throne Room, the Crystal Ball spinner, right orbit, and left orbit. Turning a white shot red is what doubles the jackpot — hitting one that's already red only adds to the base value, so work through all four whites for the biggest payout."
+        },
+        {
+          "shot": "winkie-drop-target",
+          "action": "Lock a ball behind Winkie",
+          "detail": "This holds one ball in place while you line up the finishing combo with the other."
+        },
+        {
+          "shot": "ramp",
+          "action": "Combo the ramp into the Witch target",
+          "detail": "The ramp diverts through the Twister mini-playfield and drops the ball right in front of the upper right flipper, lined up for the Witch target while the other ball is still held behind Winkie."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "rescue-multiball-start",
+      "title": "Capture And Rescue Dorothy",
+      "category": "multiball",
+      "summary": "Capture Dorothy at the Winged Monkey targets, then fight through the castle mini-playfield, spelling out R-E-S-C-U-E and breaking down the doors.",
+      "difficulty": 3,
+      "reward": "Rescue Multiball",
+      "steps": [
+        {
+          "shot": "winged-monkey-targets",
+          "action": "Hit both blue targets enough times",
+          "detail": "Completing them captures Dorothy — the Flying Monkey toy carries a locked ball to the castle."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Send the captured ball around",
+          "detail": "A magnet above the Oz lanes holds it while the Monkey toy carries it up to the castle door."
+        },
+        {
+          "shot": "rescue-targets",
+          "action": "Spell R-E-S-C-U-E on the mini-playfield",
+          "detail": "Direct hits, a Search Orbit shot, or dropping into the Rescue Saucer, which counts double, all advance the letters."
+        },
+        {
+          "shot": "castle-door",
+          "action": "Break through into the saucer",
+          "detail": "This is what actually starts the multiball, crediting progress toward Battle the Wicked Witch too."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "rescue-jackpots",
+      "title": "Rescue Multiball Jackpots",
+      "category": "combo",
+      "summary": "Six shots pay an escalating jackpot during Rescue Multiball — 1x, then 2x, then 3x — before dropping to half value. Getting any one shot to 3x lights its own R-E-S-C-U-E letter and arms a Super Jackpot at the castle doors; getting all six lit instead arms the bigger Mega Jackpot, collected with a search orbit into the castle door.",
+      "difficulty": 3,
+      "reward": "200/400/600 per shot, then a Super and Mega Jackpot",
+      "steps": [
+        {
+          "shot": "crystal-ball-spinner",
+          "action": "Work the six jackpot shots",
+          "detail": "Throne Room, right orbit, ramp, Winkie's drop target, left orbit, and Spinner all count toward this — each one climbs 1x-2x-3x independently before falling back to half value."
+        },
+        {
+          "shot": "castle-door",
+          "action": "Cash the Super Jackpot",
+          "detail": "Getting any shot to 3x lights its matching R-E-S-C-U-E letter and arms the Super Jackpot at the castle doors; landing it resets all six shots back to 1x but keeps your lit letters."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "yellow-brick-road",
+      "title": "Yellow Brick Road",
+      "category": "progression",
+      "summary": "The ramp and the left orbit both carry a Yellow Brick Road light from time to time. Every advance counts toward a running total with rewards at fixed milestones.",
+      "difficulty": 2,
+      "reward": "Extra ball at 10, points at 20 and 40, special at 30, a jewel at 50",
+      "steps": [],
+      "instructions": [
+        "Whichever of the ramp or left orbit is flashing yellow is the one advancing the road right now.",
+        "10 advances lights an extra ball at the Throne Room.",
+        "20 advances pays a large points award.",
+        "30 advances lights a special.",
+        "40 advances pays another large points award.",
+        "50 advances awards a jewel toward the wizard mode and lights a second extra ball, both immediately."
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "haunted-forest-modes",
+      "title": "Haunted Forest Modes",
+      "category": "mode",
+      "summary": "Spell H-A-U-N-T-E-D on the left pop bumpers, then drop into the Crystal Ball from the bumper area to start whichever timed mode is queued up. Five modes deep, the last is always a multiball.",
+      "difficulty": 2,
+      "reward": "Bonus-multiplied scoring, then Haunted Forest Multiball",
+      "steps": [
+        {
+          "shot": "haunted-forest-bumpers",
+          "action": "Spell H-A-U-N-T-E-D",
+          "detail": "Holding both flippers can stall the bumpers so you can time the ball's drop toward the Crystal Ball."
+        },
+        {
+          "shot": "crystal-ball-vuk",
+          "action": "Drop into the Crystal Ball from the bumpers",
+          "detail": "This only starts a Haunted mode when the ball falls in from the bumper area — feeding the saucer through the spinner lane does not count."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "crystal-ball-modes",
+      "title": "Crystal Ball Modes",
+      "category": "mode",
+      "summary": "Spell B-A-L-L to light the Crystal Ball VUK, then shoot it through the spinner for a two-ball scoring mode with a scoring curse attached. Five modes rotate through, and Flipper Frenzy always comes last.",
+      "difficulty": 2,
+      "reward": "2x or 3x scoring for the mode's duration",
+      "steps": [
+        {
+          "shot": "ball-targets",
+          "action": "Spell B-A-L-L",
+          "detail": "Whichever Ball Target you hit next after completing the word changes which mode queues up next — check the color under the targets."
+        },
+        {
+          "shot": "crystal-ball-vuk",
+          "action": "Shoot through the spinner into the Crystal Ball",
+          "detail": "Modes include Lights Off, Lights On, Weak Flippers and No-Hold Flippers at 2x scoring, and Flipper Frenzy — reversed flipper controls — at 3x, always the fifth and final mode."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "final-sotr",
+      "title": "Somewhere Over The Rainbow",
+      "category": "wizard",
+      "summary": "The main wizard mode. Collect all eight jewels — one from each major feature on the table — and the ramp lights to start it.",
+      "difficulty": 3,
+      "reward": "Three simultaneous rainbows of escalating shot value",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Light and start the wizard mode",
+          "detail": "Requires jewels from Battle the Wicked Witch, Fireball Frenzy, Munchkin Multiball, the Yellow Brick Road, Emerald City Multiball, Flipper Frenzy, Rescue Multiball's Mega Jackpot, and Haunted Forest Multiball."
+        },
+        {
+          "shot": "rescue-targets",
+          "action": "Work the castle rainbow",
+          "detail": "The R-E-S-C-U-E letters and the Search Orbit each carry a rainbow color; relight one by shooting a same-colored shot again."
+        },
+        {
+          "shot": "rainbow-targets",
+          "action": "Work the main playfield rainbow",
+          "detail": "The R-A-I-N-B-O-W letters each carry their own color in this mode too.",
+          "link": "none"
+        },
+        {
+          "shot": "glinda-target",
+          "action": "Work the primary-shots rainbow",
+          "detail": "The spinner, left orbit, Winkie's kicker, Glinda, the ramp, right orbit and Throne Room each carry a color; completing any one of the three rainbows scores a bonus, and finishing all three raises the scoring multiplier.",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "toto-escape",
+      "title": "Toto Escape",
+      "category": "strategy",
+      "summary": "Light all four T-O-T-O rollovers in the right outlane and a drain there becomes a second chance instead of a loss — plunge again into a short timed rescue.",
+      "difficulty": 2,
+      "reward": "Ball saved, if you make the timed shots",
+      "steps": [
+        {
+          "shot": "toto-rollovers",
+          "action": "Light all four letters",
+          "detail": "The requirement grows each time you use it — one shot the first time, two the second, three the third — and the rollovers turn solid red once you've exhausted your escapes for the game."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Let a drain trigger the save",
+          "detail": "The ball relaunches automatically and you have limited time to make the lit shot or shots before it's gone for good."
+        }
+      ],
+      "fx": "dog"
+    },
+    {
+      "id": "tnplh-ballsave",
+      "title": "There's No Place Like Home",
+      "category": "strategy",
+      "summary": "Light all five targets around the State Fair Balloon Bumper and a left outlane drain launches a four-stage timed run instead of ending your ball.",
+      "difficulty": 2,
+      "reward": "Ball saved across four timed stages",
+      "steps": [
+        {
+          "shot": "tnplh-targets",
+          "action": "Light all five targets",
+          "detail": "Progress carries over between balls if you don't finish it, so a partial set is never wasted."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Let a drain trigger the sequence",
+          "detail": "You then have to complete R-A-I-N-B-O-W again, shoot the Crystal Ball and Throne Room, shoot both orbits, and finally the ramp — each completed stage adds time for the next."
+        }
+      ],
+      "fx": "hotel"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "woz-oz-skillshot",
+      "title": "Land In Oz",
+      "desc": "Collect the Oz Lanes skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "oz-skillshot"
+    },
+    {
+      "id": "woz-glinda",
+      "title": "A Little Bit Of Magic",
+      "desc": "Collect an award from Glinda.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "glinda-awards"
+    },
+    {
+      "id": "woz-wizard-award",
+      "title": "Pay No Attention",
+      "desc": "Spell W-I-Z-A-R-D for a random award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "wizard-award"
+    },
+    {
+      "id": "woz-hoadc",
+      "title": "Stable Of Colors",
+      "desc": "Cash in a full stack of horses at the Collect Lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hoadc"
+    },
+    {
+      "id": "woz-twister",
+      "title": "Spin The House",
+      "desc": "Complete ten Twister orbits to trigger a Munchkin Mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "twister-mode"
+    },
+    {
+      "id": "woz-ecmb",
+      "title": "Emerald City",
+      "desc": "Start Emerald City Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "emerald-city-multiball"
+    },
+    {
+      "id": "woz-three-gifts",
+      "title": "Brains, A Heart, Courage",
+      "desc": "Within one Emerald City Multiball, collect gifts from all three — Scarecrow, Lion, and Tin Man.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ecmb-gifts"
+    },
+    {
+      "id": "woz-witch-hurryup",
+      "title": "Feel The Heat",
+      "desc": "Start and collect a Wicked Witch hurry-up.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "wicked-witch-attack"
+    },
+    {
+      "id": "woz-ten-fireballs",
+      "title": "Ten Jackpots",
+      "desc": "Collect ten Fireball Frenzy jackpots in one game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "fireball-frenzy"
+    },
+    {
+      "id": "woz-liquidate",
+      "title": "Liquidate The Witch",
+      "desc": "Complete Battle the Wicked Witch.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "battle-the-wicked-witch"
+    },
+    {
+      "id": "woz-capture-dorothy",
+      "title": "Capture Dorothy",
+      "desc": "Lock a ball behind the Winged Monkey door.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rescue-multiball-start"
+    },
+    {
+      "id": "woz-mega-jackpot",
+      "title": "Mega Jackpot",
+      "desc": "Light and collect Rescue Multiball's Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "rescue-jackpots"
+    },
+    {
+      "id": "woz-ybr-fifty",
+      "title": "Fifty Miles Of Road",
+      "desc": "Advance the Yellow Brick Road fifty times.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "yellow-brick-road"
+    },
+    {
+      "id": "woz-haunted-all",
+      "title": "All Five Haunted",
+      "desc": "Complete every Haunted Forest mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "haunted-forest-modes"
+    },
+    {
+      "id": "woz-flipper-frenzy",
+      "title": "Flipper Frenzy",
+      "desc": "Play all five Crystal Ball modes.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "crystal-ball-modes"
+    },
+    {
+      "id": "woz-sotr",
+      "title": "Somewhere Over The Rainbow",
+      "desc": "Light and start the wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-sotr"
+    }
+  ],
+  "drills": [
+    {
+      "id": "four-skill-shot-routes",
+      "title": "Four Ways To Start A Ball",
+      "text": "Run the default full plunge through the one-way gate into the flashing Oz lane, then practise the harder version: a plunge that feeds the upper right flipper instead, which sets up the Witch, Haunted Forest and B-A-L-L skill shots. None of those three can be hit off the plunger directly, so the feed is the skill, not the aim.",
+      "reps": "10 plunges per route",
+      "focus": "skill-shot",
+      "goal": "skill-shot-options",
+      "shots": [
+        "shooter-lane",
+        "oz-lanes",
+        "upper-right-flipper",
+        "witch-target",
+        "ball-targets"
+      ]
+    },
+    {
+      "id": "character-into-ramp",
+      "title": "Rollover Straight To Ramp",
+      "text": "Roll a character lane and take the ramp before you touch any other character rollover, because a second lane in between throws the qualification away. Drill it for all three characters so the pairing is a reflex rather than something you notice afterwards.",
+      "reps": "10 pairs",
+      "focus": "flow",
+      "goal": "emerald-city-multiball",
+      "shots": [
+        "character-rollovers",
+        "ramp"
+      ]
+    },
+    {
+      "id": "rainbow-bank-sweeps",
+      "title": "Sweep The Rainbow Bank",
+      "text": "Work all seven coloured standups left of the right orbit in as few visits as you can, since the full word is what lights the ramp for Twister. Watch which letters remain rather than spraying the bank, because a neighbouring letter can spot itself and change what you still need.",
+      "reps": "5 full spellings",
+      "focus": "accuracy",
+      "goal": "light-the-lock",
+      "shots": [
+        "rainbow-targets",
+        "ramp"
+      ]
+    },
+    {
+      "id": "bumper-stall-into-crystal-ball",
+      "title": "Stall The Bumpers, Drop The Ball",
+      "text": "Squeeze both flippers to stop the pop bumpers firing, then time the release so the ball falls into the Crystal Ball from the bumper area. Only a drop from up there starts a queued Haunted Forest mode — feeding the same saucer through the spinner lane does not count.",
+      "reps": "10 stalls",
+      "focus": "ball-control",
+      "goal": "haunted-forest-modes",
+      "shots": [
+        "haunted-forest-bumpers",
+        "crystal-ball-vuk"
+      ]
+    },
+    {
+      "id": "horse-set-then-collect",
+      "title": "Match The Horses, Then Collect",
+      "text": "Work the six horse shots — the Crystal Ball spinner, both orbits, the ramp, the Castle Entrance kicker and the Throne Room — chasing either all matching colours or all different, since anything in between halves your total. Then remember the payout is not automatic: the hidden lane behind the raised upper right flipper is the only place it banks.",
+      "reps": "5 collections",
+      "focus": "accuracy",
+      "goal": "hoadc",
+      "shots": [
+        "crystal-ball-spinner",
+        "left-orbit",
+        "castle-entrance-vuk",
+        "ramp",
+        "right-orbit",
+        "throne-room",
+        "collect-lane"
+      ]
+    },
+    {
+      "id": "winkie-lock-witch-combo",
+      "title": "Lock Winkie, Combo The Witch",
+      "text": "Put one ball behind the Winkie drop target to hold it out of the way, then shoot the ramp with the other. It diverts through the Twister mini-playfield and drops the ball in front of the upper right flipper, lined up for the Witch target — practise that hand-off until it stops feeling like luck.",
+      "reps": "8 attempts",
+      "focus": "flow",
+      "goal": "battle-the-wicked-witch",
+      "shots": [
+        "winkie-drop-target",
+        "ramp",
+        "upper-right-flipper",
+        "witch-target"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "magic",
+  "playfields": [
+    {
+      "id": "witchs-castle-deck",
+      "name": "Witch's Castle Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.82,
+        "w": 0.2,
+        "h": 0.15
+      },
+      "entries": [
+        "castle-entrance-vuk"
+      ]
+    },
+    {
+      "id": "twister-deck",
+      "name": "Twister Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.75,
+        "y": 0.84,
+        "w": 0.15,
+        "h": 0.12
+      },
+      "entries": [
+        "ramp"
+      ],
+      "exits": [
+        {
+          "shot": "upper-right-flipper"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Jersey Jack's first machine keeps the cabinet plain — a normal manual plunger and the two flipper buttons run everything. There is one hidden trick worth knowing: squeeze both flippers to stop the pop bumpers firing, and a well-timed hold drops the ball straight into the Crystal Ball hole."
+  },
+  "howItPlays": {
+    "objective": "Wizard of Oz is Jersey Jack's sprawling debut, packed with mini-playfields and eight jewels to collect, one from each major feature. Work the Emerald City, Rescue, Munchkin, and Haunted Forest features, liquidate the Witch, and gather all eight jewels to reach Somewhere Over the Rainbow.",
+    "loop": [
+      "Plunge the flashing Oz lane for the skill shot, then complete O-Z pairs up top to build the end-of-ball bonus multiplier toward 10x.",
+      "Pair a character rollover with an immediate ramp shot to qualify Scarecrow, Lion, and Tin Man for Emerald City Multiball.",
+      "Spell R-A-I-N-B-O-W to light the ramp for the Twister mini-playfield, and loop its orbit to spin the house into a Munchkin Mode.",
+      "Capture Dorothy at the Winged Monkey targets and spell R-E-S-C-U-E on the castle mini-playfield to start Rescue Multiball.",
+      "Bank a jewel from each feature, and complete Battle the Wicked Witch, to light Somewhere Over the Rainbow at the ramp."
+    ],
+    "lights": [
+      {
+        "id": "oz-lanes",
+        "name": "Oz Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "oz-lanes",
+            "lamps": 2
+          }
+        ],
+        "lit": "Two lanes at the very top spell O and Z, the flashing one is the lane the ball will score as it rolls through, and each completed O-Z pair banks toward the bonus multiplier.",
+        "flashing": null,
+        "control": null,
+        "then": "Land the default skill shot in whatever lane is lit, then keep completing O-Z pairs, since every pair adds one full multiple to the end-of-ball bonus up to a 10x cap. That multiplier is the single biggest lever on your carry-over score, so feed the top lanes whenever the ball is up there.",
+        "goals": [
+          "oz-skillshot",
+          "oz-multiplier"
+        ]
+      },
+      {
+        "id": "rainbow-twister",
+        "name": "RAINBOW & Twister",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "rainbow-targets",
+            "lamps": 7
+          },
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "twister-orbit"
+          }
+        ],
+        "lit": "Seven colored standups spell R-A-I-N-B-O-W, so a lit standup is a letter left, and finishing the word opens the ramp into the Twister mini-playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the lit ramp to divert onto the Twister deck, then loop its mini-flipper orbit ten times to spin the house and drop out into a random Munchkin Mode. The Munchkin ladder ends in a multiball that banks a jewel, and each Twister visit afterward needs five more loops than the last.",
+        "goals": [
+          "light-the-lock",
+          "twister-mode",
+          "munchkin-modes"
+        ]
+      },
+      {
+        "id": "emerald-city",
+        "name": "Emerald City Characters",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "character-rollovers",
+            "lamps": 3
+          },
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "throne-room"
+          }
+        ],
+        "lit": "The Lion, Tin Man, and Scarecrow rollovers light to be qualified, and a rolled one stays qualified only if the ramp is your very next shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Pair each character rollover straight into the ramp -- touch another rollover in between and you lose it -- and the third lock starts Emerald City Multiball. Inside, pair each character with the Throne Room to collect their gift, and all three gifts bank a jewel and open climbing victory laps.",
+        "goals": [
+          "emerald-city-multiball",
+          "ecmb-gifts"
+        ]
+      },
+      {
+        "id": "witch-target",
+        "name": "Wicked Witch Target",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "witch-target"
+          }
+        ],
+        "lit": "The Witch standup beside the Wicked Witch toy lights for hits, where three hits start a hurry-up and two more before it expires cash it in.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete three Witch hurry-ups to light Fireball Frenzy at the same target, whose jackpots build toward a jewel. Once Rescue Multiball, a Munchkin Mode, Fireball Frenzy, and Emerald City have each run once, the Witch target starts Battle the Wicked Witch, the mini-wizard that liquidates her for another jewel.",
+        "goals": [
+          "wicked-witch-attack",
+          "fireball-frenzy",
+          "battle-the-wicked-witch"
+        ]
+      },
+      {
+        "id": "rescue-castle",
+        "name": "Rescue the Castle",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "winged-monkey-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "rescue-targets",
+            "lamps": 6
+          },
+          {
+            "shot": "castle-door"
+          }
+        ],
+        "lit": "The two blue Winged Monkey standups light to capture Dorothy, and enough hits lock a ball that the monkey toy carries up to the castle mini-playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "On the castle deck, spell R-E-S-C-U-E on its targets -- the Rescue Saucer counts double -- and break through the castle door to start Rescue Multiball. Its six jackpot shots each climb to 3x to arm the Super at the doors, and lighting all six arms the Mega Jackpot that banks a jewel.",
+        "goals": [
+          "rescue-multiball-start",
+          "rescue-jackpots"
+        ]
+      },
+      {
+        "id": "crystal-ball",
+        "name": "Crystal Ball Modes",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "ball-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "haunted-forest-bumpers"
+          },
+          {
+            "shot": "crystal-ball-vuk"
+          },
+          {
+            "shot": "crystal-ball-spinner"
+          }
+        ],
+        "lit": "The Crystal Ball is fed two ways: spelling B-A-L-L on its four standups lights the VUK for a Crystal Ball scoring mode, and spelling H-A-U-N-T-E-D on the left bumpers queues a Haunted Forest mode.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the VUK through the spinner for a two- or three-times scoring Crystal Ball mode, of which Flipper Frenzy with its reversed flippers is always the fifth and banks a jewel. For a Haunted mode, drop into the same hole from the bumper area, since a feed through the spinner lane does not count, and its fifth mode is a multiball that banks another jewel.",
+        "goals": [
+          "crystal-ball-modes",
+          "haunted-forest-modes"
+        ]
+      },
+      {
+        "id": "yellow-brick-road",
+        "name": "Yellow Brick Road",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "throne-room"
+          }
+        ],
+        "lit": "Whichever of the ramp or the left orbit is flashing yellow is the shot advancing the Yellow Brick Road right now.",
+        "flashing": "The flashing yellow shot is the live advance -- take it, and the light hops to the other shot.",
+        "control": null,
+        "then": "Bank advances toward fixed milestones: an Extra Ball at the Throne Room at ten, a Special at thirty, and a jewel with a second Extra Ball at fifty. The road carries all game, so every advance is progress you keep.",
+        "goals": [
+          "yellow-brick-road"
+        ]
+      },
+      {
+        "id": "horse-of-a-different-color",
+        "name": "Horse of a Different Color",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "crystal-ball-spinner"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "castle-entrance-vuk"
+          },
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "throne-room"
+          },
+          {
+            "shot": "collect-lane"
+          }
+        ],
+        "lit": "Six shots -- the Throne Room, the ramp, both orbits, the Crystal Ball spinner, and the Castle Entrance kicker -- each carry a randomly lit horse color, and hitting one banks that color or raises it if you already hold it.",
+        "flashing": null,
+        "control": null,
+        "then": "Stack a set chasing all matching or all different colors, since a mixed bag halves the payout, then bank it at the hidden Collect Lane tucked behind that raised upper-right flipper, which never cashes on its own. An all-rainbow set multiplies by five, and an all-one-color set by three.",
+        "goals": [
+          "hoadc"
+        ]
+      }
+    ],
+    "laneChange": "none",
+    "laneChangeNote": "The flippers cannot steer which Oz lane is lit -- the ball scores whatever lane is flashing when it rolls through, so you complete O-Z pairs as they come rather than sliding a lit lane under the ball. Only plunge strength and timing decide the skill-shot lane.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the flashing Oz-lane skill shot, then keep completing O-Z pairs to climb the bonus multiplier that magnifies your whole end-of-ball total. Light the T-O-T-O and There's No Place Like Home outlane saves early so a drain becomes a second chance.",
+        "goals": [
+          "oz-skillshot",
+          "oz-multiplier",
+          "toto-escape",
+          "tnplh-ballsave"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Qualify Scarecrow, Lion, and Tin Man into Emerald City Multiball, capture Dorothy for Rescue Multiball, and spin the house on the Twister deck for the Munchkin ladder. Bank a jewel from each feature while chipping the Yellow Brick Road and the Witch hurry-ups toward Fireball Frenzy.",
+        "goals": [
+          "emerald-city-multiball",
+          "rescue-multiball-start",
+          "munchkin-modes",
+          "yellow-brick-road"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Somewhere Over the Rainbow is the top wizard mode, reached only by gathering a jewel from every one of the eight major features, at which point the ramp lights for its three simultaneous rainbows of climbing value. Battle the Wicked Witch is the mini-wizard gate just below it, itself needing Rescue Multiball, a Munchkin Mode, Fireball Frenzy, and Emerald City first.",
+        "goals": [
+          "final-sotr",
+          "battle-the-wicked-witch"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,952 @@
+{
+  "machine": "Avatar (Stern, 2010)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A manual plunger feeding the right orbit. A firm plunge carries the ball past a one-way gate into the R-D-A lanes at the top; a weak plunge rolls back down to the right slingshot instead."
+    },
+    {
+      "id": "rda-lanes",
+      "name": "R-D-A Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes at the top spelling R-D-A. The D lane is lit for the skill shot at the start of each ball. Every full completion adds to your bonus multiplier and lights the next shot multiplier."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Sit just below the R-D-A lanes. Each hit banks its current value and raises it, up to a 20K cap, before resetting after a moment of inactivity."
+    },
+    {
+      "id": "navi-targets",
+      "name": "N-A-V-I Targets",
+      "type": "target-bank",
+      "x": 0.14,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Four blue standups on the left spelling N-A-V-I. Complete the word and shoot the flashing bank again to start Na'vi Scoring — or Na'vi Multiball once all six characters are already collected."
+    },
+    {
+      "id": "bond-inlanes",
+      "name": "Bond Inlanes",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Three separate inlane rollovers — two on the left, one on the right — each lighting their own insert. Complete all three and an uncollected character's shot flashes for a quick bonus."
+    },
+    {
+      "id": "eywa-captive-ball",
+      "name": "Eywa Captive Ball",
+      "type": "captive-ball",
+      "x": 0.55,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A captive ball near the centre of the table. Lights after enough switch hits (the threshold climbs through the game) for an instant mystery award, and awards can stack up if you leave them uncollected."
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.62,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The table's only ramp. Spells out Ride a Banshee, is where Eywa's rare extra balls get collected, and is one of the six Na'vi scoring and Bomber Battle shots."
+    },
+    {
+      "id": "link-lane",
+      "name": "Link Lane",
+      "type": "lock",
+      "x": 0.42,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "The lock lane beneath Jake's pod. A rising pair of pins traps the ball here to start Link Multiball, and re-traps it mid-multiball for a double Super Jackpot chance."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.13,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The Scorpion gunship lane. Counts toward Bomber Battle, is one of the six Na'vi scoring shots, and carries a spinner worth a small flat value on every pass."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.87,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The Direhorse lane, and the path a plunge takes up to the R-D-A lanes. Counts toward Bomber Battle and is one of the six Na'vi scoring shots."
+    },
+    {
+      "id": "seeds-targets",
+      "name": "Seeds Targets",
+      "type": "target-bank",
+      "x": 0.85,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Two standups above the right outlane that function as a single shot. Enough hits qualify, then start, Seeds Fast Scoring."
+    },
+    {
+      "id": "unobtainium-target",
+      "name": "Unobtainium Target",
+      "type": "standup",
+      "x": 0.72,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "A forward-facing standup near the centre of the table. Lights an outlane for a growing points award on every hit, and is the shot that starts — and later cashes in — Final Battle."
+    },
+    {
+      "id": "amp-suit-bank",
+      "name": "Amp Suit Bank",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "A motorised three-target bank spelling A-M-P, with a disruptor magnet mounted in front of it. Lowering it opens up the Amp Suit Battle targets behind."
+    },
+    {
+      "id": "bullseye-target",
+      "name": "Bullseye Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The centre target behind the amp suit bank, flanked by two side targets. Only the bullseye itself will finish the battle or collect an Amp Suit Multiball Super Jackpot."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Carries an unobtainium award once the target lights it — deliberately draining here is sometimes the correct play."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Carries the second unobtainium award. Collecting both in the same ball doubles the standup target's own built-up value."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the left orbit and the N-A-V-I targets."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the right orbit, the ramp and the amp suit bank."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "R-D-A Skill Shot",
+      "category": "skillshot",
+      "summary": "The D lane is flashing for the skill shot at the start of every ball, worth 250K on ball one and climbing 25K on every ball after.",
+      "difficulty": 1,
+      "reward": "250K, +25K per ball",
+      "steps": [
+        {
+          "shot": "rda-lanes",
+          "action": "Plunge full strength into the flashing D lane",
+          "detail": "A firm plunge carries the ball past the one-way gate into the R-D-A lanes at the top; use the flipper buttons before it arrives if you want to move which lane is flashing. A soft plunge rolls back down without reaching the lanes at all."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "rda-multiplier",
+      "title": "Light The Shot Multipliers",
+      "category": "multiplier",
+      "summary": "Every full R-D-A completion adds to your bonus multiplier and lights one of seven shot multipliers — 2x apiece for the first seven times, then a roving 3x that jumps between shots instead of sitting still.",
+      "difficulty": 2,
+      "reward": "+1x bonus multiplier, then 2x or 3x on your next shot",
+      "steps": [
+        {
+          "shot": "rda-lanes",
+          "action": "Light all three R-D-A inserts",
+          "detail": "Combined with Eywa's own bonus awards, this can push your multiplier as high as 25x."
+        },
+        {
+          "shot": "ramp",
+          "action": "Take the ramp, or any of the seven marked shots",
+          "detail": "The lit multiplier applies to whichever of the seven marked shots you hit next, not specifically the ramp — both orbits, the ramp, the link lane, Eywa and unobtainium are all among them."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "pop-bumper-value",
+      "title": "Ride The Bumpers",
+      "category": "strategy",
+      "summary": "The pop bumpers build their own value with every hit, starting at 3K and climbing 1K per hit up to a 20K cap.",
+      "difficulty": 1,
+      "reward": "3K climbing to a 20K cap per hit",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Keep the ball in the bumpers",
+          "detail": "A couple of seconds without a hit — or other switches registering — resets the value back down to 3K."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "navi-scoring",
+      "title": "Na'vi Scoring",
+      "category": "mode",
+      "summary": "Spell N-A-V-I on the left bank, then shoot it once more to start a countdown mode where six flashing arrows pay real points and build your character collection at the same time.",
+      "difficulty": 2,
+      "reward": "A countdown value from 750K down to a 400K floor",
+      "steps": [
+        {
+          "shot": "navi-targets",
+          "action": "Spell N-A-V-I",
+          "detail": "On easy settings any target hit lights the nearest unlit letter, so this goes faster than four precise hits."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Chase the six flashing arrows",
+          "detail": "The six shots are both orbits, the ramp, the link lane, Eywa, and the seeds targets — everything except unobtainium. Landing one also lights that character on the ladder."
+        }
+      ],
+      "fx": "jungle"
+    },
+    {
+      "id": "the-bond",
+      "title": "The Bond",
+      "category": "combo",
+      "summary": "Roll through all three Bond-lit inlanes and an uncollected character's shot flashes for just a couple of seconds — a quick side route to a character if the timing lines up.",
+      "difficulty": 2,
+      "reward": "100K for completing the set, 250K-300K for the character shot",
+      "steps": [
+        {
+          "shot": "bond-inlanes",
+          "action": "Roll all three Bond inlanes",
+          "detail": "Two are on the left, one on the right; any order works."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Hit whichever shot flashes",
+          "detail": "Which side lights up depends on which inlane completed the set, so the game tries to give you a shot you're already lined up for."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "navi-multiball",
+      "title": "Na'vi Multiball",
+      "category": "multiball",
+      "summary": "Collect all six characters and the N-A-V-I bank starts flashing for multiball instead of scoring. Two balls, six jackpots, then double jackpots, then a Super worth well over two million.",
+      "difficulty": 2,
+      "reward": "150K per jackpot, 300K per double jackpot, a scaling Super Jackpot",
+      "steps": [
+        {
+          "shot": "navi-targets",
+          "action": "Shoot the flashing N-A-V-I bank to start",
+          "detail": "Only available once all six characters are already collected."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Clear all six jackpot arrows",
+          "detail": "Each of the six character shots pays 150K and turns off once collected."
+        },
+        {
+          "shot": "navi-targets",
+          "action": "Spell N-A-V-I again for the double jackpots",
+          "detail": "Four more hits pay 300K each."
+        },
+        {
+          "shot": "unobtainium-target",
+          "action": "Cash the Super Jackpot",
+          "detail": "Worth the sum of everything collected this round — 2.1M at minimum — and it restarts the multiball with jackpots now worth 250K instead of 150K."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "eywa-mystery",
+      "title": "Eywa's Mystery Award",
+      "category": "mode",
+      "summary": "The captive ball lights after enough switch hits and pays an instant mystery award — commonly a bonus multiplier bump, points, or a pop bumper boost, and it's the only source of extra balls in the whole game.",
+      "difficulty": 1,
+      "reward": "Points, bonus multiplier, timer extension, add-a-ball, or a rare extra ball",
+      "steps": [
+        {
+          "shot": "eywa-captive-ball",
+          "action": "Hit the captive ball when it's lit",
+          "detail": "The switch-hit threshold rises as the game goes on, and uncollected awards can stack for later — handy to save one for the start of a multiball."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "ride-a-banshee",
+      "title": "Ride A Banshee",
+      "category": "mode",
+      "summary": "B-A-N are given free by default settings, so four more ramp shots spell out S-H-E-E and launch straight into a 25-second scoring run on that same ramp.",
+      "difficulty": 2,
+      "reward": "200K climbing by 100K per ramp shot",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Shoot the ramp to spell S-H-E-E",
+          "detail": "The fourth ramp shot completes the word and starts the mode immediately."
+        },
+        {
+          "shot": "ramp",
+          "action": "Keep looping the ramp while the clock runs",
+          "detail": "25 seconds on the timer; Eywa can add another 25 if she offers a time extension while it's running."
+        }
+      ],
+      "fx": "dragon"
+    },
+    {
+      "id": "link-multiball",
+      "title": "Link Multiball",
+      "category": "multiball",
+      "summary": "Lock a ball under Jake's pod, hit it free, and work five alternating jackpot shots toward a Super Jackpot worth three million or more.",
+      "difficulty": 3,
+      "reward": "250K per jackpot (500K at unobtainium), 3M+ Super Jackpot",
+      "steps": [
+        {
+          "shot": "link-lane",
+          "action": "Lock a ball in the pins",
+          "detail": "The first lock of the game needs just one shot; a second ball auto-launches while the locked one is held."
+        },
+        {
+          "shot": "navi-targets",
+          "action": "Work the alternating jackpot shots",
+          "detail": "N-A-V-I and the seeds targets alternate which is lit, as do the link lane and Eywa; unobtainium is always lit and always pays double."
+        },
+        {
+          "shot": "link-lane",
+          "action": "Collect the Super Jackpot",
+          "detail": "Fifteen jackpots lights it here for 3M or more; the ball re-traps briefly afterward, and hitting it again fast enough scores a double Super before victory laps begin."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "amp-suit-battle",
+      "title": "Amp Suit Battle",
+      "category": "mode",
+      "summary": "Lower the motorised A-M-P bank, then land five hits on the battle targets behind it — the first four can come from either side target, but the finisher has to be the bullseye.",
+      "difficulty": 2,
+      "reward": "200K to lower the bank, 300K per battle hit, 2M to finish",
+      "steps": [
+        {
+          "shot": "amp-suit-bank",
+          "action": "Lower the motorized bank",
+          "detail": "One solid hit on the flashing letter's target does it immediately; otherwise all three targets need to go down."
+        },
+        {
+          "shot": "bullseye-target",
+          "action": "Finish the battle at the bullseye",
+          "detail": "Either side target covers the first four hits, but only the bullseye scores the fifth and starts Amp Suit Multiball."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "amp-suit-multiball",
+      "title": "Amp Suit Multiball",
+      "category": "multiball",
+      "summary": "Three balls, a magnet, and the biggest payouts in the game — six single jackpots, three doubles, then a Super Jackpot worth well into the millions, twice over.",
+      "difficulty": 3,
+      "reward": "150K per jackpot, 300K per double, a multi-million Super Jackpot twice",
+      "steps": [
+        {
+          "shot": "bullseye-target",
+          "action": "Start the multiball at the bullseye",
+          "detail": "The magnet grabs the finishing ball while two more launch to join it."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Clear the six single jackpots",
+          "detail": "Both orbits, the ramp, the link lane, unobtainium and Eywa are all lit at 150K apiece."
+        },
+        {
+          "shot": "navi-targets",
+          "action": "Clear the three double jackpots",
+          "detail": "N-A-V-I, the seeds targets, and the amp suit bank itself each carry one double jackpot worth 300K."
+        },
+        {
+          "shot": "bullseye-target",
+          "action": "Collect the Super Jackpot — twice",
+          "detail": "The first Super pays the sum of everything collected, up to 16.2M with multipliers running. A second Super is available right at the same target afterward; collecting it restarts the multiball with all six single jackpots raised 200K, worth 350K apiece."
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "bomber-battle",
+      "title": "Bomber Battle",
+      "category": "mode",
+      "summary": "Shots to either orbit outside of multiball count down toward Bomber Battle — four the first time, two more every time after. Starting it pays an instant 500K before the timed run even begins.",
+      "difficulty": 2,
+      "reward": "500K to start, then 200K climbing by 50K per shot",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Work either orbit to qualify it",
+          "detail": "Orbit shots only count outside of multiball play."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Chase the lit arrows once it starts",
+          "detail": "Both orbits, the N-A-V-I bank, the seeds targets and the ramp are all lit for 25 seconds. Fifteen total awards across the game flashes the Valkyrie insert for good."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "seeds-fast-scoring",
+      "title": "Seeds Fast Scoring",
+      "category": "mode",
+      "summary": "The two seeds targets act as one shot. Enough hits qualify the mode, one more starts it, and then every switch on the table scores for 25 fast seconds.",
+      "difficulty": 1,
+      "reward": "10K per switch, +1K per seeds hit, need 100 hits to complete",
+      "steps": [
+        {
+          "shot": "seeds-targets",
+          "action": "Hit the seeds targets to qualify",
+          "detail": "Four hits the first time you play it in a game."
+        },
+        {
+          "shot": "seeds-targets",
+          "action": "Land one more to start the frenzy",
+          "detail": "Once running, spinners and the pop bumpers are the fastest way to rack up the 100 switch hits it needs."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "unobtainium-outlanes",
+      "title": "Give It Back",
+      "category": "secret",
+      "summary": "Most outlane inserts are a consolation prize. This one rewards you for actually finding the drain — deliberately, once it's lit.",
+      "difficulty": 2,
+      "reward": "200K climbing to 1M per outlane",
+      "steps": [
+        {
+          "shot": "unobtainium-target",
+          "action": "Build the unobtainium value",
+          "detail": "Each hit lights one dark outlane at 200K; once both are lit, further hits raise the value 25K at a time up to a 1M cap."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Drain into a lit outlane on purpose",
+          "detail": "The right outlane carries the same award — rolling either one collects its value and turns that side dark again, ready to relight from the target."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "final-battle",
+      "title": "Final Battle",
+      "category": "wizard",
+      "summary": "Qualify all six feature ladder inserts, then shoot the unobtainium target to kill the flippers, launch all four balls, and start the wizard mode outright.",
+      "difficulty": 3,
+      "reward": "25K per switch hit, then multi-million outlane awards",
+      "steps": [
+        {
+          "shot": "unobtainium-target",
+          "action": "Light and start Final Battle",
+          "detail": "Requires the Na'vi, Banshee, Link, Amp Suit, Valkyrie and Seeds inserts all lit at least once. Once running, every switch hit counts toward a threshold — 75 the first round, +25 each round after."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Drain the first lit outlane on purpose",
+          "detail": "Once the threshold is met the whole playfield goes dark except the unobtainium target and both outlane inserts. The first drain pays 10M and adds 10M to the target's own value.",
+          "link": "none"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Drain the second one too",
+          "detail": "Worth 15M on its own, and it doubles the unobtainium target's built-up value again.",
+          "link": "none"
+        },
+        {
+          "shot": "unobtainium-target",
+          "action": "Cash the fully built target",
+          "detail": "Relaunches any drained balls with a short saver and starts the next round at a higher switch-hit requirement."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "extra-ball-ramp",
+      "title": "Eywa's Extra Ball",
+      "category": "strategy",
+      "summary": "Extra balls and specials only ever come from Eywa, and only ever get collected in one place — the ramp.",
+      "difficulty": 1,
+      "reward": "Extra ball or special",
+      "steps": [
+        {
+          "shot": "eywa-captive-ball",
+          "action": "Hope for an extra ball from Eywa",
+          "detail": "They're genuinely rare on default settings, so don't count on seeing one every game."
+        },
+        {
+          "shot": "ramp",
+          "action": "Collect it at the ramp",
+          "detail": "This is the only shot that pays out a lit extra ball or special, regardless of where you earned it."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "feature-ladder",
+      "title": "The Feature Ladder",
+      "category": "progression",
+      "summary": "Six inserts track your progress toward Final Battle. A solidly lit insert only counts for the ball you earned it on; a flashing one carries over for the rest of the game.",
+      "difficulty": 2,
+      "reward": "Progress toward Final Battle",
+      "steps": [],
+      "instructions": [
+        "Na'vi lights by starting Na'vi Multiball; Banshee by starting Ride a Banshee; Link by starting Link Multiball.",
+        "Amp Suit lights by starting Amp Suit Multiball; Valkyrie by starting Bomber Battle; Seeds by starting Seeds Fast Scoring.",
+        "A solid insert goes dark again at the start of your next ball. Fully completing that feature instead — a Super Jackpot, a finished timed mode — makes it flash, and flashing inserts survive between balls.",
+        "You only need every insert lit in some way, not fully completed, to ready Final Battle — but stacking flashing ones from earlier balls makes qualifying all six on one ball realistic."
+      ],
+      "fx": "watch"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "avt-skillshot",
+      "title": "First Contact",
+      "desc": "Collect the R-D-A skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "avt-eywa-gift",
+      "title": "Gift From Eywa",
+      "desc": "Collect a mystery award from the captive ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "eywa-mystery"
+    },
+    {
+      "id": "avt-the-bond",
+      "title": "The Bond",
+      "desc": "Complete all three Bond inlanes to flash a character shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "the-bond"
+    },
+    {
+      "id": "avt-navi-scoring",
+      "title": "All Four Letters",
+      "desc": "Spell N-A-V-I and start Na'vi Scoring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "navi-scoring"
+    },
+    {
+      "id": "avt-navi-mb",
+      "title": "Six For Six",
+      "desc": "Collect all six characters and start Na'vi Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "navi-multiball"
+    },
+    {
+      "id": "avt-navi-super",
+      "title": "Na'vi Super Jackpot",
+      "desc": "Collect the Na'vi Multiball Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "navi-multiball"
+    },
+    {
+      "id": "avt-banshee",
+      "title": "Ride A Banshee",
+      "desc": "Complete a full Ride a Banshee mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ride-a-banshee"
+    },
+    {
+      "id": "avt-locked-in",
+      "title": "Locked In",
+      "desc": "Lock a ball and start Link Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "link-multiball"
+    },
+    {
+      "id": "avt-double-super",
+      "title": "Double Super",
+      "desc": "Collect the Link Multiball double Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "link-multiball"
+    },
+    {
+      "id": "avt-suit-up",
+      "title": "Suit Up",
+      "desc": "Defeat the amp suit battle and start Amp Suit Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "amp-suit-battle"
+    },
+    {
+      "id": "avt-colonel-down",
+      "title": "Colonel Down",
+      "desc": "Collect the Amp Suit Multiball Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "amp-suit-multiball"
+    },
+    {
+      "id": "avt-bomber-battle",
+      "title": "Bomber Battle",
+      "desc": "Start Bomber Battle at the orbits.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bomber-battle"
+    },
+    {
+      "id": "avt-hundred-seeds",
+      "title": "100 Seeds",
+      "desc": "Complete a full Seeds Fast Scoring mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "seeds-fast-scoring"
+    },
+    {
+      "id": "avt-give-it-back",
+      "title": "Give It Back",
+      "desc": "Drain both lit unobtainium outlanes on purpose in the same ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "unobtainium-outlanes"
+    },
+    {
+      "id": "avt-final-battle",
+      "title": "Final Battle",
+      "desc": "Light and start the wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-battle"
+    }
+  ],
+  "drills": [
+    {
+      "id": "d-lane-plunge",
+      "title": "Plunge The Flashing Lane",
+      "text": "A firm plunge is the whole requirement — anything weak rolls back down without ever reaching the lanes at the top. Use the flipper buttons while the ball is still travelling to move the flashing lane onto the one the ball is actually going to cross.",
+      "reps": "12 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "rda-lanes"
+      ]
+    },
+    {
+      "id": "amp-bank-to-bullseye",
+      "title": "Lower The Bank, Hit The Bullseye",
+      "text": "One solid hit on the flashing letter drops the motorised bank immediately, so aim for that rather than grinding all three targets down. Behind it, either side target covers the first four hits, but only the bullseye itself finishes the battle.",
+      "reps": "8 battles",
+      "focus": "accuracy",
+      "goal": "amp-suit-battle",
+      "shots": [
+        "amp-suit-bank",
+        "bullseye-target"
+      ]
+    },
+    {
+      "id": "spend-the-multiplier",
+      "title": "Spend The Lit Multiplier",
+      "text": "Complete R-D-A and then deliberately put the next shot into one of the marked ones — a ramp or an orbit — rather than whatever the ball happens to reach first. The multiplier applies to the next marked shot you hit, so a lazy follow-up throws the whole completion away.",
+      "reps": "10 completions",
+      "focus": "flow",
+      "goal": "rda-multiplier",
+      "shots": [
+        "rda-lanes",
+        "ramp",
+        "left-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "banshee-ramp-loop",
+      "title": "Four Ramps, Then Keep Going",
+      "text": "The fourth ramp shot both finishes the word and starts the timed run, so the shot that matters most is the one immediately after it. Keep the loop going for the whole twenty-five seconds instead of celebrating the start.",
+      "reps": "5 runs",
+      "focus": "accuracy",
+      "goal": "ride-a-banshee",
+      "shots": [
+        "ramp"
+      ]
+    },
+    {
+      "id": "navi-six-arrow-sweep",
+      "title": "Sweep The Six Arrows",
+      "text": "Spell N-A-V-I, shoot the bank once more, then work both orbits, the ramp, the link lane, Eywa and the seeds targets before the clock runs out. Every arrow you land also fills in a character, so the sweep is progress toward multiball as well as points.",
+      "reps": "5 rounds",
+      "focus": "flow",
+      "goal": "navi-scoring",
+      "shots": [
+        "navi-targets",
+        "left-orbit",
+        "right-orbit",
+        "ramp",
+        "link-lane",
+        "eywa-captive-ball",
+        "seeds-targets"
+      ]
+    },
+    {
+      "id": "deliberate-outlane-drain",
+      "title": "Drain On Purpose",
+      "text": "Build the unobtainium target until both outlanes are lit, then stop defending that side and steer the ball into one. Taking both in the same ball doubles the target's own value, which makes this the rare table where a nudge away from the outlane is the mistake.",
+      "reps": "one ball, both outlanes collected",
+      "focus": "ball-control",
+      "goal": "unobtainium-outlanes",
+      "shots": [
+        "unobtainium-target",
+        "left-outlane",
+        "right-outlane"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "jungle",
+  "actionButton": {
+    "present": false,
+    "how": "The cabinet is bare bones: shooter rod, two flipper buttons, start button. Stern's lockdown-bar action button was still two years away when this one shipped, and no rule on the game asks for one."
+  },
+  "howItPlays": {
+    "objective": "Avatar fights for Pandora from both sides of the war at once: round up all six characters to trigger Na'vi Multiball, smash the motorized Amp Suit bank down, and trap balls beneath Jake's link pod. Light each of the six feature inserts and the unobtainium standup drops you into Final Battle, the give-it-everything finale.",
+    "loop": [
+      "Sweep the four blue N-A-V-I standups, then drive the flashing bank once more to open Na'vi Scoring and chase its arrows for characters.",
+      "Round up all six characters and that same bank stops being a scoring round and turns into Na'vi Multiball instead.",
+      "Knock the A-M-P bank down and bury the finishing hit in the centre bullseye to erupt into Amp Suit Multiball, the fattest points on the table.",
+      "Drop a ball into the link pod for Link Multiball, and loop the lone ramp to spell out a Banshee ride you can run on the clock.",
+      "Light all six feature inserts, then strike the unobtainium standup to fall straight into Final Battle."
+    ],
+    "lights": [
+      {
+        "id": "rda-lanes",
+        "name": "R-D-A Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "rda-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "Three lanes span the top of the table, and the D in the middle is lit for the skill shot as every ball begins; a lit lane is a letter still open, an unlit one already banked.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "either flipper button walks the lit R-D-A lane to the side, letting you drop a lit one over whichever lane the ball is about to run through -- the same nudge lines the flashing D lane up for the skill shot straight off the plunge",
+          "when": "before the ball climbs up into the top lanes"
+        },
+        "then": "Seat the lit lanes so the ball finishes R-D-A; every full sweep pushes your end-of-ball multiplier up a notch and arms a shot multiplier -- a 2x waiting on the next marked feature shot, and once seven of those are banked a roving 3x that hops from shot to shot.",
+        "goals": [
+          "skillshot",
+          "rda-multiplier"
+        ]
+      },
+      {
+        "id": "navi-standups",
+        "name": "N-A-V-I Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "navi-targets",
+            "lamps": 4
+          }
+        ],
+        "lit": "The four blue standups on the left spell N-A-V-I; a lit letter is one you still owe, and on softer settings any hit fills the closest empty one, so the word falls quickly.",
+        "flashing": "Once the word is done the whole bank strobes -- clout it once more to kick off Na'vi Scoring, or Na'vi Multiball if all six characters are already in hand.",
+        "control": null,
+        "then": "Na'vi Scoring drops six arrows around the table that pay real points and each fill in a character; gather the full six and the strobing bank hands you a two-ball multiball, climbing from jackpots to double jackpots to a Super cashed on the unobtainium standup.",
+        "goals": [
+          "navi-scoring",
+          "navi-multiball"
+        ]
+      },
+      {
+        "id": "character-arrows",
+        "name": "Character Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "link-lane"
+          },
+          {
+            "shot": "eywa-captive-ball"
+          },
+          {
+            "shot": "seeds-targets"
+          }
+        ],
+        "lit": "During Na'vi Scoring these six -- the two orbits, the ramp, the pod lock, the captive ball and the seeds bank -- flash as the character shots; landing one pays the counting-down value and books that character onto your ladder.",
+        "flashing": null,
+        "control": null,
+        "then": "Chase every arrow before the count bottoms out to bank all six characters, which is what arms Na'vi Multiball back at the letter bank. Roll the three Bond return lanes instead and one uncollected character's shot flashes for a beat, a quick side door to the same ladder.",
+        "goals": [
+          "navi-scoring",
+          "the-bond"
+        ]
+      },
+      {
+        "id": "amp-suit-bank",
+        "name": "Amp Suit Bank",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "amp-suit-bank"
+          },
+          {
+            "shot": "bullseye-target"
+          }
+        ],
+        "lit": "The motorized A-M-P bank stands mid-table with a disruptor magnet sitting just ahead of it; one clean hit on the strobing letter drops the whole thing, or grind all three targets down the slow way, to bare the battle targets behind it.",
+        "flashing": null,
+        "control": null,
+        "then": "With the bank down, five hits settle the fight -- the opening four fall to either flanking target, but only the centre bullseye lands the fifth and erupts into Amp Suit Multiball, three balls and the biggest Super Jackpots the table pays.",
+        "goals": [
+          "amp-suit-battle",
+          "amp-suit-multiball"
+        ]
+      },
+      {
+        "id": "link-pod",
+        "name": "Link Lane",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "link-lane"
+          }
+        ],
+        "lit": "The lane beneath Jake's link pod is the lock; a pair of posts lifts to pin the ball there, and the opening lock only asks for a single shot while a spare ball fires out to keep play going.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the five alternating jackpot shots -- the letter bank trades off with the seeds bank, the pod trades off with the captive ball, and the unobtainium standup stays lit for double -- toward a Super past three million at the pod. The ball re-snares for a moment after, and a fast follow-up banks a second Super before the victory laps.",
+        "goals": [
+          "link-multiball"
+        ]
+      },
+      {
+        "id": "unobtainium",
+        "name": "Unobtainium Target",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "unobtainium-target"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Every hit on the unobtainium standup lights one dark outlane for a growing payout; once both glow, further hits push the value up in steps toward a one-million ceiling.",
+        "flashing": null,
+        "control": null,
+        "then": "This is the rare table where you drain on purpose -- roll a lit outlane to collect its award, and take both in the same ball to double the standup's own stored value. The very same target opens and later cashes Final Battle, which makes it the most important standup on the playfield.",
+        "goals": [
+          "unobtainium-outlanes",
+          "final-battle"
+        ]
+      },
+      {
+        "id": "banshee-ramp",
+        "name": "Ride A Banshee Ramp",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "ramp"
+          }
+        ],
+        "lit": "The table's one ramp spells Ride a Banshee -- B-A-N comes free on default settings, so four solid ramp shots fill in S-H-E-E; the ramp is also the only spot that pays out one of Eywa's scarce extra balls.",
+        "flashing": null,
+        "control": null,
+        "then": "That last ramp shot closes the word out and immediately kicks off a timed run right back up the same ramp, so keep it looping while the clock burns; Eywa can toss in more seconds if she offers a time extension mid-run.",
+        "goals": [
+          "ride-a-banshee",
+          "extra-ball-ramp"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button walks the lit R-D-A lane to the side, so tap it before the ball climbs into the top lanes to seat a lit lane in its path -- the same move lines the flashing D lane up for the skill shot straight off the plunge. Filling R-D-A steps your end-of-ball multiplier up and hands the next marked feature shot a 2x, and later a roving 3x.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank the easy, low-risk points: take the flashing D-lane skill shot off a firm plunge, then work N-A-V-I into Na'vi Scoring and ride the pop bumpers, which climb their own value on every hit. Sweeping R-D-A here also stocks your multiplier for the bigger shots to come.",
+        "goals": [
+          "skillshot",
+          "navi-scoring",
+          "pop-bumper-value"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack features toward the ladder: drop the Amp Suit bank into its battle, lock up Link Multiball at the pod, spell a Banshee ride on the ramp, and count orbit shots into Bomber Battle for an instant five hundred thousand. Feed the seeds targets for a switch-scoring frenzy, and lean on Eywa's captive ball -- the only well the game's extra balls ever come from.",
+        "goals": [
+          "amp-suit-battle",
+          "link-multiball",
+          "ride-a-banshee",
+          "bomber-battle",
+          "seeds-fast-scoring",
+          "eywa-mystery"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The summit is Final Battle, the wizard mode: light all six feature inserts, then strike the unobtainium standup to cut the flippers dead, fire all four balls out, and drop into it. It pays per switch, then throws multi-million awards onto the outlanes for you to drain into on purpose -- while Amp Suit Multiball's twin Super Jackpots stand as the biggest scores short of the finale.",
+        "goals": [
+          "final-battle",
+          "amp-suit-multiball"
+        ]
+      }
+    ]
+  }
+}

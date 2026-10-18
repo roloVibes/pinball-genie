@@ -1,0 +1,1419 @@
+{
+  "machine": "Venom (Stern Pinball, 2023)",
+  "defaultFx": "spider",
+  "shots": [
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Rykers Prison)",
+      "type": "orbit",
+      "x": 0.09,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "LO. Far-left vertical orbit; wraps to top lanes/hideout.",
+      "feeds": {
+        "shot": "top-lanes"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (The Vault Prison)",
+      "type": "orbit",
+      "x": 0.91,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "RO. Far-right orbit around the flame-ramp entrance up to the top lanes.",
+      "feeds": {
+        "shot": "top-lanes"
+      }
+    },
+    {
+      "id": "web-target-bank",
+      "name": "WEB Target Bank",
+      "type": "target-bank",
+      "x": 0.19,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Spring-loaded W-E-B standups inside the left-orbit curve."
+    },
+    {
+      "id": "carnage-captive-ball",
+      "name": "Carnage Captive Ball (Ravencroft)",
+      "type": "captive-ball",
+      "x": 0.24,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Bash the sculpted Carnage ball back into Ravencroft to drive the Carnage ladder."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Alchemax)",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "LR. Also lights 'change host' when lit.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Police Station)",
+      "type": "ramp",
+      "x": 0.48,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "CR. Lights battles, Carnage MB, and qualifies the Bell Tower multiplier.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "loop-180",
+      "name": "180 Scoop / 180 Loop (Life Foundation)",
+      "type": "loop",
+      "x": 0.6,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "180. Half-turn ramp feeding the right flipper; a step halfway up is a physical ball-lock.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Argo Lab / Flame Ramp)",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "RR. Prem/LE add a raise/lower diverter; shot itself exists on all editions.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "u-turn-loop",
+      "name": "U-Turn / Horseshoe Loop",
+      "type": "loop",
+      "x": 0.62,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Bi-directional horseshoe flanking the scoop; right-loop-with-post feeds Quick Doppelganger MB on Prem/LE."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop (The Daily Bugle)",
+      "type": "scoop",
+      "x": 0.66,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "SC. Starts modes/Mystery/Toxin/Host Hurry-Up; kicks ball to right inlane via web-slinger wireform.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "bell-tower",
+      "name": "Bell Tower Target",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Standup just right of center ramp; raises playfield multiplier. Animated swinging-bell mech is Prem/LE."
+    },
+    {
+      "id": "doppelganger-targets",
+      "name": "Doppelganger Flyaway Targets",
+      "type": "drop-target",
+      "x": 0.45,
+      "y": 0.52,
+      "trim": "premium-le",
+      "notes": "3-target bank on a bar that swings up during Doppelganger attacks (Prem/LE)."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop (Life Foundation)",
+      "type": "loop",
+      "x": 0.3,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "LL. Used in host signature combos on all editions; Pro fights Doppelganger here; Flash/Hulk collect Bell Tower here."
+    },
+    {
+      "id": "sneaky-hideout",
+      "name": "Sneaky Hideout",
+      "type": "scoop",
+      "x": 0.23,
+      "y": 0.71,
+      "trim": "premium-le",
+      "notes": "Upper hideout hole; target of the Secret Hideout skill shot (+4 Bonus X)."
+    },
+    {
+      "id": "left-vessel",
+      "name": "Left Containment Vessel",
+      "type": "mech",
+      "x": 0.13,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Vertical symbiote ball-lock tube, holds up to 3 (Left lock 1=Agony, 2=Lasher, 3=2X XP)."
+    },
+    {
+      "id": "right-vessel",
+      "name": "Right Containment Vessel",
+      "type": "mech",
+      "x": 0.87,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Vertical symbiote ball-lock tube, holds up to 3 (Right lock 1=Riot, 2=Phage, 3=+1X playfield)."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "3 rollover lanes; complete for Bonus X; skill shot = +2 Bonus X."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.33,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Jet cluster near the top lanes; fed via Million-Plus-Pops target on Prem/LE."
+    },
+    {
+      "id": "infected-targets",
+      "name": "Infected Targets (5 red standups)",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Five red standups spread across the playfield; defeats feed Doppelganger, Bonus X, Scream, Extra Ball."
+    },
+    {
+      "id": "left-infected-standup",
+      "name": "Left Infected Standup",
+      "type": "standup",
+      "x": 0.05,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Far-left, above the left outlane; drain-dangerous."
+    },
+    {
+      "id": "right-infected-standup",
+      "name": "Right Infected Standup",
+      "type": "standup",
+      "x": 0.95,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Far-right, above the right outlane; drain-dangerous."
+    },
+    {
+      "id": "million-plus-pops",
+      "name": "Million Plus Pops Target",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.66,
+      "trim": "premium-le",
+      "notes": "Below the U-turn; routes ball to pops (Flash/Hulk hosts, Prem/LE)."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Receives the scoop's web-slinger wireform."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.94,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Plunge",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Cycle skill shot with flipper before plunging."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-top-lanes",
+      "title": "Top Lane Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge straight into the flashing top rollover lane for a safe +2 Bonus Multipliers on any host.",
+      "difficulty": 1,
+      "reward": "+2 Bonus Multipliers",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Plunge into the flashing rollover lane",
+          "detail": "Awards +2 Bonus Multipliers; low value but safe default"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-secret-hideout",
+      "title": "Secret Hideout Skill Shot",
+      "category": "skillshot",
+      "summary": "Hard-plunge into the upper hideout hole for the game's biggest skill-shot value and +4 Bonus X.",
+      "difficulty": 2,
+      "reward": "3M (+500k each subsequent) and +4 Bonus Multipliers",
+      "steps": [
+        {
+          "shot": "sneaky-hideout",
+          "action": "Plunge into the Secret Hideout saucer at the orbit's apex",
+          "detail": "Highest raw value; a miss risks a fast return"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-eddie-signature",
+      "title": "Eddie Brock Signature Combo",
+      "category": "combo",
+      "summary": "Eddie's 4-way signature combo runs center ramp, left ramp, left loop, right orbit; completing it lights Host Hurry-Up at the scoop.",
+      "difficulty": 2,
+      "reward": "Lights Host Hurry-Up at the scoop",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Start the combo at Police Station center ramp",
+          "detail": "Only attemptable after playing Toxin Team-Up; once per host"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Continue to Alchemax left ramp"
+        },
+        {
+          "shot": "left-loop",
+          "action": "Continue to the left loop",
+          "detail": "Same Life Foundation lane you shoot to fight Doppelganger on the Pro"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish on The Vault Prison right orbit"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "combo-flash-signature",
+      "title": "Flash Thompson Signature Combo (Workhorse)",
+      "category": "combo",
+      "summary": "Flash's RR to SC to LR to SC loop is the reliable points engine because it never uses the center ramp, so you can grind it without accidentally starting a battle.",
+      "difficulty": 2,
+      "reward": "Lights Host Hurry-Up; battle-safe repeatable scoring",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start at Argo Lab right ramp"
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the Daily Bugle scoop"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Alchemax left ramp"
+        },
+        {
+          "shot": "scoop",
+          "action": "Return to the scoop to complete the combo",
+          "detail": "Cash it while playfield X is lit for large multiplied value"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "combo-peter-signature",
+      "title": "Peter Parker Signature Combo",
+      "category": "combo",
+      "summary": "Black-Suit Spider-Man's 4-way combo LO to LR to 180 to SC lights his Host Hurry-Up.",
+      "difficulty": 3,
+      "reward": "Lights Host Hurry-Up",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start at Rykers Prison left orbit"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Continue to Alchemax left ramp"
+        },
+        {
+          "shot": "loop-180",
+          "action": "Continue to the 180 Scoop"
+        },
+        {
+          "shot": "scoop",
+          "action": "Finish on the Daily Bugle scoop"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "combo-host-hurry-up",
+      "title": "Host Hurry-Up",
+      "category": "combo",
+      "summary": "The single biggest payout: after lighting it via your signature combo, re-shoot the same 4 shots at the scoop as a cascading 4-stage hurry-up where each stage seeds the next.",
+      "difficulty": 3,
+      "reward": "500M-600M clean; billions with 7X playfield active",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start Host Hurry-Up at the Daily Bugle scoop when the billboard blinks"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Re-shoot the first host-combo shot (Flash example: RR)"
+        },
+        {
+          "shot": "scoop",
+          "action": "Re-shoot the second combo shot; scored value seeds the next stage"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Re-shoot the third combo shot"
+        },
+        {
+          "shot": "scoop",
+          "action": "Re-shoot the final combo shot",
+          "detail": "Light playfield X BEFORE firing the hurry-up to multiply the cascade"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "combo-web-slinging",
+      "title": "Web-Slinging Combo to 5X Shot Multiplier",
+      "category": "combo",
+      "summary": "Chain lit combo arrows before they time out; a 10-way combo caps the shot multiplier at 5X, which also doubles as battle damage.",
+      "difficulty": 2,
+      "reward": "Up to 5X shot multiplier (also 5X villain damage)",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot any shot to light a fresh set of web-combo arrows"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit a lit continuation arrow before it times out to advance the combo"
+        },
+        {
+          "shot": "scoop",
+          "action": "Keep chaining lit arrows (Miles Morales adds +1 per combo)"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Reach a 10-way combo for the 5X cap, then cash inside Rampage/Blood Lust/Toxin"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "multiball-mayhem",
+      "title": "Mayhem Multiball",
+      "category": "multiball",
+      "summary": "The priority multiball: complete mini-modes to light Mayhem locks, lock balls in the twin symbiote vessels, then start (2-6 ball, player-chosen size).",
+      "difficulty": 2,
+      "reward": "2-6 ball multiball; which side you lock picks your boss and perks",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete a mini-mode (shoot the solid colored arrow, then the blinking one) to light a Mayhem lock"
+        },
+        {
+          "shot": "scoop",
+          "action": "Complete more mini-modes; 1st lock needs 1, 2nd needs 2, 3rd+ needs 3"
+        },
+        {
+          "shot": "left-vessel",
+          "action": "Shoot a lit green arrow to lock a ball into a symbiote vessel"
+        },
+        {
+          "shot": "right-vessel",
+          "action": "Lock a 2nd ball to start Mayhem, or hold the action button (glows blue) to cancel and keep locking to 6",
+          "detail": "Left locks bring Agony/Lasher; right locks bring Riot/Phage; right-3 grants +1X base playfield"
+        }
+      ],
+      "fx": "spider",
+      "ordered": false
+    },
+    {
+      "id": "multiball-carnage",
+      "title": "Carnage Multiball",
+      "category": "multiball",
+      "summary": "Bash the Carnage captive ball back into Ravencroft to qualify, start at the lit center ramp, then push Carnage back again to light the Super Jackpot at the scoop.",
+      "difficulty": 2,
+      "reward": "Super Jackpot at scoop; stackable on Mayhem",
+      "steps": [
+        {
+          "shot": "carnage-captive-ball",
+          "action": "Bash Carnage all the way back into Ravencroft to qualify"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot Police Station center ramp when lit red to start Carnage Multiball"
+        },
+        {
+          "shot": "carnage-captive-ball",
+          "action": "Push Carnage all the way back again (or use Spider-Sense) to light Super Jackpot",
+          "detail": "All other shots blink blue; hitting them and Infected raise the Super value"
+        },
+        {
+          "shot": "scoop",
+          "action": "Collect the Super Jackpot at the Daily Bugle scoop"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "multiball-quick-doppelganger",
+      "title": "Quick Doppelganger Multiball",
+      "category": "multiball",
+      "summary": "Premium/LE only, with Gwen or Venomized Wolverine as host: repeatedly shoot the right loop until the post lock qualifies a 2-ball Doppelganger multiball.",
+      "difficulty": 3,
+      "reward": "2-ball MB; Super Jackpot equal to the sum of 4 jackpots",
+      "steps": [
+        {
+          "shot": "u-turn-loop",
+          "action": "Shoot the right loop; each ball stopped by the post advances (~8 shots)",
+          "detail": "Premium/LE only; host must be Gwen or Venomized Wolverine"
+        },
+        {
+          "shot": "doppelganger-targets",
+          "action": "Hit the swung-out Doppelganger Hurry-Up target to lock the jackpot value, then complete 4 jackpots for the Super"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "mode-riot",
+      "title": "Riot Symbiote Battle",
+      "category": "mode",
+      "summary": "A minor-boss battle: complete a Grid column at level 10+, start at the center ramp, and hit shots lit both red and blue for large hits toward the Special Attack.",
+      "difficulty": 2,
+      "reward": "Defeats Riot (progress toward Grendel/Hybrid)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete a full Grid column and reach level 10 to qualify Riot"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to start the Riot battle"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot a shot lit BOTH red and blue for a large hit plus Special Attack",
+          "detail": "Red set moves left-to-right (medium); blue set right-to-left (small)"
+        },
+        {
+          "shot": "bell-tower",
+          "action": "Hit the Bell Tower target to add phase time",
+          "link": "none"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-phage",
+      "title": "Phage Symbiote Battle",
+      "category": "mode",
+      "summary": "Minor-boss battle with two states: run the rotating left-ramp combo for large hits, then shoot the lit Bell Tower to enter State 2's 3-shot damage burst.",
+      "difficulty": 3,
+      "reward": "Defeats Phage; strong Flame Thrower mode",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "State 1: run the rotating combo left ramp then scoop then center ramp, each a large hit"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Right orbit = small hit; lights Bell Tower and drops the top post to the right flipper"
+        },
+        {
+          "shot": "bell-tower",
+          "action": "Shoot lit Bell Tower to enter State 2 (active shot becomes 3 timed shots)"
+        },
+        {
+          "shot": "scoop",
+          "action": "Complete the rotating combo shots to land large hits and Special Attack"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "mode-scream",
+      "title": "Scream (Video Mode)",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "Qualify at 20 Infected defeated, and again at 70, then start at the scoop; use the flipper buttons to stop Infected reaching Scream from both sides.",
+      "difficulty": 2,
+      "reward": "~10M start + 10M all-clear bonus (web-combo affected) + XP",
+      "steps": [
+        {
+          "shot": "infected-targets",
+          "action": "Defeat 20 Infected targets to qualify Scream"
+        },
+        {
+          "shot": "scoop",
+          "action": "Start Scream at the Daily Bugle scoop",
+          "detail": "Use left/right flipper buttons to stop Infected from both sides; defeat all for the bonus"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-rampage",
+      "title": "Rampage",
+      "category": "mode",
+      "summary": "Defeat three Doppelgangers to light Rampage at the center ramp: a timed one-ball mode that builds value on blue shots then cashes it on the Doppelganger.",
+      "difficulty": 3,
+      "reward": "Strong Rampage worth 300M+",
+      "steps": [
+        {
+          "shot": "infected-targets",
+          "action": "Defeat Infected to trigger Doppelganger attacks; complete 3 Doppelgangers"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp when it blinks red/blue to start Rampage"
+        },
+        {
+          "shot": "doppelganger-targets",
+          "action": "Build phase: hit blue shots; Battle phase: hit the Doppelganger to collect the built value",
+          "detail": "On Pro the Doppelganger is fought at the left loop instead of the flyaway targets"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "multiplier-bell-tower-playfield",
+      "title": "Bell Tower Playfield Multiplier (up to 7X)",
+      "category": "multiplier",
+      "summary": "The multiplier substrate for everything: loop the center ramp to light the Bell Tower target, then hit it for +1X playfield up to 7X.",
+      "difficulty": 2,
+      "reward": "Up to 7X playfield multiplier (timed)",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Loop Police Station center ramp (2 the first time, then 3, 4...; resets each ball) to light the Bell Tower"
+        },
+        {
+          "shot": "bell-tower",
+          "action": "Hit the lit Bell Tower target for +1X playfield, up to 7X",
+          "detail": "Hitting it unlit just adds time to the multiplier timer. Cash X BEFORE big combos/hurry-ups"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-bonus-x",
+      "title": "Bonus Multiplier Build",
+      "category": "multiplier",
+      "summary": "Raise the end-of-ball Bonus Multiplier by completing the top lanes and defeating Infected; skill shots add +2/+4 Bonus X.",
+      "difficulty": 1,
+      "reward": "Higher end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete the top rollover lanes for +1 Bonus Multiplier (top-lane skill shot = +2)"
+        },
+        {
+          "shot": "infected-targets",
+          "action": "Defeat Infected for +1 Bonus X per ~4 defeated",
+          "detail": "Mystery can also grant +1/+2/+3 Bonus X; Secret Hideout skill shot = +4"
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "wizard-toxin-team-up",
+      "title": "Toxin Team-Up (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Qualify by playing Mayhem, playing Carnage, and defeating a Doppelganger; start at the scoop, then shoot each of 3 flashing jackpot shots twice to light the escalating Super Jackpot 2-ball multiball.",
+      "difficulty": 3,
+      "reward": "Escalating Super Jackpots; first Super adds a 2nd ball (2-ball MB)",
+      "steps": [
+        {
+          "shot": "left-vessel",
+          "action": "Play Mayhem Multiball (qualifier 1)",
+          "link": "none"
+        },
+        {
+          "shot": "carnage-captive-ball",
+          "action": "Play Carnage Multiball and defeat a Doppelganger (qualifiers 2-3)",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Start Toxin Team-Up at the scoop when all three billboard icons blink"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot each of 3 flashing jackpot shots twice (6 jackpots) to light Super Jackpot",
+          "detail": "Boost jackpot values by pushing the Carnage captive ball back first (orange 2X / red 3X)"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-klyntar",
+      "title": "Klyntar Multiball (Final Wizard)",
+      "category": "wizard",
+      "summary": "Only in a game where you've defeated Knull: complete all 8 objectives, then shoot the center ramp to start a timed 2-ball, ball-save-on multiball across four 4-level hurry-up shots.",
+      "difficulty": 3,
+      "reward": "Final wizard mode; 16 total hurry-up shots plus a time bonus",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "After defeating Knull and completing all 8 objectives (Rampage, Scream, Blood Lust, Toxin, Knull, Mayhem, Host Hurry-Up, Bell Tower Frenzy), shoot the center ramp to start"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Run Alchemax, one of four blinking 4-level hurry-up shots",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Run The Daily Bugle hurry-up shot",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Run The Vault Prison hurry-up; complete all 16 hurry-up shots before time expires",
+          "detail": "Each finished shot rolls its value into the other three and darkens the playfield further",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-opener",
+      "title": "Tournament Opener: Eddie Ladder",
+      "category": "strategy",
+      "summary": "The safe and efficient early line is the same line: Eddie's spot-a-mini-mode skill shot, clear his mini-modes, feed the center ramp for the Bell Tower, and lock balls.",
+      "difficulty": 1,
+      "reward": "Fast, forgiving path to Mayhem and playfield X groundwork",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Take the host-specific 'spot a mini-mode' skill shot on Eddie Brock (starts with 2 locks lit)"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Clear Eddie's yellow/blue/white mini-modes (each a 2-shot combo), filling the grid and lighting locks"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Feed the center ramp to start lighting the Bell Tower playfield multiplier"
+        },
+        {
+          "shot": "left-vessel",
+          "action": "Lock balls as the green lock arrows light"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "strategy-6ball-mayhem",
+      "title": "Build 6-Ball Mayhem",
+      "category": "strategy",
+      "summary": "The core high-score move: after the 2nd lock, hold the action button to cancel the auto-start and keep locking toward a 6-ball Mayhem.",
+      "difficulty": 2,
+      "reward": "6-ball Mayhem (highest jackpot potential); right-3 lock = +1X playfield",
+      "steps": [
+        {
+          "shot": "left-vessel",
+          "action": "Lock balls into the left symbiote tank"
+        },
+        {
+          "shot": "right-vessel",
+          "action": "After the 2nd lock HOLD the action button to cancel auto-start and keep locking toward 6",
+          "detail": "If 6 looks drain-risky, at minimum bank the right tank's 3rd lock for +1X playfield"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "strategy-stack-billions",
+      "title": "The Full Stack (Billion-Point Layer)",
+      "category": "strategy",
+      "summary": "Layer 7X playfield, 6-ball Mayhem, stacked Carnage, and a Host Hurry-Up together so the biggest values all multiply at once.",
+      "difficulty": 3,
+      "reward": "Overlapping hurry-up + multiballs + 7X = billion-point games",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Ratchet the playfield toward 7X via repeated center-ramp loops"
+        },
+        {
+          "shot": "bell-tower",
+          "action": "Cash the Bell Tower for up to 7X BEFORE firing the big shots"
+        },
+        {
+          "shot": "left-vessel",
+          "action": "Start 6-ball Mayhem (Eddie scores highest here)"
+        },
+        {
+          "shot": "carnage-captive-ball",
+          "action": "Stack Carnage into the Mayhem ball-save window"
+        },
+        {
+          "shot": "scoop",
+          "action": "Fire your Host Hurry-Up at the scoop while 7X is lit",
+          "detail": "Hybrid team-up maxes playfield X to 7X instantly via the action button"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-blood-lust",
+      "title": "Blood Lust",
+      "category": "mode",
+      "summary": "The third award on the Carnage captive-ball ladder, after his multiball and his hurry-up: keep driving Carnage back into Ravencroft to qualify Blood Lust, then start it at the lit center ramp. It runs on a flip counter — you only get so many flips before the flippers die — so score the blue shots while looping the center ramp into Carnage to win flips back.",
+      "difficulty": 3,
+      "reward": "Large mode payout and one of the eight objectives needed for Klyntar",
+      "steps": [
+        {
+          "shot": "carnage-captive-ball",
+          "action": "Keep pushing Carnage back into Ravencroft after his multiball to advance the ladder",
+          "detail": "Each full push moves the ladder one rung; the display shows the next award"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the lit center ramp to begin Blood Lust"
+        },
+        {
+          "shot": "scoop",
+          "action": "Build the mode value on the lit shots while the timer runs"
+        },
+        {
+          "shot": "carnage-captive-ball",
+          "action": "Hit Carnage after looping the center ramp to win flips back",
+          "detail": "The more center ramps you loop before hitting Carnage, the more flips that hit is worth; the Bell Tower adds flips too.",
+          "link": "none"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mode-knull",
+      "title": "Knull Battle",
+      "category": "mode",
+      "summary": "The final boss before Klyntar: clear the lesser symbiote battles and push your level high enough to qualify Knull, start him at the center ramp, then work the shot colors — blue is a small hit, yellow a medium one, and red is a large hit that also lights Special Attack — while feeding the Bell Tower for time.",
+      "difficulty": 3,
+      "reward": "Defeats Knull, the gate to Klyntar Multiball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Fill Grid columns with mini-modes and clear the lesser symbiote battles to qualify Knull"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to start the Knull battle"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Work shots up to red for the biggest damage and Special Attack",
+          "detail": "Chain web combos first; the shot multiplier also multiplies damage"
+        },
+        {
+          "shot": "bell-tower",
+          "action": "Hit the Bell Tower target to buy more phase time",
+          "link": "none"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "secret-host-select",
+      "title": "Choosing Your Host Before the Plunge",
+      "category": "secret",
+      "summary": "Before you ever plunge, the machine quietly hands you a choice most players miss: which symbiote host you play as for the ball. The two flippers do different jobs here — one changes your host, the other changes your skill shot — and the plunge locks both in.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Watch the display as your ball starts, before you plunge",
+        "Tap the left flipper button to change which host you play as",
+        "Tap the right flipper button to change which shot is lit for the skill shot",
+        "Plunge the ball to lock the host in for the ball",
+        "During the ball, shoot the left ramp while \"change host\" is lit to switch hosts mid-ball"
+      ],
+      "reward": "Sets which host you play for the ball — Eddie Brock (Classic Venom), Flash Thompson (Agent Venom), Gwen Stacy (Gwenom), or Peter Parker (Black Suit Spider-Man) — changing your perks and hurry-up shots"
+    },
+    {
+      "id": "progress-xp-levels",
+      "title": "Level Up to Reach the Bosses",
+      "category": "progression",
+      "summary": "Your level is the spine of this game, not a decoration. Every task you finish feeds experience points, and three numbers decide how far you get: at level 10 a finished mini-mode path lights that host's symbiote battle at the centre ramp, at level 20 a beaten symbiote opens the fight with Grendel, and at level 30 a beaten Grendel opens Knull. Level also sets how hard you punch, so the same battle fought twenty levels higher is a far shorter fight. Sign in to Insider Connected and your level rides along to your next game — right up until you beat Knull, which drops you back to level 1 and starts the climb over.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Left ramp and scoop — Mayhem Multiball opens with quick jackpots alternating between these two shots, and every one of them pays experience. Keep the alternation clean and the level counter climbs fast.",
+        "Left containment vessel — put your third Mayhem lock on the left side to double experience for that multiball. The third lock on the right side gives +1X playfield instead, so pick the one you actually need.",
+        "Left ramp — change hosts here to fill a second grid column and close a square on the 2X Experience bonus, which doubles experience for as long as all four of its lights stay on.",
+        "Centre ramp — at level 10 with a host's mini-mode path complete, the centre ramp lights that host's symbiote battle. While it is lit you cannot start a multiball, so plan to take the fight rather than stall.",
+        "Centre ramp — beat a symbiote and reach level 20 to face Grendel, then beat Grendel and reach level 30 to face Knull. Winning that last fight resets your experience and puts you back at level 1."
+      ],
+      "reward": "Level 10 lights symbiote battles, level 20 plus a beaten symbiote opens Grendel, level 30 plus a beaten Grendel opens Knull — and every level raises the damage you deal"
+    },
+    {
+      "id": "progress-team-ups",
+      "title": "Unlock and Spend a Team-Up",
+      "category": "progression",
+      "summary": "Team-ups are allies you bring into a fight, and you pick one from a selection screen as a multiball or battle mode starts rather than earning one mid-mode. There are three, and each has its own key. The cheapest key is your opening host: start the game as Flash Thompson and Sleeper is already unlocked, start as Peter Parker and Miles Morales is. Sleeper is a survival tool, Miles is a scoring tool, so which one you want depends on whether you are trying to stay alive or run the combo count up. Spending an ally uses it up — you have to earn it again before you can pick it a second time, while one you never spend waits for your next game if you are signed in.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Shooter lane — your first host of the game decides the free ally: open as Flash Thompson and Sleeper is unlocked, open as Peter Parker and Miles Morales is.",
+        "Infected targets — defeating Infected also unlocks Sleeper, so you can arm it without spending your opening host pick on Flash.",
+        "U-turn loop — completing a four-way combo unlocks Miles Morales the hard way; beating all four symbiotes, either in their battles or on a Mayhem super jackpot, unlocks Hybrid.",
+        "Scoop — when a multiball or battle mode starts, the selection screen appears. Highlight the ally you want and press the action button to lock it in.",
+        "Action button — spend Sleeper when the ball is in trouble: it adds a ball during multiball, or buys more time during a battle. With Miles instead, every combo you make counts as two, so shot multipliers build twice as quickly."
+      ],
+      "reward": "Sleeper adds a ball in multiball or time in a battle; Miles Morales makes every combo count twice; Hybrid arms a super bomb on the action button and pushes your playfield multiplier up"
+    },
+    {
+      "id": "progress-grid-perks",
+      "title": "Close a Square on the Grid",
+      "category": "progression",
+      "summary": "The lights just above the flippers are a progress grid, and each of the four hosts owns one column of three. Finishing a host's three mini-modes fills that host's column — but the rewards sit between the columns, not at the end of any one of them. Close a square of four adjoining lights and you hold the bonus printed inside it for as long as all four stay lit. That is why the strongest line is to finish one host's column, change hosts at the left ramp to a column beside it, and finish that one too: two full columns overlap into squares that a single column can never close on its own.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Shoot the solid yellow, blue or white arrow, then hit the matching arrow while it blinks and times out. That pair completes one mini-mode and fills one circle in your host's column.",
+        "Left ramp — completing all three of your host's mini-modes lights the host change here.",
+        "Left ramp — take the change and pick a host whose column sits next to the one you just filled, then run that host's three mini-modes as well. That is what closes a square.",
+        "Scoop — a mystery award can fill in a grid box outright, so a well-timed mystery is worth saving for a square you are one light short of.",
+        "Centre ramp — protect what you built. Losing a symbiote battle switches off the grid lights that led to it, and a square that loses a light loses its bonus. Hold the flamethrower square and a lit flamethrower shot pays off three shots at once."
+      ],
+      "reward": "A standing bonus for each closed square — longer timers, +1X playfield, 2X web combos, the flamethrower, longer ball saves, or 2X experience"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "hideout-plunge-master",
+      "title": "Hideout Plunge",
+      "desc": "Land the hard plunge in the upper hideout hole for the top-value skill shot.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "skillshot-secret-hideout"
+    },
+    {
+      "id": "first-symbiote-mayhem",
+      "title": "Symbiotes Loose",
+      "desc": "Lock balls in the containment vessels and start Mayhem Multiball.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "multiball-mayhem"
+    },
+    {
+      "id": "carnage-unleashed",
+      "title": "Carnage Unleashed",
+      "desc": "Push the captive ball back into Ravencroft and start Carnage Multiball.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "multiball-carnage"
+    },
+    {
+      "id": "signature-combo-run",
+      "title": "Signature Run",
+      "desc": "Complete your host's full four-shot signature combo in one chain.",
+      "tier": "easy",
+      "source": "insider",
+      "goal": "combo-flash-signature"
+    },
+    {
+      "id": "host-hurry-up-cashed",
+      "title": "Host Payday",
+      "desc": "Start the Host Hurry-Up at the scoop and finish all four cascading stages.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "combo-host-hurry-up"
+    },
+    {
+      "id": "carnage-super-jackpot",
+      "title": "Ravencroft Super",
+      "desc": "Collect the Carnage Multiball Super Jackpot at the scoop.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "multiball-carnage"
+    },
+    {
+      "id": "riot-put-down",
+      "title": "Riot Put Down",
+      "desc": "Defeat the Riot symbiote in its battle.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "mode-riot"
+    },
+    {
+      "id": "phage-put-down",
+      "title": "Phage Put Down",
+      "desc": "Defeat the Phage symbiote, including reaching its second damage state.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "mode-phage"
+    },
+    {
+      "id": "scream-all-clear",
+      "title": "Scream Shutout",
+      "desc": "Play the Scream video mode and stop every Infected for the all-clear bonus.",
+      "tier": "medium",
+      "source": "insider",
+      "goal": "mode-scream"
+    },
+    {
+      "id": "rampage-finished",
+      "title": "Rampage Finished",
+      "desc": "Start Rampage and cash the built value on the Doppelganger before time runs out.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "mode-rampage"
+    },
+    {
+      "id": "playfield-maxed-seven",
+      "title": "Bells All The Way Up",
+      "desc": "Ratchet the Bell Tower playfield multiplier to its 7X ceiling.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "multiplier-bell-tower-playfield"
+    },
+    {
+      "id": "ten-way-web-chain",
+      "title": "Ten-Way Web Chain",
+      "desc": "Chain ten combo shots without a timeout to cap the shot multiplier at 5X.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "combo-web-slinging"
+    },
+    {
+      "id": "six-ball-mayhem-built",
+      "title": "Six In The Tanks",
+      "desc": "Cancel the auto-start and keep locking until Mayhem begins with six balls.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "strategy-6ball-mayhem"
+    },
+    {
+      "id": "doppelganger-multiball-started",
+      "title": "Seeing Double",
+      "desc": "Work the right loop post until the Doppelganger multiball starts (Premium/LE).",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "multiball-quick-doppelganger"
+    },
+    {
+      "id": "toxin-super-collected",
+      "title": "Toxin Team Super",
+      "desc": "Reach Toxin Team-Up and collect its Super Jackpot.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "wizard-toxin-team-up"
+    },
+    {
+      "id": "blood-lust-completed",
+      "title": "Blood Lust Cleared",
+      "desc": "Complete the Blood Lust mode off the Carnage captive-ball ladder.",
+      "tier": "hard",
+      "source": "insider",
+      "goal": "mode-blood-lust"
+    },
+    {
+      "id": "knull-defeated",
+      "title": "The God Of Symbiotes Falls",
+      "desc": "Qualify and defeat Knull in his battle.",
+      "tier": "epic",
+      "source": "insider",
+      "goal": "mode-knull"
+    },
+    {
+      "id": "klyntar-cleared",
+      "title": "Klyntar Cleared",
+      "desc": "Reach Klyntar Multiball and finish all sixteen hurry-up shots before time expires.",
+      "tier": "epic",
+      "source": "insider",
+      "goal": "wizard-klyntar"
+    }
+  ],
+  "drills": [
+    {
+      "id": "hideout-plunge",
+      "title": "Hideout Plunge (Premium/LE)",
+      "text": "Hard-plunge into the upper hideout hole at the orbit's apex. It is the biggest plunge award on the machine, but a miss returns fast, so make sure the flippers are set before the ball comes back down.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-secret-hideout",
+      "shots": [
+        "shooter-lane",
+        "sneaky-hideout"
+      ]
+    },
+    {
+      "id": "bell-tower-ladder",
+      "title": "Bell Tower Ladder",
+      "text": "Loop the center ramp until the Bell Tower lights, then take the target for the multiplier step, and keep climbing. Each rung costs one more center ramp than the last, so the center ramp is the shot this whole game is really built on.",
+      "reps": "climb to 4x twice",
+      "focus": "accuracy",
+      "goal": "multiplier-bell-tower-playfield",
+      "shots": [
+        "center-ramp",
+        "bell-tower"
+      ]
+    },
+    {
+      "id": "carnage-pushback",
+      "title": "Push Carnage Back",
+      "text": "Bash the captive ball hard enough to drive it all the way back into Ravencroft, not just move it. Half-hits do not advance the ladder, and the same full push is what relights the super later, so treat power as part of the aim.",
+      "reps": "15 pushes",
+      "focus": "accuracy",
+      "goal": "multiball-carnage",
+      "shots": [
+        "carnage-captive-ball"
+      ]
+    },
+    {
+      "id": "infected-edge-targets",
+      "title": "Edge Targets From a Cradle",
+      "text": "Take the far-left and far-right Infected standups one at a time from a settled cradle, never on a scramble. Both sit directly above an outlane, and a loose swing at either is the drain that ends good balls on this machine.",
+      "reps": "10 hits per side",
+      "focus": "ball-control",
+      "goal": "multiplier-bonus-x",
+      "shots": [
+        "left-infected-standup",
+        "right-infected-standup"
+      ]
+    },
+    {
+      "id": "workhorse-loop",
+      "title": "Workhorse Loop",
+      "text": "Run the right ramp, the scoop, the left ramp, then back to the scoop. It never touches the center ramp, so you can grind it as long as you like without accidentally starting a battle you were not ready for.",
+      "reps": "6 full loops",
+      "focus": "flow",
+      "goal": "combo-flash-signature",
+      "shots": [
+        "right-ramp",
+        "scoop",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "web-arrow-chain",
+      "title": "Web Arrow Chain",
+      "text": "Make any shot to light a fresh set of combo arrows, then keep taking lit continuation arrows before they time out. Count your longest chain — the shot multiplier it builds also multiplies the damage you deal in a battle, so the chain is never wasted.",
+      "reps": "note your longest chain over 3 balls",
+      "focus": "flow",
+      "goal": "combo-web-slinging"
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Venom leans on the lockdown bar button harder than most Sterns. It is your Spider-Sense, your ball-lock override, your team-up selector, and once Sleeper or Hybrid is unlocked it becomes the emergency button as well. Tap and hold do different jobs, so know which one you want before the ball is in trouble.",
+    "uses": [
+      {
+        "when": "Any mode running and you are stuck",
+        "what": "Hold for Spider-Sense: one random shot flashes white briefly, worth a hurry-up from 25M plus progress in that mode."
+      },
+      {
+        "when": "Second Mayhem lock just made",
+        "what": "Hold to cancel the auto-start and keep locking, up to six balls and a better set of perks."
+      },
+      {
+        "when": "Multiball or battle selection screen",
+        "what": "With the flippers, picks which team-up you take into the mode."
+      },
+      {
+        "when": "Sleeper active, ball in trouble",
+        "what": "Adds a ball during multiball, or buys extra time during a timed battle."
+      },
+      {
+        "when": "Hybrid unlocked",
+        "what": "One press collects every lit shot and adds +2x to playfield scoring for a short window."
+      },
+      {
+        "when": "Playing as Venomized Hulk",
+        "what": "Once per ball, a press scores every shot on the game and overrides the Hybrid bomb."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "You are a symbiote host fighting through the Marvel rogues' gallery. Pick your host, level up by clearing mini-modes and symbiote battles, drive the Bell Tower playfield multiplier, and push through Knull to the final wizard, Klyntar.",
+    "loop": [
+      "Pick a host at the plunge, then complete the colored two-shot mini-modes to fill the Grid, raise your level, and light symbiote locks.",
+      "Lock balls in the left or right containment vessel for Mayhem Multiball, holding the action button after the second lock to keep locking toward a six-ball start.",
+      "Push the Carnage captive ball back into Ravencroft for Carnage Multiball, and loop the center ramp to arm the Bell Tower playfield multiplier up to 7X.",
+      "Beat the symbiote battles -- Riot, Phage, Scream, Rampage, and Blood Lust -- as your level and shot multiplier keep climbing.",
+      "Clear the eight objectives and defeat Knull to light Klyntar, the final wizard."
+    ],
+    "lights": [
+      {
+        "id": "mini-mode-grid",
+        "name": "Mini-Mode Arrows & Grid",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "A solid colored arrow marks the start of a mini-mode; hit it, then hit the blinking arrow it points you to, to complete the pair and fill one square of the Grid.",
+        "flashing": "The blinking arrow is the second half of the mini-mode you are running -- collect it before it moves on.",
+        "control": null,
+        "then": "Filling Grid columns raises your level and lights a symbiote lock. Level ten opens the first battles, and every closed square hands you a standing perk like a longer timer or an extra playfield multiplier.",
+        "goals": [
+          "strategy-opener",
+          "progress-xp-levels",
+          "progress-grid-perks"
+        ]
+      },
+      {
+        "id": "symbiote-vessel-locks",
+        "name": "Containment Vessel Locks",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-vessel"
+          },
+          {
+            "shot": "right-vessel"
+          }
+        ],
+        "lit": "A green arrow at a containment vessel is a lit lock; feed it to trap a ball, with left locks bringing the Agony and Lasher perks and right locks bringing Riot and Phage.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "after your second lock the button glows blue -- hold it to cancel the automatic Mayhem start and keep locking, all the way up to a six-ball multiball with a stronger set of perks",
+          "when": "second Mayhem lock just made"
+        },
+        "then": "Two locks start Mayhem Multiball, but banking more balls first makes it far bigger; if six looks too risky, at least take the right vessel's third lock for a permanent playfield multiplier bump.",
+        "goals": [
+          "multiball-mayhem",
+          "strategy-6ball-mayhem"
+        ]
+      },
+      {
+        "id": "carnage-captive",
+        "name": "Carnage Captive Ball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "carnage-captive-ball"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Bashing the Carnage captive ball drives him back into Ravencroft, and sinking him fully lights the center ramp red to start Carnage Multiball.",
+        "flashing": "Once the multiball is running the other shots blink blue to build the Super, which lights over at the scoop.",
+        "control": null,
+        "then": "Start it at the center ramp, push Carnage all the way back again to light the Super Jackpot, and collect it at the Daily Bugle scoop. Every push after his multiball also climbs the Blood Lust ladder toward its own battle.",
+        "goals": [
+          "multiball-carnage",
+          "mode-blood-lust"
+        ]
+      },
+      {
+        "id": "bell-tower-x",
+        "name": "Bell Tower Playfield X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "bell-tower"
+          }
+        ],
+        "lit": "Looping the Police Station center ramp -- twice the first time, then three, then four -- lights the Bell Tower target for a playfield multiplier.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the lit Bell Tower for +1X, climbing toward 7X, while hitting it unlit only adds time to the multiplier clock. Ratchet the multiplier up first, then fire your Host Hurry-Up and multiballs while it is live -- that overlap is where the billion-point games come from.",
+        "goals": [
+          "multiplier-bell-tower-playfield",
+          "strategy-stack-billions"
+        ]
+      },
+      {
+        "id": "symbiote-battles",
+        "name": "Symbiote Battle Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "bell-tower"
+          }
+        ],
+        "lit": "Inside a symbiote battle the shots light in moving color sets -- a red set sweeping one way for the big hits, a blue set sweeping back for smaller ones -- and a shot lit both colors at once lands a Special Attack.",
+        "flashing": null,
+        "control": null,
+        "then": "Time your shots to the sliding colors rather than camping a lane, and hit the Bell Tower to buy more phase time. Winning Riot and Phage feeds your level, and clearing the lesser symbiotes qualifies the Knull battle.",
+        "goals": [
+          "mode-riot",
+          "mode-phage",
+          "mode-knull"
+        ]
+      },
+      {
+        "id": "infected-targets",
+        "name": "Infected Standups",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "infected-targets",
+            "lamps": 5
+          },
+          {
+            "shot": "left-infected-standup"
+          },
+          {
+            "shot": "right-infected-standup"
+          }
+        ],
+        "lit": "The red Infected standups light to be knocked down, and clearing them triggers Doppelganger attacks and steps your bonus multiplier up.",
+        "flashing": null,
+        "control": null,
+        "then": "Defeat a full count of Infected to qualify Scream at the scoop, and beat three Doppelgangers to arm Rampage at the center ramp. Both battles pay heavily once your shot multiplier is stacked.",
+        "goals": [
+          "mode-scream",
+          "mode-rampage",
+          "multiplier-bonus-x"
+        ]
+      },
+      {
+        "id": "host-hurry-up",
+        "name": "Host Signature Combos",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Each host has a four-shot signature combo, and running it lights a Host Hurry-Up over at the scoop.",
+        "flashing": "When the billboard blinks, the Host Hurry-Up is ready to start at the scoop.",
+        "control": null,
+        "then": "Start the hurry-up at the scoop and re-shoot the combo shots to cascade the value, lighting the Bell Tower multiplier first so the whole cascade is multiplied. Chaining web combos beforehand can push a single collect into the billions.",
+        "goals": [
+          "combo-host-hurry-up",
+          "combo-flash-signature",
+          "combo-web-slinging"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Pick your host at the plunge -- Eddie Brock starts with two locks already lit -- and take the safe top-lane skill shot, or gamble the Secret Hideout saucer for far more. Then clear the colored mini-modes to fill the Grid and light your first Mayhem locks.",
+        "goals": [
+          "secret-host-select",
+          "skillshot-top-lanes",
+          "skillshot-secret-hideout",
+          "strategy-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Lock balls for Mayhem, holding the action button past the second lock to build toward six balls, and loop the center ramp to bank the Bell Tower multiplier. Overlap Carnage onto the Mayhem multiball's opening ball save and cash a Host Hurry-Up while the multiplier is live.",
+        "goals": [
+          "multiball-mayhem",
+          "strategy-6ball-mayhem",
+          "multiplier-bell-tower-playfield",
+          "multiball-carnage",
+          "strategy-stack-billions"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Play Mayhem and Carnage and beat a Doppelganger to open Toxin Team-Up, the mini-wizard. Then clear all eight objectives and defeat Knull to light Klyntar -- a final wizard of sixteen hurry-up shots that pour their values into one another as the playfield goes dark.",
+        "goals": [
+          "wizard-klyntar",
+          "wizard-toxin-team-up",
+          "mode-knull"
+        ]
+      }
+    ]
+  }
+}

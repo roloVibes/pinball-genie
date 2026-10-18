@@ -1,0 +1,1305 @@
+{
+  "machine": "No Fear: Dangerous Sports (Williams, 1995)",
+  "defaultFx": "extreme",
+  "shots": [
+    {
+      "id": "screamer",
+      "name": "Screamer (Left Orbit / Raceway)",
+      "type": "orbit",
+      "x": 0.13,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Far-left lane with the spinner at its mouth; wraps the back and feeds the right flipper. This is the Raceway shot that builds toward Extra Ball. Outer horseshoe paired with Summit.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Screamer Spinner",
+      "type": "spinner",
+      "x": 0.16,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Sits at the mouth of the Screamer/left orbit; boosted by Super Spinner award."
+    },
+    {
+      "id": "summit",
+      "name": "Summit (Right Orbit)",
+      "type": "orbit",
+      "x": 0.89,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Far-right lane; wraps the back and exits at Screamer toward the left flipper. Buildable Summit awards; lights Video Mode, Super Spinner, Hurry Up.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "jump-ramp",
+      "name": "Jump Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Left-center rising ramp with a magnetic ball accelerator that slings the ball into the Jump Loop via the upper flipper. The signature/highest-value shot; Super Jackpot collected here; 50M skill shot.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "jump-loop",
+      "name": "Jump Loop (the void)",
+      "type": "loop",
+      "x": 0.56,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Elevated wireform loop arcing over the Skull, shot by the upper-right flipper. In Meet Your Maker each loop is a 200M Super Jackpot that stays lit.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "hairpin-ramp",
+      "name": "Hairpin Ramp (Down Hill)",
+      "type": "ramp",
+      "x": 0.67,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Right ramp feeding the right inlane; the other half of the Super Cross combo. Called 'Down Hill' in Snow Challenge.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "skull",
+      "name": "Skull Scoop",
+      "type": "scoop",
+      "x": 0.5161,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Center-top scoop under the talking hinged-jaw skull. Start Challenge / Lock / 50M Jackpot / Extra Ball collect. Returns ball to right inlane.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "skull-toy",
+      "name": "Skull Toy (head)",
+      "type": "toy",
+      "x": 0.5183,
+      "y": 0.9256,
+      "trim": "all",
+      "notes": "The elevated talking skull head above the scoop; the hinged jaw famously breaks. Not a scoring target itself."
+    },
+    {
+      "id": "skydive",
+      "name": "Skydive Scoop",
+      "type": "scoop",
+      "x": 0.4,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Center-left lane ending in a scoop, guarded by a drop target. Second Lock, 100M jackpot, Air Challenge shot.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "skydive-drop",
+      "name": "Skydive Drop Target",
+      "type": "drop-target",
+      "x": 0.4,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The game's only drop target; blocks the Skydive lane. Dropping it lights Lock at BOTH Skydive and Skull."
+    },
+    {
+      "id": "track-left",
+      "name": "Track Orbit (left)",
+      "type": "orbit",
+      "x": 0.43,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Inner Raceway loop hugging the left side of the Skull, aimed at the left flipper. Advances the Steering Wheel (1st/2nd/3rd Place).",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "track-right",
+      "name": "Track Orbit (right)",
+      "type": "orbit",
+      "x": 0.61,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Inner Raceway loop on the right side of the Skull, aimed at the right flipper. Either Track side counts as one Track shot.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "tube",
+      "name": "Tube Saucer",
+      "type": "saucer",
+      "x": 0.19,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Lower-left curved lane into a saucer; awards random prizes, adds time/value in Water Challenge, advances Climber."
+    },
+    {
+      "id": "cliff",
+      "name": "Cliff Standups",
+      "type": "standup",
+      "x": 0.82,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Bank of 2 standups upper-right near the shooter feed. Light the Kickback and advance the Climber/Jump This meter."
+    },
+    {
+      "id": "kickback",
+      "name": "Kickback (left outlane)",
+      "type": "mech",
+      "x": 0.13,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Ball-save in the left outlane, lit by the Cliff standups. ~2.5M save. No 'Super Kickback' exists."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.31,
+      "y": 0.15,
+      "trim": "all"
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.69,
+      "y": 0.15,
+      "trim": "all"
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.11,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Houses the Kickback; can be lit for 'Jump This!' which becomes a 2-ball multiball when the Kickback is also lit."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.11,
+      "trim": "all"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Receives Skull, Skydive, and Hairpin feeds."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.89,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "No ball save; can be lit for 'Jump This!'."
+    },
+    {
+      "id": "shooter",
+      "name": "Shooter / Auto-Plunger",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Automatic button launch. Cycles the five skill-shot awards (Start Challenge / Super Cross Level / Advance Raceway / Ball Lock / Flipper Skill Shot)."
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper-Right Flipper (Jumps flipper)",
+      "type": "flipper",
+      "x": 0.72,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Halfway up the right side; feeds the Jump Loop across the void. The flipper you farm the Jump Loop from."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3019,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-left. Trap balls here to farm the Jump Loop during multiball/wizard."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6981,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-right. Receives the Jump Ramp return, enabling repeat Jump shots."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-flipper-jump",
+      "title": "Flipper Skill Shot — 50M Jump",
+      "category": "skillshot",
+      "summary": "The highest-value skill shot: select Flipper Skill Shot at the plunge, then nail the Jump Ramp on the fly for 50M.",
+      "difficulty": 3,
+      "reward": "50M",
+      "steps": [
+        {
+          "shot": "shooter",
+          "action": "Plunge through to the flippers",
+          "detail": "Press a flipper button at the shooter to cycle the plunge award to 'Flipper Skill Shot', then launch — the ball feeds to the lower-right flipper, and you have to shoot the Jump Ramp immediately, on the fly, for the 50M skill shot. It returns to the right flipper afterward so you can begin the consecutive-jump build."
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Cycle to Flipper Skill Shot, then hit the Jump Ramp on the fly",
+          "detail": "Press a flipper button at the shooter to cycle the plunge award to 'Flipper Skill Shot', then launch — the ball feeds to the lower-right flipper, and you have to shoot the Jump Ramp immediately, on the fly, for the 50M skill shot. It returns to the right flipper afterward so you can begin the consecutive-jump build.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-ball-lock",
+      "title": "Ball Lock Skill Shot",
+      "category": "skillshot",
+      "summary": "Select Ball Lock on the plunge cycle; the auto-plunge lowers the Skydive drop target and locks a ball for 12M.",
+      "difficulty": 1,
+      "reward": "12M + a locked ball toward multiball",
+      "steps": [
+        {
+          "shot": "skydive",
+          "action": "Cycle to Ball Lock, then let the auto-plunge fire it into the Skydive scoop",
+          "detail": "Cycle the plunge award to 'Ball Lock' and launch — unavailable when it would be the 3rd lock. The auto-plunge automatically lowers the Skydive drop target to expose the scoop, and the plunged ball fires straight in, locking a ball for 12M."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-super-cross",
+      "title": "Super Cross",
+      "category": "combo",
+      "summary": "Alternate the Jump Ramp and Hairpin Ramp for 15M each; three alternating shots on each ramp lights Payback Time.",
+      "difficulty": 2,
+      "reward": "15M per combo shot; lights Payback Time",
+      "steps": [
+        {
+          "shot": "jump-ramp",
+          "action": "Shoot the Jump Ramp from the upper-right flipper to start the combo"
+        },
+        {
+          "shot": "hairpin-ramp",
+          "action": "Immediately shoot the Hairpin Ramp for a 15M combo",
+          "detail": "A Hairpin→Jump order lets the magnets grab and re-feed the ball, keeping the rhythm going."
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Continue alternating back to the Jump Ramp"
+        },
+        {
+          "shot": "hairpin-ramp",
+          "action": "Complete 3 shots on each ramp (6 alternating) to start Payback Time"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "combo-jump-build",
+      "title": "Consecutive Jump Ramp Build",
+      "category": "combo",
+      "summary": "Repeatedly loop the Jump Ramp via the upper-right flipper — values climb 5M→25M and each jump permanently adds +5M to end-of-ball bonus.",
+      "difficulty": 2,
+      "reward": "5M/10M/15M/20M/25M per jump + permanent +5M bonus each",
+      "steps": [
+        {
+          "shot": "jump-ramp",
+          "action": "Shoot the Jump Ramp; the magnet slings the ball into the Jump Loop",
+          "feeds": {
+            "shot": "upper-flipper"
+          }
+        },
+        {
+          "shot": "upper-flipper",
+          "action": "Catch the return and re-feed the loop from the upper-right flipper"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Repeat to ratchet the consecutive value toward the 25M cap",
+          "detail": "Ball safely returns to the right flipper; the +5M/jump bonus carries the whole game."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "combo-mb-jackpot",
+      "title": "Multiball Jackpot Sequence",
+      "category": "combo",
+      "summary": "The standard multiball money order: Skull 50M → Skydive 100M → Jump Super Jackpot 200M, then repeat.",
+      "difficulty": 2,
+      "reward": "50M → 100M → 200M per cycle",
+      "steps": [
+        {
+          "shot": "skull",
+          "action": "Shoot the Skull scoop for the 50M jackpot"
+        },
+        {
+          "shot": "skydive",
+          "action": "Shoot the Skydive scoop for the 100M jackpot"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Shoot the Jump Ramp for the 200M Super Jackpot, then repeat the sequence"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "combo-payback-over-edge",
+      "title": "Payback Time + Over the Edge Stack",
+      "category": "combo",
+      "summary": "Light Payback Time via Super Cross, then start it just before Over the Edge so both high-scoring modes run together.",
+      "difficulty": 3,
+      "reward": "25M-everything for 25s layered over escalating 75M-cap ramps",
+      "steps": [
+        {
+          "shot": "hairpin-ramp",
+          "action": "Complete Super Cross (alternate with Jump Ramp) to light Payback Time"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Start Payback Time first — all major shots lit for 25M for 25 seconds"
+        },
+        {
+          "shot": "track-left",
+          "action": "With Over the Edge qualified, collect it from the Steering Wheel to start the 2-ball multiball"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Farm the Jump and Hairpin ramps (25M +10M/shot, max 75M) with both modes stacked"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "combo-jump-this",
+      "title": "Jump This! 2-Ball Farm",
+      "category": "combo",
+      "summary": "Trigger Jump This! at the left outlane while the Kickback is lit — it becomes a 2-ball multiball for 30M-per-jump farming.",
+      "difficulty": 3,
+      "reward": "30M per Jump Ramp with a safety ball",
+      "steps": [
+        {
+          "shot": "cliff",
+          "action": "Hit the Cliff standups to light the Kickback"
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Trigger 'Jump This!' at the left outlane while the Kickback is lit → 2-ball multiball",
+          "detail": "The Kickback saving the outlane drain while Jump This is running spawns the second ball."
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Farm the Jump Ramp at 30M per jump with the second ball as insurance"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "mb-regular",
+      "title": "Regular 3-Ball Multiball",
+      "category": "multiball",
+      "summary": "Drop the Skydive target to light Lock at Skydive and Skull, lock 3 balls, then run the jackpot sequence.",
+      "difficulty": 2,
+      "reward": "12M/lock; jackpots 50M/100M/200M",
+      "steps": [
+        {
+          "shot": "skydive-drop",
+          "action": "Hit the drop target guarding the Skydive to light Lock at BOTH the Skydive and Skull"
+        },
+        {
+          "shot": "skydive",
+          "action": "Shoot the Skydive scoop to lock a ball (12M)"
+        },
+        {
+          "shot": "skull",
+          "action": "Shoot the Skull scoop to lock another ball (12M)",
+          "detail": "On the first multiball Lock stays lit between locks; from the second multiball on you must re-drop the target for each lock, and the third restricts locking to the Skydive only."
+        },
+        {
+          "shot": "skydive",
+          "action": "Lock the 3rd ball to start 3-ball multiball"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mb-over-the-edge",
+      "title": "Over the Edge (2-Ball)",
+      "category": "multiball",
+      "summary": "Grind Track orbits — every third one wins the Race — until your third Race win, which awards Over the Edge (2-ball multiball). A random Tube award can also hand it to you.",
+      "difficulty": 2,
+      "reward": "2-ball MB; ramps 25M +10M/shot up to 75M",
+      "steps": [
+        {
+          "shot": "track-left",
+          "action": "Shoot Track orbits to advance the Steering Wheel toward 1st Place"
+        },
+        {
+          "shot": "track-right",
+          "action": "Keep looping the Track (either side counts) to reach the 1st-Place award rotation"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "With Over the Edge started, farm the Jump Ramp (25M base, +10M/shot to 75M)"
+        },
+        {
+          "shot": "hairpin-ramp",
+          "action": "Alternate to the Hairpin Ramp to build both ramp values"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "mb-no-limits",
+      "title": "No Limits (Major Challenge, 3-Ball)",
+      "category": "multiball",
+      "summary": "The first Major Challenge multiball, reached after the five Minor Challenges; start it at the Skull and pound the major shots.",
+      "difficulty": 3,
+      "reward": "20M base per shot, +1M/shot up to 70M",
+      "steps": [
+        {
+          "shot": "skull",
+          "action": "With No Limits as the next challenge, shoot the Skull to start it (Start Challenge)"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Hit major shots — 20M base, each collected adds +1M to that shot (max 70M)"
+        },
+        {
+          "shot": "skydive",
+          "action": "Keep collecting majors before the 15-second ball saver ends"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mb-fear-fest",
+      "title": "Fear Fest (Major Challenge, 3-Ball)",
+      "category": "multiball",
+      "summary": "The Major Challenge after No Limits; shoot Skull to start, then build and collect the Fear Fest jackpot at Skull/Skydive.",
+      "difficulty": 3,
+      "reward": "80M jackpot to start, +20M per major shot",
+      "steps": [
+        {
+          "shot": "skull",
+          "action": "Shoot the Skull to start Fear Fest when it is the next challenge"
+        },
+        {
+          "shot": "skull",
+          "action": "Shoot Skull or Skydive for the Fear Fest jackpot (80M start)"
+        },
+        {
+          "shot": "skydive",
+          "action": "Add +20M to the jackpot with each major shot; make 4 majors to relight after a collect"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mode-dirt",
+      "title": "Dirt Challenge",
+      "category": "mode",
+      "summary": "A 30-second Minor Challenge: only ramps score. Shoot the ramps to build the Dirt Award from 5M to 20M.",
+      "difficulty": 1,
+      "reward": "5M +5M/shot, max 20M",
+      "steps": [
+        {
+          "shot": "jump-ramp",
+          "action": "Shoot the Jump Ramp — the ramp award starts at 5M and every shot, ramp or not, adds another 5M up to 20M"
+        },
+        {
+          "shot": "hairpin-ramp",
+          "action": "Alternate to the Hairpin Ramp to keep scoring (only ramps count)"
+        },
+        {
+          "shot": "jump-loop",
+          "action": "Jump Loop also counts as a ramp and pays the standard jump value"
+        }
+      ],
+      "fx": "extreme",
+      "ordered": false
+    },
+    {
+      "id": "mode-water",
+      "title": "Water Challenge",
+      "category": "mode",
+      "summary": "A timed Minor Challenge: shoot the Tube saucer to add time and raise all lit shot values.",
+      "difficulty": 1,
+      "reward": "+10s and +5M to shot values per Tube hit; shots 10M→30M",
+      "steps": [
+        {
+          "shot": "tube",
+          "action": "Shoot the Tube saucer — adds 10 seconds (max 30) and +5M to all lit shot values"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Collect the lit shots for growing value (start 10M, +5M/Tube hit, max 30M)"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "mode-snow",
+      "title": "Snow Challenge",
+      "category": "mode",
+      "summary": "Build the Down Hill (Hairpin) value with Jump Ramp and Summit shots, then shoot the Hairpin to end the mode for up to 100M.",
+      "difficulty": 2,
+      "reward": "Hairpin 50M base, +10M/prep shot, max 100M",
+      "steps": [
+        {
+          "shot": "jump-ramp",
+          "action": "Shoot the Jump Ramp (10M) to add +10M to the Down Hill value",
+          "detail": "Magnets feed the ball to the left habitrail to set up the Hairpin.",
+          "feeds": {
+            "x": 0.36,
+            "y": 0.1
+          }
+        },
+        {
+          "shot": "summit",
+          "action": "Shoot Summit (10M) to add another +10M to the Down Hill value",
+          "link": "none"
+        },
+        {
+          "shot": "hairpin-ramp",
+          "action": "Shoot the Down Hill (Hairpin Ramp) to END the mode and bank the built value"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "mode-air",
+      "title": "Air Challenge",
+      "category": "mode",
+      "summary": "Freeze the falling Skydive value, then collect all lit arrows across the playfield for a 75M bonus.",
+      "difficulty": 2,
+      "reward": "Skydive value frozen 10–25M; complete all arrows = 75M",
+      "steps": [
+        {
+          "shot": "skydive-drop",
+          "action": "The drop target lowers and a 25M countdown starts (stops falling at 10M)"
+        },
+        {
+          "shot": "skydive",
+          "action": "Shoot the Skydive to freeze the value and light ALL arrows for 30 seconds"
+        },
+        {
+          "shot": "tube",
+          "action": "Collect the required arrows (Tube, orbits, ramps, Track, Skull) — all completed = 75M bonus"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "mult-raceway-eb",
+      "title": "Raceway Extra Ball Ladder",
+      "category": "multiplier",
+      "summary": "No Fear has no playfield/bonus multiplier — Extra Balls are the real force multiplier. Loop the Raceway to light EB at the Skull.",
+      "difficulty": 2,
+      "reward": "5M→20M builds, then Light Extra Ball (25M/shot after)",
+      "steps": [
+        {
+          "shot": "screamer",
+          "action": "Loop the left orbit (Raceway) — values build 5M / 10M / 15M / 20M"
+        },
+        {
+          "shot": "screamer",
+          "action": "Five consecutive Raceway hits light the Extra Ball",
+          "detail": "Later EBs need 2–3 consecutive orbits per level."
+        },
+        {
+          "shot": "skull",
+          "action": "Collect the lit Extra Ball at the Skull scoop"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "mult-track-steering",
+      "title": "Steering Wheel Value Ladder",
+      "category": "multiplier",
+      "summary": "With no true multiplier, the Track/Steering Wheel value ladder is the scoring escalator — 3rd→2nd→1st Place awards up to 100M.",
+      "difficulty": 2,
+      "reward": "3rd 15M, 2nd 25M, 1st rotating (up to 100M)",
+      "steps": [
+        {
+          "shot": "track-left",
+          "action": "Shoot the Track orbit — 3rd Place pays 15M"
+        },
+        {
+          "shot": "track-right",
+          "action": "Loop again — 2nd Place pays 25M (either Track side counts)"
+        },
+        {
+          "shot": "track-left",
+          "action": "Reach 1st Place for the rotating award list (Light EB, Over the Edge, up to 100M)"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-mym-qualify",
+      "title": "Meet Your Maker — Qualification Path",
+      "category": "wizard",
+      "summary": "The full ladder to the 4-ball wizard: five Minor Challenges, then No Limits, then spell NO FEAR on the lit major shots to light Fear Fest, then spell NO FEAR again to light Meet Your Maker at the Skull.",
+      "difficulty": 3,
+      "reward": "Starts the 4-ball wizard with everything lit",
+      "steps": [
+        {
+          "shot": "skull",
+          "action": "Start each Minor Challenge (Dirt, Asphalt, Water, Snow, Air) at the Skull; time out the risky ones"
+        },
+        {
+          "shot": "skull",
+          "action": "Start and play the first Major, No Limits, then Fear Fest"
+        },
+        {
+          "shot": "skull",
+          "action": "With Meet Your Maker now the next challenge, shoot the Skull to start the wizard"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-mym-farm",
+      "title": "Meet Your Maker — 200M Jump Farm",
+      "category": "wizard",
+      "summary": "In the wizard, the Jump Loop Super Jackpot stays lit for 200M. Trap balls on the left flipper and hammer the loop from the upper-right flipper.",
+      "difficulty": 3,
+      "reward": "200M per Jump Loop (uncapped, stays lit)",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Cradle/trap the other balls on the left flipper to park them safely"
+        },
+        {
+          "shot": "upper-flipper",
+          "action": "Use the upper-right flipper to feed the elevated Jump Loop"
+        },
+        {
+          "shot": "jump-loop",
+          "action": "Hammer the Jump Loop over and over for 200M Super Jackpots — the classic GC farm"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-progression-opener",
+      "title": "Progression Opener (recommended default)",
+      "category": "strategy",
+      "summary": "Start Challenge, bank the Extra Ball via Raceway, arm the Kickback, then begin locking for multiball — the guided beginner line.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "shooter",
+          "action": "Skill shot: select Start Challenge and launch"
+        },
+        {
+          "shot": "screamer",
+          "action": "Loop the left orbit (Raceway) repeatedly toward Light Extra Ball"
+        },
+        {
+          "shot": "cliff",
+          "action": "Hit a Cliff standup to light the Kickback for left-outlane insurance"
+        },
+        {
+          "shot": "skull",
+          "action": "Begin locking balls at the Skull/Skydive (12M each) for standard multiball"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "strat-points-opener",
+      "title": "Points-Forward Opener (confident player)",
+      "category": "strategy",
+      "summary": "Take the 50M Jump skill shot, build consecutive jumps, then set up the Extra Ball and Kickback.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "shooter",
+          "action": "Skill shot: select Flipper Skill Shot and launch"
+        },
+        {
+          "shot": "jump-ramp",
+          "action": "Immediately shoot the Jump Ramp for 50M, then re-loop to build consecutive value"
+        },
+        {
+          "shot": "screamer",
+          "action": "Cradle, then loop the left orbit Raceway to start the Extra Ball ladder"
+        },
+        {
+          "shot": "cliff",
+          "action": "Hit a Cliff standup to arm the Kickback"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "strat-tournament-gc",
+      "title": "Tournament / GC Line",
+      "category": "strategy",
+      "summary": "Bank Extra Balls, time out the low-value minors, push through the two lesser majors, and grind Meet Your Maker for 200M supers.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "shooter",
+          "action": "Skill shot: Advance Raceway or Super Cross Level"
+        },
+        {
+          "shot": "screamer",
+          "action": "Grind Raceway for Extra Balls; keep the Kickback lit"
+        },
+        {
+          "shot": "skull",
+          "action": "Time out the minor challenges (+10M each) and avoid Asphalt/Snow risk; push through No Limits and Fear Fest"
+        },
+        {
+          "shot": "jump-loop",
+          "action": "Reach Meet Your Maker and farm 200M Jump Loop supers by trapping on the left flipper"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "strat-summit-awards",
+      "title": "Summit Award Ladder",
+      "category": "strategy",
+      "summary": "Repeat the right orbit to climb the Summit award list: 5M, then the video mode light, then the boosted spinner, then 10M for every shot after that. The list resets at the start of each ball, so the climb has to be redone every time.",
+      "difficulty": 2,
+      "reward": "Summit builds; lights Video Mode and Super Spinner, then pays 10M per further shot on the ball",
+      "steps": [
+        {
+          "shot": "summit",
+          "action": "Shoot the right orbit to collect and advance the Summit award",
+          "detail": "The orbit wraps the back and exits by the Screamer toward the left flipper."
+        },
+        {
+          "shot": "summit",
+          "action": "Keep looping Summit to reach the award that lights the boosted spinner",
+          "detail": "Cradle the return before each attempt; a missed orbit comes back fast."
+        },
+        {
+          "shot": "spinner",
+          "action": "With the spinner boosted, rip the Screamer spinner for its inflated per-spin value",
+          "detail": "Aim the left orbit flush so the ball keeps the spinner turning instead of rattling the lane."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "video-mode-super-cross",
+      "title": "Video Mode",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Every mention of Video Mode on this machine is really a dirt-bike race hiding behind the words. The bike accelerates on its own down the course, the flippers are your only steering, and the jumps scattered along the track are where the points are — clip the edge of the track instead and it costs you.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Shoot the Summit orbit until it awards Video Mode Is Lit, which arms it at the Tube",
+        "Or collect the Video Mode award straight from the Tube, which starts it immediately",
+        "Engage the left flipper to steer the bike left",
+        "Engage the right flipper to steer the bike right",
+        "Steer into each jump icon as it comes down the track",
+        "Stay off the track edges — crashing into one costs you points",
+        "Reach the finish line for the completion bonus"
+      ],
+      "reward": "10,000,000 to 25,000,000 for every jump you steer into, plus 25,000,000 for finishing the track. Crashing into the track edge takes 10,000,000 off your video mode total."
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "fifty-million-launch",
+      "title": "Fifty Off the Plunge",
+      "desc": "Choose the flipper skill shot at the launch and hit the Jump Ramp on the fly for the 50M award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-flipper-jump"
+    },
+    {
+      "id": "outlane-insurance",
+      "title": "Insurance Armed",
+      "desc": "Hit the Cliff standups to light the left-outlane kickback, then have it actually save a ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strat-progression-opener"
+    },
+    {
+      "id": "three-in-the-hole",
+      "title": "Three Balls Held",
+      "desc": "Drop the Skydive target and lock all three balls to start the standard multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-regular"
+    },
+    {
+      "id": "full-jackpot-cycle",
+      "title": "Whole Ladder in One Multiball",
+      "desc": "During a multiball collect the Skull jackpot, the Skydive jackpot and the Jump Ramp super jackpot in the same ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-mb-jackpot"
+    },
+    {
+      "id": "cross-to-payback",
+      "title": "Ramps Crossed",
+      "desc": "Alternate the Jump and Hairpin ramps three times each to light Payback Time.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-super-cross"
+    },
+    {
+      "id": "jump-value-maxed",
+      "title": "Jumps Topped Out",
+      "desc": "Loop the Jump Ramp back to back until the consecutive jump value reaches its 25M ceiling.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-jump-build"
+    },
+    {
+      "id": "extra-ball-banked",
+      "title": "One More Ball",
+      "desc": "Loop the left-orbit raceway enough times to light an extra ball and collect it at the Skull.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-raceway-eb"
+    },
+    {
+      "id": "wheel-to-first",
+      "title": "Front of the Pack",
+      "desc": "Advance the steering wheel through third and second place to reach the first-place award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-track-steering"
+    },
+    {
+      "id": "over-the-edge-started",
+      "title": "Two Balls off the Wheel",
+      "desc": "Collect Over the Edge from the steering wheel to start its two-ball multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-over-the-edge"
+    },
+    {
+      "id": "jump-this-doubled",
+      "title": "Outlane Turned Multiball",
+      "desc": "Trigger Jump This! at the left outlane with the kickback lit so it becomes a two-ball multiball, then land a jump.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-jump-this"
+    },
+    {
+      "id": "downhill-hundred",
+      "title": "Downhill Banked Full",
+      "desc": "Build the Snow Challenge downhill value to its 100M maximum before ending the mode on the Hairpin Ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-snow"
+    },
+    {
+      "id": "every-arrow-lit",
+      "title": "Clean Sweep in the Air",
+      "desc": "Complete every lit arrow during Air Challenge for the full completion bonus.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-air"
+    },
+    {
+      "id": "summit-spinner-super",
+      "title": "Spinner Turned Loose",
+      "desc": "Build the Summit awards until Super Spinner lights, then rip the Screamer spinner while it is boosted.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strat-summit-awards"
+    },
+    {
+      "id": "five-minors-cleared",
+      "title": "Five Sports Survived",
+      "desc": "Start and finish all five minor challenges in one game so the majors unlock.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "wizard-mym-qualify"
+    },
+    {
+      "id": "no-limits-run",
+      "title": "First Major Opened",
+      "desc": "Start No Limits at the Skull and collect at least four major shots during it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-no-limits"
+    },
+    {
+      "id": "fear-fest-jackpot",
+      "title": "Fest Jackpot Collected",
+      "desc": "Start Fear Fest, build its jackpot with major shots, and collect it at least twice.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-fear-fest"
+    },
+    {
+      "id": "maker-reached",
+      "title": "Face to Face",
+      "desc": "Work all the way through the challenge ladder and start the four-ball wizard mode at the Skull.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-mym-qualify"
+    },
+    {
+      "id": "maker-super-farm",
+      "title": "Five Supers in the Void",
+      "desc": "In the wizard mode, collect the 200M Jump Loop super jackpot five times in a single run.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-mym-farm"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-flipper-skill-jump",
+      "title": "Cycle, Launch, Jump",
+      "text": "Tap a flipper button at the shooter to cycle the plunge award to Flipper Skill Shot, launch, and take the Jump Ramp on the fly the moment the ball reaches the right flipper. There is no cradle in this one, so the shot has to be decided before the ball arrives.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-flipper-jump",
+      "shots": [
+        "shooter",
+        "right-flipper",
+        "jump-ramp"
+      ]
+    },
+    {
+      "id": "drill-super-cross-alternation",
+      "title": "Jump, Hairpin, Repeat",
+      "text": "Alternate the Jump Ramp and the Hairpin ramp without stopping. Taking the Hairpin first lets the magnets grab and re-feed the ball, so lead with it when you want the rhythm to hold together.",
+      "reps": "6 alternating shots",
+      "focus": "flow",
+      "goal": "combo-super-cross",
+      "shots": [
+        "jump-ramp",
+        "hairpin-ramp"
+      ]
+    },
+    {
+      "id": "drill-consecutive-jumps",
+      "title": "Consecutive Jumps",
+      "text": "Shoot the Jump Ramp, let the magnet sling it into the Jump Loop, catch the return on the right flipper and go straight back. Every jump you make also stacks permanent end-of-ball bonus, so the streak is worth more than the shot in front of you.",
+      "reps": "5 consecutive jumps",
+      "focus": "accuracy",
+      "goal": "combo-jump-build",
+      "shots": [
+        "jump-ramp",
+        "right-flipper",
+        "jump-loop"
+      ]
+    },
+    {
+      "id": "drill-trap-and-farm",
+      "title": "Park Them, Then Farm",
+      "text": "With more than one ball alive, trap the spare on the left flipper and work the Jump Loop from the upper-right flipper alone. The loop stays lit in the wizard mode, so the whole round comes down to whether you can hold one ball still while shooting with another.",
+      "reps": "3 multiballs",
+      "focus": "ball-control",
+      "goal": "wizard-mym-farm",
+      "shots": [
+        "left-flipper",
+        "upper-flipper",
+        "jump-loop"
+      ]
+    },
+    {
+      "id": "drill-raceway-consecutive",
+      "title": "Five In A Row On The Raceway",
+      "text": "Loop the Screamer orbit five times consecutively, then collect at the Skull. There is no playfield multiplier anywhere on this machine, so extra balls are the real multiplier and this is where they come from.",
+      "reps": "5 consecutive loops",
+      "focus": "accuracy",
+      "goal": "mult-raceway-eb",
+      "shots": [
+        "screamer",
+        "skull"
+      ]
+    },
+    {
+      "id": "drill-kickback-first",
+      "title": "Arm The Kickback First",
+      "text": "Take the Cliff standups early on every ball and keep the kickback lit. The left outlane is the only one with a save behind it and the right outlane has nothing at all, so this is the cheapest insurance the machine sells.",
+      "reps": "every ball start",
+      "focus": "accuracy",
+      "goal": "strat-progression-opener",
+      "shots": [
+        "cliff",
+        "kickback",
+        "right-outlane"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "No action button — this is a 1995 Williams. The cabinet front carries a start button, an extra-ball buy-in, and a launch button on the right that fires your plunge and then goes quiet for the rest of the ball. The plunge awards cycle on their own; a flipper button just speeds the cycle along."
+  },
+  "howItPlays": {
+    "objective": "No Fear is a fast extreme-sports Williams game with no playfield multiplier, so extra balls and the magnet-slung Jump Ramp are your real force multiplier. Climb the five Minor Challenges and two Major Challenges to reach the Meet Your Maker wizard and its lit 200M Jump Loop.",
+    "loop": [
+      "At the launch, cycle to the plunge award you want -- a flipper tap runs the choices past faster -- then fire, since Flipper Skill Shot feeds the ball to the Jump Ramp for a live 50M.",
+      "Loop the Jump Ramp so the magnet slings the ball up into the elevated Jump Loop, catch the return on the upper-right flipper, and repeat to climb the consecutive value while banking permanent end-of-ball bonus.",
+      "Loop the Screamer orbit to build the Raceway ladder and light an extra ball at the Skull.",
+      "Drop the Skydive target to light locks, lock three balls, and run the Skull, Skydive, and Jump Ramp jackpot sequence.",
+      "Start each Challenge at the Skull and clear the ladder toward Meet Your Maker."
+    ],
+    "lights": [
+      {
+        "id": "plunge-awards",
+        "name": "Plunge Award Cycle",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "shooter"
+          }
+        ],
+        "lit": "The launch shows one of five picks -- Start Challenge, a Super Cross level, an Advance Raceway step, a Ball Lock, or the Flipper Skill Shot -- and only the one on display is what your plunge gives you.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "the awards rotate on their own, but a tap of a flipper button runs them past faster so you can launch on the one you want instead of whatever happens to be showing",
+          "when": "before you fire the launch button"
+        },
+        "then": "Land Flipper Skill Shot to send the ball straight at the Jump Ramp for a live 50M, or take Ball Lock to auto-lock a ball for 12M toward multiball, and note the award resets and rotates fresh on every ball.",
+        "goals": [
+          "skillshot-flipper-jump",
+          "skillshot-ball-lock"
+        ]
+      },
+      {
+        "id": "jump-ramp",
+        "name": "Jump Ramp & Jump Loop",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "jump-ramp"
+          },
+          {
+            "shot": "jump-loop"
+          }
+        ],
+        "lit": "The Jump Ramp is the marquee shot, and a magnetic accelerator slings every made ramp up into the elevated Jump Loop that arcs over the Skull.",
+        "flashing": null,
+        "control": null,
+        "then": "Catch the return on the upper-right flipper and re-loop to ratchet the consecutive value from 5M toward its 25M cap, banking a permanent 5M end-of-ball bonus on every jump. In Meet Your Maker every trip through the Jump Loop pays a 200M Super Jackpot that never goes dark, so trapping a ball and hammering the loop is the classic way to run up the score.",
+        "goals": [
+          "combo-jump-build",
+          "wizard-mym-farm"
+        ]
+      },
+      {
+        "id": "super-cross",
+        "name": "Super Cross Ramps",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "jump-ramp"
+          },
+          {
+            "shot": "hairpin-ramp"
+          }
+        ],
+        "lit": "Alternating the Jump Ramp and the Hairpin Ramp scores a 15M combo on each shot while the rhythm holds.",
+        "flashing": null,
+        "control": null,
+        "then": "Lead with the Hairpin so the magnets can catch the ball and feed it back to you, and complete three alternating shots on each ramp to light Payback Time. Start Payback, with every major shot lit for 25M, just ahead of Over the Edge so the two high-scoring modes overlap.",
+        "goals": [
+          "combo-super-cross",
+          "combo-payback-over-edge"
+        ]
+      },
+      {
+        "id": "raceway",
+        "name": "Raceway Extra Ball Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "screamer"
+          },
+          {
+            "shot": "skull"
+          }
+        ],
+        "lit": "Consecutive Screamer orbit loops climb the Raceway award 5M, 10M, 15M, 20M, and the count has to stay unbroken to keep climbing.",
+        "flashing": null,
+        "control": null,
+        "then": "Five loops in a row light the extra ball, collected at the Skull scoop, and with no playfield multiplier on this machine extra balls are the real multiplier. Later extra balls demand more consecutive loops per level, so protect the streak.",
+        "goals": [
+          "mult-raceway-eb"
+        ]
+      },
+      {
+        "id": "summit",
+        "name": "Summit Award Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "summit"
+          },
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "Repeating the right orbit climbs the Summit list -- 5M, then a bonus round lit, then a boosted spinner, then a flat 10M for every shot after -- and the whole ladder starts over from scratch on each new ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Loop Summit to reach the boosted-spinner award, then tear into the Screamer spinner while it is boosted for a fat payout on every spin. Cradle the return between attempts, since a missed orbit comes back fast.",
+        "goals": [
+          "strat-summit-awards"
+        ]
+      },
+      {
+        "id": "locks",
+        "name": "Ball Locks & Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "skydive-drop"
+          },
+          {
+            "shot": "skydive"
+          },
+          {
+            "shot": "skull"
+          },
+          {
+            "shot": "jump-ramp"
+          }
+        ],
+        "lit": "Dropping the Skydive target lights Lock at both the Skydive and the Skull, and on the first multiball the lock stays lit between locks.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls for 12M each to start the three-ball multiball, then run the jackpot sequence -- Skull for 50M, Skydive for 100M, Jump Ramp for the 200M Super -- and repeat. Every multiball after the first makes you knock the drop target down again for each lock, and by the third lock only the Skydive still accepts one.",
+        "goals": [
+          "mb-regular",
+          "combo-mb-jackpot"
+        ]
+      },
+      {
+        "id": "steering-wheel",
+        "name": "Steering Wheel (Track)",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "track-left"
+          },
+          {
+            "shot": "track-right"
+          }
+        ],
+        "lit": "Either Track orbit around the Skull advances the Steering Wheel -- 3rd Place pays 15M, 2nd pays 25M, and 1st opens a rotating award list.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep looping, since either side counts as one Track shot, to reach 1st Place and its rotating awards, and win your third Race to start the Over the Edge two-ball multiball.",
+        "goals": [
+          "mult-track-steering",
+          "mb-over-the-edge"
+        ]
+      },
+      {
+        "id": "kickback",
+        "name": "Kickback & Cliff",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "cliff",
+            "lamps": 2
+          },
+          {
+            "shot": "kickback"
+          },
+          {
+            "shot": "left-outlane"
+          }
+        ],
+        "lit": "Hitting the Cliff standups relights the Kickback in the left outlane -- the game's only outlane with a save sitting behind it, worth about 2.5M -- while the right outlane has nothing at all.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep the Kickback armed as the cheapest drain insurance the machine sells, and trigger Jump This at a lit outlane while the Kickback is lit to spawn a second ball for 30M-per-jump farming.",
+        "goals": [
+          "combo-jump-this"
+        ]
+      },
+      {
+        "id": "challenge-ladder",
+        "name": "Challenge Ladder",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "skull"
+          }
+        ],
+        "lit": "The Skull starts whatever Challenge is next in line, stepping through the five Minor Challenges and then the No Limits and Fear Fest Major Challenges.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear or safely time out each Challenge to move up the ladder, and after No Limits spell NO FEAR across the lit major shots to arm Fear Fest, then spell it a second time to arm the Meet Your Maker wizard back at the Skull. The riskier Challenges are worth timing out for their flat award rather than forcing.",
+        "goals": [
+          "mode-dirt",
+          "mode-water",
+          "mode-snow",
+          "mode-air",
+          "mb-no-limits",
+          "mb-fear-fest",
+          "wizard-mym-qualify"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "For a safe start, cycle to Start Challenge and grind the Screamer Raceway toward an extra ball, and take a Cliff standup early to arm the Kickback, since only the left outlane has a save waiting behind it. A confident player can instead take Flipper Skill Shot for a 50M Jump and begin the consecutive-jump build.",
+        "goals": [
+          "strat-progression-opener",
+          "mult-raceway-eb",
+          "skillshot-flipper-jump"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Loop the Raceway for extra balls and build consecutive Jump Ramp value, then run Super Cross to light Payback Time. Start locking at the Skydive and Skull for the three-ball multiball and its 50M, 100M, and 200M jackpot sequence.",
+        "goals": [
+          "mult-raceway-eb",
+          "combo-super-cross",
+          "mb-regular"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Climb the five Minor Challenges and the No Limits and Fear Fest Majors to reach Meet Your Maker, the four-ball wizard. Trap a ball on the left flipper and hammer the Jump Loop off the upper-right flipper for 200M Super Jackpots that stay lit -- the classic grand-champion farm.",
+        "goals": [
+          "wizard-mym-qualify",
+          "wizard-mym-farm",
+          "combo-jump-build"
+        ]
+      }
+    ]
+  }
+}

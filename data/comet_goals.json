@@ -1,0 +1,811 @@
+{
+  "machine": "Comet (Williams, 1985)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Feather the plunge so the ball settles in the pocket above the top lanes and trickles back down through one of them. Give it too much and it never stops up there — the Corkscrew hands it straight back to your flippers."
+    },
+    {
+      "id": "top-lanes",
+      "name": "1-9-8-6 Rollover Lanes",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Four lanes across the top. Rolling one to light it scores 1,000; completing all four scores 50,000 and starts a 20-second playfield multiplier. The right flipper button shifts which lanes are lit."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "A trio of bumpers sits behind the Comet ramp, tucked under the top lanes. Every hit pays 1,000, and when the ball finally escapes it can drop out on the left of the ramp or on the right."
+    },
+    {
+      "id": "comet-ramp",
+      "name": "Comet Ramp",
+      "type": "ramp",
+      "x": 0.48,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Right down the middle, returning the ball to the lower right. Come up short and it rolls back into the centre of the playfield — sometimes straight down the middle.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "funhouse",
+      "name": "Funhouse",
+      "type": "kicker",
+      "x": 0.66,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "An eject hole just right of the Comet ramp. Worth 10,000 any time, and it collects your Rabbit bonus when the Rabbit bank has been completed."
+    },
+    {
+      "id": "cycle-jump",
+      "name": "Cycle Jump Ramp",
+      "type": "ramp",
+      "x": 0.82,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "In the upper right above the Funhouse. The ball flies off it into one of three rings, and the higher the ring the more it pays. This is where the million-point shot lives."
+    },
+    {
+      "id": "cycle-eject",
+      "name": "Cycle Jump Eject Hole",
+      "type": "kicker",
+      "x": 0.72,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Sits just right of the lower right pop bumper. Once the ball drops in here — off the ramp or out of the bumpers — the Jump resets and has to be relit."
+    },
+    {
+      "id": "corkscrew",
+      "name": "Corkscrew Ramp",
+      "type": "ramp",
+      "x": 0.18,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Upper left corner. Worth 20,000 a ride, and it is where the Duck bonus, the extra ball and the special get collected."
+    },
+    {
+      "id": "duck-targets",
+      "name": "Duck Targets",
+      "type": "target-bank",
+      "x": 0.12,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Four targets above the left outlane. Complete the bank to light the Corkscrew. A duck scores 2,000 on its first hit, 1,000 on every hit after."
+    },
+    {
+      "id": "rabbit-targets",
+      "name": "Rabbit Targets",
+      "type": "target-bank",
+      "x": 0.88,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Four targets above the right outlane. Completing the bank lights the Funhouse, and completing both banks is what lights the Comet ramp."
+    },
+    {
+      "id": "dummy-target",
+      "name": "Dummy Drop Target",
+      "type": "drop-target",
+      "x": 0.32,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Knock the dummy down and the bull's-eye behind it is exposed for a short time. The machine has something to say about it every time."
+    },
+    {
+      "id": "bullseye",
+      "name": "Bull's-Eye",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Hidden behind the dummy. Every hit before the drop target resets steps the bonus multiplier up, and once it is maxed each hit is worth 20,000 instead."
+    },
+    {
+      "id": "left-return-lane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Worth 5,000, and the only thing that lights all three Cycle Jump rings. There is no right return lane on this machine, so this rollover carries real weight."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Worth 10,000, advances the Duck bonus by three, and carries a Special light. Hit the outlane rubber in the right spot with a nudge and the ball can come back."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Worth 10,000, advances the Rabbit bonus by three, and carries its own Special light. Both outlanes set off the train whistle when you drain."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.35,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Funhouse, the Cycle Jump and the Rabbit targets. Mind the centre gap as well — a small post wearing a rubber O-ring is planted in it."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.65,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Corkscrew, the Duck targets and the dummy. Its button also does the lane change on the 1-9-8-6 lanes, even when the ball is nowhere near them."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Plunge Into The Lanes",
+      "category": "skillshot",
+      "summary": "Your plunge wants just enough steam to park the ball in the pocket above the top lanes, so that it rolls back down through one of them. Do that and the pop bumpers take over, eventually spitting the ball out on the left of the Comet ramp or on the right. Over-plunge and none of it happens: the Corkscrew catches the ball and delivers it back to your flippers.",
+      "difficulty": 1,
+      "reward": "A lit lane and a controlled entry",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Feather the plunge into the rollover lanes",
+          "detail": "You want the ball dropping back down through one of the four lanes, not blasting past them. Lighting a lane on the way through is worth 1,000 and is the first step toward the playfield multiplier."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "the-lanes",
+      "title": "Light 1-9-8-6",
+      "category": "multiplier",
+      "summary": "Completing the four top lanes scores 50,000 and switches on the playfield multiplier for twenty seconds. Which multiplier you get depends on which ball you are on, and the last ball is the big one — this is the single most important habit to build on this machine.",
+      "difficulty": 2,
+      "reward": "50,000 and a 20-second playfield multiplier",
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Use the lane change",
+          "detail": "The right flipper button shifts which lanes are lit, and using it constantly is the whole trick to completing 1-9-8-6."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Complete all four",
+          "detail": "On a five-ball game the multiplier runs 2x, 3x, 2x, 2x and then 5x on the last ball. On three-ball it is 2x, 3x and then 5x."
+        },
+        {
+          "shot": "comet-ramp",
+          "action": "Have somewhere to spend it",
+          "detail": "Twenty seconds is not long — know which shot you are taking before you complete the lanes."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "ducks",
+      "title": "The Duck Bank",
+      "category": "progression",
+      "summary": "Four targets above the left outlane. Clearing the bank lights the Corkscrew, and the left outlane pushes your Duck bonus up by three every time you drain there. The first hit on each duck is worth 2,000 and every hit after that is worth 1,000.",
+      "difficulty": 1,
+      "reward": "Lights the Corkscrew",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Clear all four",
+          "detail": "They sit in a line above the left outlane, so shots that come up short still tend to find them."
+        },
+        {
+          "shot": "corkscrew",
+          "action": "Ride the Corkscrew to collect",
+          "detail": "The Corkscrew is worth 20,000 and cashes the Duck bonus when lit."
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "rabbits",
+      "title": "The Rabbit Bank",
+      "category": "progression",
+      "summary": "The mirror image on the right. Four targets above the right outlane, and clearing them lights the Funhouse eject hole to collect your Rabbit bonus. The right outlane advances that bonus by three on a drain.",
+      "difficulty": 1,
+      "reward": "Lights the Funhouse",
+      "steps": [
+        {
+          "shot": "rabbit-targets",
+          "action": "Clear all four",
+          "detail": "Same idea as the ducks, on the opposite side of the playfield."
+        },
+        {
+          "shot": "funhouse",
+          "action": "Drop into the Funhouse",
+          "detail": "Worth 10,000 on its own, plus the Rabbit bonus when it is lit."
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "comet-ride",
+      "title": "Ride The Comet",
+      "category": "progression",
+      "summary": "Complete both the Duck and Rabbit banks and the centre ramp lights up. Unlit it is 10,000; lit it pays 30,000 and then climbs — 50,000 on the second ride, 100,000 and an extra ball on the third, 100,000 and a special on the fourth.",
+      "difficulty": 2,
+      "reward": "Up to 100,000 a ride, plus an extra ball and a special",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Complete both banks",
+          "detail": "Ducks and Rabbits together is what lights the ramp — one bank alone only lights its own collect."
+        },
+        {
+          "shot": "comet-ramp",
+          "action": "Keep the rides coming",
+          "detail": "Each ride raises the value of the next one, but only if you make it inside the time limit; miss the window and it drops back to 30,000, or the lights go out entirely once you have banked the first 100,000."
+        },
+        {
+          "shot": "rabbit-targets",
+          "action": "Rebuild after four rides",
+          "detail": "Completing all four rides turns the lights off, and both banks have to be cleared again to relight the ramp."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "dunk-the-dummy",
+      "title": "Dunk The Dummy",
+      "category": "multiplier",
+      "summary": "Knock the dummy drop target over and the bull's-eye behind it is exposed for a short window. Hit the bull's-eye before the target resets and your bonus multiplier steps up — 2x, then 3x, 4x and 5x. After that each hit is simply worth 20,000.",
+      "difficulty": 2,
+      "reward": "Bonus multiplier up to 5x, then 20,000 a hit",
+      "steps": [
+        {
+          "shot": "dummy-target",
+          "action": "Drop the dummy",
+          "detail": "The machine talks back every time you do it."
+        },
+        {
+          "shot": "bullseye",
+          "action": "Take the bull's-eye quickly",
+          "detail": "The window closes when the drop target resets, so this really is a two-shot combination rather than two separate visits."
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "cycle-jump",
+      "title": "The Cycle Jump",
+      "category": "strategy",
+      "summary": "Three rings sit at the end of the jump ramp and they pay by height: 10,000 for the lower, 20,000 for the centre, 30,000 for the upper — or 20,000, 50,000 and 200,000 with the rings lit. The left return lane is the only thing that lights them.",
+      "difficulty": 2,
+      "reward": "Up to 200,000 for the upper ring",
+      "steps": [
+        {
+          "shot": "left-return-lane",
+          "action": "Roll the left return lane",
+          "detail": "This lights all three rings at once. There is no right return lane, so the right side cannot do this for you."
+        },
+        {
+          "shot": "cycle-jump",
+          "action": "Aim high",
+          "detail": "The upper ring is worth ten times the lower one when lit, and it is the only ring that can pay a million."
+        },
+        {
+          "shot": "cycle-eject",
+          "action": "Expect the reset",
+          "detail": "Once the ball reaches the eject hole — from the ramp or out of the bumpers — the Jump resets and you need another left return lane."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "million",
+      "title": "The Million Point Shot",
+      "category": "wizard",
+      "summary": "The reason this machine exists. On your last ball, complete 1-9-8-6 for the 5x playfield multiplier, have the Cycle Jump lit, and land the upper ring before the multiplier expires. The game announces it, the backglass goes wild, and you have a million points.",
+      "difficulty": 3,
+      "reward": "1,000,000",
+      "steps": [
+        {
+          "shot": "left-return-lane",
+          "action": "Light the rings first",
+          "detail": "Set this up before you complete the lanes — you only have twenty seconds once the multiplier starts."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Complete 1-9-8-6 on the last ball",
+          "detail": "The 5x multiplier only appears on your final ball, which is what makes this a last-ball shot."
+        },
+        {
+          "shot": "cycle-jump",
+          "action": "Land the upper ring",
+          "detail": "The lower and centre rings do not pay the million — it has to be the top one, and it has to be inside the window."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "cycle-extra-ball",
+      "title": "The Cycle Jump Extra Ball",
+      "category": "strategy",
+      "summary": "Complete both target banks a second time and the Cycle Jump starts a timed ladder for an extra ball: the lower ring lights for five seconds, then the centre for ten, then the upper for fifteen. Miss all three and the sequence simply starts again.",
+      "difficulty": 3,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Clear both banks a second time",
+          "detail": "The second completion is what arms this, on top of relighting the Comet ramp."
+        },
+        {
+          "shot": "cycle-jump",
+          "action": "Take whichever ring is lit",
+          "detail": "The upper ring gets the longest window at fifteen seconds, so if you miss the first two, do not panic."
+        },
+        {
+          "shot": "rabbit-targets",
+          "action": "Rebuild afterwards",
+          "detail": "Once the extra ball is collected, both banks have to be completed again to relight it."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "corkscrew-special",
+      "title": "The Corkscrew Special",
+      "category": "strategy",
+      "summary": "A third completion of both banks lights more extra balls and specials around the playfield, and the Corkscrew becomes the place to cash them. It is worth 20,000 a ride regardless, so it is never a wasted shot.",
+      "difficulty": 3,
+      "reward": "Special or extra ball at the Corkscrew",
+      "steps": [
+        {
+          "shot": "duck-targets",
+          "action": "Complete both banks a third time",
+          "detail": "The banks are the engine of this entire machine — almost everything good comes from clearing them repeatedly."
+        },
+        {
+          "shot": "corkscrew",
+          "action": "Ride the Corkscrew while lit",
+          "detail": "It scores the special or the extra ball, whichever is currently lit for it."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "outlane-bonuses",
+      "title": "Make The Outlanes Pay",
+      "category": "strategy",
+      "summary": "Draining is not free of value here. Each outlane is worth 10,000, the left one pushes your Duck bonus up by three and the right one does the same for Rabbits, and both carry Special lights. The left outlane will occasionally give the ball back off its rubber if you nudge well.",
+      "difficulty": 2,
+      "reward": "10,000, three bonus advances, and a chance at a Special",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Watch the Special lights",
+          "detail": "Both outlanes carry them, so an outlane drain with one lit is a good outcome rather than a bad one."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Take the bonus advances",
+          "detail": "Three at a time is worth more than picking targets off one by one."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Nudge the left side",
+          "detail": "Catching the outlane rubber in the right place with some English can send the ball back into play."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bonus-collect",
+      "title": "Collect Your Bonuses",
+      "category": "strategy",
+      "summary": "The two bonus counters are collected in two different places, and forgetting to cash them is the most common way to leave points behind. Ducks are collected on the Corkscrew, Rabbits in the Funhouse, and the bull's-eye multiplier applies to all of it.",
+      "difficulty": 2,
+      "reward": "Bonus x up to 5",
+      "steps": [
+        {
+          "shot": "bullseye",
+          "action": "Build the multiplier first",
+          "detail": "A 5x bonus multiplier is worth far more than another lap of the target banks."
+        },
+        {
+          "shot": "corkscrew",
+          "action": "Collect the Ducks",
+          "detail": "Only the Corkscrew pays this one."
+        },
+        {
+          "shot": "funhouse",
+          "action": "Collect the Rabbits",
+          "detail": "Only the Funhouse pays this one.",
+          "link": "none"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "reserved-ball",
+      "title": "The Ball That Never Started",
+      "category": "secret",
+      "summary": "A merciful little rule. If a launched ball fails to reach the top of the playfield, comes back down and drains without scoring a single point, the machine serves it again. It only applies to that specific case — a ball that scored anything at all is gone.",
+      "difficulty": 1,
+      "reward": "The ball back",
+      "steps": [],
+      "instructions": [
+        "The ball has to fail to reach the top on the launch and then drain back through the playfield.",
+        "It must score nothing at all on the way down — one switch and the game counts the ball as played.",
+        "Do not try to engineer this. Its value is knowing you have not lost a ball when a weak plunge dribbles away.",
+        "If your plunges are dying short regularly, the shooter rod tip or the playfield pitch is the thing to look at, not your technique."
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "playfield-setup",
+      "title": "How The Machine Is Set Up",
+      "category": "secret",
+      "summary": "Comet plays very differently from one machine to the next, and the difference is mostly physical. Five adjustable posts around the return lane and outlanes decide how liberal the game is, and pitch decides whether the ramps are reachable at all.",
+      "difficulty": 1,
+      "reward": "Knowing what you are up against",
+      "steps": [],
+      "instructions": [
+        "Front to back, six degrees or so is the nominal pitch; across the width, check for lean at the top of the playfield and again at the bottom, because neither end should be leaning.",
+        "Widen the return lane out and the machine turns forgiving; widen the outlanes out and it turns brutal.",
+        "Most timed features run somewhere in the fifteen to twenty second range, but operators can change them.",
+        "Before your first ball, look at the outlane posts. They tell you how much risk each ramp attempt is really worth."
+      ],
+      "fx": "gear"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "cm-lanes",
+      "title": "Nineteen Eighty-Six",
+      "desc": "Complete the 1-9-8-6 rollover lanes to light the playfield multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "the-lanes"
+    },
+    {
+      "id": "cm-ducks",
+      "title": "Four Ducks",
+      "desc": "Clear the Duck bank and light the Corkscrew.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "ducks"
+    },
+    {
+      "id": "cm-rabbits",
+      "title": "Four Rabbits",
+      "desc": "Clear the Rabbit bank and light the Funhouse.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "rabbits"
+    },
+    {
+      "id": "cm-comet",
+      "title": "Ride The Comet",
+      "desc": "Complete both banks and take a lit Comet ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "comet-ride"
+    },
+    {
+      "id": "cm-comet-eb",
+      "title": "Third Ride",
+      "desc": "Climb the Comet ride ladder to the 100,000 extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "comet-ride"
+    },
+    {
+      "id": "cm-dummy",
+      "title": "Hit Me",
+      "desc": "Drop the dummy and hit the bull's-eye before it resets.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "dunk-the-dummy"
+    },
+    {
+      "id": "cm-5x",
+      "title": "Five Times Bonus",
+      "desc": "Take the bonus multiplier all the way to 5x.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dunk-the-dummy"
+    },
+    {
+      "id": "cm-upper-ring",
+      "title": "Upper Ring",
+      "desc": "Light the rings from the left return lane and land the upper ring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "cycle-jump"
+    },
+    {
+      "id": "cm-cycle-eb",
+      "title": "Jump For It",
+      "desc": "Collect the Cycle Jump extra ball from the timed ring sequence.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "cycle-extra-ball"
+    },
+    {
+      "id": "cm-million",
+      "title": "A Million",
+      "desc": "Land the upper ring on your last ball with 5x lit for a million points.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "million"
+    }
+  ],
+  "drills": [
+    {
+      "id": "feather-into-the-lanes",
+      "title": "Feather Into The Lanes",
+      "text": "Plunge with just enough steam to park the ball in the pocket above the top lanes so it trickles back down through one of them. Over-plunge and the Corkscrew simply hands the ball back to your flippers with nothing collected.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "top-lanes",
+        "corkscrew"
+      ]
+    },
+    {
+      "id": "dummy-then-bullseye",
+      "title": "Dummy, Then Bull's-Eye",
+      "text": "Drop the dummy and put the next shot on the bull's-eye behind it before the target resets. Treat it as one two-shot combination rather than two separate visits, because the window closes on its own.",
+      "reps": "10 pairs",
+      "focus": "accuracy",
+      "goal": "dunk-the-dummy",
+      "shots": [
+        "dummy-target",
+        "bullseye"
+      ]
+    },
+    {
+      "id": "banks-from-both-sides",
+      "title": "Both Banks, Both Flippers",
+      "text": "Ducks and the dummy come off the right flipper; Rabbits, the Funhouse and the Cycle Jump come off the left. Clear one bank from each side in turn until neither flipper is the weak one, because both banks together is what lights the Comet ramp.",
+      "reps": "5 full clears",
+      "focus": "accuracy",
+      "goal": "comet-ride",
+      "shots": [
+        "duck-targets",
+        "rabbit-targets",
+        "left-flipper",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "full-strength-comet-ramp",
+      "title": "Full-Strength Comet Ramp",
+      "text": "Take the centre ramp from a settled ball at full strength only. A shot that comes up short rolls back into the middle of the playfield, and the only thing waiting in the centre gap is a small post wearing a rubber O-ring.",
+      "reps": "15 ramps",
+      "focus": "ball-control",
+      "goal": "comet-ride",
+      "shots": [
+        "comet-ramp"
+      ]
+    },
+    {
+      "id": "left-outlane-nudge",
+      "title": "Nudge The Left Outlane",
+      "text": "Send balls at the left outlane deliberately and work on catching the outlane rubber in the right spot with some English. Hit it in the right place and the ball can come back into play, which makes the left side less lethal than it looks.",
+      "reps": "15 attempts",
+      "focus": "ball-control",
+      "shots": [
+        "left-outlane"
+      ]
+    },
+    {
+      "id": "million-sequence",
+      "title": "Run The Million In Order",
+      "text": "Roll the left return lane to light the rings first, then complete 1-9-8-6, then take the upper ring. Doing it the other way round burns most of your twenty seconds hunting a return lane, and only the top ring pays.",
+      "reps": "5 dry runs, then on a last ball",
+      "focus": "flow",
+      "goal": "million",
+      "shots": [
+        "left-return-lane",
+        "top-lanes",
+        "cycle-jump"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "train",
+  "actionButton": {
+    "present": false,
+    "how": "Nothing dedicated on the cabinet — flippers, a start button and a manual plunger. The right flipper button does pull double duty as lane change, and that is the closest thing to an extra control you get."
+  },
+  "howItPlays": {
+    "objective": "Comet is an early-eighties Williams named for its roller coaster, a carnival of funhouse ejects, ring jumps and duck-and-rabbit target banks. Everything points at one last-ball prize: a five-times playfield multiplier stacked onto a lit upper ring for a full million points.",
+    "loop": [
+      "Feather the plunge into the 1-9-8-6 rollovers, then work the right flipper button to shift the lit lanes and roll all four for fifty thousand and a twenty-second playfield multiplier.",
+      "Clear the Duck bank on the left and the Rabbit bank on the right -- each lights its own collect, and finishing both together lights the Comet ramp down the middle.",
+      "Ride the lit Comet ramp for a value that climbs with every trip, and cash your Duck bonus on the Corkscrew and your Rabbit bonus in the Funhouse.",
+      "Roll the left return lane -- the only shot that lights the three Cycle Jump rings -- then aim high, because only the upper ring can pay the big one.",
+      "On the last ball, stack the five-times multiplier onto a lit upper ring and the machine hands you a million."
+    ],
+    "lights": [
+      {
+        "id": "top-lanes-1986",
+        "name": "1-9-8-6 Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 4
+          }
+        ],
+        "lit": "A lit top lane is one of the four 1-9-8-6 rollovers you have already rolled through; light all four and the game pays fifty thousand and switches a playfield multiplier on for twenty seconds.",
+        "flashing": null,
+        "control": {
+          "input": "right-flipper",
+          "effect": "tapping the right flipper button shifts which of the four lanes are lit, and it answers even while the ball sits down by the flippers, so you can pre-set the lit lanes long before the ball ever reaches the top",
+          "when": "any time, ball up top or not"
+        },
+        "then": "Keep shifting the lit lanes under wherever the ball will roll until all four are in. The multiplier steps up over the course of a game and only reaches five times on your last ball, which is exactly why the million is a last-ball shot -- so know which shot you will spend the twenty seconds on before you finish the lanes.",
+        "goals": [
+          "the-lanes",
+          "skillshot"
+        ]
+      },
+      {
+        "id": "duck-rabbit-banks",
+        "name": "Duck & Rabbit Banks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "duck-targets"
+          },
+          {
+            "shot": "rabbit-targets"
+          }
+        ],
+        "lit": "Two four-target banks flank the outlanes: clearing the Ducks on the left lights the Corkscrew, clearing the Rabbits on the right lights the Funhouse, and finishing both is what lights the Comet ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "These banks drive nearly everything the machine does -- a second clear of both arms an extra ball at the Cycle Jump, a third lights specials around the playfield. Draining is not wasted either: the left outlane bumps your Duck count by three, and the right does the same for the Rabbits.",
+        "goals": [
+          "ducks",
+          "rabbits",
+          "comet-ride"
+        ]
+      },
+      {
+        "id": "comet-ramp-ladder",
+        "name": "Comet Ramp",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "comet-ramp"
+          }
+        ],
+        "lit": "Unlit the centre ramp is worth ten thousand; lit by both banks it jumps to thirty thousand and then rises each trip -- fifty, then a hundred thousand with an extra ball, then a hundred thousand with a special on the fourth ride.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep the rides coming inside the time limit, because a miss drops the value back to thirty thousand, and the fourth ride turns the lights out until you clear both banks again. Take it at full strength from a settled ball -- a short shot rolls back into the middle and down the centre gap.",
+        "goals": [
+          "comet-ride"
+        ]
+      },
+      {
+        "id": "cycle-jump-rings",
+        "name": "Cycle Jump Rings",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-return-lane"
+          },
+          {
+            "shot": "cycle-jump"
+          }
+        ],
+        "lit": "Only the left return lane lights the three rings at the top of the jump ramp, and with no return lane on the right side, that single rollover matters more than it looks.",
+        "flashing": null,
+        "control": null,
+        "then": "With the rings lit, aim high off the jump -- the lower ring pays twenty thousand, the centre fifty, and the upper two hundred thousand, the one ring that can climb all the way to a million. The moment the ball drops into the eject hole the rings go dark, and it takes a fresh left return lane to bring them back.",
+        "goals": [
+          "cycle-jump",
+          "million",
+          "cycle-extra-ball"
+        ]
+      },
+      {
+        "id": "dummy-bullseye",
+        "name": "Dummy & Bull's-Eye",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "dummy-target"
+          },
+          {
+            "shot": "bullseye"
+          }
+        ],
+        "lit": "Drop the dummy target and the bull's-eye it was hiding opens up for a moment; strike that bull's-eye before the dummy resets and the bonus multiplier climbs a step -- two, three, four, then five.",
+        "flashing": null,
+        "control": null,
+        "then": "Play the pair as a single combination -- drop, then bull's-eye -- because the exposed window shuts the moment the target pops back up. Once the multiplier is maxed each hit simply pays twenty thousand, and that multiplier rides on every bonus you cash at the Corkscrew and Funhouse.",
+        "goals": [
+          "dunk-the-dummy"
+        ]
+      },
+      {
+        "id": "corkscrew-funhouse-collects",
+        "name": "Corkscrew & Funhouse Collects",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "corkscrew"
+          },
+          {
+            "shot": "funhouse"
+          }
+        ],
+        "lit": "The Corkscrew in the upper left cashes your Duck bonus and, once you have cleared both banks enough times, an extra ball or a special; the Funhouse eject beside the ramp cashes your Rabbit bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "Build the bull's-eye bonus multiplier first, then collect -- Ducks pay only at the Corkscrew and Rabbits only at the Funhouse, and leaving them uncashed is one of the quietest ways to bleed points on this game. The Corkscrew is worth twenty thousand a ride and the Funhouse ten even unlit, so neither is a wasted shot.",
+        "goals": [
+          "bonus-collect",
+          "corkscrew-special"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "The right flipper button shifts which of the four 1-9-8-6 lanes are lit, and it answers even when the ball is down by the flippers, so you can pre-set the lit lanes before the ball ever reaches the top. Roll all four to score fifty thousand and start a twenty-second playfield multiplier -- and since that multiplier only reaches five times on your last ball, this lane change is the setup for the million-point shot.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the safe carnival points first. Feather a plunge into the rollover lanes, clear the Duck and Rabbit banks since they light almost everything on the machine, and start stepping the bonus multiplier up at the dummy and bull's-eye.",
+        "goals": [
+          "skillshot",
+          "ducks",
+          "rabbits",
+          "dunk-the-dummy"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Complete 1-9-8-6 for the playfield multiplier and know where its twenty seconds will go. Ride the Comet ramp up its ladder, feed the left return lane so the Cycle Jump rings light, and collect your Duck and Rabbit bonuses at full multiplier.",
+        "goals": [
+          "the-lanes",
+          "comet-ride",
+          "cycle-jump",
+          "bonus-collect"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The whole machine is built for one shot: the million. On the last ball the playfield multiplier reaches five times, so light the Cycle Jump rings from the left return lane, complete 1-9-8-6 to turn on the 5x, and land the upper ring before the twenty seconds run out.",
+        "goals": [
+          "million",
+          "cycle-jump",
+          "the-lanes"
+        ]
+      }
+    ]
+  }
+}

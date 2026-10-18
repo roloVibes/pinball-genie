@@ -1,0 +1,1515 @@
+{
+  "machine": "Black Knight: Sword of Rage (Stern Pinball, 2019)",
+  "defaultFx": "quest",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.37,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.63,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "up-right-flipper",
+      "name": "Upper Playfield Right Flipper",
+      "type": "flipper",
+      "x": 0.58,
+      "y": 0.8,
+      "trim": "premium-le",
+      "notes": "Right-hand flipper on the transparent upper deck; fed by the Castle VUK",
+      "playfield": "upper-deck"
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.11,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "The 'R' of RAGE; left ball-save outlane"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "The 'A' of RAGE"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "The 'G' of RAGE"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.89,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "The 'E' of RAGE; guarded by the outlane magnet — press Magna-Save here"
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.28,
+      "y": 0.15,
+      "trim": "all"
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.72,
+      "y": 0.15,
+      "trim": "all"
+    },
+    {
+      "id": "magna-save",
+      "name": "Magna-Save",
+      "type": "magnet",
+      "x": 0.83,
+      "y": 0.23,
+      "trim": "all",
+      "notes": "Action-button magnet above the right outlane; cashes active Supers as a Super Jackpot"
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Outer-left loop; arms/makes U-Turns",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "left-spinner",
+      "name": "Left Spinner",
+      "type": "spinner",
+      "x": 0.11,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Skeleton spinner in the left orbit lane; feeds Supers, KNIGHT MB start, and Triple Knights jackpots"
+    },
+    {
+      "id": "left-drop",
+      "name": "Left 1-Bank Drop",
+      "type": "drop-target",
+      "x": 0.13,
+      "y": 0.55,
+      "trim": "premium-le",
+      "notes": "Feeds the Castle VUK; lights Catapult MB Add-A-Ball. Pro replaces it with a 2nd spinner"
+    },
+    {
+      "id": "lower-left-standups",
+      "name": "Lower Left 2-Bank Target",
+      "type": "standup",
+      "x": 0.13,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Add-Time standups; light the left virtual kickback / ball save"
+    },
+    {
+      "id": "flail-ramp",
+      "name": "Flail Ramp",
+      "type": "ramp",
+      "x": 0.39,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Center-left ramp; raises the shield to light the scoop",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "flail",
+      "name": "Flail",
+      "type": "mech",
+      "x": 0.48,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Motorized mace on the Black Knight; bash to open the ramp / qualify"
+    },
+    {
+      "id": "center-target",
+      "name": "Center Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Front of the Knight; starts Super Modes, collects POWER, hosts hurry-ups"
+    },
+    {
+      "id": "shield-target",
+      "name": "Shield Target",
+      "type": "standup",
+      "x": 0.59,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Small light-lock standup right of the main shield; lights Triple Knights locks"
+    },
+    {
+      "id": "shield-vuk",
+      "name": "Shield Scoop (VUK)",
+      "type": "saucer",
+      "x": 0.65,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Behind the sliding shield; mode start, ball lock, Extra Ball, Mystery",
+      "flipper": "right"
+    },
+    {
+      "id": "right-drops",
+      "name": "Right 3-Bank Drop",
+      "type": "drop-target",
+      "x": 0.85,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "RAGE / Sword-of-Rage bank; charges The Power and relights Magna-Save"
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Far-right U-turn loop; arms/makes U-Turns"
+    },
+    {
+      "id": "bottom-pop",
+      "name": "Bottom Pop Bumper",
+      "type": "bumpers",
+      "x": 0.61,
+      "y": 0.71,
+      "trim": "all"
+    },
+    {
+      "id": "left-pop",
+      "name": "Left Pop Bumper",
+      "type": "bumpers",
+      "x": 0.52,
+      "y": 0.82,
+      "trim": "all"
+    },
+    {
+      "id": "right-pop",
+      "name": "Right Pop Bumper",
+      "type": "bumpers",
+      "x": 0.74,
+      "y": 0.82,
+      "trim": "all"
+    },
+    {
+      "id": "right-electric-gate",
+      "name": "Right Electric Gate",
+      "type": "gate",
+      "x": 0.81,
+      "y": 0.88,
+      "trim": "all"
+    },
+    {
+      "id": "left-electric-gate",
+      "name": "Left Electric Gate",
+      "type": "gate",
+      "x": 0.41,
+      "y": 0.95,
+      "trim": "all"
+    },
+    {
+      "id": "top-lane-left",
+      "name": "Top Lane Left (W)",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.96,
+      "trim": "all",
+      "notes": "First WAR top lane"
+    },
+    {
+      "id": "top-lane-center",
+      "name": "Top Lane Center (A)",
+      "type": "lane",
+      "x": 0.61,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Second WAR top lane"
+    },
+    {
+      "id": "top-lane-right",
+      "name": "Top Lane Right (R)",
+      "type": "lane",
+      "x": 0.71,
+      "y": 0.96,
+      "trim": "all",
+      "notes": "Third WAR top lane"
+    },
+    {
+      "id": "castle-vuk",
+      "name": "Castle VUK",
+      "type": "mech",
+      "x": 0.1,
+      "y": 0.82,
+      "trim": "premium-le",
+      "notes": "Black Castle VUK; launches the ball to the upper playfield"
+    },
+    {
+      "id": "auto-plunger",
+      "name": "Auto Plunger / Plunge",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.04,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "lane",
+      "x": 0.96,
+      "y": 0.22,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-diverter",
+      "name": "Shooter-Lane Diverter",
+      "type": "diverter",
+      "x": 0.93,
+      "y": 0.55,
+      "trim": "premium-le",
+      "notes": "Routes the plunge to the upper or lower playfield"
+    },
+    {
+      "id": "up-orbit",
+      "name": "Upper Playfield Orbit",
+      "type": "loop",
+      "x": 0.46,
+      "y": 0.93,
+      "trim": "premium-le",
+      "playfield": "upper-deck",
+      "flipper": "up-right-flipper"
+    },
+    {
+      "id": "up-target",
+      "name": "Upper Playfield Target",
+      "type": "standup",
+      "x": 0.63,
+      "y": 0.86,
+      "trim": "premium-le",
+      "notes": "Catapult lock target; relights Catapult locks and raises the Super multiplier",
+      "playfield": "upper-deck",
+      "flipper": "up-right-flipper"
+    },
+    {
+      "id": "catapult",
+      "name": "Catapult (Upper Lock)",
+      "type": "captive",
+      "x": 0.5,
+      "y": 0.97,
+      "trim": "premium-le",
+      "notes": "3-ball physical lock that launches balls back down for Catapult Multiball",
+      "playfield": "upper-deck",
+      "flipper": "up-right-flipper"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-super-pro",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper through the plunge, then hit one of the three center shots — flail, center target or shield — for 1.5M, plus 500K more on each successive Super Skill Shot.",
+      "difficulty": 2,
+      "reward": "1.5M +500K each additional",
+      "steps": [
+        {
+          "shot": "auto-plunger",
+          "action": "Plunge through to the flippers",
+          "detail": "Sets up the Super Skill Shot instead of the standard WAR-lane plunge A different award from the top-lane skill shot, which needs the ball to enter the lit WAR lane with the left flipper held and no lane change, and pays 3x a standard skill shot"
+        },
+        {
+          "shot": "center-target",
+          "action": "Plunge through, then hit one of the three center shots (flail / center target / shield)",
+          "detail": "Sets up the Super Skill Shot instead of the standard WAR-lane plunge A different award from the top-lane skill shot, which needs the ball to enter the lit WAR lane with the left flipper held and no lane change, and pays 3x a standard skill shot",
+          "technique": [
+            "hold-flipper"
+          ]
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-catapult",
+      "title": "Catapult Super Skill Shot",
+      "category": "skillshot",
+      "summary": "On Premium/LE, full-plunge to lock the ball directly in the upper-playfield Catapult for 2M and a head start on Catapult Multiball.",
+      "difficulty": 3,
+      "reward": "2M +500K each additional (premium-le)",
+      "steps": [
+        {
+          "shot": "catapult",
+          "action": "Plunge through, then lock the ball in the upper-playfield Catapult",
+          "detail": "premium-le only Counts toward Catapult Multiball"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-uturn",
+      "title": "U-Turn Loop",
+      "category": "combo",
+      "summary": "The game's only true combo: shoot an orbit to arm a red U-Turn, then loop the orbit repeatedly without any other shot to escalate points and light an Extra Ball.",
+      "difficulty": 2,
+      "reward": "Escalating points; lights Extra Ball at the shield scoop",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the orbit to arm the U-Turn",
+          "detail": "The light in front of the orbit turns red"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the same orbit again to make a U-Turn",
+          "detail": "Consecutive U-Turns with no other shot escalate the value; lightning-bolt inserts change color"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Collect the lit Extra Ball after an adjustable number of U-Turns",
+          "detail": "The principal combo payoff and main repeatable route to an EB"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-super-spinner",
+      "title": "Super Spinner Farm",
+      "category": "combo",
+      "summary": "The #1 money maker: light SUPER at the center target via the spinner, start a Super Mode, then boost all active Supers at the left lane — repeat to pump the value sky-high before cashing in a 3x multiball.",
+      "difficulty": 3,
+      "reward": "200-300M when cashed at 3x",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Spin the spinner enough to light SUPER",
+          "detail": "SUPER lights at the center target"
+        },
+        {
+          "shot": "center-target",
+          "action": "Start a random untimed Super Mode",
+          "detail": "Lanes / Slings / Spinner / Orbits / Targets / Pops — Super Spinner is far and away the most valuable of these"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Shoot the left lane/spinner to boost all active Supers",
+          "detail": "Max value when the icon turns purple; repeat, then dump inside KNIGHT MB"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-war-hurryup",
+      "title": "WAR Hurry-Up",
+      "category": "combo",
+      "summary": "Complete the W-A-R top lanes to advance Bonus X and light the three center shots for a decaying hurry-up; escalates in value every restart.",
+      "difficulty": 2,
+      "reward": "Each shot from 3M rising to max 25M; KNIGHT letter on completion",
+      "steps": [
+        {
+          "shot": "top-lane-left",
+          "action": "Complete the W top lane",
+          "detail": "Use lane change to align"
+        },
+        {
+          "shot": "top-lane-center",
+          "action": "Complete the A top lane"
+        },
+        {
+          "shot": "top-lane-right",
+          "action": "Complete the R top lane",
+          "detail": "Advances Bonus X and flashes the three center shots white"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Bash the flail / shoot the ramp to collect the hurry-up fast",
+          "detail": "Value decays — cash quickly"
+        },
+        {
+          "shot": "center-target",
+          "action": "Finish the round at the center target",
+          "detail": "Awards a KNIGHT letter; starting values increase each restart"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-mode-mb-stack",
+      "title": "Mode + Multiball Stack",
+      "category": "combo",
+      "summary": "The structural money multiplier — because mode-start and the Triple Knights lock are both at the shield scoop, you start a Monster Battle and multiball with essentially the same shot.",
+      "difficulty": 3,
+      "reward": "Modes award 20-35M inside multiball",
+      "steps": [
+        {
+          "shot": "center-target",
+          "action": "Hit lit center shots to qualify a battle",
+          "detail": "The monster is set by the lightning wheel"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Shoot the flail ramp to raise the shield",
+          "detail": "Exposes and lights the shield scoop"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Shoot the scoop to start the mode AND lock a ball",
+          "detail": "Always bring a mode into multiball"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-magna-cashout",
+      "title": "Magna-Save Super Jackpot Cash-Out",
+      "category": "combo",
+      "summary": "Bank and boost several Super Modes, then press Magna-Save as the ball heads for the right outlane — saving the ball also cashes every active Super as one Super Jackpot.",
+      "difficulty": 2,
+      "reward": "Banks all Super values as a single jackpot (multiply inside KNIGHT MB)",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Build and boost several Super Modes first",
+          "detail": "Especially Super Spinner"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Let the ball head toward the right outlane",
+          "detail": "The outlane magnet flings the ball out"
+        },
+        {
+          "shot": "magna-save",
+          "action": "Press the Magna-Save button to catch the ball and score the Super Jackpot",
+          "detail": "Ends all Supers and banks their total — do it inside the 3x KNIGHT MB"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-triple-knights",
+      "title": "Triple Knights Challenge",
+      "category": "multiball",
+      "summary": "The main lock multiball: hit the light-lock standup to light lock, lock 3 balls at the shield scoop, then run the jackpot phases to a 3x Super Jackpot.",
+      "difficulty": 2,
+      "reward": "Super Jackpot = 3x jackpot value + a KNIGHT letter",
+      "steps": [
+        {
+          "shot": "shield-target",
+          "action": "Hit the small light-lock standup to light lock",
+          "detail": "1 hit lights lock for the 1st MB, 2 hits for the 2nd, 3 for the 3rd"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Shoot the exposed scoop to lock a ball",
+          "detail": "Lock 3 balls to start"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Shoot a Phase 1 jackpot",
+          "detail": "Left spinner, ramp and scoop are lit"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Shoot a Phase 1 jackpot; completing all three lights the ramp hurry-up",
+          "link": "none"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Complete jackpots to light the Super Jackpot",
+          "detail": "Super Jackpot = 3x jackpot + KNIGHT letter, then loops back with boosted scoring"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-catapult",
+      "title": "Catapult Multiball",
+      "category": "multiball",
+      "summary": "Premium/LE only: relight and lock 3 balls in the upper-playfield Catapult, shoot lit lower-playfield shots for jackpots, and collect a multiplied Super Jackpot at the Catapult.",
+      "difficulty": 3,
+      "reward": "Super Jackpot up to 4x via the standup (premium-le)",
+      "steps": [
+        {
+          "shot": "up-target",
+          "action": "Hit the standup next to the Catapult to light locks",
+          "detail": "1st MB locks are pre-lit; later ones must be relit"
+        },
+        {
+          "shot": "catapult",
+          "action": "Lock 3 balls in the upper Catapult to start",
+          "detail": "premium-le only"
+        },
+        {
+          "shot": "center-target",
+          "action": "Shoot lit lower-playfield shots for jackpots",
+          "detail": "250K +25K per most jackpots"
+        },
+        {
+          "shot": "catapult",
+          "action": "Collect the Super Jackpot at the Catapult",
+          "detail": "Standup hits raise the next Super multiplier up to 4x (resets on collect)"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-knight",
+      "title": "KNIGHT Multiball",
+      "category": "multiball",
+      "summary": "The money feature: earn K-N-I-G-H-T from battles, WAR hurry-ups and Triple Knights super jackpots, then start at the left spinner lane for a retro 3-ball MB with playfield scoring multiplied by balls in play (up to 3x).",
+      "difficulty": 3,
+      "reward": "Playfield x balls-in-play up to 3x — the biggest scoring window",
+      "steps": [
+        {
+          "shot": "shield-vuk",
+          "action": "Collect KNIGHT letters partway through monster battles",
+          "detail": "Also from WAR Hurry-Up rounds and Triple Knights Super Jackpots; K and N start lit"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Shoot the left spinner lane to start KNIGHT Multiball once K-N-I-G-H-T is spelled",
+          "detail": "1st MB needs 4 letters"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Feed the spinner during 3x scoring",
+          "detail": "Super Spinner cashed here pours out 200-300M"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-kings-ransom",
+      "title": "The King's Ransom",
+      "category": "multiball",
+      "summary": "The 2nd K-N-I-G-H-T completion: a ~60-second 3-ball multiball with an unlimited ball save, an immediate +5x Bonus X, and the Extra Ball lit — a huge, low-risk points-and-safety window.",
+      "difficulty": 3,
+      "reward": "Unlimited ball save, +5x Bonus X, Extra Ball lit",
+      "steps": [
+        {
+          "shot": "top-lane-center",
+          "action": "Spell K-N-I-G-H-T a second time via WAR completions and battle wins",
+          "detail": "Subsequent KNIGHT MBs need 6 letters"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Shoot the left spinner lane to start The King's Ransom",
+          "detail": "60s, unlimited ball save, +5x Bonus X immediately"
+        },
+        {
+          "shot": "flail",
+          "action": "Shoot the flail, either orbit, or complete the WAR lanes for jackpots",
+          "detail": "Timer expiry returns the ball to the plunger"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-mud-bog",
+      "title": "Mud Bog (Hydra)",
+      "category": "mode",
+      "summary": "Cut off the Hydra's 4 heads across five shots — seal a shot to start its timer, then hit it again to cut a head.",
+      "difficulty": 2,
+      "reward": "KNIGHT letter + lit Extra Ball on win",
+      "steps": [
+        {
+          "shot": "center-target",
+          "action": "Hit center shots to light the battle (Mud Bog on the lightning wheel)"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Shoot the flail ramp to raise the shield"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Shoot the scoop to start the battle"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Seal the shot, then shoot again to cut a Hydra head",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Seal then cut a head",
+          "link": "none"
+        },
+        {
+          "shot": "shield-target",
+          "action": "Seal then cut a head at the light-lock target",
+          "detail": "KNIGHT letter after cutting the 2nd head",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Seal then cut the final head",
+          "detail": "The Power upgrade makes every shot both seal and cut",
+          "link": "none"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-deep-freeze",
+      "title": "Deep Freeze (Lich Lords)",
+      "category": "mode",
+      "summary": "Defeat 4 Lichs on three blue shots — freeze a Lich blue-to-red, then hit a red shot to kill it plus any other lit red shots.",
+      "difficulty": 2,
+      "reward": "KNIGHT letter + lit Extra Ball on win",
+      "steps": [
+        {
+          "shot": "shield-vuk",
+          "action": "Start Deep Freeze at the scoop"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Shoot a blue shot to freeze a Lich (it turns red)"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Shoot a blue shot to freeze another Lich",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot a red shot to kill the Lich plus any other lit red shots",
+          "detail": "KNIGHT letter after the 2nd Lich; the blue relights for the next"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-molten-fire",
+      "title": "Molten Fire (Magma Beast)",
+      "category": "mode",
+      "summary": "Complete 8 total shot sequences across the 7 major shots — best played single-ball since it is a long shot-heavy mode.",
+      "difficulty": 3,
+      "reward": "KNIGHT letter + lit Extra Ball on win",
+      "steps": [
+        {
+          "shot": "shield-vuk",
+          "action": "Start Molten Fire at the scoop",
+          "detail": "Best played single-ball"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Complete a lit major shot",
+          "link": "none"
+        },
+        {
+          "shot": "flail-ramp",
+          "action": "Complete a lit major shot",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete a lit major shot",
+          "link": "none"
+        },
+        {
+          "shot": "shield-target",
+          "action": "Complete a lit major shot",
+          "link": "none"
+        },
+        {
+          "shot": "center-target",
+          "action": "Complete a lit major shot",
+          "detail": "KNIGHT letter after 3 shots; upgrade makes incomplete shots permanent so you can loop one",
+          "link": "none"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-wicked-cavern",
+      "title": "Wicked Cavern (Hell Hand)",
+      "category": "mode",
+      "summary": "Make 8 alternating side shots — a random left-side shot lights, hitting it lights a random right-side shot, repeating with an extra shot each cycle.",
+      "difficulty": 3,
+      "reward": "KNIGHT letter + lit Extra Ball on win",
+      "steps": [
+        {
+          "shot": "shield-vuk",
+          "action": "Start Wicked Cavern at the scoop"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Hit the randomly lit left-side shot"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Hit the randomly lit right-side shot"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit the next lit left-side shot",
+          "detail": "KNIGHT letter after 3 shots; upgrade auto-lights all four shots"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiplier-power",
+      "title": "The Power (Sword of Rage 2x)",
+      "category": "multiplier",
+      "summary": "Charge the Sword of Rage meter with right 3-bank drop hits, then collect POWER at the center target during a battle for 2x scoring the entire battle plus the mode's power upgrade.",
+      "difficulty": 2,
+      "reward": "2x battle scoring + power upgrade",
+      "steps": [
+        {
+          "shot": "right-drops",
+          "action": "Hit the right 3-bank drops to charge the meter",
+          "detail": "Bank completion / center target ≈ +20%, individual targets ≈ +1%"
+        },
+        {
+          "shot": "center-target",
+          "action": "Collect POWER when the meter is full, early in a fresh high-shot battle",
+          "detail": "2x for the whole battle — don't spend it on a mode about to end"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiplier-bonusx",
+      "title": "Bonus X (WAR Lanes)",
+      "category": "multiplier",
+      "summary": "Advance the playfield-persistent Bonus X multiplier by completing the W-A-R top lanes; it multiplies the end-of-ball bonus and King's Ransom drops +5x for free.",
+      "difficulty": 1,
+      "reward": "+1 Bonus X per WAR completion; multiplies end-of-ball bonus",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "top-lane-left",
+          "action": "Complete the W lane"
+        },
+        {
+          "shot": "top-lane-center",
+          "action": "Complete the A lane"
+        },
+        {
+          "shot": "top-lane-right",
+          "action": "Complete the R lane to advance Bonus X",
+          "detail": "Also +1 via Mystery 'Add Bonus X'; King's Ransom grants +5x"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-black-castle",
+      "title": "Black Castle (Wizard Qualification)",
+      "category": "wizard",
+      "summary": "Win all five monster battles to unlock Black Castle at the scoop, then defeat the Black Knight: clear the three inner shots to light four outer loops, complete the loops, then land the final scoop shot.",
+      "difficulty": 3,
+      "reward": "Triggers RAGE Multiball + a time-based completion bonus",
+      "steps": [
+        {
+          "shot": "shield-vuk",
+          "action": "Win all five monster battles to qualify Black Castle, then start it at the scoop",
+          "detail": "~200s; ball saver at start plus one per outer-shot completion"
+        },
+        {
+          "shot": "center-target",
+          "action": "Hit the lit inner center shot"
+        },
+        {
+          "shot": "flail",
+          "action": "Hit the lit inner shot",
+          "link": "none"
+        },
+        {
+          "shot": "shield-target",
+          "action": "Hit the lit inner shot to light the four outer loops",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Make an outer-loop shot (relights the inner shots)"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Make an outer-loop shot",
+          "detail": "Complete all four outer loops; flail spins faster and shield kicks harder as it escalates",
+          "link": "none"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Deliver the final blow at the scoop",
+          "detail": "Triggers RAGE Multiball"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-rage-multiball",
+      "title": "RAGE Multiball",
+      "category": "wizard",
+      "summary": "The Black Castle reward: a 6-ball multiball with the center target always lit for a frenzy bonus starting at 1M per hit, scaled to the Black Castle time remaining.",
+      "difficulty": 3,
+      "reward": "6-ball frenzy, 1M+ per center hit + time-based completion bonus",
+      "steps": [
+        {
+          "shot": "shield-vuk",
+          "action": "The final Black Castle blow starts RAGE Multiball",
+          "detail": "6-ball; the game's repeatable capstone"
+        },
+        {
+          "shot": "center-target",
+          "action": "Hammer the always-lit center target for the frenzy bonus",
+          "detail": "Starts 1M/hit, increment scaled to Black Castle time remaining"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-opener",
+      "title": "Tournament Opener (Pro)",
+      "category": "strategy",
+      "summary": "A concrete first-30-seconds sequence: land the Super Skill Shot, light both saves, complete WAR, then start a mode and lock together at the scoop.",
+      "difficulty": 2,
+      "reward": "Both saves online, first hurry-up, and a mode+MB stack building",
+      "steps": [
+        {
+          "shot": "auto-plunger",
+          "action": "Hold left flipper for the Super Skill Shot",
+          "detail": "Or a safe no-lane-change plunge into the lit WAR lane"
+        },
+        {
+          "shot": "right-drops",
+          "action": "Backhand the right drop bank to light Magna-Save",
+          "detail": "Having Magna-Save lit is critical — it's your primary drain defense"
+        },
+        {
+          "shot": "lower-left-standups",
+          "action": "Hit the left Add-Time standups to light the virtual kickback"
+        },
+        {
+          "shot": "top-lane-center",
+          "action": "Complete W-A-R for the first hurry-up and Bonus X"
+        },
+        {
+          "shot": "shield-target",
+          "action": "Peck the small light-lock standup to light your lock"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Backhand the scoop off the right flipper to start a Monster Battle",
+          "detail": "Stack the mode with Triple Knights — always be working a mode or multiball",
+          "flipper": "right"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "strategy-backhand",
+      "title": "Backhand Everything (Safe Play)",
+      "category": "strategy",
+      "summary": "The core survival rule: cradle and backhand nearly every shot because the close rubber posts make missed forehands drain down the middle — orbits are the only safe forehands.",
+      "difficulty": 1,
+      "reward": "Dramatically lower drain rate on a punishing layout",
+      "steps": [
+        {
+          "shot": "right-flipper",
+          "action": "Cradle on the right flipper and backhand center shots",
+          "detail": "Rubber posts sit very close to the flippers — forehand ricochets are lethal",
+          "flipper": "right"
+        },
+        {
+          "shot": "shield-vuk",
+          "action": "Backhand the big shield/scoop off the RIGHT flipper",
+          "detail": "Much easier and safer than shooting it from the left",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit normally (the safe exception)"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit normally",
+          "detail": "Orbits are safe to shoot forehand"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "strategy-high-score",
+      "title": "Build Supers, Cash in KNIGHT MB",
+      "category": "strategy",
+      "summary": "The high-score engine: level Super Spinner and other Supers to purple before KNIGHT Multiball (boosting is disabled during it), then hammer the spinner at 3x while keeping Magna-Save armed.",
+      "difficulty": 3,
+      "reward": "Hundreds of millions in a single 3x window",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Light Super at the center target via the spinner, then boost until the icon turns purple",
+          "detail": "Boosting is disabled during KNIGHT MB — do it first"
+        },
+        {
+          "shot": "center-target",
+          "action": "Start and stack several Super Modes"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Start KNIGHT Multiball once K-N-I-G-H-T is spelled",
+          "detail": "Playfield scoring x balls-in-play up to 3x"
+        },
+        {
+          "shot": "left-spinner",
+          "action": "Hammer the Super Spinner during 3x scoring",
+          "detail": "200-300M collects; cash Supers with a Magna-Save"
+        },
+        {
+          "shot": "magna-save",
+          "action": "Keep Magna-Save armed for the right outlane throughout",
+          "detail": "Relight it via the right drops; the outlane magnet is the #1 killer"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "secret-challenge-mode-select",
+      "title": "Challenge Modes at Game Start",
+      "category": "secret",
+      "altMode": "ruleset",
+      "summary": "Sword of Rage carries two alternate games that bypass the ordinary ruleset completely, offered as a selection when a game starts. Each is a self-contained multiball with a leaderboard of its own, kept apart from the standard game's champions.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "The two challenge modes are offered as a selection at game start rather than earned during play",
+        "Retro Black Knight Multiball starts with 3 balls already in play",
+        "In it the score multiplier is set by the number of balls in play, so keeping all three alive is the whole game",
+        "Once you drain down to a single ball, a timer counts down for 10 seconds until the flippers lose power and the mode ends",
+        "The King's Ransom Multiball challenge runs a 60 second mode timer with unlimited balls in play until the timer ends",
+        "Each challenge keeps its own champion entry, separate from the standard game"
+      ],
+      "reward": "A standalone Retro Black Knight Multiball or The King's Ransom Multiball, each with unique high score leaderboards"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "held-plunge-payoff",
+      "title": "Held Plunge Payoff",
+      "desc": "Land the held-flipper skill shot by hitting one of the three center shots off the plunge without changing the lit lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-super-pro"
+    },
+    {
+      "id": "plunge-straight-to-the-catapult",
+      "title": "Plunge Straight To The Catapult",
+      "desc": "On a Premium or LE, full-plunge the ball to the upper deck and lock it in the Catapult for the upper-playfield skill shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-catapult"
+    },
+    {
+      "id": "war-lanes-and-cash",
+      "title": "War Lanes And Cash",
+      "desc": "Complete the W-A-R top lanes and collect the resulting center-shot hurry-up before it decays away.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-war-hurryup"
+    },
+    {
+      "id": "sword-charged-double-score",
+      "title": "Sword Charged, Score Doubled",
+      "desc": "Fill the sword meter off the right drop bank and collect it at the center target during a monster battle for doubled battle scoring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiplier-power"
+    },
+    {
+      "id": "loop-into-an-extra-ball",
+      "title": "Loop Into An Extra Ball",
+      "desc": "Chain enough consecutive orbit U-Turns to light Extra Ball, then collect it at the shield scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-uturn"
+    },
+    {
+      "id": "supers-pushed-to-purple",
+      "title": "Supers Pushed To Purple",
+      "desc": "Start a Super Mode and boost it at the left spinner lane until its icon reaches its top (purple) value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-super-spinner"
+    },
+    {
+      "id": "magnet-catch-cash-out",
+      "title": "Magnet Catch Cash-Out",
+      "desc": "Bank multiple active Supers and cash them as a single Super Jackpot by grabbing the ball with the Magna-Save at the right outlane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-magna-cashout"
+    },
+    {
+      "id": "three-balls-locked",
+      "title": "Three Balls Locked",
+      "desc": "Light lock at the small standup and lock three balls in the shield scoop to start the lock multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-triple-knights"
+    },
+    {
+      "id": "knights-super-jackpot",
+      "title": "Knights' Super Jackpot",
+      "desc": "Clear every jackpot phase of the lock multiball and collect its triple-value Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-triple-knights"
+    },
+    {
+      "id": "catapult-launch-party",
+      "title": "Catapult Launch Party",
+      "desc": "Relight the upper locks and stack three balls in the Catapult to start Catapult Multiball on a Premium or LE.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-catapult"
+    },
+    {
+      "id": "spell-it-and-start-it",
+      "title": "Spell It And Start It",
+      "desc": "Collect enough K-N-I-G-H-T letters and start KNIGHT Multiball at the left spinner lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-knight"
+    },
+    {
+      "id": "ransom-window",
+      "title": "The Ransom Window",
+      "desc": "Spell K-N-I-G-H-T a second time and start the timed multiball that hands you an unlimited ball save, a big bonus-multiplier jump, and a lit Extra Ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-kings-ransom"
+    },
+    {
+      "id": "every-head-severed",
+      "title": "Every Head Severed",
+      "desc": "Win the swamp battle by sealing and cutting all four of the Hydra's heads.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-mud-bog"
+    },
+    {
+      "id": "frozen-and-shattered",
+      "title": "Frozen And Shattered",
+      "desc": "Win the ice battle by freezing and destroying all four Lichs.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-deep-freeze"
+    },
+    {
+      "id": "beast-in-the-lava",
+      "title": "Beast In The Lava",
+      "desc": "Win the fire battle by completing all eight of its shot sequences before the timer runs out.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-molten-fire"
+    },
+    {
+      "id": "hand-back-in-the-hole",
+      "title": "Hand Back In The Hole",
+      "desc": "Win the cavern battle by making all eight alternating left-and-right side shots.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-wicked-cavern"
+    },
+    {
+      "id": "knight-of-the-castle-felled",
+      "title": "Knight Of The Castle Felled",
+      "desc": "Win all five monster battles, start the castle showdown at the scoop, and land the final blow on the Black Knight.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-black-castle"
+    },
+    {
+      "id": "six-ball-fury",
+      "title": "Six-Ball Fury",
+      "desc": "Reach the six-ball frenzy multiball that follows the castle showdown and stack up center-target hits during it.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-rage-multiball"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-center",
+      "title": "Held Plunge to Center",
+      "text": "Hold the left flipper through the plunge so the ball comes down to the flippers, then take the center target. Each successive one you make is worth more than the last, so this is a plunge to bank every ball rather than a one-off.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot-super-pro",
+      "shots": [
+        "auto-plunger",
+        "center-target"
+      ]
+    },
+    {
+      "id": "backhand-everything",
+      "title": "Backhand Everything",
+      "text": "Cradle and backhand the center shots, and take the shield scoop as a backhand off the right flipper rather than shooting it from the left. The rubber posts sit close to the flippers, so a missed forehand comes back down the middle — the orbits are the only shots worth taking forehand.",
+      "reps": "one full ball, backhands only",
+      "focus": "ball-control",
+      "goal": "strategy-backhand",
+      "shots": [
+        "right-flipper",
+        "shield-vuk",
+        "left-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "drop-bank-backhand",
+      "title": "Right Drop Bank",
+      "text": "Backhand the right three-bank until the whole bank is down, then do it again. It charges the sword meter and it is how you relight your primary drain defense, so it needs to be a shot you can take on demand rather than one you stumble into.",
+      "reps": "10 bank completions",
+      "focus": "accuracy",
+      "goal": "multiplier-power",
+      "shots": [
+        "right-drops"
+      ]
+    },
+    {
+      "id": "magna-save-press",
+      "title": "Magna-Save Press",
+      "text": "Press the button as the ball drifts toward the right outlane, not after it commits. Relight it on the right drops immediately afterwards — the save also cashes every Super you have running, so a save you cannot make twice is a save you cannot plan around.",
+      "reps": "10 saves",
+      "focus": "ball-control",
+      "goal": "combo-magna-cashout",
+      "shots": [
+        "right-outlane",
+        "magna-save",
+        "right-drops"
+      ]
+    },
+    {
+      "id": "u-turn-loop",
+      "title": "U-Turn Loop",
+      "text": "Shoot an orbit to arm the U-Turn, then keep shooting that same orbit with nothing in between. Any other shot resets the chain, so the discipline is refusing the shots the return offers you on the way past.",
+      "reps": "note your longest unbroken run",
+      "focus": "flow",
+      "goal": "combo-uturn",
+      "shots": [
+        "left-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "war-hurryup-cash",
+      "title": "Complete WAR, Cash Fast",
+      "text": "Lane-change the three top lanes to complete the set, then cash the hurry-up quickly on the flail ramp and finish at the center target. The value decays while you decide, so pick your first shot before the lanes complete.",
+      "reps": "5 hurry-ups",
+      "focus": "accuracy",
+      "goal": "combo-war-hurryup",
+      "shots": [
+        "top-lane-left",
+        "top-lane-center",
+        "top-lane-right",
+        "flail-ramp",
+        "center-target"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "upper-deck",
+      "name": "Transparent Upper Deck",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.42,
+        "y": 0.76,
+        "w": 0.26,
+        "h": 0.24
+      },
+      "trim": "premium-le",
+      "entries": [
+        "castle-vuk",
+        "shooter-diverter"
+      ],
+      "exits": [
+        {
+          "x": 0.5,
+          "y": 0.5
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Magna-Save",
+    "location": "center of the lockdown bar",
+    "how": "The lockdown bar button is your Magna-Save, wired to a magnet tucked above the right outlane. Press it as a ball drifts toward that outlane and the magnet snatches it before it drains. It doubles as the cash register: a successful save also pays out every Super Mode you have running.",
+    "uses": [
+      {
+        "when": "Ball drifting toward the right outlane",
+        "what": "Fires the magnet above that outlane and catches the ball instead of letting it drain."
+      },
+      {
+        "when": "Supers banked when that drain comes",
+        "what": "The save cashes every active Super at once as a single Super Jackpot, then ends those Supers."
+      },
+      {
+        "when": "During KNIGHT Multiball",
+        "what": "That cash-out gets multiplied by balls in play, up to 3x — the biggest single collect on the game."
+      },
+      {
+        "when": "Right after a save is spent",
+        "what": "Nothing happens on a press; finish the right drop target bank to relight the magnet."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Black Knight: Sword of Rage is a punishing retro Stern where the Magna-Save button is both your drain defense and your cash register. Win the monster battles to open the Black Castle, and spell K-N-I-G-H-T for a multiball that multiplies every point by the balls in play.",
+    "loop": [
+      "Light SUPER on the left spinner, start a Super Mode at the center target, and boost it at the left lane until its icon glows purple.",
+      "Complete the W-A-R top lanes, nudging the lit lane over with a flipper tap, to bump Bonus X and flash the center shots for a decaying hurry-up.",
+      "Qualify a monster battle at the center shots, raise the shield with the flail ramp, and start the battle and a lock together at the shield scoop.",
+      "Bank K-N-I-G-H-T letters as you win battles, finish WAR hurry-ups, and cash Triple Knights jackpots, then run KNIGHT Multiball from the left spinner lane and empty your boosted Supers into a Magna-Save.",
+      "Win all five battles to unlock the Black Castle, beat the Black Knight, and set off the six-ball RAGE Multiball."
+    ],
+    "lights": [
+      {
+        "id": "war-lanes",
+        "name": "W-A-R Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lane-left"
+          },
+          {
+            "shot": "top-lane-center"
+          },
+          {
+            "shot": "top-lane-right"
+          }
+        ],
+        "lit": "The three top lanes spell W-A-R, and a lit lane is a letter still open, so roll through it to bank that letter.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap a flipper button to shift which of the W, A, and R lanes is lit, sliding it toward the lane the ball is rolling down",
+          "when": "as the ball crosses the top lanes"
+        },
+        "then": "Complete W-A-R to step Bonus X and flash the three center shots white for a fast-decaying hurry-up - bank it quickly at the flail ramp and end at the center target for a KNIGHT letter. Bonus X holds from ball to ball, so it keeps paying later.",
+        "goals": [
+          "combo-war-hurryup",
+          "multiplier-bonusx"
+        ]
+      },
+      {
+        "id": "super-modes",
+        "name": "Super Modes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-spinner"
+          },
+          {
+            "shot": "center-target"
+          }
+        ],
+        "lit": "Ripping the left spinner lights SUPER at the center target, and starting one turns on an untimed Super Mode that keeps scoring until you deliberately cash it.",
+        "flashing": null,
+        "control": null,
+        "then": "Stack several Supers - Super Spinner is by far the richest - and boost each at the left lane until its icon turns purple. Then dump the whole pile with a Magna-Save, ideally inside 3x KNIGHT Multiball, where they pour out 200 to 300M.",
+        "goals": [
+          "combo-super-spinner",
+          "strategy-high-score"
+        ]
+      },
+      {
+        "id": "magna-save",
+        "name": "Magna-Save",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "magna-save"
+          }
+        ],
+        "lit": "The Magna-Save insert glows when the magnet above the right outlane is armed, and a dark one will not fire until you relight it on the right drop bank.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "press the lockbar button as a ball drifts toward the right outlane and the magnet grabs it before it can drain",
+          "when": "the moment the ball heads for the right outlane"
+        },
+        "then": "Each save also rings up every Super Mode you have running as one Super Jackpot and then ends them. Time that cash-out for KNIGHT Multiball and it is multiplied by the balls in play, up to 3x - the single biggest collect on the game.",
+        "goals": [
+          "combo-magna-cashout"
+        ]
+      },
+      {
+        "id": "monster-battles",
+        "name": "Monster Battles",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-target"
+          },
+          {
+            "shot": "flail-ramp"
+          },
+          {
+            "shot": "shield-vuk"
+          }
+        ],
+        "lit": "Hitting the lit center shots qualifies a battle - a spinning wheel decides the monster - and the flail ramp then raises the shield to expose the scoop that starts it.",
+        "flashing": null,
+        "control": null,
+        "then": "The scoop starts the battle and locks a ball at the same time, so you always drag a mode into multiball. Each of the five battles you win, from the Hydra's Mud Bog to the Magma Beast's Molten Fire, awards a KNIGHT letter, lights an Extra Ball, and counts toward the Black Castle.",
+        "goals": [
+          "combo-mode-mb-stack",
+          "mode-mud-bog",
+          "mode-molten-fire"
+        ]
+      },
+      {
+        "id": "knight-letters",
+        "name": "K-N-I-G-H-T",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "shield-vuk"
+          },
+          {
+            "shot": "left-spinner"
+          }
+        ],
+        "lit": "Letters of K-N-I-G-H-T light as you earn them - winning battles, finishing WAR rounds, cashing Triple Knights super jackpots - with K and N already lit at the start.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell the word to light the left spinner lane, and shooting it runs KNIGHT Multiball, where playfield scoring is multiplied by the balls in play up to 3x - the money window you save your boosted Supers for. A second spelling instead starts The King's Ransom, a low-risk multiball with unlimited ball save and a free +5x Bonus X.",
+        "goals": [
+          "multiball-knight",
+          "multiball-kings-ransom"
+        ]
+      },
+      {
+        "id": "triple-knights",
+        "name": "Triple Knights Lock",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "shield-target"
+          },
+          {
+            "shot": "shield-vuk"
+          },
+          {
+            "shot": "flail-ramp"
+          }
+        ],
+        "lit": "The small light-lock standup lights the scoop for a lock - one hit for the first multiball, more for each after - and the exposed scoop banks the ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls to start, then run the phase jackpots on the spinner, ramp, and scoop to light a Super Jackpot at the ramp worth triple, plus another KNIGHT letter. Because a battle and this lock both live at the scoop, nearly the same shot arms both.",
+        "goals": [
+          "multiball-triple-knights"
+        ]
+      },
+      {
+        "id": "u-turn",
+        "name": "U-Turn Loop",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "shield-vuk"
+          }
+        ],
+        "lit": "One orbit shot turns the arrow in front of it red to arm a U-Turn, and looping the same orbit again with no other shot in between escalates the value.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep the U-Turns going, watching the lightning-bolt inserts change color as the value climbs, until an Extra Ball lights at the shield scoop. It is the game's one true combo and its most repeatable route to a free ball.",
+        "goals": [
+          "combo-uturn"
+        ]
+      },
+      {
+        "id": "black-castle",
+        "name": "Black Castle",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "shield-vuk"
+          },
+          {
+            "shot": "center-target"
+          },
+          {
+            "shot": "flail"
+          }
+        ],
+        "lit": "Winning all five monster battles lights the scoop for Black Castle, the showdown against the Black Knight himself.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear the inner center shots to light four outer loops, complete those loops as the flail spins harder and the shield kicks back meaner, then land the final scoop shot. That blow triggers RAGE Multiball, a six-ball frenzy on the always-lit center target and the game's capstone.",
+        "goals": [
+          "wizard-black-castle",
+          "wizard-rage-multiball"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap a flipper button to slide which of the W, A, and R top lanes is lit toward the lane the ball is rolling down, then let it roll through to bank that letter. Completing W-A-R steps the Bonus X - which sticks from ball to ball - and flashes the center shots for a hurry-up that ends in a KNIGHT letter.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Hold the left flipper through the plunge for the Super Skill Shot into a center target, then backhand the right drops to arm Magna-Save, your lifeline against the right outlane. Finish the W-A-R lanes for that first hurry-up and a step of Bonus X, and cradle to backhand almost everything, since the close posts punish loose forehands.",
+        "goals": [
+          "skillshot-super-pro",
+          "strategy-opener",
+          "strategy-backhand",
+          "multiplier-bonusx"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Charge Super Modes to purple - Super Spinner above all - before you ever start KNIGHT Multiball, because boosting shuts off during it. Stack a monster battle with the Triple Knights lock at the scoop, and grab The Power from the right drops for 2x scoring inside a fresh battle.",
+        "goals": [
+          "combo-super-spinner",
+          "combo-mode-mb-stack",
+          "multiball-triple-knights",
+          "multiplier-power"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Win all five monster battles to open the Black Castle, beat the Black Knight, and set off the six-ball RAGE Multiball, the repeatable summit of the game. The largest single collect, though, is a pile of purple Supers cashed with a Magna-Save inside 3x KNIGHT Multiball.",
+        "goals": [
+          "wizard-black-castle",
+          "wizard-rage-multiball",
+          "multiball-knight",
+          "strategy-high-score"
+        ]
+      }
+    ]
+  }
+}

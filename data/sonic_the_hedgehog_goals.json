@@ -1,0 +1,1086 @@
+{
+  "machine": "Sonic the Hedgehog (Jersey Jack Pinball, 2026)",
+  "defaultFx": "coin",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Deck Left Flipper",
+      "type": "flipper",
+      "x": 0.35,
+      "y": 0.87,
+      "trim": "all",
+      "playfield": "upper-deck",
+      "bat": {
+        "side": "left",
+        "size": "full"
+      },
+      "notes": "One of two full-size flippers on the polycarbonate upper deck, under the animatronic Eggman bash toy. Full-size, not mini -- both deck flippers hit every bit as hard as the main pair below."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Deck Right Flipper",
+      "type": "flipper",
+      "x": 0.65,
+      "y": 0.87,
+      "trim": "all",
+      "playfield": "upper-deck",
+      "bat": {
+        "side": "right",
+        "size": "full"
+      },
+      "notes": "The deck's second full-size flipper, facing the Eggman bash toy from the other side."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Manual plunger. A flipper press before the pull swaps the lit skill-shot award between White (default) and Pink."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.06,
+      "trim": "all"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.94,
+      "y": 0.06,
+      "trim": "all"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.36,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Ring-collect lane; also the shot that starts a lit Tails Hurry-Up once the spinner has armed it.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.64,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Ring-collect lane, mirrored to the right.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "spring-target-left",
+      "name": "Left Spring Target",
+      "type": "standup",
+      "x": 0.1,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "One of two spring-loaded standup targets near the outlanes -- a sprung target that fires the ball back with added force, not a passive absorber."
+    },
+    {
+      "id": "spring-target-right",
+      "name": "Right Spring Target",
+      "type": "standup",
+      "x": 0.9,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Mirrors the left spring target -- same sprung, kicker-style design."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.2,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Half of the crossing loop pair that gives the game its Ritchie-style flow -- the left ramp's wireform sweeps up and over to feed back down the RIGHT side.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Half of the crossing loop pair with the left ramp -- the two wireforms cross in an X pattern and swap sides.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "hero-lane-left",
+      "name": "H / E Lanes (Left)",
+      "type": "lane",
+      "x": 0.11,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Gold-rimmed rollover lanes lettered H and E on the left guide rail -- modeled as one shot for both letters. See hero-lane-right for R and O on the opposite side. Complete all four letters to collect a team member toward Sonic Heroes Multiball."
+    },
+    {
+      "id": "hero-lane-right",
+      "name": "R / O Lanes (Right)",
+      "type": "lane",
+      "x": 0.89,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "Gold-rimmed rollover lanes lettered R and O on the right guide rail, mirroring hero-lane-left's H and E."
+    },
+    {
+      "id": "inline-drop-targets",
+      "name": "Total-Control Drop Targets",
+      "type": "drop-target",
+      "x": 0.55,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "In-line 3-bank. Clearing it locks a ball toward Chaos Emerald Multiball and lights one of the seven Chaos Emerald ring inserts each full clear."
+    },
+    {
+      "id": "bash-target",
+      "name": "BASH Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Center standup. Starts Sonic Heroes Multiball once H-E-R-O is spelled, and is the capture point for the Bash-Dash feature during multiball play."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Bash-Dash Captive Ball",
+      "type": "captive-ball",
+      "x": 0.5,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "The Bash-Dash lock. During multiball, a ball captured at the BASH target is fired here to multiply the running jackpot value."
+    },
+    {
+      "id": "battle-zone-targets",
+      "name": "Battle Zone Targets",
+      "type": "target-bank",
+      "x": 0.82,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Right-side standup bank used for Badnik Attack."
+    },
+    {
+      "id": "chao-target",
+      "name": "Chao Target",
+      "type": "standup",
+      "x": 0.14,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Mushroom-topped standup target. Hitting it lights the nearby orbit for Chao Garden."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.08,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Orbit lane lit by the Chao target for Chao Garden."
+    },
+    {
+      "id": "big-fish-target",
+      "name": "Big Fish Target",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Right-side standup for Find Froggy -- shoot it to catch Froggy; a later checkpoint shot relights it if you miss."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.62,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The table's one spinner. Rip it to light a Tails Hurry-Up; the left inlane is the shot that actually starts the hurry-up once it's lit."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Eggman Scoop)",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Steep center shot climbing to the upper deck -- the way up to the Eggman bash toy, where boss battles are decided.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "eggman-bash-toy",
+      "name": "Dr. Eggman Bash Toy",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.92,
+      "trim": "all",
+      "playfield": "upper-deck",
+      "notes": "Animatronic Eggmobile centerpiece on the upper deck. The boss-battle hit lands here once a zone's checkpoints are cleared and the level is complete -- speed adds to the score."
+    }
+  ],
+  "playfields": [
+    {
+      "id": "upper-deck",
+      "name": "Eggman's Battle Deck",
+      "kind": "upper",
+      "trim": "all",
+      "bounds": {
+        "x": 0.22,
+        "y": 0.8,
+        "w": 0.56,
+        "h": 0.18
+      },
+      "entries": [
+        "center-ramp"
+      ],
+      "exits": [
+        {
+          "shot": "left-flipper"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-white",
+      "title": "Skill Shot -- White",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "The default skill shot: plunge it in without pre-selecting anything and White scores.",
+      "reward": "Base skill-shot value",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge it in",
+          "detail": "White is the default award -- no flipper button needed before the pull.",
+          "plunge": "full"
+        }
+      ]
+    },
+    {
+      "id": "skillshot-pink",
+      "title": "Skill Shot -- Pink (Super)",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Hit a flipper button before the plunge to swap the award from White to Pink for the bigger super skill-shot value.",
+      "reward": "Elevated skill-shot value over White",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Hit a flipper, then plunge it in",
+          "detail": "The flipper press before the pull swaps the lit award from White to Pink.",
+          "plunge": "full"
+        }
+      ]
+    },
+    {
+      "id": "zone-green-hill",
+      "title": "Clear Green Hill Zone",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Green Hill anchors the bottom of the seven-zone ladder: clear a run of lit checkpoint shots, then climb the center ramp and shoot the Eggmobile to close the zone out.",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "hero-lane-left",
+          "action": "Shoot whichever checkpoint shots are lit for Green Hill",
+          "detail": "Checkpoint shots rotate through the table's targets, orbit, and spinner -- this is a representative pick, not a fixed order.",
+          "link": "none"
+        },
+        {
+          "shot": "battle-zone-targets",
+          "action": "Keep clearing lit checkpoints",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "chao-target",
+          "action": "Keep clearing lit checkpoints to light the Goal Ring",
+          "detail": "Clears light the Goal Ring; reaching it completes the level.",
+          "link": "none"
+        },
+        {
+          "shot": "eggman-bash-toy",
+          "action": "Shoot the Eggmobile to defeat the boss",
+          "detail": "Climb the center ramp to the upper deck first, then land the hit on Eggman himself. Speed adds to the score."
+        }
+      ]
+    },
+    {
+      "id": "zone-ladder-progression",
+      "title": "Work the Seven-Zone Ladder",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "Green Hill, Chemical Plant, Rooftop Run, City Escape, Speed Highway, Sky Sanctuary, and Seaside Hill stack as a ladder on the lower playfield -- pick any incomplete one with the action button. Each one plays the same checkpoints-then-boss structure Green Hill does.",
+      "steps": [],
+      "instructions": [
+        "Seven zones stack bottom-to-top on the playfield: Green Hill, Chemical Plant, Rooftop Run, City Escape, Speed Highway, Sky Sanctuary, Seaside Hill",
+        "Press the action button to pick any zone that isn't finished yet -- it's not a forced bottom-to-top order",
+        "Each zone plays the same shape: clear lit checkpoint shots to light that zone's Goal Ring, reach the Goal Ring to complete the level, then shoot the Eggmobile bash toy to win the boss battle",
+        "Every zone completed keeps counting toward the achievements and end-of-game Level Bonus tracked on the backbox display"
+      ],
+      "reward": "Each zone cleared feeds the end-of-game Level Bonus tracked on the backbox display"
+    },
+    {
+      "id": "chaos-emerald-multiball",
+      "title": "Chaos Emerald Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Clear the in-line Total-Control drop targets repeatedly to light all seven Chaos Emerald ring inserts, then send a locked ball into the Bash-Dash captive ball to bring the whole six-ball multiball in at once.",
+      "reward": "Six balls at once; jackpots at lit shots around the table",
+      "steps": [
+        {
+          "shot": "inline-drop-targets",
+          "action": "Clear the 3-bank repeatedly to light Chaos Emerald inserts",
+          "detail": "Each full clear locks a ball and lights one of the seven emerald rings."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "With all seven lit, start the multiball at the captive ball",
+          "detail": "Six balls release together."
+        },
+        {
+          "shot": "spinner",
+          "action": "Collect jackpots at whichever shots are lit",
+          "detail": "Values run high across the whole table while six balls are loose.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "sonic-heroes-multiball",
+      "title": "Sonic Heroes Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Spell H-E-R-O at the standup bank to collect your team, then shoot the BASH target to bring everyone in together.",
+      "reward": "Team-member jackpots; Bash-Dash captures available throughout",
+      "steps": [
+        {
+          "shot": "hero-lane-left",
+          "action": "Roll the H and E lanes on the left",
+          "detail": "Both sides can be collected in either order.",
+          "link": "none"
+        },
+        {
+          "shot": "hero-lane-right",
+          "action": "Roll the R and O lanes on the right to complete H-E-R-O",
+          "detail": "A full spellout adds one team member; repeat to build the team.",
+          "link": "none"
+        },
+        {
+          "shot": "bash-target",
+          "action": "Shoot BASH to start the multiball once your team is set",
+          "detail": null
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Capture a ball at BASH, then fire it into the captive ball for a multiplied jackpot",
+          "detail": "The Bash-Dash combo -- see the dedicated combo entry.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "bash-dash-combo",
+      "title": "Bash-Dash: Capture and Multiply",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "During either multiball, catching a ball at the BASH target and immediately firing it into the captive ball multiplies whatever jackpot is currently lit -- the signature combo of the game's multiball play.",
+      "reward": "Multiplied jackpot value",
+      "steps": [
+        {
+          "shot": "bash-target",
+          "action": "Capture a ball at the BASH target",
+          "detail": "Works during Sonic Heroes or Chaos Emerald Multiball."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Immediately fire it into the captive ball",
+          "detail": "The faster the follow-up, the more it's worth -- this is a two-shot combo, not two separate scoring events."
+        }
+      ]
+    },
+    {
+      "id": "badnik-attack",
+      "title": "Badnik Attack",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "The Battle Zone standups light for a straightforward target-clearing mode -- knock down Eggman's robot army before time runs out.",
+      "reward": "Escalating value per Badnik cleared",
+      "steps": [
+        {
+          "shot": "battle-zone-targets",
+          "action": "Clear the lit Battle Zone standups",
+          "detail": "Straightforward bank-clearing mode; no special technique needed."
+        }
+      ]
+    },
+    {
+      "id": "chao-garden",
+      "title": "Chao Garden",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Hit the Chao target to light the orbit, then keep looping it while the mode's timer runs.",
+      "reward": "Escalating per-loop value",
+      "steps": [
+        {
+          "shot": "chao-target",
+          "action": "Hit the Chao target to light the orbit",
+          "detail": null
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Loop the lit orbit while the mode is running",
+          "detail": "Each pass is worth more than the last."
+        }
+      ]
+    },
+    {
+      "id": "find-froggy",
+      "title": "Find Froggy",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Shoot the Big Fish target to catch Froggy. Miss the window and a later checkpoint shot relights the chase instead of ending it outright.",
+      "reward": "Catch value, higher the first time it's lit each ball",
+      "steps": [
+        {
+          "shot": "big-fish-target",
+          "action": "Shoot the Big Fish target while Froggy is lit",
+          "detail": "A clean catch collects immediately."
+        },
+        {
+          "shot": "spinner",
+          "action": "If you miss, a later checkpoint shot relights the chase",
+          "detail": "The mode is forgiving -- a miss isn't necessarily the end of it.",
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "tails-hurry-up",
+      "title": "Tails Hurry-Up",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Rip the spinner to arm a hurry-up, then roll the left inlane to actually start its countdown.",
+      "reward": "Hurry-up value, decaying on a timer once started",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Spin the spinner to light the hurry-up",
+          "detail": null
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll the left inlane to start the countdown",
+          "detail": "Value decays the longer you wait to collect."
+        }
+      ]
+    },
+    {
+      "id": "rings-collection",
+      "title": "Collect Rings",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "The inlanes are ring lanes -- rolling either one banks rings toward a cash-out, classic Sonic currency reskinned as a pinball bonus feature.",
+      "reward": "Banked ring value, cashed out as part of the end-of-ball bonus",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll either inlane to bank rings",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Both inlanes count toward the same ring total",
+          "detail": null,
+          "link": "none"
+        }
+      ]
+    },
+    {
+      "id": "super-sonic-wizard",
+      "title": "Wizard Mode: Super Sonic",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Collect all seven Chaos Emeralds for a shot at Super Sonic -- the machine's top-tier scoring mode, lit on the playfield next to Boss Rush.",
+      "reward": "The machine's top-tier scoring mode",
+      "steps": [
+        {
+          "shot": "inline-drop-targets",
+          "action": "Light all seven Chaos Emerald inserts",
+          "detail": "Same requirement as qualifying Chaos Emerald Multiball."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Start Chaos Emerald Multiball at the captive ball",
+          "detail": null
+        },
+        {
+          "shot": "eggman-bash-toy",
+          "action": "Shoot the upper-deck bash toy",
+          "detail": "The SUPER SONIC insert lights nearby on the playfield."
+        }
+      ]
+    },
+    {
+      "id": "boss-battle-sweep",
+      "title": "Defeat Every Zone Boss",
+      "category": "progression",
+      "difficulty": 3,
+      "summary": "Beat Eggman at the end of all seven zones in one game. The backbox tracks 'Biggest Boss Battle' and a running Boss Battle point total, so this is the category the game itself is already keeping score on.",
+      "ordered": false,
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Climb the center ramp to reach the upper deck",
+          "detail": "The way up to the Eggmobile bash toy.",
+          "link": "none"
+        },
+        {
+          "shot": "eggman-bash-toy",
+          "action": "Shoot the Eggmobile to defeat each zone's boss",
+          "detail": "Repeat across all seven zones for the full sweep."
+        }
+      ],
+      "reward": "Tracked on the backbox as Boss Battle Total Points; contributes to the Grand Champion / high-score board"
+    },
+    {
+      "id": "strategy-beginner-opener",
+      "title": "Strategy: First Ball, Keep It Moving",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Take the White skill shot, clear Green Hill's checkpoints without chasing every side mode, and bank a couple of ring rolls on the way past.",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Take the White skill shot",
+          "detail": "No pre-selection needed -- simplest way to start the ball.",
+          "plunge": "full"
+        },
+        {
+          "shot": "hero-lane-left",
+          "action": "Work Green Hill's checkpoints",
+          "detail": "Don't detour for side modes yet -- finishing the first zone matters more than sampling everything."
+        },
+        {
+          "shot": "eggman-bash-toy",
+          "action": "Shoot the Eggmobile to close out the boss",
+          "detail": "Climb the center ramp to the upper deck first -- that's the confirmed way up."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Bank inlane rings on the way past",
+          "detail": "Free value, no detour required.",
+          "link": "none"
+        }
+      ],
+      "reward": null
+    },
+    {
+      "id": "strategy-tournament-line",
+      "title": "Strategy: Emeralds Before Everything",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "Prioritize the in-line drop targets early so Chaos Emerald Multiball -- and the Super Sonic mode behind it -- is realistically in reach before the ball count runs out, then use Bash-Dash to inflate whatever multiball is running.",
+      "steps": [
+        {
+          "shot": "inline-drop-targets",
+          "action": "Feed the in-line drop targets every chance you get, starting ball one",
+          "detail": "Seven emeralds is a full-game project -- the earlier you start, the more realistic Super Sonic becomes."
+        },
+        {
+          "shot": "hero-lane-left",
+          "action": "Spell H-E-R-O opportunistically for Sonic Heroes Multiball",
+          "detail": "A second multiball source keeps value coming while emeralds build in the background.",
+          "link": "none"
+        },
+        {
+          "shot": "bash-target",
+          "action": "Use Bash-Dash captures inside whichever multiball is running",
+          "detail": "Capture-and-fire into the captive ball multiplies the jackpot rather than just collecting it straight.",
+          "link": "none"
+        }
+      ],
+      "reward": null
+    },
+    {
+      "id": "master-emerald-mission",
+      "title": "Master Emerald Mission",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "A named feature with its own playfield insert, positioned left of the zone ladder next to Casino Night.",
+      "steps": [],
+      "instructions": [
+        "The MASTER EMERALD MISSION insert lights up on the playfield to the left of the zone ladder, next to Casino Night."
+      ],
+      "reward": null
+    },
+    {
+      "id": "casino-night",
+      "title": "Casino Night",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "A named feature with its own playfield insert, positioned left of the zone ladder next to Master Emerald Mission.",
+      "steps": [],
+      "instructions": [
+        "The CASINO NIGHT insert lights up on the playfield to the left of the zone ladder, below Master Emerald Mission."
+      ],
+      "reward": null
+    },
+    {
+      "id": "boss-rush",
+      "title": "Boss Rush",
+      "category": "progression",
+      "difficulty": 3,
+      "summary": "A named feature with its own playfield insert, lit next to Super Sonic on the right side of the zone ladder.",
+      "steps": [],
+      "instructions": [
+        "The BOSS RUSH insert lights up on the playfield to the right of the zone ladder, next to Super Sonic."
+      ],
+      "reward": null
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "pink-skillshot-landed",
+      "title": "Super Start",
+      "desc": "Select Pink before the plunge and land the Super Skill Shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-pink"
+    },
+    {
+      "id": "green-hill-cleared",
+      "title": "Gotta Go",
+      "desc": "Clear Green Hill Zone's checkpoints and beat its boss battle.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "zone-green-hill"
+    },
+    {
+      "id": "chaos-emerald-mb-started",
+      "title": "Seven Rings",
+      "desc": "Light all seven Chaos Emerald inserts and start Chaos Emerald Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "chaos-emerald-multiball"
+    },
+    {
+      "id": "sonic-heroes-mb-started",
+      "title": "Team Assembled",
+      "desc": "Spell H-E-R-O and start Sonic Heroes Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "sonic-heroes-multiball"
+    },
+    {
+      "id": "bash-dash-landed",
+      "title": "Capture and Launch",
+      "desc": "Land a Bash-Dash: capture a ball at BASH and fire it into the captive ball during multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bash-dash-combo"
+    },
+    {
+      "id": "badnik-attack-cleared",
+      "title": "Robot Roundup",
+      "desc": "Clear a full Badnik Attack before its timer runs out.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "badnik-attack"
+    },
+    {
+      "id": "froggy-found",
+      "title": "Reunited",
+      "desc": "Catch Froggy at the Big Fish target.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "find-froggy"
+    },
+    {
+      "id": "tails-hurry-up-collected",
+      "title": "Two-Tailed Assist",
+      "desc": "Light and collect a Tails Hurry-Up before it decays away.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "tails-hurry-up"
+    },
+    {
+      "id": "super-sonic-qualified",
+      "title": "Seven for Seven",
+      "desc": "Light and collect all seven Chaos Emeralds, then reach Super Sonic.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-sonic-wizard"
+    },
+    {
+      "id": "super-sonic-won",
+      "title": "Super Sonic",
+      "desc": "Start and finish the Super Sonic wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "super-sonic-wizard"
+    },
+    {
+      "id": "all-bosses-defeated",
+      "title": "World Savior",
+      "desc": "Defeat all seven zone bosses in a single game.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "boss-battle-sweep"
+    }
+  ],
+  "drills": [
+    {
+      "id": "skill-shot-lane-reps",
+      "title": "White vs Pink Reps",
+      "text": "Alternate skill shots, pre-selecting Pink every other plunge. Feel out exactly when the flipper-button selection has to land relative to the pull.",
+      "reps": "10 plunges, alternating",
+      "focus": "skill-shot selection",
+      "goal": "skillshot-pink",
+      "shots": [
+        "shooter-lane"
+      ]
+    },
+    {
+      "id": "crossing-loop-reps",
+      "title": "Crossing Loop Control",
+      "text": "Shoot the left ramp, then the right ramp, back to back, tracking where each one actually feeds you. The two loops cross physically -- get comfortable reading which flipper the ball comes back to.",
+      "reps": "10 each ramp",
+      "focus": "loop feeds",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "bash-dash-timing",
+      "title": "Bash-Dash Timing",
+      "text": "Cradle a ball, shoot BASH, and fire the rebound straight into the captive ball with no hesitation in between. Treat it as one motion, not two separate shots.",
+      "reps": "8 attempts",
+      "focus": "combo timing",
+      "goal": "bash-dash-combo",
+      "shots": [
+        "bash-target",
+        "captive-ball"
+      ]
+    },
+    {
+      "id": "inline-drop-clears",
+      "title": "Inline Drop-Target Clears",
+      "text": "Clear the Total-Control 3-bank cleanly from both flippers. This is the shot the entire Chaos Emerald project depends on, so accuracy here compounds over a full game.",
+      "reps": "10 clears",
+      "focus": "target-bank accuracy",
+      "goal": "chaos-emerald-multiball",
+      "shots": [
+        "inline-drop-targets"
+      ]
+    },
+    {
+      "id": "outlane-discipline",
+      "title": "Outlane Discipline",
+      "text": "This table includes a Spring Kickback, but a live flipper and an early nudge are still your main defense -- don't rely on the kickback alone. Play a few balls deliberately favoring whichever flipper sits closer to the outlane a loose ball is drifting toward.",
+      "reps": "1 full ball, both sides",
+      "focus": "nudge and flipper positioning",
+      "shots": [
+        "left-outlane",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "spring-target-awareness",
+      "title": "Spring Target Awareness",
+      "text": "Play a few balls deliberately aiming at each spring target near the outlanes and watch where the ball actually goes. They're sprung, not padded -- the rebound has real force behind it.",
+      "reps": "5 hits each side",
+      "focus": "shot awareness",
+      "shots": [
+        "spring-target-left",
+        "spring-target-right"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Spin-Dash Action Button",
+    "location": "center of the lockdown bar; RGB-backlit",
+    "how": "This button earns its keep during play instead of just steering menus. Between stages it walks the seven-zone ladder so you decide where Sonic goes next, and once you have built a charge on the flippers it turns that charge loose as a Spin Dash. Treat it as a second trigger you keep a thumb near, not a setup control you press once and forget.",
+    "uses": [
+      {
+        "when": "Choosing your next zone",
+        "what": "Steps the seven-zone ladder so you can start any stage you have not cleared yet, in any order."
+      },
+      {
+        "when": "Charge built up by spamming the flippers",
+        "what": "Launches Sonic's Spin Dash, whipping the ball around the 360-degree magnetic accelerator loop in a speed burst."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Blast through Sonic's zones as a pinball speed run: clear each zone's checkpoint shots, ride the ramp to the upper deck, and knock out Eggman to win the boss fight. Gather all seven Chaos Emeralds along the way to reach Super Sonic.",
+    "loop": [
+      "Press the Spin-Dash button to pick a zone, then hit its lit checkpoint shots as they rove around the table to light that zone's Goal Ring.",
+      "Reach the Goal Ring, climb the center ramp up to the battle deck, and knock the Eggmobile to close the zone -- a quicker hit is worth more.",
+      "Drop the in-line Total-Control bank over and over to bank locks and light Chaos Emerald rings, while rolling either inlane to stash rings for your bonus.",
+      "Spell H-E-R-O across the guide-rail rollovers to gather a team, then strike the center BASH standup to pour everyone into a multiball.",
+      "With all seven emeralds glowing, launch the six-ball Chaos Emerald Multiball and break into the Super Sonic mode waiting beside it."
+    ],
+    "lights": [
+      {
+        "id": "skill-shot-select",
+        "name": "Skill Shot Award",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "shooter-lane"
+          }
+        ],
+        "lit": "The lit skill-shot award on the shooter lane reads White by default, and whichever color is showing when you release is the one the plunge pays.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a flipper press before you pull swaps the lit award from White over to the higher-scoring Pink",
+          "when": "before you plunge"
+        },
+        "then": "Tap to Pink for the fatter super value, then plunge to collect it. The choice falls back to White at the start of every ball, so set it fresh before each launch.",
+        "goals": [
+          "skillshot-white",
+          "skillshot-pink"
+        ]
+      },
+      {
+        "id": "chaos-emerald-rings",
+        "name": "Chaos Emerald Rings",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "inline-drop-targets"
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "One emerald ring insert lights for each full sweep of the in-line Total-Control bank, and a lit emerald is banked for keeps with a locked ball waiting behind it.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep dropping the bank until all seven emeralds glow, then feed a ball to the Bash-Dash captive ball to spill six into play for Chaos Emerald Multiball. That same set of seven is the key that opens Super Sonic.",
+        "goals": [
+          "chaos-emerald-multiball",
+          "super-sonic-wizard"
+        ]
+      },
+      {
+        "id": "hero-team-lanes",
+        "name": "H-E-R-O Lanes",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "hero-lane-left",
+            "lamps": 2
+          },
+          {
+            "shot": "hero-lane-right",
+            "lamps": 2
+          },
+          {
+            "shot": "bash-target"
+          }
+        ],
+        "lit": "A lit gold rollover is a letter you have not claimed -- H and E ride the left rail, R and O the right -- so roll a lit one to bank its letter.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the word to add a teammate, build out the roster, then bash the center BASH standup to launch Sonic Heroes Multiball with the whole crew loose.",
+        "goals": [
+          "sonic-heroes-multiball"
+        ]
+      },
+      {
+        "id": "zone-checkpoints",
+        "name": "Zone Checkpoints & Goal Ring",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "eggman-bash-toy"
+          }
+        ],
+        "lit": "Inside a running zone a roving handful of shots light as checkpoints, clearing them lights that zone's Goal Ring, and reaching the ring means the level is beaten and the boss stands open.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "a press of the Spin-Dash button between stages picks any zone you have yet to finish, in whatever order you want",
+          "when": "between zones"
+        },
+        "then": "Climb the center ramp to the battle deck and hit the Eggmobile to win the boss fight -- swing sooner for a faster, bigger hit. Every zone you close feeds the Level Bonus tallied when the game ends.",
+        "goals": [
+          "zone-green-hill",
+          "zone-ladder-progression",
+          "boss-battle-sweep"
+        ]
+      },
+      {
+        "id": "tails-hurry-up",
+        "name": "Tails Hurry-Up",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "Ripping the spinner arms a Tails Hurry-Up, and once it is armed the left inlane lights as the shot that actually kicks the countdown off.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll the lit left inlane to start the hurry-up, then cash it quickly, since the value bleeds down the longer you sit on it.",
+        "goals": [
+          "tails-hurry-up"
+        ]
+      },
+      {
+        "id": "ring-lanes",
+        "name": "Ring Collect Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "Both inlanes are ring lanes, so a roll through either one scoops up rings -- Sonic's signature currency -- straight onto your tally.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank rings on every pass through an inlane; they pay out inside your end-of-ball bonus, so there is never a reason to waste a free roll.",
+        "goals": [
+          "rings-collection"
+        ]
+      },
+      {
+        "id": "chao-garden-orbit",
+        "name": "Chao Garden Orbit",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "chao-target"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Striking the mushroom-topped Chao standup lights the left orbit for Chao Garden, and that lit orbit is your loop shot while the mode's clock runs down.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep looping the lit orbit before the timer expires -- each pass through is worth more than the one before it.",
+        "goals": [
+          "chao-garden"
+        ]
+      },
+      {
+        "id": "badnik-attack-targets",
+        "name": "Battle Zone Targets",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "battle-zone-targets"
+          }
+        ],
+        "lit": "When Badnik Attack is live the right-side Battle Zone standups light up as Eggman's robots for you to knock down before the clock runs out.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep the lit standups to break the robot wave; each Badnik you drop pays more than the last.",
+        "goals": [
+          "badnik-attack"
+        ]
+      },
+      {
+        "id": "find-froggy-target",
+        "name": "Find Froggy Target",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "big-fish-target"
+          },
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "With Froggy lit, the Big Fish standup becomes your catch shot, and a clean strike reels him in on the spot.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the Big Fish standup during the Froggy window; miss it and a later checkpoint relights the chase instead of ending it, so a whiff is rarely fatal.",
+        "goals": [
+          "find-froggy"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Set the skill-shot award and plunge, then dive straight into Green Hill: clear its roving checkpoints, ramp up to the deck, and beat the boss. Grab inlane rings on the way past for free bonus value.",
+        "goals": [
+          "skillshot-pink",
+          "zone-green-hill",
+          "rings-collection"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Walk the zone ladder with the Spin-Dash button, mopping up the side modes -- Chao Garden loops, Badnik Attack, the Froggy catch, a Tails Hurry-Up -- as you spell H-E-R-O for Sonic Heroes Multiball and feed the in-line bank toward the emeralds. Inside any multiball, snare a ball at the BASH standup and slam it into the captive lock to multiply whatever jackpot is live.",
+        "goals": [
+          "zone-ladder-progression",
+          "sonic-heroes-multiball",
+          "bash-dash-combo"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Light all seven Chaos Emeralds, launch the six-ball Chaos Emerald Multiball, and break into Super Sonic, the top scoring mode on the machine. Beating the boss at the end of every single zone is the other prize the backbox is quietly keeping score on.",
+        "goals": [
+          "super-sonic-wizard",
+          "chaos-emerald-multiball",
+          "boss-battle-sweep"
+        ]
+      }
+    ]
+  }
+}

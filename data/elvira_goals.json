@@ -1,0 +1,1464 @@
+{
+  "machine": "Elvira's House of Horrors (Stern Pinball, 2019)",
+  "defaultFx": "ghost",
+  "shots": [
+    {
+      "id": "left_orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.13,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Outermost left lane; wraps up behind the house to the hidden top area. Route to the Back Door."
+    },
+    {
+      "id": "left_ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Wireform ramp with a Scared-Stiff-style crate diverter that can divert into the Trunk lock. Lights Haunts; alternating L/R ramps builds shot multipliers. Backhandable.",
+      "feeds": {
+        "shot": "left_inlane"
+      }
+    },
+    {
+      "id": "trunk",
+      "name": "Junk in the Trunk (Trunk Lock)",
+      "type": "mech",
+      "x": 0.13,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Motorized steamer-trunk ball lock, upper-left. Locks balls for Trunk Multiball and awards random Junk pieces."
+    },
+    {
+      "id": "trunk_targets",
+      "name": "Trunk Targets (36-24-36)",
+      "type": "target",
+      "x": 0.21,
+      "y": 0.39,
+      "trim": "all",
+      "notes": "Vertical bank of 3 round standups; completing them opens the trunk lid and helps arm Double Trouble."
+    },
+    {
+      "id": "garage",
+      "name": "Garage",
+      "type": "scoop",
+      "x": 0.37,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Ball-lock scoop guarded by the gravestone drop target; used for the three Garage Multiballs and to access the Cellar."
+    },
+    {
+      "id": "gravestone_drop",
+      "name": "Gravestone Drop Target",
+      "type": "drop-target",
+      "x": 0.37,
+      "y": 0.59,
+      "trim": "all",
+      "notes": "Single headstone drop standing in front of the Garage entrance; knock it down to light Garage locks."
+    },
+    {
+      "id": "house",
+      "name": "Mansion Entrance / House",
+      "type": "ramp",
+      "x": 0.3996,
+      "y": 0.7808,
+      "trim": "all",
+      "notes": "Center staircase into the House bash toy — the primary start/collect shot. Front-door staircase lifts to reveal the Cellar.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "cellar",
+      "name": "Cellar",
+      "type": "scoop",
+      "x": 0.46,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Inner shot revealed under the lifted front-door staircase; finishes many Haunts and is the Gappa Angry / Wild Market Value climax shot."
+    },
+    {
+      "id": "turret",
+      "name": "Spinning Attic Turret",
+      "type": "mech",
+      "x": 0.45,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Motorized eyeball attic turret atop the House; rotates during House Party (hit House when the eye faces you to add a ball)."
+    },
+    {
+      "id": "back_door",
+      "name": "Super Secret Back Door",
+      "type": "scoop",
+      "x": 0.3,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Rear-of-house opening reached via a soft plunge / left orbit; unskilled skill shot that qualifies/advances a Haunt."
+    },
+    {
+      "id": "right_ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.66,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Ramp right of the House; returns safely to the flippers. Alternating L/R ramps builds shot multipliers. Backhandable.",
+      "feeds": {
+        "shot": "right_inlane"
+      }
+    },
+    {
+      "id": "crypt",
+      "name": "Deadhead Family Crypt",
+      "type": "scoop",
+      "x": 0.66,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Green mausoleum bash-toy + scoop (Crypt Kicker). Deadhead skull is the bash target; the Crypt Cleaner battle track and a multiball lock."
+    },
+    {
+      "id": "right_orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.85,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Outermost right lane; wraps to the hidden top area. Carries the Beast Booster spinner."
+    },
+    {
+      "id": "spinner",
+      "name": "Beast Booster Spinner",
+      "type": "spinner",
+      "x": 0.83,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Opto spinner over the right orbit; raises base values (used in Teenagers from Outer Space)."
+    },
+    {
+      "id": "gargoil_targets",
+      "name": "Gar-Goil Targets",
+      "type": "target",
+      "x": 0.6,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Row of green interactive standups; build the Garg-Oil-Gauge to start Gar-Goils Gone Wild."
+    },
+    {
+      "id": "hand_of_fate_targets",
+      "name": "Hand of Fate Targets",
+      "type": "target",
+      "x": 0.76,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Three red standups; complete to light the Hand of Fate wheel at the left outlane and help arm Double Trouble."
+    },
+    {
+      "id": "freak_fryer",
+      "name": "Freak Fryer",
+      "type": "mech",
+      "x": 0.5075,
+      "y": 0.3699,
+      "trim": "all",
+      "notes": "Center tower charged by switch hits (5 levels); maxing it lights Gappa Angry at the House."
+    },
+    {
+      "id": "pop_bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.6,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Three pops in the hidden area behind the house/crypt; pause the Haunt timer while the ball is here."
+    },
+    {
+      "id": "top_lanes",
+      "name": "Top Rollover Lanes",
+      "type": "lane",
+      "x": 0.58,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Two rollover lanes at the top of the orbit; target of the Dead End top-lane skill shot."
+    },
+    {
+      "id": "left_inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lower-left return; roll it lit to trigger Double Trouble."
+    },
+    {
+      "id": "left_outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Far lower-left drain; carries the Hand of Fate wheel collect."
+    },
+    {
+      "id": "right_inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lower-right return; roll it lit to trigger Double Trouble."
+    },
+    {
+      "id": "right_outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.9,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Far lower-right drain; carries the RETURN ball-save lit by the 1st Deadhead."
+    },
+    {
+      "id": "left_sling",
+      "name": "Left Slingshot",
+      "type": "mech",
+      "x": 0.26,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "right_sling",
+      "name": "Right Slingshot",
+      "type": "mech",
+      "x": 0.74,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Slow rollers can drain off this sling; controlled nudge often needed."
+    },
+    {
+      "id": "shooter_lane",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Right cabinet edge; auto/manual launch feeds the upper-right orbit/rollovers. Soft-plunge for the Back Door skill shot."
+    },
+    {
+      "id": "left_flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right_flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-dead-end-lanes",
+      "title": "Dead End Top-Lane Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "The safe skill shot: plunge into the lit top rollover lane for points and a +5X bonus multiplier, feeding into the low-risk bumpers.",
+      "reward": "250k (+25k each success) plus +5X bonus multiplier",
+      "steps": [
+        {
+          "shot": "top_lanes",
+          "action": "Plunge into either Dead End lane",
+          "detail": "Full or firm plunge feeds the upper hidden area to score and stack +5X bonus; the ball trickles safely on into the pop bumpers afterward. Repeat every ball to pump end-of-ball bonus."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-back-door",
+      "title": "Super Secret Back Door Unskilled Shot",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "The high-EV opener: soft-plunge behind the mansion into the Back Door for big points and a free Haunt qualify.",
+      "reward": "1M base, +250k each (max 2.5M), and qualifies/advances a Haunt",
+      "steps": [
+        {
+          "shot": "back_door",
+          "action": "Soft-plunge so the ball rolls behind the mansion into the Back Door",
+          "detail": "A gentle plunge routes around the top of the playfield to score and light a Haunt at the House — starts a Haunt immediately if one is already qualified, or advances an in-progress Haunt."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-leftramp-house",
+      "title": "House Entrance → Haunt Loop",
+      "category": "combo",
+      "difficulty": 1,
+      "summary": "The fundamental beginner loop runs through the front door: keep shooting the House Entrance until its insert flashes purple, and the very next shot into the House starts the Haunt — the Left Ramp does not qualify one.",
+      "reward": "Lights and starts Haunts → Trailer Trash → Director's Cut",
+      "steps": [
+        {
+          "shot": "house",
+          "action": "Shoot the House Entrance repeatedly to qualify a Haunt",
+          "detail": "Mansion insert flashes purple when a Haunt is ready"
+        },
+        {
+          "shot": "house",
+          "action": "Shoot the House center to start the qualified Haunt",
+          "detail": "Repeatable, safe, and drives B-Restorator rank"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-trailer-trash",
+      "title": "Trailer Trash 100% Cash-Out",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "After finishing any Haunt, hit both ramps then the House to collect 100% of the Haunt's score on a hurry-up.",
+      "reward": "100% of the completed Haunt's score (50% House-only, 75% one ramp)",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Shoot one ramp to raise the hurry-up to 75%",
+          "detail": "Fires immediately after any Haunt completes",
+          "link": "none"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Shoot the other ramp to raise it to 100%",
+          "detail": "Both ramps before collecting maxes the payout",
+          "link": "none"
+        },
+        {
+          "shot": "house",
+          "action": "Collect the full hurry-up at the House Entrance",
+          "detail": "Atomic Raygun cannot spot this House shot"
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "combo-werewolf-quadratic",
+      "title": "Werewolf of Washington Quadratic Combo",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "The only formal combo engine in the game: chain the flashing blue shots within 7 seconds each; value scales quadratically and the House holds all shots lit.",
+      "reward": "base + 125K × (N²−N) on the Nth chained shot",
+      "steps": [
+        {
+          "shot": "house",
+          "action": "Shoot the House to keep all five combo shots lit",
+          "detail": "House is the reset/hold shot to prolong the chain"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Continue the chain within 7 seconds",
+          "detail": "First shot has no timer; each subsequent shot must land within 7s"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Keep chaining flashing shots for the quadratic payout",
+          "detail": "Garage/Crypt or a timeout ends the transformation"
+        }
+      ],
+      "fx": "ghost",
+      "ordered": false
+    },
+    {
+      "id": "combo-flow-loops",
+      "title": "Flow Loops (Left Ramp → Trunk, Left Orbit → Left Ramp)",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Two flow loops that build shot value and feed safely: the Left Ramp into the Trunk, and the Left Orbit backhanded into the Left Ramp.",
+      "reward": "Builds shot value and shot multipliers; safe feeds",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the Left Ramp toward the Trunk feed via the crate diverter",
+          "detail": "Alternating ramps builds shot multipliers",
+          "feeds": {
+            "shot": "trunk"
+          }
+        },
+        {
+          "shot": "trunk",
+          "action": "Ball continues into the Trunk area",
+          "detail": "Keeps flow while advancing the Junk lock"
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Take the left orbit, then backhand the Left Ramp",
+          "detail": "Classic flow combo"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Backhand the Left Ramp to continue the loop"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "combo-jackpot-set",
+      "title": "Jackpot Shot Set Loop",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "The game's canonical jackpot ring: Left Orbit → Left Ramp → Garage → House → Right Ramp → Right Orbit → Crypt, farmed during multiballs.",
+      "reward": "Sweeps every lit jackpot in a single pass",
+      "steps": [
+        {
+          "shot": "left_orbit",
+          "action": "Start the ring at the Left Orbit"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Continue to the Left Ramp"
+        },
+        {
+          "shot": "garage",
+          "action": "Hit the Garage"
+        },
+        {
+          "shot": "house",
+          "action": "Hit the House / Mansion Entrance"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Continue to the Right Ramp"
+        },
+        {
+          "shot": "right_orbit",
+          "action": "Take the Right Orbit"
+        },
+        {
+          "shot": "crypt",
+          "action": "Finish at the Crypt"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mb-garage-wild-women",
+      "title": "Garage Multiball (Wild Women)",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Knock down the gravestone drop to light Garage locks, lock three balls, and start Wild Women Multiball; loop orbit supers via the House relight.",
+      "reward": "350k jackpots (+25k), 1M House super, then 800k orbit supers",
+      "steps": [
+        {
+          "shot": "gravestone_drop",
+          "action": "Knock down the gravestone drop target to light the locks",
+          "detail": "MB1 needs one drop hit to light all three locks"
+        },
+        {
+          "shot": "garage",
+          "action": "Shoot the Garage to lock balls (three total)",
+          "detail": "Stacks into an active Haunt"
+        },
+        {
+          "shot": "house",
+          "action": "After 5 jackpots, shoot the House for the 1M Super",
+          "detail": "Then both orbits light for 800k supers"
+        },
+        {
+          "shot": "right_orbit",
+          "action": "Loop the orbits for the super jackpot stream"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mb-junk-in-trunk",
+      "title": "Junk in the Trunk Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Complete the 36-24-36 targets to open the Trunk, collect and lock via the crate-diverter Left Ramp, and start the 2-ball Trunk Multiball.",
+      "reward": "Two roving jackpots; Left Ramp Super Jackpot awards 1–3 random Junk pieces",
+      "steps": [
+        {
+          "shot": "trunk_targets",
+          "action": "Complete the 36-24-36 stand-up bank to open the trunk",
+          "detail": "A flashing insert cycles the four collectible Junk items"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the Left Ramp to collect the item and lock a ball via the crate diverter",
+          "detail": "A ball falling into the Trunk under the drop also locks",
+          "feeds": {
+            "shot": "trunk"
+          }
+        },
+        {
+          "shot": "trunk",
+          "action": "Lock the second ball to start the 2-ball Trunk Multiball",
+          "detail": "Two random shots light for jackpots"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the Left Ramp for the Super Jackpot + random Junk"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mb-deadhead-crypt",
+      "title": "Deadhead Family Crypt Battle",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "The Crypt Cleaner track: lower the crypt, awaken a Deadhead, batter the skull, and return to the Crypt to defeat it.",
+      "reward": "250k per Deadhead (held ball-to-ball); 1st lights RETURN, 2nd Extra Ball, 3rd Super Head Shot",
+      "steps": [
+        {
+          "shot": "crypt",
+          "action": "Shoot the Crypt entrance (1 hit + 1 per prior defeat) to lower it",
+          "detail": "Feeds via subway / Crypt Kicker"
+        },
+        {
+          "shot": "crypt",
+          "action": "Shoot the scoop to awaken a Deadhead, then batter the skull target",
+          "detail": "Skull hits needed = 3 + 2 per prior defeat"
+        },
+        {
+          "shot": "crypt",
+          "action": "Return to the Crypt to finish the Deadhead",
+          "detail": "3rd Deadhead lights the aimed Super Head Shot (Wild Market Value requirement)"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mb-gappa-angry",
+      "title": "Freak Fryer → Gappa Angry (6-Ball)",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Charge Freak Fryer with switch hits to light Gappa Angry, then run the six escalating lock stages to the Cellar for the 6-ball multiball.",
+      "reward": "Stages 500k (+500k/stage, +25k/shot); Cellar Super Jackpot + 6-ball MB",
+      "steps": [
+        {
+          "shot": "freak_fryer",
+          "action": "Build Freak Fryer to Level 5 via switch hits (150 for level 1, 1,000 cumulative)",
+          "detail": "Maxing it lights Gappa Angry at the House"
+        },
+        {
+          "shot": "house",
+          "action": "Stage 1: shoot the House to lock",
+          "detail": "Back Door skill shot spots one shot's worth of progress in the current stage"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Stage 2: shoot both ramps to lock in the Garage"
+        },
+        {
+          "shot": "right_orbit",
+          "action": "Stage 3: both orbits + House to lock in the Crypt"
+        },
+        {
+          "shot": "cellar",
+          "action": "Reach the Cellar for the Super Jackpot and start 6-ball Gappa Angry Multiball",
+          "detail": "Draining mid-Gappa yields consolation MBs by stage reached"
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "mode-night-living-dead",
+      "title": "Haunt: Night of the Living Dead",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "A three-stage main Haunt: shoot ramps then House, destroy 4+ ghouls across the lit shots, then finish at the House via the Cellar.",
+      "reward": "Shots 500k → 2M final; completing qualifies Trailer Trash and advances B-Restorator",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Stage 1: shoot the ramps, then the House",
+          "detail": "45s timer, pauses in the bumpers"
+        },
+        {
+          "shot": "cellar",
+          "action": "Stage 2: destroy 4+ ghouls across the lit shots; Cellar qualifies Stage 3",
+          "detail": "All shots lit except House; each toggles off until a different shot is made"
+        },
+        {
+          "shot": "house",
+          "action": "Stage 3: shoot the House Entrance for the final value"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-teenagers-outer-space",
+      "title": "Haunt: Teenagers from Outer Space",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Make a scaling set of lit shots excluding the House, then use the right spinner to build the base value before the House final.",
+      "reward": "Spinner raises base value ~1% of final per hit; House lights the final shot",
+      "steps": [
+        {
+          "shot": "left_orbit",
+          "action": "Stage 1: make 3 + (# prior Haunts) lit shots, excluding the House",
+          "detail": "Each shot extinguishes until a different shot is hit"
+        },
+        {
+          "shot": "spinner",
+          "action": "Stage 2: rip the right-orbit spinner to raise the base value",
+          "detail": "Each spin adds to the final value"
+        },
+        {
+          "shot": "house",
+          "action": "Shoot the House to light and collect the final shot"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-un-happy-hour",
+      "title": "Un-Happy Hour (Ramp Side Mode)",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Qualify with a scaling number of ramp shots, then farm ramps for 30 seconds.",
+      "reward": "Ramp shots 350k (+25k) for 30s",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Qualify by making 5 + (2 × #starts) ramp shots",
+          "detail": "Left and Right ramps both count"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "During the 30s timer, keep hitting ramps for 350k (+25k) each"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mode-gargoils-gone-wild",
+      "title": "Gar-Goils Gone Wild",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Charge the Garg-Oil-Gauge by completing the Gar-Goil targets, then farm the orbits for escalating value (a Wild Market Value requirement).",
+      "reward": "Targets 50k (+10k), all-4 bonus 150k (+25k), orbit shots 150k (+150k), orbit Super Jackpot",
+      "steps": [
+        {
+          "shot": "gargoil_targets",
+          "action": "Complete the Gar-Goil targets to advance the gauge (2× then once more)",
+          "detail": "Builds toward starting the mode"
+        },
+        {
+          "shot": "left_orbit",
+          "action": "Farm the orbits for 150k (+150k per shot)"
+        },
+        {
+          "shot": "right_orbit",
+          "action": "Loop the other orbit for the Super Jackpot"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mult-double-trouble",
+      "title": "Double Trouble (2X → 4X Playfield)",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Complete the Trunk targets and Hand of Fate targets, roll a lit inlane for 2X, then re-qualify while it runs to upgrade to 4X.",
+      "reward": "2X scoring for 30s (+10s per re-complete); re-arm while running → 4X",
+      "steps": [
+        {
+          "shot": "trunk_targets",
+          "action": "Complete the 36-24-36 stand-up bank",
+          "detail": "One half of the qualify",
+          "link": "none"
+        },
+        {
+          "shot": "hand_of_fate_targets",
+          "action": "Complete the Hand of Fate right target bank",
+          "detail": "Lights Double Trouble at an inlane",
+          "link": "none"
+        },
+        {
+          "shot": "left_inlane",
+          "action": "Roll the lit inlane to start 2X (use flippers to pick the inlane)",
+          "detail": "Time it to land as a big scoring window opens"
+        },
+        {
+          "shot": "right_inlane",
+          "action": "Re-qualify both banks and roll a lit inlane while 2X runs to upgrade to 4X",
+          "detail": "Resets the 30s timer"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-bonus-double-boneus",
+      "title": "Bonus X + Double Bone-Us",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Stack bonus multiplier via top-lane skill shots, then collect Double Bone-Us on the Hand of Fate wheel to double the entire end-of-ball bonus.",
+      "reward": "+5X bonus per skill shot; Double Bone-Us doubles the whole bonus on top",
+      "steps": [
+        {
+          "shot": "top_lanes",
+          "action": "Repeat the top-lane skill shot to stack +5X bonus each time",
+          "detail": "Cheap way to build a large end-of-ball bonus"
+        },
+        {
+          "shot": "hand_of_fate_targets",
+          "action": "Complete the Hand of Fate targets to light the wheel",
+          "detail": "Wheel collected at the left outlane"
+        },
+        {
+          "shot": "left_outlane",
+          "action": "Stop the wheel on Double Bone-Us before draining",
+          "detail": "Doubles the entire bonus and stacks with bonus X"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-directors-cut",
+      "title": "Director's Cut (Wizard)",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "Complete 4 Haunts to reach B-Restorator Rank 4, lighting Director's Cut at the House; re-collect each film by shooting lit blue shots to qualify the Cellar.",
+      "reward": "~100M for completing all 4 films; takes precedence over other modes",
+      "steps": [
+        {
+          "shot": "house",
+          "action": "Complete 4 Haunts to reach B-Restorator Rank 4",
+          "detail": "Each Haunt started/finished via the House"
+        },
+        {
+          "shot": "house",
+          "action": "Start Director's Cut when it lights at the House"
+        },
+        {
+          "shot": "cellar",
+          "action": "Shoot the lit blue shots then the Cellar to wrap each film",
+          "detail": "Wrap 4 films for the 100M bonus"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-wild-market-value",
+      "title": "Wild Market Value (Final Wizard)",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The ultimate goal: tick off all seven requirements, start the sale at the Cellar, then beat a 30-second hurry-up to the Wild Market Value spot target - the same target that has been building the price all game.",
+      "reward": "~30s Cellar hurry-up paying your total accumulated market value",
+      "steps": [
+        {
+          "shot": "house",
+          "action": "Start Director's Cut (complete 4 Haunts) — requirement 1",
+          "detail": "Also satisfies the Haunt spine",
+          "link": "none"
+        },
+        {
+          "shot": "crypt",
+          "action": "Defeat the Clown Deadhead / Super Head Shot — requirement 2",
+          "link": "none"
+        },
+        {
+          "shot": "trunk",
+          "action": "Start Phone-A-Fiend (collect all 4 Junk) — requirement 3",
+          "link": "none"
+        },
+        {
+          "shot": "freak_fryer",
+          "action": "Start Gappa Angry (max Freak Fryer, reach Cellar) — requirement 4",
+          "link": "none"
+        },
+        {
+          "shot": "gargoil_targets",
+          "action": "Start Gar-Goils Gone Wild — requirement 5",
+          "link": "none"
+        },
+        {
+          "shot": "garage",
+          "action": "Start Attic Attack (the 3rd Garage MB) — requirement 6",
+          "link": "none"
+        },
+        {
+          "shot": "house",
+          "action": "Start They Came From Space (6 Haunts) — requirement 7",
+          "detail": "TCFS is qualified/started at the House, not the Garage",
+          "link": "none"
+        },
+        {
+          "shot": "cellar",
+          "action": "Hit the Wild Market Value spot target at the Cellar to sell the house",
+          "detail": "~30s hurry-up for your whole-game market value"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-aggressive-opener",
+      "title": "Aggressive High-Score Opener",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "Back Door skill shot for a free Haunt, start and play it while arming Double Trouble, then 100% Trailer Trash under 2X/4X.",
+      "reward": "Front-loads points and fast-tracks Director's Cut",
+      "steps": [
+        {
+          "shot": "back_door",
+          "action": "Soft-plunge the Super Secret Back Door (1M+ and lights a Haunt)"
+        },
+        {
+          "shot": "house",
+          "action": "Shoot the House to start the Haunt"
+        },
+        {
+          "shot": "pop_bumpers",
+          "action": "Dip into the bumpers to pause the 45s timer and reset"
+        },
+        {
+          "shot": "trunk_targets",
+          "action": "Bank the Trunk targets mid-Haunt to arm Double Trouble"
+        },
+        {
+          "shot": "hand_of_fate_targets",
+          "action": "Bank the Hand of Fate targets to finish arming Double Trouble"
+        },
+        {
+          "shot": "left_inlane",
+          "action": "Roll the lit inlane on the Haunt's big final shot to fire 2X (re-arm for 4X)"
+        },
+        {
+          "shot": "house",
+          "action": "Complete the Haunt, then collect Trailer Trash at 100% under the multiplier"
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "strategy-safe-beginner",
+      "title": "Safe Beginner Opener",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Take the near-zero-risk top-lane skill shot, then run the Left Ramp → House Haunt loop, only battering targets in multiball.",
+      "reward": "Builds bonus X cheaply; Extra Ball at 2 Haunts",
+      "steps": [
+        {
+          "shot": "shooter_lane",
+          "action": "Plunge for the top-lane skill shot (250k + 5X bonus)"
+        },
+        {
+          "shot": "top_lanes",
+          "action": "Either Dead End lane scores it; the ball then feeds the safe bumpers"
+        },
+        {
+          "shot": "house",
+          "action": "Shoot the House Entrance repeatedly until its insert flashes purple"
+        },
+        {
+          "shot": "house",
+          "action": "Shoot the House to start it; use bumper timer-pausing to play it out"
+        },
+        {
+          "shot": "house",
+          "action": "Collect Trailer Trash at the House, then repeat the loop toward 2 Haunts for Extra Ball"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "strategy-core-stack",
+      "title": "The Core Stack: Haunt + Multiball + 4X",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "The money strategy: start a Haunt, layer a jackpot multiball on top, and hold 4X Double Trouble so everything on the playfield is quadrupled.",
+      "reward": "The highest sustained scoring window in the game",
+      "steps": [
+        {
+          "shot": "house",
+          "action": "Start a Haunt first (you can bring a MB into a mode, not the reverse)"
+        },
+        {
+          "shot": "gravestone_drop",
+          "action": "Knock the gravestone drop and lock for a Garage Multiball to stack on the Haunt"
+        },
+        {
+          "shot": "trunk_targets",
+          "action": "Pre-bank the Trunk targets to arm Double Trouble"
+        },
+        {
+          "shot": "hand_of_fate_targets",
+          "action": "Pre-bank the Hand of Fate targets to complete the Double Trouble qualify"
+        },
+        {
+          "shot": "left_inlane",
+          "action": "Roll the lit inlane to fire 2X, then re-arm to hold 4X"
+        },
+        {
+          "shot": "house",
+          "action": "Loop House and orbit supers with everything quadrupled"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "extra-ball-hand-of-fate",
+      "title": "Extra Ball via Hand of Fate",
+      "category": "strategy",
+      "summary": "Extra Ball is not on the first Hand of Fate wheel, so this is a long path rather than a quick one. Complete the Hand of Fate target bank to light Hand of Fate at the left outlane, then stop the wheel with the lockdown bar action button when a ball drains there. The first wheel holds Ball Save, Extend Garage Multiball, Extend Trunk Multiball, 5 Million, 2 Million and Double Bone-Us; only once all six are collected does a second wheel open, and that is the one carrying Extra Ball.",
+      "difficulty": 2,
+      "reward": "Extra ball when the wheel lands on it",
+      "steps": [
+        {
+          "shot": "hand_of_fate_targets",
+          "action": "Complete the Hand of Fate target bank to arm the wheel",
+          "detail": "Each completion arms one wheel spin"
+        },
+        {
+          "shot": "left_outlane",
+          "action": "Let the outlane collect the armed spin and stop it on an award you have not collected — Extra Ball appears on the second wheel",
+          "detail": "The wheel is collected on the way out, so an armed spin turns a drain into a reward"
+        },
+        {
+          "shot": "shooter_lane",
+          "action": "Replunge the extra ball and repeat the target bank for another spin",
+          "detail": "Wheel awards keep cycling, so keep re-arming all game"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "multiball-grand-slam",
+      "title": "All Three Multiballs in One Game",
+      "category": "strategy",
+      "summary": "Route a single game through every standard multiball: Garage locks, the Trunk targets, and the Crypt battle.",
+      "difficulty": 3,
+      "reward": "Three multiballs plus the stacking value of layering them over Haunts and 4X",
+      "steps": [
+        {
+          "shot": "gravestone_drop",
+          "action": "Drop the gravestone early to light the Garage locks",
+          "detail": "Cheapest multiball to reach, so take it first"
+        },
+        {
+          "shot": "garage",
+          "action": "Lock three balls in the Garage and run the multiball",
+          "detail": "Farm the jackpot ring while it runs"
+        },
+        {
+          "shot": "trunk_targets",
+          "action": "Between multiballs, clear the trunk standups to unlock the trunk",
+          "detail": "Target work is safest with extra balls on the playfield"
+        },
+        {
+          "shot": "trunk",
+          "action": "Collect and lock at the trunk to start the trunk multiball",
+          "detail": "Left ramp feeds the lock when the diverter is set"
+        },
+        {
+          "shot": "crypt",
+          "action": "Wake a Deadhead and start the Crypt battle for the third multiball",
+          "detail": "Finishing it also checks a final wizard requirement"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "video-mode-hand-of-fate-wheel",
+      "title": "Hand of Fate: Stop the Wheel Yourself",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "This machine runs a reflex mini-game off a drained ball, and it is easy to mistake for a random consolation prize. Complete the right target bank to light Hand of Fate at the left outlane, and the next ball that drains there puts a spinning wheel on the display — the lockdown bar button, not luck, decides where it stops.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Complete the right target bank to light HAND OF FATE at the left outlane",
+        "Let a ball drain down the lit left outlane instead of trying to save it",
+        "Watch for the spinning wheel that appears on the display",
+        "Press the lockdown bar action button to stop the wheel on the segment you want",
+        "Stop it within 6 seconds — no award is collected if the wheel is not stopped in time"
+      ],
+      "reward": "Your pick of six wheel segments: Ball Save, Extend Garage Multiball, Extend Trunk Multiball, 5 Million, 2 Million, or Double Bone-Us. Collect them all and a second wheel opens, with a third after that, and completing every Hand of Fate award starts the Manos Wheel."
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-haunt-underway",
+      "title": "Open the Front Door",
+      "desc": "Light a Haunt with the Left Ramp and start it at the House.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-leftramp-house"
+    },
+    {
+      "id": "back-door-plunge",
+      "title": "In Through the Back",
+      "desc": "Soft-plunge into the Super Secret Back Door for the skill shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-back-door"
+    },
+    {
+      "id": "wild-women-started",
+      "title": "Garage Sale",
+      "desc": "Lock three balls in the Garage and start Wild Women Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-garage-wild-women"
+    },
+    {
+      "id": "trunk-multiball-started",
+      "title": "Pop the Trunk",
+      "desc": "Complete the trunk standups, open the trunk, and start Junk in the Trunk Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-junk-in-trunk"
+    },
+    {
+      "id": "deadhead-defeated",
+      "title": "Silence a Deadhead",
+      "desc": "Wake a Deadhead, batter the skull, and finish it off at the Crypt.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-deadhead-crypt"
+    },
+    {
+      "id": "haunt-finished-clean",
+      "title": "Roll the Credits",
+      "desc": "Complete a full three-stage Haunt through its House finish.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-night-living-dead"
+    },
+    {
+      "id": "full-cash-out",
+      "title": "Collect Every Cent",
+      "desc": "Finish a Haunt, then hit both ramps and the House to bank the full 100 percent Trailer Trash cash-out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-trailer-trash"
+    },
+    {
+      "id": "gargoils-cleared",
+      "title": "Grease the Gauge",
+      "desc": "Fill the Gar-Goil gauge, start Gar-Goils Gone Wild, and farm the orbits through it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-gargoils-gone-wild"
+    },
+    {
+      "id": "quad-playfield",
+      "title": "Four Times the Trouble",
+      "desc": "Run Double Trouble at 2X and re-qualify it while it is live to reach 4X playfield scoring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-double-trouble"
+    },
+    {
+      "id": "double-boneus-collected",
+      "title": "Twice the Bones",
+      "desc": "Land the Hand of Fate wheel on Double Bone-Us to double your end-of-ball bonus.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-bonus-double-boneus"
+    },
+    {
+      "id": "extra-ball-earned",
+      "title": "One More Ball",
+      "desc": "Earn and collect an extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-hand-of-fate"
+    },
+    {
+      "id": "super-jackpot-collected",
+      "title": "Super Payday",
+      "desc": "Work the jackpot ring in a multiball all the way to a super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-jackpot-set"
+    },
+    {
+      "id": "werewolf-long-chain",
+      "title": "Five Links Deep",
+      "desc": "Chain five or more shots in a row during the Werewolf combo mode without letting the timer lapse.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-werewolf-quadratic"
+    },
+    {
+      "id": "six-ball-frenzy",
+      "title": "Six Balls of Trouble",
+      "desc": "Max the Freak Fryer, clear all six lock stages, and start the six-ball Gappa multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-gappa-angry"
+    },
+    {
+      "id": "three-multiball-game",
+      "title": "House Full of Balls",
+      "desc": "Start the Garage, Trunk, and Crypt multiballs all in the same game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-grand-slam"
+    },
+    {
+      "id": "directors-cut-lit",
+      "title": "Rank Four Restorator",
+      "desc": "Complete four Haunts to reach restoration rank four and light Director's Cut at the House.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-directors-cut"
+    },
+    {
+      "id": "directors-cut-finished",
+      "title": "Final Cut",
+      "desc": "Re-collect every film in Director's Cut and close it out at the Cellar.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-directors-cut"
+    },
+    {
+      "id": "sell-the-house",
+      "title": "Sold",
+      "desc": "Cash the Wild Market Value hurry-up at the Cellar before it expires.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-wild-market-value"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-back-door-soft-plunge",
+      "title": "Soft Plunge The Back Door",
+      "text": "Ease the plunger so the ball rolls around the top and behind the mansion into the Back Door. It pays real points and hands you a Haunt for free, which is a better opening than anything you can shoot for with a flipper.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-back-door",
+      "shots": [
+        "shooter_lane",
+        "back_door"
+      ]
+    },
+    {
+      "id": "drill-house-repeats",
+      "title": "Front Door Repeats",
+      "text": "Shoot the House Entrance over and over until the insert flashes purple, then put the next one straight back in to start the Haunt. The ramps do not qualify a Haunt, so this centre shot is the whole spine of the game.",
+      "reps": "10 consecutive makes",
+      "focus": "accuracy",
+      "goal": "combo-leftramp-house",
+      "shots": [
+        "house"
+      ]
+    },
+    {
+      "id": "drill-trailer-trash-hundred",
+      "title": "Both Ramps, Then Collect",
+      "text": "The instant a Haunt finishes, take one ramp, then the other, then the House. Collecting straight at the House pays half; the two ramps first are what make it whole, and the hurry-up does not wait for you to decide.",
+      "reps": "5 collections",
+      "focus": "flow",
+      "goal": "combo-trailer-trash",
+      "shots": [
+        "left_ramp",
+        "right_ramp",
+        "house"
+      ]
+    },
+    {
+      "id": "drill-bumper-timer-pause",
+      "title": "Buy Time In The Bumpers",
+      "text": "Mid-Haunt, put the ball up an orbit into the pop bumpers on purpose. The Haunt clock pauses while it is up there, so learn to spend that trip deliberately instead of only finding the bumpers by accident.",
+      "reps": "5 deliberate trips",
+      "focus": "ball-control",
+      "shots": [
+        "left_orbit",
+        "right_orbit",
+        "pop_bumpers"
+      ]
+    },
+    {
+      "id": "drill-deadhead-cycle",
+      "title": "One Whole Deadhead",
+      "text": "Run a full Deadhead without stopping: lower the crypt, wake the skull, batter it down, then come back to the crypt to finish. Every one you beat demands more hits than the last, so the shot has to be repeatable rather than lucky.",
+      "reps": "2 full Deadheads",
+      "focus": "accuracy",
+      "goal": "mb-deadhead-crypt",
+      "shots": [
+        "crypt"
+      ]
+    },
+    {
+      "id": "drill-orbit-backhand-ramp",
+      "title": "Orbit, Then Backhand",
+      "text": "Take the left orbit and backhand the left ramp off the return, then keep the loop going. The crate diverter can carry that same ramp shot on into the Trunk, so one habit builds shot multipliers and lock progress at once.",
+      "reps": "10 loops",
+      "focus": "flow",
+      "goal": "combo-flow-loops",
+      "shots": [
+        "left_orbit",
+        "left_ramp",
+        "trunk"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "on the lockdown bar",
+    "how": "Three jobs, all worth knowing. It stops the Hand of Fate wheel on the award you actually want, it fires the Atomic Raygun you pull out of the Trunk, and it aims the Super Head Shot at the Crypt.",
+    "uses": [
+      {
+        "when": "Ball heading down the lit left outlane",
+        "what": "Stops the spinning wheel on the display — where it lands is your choice, not luck. No press, no award."
+      },
+      {
+        "when": "Holding the Atomic Raygun from the Trunk",
+        "what": "Spots a shot in your most recently started Haunt; the button lights in whatever color that shot is."
+      },
+      {
+        "when": "Third Deadhead, Super Head Shot lit",
+        "what": "Aims at the flashing target at the Crypt — the shot cannot be finished without it."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Elvira is flipping a haunted house, and you restore and sell it by playing through her library of B-movie Haunts. Build your market value across every mode and multiball, then close the sale for the whole accumulated total in Wild Market Value.",
+    "loop": [
+      "Shoot the House entrance until its mansion insert flashes purple, then shoot it again to start a Haunt -- the ramps alone never qualify one.",
+      "Play the Haunt out, dipping into the pop bumpers to pause its timer, then cash it at up to full value with both ramps into the House.",
+      "Lock balls at the Garage, complete the Trunk targets, and battle the Crypt to run the three standard multiballs, stacking them onto a running Haunt.",
+      "Complete the Trunk and Hand of Fate target banks and roll a lit inlane for Double Trouble, then hold 4X so the whole stack is quadrupled.",
+      "Finish four Haunts for Director's Cut, tick off all seven requirements, and sell the house at the Cellar."
+    ],
+    "lights": [
+      {
+        "id": "house-cellar",
+        "name": "The House & Cellar",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "house"
+          },
+          {
+            "shot": "cellar"
+          }
+        ],
+        "lit": "Every Haunt begins and ends at the House center, and win one and the front-door steps rise away to expose the Cellar underneath, which closes out many Haunts and is the climax shot for the biggest goals.",
+        "flashing": "A purple-flashing mansion insert means a Haunt is qualified and the next House shot will start it.",
+        "control": null,
+        "then": "Loop the House to qualify and start Haunts, and the moment one finishes take both ramps then the House to bank the full Trailer Trash cash-out. Four completed Haunts light Director's Cut here, and the Cellar is where you eventually sell the house for Wild Market Value.",
+        "goals": [
+          "combo-leftramp-house",
+          "combo-trailer-trash",
+          "wizard-directors-cut",
+          "wizard-wild-market-value"
+        ]
+      },
+      {
+        "id": "garage",
+        "name": "The Garage",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "gravestone_drop"
+          },
+          {
+            "shot": "garage"
+          }
+        ],
+        "lit": "Knocking down the gravestone drop guarding the Garage lights its locks; feed three balls in to start Wild Women Multiball, the cheapest multiball to reach and an easy one to layer over a Haunt.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three and farm the jackpot ring -- left orbit, ramps, House, right orbit, Crypt -- shooting the House after five jackpots for the Super, which then lights both orbits for supers. Starting Attic Attack, the third Garage multiball, is one of the seven Wild Market Value requirements.",
+        "goals": [
+          "mb-garage-wild-women",
+          "combo-jackpot-set",
+          "wizard-wild-market-value"
+        ]
+      },
+      {
+        "id": "trunk",
+        "name": "Junk in the Trunk",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "trunk_targets"
+          },
+          {
+            "shot": "trunk"
+          },
+          {
+            "shot": "left_ramp"
+          }
+        ],
+        "lit": "Completing the 36-24-36 standup bank opens the motorized trunk; the left ramp's crate diverter then drops the ball inside to collect a random Junk piece and lock it, and a second lock starts the two-ball Trunk Multiball.",
+        "flashing": "A flashing trunk insert cycles which of the four collectible Junk items is on offer.",
+        "control": null,
+        "then": "Lock through the left ramp and cash its Super Jackpot for one to three Junk pieces. Collecting all four Junk starts Phone-A-Fiend -- another sale requirement -- and pulls out the Atomic Raygun, which the lockdown-bar button fires to spot a shot in your running Haunt.",
+        "goals": [
+          "mb-junk-in-trunk",
+          "wizard-wild-market-value"
+        ]
+      },
+      {
+        "id": "crypt",
+        "name": "Deadhead Family Crypt",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "crypt"
+          }
+        ],
+        "lit": "The green crypt is a bash toy: shoot it to lower the mausoleum, wake a Deadhead and batter its skull, then return to the crypt to finish it off, with each successive Deadhead demanding more hits than the last.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "aim the flashing Super Head Shot at the crypt -- the third Deadhead cannot be finished any other way",
+          "when": "the third Deadhead is up and the Super Head Shot is lit"
+        },
+        "then": "The first Deadhead lights the right-outlane ball save, the second an extra ball, and the third that Super Head Shot, itself one of the seven sale requirements. Defeated heads are held from ball to ball, so no early crypt work is ever wasted.",
+        "goals": [
+          "mb-deadhead-crypt",
+          "wizard-wild-market-value"
+        ]
+      },
+      {
+        "id": "freak-fryer",
+        "name": "Freak Fryer & Gappa Angry",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "freak_fryer"
+          },
+          {
+            "shot": "house"
+          },
+          {
+            "shot": "cellar"
+          }
+        ],
+        "lit": "The center Freak Fryer tower charges on switch hits across five levels; topping it out lights Gappa Angry over at the House, which then runs six escalating lock stages that climb the playfield toward the Cellar.",
+        "flashing": null,
+        "control": null,
+        "then": "Charge the tower, start at the House, and work the staged locks -- House, then both ramps, then both orbits -- up to the Cellar Super Jackpot and a six-ball multiball. Starting Gappa Angry is another of the seven requirements for the final sale.",
+        "goals": [
+          "mb-gappa-angry",
+          "wizard-wild-market-value"
+        ]
+      },
+      {
+        "id": "double-trouble",
+        "name": "Double Trouble Playfield X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "trunk_targets"
+          },
+          {
+            "shot": "hand_of_fate_targets"
+          },
+          {
+            "shot": "left_inlane"
+          },
+          {
+            "shot": "right_inlane"
+          }
+        ],
+        "lit": "Complete the Trunk standup bank and the Hand of Fate target bank and one inlane lights for Double Trouble; the lit inlane is what you roll through to switch on playfield-wide multiplier scoring.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap a flipper button to move the lit Double Trouble inlane between the two returns, so the ball rolls through it on the shot you choose",
+          "when": "Double Trouble is lit and the ball is heading for the inlanes"
+        },
+        "then": "Time the lit inlane so it rolls just as a fat scoring window opens and it fires 2X for thirty seconds; re-complete both banks and roll a lit inlane again while it still runs to upgrade to 4X, then work the House and orbit supers with the whole playfield quadrupled.",
+        "goals": [
+          "mult-double-trouble",
+          "strategy-core-stack"
+        ]
+      },
+      {
+        "id": "gargoils",
+        "name": "Gar-Goil Targets",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "gargoil_targets"
+          },
+          {
+            "shot": "left_orbit"
+          },
+          {
+            "shot": "right_orbit"
+          }
+        ],
+        "lit": "The row of green Gar-Goil standups fills the Garg-Oil-Gauge as you complete it; filling the gauge starts Gar-Goils Gone Wild, which turns both orbits into escalating value.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the targets to start the mode, then farm the orbits for value that climbs each shot up to a Super Jackpot. Starting Gar-Goils Gone Wild is one of the seven boxes you tick for the final sale.",
+        "goals": [
+          "mode-gargoils-gone-wild",
+          "wizard-wild-market-value"
+        ]
+      },
+      {
+        "id": "hand-of-fate",
+        "name": "Hand of Fate Wheel",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "hand_of_fate_targets"
+          },
+          {
+            "shot": "left_outlane"
+          }
+        ],
+        "lit": "Completing the Hand of Fate target bank arms a spin and lights Hand of Fate at the left outlane; the next ball to drain that way throws a spinning wheel onto the display instead of just dying.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "press the lockdown-bar button to freeze the wheel wherever you like, so you decide the award rather than leaving it to chance",
+          "when": "the wheel is spinning after a ball drains down the lit left outlane"
+        },
+        "then": "Let a lit-outlane drain feed the wheel and stop it within about six seconds on an award you need -- Double Bone-Us doubles your entire end-of-ball bonus. Collect all six segments and a second wheel opens, which is where the extra ball lives.",
+        "goals": [
+          "mult-bonus-double-boneus",
+          "extra-ball-hand-of-fate",
+          "video-mode-hand-of-fate-wheel"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Complete the Trunk and Hand of Fate target banks and one inlane lights for Double Trouble; tap a flipper button to move the lit inlane between the two returns so the ball rolls through the one you pick. Rolling it fires 2X playfield scoring, and re-qualifying the banks and rolling a lit inlane again while it runs upgrades you to 4X.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Soft-plunge behind the mansion into the Super Secret Back Door for a fat score and a Haunt handed to you free, or take the near-riskless top-lane skill shot for points and a bonus-multiplier bump. Start the Haunt at the House, then dip into the pop bumpers to pause its timer while you learn the shots.",
+        "goals": [
+          "skill-back-door",
+          "skill-dead-end-lanes",
+          "strategy-safe-beginner"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start a Haunt first, then stack a Garage Multiball on top, since you can pull a multiball into a running Haunt but never start a Haunt once a multiball is going. Pre-bank the Trunk and Hand of Fate targets so you can roll a lit inlane for Double Trouble and hold 4X across the whole stack.",
+        "goals": [
+          "strategy-core-stack",
+          "mb-garage-wild-women",
+          "mult-double-trouble"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete four Haunts for Director's Cut, worth around a hundred million for all four films. Then tick off all seven requirements -- Director's Cut, the Super Head Shot, Phone-A-Fiend, Gappa Angry, Gar-Goils Gone Wild, Attic Attack and They Came From Space -- and sell the house at the Cellar in Wild Market Value, a hurry-up paying your entire accumulated total.",
+        "goals": [
+          "wizard-wild-market-value",
+          "wizard-directors-cut"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,928 @@
+{
+  "machine": "Jokerz! (Williams, 1988)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The plunge reaches the upper level directly, so the first ball of every rack can already be lighting a card."
+    },
+    {
+      "id": "upper-lanes",
+      "name": "Upper Level Card Lanes",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Five rollovers across the raised back section, one card each, Ace on the left through to the ten. Rolling one lights that card, and the flipper buttons shift lit lanes across the same way top lanes do on any machine."
+    },
+    {
+      "id": "gate",
+      "name": "The Gate",
+      "type": "gate",
+      "x": 0.26,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Above the upper left drop targets, and the single most valuable shot on the machine. Lights the lowest unlit card and then spits the ball into the B-E-T rollovers. Easy from the right flipper and backhandable from the left."
+    },
+    {
+      "id": "gate-target",
+      "name": "Gate Target",
+      "type": "standup",
+      "x": 0.24,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Sits behind the gate. During multiball, hitting it doubles playfield values for twenty seconds."
+    },
+    {
+      "id": "bet-lanes",
+      "name": "B-E-T Rollovers",
+      "type": "rollover",
+      "x": 0.42,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Where the gate dumps the ball. Rolling through them advances the bonus multiplier, and the pop bumpers keep kicking the ball back over them."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.44,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Three bumpers under the B-E-T rollovers. They bat the ball back through the rollovers repeatedly and a decent share of the time straight back out through the gate, which restarts the whole cycle."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Starts halfway up and climbs to the upper level. Raises the ramp award. A ball that trips the switch at the top and rolls back down comes out between the flippers, so have a slap save ready."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The collect side. Cashes the built-up ramp award and drops it back to ten thousand. Same rollback risk as the left."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Centre Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "A raisable ramp, only shootable once the centre target has raised it. This is the lock shot and the jackpot shot."
+    },
+    {
+      "id": "center-target",
+      "name": "Centre Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Raises the centre ramp, and one of the most dangerous targets on the machine. Dead centre from a trapped ball goes straight back down the middle; off to either side it kicks off a post rubber into an outlane."
+    },
+    {
+      "id": "draw-poker",
+      "name": "Draw Poker Saucer",
+      "type": "saucer",
+      "x": 0.64,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Tucked under the upper level beside the right ramp. Lit by the left inlane. Spins the backglass wheel for an award and then kicks out to the B-E-T rollovers."
+    },
+    {
+      "id": "lower-left-drops",
+      "name": "Lower Left Drops",
+      "type": "drop-target",
+      "x": 0.18,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "One of three three-target banks. The lowest target in this bank is the awkward one."
+    },
+    {
+      "id": "lower-right-drops",
+      "name": "Lower Right Drops",
+      "type": "drop-target",
+      "x": 0.82,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "The mirror bank on the right. Its lowest target is the other one you will keep missing."
+    },
+    {
+      "id": "upper-left-drops",
+      "name": "Upper Left Drops",
+      "type": "drop-target",
+      "x": 0.22,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Sits below the gate, which means this bank tends to clear itself while you are working the gate shot."
+    },
+    {
+      "id": "joker-bells",
+      "name": "Joker's Hat Bells",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "The lit bells just above the flippers. Each one is a completed hand, so this is your progress counter toward the Special in the draw poker saucer."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.25,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the draw poker saucer. Also the best feed for a centre target shot, because a ball rolling in at an angle bounces off the target back into play instead of straight down the middle."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries the extra ball light once the bonus multiplier reaches its flashing value."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Also lights for extra ball. A missed centre target shot frequently ends up here."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "gate-cycle",
+      "title": "The Gate Cycle",
+      "category": "strategy",
+      "summary": "Learn this one shot and you can play the whole machine. Shooting the gate lights your lowest unlit card and kicks the ball out to the B-E-T rollovers, where the pop bumpers keep batting it back across them and your multiplier keeps climbing — often enough, the ball pops back through the gate and the whole cycle starts over.",
+      "difficulty": 1,
+      "reward": "Cards, bonus multiplier and drop targets, all at once",
+      "steps": [
+        {
+          "shot": "gate",
+          "action": "Shoot the gate",
+          "detail": "Straightforward from the right flipper, and a comfortable backhand from the left."
+        },
+        {
+          "shot": "bet-lanes",
+          "action": "Let the ejection do the work",
+          "detail": "Every pass over the rollovers advances the bonus multiplier without you doing anything."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Wait for the return",
+          "detail": "The bumpers regularly bat the ball back through the gate, which relights the next card for free."
+        },
+        {
+          "shot": "upper-left-drops",
+          "action": "Collect the drops on the way",
+          "detail": "The upper left bank usually falls while you are working this shot, which is one third of the Millions qualifier done for nothing."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "fill-the-hand",
+      "title": "Fill The Hand",
+      "category": "progression",
+      "summary": "Five cards sit on the upper level, Ace through ten. Light all five and the game pays a hundred thousand plus your current bonus. Because the payout includes the bonus, filling a hand with a maxed multiplier is worth far more than filling one early.",
+      "difficulty": 1,
+      "reward": "100,000 plus your current bonus",
+      "steps": [
+        {
+          "shot": "gate",
+          "action": "Light cards from below",
+          "detail": "Each gate shot lights the lowest card you do not have, so you never waste one on a duplicate."
+        },
+        {
+          "shot": "upper-lanes",
+          "action": "Or roll them directly",
+          "detail": "The plunge and both side ramps reach the upper level, and the flipper buttons shift the lit lanes to line up what you need.",
+          "link": "none"
+        },
+        {
+          "shot": "bet-lanes",
+          "action": "Max the multiplier first",
+          "detail": "Two hands finished on one ball with a full bonus is the biggest single score this machine offers, because you collect the bonus again at the end of the ball."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "hands-and-special",
+      "title": "Three Hands For The Special",
+      "category": "progression",
+      "summary": "Above the flippers sits the joker's hat, and every bell lit in it is one hand you have finished. Complete the set — three by default, though the operator can change it — and a Special lights in the draw poker saucer.",
+      "difficulty": 2,
+      "reward": "Special in the draw poker saucer",
+      "steps": [],
+      "instructions": [
+        "Watch the bells in the joker's hat rather than the display; they are the only running count of hands completed.",
+        "Three hands is the factory setting, but operators can raise it, so count the bells on the machine in front of you.",
+        "The reward waits in the draw poker saucer, which the left inlane lights.",
+        "The saucer is a left-flipper shot and almost impossible to backhand, so plan to have the ball on the left before you go for it."
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The B-E-T rollovers drive the multiplier, and the gate feeds you through them over and over. Reaching the flashing value lights an extra ball, but it only pays once per ball — collect it, then work the rollovers again on the next ball for another one.",
+      "difficulty": 1,
+      "reward": "Multiplied bonus, plus an extra ball light",
+      "steps": [
+        {
+          "shot": "gate",
+          "action": "Use the gate as your feeder",
+          "detail": "Its ejection lands you in the rollover area, which is why the gate is the efficient route to a high multiplier."
+        },
+        {
+          "shot": "bet-lanes",
+          "action": "Reach the flashing value",
+          "detail": "Only lights the extra ball once per ball, so there is no point grinding it further on the same ball."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Collect in an in or outlane",
+          "detail": "The extra ball light lands on the in and outlanes, which makes a drain down the side worth something for once."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "draw-poker",
+      "title": "Draw Poker",
+      "category": "mode",
+      "summary": "Roll the left inlane to light the saucer, then take it. The backglass wheel spins for an award anywhere from ten thousand up to a Special, with an extra ball somewhere in the middle. The ball is then kicked out to the B-E-T rollovers, so it feeds the multiplier too.",
+      "difficulty": 2,
+      "reward": "10,000 up to Special, plus an extra ball award",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Light the saucer",
+          "detail": "Nothing else lights it, so a ball that never rolls the left inlane never gets to spin the wheel."
+        },
+        {
+          "shot": "draw-poker",
+          "action": "Shoot from the left flipper",
+          "detail": "Look for it beside the right ramp, tucked beneath the upper level. A backhand only lands with exactly the right spin on the ball, so do not build a plan on it."
+        },
+        {
+          "shot": "bet-lanes",
+          "action": "Take the kickout as a bonus",
+          "detail": "The saucer ejects into the rollovers, so a poker shot also nudges your multiplier along."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "ramp-award",
+      "title": "Build And Collect The Ramp Award",
+      "category": "combo",
+      "summary": "The two side ramps are a build-and-cash pair. Each left ramp raises the award through roughly ten thousand, twenty five, fifty, a hundred, two fifty and five hundred thousand at the ceiling. The right ramp collects it and knocks the value back to ten thousand.",
+      "difficulty": 2,
+      "reward": "Up to 500,000 on a collect",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Build the value first",
+          "detail": "Every left ramp climbs one step. Cashing early throws away the whole ladder."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect at the top",
+          "detail": "One shot cashes the lot and resets you to the bottom, so only take it when the value is worth the risk."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Respect the rollback",
+          "detail": "Balls on these ramps often trip the top switch and roll straight back down between the flippers. Keep a slap save in reserve and do not backhand them."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "double-score",
+      "title": "Double Score",
+      "category": "mode",
+      "summary": "On your last ball you get one window to double your entire score by hitting both the left and right ramps. The window shrinks by five seconds for every million points you already have, down to a floor of ten seconds, and it is only offered once per game.",
+      "difficulty": 3,
+      "reward": "Your whole score, doubled",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Take a ramp immediately",
+          "detail": "The clock is already running. Do not spend it trapping and thinking."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Then the other one",
+          "detail": "Both ramps inside the window, in either order.",
+          "link": "none"
+        },
+        {
+          "shot": "joker-bells",
+          "action": "Understand the timing trap",
+          "detail": "Progress does not carry to an extra ball — you start the attempt over. If you have an extra ball waiting, score your points first and make the double attempt on the extra ball."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "center-ramp-shot",
+      "title": "Raising The Centre Ramp",
+      "category": "strategy",
+      "summary": "The centre ramp only exists once the centre target has raised it, and that target is the most dangerous shot on the machine. From a trapped ball a perfect hit comes straight back down the middle, and anything off-line kicks off a post rubber into an outlane.",
+      "difficulty": 2,
+      "reward": "Access to the lock and jackpot ramp",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Wait for a live ball",
+          "detail": "The safe version of this shot is flipped at a ball already rolling down the inlane at an angle."
+        },
+        {
+          "shot": "center-target",
+          "action": "Hit it on the move",
+          "detail": "An angled hit bounces the ball off the target and back into play instead of returning it down the drain."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Then take the ramp",
+          "detail": "It is comfortable from the left flipper. From the right you have to catch, let the ball roll down the flipper and shoot almost vertically."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "drop-millions",
+      "title": "Drop Target Millions",
+      "category": "mode",
+      "summary": "Three banks of three drop targets: lower left, lower right and upper left. Clear all three to start a timed Millions round, and during it every bank you complete pays a million points.",
+      "difficulty": 2,
+      "reward": "1,000,000 per bank completed",
+      "steps": [
+        {
+          "shot": "upper-left-drops",
+          "action": "Get the free bank",
+          "detail": "This one usually falls as a side effect of working the gate, so start there.",
+          "link": "none"
+        },
+        {
+          "shot": "lower-left-drops",
+          "action": "Clear the lower left",
+          "detail": "The bottom target of this bank is the one that will hold you up.",
+          "link": "none"
+        },
+        {
+          "shot": "lower-right-drops",
+          "action": "Clear the lower right",
+          "detail": "Same problem on the other side. These two lowest targets are what makes the qualifier take work.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-left-drops",
+          "action": "Re-clear banks during the mode",
+          "detail": "A million a bank, so the fast route is to reset and re-clear the easiest bank rather than hunt all three."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "lock-and-multiball",
+      "title": "Lock Two And Start Multiball",
+      "category": "multiball",
+      "summary": "A four-step sequence with the same awkward target in the middle of it twice. Raise the centre ramp with the centre target, lock a ball up it, raise the ramp again, lock the second, and multiball starts as a two-ball affair.",
+      "difficulty": 3,
+      "reward": "Two-ball multiball",
+      "steps": [
+        {
+          "shot": "center-target",
+          "action": "Raise the ramp",
+          "detail": "Off a live ball from the inlane, not from a trap."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lock the first ball",
+          "detail": "Easiest from the left flipper."
+        },
+        {
+          "shot": "center-target",
+          "action": "Raise it again",
+          "detail": "The ramp drops after the lock, so you go back through the same risky target."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Lock the second",
+          "detail": "Multiball starts on the second lock, and it is two balls only."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "jackpot",
+      "title": "The Jackpot",
+      "category": "multiball",
+      "summary": "The hard one. During multiball you need four centre ramp shots to collect, and the award builds over time toward a four million ceiling. Depending on how the machine is set, partial progress may carry into your next multiball.",
+      "difficulty": 3,
+      "reward": "Up to 4,000,000",
+      "steps": [
+        {
+          "shot": "gate",
+          "action": "Park one ball first",
+          "detail": "Flip a ball up through the gate and let it bounce around the bumpers. That buys you the time to aim properly with the other."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Make four ramp shots",
+          "detail": "Comfortable from the left flipper. From the right you have to catch, roll the ball down and shoot almost straight up."
+        },
+        {
+          "shot": "gate-target",
+          "action": "Double the playfield while you work",
+          "detail": "The target behind the gate doubles playfield values for twenty seconds during multiball.",
+          "link": "none"
+        },
+        {
+          "shot": "center-target",
+          "action": "Control the start",
+          "detail": "If you do not get both balls under control in the first few seconds, one of them usually drains before you get a single ramp shot away."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "playfield-double",
+      "title": "Playfield Double",
+      "category": "multiplier",
+      "summary": "A short window most players never trigger. Hitting the target behind the gate during multiball doubles playfield values for twenty seconds — stack that with the centre ramp jackpot shots and the multiball is worth twice as much.",
+      "difficulty": 2,
+      "reward": "2X playfield for twenty seconds",
+      "steps": [
+        {
+          "shot": "gate-target",
+          "action": "Take the target early in multiball",
+          "detail": "You want the twenty seconds to cover your ramp shots, not to expire while you are still gathering balls."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Cash inside the window",
+          "detail": "Ramp shots landing while it is running are worth double."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "extra-balls",
+      "title": "Two Routes To An Extra Ball",
+      "category": "progression",
+      "summary": "There are exactly two ways to get an extra ball on this machine, and only one of them is something you can plan for.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [],
+      "instructions": [
+        "The reliable route is the bonus multiplier: push it up to the flashing value and the extra ball light comes on over the in and outlanes.",
+        "That only works once per ball, so collect it and then build the multiplier back up on your next ball for another one.",
+        "The other route is the draw poker wheel, which lists an extra ball among its awards.",
+        "The wheel is luck, so treat it as a bonus rather than a plan — build the multiplier every ball and take the wheel spin when the left inlane hands it to you."
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "game-plan",
+      "title": "A Working Game Plan",
+      "category": "strategy",
+      "summary": "Jokerz rewards a simple, repetitive plan more than variety. Work the gate until the extra ball light is on, take it, and only then risk the centre target. Save the score double for whichever ball is genuinely your last.",
+      "difficulty": 1,
+      "reward": "Extra balls and a consistent scoring floor",
+      "steps": [
+        {
+          "shot": "gate",
+          "action": "Grind the gate on every ball",
+          "detail": "Cards, multiplier and one drop bank all advance from the same shot, and it is low risk."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Take the extra ball when it lights",
+          "detail": "Then go back to the gate and do it again on the next ball."
+        },
+        {
+          "shot": "center-target",
+          "action": "Only risk the centre when you have a cushion",
+          "detail": "The centre target is where balls die on this machine. Do not go near it before your extra ball is banked."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Double on your true last ball",
+          "detail": "If an extra ball is lit on ball three, score first, collect it, and make the doubling attempt on the extra ball — progress does not carry across."
+        }
+      ],
+      "fx": "dice"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "jz-first-hand",
+      "title": "A Full Hand",
+      "desc": "Light all five upper level cards to complete a hand.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "fill-the-hand"
+    },
+    {
+      "id": "jz-gate",
+      "title": "Through The Gate",
+      "desc": "Run the gate cycle and come back out through the gate on the same ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "gate-cycle"
+    },
+    {
+      "id": "jz-poker",
+      "title": "Spin The Wheel",
+      "desc": "Light the draw poker saucer from the left inlane and collect an award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "draw-poker"
+    },
+    {
+      "id": "jz-extra-ball",
+      "title": "Flashing Value",
+      "desc": "Push the bonus multiplier to the flashing value and collect the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-multiplier"
+    },
+    {
+      "id": "jz-ramp-max",
+      "title": "Half A Million",
+      "desc": "Build the ramp award to its ceiling on the left ramp, then cash it on the right.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ramp-award"
+    },
+    {
+      "id": "jz-millions",
+      "title": "Millions",
+      "desc": "Clear all three drop banks to start Millions, then complete a bank inside the mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "drop-millions"
+    },
+    {
+      "id": "jz-multiball",
+      "title": "Two In The Bank",
+      "desc": "Lock both balls up the centre ramp and start multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "lock-and-multiball"
+    },
+    {
+      "id": "jz-special",
+      "title": "Three Bells",
+      "desc": "Complete enough hands to light the Special in the draw poker saucer.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "hands-and-special"
+    },
+    {
+      "id": "jz-jackpot",
+      "title": "Four Ramps",
+      "desc": "Make four centre ramp shots during multiball to collect the jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "jackpot"
+    },
+    {
+      "id": "jz-double",
+      "title": "Double Or Nothing",
+      "desc": "Hit both side ramps inside the last-ball window and double your score.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "double-score"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunge-into-the-cards",
+      "title": "Plunge Into The Cards",
+      "text": "The plunge reaches the upper level directly, so every rack can open with a card already lit. Slide the lit lanes across with the flipper buttons while the ball is on its way over and take the card you are missing, not whichever lane it happened to find.",
+      "reps": "every plunge, one full game",
+      "focus": "skill-shot",
+      "goal": "fill-the-hand",
+      "shots": [
+        "shooter-lane",
+        "upper-lanes"
+      ]
+    },
+    {
+      "id": "grind-the-gate",
+      "title": "Grind The Gate",
+      "text": "Play a ball where the gate is the only shot you take. It lights your lowest unlit card, kicks the ball out over the B-E-T rollovers for multiplier, and the upper left drops fall while you work it — one shot doing three jobs. Shoot it from the right flipper and backhand it from the left until neither side feels like a risk.",
+      "reps": "one full ball, gate only",
+      "focus": "accuracy",
+      "goal": "gate-cycle",
+      "shots": [
+        "gate",
+        "bet-lanes",
+        "upper-left-drops"
+      ]
+    },
+    {
+      "id": "build-before-you-cash",
+      "title": "Build Before You Cash",
+      "text": "Left ramp climbs the award, right ramp cashes it and drops it straight back to the bottom, so count your left ramps and only take the right when the value has earned the risk. Keep a slap save in reserve on every ramp — a ball that trips the switch at the top rolls back down between the flippers.",
+      "reps": "climb to the ceiling twice before collecting",
+      "focus": "accuracy",
+      "goal": "ramp-award",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "centre-target-on-the-move",
+      "title": "Never Trap For The Centre",
+      "text": "Take the centre target only off a ball already rolling down the left inlane, flipped on the move so the angle sends it back into play. From a trapped ball a clean hit comes straight back down the middle and anything off-line kicks off a post rubber into an outlane.",
+      "reps": "10 attempts, all from a live ball",
+      "focus": "ball-control",
+      "goal": "center-ramp-shot",
+      "shots": [
+        "left-inlane",
+        "center-target"
+      ]
+    },
+    {
+      "id": "raise-lock-raise-lock",
+      "title": "Raise, Lock, Raise, Lock",
+      "text": "The ramp drops again after the first lock, so the dangerous target is one you have to make twice. Run raise, lock, raise, lock as a single sequence off the left flipper rather than treating it as two separate visits.",
+      "reps": "5 full sequences",
+      "focus": "flow",
+      "goal": "lock-and-multiball",
+      "shots": [
+        "center-target",
+        "center-ramp",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "poker-from-the-left",
+      "title": "Poker From The Left Flipper",
+      "text": "Roll the left inlane to light the saucer, then shoot it from the left flipper — nothing else lights it, and it hides beneath the upper level beside the right ramp. The backhand only lands with exactly the right spin on the ball, so do not build the shot around one.",
+      "reps": "10 lit saucers",
+      "focus": "accuracy",
+      "goal": "draw-poker",
+      "shots": [
+        "left-inlane",
+        "draw-poker"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "dice",
+  "actionButton": {
+    "present": false,
+    "how": "Jokerz! is a 1988 Williams and the cabinet carries nothing beyond flipper buttons, a spring plunger and start. The closest thing to an extra control is your flipper buttons shifting the lit card lanes on the upper level — line up the card you actually need before the ball rolls through, the same way you would work top lanes on any machine of the era."
+  },
+  "howItPlays": {
+    "objective": "This Williams card table is built on poker hands and a bonus that climbs as you bet against the house. Light five upper-level cards for a hand, grind the gate to keep cards and multiplier flowing, and lock two balls up the centre ramp for the jackpot multiball.",
+    "loop": [
+      "Grind the gate. Each shot lights the lowest card you still need and kicks the ball up into the B-E-T rollovers. The pops there paddle it back for free multiplier, and often right back out the gate to restart the cycle.",
+      "Line up the lit upper-level card lanes with the flipper buttons, roll through them, and five cards make a hand worth a hundred thousand plus your current bonus.",
+      "Every finished hand lights a bell in the joker's hat; fill the set of bells and a Special turns on in the draw poker saucer.",
+      "Raise the centre ramp by hitting the centre target, then lock two balls up it for a two-ball multiball, and make four centre ramp shots to bank the jackpot.",
+      "Hold your one score-doubling attempt for whichever ball is genuinely your last, and take both side ramps inside its window to double the whole game."
+    ],
+    "lights": [
+      {
+        "id": "upper-card-lanes",
+        "name": "Upper Card Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "upper-lanes",
+            "lamps": 5
+          }
+        ],
+        "lit": "A lit card lane is one of the five cards -- Ace up through the ten -- waiting to be rolled in; roll a lit lane to bank that card toward the current hand, while an unlit lane is one you already hold.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper button walks the lit card lanes sideways across the raised back section, so you can park the lit one over the card you actually need rather than taking whichever lane the ball happens to find",
+          "when": "while the ball is still travelling across the upper level"
+        },
+        "then": "Slide the lit lane onto the card you are missing, then roll it through. Five cards complete a hand for a hundred thousand plus your bonus, so filling one with the multiplier maxed is worth far more than rushing it early -- and the gate can light your lowest card for free when your aim up top is off.",
+        "goals": [
+          "fill-the-hand"
+        ]
+      },
+      {
+        "id": "the-gate",
+        "name": "The Gate",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "gate"
+          }
+        ],
+        "lit": "No shot pays off wider than the gate: it lights the lowest card you have not got yet, then feeds the ball straight into the B-E-T rollovers for the pops to swat back and forth.",
+        "flashing": null,
+        "control": null,
+        "then": "Take it as a right-flipper shot, or backhand it off the left; groove both until neither side scares you. A single gate shot banks a card, runs your multiplier up through the rollovers, and usually topples the upper-left drop bank while you are at it -- three jobs at once.",
+        "goals": [
+          "gate-cycle",
+          "fill-the-hand"
+        ]
+      },
+      {
+        "id": "bet-bonus-multiplier",
+        "name": "B-E-T Bonus Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "bet-lanes"
+          }
+        ],
+        "lit": "Rolling the B-E-T rollovers steps the bonus multiplier up, and reaching its flashing value lights an extra ball over the in and outlanes.",
+        "flashing": "At the top the value flashes and the extra ball lights on the lanes, but it only pays once per ball, so there is nothing to gain grinding it further on the same ball.",
+        "control": null,
+        "then": "Let the gate ejection and the pop bumpers run the ball over these rollovers again and again. Take the extra ball when it lights, then rebuild the multiplier on your next ball for another one -- and remember your hand payout is collected at whatever multiplier you have reached.",
+        "goals": [
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "id": "jokers-hat-bells",
+        "name": "Joker's Hat Bells",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "joker-bells"
+          }
+        ],
+        "lit": "Each lit bell in the joker's hat above the flippers is one poker hand you have finished, and they are the only running tally of your progress toward the Special.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the required number of hands -- three by default, though an operator can raise the target, so read the bells on the machine you are actually at -- and a Special comes on in the draw poker saucer, a left-flipper shot worth setting up before you commit.",
+        "goals": [
+          "hands-and-special"
+        ]
+      },
+      {
+        "id": "ramp-award-ladder",
+        "name": "Ramp Award Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Left ramp and right ramp work as a build-then-collect pair: each left ramp nudges the award up its ladder toward five hundred thousand, and the right ramp cashes whatever total you have reached and resets it to the floor.",
+        "flashing": null,
+        "control": null,
+        "then": "Tally your left ramps and cash on the right only once the built value is worth the gamble. Either ramp can catch the top switch and dribble back down the middle, so keep a slap save ready and never backhand them.",
+        "goals": [
+          "ramp-award"
+        ]
+      },
+      {
+        "id": "drop-target-banks",
+        "name": "Drop Target Banks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lower-left-drops"
+          },
+          {
+            "shot": "lower-right-drops"
+          },
+          {
+            "shot": "upper-left-drops"
+          }
+        ],
+        "lit": "Three three-target banks -- lower left, lower right, upper left -- and downing all three kicks off a timed Millions round where each completed bank is worth a million.",
+        "flashing": null,
+        "control": null,
+        "then": "The upper-left bank tends to fall on its own while you grind the gate, so start there; the two lowest targets in the side banks are what hold you up. Inside the mode, resetting and re-clearing whichever bank is easiest scores faster than chasing all three around the playfield.",
+        "goals": [
+          "drop-millions"
+        ]
+      },
+      {
+        "id": "centre-ramp-lock",
+        "name": "Centre Ramp Lock & Jackpot",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-target"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "gate-target"
+          }
+        ],
+        "lit": "There is no centre ramp until the centre target lifts it into place, and that target is where balls die -- deflect it off-centre and a side post spits the ball into an outlane. Raise the ramp and lock a ball up it; a second lock starts a two-ball multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "In multiball, four centre ramp shots collect a jackpot that builds toward four million, and hitting the standup tucked behind the gate turns playfield scoring to double for a twenty-second stretch -- take it early so that window covers your ramp shots. Park one ball up through the gate in the bumpers so you can aim the ramp with the other.",
+        "goals": [
+          "lock-and-multiball",
+          "jackpot",
+          "playfield-double",
+          "center-ramp-shot"
+        ]
+      },
+      {
+        "id": "draw-poker-saucer",
+        "name": "Draw Poker Saucer",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "draw-poker"
+          }
+        ],
+        "lit": "Rolling the left inlane is the only thing that arms the draw poker saucer, so a ball that misses that inlane never earns itself a wheel spin.",
+        "flashing": null,
+        "control": null,
+        "then": "It is a left-flipper shot, hidden below the upper level just past the right ramp, and it barely backhands. Making it spins the backglass wheel for an award running from a small ten thousand all the way to a Special, with an extra ball sitting somewhere between. The wheel then ejects into the B-E-T rollovers, so a poker collect feeds your multiplier as well.",
+        "goals": [
+          "draw-poker",
+          "hands-and-special"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "A tap of either flipper button walks the lit card rollovers sideways across the raised back lanes, even with the ball still climbing toward them. Park the lit one over the card you are missing, then roll through to bank it -- five cards fill a hand for a hundred thousand plus your bonus, and completing enough hands lights the Special in the draw poker saucer.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Live on the gate. A single shot lights your lowest card, sends the ball across the B-E-T rollovers to climb your multiplier, and knocks the upper-left drops down for you, so grind it until the extra ball lights and finish a five-card hand while you are there. Take the poker wheel whenever the left inlane offers it.",
+        "goals": [
+          "gate-cycle",
+          "fill-the-hand",
+          "bonus-multiplier",
+          "draw-poker"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Build the side-ramp award and cash it at the top, clear the three drop banks for the Millions round, and start racking up finished hands toward the Special. When you are ready, raise the centre ramp twice and lock up for multiball -- just respect that centre target, which is where balls drain.",
+        "goals": [
+          "ramp-award",
+          "drop-millions",
+          "hands-and-special",
+          "lock-and-multiball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The machine's biggest single award is the multiball jackpot: four centre ramp shots for up to four million, doubled again if you take the target behind the gate for a twenty-second playfield double. Above even that, one score-doubling attempt is offered on your true last ball -- hit both side ramps inside the window and your entire game is worth twice as much.",
+        "goals": [
+          "jackpot",
+          "playfield-double",
+          "double-score"
+        ]
+      }
+    ]
+  }
+}

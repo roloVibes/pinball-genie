@@ -1,0 +1,1268 @@
+{
+  "machine": "Bone Busters Inc. (Gottlieb, 1989)",
+  "defaultFx": "bone",
+  "shots": [
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp — \"Long Jump\"",
+      "type": "ramp",
+      "x": 0.4031,
+      "y": 0.7953,
+      "trim": "all",
+      "notes": "Tall chrome center ramp flanked by two red skeleton guardians. Starts multiball when balls are locked; a timed jump lands in the Water Tower.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "water-tower",
+      "name": "Water Tower",
+      "type": "mech",
+      "x": 0.47,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Behind the center-ramp crest. Center-ramp jump lands here to collect the pop-bumper-built Water Tower bonus."
+    },
+    {
+      "id": "lower-wacker-lane",
+      "name": "Lower Wacker Drive (center lane)",
+      "type": "lane",
+      "x": 0.6415,
+      "y": 0.8732,
+      "trim": "all",
+      "notes": "Central vertical multi-lane highway feeding up to the center ramp; multiball-release lane."
+    },
+    {
+      "id": "center-spinner",
+      "name": "Center Spinner",
+      "type": "spinner",
+      "x": 0.49,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "In the center approach lane in front of the center-ramp mouth; ripped going up the middle. 20k/spin when lit."
+    },
+    {
+      "id": "maxwell-ramp",
+      "name": "Maxwell Street Ramp (left ramp)",
+      "type": "ramp",
+      "x": 0.1034,
+      "y": 0.762,
+      "trim": "all",
+      "notes": "Left-center green ramp. Shoot to light one of 3 random locks; shoot again to collect.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "jogging-path",
+      "name": "Jogging Path (left orbit lane)",
+      "type": "lane",
+      "x": 0.1415,
+      "y": 0.4727,
+      "trim": "all",
+      "notes": "Curved left-side road with rollover values 1k-8k (+20k); feeds the pop bumper at its base."
+    },
+    {
+      "id": "pop-bumper",
+      "name": "Pop Bumper",
+      "type": "bumper",
+      "x": 0.17,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Single blue-cap jet at the foot of the Jogging Path. Each hit builds the Water Tower bonus."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball (Messenger Ball)",
+      "type": "captive-ball",
+      "x": 0.24,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Beside/above the pop bumper, hittable from either side. Scores Jogging bonus, lights spinners for 20k/spin, and collects the Opera Jackpot when lit."
+    },
+    {
+      "id": "lower-wacker-ramp",
+      "name": "Lower Wacker Drive Ramp (right)",
+      "type": "ramp",
+      "x": 0.7666,
+      "y": 0.8465,
+      "trim": "all",
+      "notes": "Right-side green ramp of the elevated subway structure; feeds the diverter/upper-flipper area and lock routing.",
+      "feeds": {
+        "shot": "train-switch-gate"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop (award ladder)",
+      "type": "loop",
+      "x": 0.74,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Right-center loop; advances the award ladder 50k → 100k → 200k → Extra Ball → Special."
+    },
+    {
+      "id": "traffic-light-targets",
+      "name": "Traffic-Light Target Bank (drop targets)",
+      "type": "target-bank",
+      "x": 0.67,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Red/yellow/green stacked targets at the base of the Lower Wacker ramp. Clearing them collects the lit award; the yellow = spot target cycles which award is lit."
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Spinner (subway spinner)",
+      "type": "spinner",
+      "x": 0.65,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Right lane just below the traffic-light targets; second of the two spinners to wail on."
+    },
+    {
+      "id": "moon-street",
+      "name": "Moon Street (right saucer lock)",
+      "type": "saucer",
+      "x": 0.8505,
+      "y": 0.3281,
+      "trim": "all",
+      "notes": "Lower-right capture/auto-lock saucer. Skill-shot medium plunge drops here for Lock 1; also a diverter-routed lock destination."
+    },
+    {
+      "id": "auto-lock-lane",
+      "name": "Shoot / Auto-Lock lane",
+      "type": "lane",
+      "x": 0.8633,
+      "y": 0.4171,
+      "trim": "all",
+      "notes": "Far-right return lane feeding the Moon Street auto-lock."
+    },
+    {
+      "id": "headquarters",
+      "name": "Headquarters (lower-left lock)",
+      "type": "saucer",
+      "x": 0.06,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Lower-left corner lock. Reached only with the upper-right flipper / Train Switch diverter; skill-shot Lock 2 lands here.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "upper-right-rollover",
+      "name": "Upper-Right Rollover (skill-shot)",
+      "type": "rollover",
+      "x": 0.88,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Top-right subway-station rollover; medium plunge hits it before the ball falls into Moon Street or down to Lower Wacker. Skill-shot target."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Far-right launch lane; controllable plunge sends the ball up the habitrail toward the subway station."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.07,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Draining a LIT outlane banks bonus time toward the post-ball-3 Bonus Ball; lit side alternates with switch hits."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.1196,
+      "y": 0.1057,
+      "trim": "all",
+      "notes": "Lower-left return; lit inlanes cycle which drop-target award is lit."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lower-right return; lit inlanes cycle which drop-target award is lit."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.75,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Draining a LIT outlane banks bonus time toward the Bonus Ball frenzy."
+    },
+    {
+      "id": "center-award-inserts",
+      "name": "Center Award Inserts",
+      "type": "award-cluster",
+      "x": 0.4418,
+      "y": 0.2881,
+      "trim": "all",
+      "notes": "Lamp cluster below the skull lit by switch-hit milestones (60 sw = 1M, 90 sw = 2× PF, 115 sw = 3 Specials). Named scoring zone, not a discrete shot."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper-Right Flipper",
+      "type": "flipper",
+      "x": 0.81,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "The upper-right mini-flipper and the Train Switch gate are the same part, on the same extra button above the right flipper button. Use it to reach the Headquarters lock. The lower right-side button is the ordinary right flipper."
+    },
+    {
+      "id": "train-switch-gate",
+      "name": "Train Switch Gate (diverter)",
+      "type": "diverter",
+      "x": 0.72,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Mini-flipper gate at the top of the right ramp, worked by the one extra right-side button. Raised, it sends a fed ball across-left to Headquarters; left down, the ball settles into Moon Street."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.232,
+      "y": 0.0011,
+      "trim": "all",
+      "notes": "Lower left flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.5546,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower right flipper, worked by the ordinary lower button on that side rather than the extra one above it."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-moon-street-lock",
+      "title": "Skill Shot: Moon Street Lock",
+      "category": "skillshot",
+      "summary": "Medium-plunge to the upper-right rollover and let the ball settle into the right saucer for a free first lock.",
+      "difficulty": 2,
+      "reward": "1 ball locked (Moon Street)",
+      "steps": [
+        {
+          "shot": "moon-street",
+          "action": "Medium plunge into Moon Street",
+          "detail": "Controllable plunge — don't over-launch to Lower Wacker. The ball crests the upper-right subway-station rollover on the way, then drops into the saucer for a free first lock; a fresh ball auto-serves to the plunger."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-headquarters-lock",
+      "title": "Skill Shot: Headquarters Lock via Train Switch",
+      "category": "skillshot",
+      "summary": "On the second plunge, hold the extra right-side button so the ball feeds the upper flipper and locks a second ball at Headquarters.",
+      "difficulty": 3,
+      "reward": "2nd ball locked (Headquarters) — two locks before a live shot",
+      "steps": [
+        {
+          "shot": "train-switch-gate",
+          "action": "Hold the extra button through a medium plunge",
+          "detail": "After the Moon St lock a fresh ball is on the plunger. That single extra button above the right flipper button works the upper-right mini-flipper, which doubles as the Train Switch gate — held through the plunge, it catches the ball off the habitrail instead of letting it drop away to Lower Wacker Drive.",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "headquarters",
+          "action": "Kick across with the upper flipper for Lock 2",
+          "detail": "The upper flipper kicks the caught ball across to seat Headquarters."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-captive-spinner-alternation",
+      "title": "Captive Ball ↔ Spinner Alternation",
+      "category": "combo",
+      "summary": "The game's primary point farm: hit the captive ball to light the spinners, rip a spinner, re-hit the captive ball, repeat.",
+      "difficulty": 2,
+      "reward": "20k/spin + builds Jogging bonus toward 159k",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Hit the Messenger/captive ball",
+          "detail": "One hit banks the Jogging bonus you have built up and arms both spinners at 20k a spin, but only for a single rip."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip the now-lit spinner",
+          "detail": "20k per spin; the spinner un-lights after a single shot.",
+          "link": "none"
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Or rip the right spinner",
+          "detail": "Either lit spinner works; every spin is also a switch hit.",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Re-hit the captive ball to relight",
+          "detail": "Alternate captive↔spinner as the sustained scoring engine."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "combo-right-loop-ladder",
+      "title": "Right Loop Award Ladder",
+      "category": "combo",
+      "summary": "Loop the right orbit repeatedly to climb the fixed award ladder up to Extra Ball and Special.",
+      "difficulty": 2,
+      "reward": "50k → 100k → 200k → Extra Ball → Special (500k each in tourney)",
+      "steps": [
+        {
+          "shot": "right-loop",
+          "action": "Loop shots 1-2",
+          "detail": "50k then 100k."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Loop shot 3",
+          "detail": "200k."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Loop shots 4-5",
+          "detail": "Extra Ball then Special; each pays 500k once lit in tournament."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "combo-water-tower-build",
+      "title": "Water Tower Build & Collect",
+      "category": "combo",
+      "summary": "Rack pop-bumper hits to build the Water Tower bonus, then jump the center ramp into the Water Tower to cash it.",
+      "difficulty": 2,
+      "reward": "Water Tower bonus collected (repeatable)",
+      "steps": [
+        {
+          "shot": "pop-bumper",
+          "action": "Rack pop-bumper hits",
+          "detail": "Each hit adds to the Water Tower bonus."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Long Jump",
+          "detail": "A clean, timed ramp jumps the ball over the crest.",
+          "feeds": {
+            "shot": "water-tower"
+          }
+        },
+        {
+          "shot": "water-tower",
+          "action": "Land in the Water Tower to collect",
+          "detail": "Cashes the built-up bonus; collect-and-rebuild is repeatable."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "combo-mb-spinner-switch-farm",
+      "title": "Multiball Spinner Switch Farm",
+      "category": "combo",
+      "summary": "During multiball, relentlessly relight and rip the spinners to blow past the switch-count jackpot thresholds.",
+      "difficulty": 3,
+      "reward": "Drives 60/90/115-switch jackpots (1M, 2× PF, 3 Specials)",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball to relight spinners",
+          "detail": "Keep the spinners lit throughout multiball."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip the center spinner for switch hits",
+          "detail": "60 sw = 1M, 90 sw = 2× playfield, 115 sw = 3 Specials.",
+          "link": "none"
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Alternate to the right spinner",
+          "detail": "Every spin is a switch — keep the count climbing.",
+          "link": "none"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "combo-maxwell-light-and-lock",
+      "title": "Maxwell Street Light-and-Lock",
+      "category": "combo",
+      "summary": "Shoot the left ramp to light a random lock, shoot again to collect, using the Train Switch to route to the lit capture.",
+      "difficulty": 2,
+      "reward": "1 ball locked",
+      "steps": [
+        {
+          "shot": "maxwell-ramp",
+          "action": "Shoot Maxwell Street to light a lock",
+          "detail": "Lights one of 3 random locks: Maxwell St, Headquarters, or Moon St."
+        },
+        {
+          "shot": "maxwell-ramp",
+          "action": "Shoot Maxwell again to collect",
+          "detail": "If the lit lock isn't the ramp, the ball feeds the right ramp/diverter.",
+          "feeds": {
+            "shot": "train-switch-gate"
+          }
+        },
+        {
+          "shot": "train-switch-gate",
+          "action": "Divert to the lit capture",
+          "detail": "Route the fed ball to Headquarters (across-left) or down to Moon Street."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mb-normal-start",
+      "title": "Multiball: Normal 2-Ball Start",
+      "category": "multiball",
+      "summary": "Standard opener — light and collect one lock at Maxwell Street, then start a 2-ball multiball at the center ramp.",
+      "difficulty": 2,
+      "reward": "2-ball multiball",
+      "steps": [
+        {
+          "shot": "maxwell-ramp",
+          "action": "Shoot the left ramp to light a random lock"
+        },
+        {
+          "shot": "maxwell-ramp",
+          "action": "Shoot again to collect the lit lock",
+          "detail": "Use the Train Switch/upper flipper if the lock is HQ or Moon St."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Long Jump to start 2-ball multiball",
+          "detail": "The center-ramp start shot is difficult — cradle and aim."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mb-double-lock-3ball",
+      "title": "Multiball: Double-Lock 3-Ball Start",
+      "category": "multiball",
+      "summary": "Bank both skill-shot locks off the plunge, then start a 3-ball multiball with the live third ball.",
+      "difficulty": 3,
+      "reward": "3-ball multiball",
+      "steps": [
+        {
+          "shot": "moon-street",
+          "action": "Skill-lock ball 1 at Moon Street",
+          "detail": "Medium plunge to the upper-right rollover into the right saucer."
+        },
+        {
+          "shot": "headquarters",
+          "action": "Skill-lock ball 2 at Headquarters",
+          "detail": "Second plunge holding the Train Switch feeds the upper flipper across."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Long Jump with the live 3rd ball",
+          "detail": "Starts a 3-ball multiball (2 locked + 1 in play)."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mb-4ball-start",
+      "title": "Multiball: 4-Ball Start",
+      "category": "multiball",
+      "summary": "Lock all 3 balls then start the maximum 4-ball multiball — higher variance than repeated 2-ball play.",
+      "difficulty": 3,
+      "reward": "4-ball multiball (2-ball repeats often more efficient)",
+      "steps": [
+        {
+          "shot": "maxwell-ramp",
+          "action": "Light and collect a 3rd lock",
+          "detail": "Chasing the 3rd lock risks a drain for little gain."
+        },
+        {
+          "shot": "train-switch-gate",
+          "action": "Divert the 3rd lock to HQ or Moon St"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Long Jump to start 4-ball multiball"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mode-opera-jackpot",
+      "title": "Opera Jackpot (Progressive)",
+      "category": "mode",
+      "summary": "Clear the drop bank with 'Light Opera Jackpot' selected, then shoot the captive ball to collect the game-to-game progressive.",
+      "difficulty": 2,
+      "reward": "Opera Jackpot (progressive, ~250k floor)",
+      "steps": [
+        {
+          "shot": "traffic-light-targets",
+          "action": "Complete the drop-target bank with 'Light Opera Jackpot' selected",
+          "detail": "Cycle the selector via the yellow spot target/inlanes first."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Shoot the captive ball to collect",
+          "detail": "Opera Jackpot carries over from game to game; the collect shot is awkward."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mode-drop-award-selector",
+      "title": "Drop-Target Award Selector",
+      "category": "mode",
+      "summary": "Cycle which drop award is lit using lit inlanes and the yellow spot target, then clear the drops to collect it.",
+      "difficulty": 2,
+      "reward": "Selected award: Light EB / Light Special / Light Opera / Liz's Surprise",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll a lit inlane to cycle the award",
+          "detail": "Inlanes advance which drop-completion award is lit.",
+          "link": "none"
+        },
+        {
+          "shot": "traffic-light-targets",
+          "action": "Hit the yellow spot target to advance the selector",
+          "detail": "Yellow = spot target changes the pending award.",
+          "link": "none"
+        },
+        {
+          "shot": "traffic-light-targets",
+          "action": "Clear the drop bank to collect the lit award"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mode-lizs-surprise",
+      "title": "Liz's Surprise",
+      "category": "mode",
+      "summary": "Set the drop selector to 'Liz's Surprise' and clear the drops to cash your built-up Jogging bonus on demand.",
+      "difficulty": 1,
+      "reward": "Awards current Jogging bonus (up to 159k)",
+      "steps": [
+        {
+          "shot": "traffic-light-targets",
+          "action": "Cycle the selector to 'Liz's Surprise'",
+          "detail": "Advance via yellow spot target / lit inlanes."
+        },
+        {
+          "shot": "traffic-light-targets",
+          "action": "Complete the drops to collect",
+          "detail": "Best used when the Jogging bonus is near its 159k cap."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "multiplier-2x-playfield",
+      "title": "Light 2× Playfield Scoring",
+      "category": "multiplier",
+      "summary": "Rack 90 switch hits during multiball to earn 2× Playfield for the rest of the multiball (jackpots excluded).",
+      "difficulty": 3,
+      "reward": "2× Playfield scoring for the remainder of multiball",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Relight the spinners",
+          "detail": "Keep them lit to maximize switch accumulation."
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip spinners to reach 90 switch hits",
+          "detail": "90 switches = 2× Playfield; applies to everything except the jackpots themselves."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-cash-under-2x",
+      "title": "Cash In Under 2× Playfield",
+      "category": "multiplier",
+      "summary": "Cross 90 switches as early as possible, then bank your big non-jackpot shots while everything scores double.",
+      "difficulty": 3,
+      "reward": "Double value on spinners and right-loop awards",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Cross 90 switches EARLY",
+          "detail": "Earn 2× as soon as possible so the rest of MB is doubled."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Bank right-loop awards under 2×",
+          "detail": "Ladder awards score double once 2× is lit.",
+          "link": "none"
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Keep spinners ripping at 40k/spin",
+          "detail": "Doubled spinner value — do big non-jackpot shots after 90.",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-bonus-ball-qualify",
+      "title": "Bonus Ball Frenzy (Qualify & Run)",
+      "category": "wizard",
+      "summary": "Bank bonus time by draining a LIT outlane, then rip the 2-ball 5k/switch frenzy after ball 3 — the game's capstone round.",
+      "difficulty": 3,
+      "reward": "Post-ball-3 Bonus Ball: 2-ball frenzy, 5k/switch",
+      "steps": [
+        {
+          "shot": "left-outlane",
+          "action": "Drain a LIT outlane to bank bonus time",
+          "detail": "Only a lit outlane qualifies; it still ends the current ball.",
+          "link": "none"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Either lit outlane counts",
+          "detail": "The lit side alternates with switch hits — keep hitting switches to steer it.",
+          "link": "none"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip spinners in the Bonus Ball frenzy",
+          "detail": "After ball 3, a 2-ball frenzy pays 5k per switch."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-triple-special",
+      "title": "Triple Special (115-Switch Capstone)",
+      "category": "wizard",
+      "summary": "Push the multiball switch count all the way to 115 to collect the 3 Specials award — the biggest single point chunk.",
+      "difficulty": 3,
+      "reward": "3 Specials (3M in tournament settings)",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Relight spinners during multiball"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Push the switch count to 115",
+          "detail": "60 = 1M, 90 = 2× PF, 115 = 3 Specials.",
+          "link": "none"
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Keep both spinners ripping to reach 115",
+          "detail": "3 Specials pay 3M in tournament, 1.5M on novelty.",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-opener-a-double-lock",
+      "title": "Opener A: Pro Double-Lock → Fast 3-Ball Multiball",
+      "category": "strategy",
+      "summary": "Default expert opener — bank both skill locks off the plunge, start 3-ball multiball, then rip the spinner farm.",
+      "difficulty": 3,
+      "reward": "Fast 3-ball MB straight into the switch-jackpot farm",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Ball 1: medium plunge",
+          "detail": "Aim for the upper-right rollover, not Lower Wacker."
+        },
+        {
+          "shot": "moon-street",
+          "action": "Settle the Moon Street lock (Lock 1)"
+        },
+        {
+          "shot": "train-switch-gate",
+          "action": "Ball 2: hold the Train Switch and plunge",
+          "detail": "Feeds the upper flipper across to HQ."
+        },
+        {
+          "shot": "headquarters",
+          "action": "Seat the second lock (Lock 2)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Long Jump with the live 3rd ball → 3-ball multiball"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip spinners to 60/90/115",
+          "detail": "1M, then 2× playfield, then push for the 3M special."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "strategy-opener-b-safe",
+      "title": "Opener B: Safe Normal Progression",
+      "category": "strategy",
+      "summary": "Fallback when the skill shot is missed — cradle, light and collect one lock, start 2-ball multiball, then farm.",
+      "difficulty": 2,
+      "reward": "Reliable path to multiball and the spinner farm",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge safely and cradle"
+        },
+        {
+          "shot": "maxwell-ramp",
+          "action": "Left ramp to light a random lock"
+        },
+        {
+          "shot": "maxwell-ramp",
+          "action": "Shoot the lit lock (or feed it via the diverter)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Long Jump → 2-ball multiball"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Alternate captive ball ↔ spinners for switches and points"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "strategy-tournament-farm-loop",
+      "title": "Tournament Farm Loop (Synthesis)",
+      "category": "strategy",
+      "summary": "Repeat easy 2-ball multiballs, cross 90 for 2×, push 115 for 3M, work the right-loop ladder between MBs, re-lock and repeat.",
+      "difficulty": 3,
+      "reward": "Sustained high score — everything funnels into spinner switch-count",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Start a 2-ball multiball (repeat; don't hoard for 4-ball)"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Relight the spinners"
+        },
+        {
+          "shot": "center-spinner",
+          "action": "Rip to 90 for 2× playfield, then push 115 for 3M",
+          "detail": "2× makes every 20k spin worth 40k."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Work the right-loop ladder to Extra Ball/Special between MBs"
+        },
+        {
+          "shot": "maxwell-ramp",
+          "action": "Re-lock and repeat the cycle",
+          "detail": "Bank Water Tower via the center ramp between multiballs."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "wizard-bonus-ball-max-bank",
+      "title": "Stack Bonus Time Across Balls",
+      "category": "wizard",
+      "summary": "Steer the lit outlane with switch hits and give up two different balls down a lit side, so the closing frenzy starts with a longer clock.",
+      "difficulty": 3,
+      "reward": "Longer post-ball-3 frenzy at 5k per switch",
+      "steps": [
+        {
+          "shot": "center-spinner",
+          "action": "Work switches to steer which outlane is lit",
+          "detail": "The lit side alternates on switch hits, so check it before you let a ball go."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Bank time on an early ball down the lit left outlane",
+          "detail": "An unavoidable drain is worth aiming at the lit side rather than the dark one."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Bank again on a later ball down the lit right outlane",
+          "detail": "Each lit-outlane drain adds to the clock you get after ball three."
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Spend the extra clock ripping spinners in the frenzy",
+          "detail": "Two balls are in play and every switch pays, so keep both spinners turning."
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-lock-off-the-plunge",
+      "title": "Free Lock",
+      "desc": "Lock a ball at Moon Street straight off a controlled plunge, before making a single flipper shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-moon-street-lock"
+    },
+    {
+      "id": "two-locks-before-a-shot",
+      "title": "Both Locks Banked",
+      "desc": "Lock a second ball at Headquarters on the next plunge so two balls are captured before the first live shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-headquarters-lock"
+    },
+    {
+      "id": "two-ball-multiball",
+      "title": "Bones In Motion",
+      "desc": "Light a lock, collect it, and start a two-ball multiball off the center ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-normal-start"
+    },
+    {
+      "id": "three-ball-multiball",
+      "title": "Three On The Glass",
+      "desc": "Have two balls locked when you make the center ramp, starting a three-ball multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-double-lock-3ball"
+    },
+    {
+      "id": "four-ball-multiball",
+      "title": "Full House",
+      "desc": "Seat all three locks and start the maximum four-ball multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-4ball-start"
+    },
+    {
+      "id": "water-tower-cashed",
+      "title": "Tower Emptied",
+      "desc": "Build the Water Tower bonus on the pop bumper, then jump the center ramp and land in the tower to collect it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-water-tower-build"
+    },
+    {
+      "id": "captive-spinner-chain",
+      "title": "Relight And Rip",
+      "desc": "Complete five captive-ball-into-lit-spinner cycles in a single ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-captive-spinner-alternation"
+    },
+    {
+      "id": "drop-bank-award-collected",
+      "title": "Green Light",
+      "desc": "Clear the traffic-light drop bank to collect whichever award you left lit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-drop-award-selector"
+    },
+    {
+      "id": "opera-jackpot-collected",
+      "title": "Progressive Collected",
+      "desc": "Clear the drops with the Opera Jackpot selected, then hit the captive ball to bank the carry-over jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-opera-jackpot"
+    },
+    {
+      "id": "jogging-bonus-capped-cash",
+      "title": "Cash At The Cap",
+      "desc": "Fill the Jogging bonus to its 159k ceiling, then clear the drops on Liz's Surprise to collect all of it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-lizs-surprise"
+    },
+    {
+      "id": "ladder-extra-ball",
+      "title": "Loop To An Extra",
+      "desc": "Climb the right-loop award ladder through 50k, 100k and 200k to light the Extra Ball rung.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-right-loop-ladder"
+    },
+    {
+      "id": "ladder-special",
+      "title": "Top Of The Ladder",
+      "desc": "Take the right-loop ladder one rung past Extra Ball to light the Special.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-right-loop-ladder"
+    },
+    {
+      "id": "million-switch-jackpot",
+      "title": "First Million",
+      "desc": "Reach 60 switch hits inside one multiball to collect the one-million award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-mb-spinner-switch-farm"
+    },
+    {
+      "id": "double-playfield-lit",
+      "title": "Everything Doubled",
+      "desc": "Reach 90 switch hits inside one multiball to turn on 2x playfield scoring.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-2x-playfield"
+    },
+    {
+      "id": "big-shots-while-doubled",
+      "title": "Doubled And Banked",
+      "desc": "After 2x playfield is lit, collect a right-loop ladder award and a full spinner rip before the multiball ends.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiplier-cash-under-2x"
+    },
+    {
+      "id": "bonus-ball-reached",
+      "title": "One More Ball",
+      "desc": "Bank bonus time by draining a lit outlane and reach the post-ball-three two-ball frenzy.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-bonus-ball-qualify"
+    },
+    {
+      "id": "bonus-ball-stacked-time",
+      "title": "Stacked Frenzy",
+      "desc": "Bank lit-outlane bonus time on two separate balls so the closing frenzy runs long.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-bonus-ball-max-bank"
+    },
+    {
+      "id": "triple-special-115",
+      "title": "One Hundred Fifteen",
+      "desc": "Push a single multiball's switch count all the way to 115 and collect the three-Specials award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-triple-special"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-medium-plunge-moon-street",
+      "title": "Medium Plunge To Moon Street",
+      "text": "Ease the plunger so the ball crests the upper-right rollover and settles into the Moon Street saucer instead of carrying on down to Lower Wacker Drive. That is a free lock before you have touched a flipper, and the whole double-lock opener depends on it.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-moon-street-lock",
+      "shots": [
+        "shooter-lane",
+        "upper-right-rollover",
+        "moon-street"
+      ]
+    },
+    {
+      "id": "drill-train-switch-catch",
+      "title": "Hold The Extra Button",
+      "text": "On the next plunge hold the extra button above the right flipper button so the Train Switch gate catches the ball off the habitrail rather than letting it drop away. Then kick it across with the upper flipper to seat Headquarters, which is the only route into that lock.",
+      "reps": "10 plunges",
+      "focus": "ball-control",
+      "goal": "skill-headquarters-lock",
+      "shots": [
+        "train-switch-gate",
+        "upper-right-flipper",
+        "headquarters"
+      ]
+    },
+    {
+      "id": "drill-captive-spinner-alternation",
+      "title": "Captive Ball, Then Spinner",
+      "text": "Hit the Messenger ball to arm the spinners, rip one, then go straight back to the captive ball. The arm only lasts a single rip, so the alternation is the engine here and any pause in it costs you the lit spinner.",
+      "reps": "8 alternations",
+      "focus": "flow",
+      "goal": "combo-captive-spinner-alternation",
+      "shots": [
+        "captive-ball",
+        "center-spinner",
+        "right-spinner"
+      ]
+    },
+    {
+      "id": "drill-long-jump-water-tower",
+      "title": "Long Jump Into The Water Tower",
+      "text": "Feed the pop bumper to build the Water Tower, then cradle and take the centre ramp cleanly enough to jump the crest and land in the tower. A weak Long Jump does not clear it, and this same shot is what starts multiball.",
+      "reps": "10 attempts",
+      "focus": "accuracy",
+      "goal": "combo-water-tower-build",
+      "shots": [
+        "pop-bumper",
+        "center-ramp",
+        "water-tower"
+      ]
+    },
+    {
+      "id": "drill-right-loop-ladder",
+      "title": "Climb The Right Loop",
+      "text": "Loop the right orbit over and over from a cradle. The ladder pays a fixed climb and both extra balls on this machine are cashed there, so consecutive makes are the only thing that matters.",
+      "reps": "5 consecutive loops",
+      "focus": "accuracy",
+      "goal": "combo-right-loop-ladder",
+      "shots": [
+        "right-loop"
+      ]
+    },
+    {
+      "id": "drill-drop-selector-discipline",
+      "title": "Set The Award Before You Clear",
+      "text": "Cycle the pending drop award with the lit inlanes and the yellow spot target first, then clear the traffic-light bank. Clearing it blind hands you whatever happened to be lit rather than the award you wanted.",
+      "reps": "5 selected clears",
+      "focus": "accuracy",
+      "goal": "mode-drop-award-selector",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "traffic-light-targets"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "No action button here — this is a 1989 Gottlieb. What it does have is one extra button above the right flipper button, and it matters: that button works the upper-right mini-flipper, which doubles as the Train Switch gate and is the only route to the Headquarters lock. Hold it through a medium plunge and the ball gets caught up top instead of dropping away."
+  },
+  "howItPlays": {
+    "objective": "Chase down skeletons on Gottlieb's late-'80s horror table by locking balls at Moon Street, Headquarters and Maxwell Street, starting multiball off the center-ramp Long Jump, and farming the two spinners. Driving a single multiball's switch count to 115 collects the three-Specials capstone, the biggest chunk on the game.",
+    "loop": [
+      "Lock a ball: a controlled plunge banks Moon Street for free, holding the extra right-side button locks a second at Headquarters, or the left ramp lights a random lock to collect.",
+      "Shoot the difficult center-ramp Long Jump to start a two-, three- or four-ball multiball.",
+      "Hit the captive ball to arm both spinners for one rip each, then rip and re-arm -- every spin also counts as a switch hit.",
+      "Cross sixty switches for a million, ninety for 2x playfield, and a hundred fifteen for three Specials."
+    ],
+    "lights": [
+      {
+        "id": "lock-saucers",
+        "name": "Lock Saucers",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "maxwell-ramp"
+          },
+          {
+            "shot": "moon-street"
+          },
+          {
+            "shot": "headquarters"
+          }
+        ],
+        "lit": "A lit lock holds a ball, the left ramp lights one of three random locks, and the two skill plunges seat Moon Street and Headquarters straight off the shooter before a flipper is even touched.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot Maxwell Street to light a lock and shoot it again to collect; when the lit lock is Headquarters or Moon Street, the Train Switch gate -- worked by the extra button above the right flipper -- routes the fed ball across-left or down into the saucer. Three balls locked set up a four-ball start.",
+        "goals": [
+          "combo-maxwell-light-and-lock",
+          "skill-moon-street-lock",
+          "skill-headquarters-lock"
+        ]
+      },
+      {
+        "id": "multiball-start",
+        "name": "Long Jump Start",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "lower-wacker-lane"
+          }
+        ],
+        "lit": "With at least one ball locked, the center-ramp Long Jump lights to start multiball, fed up from the Lower Wacker Drive highway lane.",
+        "flashing": null,
+        "control": null,
+        "then": "Make the tricky Long Jump from a cradle to start a two-ball multiball -- three or four balls if you locked more before starting. A clean, timed jump also clears the crest and drops into the Water Tower to cash its built-up bonus.",
+        "goals": [
+          "mb-normal-start",
+          "mb-double-lock-3ball",
+          "mb-4ball-start"
+        ]
+      },
+      {
+        "id": "spinner-farm",
+        "name": "Captive Ball & Spinners",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "captive-ball"
+          },
+          {
+            "shot": "center-spinner"
+          },
+          {
+            "shot": "right-spinner"
+          }
+        ],
+        "lit": "Hitting the Messenger captive ball lights both spinners at twenty thousand a spin, though the arm lasts just one rip before they fall dark and want another captive-ball hit.",
+        "flashing": null,
+        "control": null,
+        "then": "Alternate the captive ball into a lit spinner and back, all game, as the machine's main point engine -- every spin is also a switch hit. In multiball that switch count is what drives the milestone jackpots.",
+        "goals": [
+          "combo-captive-spinner-alternation",
+          "combo-mb-spinner-switch-farm"
+        ]
+      },
+      {
+        "id": "switch-jackpots",
+        "name": "Switch Milestones",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "center-award-inserts"
+          }
+        ],
+        "lit": "The lamp cluster below the skull lights at switch-count milestones reached inside a single multiball: sixty for a million, ninety for 2x playfield, a hundred fifteen for three Specials.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep both spinners ripping to push the count as fast as you can. The 2x at ninety doubles everything except the jackpots themselves for the rest of the multiball, and a hundred fifteen collects the three-Specials award worth three million in tournament play.",
+        "goals": [
+          "multiplier-2x-playfield",
+          "multiplier-cash-under-2x",
+          "wizard-triple-special"
+        ]
+      },
+      {
+        "id": "right-loop-ladder",
+        "name": "Right Loop Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "Each loop of the right orbit climbs a fixed award ladder that holds its place between multiballs rather than resetting.",
+        "flashing": null,
+        "control": null,
+        "then": "Loop it from a cradle for fifty thousand, a hundred thousand, then two hundred thousand, then the Extra Ball and Special rungs. Both of the game's extra balls are cashed here, so consecutive clean loops are the only thing that matters.",
+        "goals": [
+          "combo-right-loop-ladder"
+        ]
+      },
+      {
+        "id": "drop-selector",
+        "name": "Traffic-Light Drops",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "traffic-light-targets"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "The stacked red-yellow-green drop bank collects whichever award is currently lit, and the lit award is cycled by rolling a lit inlane or striking the yellow spot target.",
+        "flashing": null,
+        "control": null,
+        "then": "Set the pending award first -- Light Extra Ball, Light Special, Light Opera Jackpot, or Liz's Surprise -- then clear the drops to collect it. Opera Jackpot then pays at the captive ball and carries from game to game, while Liz's Surprise dumps your built-up Jogging bonus on demand.",
+        "goals": [
+          "mode-drop-award-selector",
+          "mode-opera-jackpot",
+          "mode-lizs-surprise"
+        ]
+      },
+      {
+        "id": "water-tower",
+        "name": "Water Tower Bonus",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "pop-bumper"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "water-tower"
+          }
+        ],
+        "lit": "Each hit on the lone blue-cap jet sitting at the base of the Jogging Path adds to the Water Tower bonus stored behind the center-ramp crest.",
+        "flashing": null,
+        "control": null,
+        "then": "Rack the pop bumper to grow the bonus, then jump the center ramp cleanly to land in the Water Tower and cash it. A weak Long Jump will not clear the crest, and collect-and-rebuild repeats all game.",
+        "goals": [
+          "combo-water-tower-build"
+        ]
+      },
+      {
+        "id": "bonus-ball-outlanes",
+        "name": "Bonus Ball Outlanes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "One outlane is lit at a time and the lit side alternates as you hit switches, so draining down the lit side banks bonus time toward the post-ball-three Bonus Ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Nudge the switch count to flip which outlane is lit, then feed unavoidable drains down that lit side across several different balls. Each one lengthens the clock on the closing two-ball frenzy, where every switch pays five thousand.",
+        "goals": [
+          "wizard-bonus-ball-qualify",
+          "wizard-bonus-ball-max-bank"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank a free lock with a medium plunge that settles into Moon Street, then hold the extra right-side button on the next plunge to seat a second lock at Headquarters. Fluff the skill shot and just cradle, then light a random lock off the left ramp and collect it -- a safer road into multiball.",
+        "goals": [
+          "skill-moon-street-lock",
+          "skill-headquarters-lock",
+          "strategy-opener-b-safe"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start multiball off the center-ramp Long Jump, then alternate the captive ball into the spinners to pile up switch hits. Climb the right-loop ladder between multiballs, bank the Water Tower, and set the drop-award selector before clearing the bank.",
+        "goals": [
+          "mb-normal-start",
+          "combo-captive-spinner-alternation",
+          "combo-right-loop-ladder",
+          "combo-water-tower-build",
+          "mode-drop-award-selector"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Push a single multiball's switch count to ninety for 2x playfield and on to a hundred fifteen for the three-Specials award -- the largest single chunk on the machine. Bank lit-outlane time across several balls so the two-ball Bonus Ball frenzy after ball three runs long at five thousand a switch.",
+        "goals": [
+          "wizard-triple-special",
+          "multiplier-2x-playfield",
+          "wizard-bonus-ball-qualify"
+        ]
+      }
+    ]
+  }
+}

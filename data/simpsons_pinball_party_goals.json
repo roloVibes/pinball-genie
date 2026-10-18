@@ -1,0 +1,1397 @@
+{
+  "machine": "The Simpsons Pinball Party (Stern, 2003)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger. Aims at three possible skill shot targets — Comic Book Guy, the Kwik-E-Mart loop, or a strobing Bully standup — and can also be reached by nudging a ball out of the right inlane."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights the Krusty Orbit spinner for triple value or higher. Can also be lit for Extra Ball."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Can be lit for Extra Ball."
+    },
+    {
+      "id": "lite-otto",
+      "name": "Lite Otto",
+      "type": "standup",
+      "x": 0.16,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A standup roughly where Addams Family's G-R targets sit. Lights Otto's Bus Tour — timed 2x scoring — at Springfield Elementary, and is one of the two fastest ways to reset the master timer."
+    },
+    {
+      "id": "cletus-orbit",
+      "name": "Cletus Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Runs through the bumpers and around the back to the upper right flipper. Introduces a new Cletus Kid on every shot and lights the Nuclear Value.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      }
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.35,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Three bumpers; two have a nuclear cooling tower gimmick. Each hit adds to the Nuclear Value, and the master timer pauses whenever the ball is in here."
+    },
+    {
+      "id": "pop-target",
+      "name": "Pop Target",
+      "type": "standup",
+      "x": 0.35,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "A standup above the bumpers. Collects the Nuclear Value when lit and restores time to the master timer — more if hit clean from a flipper, most as a combo right after the Cletus Orbit.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "adv-pops",
+      "name": "Advance Pops",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Positioned about where Addams Family places its Electric Chair shot. Each hit steps a pop bumper's value upward: 1,000, then 2,500, then 5,000."
+    },
+    {
+      "id": "comic-book-guy",
+      "name": "Comic Book Guy",
+      "type": "standup",
+      "x": 0.46,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Can't be reached directly from either lower flipper — only the upper right flipper or a plunge. Starts a Hurry Up, and is one of the three skill shot targets.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "treehouse-ramp",
+      "name": "Treehouse Ramp",
+      "type": "ramp",
+      "x": 0.44,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Sits directly above the Comic Book Guy standup and feeds the upper playfield. When lit it collects a Treehouse of Horror award, and every shot adds a Simpsons letter toward D'Oh Frenzy — two letters when it comes as a combo out of the Left Loop."
+    },
+    {
+      "id": "kwik-e-mart-loop",
+      "name": "Kwik-E-Mart Loop",
+      "type": "loop",
+      "x": 0.4,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "The left (Kwik-E-Mart) loop; also makeable as a combo from the upper-right flipper."
+    },
+    {
+      "id": "kwik-e-mart-standup",
+      "name": "Kwik-E-Mart Standup",
+      "type": "standup",
+      "x": 0.38,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Guards the Kwik-E-Mart Loop. Adds a random 1,000-9,990 bonus to the loop's next award; shots off it tend to carom into the Bully standups."
+    },
+    {
+      "id": "garage",
+      "name": "Garage",
+      "type": "ramp",
+      "x": 0.52,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A big door that has to be opened before a shot gets through to the upper playfield. Weak shots fall back to the bumpers and count as a Cletus Orbit shot instead."
+    },
+    {
+      "id": "springfield-elementary-loop",
+      "name": "Springfield Elementary",
+      "type": "loop",
+      "x": 0.6,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Tucked behind Moe's Ramp and makeable from either lower flipper, this inner loop feeds the upper-right flipper and starts Otto's Bus Tour 2x scoring, moving the Chalkboard forward.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      }
+    },
+    {
+      "id": "bully-standups",
+      "name": "Bully Standups",
+      "type": "target-bank",
+      "x": 0.68,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Three targets along Springfield Elementary's side wall — hard to hit directly, usually made off the Kwik-E-Mart Loop or its standup. Completing the bank lights a Daredevil Mode."
+    },
+    {
+      "id": "moes-ramp",
+      "name": "Moe's Ramp",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Scores an increasing \"Get Duffed\" value on repeat shots and builds toward Treehouse of Horror and Extra Ball."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.8,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Sits right of Moe's Ramp. A short hit spots a Bully standup and starts or advances a Daredevil Mode."
+    },
+    {
+      "id": "krusty-orbit",
+      "name": "Krusty Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Sweeps by the upper right flipper and a spinner on its way into the bumpers. Lights TV Modes, tied with one other shot for the fastest master-timer reset in the game.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "itchy-scratchy-targets",
+      "name": "Itchy & Scratchy Targets",
+      "type": "drop-target",
+      "x": 0.78,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Three drop targets below the upper right flipper, hiding a sinkhole behind them."
+    },
+    {
+      "id": "itchy-scratchy-hole",
+      "name": "Itchy & Scratchy Hole",
+      "type": "saucer",
+      "x": 0.78,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Behind the drop target bank. Lights, then starts, Itchy & Scratchy Multiball."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.78,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Can be lit for Extra Ball. Connected to the plunger lane, so a nudge here can set up a free skill shot."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Can be lit for Special."
+    },
+    {
+      "id": "lock-standups",
+      "name": "Lock Standups",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Upper playfield targets that light a Couch lock. Reachable from either upper flipper, though easier from the left.",
+      "playfield": "deck-springfield-upper",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "couch-ramp",
+      "name": "Couch Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.97,
+      "trim": "all",
+      "notes": "Exits the upper playfield. Locks a ball in the Couch when lit, or feeds the left inlane when it isn't — the third lock starts Couch Multiball.",
+      "playfield": "deck-springfield-upper",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "tv-loop",
+      "name": "TV Loop",
+      "type": "loop",
+      "x": 0.58,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Feeds from the lower flipper up to the upper playfield flipper. Starts a lit TV Mode.",
+      "playfield": "deck-springfield-upper"
+    },
+    {
+      "id": "monorail",
+      "name": "Monorail",
+      "type": "mech",
+      "x": 0.65,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "This is the drain for the upper playfield, sending the ball down into the right inlane. Usually the last thing you want, except that the Stop the Monorail TV Mode actually requires it.",
+      "playfield": "deck-springfield-upper"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.35,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "One of the two standard lower flippers. The Garage, Springfield Elementary loop and Moe's Ramp are all reachable from either lower flipper."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.65,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "The other standard lower flipper. Tap it to cycle the next TV Mode or pick an Itchy & Scratchy multiball flavor before starting one, and trap a ball here for an easier angle at Itchy & Scratchy."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Left Flipper",
+      "type": "flipper",
+      "x": 0.5,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Sits on the small upper playfield. Use this one over its counterpart for the Lite/Lock standups — it lines them up better.",
+      "playfield": "deck-springfield-upper"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.64,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Straddles the top of the main playfield and the small upper playfield above it. Catches the Cletus Orbit and Springfield Elementary loop, is the only direct route to the Comic Book Guy standup (otherwise it takes a plunge), and can also reach the Couch ramp up top.",
+      "playfield": "deck-springfield-upper"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-comic-book-guy",
+      "title": "Skill Shot — Comic Book Guy",
+      "category": "skillshot",
+      "summary": "The first of three plunge skill shots: Comic Book Guy can't be reached from either lower flipper, only the upper right flipper or a plunge, and landing it here starts two Hurry Ups at once instead of the usual one.",
+      "difficulty": 1,
+      "reward": "500K climbing to 1M (six hits maxes it out), plus two Hurry Ups started at once",
+      "steps": [
+        {
+          "shot": "comic-book-guy",
+          "action": "Aim the plunger at Comic Book Guy",
+          "detail": "Landing it from the plunger scores an escalating 500K to 1M and starts two Hurry Ups simultaneously instead of the usual one."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-kwik-e-mart-loop",
+      "title": "Skill Shot — Kwik-E-Mart Loop",
+      "category": "skillshot",
+      "summary": "The second plunge skill shot: thread the Kwik-E-Mart loop and stack multiple bonus-multiplier steps on one plunge instead of the usual single step.",
+      "difficulty": 2,
+      "reward": "5x climbing to 10x bonus multiplier in one shot (six hits maxes it out)",
+      "steps": [
+        {
+          "shot": "kwik-e-mart-loop",
+          "action": "Aim the plunger through the Kwik-E-Mart loop",
+          "detail": "A plunge here adds multiple bonus-multiplier steps at once, climbing from 5x toward 10x the more times you land it across the game."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-bully-standup",
+      "title": "Skill Shot — Bully Standup",
+      "category": "skillshot",
+      "summary": "The third and hardest plunge skill shot: the strobing Bully standup is almost never a direct plunge, usually reached off the Kwik-E-Mart loop instead, and it lights the next Daredevil Mode outright.",
+      "difficulty": 3,
+      "reward": "250K climbing to 500K (six hits maxes it out), plus the next Daredevil Mode lit immediately",
+      "steps": [
+        {
+          "shot": "bully-standups",
+          "action": "Carom the plunge into the strobing Bully standup",
+          "detail": "Almost always made via the Kwik-E-Mart loop rather than a direct plunge. Landing it scores an escalating 250K to 500K and lights the next Daredevil Mode immediately.",
+          "plunge": "full"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "timer-mastery",
+      "title": "The Master Timer",
+      "category": "progression",
+      "summary": "One shared timer runs every timed mode in the game — Lite Otto and the Krusty Orbit are the fastest resets, and there are at least twenty things total that can restart the clock.",
+      "difficulty": 2,
+      "reward": "Keeps every active mode alive",
+      "steps": [],
+      "instructions": [
+        "One shared timer runs every timed mode in the game. Starting or resetting anything timed resets it to 30 seconds — so as long as you start something new before it hits zero, everything you've already started keeps running.",
+        "Lite Otto and the Krusty Orbit are the two shots worth memorizing, since they're the fastest, most reliable resets. Springfield Elementary and the TV Loop also reset it and are easier to hit, but slower to set up.",
+        "The timer pauses whenever the ball is in the pop bumpers, and the Pop Target restores it — 2 seconds if hit off a bumper bounce, 5 if hit clean from a flipper, 10 if hit as a combo right after the Cletus Orbit. It caps at 60 seconds, and reaching that cap for the first time in a game pays a 2.5M bonus on its own.",
+        "There's roughly a 4-second grace window once the display reads 00 — don't panic the instant it hits zero, but don't wait around either."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "double-scoring",
+      "title": "Double Scoring",
+      "category": "progression",
+      "summary": "Springfield Elementary, shot while Lite Otto's window is open, arms double scoring at one of ten zones around the table — worth chasing since it stacks with everything else running.",
+      "difficulty": 2,
+      "reward": "2x on whichever of ten zones lights",
+      "steps": [],
+      "instructions": [
+        "Shooting Springfield Elementary while Lite Otto's timed 2x window is running starts double scoring at one of ten zones — the bumpers, Cletus Orbit, Treehouse Ramp, Kwik-E-Mart Loop, Garage, Springfield Elementary, Moe's Ramp, Krusty Orbit, Itchy & Scratchy, and the entire upper playfield.",
+        "Which zone lights is effectively random in normal play, though tournament settings fix the order. Every shot to a doubled zone scores double for as long as the timer keeps running — including shots inside TV Modes and multiball.",
+        "Complete all ten zones and the lights that mark them switch from solid to pulsing. Shoot Springfield Elementary once more after that and something special starts."
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "tv-modes",
+      "title": "The Seven TV Modes",
+      "category": "progression",
+      "summary": "Seven very different TV Modes are lit at the Krusty Orbit and started at the TV Loop, each worth roughly 2.5M for a clean clear.",
+      "difficulty": 2,
+      "reward": "250K to start, up to 2.5M to complete",
+      "steps": [],
+      "instructions": [
+        "Shoot the Krusty Orbit to light a TV Mode, then start it up top at the TV Loop — or take one as a random Clean the Garage award. Tap the right flipper beforehand to pick which of the seven you get. Starting one pays 250K immediately and resets the shared master timer.",
+        "Duffman — five right ramp shots, 250K to 650K each.",
+        "Homer's Day — nuclear plant bumpers, then Moe's, then the Garage, then the Couch Ramp; the first three pay 500K, the Couch pays 750K.",
+        "Willie's Woes — Bully standups for 250K, then Springfield Elementary for 500K, three times through.",
+        "Wiggum vs. Snake — any of Krusty Orbit, Moe's, or Springfield Elementary, then either the Kwik-E-Mart Loop or Treehouse Ramp, then the Cletus Orbit to finish, worth 500K, 750K, then 1M.",
+        "Bart's Day — Springfield Elementary, any Kwik-E-Mart shot, Treehouse Ramp, then the TV Loop; the first three pay 500K, the TV pays 750K.",
+        "Krusty's Last Stand — 100 rating points from Krusty Orbit shots (20 each) and spinner spins (1 each), each point worth 20K.",
+        "Stop the Monorail — send the ball down the Monorail itself, then hit three different lower playfield shots to relight and repeat it.",
+        "Complete all seven in one run and every major shot pays out again as Victory points until the timer runs out."
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "victory-points",
+      "title": "Victory Points",
+      "category": "progression",
+      "summary": "Once every TV Mode you've started in a run is fully completed, every major shot on the table starts paying Victory points on top of its normal score, for as long as the timer keeps running.",
+      "difficulty": 3,
+      "reward": "100K per shot for one mode, up to 2.5M per shot for all seven",
+      "steps": [],
+      "instructions": [
+        "Once every TV Mode you've started during the current timer run is fully completed, every major shot — loops, ramps, orbits, holes — starts paying Victory points on top of its normal score, for as long as the timer keeps running.",
+        "The payout scales with how many TV Modes you finished in that run: 100K per shot for one mode, climbing through 250K, 500K, 800K, 1.25M, 1.75M, up to 2.5M per shot if you cleared all seven.",
+        "Starting a new TV Mode while Victory points are live pauses them until you finish that mode too — but finishing it raises the payout further, so it's worth doing rather than avoiding.",
+        "Double scoring stacks with Victory points on any doubled shot, so a fully-loaded timer run can turn ordinary shots into multi-million-point swings."
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "hurry-ups",
+      "title": "Hurry Ups",
+      "category": "mode",
+      "summary": "Comic Book Guy lights a countdown at one of six major shots — hit it again to stack a second one running at the same time, and chain enough collections together for a real bonus.",
+      "difficulty": 2,
+      "reward": "200K down to 50K, more per collection when stacked",
+      "steps": [
+        {
+          "shot": "comic-book-guy",
+          "action": "Shoot Comic Book Guy to start a Hurry Up",
+          "detail": "It lights at one of six shots — Cletus Orbit, Treehouse Ramp, Kwik-E-Mart Loop, Garage, Moe's Ramp, or Krusty Orbit — and counts down from 200K to a 50K floor."
+        },
+        {
+          "shot": "comic-book-guy",
+          "action": "Hit it again to stack a second one",
+          "detail": "Multiple active Hurry Ups add 50K to the shared base value and multiply it by however many are running, so two at once starts around 500K combined — though they also count down faster the more are active."
+        },
+        {
+          "shot": "treehouse-ramp",
+          "action": "Collect a lit Hurry Up before it expires",
+          "detail": "Any of the six lit shots works; collecting one adds 50K back to whatever Hurry Ups are still running. Chain three or more together in one run for a bonus — Advance Itchy at three, Couch Lock at four, Extra Ball at five, Special at six."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "daredevil-modes",
+      "title": "Daredevil Modes",
+      "category": "mode",
+      "summary": "Clear the Bully standup bank to light a Daredevil Mode, then start it at the Captive Ball — each of the four types tracks a different category of shot toward a 750K goal, paid at the end of the ball.",
+      "difficulty": 2,
+      "reward": "750K+ per type, paid at end of ball",
+      "steps": [
+        {
+          "shot": "bully-standups",
+          "action": "Complete the Bully bank to light one",
+          "detail": "Clearing all three Bully standups lights a Daredevil Mode; you can have all four lit before starting a single one."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Start it at the Captive Ball",
+          "detail": "The Captive Ball always starts whichever Daredevil Mode is lit, top to bottom, and spots a Bully standup at the same time — each type has its own shots: ramps (including the Garage and Couch), loops and orbits, bumpers and slingshots, or standups and drops."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the Captive Ball again mid-mode to boost its value",
+          "detail": "Each extra hit raises every remaining shot's value by 50% of the original, so a ramp that started at 50K becomes 75K, then 100K. The goal is 750K in points, paid at the end of the ball — a tilt loses all of it, so don't tilt while one's running."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "itchy-scratchy-multiball",
+      "title": "Itchy & Scratchy Multiball",
+      "category": "multiball",
+      "summary": "Clear the drop targets, shoot the hole, then do it again to actually start this one — pick from four jackpot flavors with the right flipper before it locks in.",
+      "difficulty": 2,
+      "reward": "100K+ jackpots, up to a 2.5M Super",
+      "steps": [
+        {
+          "shot": "itchy-scratchy-targets",
+          "action": "Clear the drop target bank",
+          "detail": "Completing it scores 75K the first time, climbing 25K per completion to a 150K cap."
+        },
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Shoot the hole, then clear the bank again",
+          "detail": "The first multiball of the game is more forgiving — you can shoot the hole without clearing the bank first. From the second multiball on, shooting the hole before the bank is cleared wastes the attempt and resets the targets."
+        },
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Shoot it a second time to start multiball",
+          "detail": "You can pick which of four flavors you get with the right flipper before it locks in — Spay Anything builds the jackpot from spinner spins, Kitty Kitty Bang Bang from bumper hits, Field of Screams from the Captive Ball, and Esophagus Now from every shot, which tends to score the highest of the four."
+        },
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Chase Jackpots, then the Super",
+          "detail": "Jackpots start at 100K and rotate around the major shots — only one is ever unlit at a time. Each one adds to a Super Jackpot worth up to 2.5M; the first Super in a multiball is a plain hole shot, later ones need all three drop targets down first."
+        }
+      ],
+      "fx": "chainsaw"
+    },
+    {
+      "id": "couch-multiball",
+      "title": "Couch Multiball",
+      "category": "multiball",
+      "summary": "Lock three balls in the upper playfield's Couch to start it, then work eight major shots for Jackpots before cashing a Super on the Couch ramp itself.",
+      "difficulty": 2,
+      "reward": "200K+ Jackpots, 5x Super Jackpots",
+      "steps": [
+        {
+          "shot": "lock-standups",
+          "action": "Hit the Lite and Lock standups to arm a lock",
+          "detail": "How many hits each one needs, and how many locks can be lit at once, both get stricter with every Couch Multiball you've already played — the very first multiball lights all three locks automatically."
+        },
+        {
+          "shot": "couch-ramp",
+          "action": "Shoot the Couch ramp to lock a ball",
+          "detail": "First lock pays 100K, second 250K, third 500K and starts multiball outright — reachable from the upper playfield's right flipper, or on a carom from the left."
+        },
+        {
+          "shot": "couch-ramp",
+          "action": "Cash Super Jackpots on the Couch ramp",
+          "detail": "It's worth five times the current Jackpot and relights all eight Jackpot shots. Land all eight Jackpots before the Super and the value holds instead of resetting, raising the base for every future Couch Multiball. Five Supers collected across the game marks progress toward the machine's biggest secret."
+        },
+        {
+          "shot": "springfield-elementary-loop",
+          "action": "Work the other seven Jackpot shots between Supers",
+          "detail": "The Treehouse Ramp and Kwik-E-Mart Loop off the upper flipper pay Double Jackpots, the TV Loop pays Triple, and the rest — the orbits, the Garage, Moe's Ramp and this loop — pay a single Jackpot, starting at 200K and climbing 25K per hit, capped at 1M."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "doh-frenzy",
+      "title": "D'Oh Frenzy",
+      "category": "mode",
+      "summary": "Spell SIMPSONS through the Garage and Treehouse Ramp and every switch on the table starts scoring at once.",
+      "difficulty": 1,
+      "reward": "10K+ per switch while it runs",
+      "steps": [
+        {
+          "shot": "garage",
+          "action": "Open the Garage for a Simpsons letter",
+          "detail": "Opening the door, the mini-ramp behind it, or the Treehouse Ramp each add one letter toward spelling SIMPSONS.",
+          "link": "none"
+        },
+        {
+          "shot": "treehouse-ramp",
+          "action": "Chain it right after a specific orbit shot for two letters",
+          "detail": "A Treehouse Ramp shot immediately following a Cletus Orbit shot counts double.",
+          "link": "none"
+        },
+        {
+          "shot": "treehouse-ramp",
+          "action": "Complete the word to start the Frenzy",
+          "detail": "Every switch on the table scores once SIMPSONS is spelled — 10K per switch the first time, +2.5K on every Frenzy after. Later Frenzies narrow which shots still spell letters, first to the Garage and Treehouse Ramp, then to the Treehouse Ramp alone."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "treehouse-of-horror",
+      "title": "Treehouse Of Horror",
+      "category": "mode",
+      "summary": "Enough Moe's Ramp shots light a Treehouse award, collected at the Treehouse Ramp — the list cycles through eight-plus different prizes before repeating any of them.",
+      "difficulty": 1,
+      "reward": "A new prize every time, until the list repeats",
+      "steps": [
+        {
+          "shot": "moes-ramp",
+          "action": "Build toward Treehouse with Moe's Ramp",
+          "detail": "It lights on the fifth ramp shot by default, then the 15th, 25th, and every 10th after — and awards stack, so you don't have to collect one before lighting the next."
+        },
+        {
+          "shot": "treehouse-ramp",
+          "action": "Collect it on the Treehouse Ramp",
+          "detail": "You can't predict which award comes next — the pool includes Apu's Giveaway, Captain's Bounty, Krusty's Nightmare, Nuclear Disaster, Max Everything, Really Big Points, 10x Nuclear Value, and Crazy Extra Ball — and several are their own timed rounds worth learning individually."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "cletus-kids",
+      "title": "Cletus Kids",
+      "category": "progression",
+      "summary": "Every Cletus Orbit shot introduces a new kid and pays a little more than the last — there are 26 of them to find.",
+      "difficulty": 1,
+      "reward": "25K climbing 5K per kid",
+      "steps": [
+        {
+          "shot": "cletus-orbit",
+          "action": "Shoot the Cletus Orbit for a new kid",
+          "detail": "Each shot introduces one of 26 named kids and pays an award starting at 25K, climbing 5K every time."
+        },
+        {
+          "shot": "cletus-orbit",
+          "action": "Collect all 26, then shoot it once more",
+          "detail": "Getting every kid takes 26 total orbit shots across the game — do it, and one more shot after that starts something extra."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "nuclear-value",
+      "title": "Nuclear Value",
+      "category": "strategy",
+      "summary": "The Cletus Orbit lights it, the bumpers build it, and the Pop Target collects it — how you hit that last shot changes the payout by up to five times.",
+      "difficulty": 1,
+      "reward": "100K-500K, up to 5x on a clean hit",
+      "steps": [
+        {
+          "shot": "cletus-orbit",
+          "action": "Light it with the Cletus Orbit",
+          "detail": "This shot both adds a Cletus Kid and lights the Nuclear Value for collection."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Build it in the bumpers",
+          "detail": "Each bumper hit adds 1,000 to 5,000, up to a 500K ceiling starting from a 100K base."
+        },
+        {
+          "shot": "pop-target",
+          "action": "Collect it at the Pop Target",
+          "detail": "A bounce off a bumper first scores the base value for one collection; a clean hit straight from a flipper — usually the upper right — triples it for three collections; and a hit off the upper right flipper immediately after a Cletus Orbit shot is worth five times the value and five collections. Collecting it enough times lights an Extra Ball."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "clean-the-garage",
+      "title": "Clean The Garage",
+      "category": "secret",
+      "summary": "The Garage hides a genuinely wide grab-bag of awards behind its door, from small points to instantly lighting Extra Ball or a TV Mode.",
+      "difficulty": 1,
+      "reward": "One of a very long list of awards",
+      "steps": [
+        {
+          "shot": "garage",
+          "action": "Keep the Garage lit for a random award",
+          "detail": "It's lit to start the game and relights from a standup on the upper playfield; shooting the mini-ramp inside collects whatever award is currently loaded."
+        },
+        {
+          "shot": "garage",
+          "action": "Cash in whatever comes up",
+          "detail": "The list runs from small and big point awards to lighting Special, Extra Ball, Lock, Otto, or a TV Mode outright, maxing out a specific shot's value, or a straight bonus addition — there's a real range, so any Garage shot is worth taking."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "chalkboard",
+      "title": "Chalkboard Awards",
+      "category": "secret",
+      "summary": "Repeated Springfield Elementary shots eventually trigger a Chalkboard Award — mostly ways to hold something valuable into your next ball.",
+      "difficulty": 1,
+      "reward": "A Hold award for the next ball",
+      "steps": [
+        {
+          "shot": "springfield-elementary-loop",
+          "action": "Feed Springfield Elementary repeatedly",
+          "detail": "Every shot pays a small amount, but it takes an increasing number of hits each time — starting around three — to trigger a bigger Chalkboard Award on top."
+        },
+        {
+          "shot": "springfield-elementary-loop",
+          "action": "Bank a Hold award before the ball ends",
+          "detail": "Chalkboard Awards mostly let you hold something into the next ball — your bonus multiplier, your end-of-ball bonus value, the Nuclear Value, the Chalkboard value itself, or either ramp's value."
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "combos",
+      "title": "Shot Combos",
+      "category": "combo",
+      "summary": "Chaining shots together pays real money on top of their normal value — three shots for 250K, four for 750K total, five for a full 1.5M.",
+      "difficulty": 2,
+      "reward": "250K to 1.5M depending on chain length",
+      "steps": [
+        {
+          "shot": "cletus-orbit",
+          "action": "Open with the Cletus Orbit",
+          "detail": "Combos in this game run from three shots up to five; each additional link raises both the count and the payout."
+        },
+        {
+          "shot": "treehouse-ramp",
+          "action": "Continue into the Treehouse Ramp",
+          "detail": "A three-shot combo like this pays 250K on its own."
+        },
+        {
+          "shot": "tv-loop",
+          "action": "Stretch it through the TV Loop",
+          "detail": "Four shots together — say, Cletus into Treehouse into TV into Couch — pay 500K for that link, 750K total."
+        },
+        {
+          "shot": "couch-ramp",
+          "action": "Finish on the Couch for the full five-way",
+          "detail": "A complete five-way combo, such as Moe's into Springfield Elementary into Treehouse into TV into Couch, adds another 750K on top for a 1.5M total run."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "kwik-e-mart-scoring",
+      "title": "Kwik-E-Mart Value",
+      "category": "strategy",
+      "summary": "The standup in front of the Kwik-E-Mart loop pads the loop's own value before you even take the shot, and the loop itself keeps stacking bonus multiplier.",
+      "difficulty": 1,
+      "reward": "Up to 200K per shot, plus multiplier steps",
+      "steps": [
+        {
+          "shot": "kwik-e-mart-standup",
+          "action": "Feed the standup guarding the loop first",
+          "detail": "It adds a random 1,000-9,990 bonus to whatever the loop shot behind it is about to pay."
+        },
+        {
+          "shot": "kwik-e-mart-loop",
+          "action": "Then take the loop itself",
+          "detail": "Worth up to 200K per shot and adds a bonus multiplier every time — chain it right after a Cletus Orbit shot for more than one multiplier step at once. Past 99x multiplier, every shot here just pays a flat 1M instead."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "springfield-mystery-spot",
+      "title": "Springfield Mystery Spot",
+      "category": "secret",
+      "summary": "Clear all ten double scoring zones and Springfield Elementary turns into the door to a genuinely strange round where your flippers swap sides.",
+      "difficulty": 3,
+      "reward": "500K per shot, all zones doubled, 5M Super",
+      "steps": [
+        {
+          "shot": "springfield-elementary-loop",
+          "action": "Clear all ten zones, then shoot Springfield Elementary once more",
+          "detail": "Once every zone has been doubled and the red lights are pulsing instead of solid, one more shot on this loop starts it."
+        },
+        {
+          "shot": "krusty-orbit",
+          "action": "Then survive with your flippers crossed",
+          "detail": "Your left and right flipper buttons swap abilities for the duration — genuinely disorienting the first time. Five balls hit the playfield with every major shot worth a flat 500K and all ten zones doubled at once."
+        },
+        {
+          "shot": "garage",
+          "action": "Clear all ten Jackpot shots, then nail the Garage",
+          "detail": "The red 2x lights show which of the ten you still need — the TV Loop, Treehouse Ramp, Krusty Orbit, and Itchy & Scratchy hole are the easiest to forget. Once all ten are down, the Garage door only opens for about three seconds at a time; thread a second ball through it for a 5M Super Jackpot and the round resets to run again."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "alien-invasion",
+      "title": "Alien Invasion",
+      "category": "multiball",
+      "summary": "Finish all seven TV Modes and this unlocks — four escalating phases of locking balls anywhere you can find room for them.",
+      "difficulty": 3,
+      "reward": "500K+ per lock, 1M x balls in play per phase",
+      "steps": [
+        {
+          "shot": "tv-loop",
+          "action": "Finish all seven TV Modes to unlock it",
+          "detail": "However many you completed during that run sets the starting timer, from 45 seconds for one up to 99 for a clean sweep of all seven."
+        },
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Lock balls anywhere you can",
+          "detail": "The Itchy & Scratchy hole and Springfield Elementary can each hold one locked ball at a time, while the Couch takes up to three. Once you're down to your last ball, the Garage, Treehouse Ramp, and TV Loop become lockable too."
+        },
+        {
+          "shot": "couch-ramp",
+          "action": "Push toward the Couch lock especially",
+          "detail": "Each phase needs more balls locked than the last — two for phase one, five for phase four — and losing a ball after the saver expires drops you back a phase. Finishing phase four specifically needs two balls locked in the Couch without a drain in between."
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "secret-stash",
+      "title": "Secret Stash",
+      "category": "secret",
+      "summary": "Clear all six Hurry Ups and one more Comic Book Guy shot opens a bonus round built entirely around them.",
+      "difficulty": 3,
+      "reward": "500K down to 100K per Hurry Up, plus a completion bonus",
+      "steps": [
+        {
+          "shot": "comic-book-guy",
+          "action": "Collect all six Hurry Ups first",
+          "detail": "Once every Hurry Up light is solid instead of flashing, one more Comic Book Guy shot starts this round."
+        },
+        {
+          "shot": "treehouse-ramp",
+          "action": "Shoot the flashing Hurry Ups again",
+          "detail": "All six relight at a 500K countdown that drops to a 100K floor; any hit clears that Hurry Up and resets the countdown for the rest. You need ten total collections to finish it."
+        },
+        {
+          "shot": "comic-book-guy",
+          "action": "Avoid Comic Book Guy until you've cleared all six",
+          "detail": "Hitting it mid-round relights the six early; leaving it alone and clearing all six naturally instead pays a 2M All Shots Completed bonus, on top of the 1M for finishing the round."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "daredevil-mania",
+      "title": "Daredevil Mania",
+      "category": "secret",
+      "summary": "Clear all four Daredevil Modes and the Captive Ball opens an untimed round with a single, simple target: 5M in Daredevil-type points.",
+      "difficulty": 3,
+      "reward": "5M target across all Daredevil shot types",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Finish all four Daredevil Modes first",
+          "detail": "Earn at least 1M on each of the four types and the indicator lights just in front of the Captive Ball start pulsing."
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the Captive Ball once more to start",
+          "detail": "This round has no timer — just a flat 5M target across all four Daredevil shot types, each paying more than it normally would. It's genuinely hard to fail during an active multiball."
+        },
+        {
+          "shot": "bully-standups",
+          "action": "Work every Daredevil shot type you can reach",
+          "detail": "Ramps, loops and orbits, bumpers, and standups all count — like the regular Daredevil Modes, none of it pays out until the ball actually ends, so don't tilt."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "scratchys-revenge",
+      "title": "Scratchy's Revenge",
+      "category": "multiball",
+      "summary": "Play through all four Itchy & Scratchy Multiball flavors and the hole starts firing out single balls worth chasing on their own.",
+      "difficulty": 3,
+      "reward": "Double-value Jackpots, up to a huge Super",
+      "steps": [
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Play through all four Itchy & Scratchy flavors first",
+          "detail": "Once you've run Spay Anything, Kitty Kitty Bang Bang, Field of Screams, and Esophagus Now, the next hole shot starts this instead."
+        },
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Drop the ball in — no drop targets needed this time",
+          "detail": "It kicks out a single ball, so it's much stronger paired with another multiball already running than played alone."
+        },
+        {
+          "shot": "krusty-orbit",
+          "action": "Grind Jackpots, worth double the usual value",
+          "detail": "You need between 5 and 15 of them before a Super Jackpot lights, fewer if you've already earned Supers in the four regular Itchy & Scratchy multiballs. Running this alongside Springfield Mystery Spot doubles everything a second time."
+        }
+      ],
+      "fx": "chainsaw"
+    },
+    {
+      "id": "pretzel-multiball",
+      "title": "Pretzel Multiball",
+      "category": "multiball",
+      "summary": "Collect all 26 Cletus Kids and one more orbit shot kicks off a switch-hitting multiball that's especially huge when stacked onto Couch Multiball.",
+      "difficulty": 2,
+      "reward": "Switch points plus escalating Super Jackpots",
+      "steps": [
+        {
+          "shot": "cletus-orbit",
+          "action": "Collect all 26 Cletus Kids first",
+          "detail": "One more Cletus Orbit shot after the 26th starts this multiball outright."
+        },
+        {
+          "shot": "moes-ramp",
+          "action": "Chase the Super Jackpot shot once it lights",
+          "detail": "Every switch scores points and adds a pretzel while it's running; after enough switches, a shot — usually Moe's Ramp — lights for a Super Jackpot, then the requirement resets higher for the next one."
+        },
+        {
+          "shot": "couch-ramp",
+          "action": "Start it during another multiball for the biggest version",
+          "detail": "Two balls kick out normally, but starting Pretzel while Couch Multiball is already running adds two more on top of whatever's already in play — a genuine five-ball spectacle."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "super-duper-wizard",
+      "title": "Super Duper Mega Extreme Wizard Mode",
+      "category": "wizard",
+      "summary": "The machine's true final boss — finish all six major achievements over the course of the game, then land any hole with only one ball in play to trigger it.",
+      "difficulty": 3,
+      "reward": "500K+ Jackpots, 5x Super Jackpots, multiplied further by Couch locks",
+      "steps": [
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Clear all six major tasks first",
+          "detail": "Win Springfield Mystery Spot, finish all four phases of Alien Invasion, complete Secret Stash, finish Daredevil Mania, score a Super Jackpot in Scratchy's Revenge, and collect five Super Jackpots in Couch Multiball."
+        },
+        {
+          "shot": "itchy-scratchy-hole",
+          "action": "Shoot any hole in single-ball play to start",
+          "detail": "Any of the game's holes works, not just this one — it just has to be single-ball play at the time."
+        },
+        {
+          "shot": "krusty-orbit",
+          "action": "Work every shot once it begins",
+          "detail": "This is a five-ball round where bumpers pay 25K, spinner spins pay 50K, and every shot is lit for a Jackpot starting at 500K that grows 50K with each trip down the Monorail."
+        },
+        {
+          "shot": "bully-standups",
+          "action": "Clear either target bank to strobe a Super Jackpot",
+          "detail": "Finishing the Bully bank or the Itchy & Scratchy bank lights a strobing shot worth 5 times the regular Jackpot — and locking a ball in the Couch multiplies whichever Supers you get for a short window, doubling on the first lock and tripling on a second."
+        }
+      ],
+      "fx": "kaiju"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "spp-skillshot",
+      "title": "Plunger Precision",
+      "desc": "Land any of the three plunger skill shots.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-comic-book-guy"
+    },
+    {
+      "id": "spp-timer-60",
+      "title": "Full Minute",
+      "desc": "Push the master timer all the way to its 60-second cap.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "timer-mastery"
+    },
+    {
+      "id": "spp-double-scoring-all",
+      "title": "Perfect Ten",
+      "desc": "Complete all ten double scoring zones in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "double-scoring"
+    },
+    {
+      "id": "spp-tv-all-seven",
+      "title": "Seven Channels",
+      "desc": "Complete all seven TV Modes in a single timer run.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tv-modes"
+    },
+    {
+      "id": "spp-victory-points",
+      "title": "Homer On The Mountain",
+      "desc": "Earn Victory points after completing every active TV Mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "victory-points"
+    },
+    {
+      "id": "spp-hurry-up-chain",
+      "title": "Chain Reaction",
+      "desc": "Chain three or more Hurry Up collections together.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hurry-ups"
+    },
+    {
+      "id": "spp-daredevil-all",
+      "title": "Four For Four",
+      "desc": "Complete all four Daredevil Modes in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "daredevil-modes"
+    },
+    {
+      "id": "spp-itchy-scratchy-mb",
+      "title": "Esophagus Now",
+      "desc": "Start Itchy & Scratchy Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "itchy-scratchy-multiball"
+    },
+    {
+      "id": "spp-couch-mb",
+      "title": "Three On The Couch",
+      "desc": "Lock three balls and start Couch Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "couch-multiball"
+    },
+    {
+      "id": "spp-doh-frenzy",
+      "title": "Spelled Out",
+      "desc": "Spell SIMPSONS and start D'Oh Frenzy.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "doh-frenzy"
+    },
+    {
+      "id": "spp-treehouse",
+      "title": "Treehouse Prize",
+      "desc": "Collect a Treehouse of Horror award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "treehouse-of-horror"
+    },
+    {
+      "id": "spp-cletus-26",
+      "title": "The Whole Family",
+      "desc": "Collect all 26 Cletus Kids in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "cletus-kids"
+    },
+    {
+      "id": "spp-mystery-spot",
+      "title": "Flippers Reversed",
+      "desc": "Trigger Springfield Mystery Spot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "springfield-mystery-spot"
+    },
+    {
+      "id": "spp-alien-invasion",
+      "title": "Final Wave",
+      "desc": "Reach phase four of Alien Invasion.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "alien-invasion"
+    },
+    {
+      "id": "spp-scratchys-revenge",
+      "title": "Scratchy's Revenge",
+      "desc": "Trigger Scratchy's Revenge after playing all four Itchy & Scratchy flavors.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "scratchys-revenge"
+    },
+    {
+      "id": "spp-super-duper",
+      "title": "Super Duper Mega Extreme",
+      "desc": "Clear all six prerequisite tasks and start the final wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "super-duper-wizard"
+    }
+  ],
+  "drills": [
+    {
+      "id": "three-plunge-targets",
+      "title": "Three Plunges, Three Targets",
+      "text": "Work all three plunge skill shots in turn: straight at Comic Book Guy, threaded through the Kwik-E-Mart loop, and the carom off that loop into a strobing Bully standup. Comic Book Guy is unreachable from either lower flipper, so the plunge is the cheap way to get at him.",
+      "reps": "10 plunges per target",
+      "focus": "skill-shot",
+      "goal": "skillshot-comic-book-guy",
+      "shots": [
+        "shooter-lane",
+        "comic-book-guy",
+        "kwik-e-mart-loop",
+        "bully-standups"
+      ]
+    },
+    {
+      "id": "pop-target-quality",
+      "title": "Collect The Nuclear Value Properly",
+      "text": "The same collection is worth up to five times as much depending on how you make it, so stop taking whatever the bumpers hand you. Drill the clean flipper hit on the Pop Target, then the version straight off the upper right flipper immediately after a Cletus Orbit, which is worth five times a bumper bounce.",
+      "reps": "10 clean hits, 10 combo hits",
+      "focus": "accuracy",
+      "goal": "nuclear-value",
+      "shots": [
+        "cletus-orbit",
+        "pop-bumpers",
+        "pop-target",
+        "upper-right-flipper"
+      ]
+    },
+    {
+      "id": "timer-reset-habit",
+      "title": "Reset Before Zero",
+      "text": "One clock runs everything timed on this machine, so practise reaching Lite Otto or the Krusty Orbit before it expires rather than after. Springfield Elementary and the TV Loop reset it too and are easier to hit, so learn which one your ball position actually allows.",
+      "reps": "one ball, resetting the clock every time it drops under ten",
+      "focus": "flow",
+      "goal": "timer-mastery",
+      "shots": [
+        "lite-otto",
+        "krusty-orbit",
+        "springfield-elementary-loop",
+        "tv-loop"
+      ]
+    },
+    {
+      "id": "five-way-combo",
+      "title": "The Five-Way",
+      "text": "Moe's Ramp into Springfield Elementary into the Treehouse Ramp into the TV Loop and finish on the Couch. Build it up in pieces — three links first, then four — because the payout jumps every time you add one.",
+      "reps": "10 attempts at four links, 5 at five",
+      "focus": "flow",
+      "goal": "combos",
+      "shots": [
+        "moes-ramp",
+        "springfield-elementary-loop",
+        "treehouse-ramp",
+        "tv-loop",
+        "couch-ramp"
+      ]
+    },
+    {
+      "id": "drops-before-the-hole",
+      "title": "Drops First, Then The Hole",
+      "text": "From the second multiball on, a hole shot with the drop targets still standing wastes the attempt and stands the bank back up. Clear all three first, trap on the right flipper for the angle, and only then go for the hole.",
+      "reps": "10 clears followed by the hole shot",
+      "focus": "accuracy",
+      "goal": "itchy-scratchy-multiball",
+      "shots": [
+        "itchy-scratchy-targets",
+        "itchy-scratchy-hole",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "upstairs-and-the-monorail",
+      "title": "Stay Off The Monorail",
+      "text": "Use the upper left flipper for the Lite and Lock standups, since it lines them up better than its counterpart does. The Monorail is the upper playfield's drain, so treat every shot up there as a choice between the Couch ramp and losing your position.",
+      "reps": "5 trips upstairs, no unforced Monorail",
+      "focus": "ball-control",
+      "goal": "couch-multiball",
+      "shots": [
+        "upper-left-flipper",
+        "lock-standups",
+        "couch-ramp",
+        "monorail"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "burger",
+  "playfields": [
+    {
+      "id": "deck-springfield-upper",
+      "name": "Springfield Elementary Rooftop",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.44,
+        "y": 0.64,
+        "w": 0.3,
+        "h": 0.34
+      },
+      "entries": [
+        "treehouse-ramp",
+        "garage",
+        "springfield-elementary-loop"
+      ],
+      "exits": [
+        {
+          "x": 0.78,
+          "y": 0.09
+        },
+        {
+          "x": 0.22,
+          "y": 0.09
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "No dedicated button on this one — a manual shooter rod and two flipper buttons cover everything. The nearest thing to a gimmick control is the Springfield Mystery Spot, which swaps what your two flipper buttons do while it runs."
+  },
+  "howItPlays": {
+    "objective": "The Simpsons Pinball Party turns Springfield into one long timed party, where a single master clock keeps every mode you have started running at once. Feed that clock, clear the seven TV Modes and six big achievements, then drop any hole in single-ball play for the Super Duper Mega Extreme Wizard Mode.",
+    "loop": [
+      "Shoot Lite Otto or the Krusty Orbit to reset the shared master timer, keeping everything you have started alive together.",
+      "Light TV Modes at the Krusty Orbit and launch them up top at the TV Loop; finish a run of them and every major shot pays Victory points.",
+      "Clear the Itchy & Scratchy drops for its multiball and lock three up the Couch ramp for Couch Multiball, while chasing Hurry Ups off Comic Book Guy.",
+      "Tick the six achievements -- Springfield Mystery Spot, Alien Invasion, Secret Stash, Daredevil Mania, a Scratchy's Revenge super, and five Couch supers -- then drop any hole in single-ball play for the finale."
+    ],
+    "lights": [
+      {
+        "id": "master-timer",
+        "name": "The Master Timer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lite-otto"
+          },
+          {
+            "shot": "krusty-orbit"
+          },
+          {
+            "shot": "springfield-elementary-loop"
+          },
+          {
+            "shot": "tv-loop"
+          },
+          {
+            "shot": "pop-target"
+          }
+        ],
+        "lit": "One clock runs every timed mode at once, and starting or resetting anything timed sets it back to thirty seconds, so as long as you refresh it before zero everything you have going stays alive.",
+        "flashing": "The display counts down with a few seconds of grace once it reads zero -- do not panic at the flip to zero, but do not wait around either.",
+        "control": null,
+        "then": "The quickest, most dependable resets are Lite Otto and the Krusty Orbit, with Springfield Elementary and the TV Loop as slower but easier backups; the bumpers pause the clock while the ball is in them and the Pop Target restores it, and pushing the timer to its sixty-second cap for the first time pays a bonus on its own.",
+        "goals": [
+          "timer-mastery"
+        ]
+      },
+      {
+        "id": "tv-modes",
+        "name": "TV Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "krusty-orbit"
+          },
+          {
+            "shot": "tv-loop"
+          },
+          {
+            "shot": "right-flipper"
+          }
+        ],
+        "lit": "A lit TV Mode waits at the Krusty Orbit, and each one you light stays ready until you launch it from the TV Loop up top.",
+        "flashing": null,
+        "control": {
+          "input": "right-flipper",
+          "effect": "a tap of the right flipper scrolls which of the seven TV Modes you will get before you start it, so you can line up the one whose shots you are already hitting",
+          "when": "a TV Mode is lit but not yet started"
+        },
+        "then": "Light one at the Krusty Orbit, pick it with the right flipper, and send it up at the TV Loop for an instant award and a timer reset; finish every TV Mode you started in a single timer run and every major shot starts paying Victory points over and above its usual value.",
+        "goals": [
+          "tv-modes",
+          "victory-points"
+        ]
+      },
+      {
+        "id": "hurry-ups",
+        "name": "Comic Book Guy Hurry Ups",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "comic-book-guy"
+          },
+          {
+            "shot": "treehouse-ramp"
+          }
+        ],
+        "lit": "Each Comic Book Guy shot lights a Hurry Up counting down at one of six major shots, and hitting Comic Book Guy again runs a second one alongside the first, raising the shared value but draining it faster.",
+        "flashing": "Every lit Hurry Up ticks from its start value toward a floor, so collect the closest before it bottoms out.",
+        "control": null,
+        "then": "Collect the lit shots before they expire -- each collect feeds value back to the ones still running -- and chain enough for stacking bonuses up to a Special at six; clearing all six opens the Secret Stash round on your next Comic Book Guy shot.",
+        "goals": [
+          "hurry-ups",
+          "secret-stash"
+        ]
+      },
+      {
+        "id": "itchy-scratchy",
+        "name": "Itchy & Scratchy Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "itchy-scratchy-targets"
+          },
+          {
+            "shot": "itchy-scratchy-hole"
+          },
+          {
+            "shot": "right-flipper"
+          }
+        ],
+        "lit": "The three Itchy & Scratchy drops guard a hidden hole, and clearing the bank lights the hole -- after the first multiball, a hole shot only counts once the drops are down.",
+        "flashing": null,
+        "control": {
+          "input": "right-flipper",
+          "effect": "before it locks in, a right-flipper tap picks which of four jackpot flavors you start, and Esophagus Now, which scores off every shot, tends to pay the most",
+          "when": "the hole is lit to start the multiball"
+        },
+        "then": "Shoot the lit hole to start the multiball and chase its rotating jackpots into a Super; play through all four flavors across the game and the next hole shot opens Scratchy's Revenge instead.",
+        "goals": [
+          "itchy-scratchy-multiball",
+          "scratchys-revenge"
+        ]
+      },
+      {
+        "id": "couch-mb",
+        "name": "Couch Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lock-standups"
+          },
+          {
+            "shot": "couch-ramp"
+          },
+          {
+            "shot": "springfield-elementary-loop"
+          }
+        ],
+        "lit": "The upper-playfield Lite and Lock standups arm a Couch lock, and the requirements tighten with every Couch Multiball you have played -- the first one lights all three locks automatically.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls up the Couch ramp to start the multiball, work the eight jackpot shots, then cash a Super on the Couch ramp for five times the jackpot; five Couch supers across the game is one of the six achievements the final wizard needs.",
+        "goals": [
+          "couch-multiball"
+        ]
+      },
+      {
+        "id": "double-scoring",
+        "name": "Double Scoring Zones",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "lite-otto"
+          },
+          {
+            "shot": "springfield-elementary-loop"
+          }
+        ],
+        "lit": "Shooting Springfield Elementary while Lite Otto's window is open lights double scoring on one of ten zones around the table, and every shot into a doubled zone pays twice for as long as the clock lives.",
+        "flashing": "A finished zone's marker switches from solid to pulsing, and when all ten pulse the Mystery Spot is one Springfield Elementary shot away.",
+        "control": null,
+        "then": "Chase down all ten zones, then take Springfield Elementary one last time to open the flippers-crossed Springfield Mystery Spot; double scoring stacks with Victory points, so a loaded timer run turns ordinary shots into multi-million swings.",
+        "goals": [
+          "double-scoring",
+          "springfield-mystery-spot"
+        ]
+      },
+      {
+        "id": "nuclear-value",
+        "name": "Nuclear Value & Cletus Kids",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "cletus-orbit"
+          },
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "pop-target"
+          }
+        ],
+        "lit": "The Cletus Orbit lights the Nuclear Value and introduces a new Cletus Kid, the bumpers build the value toward its ceiling, and how cleanly you take the Pop Target decides the payoff.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect the Pop Target straight from a flipper to triple it, or right after a Cletus Orbit shot to make it five times; enough collections light an Extra Ball, and finding all twenty-six Cletus Kids opens Pretzel Multiball on the next orbit shot.",
+        "goals": [
+          "nuclear-value",
+          "cletus-kids",
+          "pretzel-multiball"
+        ]
+      },
+      {
+        "id": "daredevil",
+        "name": "Daredevil Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "bully-standups"
+          },
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "Clearing the three Bully standups lights a Daredevil Mode, and you can bank all four lit before starting one, since the Captive Ball always starts whichever is lit from the top down.",
+        "flashing": null,
+        "control": null,
+        "then": "Start a mode at the Captive Ball -- each extra Captive hit raises every remaining shot -- and chase 750K in that mode's shot type, paid at end of ball, so never tilt with one running; clear all four to open Daredevil Mania.",
+        "goals": [
+          "daredevil-modes",
+          "daredevil-mania"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take a plunge skill shot -- Comic Book Guy starts two Hurry Ups at once, the Kwik-E-Mart loop stacks bonus-multiplier steps, the Bully standup lights a Daredevil Mode -- then start feeding the master timer at Lite Otto and the Krusty Orbit so nothing you begin ever runs dry.",
+        "goals": [
+          "skillshot-comic-book-guy",
+          "skillshot-kwik-e-mart-loop",
+          "skillshot-bully-standup",
+          "timer-mastery"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Light TV Modes at the Krusty Orbit and finish a run of them for Victory points, start Itchy & Scratchy and Couch Multiball, and grind the ten double-scoring zones. Keep every feature overlapping on the one shared clock.",
+        "goals": [
+          "tv-modes",
+          "victory-points",
+          "itchy-scratchy-multiball",
+          "couch-multiball",
+          "double-scoring"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Six achievements gate the finale -- win Springfield Mystery Spot, sweep all four phases of Alien Invasion, clear Secret Stash and Daredevil Mania, score a Scratchy's Revenge super, and bank five Couch supers. Land any hole in single-ball play afterward to start the Super Duper Mega Extreme Wizard Mode, a five-ball round whose Supers are multiplied by locking balls in the Couch.",
+        "goals": [
+          "super-duper-wizard",
+          "alien-invasion",
+          "springfield-mystery-spot",
+          "daredevil-mania"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,606 @@
+{
+  "machine": "Star Wars (Data East, 1992)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Lever-action plunger that also fires the video skill shot before the ball is released."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.2009,
+      "y": 0.6364,
+      "trim": "all",
+      "notes": "Four bumpers at the top center. Builds the Sarlacc Pit value and is the target for the Million Pops and AT-ATs Force awards."
+    },
+    {
+      "id": "force-hole",
+      "name": "Force Hole",
+      "type": "scoop",
+      "x": 0.22,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Eject hole above the left flipper. Lit red, it pays a Force award; unlit, it's a Dark Side shot."
+    },
+    {
+      "id": "x-wing-targets",
+      "name": "X-Wing Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Five yellow standups scattered around the playfield. Clearing all five lights Speeder Mode."
+    },
+    {
+      "id": "sarlacc-pit",
+      "name": "Sarlacc Pit",
+      "type": "saucer",
+      "x": 0.82,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Right-side eject hole above two X-Wing targets. Pays its growing value any time; pays Jabba's Bounty when lit white."
+    },
+    {
+      "id": "death-star",
+      "name": "Death Star",
+      "type": "standup",
+      "x": 0.7031,
+      "y": 0.7836,
+      "trim": "all",
+      "notes": "Target beneath the spinning Death Star globe. Advances the eight Yavin moons and opens for Tri-Ball; collects Super Death Star when that award is running."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Passes behind R2-D2 back to the pop bumpers. Collects Runaway R2D2, Super R2D2, and Return of the Jedi arrows.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.15,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Runs through the pop bumpers and behind the Death Star back toward the flippers. Spots STAR WARS letters and Return of the Jedi arrows."
+    },
+    {
+      "id": "c3po-eye-lane",
+      "name": "C3PO Lane",
+      "type": "lane",
+      "x": 0.62,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Sits between the Death Star and the Right Orbit; the ball loops behind the Death Star and returns via the left habitrail. Collects Master Yoda, Speeder Mode, and the lit extra ball."
+    },
+    {
+      "id": "hyperspace-targets",
+      "name": "Hyperspace Targets",
+      "type": "drop-target",
+      "x": 0.35,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Three drop targets left of the Ramp entrance. Three knockdowns light Hyperspace at the Ramp."
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.45,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "The central shot. Spells STAR WARS, lights Hyperspace and Force awards, and builds toward a lit extra ball.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.14,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Briefly lights an orbit shot for two STAR WARS letters at once and arms the Sarlacc Pit for Jabba's Bounty."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Houses the Relaunch kickback. Lights for Taun-Taun when that Force award is running."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Lights alongside the left outlane for Taun-Taun."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-tie-fighter",
+      "title": "Skill Shot: TIE Fighter",
+      "category": "skillshot",
+      "summary": "A video-style skill shot: a TIE Fighter slides across the display, and you fire the lever the instant it's centered in your sights.",
+      "difficulty": 2,
+      "reward": "2M on ball one, 3M on ball two, 4M on ball three.",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Plunge and fire the lever the instant the TIE Fighter is centered",
+          "detail": "Lead it slightly — fire just before the pass completes. On balls two and three you can also trigger it by pressing a flipper button before the ball launches."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "star-wars-letters",
+      "title": "Spell STAR WARS",
+      "category": "mode",
+      "summary": "Every Ramp shot — and every Left or Right Orbit shot — spots the next letter. Complete the whole word for a flat bonus.",
+      "difficulty": 1,
+      "reward": "10M for the complete word; a lit Left Inlane doubles your next orbit shot to two letters at once.",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Work the Ramp to spell out STAR WARS",
+          "detail": "Orbit shots add letters too, and rolling the Left Inlane first doubles your next orbit shot for a short window."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "force-awards",
+      "title": "Force Award Cycle",
+      "category": "progression",
+      "summary": "The Force Hole hands out a rotating menu of awards, and four different mini awards unlock a richer Super pool behind them.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Shoot the Force Hole when it's lit red to collect whatever mini award is currently offered",
+        "Lite Yoda arms the C3PO lane for a Master Yoda pick; Lite Special arms the hidden Special target under R2-D2, collected on the Right Orbit",
+        "Speeder Mode arms the C3PO lane for a flat 10M animation; Super Laser Kick keeps your kickback lit for the rest of the ball with no relight needed",
+        "TRI-BALL opens the Death Star immediately; straight point awards run 3M to 9M",
+        "Cantina Mode turns every target into 250K for a stretch, starting at a 5M pool — a tilt during it forfeits the whole thing",
+        "Million Pops and X-Wing MultiMillion turn the pop bumpers or the five X-Wing targets into a timed 1M-a-hit round",
+        "Light Taun-Taun arms both outlanes for a 5M-plus consolation on a drain; Hold Bonus banks your bonus and multiplier into the next ball",
+        "Max Multipliers jumps you straight to 8x; Wild Card simply hands over the current Sarlacc Pit value",
+        "AT-ATs is a timed round: twenty pop bumper hits before the countdown ends pays 20M",
+        "Collect four different mini awards and the Force Hole starts offering the Super pool instead — a flat 25M, Super Death Star (a 50M value counting down by 5M, collected at the Death Star), Super R2D2 (the same countdown, collected on either orbit), Return of the Jedi (10M at any lit red arrow), or The Empire (30M for four Ramp shots)",
+        "Leave the Force Hole unlit and it becomes a Dark Side shot instead — four of those pay 25M, and the whole cycle repeats as many times as you like in one game"
+      ],
+      "reward": "A rotating menu of mini and Super awards, plus a standing 25M for every four Dark Side shots along the way."
+    },
+    {
+      "id": "tri-ball-multiball",
+      "title": "Tri-Ball: Jackpot & Double Jackpot",
+      "category": "multiball",
+      "summary": "Advance the eight Yavin moons by hitting the Death Star, then send a ball into it once it opens to start three-ball play.",
+      "difficulty": 2,
+      "reward": "Jackpot starts at 10M and climbs 1M per Death Star hit; the Double Jackpot follows on a second timed Death Star shot.",
+      "steps": [
+        {
+          "shot": "death-star",
+          "action": "Hit the Death Star to advance the Yavin moons",
+          "detail": "Eight hits opens it; at the fifth moon you can also push the plunger down and fire the lever to force it open early for 5M."
+        },
+        {
+          "shot": "death-star",
+          "action": "Send a ball into the open Death Star to start Tri-Ball",
+          "detail": "Two balls fire from the auto-plunger and one returns down the left habitrail."
+        },
+        {
+          "shot": "ramp",
+          "action": "Take the Ramp for the Jackpot",
+          "detail": "Every switch you hit while it's running adds to the value, so a fast first shot protects it."
+        },
+        {
+          "shot": "death-star",
+          "action": "Hit the Death Star again for the Double Jackpot",
+          "detail": "You only get a few seconds once it reopens; miss the window and you'll need to relight it from scratch on the next Tri-Ball, which requires an extra hit each time."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-ramp-orbit",
+      "title": "Combo: Ramp → Left Orbit",
+      "category": "combo",
+      "summary": "A recognized combo: a Ramp shot that comes back off the right flipper, followed immediately by a Left Orbit shot.",
+      "difficulty": 2,
+      "reward": "Credited as a combo on top of whatever the Ramp and Orbit already pay individually.",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Shoot the Ramp",
+          "detail": null
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Follow up with the Left Orbit off the return",
+          "detail": "Has to come right behind the Ramp shot, off the right flipper, to register as the combo."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "master-yoda",
+      "title": "Master Yoda's Pick",
+      "category": "progression",
+      "summary": "Light Master Yoda through a Force award or a run of Ramp shots, then choose between two random high-value awards at the C3PO lane.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Light Master Yoda either as a Force award (Lite Yoda) or by racking up enough Ramp shots in a row",
+        "Shoot the C3PO lane to collect it and begin the pick",
+        "Two random options appear on the display — press the left flipper for one, the right flipper for the other",
+        "The pool includes Super Death Star, a full STAR WARS spell-out, a Special award, and a flat 20M"
+      ],
+      "reward": "Your choice of two random high-value awards, hand-picked with the flippers."
+    },
+    {
+      "id": "speeder-mode",
+      "title": "Speeder Mode",
+      "category": "mode",
+      "summary": "Clear all five yellow X-Wing targets to light Speeder Mode, then cash it in at the C3PO lane for a flat animation payout.",
+      "difficulty": 2,
+      "reward": "10M.",
+      "steps": [
+        {
+          "shot": "x-wing-targets",
+          "action": "Clear all five X-Wing targets",
+          "detail": "A Force award can also light this directly, skipping the target sweep."
+        },
+        {
+          "shot": "c3po-eye-lane",
+          "action": "Shoot the C3PO lane to collect it",
+          "detail": null
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "hyperspace-multiplier",
+      "title": "Hyperspace & The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Three hits on the Hyperspace bank lights the Ramp for Hyperspace and starts the bonus multiplier climbing.",
+      "difficulty": 2,
+      "reward": "10M for Hyperspace at the Ramp; the multiplier jumps to 2x the moment it's lit and climbs toward 8x with each extra set of drops you clear before collecting.",
+      "steps": [
+        {
+          "shot": "hyperspace-targets",
+          "action": "Knock down the bank three times",
+          "detail": null
+        },
+        {
+          "shot": "ramp",
+          "action": "Cash in Hyperspace at the Ramp",
+          "detail": "Every additional bank you clear before this shot pushes the multiplier a step higher."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "extra-ball-ramp-ladder",
+      "title": "Ramp Count: The Extra Ball Ladder",
+      "category": "progression",
+      "summary": "Ramp shots build toward a lit extra ball on an escalating schedule that keeps climbing the more you clear it.",
+      "difficulty": 2,
+      "reward": "Extra ball lights on a rising Ramp-count schedule — roughly 3, then 7, then 14, 21, and up; collect it at the C3PO lane.",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Keep piling up Ramp shots across the game",
+          "detail": "The schedule keeps rising the more it's been cleared, so don't expect the same count twice."
+        },
+        {
+          "shot": "c3po-eye-lane",
+          "action": "Collect the lit extra ball at the C3PO lane",
+          "detail": null
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "jabbas-bounty",
+      "title": "Jabba's Bounty",
+      "category": "mode",
+      "summary": "Roll the Left Inlane to arm the Sarlacc Pit for Jabba's Bounty, then get there before the light times out.",
+      "difficulty": 1,
+      "reward": "A grab-bag of smaller awards — 1M to 3M, an extra multiplier step, or Hold Bonus.",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll the Left Inlane",
+          "detail": null
+        },
+        {
+          "shot": "sarlacc-pit",
+          "action": "Shoot the Sarlacc Pit while Jabba's Bounty is still lit",
+          "detail": "Outside this window the Pit just pays its plain growing value instead."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "runaway-r2d2",
+      "title": "Runaway R2D2",
+      "category": "mode",
+      "summary": "Bank two C3PO Eyes Force awards and Runaway R2D2 lights automatically — a countdown shot you cash in on the Right Orbit.",
+      "difficulty": 2,
+      "reward": "Starts at 15M and counts down, so the sooner you take the shot after it lights, the more it's worth.",
+      "steps": [
+        {
+          "shot": "force-hole",
+          "action": "Collect the C3PO Eyes Force award twice",
+          "detail": "Each pick gives you one eyeball; the second one starts the countdown automatically."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take the Right Orbit before the count runs out",
+          "detail": null
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "victory-lap",
+      "title": "Victory Lap",
+      "category": "mode",
+      "summary": "Win a replay and either orbit lights for a flat Victory Lap award — take whichever one you reach first.",
+      "difficulty": 1,
+      "reward": "25M, available for a limited window after the replay hits.",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Take the Left Orbit while Victory Lap is lit",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Or the Right Orbit — either one counts",
+          "detail": null,
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "storm-trooper-shootout",
+      "title": "Stormtrooper Shootout",
+      "category": "secret",
+      "summary": "A random in-play video mode: a squad of Stormtroopers appears on the display, and you take your hands off the flippers to fire back.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "At random points in the game the display cuts to a squad of Stormtroopers — that's the shootout",
+        "Take your hands off the flippers and mash the lever button to take them out",
+        "It plays out fast, so react the moment you see it start"
+      ],
+      "reward": "4M for clearing the squad."
+    },
+    {
+      "id": "relight-kickback",
+      "title": "Relighting The Kickback",
+      "category": "secret",
+      "summary": "A dead kickback in the left outlane isn't gone for good — the Hyperspace targets and an orbit shot are the usual fix.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Knock down the Hyperspace drop targets, then follow up with an orbit shot",
+        "It doesn't always take on the first attempt — sometimes one orbit shot is enough, sometimes it takes a few",
+        "A flashing ship graphic between the pop bumpers is your tell that the very next orbit shot will relight it",
+        "The Super Laser Kick Force award skips all of this and just keeps the kickback lit for the rest of the ball"
+      ],
+      "reward": "A relit kickback in the left outlane, saving your next left-side drain."
+    },
+    {
+      "id": "beginner-strategy",
+      "title": "Strategy: Lead With The Ramp",
+      "category": "strategy",
+      "summary": "Lead the skill shot, then lean on the Ramp for almost everything — letters, Hyperspace, and the extra ball ladder all run through it.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Fire the skill shot on your first plunge",
+          "detail": "Lead the TIE Fighter slightly rather than firing dead center."
+        },
+        {
+          "shot": "ramp",
+          "action": "Make the Ramp your default shot",
+          "detail": "It spells STAR WARS, lights Hyperspace, and builds toward extra balls all at once — the safest repeatable shot on the table."
+        },
+        {
+          "shot": "force-hole",
+          "action": "Take whatever Force award is on offer",
+          "detail": "Even a plain point value beats leaving it unlit for a Dark Side shot early on."
+        }
+      ],
+      "reward": null,
+      "fx": "space"
+    },
+    {
+      "id": "tournament-strategy",
+      "title": "Strategy: Force The Death Star Early",
+      "category": "strategy",
+      "summary": "Push for an early Tri-Ball whenever the fifth Yavin moon lights, chase the Double Jackpot hard, and cash in Master Yoda or Speeder Mode the moment either one is ready.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "death-star",
+          "action": "Force the Death Star open at the fifth moon if a ball is about to drain",
+          "detail": "Push the plunger down and fire the lever — a free 5M and a shot at early Tri-Ball, even off a ball that's otherwise lost."
+        },
+        {
+          "shot": "ramp",
+          "action": "Take the first Jackpot fast once Tri-Ball starts",
+          "detail": null
+        },
+        {
+          "shot": "death-star",
+          "action": "Hit it again for the Double Jackpot before time runs out",
+          "detail": "Each repeat Tri-Ball raises the hit count needed to relight it, so bank what you can while it's cheap."
+        },
+        {
+          "shot": "c3po-eye-lane",
+          "action": "Cash in Master Yoda or Speeder Mode the moment either one lights",
+          "detail": "Both routes through this lane outvalue most single Force awards."
+        }
+      ],
+      "reward": null,
+      "fx": "space"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "space",
+  "achievements": [
+    {
+      "id": "tie-fighter-stunned",
+      "title": "Dead-On Timing",
+      "desc": "Fire the lever the instant the TIE Fighter enters your sights for the video skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-tie-fighter"
+    },
+    {
+      "id": "jabbas-bounty-paid",
+      "title": "Paid The Bounty",
+      "desc": "Arm the Sarlacc Pit at the Left Inlane and collect Jabba's Bounty before it times out.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "jabbas-bounty"
+    },
+    {
+      "id": "stormtroopers-cleared",
+      "title": "Hands Off The Flippers",
+      "desc": "Catch the random Stormtrooper Shootout and clear the squad.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "storm-trooper-shootout"
+    },
+    {
+      "id": "kickback-relit",
+      "title": "Relit And Ready",
+      "desc": "Bring a dead kickback back to life with the Hyperspace targets and an orbit shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "relight-kickback"
+    },
+    {
+      "id": "star-wars-spelled",
+      "title": "Word Complete",
+      "desc": "Spell the full word STAR WARS in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "star-wars-letters"
+    },
+    {
+      "id": "speeder-mode-collected",
+      "title": "Full Throttle",
+      "desc": "Clear all five X-Wing targets and cash in Speeder Mode at the C3PO lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "speeder-mode"
+    },
+    {
+      "id": "hyperspace-jumped",
+      "title": "Jump To Hyperspace",
+      "desc": "Clear the Hyperspace bank and collect the award at the Ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hyperspace-multiplier"
+    },
+    {
+      "id": "ramp-orbit-combo",
+      "title": "One-Two Combo",
+      "desc": "Chain a Ramp shot straight into a Left Orbit shot for combo credit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-ramp-orbit"
+    },
+    {
+      "id": "r2d2-runaway-caught",
+      "title": "Droid On The Run",
+      "desc": "Light Runaway R2D2 with two C3PO Eyes awards and catch it on the Right Orbit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "runaway-r2d2"
+    },
+    {
+      "id": "victory-lap-collected",
+      "title": "Lap Of Honor",
+      "desc": "Collect the Victory Lap award on either orbit after earning a replay.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "victory-lap"
+    },
+    {
+      "id": "tri-ball-double-jackpot",
+      "title": "Triple Threat",
+      "desc": "Start Tri-Ball and collect both the Jackpot and the Double Jackpot in one attempt.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tri-ball-multiball"
+    },
+    {
+      "id": "extra-ball-ladder-climbed",
+      "title": "Ramp Regular",
+      "desc": "Ride the Ramp-count schedule all the way to a lit extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "extra-ball-ramp-ladder"
+    },
+    {
+      "id": "master-yoda-picked",
+      "title": "The Jedi's Pick",
+      "desc": "Light Master Yoda and choose an award with the flippers at the C3PO lane.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "master-yoda"
+    },
+    {
+      "id": "super-pool-unlocked",
+      "title": "Full Arsenal",
+      "desc": "Collect four different Force mini awards to unlock the Super award pool.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "force-awards"
+    }
+  ]
+}

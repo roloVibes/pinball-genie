@@ -1,0 +1,204 @@
+/* ui/account.css — "Account" full-screen overlay (D3, 2026-07-30 security
+ * review). Chrome deliberately mirrors ui/howto.css's .pg-howto-* overlay
+ * recipe (fixed inset, header row with a close X, scrollable body, safe-area
+ * padding) — same shell language, new prefix (`.pg-account-`) since this is
+ * a separate lazy chunk (ui/howto.ts is bundled into core; this is dynamic-
+ * imported, see account.ts's header) and never mounted at the same time. */
+
+@keyframes pgAccountIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pg-account-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #07080c;
+  display: flex;
+  flex-direction: column;
+  animation: pgAccountIn 0.18s ease-out;
+}
+
+.pg-account-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: calc(14px + env(safe-area-inset-top)) 18px 12px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.pg-account-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.pg-account-close {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Hit expansion to 44x44, drawn size unchanged at 36 (P4, 2026-08-14) — same
+   header geometry, same reasoning as ui/howto.css's .pg-howto-close::after:
+   the only neighbour is the title text, and the header's 18px right padding
+   absorbs the other side. */
+.pg-account-close::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+}
+
+.pg-account-close:hover,
+.pg-account-close:focus-visible {
+  border-color: rgba(255, 176, 46, 0.5);
+  color: var(--amber);
+}
+
+.pg-account-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 6px 18px 18px;
+}
+
+.pg-account-identity {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.pg-account-identity b {
+  color: var(--text);
+}
+
+.pg-account-section {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+}
+
+.pg-account-section-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+
+.pg-account-section-body {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-dim);
+  margin: 0 0 12px;
+}
+
+/* Shared control recipe: the "solid amber pill" primary-action look
+ * (ui/howto.css's .pg-howto-gotit / .pg-howto-install-btn) — used for
+ * non-destructive actions (Export, Sign out). */
+.pg-account-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 11px;
+  background: var(--amber);
+  color: #1a1200;
+  font-size: 13.5px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.pg-account-btn:hover,
+.pg-account-btn:active {
+  background: #ffc85f;
+}
+
+.pg-account-btn:disabled,
+.pg-account-btn.disabled {
+  opacity: 0.5;
+}
+
+/* Destructive-action recipe (Delete) — outline, --danger, never solid-fill:
+ * a solid red CTA is the single most eye-catching thing on the screen and
+ * this must never be it (feature spec: "a real confirmation step"). */
+.pg-account-btn-danger {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.pg-account-btn-danger:hover,
+.pg-account-btn-danger:active {
+  background: rgba(255, 79, 94, 0.12);
+}
+
+/* The confirm sub-state's actual "do it" button IS solid-filled — by the
+ * time it's showing, the user has already tapped the outline button once
+ * and read the irreversibility copy; this is the point a decisive, visible
+ * control is correct, not a footgun. */
+.pg-account-btn-danger-solid {
+  background: var(--danger);
+  border: 1px solid var(--danger);
+  color: #2a0002;
+}
+
+.pg-account-btn-danger-solid:hover,
+.pg-account-btn-danger-solid:active {
+  background: #ff7378;
+}
+
+.pg-account-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pg-account-status {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pg-account-status.error {
+  color: var(--danger);
+}
+
+.pg-account-status.info {
+  color: var(--text-dim);
+}
+
+.pg-account-confirm-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--danger);
+  margin: 0 0 6px;
+}
+
+.pg-account-confirm-body {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-dim);
+  margin: 0 0 14px;
+}

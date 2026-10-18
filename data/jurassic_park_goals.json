@@ -1,0 +1,1652 @@
+{
+  "machine": "Jurassic Park (Stern Pinball, 2019)",
+  "defaultFx": "kaiju",
+  "shots": [
+    {
+      "id": "left_flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.4123,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "right_flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.5384,
+      "y": 0.0018,
+      "trim": "all"
+    },
+    {
+      "id": "up_right_flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.59,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Third flipper, right mid-playfield, fed by the Right Ramp helix; used to shoot the Tower Ramp and Upper Loop."
+    },
+    {
+      "id": "left_outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.09,
+      "trim": "all"
+    },
+    {
+      "id": "left_inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.2874,
+      "y": 0.0931,
+      "trim": "all",
+      "notes": "Left inlane; Smart Missile lights here."
+    },
+    {
+      "id": "right_inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.63,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Right inlane; Super Spinner lights here."
+    },
+    {
+      "id": "right_outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.09,
+      "trim": "all"
+    },
+    {
+      "id": "left_sling",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.29,
+      "y": 0.16,
+      "trim": "all"
+    },
+    {
+      "id": "right_sling",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.61,
+      "y": 0.16,
+      "trim": "all"
+    },
+    {
+      "id": "shooter_lane",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.92,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "up_post",
+      "name": "Stainless Up-Post",
+      "type": "mech",
+      "x": 0.24,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Up/down lock post in the left return lane; holds the ball for Smart Missile select."
+    },
+    {
+      "id": "left_orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.11,
+      "y": 0.42,
+      "trim": "all"
+    },
+    {
+      "id": "control_room",
+      "name": "Control Room Target (\"C\")",
+      "type": "standup",
+      "x": 0.14,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The CHAOS 'C' target; starts Control Room modes; best backhanded from the right flipper.",
+      "flipper": "right"
+    },
+    {
+      "id": "escape_target",
+      "name": "Escape Target",
+      "type": "standup",
+      "x": 0.12,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Lights the left-outlane Escape ball save."
+    },
+    {
+      "id": "raptor_pit",
+      "name": "Raptor Pen",
+      "type": "target-bank",
+      "x": 0.306,
+      "y": 0.4398,
+      "trim": "all",
+      "notes": "3 standups + dead-end lane; lights and starts Raptor Tri-Ball. Best hit as a backhand from the left flipper.",
+      "flipper": "left"
+    },
+    {
+      "id": "raptor_lock",
+      "name": "Raptor Ball Lock",
+      "type": "lock",
+      "x": 0.17,
+      "y": 0.56,
+      "trim": "premium-le",
+      "notes": "Motorized gate physically locks balls behind the pen; Pro is a virtual lock (standups only)."
+    },
+    {
+      "id": "left_ramp",
+      "name": "Left Ramp (T-Rex Ramp)",
+      "type": "ramp",
+      "x": 0.33,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Advances paddock, starts T-Rex MB, primary bailout/safe shot; nearly every mode routes through it.",
+      "feeds": {
+        "shot": "left_inlane"
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner (Dilophosaurus Spitter)",
+      "type": "spinner",
+      "x": 0.2805,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Feeds the upper flipper; key shot in Restore Power; value ramps as you hit ramps."
+    },
+    {
+      "id": "target_bottom_left",
+      "name": "Target Bottom Left",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.44,
+      "trim": "all"
+    },
+    {
+      "id": "truck",
+      "name": "Truck / Newton Ball",
+      "type": "captive-ball",
+      "x": 0.5264,
+      "y": 0.677,
+      "trim": "all",
+      "notes": "Studded captive ball; sets island/paddock branch, flips jackpot sides, spells T-REX."
+    },
+    {
+      "id": "target_4x4_left",
+      "name": "4x4 / Set-Trap Target Left",
+      "type": "standup",
+      "x": 0.44,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Left Set-Trap target; part of Supply Drop qualify."
+    },
+    {
+      "id": "target_4x4_right",
+      "name": "4x4 / Set-Trap Target Right",
+      "type": "standup",
+      "x": 0.6498,
+      "y": 0.6223,
+      "trim": "all",
+      "notes": "Right Set-Trap target; part of Supply Drop qualify."
+    },
+    {
+      "id": "motor_bank",
+      "name": "Motor Bank Target",
+      "type": "drop-target",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Motor-driven moving target on the truck assembly."
+    },
+    {
+      "id": "left_pop",
+      "name": "Left Pop Bumper",
+      "type": "bumpers",
+      "x": 0.49,
+      "y": 0.74,
+      "trim": "all"
+    },
+    {
+      "id": "right_pop",
+      "name": "Right Pop Bumper",
+      "type": "bumpers",
+      "x": 0.59,
+      "y": 0.76,
+      "trim": "all"
+    },
+    {
+      "id": "top_pop",
+      "name": "Top Pop Bumper",
+      "type": "bumpers",
+      "x": 0.54,
+      "y": 0.83,
+      "trim": "all"
+    },
+    {
+      "id": "amber_target",
+      "name": "Amber / Chaos Target",
+      "type": "standup",
+      "x": 0.57,
+      "y": 0.77,
+      "trim": "all",
+      "notes": "Pop-nest standup; starts Chaos MB when lit and collects Amber value."
+    },
+    {
+      "id": "pops_enter",
+      "name": "Pops Enter Rollover",
+      "type": "lane",
+      "x": 0.52,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Entrance rollover into the pop nest; lights the Amber collect."
+    },
+    {
+      "id": "left_halfpipe",
+      "name": "Tower Ramp (Left Halfpipe)",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "180deg side ramp toward the Watch Tower; Tower Awards at 5/10/15/20/25 shots; the Raptor Tower 3x loader in T-Rex Rampage.",
+      "feeds": {
+        "shot": "left_inlane"
+      }
+    },
+    {
+      "id": "left_loop",
+      "name": "Upper Loop (Left Loop)",
+      "type": "loop",
+      "x": 0.28,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Loop Awards at 3/8/13...; Raptor super jackpot (3x) lives here."
+    },
+    {
+      "id": "target_top_left",
+      "name": "Target Top Left",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.63,
+      "trim": "all"
+    },
+    {
+      "id": "trex",
+      "name": "T-Rex Toy (Left Ramp head)",
+      "type": "mech",
+      "x": 0.1875,
+      "y": 0.8595,
+      "trim": "premium-le",
+      "notes": "Motorized head at the top of the left ramp; catches and throws the ball. Pro version is static, no ball catch."
+    },
+    {
+      "id": "watch_tower",
+      "name": "Watch Tower Sculpt",
+      "type": "mech",
+      "x": 0.0645,
+      "y": 0.7409,
+      "trim": "all"
+    },
+    {
+      "id": "right_ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.62,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Helix feeds the upper flipper at high speed (drain risk); 4 hits start Pteranodon Attack; CHAOS 'A'.",
+      "feeds": {
+        "shot": "up_right_flipper"
+      }
+    },
+    {
+      "id": "right_halfpipe",
+      "name": "Side Ramp (Right Halfpipe)",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "The skill-shot 'Double Super' ramp.",
+      "feeds": {
+        "shot": "right_inlane"
+      }
+    },
+    {
+      "id": "right_orbit",
+      "name": "Right Orbit (\"O\" shot)",
+      "type": "orbit",
+      "x": 0.71,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "CHAOS 'O'; tightest shot in the game, best from the left flipper; bricks feed drains.",
+      "flipper": "left"
+    },
+    {
+      "id": "helipad",
+      "name": "Helipad / Helicopter",
+      "type": "scoop",
+      "x": 0.9458,
+      "y": 0.7318,
+      "trim": "all",
+      "notes": "Plunge feeds here; summons the helicopter for dino capture; CHAOS 'S'; T-Rex Rampage 2x loader.",
+      "feeds": {
+        "shot": "right_flipper"
+      }
+    },
+    {
+      "id": "target_2x",
+      "name": "Nedry 2X Target",
+      "type": "standup",
+      "x": 0.7407,
+      "y": 0.3759,
+      "trim": "all",
+      "notes": "Lights 2X playfield scoring for 45s once a Supply Drop is collected; needs a late left-flipper shot.",
+      "flipper": "left"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill_c_secret",
+      "title": "\"C\" Secret Skill Shot",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Soft-plunge and shoot the Control Room 'C' target on the fly to bank points and spot the C in CHAOS under ball save — the tournament-favorite skill shot.",
+      "reward": "~6M + spots C in CHAOS + 3s ball save",
+      "steps": [
+        {
+          "shot": "shooter_lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the skill shot is made with a flipper."
+        },
+        {
+          "shot": "control_room",
+          "action": "Soft-plunge, let the ball settle to a flipper, then shoot the Control Room 'C' target on the fly",
+          "detail": "~6M + 3s ball save; spots the 'C' in CHAOS. On Prem/LE a missed attempt often deflects into the raptor pen and opens the gate, so it is low-downside.",
+          "technique": [
+            "on-the-fly"
+          ]
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill_ladder_base",
+      "title": "Ladder Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "Full-plunge into the Left Ramp for the base skill shot — the beginner-friendly way to learn shot feel. Keep the chain alive without missing and it steps up to the Super, Double Super, and Triple Super.",
+      "reward": "~2M + 3s ball save",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Full plunge into the Left Ramp",
+          "detail": "~2M, +3s ball save — the base rung of the ladder."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill_ladder_super",
+      "title": "Super Skill Shot — Right Ramp",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Continue the ladder from the Left Ramp to the Right Ramp without missing for the Super value.",
+      "reward": "~4M",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Full plunge into the Left Ramp",
+          "detail": "~2M, +3s ball save — the base rung of the ladder."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Continue the chain to the Right Ramp for the Super",
+          "detail": "~4M"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill_ladder_double_super",
+      "title": "Double Super Skill Shot — Side Ramp",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Keep the ladder going through the Left Ramp and Right Ramp, then on to the Side Ramp for the Double Super value.",
+      "reward": "~8M",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Full plunge into the Left Ramp",
+          "detail": "~2M, +3s ball save — the base rung of the ladder."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Continue the chain to the Right Ramp for the Super",
+          "detail": "~4M"
+        },
+        {
+          "shot": "left_halfpipe",
+          "action": "Shoot the Side Ramp for the Double Super",
+          "detail": "~8M"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill_ladder_triple_super",
+      "title": "Triple Super Skill Shot — Right Orbit",
+      "category": "skillshot",
+      "difficulty": 3,
+      "summary": "The full four-shot ladder run: Left Ramp, Right Ramp, Side Ramp, and out to the Right Orbit for the Triple Super and Escape.",
+      "reward": "~12M + Escape ball save lit",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Full plunge into the Left Ramp",
+          "detail": "~2M, +3s ball save — the base rung of the ladder."
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Continue the chain to the Right Ramp for the Super",
+          "detail": "~4M"
+        },
+        {
+          "shot": "left_halfpipe",
+          "action": "Shoot the Side Ramp for the Double Super",
+          "detail": "~8M"
+        },
+        {
+          "shot": "right_orbit",
+          "action": "Complete at the Right Orbit for the Triple Super",
+          "detail": "~12M; all four links light Escape"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo_six_way",
+      "title": "6-Way Combo",
+      "category": "combo",
+      "difficulty": 3,
+      "summary": "Chain all six major shots in one unbroken combo (there is no combo timer) for the x40 multiplier and a free Fossil — the signature JP tactic.",
+      "reward": "x40 combo (base 250K +50K/DNA combo) + Fossil",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Open the six-way chain at the Spinner",
+          "detail": "no combo timer — set up each shot deliberately"
+        },
+        {
+          "shot": "left_loop",
+          "action": "Continue to the Upper Loop"
+        },
+        {
+          "shot": "left_halfpipe",
+          "action": "Continue to the Tower (Side) Ramp"
+        },
+        {
+          "shot": "helipad",
+          "action": "Continue to the Helipad Ramp"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Continue to the Left Ramp"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Complete the six-way at the Right Ramp",
+          "detail": "2-way x1 -> 3-way x2 -> 4-way x8 -> 5-way x20 -> 6-way x40; awards a Fossil"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo_triceratops",
+      "title": "Triceratops DNA Combo",
+      "category": "combo",
+      "difficulty": 1,
+      "summary": "The shortest DNA combo — a fast 2-shot chain players use to bank the combo counter.",
+      "reward": "DNA combo credit (~1-2M); 6 combos -> Extra Ball, 11 -> Fossil",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the Left Ramp"
+        },
+        {
+          "shot": "amber_target",
+          "action": "Immediately shoot the Amber target to complete the combo"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo_ankylosaurus",
+      "title": "Ankylosaurus DNA Combo",
+      "category": "combo",
+      "difficulty": 1,
+      "summary": "The other 2-shot DNA combo for quickly padding the combo counter.",
+      "reward": "DNA combo credit (~1-2M)",
+      "steps": [
+        {
+          "shot": "helipad",
+          "action": "Shoot the Helipad Ramp"
+        },
+        {
+          "shot": "control_room",
+          "action": "Follow immediately with the Control Room center shot"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo_pteranodon",
+      "title": "Pteranodon DNA Combo",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "A 3-shot DNA combo running the two main ramps off the Helipad feed.",
+      "reward": "DNA combo credit (~1-2M)",
+      "steps": [
+        {
+          "shot": "helipad",
+          "action": "Shoot the Helipad Ramp"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Continue to the Left Ramp"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Complete at the Right Ramp"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "combo_loop_tower",
+      "title": "Upper Loop -> Tower Ramp Accelerator",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Combo the Upper Loop into the Tower/Side Ramp for 3x side-ramp points that count as TWO tower shots — the fastest route to lighting Control Room and grabbing its Fossil.",
+      "reward": "3x tower points + double tower-award progress",
+      "steps": [
+        {
+          "shot": "left_loop",
+          "action": "Shoot the Upper Loop"
+        },
+        {
+          "shot": "left_halfpipe",
+          "action": "Combo straight into the Tower (Side) Ramp",
+          "detail": "3x side-ramp points and counts as 2 tower shots; 15 tower shots -> Light Control Room, 25 -> Wildcard Fossil"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mb_chaos",
+      "title": "Chaos Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Spell C-H-A-O-S across five dedicated shots, then start at the lit Amber/pops target.",
+      "reward": "3-ball Chaos Multiball",
+      "steps": [
+        {
+          "shot": "control_room",
+          "action": "Shoot the 'C' target",
+          "detail": "spelling order left-to-right; the 'C' secret skill shot pre-loads this"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Shoot the Left Ramp for H"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Shoot the Right Ramp for A"
+        },
+        {
+          "shot": "right_orbit",
+          "action": "Shoot the Right Orbit for the 'O' shot"
+        },
+        {
+          "shot": "helipad",
+          "action": "Shoot the Helipad for S",
+          "detail": "the second and each later Chaos MB requires spelling CHAOS twice"
+        },
+        {
+          "shot": "amber_target",
+          "action": "Hit the lit Amber-mine/pops target to START Chaos Multiball",
+          "detail": "jackpots light on the truck-facing half; hit the Truck to flip sides and relight"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mb_raptor",
+      "title": "Raptor Tri-Ball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "The most valuable multiball: light the pen with raptor standups, drop Fence Integrity to 0%, then shoot the dead-end lane to start the 3-ball (up to 6-ball) tri-ball with twin super jackpots.",
+      "reward": "3-6 ball Raptor Tri-Ball; Ankylosaurus Fossil on super jackpot",
+      "steps": [
+        {
+          "shot": "raptor_pit",
+          "action": "Hit the Raptor Pen standups to light the center and lower Fence Integrity",
+          "detail": "integrity starts at 50%; dead-end lane shots drop it"
+        },
+        {
+          "shot": "raptor_pit",
+          "action": "Shoot the dead-end lane at the pen when Fence Integrity = 0% to START",
+          "detail": "Phase 1 ramp jackpots -> CHAOS jackpots -> +3 balls Super CHAOS -> Rampage"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "In Super CHAOS phase, shoot the Right Ramp super (2x chaos jackpot x balls in play)"
+        },
+        {
+          "shot": "left_loop",
+          "action": "Cash the Upper Loop super (3x chaos jackpot x balls in play)",
+          "detail": "the highest-ceiling loop in the game; awards the Ankylosaurus Fossil"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mb_trex",
+      "title": "Feed T-Rex Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Spell T-REX at the Truck, build the Left Ramp hurry-up with orange arrows, then collect at the Left Ramp to start the 2-ball MB.",
+      "reward": "2-ball multiball with escalating CHAOS jackpots",
+      "steps": [
+        {
+          "shot": "truck",
+          "action": "Hit the Truck (Newton ball) until the T-Rex roars to spell T-REX",
+          "detail": "default 3 hits"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "A 500K / 20s hurry-up lights at the Left Ramp"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Shoot lit orange arrows to raise the hurry-up and reset the timer",
+          "detail": "builds to ~6.75M; these shots are UNPROTECTED — no ball save until the MB starts"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Collect at the Left Ramp to START the 2-ball multiball",
+          "detail": "the five CHAOS shots then light for jackpots, +250K each, +1x if shot left-to-right"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mb_king",
+      "title": "King of the Island Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Capture the Spinosaurus 'Super Predator' at paddock 3.5 to auto-light this multiball at the Left Ramp; it must be played before advancing.",
+      "reward": "3-ball MB; jackpot multiplier climbs to 5x",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Advance paddocks to 3.5 and capture the Spinosaurus",
+          "detail": "capturing it lights King of the Island automatically"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start the 3-ball multiball at the Left Ramp",
+          "detail": "switch-phase lights all major shots for a 1x jackpot, then unshot shots add +1x up to 5x"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mode_restore_power",
+      "title": "Restore Power (Control Room)",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "A Control Room mode built around the spinner: rip it to light shots, make them, then finish at Control Room.",
+      "reward": "Fossil + time bonus (1M x sec remaining)",
+      "steps": [
+        {
+          "shot": "spinner",
+          "action": "Rip the Spinner to light 7 shots",
+          "detail": "3M"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Make all 7 lit shots",
+          "detail": "3M + 50K per spin each"
+        },
+        {
+          "shot": "control_room",
+          "action": "Final Control Room shot finishes the mode"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mode_system_boot",
+      "title": "System Boot (Control Room)",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "The standout single-ball Control Room mode — combo-based, scores a lot for just a few lit shots; the tournament pick.",
+      "reward": "Sum of combos + Fossil + time bonus",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Start the first combo at the Left Ramp (5M) then its follow shot",
+          "detail": "-> Right Ramp 8M / Helipad 12M / Right Orbit 15M"
+        },
+        {
+          "shot": "helipad",
+          "action": "Start the second combo at the Helipad (7M) then its follow shot",
+          "detail": "-> Left Ramp 6M / Spinner 8M / Control Room 15M / Raptor Pit 20M"
+        },
+        {
+          "shot": "spinner",
+          "action": "Start the third combo at the Spinner (9M) then its follow shot",
+          "detail": "-> Supply Drop 15M / Upper Loop 20M / Raptor Tower 25M"
+        },
+        {
+          "shot": "control_room",
+          "action": "Final Control Room shot scores the sum + time bonus + Fossil"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mode_pteranodon",
+      "title": "Pteranodon Attack",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Qualify with four Right-Ramp shots, rack switches during the frenzy, then cash the growing award at the Right Ramp.",
+      "reward": "Switch-frenzy collect; 50M+ = Wildcard Fossil",
+      "steps": [
+        {
+          "shot": "right_ramp",
+          "action": "Shoot the Right Ramp 4 times to qualify Pteranodon Attack"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Rack switches (every switch adds 25K), then collect at the Right Ramp",
+          "detail": "every 12 switches adds a multiplier; a 50M+ collect awards a Wildcard Fossil"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mode_trex_rampage",
+      "title": "T-Rex Rampage",
+      "category": "mode",
+      "difficulty": 3,
+      "summary": "The single best repeatable farm — lower the T-Rex, stack the Helipad (2x) and Raptor Tower (3x) loaders to 6x, then collect at the Left Ramp.",
+      "reward": "Up to ~60M per collect, +30M per repeat; repeats until timer",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Shoot Left or Right Ramp to lower the T-Rex"
+        },
+        {
+          "shot": "helipad",
+          "action": "Pre-shoot the Helipad (2x) loader",
+          "link": "none"
+        },
+        {
+          "shot": "left_halfpipe",
+          "action": "Pre-shoot the Raptor Tower (3x) loader — stacks with Helipad to 6x",
+          "link": "none"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Collect at the Left Ramp: 10M +5M per Left Ramp, x6 fully stacked",
+          "detail": "~60M/collect fully stacked; the JP money farm — repeat until the timer ends"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mult_2x",
+      "title": "Playfield 2x Scoring",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Collect a Supply Drop to light the Nedry 2x standup, then shoot it to double all scoring for 45 seconds — cash it into a jackpot-heavy multiball.",
+      "reward": "2x all scoring for 45s (does not carry between balls)",
+      "steps": [
+        {
+          "shot": "target_4x4_left",
+          "action": "Complete a Supply Drop via the Set-Trap standups by the Truck",
+          "detail": "collecting any Supply Drop lights the 2x standup"
+        },
+        {
+          "shot": "target_2x",
+          "action": "Shoot the Nedry 2x target (late left-flipper shot) to enable 2x scoring for 45s",
+          "flipper": "left"
+        },
+        {
+          "shot": "right_ramp",
+          "action": "Cash it during a jackpot-heavy multiball or fat mode",
+          "detail": "best stacked into T-Rex/Raptor MB or a high-value T-Rex event; ends on drain"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult_bonus_x",
+      "title": "Bonus X (Super Predators)",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Raise the end-of-ball Bonus X by capturing Super-Predator dinos and hitting rescue thresholds — it carries across all balls, so keep grinding rescues.",
+      "reward": "+1x Bonus X per Super Predator (permanent, multiplies whole bonus)",
+      "steps": [
+        {
+          "shot": "truck",
+          "action": "Hit the Truck to set the paddock branch toward a Super Predator"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Advance the paddock at the Left Ramp when lit",
+          "detail": "reach Dilophosaurus 1.5, T-Rex 2.5, or Spinosaurus 3.5"
+        },
+        {
+          "shot": "target_4x4_right",
+          "action": "Capture the dino at the Set-Trap targets for +1x Bonus X",
+          "detail": "also +1x at 13 and 22 cumulative rescues; carries across all balls"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "wizard_escape_nublar",
+      "title": "Escape Nublar",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The main wizard mode — PLAYING all three mini-wizards qualifies it, you don't have to beat them. Start it at the Left Ramp. Single-ball with three trucks; tilting is an instant loss and ends the game. Beating all three mini-wizards and this mode too is what opens the ultimate wizard mode.",
+      "reward": "Wizard mode; 125M-550M island bonus on escape",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Play Visitor's Center (spell MAP after Paddock 4, start at the Left Ramp)",
+          "link": "none"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Play Museum Mayhem (finish all four T-Rex events, then spell T-REX again to light the Left Ramp)",
+          "link": "none"
+        },
+        {
+          "shot": "control_room",
+          "action": "Play Secure Control Room (play all three Control Room modes, then shoot the Control Room again)",
+          "link": "none"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start Escape Nublar at the Left Ramp",
+          "detail": "single-ball with 3 trucks; tilting = instant loss; navigate the paddocks to the gate before the volcano erupts"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard_ultra",
+      "title": "When Dinosaurs Ruled the Earth",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The ultra/super wizard — complete the three mini-wizards AND Escape Nublar, then start at the Left Ramp for a 6-ball, 60-second frenzy.",
+      "reward": "6-ball 60s ultra wizard, unlimited ball save; game ends after",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Finish Escape Nublar (all three mini-wizards must already be complete)"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start the ultra wizard at the Left Ramp",
+          "detail": "6-ball, 60s, unlimited ball save; all Amber Frenzies run at once; all shots ~1.5x Amber jackpots — game ends when the timer expires and all balls drain"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat_tournament_opener",
+      "title": "Tournament Opener (Points + Progress)",
+      "category": "strategy",
+      "difficulty": 2,
+      "summary": "The recommended points-and-progress opener: C skill shot, spell MAP, start Paddock 1, capture, and stack T-Rex MB with 2x scoring.",
+      "reward": "Fast progress with a stacked multiball and armed 2x",
+      "steps": [
+        {
+          "shot": "control_room",
+          "action": "Soft-plunge the 'C' secret skill shot",
+          "detail": "~6M + spots C in CHAOS, ball save on"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Spell MAP with white arrows, then shoot the Left Ramp to start Paddock 1"
+        },
+        {
+          "shot": "target_4x4_left",
+          "action": "Bang the red rescue shots, then hit the Set-Trap targets to capture the dino"
+        },
+        {
+          "shot": "truck",
+          "action": "In parallel, tap the Truck toward a T-Rex roar"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Left Ramp into Feed T-Rex Multiball to stack over the paddock"
+        },
+        {
+          "shot": "target_2x",
+          "action": "Arm 2x scoring, dump jackpots, and collect Amber repeatedly"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "strat_beginner",
+      "title": "Beginner Consistency Opener",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "A safe consistency-first opener: ladder skill shot, spell MAP, focus purely on rescues, and treat the Left Ramp as a bailout while avoiding tight shots.",
+      "reward": "Safe progress and steady Bonus-X buildup",
+      "steps": [
+        {
+          "shot": "left_ramp",
+          "action": "Full-plunge the Left Ramp ladder skill shot to learn the shot feel",
+          "detail": "~2M + ball save"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Spell MAP, then Left Ramp to start Paddock 1 (only one rescue needed)"
+        },
+        {
+          "shot": "target_4x4_right",
+          "action": "Focus on rescues to build Bonus X; capture when the Set-Trap targets light"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Treat the Left Ramp as your bailout; avoid the tight 'O' orbit and fast Right Ramp until settled",
+          "detail": "the Right Orbit is the tightest shot in the game and bricks feed drains"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "strat_raptor_priority",
+      "title": "Raptor Multiball Priority Path",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "Prioritize Raptor Tri-Ball whenever possible — it is the primary long-game scoring engine. Keep the pen lit, start the tri-ball, then work up to the Upper Loop super jackpot.",
+      "reward": "Highest-ceiling repeatable multiball loop",
+      "steps": [
+        {
+          "shot": "raptor_pit",
+          "action": "Chip the Raptor Pen standups all game to keep the center lit (backhand from the left flipper)",
+          "flipper": "left"
+        },
+        {
+          "shot": "raptor_pit",
+          "action": "Start Raptor Tri-Ball via the dead-end lane at 0% Fence Integrity"
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Bank ramp jackpots (5M + 15K/switch) on the Left and Right Ramps"
+        },
+        {
+          "shot": "left_loop",
+          "action": "Add balls, then cash the Upper Loop super jackpot (3x chaos jackpot x balls in play)"
+        }
+      ],
+      "fx": "kaiju"
+    },
+    {
+      "id": "mini_visitor_center",
+      "title": "Visitor's Center (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "The first mini-wizard: clear four paddocks of rescues, spell MAP with the white arrow shots, then start the mode at the Left Ramp.",
+      "difficulty": 3,
+      "reward": "Mini-wizard completion — one of the three legs that qualifies Escape Nublar",
+      "steps": [
+        {
+          "shot": "truck",
+          "action": "Tap the Truck to steer the paddock branch before each new paddock",
+          "detail": "The Truck sets which side of the island the next paddock pulls from, so use it to line up the dinos you want."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start each paddock at the Left Ramp once MAP is spelled",
+          "detail": "Paddocks 1 through 4; the Left Ramp is also the safest bailout while a paddock is running."
+        },
+        {
+          "shot": "target_4x4_right",
+          "action": "Finish each rescue at the Set-Trap targets to bank the capture",
+          "detail": "Hit the red rescue shots first, then close out at the Set-Trap standups by the Truck."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "After paddock 4, spell MAP again and start the mini-wizard at the Left Ramp",
+          "detail": "Play it out to complete the first of the three legs toward Escape Nublar."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mini_museum_mayhem",
+      "title": "Museum Mayhem (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "The T-Rex leg: play all four T-Rex events, then respell T-REX at the Truck and start the mini-wizard at the Left Ramp.",
+      "difficulty": 3,
+      "reward": "Mini-wizard completion — the T-Rex leg of the Escape Nublar qualification",
+      "steps": [
+        {
+          "shot": "truck",
+          "action": "Spell T-REX at the Truck to light the next T-Rex event",
+          "detail": "Default three Truck hits per letter; the head roars when a letter lands."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start and play each T-Rex event at the Left Ramp until all four are used",
+          "detail": "Cycle the events (multiball, rampage, and the other two) rather than farming a single one, since only new events advance this leg."
+        },
+        {
+          "shot": "truck",
+          "action": "Respell T-REX once all four events are played",
+          "detail": "This arms the mini-wizard instead of another event."
+        },
+        {
+          "shot": "left_ramp",
+          "action": "Start Museum Mayhem at the Left Ramp",
+          "detail": "Completing it clears the second leg toward Escape Nublar."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mini_control_room_lockdown",
+      "title": "Secure Control Room (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "The Control Room leg: play all three Control Room modes off the center target, then shoot Control Room again to start and finish the mini-wizard.",
+      "difficulty": 3,
+      "reward": "Mini-wizard completion — the Control Room leg of the Escape Nublar qualification",
+      "steps": [
+        {
+          "shot": "left_halfpipe",
+          "action": "Build Tower Ramp shots to relight the Control Room",
+          "detail": "Tower awards at 5/10/15/20/25 shots; the 15-shot award lights Control Room, and the Upper Loop combo counts double."
+        },
+        {
+          "shot": "control_room",
+          "action": "Start each Control Room mode at the lit center target",
+          "detail": "Backhand it from the right flipper; on Premium and LE a miss often kicks into the raptor pen, which is harmless."
+        },
+        {
+          "shot": "spinner",
+          "action": "Work the mode shots, leaning on the Spinner where the mode rewards it",
+          "detail": "Spinner-driven modes pay per spin on every following lit shot, so rip it before making the shots."
+        },
+        {
+          "shot": "control_room",
+          "action": "With all three modes played, shoot Control Room to start and complete the mini-wizard",
+          "detail": "This clears the third leg, which qualifies Escape Nublar at the Left Ramp."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "secret-game-style-select",
+      "title": "Game Style Select (Attract-Mode Menu)",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Before you ever press Start, this machine is holding a whole menu of alternate ways to play — cooperative scoring, team play, a stripped-down competition ruleset, even a jukebox — and none of it is reachable once a game is already running.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both flipper buttons during attract mode, with credits on the machine or free play enabled",
+        "Keep holding until the menu appears on the display",
+        "Select the mode you want with the flipper buttons",
+        "Press Start to begin, for up to 4 players"
+      ],
+      "reward": "Switches the game into Competition, Escape Nublar Challenge, Competition: Escape Nublar Challenge, Cooperative, Team Play, or DJ Mixer instead of Standard rules"
+    },
+    {
+      "id": "progression-dino-perks",
+      "title": "Steer the Map, Bank the Perks",
+      "category": "progression",
+      "summary": "The truck is the steering wheel for the whole island. Whichever way it points when you advance decides which paddock you land in next, and every dinosaur you actually get into the trap hands you an upgrade that stays switched on for the rest of the game. Ride the outer edges for a clean run, or turn up the middle at the T-Rex and the Spinosaurus, where the captures get mean and your bonus multiplier grows.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Truck: hit it before you advance, because its facing decides which way you travel across the map. Out of the main gate that sets whether your first paddock holds the Gallimimus or the Brachiosaurus.",
+        "Left Ramp: shoot the lit white arrows to spell MAP, then take the left ramp to enter the paddock. The opening paddock lights the ramp after a single white arrow; every paddock after that wants three.",
+        "Set Trap Targets: work the flashing red rescue shots first. Bank enough of them and the set trap targets at the truck light up, and the first paddock only asks you for one of the two.",
+        "Helipad: deeper paddocks put the helicopter in the chain. Shoot the helipad, then move straight away, because the capture window runs on the helicopter's fuel and letting it empty means another helipad shot to refuel before you can try again.",
+        "Capture Shot: take the flashing green-and-yellow shot the dinosaur is sitting on to finish the capture. The perk is tied to that capture, so if the dinosaur gets clear of the paddock the perk leaves with it.",
+        "Truck: turning up the middle of the map points you at the T-Rex and the Spinosaurus. Both are among the toughest captures on the machine, and each one raises your bonus multiplier, which also drives Super Spinner. Steering around them keeps you on the easier outer paddocks.",
+        "Perks worth the risk: capturing the T-Rex adds eight seconds to every timer in the game, and capturing the Raptor doubles your jackpots in Raptor Multiball."
+      ],
+      "reward": "A game-long perk for every dinosaur you capture, plus bonus multiplier growth from the centre predators"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-dino-rescued",
+      "title": "First Rescue",
+      "desc": "Capture one dinosaur: start a paddock, hit the lit rescue shots, then close it out at the Set-Trap targets.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strat_beginner"
+    },
+    {
+      "id": "control-room-snipe",
+      "title": "Control Room Snipe",
+      "desc": "Soft-plunge and hit the Control Room center target on the fly for the secret skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill_c_secret"
+    },
+    {
+      "id": "chaos-unleashed",
+      "title": "Chaos Unleashed",
+      "desc": "Spell C-H-A-O-S across the five lit shots and start Chaos Multiball at the lit Amber target.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb_chaos"
+    },
+    {
+      "id": "feeding-time",
+      "title": "Feeding Time",
+      "desc": "Spell T-REX at the Truck and cash the Left Ramp hurry-up to start the two-ball T-Rex Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb_trex"
+    },
+    {
+      "id": "paddock-run-complete",
+      "title": "Paddock Run",
+      "desc": "Clear four paddocks, spell MAP, and complete the Visitor's Center mini-wizard mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mini_visitor_center"
+    },
+    {
+      "id": "dna-combo-extra-ball",
+      "title": "DNA Sequenced",
+      "desc": "Bank six DNA combos in one game to light and collect the combo extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo_triceratops"
+    },
+    {
+      "id": "pen-breach",
+      "title": "Pen Breach",
+      "desc": "Drop Fence Integrity to zero at the Raptor Pen and start Raptor Tri-Ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb_raptor"
+    },
+    {
+      "id": "island-royalty",
+      "title": "Island Royalty",
+      "desc": "Capture the Spinosaurus at paddock 3.5 and play the King of the Island multiball it lights.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb_king"
+    },
+    {
+      "id": "double-scoring-cashed",
+      "title": "Double Down",
+      "desc": "Collect a Supply Drop, light the 2x target, and spend the 45 seconds of doubled scoring inside a multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult_2x"
+    },
+    {
+      "id": "bonus-multiplier-built",
+      "title": "Bonus Builder",
+      "desc": "Raise the end-of-ball bonus multiplier by capturing Super Predator dinosaurs and hitting the cumulative rescue thresholds.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult_bonus_x"
+    },
+    {
+      "id": "six-way-chain",
+      "title": "Six-Shot Chain",
+      "desc": "Link all six major shots in one unbroken combo for the top combo multiplier and its fossil award.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo_six_way"
+    },
+    {
+      "id": "rampage-fully-stacked",
+      "title": "Fully Stacked Rampage",
+      "desc": "Pre-load both T-Rex Rampage loaders so a Left Ramp collect scores at the full six-times value.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode_trex_rampage"
+    },
+    {
+      "id": "flock-frenzy-fifty",
+      "title": "Flock Frenzy",
+      "desc": "Build Pteranodon Attack past a fifty-million collect at the Right Ramp for the wildcard fossil.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode_pteranodon"
+    },
+    {
+      "id": "raptor-super-jackpot",
+      "title": "Raptor Super Jackpot",
+      "desc": "Reach the Super CHAOS phase of Raptor Tri-Ball and cash the Upper Loop super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strat_raptor_priority"
+    },
+    {
+      "id": "museum-cleared",
+      "title": "Museum Cleared",
+      "desc": "Play all four T-Rex events, respell T-REX, and complete the Museum Mayhem mini-wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mini_museum_mayhem"
+    },
+    {
+      "id": "control-room-secured",
+      "title": "Control Room Secured",
+      "desc": "Play every Control Room mode, then finish the Secure Control Room mini-wizard at the center target.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mini_control_room_lockdown"
+    },
+    {
+      "id": "off-the-island",
+      "title": "Off The Island",
+      "desc": "Finish all three mini-wizard modes, start Escape Nublar at the Left Ramp, and reach the gate before the volcano erupts.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard_escape_nublar"
+    },
+    {
+      "id": "age-of-dinosaurs",
+      "title": "Age Of Dinosaurs",
+      "desc": "Complete Escape Nublar on top of all three mini-wizards to reach and play the final six-ball wizard frenzy.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard_ultra"
+    }
+  ],
+  "drills": [
+    {
+      "id": "c-target-plunge",
+      "title": "Soft Plunge to the C",
+      "text": "Soft-plunge, let the ball settle to a flipper, then take the Control Room target on the fly. On Premium and LE a miss usually deflects harmlessly toward the raptor pen, which makes this the cheapest opening shot on the machine to practise.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill_c_secret",
+      "shots": [
+        "shooter_lane",
+        "control_room"
+      ]
+    },
+    {
+      "id": "tight-orbit-reps",
+      "title": "Tight Orbit Reps",
+      "text": "Take the right orbit from the left flipper only, from a settled cradle. It is the tightest shot on the game and a brick feeds a drain, so the point of the drill is finding the exact aim rather than getting the ball round any way you can.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "mb_chaos",
+      "shots": [
+        "right_orbit"
+      ]
+    },
+    {
+      "id": "raptor-pen-backhand",
+      "title": "Raptor Pen Backhand",
+      "text": "Backhand the pen standups from the left flipper and keep chipping them all game so the center stays lit. Dead-end lane shots drop the fence, so learn the pen as a place you visit constantly rather than one you rush at when the tri-ball is close.",
+      "reps": "20 backhands",
+      "focus": "accuracy",
+      "goal": "mb_raptor",
+      "shots": [
+        "raptor_pit"
+      ]
+    },
+    {
+      "id": "helix-feed-control",
+      "title": "Helix Feed Control",
+      "text": "Shoot the right ramp and be set for the helix to hand the ball to the upper flipper at speed. Settle it first, then pick a shot — the Tower ramp or the Upper Loop — because the fast feed is where this ramp turns into a drain.",
+      "reps": "15 feeds",
+      "focus": "ball-control",
+      "goal": "combo_loop_tower",
+      "shots": [
+        "right_ramp",
+        "up_right_flipper",
+        "left_loop",
+        "left_halfpipe"
+      ]
+    },
+    {
+      "id": "six-way-deliberate",
+      "title": "Six Shots, No Clock",
+      "text": "Run the spinner, the Upper Loop, the Tower ramp, the Helipad, the left ramp and the right ramp in one chain. There is no combo timer here, so trap between links and set each shot up properly — this is a control exercise dressed up as a combo.",
+      "reps": "5 full chains",
+      "focus": "flow",
+      "goal": "combo_six_way",
+      "shots": [
+        "spinner",
+        "left_loop",
+        "left_halfpipe",
+        "helipad",
+        "left_ramp",
+        "right_ramp"
+      ]
+    },
+    {
+      "id": "loader-stack",
+      "title": "Stack Both Loaders",
+      "text": "Pre-shoot the Helipad and the Tower ramp before you go back to the left ramp to collect. Both loaders stack, and collecting without them is throwing most of the award away — the drill is the patience to load first.",
+      "reps": "6 fully stacked collects",
+      "focus": "accuracy",
+      "goal": "mode_trex_rampage",
+      "shots": [
+        "helipad",
+        "left_halfpipe",
+        "left_ramp"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Stern's lockdown bar button, and on this one it is mostly a chooser plus a panic tool. It cycles your Smart Missile award, picks which Control Room mode you play, and — once it glows green off side ramp awards — fires a Super Tranquilizer that freezes the dinosaur mid-paddock.",
+    "uses": [
+      {
+        "when": "Ball held at the lit left inlane",
+        "what": "Cycles Smart Missile awards for about three seconds; whatever shows when time expires is what the pops target pays."
+      },
+      {
+        "when": "Deep in a stubborn paddock",
+        "what": "Park the Smart Missile on Clear Paddock, then hit the target between the bumpers to wipe it outright."
+      },
+      {
+        "when": "Button green during a Paddock",
+        "what": "Super Tranquilizer stuns the dino so it stops closing on your rescue shots — one stun per qualify."
+      },
+      {
+        "when": "Facing the raptor pair",
+        "what": "A single Super Tranquilizer stuns both raptors at the same time."
+      },
+      {
+        "when": "Control Room lit at the left target",
+        "what": "Works with the flippers to pick which of the three modes you start."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Jurassic Park drops you onto Isla Nublar to rescue dinosaurs, feed the T-Rex, and breach the raptor pen while the island tears itself apart. Trap dinos for game-long perks, clear three mini-wizards and Escape Nublar, and reach the six-ball finale, When Dinosaurs Ruled the Earth.",
+    "loop": [
+      "Steer the Truck to aim your next paddock, spell MAP on the white-arrow shots, then take the Left Ramp to enter and rescue the dinosaur inside.",
+      "Every dino you trap hands you a perk that stays switched on all game, and the center predators each add a rung to your end-of-ball Bonus multiplier.",
+      "Spell C-H-A-O-S and T-REX, chip the raptor pen to zero fence integrity, and feed the Truck to arm the game's four multiballs off the Left Ramp and the pen.",
+      "Play the three Control Room modes, the four T-Rex events, and four paddocks to light the three mini-wizards, which qualify Escape Nublar at the Left Ramp.",
+      "Beat Escape Nublar to open When Dinosaurs Ruled the Earth, a six-ball frenzy that ends the game when its timer dies."
+    ],
+    "lights": [
+      {
+        "id": "chaos-letters",
+        "name": "CHAOS Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "control_room"
+          },
+          {
+            "shot": "left_ramp"
+          },
+          {
+            "shot": "right_ramp"
+          },
+          {
+            "shot": "right_orbit"
+          },
+          {
+            "shot": "helipad"
+          },
+          {
+            "shot": "amber_target"
+          }
+        ],
+        "lit": "Each CHAOS letter lights as you make its shot -- C at the Control Room target, H and A on the two ramps, O around the tight Right Orbit, S at the Helipad -- and a banked letter stays lit, so you only ever chase what is still dark.",
+        "flashing": "The Amber target in the pop nest flashes once CHAOS is fully spelled and the multiball is ready to start.",
+        "control": null,
+        "then": "Finish the word, then hit the flashing Amber target to start Chaos Multiball; each Chaos multiball after the first makes you spell CHAOS twice over, and banging the Truck flips which half of the playfield the jackpots sit on.",
+        "goals": [
+          "mb_chaos"
+        ]
+      },
+      {
+        "id": "trex-hurryup",
+        "name": "T-REX Hurry-Up",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "truck"
+          },
+          {
+            "shot": "left_ramp"
+          },
+          {
+            "shot": "right_ramp"
+          }
+        ],
+        "lit": "Bashing the Truck's Newton ball spells T-REX one letter at a time -- the head roars on each -- and the letters hold until the word is done.",
+        "flashing": "A hurry-up flashes at the Left Ramp once T-REX is spelled, its value climbing every time you shoot a lit orange arrow.",
+        "control": null,
+        "then": "Build the value on the lit orange arrows, then bring it back to the Left Ramp to kick off Feed T-Rex Multiball; those build shots are unprotected, with no ball save until the multiball itself begins, so trap and aim rather than flail.",
+        "goals": [
+          "mb_trex"
+        ]
+      },
+      {
+        "id": "raptor-pen",
+        "name": "Raptor Pen & Fence Integrity",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "raptor_pit",
+            "lamps": 3
+          },
+          {
+            "shot": "right_ramp"
+          },
+          {
+            "shot": "left_loop"
+          }
+        ],
+        "lit": "The pen's center insert lights as you chip its standups, and the Fence Integrity meter -- starting halfway down -- drops with each dead-end lane shot; the progress holds, so keep the pen lit all game rather than rushing it when the tri-ball is close.",
+        "flashing": "The pen's dead-end lane flashes to start once Fence Integrity reaches zero.",
+        "control": null,
+        "then": "Shoot the dead-end lane at zero integrity to start Raptor Tri-Ball, the highest-ceiling multiball on the machine; work the ramp jackpots up to the Super CHAOS phase and cash the Upper Loop super at triple the chaos jackpot times balls in play.",
+        "goals": [
+          "mb_raptor",
+          "strat_raptor_priority"
+        ]
+      },
+      {
+        "id": "return-lanes",
+        "name": "Smart Missile & Super Spinner Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left_inlane"
+          },
+          {
+            "shot": "right_inlane"
+          },
+          {
+            "shot": "left_outlane"
+          }
+        ],
+        "lit": "The left return lane lights for a Smart Missile, the right for the Super Spinner, and the left outlane for the Escape ball save once you have hit the Escape target.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "with the ball staged at the lit left return lane, a tap cycles the Smart Missile award for about three seconds and whatever shows when time runs out is what you collect -- park it on Clear Paddock and the target between the bumpers wipes a stubborn dino outright",
+          "when": "ball held at the lit left return lane"
+        },
+        "then": "Roll the lit left lane to cash your chosen Smart Missile, take the right lane's Super Spinner for a burst of spin value, and keep the Escape outlane armed so a left-side drain quietly hands the ball back.",
+        "goals": null
+      },
+      {
+        "id": "control-room-modes",
+        "name": "Control Room Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "control_room"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "left_halfpipe"
+          }
+        ],
+        "lit": "The Control Room target stays lit whenever a mode is ready to start, relit across the game by Tower Ramp shots -- the fifteen-shot Tower award turns it back on.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "with Control Room lit, the flippers scroll the three modes and the action button locks in which one you start, so you can pick Restore Power or the combo-scoring System Boot to match your ball",
+          "when": "Control Room lit, no mode running"
+        },
+        "then": "Backhand the lit target from the right flipper to start your pick; play all three Control Room modes across the game and one more Control Room shot starts the Secure Control Room mini-wizard, one of the three legs to Escape Nublar.",
+        "goals": [
+          "mode_restore_power",
+          "mode_system_boot",
+          "mini_control_room_lockdown"
+        ]
+      },
+      {
+        "id": "paddock-rescues",
+        "name": "Paddock Rescues & Perks",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "truck"
+          },
+          {
+            "shot": "left_ramp"
+          },
+          {
+            "shot": "target_4x4_left"
+          },
+          {
+            "shot": "target_4x4_right"
+          },
+          {
+            "shot": "helipad"
+          }
+        ],
+        "lit": "White arrows light the MAP shots, the paddock's rescue shots flash red once you are inside, and the dinosaur sits on a green-and-yellow capture shot until you trap it, with the perk it carries bound to that capture -- let the dino break clear of the paddock and the perk goes with it.",
+        "flashing": "The Set-Trap targets by the Truck flash when the rescue shots are banked and the capture is ready.",
+        "control": {
+          "input": "action-button",
+          "effect": "once the button glows green off the side-ramp awards, a press looses a Super Tranquilizer that pins the dinosaur where it stands and halts its advance on the rescue shots -- one stun per qualify, and a single press drops both raptors together",
+          "when": "during a paddock, button lit green"
+        },
+        "then": "The Truck's facing sets which paddock comes next, so aim it, spell MAP, enter at the Left Ramp, and close the capture at the Set-Trap targets; every dino trapped is a game-long perk, the center predators each raise your Bonus multiplier, and four paddocks light Visitor's Center, the first mini-wizard.",
+        "goals": [
+          "progression-dino-perks",
+          "mini_visitor_center",
+          "mult_bonus_x"
+        ]
+      },
+      {
+        "id": "nedry-2x",
+        "name": "Nedry 2X Playfield",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "target_2x"
+          },
+          {
+            "shot": "target_4x4_left"
+          },
+          {
+            "shot": "right_ramp"
+          }
+        ],
+        "lit": "Collecting a Supply Drop off the Set-Trap standups lights the Nedry 2X target, and the lit target holds until you shoot it or the ball drains.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the Nedry target with a late left-flipper shot to double all scoring for forty-five seconds, then dump it inside a jackpot-heavy multiball or a fat T-Rex Rampage collect -- it does not carry between balls, so spend it before you lose the ball.",
+        "goals": [
+          "mult_2x",
+          "mode_trex_rampage"
+        ]
+      },
+      {
+        "id": "wizard-legs",
+        "name": "Mini-Wizard & Escape Progress",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left_ramp"
+          },
+          {
+            "shot": "control_room"
+          }
+        ],
+        "lit": "Three inserts track the mini-wizard legs -- Visitor's Center from four paddocks, Museum Mayhem from the four T-Rex events, Secure Control Room from the three Control Room modes -- and each stays lit once its leg is played.",
+        "flashing": "The Left Ramp flashes for Escape Nublar once all three legs are done.",
+        "control": null,
+        "then": "You only have to PLAY the three mini-wizards, not beat them, to light Escape Nublar at the Left Ramp; survive that single-ball dash to the gate -- a tilt ends the game outright -- and the Left Ramp opens the six-ball finale, When Dinosaurs Ruled the Earth.",
+        "goals": [
+          "mini_visitor_center",
+          "mini_museum_mayhem",
+          "mini_control_room_lockdown",
+          "wizard_escape_nublar",
+          "wizard_ultra"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the tournament-favorite 'C' secret skill shot on a soft plunge -- it banks points and spots a CHAOS letter under ball save. Then steer the Truck, spell MAP, and start your first paddock at the Left Ramp; every rescue you bank raises the end-of-ball Bonus multiplier, and that carries across all your balls.",
+        "goals": [
+          "skill_c_secret",
+          "strat_beginner",
+          "mult_bonus_x"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Arm the multiballs -- spell CHAOS, spell T-REX at the Truck, and drop the raptor fence to zero -- and stack Feed T-Rex Multiball over a running paddock with 2X scoring armed. T-Rex Rampage, loaded to six times at the Helipad and Tower ramps before you collect at the Left Ramp, is the repeatable money maker.",
+        "goals": [
+          "mb_chaos",
+          "mb_trex",
+          "mb_raptor",
+          "mode_trex_rampage",
+          "mult_2x",
+          "strat_tournament_opener"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Play all three mini-wizards to light Escape Nublar at the Left Ramp, a single-ball run to the gate where one tilt ends everything. Beat it and the Left Ramp opens When Dinosaurs Ruled the Earth -- a six-ball, sixty-second frenzy with unlimited ball save that ends the game when the timer expires.",
+        "goals": [
+          "wizard_escape_nublar",
+          "wizard_ultra"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1310 @@
+{
+  "machine": "Revenge from Mars (Williams, 1999)",
+  "shots": [
+    {
+      "id": "launch-button",
+      "name": "Launch Button",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.24,
+      "trim": "all",
+      "notes": "A square button rather than a plunger. It also drops a Martian Bomb during Martian Attack, killing one wiggling martian outright. There is no ball saver at the start of a ball by default."
+    },
+    {
+      "id": "action-buttons",
+      "name": "Action Buttons",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Curved buttons wrapped around the flipper buttons. They pick your starting mode group, aim things inside modes, move the multiplier during Bonus Wave, and line up targets in Attack Mars."
+    },
+    {
+      "id": "center-targets",
+      "name": "Center Target Bank",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A small bank of targets dead centre, hidden behind the projected video. Hitting it registers on the screen as if you had struck the image. Worth learning its real position while the projector is off."
+    },
+    {
+      "id": "mini-ramp",
+      "name": "Center Mini Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Lies flat until a mode is nearly finished, then pops up with a red light. Shooting it launches the ball onto a shelf above the target bank while the finishing sequence plays. This is the ending shot for almost everything in the game."
+    },
+    {
+      "id": "capture-lane",
+      "name": "Capture Lane",
+      "type": "lock",
+      "x": 0.62,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "The lock, just right of the target bank. When Capture is unlit it lights Capture and feeds the ball to the top rollovers and jets; when lit it takes a Capture and returns a ball down the right ramp."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.13,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Outer loop up the left side, feeding the rollover lanes and jet bumpers. A red arrow means the mode wants this shot; a red circle means you have already made it but can shoot it again for missiles.",
+      "feeds": {
+        "shot": "rollover-lanes"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.87,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Outer loop up the right side, also feeding the top left rollovers and jets. Same arrow-and-circle language as every other major shot.",
+      "feeds": {
+        "shot": "rollover-lanes"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Returns to the left inlane. Carries an arrow when a mode needs it and a circle when repeating it is only worth missiles.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.69,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Returns to the right inlane. Also the shot that pops the mini ramp up briefly during Martian Happy Hour and Mars Kneads Women.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "stroke-scoop",
+      "name": "Stroke of Luck Scoop",
+      "type": "scoop",
+      "x": 0.79,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Upper right scoop. The three lights under it — Stroke of Luck, Extra Ball, Martian Attack — tell you what a shot there pays, so check before you shoot."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers (3)",
+      "type": "bumpers",
+      "x": 0.21,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Upper left corner, beneath the two rollover lanes. Disabled while a Mars Kneads Women show is playing."
+    },
+    {
+      "id": "rollover-lanes",
+      "name": "Top Rollover Lanes",
+      "type": "rollover",
+      "x": 0.21,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Two lanes above the jets. Either flipper button swaps which one is lit, so both can be collected. Completing them advances the bonus multiplier. Balls always exit down the left orbit afterwards."
+    },
+    {
+      "id": "left-martians",
+      "name": "Left Martian Targets",
+      "type": "standup",
+      "x": 0.12,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Three targets under a rubber martian on the left. Part of the seven you need for Martian Attack."
+    },
+    {
+      "id": "right-martians",
+      "name": "Right Martian Targets",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Three targets plus a rubber martian on the right. The other half of the Martian Attack requirement."
+    },
+    {
+      "id": "center-martian",
+      "name": "Center Martian Target",
+      "type": "standup",
+      "x": 0.38,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "The seventh martian target, sitting just left of the target bank. It is also a martian position in several modes and a 1M saucer during regular multiball."
+    },
+    {
+      "id": "saucer-lights",
+      "name": "Saucer Lights",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Nine red lights on the saucer painted at the centre of the playfield. They flash your running total periodically. All nine plus the other requirements is what lights Attack Mars."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.4451,
+      "y": 0.0517,
+      "trim": "all",
+      "notes": "One of four return-lane rollovers. Use the flipper buttons to steer the ball down an unlit one."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.555,
+      "y": 0.059,
+      "trim": "all",
+      "notes": "Completing all four inlane and outlane rollovers lights Stroke of Luck at the scoop."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Also a rollover that counts toward lighting Stroke of Luck, which softens the loss a little."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The fourth Stroke of Luck rollover."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.38,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the right orbit, the right ramp and the Stroke of Luck scoop. Hold it during launch for the Super Skill Shot."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.5876,
+      "y": 0.0037,
+      "trim": "all",
+      "notes": "Feeds the left orbit, the left ramp and the centre shots."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Rollover Skill Shot",
+      "category": "skillshot",
+      "summary": "Launch normally and the ball ends up in the top rollover lanes. Rolling through the lit one pays 500K the first time and 100K more on every skill shot after that.",
+      "difficulty": 1,
+      "reward": "500K, climbing 100K per skill shot",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Launch normally into the rollover lanes",
+          "detail": "A plain launch sends the ball around and into the rollover area; swap the lit lane with a flipper button if it's heading for the wrong one."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "super-skillshot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper button while you launch. The ball skips the rollovers entirely, runs the left orbit and arrives on your left flipper. Hit any ramp or orbit inside about ten seconds for a million, plus 200K more each time you repeat it — and three free missiles.",
+      "difficulty": 2,
+      "reward": "1M climbing 200K, plus 3 missiles",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Plunge through, then fire a ramp or orbit quickly",
+          "detail": "Holding the button keeps the upper gate shut, so the ball skips the rollovers and comes back down the left orbit to your left flipper untouched. Any of the four major shots collects it. The missile spot alone makes this better than the plain skill shot.",
+          "plunge": "full",
+          "technique": [
+            "hold-flipper"
+          ]
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mode-flow",
+      "title": "How The Modes Run",
+      "category": "progression",
+      "summary": "There is no start-mode shot in this game. Nine modes sit in three groups, one is running at all times, and finishing one rolls straight into the next. Understanding that is most of understanding the machine.",
+      "difficulty": 1,
+      "reward": "Structure of the whole game",
+      "steps": [],
+      "instructions": [
+        "At the start of a game you pick Fuel or Weapons with the action buttons. Wait ten seconds and the machine chooses for you, alternating from the last game's default.",
+        "Modes advance left to right inside a group automatically. The middle group, Saucer, only opens once you have finished the other two.",
+        "A mode does not end when you drain. It carries across balls until it is finished.",
+        "Nearly every mode ends the same way: damage the target enough and the centre mini ramp pops up and lights. One shot across it plays the finishing sequence.",
+        "Finish a mode exactly the way the screen asked and you get a Flawless rating, which is worth one saucer light. Finishing it any other way still ends it, just without the light."
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "saucer-lights",
+      "title": "The Nine Saucer Lights",
+      "category": "progression",
+      "summary": "Nine red lights on the painted saucer, and the largest single requirement for Attack Mars. Flawless mode ratings are the obvious route but there are four other ways in, which matters because some modes are far harder to ace than others.",
+      "difficulty": 3,
+      "reward": "Progress toward Attack Mars",
+      "steps": [],
+      "instructions": [
+        "Complete any mode with a Flawless rating: one light.",
+        "Score a Super Jackpot in regular Capture Multiball: one light, and only the first Super Jackpot of a sequence pays it.",
+        "Reach the item thresholds in the Bonus Wave multiballs: the 15-item award is a saucer light on default settings.",
+        "Destroy enough martians in Martian Multiball: ten total is one light, and a second higher threshold pays another. Both are operator adjustable.",
+        "Draw one from Stroke of Luck, which is pure luck but does happen.",
+        "You do not need Flawless on every mode. Mixing sources is normal and usually faster."
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "missiles",
+      "title": "Collect Missiles",
+      "category": "strategy",
+      "summary": "While a mode runs, the orbits and ramps hand out missiles that also do damage in whatever mode you are in. Your first missile of a ball is 500K and each one after that adds 100K, so a long ball turns them into serious scoring.",
+      "difficulty": 1,
+      "reward": "500K rising 100K per missile; extra ball at 20 and 50, 5M at 30",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Keep the orbits moving",
+          "detail": "A circle-lit shot is not wasted; repeat it for missiles.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate with the ramps",
+          "detail": "The value resets to 500K at the start of each new ball, so build it inside one long ball.",
+          "link": "none"
+        },
+        {
+          "shot": "stroke-scoop",
+          "action": "Cash the extra ball",
+          "detail": "Twenty missiles lights the extra ball at the scoop by default, thirty pays five million, and fifty lights another."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "stroke-of-luck",
+      "title": "Stroke of Luck",
+      "category": "mode",
+      "summary": "Light all four return-lane rollovers and the upper right scoop pays out a random award. The list runs from a flat 500K all the way up to an instant multiball, so it is almost always worth taking.",
+      "difficulty": 2,
+      "reward": "Random award, up to Hypno or Capture Multiball",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Steer for the unlit rollovers",
+          "detail": "The two inlanes and two outlanes all count; use the flipper buttons to move the lit ones."
+        },
+        {
+          "shot": "stroke-scoop",
+          "action": "Shoot the scoop",
+          "detail": "Possible awards include 500K or 1M points, three missiles, a Martian Bomb, a saucer light, Light or Award Capture, Light Extra Ball, plus five bonus multipliers or hold bonus."
+        },
+        {
+          "shot": "stroke-scoop",
+          "action": "Check the three lights first",
+          "detail": "If Extra Ball or Martian Attack is lit instead, that is what the scoop gives you."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The two rollover lanes above the jets advance your bonus multiplier when both are collected. Either flipper button swaps which one is lit, so a ball rattling around the jets should never waste a lane.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier advance",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Swap the lit lane in flight",
+          "detail": "Watch which lane the ball is drifting toward and move the light to meet it."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Use the jets as a feeder",
+          "detail": "The bumpers push the ball back up into the lanes repeatedly, so time spent up there is rarely wasted."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "alien-abduction",
+      "title": "Alien Abduction",
+      "category": "mode",
+      "summary": "Small saucers try to tractor-beam objects off the street outside the White House. Each rescue pays what that object was worth before the hurry-up ran it down, and adds that value to a mode jackpot starting at a million.",
+      "difficulty": 2,
+      "reward": "Up to 3M per rescue, plus a growing mode jackpot",
+      "steps": [
+        {
+          "shot": "action-buttons",
+          "action": "Cycle to the object you want",
+          "detail": "Values differ by object and the timer starts falling the moment a beam locks on."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Shoot the martian doing the abducting",
+          "detail": "Targets, ramps and orbits all destroy the small saucers, and missiles do it for free."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Finish the big saucer",
+          "detail": "Seven small saucers destroyed then one mini ramp shot ends the mode. Getting all seven is what earns the Flawless."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "martian-happy-hour",
+      "title": "Martian Happy Hour",
+      "category": "mode",
+      "summary": "Five martians drinking at a bar under three suspended fuel kegs. Each martian is worth 1.5M and takes a different number of hits depending on where it sits — one on the ramps, two on the capture lane and centre target, three in the middle.",
+      "difficulty": 2,
+      "reward": "1.5M per martian, 4M per side keg, 6M for the centre keg",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Clear the ramp martians first",
+          "detail": "They fall in a single hit each, which is the cheapest progress in the mode."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Blow the side kegs with the orbits",
+          "detail": "Each orbit detonates one side keg for 4M. Missiles can set them off too."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Open the path to the centre keg",
+          "detail": "Kill the martian blocking the right ramp, shoot the ramp, and the mini ramp pops up briefly for a 6M keg shot."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Mind the ending",
+          "detail": "Destroying all three kegs blows the bar up immediately and ends the mode, which costs you the Flawless unless all five martians are already gone."
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "secret-weapon",
+      "title": "Secret Weapon",
+      "category": "mode",
+      "summary": "A straight fight between a giant martian and your battle machine. Shots chip away at a life bar across the top of the screen, and when it empties one more shot finishes the job. This is one of the friendlier modes to ace.",
+      "difficulty": 1,
+      "reward": "Flawless rating and a saucer light",
+      "steps": [
+        {
+          "shot": "center-targets",
+          "action": "Keep hitting anything major",
+          "detail": "All the main shots take life off the bar; there is no puzzle here, just volume."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Land the finisher",
+          "detail": "With the bar empty the mini ramp raises for the last shot."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "tower-struggle",
+      "title": "Tower Struggle",
+      "category": "mode",
+      "summary": "Four martians tugging at a leaning tower. Two saucers sit on the ramps, and two martians sit on the lock shot and the upper martian light. All four have to go for the Flawless.",
+      "difficulty": 2,
+      "reward": "Flawless rating and a saucer light",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Take the ramp saucers",
+          "detail": "One hit each on the left and right ramps.",
+          "link": "none"
+        },
+        {
+          "shot": "capture-lane",
+          "action": "Clear the two martians",
+          "detail": "One sits on the lock shot, the other on the upper martian light.",
+          "link": "none"
+        },
+        {
+          "shot": "center-targets",
+          "action": "Or grind the tower down",
+          "detail": "Hitting the target bank drains a life bar, which will end the mode on its own — but without all four kills there is no saucer light.",
+          "link": "none"
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Close it out",
+          "detail": "Destroying all four raises the mini ramp immediately for one finishing shot."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "mystery-mode",
+      "title": "Mystery Mode",
+      "category": "mode",
+      "summary": "A random draw from several completely different mini-games. What you are asked to do changes every time, so read the screen before you commit a shot.",
+      "difficulty": 2,
+      "reward": "Varies by draw",
+      "steps": [
+        {
+          "shot": "center-targets",
+          "action": "Martian Aerobics",
+          "detail": "A shooting gallery of twenty-four moving martians; any playfield shot fires. Clear them all before they reach the bottom."
+        },
+        {
+          "shot": "action-buttons",
+          "action": "Martian Bowling",
+          "detail": "Aim with the action buttons, then shoot."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Martian Autopsy",
+          "detail": "A hurry-up on the centre shot starts at 3M and whatever you collect becomes the fixed value for every object after it. Ten objects earns the Flawless, so collect that hurry-up high."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Martian Tank",
+          "detail": "A moving tank with a martian riding each side. Both have to go, and this is the hardest of the draws to finish."
+        }
+      ],
+      "fx": "martian",
+      "ordered": false
+    },
+    {
+      "id": "drive-in-demolition",
+      "title": "Drive-In Demolition",
+      "category": "mode",
+      "summary": "Martians park themselves in front of the screen and you are the one with the heavy weaponry. Every shot does damage against a meter, and the meter has to go all the way down for the saucer light.",
+      "difficulty": 2,
+      "reward": "Flawless rating and a saucer light",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Keep firing",
+          "detail": "All shots damage the meter; nothing is off-target here."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Empty the meter before the finish",
+          "detail": "Ending the mode with damage left on the meter costs you the light."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "paris-in-peril",
+      "title": "Paris in Peril",
+      "category": "mode",
+      "summary": "A catapult at the centre flings whatever comes to hand at a saucer above the Eiffel Tower. Centre targets fire it for around 13% damage each; the outer missile lanes do 25%. After the first hit, four martians parachute in.",
+      "difficulty": 2,
+      "reward": "1M, 1.5M, 2M and 5M for the four martians",
+      "steps": [
+        {
+          "shot": "center-targets",
+          "action": "Work the catapult",
+          "detail": "Each centre hit is roughly an eighth of the saucer, though operators can set it as high as a quarter."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Use the side shots for double damage",
+          "detail": "The outer lanes do twice what the middle does."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Pick off the parachutists",
+          "detail": "They land on both ramps, the capture lane and the centre martian target. One hit each, and all four are required for the Flawless."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Destroy the saucer",
+          "detail": "Around eight hits of damage raises the mini ramp for the finishing shot."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "big-o-beam",
+      "title": "Big-O-Beam",
+      "category": "mode",
+      "summary": "A saucer has enlarged the livestock on a farm. Centre targets make the barn leap into the saucer for 2M a go, while ramps and orbits shrink an animal for 4M each. Four animals to save, and this pays better than most of its neighbours.",
+      "difficulty": 2,
+      "reward": "2M per barn hit, 4M per animal",
+      "steps": [
+        {
+          "shot": "center-targets",
+          "action": "Bash the barn into the saucer",
+          "detail": "Two million per hit against the life bar."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shrink the animals",
+          "detail": "Ramps and orbits each shrink one for 4M and award missiles at the same time.",
+          "link": "none"
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Finish either way",
+          "detail": "Emptying the life bar raises the ramp, but so does shrinking all four animals — and only the animals earn the Flawless."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "mars-kneads-women",
+      "title": "Mars Kneads Women",
+      "category": "mode",
+      "summary": "Six television screens, and the job is to watch all six. Orbits are the efficient shot because they start a show straight away; ramps only pop the mini ramp up so you have to spend a second shot to watch anything.",
+      "difficulty": 2,
+      "reward": "2-5M for the console, scaled by how many shows you watched",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot orbits, not ramps",
+          "detail": "An orbit starts the show immediately and saves you a shot. The jets are switched off while a show plays."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Light the two centre screens",
+          "detail": "The centre targets are the only thing that opens those two, and they are watched from the mini ramp.",
+          "link": "none"
+        },
+        {
+          "shot": "action-buttons",
+          "action": "Change channels",
+          "detail": "The action buttons switch what is playing. All four buttons at once cancels a show and returns the ball.",
+          "link": "none"
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Destroy the console last",
+          "detail": "When the screen tells you to destroy the console, that ramp shot ends the mode. Watch any screens you still owe before taking it, or you lose the Flawless."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "martian-attack",
+      "title": "Martian Attack",
+      "category": "mode",
+      "summary": "Knock down all seven martian targets around the playfield and Martian Attack lights at the Stroke of Luck scoop. Two rubber martians then wiggle at you and both have to die before the giant one on screen will.",
+      "difficulty": 2,
+      "reward": "Leads directly into Martian Multiball",
+      "steps": [
+        {
+          "shot": "left-martians",
+          "action": "Clear the left trio",
+          "detail": "Three targets under the rubber martian on that side.",
+          "link": "none"
+        },
+        {
+          "shot": "right-martians",
+          "action": "Clear the right side and the centre target",
+          "detail": "Three more plus a martian on the right, and the seventh sits just left of the target bank.",
+          "link": "none"
+        },
+        {
+          "shot": "stroke-scoop",
+          "action": "Start it at the scoop",
+          "detail": "Martian Attack lights under the scoop once all seven are down."
+        },
+        {
+          "shot": "launch-button",
+          "action": "Spend a Martian Bomb if you have one",
+          "detail": "A press of the launch button kills one of the wiggling martians outright.",
+          "link": "none"
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Kill the giant",
+          "detail": "With the wigglers gone the mini ramp raises and flashes. That shot starts Martian Multiball.",
+          "link": "none"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "martian-multiball",
+      "title": "Martian Multiball",
+      "category": "multiball",
+      "summary": "Two balls, and every shot on the playfield kills a martian for a million. You begin the count at three because the game credits the ones you already killed. Ten total is a saucer light and there is a second threshold higher up.",
+      "difficulty": 2,
+      "reward": "1M per martian, 2M per big martian, saucer lights at the thresholds",
+      "steps": [
+        {
+          "shot": "center-targets",
+          "action": "Hit the middle twice",
+          "detail": "Two centre shots raise the mini ramp."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Then the mini ramp twice",
+          "detail": "That blows up the big martian for 2M and another one takes its place, so the cycle repeats."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Fill in with anything",
+          "detail": "Every other shot is still a martian kill. This multiball locks out the regular one and pauses your running mode.",
+          "link": "none"
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "capture-multiball",
+      "title": "Capture Multiball",
+      "category": "multiball",
+      "summary": "The regular multiball. The capture lane alternates between lighting Capture and taking one, so it costs two shots per lock. On the third Capture you get three balls and a saucer shooting gallery.",
+      "difficulty": 2,
+      "reward": "500K to 1.5M per saucer, then a Super Jackpot and a saucer light",
+      "steps": [
+        {
+          "shot": "capture-lane",
+          "action": "Light it, then take it, three times",
+          "detail": "An unlit capture lane lights Capture and sends you to the jets; a lit one locks and returns a ball down the right ramp."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Shoot down ten saucers",
+          "detail": "Centre targets pay 500K, the capture lane and centre martian target 1M, the ramps 1.5M — and each one raises the Super Jackpot."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Five hits on the big one",
+          "detail": "After ten saucers a larger ship appears near the middle. Five hits pays the Super Jackpot and one saucer light."
+        },
+        {
+          "shot": "capture-lane",
+          "action": "Know the grace rule",
+          "detail": "If you are down to one ball with the big ship still waiting, multiball stays alive until you finish it or drain."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "bonus-wave",
+      "title": "Bonus Wave Multiballs",
+      "category": "multiball",
+      "summary": "Finish a whole mode group and you get a four-ball round built around collecting items. The multiplier is the real game here: a floating 2X you push around with the action buttons, and shooting it on all four shots promotes it to 3X.",
+      "difficulty": 3,
+      "reward": "Jackpots at 5, 10, 20, 25 and 35 items; saucer light at 15; extra ball at 30",
+      "steps": [
+        {
+          "shot": "action-buttons",
+          "action": "Park the 2X where you can actually shoot",
+          "detail": "Hitting the multiplied shot doubles that shot and its items, and locks the multiplier out of that position."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Prioritise ramps and orbits",
+          "detail": "Ramps and orbits are 500K plus 500K per item, the lock lane 250K plus 250K, the centre only 100K plus 100K."
+        },
+        {
+          "shot": "capture-lane",
+          "action": "Cover all four multiplier spots",
+          "detail": "Centre, both ramps and the lock. Cover all four and the multiplier becomes 3X with every position free again, up to a 5X ceiling."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Take Sudden Death",
+          "detail": "When you are down to the last ball the centre ramp raises. That shot pays 100K per item collected in the round."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "mothership",
+      "title": "Mothership Multiball",
+      "category": "multiball",
+      "summary": "Collect forty Bonus Wave items across the whole game — they accumulate, you do not need them in one round — and the flippers go dead so every ball drains into Mothership Multiball.",
+      "difficulty": 3,
+      "reward": "Large points, and a Grand Mothership waiting behind it",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Damage it with the big shots",
+          "detail": "Ramps and orbits hurt the mothership more than the centre targets do."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Destroy it",
+          "detail": "The centre ramp pops up for the kill shot, and then a bigger mothership takes its place."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Understand the ending",
+          "detail": "Once you are down to one ball the ramp raises again, and taking it ends the round and drops you back into normal mode play."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "hypno-multiball",
+      "title": "Hypno Multiball",
+      "category": "secret",
+      "summary": "A Stroke of Luck award that normally shows up after two or three visits to the scoop or several completed modes. The playfield goes dark apart from the lit shots and a rotating spiral appears at both ramps and the capture lane.",
+      "difficulty": 3,
+      "reward": "Extra ball the first time, 15M the second",
+      "steps": [
+        {
+          "shot": "stroke-scoop",
+          "action": "Draw it from the scoop",
+          "detail": "It is not selectable — it appears in the Stroke of Luck pool once you have collected a few awards."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Grind the beam integrity down",
+          "detail": "The centre targets damage the big spiral, roughly fifteen hits from full to zero."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the small spirals to stay alive",
+          "detail": "Each one adds a ball, relaunches anything you lost, and gives about ten seconds of ball save."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Finish it",
+          "detail": "At zero integrity the ramp raises. Completing it the first time awards an extra ball, the second time fifteen million."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "attack-mars",
+      "title": "Attack Mars",
+      "category": "wizard",
+      "summary": "The end of the game. Light all nine saucer lights, complete the three Bonus Wave multiballs and play Mothership Multiball, and the centre shot starts a three-stage assault that can double your score by itself.",
+      "difficulty": 3,
+      "reward": "Over 100M on the final shot alone",
+      "steps": [
+        {
+          "shot": "center-targets",
+          "action": "Start it at the centre",
+          "detail": "With all three requirements met, the centre shot begins Attack Mars."
+        },
+        {
+          "shot": "action-buttons",
+          "action": "Aim with the buttons while you play",
+          "detail": "This is what catches people out — you are steering with the action buttons and flipping at the same time."
+        },
+        {
+          "shot": "center-targets",
+          "action": "Stage one: three ships",
+          "detail": "Line each ship up in the middle of the screen with the buttons, then take the centre shot."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Stage two: four targets",
+          "detail": "Use the main shots of the game while steering each one to its destination."
+        },
+        {
+          "shot": "mini-ramp",
+          "action": "Stage three: the Big Brain",
+          "detail": "Centre shot first, then the mini ramp once it raises. Unlike some wizard modes, the balls do not drain between stages."
+        }
+      ],
+      "fx": "martian"
+    },
+    {
+      "id": "extra-balls",
+      "title": "Stacking Up Extra Balls",
+      "category": "strategy",
+      "summary": "This machine hands out extra balls instead of replays by default, and there are enough routes to them that a good game can run a very long time. Knowing all of them changes how you play the middle of a game.",
+      "difficulty": 2,
+      "reward": "Extra balls at 50M and 200M, plus several playfield routes",
+      "steps": [
+        {
+          "shot": "stroke-scoop",
+          "action": "Collect the lit ones at the scoop",
+          "detail": "Extra Ball is one of the three scoop lights, whether it came from missiles, Stroke of Luck or a score threshold."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Bank missiles toward twenty",
+          "detail": "Twenty missiles lights one and fifty lights another, both by default."
+        },
+        {
+          "shot": "capture-lane",
+          "action": "Take the Bonus Wave award",
+          "detail": "The thirty-item award in the Bonus Wave multiballs is an extra ball, and Hypno Multiball pays one the first time you complete it."
+        }
+      ],
+      "fx": "saucer",
+      "ordered": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "rfm-superskill",
+      "title": "Long Way Round",
+      "desc": "Hold the left flipper on launch and cash the Super Skill Shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "super-skillshot"
+    },
+    {
+      "id": "rfm-first-flawless",
+      "title": "Flawless",
+      "desc": "Finish any mode exactly as asked for your first saucer light.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-flow"
+    },
+    {
+      "id": "rfm-stroke",
+      "title": "Down To Luck",
+      "desc": "Light all four return-lane rollovers and collect a Stroke of Luck award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "stroke-of-luck"
+    },
+    {
+      "id": "rfm-missiles",
+      "title": "Fully Loaded",
+      "desc": "Bank twenty missiles and light the extra ball at the scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "missiles"
+    },
+    {
+      "id": "rfm-martian-mb",
+      "title": "Seven Targets Down",
+      "desc": "Clear every martian target and reach Martian Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "martian-attack"
+    },
+    {
+      "id": "rfm-super-jackpot",
+      "title": "Super Jackpot",
+      "desc": "Shoot down ten saucers and five hits on the big one during Capture Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "capture-multiball"
+    },
+    {
+      "id": "rfm-multiplier",
+      "title": "Five Times Over",
+      "desc": "Promote the Bonus Wave multiplier all the way to 5X.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "bonus-wave"
+    },
+    {
+      "id": "rfm-hypno",
+      "title": "Beam Integrity Zero",
+      "desc": "Draw Hypno Multiball and destroy the large spiral.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "hypno-multiball"
+    },
+    {
+      "id": "rfm-mothership",
+      "title": "Forty Items",
+      "desc": "Accumulate forty Bonus Wave items and reach Mothership Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mothership"
+    },
+    {
+      "id": "rfm-nine-lights",
+      "title": "All Nine Lit",
+      "desc": "Light every saucer light in a single game.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "saucer-lights"
+    },
+    {
+      "id": "rfm-attack-mars",
+      "title": "Attack Mars",
+      "desc": "Meet all four requirements and finish the Big Brain.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "attack-mars"
+    }
+  ],
+  "drills": [
+    {
+      "id": "hold-the-left-button",
+      "title": "Hold The Left Button",
+      "text": "Hold the left flipper button through the launch — the upper gate stays shut, the ball skips the rollovers, runs the left orbit and arrives on your left flipper untouched. Fire any ramp or orbit before the window closes; the three free missiles alone make it worth more than the plain rollover shot.",
+      "reps": "every ball, one full game",
+      "focus": "skill-shot",
+      "goal": "super-skillshot",
+      "shots": [
+        "launch-button",
+        "left-flipper",
+        "left-orbit",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "find-the-hidden-bank",
+      "title": "Find The Hidden Bank",
+      "text": "The centre target bank sits behind the projected video, so learn where it physically is — ideally with the projector off — because on screen you are aiming at an image rather than a target. Then keep the mini ramp in view: it lies flat until a mode is nearly finished, pops up with a red light, and it is the ending shot for almost everything in this game.",
+      "reps": "20 centre hits, then 10 mini ramp finishers",
+      "focus": "accuracy",
+      "goal": "mode-flow",
+      "shots": [
+        "center-targets",
+        "mini-ramp"
+      ]
+    },
+    {
+      "id": "steer-while-you-flip",
+      "title": "Steer While You Flip",
+      "text": "The curved buttons aim what is happening on screen while your fingers are still working the flippers, and that split is what catches people out. Cradle a ball during any mode that uses them and practise lining something up in the middle of the screen, then take the centre shot without losing control of the ball.",
+      "reps": "one mode per session, steering deliberately",
+      "focus": "ball-control",
+      "goal": "attack-mars",
+      "shots": [
+        "action-buttons",
+        "center-targets",
+        "mini-ramp"
+      ]
+    },
+    {
+      "id": "count-your-missiles",
+      "title": "Count Your Missiles",
+      "text": "A shot showing a circle is not a wasted shot — repeat it for missiles. Alternate the orbits and the ramps for a whole ball and keep count, because the value resets at the start of every ball and twenty of them lights the extra ball at the scoop.",
+      "reps": "one long ball, counting to twenty",
+      "focus": "accuracy",
+      "goal": "missiles",
+      "shots": [
+        "left-orbit",
+        "right-orbit",
+        "left-ramp",
+        "right-ramp",
+        "stroke-scoop"
+      ]
+    },
+    {
+      "id": "capture-comes-in-pairs",
+      "title": "Capture Comes In Pairs",
+      "text": "Every lock costs two shots at the same lane: an unlit capture lane lights Capture and sends you up to the jets, a lit one takes the lock and returns a ball down the right ramp. Shoot it in pairs and be ready for where each half puts the ball, rather than being surprised by the one you did not plan for.",
+      "reps": "three locks, six shots",
+      "focus": "flow",
+      "goal": "capture-multiball",
+      "shots": [
+        "capture-lane",
+        "jet-bumpers",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "steer-the-return-lanes",
+      "title": "Steer The Return Lanes",
+      "text": "All four return lanes count toward Stroke of Luck, outlanes included, so even a lost ball buys you something. Move the lit ones with the flipper buttons onto the lane the ball is actually taking, and check the three lights under the scoop before you shoot it — Extra Ball or Martian Attack take priority over the award.",
+      "reps": "light Stroke of Luck twice in a ball",
+      "focus": "ball-control",
+      "goal": "stroke-of-luck",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-outlane",
+        "right-outlane",
+        "stroke-scoop"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "martian",
+  "actionButton": {
+    "present": true,
+    "label": "Action Buttons",
+    "location": "curved buttons wrapping halfway around each flipper button, one per side",
+    "how": "This is the game that puts aiming in your hands. A curved button hugs each flipper button, and they steer whatever is happening on the projected screen — picking your opening mode group, cycling targets, sliding a multiplier around. The catch is that you are pressing them while you are still flipping, and that split attention is the real skill the game is testing. The square launch button is worth a mention too, because it spends a Martian Bomb during Martian Attack.",
+    "uses": [
+      {
+        "when": "First ten seconds of a game",
+        "what": "Choose Fuel or Weapons as your opening mode group. Leave it alone and the machine picks one for you."
+      },
+      {
+        "when": "During Alien Abduction",
+        "what": "Cycle to the object you want to save before the beams get it — values differ, and each one counts down fast."
+      },
+      {
+        "when": "During Martian Bowling",
+        "what": "Line up your aim, then take a playfield shot to send it."
+      },
+      {
+        "when": "During Mars Kneads Women",
+        "what": "Switch which of the six screens is playing. All four buttons at once cancels a show and returns your ball."
+      },
+      {
+        "when": "During Bonus Wave multiball",
+        "what": "Park the floating 2X on a shot you can actually hit; collecting it on all four shots promotes it to 3X."
+      },
+      {
+        "when": "During Attack Mars",
+        "what": "Line ships and targets up in the middle of the screen while you keep flipping — practise this before you need it."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Revenge from Mars is a projector-lit Williams sequel where one of nine modes is always running and the curved action buttons put aiming in your hands. Light all nine saucer lights, win the three Bonus Wave rounds and Mothership Multiball, and reach Attack Mars, the score-doubling finale.",
+    "loop": [
+      "One mode is always running -- shoot its red-arrow shots to do damage, and repeat a red-circle shot for missiles that damage the mode for free.",
+      "Do enough damage and the centre mini ramp pops up with a red light; one shot across it finishes the mode, and finishing exactly as asked earns a Flawless and a saucer light.",
+      "Steer the two top rollover lanes with the flippers for your bonus multiplier, and complete the four return lanes to light Stroke of Luck at the scoop.",
+      "Lock balls at the capture lane for Capture Multiball, clear the seven martian targets for Martian Attack, and finish a whole mode group for a Bonus Wave multiball.",
+      "Light all nine saucer lights, clear the Bonus Wave rounds and play Mothership to open Attack Mars."
+    ],
+    "lights": [
+      {
+        "id": "mode-arrows",
+        "name": "Mode Arrows & Circles",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "One of the nine modes is always running, and it flags the shots it needs with a red arrow, while a red circle marks a shot you have already made that still pays missiles on a repeat.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the red arrows to do the mode's damage. A circle shot is never wasted -- repeat it for missiles, which hurt the mode for free and are worth five hundred thousand rising a hundred thousand each within a ball. Finish a mode and the next one in the group starts on its own.",
+        "goals": [
+          "mode-flow",
+          "missiles"
+        ]
+      },
+      {
+        "id": "mini-ramp-finisher",
+        "name": "Mini Ramp Finisher",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "mini-ramp"
+          }
+        ],
+        "lit": "The centre mini ramp lies flat and dark through most of a mode, then pops up with a red light once you have done enough damage -- almost every mode in the game ends on this one raised shot.",
+        "flashing": null,
+        "control": null,
+        "then": "One shot across the raised ramp plays the finishing sequence and ends the mode. Finish exactly the way the screen asked for a Flawless rating, worth one of the nine saucer lights; finish any other way and it still ends, just without the light.",
+        "goals": [
+          "mode-flow",
+          "saucer-lights"
+        ]
+      },
+      {
+        "id": "saucer-lights",
+        "name": "Saucer Lights",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "saucer-lights"
+          }
+        ],
+        "lit": "Nine red lights ring the painted saucer at the centre of the playfield, and they hold from ball to ball -- this is the largest single requirement for Attack Mars.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank lights from more than one source -- a Flawless mode, the first Super Jackpot of a Capture Multiball sequence, the fifteen-item Bonus Wave award, martian counts in Martian Multiball, or a lucky Stroke of Luck draw. Light all nine, and with the Bonus Wave rounds and Mothership done, Attack Mars opens at the centre.",
+        "goals": [
+          "saucer-lights",
+          "attack-mars"
+        ]
+      },
+      {
+        "id": "top-rollover-lanes",
+        "name": "Top Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "rollover-lanes"
+          }
+        ],
+        "lit": "Two lanes sit above the jet bumpers and only one is lit at a time; rolling the lit one advances your bonus multiplier, and both have to be collected to bump it.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "one tap of either flipper button swaps which of the two top lanes is lit, so you can move the light to meet whichever lane the ball is drifting toward and collect both",
+          "when": "in flight, as the ball comes down through the jets toward the lanes"
+        },
+        "then": "Watch which lane the ball is heading for and slide the light to meet it; completing both advances the bonus multiplier, and the jets keep batting the ball back up for repeated tries. A plain launch also feeds these lanes for the skill shot.",
+        "goals": [
+          "bonus-multiplier",
+          "skillshot"
+        ]
+      },
+      {
+        "id": "stroke-of-luck-lanes",
+        "name": "Stroke of Luck Lanes & Scoop",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "right-outlane"
+          },
+          {
+            "shot": "stroke-scoop"
+          }
+        ],
+        "lit": "All four return lanes -- both inlanes and both outlanes -- are rollovers that count toward Stroke of Luck; a lit one is still needed, so even a ball heading for an outlane can buy you something.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "one tap of either flipper button steers which return-lane rollovers are lit, so you can guide the light to whichever lane the ball is dropping into",
+          "when": "as the ball drops toward the inlanes and outlanes"
+        },
+        "then": "Complete all four rollovers to light Stroke of Luck at the upper right scoop -- a random award ranging from five hundred thousand up to an instant multiball. Glance at the three lights under the scoop first, though: should Extra Ball or Martian Attack be showing there instead, that is what a shot collects.",
+        "goals": [
+          "stroke-of-luck"
+        ]
+      },
+      {
+        "id": "martian-targets",
+        "name": "Martian Targets",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-martians"
+          },
+          {
+            "shot": "right-martians"
+          },
+          {
+            "shot": "center-martian"
+          }
+        ],
+        "lit": "Seven martian targets ring the playfield -- three on the left, three plus one on the right, and the seventh by the target bank; each lit target is one still standing.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock all seven down and Martian Attack lights under the scoop. Start it, kill the two wiggling martians -- a Martian Bomb from the launch button drops one outright -- and the mini ramp raises to start Martian Multiball, where every shot is a million-point martian kill.",
+        "goals": [
+          "martian-attack",
+          "martian-multiball"
+        ]
+      },
+      {
+        "id": "capture-lock",
+        "name": "Capture Lock",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "capture-lane"
+          }
+        ],
+        "lit": "The capture lane flips between two states -- dark, it lights Capture and kicks the ball up to the jets; lit, it banks a Capture and spits a ball back down the right ramp -- so a single lock eats two shots at the one lane.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot it in pairs, three locks over, to open Capture Multiball and its saucer shooting gallery. Gun down ten saucers to raise a bigger ship, and five hits on that bank the Super Jackpot plus a saucer light. If you are left with a single ball while the big ship still hangs there, the multiball refuses to end until you finish it off.",
+        "goals": [
+          "capture-multiball"
+        ]
+      },
+      {
+        "id": "bonus-wave-multiplier",
+        "name": "Bonus Wave Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "center-targets"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "capture-lane"
+          }
+        ],
+        "lit": "Finishing a whole mode group starts a four-ball Bonus Wave round built around collecting items, and a floating 2X hovers over one of four shots -- the centre, both ramps and the lock.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "the curved action buttons around the flippers nudge the floating 2X from shot to shot, so you can park it on one you can actually make; landing the doubled shot scores it twice and frees the 2X to move on",
+          "when": "throughout the Bonus Wave multiball"
+        },
+        "then": "Cover all four positions to promote the multiplier to 3X with every spot free again, up to a 5X ceiling. Ramps and orbits carry the richest items; the fifteen-item award is a saucer light, and forty items banked across the whole game opens Mothership Multiball.",
+        "goals": [
+          "bonus-wave",
+          "mothership"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button swaps which of the two top rollover lanes above the jets is lit, so you can slide the light to meet whichever lane the ball is drifting toward and collect both -- completing the pair advances your bonus multiplier. The same flipper move slides the lit return-lane rollovers that light Stroke of Luck at the scoop.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Hold the left flipper on launch for the Super Skill Shot -- the ball bypasses the rollovers, loops the left orbit down to your flipper, and any quick ramp or orbit pays a million plus three free missiles. Then learn the one mode already running and finish it Flawless for your first saucer light.",
+        "goals": [
+          "super-skillshot",
+          "mode-flow",
+          "missiles"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Bank missiles toward their extra balls, lock at the capture lane for Capture Multiball, clear the seven martian targets for Martian Multiball, and finish a mode group for a Bonus Wave round -- steering its 2X with the action buttons. Take Stroke of Luck whenever the return lanes light it.",
+        "goals": [
+          "capture-multiball",
+          "martian-multiball",
+          "bonus-wave",
+          "stroke-of-luck"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Attack Mars is the finale. Light every one of the nine saucer lights, clear all three Bonus Wave rounds, and beat Mothership Multiball; the centre shot then opens a three-stage assault you steer with the action buttons -- the closing Big Brain shot alone can top a hundred million and double your whole game.",
+        "goals": [
+          "attack-mars",
+          "saucer-lights",
+          "mothership"
+        ]
+      }
+    ]
+  }
+}

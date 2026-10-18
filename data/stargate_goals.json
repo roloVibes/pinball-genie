@@ -1,0 +1,1281 @@
+{
+  "machine": "Stargate (Gottlieb, 1995)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "A short ramp off the plunger with three outcomes: too soft and it dribbles down the right ramp return, correct and it carries to the Sarcophagus, too hard and it exits the top hole to the upper right flipper for nothing."
+    },
+    {
+      "id": "sarcophagus",
+      "name": "Sarcophagus",
+      "type": "kicker",
+      "x": 0.07,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "Not an ordinary kickback. A gate opens into a space under the apron that holds the ball and returns it whenever the game feels like it. Alternates between starting multiball and awarding three Quartz."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Feeds the Sarcophagus. It opens off the extra ball rollover, off the habitrail leading down here, and on some machines off the right slingshot."
+    },
+    {
+      "id": "extra-ball-rollover",
+      "name": "Extra Ball Rollover",
+      "type": "rollover",
+      "x": 0.21,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "The leftmost exit from the pop bumper area. Rolling through here throws the Sarcophagus gate open, and with the insert lit it also hands you an extra ball."
+    },
+    {
+      "id": "three-bank",
+      "name": "3-Bank Drops",
+      "type": "drop-target",
+      "x": 0.17,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Three drop targets above the left slingshot marked 5M, 10M and 20M left to right. The middle one alone lights for one Quartz when it is the last of the three standing."
+    },
+    {
+      "id": "two-bank",
+      "name": "2-Bank Drops",
+      "type": "drop-target",
+      "x": 0.4,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Two drops about halfway up, facing right rather than down. Bottom target is 40M, top is 80M. Sweeping the pair in one shot is the realistic way to get the 80M.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.3,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Two bumpers in an enclosed nest, reached through the left lane past the Guardian. Ten hits lights the Hurry-Up."
+    },
+    {
+      "id": "left-guardian",
+      "name": "Left Guardian",
+      "type": "gate",
+      "x": 0.26,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Raises to expose the Transporter behind the left lane. The right inlane raises it, and so does its own standup target. Blow the Sarcophagus skill shot and you will find it lowered as the new ball comes into play, which leaves you a flipper skill shot up the lane."
+    },
+    {
+      "id": "left-guardian-target",
+      "name": "Left Guardian Target",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "The white round target on the Guardian's base. Better than the inlane because hitting it also lights the Transporter."
+    },
+    {
+      "id": "left-lane",
+      "name": "Left Lane",
+      "type": "lane",
+      "x": 0.29,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Runs into the pop bumpers, or into the Transporter when the Guardian is raised. The third shot of the combo sequence and a White Pyramid shot."
+    },
+    {
+      "id": "transporter",
+      "name": "Transporter",
+      "type": "saucer",
+      "x": 0.23,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "A hidden kicker at the end of the left lane. Its award rotates and the left Glidercraft target switches which one is next. Its kickouts are meant to ride the left ramp's return route back to your left flipper, though they do not always behave."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.35,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Very steep with a deceptively narrow sweet spot — aim the middle, not the sides. Barring the odd exception it sits armed as the opening shot of the combo sequence. Returns to the left inlane without crossing the inlane switch.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "pyramid",
+      "name": "Pyramid",
+      "type": "scoop",
+      "x": 0.4508,
+      "y": 0.9196,
+      "trim": "all",
+      "notes": "The gold centrepiece. The entrance is barely wider than the ball but it can be made from any flipper, and flailing at it with the upper right flipper works more often than you would expect. This is where modes start."
+    },
+    {
+      "id": "glider-left",
+      "name": "Left Glidercraft Target",
+      "type": "standup",
+      "x": 0.43,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "A kicker target left of the Pyramid entrance, angled toward the upper flipper. During normal play it changes which Transporter award is next.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "glider-right",
+      "name": "Right Glidercraft Target",
+      "type": "standup",
+      "x": 0.57,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "The mirror of the left one, with a pin in the middle. Hitting the pin square pays a bullseye award. The Glidercraft toy itself rises out of the Pyramid during its mode.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "right-guardian",
+      "name": "Right Guardian",
+      "type": "gate",
+      "x": 0.7,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Guards Trade Quartz. Raised by the left inlane or by its own standup. Four things put it back down again: making the Trade Quartz shot, draining, the end of a multiball, or collecting the 3X scoring award. Short of those, it stays raised."
+    },
+    {
+      "id": "right-guardian-target",
+      "name": "Right Guardian Target",
+      "type": "standup",
+      "x": 0.74,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Raises the right Guardian and nothing more — unlike the left one, it gives you no bonus over simply rolling the inlane."
+    },
+    {
+      "id": "trade-quartz",
+      "name": "Trade Quartz",
+      "type": "saucer",
+      "x": 0.71,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "The kicker behind the right Guardian. Every visit adds a Quartz and offers you a trade you can accept with the right flipper or refuse with the left. Fourth shot of the combo."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.66,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Steep with a hard U-turn at the top. Spots a STARGATE letter almost any time, and is the second shot of the combo sequence. Returns to the lower right flipper.",
+      "feeds": {
+        "x": 0.67,
+        "y": 0.05
+      }
+    },
+    {
+      "id": "right-lane",
+      "name": "Right Lane",
+      "type": "lane",
+      "x": 0.82,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Runs to a kicker at the back and returns down the skill shot habitrail toward the Sarcophagus. The Hurry-Up shot, and the one the upper right flipper blocks during multiball."
+    },
+    {
+      "id": "right-drop",
+      "name": "Right Lane Drop",
+      "type": "drop-target",
+      "x": 0.82,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "An oversized drop target the game raises and lowers to block the right lane. Knock it down to light the lane for a Sarcophagus award — but if you do not follow up in time it stays down and the lane goes dead until you shoot it."
+    },
+    {
+      "id": "ra-target",
+      "name": "Ra Kicker Target",
+      "type": "standup",
+      "x": 0.63,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Just above the right slingshot, reachable from the left flipper. Pays 5M, then 10M, then 20M, and stays lit about five seconds from the last hit.",
+      "flipper": "left"
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper Right Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Reaches the left ramp, both Glidercraft targets, the Pyramid, the 2-bank and — awkwardly — the left outlane. The right button is two-stage, so you can drop this flipper while holding the lower one up."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.25,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Raises the right Guardian to open Trade Quartz. The habitrail does not cross the switch, so the reliable way to trigger it is to come out of the pop bumpers down the left."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.75,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Puts the left Guardian up and arms the left lane, so a Transporter shot inside the next fifteen seconds or so adds to the Horus value."
+    },
+    {
+      "id": "segment-wheel",
+      "name": "Segment Circle",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "The ring of seven inserts closest to the flippers. Each one is a feature you have to complete once, and all seven together is the wizard multiball. Worth 10M each in the end-of-game bonus."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Sarcophagus Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge hard enough to carry past the right ramp return intersection but not so hard that it exits the top hole. Reaching the Sarcophagus pays 10M and a Sarcophagus award, which is either multiball or three Quartz.",
+      "difficulty": 2,
+      "reward": "10M plus a Sarcophagus award",
+      "steps": [
+        {
+          "shot": "sarcophagus",
+          "action": "Find the middle plunge strength to reach the Sarcophagus",
+          "detail": "Too hard and the ball leaves through the upper hole to the upper flipper for nothing at all; too soft and it dribbles down the right ramp return — catch it and shoot the left lane instead for a consolation 10M and a Horus advance, but nothing else. Land it in the Sarcophagus and odd-numbered visits start multiball, so the very first skill shot of a ball can hand you one."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "sarcophagus-award",
+      "title": "Working The Sarcophagus",
+      "category": "strategy",
+      "summary": "Outside the skill shot there is one way in: knock down the right lane drop target and then shoot the right lane within the next fifteen seconds or so. Miss the window and the target stays down and the lane pays nothing until you shoot it again.",
+      "difficulty": 2,
+      "reward": "Multiball or three Quartz, alternating",
+      "steps": [
+        {
+          "shot": "right-drop",
+          "action": "Drop the target",
+          "detail": "This lights the lane behind it for a short window."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Follow up immediately",
+          "detail": "The reward alternates: multiball, then three Quartz, then multiball again."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Reset a missed window",
+          "detail": "If the timer runs out the drop stays flat and the lane is dead — shooting the lane anyway is what raises it again."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "drop-millions",
+      "title": "Drop Target Millions",
+      "category": "combo",
+      "summary": "With all five drops standing, the leftmost 3-bank target flashes for 5M. Take them strictly in order — 5M, 10M, 20M, 40M, 80M — and the run is worth 155M. Hit any of the five out of order and the whole sequence dies until they all reset.",
+      "difficulty": 3,
+      "reward": "155M for the full run",
+      "steps": [
+        {
+          "shot": "three-bank",
+          "action": "Start left to right",
+          "detail": "5M then 10M then 20M. The lower values give you plenty of time; the timer tightens as the value climbs."
+        },
+        {
+          "shot": "two-bank",
+          "action": "Sweep the 2-bank",
+          "detail": "The 40M window is only four or five seconds and the 80M is one or two, so hitting both in one shot is the practical answer."
+        },
+        {
+          "shot": "three-bank",
+          "action": "Do not touch anything else",
+          "detail": "One out-of-order drop aborts the run. If you cannot get the 20M lit, this is not worth going out of your way for."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "ras-power",
+      "title": "Ra's Power",
+      "category": "combo",
+      "summary": "Sweep a whole bank in one shot and you collect Ra's Power. Each ball it resets to 5M, then grows every time you take it again. Knocking down the right lane drop lights the 2-bank for Double, which doubles what you take.",
+      "difficulty": 2,
+      "reward": "5M and climbing, doubled when lit",
+      "steps": [
+        {
+          "shot": "two-bank",
+          "action": "Sweep the pair",
+          "detail": "Two targets facing right is far easier to clear in one hit than the 3-bank."
+        },
+        {
+          "shot": "right-drop",
+          "action": "Light Double first",
+          "detail": "Dropping the right lane target turns on the Double insert at the 2-bank."
+        },
+        {
+          "shot": "three-bank",
+          "action": "Take a lucky 3-bank sweep",
+          "detail": "Those three face straight at your flipper, so realistically this only happens off a Sarcophagus kickout."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "hurry-up",
+      "title": "Hurry-Up",
+      "category": "mode",
+      "summary": "Light it with ten pop bumper hits or ten combos, then shoot the right lane inside ten to fifteen seconds. The awards ladder up across the whole game rather than resetting each ball: 10M, then 30M, then an extra ball, then 50M.",
+      "difficulty": 2,
+      "reward": "10M, 30M, extra ball, 50M",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Bank ten bumper hits",
+          "detail": "The left lane past a lowered Guardian is the way in, and the bumpers are an easy left-flipper shot."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Collect before it expires",
+          "detail": "The drop target lowers for you when the award is lit, so the lane is open."
+        },
+        {
+          "shot": "segment-wheel",
+          "action": "Bank the Segment",
+          "detail": "Collecting a Hurry-Up lights one of the seven Segments you need for the wizard multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "combo-sequence",
+      "title": "The Combo Sequence",
+      "category": "combo",
+      "summary": "Five shots, always the same and always in this order: left ramp, right ramp, left lane, Trade Quartz, Pyramid. Timing out is barely a concern; what ends the run is touching any switch that is not the next one in line, and a rattle through the pop bumpers while you are feeding the left lane counts.",
+      "difficulty": 3,
+      "reward": "5M to 30M climbing, plus a Super Jackpot advance",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start on the left ramp",
+          "detail": "Starting the sequence already counts as your first combo, worth 5M."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cross to the right ramp",
+          "detail": "10M, and this second shot is what awards the Combo Segment."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Take the left lane",
+          "detail": "20M. A pop bumper hit on the way in counts as a wrong switch and ends the run."
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Then Trade Quartz",
+          "detail": "30M, and the right Guardian needs to already be up for this shot to exist."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Finish on the Pyramid",
+          "detail": "The fifth shot advances the Super Jackpot, which is the real reason to bother with the sequence."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "white-pyramids",
+      "title": "White Pyramids",
+      "category": "progression",
+      "summary": "Seven shots around the playfield carry a white pyramid insert. Only one is lit at a time and there is no fixed order — make the lit one and it turns solid and lights another. Completing all seven pays five Quartz or 30M and banks a Segment.",
+      "difficulty": 2,
+      "reward": "Five Quartz or 30M, plus the Pyramid Segment",
+      "steps": [
+        {
+          "shot": "left-guardian",
+          "action": "Watch which insert is on",
+          "detail": "The seven are the left Guardian, left ramp, Pyramid, right Guardian, right ramp, right lane and the Ra target."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Take whatever is lit",
+          "detail": "Put a ball into an insert that is flashing, or one you have already turned solid, and the display will usually tip off the next award."
+        },
+        {
+          "shot": "ra-target",
+          "action": "Do not chase them for their own sake",
+          "detail": "The awards are modest. Finish them only when the Pyramid Segment is the thing standing between you and the wizard multiball."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "stargate-letters",
+      "title": "Spell STARGATE",
+      "category": "progression",
+      "summary": "The right ramp spots a letter nearly every time. The game hands you several letters at the start, so the first completion takes about four shots. Awards come in fixed order: three Quartz, then a Super Jackpot advance, then five Quartz.",
+      "difficulty": 1,
+      "reward": "Quartz and Super Jackpot advances",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Just keep shooting the right ramp",
+          "detail": "There is no insert tracking your progress — the display animation on each ramp shot is your only readout."
+        },
+        {
+          "shot": "segment-wheel",
+          "action": "Bank the Segment on the first completion",
+          "detail": "Later completions still pay, but only the first lights the Spell Stargate Segment."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "transporter-awards",
+      "title": "Transporter Awards",
+      "category": "mode",
+      "summary": "Hit the left Guardian while it is down to light the Transporter, then take the left lane. The first pool holds five Quartz, extra ball, a Super Jackpot advance and 3X scoring, with Sandstorm fifth. The left Glidercraft target reorders them.",
+      "difficulty": 2,
+      "reward": "Quartz, extra ball, SJ advance, 3X scoring",
+      "steps": [
+        {
+          "shot": "left-guardian-target",
+          "action": "Light it off the standup",
+          "detail": "The standup lights the Transporter; the right inlane only raises the Guardian."
+        },
+        {
+          "shot": "glider-left",
+          "action": "Choose your award",
+          "detail": "Every hit on the left Glidercraft target rotates which award comes next, and the display tells you what it is."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Collect through the raised Guardian",
+          "detail": "A lit Transporter does not survive a drain, and starting a mode usually wipes it as well."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "three-x-scoring",
+      "title": "The 3X Scoring Trick",
+      "category": "secret",
+      "summary": "3X scoring is a thirty second Transporter award that multiplies absolutely everything, super jackpots included. The quirk is that its timer stops dead during any multiball — take it into one and you have triple scoring for the entire multiball.",
+      "difficulty": 3,
+      "reward": "Triple scoring for a whole multiball",
+      "steps": [],
+      "instructions": [
+        "3X is the fourth award in the first Transporter pool and appears again in the second pool.",
+        "The timer freezes during regular multiball, Stargate Multiball and Eye of Ra, so those thirty seconds can cover several minutes of play.",
+        "That means you should deliberately avoid collecting it until you are ready to start a big multiball.",
+        "Use the left Glidercraft target to push the award order around so 3X is not next when you do not want it.",
+        "If you take it at the wrong moment, salvage it by starting Battle, Glidercraft or Rebellion — all three score heavily under a multiplier.",
+        "Collecting 3X also drops the right Guardian, so Trade Quartz will need relighting afterwards."
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "quartz-trading",
+      "title": "Trading Quartz",
+      "category": "strategy",
+      "summary": "Quartz accumulate from Sarcophagus awards, Transporter awards, White Pyramid and STARGATE completions and the 3-bank middle target. Trade Quartz offers a prize based on how many you hold — accept with the right flipper, decline with the left.",
+      "difficulty": 2,
+      "reward": "Scales from 10M up to a Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Open the shot",
+          "detail": "The left inlane or the right Guardian's standup raises the Guardian so the kicker is reachable."
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Know what tier you are in",
+          "detail": "Roughly: one to three Quartz is 10M, four to six is 50M, seven to nine lights extra ball, ten to fifteen double-advances the Super Jackpot, and twenty and up completes all Segments or pays the Super Jackpot outright."
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Refuse the low offers",
+          "detail": "Trading spends every Quartz you hold and starts you back at zero, so declining early offers is usually correct."
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Never take Sandstorm here",
+          "detail": "The sixteen-to-nineteen tier offers Sandstorm; a few more Quartz gets you a Super Jackpot or all seven Segments, and either is worth far more."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "super-jackpot",
+      "title": "Build The Super Jackpot",
+      "category": "multiplier",
+      "summary": "The Super Jackpot starts at 100M and holds for the whole game, growing every time you advance it. Four things feed it: a Transporter award, the Quartz double-advance, a STARGATE completion and a full combo sequence. Aim for 500M before you start anything big.",
+      "difficulty": 2,
+      "reward": "100M base, +100M per advance, +200M doubled",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Spell STARGATE repeatedly",
+          "detail": "The second completion is a Super Jackpot advance, and the ramp is the safest repeat shot on the game.",
+          "link": "none"
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Take the double advance",
+          "detail": "The ten-to-fifteen Quartz tier moves it twice in one go and is the single most efficient way to build it.",
+          "link": "none"
+        },
+        {
+          "shot": "pyramid",
+          "action": "Finish combos",
+          "detail": "The fifth combo shot advances it as well.",
+          "link": "none"
+        },
+        {
+          "shot": "segment-wheel",
+          "action": "Do the building first",
+          "detail": "Stargate Multiball and Eye of Ra are mostly wasted if you reach them with a small Super Jackpot, and you only get one Stargate Multiball per game."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "regular-multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Every odd-numbered Sarcophagus visit starts a two-ball multiball, and the first jackpot adds a third ball. Level one lights three of the six 10M jackpots at once and each one you make lights the next in the fixed order, so only one is left by the end; collect all six and the Pyramid opens up for the Super Jackpot.",
+      "difficulty": 2,
+      "reward": "10M jackpots, then the Super Jackpot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Learn the order",
+          "detail": "Level one lights left ramp, left lane, Ra target, right lane, right ramp, Trade Quartz — making one lights the next."
+        },
+        {
+          "shot": "ra-target",
+          "action": "Shoot ahead of the display",
+          "detail": "Because the order is fixed you can already be aiming at the next jackpot while the last one is still registering."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Cash the Super Jackpot",
+          "detail": "All six jackpots light the Pyramid. Collecting it moves you to level two, where only one jackpot is lit at a time and the payoff is a double Super Jackpot."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Park a ball when you need to",
+          "detail": "Shooting the left lane with one ball buys you a clean look at the right lane with the other."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "sandstorm",
+      "title": "Sandstorm",
+      "category": "multiball",
+      "summary": "A three-ball multiball where the major shots — Guardians, both ramps, the Pyramid, the right lane and the Ra target — are each worth 10M. Only real shots count, not every switch, so it scores less than its name suggests, and the total pays at end of ball.",
+      "difficulty": 2,
+      "reward": "10M per major shot, paid at end of ball",
+      "steps": [
+        {
+          "shot": "transporter",
+          "action": "Take it from the Transporter",
+          "detail": "It is the fifth award in the first pool, and after that it is eleven Transporters away."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hunt shots, not switches",
+          "detail": "Both Guardians sit down during the mode, and the right ramp and Pyramid go dark at points, so keep checking what is still lit."
+        },
+        {
+          "shot": "right-lane",
+          "action": "Do not tilt",
+          "detail": "Nothing is paid until the end of the ball, and the mode ends as soon as you are down to one ball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "segments",
+      "title": "The Seven Segments",
+      "category": "progression",
+      "summary": "The ring of inserts nearest the flippers holds seven features. Complete each one once and you start Stargate Multiball. They are also worth 10M each in the end-of-game bonus, which you forfeit entirely if you tilt on your last ball.",
+      "difficulty": 2,
+      "reward": "Stargate Multiball, plus 10M per Segment at game end",
+      "steps": [],
+      "instructions": [
+        "Sarcophagus — reach it once, by skill shot or through the right lane drop target.",
+        "Trade Quartz — the first time you shoot the kicker behind the right Guardian.",
+        "Transporter — the first time you collect a Transporter award.",
+        "Spell STARGATE — the first full completion on the right ramp.",
+        "Hurry-Up — collect one right lane Hurry-Up.",
+        "Combo — awarded on the second combo shot, the right ramp.",
+        "Pyramid — complete all seven White Pyramid shots.",
+        "You will see a spinning wheel animation each time one is banked. The twenty-Quartz trade can hand you all seven at once."
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "stargate-multiball",
+      "title": "Stargate Multiball",
+      "category": "wizard",
+      "summary": "All seven Segments starts a three-ball multiball with every major shot lit for a 20M jackpot at once. Make all seven and you collect the Super Jackpot, then all seven relight. You only get this once per game — there is no second attempt.",
+      "difficulty": 3,
+      "reward": "20M jackpots and a repeating Super Jackpot",
+      "steps": [
+        {
+          "shot": "segment-wheel",
+          "action": "Complete all seven Segments",
+          "detail": "If you are in another multiball or a mode when the seventh lands, it waits until that finishes."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Sweep all seven shots",
+          "detail": "Left lane, left ramp, Pyramid, Trade Quartz, right ramp, right lane and the Ra target, in any order."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Take the Super Jackpot",
+          "detail": "The seventh shot pays its jackpot and then the Super Jackpot, and everything relights for another round."
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Arrive with a big Super Jackpot",
+          "detail": "The ball save is short and unannounced. With a small Super Jackpot this whole mode is worth less than a good Battle."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "eye-of-ra",
+      "title": "Eye Of Ra",
+      "category": "wizard",
+      "summary": "Play all six modes and the eye at the centre of the mode circle flashes. Shoot the Pyramid for a four-ball multiball in three stages, each paying a Super Jackpot. There is a very short ball save at the start, and balls drained in the first two stages are replaced without one.",
+      "difficulty": 3,
+      "reward": "A Super Jackpot for each of the three stages",
+      "steps": [
+        {
+          "shot": "pyramid",
+          "action": "Start it",
+          "detail": "Only available once all six modes have been played, and only from the Pyramid."
+        },
+        {
+          "shot": "glider-right",
+          "action": "Stage one: five Glidercraft hits",
+          "detail": "Six on harder settings. The display counts down what is left."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Stage two: left lane and Trade Quartz",
+          "detail": "Both Guardians raise and lower on their own every three or four seconds. Hold a ball on each flipper, take one shot when they come up, wait for the next cycle, take the other. The first one is worth 20M."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Stage three: three Pyramid shots",
+          "detail": "Four on hard settings. Clear all three stages with more than one ball alive and you drop straight into multiball at level two."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "battle",
+      "title": "Battle",
+      "category": "mode",
+      "summary": "The best mode in the game. Both Guardians raise and the shots behind them pay the Horus bonus, which starts at 10M and goes up 10M with every hit. Twenty seconds to start but each shot adds three, capped at twenty five, and the shots feed each other.",
+      "difficulty": 2,
+      "reward": "Horus bonus, 10M and climbing per shot",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Pre-load the Horus value",
+          "detail": "During normal play, roll the right inlane then shoot the Transporter promptly to add 10M to the value before the mode ever starts."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Alternate the two Guardian shots",
+          "detail": "Land one Guardian shot, keep the flipper raised so the feed sticks to it, then swing across to the other."
+        },
+        {
+          "shot": "trade-quartz",
+          "action": "Keep the loop going",
+          "detail": "Every hit buys three more seconds, so a clean rhythm can run this mode far past its opening twenty."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Stack it if you can",
+          "detail": "Battle under 3X scoring is one of the highest-value things on the machine. It ends the instant the timer hits zero, with no grace period."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "quartz-mode",
+      "title": "Quartz",
+      "category": "mode",
+      "summary": "A multiball mode with one rule: both ramps strobe and each one adds a Quartz. Simple, and with two balls under control it can be farmed almost indefinitely.",
+      "difficulty": 2,
+      "reward": "One Quartz per ramp shot",
+      "steps": [
+        {
+          "shot": "pyramid",
+          "action": "Start it from the Pyramid",
+          "detail": "Hitting either ramp launches the third ball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp from the left flipper",
+          "detail": "Get one ball on each flipper first."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Then the left lane from the right flipper",
+          "detail": "The ramp ball returns to your right flipper and the left lane ball comes back off the Transporter to your left. Hold both flippers up and repeat."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "rebellion",
+      "title": "Rebellion",
+      "category": "mode",
+      "summary": "A multiball mode where the pop bumpers are worth 5M each. Nothing to aim at beyond the bumper nest, which makes it one of the easiest big-scoring modes on the machine.",
+      "difficulty": 1,
+      "reward": "5M per bumper hit",
+      "steps": [
+        {
+          "shot": "left-guardian-target",
+          "action": "Get the third ball",
+          "detail": "The left Guardian's standup is what launches it."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Feed the nest from the left flipper",
+          "detail": "Hold one or two balls on the right flipper and keep sending the other one up."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let it rattle",
+          "detail": "Balls tend to find your left flipper again on the way out, whether they exit through the extra ball rollover or bank around off the right slingshot."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "ras-temple",
+      "title": "Ra's Temple",
+      "category": "mode",
+      "summary": "The Ra kicker target flashes and each of two hits adds a ball, so you can end up with four in play. After that the Pyramid is lit for unlimited 50M shots, which makes this the most lucrative mode if you can hit the Pyramid consistently.",
+      "difficulty": 2,
+      "reward": "Unlimited 50M Pyramid shots",
+      "steps": [
+        {
+          "shot": "ra-target",
+          "action": "Hit the kicker twice",
+          "detail": "Each hit adds a ball. The target is a left-flipper shot."
+        },
+        {
+          "shot": "pyramid",
+          "action": "Loop the Pyramid",
+          "detail": "50M a shot with no cap. The Pyramid returns to the left flipper, so shooting it from there lets you simply repeat."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Or run the two-flipper pattern",
+          "detail": "With a ball on each flipper, shoot the Pyramid from the right and the right ramp from the left, catch both and repeat."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "glidercraft",
+      "title": "Glidercraft",
+      "category": "mode",
+      "summary": "The Glidercraft rises out of the Pyramid and the two kicker targets either side of it are lit for 5M, rising to 10M and eventually 20M. A flail-friendly multiball mode with almost no aiming required.",
+      "difficulty": 1,
+      "reward": "5M per target, climbing to 20M",
+      "steps": [
+        {
+          "shot": "glider-left",
+          "action": "Start hammering",
+          "detail": "Whichever Glidercraft target you connect with first is what puts the third ball into play."
+        },
+        {
+          "shot": "glider-right",
+          "action": "Use both sides",
+          "detail": "They are kicker targets, so they push the ball straight back at you for another go."
+        },
+        {
+          "shot": "upper-right-flipper",
+          "action": "Work from the upper flipper",
+          "detail": "The left target in particular is an easy upper-right-flipper shot."
+        }
+      ],
+      "fx": "space",
+      "ordered": false
+    },
+    {
+      "id": "save-sari",
+      "title": "Save Sari",
+      "category": "mode",
+      "summary": "A countdown at the right lane starting at 30M and falling fast to 10M, at which point the mode ends. Collecting resets it to 50M but the next one needs the drop target and the lane again — and with the Sarcophagus spitting the ball back at you, control is not something you have.",
+      "difficulty": 1,
+      "reward": "30M falling to 10M",
+      "steps": [
+        {
+          "shot": "right-lane",
+          "action": "Take the first value if it is there",
+          "detail": "It falls quickly, so only shoot it if you already have the ball trapped and pointing that way."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Otherwise ignore it",
+          "detail": "Hold the ball, wait it out, and spend the time on a STARGATE letter instead. This is the one mode that is genuinely not worth playing."
+        }
+      ],
+      "fx": "space"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "sg-skillshot",
+      "title": "Into The Sarcophagus",
+      "desc": "Land the plunge in the Sarcophagus for 10M and an award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "sg-stargate",
+      "title": "Spell It Out",
+      "desc": "Complete STARGATE on the right ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "stargate-letters"
+    },
+    {
+      "id": "sg-hurry-up",
+      "title": "Beat The Clock",
+      "desc": "Light the Hurry-Up and collect it in the right lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hurry-up"
+    },
+    {
+      "id": "sg-battle",
+      "title": "Horus Rising",
+      "desc": "Run Battle past its opening twenty seconds by chaining Guardian shots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "battle"
+    },
+    {
+      "id": "sg-multiball",
+      "title": "Six Jackpots",
+      "desc": "Light and collect all six jackpots in regular multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "regular-multiball"
+    },
+    {
+      "id": "sg-drops",
+      "title": "One Five Five",
+      "desc": "Run the drop targets in order for the full 155M.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "drop-millions"
+    },
+    {
+      "id": "sg-combo",
+      "title": "Five In A Row",
+      "desc": "Complete the whole five-shot combo sequence without touching a wrong switch.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-sequence"
+    },
+    {
+      "id": "sg-3x",
+      "title": "Frozen Clock",
+      "desc": "Carry 3X scoring into a multiball and hold it for the whole thing.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "three-x-scoring"
+    },
+    {
+      "id": "sg-quartz",
+      "title": "Rich In Quartz",
+      "desc": "Hold twenty Quartz and trade them for all seven Segments.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "quartz-trading"
+    },
+    {
+      "id": "sg-stargate-mb",
+      "title": "All Seven Segments",
+      "desc": "Complete every Segment and start Stargate Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "stargate-multiball"
+    },
+    {
+      "id": "sg-eye-of-ra",
+      "title": "Eye Of Ra",
+      "desc": "Play all six modes, then clear all three stages of Eye of Ra.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "eye-of-ra"
+    }
+  ],
+  "drills": [
+    {
+      "id": "find-the-middle-plunge",
+      "title": "Find The Middle Plunge",
+      "text": "This plunge has a middle setting: too hard and the ball leaves through the top hole for nothing, too soft and it dribbles down the right ramp return. Work the strength that reaches the Sarcophagus, and when you come up short, catch the dribble and send it up the left lane for the consolation instead of flipping at it blind.",
+      "reps": "every ball, one full game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "sarcophagus",
+        "left-lane"
+      ]
+    },
+    {
+      "id": "the-five-in-order",
+      "title": "The Five, In Order",
+      "text": "Always the same five and always the same order: left ramp, right ramp, left lane, Trade Quartz, Pyramid. The clock is barely the problem — any switch that is not the next one in line ends the run, and a rattle through the pop bumpers on the way into the left lane counts as one. Raise the right Guardian before you start, or the fourth shot does not exist.",
+      "reps": "10 attempts, noting how far you get",
+      "focus": "flow",
+      "goal": "combo-sequence",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "left-lane",
+        "trade-quartz",
+        "pyramid",
+        "pop-bumpers"
+      ]
+    },
+    {
+      "id": "right-ramp-is-the-bank",
+      "title": "The Right Ramp Is The Bank",
+      "text": "The right ramp is the safest repeat shot on the machine and it spots a STARGATE letter nearly every time, with the completions feeding the Super Jackpot. Build that number up before you go near Stargate Multiball — you only get one of those a game, and it is worth exactly what you brought to it.",
+      "reps": "two STARGATE completions in a ball",
+      "focus": "accuracy",
+      "goal": "super-jackpot",
+      "shots": [
+        "right-ramp",
+        "trade-quartz",
+        "pyramid"
+      ]
+    },
+    {
+      "id": "hold-the-flipper-in-battle",
+      "title": "Hold The Flipper In Battle",
+      "text": "Pre-load the Horus value in normal play — roll the right inlane, then take the Transporter promptly — so the mode starts higher than it should. Then alternate the two Guardian shots, keeping the flipper raised after each one so the feed sticks there before you swing across; every hit buys more seconds, so the rhythm is what keeps it alive.",
+      "reps": "3 Battles, tracking how long you extend them",
+      "focus": "ball-control",
+      "goal": "battle",
+      "shots": [
+        "right-inlane",
+        "transporter",
+        "left-lane",
+        "trade-quartz"
+      ]
+    },
+    {
+      "id": "drops-strictly-in-order",
+      "title": "Drops, Strictly In Order",
+      "text": "Take the 3-bank left to right, then sweep the 2-bank in a single shot, because those last two windows are only a few seconds wide. One target out of order kills the whole run until everything resets, so if you cannot get the third one lit, leave the drops alone entirely.",
+      "reps": "5 full runs attempted",
+      "focus": "accuracy",
+      "goal": "drop-millions",
+      "shots": [
+        "three-bank",
+        "two-bank"
+      ]
+    },
+    {
+      "id": "one-ball-each-flipper",
+      "title": "One Ball On Each Flipper",
+      "text": "Settle a ball on each flipper before you shoot anything, then take the right ramp from the left flipper and the left lane from the right. The ramp ball comes back to your right flipper and the left lane ball returns off the Transporter to your left, so with both flippers held up the pattern feeds itself.",
+      "reps": "5 cycles without losing the pattern",
+      "focus": "flow",
+      "goal": "quartz-mode",
+      "shots": [
+        "right-ramp",
+        "left-lane",
+        "transporter"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "space",
+  "actionButton": {
+    "present": false,
+    "how": "Nothing dedicated on the cabinet, but the right flipper button is two-stage and that is worth learning. Push it fully and both right flippers go up; ease back to the first stage and the upper right flipper drops while the lower one stays raised, so you can clear your own view of the right lane without dumping a cradled ball."
+  },
+  "howItPlays": {
+    "objective": "Step through the gate to Ra's desert world and take the fight to him. Bank the seven Segments for Stargate Multiball, run all six modes for Eye of Ra, and grow a Super Jackpot that carries the whole game.",
+    "loop": [
+      "Feather the plunge so the ball settles in the Sarcophagus for the skill shot -- odd visits fire off a multiball, so your opening shot can start one.",
+      "Lean on the Right Ramp to spell STARGATE, and run the fixed five-shot combo string; both feed the Super Jackpot.",
+      "Stockpile Quartz from the Sarcophagus, the Transporter and your completions, then cash them at Trade Quartz for a prize that grows with your count.",
+      "Finish each of the seven Segments once for Stargate Multiball, and run all six modes to arm Eye of Ra at the Pyramid."
+    ],
+    "lights": [
+      {
+        "id": "stargate-letters",
+        "name": "Spell STARGATE",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "The Right Ramp spots a STARGATE letter on nearly every shot, and since no insert tracks it, you read your progress off the display alone.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep leaning on the most reliable repeat shot to finish the word -- the first spelling banks its Segment, and its rewards arrive in a set order of three Quartz, a Super Jackpot bump, then five Quartz.",
+        "goals": [
+          "stargate-letters",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "combo-sequence",
+        "name": "The Combo Sequence",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-lane"
+          },
+          {
+            "shot": "trade-quartz"
+          },
+          {
+            "shot": "pyramid"
+          }
+        ],
+        "lit": "A five-shot string runs in one fixed order and only the next shot in line is ever live: the two ramps, then the left lane, then Trade Quartz, then the Pyramid.",
+        "flashing": null,
+        "control": null,
+        "then": "Run it clean for five million rising to thirty; shot two banks the Combo Segment and shot five bumps the Super Jackpot. Any switch out of turn kills the string, so put the right Guardian up beforehand or that fourth shot is not even there.",
+        "goals": [
+          "combo-sequence",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "trade-quartz",
+        "name": "Trade Quartz",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "trade-quartz"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-guardian-target"
+          }
+        ],
+        "lit": "The left inlane or the right Guardian standup lifts that Guardian to expose the Trade Quartz kicker, and each visit adds a Quartz and dangles an offer.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "your right flipper takes the offered trade and your left waves it off, and taking it cashes every Quartz you hold and drops you back to none",
+          "when": "while the kicker is showing you an offer"
+        },
+        "then": "Wave off the little offers and wait for the fat tiers, where ten to fifteen Quartz bumps the Super Jackpot twice and twenty-plus simply hands you all seven Segments or the jackpot itself. The Sandstorm offer sitting just under those is never worth taking.",
+        "goals": [
+          "quartz-trading",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "segments",
+        "name": "The Seven Segments",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "segment-wheel"
+          }
+        ],
+        "lit": "The insert ring closest to the flippers tracks the seven Segments, and each lights the first time you finish its feature -- among them the Sarcophagus, Trade Quartz, the Transporter, spelling STARGATE, the Hurry-Up, a combo and the Pyramid.",
+        "flashing": null,
+        "control": null,
+        "then": "Light every one to kick off Stargate Multiball, the single run you get per game, and each Segment is also worth ten million in the end-of-game bonus you lose completely on a last-ball tilt. One twenty-Quartz trade can gift the whole set at once.",
+        "goals": [
+          "segments",
+          "stargate-multiball"
+        ]
+      },
+      {
+        "id": "transporter-awards",
+        "name": "Transporter Awards",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-guardian-target"
+          },
+          {
+            "shot": "glider-left"
+          },
+          {
+            "shot": "left-lane"
+          }
+        ],
+        "lit": "Tagging the left Guardian standup arms the Transporter behind the left lane, which you then cash by running the left lane through the raised Guardian.",
+        "flashing": null,
+        "control": null,
+        "then": "Each tag of the left Glidercraft target spins the award order forward -- Quartz, an extra ball, a Super Jackpot bump, then 3X scoring. Sit on 3X until a multiball begins, because its clock stalls there and can blanket the entire thing.",
+        "goals": [
+          "transporter-awards",
+          "three-x-scoring"
+        ]
+      },
+      {
+        "id": "drop-millions",
+        "name": "The Drop Targets",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "three-bank"
+          },
+          {
+            "shot": "two-bank"
+          },
+          {
+            "shot": "right-drop"
+          }
+        ],
+        "lit": "With every one of the five drops up, the far-left target on the 3-bank flashes to open the run.",
+        "flashing": null,
+        "control": null,
+        "then": "Take them dead in order for a hundred and fifty-five million -- five, ten, twenty across the 3-bank, then the 2-bank swept for forty and eighty -- because a single drop out of sequence ends it until they reset. A one-shot sweep of a whole bank also banks Ra's Power, doubled when you drop the right-lane target first.",
+        "goals": [
+          "drop-millions",
+          "ras-power"
+        ]
+      },
+      {
+        "id": "regular-multiball",
+        "name": "Multiball Jackpots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "sarcophagus"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "ra-target"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "trade-quartz"
+          },
+          {
+            "shot": "pyramid"
+          }
+        ],
+        "lit": "Each odd trip into the Sarcophagus opens a two-ball multiball whose first jackpot brings in a third ball, with level one lighting three of the six ten-million jackpots together.",
+        "flashing": null,
+        "control": null,
+        "then": "Their order never changes, so each jackpot lights the next and you can already be aiming ahead of the display. Clearing all six arms the Pyramid for the Super Jackpot and bumps you to level two.",
+        "goals": [
+          "regular-multiball",
+          "super-jackpot"
+        ]
+      },
+      {
+        "id": "hurry-up",
+        "name": "Right Lane Hurry-Up",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-drop"
+          },
+          {
+            "shot": "right-lane"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "Ten jet-bumper hits or ten combos arm the Hurry-Up at the right lane, and outside the skill shot, knocking the right-lane drop down is the only other way to open the Sarcophagus.",
+        "flashing": null,
+        "control": null,
+        "then": "Fire the right lane inside its brief window -- the drop clears itself once the award is lit -- for a Hurry-Up that steps up across the game through ten, thirty, an extra ball and fifty million, and banks a Segment. Blow the Sarcophagus window and the drop stays down with the lane dead until you shoot it back up.",
+        "goals": [
+          "hurry-up",
+          "sarcophagus-award"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Feather the plunge to settle the ball in the Sarcophagus -- an odd visit can gift a multiball straight off the opener. Then sit on the Right Ramp, your safest repeat, which both spells STARGATE and grows the Super Jackpot, and take ten jet hits to arm the Hurry-Up.",
+        "goals": [
+          "skillshot",
+          "stargate-letters",
+          "hurry-up"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Grow the Super Jackpot tall before spending it, since STARGATE spellings, the combo string and a mid-tier Quartz trade all bump it and it never resets. Bank the seven Segments a feature at a time, and drag 3X scoring into a multiball where its clock freezes.",
+        "goals": [
+          "super-jackpot",
+          "segments",
+          "quartz-trading",
+          "three-x-scoring"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "All seven Segments open Stargate Multiball, a three-ball round with every major shot worth twenty million and a repeating Super Jackpot -- one shot per game, so walk in with a huge jackpot ready. Clear all six modes and Eye of Ra lights at the Pyramid for a three-stage, four-ball closer.",
+        "goals": [
+          "stargate-multiball",
+          "eye-of-ra"
+        ]
+      }
+    ]
+  }
+}

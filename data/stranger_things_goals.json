@@ -1,0 +1,1422 @@
+{
+  "machine": "Stranger Things (Stern Pinball, 2019)",
+  "defaultFx": "demo",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Shooter Lane / Plunge",
+      "type": "plunge",
+      "x": 0.98,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Auto-plunger channel up the right edge; ejects across the top of the playfield. Skill-shot origin: full plunge = flashing drop; soft plunge = toward flippers to shoot the saucer."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.08,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Leftmost lane hugging the left wall; 'bicycle' loop returns to the left flipper. Starts Season-1 chapters and is a 5-Way Combo chain shot.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Arcade Ramp)",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Safest shot on the game; returns to the left inlane. The Telekinesis lock shot and the start shot for every wizard/mini-wizard mode. Starts Season-1 chapters.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "left-saucer",
+      "name": "Left Saucer / Kicker (Where's Barb?)",
+      "type": "saucer",
+      "x": 0.28,
+      "y": 0.41,
+      "trim": "all",
+      "notes": "Primary kickout scoop (left eject). Super Skill Shot target, 2x-Scoring collect, Telekinesis Super Jackpot cash-out. Eject can be squirrelly toward the left orbit."
+    },
+    {
+      "id": "left-lane-target",
+      "name": "Left Standup / Mystery Lane",
+      "type": "standup",
+      "x": 0.15,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Lower-left standup faced by the right flipper. Mystery award (odd inlane completions), Extra Ball light, chapter-progress spotting, and many mode-finish shots.",
+      "flipper": "right"
+    },
+    {
+      "id": "spinner",
+      "name": "Demodog Spinner",
+      "type": "spinner",
+      "x": 0.1,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Sole spinner, sits in the lower left-orbit lane. Advances Follow the Compass lit shot and feeds Morse Code / Quarter Hunt switch value."
+    },
+    {
+      "id": "light-lock-targets",
+      "name": "Light Lock Green Standups",
+      "type": "target-bank",
+      "x": 0.33,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Two green standups flanking the left-ramp entrance (labeled LOCK BALL). Completing both lights Telekinesis locks."
+    },
+    {
+      "id": "center-drops",
+      "name": "Center 4-Bank Drop Targets",
+      "type": "drop-target",
+      "x": 0.55,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Four individually-controlled drops guarding the Demogorgon. Skill-shot flashing target lives here; clearing them qualifies Demogorgon modes and reveals the center shot. Can rise to trap a locked ball."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "type": "ramp",
+      "x": 0.52,
+      "y": 0.645,
+      "trim": "all",
+      "flap": {
+        "w": 0.33,
+        "h": 0.03
+      },
+      "notes": "Wide ramp straight up the middle, between the drop bank and the Demogorgon. The game raises and lowers it: lowered, the center shot reaches the mouth for the Super Jackpot; in Run Will! it cycles up and down every second or two, so the shot has to be timed. While a Demogorgon mode is running it also sits in the way of the left standup lane and the Burn It Back loop."
+    },
+    {
+      "id": "demogorgon-scoop",
+      "name": "Demogorgon Mouth / Center Shot",
+      "type": "scoop",
+      "x": 0.5204,
+      "y": 0.6709,
+      "trim": "all",
+      "notes": "Center scoop behind the drops; screen-ramp lifts the ball into the Demogorgon's mouth for an instant kill. The game's danger shot — bricks kick straight down the middle."
+    },
+    {
+      "id": "demodog-targets",
+      "name": "DEMODOG Standup Targets",
+      "type": "target-bank",
+      "x": 0.4,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Seven standups spelling D-E-M-O-D-O-G, spread across the playfield (two flank the saucer, two behind the drops, two flank the right ramp, one by the right-orbit exit). Spelling qualifies Demodog modes."
+    },
+    {
+      "id": "burn-it-back",
+      "name": "Burn It Back Loop (Right Inner Loop)",
+      "type": "loop",
+      "x": 0.65,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Inner loop just right of the drop bank; loops around to the left orbit. The most-farmed repeatable shot: award ladder for Extra Ball, Spell of Protection, and 2x Scoring.",
+      "feeds": {
+        "shot": "left-orbit"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.74,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "~180° ramp always returning to the right inlane, flanked by two DEMODOG targets. A 5-Way Combo chain shot; starts Season-2 chapters.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.87,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Rightmost lane up the right edge; feeds the pops or the opposite orbit. Starts Season-2 chapters; a 5-Way Combo terminal shot.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (Dart)",
+      "type": "bumpers",
+      "x": 0.76,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "Two 'Dart' pop bumpers in the upper right, fed by the orbits. Left pop cycles the Season-1 chapter list, right pop cycles Season-2; hits raise the Dart level for Lure Dart."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.17,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Feeds the left flipper. Return-lane completions cycle Bonus X (even) and light Mystery (odd). Fed by the left ramp and left orbit."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Feeds the right flipper. Fed by the right ramp; part of the inlane cycling that builds Bonus X and lights Mystery."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Soft-plunge the ball back toward the flippers, then immediately shoot the left saucer for a big, drain-safe skill award.",
+      "difficulty": 2,
+      "reward": "10M + 2.5M per successive skill shot; saucer is a safe cradle that sets up a Chapter start.",
+      "steps": [
+        {
+          "shot": "left-saucer",
+          "action": "Soft-plunge into the left saucer",
+          "detail": "Ease the plunge up just short of the top so it rolls back down toward the flippers and into the kicker/saucer for the Super Skill Shot; it also parks the ball for your next planned shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mxv-super-skill-shot",
+      "title": "MXV Super Skill Shot",
+      "category": "skillshot",
+      "summary": "The tournament skill shot: rebound the ball off the flashing drop target and into the saucer on a single plunge, scoring both normal skill shots at once.",
+      "difficulty": 3,
+      "reward": "Both normal skill shots' points, plus 25M + 5M per successive MXV, and +1 Drawing (a game-long currency).",
+      "steps": [
+        {
+          "shot": "center-drops",
+          "action": "Plunge with enough strength to clip the flashing drop target",
+          "detail": "Control the plunge so the ball reaches the flashing drop in the 4-bank with enough speed to rebound off it — not a soft plunge like the saucer skill shot, since it has to carry all the way there and still carom off with force."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Feed the rebound into the saucer",
+          "detail": "Catch the carom into the kicker to complete both skill shots on the same plunge."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "five-way-combo",
+      "title": "5-Way Combo",
+      "category": "combo",
+      "summary": "The one truly named combo and objective #1: chain five shots, each within a few seconds of the last. Grab it early so the +10M rides every bonus.",
+      "difficulty": 2,
+      "reward": "Solidly lights the 5-Way Combo objective; adds +10M to end-of-ball bonus for the rest of the game. Required for Final Showdown.",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Chain shot 1. First four shots may be any mix/repeat of left orbit, left ramp, Burn It Back, right ramp.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Chain shot 2 — the bicycle loop returns to the left flipper to keep control.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Chain shot 3; safe left-flipper feed keeps the timer alive.",
+          "link": "none"
+        },
+        {
+          "shot": "burn-it-back",
+          "action": "Shoot Burn It Back",
+          "detail": "Chain shot 4 — the right inner loop.",
+          "link": "none"
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Finish on the saucer",
+          "detail": "The saucer, left standup, center and right orbit all end the chain, so they can only ever be the fifth shot — but repeating any of the first four shots completes it just as well. The saucer is simply the safest finisher."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "burn-it-back-loop",
+      "title": "Burn It Back Money Loop",
+      "category": "combo",
+      "summary": "Repeatedly loop the right inner orbit for the game's best repeatable award ladder — Extra Ball, Spell of Protection ball-save, and 2x Scoring.",
+      "difficulty": 2,
+      "reward": "Extra Ball (loops 1-10 and at 50); Spell of Protection at 3/12/25 then +14; 2x Scoring lit at saucer at 7/18 then +14.",
+      "steps": [
+        {
+          "shot": "burn-it-back",
+          "action": "Loop Burn It Back repeatedly",
+          "detail": "The return is controllable, so keep re-shooting it. Loops accumulate all game toward the award ladder."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Cash 2x Scoring at the saucer",
+          "detail": "When the loop count lights 2x at the saucer (7, 18, 32, 46...), shoot the saucer for 60s of doubled scoring — ideally over a stack."
+        }
+      ],
+      "fx": "upside"
+    },
+    {
+      "id": "operation-mirkwood-combo",
+      "title": "Operation Mirkwood",
+      "category": "combo",
+      "summary": "Season-1 chapter built around comboing the two ramps back and forth; each consecutively comboed ramp adds +1M to the shot value.",
+      "difficulty": 2,
+      "reward": "Collect 10 items (10th = 10M, up to ~20M if all comboed); Extra Drawing for a 5-way combo using only ramps.",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start on the flashing ramp",
+          "detail": "Both ramps are lit at 1M each; the flashing ramp adds +1M combo. Left ramp is the safe entry."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Combo into the right ramp",
+          "detail": "Alternate ramp to ramp without breaking the chain to scale each comboed item upward."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep alternating ramps",
+          "detail": "Repeat left ramp then right ramp; each consecutive comboed ramp raises the value toward the 10-item finish."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "save-will-combo",
+      "title": "Save Will!",
+      "category": "combo",
+      "summary": "Season-2 chapter that is a fixed five-shot combo — complete all five in sequence without breaking the chain for a huge bonus.",
+      "difficulty": 3,
+      "reward": "~50M bonus + an extra Drawing if completed as one unbroken combo.",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Combo shot 1. Base 2M +250k per shot."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Combo shot 2 — bicycle return keeps the chain feed alive."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Combo shot 3."
+        },
+        {
+          "shot": "burn-it-back",
+          "action": "Shoot Burn It Back",
+          "detail": "Combo shot 4."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Finish the sequence",
+          "detail": "5th shot is a choice of saucer, left ramp, standup, or center. Landing all five unbroken pays the +50M."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "total-isolation-combo",
+      "title": "Total Isolation (Comboed Jackpots)",
+      "category": "combo",
+      "summary": "In the Isolation mini-wizard multiballs, the correct technique is chaining lit major shots — comboed jackpots are doubled.",
+      "difficulty": 3,
+      "reward": "Jackpots start ~1M +100k each and double when comboed; center scoop = Super Jackpot (3rd Super adds a ball).",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start Total Isolation at the left ramp",
+          "detail": "Qualified after playing a chapter on each of the 4 main shots; it always starts on the next left-ramp shot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Chain lit major shots",
+          "detail": "Hit lit majors back-to-back rather than picking off singles — combos double the jackpot value.",
+          "link": "none"
+        },
+        {
+          "shot": "burn-it-back",
+          "action": "Keep the combo alive",
+          "detail": "Flow ramp to loop to orbit to keep doubling; every unbroken shot is worth double.",
+          "link": "none"
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Cash the center Super Jackpot",
+          "detail": "Once you have enough jackpots (3 for the first Super), the center scoop lights for the Super."
+        }
+      ],
+      "fx": "upside"
+    },
+    {
+      "id": "telekinesis-multiball",
+      "title": "Telekinesis Multiball",
+      "category": "multiball",
+      "summary": "The priority multiball and objective #6 — reached via the safe left ramp, it is the easiest big-point engine and grants ball-save time.",
+      "difficulty": 2,
+      "reward": "3-ball MB; 5 lit jackpots (~1.1M rising) then Super Jackpot at the saucer (~6M); Super solidly lights the objective +1 Drawing.",
+      "steps": [
+        {
+          "shot": "light-lock-targets",
+          "action": "Light the locks",
+          "detail": "Hit both green Light Lock standups flanking the left ramp. On the first MB, completing both once lights all 3 locks."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Lock balls at the left ramp",
+          "detail": "Shoot the left ramp when lit to lock. It returns to the left flipper, so relock safely — the 3rd lock auto-starts the multiball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the 5 lit jackpots",
+          "detail": "Shoot the lit major shots for blue jackpots (~1.1M, +100k per Super)."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Cash the Super Jackpot",
+          "detail": "After the 5th jackpot the saucer lights for the ~6M Super. On Premium/LE relock a ball first for a 2x/3x Super via Eleven's magnet."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "trap-em-multiball",
+      "title": "Trap 'Em! (Demogorgon 2-Ball)",
+      "category": "multiball",
+      "summary": "The second Demogorgon mode and an alternate multiball — qualified by clearing the drop bank, then started at the Demogorgon.",
+      "difficulty": 2,
+      "reward": "2-ball MB; hurry-up locks a value, all majors light for jackpots, then Demogorgon Super = sum of all jackpots.",
+      "steps": [
+        {
+          "shot": "center-drops",
+          "action": "Knock down the drop bank",
+          "detail": "Clear the center 4-bank to qualify the Demogorgon (this is the 2nd Demogorgon mode, so more clears than Bust Out!)."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Start at the Demogorgon mouth",
+          "detail": "Shoot the center/mouth to start; then collect the hurry-up to lock its value."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the lit jackpots",
+          "detail": "All major shots light for jackpots (drops = 500k). Collect them all to light the Super."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Cash the Super Jackpot",
+          "detail": "The Demogorgon lights for a Super = sum of all jackpots; a 2nd Super is available before jackpots repeat and grow."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "run-will-multiball",
+      "title": "Run Will! (Demogorgon 4-Ball)",
+      "category": "multiball",
+      "summary": "A 4-ball Demogorgon multiball with a raising/lowering ramp — qualify via the drops, start at the mouth, then work the drops-to-Demogorgon jackpot cycle.",
+      "difficulty": 3,
+      "reward": "4-ball MB; Super Jackpot = total collected; collecting the Super restarts the jackpot phase.",
+      "steps": [
+        {
+          "shot": "center-drops",
+          "action": "Clear the drops to qualify",
+          "detail": "Complete the drop bank the required number of times for the 4th Demogorgon mode."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Start and lock the hurry-up value",
+          "detail": "Shoot the mouth to start; Phase 1 is a hurry-up at the Demogorgon to lock a value."
+        },
+        {
+          "shot": "center-drops",
+          "action": "Collect drops for jackpots",
+          "detail": "Phase 2 lights the drops for jackpots — the ramp raises/lowers every 1-2 sec, so time shots."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Cash the Super at the Demogorgon",
+          "detail": "Collecting the drops lights the Demogorgon for a Super = total collected; the Super restarts the phase."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "cant-stop-this-multiball",
+      "title": "Can't Stop This! (Demogorgon 5-Ball)",
+      "category": "multiball",
+      "summary": "The 5-ball Demogorgon multiball with a 60-second unlimited ball save — the highest-ceiling, lowest-risk repeat in the game.",
+      "difficulty": 3,
+      "reward": "5-ball MB; red jackpots everywhere, then Super at the Demogorgon = sum (cap 100M), relighting for repeat Supers.",
+      "steps": [
+        {
+          "shot": "center-drops",
+          "action": "Qualify and start",
+          "detail": "Clear the drops the required number of times, then shoot the mouth. A 60-sec unlimited ball save opens — play aggressively."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Sweep the red jackpots",
+          "detail": "Red jackpots are lit across the whole playfield; shoot each once to lower the ramp for the Super."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Cash the ~100M Super",
+          "detail": "Collect the Super at the Demogorgon (sum, cap 100M). Jackpots relight — grab as many Supers as you can inside 60s."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "wheres-barb-chapter",
+      "title": "Where's Barb?",
+      "category": "mode",
+      "summary": "A Season-1 chapter: start it on a left-side shot, then use the saucer to reveal which shot is flashing and hunt Barb down.",
+      "difficulty": 1,
+      "reward": "Shots start 1M (+250k per wrong guess), last shot 10M; finding Barb on the very first shot = 40M + extra Drawing. +1 Drawing.",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Light the chapter",
+          "detail": "Hit the left orbit (or left ramp) three times to light its three inserts. Pops cycle which chapter is selected."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Start the chapter",
+          "detail": "The third shot completes that lane's set of inserts and starts Where's Barb? on the spot — there is no fourth shot to take."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Shoot the saucer to reveal",
+          "detail": "The saucer (2M) reveals which shot is flashing where Barb might be."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the flashing shot",
+          "detail": "Hit the revealed flashing shot to find Barb; guessing right on the first shot pays the 40M jackpot."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "monster-hunting-chapter",
+      "title": "Monster Hunting!",
+      "category": "mode",
+      "summary": "A Season-1 chapter fought entirely at the drop targets across five escalating waves, finished with a center shot.",
+      "difficulty": 2,
+      "reward": "Drops score 1M/1.5M/2M/2.5M/3M per wave; final center shot 7M-28M. +1 Drawing.",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light and start the chapter",
+          "detail": "Three shots to the left ramp fill its set of three inserts and start the chapter; the left orbit and left ramp both run Season 1."
+        },
+        {
+          "shot": "center-drops",
+          "action": "Clear five waves of drops",
+          "detail": "Knock down the 4-bank across five waves; the drops reset after the first hit each wave and values climb."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Finish with the center shot",
+          "detail": "The center shot pays 7M for every drop you knocked down on the fifth wave, so putting all four down is the 28M maximum."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "quarter-hunt-chapter",
+      "title": "Quarter Hunt!",
+      "category": "mode",
+      "summary": "A Season-2 frenzy chapter: every switch scores, both ramps are lit to boost switch value, and each 25 hits levels up.",
+      "difficulty": 2,
+      "reward": "All switches = 50k; every 25 hits levels 1M/2.5M/5M/10M; a ramp adds +25k to switch value. +1 Drawing (+2 for all 4 levels).",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Light and start on the right side",
+          "detail": "Three shots to the right ramp, or to the right orbit, fill that lane's set of three inserts and start a Season-2 chapter."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Rack up switch hits",
+          "detail": "Everything scores 50k in the frenzy — bumpers and busy areas pile hits fast toward each 25-hit level-up.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Boost the switch value on ramps",
+          "detail": "Both ramps are lit; each ramp shot adds +25k to the switch value, so alternate ramps between frenzy bursts.",
+          "link": "none"
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "break-out-demodog",
+      "title": "Break Out! (Demodog Mode)",
+      "category": "mode",
+      "summary": "The first Demodog mode. Spell D-E-M-O-D-O-G on the standups to qualify it, shoot the left standup lane to start it, then blast the lit Demodog targets across three waves.",
+      "difficulty": 2,
+      "reward": "1M each, hit 15 to complete; wave 2 = 2M, wave 3 = 4M each. +1 Drawing; completing all 3 Demodog modes lights the Demodog! objective.",
+      "steps": [
+        {
+          "shot": "demodog-targets",
+          "action": "Spell D-E-M-O-D-O-G",
+          "detail": "Hit the Demodog standups to spell the word (the first mode can be spotted via the saucer) to qualify."
+        },
+        {
+          "shot": "demodog-targets",
+          "action": "Hit the lit Demodog targets",
+          "detail": "All Demodog targets light; hit 15 total to complete. Values rise each wave (1M/2M/4M)."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "twox-playfield-scoring",
+      "title": "2x Playfield Scoring",
+      "category": "multiplier",
+      "summary": "A 60-second all-scoring doubler lit at the saucer by Burn It Back loops — the single biggest score swing when timed over a stack.",
+      "difficulty": 2,
+      "reward": "60 seconds of doubled scoring on everything; stacks over multiballs and modes.",
+      "steps": [
+        {
+          "shot": "burn-it-back",
+          "action": "Loop Burn It Back to light 2x",
+          "detail": "2x lights at the saucer at loop counts 7, 18, then every +14 (32, 46...). Keep looping to reach a threshold."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Cash it over a stack",
+          "detail": "Do NOT cash cold. Wait until a multiball + mode are stacked, then shoot the saucer to double everything for 60s."
+        }
+      ],
+      "fx": "upside"
+    },
+    {
+      "id": "bonus-x-multiplier",
+      "title": "Bonus X (up to 5x)",
+      "category": "multiplier",
+      "summary": "Build the end-of-ball multiplier by cycling the return lanes — even completions add +1x. Max it before you drain a loaded bonus.",
+      "difficulty": 1,
+      "reward": "Bonus X from 1x to 5x; multiplies the whole carry-over bonus (5-Way +10M, Drawings, mode points, etc.).",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Cycle the left inlane",
+          "detail": "The left ramp returns to the left inlane; every even return-lane completion adds +1x (odd completions light Mystery instead)."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Complete a return lane",
+          "detail": "Roll through the inlane to bank the completion toward the next multiplier step."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Alternate the bicycle loop",
+          "detail": "The left orbit also feeds the inlane — alternate ramp and orbit to cycle lanes fast and push Bonus X to 5x before draining."
+        }
+      ],
+      "fx": "sparkle",
+      "ordered": false
+    },
+    {
+      "id": "send-it-back-wizard",
+      "title": "Send It Back",
+      "category": "wizard",
+      "summary": "A mini-wizard multiball (objective #2) qualified by completing all six Season-1 chapters, started at the left ramp.",
+      "difficulty": 3,
+      "reward": "Opens with 10M per Drawing; alternate major shots and center shots, then Super at the center ramp (or mouth for instant kill) = total mode points.",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete all 6 Season-1 chapters",
+          "detail": "Season-1 chapters start on the left orbit / left ramp; finish all six to qualify, then it starts on the next left-ramp shot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate major shots",
+          "detail": "Shoot each lit major flashing shot once, alternating with center shots."
+        },
+        {
+          "shot": "demodog-targets",
+          "action": "Hit the center shots",
+          "detail": "Between majors, collect the center shots (Demodog targets / center scoop)."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Cash the Super at the Demogorgon",
+          "detail": "After all majors the Demogorgon qualifies — shoot the center ramp for the Super or the mouth for an instant kill."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "final-showdown-wizard",
+      "title": "Final Showdown",
+      "category": "wizard",
+      "summary": "The true wizard mode: qualify by solidly lighting all six objective inserts, then start the final Demogorgon battle at the left ramp.",
+      "difficulty": 3,
+      "reward": "A multiball battle to seal the gate; completing it starts the Snow Ball Dance victory-lap mode for the rest of the ball.",
+      "steps": [
+        {
+          "shot": "burn-it-back",
+          "action": "Light 5-Way Combo + Demodog!",
+          "detail": "Objective set: complete the 5-Way Combo and all 3 Demodog modes (D-E-M-O-D-O-G to qualify Demodog modes).",
+          "link": "none"
+        },
+        {
+          "shot": "center-drops",
+          "action": "Light Demogorgon! + Send It Back + Light the Fire",
+          "detail": "Play all 5 Demogorgon modes and complete both seasons' 6 chapters each (drops qualify Demogorgon modes).",
+          "link": "none"
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Light Telekinesis Multiball",
+          "detail": "Collect the Telekinesis Super Jackpot at the saucer to solidly light the 6th objective.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start Final Showdown",
+          "detail": "With all six objectives lit, the next left-ramp shot starts the wizard multiball and the Demogorgon fight."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "safe-left-ramp-opener",
+      "title": "The Safe Left-Ramp Opener",
+      "category": "strategy",
+      "summary": "The consensus opener: bank all your early progress on the safe left side, which returns to the left flipper with almost no drain risk.",
+      "difficulty": 1,
+      "reward": "Arms Telekinesis Multiball and Bonus X under ball-save without ever losing flipper control.",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Hit the left ramp and Light Lock standups",
+          "detail": "The left ramp is the safest shot on the machine. Hitting both green Light Lock standups lights all 3 Telekinesis locks on the first multiball."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Repeat the left ramp to lock balls",
+          "detail": "Because it returns to the left flipper, relock repeatedly under ball-save. The 3rd lock auto-starts Telekinesis Multiball."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Use the left orbit to light a chapter",
+          "detail": "The bicycle loop also returns to the left flipper — light three inserts here to arm a Season-1 chapter safely."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "beginner-first-30-seconds",
+      "title": "Beginner: First 30 Seconds",
+      "category": "strategy",
+      "summary": "A copy-paste beginner playbook — take the safe skill shot, farm the left ramp, then grab any stack while ball-save is live.",
+      "difficulty": 1,
+      "reward": "Two scoring streams running at once under ball-save — never pass up a chance to run two things at once.",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Take the standard skill shot",
+          "detail": "Full plunge into the flashing drop for guaranteed points and no drain risk (5M +1M per prior)."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Farm the left ramp for locks",
+          "detail": "Repeatedly shoot the left ramp to hit both Light Lock standups and lock Telekinesis balls — safe, returns to the left flipper."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Light and start a Chapter",
+          "detail": "Put three inserts on the left orbit or left ramp, then re-shoot that lane to start a 30-45s chapter."
+        },
+        {
+          "shot": "demogorgon-scoop",
+          "action": "Avoid the center early",
+          "detail": "Do NOT chase the Demogorgon mouth cold — it's a drain magnet. Only attempt it under ball-save or multiball when required."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "max-bonus-before-drain",
+      "title": "Cash the Stack, Then Max Bonus",
+      "category": "strategy",
+      "summary": "The two biggest score levers, in order: layer 2x Scoring over a live stack, then cycle inlanes to max Bonus X before you drain.",
+      "difficulty": 2,
+      "reward": "A 60s doubler over a multiball + mode, plus a 5x multiplier on a loaded carry-over bonus — often more points than the ball itself.",
+      "steps": [
+        {
+          "shot": "burn-it-back",
+          "action": "Build 2x while stacked",
+          "detail": "Loop Burn It Back to light 2x at the saucer only once a multiball + chapter are running together."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Cash 2x Scoring",
+          "detail": "Hit the saucer to double everything for 60 seconds over the live stack — the single biggest swing in the game."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cycle inlanes before draining",
+          "detail": "On a big ball, spam a safe ramp to cycle the return lanes and push Bonus X toward 5x before you lose the ball."
+        },
+        {
+          "shot": "left-lane-target",
+          "action": "Grab Hold Bonus from Mystery",
+          "detail": "If Mystery is lit at the left standup, take Hold Bonus to carry a huge multiplied bonus into the next ball."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "demodog-mode-sweep",
+      "title": "All Three Demodog Modes",
+      "category": "mode",
+      "summary": "Spell the Demodog word three separate times across a game to qualify and play all three Demodog modes, which lights that objective.",
+      "difficulty": 3,
+      "reward": "+1 Drawing per mode; clearing all three solidly lights the Demodog! objective needed for the final wizard mode.",
+      "steps": [
+        {
+          "shot": "demodog-targets",
+          "action": "Spell the Demodog word to qualify",
+          "detail": "Hit the Demodog standups until the word is spelled. The first spelling can be spotted from the saucer; later ones must be earned on the targets."
+        },
+        {
+          "shot": "demodog-targets",
+          "action": "Clear the first mode's target waves",
+          "detail": "Hit the lit Demodog targets through all of the mode's waves; values climb each wave, so finish it rather than letting the timer run out."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Re-arm between modes",
+          "detail": "Use the saucer as a safe cradle between fights so you can keep feeding the Demodog standups to qualify the next mode."
+        },
+        {
+          "shot": "demodog-targets",
+          "action": "Finish modes two and three",
+          "detail": "Repeat the spell-then-start cycle twice more. Only the first fight happens on the standups — the second lights both orbits, then both ramps, then the left standup lane and Burn it Back, and the third lights all eight major shots at once."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "light-the-fire-wizard",
+      "title": "Light the Fire (Season 2 Mini-Wizard)",
+      "category": "wizard",
+      "summary": "The Season 2 counterpart to Send It Back: finish all six Season 2 chapters on the right-side lanes, then play the mini-wizard multiball it opens.",
+      "difficulty": 3,
+      "reward": "Mini-wizard multiball; its Super Jackpot pays out the mode total and solidly lights one of the six objectives for Final Showdown.",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Arm Season 2 chapters on the right side",
+          "detail": "Season 2 chapters live on the right ramp and the right orbit. Three shots to either lane fill its set of three inserts and start the chapter."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Work through all six chapters",
+          "detail": "Alternate the right ramp and right orbit to keep arming and starting chapters until every Season 2 chapter is finished."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start the mini-wizard",
+          "detail": "With the season complete, the next left ramp shot starts the multiball. Expect a fast start, so be ready to trap up."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Cash the Super at the center",
+          "detail": "Shoot the center shots until every DEMODOG target is lit; the center then goes dark. Clear all of those targets and the Super waits at the left standup lane or the saucer, which pays double."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "attract-mode-challenge-menu",
+      "title": "Attract-Mode Challenge Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "Stranger Things hides a second layer of play behind its attract screen that most players walk straight past. Holding both flippers while the machine sits idle opens a menu with a stripped-down tournament ruleset and a standalone challenge scored purely on Demogorgon kills.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both flipper buttons while the machine sits in attract mode with no game in progress",
+        "Keep holding until the menu appears on the display",
+        "Choose the mode you want, then start your game",
+        "Standard is the normal ruleset; Competition is the same game with random elements removed",
+        "Challenge includes a Demogorgon challenge with its own high score for the most successful kills",
+        "DJ Mixer is a jukebox and does not affect scoring"
+      ],
+      "reward": "Access to Competition, Challenge — which includes a Demogorgon challenge with its own high score for the most kills — and a DJ Mixer jukebox"
+    },
+    {
+      "id": "progression-drawings",
+      "title": "Collect the Drawings",
+      "category": "progression",
+      "summary": "Drawings are the accumulator humming away under everything else you do. They come from finishing modes, and they pay you three separate ways: a heavier end-of-ball bonus, an extra ball once you have gathered enough, and a jackpot that lands the instant a wizard mode kicks off, sized by how many you are holding. Nothing on this playfield rewards patience like closing out modes instead of abandoning them.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Work the left orbit, left ramp, right ramp, and right orbit. Three inserts sit beneath each of those lanes, and filling a lane's set starts a chapter there.",
+        "Finish the chapter instead of letting the clock kill it. Completing modes is what puts drawings in your pocket.",
+        "Hit the DEMODOG targets, then the left standup lane, to start a Demodog Attack. It is another mode, and finishing modes is how drawings arrive.",
+        "Stack drawings up before you qualify a wizard mode. The jackpot that pays out as the wizard mode begins scales with the number you are carrying in, so arriving empty wastes it."
+      ],
+      "reward": "A heavier end-of-ball bonus, an extra ball, and a bigger jackpot the moment a wizard mode starts"
+    },
+    {
+      "id": "progression-grow-dart",
+      "title": "Feed the Pops to Grow Dart",
+      "category": "progression",
+      "summary": "The bumper nest is not dead space on this machine. Bumper hits pile up and push Dart along, and the pops get more rewarding as that happens. There is a second reason to visit: while the ball is bouncing around up there it is also shuffling which chapter is queued, which turns a lucky rattle into a choice.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Shoot the right orbit. It carries the ball up and into the pop bumper nest, which beats waiting for a stray bounce to send you there.",
+        "Let the ball work the bumpers. Accumulated hits push Dart along, and the pops become more rewarding as it grows.",
+        "Watch the queued chapter while you are up there. Bumper hits change which chapter is waiting to start, so a long stay in the pops lets you land on the one you actually want to play."
+      ],
+      "reward": "Dart advances, the bumpers pay better, and you get to steer which chapter comes up next"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "saucer-skill-shot",
+      "title": "Soft Plunge, Safe Points",
+      "desc": "Complete the Super Skill Shot by soft-plunging and putting the ball straight into the left saucer.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "rebound-skill-shot",
+      "title": "Off The Drop, Into The Hole",
+      "desc": "Complete the harder skill shot by rebounding the plunge off the flashing drop target and into the left saucer on one shot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mxv-super-skill-shot"
+    },
+    {
+      "id": "five-shot-chain",
+      "title": "Five In A Row",
+      "desc": "Chain five shots without letting the combo timer expire to complete the game's five-shot combo objective.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "five-way-combo"
+    },
+    {
+      "id": "ten-items-found",
+      "title": "Ten Items Recovered",
+      "desc": "Complete the ramp-comboing Season 1 chapter by collecting all ten of its items.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "operation-mirkwood-combo"
+    },
+    {
+      "id": "first-guess-find",
+      "title": "Found On The First Try",
+      "desc": "In the hide-and-seek Season 1 chapter, hit the correct revealed shot on your very first guess for the full jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "wheres-barb-chapter"
+    },
+    {
+      "id": "five-wave-drop-clear",
+      "title": "Five Waves Down",
+      "desc": "Clear all five escalating drop-target waves in the Monster Hunting chapter and cash the finishing center shot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "monster-hunting-chapter"
+    },
+    {
+      "id": "frenzy-top-level",
+      "title": "Frenzy Maxed",
+      "desc": "Reach the top switch-value level of the Season 2 coin-hunt frenzy chapter by piling up enough switch hits.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "quarter-hunt-chapter"
+    },
+    {
+      "id": "unbroken-rescue-chain",
+      "title": "Rescue Without A Miss",
+      "desc": "Complete the fixed five-shot Season 2 rescue chapter as one unbroken combo for its full bonus.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "save-will-combo"
+    },
+    {
+      "id": "three-locks-launched",
+      "title": "Three Balls Locked",
+      "desc": "Light and collect all three locks at the left ramp to start the Telekinesis multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "safe-left-ramp-opener"
+    },
+    {
+      "id": "telekinesis-super",
+      "title": "Telekinesis Super",
+      "desc": "Collect all five jackpots in Telekinesis Multiball and then cash the Super Jackpot at the saucer.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "telekinesis-multiball"
+    },
+    {
+      "id": "two-ball-super",
+      "title": "Two-Ball Super",
+      "desc": "Start the two-ball Demogorgon multiball, sweep its jackpots, and collect the Super at the Demogorgon.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "trap-em-multiball"
+    },
+    {
+      "id": "four-ball-super",
+      "title": "Four-Ball Super",
+      "desc": "Start the four-ball Demogorgon multiball and collect its Super Jackpot after clearing the lit drop targets.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "run-will-multiball"
+    },
+    {
+      "id": "five-ball-hundred-million",
+      "title": "Five Balls, Capped Super",
+      "desc": "Start the five-ball Demogorgon multiball and cash a Super Jackpot at the value cap during its unlimited ball save.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "cant-stop-this-multiball"
+    },
+    {
+      "id": "isolation-doubled-super",
+      "title": "Comboed Isolation Super",
+      "desc": "In the Isolation multiball, collect comboed (doubled) jackpots and then take the center Super Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "total-isolation-combo"
+    },
+    {
+      "id": "loop-extra-ball",
+      "title": "Looped An Extra Ball",
+      "desc": "Run up enough Burn It Back loops in one game to earn an extra ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "burn-it-back-loop"
+    },
+    {
+      "id": "doubled-stack",
+      "title": "Doubled Over A Stack",
+      "desc": "Light 2x scoring with Burn It Back loops and cash it at the saucer while a multiball and a chapter are both running.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "max-bonus-before-drain"
+    },
+    {
+      "id": "max-bonus-multiplier",
+      "title": "Bonus X Maxed",
+      "desc": "Cycle the return lanes enough times in one ball to reach the 5x bonus multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bonus-x-multiplier"
+    },
+    {
+      "id": "demodog-sweep",
+      "title": "All Three Demodog Fights",
+      "desc": "Complete all three Demodog target modes to solidly light the Demodog objective.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "demodog-mode-sweep"
+    },
+    {
+      "id": "season-one-mini-wizard",
+      "title": "Season One Cleared",
+      "desc": "Complete all six Season 1 chapters, start the Season 1 mini-wizard multiball, and collect its Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "send-it-back-wizard"
+    },
+    {
+      "id": "season-two-mini-wizard",
+      "title": "Season Two Cleared",
+      "desc": "Complete all six Season 2 chapters, start the Season 2 mini-wizard multiball, and collect its Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "light-the-fire-wizard"
+    },
+    {
+      "id": "reach-final-showdown",
+      "title": "Every Objective Lit",
+      "desc": "Solidly light all six objective inserts and start the final wizard multiball at the left ramp.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-showdown-wizard"
+    },
+    {
+      "id": "seal-the-gate",
+      "title": "Gate Sealed",
+      "desc": "Finish the final wizard multiball to close the gate and roll into the victory-lap mode for the rest of the ball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "final-showdown-wizard"
+    }
+  ],
+  "drills": [
+    {
+      "id": "mxv-plunge",
+      "title": "Drop-to-Saucer Plunge",
+      "text": "Plunge with enough strength to reach the flashing drop in the 4-bank and still carom off it, then let that rebound settle into the saucer. It is not the soft plunge you use for the saucer alone — the ball has to arrive at the drop with pace left.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "mxv-super-skill-shot",
+      "shots": [
+        "plunge",
+        "center-drops",
+        "left-saucer"
+      ]
+    },
+    {
+      "id": "left-ramp-lock-farm",
+      "title": "Left Ramp Relock",
+      "text": "Hit both green Light Lock standups, then shoot the left ramp and take the return off the left inlane straight back into the ramp again. It returns to the same flipper, so the whole lock sequence can be run without ever giving up control.",
+      "reps": "15 ramp shots",
+      "focus": "accuracy",
+      "goal": "telekinesis-multiball",
+      "shots": [
+        "left-ramp",
+        "light-lock-targets",
+        "left-inlane"
+      ]
+    },
+    {
+      "id": "burn-it-back-ladder",
+      "title": "Burn It Back Ladder",
+      "text": "Loop the right inner orbit and keep re-shooting it off its own controllable return. Count your longest unbroken run — the award ladder rides on cumulative loops all game, so every one you bank early is worth more than one you scramble for later.",
+      "reps": "note your longest run over 3 balls",
+      "focus": "accuracy",
+      "goal": "burn-it-back-loop",
+      "shots": [
+        "burn-it-back"
+      ]
+    },
+    {
+      "id": "center-shot-discipline",
+      "title": "Center Shot Discipline",
+      "text": "Clear the 4-bank first so the mouth is actually open, then take it only from a dead cradle and only while a ball save or multiball is covering you. A brick off the drops kicks straight down the middle, which is why this shot ends more balls than it starts modes.",
+      "reps": "10 attempts, all from a cradle",
+      "focus": "ball-control",
+      "goal": "trap-em-multiball",
+      "shots": [
+        "center-drops",
+        "demogorgon-scoop"
+      ]
+    },
+    {
+      "id": "five-way-chain",
+      "title": "Five-Shot Chain",
+      "text": "Right ramp, left orbit, left ramp, Burn It Back, then finish on the saucer. The first four all return to a flipper, so the chain is really about not hesitating between them; the saucer is just the safest place to end it.",
+      "reps": "6 attempts",
+      "focus": "flow",
+      "goal": "five-way-combo",
+      "shots": [
+        "right-ramp",
+        "left-orbit",
+        "left-ramp",
+        "burn-it-back",
+        "left-saucer"
+      ]
+    },
+    {
+      "id": "ramp-alternation",
+      "title": "Ramp-to-Ramp Alternation",
+      "text": "Alternate left ramp and right ramp without breaking the chain, taking each return off the inlane it feeds. Consecutive comboed ramps are worth progressively more, so the value is entirely in not dropping the rhythm.",
+      "reps": "10 unbroken alternations",
+      "focus": "flow",
+      "goal": "operation-mirkwood-combo",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Quiet for most of a game. The button lights exactly once for the Demogorgon Bomb — a single panic press that kills whichever Demogorgon you're fighting. Premium and LE machines give it a second job stealing balls out of the Telekinesis lock.",
+    "uses": [
+      {
+        "when": "Demogorgon mode running, button flashing red",
+        "what": "Spends your one Demogorgon Bomb and kills the monster instantly, though for a reduced payout."
+      },
+      {
+        "when": "Bombing out of a Demogorgon multiball mode",
+        "what": "The bomb freezes the jackpot value where it stands and leaves the Super Jackpot value alone."
+      },
+      {
+        "when": "Balls locked, another multiball running (Prem/LE)",
+        "what": "Swipes a locked ball into the multiball you're already playing — no limit on how often."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Stranger Things is a fast, dangerous Stern game centered on the Demogorgon in the middle and six objectives that gate the wizard mode. Play out both seasons of chapters, run the Demodog and Demogorgon multiballs, and light all six objectives to reach Final Showdown.",
+    "loop": [
+      "Fill the three inserts under the left orbit or left ramp for Season 1 chapters, and under the right ramp or right orbit for Season 2, while the pop bumpers cycle which chapter is queued.",
+      "Complete the green lock standups and lock three balls at the safe left ramp to start Telekinesis Multiball.",
+      "Clear the center drop bank to arm the Demogorgon mouth, then start its two-, four-, and five-ball multiballs there.",
+      "Spell D-E-M-O-D-O-G on the standups to run the three Demodog modes, and loop Burn It Back for its Extra Ball, ball-save, and 2x scoring ladder.",
+      "Solidly light all six objectives to start Final Showdown at the left ramp."
+    ],
+    "lights": [
+      {
+        "id": "season-chapters",
+        "name": "Season Chapter Lanes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "Three inserts sit under each season lane -- the left orbit and left ramp run Season 1, the right ramp and right orbit run Season 2 -- and a lit insert is one still to fill before that lane's chapter starts.",
+        "flashing": null,
+        "control": null,
+        "then": "Fill a lane's three inserts, then re-shoot that lane to start the queued chapter, and let the pop bumpers rotate which chapter is next so you can pick the one you want. Finish all six chapters of a season to light its mini-wizard multiball -- Send It Back for Season 1, Light the Fire for Season 2 -- at the left ramp.",
+        "goals": [
+          "wheres-barb-chapter",
+          "monster-hunting-chapter",
+          "quarter-hunt-chapter",
+          "send-it-back-wizard",
+          "light-the-fire-wizard"
+        ]
+      },
+      {
+        "id": "telekinesis-locks",
+        "name": "Telekinesis Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "light-lock-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-saucer"
+          }
+        ],
+        "lit": "The two green lock standups by the left ramp light the Telekinesis locks, so a lit lock is a ball you can bank at the left ramp, which safely returns to your left flipper.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls to start a three-ball multiball, then collect five jackpots at the lit major shots to light the Super at the left saucer. It is the easiest big-point engine on the game and firmly checks off one of the six objectives that gate Final Showdown.",
+        "goals": [
+          "telekinesis-multiball"
+        ]
+      },
+      {
+        "id": "demogorgon-mouth",
+        "name": "Demogorgon Mouth",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-drops",
+            "lamps": 4
+          },
+          {
+            "shot": "demogorgon-scoop"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "Four center drop targets guard the Demogorgon, so a lit drop is one still standing, and clearing the bank arms the mouth behind it for a mode start.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the mouth to start the two-, four-, and five-ball Demogorgon multiballs, each ending in a Super Jackpot there, with the five-ball opening a sixty-second unlimited ball save. Only take the mouth from a cradle under cover, because a missed drop shot rockets straight back down the center, and running all five modes lights the Demogorgon objective.",
+        "goals": [
+          "trap-em-multiball",
+          "run-will-multiball",
+          "cant-stop-this-multiball",
+          "total-isolation-combo"
+        ]
+      },
+      {
+        "id": "demodog-targets",
+        "name": "DEMODOG Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "demodog-targets",
+            "lamps": 7
+          },
+          {
+            "shot": "left-lane-target"
+          }
+        ],
+        "lit": "Seven standups spell D-E-M-O-D-O-G, so a lit one is a letter left, and spelling the whole word qualifies a Demodog mode.",
+        "flashing": null,
+        "control": null,
+        "then": "Start the mode at the left standup lane, then blast the lit Demodog targets through escalating waves for climbing value. Run all three Demodog modes to solidly light that objective for Final Showdown.",
+        "goals": [
+          "break-out-demodog",
+          "demodog-mode-sweep"
+        ]
+      },
+      {
+        "id": "burn-it-back",
+        "name": "Burn It Back Loop",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "burn-it-back"
+          },
+          {
+            "shot": "left-saucer"
+          }
+        ],
+        "lit": "Burn It Back is the right inner loop and the most farmable shot on the game, and because its return feeds back to a flipper, a lit loop is one you can keep re-shooting.",
+        "flashing": null,
+        "control": null,
+        "then": "Cumulative loops climb an all-game ladder: an early Extra Ball, then a Spell of Protection save, then 2x Scoring waiting at the saucer. Cash 2x only over a live multiball-and-mode stack, where sixty seconds of doubling is the single biggest swing in the game.",
+        "goals": [
+          "burn-it-back-loop",
+          "twox-playfield-scoring"
+        ]
+      },
+      {
+        "id": "five-way-combo",
+        "name": "5-Way Combo",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "burn-it-back"
+          },
+          {
+            "shot": "left-saucer"
+          }
+        ],
+        "lit": "The 5-Way Combo chains five shots in quick succession from the left orbit, left ramp, Burn It Back, and right ramp in any mix, capped by a saucer, standup, center, or orbit.",
+        "flashing": null,
+        "control": null,
+        "then": "Land the chain to light the game's first objective and bank a permanent +10M that rides your end-of-ball bonus every ball afterward. The first four shots all return to a flipper, so it is really about not hesitating between them.",
+        "goals": [
+          "five-way-combo"
+        ]
+      },
+      {
+        "id": "bonus-x-lanes",
+        "name": "Bonus X Return Lanes",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "The return lanes build the end-of-ball Bonus X, where every even completion of the pair adds a full multiple and every odd completion lights Mystery at the left standup instead.",
+        "flashing": null,
+        "control": null,
+        "then": "Cycle the inlanes with the safe left ramp and the bicycle orbit to push Bonus X toward 5x before you drain a loaded bonus. Take Hold Bonus from a lit Mystery to carry that multiplied total into your next ball.",
+        "goals": [
+          "bonus-x-multiplier"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap a flipper button to cycle the lit return-lane inserts so the one you still need sits under the ball. Completed sets alternate their reward: odd completions light Mystery at the left standup, even ones step the bonus multiplier toward its 5X cap.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the safe skill shot -- a soft plunge into the left saucer, or a full plunge into the flashing drop -- then farm the left ramp, which returns to your flipper with almost no drain risk. Fill a left-side lane's inserts to start a Season 1 chapter under ball save, and stay off the Demogorgon mouth cold.",
+        "goals": [
+          "super-skill-shot",
+          "safe-left-ramp-opener",
+          "beginner-first-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Lock three balls at the left ramp for Telekinesis Multiball, run the Demogorgon and Demodog modes, and loop Burn It Back up its ladder. Cash 2x Scoring only when a multiball and a chapter are stacked together, then max Bonus X before you drain.",
+        "goals": [
+          "telekinesis-multiball",
+          "cant-stop-this-multiball",
+          "demodog-mode-sweep",
+          "max-bonus-before-drain"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Solidly light all six objectives -- the 5-Way Combo, Demodog, Demogorgon, both season mini-wizards, and Telekinesis -- to start Final Showdown at the left ramp. Winning that Demogorgon battle seals the gate and rolls into the Snow Ball Dance victory lap for the rest of the ball.",
+        "goals": [
+          "final-showdown-wizard",
+          "send-it-back-wizard",
+          "light-the-fire-wizard"
+        ]
+      }
+    ]
+  }
+}

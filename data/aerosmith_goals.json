@@ -1,0 +1,1385 @@
+{
+  "machine": "Aerosmith (Stern Pinball, 2017)",
+  "defaultFx": "guitar",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3106,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-left main flipper; used for holding on the Super Skill Shot"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6894,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Lower-right main flipper; Super Skill Shot ball drops here"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Mini-Playfield Flipper",
+      "type": "flipper",
+      "x": 0.72,
+      "y": 0.82,
+      "trim": "premium-le",
+      "notes": "Single full-size flipper on the Premium/LE upper playfield; backhands the 2X targets",
+      "playfield": "mini-playfield",
+      "bat": {
+        "size": "full"
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.05,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Far-left lane wrapping the top; one of the two orbits that light the Elevator lock",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.93,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Far-right lane wrapping the top; pairs with Left Orbit for Elevator lock",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.26,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Center-left ramp; one half of the Walk This Way combo loop",
+      "feeds": {
+        "shot": "dude-inlanes"
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Center Ramp)",
+      "type": "ramp",
+      "x": 0.57,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Center/right ramp toward the elevator; primary X-loaded combo shot",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-scoop",
+      "name": "Left Scoop (Record / Crank It Up)",
+      "type": "scoop",
+      "x": 0.18,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Song select, Crank It Up, Mystery collect, Medley + Final Tour start (also called left eject)"
+    },
+    {
+      "id": "toy-box",
+      "name": "Toy Box (Jacky) Magnet Throw",
+      "type": "mech",
+      "x": 0.4,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Center magnet grabs the ball and slam-dunks it into Jacky's box; shoot to light lock"
+    },
+    {
+      "id": "lock-saucer",
+      "name": "Lock Saucer (Right Eject)",
+      "type": "saucer",
+      "x": 0.65,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Center-right VUK that locks balls into the toy box; Hidden Skill Shot target"
+    },
+    {
+      "id": "elevator",
+      "name": "Elevator (Love in an Elevator)",
+      "type": "scoop",
+      "x": 0.68,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Pro: a scoop. Prem/LE: elevator toy lifting the ball to the mini-playfield. Elevator MB lock"
+    },
+    {
+      "id": "spinner",
+      "name": "Right Spinner",
+      "type": "spinner",
+      "x": 0.85,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Primary shot for Rats in the Cellar / Super Spinner"
+    },
+    {
+      "id": "aero-left",
+      "name": "AEROSMITH Standups — Left (A-E-R)",
+      "type": "target-bank",
+      "x": 0.09,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Left 3-bank; part of spelling AEROSMITH for shot multipliers"
+    },
+    {
+      "id": "aero-center",
+      "name": "AEROSMITH Standups — Center (O-S)",
+      "type": "target-bank",
+      "x": 0.34,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Center pair below the pops"
+    },
+    {
+      "id": "aero-right",
+      "name": "AEROSMITH Standups — Right (M-I-T-H)",
+      "type": "target-bank",
+      "x": 0.94,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Right 4-bank; ricochets toward the Toy Box in Same Old Song and Dance"
+    },
+    {
+      "id": "toybox-target-left",
+      "name": "Toy Box Target — Left (VIP Pass)",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Flanks the toy box; lights VIP Pass ball save at the right outlane"
+    },
+    {
+      "id": "toybox-target-right",
+      "name": "Toy Box Target — Right (VIP Pass)",
+      "type": "standup",
+      "x": 0.44,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Flanks the toy box; lights VIP Pass ball save at the right outlane"
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.22,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Upper-left-center three-pop cluster; focus of Back in the Saddle"
+    },
+    {
+      "id": "drop-target",
+      "name": "Elevator-Lock Drop Target",
+      "type": "drop-target",
+      "x": 0.58,
+      "y": 0.5,
+      "trim": "premium-le",
+      "notes": "Right of the center ramp; alternate way to light Elevator locks on Prem/LE"
+    },
+    {
+      "id": "dude-inlanes",
+      "name": "DUDE Inlanes",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "Three return lanes spelling DUDE; cycle with the flippers to raise bonus multiplier"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane (VIP Pass)",
+      "type": "lane",
+      "x": 0.91,
+      "y": 0.19,
+      "trim": "all",
+      "notes": "VIP Pass ball save lights here"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Auto-Plunger",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Ball launch; plunge strength chooses Hidden vs Super Skill Shot"
+    },
+    {
+      "id": "mini-pf-targets",
+      "name": "Mini-Playfield 2X Targets",
+      "type": "target-bank",
+      "x": 0.66,
+      "y": 0.96,
+      "trim": "premium-le",
+      "notes": "Five standups behind the upper flipper; backhand all to arm 2X Playfield",
+      "playfield": "mini-playfield"
+    },
+    {
+      "id": "mini-pf-orbit",
+      "name": "Mini-Playfield Loop Exit",
+      "type": "orbit",
+      "x": 0.77,
+      "y": 0.93,
+      "trim": "premium-le",
+      "notes": "Loop/exit shot that starts 2X Playfield after the 5 targets are down",
+      "playfield": "mini-playfield",
+      "feeds": {
+        "shot": "mini-pf-exit"
+      },
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "mini-pf-exit",
+      "name": "Love in an Elevator Exit Ramp",
+      "type": "mech",
+      "x": 0.6,
+      "y": 0.8,
+      "trim": "premium-le",
+      "notes": "Drops the ball from the mini-playfield back to the lower playfield",
+      "playfield": "mini-playfield"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-hidden",
+      "title": "Hidden Skill Shot",
+      "category": "skillshot",
+      "summary": "Soft-plunge into the lock saucer for guaranteed value plus a Smart Missile.",
+      "difficulty": 1,
+      "reward": "500K (+500K per repeat), +1 Smart Missile",
+      "steps": [
+        {
+          "shot": "lock-saucer",
+          "action": "Soft-plunge into the lock saucer",
+          "detail": "Lightly plunge so the ball dribbles down the hidden top-right path and settles in the saucer — 500K (+500K each repeat) + 1 Smart Missile"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-super",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the left flipper and short-plunge to the right flipper, then shoot one of three lit shots.",
+      "difficulty": 2,
+      "reward": "1M (+1M per repeat), +2 Smart Missiles",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Plunge through, then shoot one of the three lit shots",
+          "detail": "Holding the left flipper before you plunge lets the ball roll down untouched to a stop on the right flipper Three shots light off the right flipper; hit the lit one for 1M + 2 Smart Missiles (risk of a wild drain)",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-walk-this-way",
+      "title": "Walk This Way Ramp Loop",
+      "category": "combo",
+      "summary": "The single biggest repeatable: alternate the left and center ramps for compounding combo value.",
+      "difficulty": 2,
+      "reward": "2x combo x 2x coins, stacks with shot-X (2x/3x) and 2x playfield; single shots reach 20M-40M+",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Walk This Way",
+          "detail": "Pick the song with the flipper buttons at the start of the ball; ideally with the center/left ramp X-loaded first"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Loop the left ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Loop the center ramp — combo",
+          "detail": "Each looped ramp registers as a strobing-arrow combo"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Back to the left ramp — chain continues"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate again; values escalate",
+          "detail": "With 2x active the fourth shot lands near 20M and the fifth near 40M."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-strobing-chain",
+      "title": "Strobing-Arrow Combo Chain",
+      "category": "combo",
+      "summary": "Learn the base combo engine: make a major shot, then hit a strobing arrow within the window for 2x.",
+      "difficulty": 1,
+      "reward": "Each combo'd shot worth 2x normal value (2x coins in song modes)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Make any major shot",
+          "detail": "Completing a major shot strobes the arrows at the other major shots for a couple seconds"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit a strobing arrow in the window",
+          "detail": "Scores 2x the shot's normal value"
+        },
+        {
+          "shot": "toy-box",
+          "action": "Continue to the next strobing shot",
+          "detail": "Each strobing shot inside the window keeps the chain alive"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-sosad-ricochet",
+      "title": "Same Old Song and Dance Ricochet",
+      "category": "combo",
+      "summary": "Start the mode, Crank It Up, then bang the right-wall targets that ricochet into the Toy Box for a fast ~30M.",
+      "difficulty": 2,
+      "reward": "~30M completed in roughly 6 shots",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Same Old Song and Dance"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Crank It Up",
+          "detail": "After one mode shot, shoot the scoop to Crank It Up (lights AEROSMITH targets, much easier)"
+        },
+        {
+          "shot": "aero-right",
+          "action": "Hit the right-wall targets",
+          "detail": "They ricochet toward the Toy Box"
+        },
+        {
+          "shot": "toy-box",
+          "action": "Finish off the ricochet",
+          "detail": "Mode completes in ~6 shots"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-sweet-emotion",
+      "title": "Sweet Emotion Escalation Farm",
+      "category": "combo",
+      "summary": "Work the ejects then the major shots; after four lit-shot hits everything lights for 1-2M each, plus a 60s super.",
+      "difficulty": 3,
+      "reward": "1-2M per shot; 60-second all-scoring super feature",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Sweet Emotion"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Shoot the four lit ejects/saucers left-to-right",
+          "detail": "Left-to-right order scores more points"
+        },
+        {
+          "shot": "elevator",
+          "action": "Continue clearing the ejects"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit lit major shots; after 4 hits all shots light",
+          "detail": "Each then worth 1-2M depending on progress"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Crank It Up, then finish the song to light the 60s universal scoring super",
+          "detail": "Crank It Up boosts scoring; completing the song lights the Super, then combo everything on the playfield while it is live"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-loaded-ramp-mega",
+      "title": "Loaded-Ramp Mega Shot",
+      "category": "combo",
+      "summary": "Stack an AEROSMITH X insert onto the center ramp, start Super Ramps, and combo under every multiplier.",
+      "difficulty": 3,
+      "reward": "Documented stacks of 80M+ per shot (shot-X x playfield x Super Ramps)",
+      "steps": [
+        {
+          "shot": "aero-left",
+          "action": "Spell AEROSMITH",
+          "detail": "Complete the standup targets to qualify the X inserts"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Load the X onto the center ramp",
+          "detail": "Save Walk This Way for a ball where the centre or left ramp already carries a multiplier."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Start Walk This Way, Crank It Up, then finish the song to light Super Ramps",
+          "detail": "Crank It Up boosts scoring and eases completion; finishing the song lights Super Ramps"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Combo the loaded ramp under Super Ramps + playfield 2x",
+          "detail": "This is where six-to-eight-figure single shots come from"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-toybox",
+      "title": "Toy Box Multiball (Toys in the Attic)",
+      "category": "multiball",
+      "summary": "Light the lock at the Toy Box, lock at the saucer, and start with 3 balls; the game's highest-ceiling multiball.",
+      "difficulty": 2,
+      "reward": "Base jackpot 500K (+50K each); 8th shot = Super Jackpot",
+      "steps": [
+        {
+          "shot": "toy-box",
+          "action": "Shoot the Toy Box to light lock",
+          "detail": "Lights LOCK at the lock saucer"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Lock a ball",
+          "detail": "Jacky slam-dunks the ball into the box"
+        },
+        {
+          "shot": "toy-box",
+          "action": "Repeat until 3 are locked",
+          "detail": "Re-light the lock for each ball; can stack up to 6"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Start the multiball, then farm all 8 major shots twice",
+          "detail": "8th = Super; two Supers light a roving double, then a double Super at the saucer"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-elevator",
+      "title": "Elevator Multiball (Love in an Elevator)",
+      "category": "multiball",
+      "summary": "Shoot both orbits to light the elevator lock, lock at the elevator, and start with 3 balls.",
+      "difficulty": 2,
+      "reward": "Super Jackpot = % of all jackpots collected (100%/75%/50% by attempt)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit to light the elevator lock"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit",
+          "detail": "Premium/LE can also use the drop target"
+        },
+        {
+          "shot": "elevator",
+          "action": "Lock a ball at the elevator"
+        },
+        {
+          "shot": "elevator",
+          "action": "Lock 3 to start; alternate major shots with the elevator for escalating jackpots",
+          "detail": "No playfield multiplier, so lower ceiling than Toy Box"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-toybox-6ball-3x",
+      "title": "Toy Box 6-Ball with 3x Stack",
+      "category": "multiball",
+      "summary": "Delay the start to lock up to 6 balls, then relock during play to bank a 3x playfield window.",
+      "difficulty": 3,
+      "reward": "6-ball MB = 2x base jackpots; relock = 20s of 2x (1 ball) or 3x (2 balls)",
+      "steps": [
+        {
+          "shot": "toy-box",
+          "action": "Light lock and keep locking",
+          "detail": "Delay the start; abort logic on the action button after 3+ balls"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Lock up to 6 balls before starting",
+          "detail": "6-ball MB doubles base jackpot values"
+        },
+        {
+          "shot": "toy-box",
+          "action": "During MB, relight the lock to relock",
+          "detail": "Prioritize Toy Box and lock shots over wild flipping"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Relock 2 balls for 3x playfield scoring (20s)",
+          "detail": "Then farm the 8-shot jackpot ladder under the 3x"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-rats-cellar",
+      "title": "Rats in the Cellar",
+      "category": "mode",
+      "summary": "The beginner-friendly spinner song and the best mode to overlap with a multiball.",
+      "difficulty": 1,
+      "reward": "Super Spinner — spinner lights for 100 spins",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Rats in the Cellar"
+        },
+        {
+          "shot": "spinner",
+          "action": "Hit the lit shots as they alternate sides",
+          "detail": "Pattern 1 left, 1 right, 2 left, 2 right, max 3 per side"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Crank It Up, then finish the song to light the Super Spinner",
+          "detail": "Crank It Up boosts scoring; completing the song lights the Super Spinner — best brought into a multiball so many shots stay lit"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-back-in-saddle",
+      "title": "Back in the Saddle",
+      "category": "mode",
+      "summary": "Pop-bumper-focused easy song: hit the lit spinner then a bumper-driven random shot.",
+      "difficulty": 1,
+      "reward": "Super Pops — bumpers light for 100 hits",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Back in the Saddle"
+        },
+        {
+          "shot": "spinner",
+          "action": "Shoot the lit right spinner"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed the pops; the random shot changes with bumper hits"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Crank It Up to raise bumper scoring"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-dude-lady",
+      "title": "Dude Looks Like a Lady",
+      "category": "mode",
+      "summary": "Two lit shots at a time (left shifts right when made); Crank It Up lights the DUDE inlanes.",
+      "difficulty": 2,
+      "reward": "Super — inlanes light for 10 completions",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Dude Looks Like a Lady"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the two lit shots",
+          "detail": "The left lit shot shifts right when made"
+        },
+        {
+          "shot": "dude-inlanes",
+          "action": "Crank It Up lights the 3 inlanes + left scoop",
+          "detail": "Also raises the bonus multiplier"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-last-child",
+      "title": "Last Child",
+      "category": "mode",
+      "summary": "Orbit/ramp song: shoot the lit orbits, relight via both orbits or both ramps.",
+      "difficulty": 2,
+      "reward": "Super — loops light for 10 loop shots",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Select Last Child"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the lit orbits"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete both orbits (or both ramps) to relight"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Loop both ramps to relight the orbits",
+          "detail": "8 shots (7 after Crank It Up)"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mult-aerosmith-x",
+      "title": "AEROSMITH Shot Multiplier",
+      "category": "multiplier",
+      "summary": "Spell A-E-R-O-S-M-I-T-H to qualify the X inserts; the next X'd major shot doubles for the rest of the ball.",
+      "difficulty": 2,
+      "reward": "2x on the next X'd shot for the whole ball; light every X → roving 3x",
+      "steps": [
+        {
+          "shot": "aero-left",
+          "action": "Hit the A-E-R targets",
+          "link": "none"
+        },
+        {
+          "shot": "aero-center",
+          "action": "Hit the O-S targets",
+          "link": "none"
+        },
+        {
+          "shot": "aero-right",
+          "action": "Hit the M-I-T-H targets to qualify the X inserts",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make a major shot with a flashing X",
+          "detail": "It stays 2x for the rest of the ball; light every X for a roving 3x insert"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-2x-playfield",
+      "title": "2X Playfield (Premium/LE)",
+      "category": "multiplier",
+      "summary": "Backhand the five upper mini-playfield targets, then shoot the loop exit to double all scoring for 60s.",
+      "difficulty": 3,
+      "reward": "2x scoring for 60 seconds (Premium/LE only)",
+      "steps": [
+        {
+          "shot": "mini-pf-targets",
+          "action": "Backhand all 5 upper targets",
+          "detail": "Behind the upper mini-playfield flipper"
+        },
+        {
+          "shot": "mini-pf-orbit",
+          "action": "Shoot the loop exit to start 2x scoring for 60s",
+          "detail": "On Pro, this exists only as a Mystery Double Scoring award"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wiz-medley",
+      "title": "Medley Multiball (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "Earn one award in every song plus both multiballs, then start at the left scoop to replay unfinished songs.",
+      "difficulty": 3,
+      "reward": "+10M per song completed beforehand (perfect 200M); Medley Super Jackpot at the scoop",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Get at least 1 award in all seven song modes and play both multiballs",
+          "detail": "Just collecting a mode award counts — you need not fully finish each"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Start Medley at the left scoop",
+          "detail": "Staged add-a-ball multiball; +10M for every song already completed"
+        },
+        {
+          "shot": "spinner",
+          "action": "Complete each unfinished song's task",
+          "detail": "e.g. Rats = 25 spins, Last Child = both orbits, Back in the Saddle = 25 pops"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Collect the Medley Super Jackpot at the scoop",
+          "detail": "Ends the mode and returns to single-ball play"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wiz-final-tour",
+      "title": "Final Tour (Grand Wizard)",
+      "category": "wizard",
+      "summary": "Complete all 9 songs to qualify, then tour 24 Cities by clearing sets of 8 shots.",
+      "difficulty": 3,
+      "reward": "Cities 1-8 = 10M, 9-16 = 20M, 17-24 = 30M each; 100M Super Jackpot to finish",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Complete all 9 songs to qualify Final Tour",
+          "detail": "Via regular play and/or Medley"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Advance through 24 Cities in 3 sets of 8 shots",
+          "detail": "All shots are multiplied by every applicable multiplier"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Collect the 100M Super Jackpot at the left scoop",
+          "detail": "Ends the mode and returns to single-ball play"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-beginner-opener",
+      "title": "Beginner Opener — Survive and Build",
+      "category": "strategy",
+      "summary": "A safe first-30-seconds loop: soft-plunge, easy song, Crank It Up, bank locks into Toy Box Multiball.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Soft-plunge the Hidden Skill Shot into the lock saucer",
+          "detail": "500K + Smart Missile"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Select Rats in the Cellar",
+          "detail": "Easy, spinner-based, safe shots"
+        },
+        {
+          "shot": "spinner",
+          "action": "Make one mode shot"
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Crank It Up at the scoop"
+        },
+        {
+          "shot": "toy-box",
+          "action": "Bank Toy Box locks; chip AEROSMITH targets on loose balls"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Collect 3 locks to start Toy Box Multiball"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strat-highscore-opener",
+      "title": "High-Score Opener — Stack the Big Game",
+      "category": "strategy",
+      "summary": "Super Skill Shot, bank Toy Box locks, start Elevator MB via the orbits, load the roving 3x on the ramp, then combo.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Super Skill Shot (hold left flipper, short plunge)",
+          "detail": "1M + 2 Smart Missiles; repeat to stack value",
+          "flipper": "left",
+          "technique": [
+            "hold-flipper"
+          ]
+        },
+        {
+          "shot": "toy-box",
+          "action": "Bank locks but hold at 4"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Run the orbits (Prem/LE + drop target) to start Elevator MB",
+          "detail": "Elevator starts on 3 locked balls; lots of balls = spell AEROSMITH fast"
+        },
+        {
+          "shot": "aero-center",
+          "action": "Spell AEROSMITH and qualify every X for the roving 3x"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Park the 3x on the center ramp, start Walk This Way, and combo the ramps"
+        },
+        {
+          "shot": "lock-saucer",
+          "action": "Overlap a Toy Box 3x window with Rats in the Cellar for the compounding score"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strat-cash-multipliers",
+      "title": "When to Cash Multipliers",
+      "category": "strategy",
+      "summary": "Hold the shot-X and playfield windows for a comboable ramp — never a one-off single shot.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "aero-left",
+          "action": "Spell AEROSMITH to qualify the X inserts"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Load the X onto the ramp you plan to combo"
+        },
+        {
+          "shot": "toy-box",
+          "action": "Build Toy Box MB and relock for the 3x playfield window"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash shot-X x playfield-3x x Super Ramps on the ramp",
+          "detail": "Layering multipliers on a comboable shot is where the biggest scores come from"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "feat-vip-pass",
+      "title": "Arm the Outlane Ball Save",
+      "category": "strategy",
+      "summary": "Knock down both targets flanking the toy box to light the right-outlane save, then keep playing knowing one drain is covered.",
+      "difficulty": 1,
+      "reward": "Ball save at the right outlane; the ball is returned to the shooter lane",
+      "steps": [
+        {
+          "shot": "toybox-target-left",
+          "action": "Hit the left toy box target",
+          "detail": "A soft left-flipper shot at the target beside the magnet usually gets it",
+          "link": "none"
+        },
+        {
+          "shot": "toybox-target-right",
+          "action": "Hit the right toy box target",
+          "detail": "Both targets must be down to arm the save",
+          "link": "none"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Bank the lit save",
+          "detail": "With the insert lit, a right-outlane drain returns the ball instead of ending it"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "pregame-song-select",
+      "title": "Start-of-Ball Song Select",
+      "category": "secret",
+      "summary": "Every ball on Aerosmith opens with a song choice, and most players just let the machine pick for them. Each song lights a different pattern of shots, so choosing on purpose lets you steer the ball toward a layout you are actually good at instead of a random one.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "At the start of each ball, before you plunge, use the flipper buttons to cycle through the songs",
+        "Watch the display to see which song is currently highlighted",
+        "Stop on the song whose shot pattern you want",
+        "When a song times out or you complete it, shoot the left eject during the window where the record insert flashes to pick the next one"
+      ],
+      "reward": "Lets you choose which of the seven songs runs for the ball — Rats in the Cellar, Dude Looks Like A Lady, Back in the Saddle, Sweet Emotion, Walk This Way, Same Old Song & Dance, or Last Child — each lighting a different shot pattern"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "quiet-plunge-payoff",
+      "title": "Quiet Plunge Payoff",
+      "desc": "Soft-plunge so the ball settles in the lock saucer and collect the hidden skill shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-hidden"
+    },
+    {
+      "id": "cradle-and-fire",
+      "title": "Cradle and Fire",
+      "desc": "Hold the left flipper, short-plunge to the right flipper, and hit one of the lit shots for the big skill shot award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-super"
+    },
+    {
+      "id": "band-name-spelled",
+      "title": "Band Name Spelled",
+      "desc": "Complete all nine standup targets to spell the band name and qualify the shot-multiplier inserts.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-aerosmith-x"
+    },
+    {
+      "id": "roving-triple",
+      "title": "Roving Triple",
+      "desc": "Light a multiplier on every major shot in one ball so the roving 3x insert becomes available.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult-aerosmith-x"
+    },
+    {
+      "id": "box-is-open",
+      "title": "The Box Is Open",
+      "desc": "Lock three balls in the toy box and start Toy Box Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-toybox"
+    },
+    {
+      "id": "eighth-shot-cashed",
+      "title": "Eighth Shot Cashed",
+      "desc": "During Toy Box Multiball, work the eight major shots far enough to collect a Super Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-toybox"
+    },
+    {
+      "id": "six-ball-stockpile",
+      "title": "Six-Ball Stockpile",
+      "desc": "Hold off the multiball start until all six balls are locked, then launch it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-toybox-6ball-3x"
+    },
+    {
+      "id": "triple-playfield-window",
+      "title": "Triple-Score Window",
+      "desc": "Relock two balls mid-multiball to open the 3x playfield window, then score jackpots inside it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-toybox-6ball-3x"
+    },
+    {
+      "id": "going-up",
+      "title": "Going Up",
+      "desc": "Light the elevator lock with the orbits and start Elevator Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-elevator"
+    },
+    {
+      "id": "first-song-finished",
+      "title": "First Song Finished",
+      "desc": "Select a song at the record scoop and complete all of its shots before the ball ends.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-rats-cellar"
+    },
+    {
+      "id": "spinner-turned-super",
+      "title": "Spinner Turned Super",
+      "desc": "Finish the spinner song to light the Super Spinner and cash it in.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-rats-cellar"
+    },
+    {
+      "id": "four-ramp-chain",
+      "title": "Four-Ramp Chain",
+      "desc": "Alternate the left and center ramps for at least four straight combo shots without breaking the chain.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-walk-this-way"
+    },
+    {
+      "id": "loaded-ramp-cashed",
+      "title": "Loaded Ramp Cashed",
+      "desc": "Stack a shot multiplier and Super Ramps on the same ramp, then combo it for a single monster shot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-loaded-ramp-mega"
+    },
+    {
+      "id": "upper-deck-doubler",
+      "title": "Upper Deck Doubler",
+      "desc": "On Premium or LE, clear the five upper-playfield targets and shoot the loop exit to run doubled scoring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-2x-playfield"
+    },
+    {
+      "id": "backstage-insurance",
+      "title": "Backstage Insurance",
+      "desc": "Hit both targets beside the toy box to arm the right-outlane ball save, then have it catch a ball for you.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "feat-vip-pass"
+    },
+    {
+      "id": "whole-setlist",
+      "title": "The Whole Setlist",
+      "desc": "Complete all nine songs in a single game to qualify the final wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wiz-final-tour"
+    },
+    {
+      "id": "encore-closed-out",
+      "title": "Encore Closed Out",
+      "desc": "Clear every remaining song task during the mini-wizard multiball and collect its Super Jackpot at the scoop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-medley"
+    },
+    {
+      "id": "tour-completed",
+      "title": "Tour Completed",
+      "desc": "Work through all twenty-four cities in the final wizard mode and collect the closing Super Jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-final-tour"
+    }
+  ],
+  "drills": [
+    {
+      "id": "hidden-plunge",
+      "title": "Soft Plunge to the Saucer",
+      "text": "Plunge lightly so the ball dribbles down the hidden top-right path and settles in the lock saucer. It repeats for more every time you make it and hands you a Smart Missile, so this is the plunge to default to rather than the riskier one.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-hidden",
+      "shots": [
+        "shooter-lane",
+        "lock-saucer"
+      ]
+    },
+    {
+      "id": "toybox-lock-cycle",
+      "title": "Toy Box, Then Saucer",
+      "text": "Hit the Toy Box to light the lock, then put the ball in the lock saucer, then relight and go again. The lock has to be relit for every ball you bank, so the drill is the cycle, not either shot on its own.",
+      "reps": "6 full cycles",
+      "focus": "accuracy",
+      "goal": "mb-toybox",
+      "shots": [
+        "toy-box",
+        "lock-saucer"
+      ]
+    },
+    {
+      "id": "aerosmith-sweep",
+      "title": "Standup Sweep",
+      "text": "Work the left three, the center pair and the right four as three separate aiming problems, and learn which flipper reaches each bank cleanly. Spelling the name is what qualifies the shot multipliers, so a sloppy sweep costs you the multiplier, not just the target points.",
+      "reps": "3 full spellings",
+      "focus": "accuracy",
+      "goal": "mult-aerosmith-x",
+      "shots": [
+        "aero-left",
+        "aero-center",
+        "aero-right"
+      ]
+    },
+    {
+      "id": "vip-soft-taps",
+      "title": "Soft Taps by the Magnet",
+      "text": "Take the two targets flanking the toy box with soft, controlled left-flipper shots rather than full swings. Both have to go down to arm the right-outlane save, so treat it as a two-target routine you finish rather than a single lucky hit.",
+      "reps": "10 completions",
+      "focus": "ball-control",
+      "goal": "feat-vip-pass",
+      "shots": [
+        "toybox-target-left",
+        "toybox-target-right"
+      ]
+    },
+    {
+      "id": "walk-this-way-loop",
+      "title": "Ramp-to-Ramp Loop",
+      "text": "Alternate the left ramp and the center ramp without letting the chain break; each looped ramp registers as a combo and the values escalate fast. Save this for a ball where one of the two already carries a multiplier.",
+      "reps": "5 chains, note your longest",
+      "focus": "flow",
+      "goal": "combo-walk-this-way",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "strobing-arrow-chain",
+      "title": "Strobing Arrow Chain",
+      "text": "Make any major shot, then take one of the arrows that strobe on the other majors for a couple of seconds afterwards. Keep going while the window stays open — this is the base combo engine underneath every named combo on the machine.",
+      "reps": "10 chains",
+      "focus": "flow",
+      "goal": "combo-strobing-chain"
+    }
+  ],
+  "playfields": [
+    {
+      "id": "mini-playfield",
+      "name": "Upper Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.56,
+        "y": 0.76,
+        "w": 0.26,
+        "h": 0.24
+      },
+      "trim": "premium-le",
+      "entries": [
+        "elevator"
+      ],
+      "exits": [
+        {
+          "shot": "mini-pf-exit"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Think of it as your ammo clip. The button holds Smart Missiles earned from skill shots and mystery awards, and each one spots a lit shot in a song mode for free. Its other job is quieter but worth more: it aborts a Toybox Multiball start so you can keep stacking locks.",
+    "uses": [
+      {
+        "when": "Song mode running with shots still lit",
+        "what": "Fires a Smart Missile to spot a lit shot, and you also collect whatever else was lit there."
+      },
+      {
+        "when": "A nasty left-side shot is holding you up",
+        "what": "Missiles always take the leftmost lit shot, so save them for the ones you'd rather not risk."
+      },
+      {
+        "when": "Three or more balls locked in the toybox",
+        "what": "Press to abort the multiball start and keep locking — the game holds up to six."
+      },
+      {
+        "when": "Sitting on six toybox locks",
+        "what": "Stop pressing and let it rip: six-ball Toybox Multiball runs at double base jackpot value."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Run the show: choose songs at the record scoop, spell the band name for shot multipliers, and stack balls in Jacky's Toy Box. Clear all nine songs to earn the Final Tour grand wizard.",
+    "loop": [
+      "Choose a song at the left scoop, run its lit shots, then Crank It Up and close it out for that song's Super.",
+      "Spell the band name across the standups to arm the X inserts, then drop an X onto a ramp.",
+      "Trade the left and center ramps back and forth for Walk This Way, spending your multipliers on the loaded ramp.",
+      "Beat the Toy Box to arm the lock, lock at the saucer for Toy Box Multiball, and run both orbits for Elevator Multiball.",
+      "Flip the DUDE lanes to build your bonus multiplier, and finish every song for Final Tour."
+    ],
+    "lights": [
+      {
+        "id": "aerosmith-letters",
+        "name": "AEROSMITH Standups",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "aero-left",
+            "lamps": 3
+          },
+          {
+            "shot": "aero-center",
+            "lamps": 2
+          },
+          {
+            "shot": "aero-right",
+            "lamps": 4
+          }
+        ],
+        "lit": "Every dark standup is a band-name letter still owed, spread over a bank of three on the left, a pair in the center, and four on the right.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the name to arm the X inserts, then run a major shot wearing a flashing X and it stays doubled the rest of the ball. Put an X on all the majors for a roving triple you can drop wherever you like.",
+        "goals": [
+          "mult-aerosmith-x"
+        ]
+      },
+      {
+        "id": "dude-inlanes",
+        "name": "DUDE Inlanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "dude-inlanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit return lane is a DUDE letter you have yet to bank; roll a ball through a lit one to collect it.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a flick of either flipper button slides the lit DUDE inserts across the return lanes, letting you park the letter you still owe under the lane the ball is dropping toward",
+          "when": "any moment before the ball drops into the return lanes"
+        },
+        "then": "A collected letter stays banked, so you only ever hunt the lanes still lit, and finishing the word bumps your bonus multiplier across the whole end-of-ball tally. Dude Looks Like a Lady lights every lane when you Crank It Up.",
+        "goals": [
+          "mode-dude-lady"
+        ]
+      },
+      {
+        "id": "song-select",
+        "name": "Record Scoop Songs",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-scoop"
+          }
+        ],
+        "lit": "The record insert at the left scoop blinks when a song is yours to pick or swap, and every song burns its own set of shots.",
+        "flashing": "Thumb the flipper buttons to roll through the choices before you take the scoop, which locks whatever is highlighted.",
+        "control": null,
+        "then": "Run the song's shots, then come back to the scoop to Crank It Up and finish it for its Super. Rats in the Cellar off the spinner and Back in the Saddle off the pops make the gentlest openers.",
+        "goals": [
+          "pregame-song-select",
+          "mode-rats-cellar"
+        ]
+      },
+      {
+        "id": "walk-this-way",
+        "name": "Walk This Way Ramps",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Finishing any major shot lights the arrows on the rest for a beat or two, and the two ramps are the pair you swing between for Walk This Way.",
+        "flashing": "A strobing arrow is a live combo -- catch it before the beat closes to bank it doubled, and each catch feeds the next.",
+        "control": null,
+        "then": "Rock the left and center ramps back and forth for combos that snowball, and hold it for a ball where a ramp is already carrying a multiplier. That loaded ramp under Super Ramps and a doubled playfield is the source of the game's monster shots.",
+        "goals": [
+          "combo-walk-this-way",
+          "combo-loaded-ramp-mega"
+        ]
+      },
+      {
+        "id": "toy-box-multiball",
+        "name": "Toy Box Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "toy-box"
+          },
+          {
+            "shot": "lock-saucer"
+          }
+        ],
+        "lit": "Beat the Toy Box to arm the saucer lock, and Jacky's magnet dunks each ball you feed it into the box.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "once three or more sit locked, a tap kills the multiball start so you can keep piling on locks -- the box takes six, and a six-ball launch doubles the base jackpots",
+          "when": "when the game asks whether to launch the multiball"
+        },
+        "then": "Launch on three for the deepest-scoring multiball on the game, then re-lock two mid-play to crack open a twenty-second tripled playfield. Grind the eight-shot jackpot ladder while it lasts.",
+        "goals": [
+          "mb-toybox",
+          "mb-toybox-6ball-3x"
+        ]
+      },
+      {
+        "id": "elevator-multiball",
+        "name": "Elevator Multiball",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "drop-target"
+          },
+          {
+            "shot": "elevator"
+          }
+        ],
+        "lit": "Both orbits arm the elevator lock, and a lit Elevator banks the locked ball -- Premium and LE can substitute the drop target.",
+        "flashing": null,
+        "control": null,
+        "then": "Stack three at the Elevator to open a three-ball round, then swap between the majors and the Elevator for jackpots that climb. There is no playfield multiplier here, so it tops out under Toy Box.",
+        "goals": [
+          "mb-elevator"
+        ]
+      },
+      {
+        "id": "vip-pass",
+        "name": "VIP Pass Ball Save",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "toybox-target-left"
+          },
+          {
+            "shot": "toybox-target-right"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "The pair of targets hugging the Toy Box arm the VIP Pass, and dropping both lights the right-outlane save.",
+        "flashing": null,
+        "control": null,
+        "then": "Nudge them down with soft, measured left-flipper taps beside the magnet rather than swinging full. Once the save glows, a right-outlane drain kicks the ball back to the shooter instead of ending the ball.",
+        "goals": [
+          "feat-vip-pass"
+        ]
+      },
+      {
+        "id": "mini-playfield-2x",
+        "name": "Mini-Playfield 2X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "mini-pf-targets"
+          },
+          {
+            "shot": "mini-pf-orbit"
+          }
+        ],
+        "lit": "On Premium and LE only, the five standups tucked behind the upper mini-playfield flipper light for backhands.",
+        "flashing": null,
+        "control": null,
+        "then": "Backhand the lot, then run the loop exit to double every point for a minute; stack it over a loaded ramp and a multiball for the compounding total. Pro tables only ever see this as a Mystery Double Scoring award.",
+        "goals": [
+          "mult-2x-playfield"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "A flick of either flipper button slides the lit DUDE inserts across the return lanes; park the letter you still owe under the lane the ball is dropping toward, roll through to bank it, and completing the word bumps your bonus multiplier for the end-of-ball tally. Dude Looks Like a Lady lights the lanes when you Crank It Up.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Lean on the soft plunge into the lock saucer for the Hidden Skill Shot and a Smart Missile. Take a gentle song like Rats in the Cellar, arm the VIP Pass save on the two Toy Box targets, and start stacking locks.",
+        "goals": [
+          "skill-hidden",
+          "mode-rats-cellar",
+          "feat-vip-pass"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell the band name to arm the X inserts and drop one onto a ramp, then farm the two-ramp combos of Walk This Way. Stack Toy Box locks for the deep multiball, run the orbits for Elevator, and flip the DUDE lanes to build your bonus multiplier.",
+        "goals": [
+          "mult-aerosmith-x",
+          "combo-walk-this-way",
+          "mb-toybox",
+          "mode-dude-lady"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear all nine songs to earn Final Tour, the grand wizard, where you tour twenty-four cities in sets of eight shots under every multiplier for a hundred-million Super Jackpot. Medley is the mini-wizard on the road there, and a fully loaded ramp under Super Ramps and a doubled playfield is where the eight-figure single shots live.",
+        "goals": [
+          "wiz-final-tour",
+          "wiz-medley",
+          "combo-loaded-ramp-mega"
+        ]
+      }
+    ]
+  }
+}

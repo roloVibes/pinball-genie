@@ -1,0 +1,1382 @@
+{
+  "machine": "The Lord of the Rings (Stern Pinball, 2003)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Auto and manual plunger. Three different skill shots live here depending on how hard you send the ball."
+    },
+    {
+      "id": "the-shire",
+      "name": "The Shire",
+      "type": "saucer",
+      "x": 0.09,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "The open recessed area on the far left, also called Hobbiton. Holds Mystery when seven Dwarf Rings are collected, and pays Souls when the ball arrives here. A white target sits at the back of it."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.16,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Normally runs across the top and drops into Barad-Dur. A raised post diverts it into Orthanc during some modes and on feeds from the right inlane. Weak shots fall short into the O-R-C lanes.",
+      "feeds": {
+        "shot": "barad-dur"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Returns to the left inlane. One of the four Ring shots, and the shot that collects Legolas.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "orthanc",
+      "name": "Orthanc Tower",
+      "type": "mech",
+      "x": 0.22,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "The upkicker behind the left ramp. Every ball that lands here during single-ball play is lifted onto the Paths of the Dead for Souls."
+    },
+    {
+      "id": "inner-orbit",
+      "name": "Inner Orbit",
+      "type": "orbit",
+      "x": 0.37,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Squeezed in between the Ring ramp and the left ramp, and it runs around the right side. Awards Gandalf. A Ring shot. When the diverter opens it feeds Orthanc directly.",
+      "feeds": {
+        "shot": "right-orbit"
+      }
+    },
+    {
+      "id": "ring-ramp",
+      "name": "Ring Ramp",
+      "type": "ramp",
+      "x": 0.46,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The metal ramp up the middle. It stops short of the backboard, so only a firm shot jumps the gap into the Ring itself. Weak ones dribble off the end and finish in the O-R-C lanes or Barad-Dur. Awards Frodo.",
+      "feeds": {
+        "shot": "the-ring"
+      }
+    },
+    {
+      "id": "ring-spinner",
+      "name": "Ring Ramp Spinner",
+      "type": "spinner",
+      "x": 0.46,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "At the mouth of the Ring ramp. Each spin adds 1,000 to the Ring Bonus, and tripping it briefly energises the Ring magnet to help the shot stick."
+    },
+    {
+      "id": "the-ring",
+      "name": "The Ring",
+      "type": "toy",
+      "x": 0.4092,
+      "y": 0.9262,
+      "trim": "all",
+      "notes": "The magnetised ring in the backboard, reachable only by jumping the Ring ramp. Starts modes, pays the Ring Bonus, and is the jackpot shot in Ring Frenzy and Ring Multiball."
+    },
+    {
+      "id": "balrog",
+      "name": "Balrog",
+      "type": "bash-toy",
+      "x": 0.5933,
+      "y": 0.6988,
+      "trim": "all",
+      "notes": "Parks out of the way most of the game and swings across the Ring ramp during the Fellowship battle. Only a firm hit to the middle of the figure registers — clipping the posts either side does nothing."
+    },
+    {
+      "id": "palantir",
+      "name": "Palantir",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "White target right of the Ring ramp. Gives a helpful award when lit, and relights from Barad-Dur. Rebounds from the left flipper can come straight back down the middle."
+    },
+    {
+      "id": "gollums-cave",
+      "name": "Gollum's Cave",
+      "type": "scoop",
+      "x": 0.66,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "The right upkicker. Lit awards only count if the ball arrived from a flipper shot, not from an orbit or ramp feeding the bumpers first. Home of Gollum Multiball, extra ball, Special and the Super awards.",
+      "feeds": {
+        "shot": "right-ramp"
+      }
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.7,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Three bumpers under the O-R-C lanes. Enough hits collects Boromir, and they shuffle the order of the Paths of the Dead lamps."
+    },
+    {
+      "id": "orc-lanes",
+      "name": "O-R-C Lanes",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "Three rollovers above the bumpers. Completing them raises the bonus multiplier. The lit lane moves with the flipper buttons."
+    },
+    {
+      "id": "barad-dur",
+      "name": "Barad-Dur",
+      "type": "scoop",
+      "x": 0.88,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "The eject in the far upper right, fed by the left orbit or by missed Ring shots rolling in. Counts tower hits, relights Palantir and hands over the Gifts of the Elves."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Sword Ramp",
+      "type": "ramp",
+      "x": 0.76,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The right ramp, also called Aragorn. Returns down a sword-shaped wireform to the right inlane, and physically holds locked balls on a post. A Ring shot, and where Two Towers locks are made.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Runs around to the left side and back to the flippers. Awards Merry, and is the fourth Ring shot.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "spot-ring-target",
+      "name": "Spot Ring Target",
+      "type": "standup",
+      "x": 0.95,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Large target down the right side below the orbit. When lit it hands you one Ring of a random type. The left inlane relights it, and it stays lit until you take it."
+    },
+    {
+      "id": "paths-of-the-dead",
+      "name": "Paths of the Dead",
+      "type": "mini-playfield",
+      "x": 0.3,
+      "y": 0.96,
+      "trim": "all",
+      "notes": "The wire run across the backboard fed by Orthanc. Four switches pay 100, 250 or 500 Souls each depending on whether their lamp is off, lit or flashing.",
+      "playfield": "paths-of-the-dead-zone"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights the first E in K-E-E-P and relights the Spot Ring target. Ships without rubber on the divider post."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lights the second E in K-E-E-P. A left orbit shot taken off this feed gets diverted into Orthanc instead of running the top."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Lights the K in K-E-E-P. The adjustable post ships in its hardest setting."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Lights the P in K-E-E-P."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.1862,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the Sword Ramp, Gollum's Cave, the right orbit and the Palantir."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.82,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the left orbit, left ramp, inner orbit and the Ring ramp."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-lane",
+      "title": "Skill Shot — Lane",
+      "category": "skillshot",
+      "summary": "The lightest of the three plunge strengths: a soft plunge that just reaches the flashing O-R-C lane. Lit on every numbered ball and every extra ball, except a ball-save relaunch or the plunge right after destroying the Ring.",
+      "difficulty": 1,
+      "reward": "+5X bonus multiplier",
+      "steps": [
+        {
+          "shot": "orc-lanes",
+          "action": "Soft plunge into the flashing lane",
+          "detail": "Slide the lit lane across with the flippers before you shoot; landing it awards five bonus multipliers at once."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "skillshot-tower",
+      "title": "Skill Shot — Tower",
+      "category": "skillshot",
+      "summary": "Plunge a little harder than the Lane skill shot to drop the ball into Orthanc instead — worth more, plus a free ride up to the Paths of the Dead.",
+      "difficulty": 2,
+      "reward": "250K, +50K per successive make",
+      "steps": [
+        {
+          "shot": "orthanc",
+          "action": "Plunge a bit stronger for the Tower",
+          "detail": "250,000 the first time and 50,000 more each time after, plus a free ride up to the Paths of the Dead."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "skillshot-flipper",
+      "title": "Skill Shot — Flipper",
+      "category": "skillshot",
+      "summary": "The hardest and highest-paying of the three: a full-strength plunge that runs all the way around to the flipper, then a deliberate shot to the right orbit.",
+      "difficulty": 3,
+      "reward": "1.25M for the first, more on each successive make",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Full plunge around the top, catch, then shoot the right orbit",
+          "detail": "The plunge comes around to the flippers; trap it and send the right orbit back up for the skill award.",
+          "technique": [
+            "from-cradle"
+          ]
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "collect-rings",
+      "title": "Collecting Rings",
+      "category": "progression",
+      "summary": "Four shots — both ramps, the inner orbit and the right orbit — each show one of three Ring inserts. Hitting a shot banks the type that was lit there. Three Elf Rings light Mode Start, seven Dwarf Rings light Mystery, and nine Rings of Man light Gollum Multiball.",
+      "difficulty": 1,
+      "reward": "Mode Start, Mystery and Gollum Multiball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Take whichever insert is lit",
+          "detail": "The game leans toward lighting the Ring type you are furthest from finishing.",
+          "link": "none"
+        },
+        {
+          "shot": "spot-ring-target",
+          "action": "Use the Spot Ring target",
+          "detail": "One Ring of a random type. The left inlane relights it and it waits there until you collect.",
+          "link": "none"
+        },
+        {
+          "shot": "the-ring",
+          "action": "Bank a free Elf Ring",
+          "detail": "With Mode Start unlit, a shot into the Ring itself simply awards one Elf Ring.",
+          "link": "none"
+        },
+        {
+          "shot": "gollums-cave",
+          "action": "Cash the award to reset the race",
+          "detail": "Once an award is lit, more Rings of that type only pay points — collecting the award is what clears the count and restarts it."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "ring-combos",
+      "title": "Ring Combos",
+      "category": "combo",
+      "summary": "Collecting a Ring lights every shot in red for a few seconds for two more of that same type. Chained Rings pay more than singles, so the fastest way to fill a Ring race is to treat every collection as the start of a three-shot burst.",
+      "difficulty": 2,
+      "reward": "Escalating values per chained Ring",
+      "steps": [
+        {
+          "shot": "inner-orbit",
+          "action": "Collect the lit Ring",
+          "detail": "Red arrows light everywhere for a short window."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Take the second immediately",
+          "detail": "Do not trap up — the combo window is only a few seconds long.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish the third",
+          "detail": "If that Ring race is already complete the combo shots switch to a type you still need.",
+          "link": "none"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "ring-frenzy",
+      "title": "Ring Frenzy",
+      "category": "mode",
+      "summary": "Finish all three Ring races and a ten-second hurry-up starts. Every insert on the four Ring shots pulses, and each one you collect pays 100K, 125K then 150K, feeds the central jackpot and resets the timer.",
+      "difficulty": 2,
+      "reward": "600K jackpot base, up to 5X",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Clear inserts to reset the clock",
+          "detail": "Every insert collected puts the ten seconds back on, so keep moving."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish whole shots for multiplier",
+          "detail": "Lighting all three inserts on one shot raises the jackpot multiplier by one, to a ceiling of five.",
+          "link": "none"
+        },
+        {
+          "shot": "the-ring",
+          "action": "Cash out at the Ring",
+          "detail": "The jackpot pays at whatever value and multiplier you have built, and collecting it ends the frenzy."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "ring-modes",
+      "title": "The Six Ring Modes",
+      "category": "progression",
+      "summary": "Three Elf Rings light Mode Start at the Ring. Flip either button to change which of the six modes is selected, then shoot the Ring. Only one runs at a time, and each mode can only be played once whether you win it or not.",
+      "difficulty": 2,
+      "reward": "A Gift of the Elves for each mode won",
+      "steps": [],
+      "instructions": [
+        "Escape the Ringwraiths — a million counts down while you chase a moving destination shot. The right ramp is always lit and adds roughly 200,000 back to the clock.",
+        "Gandalf vs Saruman — four ramp shots at 250K, 500K, 750K and 1M, doubled if you take them back to back, then Orthanc, a roving shot, and Orthanc again.",
+        "Warg Battle — the left ramp opens it, then all seven main shots light. Each one kills a Warg and pays 100,000 more than the last.",
+        "War of the Ents — both outer orbits pay 750K and Orthanc pays 500K. Six shots into Orthanc wins it, and every one of them also feeds the Paths of the Dead.",
+        "Attack of Shelob — alternate sides of the playfield, 500K then 750K then 1M, with the shot you already used dropping out each round.",
+        "Kill the Witchking — the left ramp or right orbit lights the Sword Ramp for a combo. Four completed combos win it; the follow-up shot is the only one that counts as progress.",
+        "Every mode except the first runs on a 30-second timer, and letting it expire still burns the mode.",
+        "Finish all six and the Ring lamps strobe, which is your cue that There and Back Again is available."
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "war-of-the-ents",
+      "title": "War of the Ents",
+      "category": "mode",
+      "summary": "The most valuable mode to play early, because it is not really about the points. The inner orbit diverter opens so you can put balls straight into Orthanc, and every Orthanc shot buys a trip up the Paths of the Dead.",
+      "difficulty": 2,
+      "reward": "750K per orbit, 500K per tower, plus Souls",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Bank the outer orbits",
+          "detail": "Both outer orbits are lit for 750,000 while the mode runs."
+        },
+        {
+          "shot": "inner-orbit",
+          "action": "Feed the tower through the inner orbit",
+          "detail": "The diverter is open, so this shot drops straight into Orthanc for 500,000."
+        },
+        {
+          "shot": "orthanc",
+          "action": "Six tower shots to win",
+          "detail": "Thirty seconds on the clock, and every tower shot also sends you up the Paths for Souls toward Return of the King."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "kill-the-witchking",
+      "title": "Kill the Witchking",
+      "category": "mode",
+      "summary": "The one mode that is pure combo work. The left ramp and right orbit start lit for 500K each, and either one arms the Sword Ramp for a few seconds. Only the Sword Ramp follow-up damages him, and you need four of them.",
+      "difficulty": 3,
+      "reward": "500K per setup, 1M per combo",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Set up off the left ramp",
+          "detail": "The right orbit works the same way; both relight if the combo window lapses."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Combo the Sword Ramp inside the window",
+          "detail": "One million and one hit landed. Missing costs you nothing but time."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Keep re-arming",
+          "detail": "There is no limit on setup shots, but the clock is 30 seconds and only four combos finish him.",
+          "link": "none"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "fellowship-multiball",
+      "title": "Fellowship of the Ring Multiball",
+      "category": "multiball",
+      "summary": "Collect all nine Fellowship members from their own shots, then put a ball in Barad-Dur. On later attempts only a couple of members are eligible at once, so it takes longer each time round.",
+      "difficulty": 2,
+      "reward": "5M for killing the Balrog, plus a Gift",
+      "steps": [
+        {
+          "shot": "ring-ramp",
+          "action": "Collect the flashing members",
+          "detail": "The Ring ramp gives Frodo, the left ramp Legolas, the inner orbit Gandalf, the Sword Ramp Aragorn, the right orbit Merry, the left orbit Pippin, Gollum's Cave Gimli, the bumpers Boromir and the Shire Sam."
+        },
+        {
+          "shot": "barad-dur",
+          "action": "Start it at the tower",
+          "detail": "Any ball that finds the eject starts it, including a Ring shot that falls short."
+        },
+        {
+          "shot": "balrog",
+          "action": "Hit the Balrog, then a ramp",
+          "detail": "500,000 for the Balrog, 750,000 for the ramp that walks one member across the bridge. Repeat eight times."
+        },
+        {
+          "shot": "balrog",
+          "action": "Take the ninth hit",
+          "detail": "The ninth Balrog hit ends it for 5 million and lights a Gift of the Elves. Unlit Balrog hits are only worth 100,000."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "two-towers-multiball",
+      "title": "The Two Towers Multiball",
+      "category": "multiball",
+      "summary": "Spell K-E-E-P with the inlanes and outlanes to light a Sword lock, then physically lock three balls on the sword ramp. Letters can only be collected in single-ball play, so a long multiball stalls your progress here.",
+      "difficulty": 2,
+      "reward": "Jackpots multiplied by ball count and by streak",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Spell K-E-E-P",
+          "detail": "Outlanes give K and P, inlanes give the two Es. On the first multiball you may bank several completions before locking."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Lock three on the sword",
+          "detail": "Balls sit on a post in the wireform. Expect one to be released the moment you hit the ramp again with lock unlit."
+        },
+        {
+          "shot": "inner-orbit",
+          "action": "Chain jackpots without pausing",
+          "detail": "Each jackpot raises the streak number up to seven, but three seconds without one resets it to one and relights everything."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Take the Super Jackpot",
+          "detail": "Fight through the stages of Helm's Deep and the Ring lights for a Super. That first Super finishes the multiball and lights a Gift."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "return-of-the-king-multiball",
+      "title": "Return of the King Multiball",
+      "category": "multiball",
+      "summary": "Qualified by collecting 5,000 Souls from the Paths of the Dead, then started at Orthanc, Barad-Dur or Gollum's Cave. Seven levels of four jackpots each, and the order you take them in is what makes it pay.",
+      "difficulty": 3,
+      "reward": "250K base rising 50K a level, up to 4X per shot",
+      "steps": [
+        {
+          "shot": "paths-of-the-dead",
+          "action": "Bank 5,000 Souls first",
+          "detail": "Four switches on the Paths pay 100, 250 or 500 each depending on their lamp state."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Read the lamps before you shoot",
+          "detail": "Each of the four Ring shots carries one to four lamps — that is your jackpot multiplier for that shot."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take them lowest to highest",
+          "detail": "Collecting all four in ascending order raises every multiplier on the next level by one."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Clear level seven",
+          "detail": "All four shots relight for one-million Supers, multiplied by whatever you have built. That lights a Gift of the Elves."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "paths-of-the-dead",
+      "title": "Feeding the Paths of the Dead",
+      "category": "progression",
+      "summary": "Souls are the slowest currency in the game, so it pays to farm them deliberately. Any ball that drops into Orthanc during single-ball play gets lifted onto the Paths, and the four lamps up there decide what the trip is worth.",
+      "difficulty": 2,
+      "reward": "Up to 2,000 Souls per trip",
+      "steps": [
+        {
+          "shot": "palantir",
+          "action": "Step the lamps up with white targets",
+          "detail": "Palantir, Spot Ring, the target behind the Shire and the target in the Sword Ramp each advance one lamp from off to lit to flashing."
+        },
+        {
+          "shot": "orthanc",
+          "action": "Ride the tower",
+          "detail": "Off pays 100 Souls per switch, lit pays 250 and flashing pays 500."
+        },
+        {
+          "shot": "the-shire",
+          "action": "Take the Shire bonus",
+          "detail": "Landing in the Shire pays 300 Souls, plus another 50 for every trip you have already made up the Paths."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "gollum-multiball",
+      "title": "Gollum Multiball",
+      "category": "multiball",
+      "summary": "Nine Rings of Man light Gollum's Cave. It adds one ball and leaves everything else running, which makes it the best stacking tool on the machine — but every seven seconds it flips between doubling and halving all your scoring.",
+      "difficulty": 2,
+      "reward": "One extra ball in play, 2X or 0.5X scoring",
+      "steps": [
+        {
+          "shot": "gollums-cave",
+          "action": "Start it from a flipper shot",
+          "detail": "It cannot be started inside a movie multiball or a special mode, but it can start during any Ring mode."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Time your big shots to Smeagol",
+          "detail": "Smeagol on the display doubles everything, Gollum halves it. The swap is on a seven-second rhythm."
+        },
+        {
+          "shot": "gollums-cave",
+          "action": "Use it to resurrect a multiball",
+          "detail": "Drain back to one ball at the end of a movie multiball and starting Gollum during the fanfare puts you back into two-ball play."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "gollum-supers",
+      "title": "Gollum's Cave Supers",
+      "category": "multiplier",
+      "summary": "The cave counts every shot you put into it and hands out a Super award at fixed intervals — every three shots to start with. Super points score no matter what else is running, which makes this a genuinely free scoring boost.",
+      "difficulty": 2,
+      "reward": "Spinner 15K, pops 20K, ramps and loops 250K, switches 10K",
+      "steps": [
+        {
+          "shot": "gollums-cave",
+          "action": "Keep feeding the cave",
+          "detail": "The awards arrive in order: Super Spinner, Super Pops, Super Ramps, Super Loops, then Super Everything."
+        },
+        {
+          "shot": "ring-spinner",
+          "action": "Cash Super Spinner",
+          "detail": "Fifteen thousand a spin turns the Ring ramp entrance into real money."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cash Super Ramps and Loops",
+          "detail": "A quarter million per ramp or loop. After a full cycle the price per award goes up by one shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "barad-dur-awards",
+      "title": "Barad-Dur Tower Hits",
+      "category": "strategy",
+      "summary": "The tower keeps a running count of hits and pays out on the third, seventh, twelfth and every fifth after that. It also relights the Palantir whenever it is dark, which makes it the cheapest way to keep that award available.",
+      "difficulty": 2,
+      "reward": "Hold Ring Bonus, 2M awards, extra ball",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Run the orbit into the tower",
+          "detail": "The left orbit is the intended route, but a Ring shot that dies on the ramp often falls in for free."
+        },
+        {
+          "shot": "barad-dur",
+          "action": "Collect at the intervals",
+          "detail": "The first award each ball is usually Hold Ring Bonus, with two million typical after that."
+        },
+        {
+          "shot": "palantir",
+          "action": "Use the relight",
+          "detail": "Every tower shot re-arms the Palantir if it was dark."
+        }
+      ],
+      "fx": "castle"
+    },
+    {
+      "id": "palantir",
+      "title": "The Palantir",
+      "category": "strategy",
+      "summary": "A white target that hands out whatever you happen to need. The award is not truly random — the game reads your situation and tends to give the useful thing, which is why you should shoot it when something is on the line rather than banking it.",
+      "difficulty": 1,
+      "reward": "Add-A-Ball, ball save, spotted progress, bonus",
+      "steps": [
+        {
+          "shot": "palantir",
+          "action": "Shoot it while a mode is dying",
+          "detail": "It commonly adds time when a mode timer is nearly out, and adds a ball during multiball."
+        },
+        {
+          "shot": "palantir",
+          "action": "Use it to skip grind",
+          "detail": "It can spot a Fellowship member, a K-E-E-P letter, a Ring or 500 Souls."
+        },
+        {
+          "shot": "barad-dur",
+          "action": "Relight it",
+          "detail": "A tower hit brings it back whenever it is unlit."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "mystery-at-the-shire",
+      "title": "Mystery at the Shire",
+      "category": "strategy",
+      "summary": "Seven Dwarf Rings light Mystery in the Shire, and the awards there are large. The trap is that Mystery will happily start a movie multiball that is close to qualifying, so collect it when a multiball start suits you.",
+      "difficulty": 2,
+      "reward": "1M, Souls, bonus multipliers, or a multiball start",
+      "steps": [
+        {
+          "shot": "the-shire",
+          "action": "Arrive from the playfield",
+          "detail": "A ball dropped into the Shire off the Paths of the Dead does not collect Mystery — it has to get there from below."
+        },
+        {
+          "shot": "the-shire",
+          "action": "Take the award",
+          "detail": "Common results include 1,000 Souls, maxed Paths lamps, a million, five bonus multipliers or a lit extra ball."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "gifts-of-the-elves",
+      "title": "Gifts of the Elves",
+      "category": "strategy",
+      "summary": "Every mode or multiball you actually finish lights a Gift at the left orbit, collected at Barad-Dur. Six of them exist and you choose which one is flashing, so this is one of the few places in the game where you get to pick your reward.",
+      "difficulty": 2,
+      "reward": "Extra ball, Ring Multiball, Special, 5M, 2X scoring or Super Ring Frenzy",
+      "steps": [
+        {
+          "shot": "the-shire",
+          "action": "Change the flashing Gift",
+          "detail": "The white target at the back of the Shire cycles which Gift is queued."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Run the orbit",
+          "detail": "Gifts light here, and although several can be queued up, only one can be collected at a time."
+        },
+        {
+          "shot": "barad-dur",
+          "action": "Collect at the tower",
+          "detail": "2X Scoring doubles everything for 60 seconds on top of every other multiplier, and the Palantir will often extend it by 30 seconds."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "stacking",
+      "title": "Stacking Modes and Multiballs",
+      "category": "strategy",
+      "summary": "Only one Ring mode runs at a time, but any mode can ride along with a multiball. Start the mode first and the multiball second — once a movie multiball is underway you cannot start a mode until it ends.",
+      "difficulty": 3,
+      "reward": "Mode progress under multiball scoring",
+      "steps": [
+        {
+          "shot": "the-ring",
+          "action": "Start the mode first",
+          "detail": "Gollum is the exception — it can be started at any point during a mode and does not hide anything."
+        },
+        {
+          "shot": "barad-dur",
+          "action": "Then start the multiball",
+          "detail": "During a movie multiball the red arrows all belong to the jackpots, so you have to remember the mode shots yourself."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Play the mode blind",
+          "detail": "Timers are hidden behind the multiball animations, but the game still calls the countdown out loud."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "victory-laps",
+      "title": "Victory Laps",
+      "category": "combo",
+      "summary": "Finishing any movie multiball turns all seven main shots into laps worth 500K, then 550K, then 600K and so on. Clear all seven before touching the Ring and the whole ladder starts 50K higher next time round.",
+      "difficulty": 2,
+      "reward": "500K per lap, base rising with each clean set",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Sweep the seven shots",
+          "detail": "Each lap you collect goes dark until the set is relit."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Only relight when you have to",
+          "detail": "A Ring shot relights everything but drops the value back to base — clearing all seven first is what raises the base."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "there-and-back-again",
+      "title": "There and Back Again",
+      "category": "wizard",
+      "summary": "Play all six Ring modes and the lamps strobe. Shoot the Ring to lock in a mode, then any lit shot pays what you originally scored in that mode — but each shot you use is gone for good, so the last modes are the hardest to cash.",
+      "difficulty": 3,
+      "reward": "Your original mode totals, plus 5M to finish",
+      "steps": [
+        {
+          "shot": "the-ring",
+          "action": "Lock in a cycling mode",
+          "detail": "One million, and the mode lamp stops on whatever was flashing."
+        },
+        {
+          "shot": "inner-orbit",
+          "action": "Cash it at any lit shot",
+          "detail": "The shot pays the exact total you finished that mode with, then goes dark permanently."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Work down to the last one",
+          "detail": "Sixty seconds on the clock and it does not stop for a ball stuck in the bumpers. Finishing all six pays 5 million and a Gift."
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "destroy-the-ring",
+      "title": "Destroy the Ring",
+      "category": "wizard",
+      "summary": "The main goal of the game. Play all three movie multiballs — win or lose — and the Ring qualifies. Four Ring shots, then the Ring itself, then you have to dislodge the trapped ball using a second one.",
+      "difficulty": 3,
+      "reward": "1M to 2.5M ladder, 3M, then 5M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Clear the four Ring shots",
+          "detail": "Both ramps, the inner orbit and the right orbit, for 1M, 1.5M, 2M and 2.5M."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Shoot the Ring for 3M",
+          "detail": "The magnet grabs the ball and holds it while a fresh ball is launched."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Dislodge the trapped ball",
+          "detail": "Five million, and you get your ball back afterwards. Drain at any stage and the whole thing ends with nothing more paid."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "valinor",
+      "title": "Valinor Multiball",
+      "category": "wizard",
+      "summary": "The deepest thing in the game and the reason serious players fight the Ring modes before finishing the multiballs. Everything has to be genuinely completed, not merely played, and Destroy the Ring usually has to happen twice.",
+      "difficulty": 3,
+      "reward": "The final multiball",
+      "steps": [
+        {
+          "shot": "balrog",
+          "action": "Truly finish all three movie multiballs",
+          "detail": "Kill the Balrog, reach the Two Towers Supers, and clear all seven Return of the King levels — each far enough to earn its Gift.",
+          "link": "none"
+        },
+        {
+          "shot": "the-ring",
+          "action": "Play all six modes and There and Back Again",
+          "detail": "Playing them is enough; you do not have to win them. Do this before the multiballs are all done or the Ring locks you out.",
+          "link": "none"
+        },
+        {
+          "shot": "barad-dur",
+          "action": "Collect all six Gifts of the Elves",
+          "detail": "Every Gift has to be taken at the tower.",
+          "link": "none"
+        },
+        {
+          "shot": "the-ring",
+          "action": "Destroy the Ring",
+          "detail": "Valinor begins straight afterwards. In practice this needs two trips through Destroy the Ring unless you are having an exceptional game."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "orc-lanes-bonus",
+      "title": "O-R-C and the Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Three rollovers above the bumpers. Completing them steps the bonus multiplier, the lit lane slides with the flipper buttons, and the bumpers underneath shuffle the Paths of the Dead lamps while you are up there.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier steps",
+      "steps": [
+        {
+          "shot": "orc-lanes",
+          "action": "Move the lit lane before the ball gets there",
+          "detail": "Either flipper button rotates it, so most completions are free if you are watching."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Take the free progress underneath",
+          "detail": "Bumper hits build Boromir for the Fellowship and reorder the Paths lamps."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "ring-bonus",
+      "title": "The Ring Bonus",
+      "category": "strategy",
+      "summary": "The spinner at the mouth of the Ring ramp adds a thousand points a spin to a stored Ring Bonus. Shoot the Ring while it is not lit for a mode and the whole accumulated total pays out at once.",
+      "difficulty": 1,
+      "reward": "1,000 per spin, paid on an unlit Ring shot",
+      "steps": [
+        {
+          "shot": "ring-spinner",
+          "action": "Rip the spinner",
+          "detail": "It also fires the Ring magnet briefly, which helps the shot stick."
+        },
+        {
+          "shot": "the-ring",
+          "action": "Cash it with the Ring unlit",
+          "detail": "It normally resets each ball, though a Hold Ring Bonus award from the tower keeps it."
+        }
+      ],
+      "fx": "cash"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "lotr-tower-skill",
+      "title": "Straight to the Tower",
+      "desc": "Land the Orthanc skill shot from the plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-tower"
+    },
+    {
+      "id": "lotr-first-ring-race",
+      "title": "Three for the Elven-kings",
+      "desc": "Collect three Elf Rings and light Mode Start.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "collect-rings"
+    },
+    {
+      "id": "lotr-ring-combo",
+      "title": "Chain of Rings",
+      "desc": "Collect a Ring and combo two more inside the window.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ring-combos"
+    },
+    {
+      "id": "lotr-mode-win",
+      "title": "One Down",
+      "desc": "Complete any Ring mode successfully and light a Gift of the Elves.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ring-modes"
+    },
+    {
+      "id": "lotr-balrog",
+      "title": "The Ninth Blow",
+      "desc": "Destroy the Balrog to finish Fellowship of the Ring Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "fellowship-multiball"
+    },
+    {
+      "id": "lotr-souls",
+      "title": "Five Thousand Souls",
+      "desc": "Bank 5,000 Souls from the Paths of the Dead.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "paths-of-the-dead"
+    },
+    {
+      "id": "lotr-ttt-super",
+      "title": "Hold the Deep",
+      "desc": "Reach the Super Jackpot in The Two Towers Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "two-towers-multiball"
+    },
+    {
+      "id": "lotr-rotk-seven",
+      "title": "Seven Levels",
+      "desc": "Clear all seven levels of Return of the King Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "return-of-the-king-multiball"
+    },
+    {
+      "id": "lotr-frenzy",
+      "title": "All Rings Collected",
+      "desc": "Finish all three Ring races to start Ring Frenzy.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ring-frenzy"
+    },
+    {
+      "id": "lotr-taba",
+      "title": "There and Back Again",
+      "desc": "Play all six Ring modes and start the recap wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "there-and-back-again"
+    },
+    {
+      "id": "lotr-destroy",
+      "title": "Into the Fire",
+      "desc": "Dislodge the trapped ball from the Ring to destroy it.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "destroy-the-ring"
+    },
+    {
+      "id": "lotr-valinor",
+      "title": "Sail to Valinor",
+      "desc": "Meet every requirement and start Valinor Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "valinor"
+    }
+  ],
+  "drills": [
+    {
+      "id": "three-plunge-strengths",
+      "title": "Three Plunge Strengths",
+      "text": "Run all three plunges back to back — soft into the flashing O-R-C lane, a touch firmer into Orthanc, then full strength around to the flipper for a deliberate right orbit. The gap between the Lane and Tower plunges is smaller than it looks, and the Tower one buys a free ride up the Paths of the Dead on top of the points.",
+      "reps": "10 plunges per strength",
+      "focus": "skill-shot",
+      "goal": "skillshot-lane",
+      "shots": [
+        "shooter-lane",
+        "orc-lanes",
+        "orthanc",
+        "paths-of-the-dead",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "jump-the-ring-ramp",
+      "title": "Jump The Ring Ramp",
+      "text": "The Ring ramp stops short of the backboard, so only a firm shot jumps the gap into the Ring itself — anything soft dribbles off the end into the O-R-C lanes or Barad-Dur. Rip the spinner at the mouth on the way through: every spin adds to the Ring Bonus and briefly fires the magnet that helps the shot stick.",
+      "reps": "20 attempts, counting the ones that reach the Ring",
+      "focus": "accuracy",
+      "goal": "ring-bonus",
+      "shots": [
+        "ring-ramp",
+        "ring-spinner",
+        "the-ring",
+        "orc-lanes",
+        "barad-dur"
+      ]
+    },
+    {
+      "id": "ring-combo-bursts",
+      "title": "Three Rings, One Burst",
+      "text": "Treat every Ring you collect as the first of three. The red arrows light everywhere for only a few seconds, so take the next two off the return without cradling — both ramps, the inner orbit and the right orbit are all live, so shoot whichever one the ball is already pointing at.",
+      "reps": "10 bursts, counting three-Ring completions",
+      "focus": "flow",
+      "goal": "ring-combos",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "inner-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "sword-ramp-combos",
+      "title": "Arm It, Then Sword",
+      "text": "The left ramp and the right orbit each arm the Sword Ramp for a few seconds, and only the Sword Ramp follow-up lands a hit. Drill the two-shot pair off both setups so you can start the combo from whichever side the ball gives you — missing costs nothing but the clock.",
+      "reps": "10 pairs from each setup shot",
+      "focus": "flow",
+      "goal": "kill-the-witchking",
+      "shots": [
+        "left-ramp",
+        "right-orbit",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "cave-from-a-cradle",
+      "title": "Cave From A Cradle",
+      "text": "Gollum's Cave only pays its lit awards when the ball arrives from a flipper shot, so a ball that rattles in off an orbit or a ramp is wasted. Cradle on the left flipper and shoot it deliberately every time — the Supers arrive on a count of shots, so each honest one moves the ladder along.",
+      "reps": "one full ball, every cave shot from a cradle",
+      "focus": "ball-control",
+      "goal": "gollum-supers",
+      "shots": [
+        "gollums-cave",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "light-the-paths-first",
+      "title": "Light The Lamps Before The Tower",
+      "text": "Souls are the slowest currency in the game, so farm them on purpose. Step the four Paths lamps up with the white targets — the Palantir, the Spot Ring target, the one at the back of the Shire and the one in the Sword Ramp — before you feed Orthanc, because a trip up with lamps flashing is worth several times the same trip with them dark.",
+      "reps": "3 tower trips with every lamp flashing",
+      "focus": "accuracy",
+      "goal": "paths-of-the-dead",
+      "shots": [
+        "palantir",
+        "spot-ring-target",
+        "the-shire",
+        "right-ramp",
+        "orthanc",
+        "paths-of-the-dead"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "quest",
+  "playfields": [
+    {
+      "id": "paths-of-the-dead-zone",
+      "name": "The Paths of the Dead",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.16,
+        "y": 0.88,
+        "w": 0.28,
+        "h": 0.12
+      },
+      "trim": "all",
+      "entries": [
+        "orthanc"
+      ],
+      "exits": [
+        {
+          "shot": "the-shire"
+        },
+        {
+          "shot": "left-inlane"
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "There is nothing extra to press on this one. It landed a decade before Stern started drilling a button into the middle of the lockdown bar, so the shooter rod, the flippers and a well-judged nudge are the whole interface. The one control decision you get is how hard you plunge, because three different skill shots live at three different plunge strengths."
+  },
+  "howItPlays": {
+    "objective": "You carry the One Ring across Middle-earth, collecting Rings and fighting through six story modes and three movie multiballs. Destroy the Ring to win the game, and truly complete everything to sail for Valinor.",
+    "loop": [
+      "Collect Rings at the four Ring shots -- both ramps and both orbits -- banking whichever of the Elf, Dwarf and Man types is lit on each.",
+      "With three Elf Rings banked, Mode Start lights at the Ring; flip to choose one of the six modes, then shoot the Ring to begin.",
+      "Feed Orthanc to ride the Paths of the Dead for Souls, and bank five thousand of them to qualify Return of the King.",
+      "Run the three movie multiballs -- Fellowship, the Two Towers sword locks, and Return of the King -- and take each far enough to earn its Gift of the Elves at Barad-Dur.",
+      "Play all three multiballs to qualify Destroy the Ring, the main goal, then complete everything for the final Valinor multiball."
+    ],
+    "lights": [
+      {
+        "id": "ring-shots",
+        "name": "The Four Ring Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "inner-orbit"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "spot-ring-target"
+          }
+        ],
+        "lit": "Each of the four Ring shots shows one of three Ring inserts, and hitting a shot banks the type lit there; the game leans toward lighting whichever type you are furthest from finishing.",
+        "flashing": "Collecting a Ring flashes every shot red for a short window so you can grab two more of the same type.",
+        "control": null,
+        "then": "Chain a collected Ring into two more off the return for far more than singles. Bank three Elf Rings to light Mode Start, seven Dwarf Rings for Mystery in the Shire, and nine Rings of Man to open Gollum Multiball -- collecting each lit award resets its race to run again. The Spot Ring target hands you a random Ring and relights off the left inlane.",
+        "goals": [
+          "collect-rings",
+          "ring-combos"
+        ]
+      },
+      {
+        "id": "the-ring",
+        "name": "The Ring & Ring Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "ring-ramp"
+          },
+          {
+            "shot": "ring-spinner"
+          },
+          {
+            "shot": "the-ring"
+          }
+        ],
+        "lit": "The Ring ramp falls a little short of the backboard, so it takes a firm shot to leap the gap into the magnetized Ring itself; the Ring is where every mode starts and where the Ring Bonus and the multiball jackpots pay.",
+        "flashing": "The Ring lamps strobe once all six modes have been played, the signal that There and Back Again has opened up.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "tap either button to swap which of the six Ring modes is queued up before you commit to it",
+          "when": "three Elf Rings have lit Mode Start at the Ring"
+        },
+        "then": "Rip the mouth spinner to build the Ring Bonus and briefly fire the magnet that helps the shot stick, then start your chosen mode. Finishing all three Ring races instead kicks off Ring Frenzy, a hurry-up that cashes out at the Ring. Only one mode runs at a time, and each is playable just once.",
+        "goals": [
+          "ring-modes",
+          "ring-frenzy",
+          "ring-bonus"
+        ]
+      },
+      {
+        "id": "orc-lanes",
+        "name": "O-R-C Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "orc-lanes"
+          },
+          {
+            "shot": "jet-bumpers"
+          }
+        ],
+        "lit": "One of the three O-R-C rollovers above the bumpers is lit; completing all three steps your end-of-ball bonus multiplier, while the bumpers underneath build Boromir for the Fellowship and reshuffle the Paths of the Dead lamps.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "either flipper button rotates which O-R-C lane is lit, so you can slide the lit one under the ball before it arrives -- line it up in time and the completion costs you nothing",
+          "when": "any time before the ball drops through the top lanes"
+        },
+        "then": "Move the lit lane across to finish O-R-C for a bonus-multiplier step, and take the free bumper progress underneath while you are up there. The soft-plunge Lane skill shot drops straight into the lit lane for five multipliers at once.",
+        "goals": [
+          "orc-lanes-bonus",
+          "skillshot-lane"
+        ]
+      },
+      {
+        "id": "paths-of-the-dead",
+        "name": "Orthanc & the Paths of the Dead",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "orthanc"
+          },
+          {
+            "shot": "paths-of-the-dead"
+          },
+          {
+            "shot": "palantir"
+          },
+          {
+            "shot": "the-shire"
+          }
+        ],
+        "lit": "Whenever the ball settles in Orthanc during single-ball play it is hoisted up onto the Paths of the Dead, where four switches pay Souls; each pays more with its lamp lit or flashing, and the white targets -- Palantir, Spot Ring, the Shire target and the one in the Sword ramp -- step those lamps up.",
+        "flashing": "A flashing Paths lamp pays the most of all, five hundred Souls a switch against a hundred when it is dark.",
+        "control": null,
+        "then": "Light the lamps before you ride the tower so each trip pays several times a cold one, and take the Shire bonus on the way through. Bank five thousand Souls -- the slowest resource in the game to build -- to qualify Return of the King Multiball, startable at Gollum's Cave, Orthanc or Barad-Dur.",
+        "goals": [
+          "paths-of-the-dead",
+          "return-of-the-king-multiball"
+        ]
+      },
+      {
+        "id": "barad-dur",
+        "name": "Barad-Dur",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "barad-dur"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "palantir"
+          }
+        ],
+        "lit": "The far-right tower eject, fed by the left orbit or by Ring shots that dribble in short, tallies your hits and hands out an award at the third hit, the seventh, the twelfth and every fifth from there; it brings the Palantir back to life any time that target has gone dark.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect at the intervals for Hold Ring Bonus and two-million awards, and use the tower as the collect point for every Gift of the Elves -- you choose which Gift is queued over at the Shire, and its 2X Scoring gift doubles everything for a full minute on top of any other multiplier.",
+        "goals": [
+          "barad-dur-awards",
+          "gifts-of-the-elves",
+          "palantir"
+        ]
+      },
+      {
+        "id": "keep-sword",
+        "name": "K-E-E-P & the Sword Ramp",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-outlane"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "The outlanes light the K and the P and the inlanes light the two Es; spelling K-E-E-P lights a Sword lock, and the Sword ramp holds your locked balls on a post. Those letters register only during single-ball play, so a drawn-out multiball freezes this progress entirely.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell K-E-E-P and lock three on the sword to start The Two Towers Multiball, then chain jackpots without pausing -- three seconds without one drops your streak back to one -- and fight through Helm's Deep to the Ring Super Jackpot, which caps the multiball and lights up a Gift.",
+        "goals": [
+          "two-towers-multiball"
+        ]
+      },
+      {
+        "id": "gollums-cave",
+        "name": "Gollum's Cave",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "gollums-cave"
+          }
+        ],
+        "lit": "The right upkicker pays its lit awards only when the ball arrives straight off a flipper shot, not after rattling in from an orbit or ramp; nine Rings of Man light it for Gollum Multiball, and it also hosts the extra ball, Special and the Super awards.",
+        "flashing": null,
+        "control": null,
+        "then": "Start Gollum from a cradle shot -- it adds a ball and leaves the rest running, the strongest stacking tool on the table, though it swings between doubling and halving your score every seven seconds. Keep feeding the cave for its Super awards, which pay regardless of what else is going on.",
+        "goals": [
+          "gollum-multiball",
+          "gollum-supers"
+        ]
+      },
+      {
+        "id": "fellowship",
+        "name": "The Fellowship & the Balrog",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "barad-dur"
+          },
+          {
+            "shot": "balrog"
+          },
+          {
+            "shot": "jet-bumpers"
+          },
+          {
+            "shot": "the-shire"
+          }
+        ],
+        "lit": "Each of the nine Fellowship members rides its own shot -- Frodo at the Ring ramp, the rest spread across the ramps and orbits, Gimli at Gollum's Cave, Boromir in the bumpers and Sam at the Shire; collect the flashing members, then put a ball in Barad-Dur to start the multiball.",
+        "flashing": "A flashing member insert is one still eligible to collect this time round.",
+        "control": null,
+        "then": "Start it at the tower, then alternate the Balrog and a ramp -- the Balrog only registers a solid hit dead in its middle -- walking one member across the bridge each round. The ninth Balrog hit closes it out at five million and turns on a Gift of the Elves.",
+        "goals": [
+          "fellowship-multiball"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper button rotates which of the three O-R-C rollover lanes is lit; slide the lit one across before the ball reaches the top so it rolls through the lane you still need. Completing O-R-C steps your bonus multiplier, and the soft-plunge Lane skill shot into the lit lane banks five multipliers at once.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take a plunge skill shot -- a gentle plunge into the lit O-R-C lane for five bonus multipliers, a touch firmer into Orthanc for points and a free Souls ride, or full strength around to a caught right-orbit shot for the most. Then collect Rings at the four Ring shots and light your first mode.",
+        "goals": [
+          "skillshot-lane",
+          "skillshot-tower",
+          "skillshot-flipper",
+          "collect-rings"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start a Ring mode first, then stack a multiball on top, because a movie multiball locks you out of starting modes until it ends. Farm the Paths of the Dead for Souls and Gollum's Cave for its free Supers, and collect a Gift of the Elves -- the 2X Scoring one especially -- from every mode or multiball you finish.",
+        "goals": [
+          "stacking",
+          "paths-of-the-dead",
+          "gollum-supers",
+          "gifts-of-the-elves"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Play all three movie multiballs to qualify Destroy the Ring, the main goal -- clear the four Ring shots, hit the Ring for three million, then dislodge the trapped ball with a second one for five million. Truly finishing every multiball, all six modes, and all six Gifts opens Valinor Multiball, the deepest challenge the game holds.",
+        "goals": [
+          "destroy-the-ring",
+          "valinor",
+          "victory-laps"
+        ]
+      }
+    ]
+  }
+}

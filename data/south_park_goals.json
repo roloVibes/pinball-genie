@@ -1,0 +1,919 @@
+{
+  "machine": "South Park (Sega Pinball, 1999)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunge. One townsfolk target is lit for the skill shot at the start of every ball."
+    },
+    {
+      "id": "townsfolk-targets",
+      "name": "Townsfolk Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Five standups sitting below Mr. Hankey. The lit one is the skill shot, and they feed the end-of-ball bonus like a character shot does."
+    },
+    {
+      "id": "hankey-targets",
+      "name": "Mr. Hankey Targets",
+      "type": "target-bank",
+      "x": 0.5,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Three targets guarding the toilet. Five hits light multiball, and once it is lit every further hit adds 100K to the base jackpot. They are also the jackpot targets once multiball starts."
+    },
+    {
+      "id": "toilet",
+      "name": "The Toilet",
+      "type": "mech",
+      "x": 0.2686,
+      "y": 0.6111,
+      "trim": "all",
+      "notes": "Sits behind the Hankey targets and under the ramp. It opens when multiball starts and feeds the ball out to the right inlane."
+    },
+    {
+      "id": "left-lane",
+      "name": "Left Lane",
+      "type": "lane",
+      "x": 0.22,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "A shot straight through the bumpers and the hardest thing on the machine to hit cleanly. It is Stan's shot, and it is worth the practice."
+    },
+    {
+      "id": "monkey-target",
+      "name": "Monkey Target",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The right-hand of two targets flanking the left lane entrance. Pays 100K plus another 100K for every hit you have already put on it this game."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.28,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three in the usual triangle. A ball leaving to the left is fed straight down into the left inlane. During Stan's mode every rattle in here is worth points and progress."
+    },
+    {
+      "id": "gate",
+      "name": "Bumper Gate",
+      "type": "gate",
+      "x": 0.4,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "A one-way gate above the right bumper that lets balls into the bumper nest from the top of the playfield."
+    },
+    {
+      "id": "chef-lane",
+      "name": "Chef Lane",
+      "type": "lane",
+      "x": 0.58,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "The centre lane, ending in a kicker that throws the ball out above the bumpers. Chef's shot, and where mystery, extra ball and both wizard modes are lit. Whatever you send up the left lane gets funnelled through here as well."
+    },
+    {
+      "id": "kenny",
+      "name": "Kenny",
+      "type": "bash-toy",
+      "x": 0.8214,
+      "y": 0.6111,
+      "trim": "all",
+      "notes": "A rubber Kenny standing in front of a hole. Hitting either the figure or the hole counts, which makes this the most forgiving character shot on the machine."
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.78,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Kyle's shot, the multiball start and the super jackpot. It runs over the toilet and has three exits — into the bumpers, a short drop to the flippers, or the left inlane."
+    },
+    {
+      "id": "cartman-targets",
+      "name": "Cartman Targets",
+      "type": "target-bank",
+      "x": 0.62,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Three more townsfolk standups above the Cartman hole. They light the Chef lane for mystery, and each hit adds a million to Cartman's mode payout."
+    },
+    {
+      "id": "cartman-hole",
+      "name": "Cartman Hole",
+      "type": "scoop",
+      "x": 0.62,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "A deep sinkhole with a metal backboard behind it, which makes it far more shootable than its size suggests. Cartman's shot."
+    },
+    {
+      "id": "volcano",
+      "name": "Volcano",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Sits between the flippers and lights only when all five character modes have been completed. Seeing it lit means the real wizard mode is one Chef lane shot away."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Light both inlanes to arm Super Fart Bumpers. Balls exiting the bumpers to the left arrive here, as do some ramp returns."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "The other half of the Super Fart Bumpers pair. The toilet feeds balls here when multiball starts."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Can be lit for special. There is no post between the flippers on most machines, so drains here are unforgiving."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Also lightable for special."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the ramp, Kenny and the Chef lane."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the left lane, the monkey target and the Hankey bank."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Townsfolk Skill Shot",
+      "category": "skillshot",
+      "summary": "One of the townsfolk targets under Mr. Hankey is lit at the start of each ball. Plunge into it for 5M, and the award grows by another 5M for every skill shot you have already made this game.",
+      "difficulty": 1,
+      "reward": "5M + 5M per skill shot",
+      "steps": [
+        {
+          "shot": "townsfolk-targets",
+          "action": "Plunge into the lit townsfolk target",
+          "detail": "The lit target changes ball to ball, so check which one it is before you pull. Townsfolk hits also count toward end-of-ball bonus, so even a miss is not wasted."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "character-shots",
+      "title": "Getting The Character Shots Down",
+      "category": "progression",
+      "summary": "Everything in this game runs through five shots, one per character. Starting a mode means hitting that character's shot four times, and the requirement climbs every time you finish that character's mode. Learn the shots before you worry about anything else.",
+      "difficulty": 1,
+      "reward": "Access to all five modes",
+      "steps": [],
+      "instructions": [
+        "Stan is the left lane, through the bumpers. It is the hardest shot on the machine and the one that pays best.",
+        "Chef is the centre lane, ending in a kicker above the bumpers. Anything that runs the left lane finishes up in this lane as well.",
+        "Kenny is the rubber figure on the right; hitting either the figure or the hole behind it counts.",
+        "Kyle is the ramp.",
+        "Cartman is the deep sinkhole above the right slingshot.",
+        "A character's face on the playfield flashes once you have started their mode and goes solid once you finish it. You can replay any mode whether you completed it or not.",
+        "Each completion raises the number of shots needed to start that character again, so the fifth mode costs a lot more than the first."
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "stan",
+      "title": "Stan",
+      "category": "multiball",
+      "summary": "Four left lane shots start a four-ball multiball built around the bumpers. You need three kisses, and a kiss comes from either a run of bumper hits or another left lane shot. Lane shots start at 5M and climb 100K for every bumper hit you have banked.",
+      "difficulty": 3,
+      "reward": "5M+ per lane shot, growing with bumper hits",
+      "steps": [
+        {
+          "shot": "left-lane",
+          "action": "Four through the bumpers to start",
+          "detail": "This is the shot that decides whether you get to play the best mode in the game."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Let the bumpers work",
+          "detail": "Bumper hits both spot kisses and raise the value of every lane shot you make afterwards."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Keep shooting after you win",
+          "detail": "Three kisses ends the objective but not the scoring — the lane keeps paying until you are down to one ball."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "chef",
+      "title": "Chef",
+      "category": "mode",
+      "summary": "Four Chef lane shots start a 30-second sweep of all five character shots. Each one pays 5M plus a million for every shot already made, the last is worth 10M, and every shot buys five more seconds — so the mode gets easier as it goes if you start well.",
+      "difficulty": 2,
+      "reward": "5M+1M per shot, 10M for the last",
+      "steps": [
+        {
+          "shot": "chef-lane",
+          "action": "Four to the centre lane",
+          "detail": "The kicker throws the ball above the bumpers, which is a soft return."
+        },
+        {
+          "shot": "kenny",
+          "action": "Take the easy shots first",
+          "detail": "Kenny and the ramp are the safest of the five and buy you time for the hard ones."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Leave the left lane for last if you must",
+          "detail": "Each shot adds five seconds, so clearing four quickly gives you a long window for Stan's lane."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "kenny-mode",
+      "title": "Kenny",
+      "category": "mode",
+      "summary": "Four hits to Kenny start a hurry-up beginning at 10M. One more hit collects it — and kills him. The most forgiving mode on the machine because the figure and the hole behind it both register.",
+      "difficulty": 1,
+      "reward": "10M hurry-up, falling while you wait",
+      "steps": [
+        {
+          "shot": "kenny",
+          "action": "Four hits to arm the hurry-up",
+          "detail": "Either the rubber figure or the hole behind it counts as a hit."
+        },
+        {
+          "shot": "kenny",
+          "action": "Cash it immediately",
+          "detail": "The value only falls from here, so shoot it back as soon as the hurry-up starts."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "kyle",
+      "title": "Kyle",
+      "category": "mode",
+      "summary": "Four ramp shots start a short countdown to bring Mr. Hankey back. You need four more ramps in roughly twenty seconds, paying 5M, 10M, 15M and 20M. Pure repeat-shot pressure, which makes it the best mode to practise cradle-and-shoot on.",
+      "difficulty": 2,
+      "reward": "5M, 10M, 15M, 20M",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Four ramps to start",
+          "detail": "The ramp has three exits, so watch where each one puts you before you commit to the next shot."
+        },
+        {
+          "shot": "ramp",
+          "action": "Four more against the clock",
+          "detail": "Twenty seconds is not much. Take the return that feeds your stronger flipper and stay on rhythm."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "cartman",
+      "title": "Cartman",
+      "category": "mode",
+      "summary": "Four hits to the sinkhole start a 20-second window in which you need three more. Each pays 5M plus a million for every hit you have put on the three targets above the hole, so beating on those targets first is real money.",
+      "difficulty": 2,
+      "reward": "5M+1M per Cartman target hit, plus a completion bonus",
+      "steps": [
+        {
+          "shot": "cartman-targets",
+          "action": "Beat up the targets first",
+          "detail": "Every hit on the three targets above the hole permanently raises what each mode shot pays."
+        },
+        {
+          "shot": "cartman-hole",
+          "action": "Four hits to start",
+          "detail": "The metal backboard behind the hole makes this far easier than an open sinkhole."
+        },
+        {
+          "shot": "cartman-hole",
+          "action": "Three more in twenty seconds",
+          "detail": "Finishing pays a bonus on top of the shot values."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "hankey-multiball",
+      "title": "Mr. Hankey Multiball",
+      "category": "multiball",
+      "summary": "Five hits to the Hankey targets light multiball at the ramp — and every extra hit before you start adds 100K to the base jackpot, so do not start it the second it lights. Five balls, 1M jackpots at the Hankey targets, and each jackpot lights a character shot for double.",
+      "difficulty": 2,
+      "reward": "1M jackpots, doubles at character shots, 5M+ supers",
+      "steps": [
+        {
+          "shot": "hankey-targets",
+          "action": "Five hits to light it",
+          "detail": "Keep hitting them afterwards — each one raises the base jackpot by 100K before you have even started."
+        },
+        {
+          "shot": "ramp",
+          "action": "Start it at the ramp",
+          "detail": "The toilet opens and feeds a ball out to the right inlane."
+        },
+        {
+          "shot": "hankey-targets",
+          "action": "Jackpot, then double",
+          "detail": "Each Hankey jackpot lights a character shot for a double jackpot."
+        },
+        {
+          "shot": "ramp",
+          "action": "Five jackpots lights the super",
+          "detail": "The first super is 5M, the second 10M, and each one after adds another 5M with no known cap."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "mystery",
+      "title": "Mystery",
+      "category": "strategy",
+      "summary": "The three targets above the Cartman hole light the Chef lane for mystery. It is a cheap award to arm and it can hand you a bonus multiplier, 7M, or a thirty-second frenzy in which every switch on the machine is worth 500K.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier, 7M, or a 500K-per-switch frenzy",
+      "steps": [
+        {
+          "shot": "cartman-targets",
+          "action": "Clear the three targets",
+          "detail": "The same targets that build Cartman's mode value."
+        },
+        {
+          "shot": "chef-lane",
+          "action": "Collect in the centre lane",
+          "detail": "Bonus multiplier is by far the most common award. The Mr. Mackey frenzy is the one worth hoping for."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "super-fart-bumpers",
+      "title": "Super Fart Bumpers",
+      "category": "multiplier",
+      "summary": "Light both inlanes and the bumpers go into a high-scoring state. Worth arming before you start Stan's mode, because that mode already pays you for every bumper hit you take.",
+      "difficulty": 1,
+      "reward": "Boosted bumper scoring",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Light both return lanes",
+          "detail": "Balls leaving the bumpers to the left feed the left inlane on their own, which does half the job for you."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Feed the nest",
+          "detail": "The left lane and the Chef lane kicker both put the ball back into bumper territory."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "monkey",
+      "title": "The Monkey Target",
+      "category": "strategy",
+      "summary": "The right-hand target beside the left lane entrance pays 100K plus another 100K for every hit it has already taken this game. On its own that is small, but it is free money on every Stan attempt you brick slightly right.",
+      "difficulty": 1,
+      "reward": "100K, climbing 100K per hit",
+      "steps": [
+        {
+          "shot": "monkey-target",
+          "action": "Bank the misses",
+          "detail": "The value only climbs, so hits early in the game make hits later in the game worth more."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Treat it as your consolation prize",
+          "detail": "It sits right beside the left lane, so a slightly wide Stan shot still pays something."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "multiball-strategy",
+      "title": "Play For Multiballs",
+      "category": "strategy",
+      "summary": "Three separate multiballs sit on this playfield and all three are wildly generous compared with normal play. A game with several of them in it can reach a billion; a game without them will not get close, however cleanly you shoot.",
+      "difficulty": 2,
+      "reward": "The difference between a good game and a great one",
+      "steps": [
+        {
+          "shot": "hankey-targets",
+          "action": "Keep the Hankey count moving",
+          "detail": "It is the cheapest multiball to light and it stacks nicely with modes."
+        },
+        {
+          "shot": "chef-lane",
+          "action": "Use the Chef lane during multiball",
+          "detail": "The machine will credit you a left lane shot for a Chef lane shot while multiball is running, which is the easiest Stan progress you will ever get."
+        },
+        {
+          "shot": "left-lane",
+          "action": "Chase Stan anyway",
+          "detail": "Four balls plus escalating lane values makes Stan's mode the single biggest scoring opportunity on the machine."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "spooky-vision",
+      "title": "Spooky Vision",
+      "category": "wizard",
+      "summary": "The consolation wizard mode. Start all five character modes but fail to complete at least one, and the Chef lane lights for a five-ball multiball where you raise each character's jackpot by hitting their shot a set number of times.",
+      "difficulty": 3,
+      "reward": "Five-ball multiball with escalating character jackpots",
+      "steps": [
+        {
+          "shot": "cartman-hole",
+          "action": "Start all five modes",
+          "detail": "This lights at the completion of the fifth mode you start, whether or not you won it."
+        },
+        {
+          "shot": "chef-lane",
+          "action": "Start it in the centre lane",
+          "detail": "It will not appear at all if you completed all five modes on the first attempt — that path leads somewhere better."
+        },
+        {
+          "shot": "kenny",
+          "action": "Work each character up",
+          "detail": "Each character's jackpot rises with repeated hits to their own shot."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "volcano-wizard",
+      "title": "Volcano",
+      "category": "wizard",
+      "summary": "The real ending. Complete all five character modes and both the Chef lane arrow and the Volcano between the flippers light up. Five balls, fifteen lit character shots at 10M each — finish it and the flippers die, you are handed an extra ball, and the whole thing starts over.",
+      "difficulty": 3,
+      "reward": "10M per shot, roughly 210M for a completion, plus an extra ball",
+      "steps": [
+        {
+          "shot": "cartman-hole",
+          "action": "Complete all five modes",
+          "detail": "Started is not enough. Every character's face has to be lit solid."
+        },
+        {
+          "shot": "chef-lane",
+          "action": "Start it in the Chef lane",
+          "detail": "The red arrow there and the volcano insert between the flippers both light when it is ready."
+        },
+        {
+          "shot": "ramp",
+          "action": "Fifteen lit shots at 10M",
+          "detail": "Miss the count and the mode simply ends when you are down to one ball. Make it and you go again."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "bonus",
+      "title": "End-Of-Ball Bonus",
+      "category": "strategy",
+      "summary": "Count up every hit you landed on the townsfolk targets, on the ramp and on the five character shots: each one pays 100K when the ball ends, and your multiplier is applied on top of that total. Mystery hands out multipliers freely, so a long ball with a few mystery awards in it ends better than the score during play suggests.",
+      "difficulty": 1,
+      "reward": "100K per counted shot, times the multiplier",
+      "steps": [
+        {
+          "shot": "chef-lane",
+          "action": "Farm multipliers from mystery",
+          "detail": "A bonus multiplier is the most common mystery award, which makes the Cartman targets quietly valuable."
+        },
+        {
+          "shot": "townsfolk-targets",
+          "action": "Remember the townsfolk count",
+          "detail": "Both target groups feed the bonus, so stray hits are still worth something."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Expect an outlane consolation",
+          "detail": "An outlane drain sometimes pays a million on its own."
+        }
+      ],
+      "fx": "cash",
+      "ordered": false
+    },
+    {
+      "id": "attract-code",
+      "title": "The Attract Mode Code",
+      "category": "secret",
+      "summary": "A hidden button code in attract mode. It scores nothing, but it is the sort of thing worth knowing when you are stood in front of a machine waiting for a friend to finish their game.",
+      "difficulty": 1,
+      "reward": "The design team credits",
+      "steps": [],
+      "instructions": [
+        "With the machine in attract mode and no game running, press the flipper buttons in the sequence left, left, right, right, left, left, right, right.",
+        "The display switches to the design team credits.",
+        "This is a display easter egg only — it does not affect scoring, awards or the next game."
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "sp-skillshot",
+      "title": "Lit Townsfolk",
+      "desc": "Plunge into the lit townsfolk target for the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "sp-kenny",
+      "title": "Kenny Dies",
+      "desc": "Arm the Kenny hurry-up and cash it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "kenny-mode"
+    },
+    {
+      "id": "sp-mystery",
+      "title": "Mackey Frenzy",
+      "desc": "Draw the thirty-second all-switch frenzy from a Chef lane mystery.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mystery"
+    },
+    {
+      "id": "sp-multiball",
+      "title": "Down The Toilet",
+      "desc": "Light and start Mr. Hankey Multiball at the ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "hankey-multiball"
+    },
+    {
+      "id": "sp-super",
+      "title": "Super Jackpot",
+      "desc": "Collect five Hankey jackpots and cash the super at the ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "hankey-multiball"
+    },
+    {
+      "id": "sp-kyle",
+      "title": "Four Ramps, Twenty Seconds",
+      "desc": "Complete Kyle's mode for the full 20M finish.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "kyle"
+    },
+    {
+      "id": "sp-chef",
+      "title": "All Five In Thirty",
+      "desc": "Sweep every character shot inside Chef's mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "chef"
+    },
+    {
+      "id": "sp-stan",
+      "title": "Through The Bumpers",
+      "desc": "Start Stan's multiball and collect all three kisses.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "stan"
+    },
+    {
+      "id": "sp-spooky",
+      "title": "Spooky Vision",
+      "desc": "Start all five modes and reach the consolation wizard multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "spooky-vision"
+    },
+    {
+      "id": "sp-volcano",
+      "title": "Volcano",
+      "desc": "Complete all five character modes and start the real wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "volcano-wizard"
+    },
+    {
+      "id": "sp-volcano-win",
+      "title": "South Park Saved",
+      "desc": "Make all fifteen lit shots in Volcano and earn the extra ball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "volcano-wizard"
+    },
+    {
+      "id": "sp-code",
+      "title": "Attract Mode Snooper",
+      "desc": "Enter the flipper code in attract mode to surface the credits.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "attract-code"
+    }
+  ],
+  "drills": [
+    {
+      "id": "check-the-lit-townsfolk",
+      "title": "Check Which One Is Lit",
+      "text": "One townsfolk target under Mr. Hankey is lit on every ball and the lit one moves, so look before you pull the plunger. Even a miss lands somewhere on the bank, and townsfolk hits feed the end-of-ball bonus, so no plunge here is wasted.",
+      "reps": "every ball, one full game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "townsfolk-targets"
+      ]
+    },
+    {
+      "id": "left-lane-reps",
+      "title": "Left Lane Reps",
+      "text": "The left lane runs straight through the bumpers and it is the hardest thing on the machine to hit cleanly, so drill it off the right flipper on its own. A shot that goes slightly wide still banks the monkey target beside it, and that value only climbs — the misses pay for the practice.",
+      "reps": "one full ball, left lane only",
+      "focus": "accuracy",
+      "goal": "stan",
+      "shots": [
+        "left-lane",
+        "right-flipper",
+        "monkey-target"
+      ]
+    },
+    {
+      "id": "ramp-rhythm",
+      "title": "Ramp On Rhythm",
+      "text": "Four ramps to start Kyle and four more against a short clock, which makes this the best cradle-and-shoot practice on the machine. The ramp has three exits, so watch where each return puts you and take the one that sets up your next shot rather than swinging on hope.",
+      "reps": "5 attempts at the second set of four",
+      "focus": "flow",
+      "goal": "kyle",
+      "shots": [
+        "ramp"
+      ]
+    },
+    {
+      "id": "dont-start-it-yet",
+      "title": "Do Not Start It Yet",
+      "text": "Five hits light multiball at the ramp, but every hit you land after that raises the base jackpot before the multiball has even begun. Keep working the Hankey bank instead of running straight to the ramp — the drill here is the discipline of not starting.",
+      "reps": "10 extra bank hits before each start",
+      "focus": "accuracy",
+      "goal": "hankey-multiball",
+      "shots": [
+        "hankey-targets",
+        "ramp"
+      ]
+    },
+    {
+      "id": "chef-lane-in-multiball",
+      "title": "Chef Lane In Multiball",
+      "text": "While a multiball is running the machine credits a Chef lane shot as a left lane shot, which is the cheapest Stan progress you will ever get. Start Hankey Multiball and spend part of it feeding the centre lane rather than only chasing jackpots.",
+      "reps": "4 credited lane shots per multiball",
+      "focus": "flow",
+      "goal": "multiball-strategy",
+      "shots": [
+        "chef-lane",
+        "left-lane",
+        "hankey-targets"
+      ]
+    },
+    {
+      "id": "feed-the-nest",
+      "title": "Feed The Nest On Purpose",
+      "text": "The left lane and the Chef lane kicker both put the ball back up into the bumpers, and a ball leaving the nest to the left drops into the left inlane — half of Super Fart Bumpers done for you. Practise feeding it deliberately and picking the return up cleanly, because that nest is where Stan's scoring comes from.",
+      "reps": "arm both inlanes before every Stan attempt",
+      "focus": "ball-control",
+      "goal": "super-fart-bumpers",
+      "shots": [
+        "left-lane",
+        "chef-lane",
+        "bumpers",
+        "left-inlane"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "cow",
+  "actionButton": {
+    "present": false,
+    "how": "Nothing beyond the basics on this cabinet — manual plunge, flippers, start button. Every choice you make on South Park happens on the playfield, and the plunge itself matters, since one townsfolk target is lit for the skill shot at the start of each ball."
+  },
+  "howItPlays": {
+    "objective": "This South Park machine is built on five character shots -- Stan, Kyle, Cartman, Kenny and Chef. Start and finish a mode for each to light the Volcano between the flippers, and treat the three big multiballs as where the real points hide.",
+    "loop": [
+      "Get the five character shots grooved first: the left lane for Stan, the ramp for Kyle, the deep sinkhole for Cartman, the rubber Kenny, and the centre lane for Chef.",
+      "Four hits to any character's shot starts that character's mode, and every mode you actually finish raises the number of hits the next start costs.",
+      "Batter the Mr. Hankey targets to light multiball at the ramp, and keep battering them even after it lights, since each extra knock pads the base jackpot before the balls launch.",
+      "Piece together all five completed modes and the Chef lane plus the Volcano insert light up for the true wizard mode.",
+      "Stack a character mode on top of Mr. Hankey Multiball -- a Chef lane shot pays as a Stan lane shot while the multiball runs -- to steal the hardest progress cheap."
+    ],
+    "lights": [
+      {
+        "id": "character-faces",
+        "name": "Character Faces",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-lane"
+          },
+          {
+            "shot": "chef-lane"
+          },
+          {
+            "shot": "kenny"
+          },
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "cartman-hole"
+          }
+        ],
+        "lit": "A character's portrait glows solid once you have finished that kid's mode; you crack a mode open with four hits to their own shot.",
+        "flashing": "A portrait that is only flashing marks a mode you have started but not yet completed, and you can replay any of them, finished or not.",
+        "control": null,
+        "then": "Complete the whole five and the Chef lane lights for Volcano, the real ending. Open all five but leave at least one unfinished and you get Spooky Vision, the consolation multiball, instead.",
+        "goals": [
+          "character-shots",
+          "volcano-wizard",
+          "spooky-vision"
+        ]
+      },
+      {
+        "id": "hankey-bank",
+        "name": "Mr. Hankey Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "hankey-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "Five knocks on the Mr. Hankey targets light multiball at the ramp; once it is lit, each further knock quietly stacks another hundred thousand onto the base jackpot before you have even begun.",
+        "flashing": null,
+        "control": null,
+        "then": "Start it at the ramp, where the toilet flushes a ball out to the right inlane. From there every Hankey jackpot turns one character shot into a double, and five of them lights a super worth five million, then ten, climbing another five every time after.",
+        "goals": [
+          "hankey-multiball",
+          "multiball-strategy"
+        ]
+      },
+      {
+        "id": "stan-bumpers",
+        "name": "Stan / Bumpers",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-lane"
+          },
+          {
+            "shot": "bumpers"
+          }
+        ],
+        "lit": "Four shots up the left lane, straight through the pop bumpers, kick off Stan -- a four-ball multiball whose goal is three kisses, each one spotted by a burst of bumper action or another lane shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Let the nest do the work -- each bumper hit spots a kiss and bumps up what every later lane shot pays -- and light both inlanes beforehand to switch on Super Fart Bumpers for even richer bumper scoring. Those lane shots keep paying long after the third kiss, all the way down to a single ball, so never stop feeding it.",
+        "goals": [
+          "stan",
+          "super-fart-bumpers"
+        ]
+      },
+      {
+        "id": "cartman-sinkhole",
+        "name": "Cartman Sinkhole",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "cartman-hole"
+          },
+          {
+            "shot": "cartman-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "Four balls into the metal-backed sinkhole start Cartman's twenty-second scramble for three more; the three standups stacked above the hole permanently jack up what every mode shot is worth.",
+        "flashing": null,
+        "control": null,
+        "then": "Soften those standups up first, because their value carries into the mode as real money, then take the four hits to start and three more inside the clock. The same trio lights the Chef lane for a Mystery award.",
+        "goals": [
+          "cartman",
+          "mystery"
+        ]
+      },
+      {
+        "id": "mystery-chef",
+        "name": "Mystery / Chef Lane",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "cartman-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "chef-lane"
+          }
+        ],
+        "lit": "Clearing the three standups over the Cartman hole lights the centre Chef lane for a Mystery, one of the cheapest awards on the table to arm.",
+        "flashing": null,
+        "control": null,
+        "then": "Cash it in the Chef lane for whatever it rolls -- usually a bonus multiplier, sometimes seven million, and once in a while the Mr. Mackey frenzy, thirty seconds in which every last switch on the table is worth five hundred thousand. Those bonus multipliers ride on your end-of-ball count, which is what makes the standups quietly valuable.",
+        "goals": [
+          "mystery",
+          "bonus"
+        ]
+      },
+      {
+        "id": "timed-character-modes",
+        "name": "Kyle / Kenny / Chef",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "ramp"
+          },
+          {
+            "shot": "kenny"
+          },
+          {
+            "shot": "chef-lane"
+          }
+        ],
+        "lit": "Kyle, Kenny and Chef are the timed side of the character roster, each opened with four hits to its shot -- the ramp, the Kenny figure, or the Chef centre lane.",
+        "flashing": null,
+        "control": null,
+        "then": "Kyle then asks for four more ramps against a short clock for five, ten, fifteen and twenty million. Kenny arms a ten-million hurry-up that only falls while you wait, so fire it straight back -- the figure or the hole behind it both count. Chef turns into a thirty-second dash across all five character shots, with each make handing you another five seconds on the clock, so a strong opening leaves the tough shots easy.",
+        "goals": [
+          "kyle",
+          "kenny-mode",
+          "chef"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Glance at which townsfolk target is lit and plunge into it for the skill shot, then start putting the five character shots into muscle memory -- four hits to any one of them opens that kid's mode, and Kenny's is the gentlest to close.",
+        "goals": [
+          "skillshot",
+          "character-shots",
+          "kenny-mode"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Light Mr. Hankey Multiball at the targets, padding its base jackpot before you pull the trigger, and stack it with a mode. Then go hunting Stan's four-ball, where climbing lane values make it the single richest thing on the machine.",
+        "goals": [
+          "hankey-multiball",
+          "stan",
+          "multiball-strategy",
+          "super-fart-bumpers"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Finish all five character modes and the Volcano wizard lights: five balls, fifteen lit shots at ten million each, around two hundred and ten million for a clean run, and an extra ball to send you back through it. Come up short of finishing every mode and Spooky Vision is the softer landing.",
+        "goals": [
+          "volcano-wizard",
+          "spooky-vision"
+        ]
+      }
+    ]
+  }
+}

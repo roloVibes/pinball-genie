@@ -1,0 +1,1182 @@
+{
+  "machine": "Family Guy (Stern, 2007)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A manual plunger feeding the main playfield. The F-A-R-T bank's lowest target is lit for the skill shot at the start of every ball."
+    },
+    {
+      "id": "fart-targets",
+      "name": "F-A-R-T Targets",
+      "type": "drop-target",
+      "x": 0.38,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Four drop targets spelling F-A-R-T. Clearing the bank chips one hit off the running count needed for Fart Multiball, and the bottom target doubles as the ball's opening skill shot."
+    },
+    {
+      "id": "raise-death-inlane",
+      "name": "Raise Death Inlane",
+      "type": "lane",
+      "x": 0.1536,
+      "y": 0.1447,
+      "trim": "all",
+      "notes": "A left inlane that resets the Death drop target when lit, feeding the left flipper on its way through."
+    },
+    {
+      "id": "death-drop-target",
+      "name": "Death Drop Target",
+      "type": "drop-target",
+      "x": 0.3,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "A single drop target worth 200K on its first hit each ball, rising 25K after. Knocking it down raises a temporary ball-save post between the flippers."
+    },
+    {
+      "id": "2x-lois-inlane",
+      "name": "2X Lois Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "A left inlane that lights a brief scoring double on the Lois spinner clear across the table. A slingshot hit can swap the live doubler over to 2X Meg instead."
+    },
+    {
+      "id": "lois-spinner",
+      "name": "Lois Spinner",
+      "type": "spinner",
+      "x": 0.9,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "The right orbit spinner. Pays Lois's own value in certain modes, and enough spins light TV mode at the scoop. One end of the Pinball Combo."
+    },
+    {
+      "id": "not-special-outlane",
+      "name": "Not Special Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The left outlane. Worthless until the Drunken Clam lights it for an extra ball."
+    },
+    {
+      "id": "peter-targets",
+      "name": "Peter Targets",
+      "type": "target-bank",
+      "x": 0.6,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Three standups spelling out X-X-X for Peter. Clearing the bank pays a rising Peter value and permanently raises the end-of-ball bonus multiplier, up to 5x."
+    },
+    {
+      "id": "meg-target",
+      "name": "Meg Target",
+      "type": "standup",
+      "x": 0.15,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "A standup on the left side. Pays a rising Meg value on its own and lights the Pirate target."
+    },
+    {
+      "id": "chris-target",
+      "name": "Chris Target",
+      "type": "standup",
+      "x": 0.2098,
+      "y": 0.8158,
+      "trim": "all",
+      "notes": "Labeled the left orbit, though the ball doesn't complete one — it just rolls back down toward the flippers. Usually drops the Evil Monkey target in front of the ramp and briefly lights its jackpot lane."
+    },
+    {
+      "id": "evil-monkey-target",
+      "name": "Evil Monkey Target",
+      "type": "standup",
+      "x": 0.4752,
+      "y": 0.7763,
+      "trim": "all",
+      "notes": "Drops into place in front of the ramp after a Chris hit. Scores whatever point values are currently flashing there, and can kick off Crazy Chris if that same light happens to be flashing."
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Feeds the lower left flipper. Lights the Drunken Clam saucer and bumps up the pop bumper values with repeat shots.",
+      "feeds": {
+        "shot": "2x-lois-inlane"
+      }
+    },
+    {
+      "id": "brian-beer-can",
+      "name": "Brian Beer Can",
+      "type": "standup",
+      "x": 0.68,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A standup scoring 10 on its own, but every hit also counts toward whichever Beer Can mode is currently flashing — cash it in once you reach the target count."
+    },
+    {
+      "id": "bumpers",
+      "name": "Bumpers",
+      "type": "bumpers",
+      "x": 0.55,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Three pop bumpers — one under Peter, one tucked beneath the mini-playfield, one behind Brian. Any hit rotates which Beer Can and TV mode is currently flashing."
+    },
+    {
+      "id": "drunken-clam",
+      "name": "Drunken Clam",
+      "type": "saucer",
+      "x": 0.62,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "The mystery saucer. Ejects into the bumpers, and pays a genuinely useful award whenever it's lit rather than a token consolation prize."
+    },
+    {
+      "id": "stewie-mini-playfield",
+      "name": "Stewie Mini-Playfield",
+      "type": "mini-playfield",
+      "x": 0.8767,
+      "y": 0.8684,
+      "trim": "all",
+      "notes": "A separate mini table with its own flippers and ball, launched up the right inlane once P-I-N-B-A-L-L lights up at the scoop. Five character shots live here: Brian, Meg, Peter, Lois and Chris."
+    },
+    {
+      "id": "evil-monkey-lane",
+      "name": "Evil Monkey Lane",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Runs under the mini-playfield and feeds the right orbit. Pays an escalating Evil Monkey Jackpot when lit, and doubles as a secret second skill shot."
+    },
+    {
+      "id": "stewie-targets",
+      "name": "Stewie Targets",
+      "type": "standup",
+      "x": 0.85,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Standups that pay a rising Stewie value between modes, and add a little starting time to the next round of Stewie Pinball."
+    },
+    {
+      "id": "upper-captive-ball",
+      "name": "Upper Captive Ball",
+      "type": "captive-ball",
+      "x": 0.88,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "Adds a letter toward P-I-N-B-A-L-L on every hit, and is the far end of the Pinball Combo started from either orbit."
+    },
+    {
+      "id": "pirate-target",
+      "name": "Pirate Target",
+      "type": "standup",
+      "x": 0.9,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "A standup that pays a context-sensitive award whenever it's lit — extra beer hits, an add-a-ball, more time on whatever timer is currently running."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop",
+      "type": "scoop",
+      "x": 0.82,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "The central multi-purpose shot. Lit for MULTIBALL it starts Sperm Attack, lit for P-I-N-B-A-L-L it launches Stewie Pinball, and lit for TV it starts whichever TV mode is flashing.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "lower-captive-ball",
+      "name": "Lower Captive Ball",
+      "type": "captive-ball",
+      "x": 0.86,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Also adds a letter toward P-I-N-B-A-L-L, and carries its own Jackpot light in certain modes."
+    },
+    {
+      "id": "special-outlane",
+      "name": "Special Outlane",
+      "type": "outlane",
+      "x": 0.9581,
+      "y": 0.1447,
+      "trim": "all",
+      "notes": "The right outlane. Worthless until something lights Special here."
+    },
+    {
+      "id": "2x-meg-inlane",
+      "name": "2X Meg Inlane",
+      "type": "lane",
+      "x": 0.7125,
+      "y": 0.2368,
+      "trim": "all",
+      "notes": "A right inlane mirroring 2X Lois — lights a scoring double on the Meg target instead, and feeds the right flipper."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Chris shot, the Death drop target and the ramp."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the scoop, the Lois spinner and the Pirate target."
+    },
+    {
+      "id": "stewie-left-flipper",
+      "name": "Stewie Mini Left Flipper",
+      "type": "flipper",
+      "x": 0.7,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Fed by the Lois ramp and the mini-playfield's left inlane, on Stewie's mini table.",
+      "playfield": "stewie-mini-deck"
+    },
+    {
+      "id": "stewie-right-flipper",
+      "name": "Stewie Mini Right Flipper",
+      "type": "flipper",
+      "x": 0.8,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Fed by the mini-playfield's right inlane, which is also how the mini ball is launched to start the session.",
+      "playfield": "stewie-mini-deck"
+    },
+    {
+      "id": "stewie-brian",
+      "name": "Brian (Stewie Mini-Playfield)",
+      "type": "orbit",
+      "x": 0.64,
+      "y": 0.87,
+      "trim": "all",
+      "notes": "Leftmost of the 5 character shots per pinball.org ('Brian (left orbit)'). Exact position estimated — no diagram found.",
+      "playfield": "stewie-mini-deck"
+    },
+    {
+      "id": "stewie-meg-mini",
+      "name": "Meg (Stewie Mini-Playfield)",
+      "type": "standup",
+      "x": 0.7,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Standup target on the mini table, distinct from the main-playfield 'meg-target'. Needs 3 shots to complete per the mode goal text. Position estimated.",
+      "playfield": "stewie-mini-deck"
+    },
+    {
+      "id": "stewie-peter-mini",
+      "name": "Peter (Stewie Mini-Playfield)",
+      "type": "standup",
+      "x": 0.76,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Standup target on the mini table, distinct from the main-playfield Peter X-X-X bank. Position estimated.",
+      "playfield": "stewie-mini-deck"
+    },
+    {
+      "id": "stewie-lois-mini",
+      "name": "Lois (Stewie Mini-Playfield Ramp)",
+      "type": "ramp",
+      "x": 0.82,
+      "y": 0.91,
+      "trim": "all",
+      "notes": "Ramp feeding the mini table's left flipper per pinball.org ('Lois (ramp, feeding left mini flipper)'). Needs 4 shots to complete. Position estimated.",
+      "feeds": {
+        "shot": "stewie-left-flipper"
+      },
+      "playfield": "stewie-mini-deck"
+    },
+    {
+      "id": "stewie-chris-mini",
+      "name": "Chris (Stewie Mini-Playfield)",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Rightmost of the 5 character shots ('Chris (right orbit)'). Position estimated.",
+      "playfield": "stewie-mini-deck"
+    }
+  ],
+  "goals": [
+    {
+      "id": "f-skillshot",
+      "title": "F Target Skill Shot",
+      "category": "skillshot",
+      "summary": "The bottom target of the F-A-R-T bank is lit for the skill shot at the start of every ball. Worth 500K the first time you land it, climbing 250K each time after.",
+      "difficulty": 1,
+      "reward": "500K climbing by 250K",
+      "steps": [
+        {
+          "shot": "fart-targets",
+          "action": "Plunge to hit the lit F target",
+          "detail": "A standard plunge is enough to reach the F-A-R-T targets from the shooter lane. Only the bottom target counts for the skill shot — the other three just chip away at the multiball count."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "raise-death",
+      "title": "Raise And Knock Down Death",
+      "category": "combo",
+      "summary": "The left inlane resets the Death drop target so you can hit it again. Worth 200K the first time each ball, rising 25K after, and it raises a ball-save post between the flippers besides.",
+      "difficulty": 1,
+      "reward": "200K climbing by 25K, plus a temporary ball-save post",
+      "steps": [
+        {
+          "shot": "raise-death-inlane",
+          "action": "Light the Raise Death inlane",
+          "detail": "The Death target stays down once you've knocked it over, so this inlane is the only way to line up another hit."
+        },
+        {
+          "shot": "death-drop-target",
+          "action": "Knock it down",
+          "detail": "The post between the flippers stays up for a short window afterward, so a bad rebound isn't automatically a drain."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "two-x-lanes",
+      "title": "Cross-Table Doublers",
+      "category": "multiplier",
+      "summary": "Two inlanes double a shot clear on the other side of the table — the left inlane doubles the Lois spinner, the right inlane doubles the Meg target — and a slingshot hit swaps which one is currently live.",
+      "difficulty": 2,
+      "reward": "Double value on the matching shot",
+      "steps": [
+        {
+          "shot": "2x-lois-inlane",
+          "action": "Roll through the 2X Lois inlane",
+          "detail": "This arms a brief doubler on the Lois spinner shot; 2X Meg works the mirror image from the right inlane."
+        },
+        {
+          "shot": "lois-spinner",
+          "action": "Spin it while the doubler is live",
+          "detail": "The window is short, so this only pays off if you were already headed that way."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "not-special-eb",
+      "title": "Light Not Special",
+      "category": "strategy",
+      "summary": "The left outlane does nothing on its own. Once the Drunken Clam lights Not Special there, a drain that way is an extra ball instead of a lost one.",
+      "difficulty": 1,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "not-special-outlane",
+          "action": "Send it down the left outlane once it's lit",
+          "detail": "Only the Drunken Clam saucer can light this — it isn't on a timer or a target count."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "peter-bonus",
+      "title": "Clear The Peter Bank",
+      "category": "multiplier",
+      "summary": "Three standups spelling X-X-X for Peter. Completing the bank pays a rising value and permanently raises your end-of-ball bonus multiplier, up to 5x for the ball.",
+      "difficulty": 1,
+      "reward": "100K climbing to 250K, plus a rising bonus multiplier",
+      "steps": [
+        {
+          "shot": "peter-targets",
+          "action": "Clear all three X targets",
+          "detail": "The first completion of the ball pays 100K, rising 20K each additional clear."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "character-shots",
+      "title": "Work The Base Values",
+      "category": "strategy",
+      "summary": "Meg, Chris and Stewie each pay their own rising value on every hit outside of a mode, and every one of those hits also pads the end-of-ball bonus at its own fixed rate.",
+      "difficulty": 1,
+      "reward": "100K+ per-hit values on Meg, Chris and Stewie, climbing with each hit",
+      "steps": [
+        {
+          "shot": "meg-target",
+          "action": "Hit Meg for her value",
+          "detail": "100K the first hit of the ball, +15K each hit after, and it lights the Pirate target too."
+        },
+        {
+          "shot": "chris-target",
+          "action": "Hit Chris for his value",
+          "detail": "100K first hit, +10K each after — and it usually drops the Evil Monkey target in front of the ramp."
+        },
+        {
+          "shot": "stewie-targets",
+          "action": "Hit Stewie for his value",
+          "detail": "100K first hit, +10K each after, and it quietly adds a second's worth of starting time to your next trip through Stewie Pinball."
+        }
+      ],
+      "fx": "badge",
+      "ordered": false
+    },
+    {
+      "id": "fart-multiball",
+      "title": "Fart Multiball",
+      "category": "multiball",
+      "summary": "Clear the F-A-R-T bank three times to start it the first time — the requirement climbs by one after every start, to a maximum of six. Jackpots are priced in switch hits, not dollars: more hits required, more it pays.",
+      "difficulty": 2,
+      "reward": "20K per required switch hit, per jackpot",
+      "steps": [
+        {
+          "shot": "fart-targets",
+          "action": "Clear the bank the required number of times",
+          "detail": "The first Fart Multiball starts with 2 balls and a short ball saver; every one after starts with 3. Once running, any switch hit counts toward the next jackpot — the more hits it needs, the more it's worth."
+        }
+      ],
+      "fx": "demo"
+    },
+    {
+      "id": "beer-can-modes",
+      "title": "Beer Can Modes",
+      "category": "progression",
+      "summary": "Any bumper hit rotates which of five Beer Can modes is flashing. Hit the Beer Can enough times — 5 to start, one more each time after — to cash in whatever's currently lit.",
+      "difficulty": 2,
+      "reward": "One of five rotating awards",
+      "steps": [],
+      "instructions": [
+        "Collect Beers is worth 24,570 for every Beer Can hit logged so far this game.",
+        "Giggity Giggity maxes out the pop bumpers' point value instantly.",
+        "Happy Hour doubles every score on the table for 20 seconds.",
+        "Remember When starts a countdown Jackpot at a random character shot, opening at 3M (up 1M every time you draw this mode again) and dropping to a 750K floor before it times out.",
+        "The fifth mode is Lard Multiball — see that goal for details.",
+        "Once you've cycled all five, they reset and can all be earned again."
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "lard-multiball",
+      "title": "Lard Multiball",
+      "category": "multiball",
+      "summary": "The fifth and last of the Beer Can modes. A generous two-ball multiball with six Jackpot shots and a countdown that keeps you moving.",
+      "difficulty": 2,
+      "reward": "250K climbing to 750K per Jackpot, 3M Super Jackpot",
+      "steps": [
+        {
+          "shot": "brian-beer-can",
+          "action": "Draw Lard Multiball from the Beer Can",
+          "detail": "It's the fifth mode in rotation — you can't choose it directly, only cycle the bumpers until it's flashing."
+        },
+        {
+          "shot": "upper-captive-ball",
+          "action": "Work the six jackpot shots",
+          "detail": "Meg, Chris, Brian, Lois, as well as both captive balls, are all live; each hit resets a 10-second countdown, and letting it expire relights one you've already collected. Hit all six lit Jackpots at once and the countdown stops, the Evil Monkey lane lights for a 3M Super Jackpot, and the mode restarts."
+        }
+      ],
+      "fx": "cow"
+    },
+    {
+      "id": "drunken-clam",
+      "title": "The Drunken Clam",
+      "category": "mode",
+      "summary": "The mystery saucer. Whatever it's lit for when you shoot it is genuinely useful — nothing here is ever a joke award for something you already have.",
+      "difficulty": 2,
+      "reward": "Context-sensitive: points, bonus, Fart Multiball, or a lit feature",
+      "steps": [
+        {
+          "shot": "drunken-clam",
+          "action": "Shoot the lit Clam",
+          "detail": "Possible awards include 1M or 2M points, a bonus multiplier increase, an instant bonus collect, a lit Evil Monkey Jackpot, Fart Multiball, held bonus, extra ball, Not Special, Pinball, Special, TV mode, maxed pop bumpers, a raised ball saver or Death target, a spotted character, or Crazy Chris."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "tv-modes",
+      "title": "TV Modes",
+      "category": "progression",
+      "summary": "Spin the Lois spinner to light TV at the scoop — ten spins the first time, five more each time after, up to a cap of thirty — then shoot it to start whichever of five TV modes is currently flashing; bumpers rotate the selection just like the Beer Can modes.",
+      "difficulty": 2,
+      "reward": "500K to start, then a 30-second scoring mode",
+      "steps": [],
+      "instructions": [
+        "Good Old Boys: for 30 seconds, the side shots and ramp start at 500K and climb 100K per shot, up to 1M each.",
+        "Super Griffins: within 30 seconds, work all six characters once — 750K for the first, climbing 50K per character, up to 1M for the last, plus a flat 1M bonus for finishing the set, for a 6.75M mode max.",
+        "Chicken Fight: every switch hit lands a blow; the mode ends when either side's life bar runs out.",
+        "Sexy Party: for 30 seconds, any of Meg, Chris, Stewie, Lois or the ramp pays 300K, rising 50K with each Stewie target hit, up to 750K.",
+        "Ipecac Contest: for 30 seconds, shoot Peter, Brian, Chris and Stewie — one character worked pays 250K a hit, two pays 500K, three pays 750K, and all four pays 1M.",
+        "Complete all five and the scoop stays lit for TV Wizard instead of rotating back to the start."
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "tv-wizard",
+      "title": "TV Wizard",
+      "category": "wizard",
+      "summary": "Unlocked once you've played all five TV modes. A grouped jackpot mode where the starting value is built from everything you've done across the whole game.",
+      "difficulty": 3,
+      "reward": "1M to start, plus a jackpot value built from your entire game's TV progress",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start TV Wizard",
+          "detail": "Banks a flat 1M just for arriving. The opening Jackpot then adds 250K for every past TV Wizard start, plus 15K to 50K for every shot scored across the five TV modes this game, and immediately starts counting back down toward 250K, where a final 3-second countdown ends the mode."
+        },
+        {
+          "shot": "meg-target",
+          "action": "Work the lit jackpot shots",
+          "detail": "Each hit scores the current value times a rising multiplier. The first grouping needs just one Jackpot to light the scoop; later groupings need up to seven."
+        },
+        {
+          "shot": "scoop",
+          "action": "Bank it at the scoop",
+          "detail": "Landing the lit scoop scores the full Jackpot at the current multiplier, then resets everything and relights for another grouping."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "crazy-chris",
+      "title": "Crazy Chris",
+      "category": "mode",
+      "summary": "Chris hits drop the Evil Monkey target in front of the ramp and build its value. Hit the Evil Monkey while its light is flashing and you start a 20-second run where every lit shot is worth 200K times how many Evil Monkey hits you've landed since Crazy Chris last started, capped at 1M a shot.",
+      "difficulty": 2,
+      "reward": "200K per banked Evil Monkey hit, per lit shot, capped at 1M",
+      "steps": [
+        {
+          "shot": "chris-target",
+          "action": "Hit Chris repeatedly",
+          "detail": "Each hit drops the Evil Monkey target back into place and raises its value a little more."
+        },
+        {
+          "shot": "evil-monkey-target",
+          "action": "Hit the dropped Evil Monkey",
+          "detail": "Scores the flashing total, and starts Crazy Chris if that light is flashing. Drawing Crazy Chris from the Drunken Clam instead pays a flat 400K a shot, regardless of your banked Evil Monkey count."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "evil-monkey-jackpot",
+      "title": "Evil Monkey Jackpot",
+      "category": "mode",
+      "summary": "A lane under the mini-playfield that pays an escalating Jackpot when lit, or a smaller rising value even when it isn't. The lit window is timed, so a fast double-back can occasionally bank two in a row.",
+      "difficulty": 2,
+      "reward": "500K climbing by 50K lit, 250K climbing by 25K to 500K unlit",
+      "steps": [
+        {
+          "shot": "evil-monkey-lane",
+          "action": "Shoot the lane below the mini-playfield",
+          "detail": "It feeds the right orbit afterward, so you're never out of position for following up."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "evil-monkey-skillshot",
+      "title": "The Secret Skill Shot",
+      "category": "secret",
+      "summary": "This lane doubles as a hidden second skill shot. Route the ball here instead of the F target while SKILL SHOT is still lit and you score double the current value.",
+      "difficulty": 3,
+      "reward": "2x the current skill shot value, +250K to the next one",
+      "steps": [
+        {
+          "shot": "evil-monkey-lane",
+          "action": "Take the secret route instead of the F target",
+          "detail": "It only counts while the skill shot is still active from the start of the ball. Landing it also bumps the next skill shot's starting value up by 250K."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "stewie-pinball",
+      "title": "Stewie Pinball",
+      "category": "mode",
+      "summary": "Light P-I-N-B-A-L-L at the scoop and the main flippers go dead while a separate mini table takes over. Completing characters there raises a playfield multiplier that holds for the rest of the ball; clear all five to bring the real flippers back.",
+      "difficulty": 2,
+      "reward": "500K-1.5M per completed character, up to a 3x playfield multiplier",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop once P-I-N-B-A-L-L lights up",
+          "detail": "The mini ball launches up the right inlane and your main flippers go quiet until the session ends."
+        },
+        {
+          "shot": "stewie-mini-playfield",
+          "action": "Work each character's rising value",
+          "detail": "Lois needs 4 shots and pays 100K a hit; Meg needs 3 and everyone else needs 5, all paying 50K a hit — each value climbs with every repeat hit on that character, then halves once the character's cleared."
+        },
+        {
+          "shot": "stewie-mini-playfield",
+          "action": "Bank the completion bonus",
+          "detail": "Your first completed character pays 500K and bumps the playfield multiplier upward for however long the current ball lasts; each character finished after that tacks on another 500K and nudges the multiplier higher still, capping out at 1.5M and 3x. A fresh Stewie Pinball session resets that multiplier. Finish all five and the session ends — you get the real flippers back, and Stewie Multiball begins."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "stewie-multiball",
+      "title": "Stewie Multiball",
+      "category": "multiball",
+      "summary": "Finishing Stewie Pinball's five characters starts this outright. Complete each character a second time on the main playfield, complete P-I-N-B-A-L-L to add balls, and chase the Super Jackpot.",
+      "difficulty": 3,
+      "reward": "500K per Jackpot, 2M-3M Super Jackpot, a hidden 3x Clam bonus",
+      "steps": [
+        {
+          "shot": "stewie-mini-playfield",
+          "action": "Clear all five characters to trigger it automatically",
+          "detail": "No separate shot starts this multiball — finishing the mini-playfield session does it for you."
+        },
+        {
+          "shot": "meg-target",
+          "action": "Complete each character on the main playfield too",
+          "detail": "Every character needs to be finished both on the mini table and the main one before it counts toward the Super Jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-captive-ball",
+          "action": "Complete P-I-N-B-A-L-L for another ball",
+          "detail": "Both captive balls add letters; a lit Stewie target relaunches the mini ball if the session clock runs out.",
+          "link": "none"
+        },
+        {
+          "shot": "evil-monkey-lane",
+          "action": "Cash the Super Jackpot",
+          "detail": "Lighting every character arms it here for 2M; hitting it a second time in the same multiball scores 3M and briefly lights the Drunken Clam for a Triple Super Secret Jackpot worth three times that."
+        }
+      ],
+      "fx": "mecha"
+    },
+    {
+      "id": "pirate-awards",
+      "title": "Pirate Target",
+      "category": "mode",
+      "summary": "A context-sensitive standup. What it pays depends entirely on what else is running when you hit it — useless most of the time, generous when it matters.",
+      "difficulty": 2,
+      "reward": "Add-a-ball, timer resets, or bonus hits, depending on context",
+      "steps": [
+        {
+          "shot": "pirate-target",
+          "action": "Shoot Pirate while lit",
+          "detail": "Awards include 3 beer hits, an add-a-ball during any multiball, extra Crazy Chris or Happy Hour time, a Remember When hurry-up reset, a spotted P-I-N-B-A-L-L letter, or more TV time."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "pinball-combo",
+      "title": "The Pinball Combo",
+      "category": "combo",
+      "summary": "Start from either orbit and finish at the Upper Captive Ball for a combo worth 500K, climbing 50K every time you complete it. Starting from the Lois side pays the full value; starting from Chris only pays half.",
+      "difficulty": 2,
+      "reward": "500K climbing by 50K (half value from the Chris side)",
+      "steps": [
+        {
+          "shot": "chris-target",
+          "action": "Start from the Chris target",
+          "detail": "This is the shot standing in for a left orbit — the ball never actually completes one, it just rolls back to the flippers — and starting the combo here only pays half value."
+        },
+        {
+          "shot": "upper-captive-ball",
+          "action": "Finish at the Upper Captive Ball",
+          "detail": "Starting instead from the Lois spinner and finishing here scores the full combo value."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "sperm-attack",
+      "title": "Sperm Attack",
+      "category": "wizard",
+      "summary": "The final wizard mode. Meet six separate milestones across the whole game and MULTIBALL lights at the scoop for a two-phase finale built entirely around your own Jackpot.",
+      "difficulty": 3,
+      "reward": "A Jackpot you build yourself, collected in repeating rounds",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Light and start Sperm Attack",
+          "detail": "Requires 5 Evil Monkey Jackpots, 10 lit shots during a single Crazy Chris, 15 Fart Multiball Jackpots, all five Beer Can awards, a Stewie Multiball Super Jackpot, and 25M or more scored during TV Wizard."
+        },
+        {
+          "shot": "stewie-mini-playfield",
+          "action": "Build the Jackpot on the mini playfield",
+          "detail": "18 seconds on the mini table; every character shot adds to a 1M starting Jackpot — Peter and Meg add 50K a hit, Brian and Chris 75K, Lois 100K."
+        },
+        {
+          "shot": "drunken-clam",
+          "action": "Shoot the Clam once two balls remain",
+          "detail": "Banks 2M and opens a 10-second window to hit the scoop."
+        },
+        {
+          "shot": "scoop",
+          "action": "Hit the TV scoop in time",
+          "detail": "Scores 2M and restarts the mini-playfield build phase for another round, growing the Jackpot further before the finale ends on one ball."
+        }
+      ],
+      "fx": "worm"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "fgy-skillshot",
+      "title": "First Skill Shot",
+      "desc": "Collect the F target skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "f-skillshot"
+    },
+    {
+      "id": "fgy-beer-run",
+      "title": "Beer Run",
+      "desc": "Collect any Beer Can mode award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "beer-can-modes"
+    },
+    {
+      "id": "fgy-mystery-clam",
+      "title": "Mystery Clam",
+      "desc": "Collect an award from the Drunken Clam.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "drunken-clam"
+    },
+    {
+      "id": "fgy-fart-mb",
+      "title": "F-A-R-T",
+      "desc": "Start Fart Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fart-multiball"
+    },
+    {
+      "id": "fgy-lard-mb",
+      "title": "Lard Multiball",
+      "desc": "Start Lard Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "lard-multiball"
+    },
+    {
+      "id": "fgy-crazy-chris",
+      "title": "Crazy Chris",
+      "desc": "Start Crazy Chris mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "crazy-chris"
+    },
+    {
+      "id": "fgy-pinball-combo",
+      "title": "Pinball Combo",
+      "desc": "Complete the Pinball Combo from either orbit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "pinball-combo"
+    },
+    {
+      "id": "fgy-secret-skillshot",
+      "title": "Secret Skip",
+      "desc": "Double a skill shot at the Evil Monkey lane instead of the F target.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "evil-monkey-skillshot"
+    },
+    {
+      "id": "fgy-stewie-pinball",
+      "title": "Stewie Time",
+      "desc": "Complete all five characters in Stewie Pinball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "stewie-pinball"
+    },
+    {
+      "id": "fgy-add-a-stewie",
+      "title": "Add-A-Stewie",
+      "desc": "Complete P-I-N-B-A-L-L for another ball during Stewie Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "stewie-multiball"
+    },
+    {
+      "id": "fgy-tv-wizard",
+      "title": "TV Wizard",
+      "desc": "Start TV Wizard mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tv-wizard"
+    },
+    {
+      "id": "fgy-pirate-bounty",
+      "title": "Pirate's Bounty",
+      "desc": "Collect an add-a-ball from the Pirate target during multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "pirate-awards"
+    },
+    {
+      "id": "fgy-sperm-attack",
+      "title": "Sperm Attack",
+      "desc": "Meet all six requirements and start the final wizard mode.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "sperm-attack"
+    },
+    {
+      "id": "fgy-triple-super-secret",
+      "title": "Triple Super Secret",
+      "desc": "Collect the Triple Super Secret Jackpot from the Drunken Clam during Stewie Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "stewie-multiball"
+    },
+    {
+      "id": "fgy-full-bonus",
+      "title": "Full Bonus",
+      "desc": "Max the Peter bank's bonus multiplier to 5x.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "peter-bonus"
+    }
+  ],
+  "drills": [
+    {
+      "id": "f-target-and-secret-lane",
+      "title": "F Target, Then The Secret Lane",
+      "text": "Only the bottom target of the F-A-R-T bank pays the skill shot, so land that one specifically rather than anywhere in the bank. Once it is reliable, practise the alternative — routing the ball into the lane under the mini-playfield while the skill shot is still live pays double.",
+      "reps": "10 plunges each route",
+      "focus": "skill-shot",
+      "goal": "f-skillshot",
+      "shots": [
+        "shooter-lane",
+        "fart-targets",
+        "evil-monkey-lane"
+      ]
+    },
+    {
+      "id": "death-target-cycling",
+      "title": "Cycle The Death Target",
+      "text": "Knock the Death target down, then take the lit left inlane to stand it back up and knock it down again — it is the only way to line up a second hit. Each knockdown also raises the post between the flippers, so the rhythm buys you a save as well as points.",
+      "reps": "10 cycles",
+      "focus": "accuracy",
+      "goal": "raise-death",
+      "shots": [
+        "raise-death-inlane",
+        "death-drop-target"
+      ]
+    },
+    {
+      "id": "cross-table-doublers",
+      "title": "Inlane Into The Far Shot",
+      "text": "The left inlane doubles the Lois spinner clear across the table and the right inlane doubles Meg, so only take the doubler when you were already heading that way. Drill both directions from the inlane feed, and remember a slingshot hit can swap which one is live before you get there.",
+      "reps": "10 each side",
+      "focus": "flow",
+      "goal": "two-x-lanes",
+      "shots": [
+        "2x-lois-inlane",
+        "2x-meg-inlane",
+        "lois-spinner",
+        "meg-target"
+      ]
+    },
+    {
+      "id": "chris-into-evil-monkey",
+      "title": "Chris, Then The Monkey",
+      "text": "Repeat the Chris shot to keep dropping the Evil Monkey target into place in front of the ramp and building what it is worth. Watch its light, and take the Monkey while it is flashing — that is the hit that starts Crazy Chris rather than just collecting.",
+      "reps": "10 pairs",
+      "focus": "accuracy",
+      "goal": "crazy-chris",
+      "shots": [
+        "chris-target",
+        "evil-monkey-target"
+      ]
+    },
+    {
+      "id": "pinball-combo-full-value",
+      "title": "Start The Combo On Lois",
+      "text": "Run the spinner into the Upper Captive Ball rather than starting from Chris, because the Chris side only pays half the combo. Treat the captive ball as the second half of one motion, not a separate shot you go looking for.",
+      "reps": "10 combos",
+      "focus": "flow",
+      "goal": "pinball-combo",
+      "shots": [
+        "lois-spinner",
+        "chris-target",
+        "upper-captive-ball"
+      ]
+    },
+    {
+      "id": "stewie-mini-session",
+      "title": "Play The Mini Table Cold",
+      "text": "Your main flippers go dead the moment the session starts, so the drill is getting used to those same buttons driving tiny flippers on a table you cannot see well. Spend the session on Lois and Meg first — Lois needs four shots and Meg only three, while everyone else wants five.",
+      "reps": "5 sessions",
+      "focus": "ball-control",
+      "goal": "stewie-pinball",
+      "shots": [
+        "stewie-mini-playfield",
+        "stewie-lois-mini",
+        "stewie-meg-mini"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "burger",
+  "playfields": [
+    {
+      "id": "stewie-mini-deck",
+      "name": "Stewie's Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.6,
+        "y": 0.78,
+        "w": 0.32,
+        "h": 0.2
+      },
+      "entries": [
+        "scoop"
+      ],
+      "exits": [
+        {
+          "x": 0.5,
+          "y": 0.15
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Stern had not started putting a button on the lockdown bar yet in 2007, so there is nothing extra to press. The closest thing to a second control is the Stewie mini-playfield — your same two flipper buttons drive its tiny flippers while the main pair goes dead."
+  },
+  "howItPlays": {
+    "objective": "Family Guy is built for chaos around the Griffin house -- pound every character, spin up its stack of multiballs, and roll TV episodes into their own wizard rounds. The long haul is meeting six scattered milestones to light Sperm Attack, the final showdown waiting at the scoop.",
+    "loop": [
+      "Pound the character standups -- Meg, Chris and Stewie -- for values that climb with every hit and quietly load your end-of-ball bonus.",
+      "Knock the FART drops toward Fart Multiball and rap the two captive balls to spell PINBALL for the Stewie mini-table.",
+      "Rip the Lois spinner until TV lights on the scoop, and bump the pops to spin which episode and which Beer Can prize is waiting.",
+      "Cash the flashing episode at the scoop or the flashing prize at the Beer Can; chain all five episodes into TV Wizard and all five prizes through Lard Multiball.",
+      "Tick off six milestones spread across the game and the scoop lights MULTIBALL for Sperm Attack."
+    ],
+    "lights": [
+      {
+        "id": "fart-drops",
+        "name": "FART Drop Bank",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "fart-targets",
+            "lamps": 4
+          }
+        ],
+        "lit": "Each standing drop in the FART bank is one to flatten, and the lowest target starts every ball lit for the skill shot; sweep the bank and it pops right back up for another pass.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear the whole bank as many times as it asks -- three to open, one more per start up to a ceiling of six -- to spin up Fart Multiball. Once it runs, jackpots are counted in switch hits rather than fixed points, so the more clears it demanded, the fatter each one pays.",
+        "goals": [
+          "f-skillshot",
+          "fart-multiball"
+        ]
+      },
+      {
+        "id": "character-standups",
+        "name": "Character Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "meg-target"
+          },
+          {
+            "shot": "chris-target"
+          },
+          {
+            "shot": "stewie-targets"
+          },
+          {
+            "shot": "peter-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "Meg, Chris and Stewie each hand you a value that climbs on every strike and quietly pad the bonus, while sweeping Peter's XXX bank ratchets the bonus MULTIPLIER itself up toward its five-times cap for the ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Keep tapping the characters between modes for cheap points and a swollen bonus, and finish Peter early so the higher multiplier rides your whole ball. These hits do double duty -- Meg arms the Pirate target and Chris drops the Evil Monkey -- so they set up other toys as you go.",
+        "goals": [
+          "character-shots",
+          "peter-bonus"
+        ]
+      },
+      {
+        "id": "beer-can-wheel",
+        "name": "Beer Can Awards",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "brian-beer-can"
+          },
+          {
+            "shot": "bumpers"
+          }
+        ],
+        "lit": "The Beer Can shows one of five rotating prizes at a time -- a points dump, a table-wide double, on up to Lard Multiball -- and whatever is showing is what a cash-in will collect.",
+        "flashing": "The prize currently strobing is the one you will get; a pop-bumper hit rolls the selection along to the next prize.",
+        "control": null,
+        "then": "Rattle the pops until the prize you want is up, then rap the Beer Can enough times -- five the first go, one more each cycle after -- to bank it. Work through all five and they reset for another lap.",
+        "goals": [
+          "beer-can-modes",
+          "lard-multiball"
+        ]
+      },
+      {
+        "id": "tv-scoop",
+        "name": "TV Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "scoop"
+          },
+          {
+            "shot": "lois-spinner"
+          }
+        ],
+        "lit": "Enough rips of the Lois spinner light TV on the scoop, and the scoop changes jobs with whatever is lit on it -- TV starts the flashing episode, PINBALL launches the Stewie table, MULTIBALL opens the final wizard.",
+        "flashing": "Pop-bumper hits spin which of the five episodes is up, the same way the Beer Can wheel turns.",
+        "control": null,
+        "then": "Shoot the lit scoop to run the showing episode for a half-minute scoring round. Play all five and the scoop parks on TV Wizard instead of rolling back to the first.",
+        "goals": [
+          "tv-modes",
+          "tv-wizard"
+        ]
+      },
+      {
+        "id": "pinball-captives",
+        "name": "PINBALL Captive Balls",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "upper-captive-ball"
+          },
+          {
+            "shot": "lower-captive-ball"
+          }
+        ],
+        "lit": "Every rap on either captive ball adds a letter toward PINBALL, a lit letter is one already banked, and finishing the word arms the scoop to throw the Stewie mini-table into play.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete the word, shoot the lit scoop, and the main flippers stop cold while a small separate table takes the same two buttons. Clear its five characters to jack a playfield multiplier up for the rest of the ball and tip straight into Stewie Multiball.",
+        "goals": [
+          "stewie-pinball",
+          "stewie-multiball",
+          "pinball-combo"
+        ]
+      },
+      {
+        "id": "death-target",
+        "name": "Death Target",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "raise-death-inlane"
+          },
+          {
+            "shot": "death-drop-target"
+          }
+        ],
+        "lit": "A lit Raise Death inlane will stand the Death drop back up for another crack, and Death itself pays 200K the first time it falls each ball, a little more after that.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll the lit inlane, then flatten Death again -- each knockdown lifts a protective post into the gap between your flippers for a short grace window against a bad rebound. Standing it back up is the one route to a repeat, so the inlane and the drop trade back and forth.",
+        "goals": [
+          "raise-death"
+        ]
+      },
+      {
+        "id": "evil-monkey",
+        "name": "Evil Monkey",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "chris-target"
+          },
+          {
+            "shot": "evil-monkey-target"
+          },
+          {
+            "shot": "evil-monkey-lane"
+          }
+        ],
+        "lit": "Repeated Chris hits keep dropping the Evil Monkey target and building what it is worth, while the lane beneath the mini-table pays a rising Evil Monkey jackpot whenever its own arrow is lit.",
+        "flashing": "When the Evil Monkey target's lamp is strobing, striking it opens Crazy Chris rather than just collecting its value.",
+        "control": null,
+        "then": "Take the strobing Monkey to start Crazy Chris, a twenty-second sprint where each lit shot pays 200K times your stored Monkey hits, up to a million apiece. Feed the lit lane between times for its jackpot -- and off a fresh plunge that same lane hides a doubled skill shot.",
+        "goals": [
+          "crazy-chris",
+          "evil-monkey-jackpot",
+          "evil-monkey-skillshot"
+        ]
+      },
+      {
+        "id": "drunken-clam",
+        "name": "Drunken Clam",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drunken-clam"
+          },
+          {
+            "shot": "not-special-outlane"
+          }
+        ],
+        "lit": "The mystery saucer glows whenever it has an award waiting, and on this game that award is always something worth taking rather than a throwaway gag.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the lit Clam to grab whatever it is offering -- points, a bonus bump, a lit feature, an extra ball, even a multiball or Crazy Chris. It is also the only thing that lights Not Special at the left outlane, so a drain down that side becomes an extra ball instead.",
+        "goals": [
+          "drunken-clam",
+          "not-special-eb"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Bank the safe, repeatable points first: take the skill shot off the lit FART target, grind Meg, Chris and Stewie for their climbing values, and sweep Peter's XXX bank early so the five-times bonus multiplier rides the whole ball. Flatten Death off its lit inlane for points and a save post.",
+        "goals": [
+          "f-skillshot",
+          "character-shots",
+          "peter-bonus",
+          "raise-death"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start stacking features. Clear the FART bank for Fart Multiball, rotate the pops to cash the Beer Can prizes and TV episodes you actually want, and finish PINBALL to launch the Stewie mini-table and the multiball behind it.",
+        "goals": [
+          "fart-multiball",
+          "beer-can-modes",
+          "tv-modes",
+          "stewie-pinball",
+          "stewie-multiball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The ceiling is Sperm Attack, the last wizard at the scoop. Meet its six milestones -- a run of Evil Monkey jackpots, a big Crazy Chris, a stack of Fart jackpots, every Beer Can prize, a Stewie super and a huge TV Wizard -- then build a jackpot you assemble yourself on the mini-table and cash it in repeating rounds.",
+        "goals": [
+          "sperm-attack",
+          "tv-wizard"
+        ]
+      }
+    ]
+  }
+}

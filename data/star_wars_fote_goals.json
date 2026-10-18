@@ -1,0 +1,1452 @@
+{
+  "machine": "Star Wars: Fall of the Empire (Stern Pinball, 2025)",
+  "defaultFx": "space",
+  "shots": [
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Yoda)",
+      "type": "orbit",
+      "x": 0.09,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Far-left loop containing the left spinner; easiest JEDI/skill feeder. During skill shot adds 2 JEDI letters."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (Obi-Wan)",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Far-right loop containing the right spinner; narrow but reliable. Cloud City orbit shot.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "death-star-ramp",
+      "name": "Death Star Ramp (Lando)",
+      "type": "ramp",
+      "x": 0.37,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Left-center ramp to the Death Star sphere; shoot to open then lock (3-ball lock).",
+      "feeds": {
+        "shot": "empire-return-lanes"
+      }
+    },
+    {
+      "id": "luke-vuk",
+      "name": "Luke VUK",
+      "type": "scoop",
+      "x": 0.3,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "AT-AT spiral vertical up-kicker, backhandable. Most important shot: Hoth locks/super, mission completion 5th shot, EB location.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "droids-target",
+      "name": "Droids Light-Lock Target",
+      "type": "standup",
+      "x": 0.39,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Always 2X; lights Battle of Hoth locks; advances toward locks."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Han)",
+      "type": "ramp",
+      "x": 0.51,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Dead-center hyperspace jump ramp; starts Lightspeed MB and Hyperspace Loops. premium-le: lowers to a bash target.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "sarlacc-pit",
+      "name": "Sarlacc Pit Ramp (Chewbacca)",
+      "type": "ramp",
+      "x": 0.59,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Whirlpool pit that spins the ball (acts like a spinner); selects/advances Jabba features; 10 spins = add-a-ball in MB.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Leia)",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.51,
+      "trim": "all",
+      "notes": "Steeper right ramp; TIE Fighter ramps, Falcon qualify, Hyperspace Loop cash-out, EB location.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "vader-scoop",
+      "name": "Darth Vader Scoop",
+      "type": "scoop",
+      "x": 0.21,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Left scoop near left pop; starts Vader Modes, Dark Side Mystery, and the Not-a-Jedi-Yet / Sarlacc Escape wizard starts. Drain-prone feed.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "stormtrooper-target",
+      "name": "Stormtrooper Target",
+      "type": "standup",
+      "x": 0.87,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Far right; Stormtrooper Hurry-Up + Bonus X engine; also cycles Rebel-mission tier color."
+    },
+    {
+      "id": "salacious-crumb",
+      "name": "Salacious Crumb Drop Target",
+      "type": "drop-target",
+      "x": 0.59,
+      "y": 0.43,
+      "trim": "all",
+      "notes": "Guards the Sarlacc Pit; knock down twice to light Jabba Events (+1 more each subsequent event)."
+    },
+    {
+      "id": "force-f",
+      "name": "FORCE Target - F",
+      "type": "standup",
+      "x": 0.25,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Bank of 5 standups spelling F-O-R-C-E to light the 8 character shots."
+    },
+    {
+      "id": "force-o",
+      "name": "FORCE Target - O",
+      "type": "standup",
+      "x": 0.44,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "FORCE bank; left of Han portrait."
+    },
+    {
+      "id": "force-r",
+      "name": "FORCE Target - R",
+      "type": "standup",
+      "x": 0.59,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "FORCE bank; right of Han portrait."
+    },
+    {
+      "id": "force-c",
+      "name": "FORCE Target - C",
+      "type": "standup",
+      "x": 0.67,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "FORCE bank; right-center."
+    },
+    {
+      "id": "force-e",
+      "name": "FORCE Target - E",
+      "type": "standup",
+      "x": 0.8,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "FORCE bank; near Extra Ball insert."
+    },
+    {
+      "id": "left-spinner",
+      "name": "Left Spinner",
+      "type": "spinner",
+      "x": 0.07,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "In the left orbit lane; spins spell JEDI (ball save) and build Yoda mission values."
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Spinner",
+      "type": "spinner",
+      "x": 0.92,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "In the right orbit lane; spins spell JEDI."
+    },
+    {
+      "id": "left-ion-cannon",
+      "name": "Left Ion Cannon (pop bumper)",
+      "type": "bumper",
+      "x": 0.11,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Charges the Ion Cannon shot multiplier when NOT in multiball; kicks wildly toward slings/outlanes."
+    },
+    {
+      "id": "right-ion-cannon",
+      "name": "Right Ion Cannon (pop bumper)",
+      "type": "bumper",
+      "x": 0.84,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Second Ion Cannon pop; charges the shot multiplier."
+    },
+    {
+      "id": "death-star-lock",
+      "name": "Death Star Sphere",
+      "type": "toy",
+      "x": 0.248,
+      "y": 0.9383,
+      "trim": "all",
+      "notes": "Back-left captive lock (up to 3 balls); open sphere collects the Death Star Super Jackpot."
+    },
+    {
+      "id": "millennium-falcon",
+      "name": "Millennium Falcon",
+      "type": "toy",
+      "x": 0.3908,
+      "y": 0.9136,
+      "trim": "all",
+      "notes": "Back-center toy; blue-engine lights show Falcon qualified; next backpanel shot starts a Falcon feature."
+    },
+    {
+      "id": "at-at",
+      "name": "AT-AT Walker",
+      "type": "toy",
+      "x": 0.26,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Upper-left; Luke VUK spirals it. Lit for the Battle of Hoth Letter Jackpot; spells AT-AT."
+    },
+    {
+      "id": "empire-return-lanes",
+      "name": "Empire Return Lanes",
+      "type": "lane",
+      "x": 0.23,
+      "y": 0.14,
+      "trim": "all",
+      "notes": "Inlane rollovers carrying EMPIRE inserts; completing them alternately lights Dark Side Mystery / Vader Mode and boosts the Stormtrooper Hurry-Up."
+    },
+    {
+      "id": "left-slingshot",
+      "name": "Left Slingshot",
+      "type": "slingshot",
+      "x": 0.33,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Above left flipper; slings/pops move which shot is 2X in some missions; Lando Super Slings."
+    },
+    {
+      "id": "right-slingshot",
+      "name": "Right Slingshot",
+      "type": "slingshot",
+      "x": 0.68,
+      "y": 0.13,
+      "trim": "all",
+      "notes": "Above right flipper; alternates which EB shot is lit (Luke/Leia)."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.98,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Auto + manual plunge; launch point for the skill shot."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "super-skill-shot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge and make a lit shot inside the first 3 switch hits for double the skill-shot value. The award starts at 1M and grows by another 1M per skill shot, and the chance is gone after 6 switches.",
+      "difficulty": 2,
+      "reward": "2x skill shot value (base 1M, +1M per skill shot)",
+      "steps": [
+        {
+          "shot": "droids-target",
+          "action": "Plunge and make a lit shot within a couple switches",
+          "detail": "At ball start every lit shot qualifies; hitting too many switches first ends the chance. Any lit shot made within only a couple switches = Super Skill Shot worth 2x. Re-lit by Death Star locks or Jedi Saves."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "left-orbit-skill-shot",
+      "title": "Left Orbit Skill Shot (JEDI head start)",
+      "category": "skillshot",
+      "summary": "Plunge to the left orbit on the skill shot to bank the skill-shot value AND add 2 JEDI letters toward the ball save.",
+      "difficulty": 1,
+      "reward": "Skill shot value + 2 JEDI letters",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Plunge toward the left orbit",
+          "detail": "Controllable early shot, low risk. Shooting the left orbit during the skill shot adds 2 JEDI letters — cheap ball-save insurance while learning."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "rancor-chain",
+      "title": "Rancor (Jabba Event chain)",
+      "category": "combo",
+      "summary": "The mandated untimed Rancor shot chain — highest-value single mode, with a +1x-per-shot combo multiplier (up to 3x) if kept inside the ~10s window.",
+      "difficulty": 3,
+      "reward": "Rancor best-value Jabba award (combos up to 3x)",
+      "steps": [
+        {
+          "shot": "luke-vuk",
+          "action": "Shoot Luke VUK",
+          "detail": "Knock the Salacious Crumb drop target down twice, then pick Rancor as the ball spins in the pit — it is one of the three events available from your first Jabba qualification. Rancor is untimed, but chaining shots inside ~10s is what builds the multiplier."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp again"
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Shoot Luke VUK"
+        },
+        {
+          "shot": "sarlacc-pit",
+          "action": "End at the Sarlacc Pit",
+          "detail": "Chaining within ~10s adds +1x per shot up to 3x on the next award."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "lando-rescue-luke",
+      "title": "Lando 'Rescue Luke' bonus combo",
+      "category": "combo",
+      "summary": "A scripted Lando bonus-mission combo; a white starter shot can pre-multiply the first shot, and the +1x/10s window compounds the chain.",
+      "difficulty": 3,
+      "reward": "Multiplied combo total ending in ~25%-value hurry-ups",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp (starter)",
+          "detail": "First shot can be pre-multiplied by first hitting a white starter shot."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Shoot Luke VUK"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp (2x)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp"
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "Finish at the Vader scoop",
+          "detail": "Final two shots are hurry-ups worth ~25% of the prior multiplied totals."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "dogfight-alternation",
+      "title": "Dogfight ramp alternation",
+      "category": "combo",
+      "summary": "Alternate center jump ramp and right ramp to kill TIE fighters; a combo into the right ramp scores 2x the TIE value. Repeatable until the timer dies.",
+      "difficulty": 2,
+      "reward": "2x TIE Fighter value on combined right-ramp shots",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center/jump ramp to start Dogfight"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to destroy TIE fighters",
+          "detail": "A combo into the right ramp from the center ramp scores 2x the TIE Fighter value."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the jump ramp to relight the right-ramp award"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate back to the right ramp",
+          "detail": "Each shot adds time; keep looping until the timer expires."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "rebel-combo-farming",
+      "title": "Rebel Combo pre-load (Rebel Assistance)",
+      "category": "combo",
+      "summary": "Outside multiball, collect character combos so their name inserts pulse and then go solid — each one turns a single shot into 2 or 3 jackpots' worth of progress in Battle of Hoth and Death Star. Combos reset at the start of every ball.",
+      "difficulty": 2,
+      "reward": "Pulsing combo = 2 jackpots in one shot; solid = 3",
+      "steps": [
+        {
+          "shot": "luke-vuk",
+          "action": "Make any shot to light natural yellow combo shots",
+          "detail": "The flipper you fed from determines which character combos light."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make a lit combo shot to collect that Rebel Combo (pulsing)",
+          "detail": "Also worth 150K per combo in end-of-ball bonus; resets each ball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the same character combo again to make it solid",
+          "detail": "Solid means that shot banks 3 jackpots in one hit once multiball starts — that is progress, not extra value; jackpot value multipliers come from playing Rebel Missions."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "hyperspace-loops",
+      "title": "Hyperspace Loops",
+      "category": "combo",
+      "summary": "Triggered at 5/15/45 TIE Fighter ramps: loop the center ramp to build a hyperspace jackpot, then cash out at the right ramp before the timer expires.",
+      "difficulty": 2,
+      "reward": "Hyperspace jackpot (multiplied by shot multipliers)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Farm TIE Fighters at the right ramp",
+          "detail": "5 / 15 / 45 TIEs trigger Hyperspace Loops at the center ramp."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop the center ramp to build the hyperspace jackpot"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash out at the right ramp before time expires",
+          "detail": "Miss it and the jackpot is lost. Very strong stacked inside Lightspeed MB."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "battle-of-hoth-mb",
+      "title": "Battle of Hoth Multiball",
+      "category": "multiball",
+      "summary": "Priority multiball: light locks at Luke VUK via the Droids target, then snowball AT-AT Letter Jackpots into the Luke VUK Super Jackpot.",
+      "difficulty": 2,
+      "reward": "AT-AT Letter Jackpot = sum of all jackpots; Luke Super Jackpot",
+      "steps": [
+        {
+          "shot": "droids-target",
+          "action": "Hit the Droids light-lock target to light virtual locks"
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Lock 3 balls at Luke VUK",
+          "detail": "First MB needs 3 shots to Luke; later MBs need extra target hits."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Start the multiball and shoot lit shots for jackpots",
+          "detail": "Jackpots start 500K, +250K each. All shots lit except the AT-AT."
+        },
+        {
+          "shot": "at-at",
+          "action": "Hit the AT-AT for a Letter Jackpot",
+          "detail": "Letter Jackpot = sum of all jackpots (incl. Double/Triple, excl. Ion Cannon 2x); awards an AT-AT letter and resets jackpot value. Letters cost 1/2/3/4 shots."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Complete AT-AT, then collect the Super Jackpot at Luke VUK",
+          "detail": "Super Jackpot = sum of all letter jackpots; boosts all jackpots +500K for the rest of the MB."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "death-star-mb",
+      "title": "Death Star Multiball",
+      "category": "multiball",
+      "summary": "Highest super-jackpot ceiling in the game: bank jackpots on the 8 shots, hit the Death Star for a 30s Super Jackpot that adds a ball and revives the save, then run Victory Laps.",
+      "difficulty": 2,
+      "reward": "30s Super Jackpot (base around 20M) + add-a-ball + ball save + Victory Laps",
+      "steps": [
+        {
+          "shot": "death-star-ramp",
+          "action": "Shoot the Death Star ramp to open, then again to lock 3 balls",
+          "feeds": {
+            "shot": "death-star-lock"
+          }
+        },
+        {
+          "shot": "death-star-ramp",
+          "action": "Start MB and hit the 8 lit shots for jackpots",
+          "detail": "A jackpot only unlights that shot until you make a different one, so two reliable shots can be alternated all the way to the super.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Use character-lit shots to reach 15 jackpots faster",
+          "detail": "Rebel Assistance: pulsing character = 2 jackpots, solid = 3. Current code needs 15 jackpots for the super; earlier code needed 14.",
+          "link": "none"
+        },
+        {
+          "shot": "death-star-lock",
+          "action": "Hit the Death Star for the 30s Super Jackpot",
+          "detail": "Adds a ball, revives ball save; 3 build shots = super 2X, 7 = 3X, each build shot +3s."
+        },
+        {
+          "shot": "death-star-lock",
+          "action": "Enter the open Death Star to collect and start Victory Laps",
+          "detail": "Uncollected super progress is held between Death Star Multiballs."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "lightspeed-mb",
+      "title": "Lightspeed Multiball",
+      "category": "multiball",
+      "summary": "Falcon Feature #1 and the only stackable multiball: build the jackpot at other shots, start at the center ramp, then loop the center ramp for repeated super jackpots.",
+      "difficulty": 3,
+      "reward": "Center-ramp super jackpots (super = 5x the current jackpot)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Qualify the Falcon",
+          "detail": "The center ramp always gives progress toward the first feature. After that the Pro needs a right-ramp shot to qualify the center ramp, while Premium/LE needs the target under the center ramp hit to raise it."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Build phase: hit other shots, then start the MB at the center ramp",
+          "detail": "Draining or timing out before starting forfeits it."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Make lit shots to light the center shot for a Super Jackpot",
+          "detail": "Three lit shots light the looping super jackpot, and each cycle after that asks for one more while the jackpot base keeps growing."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop the center ramp repeatedly for growing super jackpots",
+          "detail": "Difficulty rises each loop. Can stack with Battle of Hoth (started during Lightspeed Escape)."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "mynock-mb",
+      "title": "Mynock Multiball (Premium/LE)",
+      "category": "multiball",
+      "summary": "Premium/LE only: after two Dark Side Mystery awards, the third can start Mynock MB — the center ramp lowers and you bash it for huge scores.",
+      "difficulty": 3,
+      "reward": "~10M per bash; 10th shot lights an Extra Ball, every 10 after = 25M",
+      "steps": [
+        {
+          "shot": "empire-return-lanes",
+          "action": "Complete Empire return lanes to light Dark Side Mystery at the Vader scoop"
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "Collect two Dark Side Mystery awards; the third starts Mynock MB",
+          "detail": "Premium/LE only, and only if nothing else is running (single-ball play)."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Bash the lowered center ramp for huge scores",
+          "detail": "~10M each; 10 shots lights an EB, every 10 thereafter = 25M. Unaffected by shot multipliers."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "rebel-mission",
+      "title": "Rebel Mission (character mode)",
+      "category": "mode",
+      "summary": "Spell FORCE to light the 8 character shots, start a Rebel's mission, then complete 4 blue shots plus the mandatory 5th shot to Luke VUK.",
+      "difficulty": 2,
+      "reward": "Mission complete (2 completed lights an Extra Ball); restarts at 2x",
+      "steps": [
+        {
+          "shot": "force-f",
+          "action": "Spell FORCE on the standup bank to light the 8 character shots",
+          "detail": "FORCE difficulty starts at 1 and rises a step with every mission played, but drops back a step for each multiball super jackpot or completed Falcon, Jabba or Vader mode. It caps at 8."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Hit a lit character shot to start that Rebel's mission",
+          "detail": "Tier color (Green 3M / Yellow 4M / Orange 5M) cycled by the Stormtrooper target or pops."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make 4 blue shots to progress the scene",
+          "detail": "Blue shots advance the scene; white shots raise shot values; 2x shots show a quick-flashing arrow."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Complete with the mandatory 5th shot to Luke VUK",
+          "detail": "A character that already completed a mission starts its next at 2x award value."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "darth-vader-mode",
+      "title": "Darth Vader Mode",
+      "category": "mode",
+      "summary": "Complete the Empire return lanes to light a Vader Mode at the scoop; the starting shot raises the multiplier, then collect the final award back at the Vader scoop.",
+      "difficulty": 2,
+      "reward": "Multiplied Vader award (+500K base per completed Vader mode); feeds Dark Side Scoring",
+      "steps": [
+        {
+          "shot": "empire-return-lanes",
+          "action": "Complete the Empire return lanes to light a Vader Mode",
+          "detail": "Return lanes alternate between Dark Side Mystery and Vader Mode each completion."
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "Shoot the Vader scoop to light 8 shots and start a mode",
+          "detail": "Shot-to-mode map, e.g. Vader scoop -> Lord Vader Arrives (3 shots)."
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "Hit lit shots to collect and advance",
+          "detail": "The shot that started the mode blinks faster and raises the award multiplier for future shots."
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "Return to the Vader scoop for the final multiplied award",
+          "detail": "Completing enables Dark Side Scoring to end-of-ball (5% of Vader points on a roving purple shot)."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "jabba-event-palace",
+      "title": "Jabba Event: Jabba's Palace",
+      "category": "mode",
+      "summary": "Knock down the Salacious Crumb drop target twice to light the Sarlacc Pit, select the event, then light the drop target for escalating points capped by a 5x Sarlacc collect.",
+      "difficulty": 2,
+      "reward": "Escalating drop-target awards; 3rd hit = Sarlacc Pit 5x. First Jabba Event completion lights an EB",
+      "steps": [
+        {
+          "shot": "salacious-crumb",
+          "action": "Knock down the Salacious Crumb drop target twice to light the Sarlacc Pit"
+        },
+        {
+          "shot": "sarlacc-pit",
+          "action": "Spin the pit to select the event, then exit to start",
+          "detail": "Each spin toggles the event; press the action button to lock the choice."
+        },
+        {
+          "shot": "sarlacc-pit",
+          "action": "Make enough lit shots to light the drop target for bigger points"
+        },
+        {
+          "shot": "salacious-crumb",
+          "action": "Hit the drop target; the 3rd hit lights the Sarlacc Pit for 5x the current award",
+          "detail": "Each drop-target hit resets the timer and requires more shots to relight."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "thats-no-moon",
+      "title": "That's No Moon (Falcon feature)",
+      "category": "mode",
+      "summary": "A Falcon feature: hit three neighboring lit shots (center one 2x) while searching for Alderaan, then take the final shot at the Death Star.",
+      "difficulty": 2,
+      "reward": "Time bonus 500K x seconds left",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Cycle Falcon features (right ramp / center jump) to reach That's No Moon"
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Hit the three neighboring lit shots",
+          "detail": "Outer shots 1x, center shot 2x."
+        },
+        {
+          "shot": "death-star-ramp",
+          "action": "Take the final shot at the Death Star to complete",
+          "detail": "Time bonus = 500K x seconds remaining."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "ion-cannon-multiplier",
+      "title": "Ion Cannon Shot Multiplier",
+      "category": "multiplier",
+      "summary": "Charge the Ion Cannon by hitting the pop bumpers outside multiball; when fired, the next shot you make becomes 2x for the rest of the ball — place it on Luke VUK.",
+      "difficulty": 2,
+      "reward": "Persistent 2x on a chosen shot (roving 3x once all 8 majors hold a 2x)",
+      "steps": [
+        {
+          "shot": "left-ion-cannon",
+          "action": "Hit the Ion Cannon pop bumpers to charge (not during multiball)"
+        },
+        {
+          "shot": "right-ion-cannon",
+          "action": "Keep feeding pops until fully charged",
+          "detail": "Firing flashes all un-lit Rebel Alliance inserts; requalifying gets harder each time."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Make your target shot to lock in the 2x for the rest of the ball",
+          "detail": "Luke VUK is the best default (mission completes, Rancor, Family Reunion, Hoth super all resolve there). Note the Hoth Letter Jackpot excludes this multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "stormtrooper-bonus-x",
+      "title": "Stormtrooper Hurry-Up & Bonus X",
+      "category": "multiplier",
+      "summary": "Hit the Stormtrooper target to start a Hurry-Up; completing it adds +1 Bonus X (max 15X) — the game's primary end-of-ball bonus multiplier.",
+      "difficulty": 1,
+      "reward": "+1 Bonus X per completion (cap 15X); Hurry-Up base 10M x completions",
+      "steps": [
+        {
+          "shot": "stormtrooper-target",
+          "action": "Hit the Stormtrooper target to raise the count",
+          "detail": "At 2 (then 3, 4...) Stormtroopers the Hurry-Up starts. Cannot start during multiball."
+        },
+        {
+          "shot": "empire-return-lanes",
+          "action": "Complete Empire return lanes to boost the Hurry-Up base",
+          "detail": "+250K per return-lane completion (base resets each ball)."
+        },
+        {
+          "shot": "stormtrooper-target",
+          "action": "Collect the Hurry-Up before it hits the 1M floor",
+          "detail": "Value x number of Hurry-Ups completed this game; each collect = +1 Bonus X (max 15X)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "not-a-jedi-yet",
+      "title": "Not A Jedi Yet (Rebel mini-wizard)",
+      "category": "wizard",
+      "summary": "Qualify by playing at least one mission on 4 different Rebels, then start at the Vader scoop; shots escalate white(1x)->blue(2x)->red(3x) and red 3x collects retire the shot.",
+      "difficulty": 3,
+      "reward": "Scoring based on those characters' mission scoring (800M+ is reachable)",
+      "steps": [
+        {
+          "shot": "force-f",
+          "action": "Spell FORCE and start one mission on each of 4 different Rebels",
+          "detail": "Each completed bonus mission reduces the required unique count by 1."
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "Start the mini-wizard at the Vader scoop"
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Raise shots white->blue->red, then collect the red 3x shots",
+          "detail": "Collecting a red 3x shot permanently retires it; 6 waves / 24 shots with checkpoint shots at left scoop, Luke VUK, Sarlacc pit."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "sarlacc-escape",
+      "title": "Sarlacc Escape (Jabba mini-wizard)",
+      "category": "wizard",
+      "summary": "The 4th Jabba Event after all three are played: a switch frenzy lights the Sarlacc Pit Jackpot (scored per spin); after 4 jackpots the left scoop lights a Super Jackpot that ends the mode.",
+      "difficulty": 3,
+      "reward": "Sarlacc Pit Jackpots (per spin) + Super Jackpot = total value",
+      "steps": [
+        {
+          "shot": "salacious-crumb",
+          "action": "Play all three Jabba Events to unlock Sarlacc Escape",
+          "detail": "Each subsequent Jabba Event needs +1 more Salacious Crumb hit to qualify."
+        },
+        {
+          "shot": "sarlacc-pit",
+          "action": "Hit switches in the frenzy to light the Sarlacc Pit Jackpot, then score it per spin",
+          "detail": "Hit the flashing arrows to raise the jackpot multiplier; every jackpot you score adds a ball and returns you to the switch frenzy."
+        },
+        {
+          "shot": "vader-scoop",
+          "action": "After 4 jackpots, collect the Super Jackpot at the left scoop",
+          "detail": "Super Jackpot = total jackpot value; collecting it ends the mode."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-hoth-lightspeed-stack",
+      "title": "Strategy: Hoth + Lightspeed stack (tournament opener)",
+      "category": "strategy",
+      "summary": "The competitive line — bank a Hoth lock during ball save, charge the Ion Cannon on Luke, get the 3rd Hoth lock lit and queue Lightspeed, start Hoth, then layer Lightspeed on top.",
+      "difficulty": 3,
+      "reward": "Stacked Hoth + Lightspeed multiball with pre-loaded value",
+      "steps": [
+        {
+          "shot": "droids-target",
+          "action": "During the ball-save window, hit the Droids light-lock target to bank a Hoth lock"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to qualify the first Falcon feature (Lightspeed)"
+        },
+        {
+          "shot": "left-ion-cannon",
+          "action": "Feed the pops to charge the Ion Cannon",
+          "detail": "Place the resulting 2x on Luke VUK."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Get the 3rd Hoth lock lit at Luke VUK but don't start Lightspeed yet"
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Shoot the 3rd lock to start Battle of Hoth and build jackpot/letter value"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp to layer Lightspeed Multiball on top of Hoth",
+          "detail": "Only Lightspeed stacks; note the combined stack still grants only one add-a-ball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "strategy-mission-first-death-star",
+      "title": "Strategy: Mission-first Death Star setup",
+      "category": "strategy",
+      "summary": "Spread one mission across 4 different Rebels so a Force Boost multiplies their jackpots, make Rebel Combos at those same characters so Rebel Assistance banks 2-3 jackpots per shot, charge the Ion Cannon on Luke, then start Death Star Multiball.",
+      "difficulty": 3,
+      "reward": "Fast 15-jackpot super + add-a-ball + ball-save revive + Victory Laps",
+      "steps": [
+        {
+          "shot": "force-f",
+          "action": "Spell FORCE and start one mission each on 4 different Rebels",
+          "detail": "Lights their window inserts and also arms the Not-a-Jedi-Yet mini-wizard."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Charge the Ion Cannon and place the 2x on Luke VUK"
+        },
+        {
+          "shot": "death-star-ramp",
+          "action": "Lock 3 balls in the Death Star and start Death Star Multiball",
+          "feeds": {
+            "shot": "death-star-lock"
+          }
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash character-lit shots via Rebel Assistance (2-3 jackpots each)",
+          "detail": "Reaches the ~15-jackpot super fast; a solid character can cut 15 jackpots to 12."
+        },
+        {
+          "shot": "death-star-lock",
+          "action": "Collect the Super Jackpot for the add-a-ball + ball-save revive, then run Victory Laps"
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "strategy-jedi-ball-save",
+      "title": "Strategy: JEDI ball-save insurance",
+      "category": "strategy",
+      "summary": "Spell JEDI early via the spinners for the outlane ball save — critical survival insurance, especially on Pro where it needs all 4 letters.",
+      "difficulty": 1,
+      "reward": "Jedi Save (grants a new skill-shot opportunity; resets JEDI letters)",
+      "steps": [
+        {
+          "shot": "left-spinner",
+          "action": "Shoot the left spinner/orbit to start spelling JEDI"
+        },
+        {
+          "shot": "right-spinner",
+          "action": "Shoot the right spinner to add more JEDI letters",
+          "detail": "Premium/LE: 2-3 letters light the action button to pulse the magnet once per letter after an outlane rollover; a fully spelled JEDI upgrades that to a grab-and-toss back into play."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Complete JEDI to light the outlanes for the save",
+          "detail": "Pro needs all 4 letters, then press the action button before the ball reaches the trough. JEDI cannot advance during multiball."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "extra-ball-hunt",
+      "title": "Extra Ball hunt",
+      "category": "strategy",
+      "summary": "Light an extra ball (two completed Rebel missions is the most reliable route), then collect it at whichever of the two alternating extra-ball shots is currently lit.",
+      "difficulty": 2,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "force-f",
+          "action": "Spell FORCE to light the character shots and begin missions",
+          "detail": "Two completed Rebel missions light an extra ball, and six light another; completing your first Jabba Event lights one as well."
+        },
+        {
+          "shot": "luke-vuk",
+          "action": "Close out each mission with the required final shot to the Luke up-kicker",
+          "detail": "The up-kicker is backhandable, so a mission finish is available from either flipper."
+        },
+        {
+          "shot": "right-slingshot",
+          "action": "Watch the slingshots swap which extra-ball shot is lit",
+          "detail": "The lit location alternates between the Luke up-kicker and the right ramp, so check the insert before committing."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot whichever of the two lit locations you have a clean look at",
+          "detail": "Do not force the wrong one from a bad angle; the alternation comes back around quickly."
+        }
+      ],
+      "fx": "space"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "orbit-opening-plunge",
+      "title": "Opening Orbit",
+      "desc": "Bank a skill shot by plunging straight into the left orbit and pick up the two JEDI letters that come with it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "left-orbit-skill-shot"
+    },
+    {
+      "id": "jedi-letters-complete",
+      "title": "Outlanes Covered",
+      "desc": "Spell JEDI with the spinners so the outlane save is armed and ready before you need it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "strategy-jedi-ball-save"
+    },
+    {
+      "id": "hoth-multiball-started",
+      "title": "Snow Battle Begins",
+      "desc": "Lock three balls at the Luke up-kicker and get Battle of Hoth Multiball running.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "battle-of-hoth-mb"
+    },
+    {
+      "id": "first-rebel-mission-cleared",
+      "title": "One Mission Down",
+      "desc": "Finish a single Rebel character mission, including the required last shot back to the Luke up-kicker.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "rebel-mission"
+    },
+    {
+      "id": "doubled-skill-shot",
+      "title": "Doubled Launch",
+      "desc": "Collect a Super Skill Shot by making a lit shot within the first couple of switches after the plunge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skill-shot"
+    },
+    {
+      "id": "death-star-multiball-started",
+      "title": "Sphere Loaded",
+      "desc": "Open the Death Star, lock all three balls in it, and start Death Star Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "death-star-mb"
+    },
+    {
+      "id": "lightspeed-multiball-started",
+      "title": "Into Lightspeed",
+      "desc": "Qualify the Falcon, survive the build phase, and start Lightspeed Multiball at the center ramp.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "lightspeed-mb"
+    },
+    {
+      "id": "vader-mode-completed",
+      "title": "Held the Dark Side Off",
+      "desc": "Start a Darth Vader mode from the left scoop and complete it to collect the final multiplied award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "darth-vader-mode"
+    },
+    {
+      "id": "jabba-event-completed",
+      "title": "Guest of the Palace",
+      "desc": "Qualify and complete a Jabba Event, including a drop-target collect at the boosted value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "jabba-event-palace"
+    },
+    {
+      "id": "falcon-feature-completed",
+      "title": "Not a Moon After All",
+      "desc": "Complete a Falcon feature other than Lightspeed by clearing its lit shots and taking the finish shot at the Death Star.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "thats-no-moon"
+    },
+    {
+      "id": "extra-ball-collected",
+      "title": "One More Ball",
+      "desc": "Light an extra ball and actually collect it at whichever of the two alternating shots is lit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-hunt"
+    },
+    {
+      "id": "at-at-super-jackpot",
+      "title": "Walker Down",
+      "desc": "Spell AT-AT with Letter Jackpots during Battle of Hoth, then cash the Super Jackpot at the Luke up-kicker.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "battle-of-hoth-mb"
+    },
+    {
+      "id": "death-star-super-jackpot",
+      "title": "Trench Run Paid Off",
+      "desc": "Bank enough Death Star Multiball jackpots to arm the Super Jackpot, collect it inside the sphere, and run the Victory Laps that follow.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-mission-first-death-star"
+    },
+    {
+      "id": "hoth-lightspeed-stacked",
+      "title": "Two Multiballs at Once",
+      "desc": "Have Battle of Hoth and Lightspeed Multiball running together on the same ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strategy-hoth-lightspeed-stack"
+    },
+    {
+      "id": "rancor-chain-cleared",
+      "title": "Fed the Beast",
+      "desc": "Run the full Rancor shot chain to its Sarlacc finish while holding the combo multiplier alive.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "rancor-chain"
+    },
+    {
+      "id": "bonus-multiplier-maxed",
+      "title": "Bonus Ceiling",
+      "desc": "Stack Stormtrooper Hurry-Up collects until the end-of-ball bonus multiplier reaches its 15X cap.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "stormtrooper-bonus-x"
+    },
+    {
+      "id": "sarlacc-escape-completed",
+      "title": "Out of the Pit",
+      "desc": "Reach the fourth Jabba Event and finish it by collecting the Super Jackpot at the left scoop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "sarlacc-escape"
+    },
+    {
+      "id": "rebel-mini-wizard-completed",
+      "title": "Still Training",
+      "desc": "Qualify the Rebel mini-wizard across four different characters and retire every shot by collecting it at red 3x.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "not-a-jedi-yet"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-jedi-head-start-plunge",
+      "title": "Left Orbit Off The Plunge",
+      "text": "Plunge straight at the left orbit and take the skill shot there instead of hunting a bigger one. Two JEDI letters off the safest shot on the machine is ball-save insurance you get before you have even touched a flipper.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "left-orbit-skill-shot",
+      "shots": [
+        "shooter-lane",
+        "left-orbit"
+      ]
+    },
+    {
+      "id": "drill-luke-vuk-both-flippers",
+      "title": "Luke VUK From Both Flippers",
+      "text": "Cradle on the right flipper and shoot the Luke up-kicker, then cradle on the left and backhand it. Mission finishes, Hoth locks and the extra ball all resolve at that one hole, so owning it from a single side is not enough.",
+      "reps": "15 from each flipper",
+      "focus": "accuracy",
+      "goal": "rebel-mission",
+      "shots": [
+        "luke-vuk",
+        "left-flipper",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-droids-then-lock",
+      "title": "Droids Target, Then Lock",
+      "text": "Off the plunge, take the Droids target while the ball save is still live, then go straight to Luke VUK for the lock. Banking a Hoth lock inside the free window is the whole point of the opening shot.",
+      "reps": "5 ball starts",
+      "focus": "accuracy",
+      "goal": "strategy-hoth-lightspeed-stack",
+      "shots": [
+        "droids-target",
+        "luke-vuk"
+      ]
+    },
+    {
+      "id": "drill-vader-scoop-kickout",
+      "title": "Ride The Vader Kickout",
+      "text": "The Vader scoop feeds the right flipper and it is the drain-prone feed on this layout. Shoot it from a cradle and keep the right flipper live through the kickout rather than reading the display while the ball comes back at you.",
+      "reps": "10 scoop shots",
+      "focus": "ball-control",
+      "goal": "darth-vader-mode",
+      "shots": [
+        "vader-scoop",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-dogfight-alternation",
+      "title": "Ramp Alternation",
+      "text": "Alternate the center jump ramp and the right ramp with no cradle in between. The right ramp taken straight off the center ramp is worth double, and the alternation is what keeps the timer alive.",
+      "reps": "8 alternations",
+      "focus": "flow",
+      "goal": "dogfight-alternation",
+      "shots": [
+        "center-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "drill-rancor-chain",
+      "title": "Rancor Chain, Start To Finish",
+      "text": "Run the Rancor order cold: right orbit, right ramp, center ramp twice, Luke VUK, finish in the Sarlacc Pit. The chain is untimed but the multiplier is not, so drill it until you are not thinking about which shot comes next.",
+      "reps": "3 full chains",
+      "focus": "flow",
+      "goal": "rancor-chain",
+      "shots": [
+        "right-orbit",
+        "right-ramp",
+        "center-ramp",
+        "luke-vuk",
+        "sarlacc-pit"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Fall of the Empire uses the lockdown bar button as a chooser and a life-saver. It locks in a Jabba mode while the ball is still spinning around the Sarlacc Pit, cashes add-a-balls earned from those spins, and works the JEDI outlane save — which behaves differently on a Pro than on a Premium or LE.",
+    "uses": [
+      {
+        "when": "Ball spinning in the Sarlacc Pit",
+        "what": "Locks in whichever of the three Jabba modes is showing instead of letting the exit decide for you."
+      },
+      {
+        "when": "10 Sarlacc spins during a multiball",
+        "what": "Cashes a one-time add-a-ball; the next one costs another 10 spins, up to 40."
+      },
+      {
+        "when": "Dark Side Multiball cutscene playing",
+        "what": "Cancels the start so you can play another Vader mode first and grow the multiball's value."
+      },
+      {
+        "when": "JEDI spelled, outlane rolled (Pro)",
+        "what": "Press before the drain registers to save the ball — single-ball play only."
+      },
+      {
+        "when": "2-3 JEDI letters lit (Prem/LE)",
+        "what": "Roll a lit outlane and it pulses the under-flipper magnet — one pulse for each letter you have lit."
+      },
+      {
+        "when": "All four JEDI letters (Prem/LE)",
+        "what": "The magnet grabs the ball and tosses it back into play, with pulses still in reserve."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Fall of the Empire runs on eight Rebel heroes: spell FORCE to light their shots, play their missions, and battle Vader and Jabba while stacking multiballs. Complete missions on four different Rebels for Not a Jedi Yet, and clear all three Jabba events for Sarlacc Escape.",
+    "loop": [
+      "Down the FORCE standup bank and the eight character shots switch on.",
+      "Start a Rebel's mission at a lit character shot, make the blue shots, and close it with the mandatory fifth at the Luke up-kicker.",
+      "Light Battle of Hoth locks at the Droids target and lock at Luke VUK, or open the Death Star at its ramp for the game's biggest super jackpot.",
+      "Charge the Ion Cannon in the pop bumpers and drop its 2x on Luke VUK so your most-used shot pays double.",
+      "Spell JEDI on the orbit spinners to arm the outlane save before a fast return ends the ball."
+    ],
+    "lights": [
+      {
+        "id": "force-targets",
+        "name": "FORCE Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "force-f"
+          },
+          {
+            "shot": "force-o"
+          },
+          {
+            "shot": "force-r"
+          },
+          {
+            "shot": "force-c"
+          },
+          {
+            "shot": "force-e"
+          }
+        ],
+        "lit": "Each lit FORCE standup is a letter you still need, and a letter goes dark once you knock its target down.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell out F-O-R-C-E and the eight character shots come on so you can start a Rebel mission; the bank gets one step harder with each mission you play, up to a cap, but eases back a step whenever you cash a multiball super or finish a Falcon, Jabba, or Vader mode.",
+        "goals": [
+          "rebel-mission",
+          "extra-ball-hunt"
+        ]
+      },
+      {
+        "id": "character-missions",
+        "name": "Character Mission Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "luke-vuk"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Once FORCE is spelled the character shots light, and inside a running mission the blue arrows are the shots that advance the scene while white shots pump up shot values.",
+        "flashing": "A fast-flashing arrow marks a 2x shot -- grab it to double that shot's value.",
+        "control": null,
+        "then": "Make four blue shots, then close the mission with the mandatory fifth at the backhandable Luke up-kicker. Two completed missions light an extra ball, and any Rebel you have already cleared restarts its mission at doubled value.",
+        "goals": [
+          "rebel-mission",
+          "not-a-jedi-yet"
+        ]
+      },
+      {
+        "id": "hoth-locks",
+        "name": "Battle of Hoth Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "droids-target"
+          },
+          {
+            "shot": "luke-vuk"
+          },
+          {
+            "shot": "at-at"
+          }
+        ],
+        "lit": "The Droids target lights the Battle of Hoth locks and always scores double, and a lit lock waits at the Luke up-kicker until you shoot it.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock at Luke VUK to start the multiball, then snowball AT-AT Letter Jackpots at the walker, where each letter banks the running total and zeroes it, and collect the Super Jackpot back at Luke VUK to lift every jackpot for the rest of the round.",
+        "goals": [
+          "battle-of-hoth-mb"
+        ]
+      },
+      {
+        "id": "death-star",
+        "name": "Death Star Jackpots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "death-star-ramp"
+          },
+          {
+            "shot": "death-star-lock"
+          }
+        ],
+        "lit": "Shoot the Death Star ramp to open the sphere and again to lock, and during the multiball the eight lit shots are jackpots you can bounce between two dependable ones since each only goes dark until you take a different shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Reach fifteen jackpots to light the sphere for a thirty-second Super Jackpot that both adds a ball and brings the save back to life, then enter the open Death Star to collect it and run Victory Laps. Any super progress you leave uncollected carries over to your next Death Star Multiball.",
+        "goals": [
+          "death-star-mb",
+          "strategy-mission-first-death-star"
+        ]
+      },
+      {
+        "id": "jedi-spinners",
+        "name": "JEDI Spinners",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-spinner"
+          },
+          {
+            "shot": "right-spinner"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Each lit JEDI letter is one you have banked from the orbit spinners, and spelling all four lights the outlanes for a ball save.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "with JEDI spelled you press the lockdown-bar button as the ball rolls a lit outlane to save it on a Pro, while on a Premium or LE two or three letters pulse the under-flipper magnet once for each lit letter and a full JEDI lets the magnet grab the ball and throw it back into play",
+          "when": "single-ball play only, since JEDI cannot advance during a multiball"
+        },
+        "then": "Keep JEDI spelled as drain insurance on this save-less, outlane-hungry layout, and collecting the save grants a fresh skill-shot chance and then resets the letters so you start spelling again.",
+        "goals": [
+          "strategy-jedi-ball-save"
+        ]
+      },
+      {
+        "id": "ion-cannon",
+        "name": "Ion Cannon Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-ion-cannon"
+          },
+          {
+            "shot": "right-ion-cannon"
+          },
+          {
+            "shot": "luke-vuk"
+          }
+        ],
+        "lit": "Feeding the two Ion Cannon pop bumpers charges the shot multiplier, but only while no multiball is running.",
+        "flashing": null,
+        "control": null,
+        "then": "When it fires, the very next shot you make holds a 2x for the rest of the ball, so send it into Luke VUK where missions, Rancor, and the Hoth super all resolve. Once all eight major shots hold a 2x a roving 3x appears, and recharging the cannon gets harder each time.",
+        "goals": [
+          "ion-cannon-multiplier"
+        ]
+      },
+      {
+        "id": "stormtrooper",
+        "name": "Stormtrooper Hurry-Up",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "stormtrooper-target"
+          },
+          {
+            "shot": "empire-return-lanes"
+          }
+        ],
+        "lit": "Hitting the Stormtrooper target raises a counter that starts a Hurry-Up once it climbs high enough, though never during a multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Boost the Hurry-Up base by completing the Empire return lanes, then collect it before it drops to its floor, and note each collect adds one to your Bonus X toward a fifteen-times cap on the end-of-ball bonus.",
+        "goals": [
+          "stormtrooper-bonus-x"
+        ]
+      },
+      {
+        "id": "jabba-events",
+        "name": "Jabba Events",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "salacious-crumb"
+          },
+          {
+            "shot": "sarlacc-pit"
+          }
+        ],
+        "lit": "Drop the Salacious Crumb target twice to light the Sarlacc Pit for a Jabba event, and each later event needs one more Crumb hit than the last.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "each spin the ball takes around the Sarlacc Pit flips to the next of the three Jabba events, and the lockdown-bar button locks in the one showing rather than leaving the choice to the pit exit",
+          "when": "while the ball is still spinning in the pit"
+        },
+        "then": "Pick and play all three Jabba events to unlock the Sarlacc Escape mini-wizard, and note your first completed event also lights an extra ball.",
+        "goals": [
+          "jabba-event-palace",
+          "sarlacc-escape"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap a flipper button to cycle the lit Empire inserts across the three return lanes and slide the one you still need under the ball. Each completed set alternates between lighting Dark Side Mystery and qualifying a Darth Vader mode at the scoop, and raises the Stormtrooper hurry-up start value.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge to the left orbit for two free JEDI letters as cheap save insurance, then make any lit shot before you have rattled through a couple of switches for the doubled Super Skill Shot. While the ball save is still live, hit the Droids target and bank a Battle of Hoth lock at Luke VUK.",
+        "goals": [
+          "left-orbit-skill-shot",
+          "super-skill-shot",
+          "battle-of-hoth-mb"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell FORCE and start missions across different Rebels while charging the Ion Cannon and placing its 2x on Luke VUK. Then stack multiballs, since Lightspeed is the only one that layers on top -- start Battle of Hoth and shoot the center ramp to add Lightspeed over it.",
+        "goals": [
+          "rebel-mission",
+          "ion-cannon-multiplier",
+          "strategy-hoth-lightspeed-stack",
+          "lightspeed-mb"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Play at least one mission on four different Rebels to reach the Not a Jedi Yet mini-wizard, where the biggest single-mode scores on the machine live, and clear all three Jabba events for Sarlacc Escape. Death Star Multiball sits alongside them with the highest super-jackpot ceiling in the game.",
+        "goals": [
+          "not-a-jedi-yet",
+          "sarlacc-escape",
+          "death-star-mb"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1513 @@
+{
+  "machine": "John Wick (Stern Pinball, 2024)",
+  "defaultFx": "gun",
+  "shots": [
+    {
+      "id": "plunger",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger. A full plunge travels up the right orbit and across the top, where it can be directed to skill-shot options."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Far-left outer lane above the Administration scoop. Lit left orbit starts Car Multiball. Contains the muscle-car spinner. NY Continental faction (Assassination)."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.9,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Far-right outer lane, Far-right outer lane; the ball comes back extremely fast. Marquis de Gramont faction (Gather Intel). First shot of the MXV combo. Dangerous fast returns.. Marquis de Gramont faction (Gather Intel). First shot of the MXV combo. Dangerous fast returns."
+    },
+    {
+      "id": "akira-ramp",
+      "name": "Akira Ramp (Left Ramp)",
+      "type": "ramp",
+      "x": 0.231,
+      "y": 0.426,
+      "trim": "all",
+      "notes": "Osaka Continental faction; Akira ally; Security Detail job. Wireform returns to the left inlane. Best hit from the right flipper.",
+      "feeds": {
+        "shot": "left-inlane"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "charon-ramp",
+      "name": "Charon Ramp (Center Ramp)",
+      "type": "ramp",
+      "x": 0.471,
+      "y": 0.479,
+      "trim": "all",
+      "notes": "Ruska Roma faction; Charon ally; Heist job; Gather Intel collect. Feeds the Deconsecrated lock. Steeper than Akira; returns to the left inlane.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "katia-ramp",
+      "name": "Katia Ramp (Right Ramp)",
+      "type": "ramp",
+      "x": 0.74,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Tarasov Family faction; Katia ally; Task a Crew job. 180 loop returning to the right inlane. Second shot of the MXV combo.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "spinner",
+      "name": "Muscle Car Spinner",
+      "type": "spinner",
+      "x": 0.1,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Optical spinner inside the left orbit lane. Rips build Task a Crew value (200k +100k/shot) and pre-load the car jackpot. 3 spins = 1 switch."
+    },
+    {
+      "id": "administration-scoop",
+      "name": "The Administration (Left Eject)",
+      "type": "scoop",
+      "x": 0.11,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Job cashout shot; starts adversary battles when lit; add-a-ball during MB; Night Watch; final-wizard locking. Bowery faction. The universal cashout shot."
+    },
+    {
+      "id": "jobs-vuk",
+      "name": "Weapons Crate VUK",
+      "type": "mech",
+      "x": 0.87,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Right vertical up-kicker behind the weapons crate. Charge to 3 blue lights, then the VUK starts the selected job. Baba Yaga / crate skill shots land here.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "deconsecrated-lock",
+      "name": "Deconsecrated Lock (Center Ramp Lock)",
+      "type": "mech",
+      "x": 0.47,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Behind the Charon center ramp. Virtual lock on Pro, physical lock on Premium/LE via center-ramp diverter. Lock 3 balls to start Deconsecrated Multiball."
+    },
+    {
+      "id": "continental-captive-ball",
+      "name": "New York Continental Captive Ball (Winston)",
+      "type": "captive-ball",
+      "x": 0.66,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Bash to spell W-I-N-S-T-O-N and light Deconsecrated locks. Assassination kill shots; Deconsecrated super collect; Zero cashout (1x). Bash to spell W-I-N-S-T-O-N and light Deconsecrated locks. Assassination kill shots; Deconsecrated super collect; Zero cashout (1x)."
+    },
+    {
+      "id": "muscle-car",
+      "name": "John Wick Muscle Car",
+      "type": "mech",
+      "x": 0.56,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Center bash toy / kicker. Bash to qualify Car Multiball; primary jackpot object in car MBs. Backhand off the right flipper. Prem/LE: motorized drifting + side hits + ball lock.",
+      "flipper": "right"
+    },
+    {
+      "id": "blood-oath-marker",
+      "name": "Blood Oath Marker Standups",
+      "type": "standup",
+      "x": 0.1,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Lower-left standups above the left outlane. Hit 5x to light an outlane ball save; change lit battle; light escape jackpot. Prem/LE: motorized illuminated reveal."
+    },
+    {
+      "id": "weapons-crate",
+      "name": "Weapons Crate",
+      "type": "mech",
+      "x": 0.97,
+      "y": 0.248,
+      "trim": "all",
+      "notes": "Sculpted crate in front of the Jobs VUK; charge for job progress and timer extends. Prem/LE: opens to a hidden shot. Pro: fixed crate with standup targets."
+    },
+    {
+      "id": "red-circle-drop",
+      "name": "Red Circle Entrance",
+      "type": "drop-target",
+      "x": 0.31,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "Entrance lane feeding the Red Circle arena. Prem/LE: controlled drop target guarding it; Pro: plugged red cutout / open lane. The Excommunicado start shot."
+    },
+    {
+      "id": "red-circle-pop",
+      "name": "Red Circle Pop Bumper",
+      "type": "bumpers",
+      "x": 0.357,
+      "y": 0.778,
+      "trim": "all",
+      "notes": "The game's only pop bumper, inside the dance-floor arena. Builds the dance-floor level toward Excommunicado; spawns enemies (4 switches/hit). Kicks unpredictably."
+    },
+    {
+      "id": "red-circle-standups",
+      "name": "Red Circle Standup Bank",
+      "type": "target-bank",
+      "x": 0.3,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Standup bank at the back of the arena; the pop fires the ball into it. Completing it advances the dance-floor level toward Excommunicado Multiball."
+    },
+    {
+      "id": "vip-back-entrance",
+      "name": "VIP Back Entrance",
+      "type": "lane",
+      "x": 0.31,
+      "y": 0.97,
+      "trim": "all",
+      "notes": "Rear feed lane to the arena, reachable on a diverted full plunge. Red Circle / VIP backdoor skill shot; starts Excommunicado if lit."
+    },
+    {
+      "id": "orange-standups",
+      "name": "Orange Standup Targets",
+      "type": "standup",
+      "x": 0.24,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Two near the Akira ramp, one near the Katia ramp. Add enemies to next spawn; build the dance floor; used in Security Detail / heist. Add +5 sec in Excommunicado build."
+    },
+    {
+      "id": "gold-coin-targets",
+      "name": "Gold Coin Targets",
+      "type": "standup",
+      "x": 0.82,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Illuminated gold-coin stack near the Katia ramp. Qualify Allies; collect Heist shots; +1M end-of-ball bonus per coin; 10 coins = extra ball."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (YAGA)",
+      "type": "lane",
+      "x": 0.2,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Fed by the Akira and Charon wireforms. Left flipper cycles the YAGA rollovers (Playfield X / Lights Out). A YAGA letter only lights where a BABA letter already is."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane (BABA)",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Fed by the Katia wireform and Jobs VUK. Right flipper cycles the BABA rollovers to step the end-of-ball bonus multiplier (max 5x)."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.06,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far lower-left drain. Ball save can be lit here via the Blood Oath Marker standups."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.94,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Far lower-right drain. Ball save can be lit here; Assassination cashout lights both outlanes."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard lower-left flipper. Holding it steers ally direction and swaps the lit outlane ball save."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard lower-right flipper. Preferred for the Katia ramp and for backhanding the car."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-baba-yaga",
+      "title": "Baba Yaga Skill Shot",
+      "category": "skillshot",
+      "summary": "The premium beginner skill shot: a clean plunge that hands you 1.5M and instantly starts a lit Job with zero setup.",
+      "difficulty": 2,
+      "reward": "1.5M + auto-starts any lit Job",
+      "steps": [
+        {
+          "shot": "jobs-vuk",
+          "action": "Make a clean full plunge into the Weapons Crate VUK",
+          "detail": "The ball must hit ZERO switches on the way around — 0 switches scores Baba Yaga: 1.5M and immediately starts any lit Job. 1 switch drops it to Super Crate (750k+); 2+ to Crate (150k+)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-mxv-combo",
+      "title": "MXV Combo Skill Shot",
+      "category": "skillshot",
+      "summary": "The scoring skill shot for confident players: a 3-shot plunge combo worth 10M that banks 10 enemies for later shot multipliers.",
+      "difficulty": 3,
+      "reward": "10M + 10 enemies added to the next spawn",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Full plunge up the right orbit",
+          "detail": "Feeds the ball around the top and into the right orbit automatically — first shot of the 3-shot combo."
+        },
+        {
+          "shot": "katia-ramp",
+          "action": "Combo into the right ramp",
+          "detail": "The ball must flow directly out of the orbit; no reset."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Finish at the left eject",
+          "detail": "Completing right orbit → right ramp → left eject scores 10M and adds 10 enemies to the next spawn."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-gather-intel-ramps",
+      "title": "Gather Intel Ramp Combo",
+      "category": "combo",
+      "summary": "The cleanest repeatable point pump in the game: combo the two ramps to build a jackpot, then collect it doubled at the center ramp.",
+      "difficulty": 2,
+      "reward": "Doubled (2x) center-ramp jackpot, repeatable",
+      "steps": [
+        {
+          "shot": "akira-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "First half of the ramp combo during the Gather Intel job (Marquis de Gramont)."
+        },
+        {
+          "shot": "katia-ramp",
+          "action": "Combo into the right ramp",
+          "detail": "Hitting both ramps as a combo sets the center-ramp jackpot to 2x."
+        },
+        {
+          "shot": "charon-ramp",
+          "action": "Collect at the center ramp",
+          "detail": "Pays the combo-built jackpot at 2x. Repeat the loop; 6 ramp shots light the cashout."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-zero-cashout",
+      "title": "Zero Combo Cashout",
+      "category": "combo",
+      "summary": "Zero is the dedicated combo battle: chain distinct blue shots, then cash out at the left eject for double value.",
+      "difficulty": 3,
+      "reward": "750k +100k/combo +250k per pre-collect shot, doubled at left eject",
+      "steps": [
+        {
+          "shot": "akira-ramp",
+          "action": "Shoot a lit blue shot (left ramp)",
+          "detail": "Only naturally-flowing, non-repeated shots count as combos — no repeats."
+        },
+        {
+          "shot": "charon-ramp",
+          "action": "Combo into the center ramp",
+          "detail": "Chain as many blue shots as you can; each pre-collect combo shot is worth +250k."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Cash out at the left eject",
+          "detail": "Left eject pays the collect at 2x versus 1x at the car or captive ball. Two completed combos light the blood marker for the cashout, and four earns Be Seeing You."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-task-a-crew-spinner",
+      "title": "Task a Crew Spinner Loop",
+      "category": "combo",
+      "summary": "Tarasov's job: arm the spinner off the right ramp then rip the left-orbit spinner, and cash out for an add-a-ball that boosts every later multiball.",
+      "difficulty": 2,
+      "reward": "Add-a-ball perk usable in any multiball",
+      "steps": [
+        {
+          "shot": "katia-ramp",
+          "action": "Arm the spinner off the right ramp",
+          "detail": "The right ramp sets up the next spinner award at 2x. Select Tarasov here before starting."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the left-orbit spinner",
+          "detail": "Flashing shots add 100k each; the spinner is multiplied by enemies parked at the left orbit. Rip 4x to light cashout."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Cash out at the left eject",
+          "detail": "Pays 20% of the job total plus the add-a-ball perk. Play this job early so every multiball inherits the extra ball."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "combo-assassination-kill",
+      "title": "Assassination Kill-Shot Loop",
+      "category": "combo",
+      "summary": "NY Continental's job, tied for the best-scoring job: hit green shots to light the captive ball for repeated kill shots.",
+      "difficulty": 2,
+      "reward": "Both-outlane ball save + top-tier job points",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start Assassination via the left orbit",
+          "detail": "The left orbit selects the green NY Continental faction."
+        },
+        {
+          "shot": "continental-captive-ball",
+          "action": "Bash the captive ball for the kill shot",
+          "detail": "Each lit green shot lights the captive ball; land 5 kill shots to light the cashout."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Cash out at the left eject",
+          "detail": "Perk lights the Blood Oath Marker ball save at BOTH outlanes."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "combo-car-jackpot-preload",
+      "title": "Car Jackpot Pre-Load",
+      "category": "combo",
+      "summary": "Fatten the car jackpot before multiball: bash the car in single-ball play and rip the spinner, then dump it inside a car MB.",
+      "difficulty": 2,
+      "reward": "A pre-loaded car jackpot to cash as a 5x super in Helipad, or as four 5x supers in Bagarre",
+      "steps": [
+        {
+          "shot": "muscle-car",
+          "action": "Bash the car in single-ball play",
+          "detail": "Backhand off the right flipper. Each hit adds 20% of the value.",
+          "flipper": "right"
+        },
+        {
+          "shot": "spinner",
+          "action": "Rip the left-orbit spinner",
+          "detail": "Spinner rips increase the stored car jackpot value."
+        },
+        {
+          "shot": "muscle-car",
+          "action": "Return to the car and repeat",
+          "detail": "Bank the value now; cash it big in Helipad Showdown, where nine jackpots light a 5x super at the car, or in Bagarre a l'Etoile, where four jackpots light four 5x supers."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mb-car",
+      "title": "Car Multiball",
+      "category": "multiball",
+      "summary": "The most accessible multiball. Bash the car to qualify, shoot the lit left orbit to start, then work the car for jackpots and supers.",
+      "difficulty": 2,
+      "reward": "2M base jackpots scaling to 5x supers",
+      "steps": [
+        {
+          "shot": "muscle-car",
+          "action": "Bash the car to qualify",
+          "detail": "Premium/LE need 2 car hits to light the first Car MB; the Pro needs 4 and only counts hits once you've ripped the spinner. Each later start adds +1, capped at 4 on the Pro and at 4 in each of the car's two positions — 8 total — on Premium/LE."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the lit left orbit to start",
+          "detail": "The left orbit lights once the car is qualified. 2-ball on Pro, 3-ball on Premium/LE."
+        },
+        {
+          "shot": "muscle-car",
+          "action": "Work the car for jackpots",
+          "detail": "In the first variant (Helipad Showdown) repeatedly shoot the car; 9 jackpots unlock a 5x super at the car, then a 2x super at the left orbit."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mb-deconsecrated",
+      "title": "Deconsecrated Multiball",
+      "category": "multiball",
+      "summary": "The best multiball to stack with a job. Spell WINSTON on the captive ball to light the center-ramp lock, lock 3 balls, then farm captive-ball supers.",
+      "difficulty": 2,
+      "reward": "Green jackpots + a 15-sec captive-ball super jackpot burst",
+      "steps": [
+        {
+          "shot": "continental-captive-ball",
+          "action": "Bash the captive ball to spell WINSTON",
+          "detail": "The first Deconsecrated needs 3 captive hits to spell it and light the lock; difficulty rises after."
+        },
+        {
+          "shot": "deconsecrated-lock",
+          "action": "Lock 3 balls behind the center ramp",
+          "detail": "Virtual lock on Pro, physical lock on Premium/LE via the center-ramp diverter. Locking 3 starts the multiball."
+        },
+        {
+          "shot": "continental-captive-ball",
+          "action": "After 7 jackpots, hammer the captive ball",
+          "detail": "Opens a 15-sec super phase — repeated 2.5M+ supers that scale with total enemies killed this game/ball/mode."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "mb-excommunicado",
+      "title": "Excommunicado Multiball",
+      "category": "multiball",
+      "summary": "The hardest multiball to start but high value. Max the Red Circle dance-floor level, then start it with a Red Circle shot (or the VIP backdoor plunge).",
+      "difficulty": 3,
+      "reward": "2-ball MB, 6 jackpots to a 5M+ super",
+      "steps": [
+        {
+          "shot": "red-circle-pop",
+          "action": "Build the dance floor",
+          "detail": "Bang the Red Circle pop bumper to raise the dance-floor level (each bumper/target hit counts)."
+        },
+        {
+          "shot": "red-circle-standups",
+          "action": "Complete the surrounding standups",
+          "detail": "Max the dance-floor level to qualify Excommunicado.",
+          "link": "none"
+        },
+        {
+          "shot": "red-circle-drop",
+          "action": "Shoot the Red Circle to start",
+          "detail": "Begins a 15-sec single-ball build phase (200k/shot, 125k/target) then a 2-ball MB. Prem/LE: a short backdoor plunge can lock up to 4 balls to boost the super."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode-heist-job",
+      "title": "Heist Job (Ruska Roma)",
+      "category": "mode",
+      "summary": "A defensive job worth playing for its perk: light and collect 6 major shots to unlock motion sensors during Lights Out.",
+      "difficulty": 2,
+      "reward": "Motion-sensor perk (enables the 500M Cassian stack)",
+      "steps": [
+        {
+          "shot": "jobs-vuk",
+          "action": "Charge the crate to 3 blue lights",
+          "detail": "Hit the Weapons Crate / right VUK until three blue lights are solid."
+        },
+        {
+          "shot": "charon-ramp",
+          "action": "Select Ruska Roma at the center ramp",
+          "detail": "Shoot the faction shot before starting to pick which job you get."
+        },
+        {
+          "shot": "jobs-vuk",
+          "action": "Start the job at the VUK"
+        },
+        {
+          "shot": "gold-coin-targets",
+          "action": "Light and collect the 6 major shots",
+          "detail": "Standups light the shots; gold-coin targets collect them. Cashout at the left eject."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode-security-detail",
+      "title": "Security Detail Job (Osaka)",
+      "category": "mode",
+      "summary": "Osaka Continental's job. Chase a roving blinking red target 7 times; the perk saves a draining multiball.",
+      "difficulty": 2,
+      "reward": "Multiball-extend perk (once per ball when down to 1 ball)",
+      "steps": [
+        {
+          "shot": "jobs-vuk",
+          "action": "Charge the crate to 3 blue lights"
+        },
+        {
+          "shot": "akira-ramp",
+          "action": "Select Osaka at the left ramp"
+        },
+        {
+          "shot": "jobs-vuk",
+          "action": "Start the job at the VUK"
+        },
+        {
+          "shot": "akira-ramp",
+          "action": "Hit the blinking red target 7 times",
+          "detail": "The target roves rightward (Red Circle excluded). Cash out at the left eject for the multiball-extend perk."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "mode-cassian-battle",
+      "title": "Cassian Battle",
+      "category": "mode",
+      "summary": "The switch-frenzy adversary battle. Stacked with Lights Out and motion sensors it can produce cashouts of 500M+.",
+      "difficulty": 3,
+      "reward": "500M+ potential cashout",
+      "steps": [
+        {
+          "shot": "administration-scoop",
+          "action": "Start the battle at the left eject",
+          "detail": "Defeat 10 enemies in single-ball play to light the eject, then rotate to Cassian via the left standups or pop bumper."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Arm Lights Out first",
+          "detail": "Spell YAGA at the left inlanes and trigger Lights Out to double everything during the battle."
+        },
+        {
+          "shot": "red-circle-pop",
+          "action": "Rack switch hits",
+          "detail": "Cassian scores 2.5k per switch — the pop, spinner and standups pile switches up fast."
+        },
+        {
+          "shot": "continental-captive-ball",
+          "action": "Collect the flashing purple jackpot",
+          "detail": "The purple jackpot moves on hits; with Lights Out + motion sensors this is where 500M+ comes from."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode-start-battle",
+      "title": "Qualify & Start an Adversary Battle",
+      "category": "mode",
+      "summary": "The gateway to all 5 battles and 'The Duel' wizard: defeat 10 enemies in single-ball play, then start at the left eject.",
+      "difficulty": 2,
+      "reward": "200-sec battle with a 40-sec ball save; path to 'The Duel'",
+      "steps": [
+        {
+          "shot": "red-circle-pop",
+          "action": "Spawn enemies",
+          "detail": "The pop bumper and orange/standup targets spawn enemies (~50 switch hits each spawn)."
+        },
+        {
+          "shot": "akira-ramp",
+          "action": "Kill 10 enemies in single-ball play",
+          "detail": "Defeat enemies by shooting the lit shots they sit in front of — battles are disabled during multiball."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Start the battle at the left eject",
+          "detail": "The eject lights white. Change target via left standups or pop bumper. 200-sec timer, 40-sec ball save."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mult-baba-bonus",
+      "title": "BABA Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The end-of-ball bonus multiplier, cycled by the right flipper at the inlane rollovers up to 5x.",
+      "difficulty": 1,
+      "reward": "Up to 5x end-of-ball bonus (progress carries across balls)",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Cycle the BABA rollovers",
+          "detail": "The right flipper moves the lit BABA letter rightward across the inlane rollovers.",
+          "flipper": "right"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Spell B-A-B-A",
+          "detail": "Each completion steps the end-of-ball bonus multiplier (max 5x). Cashing the VIP Award job starts it at 2x every ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-lights-out",
+      "title": "Lights Out (Playfield X)",
+      "category": "multiplier",
+      "summary": "The playfield multiplier: spell YAGA at the left inlanes to light Lights Out, then double all scoring for 30 seconds.",
+      "difficulty": 3,
+      "reward": "2x ALL scoring for 30 seconds",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Cycle the YAGA rollovers with the left flipper",
+          "detail": "A YAGA letter only lights where a BABA letter is already lit — build BABA first.",
+          "flipper": "left"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Spell Y-A-G-A to light Lights Out",
+          "detail": "Then press the action button to double ALL scoring for 30 sec (+20s if Gather Intel was cashed). Stack it over a battle or multiball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-staircase",
+      "title": "The Staircase (Wizard 1)",
+      "category": "wizard",
+      "summary": "The main wizard mode, qualified by completing all 7 faction jobs. Three escalating levels then a 2-ball repeat.",
+      "difficulty": 3,
+      "reward": "Up to 280M at Level 3",
+      "steps": [
+        {
+          "shot": "jobs-vuk",
+          "action": "Complete all 7 faction jobs",
+          "detail": "Each job is selected at a faction shot and started at the crate VUK. Finishing all 7 qualifies The Staircase."
+        },
+        {
+          "shot": "akira-ramp",
+          "action": "Level 1: clear both ramps",
+          "detail": "1 enemy on each; lit enemy shot = 5M."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Level 2: clear both orbits and both ramps",
+          "detail": "2 enemies each."
+        },
+        {
+          "shot": "charon-ramp",
+          "action": "Level 3 + collect the level bonus at the center ramp",
+          "detail": "Clear the six major shots (three enemies each), then take the center ramp for a 20M/20M/40M base bonus. Each cleared shot leaves a white arrow; collecting those before the center ramp adds +1x each, up to +2/+4/+6 by level, which is how Level 3 reaches 280M. Phase 2 repeats all 3 levels as a 2-ball MB."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-red-circle-reckoning",
+      "title": "Red Circle Reckoning (Mini-Wizard)",
+      "category": "wizard",
+      "summary": "The easiest wizard mode: qualify with 1 job + 1 battle + one of each multiball type, then a 60-sec 4-ball hunt.",
+      "difficulty": 3,
+      "reward": "30M finale shot + an extra ball",
+      "steps": [
+        {
+          "shot": "jobs-vuk",
+          "action": "Play 1 job",
+          "detail": "Qualification needs 1 job + 1 battle + one of each of the three multiball types."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Play 1 adversary battle",
+          "link": "none"
+        },
+        {
+          "shot": "muscle-car",
+          "action": "Play a Car MB, a Deconsecrated, and an Excommunicado",
+          "detail": "One of each multiball type completes the qualification.",
+          "link": "none"
+        },
+        {
+          "shot": "red-circle-drop",
+          "action": "Clear every shot, then hit Red Circle for 30M",
+          "detail": "In the 60-sec 4-ball MB clear all shots for 10M each; the final Red Circle scores 30M, ends the mode and grants an extra ball. Lights Out doubles everything."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-job-mb-stack",
+      "title": "Best Opener: Stack a Job with a Multiball",
+      "category": "strategy",
+      "summary": "The whole scoring engine: start a job, then stack Car Multiball over it so enemy kills inflate both the job and the MB at once.",
+      "difficulty": 1,
+      "reward": "The core scoring loop, active inside ~30 seconds",
+      "steps": [
+        {
+          "shot": "jobs-vuk",
+          "action": "Light a job at the crate",
+          "detail": "Charge to 3 blue lights — or land the Baba Yaga skill shot on the plunge to skip this."
+        },
+        {
+          "shot": "charon-ramp",
+          "action": "Pick a job at the center ramp (Heist) or left ramp",
+          "detail": "Both ramps are controllable and feed cleanly to the flippers."
+        },
+        {
+          "shot": "jobs-vuk",
+          "action": "Start the job at the VUK"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Stack Car Multiball on top",
+          "detail": "Bash the car, then shoot the lit left orbit. The running job and the multiball now score every enemy kill together."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "summary": "A concrete, low-risk opener that gets a new player into the job+multiball loop with allies and safe shots.",
+      "difficulty": 1,
+      "reward": "Safe, controllable entry into the scoring loop",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Plunge clean for Baba Yaga",
+          "detail": "0 switches = 1.5M and auto-starts a job."
+        },
+        {
+          "shot": "gold-coin-targets",
+          "action": "Grab gold coins for the Charon ally",
+          "detail": "Charon (center ramp) kills then replenishes the next enemies — the top ally pick. Grab coins before starting the job."
+        },
+        {
+          "shot": "akira-ramp",
+          "action": "Pick a safe job (Security Detail or Heist)",
+          "detail": "Left and center ramps are the most controllable feeds on the machine."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Bash the car, then shoot the left orbit for Car MB",
+          "detail": "Kill any remaining enemies in single-ball play BEFORE the multiball starts — 10 kills lights the battle modes."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "strategy-enemy-farming",
+      "title": "Enemy Multiplier Farming",
+      "category": "strategy",
+      "summary": "The single biggest scoring lever: spawn enemies, kill the ones parked in front of lit shots for up to 4x, then cash multiplied shots in a multiball.",
+      "difficulty": 2,
+      "reward": "Up to 4x on every major shot",
+      "steps": [
+        {
+          "shot": "red-circle-pop",
+          "action": "Farm enemy spawns",
+          "detail": "The pop bumper (4 switches/hit) and orange targets seed enemies; a spawn triggers about every 50 switch hits."
+        },
+        {
+          "shot": "spinner",
+          "action": "Rack switches on the spinner",
+          "detail": "3 spins = 1 switch — cheap fuel for the next enemy spawn."
+        },
+        {
+          "shot": "charon-ramp",
+          "action": "Kill enemies parked in front of lit shots",
+          "detail": "Each enemy on a shot = +1x (max 3 enemies = 4x). This multiplier layer scores every job and multiball."
+        },
+        {
+          "shot": "continental-captive-ball",
+          "action": "Cash multiplied shots inside a multiball",
+          "detail": "Deconsecrated captive-ball supers scale directly with total enemies killed — this is where the farm pays off."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "mb-excommunicado-super",
+      "title": "Excommunicado Super Jackpot",
+      "category": "multiball",
+      "summary": "Turn the arena multiball into a payday: collect all six jackpots around the Red Circle, then cash the super at the entrance.",
+      "difficulty": 3,
+      "reward": "5M+ arena super jackpot",
+      "steps": [
+        {
+          "shot": "red-circle-drop",
+          "action": "Start the multiball at the Red Circle",
+          "detail": "The 15-second single-ball build phase runs first; every shot and target there raises the super value."
+        },
+        {
+          "shot": "orange-standups",
+          "action": "Add time during the build phase",
+          "detail": "Each orange standup adds about five seconds before the balls launch, so the super starts larger."
+        },
+        {
+          "shot": "red-circle-pop",
+          "action": "Keep the arena alive once the balls are out",
+          "detail": "Pop and standup hits keep feeding arena scoring while you work the six lit jackpots."
+        },
+        {
+          "shot": "red-circle-drop",
+          "action": "Collect the super after six jackpots",
+          "detail": "With all six jackpots in, the Red Circle entrance lights for the super. Run the playfield multiplier over it if you have it."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "strategy-gold-coin-extra-ball",
+      "title": "Ten Coins For An Extra Ball",
+      "category": "strategy",
+      "summary": "The most reliable extra ball on the machine: farm gold coins off the right side while you play everything else.",
+      "difficulty": 2,
+      "reward": "Extra ball at 10 coins, plus 1M each in end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "gold-coin-targets",
+          "action": "Pick coins off with direct right-side shots",
+          "detail": "The coin stack sits beside the right ramp, so a short right-ramp attempt still rattles the targets - but a target hit only lights a random shot for a gold coin, or raises its value. Make the lit shot to actually collect it."
+        },
+        {
+          "shot": "katia-ramp",
+          "action": "Use the right ramp as your safe reset",
+          "detail": "The ramp returns to the right inlane, giving you another clean look at the coins instead of a risky rebound."
+        },
+        {
+          "shot": "gold-coin-targets",
+          "action": "Reach ten coins in one game",
+          "detail": "Coins also qualify allies, so this farming pays twice. The tenth coin awards the extra ball."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "wizard-the-duel",
+      "title": "The Duel (Wizard 2)",
+      "category": "wizard",
+      "summary": "Wizard mode two, not the last - Special Assignment still waits beyond it. Qualified by beating all five adversaries, it opens as a 2-ball multiball with a long ball save: hit the Red Circle, then the left and center ramps, then the left orbit and right ramp, then lock both balls at the left eject and the crate within ten seconds of each other. Keep both balls alive throughout and every score in the mode is doubled.",
+      "difficulty": 3,
+      "reward": "The game's final wizard mode",
+      "steps": [
+        {
+          "shot": "red-circle-pop",
+          "action": "Keep enemies spawning all game",
+          "detail": "Every battle needs ten enemies killed in single-ball play first, so never stop feeding switches."
+        },
+        {
+          "shot": "blood-oath-marker",
+          "action": "Rotate to the adversary you still need",
+          "detail": "The lower-left standups change which battle is lit, so you can pick off the five in any order."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Start and win each of the five battles",
+          "detail": "Battles run 200 seconds with a 40-second ball save; a battle only counts once you complete its objective, not just start it."
+        },
+        {
+          "shot": "administration-scoop",
+          "action": "Lock in the final duel",
+          "detail": "With all five adversaries beaten, the left eject and the crate light for the mode. Do not save Lights Out for it - the playfield multiplier is disabled in every wizard mode except Red Circle Reckoning."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "attract-mode-select",
+      "title": "Attract-Mode Game Select Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "John Wick hides a rules switch behind the flipper buttons themselves. Holding both while the machine idles opens a short menu that decides how the next game will be played, and nothing on the cabinet points a player toward it.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "During attract mode, with no game in progress, hold both flipper buttons together",
+        "Keep holding until a menu appears on the display",
+        "Standard runs the full normal ruleset",
+        "Competition removes the game's random elements; in current code Standard already ties each Job to a fixed faction shot",
+        "Competition Install is not on that menu at all - it is a separate change made from the machine's utilities menu",
+        "DJ Mixer is not a way to play — it works like a jukebox for the music in the machine"
+      ],
+      "reward": "Standard, Competition, Competition Install, and a DJ Mixer jukebox"
+    },
+    {
+      "id": "tick-tock-mr-wick",
+      "title": "Tick Tock, Mr. Wick (Hourglass Topper Hurry-Up)",
+      "category": "secret",
+      "summary": "Cabinets fitted with the hourglass topper carry a scoring feature that simply does not exist without it. Combos made during ordinary play tip the physical hourglass forward, and that progress carries across every player and every game on the machine until somebody finally cashes it in.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "This needs the hourglass topper accessory installed, and the feature is absent on machines without it",
+        "Make combos during normal play to advance the hourglass",
+        "Progress is carried over across all players and all games, so the machine may already be close",
+        "Shoot the Administration eject once the feature is ready, which is where it starts",
+        "A 60-second unlimited ball saver begins, and the hurry-up starts at 1,000,000 and counts down over 3 minutes",
+        "Each shot made collects the hurry-up value and adds 100,000 to the running hurry-up score",
+        "Each shot made also adds +1x multiplier to the adjacent shots, to a maximum of +5x",
+        "Adding a multiplier to a shot already at 5x unlights that shot and adds 15 seconds of ball save time"
+      ],
+      "reward": "A 1,000,000 hurry-up counting down over three minutes, +100,000 to the running total per shot, shot multipliers to 5x, and a 60-second unlimited ball save"
+    },
+    {
+      "id": "progression-faction-jobs",
+      "title": "Queue the Job You Want",
+      "category": "progression",
+      "summary": "Jobs are not dealt out to you. Each of the seven major shots belongs to a faction, and each faction owns one job. Hitting a major shot swings the queued job over to that faction, so what you touch before the crate is ready decides what you play - and which permanent perk you are playing for.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Work out what your game is short of, then shoot that faction's major shot to swing the queued job over to it.",
+        "Once it is lit, stay off the other major shots - each of the seven re-points the queue at its own faction.",
+        "Hit the weapons crate, or the VUK beside it, until the job is ready at the VUK.",
+        "Drop into the crate VUK to start it. Whichever faction is lit when you go in is the job you get.",
+        "Make enough of the job's shots to light the left eject, then finish there. The cash-out pays a share of everything the job scored and hands over that faction's perk - miss it and you get neither."
+      ],
+      "reward": "You choose which job runs, and therefore which game-long perk it pays"
+    },
+    {
+      "id": "progression-perk-menu",
+      "title": "Seven Jobs, Seven Permanent Perks",
+      "category": "progression",
+      "summary": "Every job pays out a different upgrade when you cash it, and that upgrade stays with you for the rest of the game. Two keep multiballs alive, two harden you against draining, two feed the blackout, and one fattens your bonus. Learn which shot buys which and you can shop the menu instead of taking whatever turns up.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Right ramp, Task a Crew - the cash-out unlocks an add-a-ball, taken at the action button, once per ball during any multiball.",
+        "Left ramp, Security Detail - the cash-out lets a multiball carry on when you drain down to a single ball, once per ball.",
+        "Center ramp, Heist - the cash-out switches on the motion sensors. Press the action button during Lights Out to briefly light the playfield back up, with about five seconds between uses.",
+        "Left eject, Night Watch - the cash-out adds five seconds to every ball save for the rest of the game.",
+        "Right orbit, Gather Intel - the cash-out adds twenty seconds to the Lights Out timer.",
+        "Left orbit, Assassination - the cash-out lights the marker ball save at both outlanes instead of only one.",
+        "Red Circle, Escort the VIP - the cash-out doubles your starting end-of-ball bonus multiplier."
+      ],
+      "reward": "Seven distinct game-long upgrades, one per job cashed out"
+    },
+    {
+      "id": "progression-allies",
+      "title": "Allies Move the Enemies Where They Pay",
+      "category": "progression",
+      "summary": "An enemy multiplies exactly one thing: the shot it is parked in front of. A playfield full of enemies sitting on shots you are never going to hit is worth nothing. That is what the three allies are for - each ramp moves enemies a different way, and you get one of them per job.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Hit the gold coin targets while no job or multiball is running - that lights the ramps for allies.",
+        "Take the ramp belonging to the ally you want. Only one ally counts per job.",
+        "Left ramp, Akira - every enemy moves over to the next shot on its right, and one sitting at the right ramp wraps round to the left eject. Keep the left flipper held in as you make the shot and they travel the other way instead.",
+        "Center ramp, Charon - the next enemies you kill come straight back on the same shot, giving you another crack at the multiplied value.",
+        "Right ramp, Katia - shuffles enemies onto other shots so they end up somewhere you can actually score them.",
+        "Remember the three ally ramps are also three of the seven faction shots, so setting up an ally moves the queued job too. Sort the ally out first, then make the faction shot you actually want last."
+      ],
+      "reward": "One ally per job, each relocating enemies a different way"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "silent-entry",
+      "title": "Silent Entry",
+      "desc": "Land the switchless full plunge that awards the Baba Yaga skill shot and immediately starts a lit job.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-baba-yaga"
+    },
+    {
+      "id": "three-shot-opener",
+      "title": "Three-Shot Opener",
+      "desc": "Complete the plunge combo of right orbit into right ramp into left eject for the 10M skill award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-mxv-combo"
+    },
+    {
+      "id": "bonus-ladder-topped",
+      "title": "Bonus Ladder Topped",
+      "desc": "Step the end-of-ball bonus multiplier all the way to 5x by repeatedly spelling the right-inlane rollover word.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-baba-bonus"
+    },
+    {
+      "id": "contract-fulfilled",
+      "title": "Contract Fulfilled",
+      "desc": "Start a faction job at the crate VUK and cash it out at the left eject to bank its perk.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-heist-job"
+    },
+    {
+      "id": "keys-in-the-mustang",
+      "title": "Keys In The Mustang",
+      "desc": "Qualify the car with body hits and start Car Multiball through the lit left orbit.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-car"
+    },
+    {
+      "id": "loaded-car-super",
+      "title": "Loaded Car Super",
+      "desc": "Pre-load the car jackpot in single-ball play, then collect it as a multiplied super jackpot during a car multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-car-jackpot-preload"
+    },
+    {
+      "id": "hotel-management",
+      "title": "Hotel Management",
+      "desc": "Spell the concierge's name on the captive ball, lock three balls behind the center ramp, and start Deconsecrated Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-deconsecrated"
+    },
+    {
+      "id": "captive-ball-frenzy",
+      "title": "Captive Ball Frenzy",
+      "desc": "Score seven Deconsecrated jackpots to open the timed captive-ball super phase and collect at least one super there.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-deconsecrated"
+    },
+    {
+      "id": "dance-floor-maxed",
+      "title": "Dance Floor Maxed",
+      "desc": "Raise the Red Circle dance-floor level to full and start Excommunicado Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-excommunicado"
+    },
+    {
+      "id": "club-cleared-out",
+      "title": "Club Cleared Out",
+      "desc": "Collect all six Excommunicado jackpots and cash the arena super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-excommunicado-super"
+    },
+    {
+      "id": "lights-out-run",
+      "title": "Lights Out Run",
+      "desc": "Light the playfield multiplier at the left inlanes and run it on top of a multiball or an adversary battle.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-lights-out"
+    },
+    {
+      "id": "coin-purse",
+      "title": "Coin Purse",
+      "desc": "Collect ten gold coins in one game to earn the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-gold-coin-extra-ball"
+    },
+    {
+      "id": "first-adversary-faced",
+      "title": "First Adversary Faced",
+      "desc": "Defeat ten enemies in single-ball play and start an adversary battle at the left eject.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-start-battle"
+    },
+    {
+      "id": "switch-storm",
+      "title": "Switch Storm",
+      "desc": "Win the Cassian battle with a cashout of 100M or more by stacking the playfield multiplier over it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-cassian-battle"
+    },
+    {
+      "id": "reckoning-finished",
+      "title": "Reckoning Finished",
+      "desc": "Clear every shot inside the Red Circle mini-wizard and close it out with the finale shot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-red-circle-reckoning"
+    },
+    {
+      "id": "seven-factions-served",
+      "title": "Seven Factions Served",
+      "desc": "Complete all seven faction jobs in one game to qualify The Staircase.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-staircase"
+    },
+    {
+      "id": "top-of-the-staircase",
+      "title": "Top Of The Staircase",
+      "desc": "Clear all three Staircase levels and collect the level bonus at the center ramp.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-staircase"
+    },
+    {
+      "id": "every-adversary-down",
+      "title": "Every Adversary Down",
+      "desc": "Defeat all five adversary battles in one game to reach the final duel.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-the-duel"
+    }
+  ],
+  "drills": [
+    {
+      "id": "clean-lap-plunge",
+      "title": "Clean Lap Plunge",
+      "text": "Plunge for the Weapons Crate VUK and count the switches on the way round. A silent lap is the full award and starts a lit job on its own; one switch downgrades it and two or more downgrades it again, so dial the plunger strength until nothing trips.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-baba-yaga",
+      "shots": [
+        "plunger",
+        "jobs-vuk"
+      ]
+    },
+    {
+      "id": "car-backhand-preload",
+      "title": "Car Backhand Preload",
+      "text": "Backhand the car off the right flipper in single-ball play, then rip the left-orbit spinner, then come back to the car. Every hit and every rip fattens the stored jackpot before a multiball ever starts, so bank the value now and spend it inside a car multiball.",
+      "reps": "15 car hits",
+      "focus": "accuracy",
+      "goal": "combo-car-jackpot-preload",
+      "shots": [
+        "muscle-car",
+        "spinner"
+      ]
+    },
+    {
+      "id": "winston-captive-reps",
+      "title": "Captive Ball Reps",
+      "text": "Bash the captive ball to spell out the lock, then put the ball up the center ramp to lock behind it. Later in a multiball the same captive ball opens the super phase, so this is a shot you will need repeatedly rather than once.",
+      "reps": "20 captive hits",
+      "focus": "accuracy",
+      "goal": "mb-deconsecrated",
+      "shots": [
+        "continental-captive-ball",
+        "deconsecrated-lock",
+        "charon-ramp"
+      ]
+    },
+    {
+      "id": "ally-direction-hold",
+      "title": "Hold the Flipper In",
+      "text": "Pick up the gold coins with no job running to qualify an ally, then make the left ramp twice: once normally and once with the left flipper held in through the shot. Holding the left flipper steers which way the ally moves the enemies, so run the same ramp shot both ways.",
+      "reps": "10 shots each way",
+      "focus": "ball-control",
+      "goal": "progression-allies",
+      "shots": [
+        "gold-coin-targets",
+        "akira-ramp",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "ramp-combo-pump",
+      "title": "Ramp Pump",
+      "text": "Left ramp, right ramp as one combo, then collect at the center ramp. The two ramps feed opposite inlanes, so the chain is a rhythm rather than three separate aims — six ramp shots lights the cash-out.",
+      "reps": "8 chains",
+      "focus": "flow",
+      "goal": "combo-gather-intel-ramps",
+      "shots": [
+        "akira-ramp",
+        "katia-ramp",
+        "charon-ramp"
+      ]
+    },
+    {
+      "id": "orbit-ramp-eject",
+      "title": "Orbit, Ramp, Eject",
+      "text": "Take the right orbit, let the ball flow straight out into the right ramp with no reset, then finish at the left eject. The orbit return comes back fast, so the whole chain lives or dies on whether you are set for it before the ball arrives.",
+      "reps": "10 attempts",
+      "focus": "flow",
+      "goal": "skill-mxv-combo",
+      "shots": [
+        "right-orbit",
+        "katia-ramp",
+        "administration-scoop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "This is the score-doubler switch and the multiball lifeline in one. Spell YAGA at the inlanes to light it, then press for Lights Out — the playfield goes dark and everything you score doubles for half a minute. Perks you cash out from jobs bolt extra functions onto the same button.",
+    "uses": [
+      {
+        "when": "YAGA spelled and the button lit",
+        "what": "Starts Lights Out: 30 seconds of doubled scoring, plus 20 more if Gather Intel was cashed out."
+      },
+      {
+        "when": "Playfield dark, shots hard to read",
+        "what": "With motion sensors earned from the Heist job, a press briefly relights everything; it recharges in five seconds."
+      },
+      {
+        "when": "Down to the last ball in a multiball",
+        "what": "Hold, don't tap, to add a ball — once per ball, and only after Task a Crew was cashed out."
+      },
+      {
+        "when": "Balls locked, another multiball running (Prem/LE)",
+        "what": "Press to swipe a ball out of the Deconsecrated lock; the next set of locks gets harder."
+      },
+      {
+        "when": "Caine duel, crosshair sliding across the screen",
+        "what": "Time the press to dead center for up to 25M; the window shuts after about five seconds."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "John Wick casts you as the assassin working contract jobs for rival factions, and every major shot on the playfield flies a different faction's flag. Take jobs for game-long perks, farm enemies onto the shots that pay, and climb through your multiballs to the twin wizard modes, The Staircase and The Duel.",
+    "loop": [
+      "Charge the Weapons Crate to three lights, touch a faction's shot to swing the queued job to it, then start that job at the crate up-kicker.",
+      "Spawn enemies at the pop bumper and orange targets, and hold a flipper through an ally ramp to herd them onto the shots you are about to hit, so each shot pays up to four times.",
+      "Stack the running job under Car Multiball or Deconsecrated so every enemy kill feeds the job and the jackpots at the same time.",
+      "Cash each finished job at the left eject for a perk that lasts the rest of the game, and rotate through the five adversary battles.",
+      "Complete all seven jobs to light The Staircase, and beat all five adversaries for The Duel."
+    ],
+    "lights": [
+      {
+        "id": "faction-jobs",
+        "name": "Faction Job Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "jobs-vuk"
+          },
+          {
+            "shot": "charon-ramp"
+          },
+          {
+            "shot": "akira-ramp"
+          },
+          {
+            "shot": "katia-ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "administration-scoop"
+          }
+        ],
+        "lit": "Each major shot belongs to a faction, and whichever one you touch last swings the queued job over to it; the crate glows blue as you charge it, and three solid blue lights means the up-kicker is ready to start whatever job is queued.",
+        "flashing": null,
+        "control": null,
+        "then": "Pick your job by hitting its faction shot before you feed the crate, start it at the up-kicker, then cash it at the left eject for a permanent perk -- two keep multiballs alive, two guard the outlanes, two feed the blackout, one fattens your bonus. Finish all seven to light The Staircase.",
+        "goals": [
+          "progression-faction-jobs",
+          "progression-perk-menu",
+          "mode-heist-job",
+          "mode-security-detail",
+          "wizard-staircase"
+        ]
+      },
+      {
+        "id": "enemy-multiplier",
+        "name": "Enemies & Shot Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "red-circle-pop"
+          },
+          {
+            "shot": "orange-standups"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "charon-ramp"
+          }
+        ],
+        "lit": "An enemy parked in front of a lit shot multiplies only THAT shot, stacking to four times once three of them sit there; a fresh wave spawns about every fifty switch hits, and the spinner is cheap fuel at three spins to the switch.",
+        "flashing": null,
+        "control": {
+          "input": "left-flipper",
+          "effect": "holding a flipper through an ally ramp steers which way that ally shoves the enemies, so you can herd them onto the job and multiball shots you mean to take instead of leaving them stranded on shots you never hit",
+          "when": "as you shoot an ally ramp with a job running"
+        },
+        "then": "Herd enemies onto the shots you are about to cash, then collect those shots for up to quadruple -- the Deconsecrated captive-ball supers scale straight off your total kills, so the farm is where the huge numbers come from.",
+        "goals": [
+          "strategy-enemy-farming",
+          "progression-allies"
+        ]
+      },
+      {
+        "id": "baba-yaga-inlanes",
+        "name": "BABA / YAGA Inlanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "A lit rollover is a letter you have not banked yet -- BABA rides the right inlane and YAGA the left -- and a YAGA letter will only light on top of a BABA letter you already hold, so the right word has to come first.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of the right flipper button steps the lit BABA letter across the right inlane rollovers and a tap of the left flipper steps the lit YAGA letter across the left, so you can slot the lit one into whichever return lane the ball is heading for",
+          "when": "before the ball drops into a return lane"
+        },
+        "then": "Spell B-A-B-A to step your end-of-ball bonus multiplier toward its ceiling, and spell Y-A-G-A to light the lockbar button for Lights Out -- half a minute with everything you score doubled, dropped over a battle or multiball. Cashing the VIP Award job starts BABA already partway up every ball.",
+        "goals": [
+          "mult-baba-bonus",
+          "mult-lights-out"
+        ]
+      },
+      {
+        "id": "car-multiball",
+        "name": "John Wick Muscle Car",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "muscle-car"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "spinner"
+          }
+        ],
+        "lit": "Bashing the muscle car lights the left orbit to start Car Multiball, and the car stays the jackpot toy once the balls are out; every start you earn adds another qualifying hit up to a ceiling.",
+        "flashing": null,
+        "control": null,
+        "then": "Before you ever start it, backhand the car and rip the spinner in single-ball play to pre-load the jackpot, then dump that stored value inside the multiball -- nine car jackpots light a five-times super in Helipad Showdown.",
+        "goals": [
+          "mb-car",
+          "combo-car-jackpot-preload"
+        ]
+      },
+      {
+        "id": "winston-deconsecrated",
+        "name": "WINSTON Captive Ball",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "continental-captive-ball"
+          },
+          {
+            "shot": "deconsecrated-lock"
+          },
+          {
+            "shot": "charon-ramp"
+          }
+        ],
+        "lit": "Each bash of the New York Continental captive ball adds a letter toward W-I-N-S-T-O-N; the letters you bank stay lit, and finishing the word lights the lock behind the center ramp, with the count needed climbing after your first go.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls behind the center ramp to start Deconsecrated Multiball, then after seven jackpots hammer the captive ball again to open a short super burst whose value rides on every enemy you have killed.",
+        "goals": [
+          "mb-deconsecrated"
+        ]
+      },
+      {
+        "id": "red-circle-arena",
+        "name": "Red Circle Dance Floor",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "red-circle-pop"
+          },
+          {
+            "shot": "red-circle-standups"
+          },
+          {
+            "shot": "red-circle-drop"
+          },
+          {
+            "shot": "orange-standups"
+          }
+        ],
+        "lit": "Every hit inside the arena -- the lone pop bumper, the back standup bank -- raises the dance-floor level, and the level you have built holds as your progress toward Excommunicado.",
+        "flashing": null,
+        "control": null,
+        "then": "Max the floor, then shoot the Red Circle entrance to start a short single-ball build into a two-ball multiball; each orange standup you tag during the build adds a few seconds so the super jackpot launches larger.",
+        "goals": [
+          "mb-excommunicado",
+          "mb-excommunicado-super"
+        ]
+      },
+      {
+        "id": "adversary-battles",
+        "name": "Adversary Battles",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "administration-scoop"
+          },
+          {
+            "shot": "blood-oath-marker"
+          },
+          {
+            "shot": "red-circle-pop"
+          },
+          {
+            "shot": "akira-ramp"
+          }
+        ],
+        "lit": "Killing ten enemies in single-ball play lights the left eject white to start a battle, and the lower-left Blood Oath standups rotate which of the five adversaries is lit, so you can pick them off in any order.",
+        "flashing": null,
+        "control": null,
+        "then": "Win a battle by finishing its objective, not just starting it -- Cassian is a switch frenzy that, stacked under Lights Out with the Heist motion sensors, can pay past five hundred million. Beat all five to light The Duel.",
+        "goals": [
+          "mode-start-battle",
+          "mode-cassian-battle",
+          "wizard-the-duel"
+        ]
+      },
+      {
+        "id": "gold-coins",
+        "name": "Gold Coin Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "gold-coin-targets"
+          },
+          {
+            "shot": "katia-ramp"
+          }
+        ],
+        "lit": "A hit on the gold-coin stack lights a random shot for a coin or raises its value; you only actually bank the coin by making that lit shot, and every banked coin also drops a million into your end-of-ball bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "Lean on the right ramp as a safe reset back to the coins, and reach ten in one game for an extra ball -- coins double as ally qualifiers, so the farm pays twice.",
+        "goals": [
+          "strategy-gold-coin-extra-ball",
+          "progression-allies"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tapping a flipper button steps the lit inlane rollover: the right button moves the lit BABA letter across the right inlane, the left button moves the lit YAGA letter across the left. Line the lit one up with whichever return lane the ball is heading for -- BABA steps your end-of-ball bonus multiplier, and YAGA lights the lockbar button for the Lights Out playfield double.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the Baba Yaga skill shot: a clean plunge that trips no switches pays out and auto-starts a lit job. Pick a controllable job at the left or center ramp, grab gold coins for the Charon ally, and get the fast orbit returns under control before you start reaching for the car.",
+        "goals": [
+          "skill-baba-yaga",
+          "strategy-first-30-seconds",
+          "mb-car"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start a job and stack Car Multiball over it so every enemy kill scores the job and the jackpots together, while you herd enemies onto the shots you are about to take for up to quadruple. Light Lights Out with YAGA and drop it over the stack. Playing one job, one battle and one of each multiball opens the easy mini-wizard, Red Circle Reckoning.",
+        "goals": [
+          "strategy-job-mb-stack",
+          "strategy-enemy-farming",
+          "mult-lights-out",
+          "wizard-red-circle-reckoning"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete all seven faction jobs to light The Staircase, three escalating levels that top out near two hundred eighty million. Beat all five adversaries for The Duel, the final wizard. The single biggest cashout on the road there is a Cassian battle run under Lights Out with the Heist motion sensors, which can break five hundred million.",
+        "goals": [
+          "wizard-staircase",
+          "wizard-the-duel",
+          "mode-cassian-battle"
+        ]
+      }
+    ]
+  }
+}

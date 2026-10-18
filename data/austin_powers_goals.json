@@ -1,0 +1,1040 @@
+{
+  "machine": "Austin Powers (Stern, 2001)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger for you, auto-launcher for the game. Multiball starts and ball saves are fired automatically."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Rollover Lanes",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Two lanes across the top. One is lit at the start of every ball for the skill shot, and collecting both advances the end-of-ball bonus multiplier."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.62,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three of them, fed from the top lanes. Nothing clever here, but time spent in them is time not spent on modes."
+    },
+    {
+      "id": "mini-me",
+      "name": "Mini Me Spinner",
+      "type": "spinner",
+      "x": 0.18,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "A counterweighted figure standing in for the usual spinner blade — it rips well. Sits at the mouth of the left loop and is where the Time Machine returns the ball."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.1,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "The Mini Me spinner sits at its entrance, and a ball that makes it runs the whole way round and exits at the right loop.",
+      "feeds": {
+        "shot": "right-loop"
+      }
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.9,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "The other end of the loop that starts at Mini Me. One of the six main shots the multiballs and Henchmen ask for."
+    },
+    {
+      "id": "fat-bastard-ramp",
+      "name": "Fat Bastard Ramp",
+      "type": "ramp",
+      "x": 0.25,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "A short ramp into a toilet seat. The ball drops out to the Mini Me lane on its left, so a made ramp often feeds you a spinner rip for free.",
+      "feeds": {
+        "shot": "mini-me"
+      }
+    },
+    {
+      "id": "laser-ramp",
+      "name": "Big Frickin' Laser Ramp",
+      "type": "ramp",
+      "x": 0.33,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The left ramp. It runs behind Fat Bastard and down past Mini Me, ending either at the laser cannon or at the left inlane.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "laser-cannon",
+      "name": "Laser Cannon",
+      "type": "mech",
+      "x": 0.3,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "A motorised launcher along the top edge of the apron, loaded from the left ramp. It swings out to aim up the playfield and fires from a button on the lockdown bar."
+    },
+    {
+      "id": "left-standup",
+      "name": "Left Standup",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Guards the left edge of the Time Machine ramp entrance. Beeps when hit — that beep usually means you missed the ramp."
+    },
+    {
+      "id": "time-machine",
+      "name": "Time Machine",
+      "type": "toy",
+      "x": 0.5,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "A short centre ramp up to a spinning disc with a ball-sized hole in it. The disc catches the ball, holds it, then releases it out the back into the loop so it returns through Mini Me."
+    },
+    {
+      "id": "right-standup",
+      "name": "Right Standup",
+      "type": "standup",
+      "x": 0.58,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "The mirror of the left standup, on the other side of the Time Machine entrance."
+    },
+    {
+      "id": "dr-evil",
+      "name": "Dr. Evil",
+      "type": "bash-toy",
+      "x": 0.4,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "A motorised target that rises and drops. He pops up briefly at the start of a ball so you know he is there, and he is the whole job during MOJO Multiball."
+    },
+    {
+      "id": "austin-hole",
+      "name": "Austin Powers Hole",
+      "type": "scoop",
+      "x": 0.7,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "A scoop under the big Austin figure, with a run of lights leading into it. This is the target the laser cannon fires at."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.78,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Runs around the back and down the right side into the right inlane. The Sub-Drill round wants this one four times over.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "mojo-targets",
+      "name": "MOJO Standups",
+      "type": "standup",
+      "x": 0.08,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Two standups on the left. Spelling MOJO from this side of the playfield starts the Dr. Evil multiball."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Holds the H of S-H-A-G. Where the left ramp dumps the ball whenever it is not feeding the cannon."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Holds the A of S-H-A-G, and catches the right ramp return."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Holds the S of S-H-A-G. If this letter is the one that completes the word during single-ball play, the game hands the ball back."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Holds the G of S-H-A-G, with the same ball-back rule as the left outlane."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.2872,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the right ramp, the right loop and the Austin hole."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.7128,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds both left ramps, Mini Me and the Time Machine."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Lit Lane Skill Shot",
+      "category": "skillshot",
+      "summary": "One of the two top rollover lanes is lit at the start of every ball. Plunge into the lit one and you take Bonus 6X, which is worth well over six million once the bonus pays — far more than the display suggests while you are collecting it.",
+      "difficulty": 2,
+      "reward": "Bonus 6X, worth 6M and up",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Plunge into the lit lane",
+          "detail": "One of the two top rollover lanes lights at the start of every ball, and only that one pays the skill shot — each additional bonus multiplier step you earn up here is worth roughly a million on its own."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mode-lights",
+      "title": "Reading The Mode Lights",
+      "category": "progression",
+      "summary": "Every main shot carries a stack of five lights that tells you exactly how much work is left on that mode. Learning to read the stack in a glance is the single biggest improvement most players can make on this machine, because it tells you which shot is one hit from starting a ten-million round.",
+      "difficulty": 1,
+      "reward": "Knowing which shot to take next",
+      "steps": [],
+      "instructions": [
+        "The four lower lights count down the hits you still owe: one flashing and three dark means four more hits, three lit with the fourth flashing means the next hit starts the mode.",
+        "A dark red light at the top means the mode has never been started.",
+        "A lit red light with the counter still running means you started that mode and failed it — it is available again at the same price.",
+        "All five lights solid means the mode is finished. Shooting it again pays a flat million and nothing else, so stop feeding it.",
+        "Starting a mode for the first time is worth around ten million and completing one around fifteen, none of which the display makes obvious. Completions are where the score is."
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "mini-me-hurryup",
+      "title": "Mini Me Hurry-Up",
+      "category": "mode",
+      "summary": "Four separate shots through the Mini Me spinner start the hurry-up — a single rip counts once, however many times the blade turns. The next spinner shot locks in a value and further shots collect against it, with the flashing lights under the lane counting down what you still owe.",
+      "difficulty": 2,
+      "reward": "Locked hurry-up value",
+      "steps": [
+        {
+          "shot": "mini-me",
+          "action": "Complete the spinner four times",
+          "detail": "The lights below the lane show how many completions remain."
+        },
+        {
+          "shot": "mini-me",
+          "action": "Rip it again to lock the value",
+          "detail": "This freezes the number you are playing for."
+        },
+        {
+          "shot": "mini-me",
+          "action": "Keep shooting to collect",
+          "detail": "Mini Me does not block any other mode, and its timer pauses during multiball — so it is the safest mode to leave running."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "fat-bastard-multiball",
+      "title": "Fat Bastard Multiball",
+      "category": "multiball",
+      "summary": "Four Fat Bastard ramps start a four-ball multiball with a generous ball saver. The job is to hit all six main shots four times each; only the fourth hit on a shot pays the super jackpot, and hits past four on an already-finished shot pay nothing at all.",
+      "difficulty": 3,
+      "reward": "Super jackpot on the fourth hit of each of six shots",
+      "steps": [
+        {
+          "shot": "fat-bastard-ramp",
+          "action": "Ramp it four times",
+          "detail": "The ramp returns to the Mini Me lane, which makes repeat shots easy to string together."
+        },
+        {
+          "shot": "fat-bastard-ramp",
+          "action": "Let the ball saver do its work",
+          "detail": "The save on this multiball is long. Use the free seconds to get organised rather than flailing."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Work through all six shots",
+          "detail": "The counter under each shot shows how many of its four hits remain."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Stop feeding finished shots",
+          "detail": "Once a shot has taken its four hits it is dead weight until every other shot catches up."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "frickin-laser",
+      "title": "Big Frickin' Laser",
+      "category": "mode",
+      "summary": "Four left ramps arm the laser. One more ramp loads the ball into the cannon on the apron, which swings out to aim; you fire it with the lockdown bar button and try to drop the ball in the Austin hole. You get three attempts in total, and each retry has to be bought with another quick ramp.",
+      "difficulty": 3,
+      "reward": "Roughly 30M for a successful shot",
+      "steps": [
+        {
+          "shot": "laser-ramp",
+          "action": "Make the left ramp four times",
+          "detail": "This only arms the laser; it does not load it."
+        },
+        {
+          "shot": "laser-ramp",
+          "action": "Ramp once more to load the cannon",
+          "detail": "The ball is diverted to the launcher instead of the left inlane."
+        },
+        {
+          "shot": "laser-cannon",
+          "action": "Fire at the Austin hole",
+          "detail": "Time the button as the cannon sweeps. A miss can be retried by re-shooting the ramp quickly — but the third miss ends the round on the spot."
+        },
+        {
+          "shot": "austin-hole",
+          "action": "Bank the award",
+          "detail": "The display shows 3M, which badly undersells it; the shot is worth closer to thirty million once the mode credit lands."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "time-machine-multiball",
+      "title": "Time Machine Multiball",
+      "category": "multiball",
+      "summary": "Four shots up to the spinning disc start a two-ball multiball. Six shots are lit for jackpots; a shot with its lights out pays nothing, so check before you commit. Clearing all six relights all six.",
+      "difficulty": 2,
+      "reward": "Jackpot on each of six lit shots",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Feed the disc four times",
+          "detail": "The disc holds each ball before spitting it out the back into the loop."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Take the lit shots only",
+          "detail": "Unlit shots score nothing during this round."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Clear all six to relight them",
+          "detail": "A full sweep resets the whole set for another pass."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "sub-drill",
+      "title": "Sub-Drill",
+      "category": "mode",
+      "summary": "A timed round asking for four shots on each ramp. The flashing lights beneath each ramp count what you still owe. It locks out the laser but leaves everything else available, and its timer pauses during multiball.",
+      "difficulty": 3,
+      "reward": "Mode start and completion credit",
+      "steps": [
+        {
+          "shot": "laser-ramp",
+          "action": "Four on the left",
+          "detail": "The left ramp return sets you up for the right one on the rebound."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Four on the right",
+          "detail": "The right ramp feeds the right inlane, which puts you straight back on the left ramp."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "henchmen",
+      "title": "Henchmen",
+      "category": "mode",
+      "summary": "One shot each at all six main shots against a timer. The red light above each shot stays lit until you make it, so the playfield tells you at a glance what is left. It locks out most other modes while it runs.",
+      "difficulty": 3,
+      "reward": "Mode start and completion credit",
+      "steps": [
+        {
+          "shot": "mini-me",
+          "action": "Sweep the left side",
+          "detail": "Mini Me and the left ramps are the natural pair from the right flipper."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Take the centre",
+          "detail": "The disc catches and holds the ball, which costs you a second or two off the timer."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Finish on the right",
+          "detail": "The right ramp and right loop close the round out from the left flipper."
+        }
+      ],
+      "fx": "gun",
+      "ordered": false
+    },
+    {
+      "id": "mojo-multiball",
+      "title": "MOJO Multiball",
+      "category": "multiball",
+      "summary": "Spell MOJO on the left standups and you get a two-ball multiball whose only job is to hit Dr. Evil ten times. When he drops, the six main shots open up, and the Time Machine pays a super jackpot and sends him straight back up for another ten.",
+      "difficulty": 2,
+      "reward": "Super jackpot per cycle, plus a climbing Dr. Evil value",
+      "steps": [
+        {
+          "shot": "mojo-targets",
+          "action": "Spell MOJO",
+          "detail": "A mystery award can also hand you this multiball outright."
+        },
+        {
+          "shot": "dr-evil",
+          "action": "Bash him ten times",
+          "detail": "He drops out of the way once the tenth hit lands."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Collect the super jackpot",
+          "detail": "This also pops Dr. Evil back up for the next set of ten."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "dr-evil-ladder",
+      "title": "The Dr. Evil Ladder",
+      "category": "multiplier",
+      "summary": "Dr. Evil is worth a million on the first hit and climbs by roughly a hundred thousand each time after. It sounds slow, and it is — thirty bashes come out around forty-five million — but during MOJO Multiball it is free points while you are waiting for a shot to open up.",
+      "difficulty": 2,
+      "reward": "1M rising by about 100K per hit",
+      "steps": [
+        {
+          "shot": "dr-evil",
+          "action": "Keep hitting him",
+          "detail": "The value never resets downward inside a multiball cycle."
+        },
+        {
+          "shot": "dr-evil",
+          "action": "Watch for him staying up",
+          "detail": "There is a known quirk where hitting the Time Machine just as a ball drains can leave Dr. Evil raised into normal play, where he sits in the way of the centre shots."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "shag-hurryup",
+      "title": "S-H-A-G Hurry-Up",
+      "category": "mode",
+      "summary": "The four letters live in the inlanes and outlanes: S and G on the outlanes, H and A on the inlanes. Completing the word starts a hurry-up, and there is a hidden mercy rule attached to the outlane letters.",
+      "difficulty": 2,
+      "reward": "Hurry-up value",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Collect the inlane letters",
+          "detail": "These are the free ones — you will pick them up just by playing."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Take an outlane letter to finish",
+          "detail": "If an outlane completes the word during single-ball play, the game gives you the ball back."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Shift the lit letters",
+          "detail": "The laser round's retry timer blanks the S-H-A-G lights, so you cannot see which letters to shift for while it runs."
+        }
+      ],
+      "fx": "dance",
+      "ordered": false
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Build The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The two top rollover lanes advance the end-of-ball bonus multiplier, and each step is worth about a million on its own. That is real money for a shot you take by accident every time the ball wanders up top.",
+      "difficulty": 1,
+      "reward": "About 1M per multiplier step",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Complete both lanes",
+          "detail": "Shift the lit lane with the flipper buttons before the ball comes down."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Use bumper time",
+          "detail": "The bumpers keep kicking the ball back through the lanes, which is the one good thing about being stuck up there."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "virtucon-multiball",
+      "title": "Virtucon Multiball",
+      "category": "wizard",
+      "summary": "Start six modes and Virtucon opens up. It has an unusually long ball saver, and each of the six shots pays a jackpot on its first hit with all six relighting once cleared. The payoff for having actually completed modes is that a completed shot can be hit over and over for a double jackpot.",
+      "difficulty": 3,
+      "reward": "Jackpots on all six shots, double jackpots on completed modes",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Start six modes to arm it",
+          "detail": "Starting the fourth mode of the game also lights the extra ball."
+        },
+        {
+          "shot": "time-machine",
+          "action": "Camp a completed shot",
+          "detail": "If you finished a mode, its shot pays a double jackpot every single time — you never have to leave it."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Read the lights",
+          "detail": "A red light out means you have already made that shot this pass; other lights still flashing mean it is good for another double jackpot."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "moon-base",
+      "title": "Moon Base",
+      "category": "secret",
+      "summary": "The backglass shows a multiball above Virtucon that almost nobody sees. It is understood to need every one of the six modes completed, not merely started — which is a far harder bar than Virtucon, and why it stays a rumour on most machines.",
+      "difficulty": 3,
+      "reward": "Unconfirmed",
+      "steps": [],
+      "instructions": [
+        "Completing a mode means finishing its shot requirement, not just starting it — all five of that shot's lights solid.",
+        "Chase the completions in the multiball rounds, where you have four or six balls and a long saver to work with.",
+        "Treat it as a stretch goal on a machine you know well. Nothing on the playfield counts it down for you.",
+        "If you get there, you will notice: the backglass is where the game announces it."
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "stack-before-fat-bastard",
+      "title": "Stack Before The Big One",
+      "category": "strategy",
+      "summary": "The best scoring decision on the machine is what you have running when Fat Bastard starts. Mini Me and Sub-Drill both want repeated hits on shots, and both have their timers frozen during multiball — so start one of them right before the four-ball round and spend it in relative safety.",
+      "difficulty": 3,
+      "reward": "Mode progress paid for with multiball balls",
+      "steps": [
+        {
+          "shot": "mini-me",
+          "action": "Arm a repeat-hit mode first",
+          "detail": "Mini Me does not block anything and its timer stops during multiball."
+        },
+        {
+          "shot": "fat-bastard-ramp",
+          "action": "Then start the four-ball round",
+          "detail": "Four balls and a long saver make the repeat shots dramatically cheaper."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Know what blocks what",
+          "detail": "Fat Bastard and Time Machine allow nothing else to start; Henchmen blocks almost everything; the laser retry timer blocks the rest."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "hidden-ball-saves",
+      "title": "The Ball Saves Nobody Sees",
+      "category": "secret",
+      "summary": "Two rescues are built in that the playfield never mentions. Drain straight after scoring the Time Machine in single-ball play and the game tries once to relaunch you. Complete S-H-A-G with an outlane in single-ball play and you also get the ball back.",
+      "difficulty": 1,
+      "reward": "A free ball from either of two hidden saves",
+      "steps": [
+        {
+          "shot": "time-machine",
+          "action": "Know when the Time Machine is safe",
+          "detail": "The save only applies if the shot actually scored. Once Time Machine is no longer available, that shot becomes genuinely dangerous."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Finish S-H-A-G on an outlane",
+          "detail": "It has to register as single-ball play — two balls draining into opposite outlanes at once does not qualify."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Listen for the end of the multiball save",
+          "detail": "The shoot-again light stops blinking long before the save actually expires. The music runs in an ABAC pattern and the save runs out near the start of the C section."
+        }
+      ],
+      "fx": "briefcase",
+      "ordered": false
+    },
+    {
+      "id": "known-quirks",
+      "title": "Know The Machine's Quirks",
+      "category": "strategy",
+      "summary": "This game has some well-known switch problems, and playing around them costs nothing. Mini Me and the Time Machine sometimes fail to register a good shot, and the left ramp can skip the switch that spots your S-H-A-G letter.",
+      "difficulty": 1,
+      "reward": "Fewer wasted shots",
+      "steps": [
+        {
+          "shot": "mini-me",
+          "action": "Watch the counter, not the shot",
+          "detail": "If the light stack did not move, the hit did not count — take it again rather than assuming."
+        },
+        {
+          "shot": "laser-ramp",
+          "action": "Do not bank on the ramp letter",
+          "detail": "The ball can roll over the H switch without tripping it, so plan to collect letters in the lanes."
+        }
+      ],
+      "fx": "briefcase",
+      "ordered": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ap-skillshot",
+      "title": "Bonus 6X",
+      "desc": "Plunge into the lit rollover lane for the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "ap-first-mode",
+      "title": "Groovy",
+      "desc": "Start any of the six main modes for the first time.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-lights"
+    },
+    {
+      "id": "ap-shag",
+      "title": "Spell It Out",
+      "desc": "Collect all four letters of S-H-A-G to start the hurry-up.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "shag-hurryup"
+    },
+    {
+      "id": "ap-mojo",
+      "title": "Get Your MOJO",
+      "desc": "Spell MOJO and start the Dr. Evil multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mojo-multiball"
+    },
+    {
+      "id": "ap-time-machine",
+      "title": "Caught In The Disc",
+      "desc": "Feed the Time Machine four times to start its multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "time-machine-multiball"
+    },
+    {
+      "id": "ap-laser",
+      "title": "Fire The Laser",
+      "desc": "Load the cannon and drop the ball in the Austin hole.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "frickin-laser"
+    },
+    {
+      "id": "ap-fat-bastard",
+      "title": "Four Balls In Play",
+      "desc": "Start Fat Bastard Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fat-bastard-multiball"
+    },
+    {
+      "id": "ap-super-jackpot",
+      "title": "Fourth Time Lucky",
+      "desc": "Land a super jackpot by taking a shot to its fourth hit during Fat Bastard Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "fat-bastard-multiball"
+    },
+    {
+      "id": "ap-stack",
+      "title": "Come Prepared",
+      "desc": "Have Mini Me or Sub-Drill running when Fat Bastard Multiball starts.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "stack-before-fat-bastard"
+    },
+    {
+      "id": "ap-virtucon",
+      "title": "Welcome To Virtucon",
+      "desc": "Start six modes in one game to open Virtucon Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "virtucon-multiball"
+    },
+    {
+      "id": "ap-moon",
+      "title": "Moon Base",
+      "desc": "Complete all six modes rather than merely starting them.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "moon-base"
+    }
+  ],
+  "drills": [
+    {
+      "id": "take-the-lit-lane",
+      "title": "Take the Lit Lane",
+      "text": "One of the two top rollovers is lit at the start of every ball and only that one pays. Shift the lit lane with the flipper buttons before the ball comes down rather than plunging the same way and hoping. Every bonus step earned up there is worth about a million once the bonus pays, which the display never tells you at the time.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "wait-for-the-sweep",
+      "title": "Wait for the Sweep",
+      "text": "Four left ramps arm the cannon and a fifth loads it, then it swings out and sweeps — the ball goes wherever the barrel is pointing when you press, so this is timing rather than aiming. Line the barrel up with the Austin hole and let a bad sweep go by. On the third attempt a miss ends the round on the spot, so that one is always worth waiting for.",
+      "reps": "5 full loads",
+      "focus": "accuracy",
+      "goal": "frickin-laser",
+      "shots": [
+        "laser-ramp",
+        "laser-cannon",
+        "austin-hole"
+      ]
+    },
+    {
+      "id": "ramp-alternation",
+      "title": "Four and Four",
+      "text": "Four on each ramp, and the geometry does most of the work: the left ramp's return sets up the right one, and the right ramp feeds the right inlane, which puts you straight back on the left. Run it as one continuous alternation and let the flashing counts underneath each ramp tell you what you still owe.",
+      "reps": "8 alternations without a break",
+      "focus": "flow",
+      "goal": "sub-drill",
+      "shots": [
+        "laser-ramp",
+        "right-ramp",
+        "left-inlane",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "four-separate-rips",
+      "title": "Four Separate Rips",
+      "text": "Four separate trips through the spinner start the hurry-up, and a single rip counts once no matter how many times the blade turns — so this is four shots, not one long one. Use the Fat Bastard ramp to set them up, since it drops the ball out into the Mini Me lane and hands you the rip for free.",
+      "reps": "start the hurry-up 3 times",
+      "focus": "accuracy",
+      "goal": "mini-me-hurryup",
+      "shots": [
+        "mini-me",
+        "fat-bastard-ramp"
+      ]
+    },
+    {
+      "id": "flipper-ownership",
+      "title": "Know Which Flipper Owns It",
+      "text": "Nothing here crosses over. The left flipper owns the right ramp, the right loop and the Austin hole; the right flipper owns both left ramps, Mini Me and the Time Machine. Cradle on the side that owns the shot you want rather than taking it from wherever the ball happens to land, and drill the transfer across so getting to the right side stops costing you the ball.",
+      "reps": "1 full ball, cradling before every shot",
+      "focus": "ball-control",
+      "goal": "henchmen",
+      "shots": [
+        "left-flipper",
+        "right-flipper",
+        "right-ramp",
+        "right-loop",
+        "austin-hole",
+        "mini-me",
+        "time-machine"
+      ]
+    },
+    {
+      "id": "read-the-stacks",
+      "title": "Read the Light Stacks",
+      "text": "Every main shot carries a stack of lights showing exactly how much work is left on that mode. Play a whole ball doing nothing but reading them — before each shot, name which one is a single hit from starting a round, then take that one. Check the stack after the shot too, because Mini Me and the Time Machine sometimes fail to register a good hit, and if the lights did not move you need to shoot it again.",
+      "reps": "1 full ball",
+      "focus": "accuracy",
+      "goal": "mode-lights",
+      "shots": [
+        "mini-me",
+        "time-machine"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "briefcase",
+  "actionButton": {
+    "present": true,
+    "label": "Fire Button",
+    "location": "on the lockdown bar",
+    "how": "One button sits on the lockdown bar and it exists for a single feature: the Big Frickin' Laser. Once the cannon on the apron is loaded it swings out and sweeps across the playfield, and the button pulls the trigger. That makes it a timing shot rather than an aiming one — the ball goes wherever the barrel happens to be pointing.",
+    "uses": [
+      {
+        "when": "Cannon loaded and sweeping",
+        "what": "Fires the ball up the playfield at the moment you press. Line the barrel up with the Austin hole first."
+      },
+      {
+        "when": "Barrel crossing the Austin hole",
+        "what": "A made shot is worth roughly 30 million once the mode credit lands, despite a 3M display."
+      },
+      {
+        "when": "After a missed laser shot",
+        "what": "Shoot the left ramp again quickly to reload and fire again — no need to rebuild the four ramps."
+      },
+      {
+        "when": "On your third firing attempt",
+        "what": "A miss here kills the round immediately, so wait for a clean sweep instead of snapping at it."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Austin Powers is Stern's swinging-sixties spy comedy where the six main shots run a stack of modes and multiballs. Read the light stacks, start rounds and multiballs, fire the laser cannon at Austin's hole, and open Virtucon by starting six modes.",
+    "loop": [
+      "Plunge into the lit top rollover for the Bonus 6X skill shot, and shift the lit lane with the flippers to climb your end-of-ball bonus multiplier, which quietly turns each step into roughly a million by the time the bonus is tallied.",
+      "Read the five-light stack on each main shot to spot the one sitting a single hit away from a fresh round, then begin modes like the Mini Me hurry-up, Sub-Drill, and Henchmen at their shots.",
+      "Bring up the multiballs: four Fat Bastard ramps for the four-ball, four Time Machine disc shots for the two-ball, and spell MOJO for the Dr. Evil round.",
+      "Arm the Big Frickin' Laser with four left ramps, load the cannon with one more, and pull the lockdown-bar trigger as the barrel sweeps across the Austin hole.",
+      "Start six different modes to open Virtucon, where any mode you actually finished pays a double jackpot at its shot every time you hit it."
+    ],
+    "lights": [
+      {
+        "id": "top-rollover-lanes",
+        "name": "Top Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes"
+          },
+          {
+            "shot": "pop-bumpers"
+          }
+        ],
+        "lit": "Just one of the two rollovers across the top is lit as each ball begins; only that lit lane pays the plunge skill shot, and rolling both of them steps your end-of-ball bonus multiplier.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper slides the lit lane across to the other rollover, so you can move it under the ball",
+          "when": "before the ball drops back down from the top"
+        },
+        "then": "Take the lit lane off the plunge for Bonus 6X, then flip the glow over and roll the second lane to raise the multiplier -- each step adds about a million to the bonus the display never brags about. The lit lane starts over with each new ball, so this is a fresh pick every time rather than something you bank.",
+        "goals": [
+          "skillshot",
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "id": "mode-stacks",
+        "name": "Mode Light Stacks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "mini-me"
+          },
+          {
+            "shot": "time-machine"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "austin-hole"
+          }
+        ],
+        "lit": "Each of the main shots wears a little column of lights showing just how much of its mode is left to do -- the fuller the column, the nearer that round is to starting.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep your eyes across the columns and take whichever one is a single strike from opening a round; the fourth mode you start in a game lights an extra ball as well. Learning to read them at a glance is the biggest single step up on this table.",
+        "goals": [
+          "mode-lights",
+          "sub-drill",
+          "henchmen"
+        ]
+      },
+      {
+        "id": "mojo-dr-evil",
+        "name": "MOJO and Dr. Evil",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "mojo-targets"
+          },
+          {
+            "shot": "dr-evil"
+          },
+          {
+            "shot": "time-machine"
+          }
+        ],
+        "lit": "The two left standups spell MOJO; finishing the word -- or drawing it from a mystery award -- starts a two-ball multiball whose whole job is the Dr. Evil bash toy.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock Dr. Evil down ten times to drop him and open the six main shots, then collect the Time Machine super jackpot, which pops him straight back up for another ten and climbs his value with each hit.",
+        "goals": [
+          "mojo-multiball",
+          "dr-evil-ladder"
+        ]
+      },
+      {
+        "id": "fat-bastard-mb",
+        "name": "Fat Bastard Ramp",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "fat-bastard-ramp"
+          }
+        ],
+        "lit": "Four runs up the Fat Bastard ramp light a four-ball multiball with a long ball saver; the ramp feeds back to the Mini Me lane, so repeat shots chain naturally.",
+        "flashing": null,
+        "control": null,
+        "then": "Work each of the six main shots up to four hits -- and it is only that fourth strike on a given shot that pays its super jackpot, while anything beyond four on a shot already done is dead weight, so quit feeding a finished one. Arm a repeat-hit mode such as Mini Me first, since its timer freezes while the balls are out.",
+        "goals": [
+          "fat-bastard-multiball",
+          "stack-before-fat-bastard"
+        ]
+      },
+      {
+        "id": "time-machine-mb",
+        "name": "Time Machine",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "time-machine"
+          }
+        ],
+        "lit": "Send the ball up to the spinning disc four times to open a two-ball multiball; the disc grabs each one, holds it, then spits it out the rear into the loop.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot only the lit jackpot shots -- an unlit one scores nothing -- and clear all six to relight the whole set for another pass.",
+        "goals": [
+          "time-machine-multiball"
+        ]
+      },
+      {
+        "id": "big-frickin-laser",
+        "name": "Big Frickin' Laser",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "laser-ramp"
+          },
+          {
+            "shot": "laser-cannon"
+          },
+          {
+            "shot": "austin-hole"
+          }
+        ],
+        "lit": "Bank four left ramps to arm the laser, then one further ramp drops the ball into the motorized cannon out on the apron, which swings around and rakes across the playfield.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "the lockdown-bar button fires the loaded cannon, sending the ball wherever the barrel happens to point -- so it is timing, not aim",
+          "when": "as the sweeping barrel lines up with the Austin hole"
+        },
+        "then": "Drop the shot into the Austin hole for a payoff near thirty million, far past the modest figure on the display. You get three tries, each retry bought with another quick ramp, and a miss on the third ends the round on the spot -- so wait for a clean sweep.",
+        "goals": [
+          "frickin-laser"
+        ]
+      },
+      {
+        "id": "shag-lanes",
+        "name": "S-H-A-G Lanes",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "The letters of S-H-A-G sit in the return and outlanes -- S and G out wide, H and A on the inlanes; a lit letter is one you still need to spell the word for its hurry-up.",
+        "flashing": null,
+        "control": {
+          "input": "left-flipper",
+          "effect": "a flipper press shifts which S-H-A-G letters are lit, letting you set up whichever one you still owe",
+          "when": "any time the letters are showing, though the laser round's retry timer blanks them"
+        },
+        "then": "Finish the word to start the hurry-up, and lean on the inlane letters since they arrive for free -- if an outlane letter completes S-H-A-G during single-ball play, the game quietly hands the ball back.",
+        "goals": [
+          "shag-hurryup",
+          "hidden-ball-saves"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "A tap of either flipper slides the lit top rollover across to its neighbor, so move it under the ball before the ball drops back down. Plunging into the lit lane takes the Bonus 6X skill shot, and rolling both lanes steps your end-of-ball bonus multiplier, each step adding roughly a million once the bonus is paid; one lane lights fresh as every new ball begins.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the lit top-lane skill shot for Bonus 6X and keep shifting and completing the top lanes for the multiplier, since each step is real money the display hides. Read the light stacks and start the modes whose shots you are already hitting, and know the two hidden saves -- a Time Machine drain and an outlane S-H-A-G finish in single-ball play both hand the ball back.",
+        "goals": [
+          "skillshot",
+          "bonus-multiplier",
+          "mode-lights",
+          "hidden-ball-saves"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start the round modes and multiballs -- the Mini Me hurry-up is the safest to leave running, its timer paused during multiball -- and grind Dr. Evil for a climbing value through MOJO. Stack a repeat-hit mode into Fat Bastard's four balls, and mind the machine's known switch quirks so a good shot that did not register gets taken again.",
+        "goals": [
+          "mini-me-hurryup",
+          "mojo-multiball",
+          "dr-evil-ladder",
+          "stack-before-fat-bastard",
+          "known-quirks"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Start six different modes to open Virtucon, the game's payoff: jackpots on all six shots, a long saver, and -- for every mode you actually finished, not merely started -- a double jackpot at its shot you can hit over and over. Above it sits Moon Base, a rumored multiball said to demand all six modes completed, which is why almost nobody sees it.",
+        "goals": [
+          "virtucon-multiball",
+          "moon-base"
+        ]
+      }
+    ]
+  }
+}

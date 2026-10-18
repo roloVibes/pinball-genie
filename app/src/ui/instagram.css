@@ -1,0 +1,59 @@
+/* ui/instagram.css — the shared Instagram call-to-action (ui/instagram.ts).
+ * One rule set for all placements so the glyph and handle look the same in the
+ * how-to sheet, the ad-slot house banner, and both footers. The glyph inherits
+ * `currentColor`, so each host surface only has to set a text colour. */
+
+.pg-ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--amber);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  /* 44px min touch target (Apple HIG / WCAG 2.5.5) — this is a real outbound
+   * link and is often the only tappable thing in its row. */
+  min-height: 44px;
+}
+
+.pg-ig-link:hover,
+.pg-ig-link:focus-visible {
+  color: var(--amber-bright);
+  text-decoration: underline;
+}
+
+.pg-ig-glyph {
+  flex-shrink: 0; /* never let the handle squeeze the glyph into an oval */
+}
+
+.pg-ig-text {
+  min-width: 0;
+}
+
+/* --- How-To sheet: its own row inside the guide body -------------------- */
+.pg-howto-follow {
+  margin-top: 22px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 176, 46, 0.08);
+  border: 1px solid rgba(255, 176, 46, 0.35);
+}
+
+.pg-howto-follow-eyebrow {
+  font: 800 9px ui-monospace, Menlo, monospace;
+  letter-spacing: 0.12em;
+  color: var(--amber);
+}
+
+.pg-howto-follow-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: rgba(233, 237, 247, 0.7);
+  margin: 4px 0 0;
+}
+
+/* The link sits flush under the copy in this card, so drop the 44px floor's
+ * extra leading here — the card's own padding already provides the target. */
+.pg-howto-follow .pg-ig-link {
+  min-height: 36px;
+}

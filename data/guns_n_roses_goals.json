@@ -1,0 +1,1264 @@
+{
+  "machine": "Guns N' Roses (Data East, 1994)",
+  "shots": [
+    {
+      "id": "gun-plunger",
+      "name": "Gun Autoplunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "A silver pistol. The trigger launches the ball and, during play, toggles the lock on the currently lit Guitar mode."
+    },
+    {
+      "id": "rose-plunger",
+      "name": "Rose Plunger",
+      "type": "plunge",
+      "x": 0.03,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "The manual plunger on the left side of the cabinet, fed by the G Ramp when the yellow globe is flashing. It fires the ball into the Snake Pit."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane (Kickback)",
+      "type": "outlane",
+      "x": 0.05,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The kickback lives here and sends the ball back up the middle to the bumpers. The lane is only gently curved with rubber on the divider, so nudging out of it is realistic."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.25,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the R Ramp briefly during normal play, which doubles that ramp's value."
+    },
+    {
+      "id": "left-drops",
+      "name": "Left Drop Targets",
+      "type": "drop-target",
+      "x": 0.09,
+      "y": 0.24,
+      "trim": "all",
+      "notes": "Angled toward the middle of the playfield rather than the slingshot. Completing the bank spots R, then O."
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.22,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Sits at the mouth of the left orbit. From here you can reach the captive ball, the Mini-Loop and the Center Scoop."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.14,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A half orbit — a one-way gate deflects the ball down to the J-A-M rollovers. There is a switch on the curve you must cross to be credited with the shot.",
+      "feeds": {
+        "shot": "jam-lanes"
+      }
+    },
+    {
+      "id": "guitar",
+      "name": "Guitar Saucer",
+      "type": "saucer",
+      "x": 0.3,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "The mode start, hidden behind the G Ramp. A narrow metal lane guides the ball in, and hard right-flipper shots sometimes bounce out. It kicks back around to the upper flipper."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "type": "captive-ball",
+      "x": 0.24,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Rests left of the G Ramp entrance and rolls up into a small round pocket. A slingshot on one side and a bumper on the other keeps the ball bouncing in there for a while."
+    },
+    {
+      "id": "duff-targets",
+      "name": "D-U-F-F Targets",
+      "type": "standup",
+      "x": 0.28,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Ranged along the curved top wall of the captive ball pocket. Completing them in normal play pays a jackpot that carries between players and between games."
+    },
+    {
+      "id": "g-ramp",
+      "name": "G Ramp",
+      "type": "ramp",
+      "x": 0.34,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Steep with a narrow entrance, but it does not reject. Two globes above it: yellow means it feeds the Rose Plunger, red means it pays a mode jackpot. Otherwise it returns to the left inlane.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "snake-pit",
+      "name": "Snake Pit",
+      "type": "saucer",
+      "x": 0.16,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "A shallow bowl above the curve of the left orbit, fed by the Rose Plunger. A full-strength plunge spins the ball round it for a long time, and the spins are what set your multiplier."
+    },
+    {
+      "id": "jam-lanes",
+      "name": "J-A-M Rollovers",
+      "type": "rollover",
+      "x": 0.48,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes feeding the bumpers. The autoplunger habitrail drops the ball just above them."
+    },
+    {
+      "id": "bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.42,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three yellow bumpers, the left one forming a wall of the captive ball pocket. Every hit steps the lit Guitar mode along, which is how you steer the mode you want."
+    },
+    {
+      "id": "mini-loop",
+      "name": "Mini-Loop",
+      "type": "loop",
+      "x": 0.52,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Shot from the upper flipper, running right of the bumpers and rejoining the orbit. Only one switch in the lane, a quarter of the way up — a ball that crosses it, stalls and rolls back scores twice.",
+      "feeds": {
+        "shot": "upper-flipper"
+      },
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "center-scoop",
+      "name": "Center Scoop",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Reachable from any flipper and kicks straight out at the left flipper. The red globe above it lights for Mystery or a mode jackpot.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "r-ramp",
+      "name": "R Ramp",
+      "type": "ramp",
+      "x": 0.66,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Easier than the G Ramp and comfortably backhandable from the right flipper. It always returns the ball to the right inlane, which sets up the next backhand.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "right-hole",
+      "name": "Right Hole",
+      "type": "saucer",
+      "x": 0.76,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "A long straight lane runs up to this saucer, so either lower flipper reaches it and a backhand is easy. Band members, Coma and the 100M multiball jackpot all live here."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A full orbit if you hit it hard enough; a slow ball drops into the J-A-M lanes instead. Some awards need the whole orbit, others only the near switch.",
+      "feeds": {
+        "shot": "upper-flipper"
+      }
+    },
+    {
+      "id": "right-drops",
+      "name": "Right Drop Targets",
+      "type": "drop-target",
+      "x": 0.9,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "The mirror of the left bank. Completing it spots C, then K."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.75,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the G Ramp briefly during normal play."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.95,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Wide even with the adjustable post moved all the way left. Draining here in normal play pays the Michelle bonus, which scales with how long you kept the ball alive."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.34,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the R Ramp, the Right Hole and the right orbit."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.66,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the G Ramp, the left orbit and the Guitar saucer. The backhand from here is the most useful shot on the machine."
+    }
+  ],
+  "goals": [
+    {
+      "id": "plunger-awards",
+      "title": "Choose Your Plunger Award",
+      "category": "skillshot",
+      "summary": "There is no aimed skill shot. Instead every ball starts with a choice of four: Add Member, Start Guitar Feature, Super Pops for 2M a bumper hit, or a Mystery Value. Pick with the flippers, then launch to collect.",
+      "difficulty": 1,
+      "reward": "A band member, a mode, 2M bumpers or a Mystery — Add Member starts 6-ball Multiball immediately if it spots your sixth, with jackpots based at 50M",
+      "steps": [
+        {
+          "shot": "gun-plunger",
+          "action": "Set the award before you launch",
+          "detail": "The lit choice drifts right on its own if you leave it alone. You can also launch by holding the right flipper button and tapping the left."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "the-ramps",
+      "title": "The Ramps",
+      "category": "combo",
+      "summary": "The G Ramp spells GUNS N and the R Ramp spells ROSES. Each shot is 5M, or 10M if the opposite inlane lit it. Alternate them without missing and the value climbs 5M a hit — 10M, 15M, 20M, 25M and onward until you break the chain.",
+      "difficulty": 2,
+      "reward": "5M per ramp, climbing 5M per alternation",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Let the inlane light the ramp",
+          "detail": "Right inlane lights the G Ramp, left inlane lights the R Ramp, and a lit ramp is worth double."
+        },
+        {
+          "shot": "g-ramp",
+          "action": "Alternate, do not repeat",
+          "detail": "Repeating the same ramp does not build the ladder. Miss once and the value falls back to 10M."
+        },
+        {
+          "shot": "r-ramp",
+          "action": "Finish all ten letters",
+          "detail": "Finish GUNS N ROSES and a 50M hurry-up starts. Collect it at either ramp; each collect also stalls the count for a few seconds, and the round is over once the value hits 30M."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "rock-hurryup",
+      "title": "R-O-C-K",
+      "category": "mode",
+      "summary": "Completing the left drops spots R then O; completing the right drops spots C then K. Each letter is 10M. All four letters light a 100M hurry-up at the left orbit; its clock stops whenever the ball is up in the bumpers, and its floor is 20M.",
+      "difficulty": 2,
+      "reward": "10M per letter, 100M hurry-up",
+      "steps": [
+        {
+          "shot": "left-drops",
+          "action": "Clear the left bank twice",
+          "detail": "One completion spots one letter, so both banks have to fall twice.",
+          "link": "none"
+        },
+        {
+          "shot": "right-drops",
+          "action": "Clear the right bank twice",
+          "detail": "10M each time a letter lands.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect at the left orbit",
+          "detail": "Use the bumpers to freeze the count while you line the shot up. Note that a live ROCK countdown blocks you from starting a new Guitar mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mystery",
+      "title": "Mystery At The Center Scoop",
+      "category": "mode",
+      "summary": "The Mini-Loop lights the Center Scoop for a Mystery award — two loops the first time, three the second, and so on. The pool is generous: 25M, 50M, Super Kickback, 20x bonus, Super or Mega Pops, extra ball, Special, or Multiball outright.",
+      "difficulty": 2,
+      "reward": "25M to a free Multiball",
+      "steps": [
+        {
+          "shot": "mini-loop",
+          "action": "Work the Mini-Loop",
+          "detail": "The display tells you how many more loops you owe. A ball that crosses the switch and rolls back counts twice."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Cash it while the red globe is lit",
+          "detail": "Choosing Mystery at the plunger also adds a loop to the next requirement, so it is not entirely free."
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "mode-lock",
+      "title": "Lock The Mode You Want",
+      "category": "strategy",
+      "summary": "Every bumper hit steps the lit Guitar mode along by one, skipping anything you have already played. Pull the autoplunger trigger and the lit mode freezes there — the red globe above the gun confirms it. This is the most important habit on the machine.",
+      "difficulty": 2,
+      "reward": "Control over which mode you play",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Count the bumper hits",
+          "detail": "Check the mode lights first, work out how many steps away your target is, then listen to the bumpers."
+        },
+        {
+          "shot": "gun-plunger",
+          "action": "Pull the trigger to lock",
+          "detail": "Locking is disabled while a mode or Multiball is running, and the lit mode unlocks itself at the start of every ball and at the end of every mode."
+        },
+        {
+          "shot": "guitar",
+          "action": "Start it at the Guitar",
+          "detail": "The saucer is behind the G Ramp. It rejects some hard right-flipper shots, so an early backhand is the reliable way in.",
+          "technique": [
+            "backhand"
+          ]
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "double-shot",
+      "title": "The Double Shot",
+      "category": "multiplier",
+      "summary": "Start certain modes at the Guitar saucer and the Mini-Loop lights for a few seconds. Hitting it inflates that mode's values — Duff Rocks goes from 100M to 200M, Super Snake from a 50M hurry-up to 100M, Slash Solo's count-up jumps to a 100M ceiling.",
+      "difficulty": 3,
+      "reward": "Roughly doubled mode values",
+      "steps": [
+        {
+          "shot": "guitar",
+          "action": "Start the mode at the saucer",
+          "detail": "Modes started from the plunger award cannot be doubled at all, which is a real cost of that choice."
+        },
+        {
+          "shot": "mini-loop",
+          "action": "Take the loop immediately",
+          "detail": "The window is only a few seconds and the ball is coming out at the upper flipper, so know the shot before you start the mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "matt-scoring",
+      "title": "Matt Scoring",
+      "category": "mode",
+      "summary": "The first mode of every game. A 10M jackpot sits at the left orbit and every switch you hit is worth 250K and adds 250K to it. The switch value itself steps up every few hits, and collecting the jackpot at the orbit doubles it outright.",
+      "difficulty": 2,
+      "reward": "10M jackpot plus escalating switch value",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Bank switches fast",
+          "detail": "The bumpers and the J-A-M lanes are the densest switch cluster on the playfield."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect and double",
+          "detail": "Every orbit shot takes the jackpot and doubles what each switch is worth from then on."
+        },
+        {
+          "shot": "mini-loop",
+          "action": "Double it if you can",
+          "detail": "The Double shot starts your switch value at 500K instead of 250K. Stacking Coma on top makes this the highest-ceiling mode in the game.",
+          "link": "none"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "slash-solo",
+      "title": "Slash Solo",
+      "category": "mode",
+      "summary": "A count-up starting at 20M. Either orbit or the Mini-Loop collects whatever the counter currently shows, and the mode ends when it reaches 50M. Take this one if the orbits have been going in for you all game.",
+      "difficulty": 2,
+      "reward": "20M climbing to 50M, or 100M doubled",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Let it climb before you collect",
+          "detail": "The right orbit only needs its switch, not the full loop. The count pauses while the ball is in the bumpers."
+        },
+        {
+          "shot": "mini-loop",
+          "action": "Double it first if the mode allows",
+          "detail": "Doubling takes the count-up from a 40M range up to a 100M finish.",
+          "link": "none"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "super-snake",
+      "title": "Super Snake",
+      "category": "mode",
+      "summary": "A 50M hurry-up sits at the G Ramp. Shoot the ramp: the value is banked and the ball is fed on to the Rose Plunger, where each spin of the Snake Pit walks a multiplier up through 1x, 2x and 3x. Whatever multiplier is lit as the ball drops out of the pit is what the banked value pays.",
+      "difficulty": 2,
+      "reward": "Up to 3x a 50M hurry-up",
+      "steps": [
+        {
+          "shot": "g-ramp",
+          "action": "Collect the hurry-up early",
+          "detail": "It counts down to 15M, so shoot it while the number is still large."
+        },
+        {
+          "shot": "rose-plunger",
+          "action": "Plunge full strength",
+          "detail": "A hard plunge keeps the ball circling the bowl for far longer, which is how you reach 3x."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Watch the multiplier when it drops",
+          "detail": "Whatever is lit as the ball leaves the pit is what you are paid."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "duff-rocks",
+      "title": "Duff Rocks",
+      "category": "mode",
+      "summary": "Thirty seconds to land ten hits on the D-U-F-F targets in the captive ball pocket, for a flat hundred million. The pocket is a bouncy place — if the captive ball has been rattling around in there all game, this is the mode to pick.",
+      "difficulty": 2,
+      "reward": "100M, or 200M doubled",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Feed the pocket",
+          "detail": "The slingshot on one side and the bumper on the other keep the ball working the targets for free."
+        },
+        {
+          "shot": "duff-targets",
+          "action": "Get to ten hits",
+          "detail": "Thirty seconds. Doubling first raises the payout to two hundred million."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "gilby-rolls",
+      "title": "Gilby Rolls",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "The video mode. A three-lane road scrolls under you from an overhead view, and the flipper buttons steer Gilby's motorcycle. Pedestrians are 5M, passing a car is 1M, hitting one ends it. The sequence never changes, so it can be learned — including the three pedestrians bunched at the very end.",
+      "difficulty": 1,
+      "reward": "Around 65M played well, double that with the Double shot",
+      "steps": [
+        {
+          "shot": "guitar",
+          "action": "Start it from the saucer",
+          "detail": "Starting it from the plunger award means you cannot double the result."
+        },
+        {
+          "shot": "mini-loop",
+          "action": "Take the Double at the end",
+          "detail": "The loop lights when the mode finishes and doubles the whole total."
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "coma",
+      "title": "Coma",
+      "category": "multiball",
+      "summary": "Lite Coma does not start anything — it lights the Right Hole. Go back to the Right Hole and you get a two-ball multiball with a 10M jackpot that grows 250K per bumper hit. The Right Hole collects it, and hitting it again before the twenty-second timer expires adds another ball.",
+      "difficulty": 2,
+      "reward": "10M jackpot plus 250K per bumper hit",
+      "steps": [
+        {
+          "shot": "guitar",
+          "action": "Collect Lite Coma first",
+          "detail": "This is the one mode that can run on top of another — start a non-multiball mode, then start Coma inside it."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Grow the jackpot",
+          "detail": "Every bumper hit adds 250K before you collect."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Collect and add balls",
+          "detail": "It ends when the timer runs out and you are back down to one ball."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "dizzy-ball",
+      "title": "Dizzy Ball",
+      "category": "multiball",
+      "summary": "A two-ball multiball built on the ramps. Each ramp hit pays 10M plus a million for every drop target you have knocked down, and each hit raises the next ramp by another million, up to 50M. It ends the moment one ball drains.",
+      "difficulty": 2,
+      "reward": "10M per ramp climbing to 50M",
+      "steps": [
+        {
+          "shot": "left-drops",
+          "action": "Clear drops before you start",
+          "detail": "Every downed target adds a million to every ramp hit for the whole mode."
+        },
+        {
+          "shot": "r-ramp",
+          "action": "Backhand the R Ramp",
+          "detail": "It returns to the right inlane, which sets up the next backhand — the cheapest repeat shot on the machine."
+        },
+        {
+          "shot": "g-ramp",
+          "action": "Keep both balls alive",
+          "detail": "One drain ends it, so protect the second ball rather than chasing every ramp.",
+          "link": "none"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "axl-3-ball",
+      "title": "Axl 3 Ball",
+      "category": "multiball",
+      "summary": "Three balls, with the Center Scoop paying mini-jackpots of 10M plus a million per downed drop target, to a 30M cap. Two drains ends it, which gives you a lot more room than Dizzy Ball does.",
+      "difficulty": 2,
+      "reward": "10M-30M per scoop",
+      "steps": [
+        {
+          "shot": "right-drops",
+          "action": "Knock the drops down first",
+          "detail": "The scoop value is built entirely out of downed targets."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Feed the scoop repeatedly",
+          "detail": "It kicks out at the left flipper, so a return shot is straightforward to set up."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball",
+      "category": "multiball",
+      "summary": "Band members are collected at the Right Hole, 10M each. At five members you get a choice: shoot the Right Hole again for a six-ball with 50M jackpots, or shoot the G Ramp to the Rose Plunger and let the Snake Pit spins pick your base value.",
+      "difficulty": 3,
+      "reward": "35M-65M base jackpots from the Snake Pit (or a flat 50M if you start direct), 100M at the Right Hole, 250M Super",
+      "steps": [
+        {
+          "shot": "right-hole",
+          "action": "Add band members",
+          "detail": "10M each. The first two Multiballs let you keep members across balls; from the third onward all six must come on one ball."
+        },
+        {
+          "shot": "snake-pit",
+          "action": "Or take the Snake Pit gamble",
+          "detail": "The G Ramp feeds the Rose Plunger and the spins alternate the base jackpot between 35M and 65M. Whatever is lit when the ball drops out is what you play with, and four balls follow.",
+          "link": "none"
+        },
+        {
+          "shot": "g-ramp",
+          "action": "Collect both ramp jackpots",
+          "detail": "Each ramp pays once and unlights. Every switch hit adds 200K to the jackpots while they are lit."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Take the 100M",
+          "detail": "Both ramps lights the Right Hole for 100M, which adds a ball and relights both ramps. Do it twice."
+        },
+        {
+          "shot": "mini-loop",
+          "action": "Finish with the Super Jackpot",
+          "detail": "After the second 100M the Mini-Loop lights for a Super that starts at 250M and grows a million per bumper hit."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "multiball-restart",
+      "title": "Multiball Restart",
+      "category": "secret",
+      "summary": "Lose all but one ball without ever hitting a ramp and Multiball is not over — the G Ramp and the Right Hole will both restart it. The jackpots go back to their base value, but a restarted six-ball is still a six-ball.",
+      "difficulty": 2,
+      "reward": "Multiball again at base jackpot values",
+      "steps": [
+        {
+          "shot": "g-ramp",
+          "action": "Restart at the ramp",
+          "detail": "This only exists if you collected no ramp jackpot at all, so a bad start is worth more than a mediocre one."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Or restart at the hole",
+          "detail": "Remember that Multiball ends the instant the second-to-last ball reaches the outhole. There is no grace period at all."
+        }
+      ],
+      "fx": "guitar",
+      "ordered": false
+    },
+    {
+      "id": "riot",
+      "title": "Riot",
+      "category": "wizard",
+      "summary": "The wizard bonus, and a six-ball. There is nothing to aim at: hit switches. Forty switches gives you R for 40M, sixty gives I for 60M, eighty gives O for 80M and a hundred and twenty gives T for 100M. Then the Mini-Loop lights for a jackpot worth a billion.",
+      "difficulty": 3,
+      "reward": "40M-100M per letter, 1B Riot Jackpot",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Flail for switches",
+          "detail": "Each letter you reach auto-plunges another ball, up to six on the glass."
+        },
+        {
+          "shot": "r-ramp",
+          "action": "Take ramps when they present",
+          "detail": "Either ramp is worth 10M at any point during Riot.",
+          "link": "none"
+        },
+        {
+          "shot": "mini-loop",
+          "action": "Collect the billion",
+          "detail": "After you take it the whole ladder restarts with higher switch requirements and letter values 20M larger each pass, with no ceiling."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "snake-lanes",
+      "title": "S-N-A-K-E",
+      "category": "secret",
+      "summary": "During normal play, a full right orbit adds a letter to S-N-A-K-E and throws in one J-A-M lane as a bonus. Spell the word out and the G Ramp begins diverting into the Rose Plunger; launching from there picks one of four awards.",
+      "difficulty": 2,
+      "reward": "25M, 50M, 20x bonus, a band member or Super Kickback",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the whole orbit",
+          "detail": "The near switch alone is not enough for this one — the ball has to make it all the way around."
+        },
+        {
+          "shot": "g-ramp",
+          "action": "Load the Rose Plunger",
+          "detail": "The yellow globe above the ramp tells you it is diverting."
+        },
+        {
+          "shot": "rose-plunger",
+          "action": "Pick and launch",
+          "detail": "Four awards are displayed; launching collects one."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "axl-combo",
+      "title": "Axl Combo",
+      "category": "combo",
+      "summary": "During normal play, the full right orbit followed by the Center Scoop pays 5M plus a million for every unlit-scoop shot you have made that ball, to a 30M cap. On some machines you can hold the upper flipper up and let a fast orbit shot do the work for you.",
+      "difficulty": 3,
+      "reward": "5M to 30M",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Run the whole orbit",
+          "detail": "It has to come all the way around the left side."
+        },
+        {
+          "shot": "center-scoop",
+          "action": "Follow into the scoop",
+          "detail": "Every unlit scoop shot you make earlier in the ball adds a million to this."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "jam-bonus",
+      "title": "J-A-M Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Completing the J-A-M rollovers steps your bonus multiplier through 2x, 4x, 6x, 8x and 10x. Past 10x, every completion pays a flat 20M instead — and a 20x bonus award from Mystery makes J-A-M worth 20M per completion from then on.",
+      "difficulty": 1,
+      "reward": "Up to 10x bonus, then 20M per completion",
+      "steps": [
+        {
+          "shot": "jam-lanes",
+          "action": "Complete the three lanes",
+          "detail": "The autoplunger habitrail drops the ball right above them, so multiball feeds these for free."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Use the orbit to spot letters",
+          "detail": "A full right orbit spots a J-A-M lane as well as adding a SNAKE letter."
+        }
+      ],
+      "fx": "cash",
+      "ordered": false
+    },
+    {
+      "id": "kickback",
+      "title": "Keep The Kickback Lit",
+      "category": "strategy",
+      "summary": "Every ball begins with the kickback already lit; the Mini-Loop relights it, and so does clearing both drop banks. It is one of the more forgiving kickback lanes ever built — the outlane is gently curved with rubber on the divider, so nudging out of it is genuinely possible too.",
+      "difficulty": 1,
+      "reward": "A saved ball",
+      "steps": [
+        {
+          "shot": "mini-loop",
+          "action": "Relight it at the Mini-Loop",
+          "detail": "You are already shooting this for Mystery, so the relight is close to free."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Know where it sends you",
+          "detail": "The kickback fires up the middle to the bumpers, which is also where your mode lights step along."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "duff-jackpot",
+      "title": "The Duff Jackpot",
+      "category": "secret",
+      "summary": "Completing the D-U-F-F targets during normal play — not during the mode — pays a jackpot between 20M and 100M that carries between players and between games. When the captive ball strikes a target the display comes up, and every bumper hit while it is showing adds another million.",
+      "difficulty": 3,
+      "reward": "20M to 100M, carried between games",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Push the captive ball into the targets",
+          "detail": "The display that appears is your cue that the value is climbing."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Add a million per bumper hit",
+          "detail": "Only while that display is up."
+        },
+        {
+          "shot": "duff-targets",
+          "action": "Finish the bank",
+          "detail": "Whatever the value has reached is what you collect."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "extra-ball-plan",
+      "title": "The Guaranteed Extra Ball",
+      "category": "strategy",
+      "summary": "Extra Ball is one of the nine Guitar modes, and the mode lock makes it something you can plan rather than hope for. Count the bumper hits it takes to walk the lit mode round to EB, then freeze it with the trigger.",
+      "difficulty": 2,
+      "reward": "An extra ball, most games",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Count your way to EB",
+          "detail": "Matt Scoring is always first. The mode directly above Gilby Rolls is Extra Ball, so playing the video mode puts you right next to it."
+        },
+        {
+          "shot": "gun-plunger",
+          "action": "Lock it the moment it lands",
+          "detail": "If you lock EB but drain before collecting, choose Start Guitar Feature at the plunger next ball and take it then."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Use the bumper line from the left flipper",
+          "detail": "With the ball caught on the lower left flipper you have a clean shot at the centre bumper, which is a controlled way to step the mode.",
+          "link": "none"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "backhands",
+      "title": "Three Backhands",
+      "category": "strategy",
+      "summary": "Guns N' Roses rewards the backhand more than most machines of its era, and three shots take it well: the R Ramp, the Right Hole, and the Guitar saucer. The R Ramp returns to the right inlane, so one backhand sets up the next indefinitely.",
+      "difficulty": 2,
+      "reward": "Repeatable ramps and reliable mode starts",
+      "steps": [
+        {
+          "shot": "r-ramp",
+          "action": "Backhand the R Ramp",
+          "detail": "This is what makes Dizzy Ball and the ramp hurry-up worth so much."
+        },
+        {
+          "shot": "right-hole",
+          "action": "Backhand the Right Hole",
+          "detail": "Easier than the forehand, and a miss leaves the ball moving slowly and easy to recover."
+        },
+        {
+          "shot": "guitar",
+          "action": "Backhand the Guitar saucer",
+          "detail": "Timing is everything here: fire the flipper well before the ball arrives, the same jump you would use setting up a post pass. Sent that early it rides the right wall of the metal lane and gets funneled in, where a hard forehand only rattles straight back out."
+        }
+      ],
+      "fx": "guitar",
+      "ordered": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "gnr-ramps",
+      "title": "Guns N Roses",
+      "desc": "Light all ten ramp letters and start the 50M hurry-up.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "the-ramps"
+    },
+    {
+      "id": "gnr-rock",
+      "title": "R-O-C-K",
+      "desc": "Complete both drop banks twice and light the 100M hurry-up.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rock-hurryup"
+    },
+    {
+      "id": "gnr-mystery",
+      "title": "Mystery Value",
+      "desc": "Loop the Mini-Loop enough to light the Center Scoop, then collect.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mystery"
+    },
+    {
+      "id": "gnr-lock",
+      "title": "Locked In",
+      "desc": "Freeze the lit Guitar mode with the autoplunger trigger before starting it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-lock"
+    },
+    {
+      "id": "gnr-double",
+      "title": "Double Or Nothing",
+      "desc": "Start a mode at the Guitar and take the Double shot at the Mini-Loop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "double-shot"
+    },
+    {
+      "id": "gnr-duff",
+      "title": "Duff Rocks",
+      "desc": "Land ten D-U-F-F hits inside thirty seconds for the hundred million.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "duff-rocks"
+    },
+    {
+      "id": "gnr-snake",
+      "title": "Three Times Round",
+      "desc": "Reach 3x in the Snake Pit during Super Snake.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-snake"
+    },
+    {
+      "id": "gnr-multiball",
+      "title": "Six On Stage",
+      "desc": "Collect all six band members and start the six-ball Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "gnr-super",
+      "title": "Super Jackpot",
+      "desc": "Work through both 100M jackpots and take the Super at the Mini-Loop.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "gnr-eb",
+      "title": "Planned Extra Ball",
+      "desc": "Walk the lit mode round to Extra Ball with the bumpers and lock it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-plan"
+    },
+    {
+      "id": "gnr-riot",
+      "title": "Riot",
+      "desc": "Reach the wizard bonus and start the six-ball Riot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "riot"
+    },
+    {
+      "id": "gnr-billion",
+      "title": "One Billion",
+      "desc": "Spell RIOT and collect the Riot Jackpot at the Mini-Loop.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "riot"
+    }
+  ],
+  "drills": [
+    {
+      "id": "set-the-plunger-award",
+      "title": "Set The Award, Then Launch",
+      "text": "There is no aimed skill shot here — the shot is choosing. The lit award drifts right on its own, so move it back with the flippers and only pull the trigger once the one you want is showing.",
+      "reps": "every ball for a full game",
+      "focus": "skill-shot",
+      "goal": "plunger-awards",
+      "shots": [
+        "gun-plunger"
+      ]
+    },
+    {
+      "id": "r-ramp-backhand-loop",
+      "title": "R Ramp Backhand Loop",
+      "text": "The R Ramp backhands comfortably and always returns the ball to the right inlane, which sets up the next backhand. Loop it until you can string ten without a break, because this is what makes Dizzy Ball and the ramp hurry-up worth anything.",
+      "reps": "10 consecutive",
+      "focus": "accuracy",
+      "goal": "backhands",
+      "shots": [
+        "r-ramp",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "early-guitar-backhand",
+      "title": "Backhand The Guitar Early",
+      "text": "Fire the flipper well before the ball arrives — the same jump you would use setting up a post pass. Sent that early the ball rides the right wall of the metal lane and is funnelled in, where a hard forehand only rattles straight back out.",
+      "reps": "20 attempts",
+      "focus": "ball-control",
+      "goal": "backhands",
+      "shots": [
+        "guitar"
+      ]
+    },
+    {
+      "id": "alternate-the-ramps",
+      "title": "Alternate, Never Repeat",
+      "text": "G Ramp then R Ramp then back again, letting the opposite inlane light each one on the way for double value. Repeating the same ramp does not build the ladder at all, and one miss drops you back to 10M.",
+      "reps": "5 alternating runs",
+      "focus": "flow",
+      "goal": "the-ramps",
+      "shots": [
+        "g-ramp",
+        "r-ramp",
+        "left-inlane",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "full-strength-rose-plunge",
+      "title": "Plunge The Rose Hard",
+      "text": "A full-strength Rose Plunger keeps the ball circling the Snake Pit far longer, and the spins are what walk the multiplier up through 1x, 2x and 3x. Whatever is lit as the ball drops out of the bowl is what you get paid, so soft plunges cost you two thirds of the award.",
+      "reps": "10 plunges",
+      "focus": "ball-control",
+      "goal": "super-snake",
+      "shots": [
+        "g-ramp",
+        "rose-plunger",
+        "snake-pit"
+      ]
+    },
+    {
+      "id": "walk-the-mode-round",
+      "title": "Walk The Mode Round",
+      "text": "Read the mode lights, work out how many bumper hits away your target is, then feed the centre bumper from a ball cradled on the left flipper and count them. Pull the trigger the moment it lands — the red globe above the gun confirms the lock.",
+      "reps": "5 deliberate locks",
+      "focus": "accuracy",
+      "goal": "mode-lock",
+      "shots": [
+        "bumpers",
+        "gun-plunger",
+        "left-flipper"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "guitar",
+  "actionButton": {
+    "present": true,
+    "label": "Autoplunger Trigger",
+    "location": "the trigger on the silver pistol in the shooter position",
+    "how": "The pistol on the right launches your ball, but its trigger is also the single most useful control on the machine while you play. Bumper hits keep stepping the lit Guitar mode along; a pull of the trigger toggles that selection between locked and unlocked, and the red globe above the gun tells you which state you are in.",
+    "uses": [
+      {
+        "when": "The Guitar mode you want is lit",
+        "what": "Pull to lock it. Bumper hits stop moving the selection and the red globe lights to confirm."
+      },
+      {
+        "when": "You picked the wrong one",
+        "what": "Pull again — it toggles, so a second pull frees the bumpers to move it on."
+      },
+      {
+        "when": "Counting bumper hits toward Extra Ball",
+        "what": "Extra Ball is one of the nine Guitar modes. Walk it round to EB, then freeze it with the trigger."
+      },
+      {
+        "when": "Choosing your award before launch",
+        "what": "Flippers pick between Add Member, Start Guitar Feature, Super Pops and Mystery; the trigger launches and collects."
+      },
+      {
+        "when": "A mode or multiball is already running",
+        "what": "Nothing happens. The lock only matters between modes, and every new ball unlocks you anyway."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Put on a Guns N' Roses show: build the two ramp names, spell R-O-C-K on the drops, and choose which of the nine Guitar modes you play by walking the selection round with the bumpers and freezing it with the gun trigger. Gather the band for Multiball and push on to the Riot wizard round.",
+    "loop": [
+      "Alternate the G Ramp and R Ramp -- each one lights the other through an inlane for double -- to spell out GUNS N ROSES for a fifty-million hurry-up.",
+      "Complete the left and right drop banks to spot R-O-C-K, then collect its hundred-million hurry-up at the left orbit.",
+      "Let the bumpers walk the lit Guitar mode round to the one you want, pull the gun trigger to freeze it, and start it at the Guitar saucer.",
+      "Begin a mode at the Guitar and take the Mini-Loop within a couple of seconds to roughly double its value.",
+      "Collect band members at the Right Hole to build Multiball, and chase Riot beyond it."
+    ],
+    "lights": [
+      {
+        "id": "ramp-letters",
+        "name": "GUNS N ROSES Ramps",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "g-ramp"
+          },
+          {
+            "shot": "r-ramp"
+          },
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "The G Ramp fills GUNS N and the R Ramp fills ROSES, an inlane briefly lights the far ramp, and any lit ramp scores double.",
+        "flashing": null,
+        "control": null,
+        "then": "Trade the ramps back and forth without missing to climb a value ladder -- hitting the same one twice does not build it, and a single miss knocks it back down. Finish all ten letters for a fifty-million hurry-up you take at either ramp.",
+        "goals": [
+          "the-ramps"
+        ]
+      },
+      {
+        "id": "rock-drops",
+        "name": "R-O-C-K Drop Banks",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-drops"
+          },
+          {
+            "shot": "right-drops"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "The left drops spot R then O and the right drops spot C then K, so each bank must fall twice, and every letter lands for ten million.",
+        "flashing": null,
+        "control": null,
+        "then": "Light all four letters and a hundred-million hurry-up opens at the left orbit -- park the ball in the bumpers to freeze its countdown while you line up. A live R-O-C-K countdown blocks a new Guitar mode, so collect it.",
+        "goals": [
+          "rock-hurryup"
+        ]
+      },
+      {
+        "id": "guitar-modes",
+        "name": "Guitar Mode Select",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "bumpers"
+          },
+          {
+            "shot": "guitar"
+          }
+        ],
+        "lit": "One of nine Guitar modes waits lit at a time, and each bumper hit walks the lit selection to the next mode you have not yet played.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "pull the gun trigger to freeze the lit selection so bumper hits stop moving it, and pull again to free it -- a red globe over the gun lights to confirm the lock",
+          "when": "between modes; the lock does nothing while a mode or multiball runs"
+        },
+        "then": "Line up the mode you want -- Extra Ball is one of the nine, so it can be planned -- then start it at the Guitar saucer behind the G Ramp. An early backhand is the dependable way in, since the saucer spits some hard forehands back out.",
+        "goals": [
+          "mode-lock",
+          "extra-ball-plan"
+        ]
+      },
+      {
+        "id": "double-shot",
+        "name": "Mini-Loop Double",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "guitar"
+          },
+          {
+            "shot": "mini-loop"
+          }
+        ],
+        "lit": "Starting certain modes at the Guitar saucer lights the Mini-Loop for only a handful of seconds.",
+        "flashing": null,
+        "control": null,
+        "then": "Take that loop right away to roughly double the mode's values -- Duff Rocks leaps from a hundred to two hundred million, Super Snake's hurry-up doubles. A mode begun from the plunger award cannot be doubled, which is the real price of that shortcut.",
+        "goals": [
+          "double-shot"
+        ]
+      },
+      {
+        "id": "band-members",
+        "name": "Band Members and Multiball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-hole"
+          },
+          {
+            "shot": "snake-pit"
+          },
+          {
+            "shot": "g-ramp"
+          },
+          {
+            "shot": "mini-loop"
+          }
+        ],
+        "lit": "Band members are gathered at the Right Hole, and reaching five hands you a choice for the sixth.",
+        "flashing": null,
+        "control": null,
+        "then": "For the sixth, either return to the Right Hole for a six-ball whose jackpots open at fifty million, or feed the G Ramp into the Rose Plunger and let the bowl's spins choose your opening value. Bank both ramp jackpots, take the Right Hole twice at a hundred million each, then close it out on the Mini-Loop super.",
+        "goals": [
+          "multiball"
+        ]
+      },
+      {
+        "id": "mystery-scoop",
+        "name": "Center Scoop Mystery",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "mini-loop"
+          },
+          {
+            "shot": "center-scoop"
+          }
+        ],
+        "lit": "Enough Mini-Loop shots light the Center Scoop to collect a Mystery, a couple of loops the first time and one more on each after.",
+        "flashing": "A red globe over the scoop means Mystery is ready to collect.",
+        "control": null,
+        "then": "Cash it while the globe is lit for anything from twenty-five million up to a free Multiball. The Mini-Loop also relights your kickback, so the loop is near-free value on a shot you already want.",
+        "goals": [
+          "mystery",
+          "kickback"
+        ]
+      },
+      {
+        "id": "snake-lanes",
+        "name": "S-N-A-K-E Orbit",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "g-ramp"
+          },
+          {
+            "shot": "rose-plunger"
+          }
+        ],
+        "lit": "Send the whole right orbit around to add a letter to S-N-A-K-E and spot a J-A-M lane on the side; the near switch by itself will not register.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish the word and the G Ramp starts routing balls over to the Rose Plunger, where the launch alone picks from four awards: points, a bonus boost, a band member or a Super Kickback.",
+        "goals": [
+          "snake-lanes"
+        ]
+      },
+      {
+        "id": "jam-bonus",
+        "name": "J-A-M Bonus Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "jam-lanes"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "The three J-A-M rollovers feed the bumpers, and completing them steps the bonus multiplier upward toward a ceiling, past which each completion pays a flat twenty million.",
+        "flashing": null,
+        "control": null,
+        "then": "The gun's habitrail spills the ball in just over these, so a multiball feeds them for free, and a full right orbit spots a lane too. Draw the 20x bonus from Mystery and every later completion is worth that flat twenty million.",
+        "goals": [
+          "jam-bonus"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Set the plunger award before you launch, then trade the G and R ramps for the GUNS N ROSES hurry-up and clear both drop banks for R-O-C-K. Keep the kickback lit off the Mini-Loop, and start walking the bumpers toward the Guitar mode you actually want.",
+        "goals": [
+          "plunger-awards",
+          "the-ramps",
+          "rock-hurryup",
+          "mode-lock",
+          "kickback"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Freeze a mode with the gun trigger, start it at the Guitar, and double it at the Mini-Loop the moment the window opens. Build Multiball off band members at the Right Hole, work S-N-A-K-E for Rose Plunger awards, and climb the bonus multiplier on the J-A-M lanes.",
+        "goals": [
+          "double-shot",
+          "multiball",
+          "snake-lanes",
+          "jam-bonus",
+          "duff-rocks"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Reach Riot, the six-ball wizard bonus, where there is nothing to aim at but switches and enough of them spell R-I-O-T for climbing letter values. Then a Mini-Loop shot pays the Riot Jackpot, a full billion, before the whole ladder restarts higher with no ceiling.",
+        "goals": [
+          "riot",
+          "multiball"
+        ]
+      }
+    ]
+  }
+}

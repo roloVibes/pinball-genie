@@ -1,0 +1,1333 @@
+{
+  "machine": "James Bond 007 (Stern Pinball, 2022)",
+  "defaultFx": "gun",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter lane / Plunge",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Auto + manual plunge; used for all 8 skill shots and the MXV super skill shot."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left orbit",
+      "type": "orbit",
+      "x": 0.09,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Far-left lane wrapping over the top to the bumpers; used in DB5 Q Branch mode (alternate with DB5 eject)."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left ramp",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Steep left-center ramp (Commander Bond skill shot), gated by the spinner; starts Jetpack Multiball and its double jackpot. Shot from the lower-left flipper; feeds the right flipper.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "type": "spinner",
+      "x": 0.18,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Diamonds Are Forever optical spinner at the mouth of the left ramp; 200 spins = Tatiana... actually Tiffany Case Bond Woman; boosts DB5-mode jackpots +3k/spin."
+    },
+    {
+      "id": "left-eject",
+      "name": "Left eject",
+      "type": "scoop",
+      "x": 0.094,
+      "y": 0.265,
+      "trim": "all",
+      "notes": "The Swamp, tucked below the upper-left flipper. Licensed To Kill skill shot; qualifies Jetpack Multiball; 4 ejects = Domino Derval; High Stakes mystery award."
+    },
+    {
+      "id": "rocket-lane",
+      "name": "Rocket lane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "Left of the Osato drops running up to Bird One. Shoot to spot SPECTRE letters; 20 shots qualifies Little Nellie; rocket hits count toward Kissy Suzuki."
+    },
+    {
+      "id": "osato-drops",
+      "name": "Osato Chemicals drop targets",
+      "type": "drop-target",
+      "x": 0.36,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "3-drop bank in front of the Bird One rocket; complete to light Bird One lock; 40k/drop boosts Little Nellie jackpots."
+    },
+    {
+      "id": "spectre-targets",
+      "name": "SPECTRE standup targets",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Seven standups around the rocket; light SPECTRE weapons and add +25k per hit to Bird One base jackpots."
+    },
+    {
+      "id": "bird-one-rocket",
+      "name": "Bird One rocket",
+      "type": "mech",
+      "x": 0.254,
+      "y": 0.849,
+      "trim": "all",
+      "notes": "Back-left super-jackpot target for Bird One Multiball (cap ~300M). Premium/LE = motorized moving rocket with physical Swipe-A-Ball lock; Pro = static molded rocket with virtual lock at the center loop."
+    },
+    {
+      "id": "center-loop",
+      "name": "Center loop",
+      "type": "loop",
+      "x": 0.44,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Center lane between rocket and Dragon Tank; primary Bird One lock shot and Jetpack hurry-up (center-lane) shot; reliably feeds the upper flipper for combos.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "dragon-tank",
+      "name": "Dr. No Dragon Tank",
+      "type": "mech",
+      "x": 0.51,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "Custom molded target with a standup on the hood; 5 hits light an outlane ball save; Premium/LE Jetpack super jackpot is scored here. Deadly reject/center-drain hazard when no multiball is running."
+    },
+    {
+      "id": "jetpack",
+      "name": "Jetpack",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Premium/LE = magnetic arm that physically carries the ball over the Dragon Tank for the super jackpot; Pro = non-moving diverter with a roving super-jackpot shot instead."
+    },
+    {
+      "id": "mi6-lanes",
+      "name": "MI6 top lanes",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Top rollover lanes above the bumpers; Classified/MI6 skill shots; complete (flipper-changeable) to advance the end-of-ball bonus multiplier."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop bumpers",
+      "type": "bumpers",
+      "x": 0.55,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "Two Dr. No pop bumpers, upper-center; 25 hits = Honey Ryder, 25 hits qualifies Radioactive Reconnaissance; Top Secret skill shot via the bumper lane."
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper loop",
+      "type": "loop",
+      "x": 0.63,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Top/upper-right, shot from the upper-left flipper; collect flashing Bond Women here to make them solid; part of the MXV super skill shot; the combo 'Side loop'.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side ramp",
+      "type": "ramp",
+      "x": 0.57,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Henchmen ramp; upper entrance reachable only from the upper flipper. Starts henchmen modes (Double O skill shot); scores 2x in every SPECTRE countdown; super-jackpot shot in most multiballs/wizards. Bricking it feeds the Martini shot.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "goldfinger-target",
+      "name": "Goldfinger target",
+      "type": "standup",
+      "x": 0.65,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Between side ramp and right orbit; when flashing, rotates the lit mode set and starts SPECTRE weapon countdowns; also changes the currently-lit villain/henchman mode."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right orbit",
+      "type": "orbit",
+      "x": 0.74,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Between the two right-ramp entrances, wraps to the top; first shot of the MXV super skill shot; 3 shots = Tatiana Romanova; qualifies Attaché Case (6 shots).",
+      "feeds": {
+        "shot": "pop-bumpers"
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right ramp",
+      "type": "ramp",
+      "x": 0.83,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Villain ramp; main lower entrance from the lower-right flipper; primary villain-mode starter (Dr. No/Goldfinger/Thunderball); feeds the left flipper for ramp-to-ramp combos.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "db5-eject",
+      "name": "DB5 eject",
+      "type": "scoop",
+      "x": 0.88,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Aston Martin DB5 ejector-seat scoop; starts Q-Branch gadget modes (Eyes Only skill shot); 4 ejects = Pussy Galore; 3 ejects qualifies the DB5 Q Branch mode."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left inlane / outlane",
+      "type": "lane",
+      "x": 0.14,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Left drain lanes flanking the lower-left flipper; BOND return-lane completions feed the bonus multiplier and High Stakes; Dragon Tank hits light an alternating outlane ball save."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right inlane / outlane",
+      "type": "lane",
+      "x": 0.86,
+      "y": 0.12,
+      "trim": "all",
+      "notes": "Right drain lanes flanking the lower-right flipper; part of the alternating outlane ball save lit by Dragon Tank hits."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper-left flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Mid-left flipper pointing up-and-right; the only way to reach the side ramp, upper loop, right orbit and bumper lane. Source of the MXV super skill shot and Double O / Top Secret shots."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-licensed-to-kill",
+      "title": "Licensed To Kill Skill Shot",
+      "category": "skillshot",
+      "summary": "The beginner-optimal opener: plunge straight into the left eject to bank a smart missile and light Jetpack Multiball in one shot.",
+      "difficulty": 1,
+      "reward": "2.5M + 500k + 1 smart missile; immediately lights Jetpack Multiball",
+      "steps": [
+        {
+          "shot": "left-eject",
+          "action": "Plunge straight into the left eject",
+          "detail": "No flipper held — send the ball directly toward it off the plunge. Does double duty — pays the skill shot AND lights the left ramp for Jetpack Multiball"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-mxv-super",
+      "title": "MXV Super Skill Shot",
+      "category": "skillshot",
+      "summary": "The three-shot super skill shot flowing off the upper flipper for a double smart-missile payout.",
+      "difficulty": 3,
+      "reward": "2 smart missiles (once per game per unique shot type)",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Full-strength plunge into the right orbit",
+          "detail": "A full plunge feeds the right orbit as the first link in the chain.",
+          "plunge": "full"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Continue into the upper loop from the upper flipper"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Finish on the side ramp",
+          "detail": "Completes MXV for 2 smart missiles"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-dr-no",
+      "title": "Dr. No Combo",
+      "category": "combo",
+      "summary": "The easiest named combo and the reliable chain-starter — both ramps feed the opposite flipper.",
+      "difficulty": 1,
+      "reward": "2M + 125k unique-combo bonus (once/ball) + base combo points",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp within the quick-succession window",
+          "detail": "The left ramp feeds the right flipper cleanly"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-you-only-live-twice",
+      "title": "You Only Live Twice Combo",
+      "category": "combo",
+      "summary": "A three-shot ramp-and-center combo that also feeds the Jetpack hurry-up.",
+      "difficulty": 2,
+      "reward": "2M + 125k unique-combo bonus (once/ball)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp"
+        },
+        {
+          "shot": "center-loop",
+          "action": "Finish on the center lane"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "combo-goldfinger",
+      "title": "Goldfinger Combo",
+      "category": "combo",
+      "summary": "A three-shot combo running left ramp to the upper-flipper side ramp.",
+      "difficulty": 2,
+      "reward": "2M + 125k unique-combo bonus (once/ball)",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Finish on the side ramp from the upper flipper"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-fiona-volpe",
+      "title": "Fiona Volpe Combo",
+      "category": "combo",
+      "summary": "One of the two five-shot combos — max base award plus the unique bonus, farmed by tournament players.",
+      "difficulty": 3,
+      "reward": "Largest base award (100k + 25k×5 = 225k) + 2M+ unique bonus",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Shoot the upper loop (side loop)"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Finish on the side ramp"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-q-branch",
+      "title": "Q Branch Combo",
+      "category": "combo",
+      "summary": "The other five-shot money combo, threading center lane through the upper loop and both ramps.",
+      "difficulty": 3,
+      "reward": "Largest base award (225k) + 2M+ unique bonus",
+      "steps": [
+        {
+          "shot": "center-loop",
+          "action": "Shoot the center lane"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Shoot the upper loop (side loop)"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the side ramp"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish on the right ramp"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "combo-martini",
+      "title": "The Martini Shot",
+      "category": "combo",
+      "summary": "A brick that pays — deliberately miss the side ramp so the ball falls back down the right ramp for a free smart missile.",
+      "difficulty": 2,
+      "reward": "1 smart missile + 1M + 1M per martini collected",
+      "steps": [
+        {
+          "shot": "side-ramp",
+          "action": "Soft-plunge the side ramp so the ball fails to make it",
+          "detail": "An intentionally weak side-ramp shot",
+          "feeds": {
+            "shot": "right-ramp"
+          }
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Let the ball fall back down and register the right ramp",
+          "detail": "The brick rolls back to trip the right ramp"
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "mb-jetpack",
+      "title": "Jetpack Multiball",
+      "category": "multiball",
+      "summary": "The fastest guaranteed points on the machine — two shots to arm and start, ideal to stack a villain mode inside.",
+      "difficulty": 1,
+      "reward": "Hurry-up ~3M banked at center lane; double jackpot then super (10M +5M each) + add-a-ball on first super",
+      "steps": [
+        {
+          "shot": "left-eject",
+          "action": "Shoot the left eject (the Swamp) to light the left ramp lock"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the lit left ramp to start the 2-ball multiball"
+        },
+        {
+          "shot": "center-loop",
+          "action": "Shoot the center lane FAST to lock the hurry-up jackpot value",
+          "detail": "The value starts around 3M and counts down, so the sooner you lock it in the bigger every jackpot in the multiball is."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "After 5 jackpots at flashing shots, shoot the lit left ramp for the double jackpot, then the super + add-a-ball"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mb-bird-one",
+      "title": "Bird One Multiball",
+      "category": "multiball",
+      "summary": "The big-money multiball with the highest single numbers on the game — pre-load SPECTRE, break the drops, lock three, then rip the rocket super.",
+      "difficulty": 2,
+      "reward": "Base 1M + 25k/SPECTRE target; single→double→triple jackpots; super jackpot caps ~300M",
+      "steps": [
+        {
+          "shot": "spectre-targets",
+          "action": "Hit the SPECTRE standups first to raise the base jackpot",
+          "detail": "+25k per SPECTRE target hit before the multiball"
+        },
+        {
+          "shot": "osato-drops",
+          "action": "Knock down the Osato drop targets to light the lock"
+        },
+        {
+          "shot": "center-loop",
+          "action": "Shoot the center loop / rocket to lock a ball; repeat for 3 locks to start",
+          "detail": "Pro = virtual lock; Premium/LE = physical habitrail lock"
+        },
+        {
+          "shot": "bird-one-rocket",
+          "action": "Collect lit green jackpots single→double→triple, then hit the rocket for the super jackpot"
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "mb-power-pack",
+      "title": "Power Pack Multiball (Q Branch)",
+      "category": "multiball",
+      "summary": "A very high-scoring Q Branch 2-ball multiball that competitive players target — qualify with left ejects, then convert the mode.",
+      "difficulty": 2,
+      "reward": "Jackpot 3M + white-arrow raises; left eject triple then super",
+      "steps": [
+        {
+          "shot": "left-eject",
+          "action": "Make 3 left ejects (carries across balls) to qualify the Power Pack Q Branch mode"
+        },
+        {
+          "shot": "left-eject",
+          "action": "During the 70s mode shoot the left eject 6 times",
+          "detail": "White-arrow shots raise the next jackpots +1M +250k/white"
+        },
+        {
+          "shot": "upper-left-flipper",
+          "action": "In the resulting 2-ball multiball, make the upper-flipper shots to light the triples",
+          "detail": "All shots score jackpots; left eject scores the triple"
+        },
+        {
+          "shot": "left-eject",
+          "action": "Shoot the left eject for the super jackpot"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mb-db5",
+      "title": "DB5 Multiball (Q Branch)",
+      "category": "multiball",
+      "summary": "A spinner-boosted Q Branch 2-ball multiball — qualify with DB5 ejects, rip the spinner to pump the jackpot.",
+      "difficulty": 2,
+      "reward": "Jackpot 3M + spinner (+3k/spin); DB5 eject scores the double then the super",
+      "steps": [
+        {
+          "shot": "db5-eject",
+          "action": "Make 3 DB5 ejects (carries across balls) to qualify the DB5 Q Branch mode"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Alternate left orbit and DB5 eject to reveal 6 amenities; rip the spinner to raise value"
+        },
+        {
+          "shot": "db5-eject",
+          "action": "Complete to convert to a 2-ball multiball; DB5 scores the double"
+        },
+        {
+          "shot": "db5-eject",
+          "action": "Once the two upper-flipper shots have both delivered their triple jackpots, shoot the DB5 eject for the super jackpot"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mode-trouble-in-jamaica",
+      "title": "Trouble in Jamaica (Dr. No Villain Mode)",
+      "category": "mode",
+      "summary": "The Dr. No villain mode — start off the right ramp and hammer the Dragon Tank while the bumpers build its value.",
+      "difficulty": 2,
+      "reward": "2.5M + 250k/shot; completion = smart missile + progress toward the Chaos at Crab Key mini-wizard",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to start a villain mode",
+          "detail": "Use the bumpers or Goldfinger target to select Dr. No (yellow)"
+        },
+        {
+          "shot": "dragon-tank",
+          "action": "Make 10 shots to the Dragon Tank within 75s",
+          "detail": "Bumpers build the Dragon Tank value (~20k/hit), accumulating"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "mode-incredible-laser-ray",
+      "title": "The Incredible Laser Ray (Goldfinger Villain Mode)",
+      "category": "mode",
+      "summary": "The Goldfinger villain mode — rotate the lit shot set with the Goldfinger target and finish at the DB5.",
+      "difficulty": 2,
+      "reward": "+250k per shot; completion = smart missile",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to start; select Goldfinger (amber) via bumpers/Goldfinger target"
+        },
+        {
+          "shot": "goldfinger-target",
+          "action": "Hit the flashing Goldfinger target to rotate the 3 lit shots",
+          "detail": "Only 3 shots are lit at a time out of the 7 needed"
+        },
+        {
+          "shot": "db5-eject",
+          "action": "Complete 7 shots to light and then shoot the DB5 eject to finish"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "mode-sinister-summit",
+      "title": "Sinister Summit (Professor Dent Henchman Mode)",
+      "category": "mode",
+      "summary": "The Professor Dent henchman mode with a tight 40s timer — lock the roving lit shot with the Dragon Tank and shuffle it with the rocket.",
+      "difficulty": 3,
+      "reward": "2.5M + 250k/shot; completion = smart missile",
+      "steps": [
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the side ramp from the upper flipper to start a henchman mode",
+          "detail": "Select Professor Dent (yellow) via bumpers/Goldfinger target"
+        },
+        {
+          "shot": "dragon-tank",
+          "action": "Hit the Dragon Tank to lock the roving lit shot's position"
+        },
+        {
+          "shot": "bird-one-rocket",
+          "action": "Hit the rocket to move locked positions; complete 10 yellow shots in 40s"
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "mode-outer-space-hijack",
+      "title": "Outer Space Hijack (SPECTRE Weapon)",
+      "category": "mode",
+      "summary": "The You Only Live Twice SPECTRE weapon — spell SPECTRE at the rocket lane, start at the Goldfinger target, then rocket ×6.",
+      "difficulty": 2,
+      "reward": "Qualifies the add-a-ball at the action button; progress toward Duel on the Disco Volante mini-wizard",
+      "steps": [
+        {
+          "shot": "rocket-lane",
+          "action": "Shoot the rocket lane to spot SPECTRE letters (one per shot)"
+        },
+        {
+          "shot": "goldfinger-target",
+          "action": "Hit the flashing Goldfinger target to start the weapon countdown"
+        },
+        {
+          "shot": "bird-one-rocket",
+          "action": "Complete by shooting the rocket ×6",
+          "detail": "The first three hits have to come from the rocket lane or the SPECTRE targets; the last three can also come off the drop targets in front of the rocket."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "mult-007-scoring",
+      "title": "007 Scoring (Bond Women Playfield Multiplier)",
+      "category": "multiplier",
+      "summary": "The signature scoring engine — qualify Bond Women by feature progress, collect them at the upper loop, then run a timed 2x–7x playfield multiplier.",
+      "difficulty": 3,
+      "reward": "Timed playfield multiplier up to 7x/70s; 7x grants a 30s ball save",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Qualify Bond Women via feature progress",
+          "detail": "25 bumper hits = Honey Ryder; also 4 DB5 ejects, 4 left ejects, 10 rocket hits, 200 spinner spins",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Make 3 right-orbit shots to qualify Tatiana Romanova",
+          "detail": "Each qualifier lights a flashing insert at the upper loop",
+          "link": "none"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Collect each flashing Woman at the upper loop, then press the pink action button with 2+ solid",
+          "detail": "2 Women = 2x/20s ... 7 = 7x/70s; draining while the button flashes loses the multiplier and all collected Women"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-bonus-x",
+      "title": "Bonus Multiplier (MI6 Top Lanes)",
+      "category": "multiplier",
+      "summary": "Advance the end-of-ball bonus multiplier by completing the MI6 top lanes, to a maximum of 5x. The BOND return lanes are a separate system — every second completion lights the High Stakes mystery award at the left eject.",
+      "difficulty": 1,
+      "reward": "End-of-ball bonus multiplier 1x → 5x (max), multiplying the entire bonus",
+      "steps": [
+        {
+          "shot": "mi6-lanes",
+          "action": "Complete the MI6 top lanes, changing lit lanes with the flippers",
+          "detail": "BOND return-lane completions count double toward it"
+        },
+        {
+          "shot": "mi6-lanes",
+          "action": "Repeat completions to advance 1x → 2x → 3x → 4x → 5x"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wiz-bond-james-bond",
+      "title": "Bond… James Bond (Mini-Wizard Multiball)",
+      "category": "wizard",
+      "summary": "The headline mini-wizard — qualify by starting a villain mode, a henchman mode, Bird One and Jetpack, then run one giant structured lap of the whole playfield.",
+      "difficulty": 3,
+      "reward": "Super jackpot = sum of all jackpots + extra ball, capped 100M (unmultiplied — but 1B+ possible under 7x)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Qualify by starting a villain mode (right ramp), a henchman mode, Bird One and Jetpack at any time"
+        },
+        {
+          "shot": "left-eject",
+          "action": "When the current mode/MB ends, the right ramp + left eject light — hit them to start the 2-ball multiball"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot all 10 lit shots once each, then shoot the lit side ramp for the super jackpot",
+          "detail": "Upper loop scores double and can credit a lit shot"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wiz-ohmss",
+      "title": "On Her Majesty's Secret Service (Final Wizard)",
+      "category": "wizard",
+      "summary": "The final wizard — qualify by playing all four category mini-wizards, then a flip-count-based run of six film stages into MI6 Multiball.",
+      "difficulty": 3,
+      "reward": "MI6 super jackpot = sum of all 6 stage totals; game ends after MI6 Multiball",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Qualify by playing all 4 category mini-wizards (Chaos, Ahoy, Goldfinger's Jackpot, Duel)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start the final wizard at the right ramp for 50 flips, or the side ramp to start with 100"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Play 6 flip-budget film stages then MI6 Multiball; the side ramp scores the super jackpot to end the game"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-jetpack-anchor",
+      "title": "Opener: Jetpack Anchor",
+      "category": "strategy",
+      "summary": "The recommended concrete opener — a skill shot that makes progress, arm Jetpack, start a mode off the ramp, then stack the mode inside the multiball.",
+      "difficulty": 1,
+      "reward": "Fastest guaranteed points + a stacked mode completion (smart missile)",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge for Licensed To Kill (straight into the left eject)",
+          "detail": "Banks 2.5M + a smart missile and lights Jetpack in one shot"
+        },
+        {
+          "shot": "left-eject",
+          "action": "If not already made off the plunge, shoot the left eject to light the left ramp"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit the right ramp to kick off a villain mode",
+          "detail": "Ramps are the safest, most repeatable shots"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to start Jetpack Multiball with the villain mode stacked inside"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "strat-henchmen-start",
+      "title": "Opener: Henchmen Start (aggressive)",
+      "category": "strategy",
+      "summary": "An aggressive opener that starts a henchman mode straight off the skill shot, then arms and starts Jetpack around it.",
+      "difficulty": 2,
+      "reward": "Instant henchman mode + smart missile, stacked into Jetpack Multiball",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Hold the left flipper and full-plunge",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the side ramp for the Double O skill shot",
+          "detail": "Instantly starts your first henchman mode + 2.5M + smart missile",
+          "plunge": "full"
+        },
+        {
+          "shot": "left-eject",
+          "action": "Shoot the left eject to light Jetpack"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp to start Jetpack, stacking the henchman mode"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "strat-build-to-7x",
+      "title": "Strategy: Build to 7x, then Multiball",
+      "category": "strategy",
+      "summary": "The high-score amplifier — qualify all six Bond Women via separate progressions, cash them at the upper loop, then run 7x over your biggest jackpots.",
+      "difficulty": 3,
+      "reward": "Everything scores up to 7x; billion-plus totals possible in Bond James Bond",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed bumpers, spinner and orbits between shots to qualify Bond Women"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Collect the Women at the upper loop as they flash; cradle up before activating",
+          "detail": "Do not leave collected Women un-cashed through a risky ball"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start Jetpack (or Bird One), then press the pink button to run 7x over your biggest jackpots"
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "wiz-four-categories",
+      "title": "Path to All Four Mini-Wizards",
+      "category": "wizard",
+      "summary": "The long game — each of the four feature categories has its own mini-wizard, and you need all four played before the final wizard unlocks. This is the shot map for feeding all four at once.",
+      "difficulty": 3,
+      "reward": "Unlocks the final wizard mode; each category mini-wizard scores its own jackpot set",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start all six villain modes off the right ramp to reach the villain-category mini-wizard",
+          "detail": "Rotate which villain is lit with the bumpers or the Goldfinger target so you spread progress",
+          "link": "none"
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Start henchmen modes from the upper flipper to reach the henchmen-category mini-wizard",
+          "detail": "The side ramp is only reachable from the upper-left flipper, so plan orbit and loop feeds",
+          "link": "none"
+        },
+        {
+          "shot": "rocket-lane",
+          "action": "Spot letters at the rocket lane and light weapon countdowns to reach the weapon-category mini-wizard",
+          "detail": "Each completed countdown is one step toward that category",
+          "link": "none"
+        },
+        {
+          "shot": "db5-eject",
+          "action": "Feed the DB5 eject and the left eject to run gadget modes toward the gadget-category mini-wizard",
+          "detail": "Eject counts carry across balls, so keep chipping at them all game",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "With all four categories played, start the final wizard at the right ramp"
+        }
+      ],
+      "fx": "crown"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "clean-opening-plunge",
+      "title": "Clean Opening Plunge",
+      "desc": "Cash the beginner-optimal skill shot by plunging straight into the left eject.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-licensed-to-kill"
+    },
+    {
+      "id": "three-link-plunge",
+      "title": "Three-Link Plunge",
+      "desc": "Complete the three-shot super skill shot chain off the plunge for the double missile payout.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-mxv-super"
+    },
+    {
+      "id": "jetpack-airborne",
+      "title": "Jetpack Airborne",
+      "desc": "Arm and start the Jetpack two-ball multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-jetpack"
+    },
+    {
+      "id": "jetpack-super-collected",
+      "title": "Jetpack Super Collected",
+      "desc": "Collect the Jetpack super jackpot and its add-a-ball during Jetpack Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-jetpack"
+    },
+    {
+      "id": "three-balls-locked",
+      "title": "Three Balls Locked",
+      "desc": "Break the Osato drop bank, lock three balls and start Bird One Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-bird-one"
+    },
+    {
+      "id": "rocket-super-jackpot",
+      "title": "Rocket Super Jackpot",
+      "desc": "Work Bird One jackpots up to triple and then collect the super jackpot at the rocket.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-bird-one"
+    },
+    {
+      "id": "power-pack-running",
+      "title": "Power Pack Running",
+      "desc": "Qualify the Power Pack gadget mode with left ejects and convert it into its multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-power-pack"
+    },
+    {
+      "id": "db5-on-the-road",
+      "title": "DB5 On The Road",
+      "desc": "Qualify the DB5 gadget mode with three ejector-seat shots and turn it into its multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-db5"
+    },
+    {
+      "id": "villain-mode-cleared",
+      "title": "Villain Mode Cleared",
+      "desc": "Start a villain mode off the right ramp and finish all of its required shots before the timer expires.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-trouble-in-jamaica"
+    },
+    {
+      "id": "henchman-mode-cleared",
+      "title": "Henchman Mode Cleared",
+      "desc": "Start a henchman mode from the upper flipper and complete it inside its short timer.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-sinister-summit"
+    },
+    {
+      "id": "weapon-countdown-cleared",
+      "title": "Weapon Countdown Cleared",
+      "desc": "Spell out the letters, launch a weapon countdown at the Goldfinger target and complete it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-outer-space-hijack"
+    },
+    {
+      "id": "five-shot-chain",
+      "title": "Five-Shot Chain",
+      "desc": "Link five consecutive named combo shots without breaking the combo window.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-fiona-volpe"
+    },
+    {
+      "id": "martini-poured",
+      "title": "Martini Poured",
+      "desc": "Brick the side ramp on purpose so the ball rolls back down the right ramp and pays a smart missile.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-martini"
+    },
+    {
+      "id": "scoring-maxed",
+      "title": "Scoring Maxed",
+      "desc": "Collect all six Bond Women and run the playfield multiplier at its top level.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mult-007-scoring"
+    },
+    {
+      "id": "bonus-multiplier-maxed",
+      "title": "Bonus Multiplier Maxed",
+      "desc": "Advance the end-of-ball bonus multiplier to its maximum with top-lane and return-lane completions.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-bonus-x"
+    },
+    {
+      "id": "four-category-wizards",
+      "title": "Four Category Wizards",
+      "desc": "Reach the mini-wizard for all four feature categories in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wiz-four-categories"
+    },
+    {
+      "id": "name-is-bond-super",
+      "title": "Headline Wizard Cleared",
+      "desc": "Qualify and start the headline mini-wizard multiball and collect its super jackpot with the extra ball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-bond-james-bond"
+    },
+    {
+      "id": "final-wizard-finished",
+      "title": "Final Wizard Finished",
+      "desc": "Reach the final wizard, survive all six film stages and score the closing super jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-ohmss"
+    }
+  ],
+  "drills": [
+    {
+      "id": "licensed-to-kill-plunge",
+      "title": "Plunge Into the Swamp",
+      "text": "Send the ball straight into the left eject off the plunge with no flipper held. It pays the skill shot and lights the left ramp for the multiball in the same motion, which makes it the highest-value opener you can make without touching a flipper.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-licensed-to-kill",
+      "shots": [
+        "shooter-lane",
+        "left-eject"
+      ]
+    },
+    {
+      "id": "ramp-crossfeed",
+      "title": "Ramp Crossfeed",
+      "text": "Shoot the left ramp, take the return on the opposite flipper, and put it straight up the right ramp. Both ramps feed the other flipper, so the pair is the reliable chain-starter on this machine and the one to have automatic.",
+      "reps": "15 pairs",
+      "focus": "flow",
+      "goal": "combo-dr-no",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "upper-flipper-map",
+      "title": "Upper Flipper Map",
+      "text": "Feed the upper flipper off the center loop, cradle, and take one of its shots per trip — the side ramp, the upper loop, the right orbit. The side ramp cannot be reached any other way, so time spent learning this flipper is time spent unlocking half the mode structure.",
+      "reps": "5 trips per shot",
+      "focus": "ball-control",
+      "shots": [
+        "center-loop",
+        "upper-left-flipper",
+        "side-ramp",
+        "upper-loop",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "dragon-tank-discipline",
+      "title": "Tank Discipline",
+      "text": "Take the Dragon Tank only when a mode demands it or a multiball is covering you, and count the five hits that light the outlane save while you are there. Cold attempts at it and the center loop beside it are the main center-drain on the machine.",
+      "reps": "5 hits per protected window",
+      "focus": "accuracy",
+      "goal": "mode-trouble-in-jamaica",
+      "shots": [
+        "dragon-tank",
+        "left-outlane",
+        "right-outlane",
+        "center-loop"
+      ]
+    },
+    {
+      "id": "martini-brick",
+      "title": "The Deliberate Brick",
+      "text": "Shoot the side ramp softly on purpose so it fails to make it and rolls back down to register the right ramp. Dialling in a shot weak enough to fall back but strong enough to reach the ramp is a real power-control exercise, and it pays.",
+      "reps": "12 attempts",
+      "focus": "ball-control",
+      "goal": "combo-martini",
+      "shots": [
+        "side-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "bond-women-collect",
+      "title": "Collect Up Top",
+      "text": "Qualify a Bond Woman off bumper hits or right-orbit shots, then collect the flashing insert at the upper loop, and cradle before you spend anything. Draining with them collected and uncashed loses the lot, so the discipline is banking them rather than gathering them.",
+      "reps": "collect 3 in one ball",
+      "focus": "accuracy",
+      "goal": "mult-007-scoring",
+      "shots": [
+        "pop-bumpers",
+        "right-orbit",
+        "upper-loop"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "One button with several jobs, and the flippers decide which one is loaded. Its color is the tell: pink runs 007 Scoring, blue fires a smart missile, green swipes a ball out of the Bird One rail on Premium and LE. Look at the color before you press, because the wrong award at the wrong moment is a real loss here.",
+    "uses": [
+      {
+        "when": "Two or more Bond Women collected",
+        "what": "Press pink for 007 Scoring: +1x per Woman up to 7x, running 20 seconds at 2x out to 70 seconds at 7x."
+      },
+      {
+        "when": "Jetpack or Bird One multiball running",
+        "what": "Start 007 Scoring there so the playfield multiplier lands on your biggest jackpots."
+      },
+      {
+        "when": "Smart missile banked, button blue",
+        "what": "A tap collects a lit shot and takes the hardest one available; up to four missiles stack."
+      },
+      {
+        "when": "Multiball after Outer Space Hijack",
+        "what": "A long press cashes the add-a-ball that mode qualified."
+      },
+      {
+        "when": "Ball sitting in the Bird One rail (Prem/LE)",
+        "what": "Switch to green and press to swipe it back into play, once per multiball."
+      },
+      {
+        "when": "Button showing the wrong award",
+        "what": "Tap a flipper to rotate between missile, swipe-a-ball, and 007 Scoring before you commit."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Run the Bond films across four feature categories -- villains, henchmen, SPECTRE weapons, and Q-Branch gadgets -- while collecting Bond Women for a playfield multiplier. Play a mini-wizard in each category to unlock the final On Her Majesty's Secret Service wizard.",
+    "loop": [
+      "Plunge into the left eject for the Licensed To Kill skill shot -- it banks a smart missile and lights Jetpack Multiball in one shot.",
+      "Kick off a villain mode from the right ramp or a henchman mode from the upper-flipper side ramp, then fold it into Jetpack Multiball.",
+      "Qualify Bond Women through bumper, spinner, orbit, and eject progress, make them solid at the upper loop, then hit the pink lockbar button to run a timed multiplier over your biggest jackpots.",
+      "Pre-load the SPECTRE targets, break the Osato drops, and lock three at the rocket for Bird One Multiball and its huge super jackpot.",
+      "Play a mini-wizard in each of the four categories to arm the final wizard."
+    ],
+    "lights": [
+      {
+        "id": "mi6-lanes",
+        "name": "MI6 Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "mi6-lanes"
+          }
+        ],
+        "lit": "A lit MI6 top lane is one you still need, and completing the set is what steps your end-of-ball bonus multiplier -- these rollovers also award the Classified and MI6 skill shots off the plunge.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of either flipper shifts which of the MI6 top-lane rollovers are lit, so you can slide an uncompleted lane under the ball instead of steering it through the bumpers",
+          "when": "as the ball rolls through the top lanes above the bumpers"
+        },
+        "then": "Shift the lit lanes onto the ball's path and complete the set to climb the bonus multiplier toward its five-times ceiling. Those BOND return lanes pour into the same multiplier at double weight, and every other BOND finish arms the High Stakes mystery over at the left eject.",
+        "goals": [
+          "mult-bonus-x"
+        ]
+      },
+      {
+        "id": "bond-women",
+        "name": "007 Scoring / Bond Women",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "upper-loop"
+          },
+          {
+            "shot": "pop-bumpers"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Bond Women qualify through feature progress -- twenty-five bumper hits, three right-orbit shots, ejects, spinner spins -- each lighting a flashing insert at the upper loop that you collect there to make solid.",
+        "flashing": null,
+        "control": null,
+        "then": "With two or more Women banked, press the pink action button to run a two-times-to-seven-times playfield multiplier for twenty to seventy seconds, ideally over a multiball's jackpots. Draining while that button is flashing loses the multiplier and every Woman you collected, so cradle up before you fire it.",
+        "goals": [
+          "mult-007-scoring",
+          "strat-build-to-7x"
+        ]
+      },
+      {
+        "id": "jetpack-mb",
+        "name": "Jetpack Multiball",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-eject"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-loop"
+          }
+        ],
+        "lit": "The left eject (the Swamp) lights the left-ramp lock, and the lit left ramp starts the two-ball Jetpack Multiball -- the fastest guaranteed points on the game.",
+        "flashing": null,
+        "control": null,
+        "then": "Rush the center lane to bank the hurry-up value before it ticks down, since that number sets how big every jackpot in the multiball is. After five jackpots the left ramp pays a double, then a super with an added ball.",
+        "goals": [
+          "mb-jetpack",
+          "strat-jetpack-anchor"
+        ]
+      },
+      {
+        "id": "bird-one-mb",
+        "name": "Bird One Multiball",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "spectre-targets",
+            "lamps": 7
+          },
+          {
+            "shot": "osato-drops",
+            "lamps": 3
+          },
+          {
+            "shot": "center-loop"
+          },
+          {
+            "shot": "bird-one-rocket"
+          }
+        ],
+        "lit": "Hitting the SPECTRE standups first raises the base jackpot, the Osato drop bank lights the lock when cleared, and three locks at the center loop or rocket start a multiball that puts up the biggest single numbers anywhere on this playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "Pre-load the SPECTRE targets, break the drops, and lock three, then collect the green jackpots single, double, then triple. Rip the rocket for a super jackpot that caps near three hundred million.",
+        "goals": [
+          "mb-bird-one"
+        ]
+      },
+      {
+        "id": "villain-henchman",
+        "name": "Villain & Henchman Ramps",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "goldfinger-target"
+          }
+        ],
+        "lit": "The right ramp starts a villain mode and the upper-flipper side ramp starts a henchman mode, while a flashing Goldfinger target rotates which villain or henchman is lit and kicks off SPECTRE weapon countdowns.",
+        "flashing": null,
+        "control": null,
+        "then": "Rotate which mode is lit using the bumpers or that Goldfinger target to spread your progress around, and finish each mode for a smart missile. Starting all six villains off the right ramp and all the henchmen off the side ramp carries you to those two category mini-wizards.",
+        "goals": [
+          "mode-trouble-in-jamaica",
+          "mode-incredible-laser-ray",
+          "mode-sinister-summit",
+          "wiz-four-categories"
+        ]
+      },
+      {
+        "id": "spectre-weapons",
+        "name": "SPECTRE Weapons",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "rocket-lane"
+          },
+          {
+            "shot": "spectre-targets",
+            "lamps": 7
+          },
+          {
+            "shot": "goldfinger-target"
+          },
+          {
+            "shot": "bird-one-rocket"
+          }
+        ],
+        "lit": "Shots to the rocket lane spot SPECTRE letters one at a time and the standups light the weapons, and a flashing Goldfinger target starts the weapon countdown once you are spelled up.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell SPECTRE and start a weapon such as Outer Space Hijack, then finish it with six rocket hits -- the first three from the rocket lane or standups, the last three off the drops. Each completed weapon qualifies an add-a-ball at the action button and steps you toward the weapon-category mini-wizard.",
+        "goals": [
+          "mode-outer-space-hijack",
+          "wiz-four-categories"
+        ]
+      },
+      {
+        "id": "q-branch-ejects",
+        "name": "Q-Branch Ejects",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-eject"
+          },
+          {
+            "shot": "db5-eject"
+          },
+          {
+            "shot": "left-orbit"
+          }
+        ],
+        "lit": "Three DB5 ejects qualify the DB5 gadget mode and three left ejects qualify the Power Pack mode, both counts carrying across balls, and every eject also chips toward a Bond Woman.",
+        "flashing": null,
+        "control": null,
+        "then": "Convert either Q-Branch mode into a two-ball multiball -- rip the spinner to pump the DB5 jackpots, or work white-arrow shots to raise Power Pack -- then shoot its eject for the super jackpot. Keep feeding both ejects all game to reach the gadget-category mini-wizard.",
+        "goals": [
+          "mb-db5",
+          "mb-power-pack"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper to shift which of the MI6 top-lane rollovers are lit, so you can complete the set by sliding an uncompleted lane under the ball rather than steering it through the bumpers. Each completion steps the end-of-ball bonus multiplier toward its five-times cap, with each BOND return-lane finish worth a double step.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge straight into the left eject for Licensed To Kill -- it banks a smart missile and lights Jetpack in a single shot. Then take the right ramp to open a villain mode, and the left ramp to launch Jetpack Multiball with that mode folded in, so your safest ramps double as your fastest points.",
+        "goals": [
+          "skill-licensed-to-kill",
+          "strat-jetpack-anchor"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Qualify Bond Women through bumper, spinner, orbit, and eject progress and cash them at the upper loop, working toward the 007 multiplier. Spread progress across all four feature categories -- villains off the right ramp, henchmen off the side ramp, weapons at the rocket lane, gadgets at the ejects -- and pre-load the SPECTRE targets before you start Bird One.",
+        "goals": [
+          "mult-007-scoring",
+          "wiz-four-categories",
+          "mb-bird-one"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Build the 007 multiplier to seven-times, then run the Bond... James Bond mini-wizard: one giant lap of all ten shots into a super jackpot that sums every jackpot you have banked, which can clear a billion under the multiplier. Play a mini-wizard in each of the four categories and the final wizard, On Her Majesty's Secret Service, opens -- six flip-budget film stages into MI6 Multiball to end the game.",
+        "goals": [
+          "wiz-bond-james-bond",
+          "strat-build-to-7x",
+          "wiz-ohmss"
+        ]
+      }
+    ]
+  }
+}

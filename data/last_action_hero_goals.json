@@ -1,0 +1,1212 @@
+{
+  "machine": "Last Action Hero (Data East, 1993)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "An auto-plunger dressed as a pistol. Pull the trigger or flip both flippers at once — the same input also skips the long opening animation."
+    },
+    {
+      "id": "smart-missile",
+      "name": "Smart Missile",
+      "type": "mech",
+      "x": 0.88,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "A button above the pistol that collects whatever is currently lit. Awkwardly placed, so plan when you are going to use it rather than lunging for it. An outlane drain kills it for the rest of the ball."
+    },
+    {
+      "id": "crane-targets",
+      "name": "CRANE Drop Targets",
+      "type": "drop-target",
+      "x": 0.12,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Five real drop targets down the left side. They reset themselves if you leave the bank half down for too long, which is maddening during Super Crane."
+    },
+    {
+      "id": "danger-bar",
+      "name": "Danger Bar",
+      "type": "standup",
+      "x": 0.07,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Hidden behind the CRANE targets and exposed the moment one drops. Hitting it stands the whole bank back up, so it is the shot you are trying not to make."
+    },
+    {
+      "id": "crane-lock",
+      "name": "Crane Lock",
+      "type": "lock",
+      "x": 0.16,
+      "y": 0.76,
+      "trim": "all",
+      "notes": "Also called the tar pit. Holds up to two balls. The game counts your locks even when the crane mech is broken, so virtual locks are auto-launched at multiball start."
+    },
+    {
+      "id": "roof-ramp",
+      "name": "The Roof",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "The only ramp on the machine, with a generously wide entrance. It can return to either flipper depending on the diverter, and it relights the movie scoop."
+    },
+    {
+      "id": "cat-target",
+      "name": "CAT Target",
+      "type": "standup",
+      "x": 0.37,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "A red target on the right post of the ramp. It does nothing at all except during Cat Millions."
+    },
+    {
+      "id": "crane-shot",
+      "name": "Crane Shot",
+      "type": "scoop",
+      "x": 0.42,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "A passage right of the ramp into a kickout that returns to the right flipper. Backhandable from the left flipper. An underhit shot drops into the bonus rollovers instead.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "bonus-rollovers",
+      "name": "Double-Your-Bonus Rollovers",
+      "type": "rollover",
+      "x": 0.52,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Three lanes across the top. Completing all three doubles the end-of-ball bonus, which is where a surprising amount of a good game lives."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.52,
+      "y": 0.79,
+      "trim": "all",
+      "notes": "Three, under the rollovers. They change which Dynamite Feature is flashing, and they are the engine of both Blow Out and the LAST ACTION HERO round."
+    },
+    {
+      "id": "movie-scoop",
+      "name": "Movie Screen Scoop",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "The centre of the whole game. Awards the flashing Dynamite Feature when its yellow light is on, and starts multiball when multiball is ready. The kickout is slow enough to catch cleanly."
+    },
+    {
+      "id": "dekker-spinner",
+      "name": "Lt. Dekker Spinner",
+      "type": "spinner",
+      "x": 0.63,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Worth 50K a spin normally, about 400-500K a shot. A ball through here goes straight into the pop bumpers, which is exactly what you want during the big rounds."
+    },
+    {
+      "id": "chicken-scoop",
+      "name": "Chicken Scoop",
+      "type": "scoop",
+      "x": 0.72,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Right of the spinner. Its ball is returned out of the movie scoop, and there is a small lane out of the bumpers that feeds it directly.",
+      "feeds": {
+        "shot": "movie-scoop"
+      }
+    },
+    {
+      "id": "ripper",
+      "name": "The Ripper",
+      "type": "kicker",
+      "x": 0.8,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "A kickout that fires the ball back at the flippers at frightening speed. It spots a RIPPER letter, and a drain shortly after a Ripper shot is replunged for you."
+    },
+    {
+      "id": "right-captive",
+      "name": "Right Captive Ball",
+      "type": "captive-ball",
+      "x": 0.87,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Just right of the Ripper. Advances you toward multiball and is one of the two targets during Go to the Movies."
+    },
+    {
+      "id": "eyeball-targets",
+      "name": "Eyeball Targets",
+      "type": "target-bank",
+      "x": 0.9,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Three targets on the upper right. Completing them lights another 5M badge and boosts what every switch is worth toward your bonus."
+    },
+    {
+      "id": "wildcard-scoop",
+      "name": "Wildcard Scoop",
+      "type": "scoop",
+      "x": 0.88,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Above the right outlane. Collects the extra ball when lit, doubles the round you are in when the inlanes have lit it, and can force the next Dynamite Feature to the next unlit word of the title."
+    },
+    {
+      "id": "left-captive",
+      "name": "Left Captive Ball",
+      "type": "captive-ball",
+      "x": 0.1,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Above the left outlane. Advances multiball, and resets the timer of any running round back to full — once per round."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.3,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the captive balls for double multiball credit, briefly relights the movie scoop, and lights the Wildcard scoop for a round doubler."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Does the same job as the left inlane, and is where a completed Roof shot puts the ball during that round."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Awards a special when lit. Draining here also switches off your Smart Missile for the rest of the ball."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same rules as the left. Later software is reported to be forgiving of instant drains down this side."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.36,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the movie scoop, the spinner, the chicken scoop and the right side. It can backhand the crane."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.64,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the ramp, the crane and the CRANE targets."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Drop Target Skill Shot",
+      "category": "skillshot",
+      "summary": "A red light under the CRANE targets walks along the bank. Plunge so that the ball knocks down whichever target is lit at that moment. It pays two million on ball one, three on ball two and four on ball three.",
+      "difficulty": 2,
+      "reward": "2M, 3M or 4M by ball",
+      "steps": [
+        {
+          "shot": "crane-targets",
+          "action": "Time the plunge to the lit target",
+          "detail": "A red light walks along the CRANE bank — plunge so the ball knocks down whichever target is lit at that moment. The Smart Missile cannot be used to collect this one, but a miss is not wasted: any dropped CRANE target is progress toward the lock."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "dynamite-features",
+      "title": "How Dynamite Features Work",
+      "category": "progression",
+      "summary": "The lights above the flippers are the game's to-do list. The movie scoop hands you whichever one is flashing, and the pop bumpers change which one that is. Every round you finish properly makes the two wizard rounds richer, so completing beats starting every time.",
+      "difficulty": 1,
+      "reward": "+5M to the World Premier award per completion",
+      "steps": [],
+      "instructions": [
+        "The movie scoop starts each ball lit. Once you spend it, shoot the ramp to relight it, or take an inlane for a very short window.",
+        "Steady lights are finished rounds; the flashing light is the one the scoop will give you next. Bumper hits move the flashing light along.",
+        "Most rounds can run at the same time as each other. Go to the Movies, Super Crane and multiball are the ones that lock everything else out.",
+        "The left captive ball resets the timer of the round you are in back to full, once per round. Save it for late in a good Blow Out.",
+        "An inlane lights the Wildcard scoop during most rounds; taking it there doubles that round's scoring.",
+        "Every completion adds five million to the World Premier award and five seconds to its timer. That is the real reason to finish rounds."
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "blow-out",
+      "title": "Blow Out",
+      "category": "mode",
+      "summary": "Twenty seconds of frenzy on a six million base, with every target worth 250K and the value climbing 50K for every ten hits you land. A ball that finds the pop bumpers can turn this into thirty million on its own. It counts as complete over twenty million.",
+      "difficulty": 2,
+      "reward": "17M-30M typical, 99M ceiling",
+      "steps": [
+        {
+          "shot": "dekker-spinner",
+          "action": "Get the ball upstairs",
+          "detail": "The spinner drops the ball straight into the bumpers, which is the fastest way to rack up switch hits."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let it rattle",
+          "detail": "The switch value climbs every ten hits, to a ceiling of a million per switch."
+        },
+        {
+          "shot": "left-captive",
+          "action": "Reset the timer late",
+          "detail": "Hitting the left captive ball near the end of the round buys another full twenty seconds at the higher switch value."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "go-to-the-movies",
+      "title": "Go To The Movies",
+      "category": "mode",
+      "summary": "An add-a-ball round: both captive balls are lit for twenty seconds and each hit launches another ball. After the timer expires the captives pay five million a hit instead. Be aware it is not worth much and it blocks every other round while it runs.",
+      "difficulty": 2,
+      "reward": "Extra balls in play, then 5M per captive hit",
+      "steps": [
+        {
+          "shot": "left-captive",
+          "action": "Add balls in the first twenty seconds",
+          "detail": "Hitting the left captive also resets the round timer."
+        },
+        {
+          "shot": "right-captive",
+          "action": "Hit each captive at least once after the timer",
+          "detail": "That is what counts as completing the round."
+        },
+        {
+          "shot": "movie-scoop",
+          "action": "Consider skipping it",
+          "detail": "Captive hits here do not count toward multiball as they usually would, and nothing else can be started."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "red-eye",
+      "title": "Red Eye",
+      "category": "mode",
+      "summary": "Three hits on the eyeball targets for five, ten and fifteen million. Straightforward, quick, and worth taking every time it comes up. The Smart Missile only pays the next hit, not the whole set.",
+      "difficulty": 1,
+      "reward": "30M for all three",
+      "steps": [
+        {
+          "shot": "eyeball-targets",
+          "action": "Hit all three",
+          "detail": "The values climb 5M, 10M, 15M in order."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Double it if you can",
+          "detail": "An inlane lights the Wildcard scoop to double the round."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "the-roof",
+      "title": "The Roof",
+      "category": "mode",
+      "summary": "Three ramp shots in twenty seconds for five, ten and fifteen million. The ramp diverts to the right inlane after each made shot, which hands the ball back in perfect position for the next one — this is the most repeatable round on the machine.",
+      "difficulty": 2,
+      "reward": "30M for all three",
+      "steps": [
+        {
+          "shot": "roof-ramp",
+          "action": "Ramp three times",
+          "detail": "The return to the right inlane sets up the next shot for you."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Light the doubler on the way",
+          "detail": "Taking the Wildcard scoop mid-round doubles the whole thing."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "big-mistake",
+      "title": "Big Mistake",
+      "category": "mode",
+      "summary": "Three targets in a fixed order inside twenty seconds: any CRANE target for five million, any eyeball for ten, then the movie scoop for fifteen. It crosses the playfield twice, so it rewards knowing your flipper feeds rather than raw aim.",
+      "difficulty": 2,
+      "reward": "30M for the full sequence",
+      "steps": [
+        {
+          "shot": "crane-targets",
+          "action": "Any CRANE target first",
+          "detail": "Five million, and the drops are wide and forgiving."
+        },
+        {
+          "shot": "eyeball-targets",
+          "action": "Then any eyeball",
+          "detail": "Ten million, all the way across the playfield."
+        },
+        {
+          "shot": "movie-scoop",
+          "action": "Finish at the movie scoop",
+          "detail": "Fifteen million, and the scoop is where the next feature lives anyway."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "cat-millions",
+      "title": "Cat Millions",
+      "category": "mode",
+      "summary": "The display runs a value up and down between five and ten million, and hitting the CAT target on the ramp post takes whatever it is sitting on. Each hit adds another travelling value, up to three at once — so the third hit collects three of them together.",
+      "difficulty": 2,
+      "reward": "5M-10M per lit value, up to three at once",
+      "steps": [
+        {
+          "shot": "cat-target",
+          "action": "Hit it near the top of the swing",
+          "detail": "The value cycles up to ten million and back down again."
+        },
+        {
+          "shot": "cat-target",
+          "action": "Keep hitting for more values",
+          "detail": "Three hits completes the round and each further hit collects every lit value at once."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "super-crane",
+      "title": "Super Crane",
+      "category": "multiball",
+      "summary": "A six-ball round with one job: hit the crane. It starts at five million with a twenty-second timer and climbs five million per hit. When the timer dies you have to clear the CRANE targets to relight it — and once relit that way it stays lit with no timer at all.",
+      "difficulty": 3,
+      "reward": "5M climbing by 5M per crane hit",
+      "steps": [
+        {
+          "shot": "crane-shot",
+          "action": "Bash the crane while the timer runs",
+          "detail": "Each hit adds five million to the value, and the value survives the timer expiring."
+        },
+        {
+          "shot": "crane-targets",
+          "action": "Clear the drops to relight it",
+          "detail": "This is the fiddly part — the bank resets itself if you leave it half down too long."
+        },
+        {
+          "shot": "crane-shot",
+          "action": "Collect the relit crane",
+          "detail": "That is what counts as completing the round, and there is no timer on this one."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "save-danny",
+      "title": "Save Danny",
+      "category": "mode",
+      "summary": "A pure hurry-up. The value starts at twenty million and falls to three, and only the crane shot collects it. With the ball already trapped on the left flipper, this is the moment to try the backhand.",
+      "difficulty": 2,
+      "reward": "20M falling to 3M",
+      "steps": [
+        {
+          "shot": "crane-shot",
+          "action": "Shoot the crane immediately",
+          "detail": "Every second of hesitation costs you real points."
+        },
+        {
+          "shot": "smart-missile",
+          "action": "Or burn the missile",
+          "detail": "The Smart Missile collects the current value, which is the fastest possible answer to a hurry-up."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "find-benedict",
+      "title": "Find Benedict",
+      "category": "mode",
+      "summary": "The game hides Benedict in one of the three scoops at random and pays thirty million for finding him. There is no pattern and a wrong scoop pays nothing at all, so treat it as a coin flip you take on the way to something else.",
+      "difficulty": 2,
+      "reward": "30M",
+      "steps": [
+        {
+          "shot": "movie-scoop",
+          "action": "Try the centre",
+          "detail": "It is the scoop you have the best feed for anyway."
+        },
+        {
+          "shot": "chicken-scoop",
+          "action": "Then the chicken scoop",
+          "detail": "A wrong guess costs you the shot and nothing else."
+        },
+        {
+          "shot": "wildcard-scoop",
+          "action": "Then the wildcard",
+          "detail": "Thirty million for the right door, zero for the other two."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "spell-the-title",
+      "title": "Spell LAST ACTION HERO",
+      "category": "wizard",
+      "summary": "Three of the Dynamite Features are the words of the title, worth ten million each at the movie scoop. Collect all three and the machine puts six balls into play with a twenty-five second clock and asks for fifty target hits — and every fifty you land buys more time and keeps the award climbing.",
+      "difficulty": 3,
+      "reward": "The LAH bonus, then a running award that can reach billions",
+      "steps": [
+        {
+          "shot": "wildcard-scoop",
+          "action": "Force the sequence",
+          "detail": "The Wildcard scoop sets the next Dynamite Feature to the next unlit word, so you can drive straight at the title instead of waiting."
+        },
+        {
+          "shot": "movie-scoop",
+          "action": "Collect each word",
+          "detail": "Ten million a word. Shoot the ramp after each to relight the scoop for the next one."
+        },
+        {
+          "shot": "dekker-spinner",
+          "action": "Feed the bumpers hard once it starts",
+          "detail": "Fifty hits comes fastest with a ball or two cycling through the spinner and into the pops."
+        },
+        {
+          "shot": "smart-missile",
+          "action": "Rescue a dying round",
+          "detail": "If you can see you will not make the count, the missile credits about fifty hits and adds time. Watch the clock, though — if the timer somehow passes ninety-nine seconds it wraps to zero and the round ends."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "m-ball",
+      "title": "M-Ball",
+      "category": "multiball",
+      "summary": "Captive ball hits light multiball at the movie scoop. The jackpot starts at fifteen million plus five for each ball you locked beforehand, capped at twenty-five; every target on the playfield adds to it. The ramp collects it, and the crane then pays double if you get there in ten seconds.",
+      "difficulty": 3,
+      "reward": "Up to 25M jackpot, then double at the crane",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Take an inlane before each captive",
+          "detail": "That doubles the multiball credit you get for the captive ball hit."
+        },
+        {
+          "shot": "right-captive",
+          "action": "Bang the captives",
+          "detail": "Both count. Lock balls first if you can — every locked ball is five million on the jackpot."
+        },
+        {
+          "shot": "roof-ramp",
+          "action": "Collect the jackpot at the ramp",
+          "detail": "On harder settings the crane has to be hit first to light the ramp."
+        },
+        {
+          "shot": "crane-shot",
+          "action": "Double it within ten seconds",
+          "detail": "That double jackpot is what starts the six-ball round. Miss the window and you have to shoot the crane just to relight the ordinary jackpot."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "locking-balls",
+      "title": "Locking Balls",
+      "category": "progression",
+      "summary": "Clearing the CRANE bank starts Runaway Crane, a hurry-up counting from ten million down to three, and lights the crane lock whether or not you collect it. Two balls is the maximum, and clearing the bank again with two already locked pays a seven million bonus.",
+      "difficulty": 2,
+      "reward": "10M-3M hurry-up, plus 7M for the third bank clear",
+      "steps": [
+        {
+          "shot": "crane-targets",
+          "action": "Drop all five",
+          "detail": "Avoid the Danger Bar behind them — hitting it stands the whole bank back up."
+        },
+        {
+          "shot": "crane-shot",
+          "action": "Take the hurry-up and the lock",
+          "detail": "On hard settings the lock times out when the Runaway Crane value hits zero, so do not dawdle."
+        },
+        {
+          "shot": "crane-lock",
+          "action": "Bank two before multiball",
+          "detail": "Two locked balls is ten million on the jackpot before you have shot anything."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "six-ball",
+      "title": "6 Ball",
+      "category": "wizard",
+      "summary": "Earned by doubling an M-Ball jackpot at the crane. Six balls, and a loop of increasing rewards: collect the four 5M badge shots, then the crane for thirty million, then the badges again, then the ramp for a super jackpot of fifty million per ball still in play, then the crane for double that.",
+      "difficulty": 3,
+      "reward": "50M and then 100M per ball still in play",
+      "steps": [
+        {
+          "shot": "ripper",
+          "action": "Sweep the four badges",
+          "detail": "The badges sit at the left captive ball, crane, Ripper and Wildcard scoop."
+        },
+        {
+          "shot": "crane-shot",
+          "action": "Crane for thirty million",
+          "detail": "This relights the badges for a second pass."
+        },
+        {
+          "shot": "roof-ramp",
+          "action": "Super jackpot at the ramp",
+          "detail": "Fifty million times the number of balls still alive, so keep them all up."
+        },
+        {
+          "shot": "crane-shot",
+          "action": "Double super jackpot in ten seconds",
+          "detail": "A hundred million per ball in play. Then the whole loop starts over."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "world-premier",
+      "title": "World Premier",
+      "category": "wizard",
+      "summary": "The end of the road. Clear every Dynamite Feature including the title round and the movie scoop starts it. You take a flat award first, then the scoop pays a million per seated cinema-goer, over and over, until the theatre fills — and how many seats there are depends on how many rounds you actually completed.",
+      "difficulty": 3,
+      "reward": "A flat award, then 1M per seated patron per scoop shot",
+      "steps": [
+        {
+          "shot": "movie-scoop",
+          "action": "Start it with every feature lit",
+          "detail": "The feature lights all start flashing and the scoop's yellow light flashes with them."
+        },
+        {
+          "shot": "movie-scoop",
+          "action": "Keep feeding the scoop",
+          "detail": "There is no limit to how many times you can shoot it; the round only ends when the seats are full."
+        },
+        {
+          "shot": "roof-ramp",
+          "action": "Earn the seats in advance",
+          "detail": "Completing rounds earlier in the game is what raises the seating capacity, and the payout with it."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "chicken-scoop",
+      "title": "Play Chicken",
+      "category": "strategy",
+      "summary": "The chicken scoop counts your shots to it and pays out on a rising schedule: two shots for five million, three for ten million or an extra ball, four for fifteen million or a lit special. After each award the count resets and the next one costs one more shot.",
+      "difficulty": 2,
+      "reward": "5M, then 10M or an extra ball, then 15M or a special",
+      "steps": [
+        {
+          "shot": "chicken-scoop",
+          "action": "Bank the cheap awards early",
+          "detail": "The display tells you how many shots remain until the next one."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Use the free feed",
+          "detail": "A small lane out of the bumpers drops the ball into the chicken scoop for nothing."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "second-cousin-frank",
+      "title": "Second Cousin Frank's",
+      "category": "secret",
+      "summary": "A carried-over award that sits there growing between games until somebody collects it. Ramp shots and balls returning to the chicken scoop through the bumper lane both feed it. Collecting it takes two consecutive ramps and then the chicken scoop, and the ball must touch nothing else in between.",
+      "difficulty": 3,
+      "reward": "The accumulated Second Cousin Frank's value",
+      "steps": [
+        {
+          "shot": "roof-ramp",
+          "action": "Ramp once",
+          "detail": "If the ramp is not lighting a Dynamite Feature, the display shows the award and the ball is returned to the right flipper."
+        },
+        {
+          "shot": "roof-ramp",
+          "action": "Ramp again straight away",
+          "detail": "This return comes back to the left flipper instead."
+        },
+        {
+          "shot": "chicken-scoop",
+          "action": "Finish in the chicken scoop",
+          "detail": "Touch a slingshot, a target, anything at all in between and the sequence is cancelled. Collecting resets the value to three million."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "combos",
+      "title": "The Combo Sheet",
+      "category": "combo",
+      "summary": "Three combos are worth learning by feel because they pay far more than the shots do individually. Two of them start at the crane and run through the ramp twice, and the third turns the spinner into a million a spin.",
+      "difficulty": 3,
+      "reward": "10M plus multiball advances, RIPPER letters, or 1M per spin",
+      "steps": [
+        {
+          "shot": "crane-shot",
+          "action": "Crane, ramp, ramp, right captive",
+          "detail": "Ten million and four advances toward multiball in one string."
+        },
+        {
+          "shot": "ripper",
+          "action": "Crane, ramp, ramp, Ripper",
+          "detail": "Ten million and three RIPPER letters."
+        },
+        {
+          "shot": "dekker-spinner",
+          "action": "Five ramp-ramp pairs for the super spinner",
+          "detail": "After that, the next shot through the spinner is worth a million per revolution instead of fifty thousand."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "ripper-bounty",
+      "title": "The RIPPER Bounty",
+      "category": "strategy",
+      "summary": "Every Ripper shot spots a letter, and spelling RIPPER collects a bounty that is held across balls, players and whole games. On a busy machine that number can be very large by the time somebody finally spells it.",
+      "difficulty": 2,
+      "reward": "The accumulated Ripper Bounty",
+      "steps": [
+        {
+          "shot": "ripper",
+          "action": "Take the Ripper whenever it is available",
+          "detail": "Be ready for the return — it comes back at the flippers extremely fast."
+        },
+        {
+          "shot": "ripper",
+          "action": "Spell all six letters",
+          "detail": "The bounty is not reset by a new game, so check what it is worth before you decide to chase it."
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "bonus-building",
+      "title": "Build The Bonus",
+      "category": "progression",
+      "summary": "The bonus is worth up to fifty million, which is a real chunk of a good game, and it is built entirely out of things you are already doing. There is no bonus hold and no multiplier ladder — only the three rollovers, which double it.",
+      "difficulty": 1,
+      "reward": "Up to 50M at the end of every ball",
+      "steps": [],
+      "instructions": [
+        "The bonus starts at a million each ball and every target hit adds ten thousand.",
+        "Completing all three eyeball targets raises what each switch closure is worth by another ten thousand, so do that early in a ball rather than late.",
+        "Completing the three Double-Your-Bonus rollovers doubles the whole thing.",
+        "There is no bonus hold and no multiplier ladder — the doubler is the only lever you have.",
+        "Tapping the flipper buttons during the bonus countdown skips straight to the next ball."
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "ball-saves",
+      "title": "The Rescues",
+      "category": "secret",
+      "summary": "This machine gives balls back in several situations it never advertises. Learn them and you will stop panicking after a bad bounce off the CRANE bank or a Ripper kickout.",
+      "difficulty": 1,
+      "reward": "A returned ball, and 3M for a death save",
+      "steps": [
+        {
+          "shot": "crane-targets",
+          "action": "Outlane drain after the CRANE targets",
+          "detail": "The ball comes back, and if the replunged ball drains the same way after hitting the targets again, it comes back a second time."
+        },
+        {
+          "shot": "ripper",
+          "action": "Drain shortly after a Ripper shot",
+          "detail": "The Ripper fires the ball at the flippers fast enough that the game covers you for it."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Nudge a drained ball back into play",
+          "detail": "A ball that goes down an outlane and is saved back onto the playfield pays three million as a death save."
+        },
+        {
+          "shot": "shooter-lane",
+          "action": "Expect a save at the start",
+          "detail": "There is a saver on the plunge, on the opening seconds of multiball, and at the start of Super Crane and the six-ball round."
+        }
+      ],
+      "fx": "hero",
+      "ordered": false
+    },
+    {
+      "id": "smart-missile-plan",
+      "title": "Spend The Smart Missile Well",
+      "category": "strategy",
+      "summary": "One missile per ball, awkward to reach, and gone the moment you drain down an outlane. It pays whatever is lit — which makes when you press it a genuine scoring decision rather than a panic button.",
+      "difficulty": 2,
+      "reward": "The best award currently lit",
+      "steps": [
+        {
+          "shot": "smart-missile",
+          "action": "Save it for the six-ball round",
+          "detail": "Collect the first set of badges yourself, take the crane for thirty million, then use the missile to light the super jackpot at the ramp."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Or rescue a big title round",
+          "detail": "In the LAST ACTION HERO sequence it credits about fifty hits and resets the timer, which can extend the round enormously."
+        },
+        {
+          "shot": "movie-scoop",
+          "action": "Know what it will not do",
+          "detail": "It does not hand you the flashing Dynamite Feature — it lights multiball at the scoop instead, and starts multiball if that was already lit. In the three-target rounds it only pays the next value, not the whole set."
+        }
+      ],
+      "fx": "gun",
+      "ordered": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "lah-skillshot",
+      "title": "Called Shot",
+      "desc": "Drop the flashing CRANE target straight off the plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "lah-first-feature",
+      "title": "Roll Camera",
+      "desc": "Collect your first Dynamite Feature at the movie scoop.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "dynamite-features"
+    },
+    {
+      "id": "lah-roof",
+      "title": "Three On The Roof",
+      "desc": "Make all three ramp shots during The Roof.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "the-roof"
+    },
+    {
+      "id": "lah-blowout",
+      "title": "Twenty Million Of Rubble",
+      "desc": "Finish Blow Out with a total over twenty million.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "blow-out"
+    },
+    {
+      "id": "lah-danny",
+      "title": "Save Danny",
+      "desc": "Collect the Save Danny hurry-up at the crane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "save-danny"
+    },
+    {
+      "id": "lah-two-locks",
+      "title": "Both In The Tar Pit",
+      "desc": "Lock two balls at the crane before starting multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "locking-balls"
+    },
+    {
+      "id": "lah-double-jackpot",
+      "title": "Double Jackpot",
+      "desc": "Collect an M-Ball jackpot and double it at the crane inside ten seconds.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "m-ball"
+    },
+    {
+      "id": "lah-frank",
+      "title": "Second Cousin Frank's",
+      "desc": "Chain two ramps into the chicken scoop with nothing touched in between.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "second-cousin-frank"
+    },
+    {
+      "id": "lah-super-spinner",
+      "title": "Super Dekker",
+      "desc": "Land five ramp-ramp pairs to make the spinner worth a million a spin.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combos"
+    },
+    {
+      "id": "lah-six-ball",
+      "title": "Six On The Glass",
+      "desc": "Start the six-ball round and collect a super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "six-ball"
+    },
+    {
+      "id": "lah-title",
+      "title": "Last Action Hero",
+      "desc": "Spell the title and survive a full fifty-hit cycle.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "spell-the-title"
+    },
+    {
+      "id": "lah-premier",
+      "title": "Opening Night",
+      "desc": "Clear every Dynamite Feature and fill the theatre in World Premier.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "world-premier"
+    }
+  ],
+  "drills": [
+    {
+      "id": "walking-light-plunge",
+      "title": "Plunge At The Walking Light",
+      "text": "A red light walks along the CRANE bank while the ball waits in the shooter lane — time the trigger so the ball knocks down whichever target is lit at that moment. A miss still costs you nothing, since any dropped CRANE target is progress toward the lock.",
+      "reps": "10 plunges per ball position",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "crane-targets"
+      ]
+    },
+    {
+      "id": "backhand-the-crane",
+      "title": "Backhand The Crane",
+      "text": "Save Danny falls from twenty million to three and only the crane collects it, so the shot has to leave the flipper the moment the round starts. Drill it as a backhand from a ball already trapped on the left, because that is the position you will actually be in — the Smart Missile takes the current value instead, but that is a rescue, not the shot.",
+      "reps": "15 backhands",
+      "focus": "accuracy",
+      "goal": "save-danny",
+      "shots": [
+        "crane-shot",
+        "left-flipper",
+        "smart-missile"
+      ]
+    },
+    {
+      "id": "big-mistake-crossing",
+      "title": "Cross The Playfield In Order",
+      "text": "Any CRANE target, then any eyeball, then the movie scoop, inside twenty seconds and crossing the playfield twice. Drill the crossing rather than the aim — knowing which flipper feeds the eyeballs and which feeds the scoop is what finishes this round.",
+      "reps": "10 full sequences",
+      "focus": "accuracy",
+      "goal": "big-mistake",
+      "shots": [
+        "crane-targets",
+        "eyeball-targets",
+        "movie-scoop"
+      ]
+    },
+    {
+      "id": "danger-bar-discipline",
+      "title": "Clear CRANE, Miss The Danger Bar",
+      "text": "Drop all five CRANE targets without catching the Danger Bar behind them — one hit there stands the whole bank straight back up. Work the bank in one continuous visit, because leaving it half down for too long resets it on its own.",
+      "reps": "5 clean bank clears",
+      "focus": "ball-control",
+      "goal": "locking-balls",
+      "shots": [
+        "crane-targets",
+        "danger-bar"
+      ]
+    },
+    {
+      "id": "roof-rhythm",
+      "title": "Ramp Rhythm On The Roof",
+      "text": "The ramp diverts to the right inlane after every made shot, so the round is one rhythm rather than three separate shots. Take the return without trapping and go straight back up — three inside the clock is the most repeatable thirty million on the machine.",
+      "reps": "5 completed rounds",
+      "focus": "flow",
+      "goal": "the-roof",
+      "shots": [
+        "roof-ramp",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "crane-ramp-ramp-finish",
+      "title": "Crane, Ramp, Ramp, Finish",
+      "text": "Both of the big combos open the same way, so learn the string once and pick the ending on the fly — right captive ball for the multiball advances, Ripper for the letters. The first ramp hands the ball back to the right flipper and the second to the left, which is what puts the finishing shot in reach.",
+      "reps": "10 strings, either ending",
+      "focus": "flow",
+      "goal": "combos",
+      "shots": [
+        "crane-shot",
+        "roof-ramp",
+        "right-captive",
+        "ripper"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "gun",
+  "actionButton": {
+    "present": true,
+    "label": "Smart Missile",
+    "location": "a button on the cabinet just above the pistol plunger",
+    "how": "One Smart Missile per ball, and it collects whatever happens to be lit when you hit it. The awkward part is where it sits — up above the pistol, well away from your flipper hand — so reaching for it costs you control of the ball. Decide in advance where it is going. A light on the lower right of the cabinet flashes while you still have it, and an outlane drain kills it for the rest of the ball.",
+    "uses": [
+      {
+        "when": "During Blow Out",
+        "what": "Resets the 20-second clock, credits you roughly 30 target hits, and lights M-Ball on top of it."
+      },
+      {
+        "when": "The LAST ACTION HERO sequence is running out",
+        "what": "Credits about 50 hits and adds time. The biggest single use of it in the game."
+      },
+      {
+        "when": "Super Crane 6-ball multiball",
+        "what": "Awards the current crane value, or relights the Crane if the timer already took it away."
+      },
+      {
+        "when": "Save Danny hurry-up dropping fast",
+        "what": "Takes the current award without needing the crane shot. It starts at 20M and bottoms at 3M."
+      },
+      {
+        "when": "Roof, Eyeball or Big Mistake running down",
+        "what": "Only awards the next value in the sequence, never the full 30M. Use it to rescue a round, not to score one."
+      },
+      {
+        "when": "Any press at all",
+        "what": "It lights M-Ball at the movie scoop as a side effect, and starts M-Ball outright if that was already lit."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Last Action Hero runs off the central movie scoop, which hands you whichever Dynamite Feature is flashing while the pop bumpers pick which one that is. Finish those rounds to fatten the two payoffs at the top: the LAST ACTION HERO title round and the World Premier finale.",
+    "loop": [
+      "Start each ball with the scoop already lit; take the flashing Dynamite Feature there, then shoot the ramp to relight it for the next one.",
+      "Bump the pops to move which feature is flashing, and finish rounds rather than just starting them -- every completion feeds the World Premier award and its clock.",
+      "Clear the CRANE drops to start a hurry-up and light the tar-pit lock; bank two balls, then hammer the captives to arm M-Ball at the scoop.",
+      "Double an M-Ball jackpot at the crane within a few seconds to drop into the six-ball round.",
+      "Collect the three title-word features for the six-ball, fifty-hit title round; clear every feature to open World Premier."
+    ],
+    "lights": [
+      {
+        "id": "dynamite-scoop",
+        "name": "Movie Scoop & Ramp",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "movie-scoop"
+          },
+          {
+            "shot": "roof-ramp"
+          }
+        ],
+        "lit": "The movie scoop is the hub, lit at the start of every ball to hand you whichever Dynamite Feature is flashing; spend it and a ramp shot relights it, while an inlane cracks open only a very short relight window.",
+        "flashing": "When the scoop's own yellow lamp is flashing, multiball is what waits there instead of a feature.",
+        "control": null,
+        "then": "Take the flashing feature, then ramp to reload the scoop for the next one. Completing rounds rather than merely starting them is the whole point -- every finish pumps the World Premier award and adds to its timer, and three of the features are the words of the title.",
+        "goals": [
+          "dynamite-features",
+          "world-premier"
+        ]
+      },
+      {
+        "id": "crane-drops",
+        "name": "CRANE Drop Bank",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "crane-targets",
+            "lamps": 5
+          },
+          {
+            "shot": "danger-bar"
+          }
+        ],
+        "lit": "A red lamp walks the CRANE bank at the plunge for a timed skill shot, and in play each standing drop is one to knock down; the Danger Bar hides right behind the targets, and catching it resets the entire bank upright.",
+        "flashing": null,
+        "control": null,
+        "then": "Drop all five while sparing that bar to kick off the Runaway Crane hurry-up and light the tar-pit lock, which holds up to two balls. Bank both before you start multiball, because every locked ball is five million more on the coming jackpot.",
+        "goals": [
+          "skillshot",
+          "locking-balls"
+        ]
+      },
+      {
+        "id": "crane-collect",
+        "name": "Crane Shot & Tar Pit",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "crane-shot"
+          },
+          {
+            "shot": "crane-lock"
+          }
+        ],
+        "lit": "The crane scoop is where the big crane awards land -- the Save Danny hurry-up as it falls, the relit Super Crane value, the doubled M-Ball jackpot -- and the tar pit beside it is where your locked balls sit.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot it fast on any hurry-up, since the value only bleeds down while you hesitate; a backhand from a trapped ball on the left is the shot to groove. Doubling an M-Ball jackpot here within a few seconds is the one thing that drops you into the six-ball round, and the relit crane in Super Crane then holds its value with no clock on it.",
+        "goals": [
+          "save-danny",
+          "super-crane"
+        ]
+      },
+      {
+        "id": "captive-multiball",
+        "name": "Captive Balls",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-captive"
+          },
+          {
+            "shot": "right-captive"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "Both captive balls advance you toward multiball, an inlane rolled just before a captive doubles the credit that hit is worth, and the left captive also resets the timer of any round you have running.",
+        "flashing": null,
+        "control": null,
+        "then": "Rap the captives to light M-Ball at the scoop, locking balls first so each adds to the starting jackpot. The left captive's timer reset is a once-per-round lifeline, so hold it back for the dying seconds of a strong Blow Out instead of spending it early.",
+        "goals": [
+          "m-ball"
+        ]
+      },
+      {
+        "id": "eyeball-bonus",
+        "name": "Eyeballs & Bonus Rollovers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "eyeball-targets"
+          },
+          {
+            "shot": "bonus-rollovers"
+          }
+        ],
+        "lit": "The three eyeball targets light a five-million badge and raise what every switch adds to your bonus, and the three rollovers across the top are the only route to doubling that bonus.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep the eyeballs early so the higher switch value rides the rest of the ball, and complete all three rollovers to double the end-of-ball count. The bonus here cannot be carried over and has no multiplier ladder, so those three rollovers are the single lever you get.",
+        "goals": [
+          "red-eye",
+          "bonus-building"
+        ]
+      },
+      {
+        "id": "wildcard-scoop",
+        "name": "Wildcard Scoop",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "wildcard-scoop"
+          },
+          {
+            "shot": "left-inlane"
+          }
+        ],
+        "lit": "The Wildcard scoop over the right outlane hands you the extra ball when lit, doubles your current round once an inlane has armed it, and can shove the feature order forward to the title's next unclaimed word.",
+        "flashing": null,
+        "control": null,
+        "then": "Use it to steer the game -- drive straight at the three title words instead of waiting on the bumpers to land on them. Doubling a live round here is the cheapest way to turn a thirty-million round into sixty.",
+        "goals": [
+          "spell-the-title"
+        ]
+      },
+      {
+        "id": "right-collectors",
+        "name": "Chicken Scoop & Spinner",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "chicken-scoop"
+          },
+          {
+            "shot": "dekker-spinner"
+          }
+        ],
+        "lit": "The chicken scoop pays on a rising schedule -- more shots for each larger award, then the count resets one higher -- and the Dekker spinner is ordinarily small change but the target of a super-spinner combo.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank the cheap chicken awards early, using the free feed out of the bumpers into it. Five ramp-to-ramp pairs turn the next spinner shot into a million per turn, and two straight ramp shots finished in the chicken scoop, clean of any switch between, collect the carried-over Second Cousin Frank's award.",
+        "goals": [
+          "chicken-scoop",
+          "combos",
+          "second-cousin-frank"
+        ]
+      },
+      {
+        "id": "ripper-kick",
+        "name": "The Ripper",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "ripper"
+          }
+        ],
+        "lit": "The Ripper kicker hurls the returning ball at the flippers hard enough to rattle you, and each shot there spots one letter in RIPPER.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell all six letters to collect the Ripper Bounty, which carries over between balls, players and even separate games, so it can be huge by the time anyone finally claims it. Be set for the return, because draining right after a Ripper hit earns you a free replunge.",
+        "goals": [
+          "ripper-bounty"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the walking-light skill shot on the CRANE bank, then start banking Dynamite Features at the lit scoop and relighting it off the ramp. Sweep the eyeballs and complete the three rollovers early to first raise and then double your bonus.",
+        "goals": [
+          "skillshot",
+          "dynamite-features",
+          "bonus-building"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Clear the CRANE bank for the hurry-up and the lock, bank two balls, and arm M-Ball at the captives and scoop. Lean on repeatable rounds like The Roof, whose ramp keeps feeding the ball back, and Blow Out in the bumpers, to keep pumping World Premier.",
+        "goals": [
+          "locking-balls",
+          "m-ball",
+          "the-roof",
+          "blow-out"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Two peaks tower over the rest. Spell LAST ACTION HERO for the six-ball, fifty-hit title round that can climb into the billions, and clear every Dynamite Feature to open World Premier, which pays a million per seated patron until the theatre is full. A doubled M-Ball jackpot, banked at the crane inside the ten-second window, drops you into the six-ball round on the way up.",
+        "goals": [
+          "spell-the-title",
+          "world-premier",
+          "six-ball"
+        ]
+      }
+    ]
+  }
+}

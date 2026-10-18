@@ -1,0 +1,1028 @@
+{
+  "machine": "Scared Stiff (Bally, 1996)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Manual plunger. A controlled plunge into the Skill Shot hole is the opening play — its value climbs 250K every time you cash it."
+    },
+    {
+      "id": "skill-shot-hole",
+      "name": "Skill Shot Hole",
+      "type": "saucer",
+      "x": 0.86,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Target of the plunge. Also catches weak Right Loop shots that fail to make it around, so a short right loop is not a total loss."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane / Cast A Spell",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "The ball saver lives here. It is not lit at power-up on most machines — you have to earn it off the spell target bank."
+    },
+    {
+      "id": "spell-targets",
+      "name": "Spell Target Bank (3)",
+      "type": "target-bank",
+      "x": 0.13,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Three standups. Clear the bank to light Cast A Spell at the left outlane. The first light costs two full passes through the bank; later ones cost one."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.08,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Three-way shot depending on what is lit: it can carry to the Deadhead lanes, feed round to the Monster's Lab area, or take a lock for Coffin Multiball.",
+      "feeds": {
+        "shot": "deadhead-lanes"
+      }
+    },
+    {
+      "id": "leaper-1",
+      "name": "Leaper Target 1",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Left of the Left Ramp. One of the three Leapers — order does not matter, only that all three get hit."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Lights the Coffin lock and spots an Eye toward Eyes of the Boney Beast. Also a jackpot ramp in Coffin Multiball.",
+      "feeds": {
+        "x": 0.76,
+        "y": 0.09
+      }
+    },
+    {
+      "id": "leaper-2",
+      "name": "Leaper Target 2",
+      "type": "standup",
+      "x": 0.39,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Right of the Left Ramp. Second of the three Leapers."
+    },
+    {
+      "id": "secret-passage",
+      "name": "Secret Passage",
+      "type": "lane",
+      "x": 0.12,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Where a weak Left Loop attempt drops in. It spots a Tale, which makes a soft left loop genuinely useful rather than a miss."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.29,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Bumper hits accumulate toward The Monster's Lab — typically 20 on a factory setting. Worth 10K each once the Lab is running."
+    },
+    {
+      "id": "deadhead-lanes",
+      "name": "Deadhead Lanes (3)",
+      "type": "lane",
+      "x": 0.45,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Top rollover lanes. Light all three for Return of the Deadheads. Each one also pays a climbing 25K."
+    },
+    {
+      "id": "middle-loop",
+      "name": "Middle Loop",
+      "type": "loop",
+      "x": 0.5,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "The extra ball shot when lit, and it feeds the ball round to the Deadhead lanes — a cheap way to pick up lanes you are missing.",
+      "feeds": {
+        "shot": "deadhead-lanes"
+      }
+    },
+    {
+      "id": "crate",
+      "name": "The Crate",
+      "type": "bash-toy",
+      "x": 0.4195,
+      "y": 0.9302,
+      "trim": "all",
+      "notes": "Centre of the game. Bank hits into it for Terror From The Crate, then use it to start Scared Stiff and as the finishing shot of the Stiff-O-Meter."
+    },
+    {
+      "id": "stiff-o-meter",
+      "name": "Stiff-O-Meter",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Ten-level display in the middle of the playfield. Only live during Scared Stiff, where it tracks how close you are to Monster Multiball."
+    },
+    {
+      "id": "leaper-3",
+      "name": "Leaper Target 3",
+      "type": "standup",
+      "x": 0.6,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Left of the Right Ramp. The third Leaper, and usually the awkward one to pick up."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.7,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "Collects Webvalue and lights the Spin Spider scoop. Ramp counts also hand out hold bonus, extra ball lights and points at set totals."
+    },
+    {
+      "id": "spider-scoop",
+      "name": "Spin Spider Scoop",
+      "type": "scoop",
+      "x": 0.79,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Lit by the Right Ramp. Feeds the backbox spider wheel, which is where most of this game's surprises come from."
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.92,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "A full shot carries up to the Crate; anything short falls into the Skill Shot hole instead.",
+      "feeds": {
+        "shot": "crate"
+      }
+    },
+    {
+      "id": "telepathetic-target",
+      "name": "Telepathetic Power Target",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Single standup that toggles the right outlane light on and off with each hit. Leave it lit before you risk the right side."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Pays a random award when the Telepathetic Power light is on — the one outlane in pinball you are sometimes happy to see."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Right Ramp, the Spin Spider scoop and the Right Loop."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the Left Ramp, the Left Loop and the Crate."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge straight into the Skill Shot hole. The award grows by 250K every time you collect it, so it is worth taking seriously on every ball rather than treating it as a first-ball novelty.",
+      "difficulty": 1,
+      "reward": "Points, +250K per collection",
+      "steps": [
+        {
+          "shot": "skill-shot-hole",
+          "action": "Set the plunge for the Skill Shot hole",
+          "detail": "Pull to the strength that drops the ball into the Skill Shot hole rather than sending it round the loop — collect and note the value, it will be higher next ball."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "cast-a-spell",
+      "title": "Light Cast A Spell",
+      "category": "strategy",
+      "summary": "The left outlane ball saver is off when the game starts on most machines, so it is something you earn rather than something you have. Clearing the spell target bank turns it on and buys back the drain that this game hands out freely.",
+      "difficulty": 1,
+      "reward": "Ball saver at the left outlane",
+      "steps": [
+        {
+          "shot": "spell-targets",
+          "action": "Clear the three-target bank",
+          "detail": "The first light needs two complete passes through the bank; after that a single clear does it"
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Bank the insurance",
+          "detail": "With the light on, a left outlane drain returns the ball instead of ending it"
+        }
+      ],
+      "fx": "magic"
+    },
+    {
+      "id": "tale-coffin-mb",
+      "title": "Stiff In The Coffin Multiball",
+      "category": "multiball",
+      "summary": "The main multiball and the first Tale most players collect. Left Ramp lights the lock, the lock lives in the Left Loop, and three of them start it. Once running, the two ramps alternate as jackpots.",
+      "difficulty": 2,
+      "reward": "3-ball multiball, 500K jackpots",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Light the lock",
+          "detail": "Each ramp arms one lock in the Left Loop"
+        },
+        {
+          "shot": "left-loop",
+          "action": "Lock the ball",
+          "detail": "Repeat until three are stacked away"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take the first jackpot",
+          "detail": "Either ramp is live to open with"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate ramps",
+          "detail": "Jackpots swap sides after each collect — hitting the unlit ramp still adds 10K to the value"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "tale-leapers",
+      "title": "Night Of The Leapers",
+      "category": "mode",
+      "summary": "The cheapest Tale on the game. Three standup targets, hit each one once, done. Two sit either side of the Left Ramp and the third is beside the Right Ramp.",
+      "difficulty": 1,
+      "reward": "Tale collected",
+      "steps": [
+        {
+          "shot": "leaper-1",
+          "action": "Hit the first Leaper",
+          "detail": "Left of the Left Ramp"
+        },
+        {
+          "shot": "leaper-2",
+          "action": "Hit the second Leaper",
+          "detail": "Right of the Left Ramp — often picked up off a ramp rattle"
+        },
+        {
+          "shot": "leaper-3",
+          "action": "Hit the third Leaper",
+          "detail": "Beside the Right Ramp; the hardest of the three to aim at cleanly"
+        }
+      ],
+      "fx": "monster",
+      "ordered": false
+    },
+    {
+      "id": "tale-deadheads",
+      "title": "Return Of The Deadheads",
+      "category": "mode",
+      "summary": "Light all three top rollover lanes. You rarely shoot for this directly — it falls out of Left Loop and Middle Loop shots that carry the ball round the top, so plan those shots and this Tale arrives on its own.",
+      "difficulty": 1,
+      "reward": "Tale collected, climbing 25K per lane",
+      "steps": [
+        {
+          "shot": "middle-loop",
+          "action": "Send the ball round the top",
+          "detail": "The Middle Loop feeds the lanes directly — the reliable way to pick up the one you are missing"
+        },
+        {
+          "shot": "deadhead-lanes",
+          "action": "Light all three lanes",
+          "detail": "Each lane pays 25K more than the last"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "tale-crate-mb",
+      "title": "Terror From The Crate",
+      "category": "multiball",
+      "summary": "A two-ball multiball earned by beating on the Crate. Four hits the first time, four more each time after. The final hit swallows the ball and starts it — then just keep feeding the Crate.",
+      "difficulty": 2,
+      "reward": "2-ball multiball, 250K jackpots",
+      "steps": [
+        {
+          "shot": "crate",
+          "action": "Bank hits into the Crate",
+          "detail": "Four to start it the first time; the requirement climbs by four on each later run"
+        },
+        {
+          "shot": "crate",
+          "action": "Keep shooting the Crate",
+          "detail": "Every entry during the two-ball is another 250K jackpot"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "tale-monsters-lab",
+      "title": "The Monster's Lab",
+      "category": "mode",
+      "summary": "The one Tale you cannot aim at. It comes from raw bumper hits — around 20 on a factory setup — so it tends to arrive as a bonus during scrappy play rather than something you plan.",
+      "difficulty": 1,
+      "reward": "Tale collected, bumpers worth 10K",
+      "steps": [
+        {
+          "shot": "jet-bumpers",
+          "action": "Accumulate bumper hits",
+          "detail": "Roughly 20 hits on a standard setting; loop shots that die in the bumpers all count"
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "tale-boney-beast",
+      "title": "Eyes Of The Boney Beast",
+      "category": "mode",
+      "summary": "Three Left Ramps, three Eyes, Tale collected — and the ramp turns into a scoring shot afterwards. This stacks naturally with lighting Coffin locks, since both live on the same ramp.",
+      "difficulty": 1,
+      "reward": "Tale collected, Left Ramp scores points",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp three times",
+          "detail": "Each one spots an Eye; the same shots are arming your Coffin locks"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "six-tales",
+      "title": "Start All Six Tales Of Terror",
+      "category": "progression",
+      "summary": "The spine of the whole game. Six Tales — Coffin Multiball, Leapers, Deadheads, Crate, Monster's Lab, Boney Beast — and starting all six is what unlocks the wizard mode. Note the word is started, not finished.",
+      "difficulty": 2,
+      "reward": "Lights Scared Stiff at the Crate",
+      "steps": [],
+      "instructions": [
+        "Track which Tales you have started rather than which you have scored well on — the game only cares that each one has been begun.",
+        "The three cheap ones are Leapers, Deadheads and Boney Beast; take those early so the harder Tales are all that is left.",
+        "The Monster's Lab arrives on its own from bumper traffic, so do not spend shots chasing it.",
+        "Weak Left Loop shots fall into the Secret Passage and spot a Tale outright — a genuinely useful miss.",
+        "Once all six are started the Crate becomes the shot that begins Scared Stiff."
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "spin-spider",
+      "title": "Spin The Spider",
+      "category": "secret",
+      "summary": "The backbox wheel, and the most under-used feature on the machine. Right Ramp lights the scoop, the scoop spins the spider, and a flipper button stops it. Where it lands decides your award — and several of the awards are worth more than the shot that earned them.",
+      "difficulty": 2,
+      "reward": "Wheel award (varies)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Light the scoop",
+          "detail": "The ramp arms Spin Spider"
+        },
+        {
+          "shot": "spider-scoop",
+          "action": "Feed the scoop",
+          "detail": "The spider starts spinning in the backbox"
+        },
+        {
+          "shot": "spider-scoop",
+          "action": "Stop it with a flipper button",
+          "detail": "Landing on something already collected pays nothing, so the wheel is worth less the more you spin it"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "three-eyes-eb",
+      "title": "Collect Three Eyes For The Extra Ball",
+      "category": "strategy",
+      "summary": "Three of the spider wheel's positions are Eyes, and collecting all three lights an extra ball. It is the single best reason to keep spinning even when the wheel starts repeating itself.",
+      "difficulty": 3,
+      "reward": "Extra ball",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Keep relighting the scoop",
+          "detail": "Every Right Ramp is another spin"
+        },
+        {
+          "shot": "spider-scoop",
+          "action": "Stop the wheel on an Eye",
+          "detail": "Three Eyes sit around the circle; you need all three"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "telepathetic-power",
+      "title": "Telepathetic Power",
+      "category": "strategy",
+      "summary": "A single standup toggles the right outlane light on and off. With it lit, a right outlane drain pays a random award instead of simply costing you the ball — so check its state before you play the right side loose.",
+      "difficulty": 1,
+      "reward": "Random award on right outlane drain",
+      "steps": [
+        {
+          "shot": "telepathetic-target",
+          "action": "Hit the target to toggle the light",
+          "detail": "Each hit flips it — an odd number of hits leaves it on"
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Collect if the ball goes there",
+          "detail": "Never shoot for this, but leave it lit as insurance"
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "webvalue",
+      "title": "Build Webvalue",
+      "category": "combo",
+      "summary": "The Right Ramp pays Webvalue — 50K for every web item you have collected — so its value is entirely a function of how much you have banked earlier. Ramp totals also hand out hold bonus, extra ball lights and points at set counts.",
+      "difficulty": 2,
+      "reward": "50K per web item collected",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Repeat the Right Ramp",
+          "detail": "Each shot collects the current Webvalue and pushes your ramp count toward the next award"
+        }
+      ],
+      "fx": "spider"
+    },
+    {
+      "id": "double-trouble",
+      "title": "Double Trouble",
+      "category": "multiplier",
+      "summary": "A spider wheel award that doubles every shot for 20 seconds. Short, so know in advance where you are sending the ball — the best use is stacking it onto a multiball or a Crate run already in progress.",
+      "difficulty": 2,
+      "reward": "All shot values x2 for 20 seconds",
+      "steps": [
+        {
+          "shot": "spider-scoop",
+          "action": "Stop the wheel on Double Trouble",
+          "detail": "You cannot aim for it, but you can decide what to shoot the moment it lands"
+        },
+        {
+          "shot": "crate",
+          "action": "Spend the 20 seconds on your biggest shot",
+          "detail": "Whatever is currently paying most — a lit jackpot beats a ramp"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "beat-the-crate",
+      "title": "Beat The Crate",
+      "category": "mode",
+      "summary": "A wheel award that pays out the Crate value multiplied by the Stiff-O-Meter number — and that number moves up and down while the mode runs. Timing your shot to a high reading is the whole trick.",
+      "difficulty": 3,
+      "reward": "Crate value x Stiff-O-Meter level",
+      "steps": [
+        {
+          "shot": "spider-scoop",
+          "action": "Land the wheel on Beat The Crate",
+          "detail": "Mode starts immediately"
+        },
+        {
+          "shot": "stiff-o-meter",
+          "action": "Watch the meter move",
+          "detail": "It cycles up and down rather than holding still"
+        },
+        {
+          "shot": "crate",
+          "action": "Shoot the Crate on a high number",
+          "detail": "The multiplier is read at the moment the shot lands"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "boogie-man",
+      "title": "Boogie Man Boogie",
+      "category": "mode",
+      "summary": "A wheel-started mode where every shot pays 10K to begin with, and the value climbs 5K each time the ball goes down a sink hole. Feeding holes deliberately is what makes this mode worth anything.",
+      "difficulty": 2,
+      "reward": "All shots 10K, +5K per sink hole",
+      "steps": [
+        {
+          "shot": "spider-scoop",
+          "action": "Land the wheel on Boogie Man",
+          "detail": "Mode starts immediately"
+        },
+        {
+          "shot": "skill-shot-hole",
+          "action": "Feed a sink hole to raise the value",
+          "detail": "Each hole entry adds 5K to every shot for the rest of the mode"
+        }
+      ],
+      "fx": "deadite"
+    },
+    {
+      "id": "extend-multiballs",
+      "title": "Extend A Multiball With The Wheel",
+      "category": "strategy",
+      "summary": "Two wheel positions restart a multiball that would otherwise be ending — the Coffin restarts Coffin Multiball with three balls, and the Crate restarts Crate Multiball. Spinning the spider during a multiball is therefore worth far more than spinning it during single-ball play.",
+      "difficulty": 3,
+      "reward": "Multiball restarts instead of ending",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Light the scoop during multiball",
+          "detail": "Do this while balls are still in play, not after"
+        },
+        {
+          "shot": "spider-scoop",
+          "action": "Spin for Coffin or Crate",
+          "detail": "Either one buys the multiball a second life"
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "scared-stiff-mode",
+      "title": "Scared Stiff (Stiff-O-Meter)",
+      "category": "wizard",
+      "summary": "The wizard mode. With all six Tales started, the Crate lights it. From there you alternate strictly — ramp, Crate, ramp, Crate — climbing ten levels of the Stiff-O-Meter, and the tenth shot must be the Crate.",
+      "difficulty": 3,
+      "reward": "250K climbing by 50K per shot, then Monster Multiball",
+      "steps": [
+        {
+          "shot": "crate",
+          "action": "Start Scared Stiff",
+          "detail": "Available once all six Tales have been started"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a ramp",
+          "detail": "Either ramp counts — the sequence just has to alternate"
+        },
+        {
+          "shot": "crate",
+          "action": "Shoot the Crate",
+          "detail": "Ramp then Crate, repeated; each shot pays 50K more than the last"
+        },
+        {
+          "shot": "crate",
+          "action": "Finish on the Crate at level ten",
+          "detail": "The final shot of the ladder must be the Crate — it is what triggers Monster Multiball"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "monster-multiball",
+      "title": "Monster Multiball",
+      "category": "wizard",
+      "summary": "The payoff for the whole game. Four balls, five million just for arriving, and all three jackpots — both ramps and the Crate — lit at a million each. There is no alternation here; everything is live at once.",
+      "difficulty": 3,
+      "reward": "5M start award, 1M jackpots on all three shots",
+      "steps": [
+        {
+          "shot": "crate",
+          "action": "Complete the Stiff-O-Meter",
+          "detail": "Monster Multiball starts on the final Crate shot"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect 1M jackpots",
+          "detail": "All three jackpot shots are lit simultaneously",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Work the second ramp",
+          "detail": "Keep both flippers busy while you still have four balls up",
+          "link": "none"
+        },
+        {
+          "shot": "crate",
+          "action": "Take the Crate jackpot",
+          "detail": "The mode runs until fewer than two balls remain",
+          "link": "none"
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "middle-loop-eb",
+      "title": "Middle Loop Extra Ball",
+      "category": "strategy",
+      "summary": "The Middle Loop is the game's extra ball shot when lit, and it doubles as the cleanest way to fill in Deadhead lanes. Two rewards on one shot makes it worth practising even when the extra ball is not lit.",
+      "difficulty": 2,
+      "reward": "Extra ball when lit",
+      "steps": [
+        {
+          "shot": "middle-loop",
+          "action": "Shoot the Middle Loop when the extra ball is lit",
+          "detail": "Unlit, the same shot still feeds the ball to the Deadhead lanes"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "secret-passage-tale",
+      "title": "Secret Passage Tale Spot",
+      "category": "secret",
+      "summary": "A shot that rewards failure. A Left Loop attempt that lacks the speed to make it round drops into the Secret Passage and spots a Tale outright — so a deliberately soft left loop is a real, if inelegant, way to fill in the Tale you cannot otherwise reach.",
+      "difficulty": 2,
+      "reward": "Spots one Tale",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Take the Left Loop without full power",
+          "detail": "Too weak to complete the loop, the ball falls into the Secret Passage"
+        },
+        {
+          "shot": "secret-passage",
+          "action": "Collect the spotted Tale",
+          "detail": "Useful when one stubborn Tale is all that stands between you and Scared Stiff"
+        }
+      ],
+      "fx": "magic"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ss-first-tale",
+      "title": "First Fright",
+      "desc": "Start any one of the six Tales of Terror.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "six-tales"
+    },
+    {
+      "id": "ss-spell-lit",
+      "title": "Insurance Policy",
+      "desc": "Clear the spell target bank and light Cast A Spell at the left outlane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "cast-a-spell"
+    },
+    {
+      "id": "ss-leapers",
+      "title": "Jump Scare",
+      "desc": "Collect Night of the Leapers by hitting all three Leaper targets.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "tale-leapers"
+    },
+    {
+      "id": "ss-coffin-mb",
+      "title": "Three In The Box",
+      "desc": "Lock three balls and start Stiff In The Coffin Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "tale-coffin-mb"
+    },
+    {
+      "id": "ss-crate-mb",
+      "title": "Something In The Crate",
+      "desc": "Beat the Crate open and start Terror From The Crate.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "tale-crate-mb"
+    },
+    {
+      "id": "ss-spider-spin",
+      "title": "Give It A Spin",
+      "desc": "Light the scoop off the Right Ramp and stop the backbox spider.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "spin-spider"
+    },
+    {
+      "id": "ss-three-eyes",
+      "title": "Eyes On The Prize",
+      "desc": "Collect all three Eyes from the spider wheel for the extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "three-eyes-eb"
+    },
+    {
+      "id": "ss-all-six",
+      "title": "Six Tales Told",
+      "desc": "Start all six Tales of Terror in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "six-tales"
+    },
+    {
+      "id": "ss-stiff-o-meter",
+      "title": "Top Of The Meter",
+      "desc": "Climb all ten levels of the Stiff-O-Meter during Scared Stiff.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "scared-stiff-mode"
+    },
+    {
+      "id": "ss-monster-mb",
+      "title": "Monster Multiball",
+      "desc": "Finish the Stiff-O-Meter on the Crate and start the four-ball wizard multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "monster-multiball"
+    }
+  ],
+  "drills": [
+    {
+      "id": "climbing-skill-shot",
+      "title": "The Climbing Skill Shot",
+      "text": "Pull to the strength that drops the ball into the Skill Shot hole rather than sending it around the loop, and note the value every time. It grows with each collect, so a late-game skill shot is worth several times the first one — which is the reason to take it on every ball rather than only on ball one.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "skill-shot-hole"
+      ]
+    },
+    {
+      "id": "ramp-scoop-stop",
+      "title": "Ramp, Scoop, Stop",
+      "text": "The right ramp arms the scoop, the scoop sets the spider spinning, and either flipper button freezes it. Run the pair as one routine off the left flipper, and practice committing to the stop instead of hoping — a landing on something you have already collected pays nothing, so the wheel is worth less the more you spin it.",
+      "reps": "10 full spins",
+      "focus": "accuracy",
+      "goal": "spin-spider",
+      "shots": [
+        "right-ramp",
+        "spider-scoop"
+      ]
+    },
+    {
+      "id": "ramp-crate-alternation",
+      "title": "Ramp, Crate, Repeat",
+      "text": "Ten levels, strictly alternating: a ramp, then the Crate, then a ramp again, and the tenth shot has to be the Crate. Drill the alternation outside the mode so the rhythm is already there when it counts. Either ramp counts, so take whichever one the feed gives you instead of forcing a side.",
+      "reps": "5 ladders of ten",
+      "focus": "flow",
+      "goal": "scared-stiff-mode",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "crate"
+      ]
+    },
+    {
+      "id": "switch-on-the-insurance",
+      "title": "Switch On the Insurance",
+      "text": "Both outlane comforts on this game are things you turn on yourself: clearing the three-target bank lights the left-outlane save, two full passes the first time and one after that. A single standup toggles the right outlane's award light on and off, so count your hits and leave it on an odd number. Play a ball where both are lit before you take any risk at all.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "goal": "cast-a-spell",
+      "shots": [
+        "spell-targets",
+        "left-outlane",
+        "telepathetic-target",
+        "right-outlane"
+      ]
+    },
+    {
+      "id": "soft-left-loop",
+      "title": "The Deliberately Soft Loop",
+      "text": "A left loop without the speed to carry around falls into the Secret Passage and spots a Tale outright. Work the weaker half of that shot on purpose until you can drop it in there on demand — it is the answer when one stubborn Tale is all that stands between you and the wizard mode.",
+      "reps": "15 soft attempts",
+      "focus": "accuracy",
+      "goal": "secret-passage-tale",
+      "shots": [
+        "left-loop",
+        "secret-passage"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "ghost",
+  "actionButton": {
+    "present": false,
+    "how": "No dedicated button — manual plunger, flippers, nudging. The one moment your flipper buttons do something other than flip is up at the backbox wheel: a right ramp arms the scoop, the scoop sets the spider spinning, and either flipper button freezes it wherever you dare leave it."
+  },
+  "howItPlays": {
+    "objective": "Elvira hosts six Tales of Terror, and merely starting all six -- not finishing them -- lights the wizard mode at the Crate. Along the way you feed a backbox spider wheel for its grab-bag of awards, then climb the Stiff-O-Meter into four-ball Monster Multiball.",
+    "loop": [
+      "Begin each Tale at its own shot: lock balls in the Left Loop, sweep the three Leaper standups, run the top lanes, pound the Crate, rack up bumper hits and ramp for the Boney Beast.",
+      "Shoot the Right Ramp to arm the scoop, feed the scoop to set the spider spinning, then freeze it with a flipper button on whatever award you dare stop it.",
+      "Once every Tale has been started the Crate lights Scared Stiff, and you alternate a ramp then the Crate up ten meter levels.",
+      "Land the tenth level on the Crate and Monster Multiball breaks open with four balls and all three jackpots lit together."
+    ],
+    "lights": [
+      {
+        "id": "tales-of-terror",
+        "name": "Tales of Terror",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "leaper-2"
+          },
+          {
+            "shot": "deadhead-lanes"
+          },
+          {
+            "shot": "crate"
+          },
+          {
+            "shot": "jet-bumpers"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Each Tale you have begun lights its own marker and holds for the rest of the game, because the count is about which ones have been started rather than how well they scored.",
+        "flashing": null,
+        "control": null,
+        "then": "Get the three cheap ones -- Leapers, Deadheads and the Boney Beast -- going early, let the Monster's Lab arrive off bumper traffic on its own, and once all six are lit the Crate becomes the shot that opens the wizard mode. A weak Left Loop that dies in the Secret Passage spots a Tale outright, which rescues a stubborn last one.",
+        "goals": [
+          "six-tales",
+          "tale-leapers",
+          "tale-monsters-lab",
+          "secret-passage-tale"
+        ]
+      },
+      {
+        "id": "coffin-locks",
+        "name": "Coffin Multiball Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-loop"
+          }
+        ],
+        "lit": "The Left Ramp lights a lock and the Left Loop holds it, and each stashed ball stays put until three are stacked away.",
+        "flashing": null,
+        "control": null,
+        "then": "Three locks set off Stiff in the Coffin, a three-ball multiball whose jackpots hop between the two ramps at half a million each, and even a hit on the unlit ramp still tacks ten thousand onto the value.",
+        "goals": [
+          "tale-coffin-mb"
+        ]
+      },
+      {
+        "id": "deadhead-rollovers",
+        "name": "Deadhead Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "deadhead-lanes"
+          }
+        ],
+        "lit": "An unlit Deadhead rollover is one still to collect, and you seldom aim at these directly since they fall in as the ball wraps the top off a Left Loop or Middle Loop.",
+        "flashing": null,
+        "control": null,
+        "then": "Light all three of the top lanes for Return of the Deadheads, each lane paying twenty-five thousand more than the one before, and lean on the Middle Loop to pick up whichever one you keep missing.",
+        "goals": [
+          "tale-deadheads"
+        ]
+      },
+      {
+        "id": "spin-spider-wheel",
+        "name": "Spin Spider Wheel",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "spider-scoop"
+          }
+        ],
+        "lit": "The Right Ramp lights the scoop, and feeding the scoop sets the backbox spider spinning past a ring of awards that pay nothing once already claimed, so every spin is worth a shade less than the one before.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "press a flipper button to stop the spinning wheel on whatever award you are brave enough to leave it on",
+          "when": "the spider is spinning in the backbox"
+        },
+        "then": "Where it lands can hand you Double Trouble, Boogie Man, Beat the Crate or a multiball restart, and stopping on the three Eyes across separate spins lights an extra ball. Spinning during a multiball is worth far more, since two of the slots restart the multiball itself.",
+        "goals": [
+          "spin-spider",
+          "three-eyes-eb",
+          "double-trouble",
+          "extend-multiballs"
+        ]
+      },
+      {
+        "id": "stiff-o-meter-climb",
+        "name": "Stiff-O-Meter",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "crate"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "stiff-o-meter"
+          }
+        ],
+        "lit": "Start every Tale and the Crate lights the wizard mode, and from there the ten-rung meter climbs a level per shot for as long as you keep strictly alternating a ramp and the Crate.",
+        "flashing": null,
+        "control": null,
+        "then": "Each rung pays fifty thousand more than the last, and the tenth shot has to land on the Crate, which is what tips you into Monster Multiball. Break the alternation and the climb stalls.",
+        "goals": [
+          "scared-stiff-mode",
+          "monster-multiball"
+        ]
+      },
+      {
+        "id": "outlane-insurance",
+        "name": "Outlane Insurance",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "spell-targets"
+          },
+          {
+            "shot": "left-outlane"
+          },
+          {
+            "shot": "telepathetic-target"
+          },
+          {
+            "shot": "right-outlane"
+          }
+        ],
+        "lit": "Both outlane comforts are switches you flip yourself: clearing the three spell standups lights the Cast a Spell save on the left, and one Telepathetic target flips the right outlane's award lamp on or off each time you hit it.",
+        "flashing": null,
+        "control": null,
+        "then": "Leave the left save lit so a left drain hands the ball back, and stop the right target on an odd count so a right drain pays a random award instead of ending the ball. The first Cast a Spell costs two full passes of the bank, later ones only one.",
+        "goals": [
+          "cast-a-spell",
+          "telepathetic-power"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge into the skill-shot hole every ball, since the award grows a quarter million each time you cash it. Light the Cast a Spell save, then knock out the cheap Tales -- the three Leapers, the top-lane Deadheads and the Boney Beast ramps.",
+        "goals": [
+          "skillshot",
+          "cast-a-spell",
+          "tale-leapers",
+          "tale-deadheads"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Stack the harder Tales -- lock for Coffin Multiball, beat the Crate open, let the bumpers hand you the Lab -- and work the spider wheel for the three Eyes extra ball and its mode awards. Save a Double Trouble landing to double a multiball already in progress.",
+        "goals": [
+          "tale-coffin-mb",
+          "tale-crate-mb",
+          "six-tales",
+          "spin-spider",
+          "three-eyes-eb"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Starting all six Tales lights Scared Stiff at the Crate; climb the ten-level Stiff-O-Meter by alternating ramp and Crate, and finish on the Crate to break into Monster Multiball. That four-ball mode pays five million just to arrive and lights all three jackpots at a million apiece.",
+        "goals": [
+          "scared-stiff-mode",
+          "monster-multiball"
+        ]
+      }
+    ]
+  }
+}

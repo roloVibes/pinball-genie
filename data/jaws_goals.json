@@ -1,0 +1,1843 @@
+{
+  "machine": "Jaws (Stern Pinball, 2024)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Manual plunger + auto-launch. A full plunge doesn't just ride over the top — the ball wraps around the fishing-reel spinner like line on a reel, then drops out beside the tiny right mini flipper and its pop bumper. Skill shot levels 1-3 are chosen by pull strength.",
+      "feeds": {
+        "shot": "mini-flipper",
+        "loop": {
+          "shot": "fishing-reel"
+        }
+      }
+    },
+    {
+      "id": "right-pop-bumper",
+      "name": "Pop Bumper",
+      "type": "bumpers",
+      "x": 0.74,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Single pop bumper; Level 1 skill shot target. Buoy plastic on Pro, sculpted Orca barrel on Premium/LE."
+    },
+    {
+      "id": "mini-flipper-lane",
+      "name": "Mini-Flipper Lane",
+      "type": "lane",
+      "x": 0.83,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Right-side vertical lane feeding the mini flipper; lights Quickshot; Level 2 skill shot."
+    },
+    {
+      "id": "mini-flipper",
+      "name": "Mid-Right Mini Flipper",
+      "type": "flipper",
+      "x": 0.78,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Shoots across to the harpoon lane, left 3-bank and left orbit. Home of Flip-Lock: action button holds a cradled ball ~20s during multiball.",
+      "bat": {
+        "side": "right",
+        "size": "mini"
+      }
+    },
+    {
+      "id": "harpoon-lane",
+      "name": "Harpoon Lane",
+      "type": "lane",
+      "x": 0.09,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Far-left lane (Quickshot 1X/2X/4X by depth); shot from the mini flipper or via the left orbit when the harpoon gate is open. Yellow = load barrel, blue = Quickshot.",
+      "flipper": "mini-flipper"
+    },
+    {
+      "id": "fish-finder-bank",
+      "name": "Left 3-Bank (Fish Finder)",
+      "type": "target-bank",
+      "x": 0.15,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Standups on Pro, drop targets with roving-arrow qualify on Premium/LE. Lights machete, Fish Finder awards, Pipit, Ready Barrel."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (West Beach)",
+      "type": "orbit",
+      "x": 0.17,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Night Swim beach shot; spinner in the mouth advances Bounty. Harpoon gate can divert it into the harpoon lane; otherwise wraps to the mini-flipper side."
+    },
+    {
+      "id": "wave-ramp",
+      "name": "Wave Ramp (Marina)",
+      "type": "ramp",
+      "x": 0.28,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Left ramp; strong shots spell O-R-C-A. Pro: wireform returns to the mini flipper; Premium/LE: feeds the Orca upper playfield. Beach Panic start shot.",
+      "feeds": {
+        "shot": "mini-flipper"
+      },
+      "feedsByTrim": {
+        "premium-le": {
+          "x": 0.28,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "id": "chum-bucket",
+      "name": "Chum Bucket",
+      "type": "captive-ball",
+      "x": 0.34,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Kinetic Chum Bucket Newton ball between the ramps; feeds the chum line toward Jaws Multiball; add-a-ball source; super-secret skill shot family."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (North Beach)",
+      "type": "ramp",
+      "x": 0.42,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Half-pipe ramp returning to the left inlane. Scars start shot; where most mini-wizards and the final wizard start.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball / Bash Boat",
+      "type": "captive-ball",
+      "x": 0.53,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Multi-directional captive ball with 3 optos in front of the shark cage (Pro) / Ben Gardner's boat (Prem/LE). Lights encounters, banks boosts, bounty damage, super jackpots."
+    },
+    {
+      "id": "shark-bash",
+      "name": "Great White Bash Shark",
+      "type": "mech",
+      "x": 0.55,
+      "y": 0.78,
+      "trim": "premium-le",
+      "notes": "Motorized shark that crashes up through Ben Gardner's boat when encounters/bounty bashes are live; Pro uses the captive ball for all shark shots."
+    },
+    {
+      "id": "shark-fin",
+      "name": "Shark Fin Drop Target",
+      "type": "drop-target",
+      "x": 0.58,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Motorized fin roving a 7-position arc mid-playfield. Barrel attach, Quickshot collect, encounter jackpots, super jackpots. Dangerous ricochets — Shark Cage gear insures it."
+    },
+    {
+      "id": "fishing-reel",
+      "name": "Fishing Reel (The Pond)",
+      "type": "spinner",
+      "x": 0.66,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Right-side lane over a horizontal spinner disc; Pond Attack start and Bounty Hunt start/advance. Hardest shot on the game."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (East Beach / Quint's Shack)",
+      "type": "ramp",
+      "x": 0.75,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Tight ramp to Quint's Shack; wireform to the right inlane. Gear collect/cash-out, Bounty Hunt light, Raft Attack start.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "shark-tower-targets",
+      "name": "Shark Tower Targets",
+      "type": "standup",
+      "x": 0.66,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Three yellow standups flanking the beach shots (x≈0.24, 0.66, 0.81). Light beachgoers and Feeding Frenzy; lower Scars values — brush, don't bash, during Scars."
+    },
+    {
+      "id": "life-ring-target",
+      "name": "Life Ring Target",
+      "type": "standup",
+      "x": 0.72,
+      "y": 0.35,
+      "trim": "all",
+      "notes": "Buoy standup below the pop bumper; two hits arm the Life Ring left-outlane save; Super Life Ring award target."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.14,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Machete arming lane; up-post at its top stages balls for Quickshots. Fed by center ramp and left orbit."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Fed by the right ramp wireform; Quint's Challenge lights here after O-R-C-A; machete can light here too."
+    },
+    {
+      "id": "action-button",
+      "name": "Action Button",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.01,
+      "trim": "all",
+      "notes": "Lockdown-bar button (below the flipper line): Life Ring outlane save when flashing, and Flip-Lock hold on the mini flipper."
+    },
+    {
+      "id": "lookout-tower-ramp",
+      "name": "Lookout Tower Ramp",
+      "type": "ramp",
+      "x": 0.22,
+      "y": 0.95,
+      "trim": "premium-le",
+      "notes": "Small circular ramp on the Orca upper playfield with reverse-180 wireform; 8 shots = extra ball; Quint combo into the right ramp; 5x Raft Attack combo leg.",
+      "feeds": {
+        "x": 0.3,
+        "y": 0.82
+      },
+      "playfield": "orca-deck"
+    },
+    {
+      "id": "ship-wheel-spinner",
+      "name": "Ship's Wheel Spinner",
+      "type": "spinner",
+      "x": 0.198,
+      "y": 0.9083,
+      "trim": "premium-le",
+      "notes": "Horizontal spinner disc styled as the ship's wheel on the Orca deck. Hitting it from the deck flipper sets the wheel spinning like a game-show prize wheel and pays points while it spins — keep it ripping for value. Premium/LE only.",
+      "playfield": "orca-deck",
+      "feeds": {
+        "shot": "mini-flipper"
+      }
+    },
+    {
+      "id": "radio-target",
+      "name": "Radio Target",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.95,
+      "trim": "premium-le",
+      "notes": "Orca-deck standup; hitting it spots a mode shot once per mode.",
+      "playfield": "orca-deck"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "orca-flipper",
+      "name": "Orca Deck Flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.835,
+      "trim": "premium-le",
+      "playfield": "orca-deck",
+      "bat": {
+        "size": "mini"
+      },
+      "notes": "The upper deck's own small flipper (position estimated from gameplay video — vision pass refines it). Deck shots are made from here, same one-shot-per-flipper flow as the main playfield."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-level-1",
+      "title": "Skill Shot — Level 1: Light Plunge",
+      "category": "skillshot",
+      "summary": "The first skill shot on offer: a light plunge that drops the ball into the pop bumpers just off the shooter lane. Collecting it moves the ladder up to Level 2 for your next ball.",
+      "difficulty": 1,
+      "reward": "5M + 5s ball save",
+      "steps": [
+        {
+          "shot": "right-pop-bumper",
+          "action": "Light plunge into the pop bumpers",
+          "detail": "An easy pull — the ball only needs to climb partway up the lane and fall into the pops. 5M and 5 more seconds of ball save."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-level-2",
+      "title": "Skill Shot — Level 2: Short Plunge",
+      "category": "skillshot",
+      "summary": "A short plunge that reaches the mini flipper clean — the pop bumper next door voids it. Level 1 is the rung below this one.",
+      "difficulty": 2,
+      "reward": "10M + Gear + 5s ball save",
+      "requires": [
+        "skillshot-level-1"
+      ],
+      "requiresNote": "The ladder steps up at the start of your next ball, not mid-ball — and banking the rung isn't the only way up: the Super Secret Skill Shot also advances the ladder.",
+      "steps": [
+        {
+          "shot": "mini-flipper-lane",
+          "action": "Short plunge into the mini-flipper lane",
+          "detail": "Ease the plunger so the ball rolls down to the tiny right mini flipper WITHOUT touching the pop bumper on the way — 10M, lights Gear, and 5 more seconds of ball save."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-level-3",
+      "title": "Skill Shot — Level 3: Plunge Through",
+      "category": "skillshot",
+      "summary": "Full plunge clean through to the flippers, then make the lit fish-finder target from the right flipper — nothing else touched on the way. Level 2 is the rung below this one.",
+      "difficulty": 2,
+      "reward": "15M + Gear + 5s ball save",
+      "requires": [
+        "skillshot-level-2"
+      ],
+      "requiresNote": "The ladder steps up at the start of your next ball, not mid-ball — and banking the rung isn't the only way up: the Super Secret Skill Shot also advances the ladder.",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Full plunge through to the flippers",
+          "detail": "The ball has to reach the flippers clean — touching any other switch on the way down voids the level.",
+          "plunge": "full"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Hit the flashing fish-finder target from the right flipper",
+          "detail": "Catch or play the ball off the right flipper and make the lit left 3-bank target first shot. 15M and lights Gear.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-secret",
+      "title": "Secret Skill Shot",
+      "category": "skillshot",
+      "summary": "A hidden plunge option: bring the ball to the flippers clean, then make the Chum Bucket your first shot.",
+      "difficulty": 3,
+      "reward": "Current skill-shot value",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the secret is made with a flipper shot, not the plunge itself.",
+          "plunge": "full"
+        },
+        {
+          "shot": "chum-bucket",
+          "action": "Shoot the Chum Bucket first shot",
+          "detail": "Hit the chum bucket first shot off the flipper for the secret skill shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-super-secret",
+      "title": "Super Secret Skill Shot",
+      "category": "skillshot",
+      "summary": "The deepest cut: a clean trip to the flippers, then a dead-center captive-ball hit — it awards the skill-shot value and advances it for next time.",
+      "difficulty": 3,
+      "reward": "Skill-shot value, and advances it",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Bring the ball down to the flippers — the secret is made with a flipper shot, not the plunge itself.",
+          "plunge": "full"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Shoot the captive ball first shot",
+          "detail": "Make the captive ball first shot off the flipper for the super secret."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "quickshot-farm",
+      "title": "Quickshot: Harpoon → Fin (the #1 money combo)",
+      "category": "combo",
+      "summary": "The game's signature two-shot farm: light Quickshot at the mini-flipper lane, shoot the harpoon lane, then quickly nail the moving Shark Fin.",
+      "difficulty": 2,
+      "reward": "3M + 200K/beachgoer × up to 7x; 3 Quickshots = Extra Ball; each make lights Gear",
+      "steps": [
+        {
+          "shot": "mini-flipper-lane",
+          "action": "Roll through the mini-flipper lane",
+          "detail": "Lights Quickshot blue at the harpoon lane (when the harpoon isn't yellow for a barrel)"
+        },
+        {
+          "shot": "mini-flipper",
+          "action": "Trap on the mid-right mini flipper",
+          "detail": "Plunge, orbit exit and pop area all funnel here — treat it as a calm two-shot rhythm"
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "Shoot the harpoon lane from the mini flipper",
+          "detail": "The farther up the lane the ball travels, the higher the value: 1X / 2X / 4X"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Quickly hit the moving Shark Fin to collect",
+          "detail": "+1x consecutive multiplier per make (max 7x); a miss resets it"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "chrissie-combo",
+      "title": "Character Combo: Chrissie Watkins",
+      "category": "combo",
+      "summary": "One of seven fixed Character (Memorial) Combos, single-ball play only. Each unique combo completed permanently adds +250K to all future Beach Closed hurry-up shots.",
+      "difficulty": 2,
+      "reward": "Escalating 5M+ and +250K baked into every future Beach Closed hurry-up",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit",
+          "detail": "Start the chain — combos must be shot in quick succession"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Combo into the right ramp",
+          "detail": null
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Finish at the center ramp",
+          "detail": "Completes Chrissie Watkins; memorial screen plays"
+        }
+      ],
+      "fx": "beach"
+    },
+    {
+      "id": "sam-quint-combo",
+      "title": "Character Combo: Sam Quint",
+      "category": "combo",
+      "summary": "The hardest character combo — it starts on the fishing reel, the trickiest shot on the game, and ends on the shark itself.",
+      "difficulty": 3,
+      "reward": "Escalating 5M+ and +250K to future Beach Closed shots",
+      "steps": [
+        {
+          "shot": "fishing-reel",
+          "action": "Shoot the fishing reel lane",
+          "detail": "Timing aid: trap left, flip as the ball overlaps the left edge of the Jaws graphic between the flippers",
+          "flipper": "left"
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "Combo into the harpoon lane",
+          "detail": "The reel exit feeds the mini-flipper side"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Finish on the captive ball / shark",
+          "detail": "Bash boat on Premium/LE"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "raft-attack-4x-fin",
+      "title": "Raft Attack 4x Fin Combo",
+      "category": "combo",
+      "summary": "During the Raft Attack encounter, ramps raise the fin and specific 3-shot chains ending at the fin multiply the award — Wave ramp → harpoon gate → fin is the 4x line (5x via Lookout Tower on Premium/LE).",
+      "difficulty": 3,
+      "reward": "Fin award (5M + 2M per award) multiplied 2x–5x",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start Raft Attack at the right ramp",
+          "detail": "East Beach encounter; left or right ramp raises the fin"
+        },
+        {
+          "shot": "wave-ramp",
+          "action": "Shoot the Wave ramp to raise the fin",
+          "detail": "Other chains: right ramp→center ramp→fin 2x, right ramp→left orbit→fin 3x"
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "Combo through the harpoon gate",
+          "detail": "Sets the 4x multiplier (Prem/LE: Wave ramp→Lookout Tower→fin = 5x)"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Finish on the raised fin",
+          "detail": "3 fin awards light the Encounter Jackpot (30%/15% of mode total)"
+        }
+      ],
+      "fx": "raft"
+    },
+    {
+      "id": "boat-damage-combo",
+      "title": "2x Damage Boat Combo",
+      "category": "combo",
+      "summary": "Any shot that feeds the left inlane — the center ramp, the left orbit or the harpoon lane — comboed straight into the captive ball awards 2x damage, which is the efficient route to lighting encounters and qualifying Jaws Multiball.",
+      "difficulty": 1,
+      "reward": "2x damage toward Shark Encounters and Jaws Multiball",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the center ramp",
+          "detail": "Its half-pipe wireform returns to the left inlane; the left orbit and harpoon lane feed the same flipper, but the wave ramp does not"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Let the return feed the left inlane",
+          "detail": "Be ready on the left flipper"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Immediately bash the boat / captive ball",
+          "detail": "Counts double toward encounter and multiball qualification",
+          "flipper": "left"
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "jaws-mb1",
+      "title": "Jaws Multiball 1 — \"Reel Him In!\"",
+      "category": "multiball",
+      "summary": "The first barrel multiball. There are no physical locks — the 'lock' is attaching Barrel #1 by shooting the raised Shark Fin. Low-scoring on its own; best stacked with Night Swim or Beach Panic.",
+      "difficulty": 2,
+      "reward": "5 jackpots to complete; add-a-ball at 3 chum-bucket hits",
+      "steps": [
+        {
+          "shot": "chum-bucket",
+          "action": "Feed the chum line at the Chum Bucket",
+          "detail": "Advances the red chum arrows; Tracker gear makes it 2x faster"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the lit red arrows to fill the chum line",
+          "detail": "Left orbit, wave ramp and center ramp — the shots that feed the left flipper"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Shoot the raised fin to attach Barrel #1",
+          "detail": "Yellow-lit shots raise the fin; the barrel is the lock"
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "Start multiball at any yellow-flashing shot",
+          "detail": "Harpoon lane, left orbit, center ramp or right ramp all qualify"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect 5 jackpots at red flashing shots",
+          "detail": "Every ~3 red shots lights a jackpot; use Flip-Lock on the mini flipper to control the chaos"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "jaws-mb2-chase",
+      "title": "Jaws Multiball 2 — \"The Chase\"",
+      "category": "multiball",
+      "summary": "The second barrel multiball needs two barrels, each qualified manually: chum line → Ready Barrel at the 3-bank → yellow shot raises the fin → bash the fin to attach.",
+      "difficulty": 3,
+      "reward": "20M super jackpots at the captive ball (10-second window); add-a-ball at 8 chum hits",
+      "steps": [
+        {
+          "shot": "chum-bucket",
+          "action": "Complete the chum line again",
+          "detail": "Chum Bucket plus red left-flipper shots"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Complete the left 3-bank for \"Ready Barrel\"",
+          "detail": null
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "Shoot a yellow shot to raise the fin",
+          "detail": "Left orbit or harpoon lane light yellow for barrels 2 and 3"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Attach 2 barrels at the fin",
+          "detail": "Repeat the qualify sequence for each barrel"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start at a yellow-flashing shot, then build switch hits",
+          "detail": "Switch hits light all five major shots for jackpots"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Collect 20M super jackpots at the captive ball",
+          "detail": "Lights at ~90+ switch hits, 10-second window"
+        }
+      ],
+      "fx": "barrel"
+    },
+    {
+      "id": "mako-bounty",
+      "title": "Bounty Hunt — Mako Multiball",
+      "category": "multiball",
+      "summary": "The easiest of the four Bounty Hunt multiballs and the one to start with: its capture perk (reel spins count 2x + longer Flip-Lock) makes every later bounty faster.",
+      "difficulty": 2,
+      "reward": "Bounty collect + capture perk: 2x reel spins and longer Flip-Lock; capture lights Gear",
+      "steps": [
+        {
+          "shot": "fishing-reel",
+          "action": "Rip the fishing reel to 80 spins",
+          "detail": "Dart gear makes bounty advance 2x faster",
+          "link": "none"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Make 3 ramp shots",
+          "detail": "Any ramps count",
+          "link": "none"
+        },
+        {
+          "shot": "right-pop-bumper",
+          "action": "Hit the pop bumper once",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "chum-bucket",
+          "action": "Hit the Chum Bucket twice",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "fishing-reel",
+          "action": "Start the hunt at the fishing reel",
+          "detail": "2-ball multiball, +5s ball save; green shots reel in the shark"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the shark when lit to weaken it",
+          "detail": "35% damage per hit (Prem/LE: motorized shark pops up through the boat)"
+        },
+        {
+          "shot": "fishing-reel",
+          "action": "Make the final capture shot at 1% health",
+          "detail": "Miss it and Mako returns later needing half the shots. The capture perk still lands, but the bonus Gear is forfeited and the bounty jackpot multiplier drops for the revisit"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "night-search-mb",
+      "title": "Night Search Multiball",
+      "category": "multiball",
+      "summary": "A 2-ball multiball earned as a Fish Finder award. Jackpots at every major shot time out and unlight; the Fish Finder targets relight them. Completing it earns a permanent +1x base machete.",
+      "difficulty": 2,
+      "reward": "4 jackpots = light Gear; completion = permanent +1x base machete",
+      "steps": [
+        {
+          "shot": "fish-finder-bank",
+          "action": "Qualify Fish Finder at the left 3-bank",
+          "detail": "Pro: any 3 hits; Prem/LE: hit the roving flashing drop target to lock each one in"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Collect the Night Search award",
+          "detail": "One of 5 Fish Finder awards — cycle to it"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot lit major shots for jackpots",
+          "detail": "Each jackpot times out and unlights"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Relight timed-out shots at the Fish Finder targets",
+          "detail": null
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bump jackpots with boat hits, then shoot the shark for supers",
+          "detail": "+250K per boat hit; after 8 jackpots, hit the shark within 10 seconds for super jackpots"
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "scars-encounter",
+      "title": "Shark Encounter — Scars (center ramp)",
+      "category": "mode",
+      "summary": "The highest-value of the five Shark Encounters and the one to play first: safe single-ball shooting, and completion earns a permanent +1x machete. Boost it to 2x before starting.",
+      "difficulty": 2,
+      "reward": "Encounter Jackpot = 35% of mode total (15% if fin missed) + permanent +1x machete",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Hit the bash boat to light encounters",
+          "detail": "1 hit + 1 per encounter already played; extra hits bank boosts (L3 = 2x mode scoring)"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start Scars at the center ramp (North Beach)",
+          "detail": null
+        },
+        {
+          "shot": "wave-ramp",
+          "action": "Shoot the blue-lit shots through 3 phases",
+          "detail": "Pro: both lit shots each phase; Prem/LE: any 2 of 3. Phases start 6M/7M/8M — avoid the shark tower targets, they lower values"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Finish the mode at the left target bank",
+          "detail": null
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Collect the Encounter Jackpot at the fin",
+          "detail": "Great machete cash-in spot"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "night-swim-encounter",
+      "title": "Shark Encounter — Night Swim (left orbit)",
+      "category": "mode",
+      "summary": "The West Beach encounter — and the best mode to stack with Jaws Multiball 1, since the multiball keeps the mode alive and multiplies its shots.",
+      "difficulty": 2,
+      "reward": "Blue shots 1M + 750K each; jackpot = 35% of mode total + permanent +1x machete",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Light encounters at the bash boat",
+          "detail": "Bank a 2x boost with extra hits if you can"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Start Night Swim at the left orbit (West Beach)",
+          "detail": null
+        },
+        {
+          "shot": "wave-ramp",
+          "action": "Phase 1: make 4 blue shots",
+          "detail": "2x-lit shots count double"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Phase 2: hit the roving blue shots",
+          "detail": "Any 3 roving/cyan shots light the final shot"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Make the final shot at the left orbit",
+          "detail": null
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Collect the Encounter Jackpot at the fin",
+          "detail": "35% of mode total (20% if the fin is missed)"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "fish-finder-awards",
+      "title": "Fish Finder — Collect All 5 Awards",
+      "category": "mode",
+      "summary": "The left 3-bank cycles through five awards: Super Buoys, Super Life Ring, Cast 'N Catch, Light Video Mode (Shark Hunter) and Night Search Multiball. All five light Super Cast 'N Catch.",
+      "difficulty": 1,
+      "reward": "5 awards; all 5 = Super Cast 'N Catch mini-wizard at the center ramp",
+      "steps": [
+        {
+          "shot": "fish-finder-bank",
+          "action": "Hit 3 targets on the left bank",
+          "detail": "Pro: any 3 (requirement +1 each award); Prem/LE: hit the roving flashing drop target to lock each"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Collect the Fish Finder award",
+          "detail": "Video mode 'Shark Hunter' hides a once-per-player extra ball"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "After all 5 awards, start Super Cast 'N Catch at the center ramp",
+          "detail": "Flip-Lock a ball, bank center-ramp values, collect anywhere for 15 seconds"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "quints-shack-orca",
+      "title": "Quint's Shack: Spell O-R-C-A & Tie a Knot",
+      "category": "mode",
+      "summary": "Strong Wave-ramp shots spell O-R-C-A to light a Quint's Shack award at the right ramp (always 'Light Bounty Hunt' first), and unlock Quint's Challenge knot combos for bonus X.",
+      "difficulty": 2,
+      "reward": "Shack award + each knot = +1x bonus X (2nd+ knots are permanent)",
+      "steps": [
+        {
+          "shot": "wave-ramp",
+          "action": "Rip 4 strong Wave-ramp shots to spell O-R-C-A",
+          "detail": "Only a full-strength shot registers as a wave-ramp letter"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the Quint's Shack award at the right ramp",
+          "detail": "Always 'Light Bounty Hunt' if one isn't lit; otherwise gear, beachgoers, max quickshot 7x, etc."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Quint's Challenge lights at the right return lane",
+          "detail": "Timed combo sequences: Easy, then Medium/Hard/Extra-Hard with shorter timers"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Easy knot shot 1: left orbit",
+          "detail": null
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Easy knot shot 2: right ramp",
+          "detail": null
+        },
+        {
+          "shot": "chum-bucket",
+          "action": "Easy knot shot 3: Chum Bucket",
+          "detail": "First knot = +1x bonus this ball; later knots permanent; Thresher perk = 2 attempts per knot"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "machete-multiplier",
+      "title": "Machete — the Next-Shot Multiplier",
+      "category": "multiplier",
+      "summary": "JAWS has no traditional playfield X — the machete is the multiplier engine. Light it at the left 3-bank, arm it through a lit inlane, and spend it only on planned big shots.",
+      "difficulty": 2,
+      "reward": "Base 2x next shot; permanent +1x per Shark Encounter completed, per Night Search Multiball completed, and per bounty shark captured on the first attempt — Mako's bonus lights Gear instead, and post-4th-of-July Encounter Challenges hand out a permanent shot multiplier rather than machete.",
+      "steps": [
+        {
+          "shot": "fish-finder-bank",
+          "action": "Complete the left 3-bank",
+          "detail": "Lights machete at a return lane; completing it again while machete runs adds a temporary +1x"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Roll through the lit inlane to arm it",
+          "detail": "Or shoot a ramp whose wireform feeds that inlane"
+        },
+        {
+          "shot": "wave-ramp",
+          "action": "Cash it on a Beach Closed hurry-up or Encounter Jackpot",
+          "detail": "Best dumps: beach-closed hurry-ups (15M+ base), encounter jackpots, Pipit, final Feeding Frenzy target. Not video mode or gear cash-out"
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "At 4x+ base, hit the harpoon gate to relight machete",
+          "detail": "Required once base machete reaches 4x"
+        }
+      ],
+      "fx": "fin"
+    },
+    {
+      "id": "encounter-boost-2x",
+      "title": "Encounter Boost — 2x Mode Scoring",
+      "category": "multiplier",
+      "summary": "Extra boat hits before starting an encounter bank boosts: Level 1 +15s timer, Level 2 +5M and light Gear, Level 3 doubles scoring for the entire mode — one of the biggest score levers in the game.",
+      "difficulty": 1,
+      "reward": "L1 +15s / L2 +5M + Gear / L3 2x scoring for the whole encounter",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Hit the boat to light Shark Encounters",
+          "detail": "1 hit + 1 per encounter already played"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Keep bashing before you start the mode",
+          "detail": "Each extra hit banks a boost level; on Prem/LE boosts advance via the motorized shark bash toy"
+        },
+        {
+          "shot": "shark-bash",
+          "action": "On Premium/LE, the extra hits are landing on the motorized shark itself",
+          "detail": "The bash toy rises up through the boat once encounters are lit — Pro tables bank the exact same boosts at the plain captive ball"
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "fourth-of-july",
+      "title": "Mini-Wizard: 4th of July",
+      "category": "wizard",
+      "summary": "Start all five Shark Encounters to light this mini-wizard at the center ramp: keep every beach open on individual timers and collect 25 fireworks for a super jackpot multiplied by open beaches.",
+      "difficulty": 3,
+      "reward": "Super jackpot × open beaches; every firework adds +150K to Super Celebration; encounters become 2x Challenges after",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Start all 5 Shark Encounters",
+          "detail": "Night Swim, Beach Panic, Scars, Pond Attack, Raft Attack — started, not necessarily completed"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start 4th of July at the center ramp",
+          "detail": null
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Keep all 5 beach shots alive",
+          "detail": "Each beach runs its own timer; mode ends when every beach closes",
+          "link": "none"
+        },
+        {
+          "shot": "harpoon-lane",
+          "action": "Shoot the harpoon lane to reset ALL beach timers",
+          "detail": "Upper-playfield shots also reset timers on Prem/LE",
+          "link": "none"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Hit Fish Finder targets to add fireworks",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "At 25 fireworks, bash the boat for the Super Jackpot",
+          "detail": "Reopens one beach; jackpot multiplied by beaches still open"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "smile-wizard",
+      "title": "Final Wizard: \"Smile, You Son of a…\"",
+      "category": "wizard",
+      "summary": "The final showdown, qualified by completing all three barrel multiballs (Reel Him In!, The Chase, Cage Dive). Three ~60-second phases re-enact the movie's ending; victory starts Super Celebration Multiball.",
+      "difficulty": 3,
+      "reward": "Hurry-ups worth 1M × seconds remaining; victory = 6-ball Super Celebration Multiball",
+      "steps": [
+        {
+          "shot": "shark-fin",
+          "action": "Attach 1, 2, then 3 barrels to play all three Jaws Multiballs",
+          "detail": "Complete Cage Dive (MB3: 3 hurry-up jackpots + 50M fin supers) to qualify"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start the wizard at the center ramp",
+          "detail": "When nothing else is running"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Phase 1 — Quint's Demise: alternate ramps and shark hits",
+          "detail": "Center ramp → shark → right ramp → shark → wave ramp → shark → right-ramp hurry-up"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Phase 2 — Clash on the Mast: complete Fish Finder targets",
+          "detail": "Lights the center ramp and raises the shark; bash it 3x, then orbit/ramp hurry-up"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Phase 3 — alternate the fin and shark tower targets",
+          "detail": "No repeats; 4 fin hits set up the finish"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "One final shark hit wins",
+          "detail": "Failed phases can be restarted by completing the chum line"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "beginner-30-seconds",
+      "title": "Strategy: Beginner's First 30 Seconds",
+      "category": "strategy",
+      "summary": "The consensus opener: safe skill shot, feed the boat, start Scars, follow the arrows, and qualify the Life Ring outlane save early. Skip the fishing reel — it's the most drain-prone shot on the game.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Full plunge",
+          "detail": "Level 1 skill shot"
+        },
+        {
+          "shot": "right-pop-bumper",
+          "action": "Collect the pop-bumper skill shot",
+          "detail": "5M + 5s ball save"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the boat captive ball once or twice",
+          "detail": "Lights the beach shots for a Shark Encounter; the chum line is a separate feature you feed at the Chum Bucket"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start a Shark Encounter — take Scars if you can pick",
+          "detail": "Highest value and safest to play single-ball"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Hit the fin when it rises for the mode jackpot",
+          "detail": "Worth 20–50% of everything the mode scored + permanent +1x machete"
+        },
+        {
+          "shot": "life-ring-target",
+          "action": "Qualify the Life Ring save",
+          "detail": "Hit the target twice (second while flashing)"
+        },
+        {
+          "shot": "action-button",
+          "action": "Press the action button on a left-outlane drain",
+          "detail": "Well-timed press throws the life ring and saves the ball"
+        }
+      ],
+      "reward": null,
+      "fx": "shark"
+    },
+    {
+      "id": "tournament-opener",
+      "title": "Strategy: Tournament Opener & the Scars Stack",
+      "category": "strategy",
+      "summary": "The high-score line: Level 2 skill shot, machete lit, 2x encounter boost banked, Scars completed for the permanent machete, then Jaws MB1 stacked into Night Swim with Flip-Lock control.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Short plunge for Level 2",
+          "detail": "10M + Gear + 5s save at the mini-flipper lane"
+        },
+        {
+          "shot": "mini-flipper-lane",
+          "action": "Collect the Level 2 skill shot",
+          "detail": null
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Complete the left 3-bank to light machete",
+          "detail": "Also progresses Fish Finder and Pipit"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the boat 3+ extra times before starting anything",
+          "detail": "Bank Encounter Boost Level 3 = 2x scoring for the whole mode"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start Scars with 2x boost and a machete-multiplied first shot",
+          "detail": "Complete it for the permanent +1x machete — the earlier, the longer it compounds"
+        },
+        {
+          "shot": "chum-bucket",
+          "action": "Advance the chum line to one shot from Jaws MB and STOP",
+          "detail": "Bank the progress; accidental early multiballs waste the stack"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Start Night Swim, then bring in Jaws Multiball 1",
+          "detail": "MB1 is a utility multiball — its job is to keep the mode alive and multiply mode shots"
+        },
+        {
+          "shot": "mini-flipper",
+          "action": "Flip-Lock a ball on the mini flipper",
+          "detail": "Press the action button to hold it up to 20s and play the multiball with a safety ball banked"
+        }
+      ],
+      "reward": null,
+      "fx": "shark"
+    },
+    {
+      "id": "gear-cashout",
+      "title": "Strategy: Hoard Gear, Sell at 25x",
+      "category": "strategy",
+      "summary": "Quickshots are the fastest Gear source. Collect all six pieces without using any perks, then sell to Quint at the right ramp for up to 375M — which also qualifies Great White Multiball.",
+      "difficulty": 3,
+      "reward": "15M × up to 25x (all 6 unused) = 375M, +50M per Quint's Challenge knot; qualifies Great White MB",
+      "steps": [
+        {
+          "shot": "mini-flipper-lane",
+          "action": "Light Quickshots repeatedly",
+          "detail": "Every quickshot lights Gear; L2/L3 skill shots, Pipit and the 8th beachgoer also light it"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Collect quickshots at the fin",
+          "detail": "3 quickshots also award an Extra Ball"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect Gear at the right ramp",
+          "detail": "Cycle the offered item with the right flipper; resist using the perks — unused gear multiplies the payout"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "With all 6 collected and unused, sell to Quint",
+          "detail": "1 unused = 3x … 6 unused = 25x (375M); selling qualifies the Great White 6-ball bounty"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "jaws-mb3-cage-dive",
+      "title": "Jaws Multiball 3 — \"Cage Dive\"",
+      "category": "multiball",
+      "summary": "The third barrel multiball, and the last gate before the final wizard. Three barrels must be attached one at a time, each earned by refilling the chum line and re-qualifying a barrel at the 3-bank before bashing the raised fin.",
+      "difficulty": 3,
+      "reward": "Three hurry-up jackpots plus 50M-class fin super jackpots; completion qualifies the final wizard",
+      "steps": [
+        {
+          "shot": "chum-bucket",
+          "action": "Refill the chum line",
+          "detail": "Chum Bucket hits plus the red left-flipper shots; needed once per barrel"
+        },
+        {
+          "shot": "fish-finder-bank",
+          "action": "Complete the left 3-bank to ready a barrel",
+          "detail": "Prem/LE: take the roving flashing drop target to lock each one in"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot a yellow shot to raise the fin",
+          "detail": "Left orbit or harpoon lane light yellow while a barrel is ready"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Bash the raised fin to attach the barrel — three times total",
+          "detail": "Barrels do not carry over between multiballs; each one is its own qualify cycle"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start the multiball at a yellow-flashing shot",
+          "detail": "Center ramp, right ramp, left orbit and harpoon lane all qualify"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Run the hurry-up jackpots at the boat and lit shots",
+          "detail": "Values bleed down fast — shoot the closest lit shot rather than the biggest"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Close it out with fin super jackpots",
+          "detail": "Flip-Lock a ball on the mini flipper first so you can aim the fin with one ball in play"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "encounter-sweep",
+      "title": "Complete All Five Shark Encounters",
+      "category": "mode",
+      "summary": "Each encounter has its own start shot and each one you finish adds a permanent +1x to base machete, so the sweep compounds all game. Light each encounter at the boat, bank a boost, then start the one whose shot you are hitting cleanly.",
+      "difficulty": 3,
+      "reward": "Five Encounter Jackpots plus a permanent +1x base machete each; all five lit start 4th of July",
+      "steps": [
+        {
+          "shot": "captive-ball",
+          "action": "Light the next encounter at the boat",
+          "detail": "The hit requirement grows by one for every encounter already played, so get the early ones cheap"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start with the center-ramp encounter",
+          "detail": "Safest single-ball shooting and the highest base values",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Take the left-orbit encounter next",
+          "detail": "Stack it with the first barrel multiball to keep the mode alive",
+          "link": "none"
+        },
+        {
+          "shot": "wave-ramp",
+          "action": "Start the Wave-ramp encounter",
+          "detail": "Bank a boost first; the ramp return keeps giving you the left flipper back",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start the right-ramp encounter",
+          "detail": "Ramps raise the fin here, so ramp-into-fin chains multiply the awards",
+          "link": "none"
+        },
+        {
+          "shot": "fishing-reel",
+          "action": "Save the fishing-reel encounter for last",
+          "detail": "Hardest and most drain-prone shot on the game — start it with a ball save or a life ring armed",
+          "link": "none"
+        },
+        {
+          "shot": "shark-fin",
+          "action": "Collect the Encounter Jackpot at the fin every time",
+          "detail": "Missing the fin cuts the jackpot to a fraction of the mode total; cash a machete on the big ones"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "bounty-sweep",
+      "title": "Capture Every Bounty Hunt",
+      "category": "multiball",
+      "summary": "Bounty Hunts are separate small multiballs, one per shark on the board, each qualified by spinner rips and mode chores and each ending on a capture shot at the fishing reel. Take the easiest one first — its perk speeds up every hunt after it — and finish with the six-ball Great White, which unlocks by selling gear to Quint.",
+      "difficulty": 3,
+      "reward": "A capture perk per shark, escalating bounty collects, and the six-ball Great White hunt",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Take \"Light Bounty Hunt\" from Quint's Shack whenever it is offered",
+          "detail": "Always the correct shack award if no hunt is lit"
+        },
+        {
+          "shot": "fishing-reel",
+          "action": "Rip the fishing reel to advance the bounty",
+          "detail": "The Dart perk doubles bounty advance; the Mako perk doubles reel spins"
+        },
+        {
+          "shot": "fishing-reel",
+          "action": "Finish the qualify chores and start the hunt at the reel",
+          "detail": "Two-ball multiball with a short ball save; green shots reel the shark in"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Bash the shark when it is lit to drop its health",
+          "detail": "Prem/LE: the motorized shark crashes up through the boat for these hits"
+        },
+        {
+          "shot": "fishing-reel",
+          "action": "Land the capture shot at 1% health",
+          "detail": "Fail and the shark returns later needing half the shots. You still earn its capture perk, but the bonus reward is forfeited and the bounty multiplier drops for the revisit"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Sell your gear to Quint to qualify the Great White",
+          "detail": "The big cash-out doubles as the unlock for the final six-ball hunt"
+        },
+        {
+          "shot": "mini-flipper",
+          "action": "Use Flip-Lock during each hunt",
+          "detail": "Hold a ball on the mini flipper with the action button so you can aim the reel with one ball loose"
+        }
+      ],
+      "fx": "shark"
+    },
+    {
+      "id": "attract-mode-challenge-menu",
+      "title": "Attract-Mode Challenge Menu",
+      "category": "secret",
+      "altMode": "menu",
+      "summary": "JAWS keeps a second menu of ways to play behind its attract screen, and most players never learn it is there. Holding both flipper buttons while the machine sits idle brings up a list of alternate games built on the same code, including one that drops the pinball entirely and runs only the game's hidden video game.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both flipper buttons while the machine sits in attract mode with no game in progress",
+        "Keep holding until the mode menu appears on the display",
+        "Choose the mode you want, then start your game",
+        "Standard is the normal ruleset; Competition is the same game with random elements removed",
+        "Shark Hunter plays the hidden video game on its own, paid for with shark teeth through a Stern Insider account",
+        "4th of July Challenge, Jaws: The Revenge, and The Shark Is Broken are separate standalone challenges on the same menu"
+      ],
+      "reward": "Access to Competition, a standalone Shark Hunter video-game session, and the 4th of July Challenge, Jaws: The Revenge, and The Shark Is Broken challenge modes"
+    },
+    {
+      "id": "video-mode-shark-hunter",
+      "title": "Video Mode: Shark Hunter",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "One of the five Fish Finder awards is not points at all — it arms a genuine video game, and the right ramp is the shot that launches it. Once it starts the flippers stop flipping and start firing harpoons at sharks, while divers swim through the same water and cost you a shot if you hit one.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Work the left 3-bank through the Fish Finder award cycle until Light Video Mode (Shark Hunter) is awarded",
+        "Shoot the right ramp to launch Shark Hunter",
+        "Use the flipper buttons to fire harpoons at the sharks on screen",
+        "Avoid the divers — hitting one removes a harpoon shot instead of scoring",
+        "Watch for the quick-moving extra ball icon and shoot it if you can"
+      ],
+      "reward": "3,000 points for every point scored inside the video game, so a 5,000-point run pays 15 million. This award cannot be multiplied by Machete. A fast-moving extra ball icon also appears inside the video game and can be shot for an extra ball."
+    },
+    {
+      "id": "gear-six-pieces",
+      "title": "The Six Pieces of Gear and What Each One Buys You",
+      "category": "progression",
+      "summary": "Gear is the closest thing this machine has to an inventory. Six different pieces exist, you get to pick which one you take before you take it, and each bends a different part of the game your way for a limited run of use. Every piece you leave unspent is worth more when you finally sell the whole set.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Light gear at the right ramp — level 2 and level 3 skill shots light it, and so do quickshots",
+        "Before you shoot the right ramp, cycle with the right flipper to the piece you actually want; the ramp collects whichever one is flashing",
+        "Barrel hook: when your Jaws Multiball falls back to a single ball, another ball is launched and the multiball keeps running",
+        "Shark cage: a ball save tied to the fin drop target, good for one save",
+        "Dart: your next bounty hunt advances faster and the bounty it pays is worth more",
+        "Binoculars: beachgoers become easier to collect",
+        "Oxygen tank: ball save timers and mode timers all run longer",
+        "Tracker: the chum line that builds toward Jaws Multiball advances faster",
+        "With all six types collected, one more right ramp shot offers the sale to Quint — the payout climbs with every piece you left unspent, and the sale qualifies the final bounty hunt"
+      ],
+      "reward": "Six perks chosen one at a time; a full set sold to Quint pays a large score and qualifies the final bounty hunt for the great white"
+    },
+    {
+      "id": "bounty-hunt-ladder",
+      "title": "Pick Your Shark: The Bounty Hunt Upgrade Ladder",
+      "category": "progression",
+      "summary": "Bounty hunts are this machine's upgrade tree. Work the fishing reel and the right ramp to light one, choose which shark you want to go after, and every shark you land hands over a perk that stays with you for the rest of the game.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Spin the fishing reel and work the right ramp until start bounty hunt lights at the right ramp",
+        "Choose which shark to chase — mako, thresher, hammerhead or tiger. The mako's list of tasks is the lightest, so it is the usual place to start",
+        "The display shows that shark's set of shots; clear them during single-ball play, because progress toward them switches off while a multiball is running",
+        "With the list cleared, shoot the fishing reel to start the bounty hunt multiball and begin reeling the shark in",
+        "Take a green shot to light the shark, then hit the captive-ball shark to wear it down, and repeat",
+        "Once it is worn down, the reel lights as the final shot — take the reel, then the shark, to land it",
+        "Landing the mako upgrades the fishing reel: it advances twice as fast toward every hunt that follows",
+        "Landing the tiger removes the once-per-ball limit on flip-lock, the mini-flipper hold that parks a ball during multiball, and relights it after five shots instead",
+        "Selling a full set of gear to Quint qualifies the fifth and final hunt, for the great white"
+      ],
+      "reward": "A lasting perk for each shark landed — the mako doubles reel progress toward later hunts, the tiger removes the once-per-ball limit on flip-lock"
+    },
+    {
+      "id": "shark-teeth-and-account-progress",
+      "title": "Shark Teeth and the Progress That Outlives the Game",
+      "category": "progression",
+      "summary": "Signed in, JAWS keeps a second record that has nothing to do with the score on the display. Achievements you earn are filed against your account, every achievement point also pays you shark teeth, and those teeth are the currency that opens the challenge modes hiding behind the attract screen.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Scan into a Stern Insider Connected account before the game starts — the reader sits on the bottom arch, and none of this is kept without it",
+        "Achievements cover both one-game feats and running lifetime totals: capturing bounty sharks, completing each shark encounter, landing the secret skill shots, and bronze, silver and gold tiers for counts like beachgoers collected, beaches closed and balls saved with the life ring",
+        "Every achievement point you earn also pays out shark teeth",
+        "Teeth stack up into whole jaws — the display only breaks in to announce a finished jaw, and the end-of-ball summary shows both teeth and jaw progress",
+        "Teeth are what you spend on the challenge modes behind the attract-mode menu: Shark Hunter on its own, the 4th of July Challenge, Jaws: The Revenge and The Shark Is Broken, each needing you signed in with enough teeth banked",
+        "The Shark Is Broken also needs the topper fitted to the machine, so a full tooth bank alone will not open it",
+        "Jaws: The Revenge is where a character actually levels: eat swimmers to fill the shark's growth meter and it climbs from mako to thresher to hammerhead to tiger to great white, each step cutting the number of bites a swimmer costs you",
+        "Your Bounty Hunter rank is a lifetime figure that keeps climbing across every signed-in game instead of resetting with the score, and the same account carries JAWS Quests — set challenges that pay a badge when you finish one",
+        "Play without signing in and the teeth, the achievements and the rank all go unrecorded"
+      ],
+      "reward": "A bank of shark teeth that buys the challenge modes, plus an achievement record and a Bounty Hunter rank that keep building across every game you play signed in"
+    },
+    {
+      "id": "lookout-tower-loop",
+      "title": "Lookout Tower: The Repeatable Deck Loop",
+      "category": "combo",
+      "summary": "Premium/LE only: the small ramp on the Orca deck is a return trip, not a one-shot — eight of them across a game bank an extra ball, and catching the exit straight into the right ramp completes the Quint combo.",
+      "difficulty": 2,
+      "reward": "8 lifetime lookout tower shots = extra ball; lookout tower into right ramp = Quint combo; also the 5x leg of the Raft Attack fin combo",
+      "steps": [
+        {
+          "shot": "wave-ramp",
+          "action": "Get onto the deck with a full-strength Wave-ramp shot",
+          "detail": "Premium/LE only"
+        },
+        {
+          "shot": "lookout-tower-ramp",
+          "action": "Loop the small ramp on the deck",
+          "detail": "Reverse-180 wireform sends it back down — every make counts toward the 8-shot extra ball for the rest of the game"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Catch the return and go straight into the right ramp for the Quint combo",
+          "detail": "Has to be immediate off the exit; this same chain is also the 5x multiplier leg during Raft Attack"
+        }
+      ],
+      "fx": "shark"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "shark",
+  "achievements": [
+    {
+      "id": "first-barrel-attached",
+      "title": "Barrel On The Line",
+      "desc": "Attach your first barrel at the Shark Fin and start the first Jaws Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "jaws-mb1"
+    },
+    {
+      "id": "orca-spelled",
+      "title": "Name The Boat",
+      "desc": "Spell O-R-C-A with full-strength Wave ramp shots and collect the Quint's Shack award at the right ramp.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "quints-shack-orca"
+    },
+    {
+      "id": "life-ring-rescue",
+      "title": "Thrown A Line",
+      "desc": "Arm the Life Ring at its standup target, then save a left-outlane drain with the action button.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "beginner-30-seconds"
+    },
+    {
+      "id": "boost-level-three-banked",
+      "title": "Double Or Nothing",
+      "desc": "Bank Encounter Boost Level 3 off extra boat hits so a full Shark Encounter runs at doubled scoring.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "encounter-boost-2x"
+    },
+    {
+      "id": "skill-shot-level-three",
+      "title": "Three Rungs Up",
+      "desc": "Work the leveled skill shot all the way to Level 3 in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skillshot-level-3"
+    },
+    {
+      "id": "quickshot-extra-ball",
+      "title": "Harpoon Payday",
+      "desc": "Collect three Quickshots in one game to earn the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "quickshot-farm"
+    },
+    {
+      "id": "scars-cleared",
+      "title": "First Blood Answered",
+      "desc": "Complete a Shark Encounter through all three phases and collect its Encounter Jackpot at the fin.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "scars-encounter"
+    },
+    {
+      "id": "fish-finder-all-five",
+      "title": "Sweep The Sonar",
+      "desc": "Collect all five Fish Finder awards to light Super Cast 'N Catch.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fish-finder-awards"
+    },
+    {
+      "id": "night-search-cleared",
+      "title": "Searchlights Out",
+      "desc": "Complete Night Search Multiball for the permanent base machete increase.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "night-search-mb"
+    },
+    {
+      "id": "mako-captured",
+      "title": "First Catch Tagged",
+      "desc": "Capture the Mako in its Bounty Hunt multiball and keep the capture perk.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mako-bounty"
+    },
+    {
+      "id": "super-secret-plunge",
+      "title": "Dead Center Off The Plunge",
+      "desc": "Land the Super Secret skill shot by hitting the captive ball dead-center straight off the plunge.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "skillshot-super-secret"
+    },
+    {
+      "id": "chase-super-jackpot",
+      "title": "Run It Down",
+      "desc": "Reach and collect a Super Jackpot at the captive ball during the second barrel multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jaws-mb2-chase"
+    },
+    {
+      "id": "cage-dive-cleared",
+      "title": "Down In The Cage",
+      "desc": "Attach a third barrel, play the Cage Dive multiball, and complete it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jaws-mb3-cage-dive"
+    },
+    {
+      "id": "gear-max-sale",
+      "title": "Sell The Whole Kit",
+      "desc": "Collect all six pieces of gear without spending any perk, then sell the lot to Quint at the top multiplier.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "gear-cashout"
+    },
+    {
+      "id": "fireworks-super-jackpot",
+      "title": "Twenty-Five Fireworks",
+      "desc": "Reach 25 fireworks in the 4th of July mini-wizard and cash the Super Jackpot at the boat.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "fourth-of-july"
+    },
+    {
+      "id": "every-encounter-cleared",
+      "title": "All Five Beaches Answered",
+      "desc": "Complete every one of the five Shark Encounters in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "encounter-sweep"
+    },
+    {
+      "id": "final-showdown-won",
+      "title": "Last Word On The Mast",
+      "desc": "Beat all three phases of the final wizard mode and roll into Super Celebration Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "smile-wizard"
+    },
+    {
+      "id": "every-bounty-captured",
+      "title": "Whole Bounty Board",
+      "desc": "Capture every Bounty Hunt shark in one game, finishing with the six-ball Great White hunt.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "bounty-sweep"
+    }
+  ],
+  "playfields": [
+    {
+      "id": "orca-deck",
+      "name": "Orca Deck",
+      "kind": "upper",
+      "trim": "premium-le",
+      "bounds": {
+        "x": 0.19,
+        "y": 0.82,
+        "w": 0.26,
+        "h": 0.15
+      },
+      "entries": [
+        "wave-ramp"
+      ],
+      "exits": [
+        {
+          "x": 0.78,
+          "y": 0.3
+        }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "id": "skill-shot-ladder",
+      "title": "Skill Shot Ladder",
+      "text": "Run all three plunge levels back to back, then try both secrets. Feel for exactly how much plunger pull dies in the lane above the mini flipper versus how much carries on into the pops — the gap between Level 1 and Level 2 is smaller than it looks.",
+      "reps": "10 plunges per level",
+      "focus": "plunge control",
+      "goal": "skillshot-level-1",
+      "shots": [
+        "shooter-lane",
+        "right-pop-bumper",
+        "mini-flipper-lane",
+        "chum-bucket",
+        "captive-ball"
+      ]
+    },
+    {
+      "id": "quickshot-farm-reps",
+      "title": "Quickshot Farm Reps",
+      "text": "From a trapped ball on the mini flipper, rip the harpoon lane, then snap over to the fin the instant it's live. Chain as many makes as you can before a miss resets the multiplier back to 1x.",
+      "reps": "5 chains — note your longest streak",
+      "focus": "mini-flipper timing",
+      "goal": "quickshot-farm",
+      "shots": [
+        "mini-flipper",
+        "harpoon-lane",
+        "shark-fin"
+      ]
+    },
+    {
+      "id": "fishing-reel-trap-flip",
+      "title": "Fishing Reel: Trap and Flip",
+      "text": "Trap the ball dead on the left flipper, then flip the instant it overlaps the left edge of the Jaws graphic between the flippers. This is the hardest shot on the machine for a reason — most of the work is the trap, not the flip.",
+      "reps": "15 attempts",
+      "focus": "trapping, timing",
+      "goal": "sam-quint-combo",
+      "shots": [
+        "fishing-reel",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "boost-bank-start",
+      "title": "Boost, Bank, Start",
+      "text": "Single-ball only: bash the boat to Boost Level 3, then start Scars and play it clean through the fin with no multiball to hide behind. Every shot has to count.",
+      "reps": "3 full run-throughs",
+      "focus": "single-ball composure",
+      "goal": "tournament-opener",
+      "shots": [
+        "captive-ball",
+        "center-ramp",
+        "shark-fin"
+      ]
+    },
+    {
+      "id": "orca-deck-access",
+      "title": "Orca Deck Access (Premium/LE)",
+      "text": "Full-strength Wave-ramp shots only — anything soft just returns to the mini flipper without reaching the deck. Once you're up there, spin the wheel, then catch the ball as it feeds back down to the mini flipper instead of panic-flipping it away blind.",
+      "reps": "8 clean trips",
+      "focus": "ramp strength, deck catch",
+      "shots": [
+        "wave-ramp",
+        "ship-wheel-spinner",
+        "mini-flipper"
+      ]
+    },
+    {
+      "id": "beach-closing-loop",
+      "title": "Beach-Closing Loop",
+      "text": "Hit a shark tower target, then immediately go collect the beachgoer it lit instead of wandering off to something else. Three on the same beach banks the hurry-up plus a scoring boost that lasts the rest of the game.",
+      "reps": "close 2 beaches",
+      "focus": "shot discipline",
+      "shots": [
+        "shark-tower-targets"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "One button, two very different jobs. Armed, it throws out the Life Ring to rescue a left-outlane drain; during any multiball it freezes the mini flipper up so you can park a ball out of play. Premium and LE owners get a third job: locking in the Orca wheel award.",
+    "uses": [
+      {
+        "when": "Ball rolling into the left outlane",
+        "what": "Fires the Life Ring save, but only while the insert glows orange — the window is short and shrinks with every use."
+      },
+      {
+        "when": "Ball cradled on the mini flipper",
+        "what": "A tap keeps that flipper raised, so a two-ball multiball plays like single-ball with a spare banked."
+      },
+      {
+        "when": "Ready to release a parked ball",
+        "what": "Hold instead of tapping and the mini flipper drops the ball back into play on your terms."
+      },
+      {
+        "when": "Lining up the fishing reel shot",
+        "what": "Bank one ball on the mini flipper first so only one ball is loose while you aim."
+      },
+      {
+        "when": "Orca wheel dial sweeping (Prem/LE)",
+        "what": "Press when the pointer sits on the award you want — Shark Ramps and the rest lock in on that press."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Survive the summer on Amity Island by hunting the Great White. Complete shark encounters, attach barrels, capture bounty sharks, and blow up the shark in the final wizard.",
+    "loop": [
+      "Hit the bash boat to light a Shark Encounter, then shoot its beach shot to start the mode.",
+      "Feed the chum line with red-arrow shots to raise the fin, then bash the fin to attach a barrel and start Jaws Multiball.",
+      "Complete the left 3-bank and roll a lit inlane to arm the machete, then spend it on a high-value shot.",
+      "Spin the fishing reel to light Bounty Hunts, complete tasks, and capture sharks for permanent perks."
+    ],
+    "lights": [
+      {
+        "id": "machete-arm-lanes",
+        "name": "Machete Arm Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A lit inlane arms the machete multiplier for your next shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot a high-value target like the captive ball or a mode jackpot.",
+        "goals": [
+          "machete-multiplier"
+        ]
+      },
+      {
+        "id": "quickshot-lanes",
+        "name": "Quickshot Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "mini-flipper-lane"
+          },
+          {
+            "shot": "harpoon-lane"
+          }
+        ],
+        "lit": "Rolling the mini-flipper lane lights the harpoon lane blue; a harpoon shot followed quickly by the fin collects a Quickshot.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the fin immediately after the harpoon lane.",
+        "goals": [
+          "quickshot-farm"
+        ]
+      },
+      {
+        "id": "chum-line-barrel-arrows",
+        "name": "Chum Line & Barrel Arrows",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "harpoon-lane"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "wave-ramp"
+          }
+        ],
+        "lit": "Red arrows mark shots that fill the chum line; yellow flashing shots raise the fin to attach a barrel.",
+        "flashing": "Yellow flashing shots raise the fin; red flashing shots are jackpots during multiball.",
+        "control": null,
+        "then": "Bash the raised fin to start a Jaws Multiball.",
+        "goals": [
+          "jaws-mb1",
+          "jaws-mb2-chase",
+          "jaws-mb3-cage-dive"
+        ]
+      },
+      {
+        "id": "encounter-start-shots",
+        "name": "Encounter Start Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "wave-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "fishing-reel"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "A lit beach shot starts its Shark Encounter; hit the bash boat first to light one.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the lit beach shot to begin the mode.",
+        "goals": [
+          "scars-encounter",
+          "night-swim-encounter",
+          "encounter-sweep"
+        ]
+      },
+      {
+        "id": "orca-letters",
+        "name": "O-R-C-A Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "wave-ramp"
+          }
+        ],
+        "lit": "Strong wave-ramp shots spell O-R-C-A; completing it lights a Quint's Shack award at the right ramp.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the right ramp to collect the award.",
+        "goals": [
+          "quints-shack-orca"
+        ]
+      },
+      {
+        "id": "fish-finder-awards",
+        "name": "Fish Finder Awards",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "fish-finder-bank"
+          }
+        ],
+        "lit": "Each hit on the left 3-bank advances the Fish Finder award; completing all five lights Super Cast 'N Catch.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the bank to collect the lit award.",
+        "goals": [
+          "fish-finder-awards"
+        ]
+      },
+      {
+        "id": "lookout-tower-extra-ball",
+        "name": "Lookout Tower Extra Ball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lookout-tower-ramp"
+          }
+        ],
+        "lit": "Eight shots to the Lookout Tower ramp light an extra ball (Premium/LE only).",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the ramp to collect the extra ball.",
+        "goals": [
+          "lookout-tower-loop"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "laneChangeNote": null,
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the skill shot ladder (light plunge, short plunge, or full plunge to the lit 3-bank) for quick points. Then hit the bash boat to light a Shark Encounter and start it at its beach shot.",
+        "goals": [
+          "skillshot-level-1",
+          "skillshot-level-2",
+          "skillshot-level-3",
+          "beginner-30-seconds"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Build the machete multiplier by completing the left 3-bank and rolling lit inlanes, then stack Jaws Multiball with a Shark Encounter. Bank encounter boosts at the boat for 2x mode scoring.",
+        "goals": [
+          "machete-multiplier",
+          "encounter-boost-2x",
+          "jaws-mb1",
+          "night-search-mb"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Complete all three barrel multiballs (Reel Him In!, The Chase, Cage Dive) to qualify the final wizard 'Smile, You Son of a…', a three-phase battle ending in Super Celebration Multiball.",
+        "goals": [
+          "smile-wizard",
+          "jaws-mb1",
+          "jaws-mb2-chase",
+          "jaws-mb3-cage-dive"
+        ]
+      }
+    ]
+  }
+}

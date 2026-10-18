@@ -1,0 +1,1254 @@
+{
+  "machine": "Road Show (Williams, 1994)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A manual plunger with several possible outcomes depending on strength: back to the plunger, down the Skill Shot lane, into the Blast Hole, up to the bumpers, or into the Bulldozer."
+    },
+    {
+      "id": "skill-shot-lane",
+      "name": "Skill Shot Lane",
+      "type": "lane",
+      "x": 0.86,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "This lane skirts the Blast Hole along its right. Balls heading back down it meet a one-way gate that shunts them across to the right inlane area, and every trip down the lane lights the Left Ramp for Shooter Bypass."
+    },
+    {
+      "id": "blast-hole",
+      "name": "Blast Hole",
+      "type": "scoop",
+      "x": 0.42,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "The big sinkhole, enterable from either side. It scores the Skill Shot, collects Wheel awards and Super Blasts, and starts modes when Start City Scene is lit. Anything that drops in gets returned to play through the Start City Scene scoop.",
+      "feeds": {
+        "shot": "start-city-scoop"
+      }
+    },
+    {
+      "id": "blast-targets",
+      "name": "Blast Targets",
+      "type": "target-bank",
+      "x": 0.2,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "An arc of three yellow standups, shot from the middle left flipper. Whatever award is lit across the bank, a single target collects it — clearing all three is never the requirement. The big flasher out in front is your cue that Big Blast is on.",
+      "flipper": "middle-left-flipper"
+    },
+    {
+      "id": "start-city-scoop",
+      "name": "Start City Scene Scoop",
+      "type": "scoop",
+      "x": 0.62,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Kicks the ball out toward the right flipper for a clean drop catch. The globe light above it flashes when a mode is ready to start.",
+      "feeds": {
+        "x": 0.68,
+        "y": 0.05
+      }
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.1,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "A U-turn that feeds the middle left flipper, with a rubber stopper to slow the ball down. Worth 150 miles, the most of any shot, and it lights the Blast Targets for double value.",
+      "feeds": {
+        "shot": "middle-left-flipper"
+      }
+    },
+    {
+      "id": "middle-left-flipper",
+      "name": "Middle Left Flipper",
+      "type": "flipper",
+      "x": 0.14,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "A small flipper above the left outlane. It is fed by the Left Loop, the diverted Right Ramp and the bottom Flying Rocks exit, and it is how you reach the Blast Targets.",
+      "bat": {
+        "size": "mini"
+      }
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Left Flipper",
+      "type": "flipper",
+      "x": 0.22,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "A full-sized flipper alongside the Spinner Lane. Use it for the Bulldozer, Red and the Radio targets. Push the left button partway for the lower flipper only, all the way for all three."
+    },
+    {
+      "id": "magic-standup",
+      "name": "The Magic Standup",
+      "type": "standup",
+      "x": 0.27,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "This standup faces backwards, sitting just beneath the upper left flipper's tip. The trick is to keep your hand off the button and let a ball returning from the Lock roll into it. It does something useful in almost every mode in the game."
+    },
+    {
+      "id": "spinner-lane",
+      "name": "Spinner Lane",
+      "type": "spinner",
+      "x": 0.3,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Runs past the upper left flipper into the Lock. The spinner value builds over time up to 1M a spin and, on early ROMs, holds between games until the machine is power-cycled."
+    },
+    {
+      "id": "lock",
+      "name": "Bob's Souvenir Bunker",
+      "type": "lock",
+      "x": 0.33,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "The sinkhole at the end of the Spinner Lane. It is the ball lock, the souvenir shop, an extra ball collect, a Wheel collect and a hurry-up shot in two modes. Balls exiting roll back down the lane."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.38,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Normally returns to the inside right inlane, or to the left inlane when diverted for Bridge Out. Its Shoot Here light covers mode awards, Shooter Bypass and Flying Rocks.",
+      "feeds": {
+        "shot": "inside-right-inlane"
+      }
+    },
+    {
+      "id": "rocks-plunger",
+      "name": "Rocks Plunger",
+      "type": "plunge",
+      "x": 0.05,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "A second plunger on the left, fed by the Left Ramp when Flying Rocks is lit. Plunge softly and the ball rolls back to you for another try."
+    },
+    {
+      "id": "rocks-habitrail",
+      "name": "Flying Rocks Habitrail",
+      "type": "lane",
+      "x": 0.12,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Three exits stacked up the wireform. Bottom lights 5X Blast and feeds the middle left flipper, middle lights Radio Riot and feeds the left inlane, top lights Extra Ball and feeds the inside right inlane."
+    },
+    {
+      "id": "bulldozer",
+      "name": "Bulldozer Blade",
+      "type": "bash-toy",
+      "x": 0.52,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "A plastic blade that blocks Ted's mouth. Hits advance the day of the week and raise the multiball jackpot. Proximity switches under the board register the hits, not the blade itself.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "ted",
+      "name": "Ted",
+      "type": "toy",
+      "x": 0.3143,
+      "y": 0.8923,
+      "trim": "all",
+      "notes": "The head behind the Bulldozer blade. When the blade lifts, his open mouth starts multiball and holds the first jackpot. Balls that go in come back out of the Lock."
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "type": "toy",
+      "x": 0.6275,
+      "y": 0.8923,
+      "trim": "all",
+      "notes": "The other head, angled for the upper left flipper and never blocked. Worth Big Millions after every Lock kickout, alternating jackpots during multiball, and 20M any time a ball ends up in her mouth.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "radio-targets",
+      "name": "Radio Targets",
+      "type": "target-bank",
+      "x": 0.46,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "An orange standup flanks the feed lane into Red's mouth on either side, and a bank of three sits left of the bumpers — five targets in all. Radio Riot and the Nashville mode both pay on the three-bank.",
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "center-loop",
+      "name": "Center Loop",
+      "type": "loop",
+      "x": 0.62,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Starts right of the Bulldozer and exits into the bumpers. There is a rollover partway round that you must cross for the shot to count. It also lights the next unlit Flying Rocks exit and relights Bob's.",
+      "feeds": {
+        "shot": "bumpers"
+      }
+    },
+    {
+      "id": "bumpers",
+      "name": "Jet Bumpers (3)",
+      "type": "bumpers",
+      "x": 0.7,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Each hit adds 208,430 to the Blast Value, moves the flashing Wheel award along one, and raises the frenzy value in the Miami mode. Worth 1M each when Jets At Max is running."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.76,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "A shot straight through the bumper area. It normally feeds the inside right inlane; diverted for Bridge Out it runs all the way round the back to the middle left flipper.",
+      "feeds": {
+        "shot": "inside-right-inlane"
+      }
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights Bridge Out on the Right Ramp for a few seconds."
+    },
+    {
+      "id": "inside-right-inlane",
+      "name": "Inside Right Inlane",
+      "type": "lane",
+      "x": 0.7,
+      "y": 0.11,
+      "trim": "all",
+      "notes": "Lights Bridge Out on the Left Ramp. An undiverted Left Ramp returns here, which is why repeated Left Ramps can walk your bonus multiplier straight up."
+    },
+    {
+      "id": "outside-right-inlane",
+      "name": "Outside Right Inlane",
+      "type": "lane",
+      "x": 0.79,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights Bob's Souvenir Bunker at the Lock. The Center Loop does the same job."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Can be lit for Special. The Special moves between outlanes with every slingshot hit."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.9,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "A particularly cruel outlane. Also carries the Special when it is on this side."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge straight into the Blast Hole without touching anything else. You get a free souvenir, plus 5M on the first one, 10M on the second, rising to a 25M cap. Any ball sitting at the plunger counts, not just the one that starts a ball.",
+      "difficulty": 2,
+      "reward": "A free souvenir plus 5M climbing to 25M",
+      "steps": [
+        {
+          "shot": "blast-hole",
+          "action": "Plunge straight into the Blast Hole",
+          "detail": "The ball must not hit anything else on the way in. A ball kicked off the left slingshot and up the Skill Shot lane can also drop into the hole for the same award — watch for the free ones.",
+          "plunge": "partial",
+          "plungeTo": 0.32
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "shooter-bypass",
+      "title": "Shooter Bypass",
+      "category": "combo",
+      "summary": "Watch the Skill Shot lane — every ball that comes back down it arms Shooter Bypass on the Left Ramp, and that light sits alongside whatever the ramp is already carrying. Your first collect pays 5M, the second 10M, and it keeps climbing to a 25M ceiling. Free money several times a game once you start noticing it.",
+      "difficulty": 1,
+      "reward": "5M climbing to 25M",
+      "steps": [
+        {
+          "shot": "skill-shot-lane",
+          "action": "Let the ball come down the lane",
+          "detail": "The one-way gate pushes it over to the right inlane area, which sets up the ramp anyway."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take the ramp immediately",
+          "detail": "It stacks with mode awards and Flying Rocks, so you are never wasting the shot."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "bridge-out",
+      "title": "Bridge Out",
+      "category": "multiplier",
+      "summary": "The inlanes cross-light the ramps: left inlane lights the Right Ramp, inside right inlane lights the Left Ramp. Each collected Bridge Out advances your bonus multiplier through 2X to 6X, then lights an extra ball, then pays 10M a pop.",
+      "difficulty": 2,
+      "reward": "Bonus multiplier to 6X, then an extra ball, then 10M",
+      "steps": [
+        {
+          "shot": "inside-right-inlane",
+          "action": "Roll an inlane",
+          "detail": "The light only lasts a few seconds and there is no grace period on the award."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the lit ramp",
+          "detail": "The diverter fires and the ball takes the other route, which is how you know it registered."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Mind the cost of maxing out",
+          "detail": "Advancing the multiplier lights the Wheel — but if the Wheel was already lit when you hit the maximum, it goes out instead."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "blast-value",
+      "title": "Build And Collect Blasts",
+      "category": "strategy",
+      "summary": "The Blast Value starts at 1M and every bumper hit adds 208,430 up to a 10M ceiling. The Blast Hole or the Magic Standup lights the Blast Targets for a plain collect. How you light them decides the multiplier.",
+      "difficulty": 2,
+      "reward": "1M to 10M, doubled, tripled or quintupled",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Fill the value up first",
+          "detail": "A 10M Blast Value is worth 50M with Big Blast lit, so the bumpers are not dead time."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Left Loop for double",
+          "detail": "The loop lights the Blast Targets briefly for two times the Blast Value."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Bridge Out on the Right Ramp for triple",
+          "detail": "Same idea, one better, and it advances your multiplier on the way through.",
+          "link": "none"
+        },
+        {
+          "shot": "blast-targets",
+          "action": "Collect on any one of the three",
+          "detail": "You always bank one Blast toward the counter awards no matter what multiplier applied."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "super-blast",
+      "title": "Super Blast",
+      "category": "combo",
+      "summary": "Shoot the Left Loop or a Bridge Out Right Ramp, then feed the Blast Hole rather than the targets. The first one is worth 5M, the second 10M, and every one after that 15M — plus whatever else happens to be sitting lit at the hole.",
+      "difficulty": 2,
+      "reward": "5M, 10M, then 15M, plus whatever else is lit",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Run the loop",
+          "detail": "The ball comes back to the middle left flipper with the Blast lights on."
+        },
+        {
+          "shot": "blast-hole",
+          "action": "Go to the hole, not the targets",
+          "detail": "Because it collects everything lit at the hole, a Super Blast can also take a Wheel award and start a mode in one shot."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "the-wheel",
+      "title": "The Wheel",
+      "category": "mode",
+      "summary": "Twelve awards below the Bulldozer, lit by advancing your bonus multiplier and collected at either the Lock or the Blast Hole. Bumper hits and spinner rotations move the flashing award counterclockwise, so you can steer it.",
+      "difficulty": 2,
+      "reward": "One of twelve awards",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Aim the Wheel before you collect",
+          "detail": "Every bumper hit steps the flashing award along one, and so does every spin once the Wheel is lit."
+        },
+        {
+          "shot": "blast-hole",
+          "action": "Collect at the hole or the Lock",
+          "detail": "Wheel awards do not stack — once you take one you have to relight it with another multiplier advance."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Know what you are shopping for",
+          "detail": "The list includes You're There, Flying Rocks, Big Blast, Special, Million Plus, Jets At Max, Bad Weather, Spinner At Max, Hold Bonus, Extra Ball, a free souvenir and a flat 15M."
+        }
+      ],
+      "fx": "lights"
+    },
+    {
+      "id": "souvenirs",
+      "title": "Buy Souvenirs",
+      "category": "strategy",
+      "summary": "Souvenirs are the quiet points engine. Every Skill Shot and every Bob's Freebie hands you one free, and you can buy more with your own score at Bob's Bunker. At the end of the ball each souvenir whose city you have also visited is worth 10M.",
+      "difficulty": 2,
+      "reward": "10M per souvenir with a matching city, at bonus",
+      "steps": [
+        {
+          "shot": "outside-right-inlane",
+          "action": "Light Bob's",
+          "detail": "The outside right inlane or the Center Loop both do it."
+        },
+        {
+          "shot": "lock",
+          "action": "Visit with nothing else lit",
+          "detail": "You only get the shop if nothing else is lit at the Lock and no mode is running."
+        },
+        {
+          "shot": "start-city-scoop",
+          "action": "Match souvenirs to cities",
+          "detail": "Suntan lotion pairs with Miami, a pennant with Chicago, a treasure map with Butte. Two matching souvenirs pay 20M, not 10M.",
+          "link": "none"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "pinball-souvenirs",
+      "title": "The Pinball Souvenirs",
+      "category": "secret",
+      "summary": "Three souvenirs in Bob's stock are not souvenirs at all. The lead pinball costs 75M and lights an extra ball, the zinc pinball costs 100M and awards one outright, and the gold pinball costs 250M for an extra ball plus a lit Special.",
+      "difficulty": 3,
+      "reward": "Extra balls and a Special, bought with score",
+      "steps": [
+        {
+          "shot": "lock",
+          "action": "Keep visiting Bob's",
+          "detail": "Stock is random, and you are never offered something you cannot afford."
+        },
+        {
+          "shot": "lock",
+          "action": "Right flipper buys, left flipper declines",
+          "detail": "These three cannot be sold back at Albuquerque, but they pay off the instant you buy them."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "construction-mania",
+      "title": "Construction Mania",
+      "category": "secret",
+      "summary": "Watch the sign in the window when you arrive at Bob's. If it advertises uranium ore, hit both flipper buttons quickly and you start a hidden twenty-second round with every target on the machine worth 3M. You forfeit that trip's souvenir.",
+      "difficulty": 3,
+      "reward": "20 seconds of 3M targets",
+      "steps": [
+        {
+          "shot": "lock",
+          "action": "Read the shop window",
+          "detail": "The sign changes every visit, and only the uranium ore one triggers this."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Hit both flippers, then hit everything",
+          "detail": "Every target counts for 3M, so the bumpers and the spinner are where the money is."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "flying-rocks",
+      "title": "Flying Rocks",
+      "category": "mode",
+      "summary": "Light the Left Ramp from a Wheel award or from Blast counts, and the ramp feeds a second plunger on the left. A wireform with three exits leads away from it, and each exit is a different award. Nothing else can be lit at the ramp at the same time.",
+      "difficulty": 2,
+      "reward": "5X Blast, Radio Riot, an extra ball, or 25M",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Take the lit ramp",
+          "detail": "Blasts light it at three, forty, sixty and eighty; the Wheel can light it any time."
+        },
+        {
+          "shot": "rocks-plunger",
+          "action": "Choose your plunge strength",
+          "detail": "A soft plunge rolls back to you for another go, so there is no penalty for feeling it out."
+        },
+        {
+          "shot": "rocks-habitrail",
+          "action": "Work up the exits in order",
+          "detail": "Bottom lights 5X Blast, middle lights Radio Riot, top lights an extra ball. A lit exit pays 10M, an unlit one 5M."
+        },
+        {
+          "shot": "ted",
+          "action": "Or send it past the top",
+          "detail": "Overshoot every exit and the ball hits Ted in the head for 25M, then rolls back and comes out the top hole anyway.",
+          "link": "none"
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "payday-multiball",
+      "title": "Payday Multiball",
+      "category": "multiball",
+      "summary": "Bulldozer hits advance the day of the week. Reach Friday and the Lock lights. Lock two balls, Ted falls asleep and the blade lifts — shoot his open mouth to start. The jackpot opens at 40M and every blade hit adds 5M to a 75M ceiling.",
+      "difficulty": 3,
+      "reward": "40M jackpots climbing to 75M, alternating heads",
+      "steps": [
+        {
+          "shot": "bulldozer",
+          "action": "Work through the days",
+          "detail": "One hit per day the first time. Later multiballs need two, three, even four hits per day."
+        },
+        {
+          "shot": "lock",
+          "action": "Lock two balls",
+          "detail": "Each lock pays 10K per mile you have travelled on that ball."
+        },
+        {
+          "shot": "ted",
+          "action": "Feed the open mouth",
+          "detail": "All three balls come out of the Lock afterwards, which is awkward since the first jackpot is right back at Ted."
+        },
+        {
+          "shot": "red",
+          "action": "Alternate the two heads",
+          "detail": "Jackpots swap between Ted and Red. Ted's blade rises and falls when he is next, which makes his the harder half."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "multiball-restart",
+      "title": "Multiball Restart",
+      "category": "strategy",
+      "summary": "If you drain two balls without collecting a single jackpot, the Lock lights for a restart for twelve seconds. Shoot it and multiball comes back with two balls. It is one of the more forgiving safety nets on any Lawlor machine.",
+      "difficulty": 2,
+      "reward": "A second two-ball multiball",
+      "steps": [
+        {
+          "shot": "lock",
+          "action": "Shoot the Lock inside twelve seconds",
+          "detail": "The clock keeps running through extra ball and Wheel animations, so do not sightsee."
+        },
+        {
+          "shot": "bulldozer",
+          "action": "Then actually take a jackpot",
+          "detail": "Bank one before you go hunting for a bigger one — you do not get a third chance."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "overtime",
+      "title": "Overtime",
+      "category": "combo",
+      "summary": "Between lighting the lock on Friday and actually locking the first ball, every Bulldozer hit pays Overtime — 1.1M, then 1.2M, and so on up to 3M. If you can hit the blade reliably, milk it before you lock.",
+      "difficulty": 2,
+      "reward": "1.1M climbing to 3M per blade hit",
+      "steps": [
+        {
+          "shot": "bulldozer",
+          "action": "Keep hitting the blade after Friday",
+          "detail": "The award only exists in this window, before the first lock."
+        },
+        {
+          "shot": "lock",
+          "action": "Lock when the value tops out",
+          "detail": "Blade hits also raise the multiball jackpot, so nothing here is wasted."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "big-millions",
+      "title": "Big Millions",
+      "category": "combo",
+      "summary": "Each kickout from the Lock opens a short Big Millions window on Red. The value starts at 5M, climbs a million with every collection to a 25M ceiling, and holds across the entire game rather than resetting each ball.",
+      "difficulty": 2,
+      "reward": "5M climbing to 25M, held all game",
+      "steps": [
+        {
+          "shot": "lock",
+          "action": "Any Lock kickout arms it",
+          "detail": "Wheel collects, souvenir visits and mode awards all end with a ball coming back down the Spinner Lane."
+        },
+        {
+          "shot": "red",
+          "action": "Hit her mouth from the upper left flipper",
+          "detail": "This is the most repeatable big-points shot in normal play. Letting the ball roll into the Magic Standup instead is the other good option."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "cheeseburger",
+      "title": "The Cheeseburger Bonus",
+      "category": "secret",
+      "summary": "Keep feeding Red. After enough hits on her the game pays a flat 20M Cheeseburger Bonus, unannounced and unlit. It is one more reason to treat Red as a shot you take on purpose rather than one you hit by accident.",
+      "difficulty": 2,
+      "reward": "20M",
+      "steps": [
+        {
+          "shot": "red",
+          "action": "Rack up Red hits",
+          "detail": "Nothing on the playfield counts down to this, so just keep shooting her."
+        },
+        {
+          "shot": "red",
+          "action": "And put one in her mouth while you are there",
+          "detail": "A ball that actually goes into Red's mouth is worth 20M on its own."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "city-scenes",
+      "title": "Drive The Map",
+      "category": "progression",
+      "summary": "Eighteen cities run east to west across the playfield map, and each one is a mode. Either the Blast Hole or the Start City Scene scoop starts one; after that, another 400 miles of travel relights the scoop for the next one.",
+      "difficulty": 2,
+      "reward": "Access to all eighteen modes, and Super Payday",
+      "steps": [],
+      "instructions": [
+        "The flashing city is always one of the next two on the map, so you can never play two of the same colour back to back — the exception is the three West Coast cities, where any of the three is reachable.",
+        "Change which city is flashing by hitting a bumper or standup of that city's colour. White, orange and yellow rotate in a fixed order right to left.",
+        "Miles are what relight the scoop: Left Loop 150, both ramps 100 each, Center Loop 75, Blast Hole 75, Start City Scene scoop 75, Lock 50, inlanes 25, spinner 5 a spin.",
+        "The Right Ramp with Bridge Out lit diverts into the Left Loop and pays for both — 275 miles from a single shot, and the best mileage combo in the game.",
+        "Reaching a West Coast city sends you back to New York, but the cities you have already visited stay lit for souvenir bonuses.",
+        "Fun With Bonus pays 2M per mode played, 1K per mile on that ball, 200K per Blast and 10M for each souvenir whose city you have visited, all multiplied by your bonus multiplier."
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "magic-standup",
+      "title": "The Magic Standup",
+      "category": "secret",
+      "summary": "This standup faces backwards, sitting just beneath the upper left flipper's tip, and you hit it by doing nothing at all — a ball on its way back from the Lock will roll into it for you. It hands out a free award in nearly every mode in the game, once per mode.",
+      "difficulty": 2,
+      "reward": "A free mode award, and it always lights the Blast Targets",
+      "steps": [
+        {
+          "shot": "lock",
+          "action": "Take your hand off the flipper",
+          "detail": "A ball rolling back down the Spinner Lane out of the Lock will find the target on its own."
+        },
+        {
+          "shot": "magic-standup",
+          "action": "Learn what it does in the mode you are in",
+          "detail": "It crushes a cab in New York, spots a ramp in Ohio, adds 16M to the Atlanta hurry-up, thaws two people in Minneapolis, spots a tunnel in Butte and pays 60M flat in Salt Lake City."
+        },
+        {
+          "shot": "blast-targets",
+          "action": "Use it outside modes too",
+          "detail": "At any time, hitting it lights the Blast Targets if they are not already lit — and that hit does not have to come from the Lock.",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "atlanta",
+      "title": "Atlanta — Worker Trapped",
+      "category": "mode",
+      "summary": "A hurry-up that opens at 35M and drops to 5M. Collect it at the Blast Targets or the Blast Hole. The same combos that multiply Blasts multiply this: Left Loop first doubles it, Bridge Out on the Right Ramp triples it, and Big Blast makes it five times.",
+      "difficulty": 2,
+      "reward": "Up to 5x a 35M hurry-up",
+      "steps": [
+        {
+          "shot": "left-loop",
+          "action": "Set up the multiplier before you collect",
+          "detail": "Every second costs you value, but a doubled 25M beats a plain 35M."
+        },
+        {
+          "shot": "lock",
+          "action": "Buy time at the Lock",
+          "detail": "The falling value freezes for a couple of seconds every time you put a ball in the Lock."
+        },
+        {
+          "shot": "blast-targets",
+          "action": "Cash it",
+          "detail": "The Magic Standup adds 16M to the value once per mode if you can get to it first."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "nashville",
+      "title": "Nashville — Change The Station",
+      "category": "multiball",
+      "summary": "A two-ball mode that runs until you drain one. You get 7M for starting it, and every hit on the three-bank of Radio targets pays 10M, then 11M, and so on to a 15M ceiling. Safe points, and the extra ball is a genuine safety net.",
+      "difficulty": 2,
+      "reward": "7M plus 10M to 15M per radio hit",
+      "steps": [
+        {
+          "shot": "start-city-scoop",
+          "action": "Start it with two balls in mind",
+          "detail": "The plunger gets fed a second ball — there is always a spare sitting in the trough."
+        },
+        {
+          "shot": "radio-targets",
+          "action": "Work the three-bank",
+          "detail": "The bank to the left of the bumpers is the one that counts."
+        },
+        {
+          "shot": "magic-standup",
+          "action": "Take the free hit",
+          "detail": "The Magic Standup is worth one radio hit here, once."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "las-vegas",
+      "title": "Las Vegas — Slot Machine",
+      "category": "mode",
+      "summary": "Fifteen seconds with the Wheel spinning continuously, and every Lock shot hands you whatever award is lit right then — including ones you already collected. Trap the ball on the right flipper, watch the lights, and shoot when the award you want comes round.",
+      "difficulty": 3,
+      "reward": "Repeatable Wheel awards, including extra balls",
+      "steps": [
+        {
+          "shot": "start-city-scoop",
+          "action": "Start Las Vegas",
+          "detail": "Rotate to it with the correct colour standups on the way in."
+        },
+        {
+          "shot": "lock",
+          "action": "Time your shots to the spinning light",
+          "detail": "With practice you can effectively choose your award. This is the best extra ball source in the game."
+        },
+        {
+          "shot": "magic-standup",
+          "action": "The Magic Standup pays one too",
+          "detail": "Once per mode, it hands you whatever is currently lit."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "butte",
+      "title": "Butte — Tunnel Hunt",
+      "category": "mode",
+      "summary": "Three underground shots: the Lock, the Start City Scene scoop and the Blast Hole, worth 10M, 12M and 20M. Each one only pays once. There are no playfield lights for this, so track it on the display — three mounds of dirt, left to right.",
+      "difficulty": 2,
+      "reward": "42M for all three",
+      "steps": [
+        {
+          "shot": "start-city-scoop",
+          "action": "Catch the ball on the way out and shoot it back",
+          "detail": "The scoop kicks straight to the right flipper, which makes a return shot easy."
+        },
+        {
+          "shot": "lock",
+          "action": "Then take the Lock",
+          "detail": "Catch again off the scoop feed and go up the Spinner Lane."
+        },
+        {
+          "shot": "magic-standup",
+          "action": "Let the third one come to you",
+          "detail": "The ball rolling out of the Lock into the Magic Standup spots the remaining tunnel — it always spots the Blast Hole first if that one is outstanding."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "super-payday",
+      "title": "Super Payday",
+      "category": "wizard",
+      "summary": "The wizard bonus. Get a West Coast city scene running, put your first ball into Bob's Bunker, then send the second to the Bunker again, the Blast Hole or the Start City Scene scoop. Every feature on the machine lights at once.",
+      "difficulty": 3,
+      "reward": "Specials, 1M bumpers, 3X Blasts, Wheel awards and Payday bonuses",
+      "steps": [
+        {
+          "shot": "start-city-scoop",
+          "action": "Get to Seattle, San Francisco or Los Angeles",
+          "detail": "Only the three West Coast modes can start Super Payday."
+        },
+        {
+          "shot": "lock",
+          "action": "Lock one ball in the Bunker",
+          "detail": "If the mode timer is under ten seconds when you lock, it resets to ten."
+        },
+        {
+          "shot": "blast-hole",
+          "action": "Lock the second anywhere it counts",
+          "detail": "The Bunker, the scoop or the Blast Hole all work, and that includes hitting the Skill Shot after the first lock."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Then collect Payday bonuses",
+          "detail": "Ramps and loops each pay back the points you scored in one of the cities you visited on the way west, announced in order east to west."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "specials-and-extra-balls",
+      "title": "Specials And Extra Balls",
+      "category": "strategy",
+      "summary": "Blasts double as a counter award. Flying Rocks lights at three Blasts, an extra ball somewhere between five and fourteen, a Special between seventeen and thirty-four, then more Flying Rocks at forty, another extra ball at fifty, and Rocks again at sixty and eighty.",
+      "difficulty": 2,
+      "reward": "Extra balls, Specials and Flying Rocks from Blast counts",
+      "steps": [
+        {
+          "shot": "blast-targets",
+          "action": "Keep collecting Blasts even when the value is low",
+          "detail": "You bank exactly one Blast toward the counter regardless of any multiplier, so cheap Blasts still advance you."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Know where the Special is",
+          "detail": "Only one outlane is lit at a time and it swaps sides on every slingshot hit. Extra balls stack; Specials do not, so collect one before you light another."
+        }
+      ],
+      "fx": "coin",
+      "ordered": false
+    }
+  ],
+  "achievements": [
+    {
+      "id": "rs-skillshot",
+      "title": "Straight In The Hole",
+      "desc": "Plunge cleanly into the Blast Hole for the Skill Shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "rs-6x",
+      "title": "Bridge Out",
+      "desc": "Take the bonus multiplier all the way to 6X.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bridge-out"
+    },
+    {
+      "id": "rs-big-blast",
+      "title": "Big Blast",
+      "desc": "Collect a Blast worth five times a maxed Blast Value.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "blast-value"
+    },
+    {
+      "id": "rs-ted-head",
+      "title": "Right In The Head",
+      "desc": "Send a Rocks plunge clean past the top exit and hit Ted for 25M.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "flying-rocks"
+    },
+    {
+      "id": "rs-payday",
+      "title": "Payday",
+      "desc": "Work through to Friday, lock two balls and start multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "payday-multiball"
+    },
+    {
+      "id": "rs-cheeseburger",
+      "title": "Cheeseburger",
+      "desc": "Hit Red enough times to trigger the 20M Cheeseburger Bonus.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "cheeseburger"
+    },
+    {
+      "id": "rs-mania",
+      "title": "Uranium Ore",
+      "desc": "Spot the sign at Bob's and start Construction Mania.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "construction-mania"
+    },
+    {
+      "id": "rs-gold-pinball",
+      "title": "The Gold Pinball",
+      "desc": "Buy the 250M gold pinball at Bob's Souvenir Bunker.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "pinball-souvenirs"
+    },
+    {
+      "id": "rs-magic",
+      "title": "Don't Flip",
+      "desc": "Let a ball out of the Lock roll into the Magic Standup during a mode.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "magic-standup"
+    },
+    {
+      "id": "rs-west-coast",
+      "title": "Coast To Coast",
+      "desc": "Drive the map all the way to a West Coast city.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "city-scenes"
+    },
+    {
+      "id": "rs-super-payday",
+      "title": "Super Payday",
+      "desc": "Lock two balls during a West Coast mode to start the wizard bonus.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "super-payday"
+    }
+  ],
+  "drills": [
+    {
+      "id": "clean-into-the-hole",
+      "title": "Clean Into The Blast Hole",
+      "text": "Plunge straight into the Blast Hole without the ball touching anything on the way in. It pays a free souvenir and climbs from five million toward its ceiling — and it counts on any ball sitting at the plunger, not only the one that starts a ball, so never launch on autopilot.",
+      "reps": "every plunge, one full game",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "blast-hole"
+      ]
+    },
+    {
+      "id": "multiply-before-you-collect",
+      "title": "Multiply Before You Collect",
+      "text": "Fill the Blast Value in the bumpers first, then set the multiplier before you cash it: the Left Loop doubles it and a Bridge Out right ramp triples it. The loop hands the ball to the middle left flipper with the Blast lights on — go to the hole rather than the targets from there, because a Super Blast also collects whatever else is sitting lit at the hole.",
+      "reps": "5 multiplied collects",
+      "focus": "flow",
+      "goal": "super-blast",
+      "shots": [
+        "bumpers",
+        "left-loop",
+        "right-ramp",
+        "blast-targets",
+        "blast-hole"
+      ]
+    },
+    {
+      "id": "hands-off-the-standup",
+      "title": "Hands Off The Standup",
+      "text": "This one is drilled by not flipping. Put a ball in the Lock, then take your hand off the upper left flipper and let it roll back down the Spinner Lane into the backwards-facing standup under the flipper tip — it hands you a free award in nearly every mode in the game.",
+      "reps": "10 Lock returns, hands still",
+      "focus": "ball-control",
+      "goal": "magic-standup",
+      "shots": [
+        "lock",
+        "spinner-lane",
+        "magic-standup"
+      ]
+    },
+    {
+      "id": "red-off-every-kickout",
+      "title": "Red Off Every Kickout",
+      "text": "Every Lock kickout opens a Big Millions window on Red, and she is never blocked, which makes her the most repeatable big money in normal play from the upper left flipper. The other use of that same feed is to leave the flipper alone and let the ball find the Magic Standup, so decide which one you want before the ball comes back down.",
+      "reps": "10 kickouts, Red on every one",
+      "focus": "accuracy",
+      "goal": "big-millions",
+      "shots": [
+        "lock",
+        "red",
+        "upper-left-flipper",
+        "magic-standup"
+      ]
+    },
+    {
+      "id": "watch-the-skill-shot-lane",
+      "title": "Watch The Skill Shot Lane",
+      "text": "Every ball that comes back down the Skill Shot lane arms Shooter Bypass on the Left Ramp, and the one-way gate shunts it across to the right inlane, which sets that ramp up for you anyway. Take the ramp straight away — the light sits alongside whatever else the ramp is carrying, so the shot is never wasted.",
+      "reps": "collect it three times in a game",
+      "focus": "accuracy",
+      "goal": "shooter-bypass",
+      "shots": [
+        "skill-shot-lane",
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "cross-lit-ramps",
+      "title": "Take The Cross-Lit Ramp",
+      "text": "The inlanes cross-light the ramps — left inlane lights the right ramp, inside right inlane lights the left — and the window is only a few seconds with no grace on the award. Shoot the opposite ramp straight off the return instead of trapping to think, and note that an undiverted left ramp comes back to the inside right inlane, which lights the left ramp again.",
+      "reps": "walk the multiplier from 2X to 6X in one ball",
+      "focus": "flow",
+      "goal": "bridge-out",
+      "shots": [
+        "left-inlane",
+        "inside-right-inlane",
+        "left-ramp",
+        "right-ramp"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "gear",
+  "actionButton": {
+    "present": false,
+    "how": "No action button here, but the left flipper button is cleverer than it looks: press it partway and only the small lower-left flipper fires, press it all the way and all three flippers on that side go. There is also a second plunger up the left side, fed by the left ramp when Flying Rocks is lit, which you can feather softly to get the ball rolling back for another go."
+  },
+  "howItPlays": {
+    "objective": "You are the road crew Red and Ted, blasting a highway coast to coast. Drive the map from one city scene to the next, pile up and cash Blasts, and push toward Payday Multiball and the Super Payday wizard.",
+    "loop": [
+      "Plunge clean into the Blast Hole for the Skill Shot and a free souvenir, then get a city scene running from the sinkhole or the scoop that kicks to your right flipper.",
+      "Pump the Blast Value up in the jet bumpers, double or triple it on the Left Loop or a lit Bridge Out ramp, then cash it on the Blast Targets.",
+      "Roll an inlane to cross-light the far ramp for Bridge Out, which walks your bonus multiplier up and keeps the Wheel lit.",
+      "Pound the Bulldozer blade forward through the week to Friday, stack two locks, and fire Ted's open mouth to launch Payday Multiball.",
+      "Bank enough miles to relight each city, reach the West Coast, and lock two balls to open Super Payday."
+    ],
+    "lights": [
+      {
+        "id": "blast-value",
+        "name": "Blast Targets",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "bumpers"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "blast-targets"
+          },
+          {
+            "shot": "blast-hole"
+          }
+        ],
+        "lit": "The Blast Value grows with each jet bumper hit up to its cap, and the Blast Targets turn on for a collect once the sinkhole or the Magic Standup lights them.",
+        "flashing": "That big flasher out front is your signal that Big Blast is on, turning a maxed value into a five-times payout.",
+        "control": null,
+        "then": "Load the value in the bumpers, set your multiplier first -- the Left Loop lights the bank for double, a Bridge Out Right Ramp for triple -- and cash on a target. Send it to the sinkhole instead for a Super Blast that sweeps up anything else waiting there.",
+        "goals": [
+          "blast-value",
+          "super-blast"
+        ]
+      },
+      {
+        "id": "bridge-out",
+        "name": "Bridge Out Ramps",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "inside-right-inlane"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Rolling an inlane cross-lights the opposite ramp for a few seconds -- the left inlane arms the Right Ramp, the inside right inlane arms the Left Ramp -- with no grace once the light dies.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the armed ramp to raise the bonus multiplier a rung at a time to 6X, after which it hands an extra ball and then a flat ten-million each. Every rung also relights the Wheel, though topping out while the Wheel already burns snuffs it instead.",
+        "goals": [
+          "bridge-out"
+        ]
+      },
+      {
+        "id": "the-wheel",
+        "name": "The Wheel",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "bumpers"
+          },
+          {
+            "shot": "blast-hole"
+          },
+          {
+            "shot": "lock"
+          }
+        ],
+        "lit": "Each bonus-multiplier rung relights the Wheel, a twelve-award ring below the Bulldozer showing one flashing choice at a time.",
+        "flashing": "Pounding a bumper or ripping the spinner nudges the flashing choice around the ring, so you can drive it to the award you actually want.",
+        "control": null,
+        "then": "Set the award, then take it at the sinkhole or Bob's. Nothing stacks, so every collect needs another multiplier rung to relight -- the menu spans Big Blast, Flying Rocks, Special and an extra ball, among others.",
+        "goals": [
+          "the-wheel"
+        ]
+      },
+      {
+        "id": "flying-rocks",
+        "name": "Flying Rocks",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "rocks-plunger"
+          },
+          {
+            "shot": "rocks-habitrail"
+          },
+          {
+            "shot": "ted"
+          }
+        ],
+        "lit": "Blast counts and Wheel picks arm the Left Ramp for Flying Rocks, sending the ball to a second plunger up the left, and it locks out everything else on the ramp while it burns.",
+        "flashing": null,
+        "control": {
+          "input": "plunger",
+          "effect": "the strength of your plunge decides the prize -- feather it and the ball simply rolls back for another attempt, while the three stacked wireform exits pay 5X Blast low, Radio Riot in the middle and an extra ball up top",
+          "when": "once the Left Ramp has handed the ball to the second plunger"
+        },
+        "then": "Feed the plunger and take the exits from the bottom up, since a lit exit pays better than a dark one. Blow past all three and the ball smacks Ted for twenty-five million before dropping back out.",
+        "goals": [
+          "flying-rocks"
+        ]
+      },
+      {
+        "id": "payday-multiball",
+        "name": "Payday Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "bulldozer"
+          },
+          {
+            "shot": "lock"
+          },
+          {
+            "shot": "ted"
+          },
+          {
+            "shot": "red"
+          }
+        ],
+        "lit": "Every Bulldozer hit rolls the day forward and pushes the multiball jackpot higher, and hitting Friday lights the Lock.",
+        "flashing": null,
+        "control": null,
+        "then": "Squeeze Overtime out of the blade first -- each hit past Friday climbs from a hair over a million toward three -- then stack two locks and feed Ted to begin. The jackpot bounces between the two heads from forty million up toward seventy-five.",
+        "goals": [
+          "payday-multiball",
+          "overtime"
+        ]
+      },
+      {
+        "id": "big-millions",
+        "name": "Big Millions on Red",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "red"
+          },
+          {
+            "shot": "lock"
+          }
+        ],
+        "lit": "Each ball spat back out of the Lock arms a brief Big Millions shot on Red, whose mouth never gets blocked.",
+        "flashing": null,
+        "control": null,
+        "then": "Take her off the upper left flipper for the steadiest big score in ordinary play -- a figure that carries all game from five million toward twenty-five -- and stacking hits on her quietly triggers a twenty-million Cheeseburger. Leave the flipper down instead and the Lock return will find the Magic Standup on its own.",
+        "goals": [
+          "big-millions",
+          "cheeseburger"
+        ]
+      },
+      {
+        "id": "city-scenes",
+        "name": "Start City Scene",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "start-city-scoop"
+          },
+          {
+            "shot": "blast-hole"
+          }
+        ],
+        "lit": "The globe over the city-scene scoop lights when a mode is ready, and it is always one of the next couple of stops on the westward map.",
+        "flashing": "Bump a jet or a standup in a city's colour to swap which of the pair is showing before you commit to it.",
+        "control": null,
+        "then": "Start it at that scoop or the sinkhole, run the mode, then log another four hundred miles to relight the scoop for the following city -- the Left Loop banks the most at a hundred and fifty a trip. Reach any West Coast city to unlock Super Payday.",
+        "goals": [
+          "city-scenes",
+          "super-payday"
+        ]
+      },
+      {
+        "id": "magic-standup",
+        "name": "The Magic Standup",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "magic-standup"
+          },
+          {
+            "shot": "lock"
+          },
+          {
+            "shot": "blast-targets"
+          }
+        ],
+        "lit": "The Magic Standup sits backward under the tip of the upper left flipper, so the way to hit it is to hold still and let a ball coming out of the Lock roll onto it.",
+        "flashing": null,
+        "control": {
+          "input": "none",
+          "effect": "keep off the upper left flipper so the ball drifting back down the Spinner Lane from the Lock settles onto the rear-facing target by itself",
+          "when": "while a ball is on its way back from the Lock"
+        },
+        "then": "It gifts a free award in almost every mode -- flattening a cab in New York, padding the Atlanta hurry-up, spotting a Butte tunnel -- and outside of modes a hit simply lights the Blast Targets.",
+        "goals": [
+          "magic-standup"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Send the plunge straight down into the Blast Hole for the Skill Shot and a free souvenir, and keep an eye on the Skill Shot lane -- every ball back down it arms a cheap Shooter Bypass on the Left Ramp. Stack up Blast Value in the bumpers and take even small Blasts while you find the flow.",
+        "goals": [
+          "skillshot",
+          "shooter-bypass",
+          "blast-value"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Climb the bonus multiplier with Bridge Out to keep the Wheel burning, run the city modes westward, and drive the Bulldozer to Friday for Payday Multiball. Every souvenir you buy at Bob's pays ten million at bonus for each matching city you have already driven through.",
+        "goals": [
+          "bridge-out",
+          "city-scenes",
+          "payday-multiball",
+          "souvenirs"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Super Payday tops the game: with a West Coast scene running, sink one ball in Bob's Bunker and a second in the Bunker, sinkhole or scoop to fire up every feature at once. It refunds the points you banked in each city you crossed on the way out west.",
+        "goals": [
+          "super-payday",
+          "city-scenes"
+        ]
+      }
+    ]
+  }
+}

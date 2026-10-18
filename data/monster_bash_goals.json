@@ -1,0 +1,1307 @@
+{
+  "machine": "Monster Bash (Williams, 1998)",
+  "defaultFx": "ghost",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Auto-Plunger / Launch Button",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.05,
+      "trim": "all",
+      "feeds": {
+        "shot": "dig-lanes"
+      },
+      "notes": "Auto-plunger only — no manual skill plunge. Every launch crosses the back arch into the D-I-G top lanes. The launch button doubles as the Monster Bomb trigger during modes."
+    },
+    {
+      "id": "dig-lanes",
+      "name": "D-I-G Top Lanes",
+      "type": "lane",
+      "x": 0.63,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Three rollover lanes above the jets; flipper lane-change moves the lit lane. Skill shot target; completing D-I-G advances Bonus X, raises jet value and spots 5 jet hits."
+    },
+    {
+      "id": "lagoon",
+      "name": "Creature's Black Lagoon",
+      "type": "saucer",
+      "x": 0.0204,
+      "y": 0.4472,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Far-left kickout hole (the 'left eject') over the glowing under-playfield Creature. Four shots start Creature Feature; during the mode it spots a lit shot. One of the safest shots in the game."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Loop",
+      "type": "orbit",
+      "x": 0.24,
+      "y": 0.36,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Moon-phase inserts along the lane. A gate either diverts into the jet bumpers or lets the ball careen fully around to the right side.",
+      "feeds": {
+        "shot": "right-flipper"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Bride)",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.38,
+      "trim": "all",
+      "flipper": "right",
+      "apex": {
+        "x": 0.24,
+        "y": 0.89
+      },
+      "feeds": {
+        "x": 0.18,
+        "y": 0.11
+      },
+      "notes": "Tight figure-8 ramp; wireform returns down the left edge to the left inlane. Left half of Ball & Chain. Left-flipper backhand rejects slowly — avoid."
+    },
+    {
+      "id": "phantom-targets",
+      "name": "Phantom Flip Standups",
+      "type": "standup",
+      "x": 0.2221,
+      "y": 0.3448,
+      "trim": "all",
+      "notes": "Three blue standups flanking Frankenstein and the left ramp. Seven combined hits light 2 stackable Phantom Flips (auto-flip AI) on the inlanes."
+    },
+    {
+      "id": "frank-targets",
+      "name": "Frankenstein Target Bank",
+      "type": "target-bank",
+      "x": 0.4648,
+      "y": 0.57,
+      "trim": "all",
+      "flipper": "right",
+      "notes": "Motorized 2-target red bank blocking the center ramp. Seven hits assemble Frank and lower the bank; the raised targets are also the Mosh Pit MB second-Super targets."
+    },
+    {
+      "id": "frank",
+      "name": "Frankenstein (Bash Toy)",
+      "type": "mech",
+      "x": 0.4014,
+      "y": 0.7134,
+      "trim": "all",
+      "notes": "Frankenstein on his motorized operating table behind the target bank. Bash him for Super Jackpots in Frank Multiball; a monster shot in the wizard modes. Rejects come back hot at the drain."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Frank Ramp)",
+      "type": "ramp",
+      "x": 0.41,
+      "y": 0.32,
+      "trim": "all",
+      "flipper": "right",
+      "apex": {
+        "x": 0.37,
+        "y": 0.75
+      },
+      "feeds": {
+        "x": 0.8,
+        "y": 0.11
+      },
+      "notes": "Hidden behind the Frank bank until he's assembled. Return merges into the right ramp's wireform to the right inlane; when Frank Multiball is lit this shot is captured to start it instead."
+    },
+    {
+      "id": "mosh-pit",
+      "name": "Mosh Pit (Spinner Lane)",
+      "type": "spinner",
+      "x": 0.5289,
+      "y": 0.6212,
+      "trim": "all",
+      "notes": "Center lane with the game's spinner, aligned with the drain — a miss is often SDTM. Six shots light Mosh Pit MB, every 3rd/9th/15th awards a Monster Bomb, resets Ball & Chain, cashes Bash Jackpots. Makeable from either flipper (easier right)."
+    },
+    {
+      "id": "tomb-treasure",
+      "name": "Tomb Treasure Target",
+      "type": "standup",
+      "x": 0.56,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Large standup beside the Mosh Pit lane: each hit is +1X Bonus X plus points equal to ten jet hits. Frequently hit by accident during multiball."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop (Ball Popper)",
+      "type": "scoop",
+      "x": 0.61,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Orange-hooded kickout right of the Mosh Pit lane. Mystery 'concert venue' awards when unlit; the start shot for Drac Attack, Mummy Mayhem, Mosh Pit MB, Monster Bash and Monsters of Rock; collects Extra Ball. Backhands well from the right flipper; 44th visit is Lyman's Lament."
+    },
+    {
+      "id": "bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.59,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three pops fed by the top lanes, the plunge and loop diverts. Sixty hits light Mummy Mayhem and start doubled Super Jets."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Bride)",
+      "type": "ramp",
+      "x": 0.57,
+      "y": 0.37,
+      "trim": "all",
+      "flipper": "left",
+      "apex": {
+        "x": 0.8,
+        "y": 0.62
+      },
+      "feeds": {
+        "x": 0.8,
+        "y": 0.11
+      },
+      "notes": "Flat steel ramp looping around the right side to the right inlane. Right half of Ball & Chain. Weak shots roll back to the left flipper; a miss often drains center."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Loop",
+      "type": "orbit",
+      "x": 0.64,
+      "y": 0.38,
+      "trim": "all",
+      "flipper": "left",
+      "notes": "Mirror of the left loop — moon phases, same gate behavior (jets or full careen-around).",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "dracula",
+      "name": "Dracula (Moving Figure)",
+      "type": "mech",
+      "x": 0.66,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Dracula rides a semicircular track across the mid-right playfield, parked in his coffin when idle. Hit the moving figure during Drac Attack (2X while moving); bounces are unpredictable — wait for the shot."
+    },
+    {
+      "id": "drac-targets",
+      "name": "DRAC / ATTACK Standups",
+      "type": "standup",
+      "x": 0.7542,
+      "y": 0.4615,
+      "trim": "all",
+      "flipper": "left",
+      "notes": "Two red standups above the right slingshot. Seven combined hits spell D-R-A-C-U-L-A (D-R-A pre-spotted at game start); re-spelling earns Garlic Clove bombs."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-shot",
+      "title": "D-I-G Skill Shot",
+      "category": "skillshot",
+      "summary": "Every ball starts with one decision: put the plunge into the flashing D-I-G lane. The points are small but the Monster Bomb it awards spots a shot in whichever mode you fire it during.",
+      "difficulty": 1,
+      "reward": "150K + a random Monster Bomb",
+      "steps": [
+        {
+          "shot": "dig-lanes",
+          "action": "Launch the ball, then roll it through the flashing lane",
+          "detail": "The auto-plunger sends the ball over the arch toward the three D-I-G rollovers — use the flipper buttons to move the flashing lane before it arrives. Scores 100K + 50K and a random Monster Bomb, the real prize (Garlic Clove, Hair Dryer, Ancient Scroll, Silver Bullet, Spear Gun or Flaming Torch, one per monster)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "creature-feature",
+      "title": "Creature Feature",
+      "category": "mode",
+      "summary": "The Creature from the Black Lagoon's mode: start it at the lagoon, then clear all five major shots for escalating hurry-ups. The most valuable mode to stack under a multiball.",
+      "difficulty": 2,
+      "reward": "Saxophone + hurry-ups scaling 1M to 5M",
+      "steps": [
+        {
+          "shot": "lagoon",
+          "action": "Shoot the lagoon four times",
+          "detail": "Four left-eject shots start Creature Feature and light the Creature glowing green under the pond. Safe both to start and to play."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect the first hurry-up",
+          "detail": "All five major shots light: both loops, both ramps and the Mosh Pit lane, any order. The first shot is a 1M hurry-up; a 20-second timer resets after each collect.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep clearing lit shots",
+          "detail": "Each successive shot multiplies the hurry-up — 2X, 3X, 4X, then 5X (up to 5M on the fifth).",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Work the other side",
+          "detail": "The lagoon spots one lit shot if you get stuck (repeatable, clockwise), and a Spear Gun bomb does the same.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Clear the loops",
+          "detail": "Under a stacked multiball the timer freezes, so the escalating shots can be swept at leisure.",
+          "link": "none"
+        },
+        {
+          "shot": "mosh-pit",
+          "action": "Finish the fifth shot",
+          "detail": "Completing all five collects the Saxophone and ends the mode.",
+          "link": "none"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "full-moon-fever",
+      "title": "Full Moon Fever",
+      "category": "mode",
+      "summary": "The Wolfman lives on the loops: four combined loop shots complete the moon phases and start four consecutive loop hurry-ups. Collect all four in one run for the Drums.",
+      "difficulty": 2,
+      "reward": "Drums (all 4 hurry-ups in one run)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the loops",
+          "detail": "Loops collect moon phases; before the mode starts the gate dumps loops into the jets (free Mummy progress)."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Complete four combined loops",
+          "detail": "Either loop counts; the fourth phase starts Full Moon Fever and the gates open for full careen-arounds."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect the loop hurry-ups",
+          "detail": "Four in sequence: 1M, 2M, 3M, 4M — the ball must fully orbit; a jets landing doesn't count. Values decay to a 250K floor then expire. A Silver Bullet bomb collects the current one and spots a loop."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Finish all four in one Fever",
+          "detail": "Collecting all four hurry-ups in a single Full Moon Fever earns the Drums; each completed FMF raises later bases by 250K."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mummy-mayhem",
+      "title": "Mummy Mayhem",
+      "category": "mode",
+      "summary": "The hardest mode to light: 60 jet-bumper hits, then start at the scoop and race to 7.5M in 45 seconds while everything scores. Practically beats itself if stacked under a multiball.",
+      "difficulty": 3,
+      "reward": "Bass + 250K per second remaining",
+      "steps": [
+        {
+          "shot": "bumpers",
+          "action": "Pound the jets to 60 hits",
+          "detail": "Loops and every plunge feed the bumpers. Each D-I-G completion spots 5 hits and the scoop's Advance Mummy award spots 10. At 60, doubled Super Jets start and Mummy Mayhem lights."
+        },
+        {
+          "shot": "scoop",
+          "action": "Start at the scoop",
+          "detail": "45 seconds to score 7.5M in mode points; every switch scores 50K and jets are tripled."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect Mayhem Jackpots",
+          "detail": "Each major shot pays 500K plus all switch scoring since the last jackpot, and sets the Mummy figure spinning. An Ancient Scroll bomb spots one jackpot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Reach 7.5M before time runs out",
+          "detail": "Completing awards the Bass plus 250K per second remaining; each later Mummy Mayhem needs 500K more."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "drac-attack",
+      "title": "Drac Attack",
+      "category": "mode",
+      "summary": "Spell D-R-A-C-U-L-A on the red standups, start at the scoop, then hit the Count as he cruises his playfield track. Five hits take his Guitar.",
+      "difficulty": 2,
+      "reward": "Guitar after 5 Dracula hits",
+      "steps": [
+        {
+          "shot": "drac-targets",
+          "action": "Spell D-R-A-C-U-L-A",
+          "detail": "Seven combined hits on the DRAC/ATTACK standups — but D-R-A is spotted at game start, so the first light needs only four. Re-spelling later earns Garlic Clove bombs."
+        },
+        {
+          "shot": "scoop",
+          "action": "Start at the scoop",
+          "detail": "Dracula leaves his coffin and sweeps back and forth along his track."
+        },
+        {
+          "shot": "dracula",
+          "action": "Hit the moving Dracula five times",
+          "detail": "Each hit resets the 30-second timer; hits while he's moving score double value but still count once. Don't chase him — bounces find the outlanes. A Garlic Clove spots one hit."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "ball-and-chain",
+      "title": "Ball & Chain 3X Ramp Farm",
+      "category": "combo",
+      "summary": "The Bride's mode is the game's premier repeatable farm: the left ramp feeds the left flipper, which shoots the right ramp, which feeds the right flipper, which shoots the left ramp — forever. Finish the Microphone and every ramp is worth 3M.",
+      "difficulty": 2,
+      "reward": "Microphone, then 3M per ramp shot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp three times",
+          "detail": "Three shots on EACH Bride ramp light Ball & Chain. The left ramp returns to the left inlane."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp three times",
+          "detail": "The return feeds set up perfect alternation — looping alternate ramps is the safest scoring loop in the game."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect three more on each ramp",
+          "detail": "30-second timer; ramps score 2X the Ball & Chain value (1M at base). Finishing both ramps collects the Microphone. A Hair Dryer bomb spots one ramp shot."
+        },
+        {
+          "shot": "mosh-pit",
+          "action": "Reset the timer at the Mosh Pit",
+          "detail": "The center lane resets the 30s clock up to three times and scores 1X — only shoot it with a controlled ball."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Farm tripled ramps",
+          "detail": "After the Microphone ALL mode scoring triples — 3M per ramp until time expires. Under any multiball the timer freezes and the farm runs indefinitely: the game's best repeatable sequence."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mosh-super-cycle",
+      "title": "Mosh Pit Super Jackpot Cycle",
+      "category": "combo",
+      "summary": "Inside Mosh Pit Multiball an explicitly infinite ladder: ten Frank-ramp shots for the Super Jackpot, five hits on the raised red targets for a 3X second Super, repeat.",
+      "difficulty": 3,
+      "reward": "~7-10M Super, then a 3X second Super, repeatable",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Frank ramp ten times",
+          "detail": "During Mosh Pit Multiball, ten center-ramp shots award the Mosh Pit Super Jackpot (typically 7-10M, scaled by jackpots collected)."
+        },
+        {
+          "shot": "frank-targets",
+          "action": "Hit the raised red targets five times",
+          "detail": "Frank's red standups rise after the Super; five hits score a second Super worth 3X the current jackpot value."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Repeat the ladder",
+          "detail": "The ladder loops indefinitely in the code. Every ordinary shot meanwhile pays 750K + 5K per lifetime Mosh Pit shot, capped at 1.5M."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "frank-triple-super",
+      "title": "Triple Super Jackpot Line",
+      "category": "combo",
+      "summary": "The efficient Frankenstein Multiball sequence: weave exactly three regular jackpots between Frank hits so every bash cashes a Triple Super and counts as three Frank hits toward the Keyboard.",
+      "difficulty": 3,
+      "reward": "Triple Super = 3 Frank hits in one shot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Cash a regular jackpot",
+          "detail": "In Frank Multiball every major shot scores a jackpot (base 400K, +50K per Frank completion).",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Cash a second jackpot",
+          "detail": "Two intervening jackpots upgrade the next Frank hit to a Double Super.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Cash a third jackpot",
+          "detail": "Three intervening jackpots light the Triple Super — the maximum upgrade.",
+          "link": "none"
+        },
+        {
+          "shot": "frank",
+          "action": "Bash Frankenstein",
+          "detail": "The Triple Super counts as three Frank hits toward the six Super Jackpots that award the Keyboard. Repeat the 3-then-Frank line."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "bash-jackpot-loop",
+      "title": "Bash Jackpot Loop",
+      "category": "combo",
+      "summary": "The Monster Bash farm loop: bash several monsters at 2M each to build the Bash Jackpot, then cash it at the center lane for up to 7.5M — and start building again.",
+      "difficulty": 2,
+      "reward": "Up to 7.5M per center-lane cash-in",
+      "steps": [
+        {
+          "shot": "lagoon",
+          "action": "Bash monsters",
+          "detail": "During Monster Bash every monster shot scores 2M and adds 500K to the pending Bash Jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Keep hitting monster shots",
+          "detail": "Ramps, loops, lagoon and Frank all count — build three to five bashes before cashing (jackpot caps at 7.5M).",
+          "link": "none"
+        },
+        {
+          "shot": "frank",
+          "action": "Include Frank in the sweep",
+          "detail": "With four balls flying, the bash toys are safe to attack.",
+          "link": "none"
+        },
+        {
+          "shot": "mosh-pit",
+          "action": "Cash the Bash Jackpot",
+          "detail": "The center lane collects 2M + 500K per monster bashed since the last jackpot, then the loop repeats. Each later Monster Bash raises monster value 500K."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mor-jackpot-lap",
+      "title": "Monsters of Rock Jackpot Lap",
+      "category": "combo",
+      "summary": "The wizard mode's repeatable lap: shoot all six monster shots once each for the Monsters of Rock Jackpot, with the Mosh Pit spotting monsters along the way. Repeat laps for repeat jackpots.",
+      "difficulty": 3,
+      "reward": "MOR Jackpot = 4M x full-set completions, per lap",
+      "steps": [
+        {
+          "shot": "lagoon",
+          "action": "Start the lap at the lagoon",
+          "detail": "Each of the six monster shots pays 4M during Monsters of Rock."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left loop",
+          "detail": "Second monster of the set."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right loop",
+          "detail": "Third monster."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Fourth monster."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Fifth monster."
+        },
+        {
+          "shot": "frank",
+          "action": "Bash Frankenstein to finish the set",
+          "detail": "Completing all six awards the MOR Jackpot — 4M times your full monster-set completions — then the lap resets."
+        },
+        {
+          "shot": "mosh-pit",
+          "action": "Let the Mosh Pit spot monsters",
+          "detail": "Each center-lane shot spots one monster toward the lap, clockwise starting from the Creature."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "frank-multiball",
+      "title": "Frankenstein Multiball",
+      "category": "multiball",
+      "summary": "Assemble Frank with seven target-bank hits, then shoot the ramp his bank was hiding. Never start it bare — stack modes first so their timers freeze.",
+      "difficulty": 2,
+      "reward": "Keyboard after 6 Super Jackpots",
+      "steps": [
+        {
+          "shot": "frank-targets",
+          "action": "Hit the Frank bank seven times",
+          "detail": "Seven hits on the motorized 2-target bank assemble Frankenstein; the bank lowers and exposes the hidden center ramp. In single-ball play rejects are a drain hazard — pick your moments."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the open center ramp",
+          "detail": "Starts the 3-ball multiball (the ramp captures the ball instead of feeding the right inlane). Start it with other modes running.",
+          "feeds": {
+            "shot": "frank"
+          }
+        },
+        {
+          "shot": "frank",
+          "action": "Bash Frank for Super Jackpots",
+          "detail": "Every major shot scores a regular jackpot; Frank himself scores Supers (base 1M). Collect six Supers — singles, Doubles or Triples — for the Keyboard. A Flaming Torch bomb spots the next lit Super."
+        },
+        {
+          "shot": "frank",
+          "action": "Survive Last Chance if needed",
+          "detail": "If multiball ends short, Frank re-raises for a 15-second single-ball sudden death; each hit resets the clock and remaining Supers still count."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "mosh-pit-multiball",
+      "title": "Mosh Pit Multiball",
+      "category": "multiball",
+      "summary": "Six spinner-lane shots light it, the scoop starts it, and the same lane adds balls once it's running. High value, high risk — the lane faces the drain.",
+      "difficulty": 2,
+      "reward": "Jackpots to 1.5M + the Super Jackpot ladder",
+      "steps": [
+        {
+          "shot": "mosh-pit",
+          "action": "Shoot the Mosh Pit six times",
+          "detail": "Six center-lane shots light the multiball (relit at the 24th lifetime shot). Every 3rd, 9th, 15th... shot also awards a Monster Bomb. Only shoot it controlled — a miss is often straight down the middle."
+        },
+        {
+          "shot": "scoop",
+          "action": "Start it at the scoop",
+          "detail": "Begins as a 2-ball multiball."
+        },
+        {
+          "shot": "mosh-pit",
+          "action": "Immediately add a third ball",
+          "detail": "Each additional Mosh Pit shot adds a ball (up to 4 total) with a short ball-saver — add one right away so the multiball doesn't end prematurely."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect jackpots everywhere",
+          "detail": "Every shot pays 750K + 5K per lifetime Mosh Pit shot (cap 1.5M); then work the Frank-ramp Super Jackpot ladder."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "monster-bash",
+      "title": "Monster Bash (Mini-Wizard)",
+      "category": "multiball",
+      "summary": "Start — not finish — all six monster modes and the scoop lights the game's namesake 4-ball. Reaching it is usually enough on its own to put a replay-level score on the board.",
+      "difficulty": 3,
+      "reward": "2M monster shots + Bash Jackpots to 7.5M",
+      "steps": [
+        {
+          "shot": "lagoon",
+          "action": "Start Creature Feature",
+          "detail": "Four lagoon shots. Monster Bash lights the instant your sixth mode STARTS — completion is never required.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Start Full Moon Fever",
+          "detail": "Four combined loop shots complete the moon phases.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Start Ball & Chain",
+          "detail": "Three shots on each Bride ramp.",
+          "link": "none"
+        },
+        {
+          "shot": "drac-targets",
+          "action": "Light and start Drac Attack",
+          "detail": "Finish spelling D-R-A-C-U-L-A (D-R-A comes free), then start at the scoop.",
+          "link": "none"
+        },
+        {
+          "shot": "bumpers",
+          "action": "Light and start Mummy Mayhem",
+          "detail": "Sixty jet hits — D-I-G completions spot 5 and the scoop's Advance Mummy spots 10 — then start at the scoop.",
+          "link": "none"
+        },
+        {
+          "shot": "frank-targets",
+          "action": "Qualify Frankenstein",
+          "detail": "Seven bank hits, then the center ramp starts Frank Multiball — your sixth monster started.",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Start Monster Bash at the scoop",
+          "detail": "4-ball multiball with a generous ball-saver: every monster shot scores 2M and the center lane cashes Bash Jackpots up to 7.5M."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "bonus-x-dig",
+      "title": "Bonus X via D-I-G",
+      "category": "multiplier",
+      "summary": "Monster Bash has no playfield multipliers — multiplier play is entirely end-of-ball Bonus X, advanced at the top lanes. Take completions when they're free.",
+      "difficulty": 1,
+      "reward": "+1 Bonus X per D-I-G completion",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Send the ball to the top lanes",
+          "detail": "Every plunge crosses the D-I-G rollovers, and loop shots diverted into the jets churn up there too."
+        },
+        {
+          "shot": "dig-lanes",
+          "action": "Complete D-I-G",
+          "detail": "Use flipper lane-change to fill all three letters. Each completion advances Bonus X, raises jet value 1,500 and spots 5 jet hits. End-of-ball bonus = total switch count x Bonus X — 20-30X is routine, cap presumed 250X."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "tomb-treasure-x",
+      "title": "Tomb Treasure Multiplier",
+      "category": "multiplier",
+      "summary": "The big standup halfway up the Mosh Pit lane is the other Bonus X source: +1X per hit plus a chunk of points, and it gets hit constantly by accident in multiball.",
+      "difficulty": 2,
+      "reward": "+1X Bonus X + ten jet hits' points per hit",
+      "steps": [
+        {
+          "shot": "tomb-treasure",
+          "action": "Hit the Tomb Treasure standup",
+          "detail": "Each hit adds +1X to the bonus multiplier and pays points equal to ten jet-bumper hits. Don't aim at it in single-ball play — let multiballs maul it for you."
+        },
+        {
+          "shot": "scoop",
+          "action": "Take Hold Bonus X when offered",
+          "detail": "The scoop's mystery can hold your Bonus X into the next ball — worth taking late in a ball. Bonus itself is modest on this game, so treat multipliers as gravy, not a plan."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "monsters-of-rock",
+      "title": "Monsters of Rock (Wizard)",
+      "category": "wizard",
+      "summary": "Collect all six instruments — complete every mode — and the scoop starts the full band. Starting it alone pays at least 55M, and 50M more if you never started Monster Bash on the way.",
+      "difficulty": 3,
+      "reward": "55M+ at start; 4M monsters; jackpot 4M x sets",
+      "steps": [
+        {
+          "shot": "lagoon",
+          "action": "Complete Creature Feature for the Saxophone",
+          "detail": "Start at the lagoon, then clear all five escalating hurry-up shots.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Complete Full Moon Fever for the Drums",
+          "detail": "All four loop hurry-ups in a single run.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Complete Ball & Chain for the Microphone",
+          "detail": "Three shots per ramp to start, three more per ramp to finish.",
+          "link": "none"
+        },
+        {
+          "shot": "frank",
+          "action": "Complete Frankenstein Multiball for the Keyboard",
+          "detail": "Six Super Jackpots off Frank himself (Doubles and Triples count extra).",
+          "link": "none"
+        },
+        {
+          "shot": "bumpers",
+          "action": "Complete Mummy Mayhem for the Bass",
+          "detail": "Light with 60 jet hits, start at the scoop, score 7.5M in 45 seconds.",
+          "link": "none"
+        },
+        {
+          "shot": "dracula",
+          "action": "Complete Drac Attack for the Guitar",
+          "detail": "Five hits on the roaming Count.",
+          "link": "none"
+        },
+        {
+          "shot": "scoop",
+          "action": "Start Monsters of Rock",
+          "detail": "Start bonus: 5M per instrument collected all game + 25M per complete set (minimum 55M), +50M if you never started Monster Bash. 4-ball with a very generous saver — lap the six monster shots for the MOR Jackpot. Finishing the last instruments DURING Monster Bash auto-starts it."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "beginner-opener",
+      "title": "Beginner: First 30 Seconds",
+      "category": "strategy",
+      "summary": "Safe progress per risk unit: skill shot, then ramps and loops that feed three monsters at once. Avoid Frank, Dracula and the center lane until you have a multiball running.",
+      "difficulty": 1,
+      "reward": "Three monsters started fast — the extra-ball path",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Take the skill shot",
+          "detail": "Flashing D-I-G lane for 150K and a Monster Bomb."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Bride progress on the safer ramp — a missed right ramp often goes straight down the middle."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Shoot a loop",
+          "detail": "Wolfman moon-phase progress, and the gate feeds the jets for Mummy progress at the same time."
+        },
+        {
+          "shot": "lagoon",
+          "action": "Shoot the lagoon",
+          "detail": "Creature progress on a shot that's safe both to start and to play; four shots start the mode."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Right ramp when controlled",
+          "detail": "Second Bride shot from a clean left-flipper feed only."
+        },
+        {
+          "shot": "scoop",
+          "action": "Take the scoop when lit or convenient",
+          "detail": "Mystery awards start or advance monsters, spot 10 jet hits, and light extra ball. Starting about three monsters lights an extra ball at the scoop. Goal: START all six modes for Monster Bash."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "tournament-stack",
+      "title": "The Stack: Modes into Frank Multiball",
+      "category": "strategy",
+      "summary": "The tournament line. Mode timers freeze during any multiball but the modes stay playable — so bring several monsters to the brink, start them, then start Frankenstein Multiball last and finish everything with the clocks stopped.",
+      "difficulty": 3,
+      "reward": "Frozen timers — bank instruments in bulk",
+      "steps": [
+        {
+          "shot": "lagoon",
+          "action": "Start or nearly start Creature Feature",
+          "detail": "Four lagoon shots. Creature and Bride are the hardest instruments to earn outside a stack — light them before ever opening Frank."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Work the Bride ramps",
+          "detail": "Get Ball & Chain running or one shot away; ideally have each multiball two shots from activating before starting modes."
+        },
+        {
+          "shot": "drac-targets",
+          "action": "Finish DRACULA in passing",
+          "detail": "Only four letters remain at game start; start Drac Attack (and Mummy when lit) at the scoop just before launching the multiball."
+        },
+        {
+          "shot": "frank-targets",
+          "action": "Raise Frank last",
+          "detail": "Seven bank hits with modes running. Never play Frankenstein bare — two modes running at once beats one mode completed."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Start Frank Multiball with 4-5 monsters live",
+          "detail": "With every mode timer frozen, sweep the running modes' shots at leisure and bank as many instruments as you can before the multiball ends.",
+          "feeds": {
+            "shot": "frank"
+          }
+        },
+        {
+          "shot": "scoop",
+          "action": "Choose your wizard",
+          "detail": "Monster Bash for the near-guaranteed replay, or complete all six modes and skip straight to Monsters of Rock for the +50M no-Bash bonus — the blowout line."
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "lymans-lament",
+      "title": "Lyman's Lament Setup",
+      "category": "strategy",
+      "summary": "The scoop's mystery tours 'monstrous' concert venues; the 44th non-multiball visit plays the programmer's secret award and supercharges your bonus. Time it just before a multiball.",
+      "difficulty": 3,
+      "reward": "+25X Bonus X and boosted switch values",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Visit the scoop all game",
+          "detail": "Every unlit scoop shot visits one of the game's spoof venues (Wolfstock, Cadaver Club, Wormly Stadium...). The 44th non-multiball visit awards Lyman's Lament: roughly +2.5K per switch and +25X bonus multiplier."
+        },
+        {
+          "shot": "mosh-pit",
+          "action": "Have a multiball lit before collecting",
+          "detail": "Near visit 44, light a multiball first, collect the Lament, THEN start the multiball — the multiball's huge switch count then cashes in at the boosted value for a far bigger end-of-ball bonus."
+        }
+      ],
+      "fx": "ghost"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-recruit",
+      "title": "First Recruit",
+      "desc": "Start any one of the six monster modes to bring your first monster into the band.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "creature-feature"
+    },
+    {
+      "id": "clean-dig",
+      "title": "Clean Dig",
+      "desc": "Put the plunge through the flashing D-I-G lane to collect the skill shot award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-shot"
+    },
+    {
+      "id": "encore-ticket",
+      "title": "Encore Ticket",
+      "desc": "Light an extra ball by getting three monster modes started in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "beginner-opener"
+    },
+    {
+      "id": "horn-from-the-deep",
+      "title": "Horn from the Deep",
+      "desc": "Clear all five lit shots in Creature Feature to take the Creature's saxophone.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "creature-feature"
+    },
+    {
+      "id": "five-stakes",
+      "title": "Five Stakes",
+      "desc": "Hit the roaming Dracula five times in one Drac Attack to claim his guitar.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "drac-attack"
+    },
+    {
+      "id": "wedding-singer",
+      "title": "Wedding Singer",
+      "desc": "Finish Ball & Chain with three additional shots on each ramp to collect the Bride's microphone.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ball-and-chain"
+    },
+    {
+      "id": "four-phases-one-night",
+      "title": "Four Phases, One Night",
+      "desc": "Collect all four loop hurry-ups in a single Full Moon Fever to earn the Wolfman's drums.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "full-moon-fever"
+    },
+    {
+      "id": "dizzy-in-45",
+      "title": "Dizzy in 45",
+      "desc": "Score 7.5 million within Mummy Mayhem's 45-second timer to take the Mummy's bass.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mummy-mayhem"
+    },
+    {
+      "id": "six-bolts",
+      "title": "Six Bolts of Lightning",
+      "desc": "Collect six Super Jackpots off Frankenstein in one game to earn his keyboard.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "frank-multiball"
+    },
+    {
+      "id": "three-before-the-monster",
+      "title": "Three Before the Monster",
+      "desc": "Cash three regular jackpots and then bash Frankenstein for a Triple Super Jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "frank-triple-super"
+    },
+    {
+      "id": "all-six-on-stage",
+      "title": "All Six on Stage",
+      "desc": "Start every monster mode in one game and launch the four-ball Monster Bash.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "monster-bash"
+    },
+    {
+      "id": "the-band-is-whole",
+      "title": "The Band Is Whole",
+      "desc": "Collect all six instruments in a single game and start Monsters of Rock.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "monsters-of-rock"
+    },
+    {
+      "id": "whole-stage-sweep",
+      "title": "Whole-Stage Sweep",
+      "desc": "Shoot all six monster shots during one Monsters of Rock to bank its jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mor-jackpot-lap"
+    },
+    {
+      "id": "straight-to-the-headliner",
+      "title": "Straight to the Headliner",
+      "desc": "Qualify Monsters of Rock without ever starting Monster Bash to bank the 50-million bonus.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "monsters-of-rock"
+    },
+    {
+      "id": "last-stop-on-the-tour",
+      "title": "Last Stop on the Tour",
+      "desc": "Reach the scoop's forty-fourth mystery visit in one game to unlock the programmer's hidden award.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "lymans-lament"
+    }
+  ],
+  "drills": [
+    {
+      "id": "lane-change-before-arrival",
+      "title": "Lane Change Before It Arrives",
+      "text": "The launch is automatic, so the skill is moving the flashing lane under the ball with the flipper buttons before it gets there. The points are small — the Monster Bomb is the reason to take it every ball, because it is a stored free shot you get to time yourself later.",
+      "reps": "every ball, all game",
+      "focus": "skill-shot",
+      "goal": "skill-shot",
+      "shots": [
+        "plunge",
+        "dig-lanes"
+      ]
+    },
+    {
+      "id": "bride-ramp-laps",
+      "title": "Bride Ramp Laps",
+      "text": "The left ramp returns to the left inlane, which is the flipper that shoots the right ramp, and the right ramp returns to the right, which shoots the left. The alternation feeds itself, so run laps until you can hold it without cradling. Leave the left-flipper backhand alone — it rejects slowly.",
+      "reps": "10 unbroken alternations",
+      "focus": "flow",
+      "goal": "ball-and-chain",
+      "shots": [
+        "left-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "controlled-mosh-only",
+      "title": "Controlled Mosh Pit Only",
+      "text": "The center lane is aligned with the drain, so a miss is often straight down the middle. Take it only from a settled ball and prefer the right flipper, where the angle is easier. Play a ball where you cradle before every single attempt, and count how many of ten you make.",
+      "reps": "10 attempts, all from a cradle",
+      "focus": "ball-control",
+      "goal": "mosh-pit-multiball",
+      "shots": [
+        "mosh-pit",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "assemble-then-ramp",
+      "title": "Assemble, Then Ramp",
+      "text": "Seven hits on the motorized bank assemble Frank and drop it, exposing the ramp it was hiding. His rejects come back hot at the drain in single-ball play, so pick your moments off a cradle rather than banging away. Drill the bank hits and the ramp shot they open as one sequence.",
+      "reps": "5 full assemblies",
+      "focus": "accuracy",
+      "goal": "frank-multiball",
+      "shots": [
+        "frank-targets",
+        "center-ramp",
+        "frank"
+      ]
+    },
+    {
+      "id": "let-drac-come",
+      "title": "Let Dracula Come to You",
+      "text": "The Count rides a track across the playfield and the bounces off him are unpredictable, so chasing him is how the ball finds an outlane. Wait, let him cross into your line, then shoot. Hits while he is moving pay double but still count only once, so firing early buys you nothing.",
+      "reps": "one full Drac Attack without chasing",
+      "focus": "ball-control",
+      "goal": "drac-attack",
+      "shots": [
+        "dracula"
+      ]
+    },
+    {
+      "id": "lagoon-default",
+      "title": "Make the Lagoon Your Default",
+      "text": "The left eject is one of the safest shots on the table and four of them open the Creature's mode. Drill it as the shot you take when nothing else is lit. It keeps earning after that too — inside the mode it spots a lit shot when you get stuck.",
+      "reps": "start the mode 3 times",
+      "focus": "accuracy",
+      "goal": "creature-feature",
+      "shots": [
+        "lagoon"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Launch Button (Monster Bombs)",
+    "location": "the launch button on the cabinet, in place of a shooter rod",
+    "how": "Monster Bash launches every ball for you, which frees the launch button up for a second job: firing whatever Monster item you are carrying. Each item belongs to one monster and spots a shot or a hit inside that monster's feature, so think of the button as a stored free shot you get to time yourself.",
+    "uses": [
+      {
+        "when": "Spear Gun held during Creature Feature",
+        "what": "Spots one lit shot, cashes the live hurry-up and puts the 20-second clock back to full."
+      },
+      {
+        "when": "Silver Bullet during Full Moon Fever",
+        "what": "Takes the hurry-up before it decays, starts the next one, and credits a loop toward the set of four."
+      },
+      {
+        "when": "Hair Dryer while Ball & Chain runs",
+        "what": "Spots one Bride ramp, alternating right then left — useful when the right ramp is not falling for you."
+      },
+      {
+        "when": "Ancient Scroll during Mummy Mayhem",
+        "what": "Spots a Mayhem jackpot, which is real progress against the 7.5M target in 45 seconds."
+      },
+      {
+        "when": "Garlic Clove during Drac Attack",
+        "what": "Spots one hit on Dracula. Firing while he is moving still pays the doubled value but only counts once."
+      },
+      {
+        "when": "Flaming Torch in Frankenstein Multiball",
+        "what": "Spots the next lit super jackpot — worth one, two or three Frank hits if a double or triple is standing."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Monster Bash drafts six classic monsters into a rock band -- Creature, Wolfman, Bride, Dracula, Mummy and Frankenstein -- and each one's feature hands you its instrument. Start every monster to light the Monster Bash four-ball at the scoop, and collect all six instruments to headline Monsters of Rock.",
+    "loop": [
+      "Send the auto-launch through the flashing D-I-G lane -- slide it under the ball with a flipper tap -- for the skill shot and a stored Monster Bomb, then finish D-I-G for a bonus-multiplier step and free jet progress.",
+      "Start each monster at its own shot: the lagoon for the Creature, combined loops for the Wolfman, the two Bride ramps, the roaming Dracula, sixty jets for the Mummy, and Frank's target bank.",
+      "Stack several modes and then start a multiball, because every mode timer freezes while balls are multiplying, so you sweep the frozen modes at leisure.",
+      "Get all six modes started to light Monster Bash; finish all six for their instruments and roll into Monsters of Rock."
+    ],
+    "lights": [
+      {
+        "id": "dig-top-lanes",
+        "name": "D-I-G Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "dig-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "One of the three D-I-G rollovers is the lit lane; rolling the lit one banks that letter and an unlit letter is one you still need. At ball launch the lit lane is also your skill shot.",
+        "flashing": "The flashing lane is the one currently selected -- the letter the ball collects if it rolls through right now.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of a flipper button hops the lit lane sideways to the next of the three D-I-G rollovers, so you can line the flashing letter up with the path the ball is taking; every launch is an auto-plunge over the back arch, so you set this before the ball arrives up top",
+          "when": "while the launched ball is crossing the arch toward the lanes"
+        },
+        "then": "Roll the flashing lane off the launch to take the skill shot: a small award (about 150K) plus a random Monster Bomb -- a stored item you fire later with the launch button to spot a shot inside its monster's feature. Complete all three D-I-G letters and you step the end-of-ball bonus multiplier, raise the jet-bumper value, and spot five jet hits toward lighting Mummy Mayhem.",
+        "goals": [
+          "skill-shot",
+          "bonus-x-dig",
+          "mummy-mayhem"
+        ]
+      },
+      {
+        "id": "monster-modes-band",
+        "name": "The Six Monster Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "lagoon"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "dracula"
+          },
+          {
+            "shot": "bumpers"
+          },
+          {
+            "shot": "frank"
+          }
+        ],
+        "lit": "Each monster owns a shot and an insert: the Creature's lagoon, the Wolfman's loops, the Bride's ramps, the roaming Dracula, the Mummy's jets and Frankenstein. Its insert lights while that monster's feature is available or running.",
+        "flashing": null,
+        "control": null,
+        "then": "Start a monster's mode at its shot and finish the mode to win that monster's instrument. Getting all six STARTED lights the Monster Bash four-ball at the scoop -- completion is never required for that -- while COLLECTING all six instruments is what opens the Monsters of Rock wizard.",
+        "goals": [
+          "monster-bash",
+          "monsters-of-rock",
+          "creature-feature",
+          "full-moon-fever",
+          "drac-attack"
+        ]
+      },
+      {
+        "id": "the-scoop",
+        "name": "The Scoop",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "The orange-hooded scoop is the game's hub. Lit, it starts whichever feature is queued -- Drac Attack, Mummy Mayhem, Mosh Pit Multiball, Monster Bash or Monsters of Rock -- and unlit it pays a rotating mystery concert-venue award.",
+        "flashing": null,
+        "control": null,
+        "then": "Take it to start modes and multiballs, to collect an extra ball once about three monsters are going, and to grab Advance Mummy for ten free jet hits. Keep visiting: the forty-fourth non-multiball visit pays Lyman's Lament, a hidden award that dumps a huge bonus multiplier and boosted switch values -- light a multiball just before you collect it.",
+        "goals": [
+          "monster-bash",
+          "lymans-lament",
+          "beginner-opener"
+        ]
+      },
+      {
+        "id": "frank-multiball",
+        "name": "Frankenstein Bank & Multiball",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "frank-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "frank"
+          }
+        ],
+        "lit": "Frank's motorized two-target bank blocks the center ramp; its lit targets are the hits still needed to assemble him. Seven hits drop the bank and expose the hidden ramp behind it.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the exposed center ramp to lock in the three-ball Frankenstein Multiball, then bash Frank himself for Super Jackpots -- six Supers award his Keyboard. String exactly three ordinary jackpots between bashes to upgrade each hit to a Triple Super, worth three Frank hits at once. Never start it bare: raise the bank with modes already running so their timers freeze.",
+        "goals": [
+          "frank-multiball",
+          "frank-triple-super"
+        ]
+      },
+      {
+        "id": "mosh-pit-lane",
+        "name": "Mosh Pit Spinner Lane",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "mosh-pit"
+          }
+        ],
+        "lit": "The center spinner lane lines up dead with the drain, so a missed Mosh Pit shot tends to head down the center and out -- shoot it only off a fully cradled ball, and it comes easier from the right flipper. Six shots light Mosh Pit Multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Start the lit multiball at the scoop, then add balls with more Mosh Pit shots. The same lane cashes the Bash Jackpot during Monster Bash and hands you a Monster Bomb on every third qualifying shot, and inside its own multiball it runs an endless Super Jackpot ladder off the Frank ramp.",
+        "goals": [
+          "mosh-pit-multiball",
+          "mosh-super-cycle",
+          "bash-jackpot-loop"
+        ]
+      },
+      {
+        "id": "jet-bumpers-mummy",
+        "name": "Jet Bumpers",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "bumpers"
+          }
+        ],
+        "lit": "The three jets count every hit toward the Mummy: sixty of them light Mummy Mayhem and kick off doubled Super Jets. The launch, the rollovers up top and balls kicked out of the loops all funnel into the nest for you.",
+        "flashing": null,
+        "control": null,
+        "then": "Let the ball churn the jets -- each D-I-G completion spots five hits and the scoop's Advance Mummy spots ten, so the sixty comes largely for free. When it lights, start Mummy Mayhem at the scoop and race to seven and a half million before the forty-five-second clock runs out for the Bass.",
+        "goals": [
+          "mummy-mayhem",
+          "bonus-x-dig"
+        ]
+      },
+      {
+        "id": "tomb-treasure-bonusx",
+        "name": "Tomb Treasure & Bonus X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "tomb-treasure"
+          }
+        ],
+        "lit": "Bonus here is end-of-ball only -- your switch count times the bonus multiplier -- with no playfield X at all. The big standup beside the Mosh Pit lane is the quick way to climb it: each hit adds one to the multiplier plus a chunk of points.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the multiplier through D-I-G completions and stray Tomb Treasure hits, and take Hold Bonus X from the scoop late in a ball to carry it forward. The bonus itself stays modest here, so treat multipliers as gravy rather than a plan -- do not risk a single-ball shot at the standup, and let multiballs batter it for you.",
+        "goals": [
+          "tomb-treasure-x",
+          "bonus-x-dig"
+        ]
+      },
+      {
+        "id": "phantom-flips",
+        "name": "Phantom Flip Standups",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "phantom-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "Three blue standups flank Frankenstein and the left ramp; their lamps track hits toward Phantom Flip. Seven combined hits arm up to two stackable Phantom Flips on the inlanes.",
+        "flashing": null,
+        "control": null,
+        "then": "Once armed, the game auto-flips for you when a ball rolls an inlane -- a free, timed save that is worth stacking to two before a busy multiball. Bank them ahead of Frank or Mosh Pit chaos so a mis-timed return still gets flipped.",
+        "goals": null
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Because the launch is automatic and always dumps the ball up among the three top rollovers, the real skill is moving the lit letter before the ball gets there: a tap of a flipper button hops which D-I-G rollover is lit. Line the flashing one up with the ball's path for the skill shot (about 150K plus a stored Monster Bomb), and rolling all three letters steps the bonus multiplier, boosts the jets, and spots five jet hits toward Mummy Mayhem.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the D-I-G skill shot and pocket its Monster Bomb every ball. Then bank easy monster progress on the safe shots -- the lagoon, the left ramp, a loop -- to get three modes started, which lights an extra ball at the scoop. Keep away from Frank, Dracula and the drain-hugging center lane until balls are multiplying.",
+        "goals": [
+          "skill-shot",
+          "beginner-opener",
+          "creature-feature"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Loop the two Bride ramps for the Ball & Chain 3X farm, the safest repeatable scoring on the table. Bring several modes to the brink, then start Frankenstein or Mosh Pit Multiball so the mode timers freeze and you finish instruments in bulk while jackpots pile up.",
+        "goals": [
+          "ball-and-chain",
+          "frank-multiball",
+          "mosh-pit-multiball",
+          "tournament-stack"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Collect all six instruments to headline Monsters of Rock, worth at least fifty-five million the moment it starts -- and another fifty million on top if you got there without ever starting Monster Bash. Lap the six monster shots inside it for repeat four-million jackpots. Monster Bash, the six-mode four-ball, is the near-guaranteed replay you pass through on the way.",
+        "goals": [
+          "monsters-of-rock",
+          "mor-jackpot-lap",
+          "monster-bash"
+        ]
+      }
+    ]
+  }
+}

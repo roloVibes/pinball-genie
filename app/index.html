@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 2026-08-14: dropped `maximum-scale=1, user-scalable=no`. Those two
+         block pinch-to-zoom for EVERYONE, and they were protecting nothing:
+         the app registers zero pinch/gesture/touchmove handlers on either
+         canvas (Shots and Study both listen for plain 'click' only), so there
+         is no zoom gesture of its own to defend, and the 300ms double-tap-zoom
+         delay they also suppressed is already handled properly by
+         `touch-action: manipulation` on #map-host canvas and the control
+         buttons (styles.css). What was left was a hard accessibility block —
+         WCAG 2.1 SC 1.4.4 — on an app whose entire content is a small,
+         densely-labelled playfield diagram that people read at a machine. The
+         static guide pages under public/machines/ never carried it either. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pinball Genie</title>
+    <meta name="description" content="Pinball shot-path study tool — goals, map, and achievements tracking. Independent — not affiliated with any pinball manufacturer." />
+    <meta name="theme-color" content="#0a0b10" />
+    <meta name="color-scheme" content="dark" />
+
+    <link rel="canonical" href="https://pinball-genie.com/" />
+
+    <!-- BACKGLASS display face (P5, 2026-08-14). Preloaded because the two
+         weights below are on the FIRST paint (header wordmark + the tab bar
+         and readout micro-type), and a woff2 discovered only when the CSS
+         parser reaches its @font-face costs a round trip the app spends
+         showing fallback metrics.
+         ALL THREE weights, including Regular (K3 fast-follow #2): Regular is
+         used in less chrome than the other two, and leaving it on the normal
+         discovery path meant that on slow Wi-Fi the headings and pills SNAPPED
+         into Chakra Petch while everything set in Regular was still showing
+         fallback — a staggered, visibly broken-looking first paint rather than
+         one late one. `font-display: swap` guarantees the text is readable
+         throughout either way; preloading all three keeps the swap a single
+         moment instead of three.
+         `crossorigin` is REQUIRED on a font preload even same-origin: fonts
+         are fetched in CORS mode, and a preload without it is a second,
+         unmatched request rather than a warmed cache entry.
+         Self-hosted (no external origin) because this app runs under a strict
+         CSP — see the @font-face block in src/styles.css. -->
+    <link rel="preload" href="/fonts/ChakraPetch-Regular-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ChakraPetch-SemiBold-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/ChakraPetch-Bold-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Installable PWA (public app since 2026-07-30). Offline support is a
+         separate, network-first service worker (public/sw.js, registered from
+         ui/offline.ts — see README). `crossorigin="use-credentials"` is still correct: the
+         manifest fetch carries the session cookie so an installed, signed-in
+         PWA keeps its session. -->
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+    <!-- Favicon (2026-07-31). /favicon.ico is requested unconditionally by
+         browsers and crawlers whether or not it is declared — Googlebot asked
+         for it twice and got a 404 before this existed. Declaring it as well
+         means Google uses THIS file rather than sniffing, and its docs ask for
+         a size that is a multiple of 48. Both are the ball-and-flippers crop,
+         not the full app icon: the icon's identity is neon text, which is
+         illegible at 16px (see scripts/gen-icons.py's FAVICON_CROP note). -->
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
+    <!-- 180x180 is iOS's exact home-screen size. iOS ignores the manifest's
+         icons entirely and uses THIS one, applying its own squircle mask — so
+         it must point at the full-bleed art, never at an `icon-*-maskable.png`
+         (those are padded into Android's 80%-diameter safe circle, and handing
+         one to iOS marooned a tiny logo in a mostly-empty tile). -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Pinball Genie" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="state-message">Loading…</div>
+    </div>
+    <!-- Crawler / no-JS entry point to the legal pages (2026-07-30).
+         The in-app footer (ui/footer.ts) is built by JavaScript, so the
+         server-rendered HTML for "/" previously contained ZERO links to
+         /privacy /terms /about /contact. A non-rendering crawler or an
+         ad-network reviewer therefore had no path to them at all, which
+         defeats the point of serving them as real static URLs. This block is
+         inside <noscript> so it never double-renders for real users, and the
+         four pages cross-link each other once one is found. -->
+    <noscript>
+      <div class="noscript-note">
+        <p>
+          Pinball Genie needs JavaScript to draw shot paths on the playfield map. These pages
+          work without it:
+        </p>
+        <p>
+          <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a> ·
+          <a href="/about">About</a> · <a href="/contact">Contact</a>
+        </p>
+        <p>© 2026 Pinball Genie LLC · <a href="https://instagram.com/pinballgenie">@pinballgenie</a></p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,1200 @@
+{
+  "machine": "Popeye Saves the Earth (Bally, 1994)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Launches up a short habitrail onto the skill shot wheel. Plungers on these are often weak, and a rubber stopper at the end of the rail can bounce the ball back down."
+    },
+    {
+      "id": "skill-wheel",
+      "name": "Skill Shot Wheel",
+      "type": "disc",
+      "x": 0.85,
+      "y": 0.71,
+      "trim": "all",
+      "notes": "A rotating disc holding eight awards. Fed from the plunger or from the Kneedeep playfield, and it always empties the ball into the right inlane."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Round House Loop",
+      "type": "loop",
+      "x": 0.13,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Lit from the right inlane. Consecutive lit loops are the biggest repeatable score on the lower playfield."
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Round House Loop",
+      "type": "loop",
+      "x": 0.87,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Lit from the left inlane. Only one inlane is lit at a time and the lit side swaps every flipper press."
+    },
+    {
+      "id": "pop-targets",
+      "name": "P-O-P Targets",
+      "type": "target-bank",
+      "x": 0.11,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Three standups on the left, the first half of POPEYE. Completing the bank pays 2M, or 3M if the three came in order."
+    },
+    {
+      "id": "eye-targets",
+      "name": "E-Y-E Targets",
+      "type": "target-bank",
+      "x": 0.89,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The other half of POPEYE, over on the right. Spelling the whole word lights a Spinach Can."
+    },
+    {
+      "id": "sea-target",
+      "name": "SEA Target",
+      "type": "standup",
+      "x": 0.21,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "One half of SEA-HAG. Both halves light Collect Item at the left ramp."
+    },
+    {
+      "id": "hag-target",
+      "name": "HAG Target",
+      "type": "standup",
+      "x": 0.71,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "The other half of SEA-HAG, on the right side of the playfield."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Feeds the right inlane. Runs a ramp counter that pays an award every four shots, collects Items when lit, and is the jackpot shot in Bluto Multiball.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "animal-sinkhole",
+      "name": "Animal Sinkhole",
+      "type": "scoop",
+      "x": 0.38,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Feeds the ball up to the Animals section. When lit it instead starts the Sea Hag four-ball multiball. Carries a Spinach Can.",
+      "feeds": {
+        "shot": "animals"
+      }
+    },
+    {
+      "id": "jab-targets",
+      "name": "Jab Targets",
+      "type": "standup",
+      "x": 0.43,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "A single standup either side of Bluto's head. Hitting both lights the Lockjaw lock."
+    },
+    {
+      "id": "lockjaw",
+      "name": "Lockjaw",
+      "type": "lock",
+      "x": 0.52,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "Bluto's mouth. Locks balls for multiball, relights the jackpot once collected, and is the final Super Jackpot shot. It is also the multiball kickout, which fires straight down the middle."
+    },
+    {
+      "id": "jet-bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "Three of them behind Bluto's head. The ball can leave into either sinkhole or up through the O-Y-L rollovers. Each pop smashes a block in Earth Pavers."
+    },
+    {
+      "id": "oyl-rollovers",
+      "name": "O-Y-L Rollovers",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.87,
+      "trim": "all",
+      "notes": "Spell OYL to add one to the bonus multiplier and light Fight Bluto. The lit lanes rotate right on either flipper."
+    },
+    {
+      "id": "fight-bluto",
+      "name": "Fight Bluto Cartel",
+      "type": "scoop",
+      "x": 0.6069,
+      "y": 0.5902,
+      "trim": "all",
+      "notes": "A sinkhole that starts a Fight Bluto round when lit and feeds the right inlane. It has a Spinach Can too.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "escalator",
+      "name": "Escalator",
+      "type": "mech",
+      "x": 0.853,
+      "y": 0.3443,
+      "trim": "all",
+      "notes": "Lifts the ball to the upper level. When lit you get to choose an award with the flippers before it takes you up."
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "type": "mini-playfield",
+      "x": 0.27,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "A fixed upper section. The left flipper fires a kicker that pushes the ball out of the left lane into the animal lane. Collected animals drop out into the left inlane.",
+      "playfield": "popeye-animals-zone"
+    },
+    {
+      "id": "kneedeep",
+      "name": "Kneedeep Playfield",
+      "type": "mini-playfield",
+      "x": 0.55,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "A true mini-playfield with two short flippers, reached only via the Escalator. Two standups up here light the Super Animal exit. Its centre drain drops the ball down through Bluto's head.",
+      "playfield": "popeye-kneedeep-zone"
+    },
+    {
+      "id": "sweapea-gates",
+      "name": "Swea' Pea Gates",
+      "type": "gate",
+      "x": 0.64,
+      "y": 0.92,
+      "trim": "all",
+      "notes": "Three gates at the top of Kneedeep, matching the three doors on the display. The gaps are narrow and surrounded by rubber, so these are harder than they look.",
+      "playfield": "popeye-kneedeep-zone"
+    },
+    {
+      "id": "wheel-2x",
+      "name": "2X Wheel Exit",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.89,
+      "trim": "all",
+      "notes": "The top right exit from Kneedeep. Collects the extra ball when lit and doubles whatever the skill wheel lands on. The best thing to shoot up there.",
+      "playfield": "popeye-kneedeep-zone"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the right loop when lit. Collected animals also drop out here."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lights the left loop when lit. Fed by the left ramp, the upper playfield and the skill wheel."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "No kickback. This is where the extra ball is collected once eight left ramps have lit it — you have to drain into it."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Collects Special when lit."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.37,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Short, and the gap between the flippers is unforgiving. Also fires the kicker on the Animals section."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.63,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Also short. Flipper presses rotate the O-Y-L lanes and swap which inlane is lit for a loop."
+    },
+    {
+      "id": "kneedeep-left-flipper",
+      "name": "Kneedeep Left Flipper",
+      "type": "flipper",
+      "x": 0.51,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Short flipper on the Kneedeep mini-playfield. The Swea' Pea gates send the ball back around to this side.",
+      "playfield": "popeye-kneedeep-zone"
+    },
+    {
+      "id": "kneedeep-right-flipper",
+      "name": "Kneedeep Right Flipper",
+      "type": "flipper",
+      "x": 0.6,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "The other short Kneedeep flipper. The pair straddle the centre hole that drops you back down to the Lockjaw kickout.",
+      "playfield": "popeye-kneedeep-zone"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-wheel",
+      "title": "The Skill Shot Wheel",
+      "category": "skillshot",
+      "summary": "The plunge drops the ball onto a rotating disc carrying eight awards: 100K, 10M, Light Lock, Spinach Can, OYL, Spot Animal, 2M and Spot Item. With a healthy plunger this is a learnable shot, and Light Lock is the one that shortens the whole game.",
+      "difficulty": 2,
+      "reward": "One of eight awards, up to 10M",
+      "steps": [
+        {
+          "shot": "skill-wheel",
+          "action": "Time the plunge onto the wheel, aiming for Light Lock",
+          "detail": "The awards sit in a fixed order on the disc, so you're timing rotation rather than guessing — Light Lock plus one Lockjaw shot is half of a multiball you did not have to work for. The wheel always drops back out into the right inlane, which lights the left loop for you."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "round-house-loops",
+      "title": "Round House Loops",
+      "category": "combo",
+      "summary": "The best repeatable score on the lower playfield. A lit loop pays 2M, and each consecutive lit loop doubles that — 2M, 4M, 8M, 16M and at least 32M. Consecutive means exactly that: touch any other switch in between and the value drops back to 2M.",
+      "difficulty": 3,
+      "reward": "2M doubling per consecutive loop",
+      "steps": [
+        {
+          "shot": "right-inlane",
+          "action": "Watch which inlane is lit",
+          "detail": "One inlane is always lit for Light Loop and the lit side swaps every time you press a flipper. The right inlane lights the left loop."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Run the lit loop",
+          "detail": "The loop stays lit for a few seconds even after the value resets, so a clean second attempt is often still worth taking."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Keep the chain clean",
+          "detail": "Loops are also lit during Save the Animals and during Fight Bluto rounds, where they do double duty."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "popeye-targets",
+      "title": "Spell P-O-P-E-Y-E",
+      "category": "progression",
+      "summary": "Three standups on each side. Completing either half pays 2M, or 3M if you got them in order. Completing the whole name lights one of the five Spinach Cans, which is where the real value lies.",
+      "difficulty": 1,
+      "reward": "2M or 3M per half, and a lit Spinach Can",
+      "steps": [
+        {
+          "shot": "pop-targets",
+          "action": "Sweep the left bank in order",
+          "detail": "In sequence is worth an extra million over a scrambled completion."
+        },
+        {
+          "shot": "eye-targets",
+          "action": "Cross to the right bank",
+          "detail": "The Escalator award can also spot POP or EYE for you."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "spinach-cans",
+      "title": "The Five Spinach Cans",
+      "category": "multiplier",
+      "summary": "Five shots on the playfield carry a Spinach Can: the left ramp, both Round House loops, the Animal sinkhole and the Fight Bluto sinkhole. A lit Can doubles the entire value of that shot, including a jackpot, and stays lit for the rest of the ball or until you use it.",
+      "difficulty": 2,
+      "reward": "Double value on the lit shot",
+      "steps": [
+        {
+          "shot": "eye-targets",
+          "action": "Light a Can by spelling POPEYE",
+          "detail": "The ramp counter, the Escalator and the skill wheel all light Cans too. The first one lit is always the left ramp."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Save it for the jackpot",
+          "detail": "A Can on the left ramp doubles a Bluto Multiball jackpot, though no jackpot pays more than 180M however you double it."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Or double a loop chain",
+          "detail": "Collecting all five Cans is also a hard requirement for the game's final multiball.",
+          "link": "none"
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "oyl-lanes",
+      "title": "O-Y-L And The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Three rollovers above the bumpers. Spelling OYL adds one to the bonus multiplier and lights Fight Bluto, and the lit lanes rotate on every flipper press, so most completions cost nothing.",
+      "difficulty": 1,
+      "reward": "+1 bonus multiplier, lights Fight Bluto",
+      "steps": [
+        {
+          "shot": "oyl-rollovers",
+          "action": "Rotate the lanes as the ball falls",
+          "detail": "Both flippers rotate the lit lanes to the right."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Let the bumpers push you back up",
+          "detail": "The ball leaving the bumper nest upwards passes straight through the lanes."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "ramp-counter",
+      "title": "The Left Ramp Counter",
+      "category": "progression",
+      "summary": "Every left ramp shot is counted all game and an award lands every fourth one. Four ramps lights a Spinach Can, eight lights the extra ball, twelve another Can, sixteen spots an animal, twenty another Can. Roughly every other award is a Can, which makes the ramp the most productive repeat shot here.",
+      "difficulty": 2,
+      "reward": "An award every four ramps",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot it whenever nothing better is lit",
+          "detail": "The ramp feeds the right inlane, which lights the left loop, so it sets up its own follow-up."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Push to eight for the extra ball",
+          "detail": "Eight ramps lights the extra ball at the left outlane, and the first Can lit is always on this ramp."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "outlane-extra-ball",
+      "title": "The Outlane Extra Ball",
+      "category": "secret",
+      "summary": "One of the strangest rules in pinball. Eight left ramp shots light the extra ball — in the left outlane. The only way to collect it is to drain there. Once you know it is coming, treat the left outlane as a kickback rather than a disaster.",
+      "difficulty": 2,
+      "reward": "An extra ball, collected by draining",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Bank eight ramps",
+          "detail": "The counter runs all game, so this is well within reach of an ordinary game."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Let it go left",
+          "detail": "Stop nudging the ball away from the left outlane once the light is on."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "save-the-animals",
+      "title": "Save The Animals",
+      "category": "mode",
+      "summary": "Get the ball to the Animals section and use the left flipper kicker to push it out of the left lane into the animal lane. Each animal you collect is worth 5M and starts a short window to save it with a loop shot. Save all five and a hurry-up starts around 50M.",
+      "difficulty": 3,
+      "reward": "5M per animal, roughly 50M for all five",
+      "steps": [
+        {
+          "shot": "animal-sinkhole",
+          "action": "Get up to the Animals",
+          "detail": "The sinkhole feeds them directly; the Escalator reaches them via Kneedeep."
+        },
+        {
+          "shot": "animals",
+          "action": "Kick the ball across with the left flipper",
+          "detail": "There are five to collect: rhino, panda, leopard, eagle and dolphin."
+        },
+        {
+          "shot": "right-loop",
+          "action": "Save it with a loop",
+          "detail": "The collected animal drops you into the left inlane, which lights the right loop — so the save shot is set up for you. Loops do not need to be consecutive to save animals."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cash the hurry-up",
+          "detail": "With all five saved, the left ramp collects the countdown while Bluto is being chased on the display."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "kneedeep-plan",
+      "title": "What To Do On Kneedeep",
+      "category": "strategy",
+      "summary": "The mini-playfield has three exits and only two of them are worth your time. Hit the two standups to light Super Animal, then take either Super Animal for a double-value animal or the 2X Wheel for an extra ball and a doubled wheel award.",
+      "difficulty": 2,
+      "reward": "Double animal value, or a doubled wheel award",
+      "steps": [
+        {
+          "shot": "kneedeep",
+          "action": "Hit the two standups first",
+          "detail": "They sit left of the upper left flipper and light the Super Animal exit above them."
+        },
+        {
+          "shot": "animals",
+          "action": "Take Super Animal for double",
+          "detail": "The exit feeds the animal lane and pays twice what an ordinary animal would."
+        },
+        {
+          "shot": "wheel-2x",
+          "action": "Or take the 2X Wheel",
+          "detail": "This collects the extra ball when lit and doubles whatever the skill wheel lands on afterwards.",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "escalator-award",
+      "title": "Choose Your Escalator Award",
+      "category": "mode",
+      "summary": "A lit Escalator lets you scroll through awards with the flippers before it lifts you upstairs. There is a time limit and whatever is showing when it expires is what you get, so decide early rather than cycling the list.",
+      "difficulty": 2,
+      "reward": "One chosen award",
+      "steps": [
+        {
+          "shot": "escalator",
+          "action": "Shoot it while lit",
+          "detail": "The list runs in the same order every time, so it is worth learning."
+        },
+        {
+          "shot": "escalator",
+          "action": "Pick before the timer runs out",
+          "detail": "Options include Spot POP, Spot EYE, Spot OYL, Light Lock, Spot Item, Spot Animal, Spinach, Jets at Max, Special, Extra Ball, Light Escalator and points up to 10M."
+        },
+        {
+          "shot": "wheel-2x",
+          "action": "Know what Extra Ball really means",
+          "detail": "The Extra Ball award only lights the 2X Wheel exit on Kneedeep — you still have to make that shot to collect it.",
+          "link": "none"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bluto-multiball",
+      "title": "Bluto Multiball",
+      "category": "multiball",
+      "summary": "Lock three balls in Lockjaw. Jackpots are worth 30M multiplied by the jackpot number, collected at the left ramp and relit at Lockjaw. A Spinach Can on the ramp doubles the value, though nothing exceeds 180M.",
+      "difficulty": 2,
+      "reward": "30M x jackpot number, up to 180M",
+      "steps": [
+        {
+          "shot": "jab-targets",
+          "action": "Light the lock",
+          "detail": "Hitting both jab targets lights Lockjaw; so does the skill wheel and one of the Escalator awards."
+        },
+        {
+          "shot": "lockjaw",
+          "action": "Lock three",
+          "detail": "The kickout fires straight down the middle, which is why the ball saver runs while the balls come out."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Ramp for jackpot, Lockjaw to relight",
+          "detail": "Keep alternating for as long as two balls are alive."
+        },
+        {
+          "shot": "lockjaw",
+          "action": "Use the restart if it goes wrong",
+          "detail": "Drain two of the three without collecting a jackpot and you get around twenty seconds to restart at Lockjaw.",
+          "link": "none"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "sea-hag-multiball",
+      "title": "Sea Hag Multiball",
+      "category": "multiball",
+      "summary": "Collect four Items — a can opener, a baby bottle, ketchup and a flower — then the Animal sinkhole lights for an instant four-ball multiball. During it you return each item to its owner at a different shot for a large payoff.",
+      "difficulty": 3,
+      "reward": "Around 50M for returning all four items",
+      "steps": [
+        {
+          "shot": "sea-target",
+          "action": "Light Collect Item",
+          "detail": "The SEA and HAG targets together light the left ramp for an Item; the skill wheel can also spot one."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect all four Items",
+          "detail": "Each lit ramp shot brings in one item."
+        },
+        {
+          "shot": "animal-sinkhole",
+          "action": "Start it at the sinkhole",
+          "detail": "This is an instant multiball — no locking required."
+        },
+        {
+          "shot": "wheel-2x",
+          "action": "Return the items",
+          "detail": "A POPEYE target returns the can opener, an OYL rollover the flower, a Swea' Pea gate the bottle and the 2X Wheel Wimpy's ketchup."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "fight-bluto",
+      "title": "The Fight Bluto Cartel",
+      "category": "mode",
+      "summary": "Four head-to-head rounds started at the Fight Bluto sinkhole once OYL lights it. There is no clock — either you beat him or he beats you — and the four differ only in animation and what the tug of war is over.",
+      "difficulty": 2,
+      "reward": "Progress towards the five-ball multiball",
+      "steps": [
+        {
+          "shot": "oyl-rollovers",
+          "action": "Light it with OYL",
+          "detail": "Every OYL completion relights the Fight Bluto sinkhole."
+        },
+        {
+          "shot": "fight-bluto",
+          "action": "Start the round",
+          "detail": "Earth Pavers has him building a wall to fifteen blocks; Never Green Logging is a race to six trees; Blutonium Waste is a race over six barrels and the hardest of the four; Spill Oil Co. is a straight tug of war over the oil level."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Use the bumpers on Earth Pavers",
+          "detail": "Every pop smashes a block, so feeding the bumper nest is the fastest way through that one."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Take the lit loops",
+          "detail": "Loops are usually lit during a fight and count towards beating him as well as scoring. Be aware the fight timers keep running while the ball is out of play.",
+          "link": "none"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "find-sweapea",
+      "title": "Find Swea' Pea",
+      "category": "secret",
+      "summary": "From Kneedeep, shoot the three gates to search behind three doors. The map on the display marks where he is hiding and the doors correspond to the gates. It is genuinely hard, and the game barely acknowledges it when you succeed.",
+      "difficulty": 3,
+      "reward": "A large award, and a wizard mode requirement",
+      "steps": [
+        {
+          "shot": "kneedeep",
+          "action": "Get up to the mini-playfield",
+          "detail": "Only the Escalator gets you here."
+        },
+        {
+          "shot": "sweapea-gates",
+          "action": "Read the map, then shoot the matching gate",
+          "detail": "Lights at each gate entrance show which are available. You are firing straight up at them from the Kneedeep flippers, and the gaps are narrow and heavily rubbered."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "stampede",
+      "title": "Stampede",
+      "category": "mode",
+      "summary": "The Geomap above the flippers holds the same five animals as the upper playfield. Spot all five there — the skill wheel and Escalator both do it — and Stampede starts, a frenzy round where every switch on the machine is worth 100K.",
+      "difficulty": 3,
+      "reward": "100K per switch",
+      "steps": [
+        {
+          "shot": "skill-wheel",
+          "action": "Take Spot Animal awards",
+          "detail": "The wheel and the Escalator list both offer it."
+        },
+        {
+          "shot": "jet-bumpers",
+          "action": "Live in the bumpers once it starts",
+          "detail": "In a flat frenzy the bumper nest is the densest source of switch hits on the playfield."
+        }
+      ],
+      "fx": "boat"
+    },
+    {
+      "id": "mutant-spinach",
+      "title": "Mutant Spinach Multiball",
+      "category": "multiball",
+      "summary": "Beat all four Fight Bluto rounds and a five-ball multiball follows. It is rarely seen because getting four wins in one game against a mode with no timer and short flippers is a long afternoon's work.",
+      "difficulty": 3,
+      "reward": "A five-ball multiball",
+      "steps": [
+        {
+          "shot": "fight-bluto",
+          "action": "Win all four fights",
+          "detail": "Starting a fight is not enough here — Bluto has to actually lose it."
+        },
+        {
+          "shot": "oyl-rollovers",
+          "action": "Keep relighting the sinkhole",
+          "detail": "Each OYL completion buys you another attempt."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "rescue-olive",
+      "title": "Rescue Olive",
+      "category": "wizard",
+      "summary": "The end of the game and a genuinely brutal checklist. Complete Sea Hag Multiball, all five animals, Bluto Multiball, Find Swea' Pea and the four Fight Bluto rounds. Only then does a six-ball multiball start — and you still have to collect all five Spinach Cans and shoot Lockjaw for the Super Jackpot.",
+      "difficulty": 3,
+      "reward": "Super Jackpot",
+      "steps": [
+        {
+          "shot": "animal-sinkhole",
+          "action": "Clear the checklist",
+          "detail": "Sea Hag Multiball, all five animals, Bluto Multiball, Swea' Pea and all four fights, in one game."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Light all five Spinach Cans",
+          "detail": "The ramp counter is the most reliable Can source, and the first Can is always here."
+        },
+        {
+          "shot": "lockjaw",
+          "action": "Shoot Bluto for Olive",
+          "detail": "The final Lockjaw shot with all five Cans lit is the Super Jackpot."
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "gameplan",
+      "title": "Your Route Through The Game",
+      "category": "progression",
+      "summary": "This is a cluttered widebody with short flippers and a wide centre drain, so the games that score are the ones with a short route. Multiball is three shots away if the wheel cooperates, and the left ramp quietly does everything else.",
+      "difficulty": 1,
+      "reward": "A repeatable route through the game",
+      "steps": [],
+      "instructions": [
+        "Take Light Lock off the skill wheel if it comes round, shoot Lockjaw, repeat — Bluto Multiball can be three shots from the start of a ball.",
+        "When nothing is lit, shoot the left ramp: it builds the counter, lights Spinach Cans, feeds the right inlane and sets up a left loop.",
+        "Watch the inlanes before you commit — the lit side swaps on every flipper press, and only the lit loop pays the doubling value.",
+        "On Kneedeep, hit the standups and take Super Animal or the 2X Wheel. Hunting Swea' Pea is only worth it if you are chasing the wizard mode.",
+        "The ball saver is off by default on many machines, so do not count on it after a Lockjaw kickout.",
+        "The Escalator hands out noticeably better awards when your game is going badly than when it is going well."
+      ],
+      "fx": "boat"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "pop-skill-wheel",
+      "title": "Wheel Of Fortune",
+      "desc": "Land a plunge on the skill wheel and take Light Lock.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-wheel"
+    },
+    {
+      "id": "pop-loops",
+      "title": "Round House",
+      "desc": "Chain three consecutive lit Round House loops.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "round-house-loops"
+    },
+    {
+      "id": "pop-spinach",
+      "title": "Eat Your Spinach",
+      "desc": "Spell POPEYE and light a Spinach Can.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "spinach-cans"
+    },
+    {
+      "id": "pop-bluto-mb",
+      "title": "Bluto Multiball",
+      "desc": "Lock three balls in Lockjaw and collect a jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bluto-multiball"
+    },
+    {
+      "id": "pop-animals",
+      "title": "All Five Animals",
+      "desc": "Collect and save every animal to start the hurry-up.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "save-the-animals"
+    },
+    {
+      "id": "pop-outlane-eb",
+      "title": "Drain For Glory",
+      "desc": "Light the extra ball with eight left ramps and collect it in the left outlane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "outlane-extra-ball"
+    },
+    {
+      "id": "pop-sea-hag",
+      "title": "Sea Hag Multiball",
+      "desc": "Collect all four Items and start the instant multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "sea-hag-multiball"
+    },
+    {
+      "id": "pop-sweapea",
+      "title": "Found Him",
+      "desc": "Find Swea' Pea behind the gates on Kneedeep.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "find-sweapea"
+    },
+    {
+      "id": "pop-fights",
+      "title": "Four Fights, Four Wins",
+      "desc": "Beat Bluto in all four Fight Bluto rounds.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mutant-spinach"
+    },
+    {
+      "id": "pop-olive",
+      "title": "Rescue Olive",
+      "desc": "Complete the whole checklist and take the Super Jackpot at Lockjaw.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "rescue-olive"
+    }
+  ],
+  "drills": [
+    {
+      "id": "time-the-wheel",
+      "title": "Time The Wheel",
+      "text": "The eight awards sit in a fixed order on the disc, so you are timing a rotation rather than guessing. Aim for Light Lock — that plus one Lockjaw shot is half a multiball you did not have to work for — and expect the wheel to drop you out into the right inlane every time.",
+      "reps": "10 plunges, calling the award before it lands",
+      "focus": "skill-shot",
+      "goal": "skill-wheel",
+      "shots": [
+        "shooter-lane",
+        "skill-wheel"
+      ]
+    },
+    {
+      "id": "consecutive-loops-only",
+      "title": "Consecutive Loops Only",
+      "text": "Check which inlane is lit before you shoot — only one is lit at a time and the lit side swaps on every flipper press, with the right inlane lighting the left loop. Then keep the chain clean: touch any other switch in between and the value falls back to the bottom, so what you are drilling is consecutive loops, not loop attempts.",
+      "reps": "10 chains, noting your longest",
+      "focus": "flow",
+      "goal": "round-house-loops",
+      "shots": [
+        "left-inlane",
+        "right-inlane",
+        "left-loop",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "ramp-counter-reps",
+      "title": "Ramp Whenever Nothing Better Is Lit",
+      "text": "The left ramp counter runs all game and pays an award every fourth shot, so it is the default when nothing else is on. Its return feeds the right inlane and lights the left loop, which means every ramp hands you your next shot as well.",
+      "reps": "12 ramps in one ball",
+      "focus": "accuracy",
+      "goal": "ramp-counter",
+      "shots": [
+        "left-ramp",
+        "right-inlane",
+        "left-loop"
+      ]
+    },
+    {
+      "id": "let-it-go-left",
+      "title": "Let It Go Left",
+      "text": "Eight left ramps light the extra ball in the left outlane, and draining there is the only way to collect it. Once that light is on, stop nudging the ball away from the left — practise letting it go, because here the save is the mistake.",
+      "reps": "every game you light it",
+      "focus": "ball-control",
+      "goal": "outlane-extra-ball",
+      "shots": [
+        "left-ramp",
+        "left-outlane"
+      ]
+    },
+    {
+      "id": "animal-then-loop",
+      "title": "Animal, Then Loop",
+      "text": "Feed the Animal sinkhole, push the ball across with the left flipper kicker, then take the save loop straight off the drop-out — the collected animal lands in the left inlane, which lights the right loop for you. Saves do not have to be consecutive, so take the loop even after a broken chain.",
+      "reps": "save all five in a game",
+      "focus": "flow",
+      "goal": "save-the-animals",
+      "shots": [
+        "animal-sinkhole",
+        "animals",
+        "left-inlane",
+        "right-loop"
+      ]
+    },
+    {
+      "id": "popeye-in-order",
+      "title": "Spell It In Order",
+      "text": "Sweep the left bank in sequence rather than scrambled — in order is worth an extra million — then cross to the right bank for the other half. Finishing the whole name lights a Spinach Can, and a Can doubles the entire value of whichever shot it is sitting on.",
+      "reps": "3 in-order completions per bank",
+      "focus": "accuracy",
+      "goal": "popeye-targets",
+      "shots": [
+        "pop-targets",
+        "eye-targets"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "boat",
+  "playfields": [
+    {
+      "id": "popeye-animals-zone",
+      "name": "Animals",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.2,
+        "y": 0.74,
+        "w": 0.16,
+        "h": 0.14
+      },
+      "trim": "all",
+      "entries": [
+        "animal-sinkhole",
+        "escalator"
+      ],
+      "exits": [
+        {
+          "x": 0.24,
+          "y": 0.1
+        }
+      ]
+    },
+    {
+      "id": "popeye-kneedeep-zone",
+      "name": "Kneedeep Mini-Playfield",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.47,
+        "y": 0.76,
+        "w": 0.31,
+        "h": 0.2
+      },
+      "trim": "all",
+      "entries": [
+        "escalator"
+      ],
+      "exits": [
+        {
+          "x": 0.52,
+          "y": 0.61
+        },
+        {
+          "x": 0.76,
+          "y": 0.1
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "Nothing extra to press — a 1994 Bally with a plunger, two flippers and a start button. The one place the machine asks you to choose something is the Escalator: when it is lit you pick your award with the flippers before it lifts the ball to the upper level. Worth knowing that the plunger itself is the weak point on many of these, with a stopper on the rail that bounces the ball straight back."
+  },
+  "howItPlays": {
+    "objective": "Popeye Saves the Earth is a cluttered Bally widebody with short flippers, where you battle Bluto's cartel across four fights and a stack of multiballs. Clear the whole checklist to reach Rescue Olive, the six-ball finale.",
+    "loop": [
+      "Take Light Lock off the spinning skill wheel if the disc lands it, then shoot Lockjaw -- Bluto's mouth -- to put a multiball within three shots of the start.",
+      "With nothing else lit, default to the left ramp: an award drops every fourth shot, the first Spinach Can sits here, and its return through the right inlane arms a loop for you.",
+      "Only one inlane glows at a time and a flipper tap swaps which, and whichever Round House loop is lit is the one paying the doubling score.",
+      "Spell POPEYE and rotate the O-Y-L rollovers to light Spinach Cans, bonus multipliers and the Fight Bluto sinkhole.",
+      "Grind through the four fights, the animals, Sea Hag and Swea' Pea to assemble the Rescue Olive checklist."
+    ],
+    "lights": [
+      {
+        "id": "oyl-rollovers",
+        "name": "O-Y-L Rollovers",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "oyl-rollovers",
+            "lamps": 3
+          }
+        ],
+        "lit": "The three O-Y-L rollovers above the jets are a lane you steer; an unlit rollover is a letter you still owe, and the ball leaving the bumper nest upward runs straight through them.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "either flipper press rotates the lit O-Y-L lanes one step to the right, so you can walk an unlit lane under the ball as it falls from the jets",
+          "when": "as the ball drops through the rollovers"
+        },
+        "then": "Slide the lanes to finish OYL, which bumps the bonus multiplier a step and reopens the Fight Bluto sinkhole. Because you can rotate the lit lanes, most completions cost you nothing.",
+        "goals": [
+          "oyl-lanes",
+          "fight-bluto"
+        ]
+      },
+      {
+        "id": "inlane-loops",
+        "name": "Lit Inlane & Round House Loops",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "Exactly one inlane is lit for Light Loop at any moment, and the lit inlane arms the loop on the far side -- the right inlane lights the left loop, the left inlane lights the right.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "each flipper press swaps which inlane is lit, and therefore which Round House loop is armed for its doubling value",
+          "when": "before the ball reaches the inlane"
+        },
+        "then": "Set the lit side, then run that loop: a lit loop pays two million and each consecutive one doubles it, climbing past thirty million until any stray switch drops the value back to the bottom.",
+        "goals": [
+          "round-house-loops"
+        ]
+      },
+      {
+        "id": "popeye-targets",
+        "name": "P-O-P-E-Y-E Banks",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "pop-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "eye-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "Two three-target banks spell the name, POP on the left and EYE on the right; a lit target is a letter you have not yet knocked down.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep a bank in order for an extra million over a scrambled clear, then finish the whole name to light one of the five Spinach Cans. The Escalator can spot POP or EYE for you as well.",
+        "goals": [
+          "popeye-targets",
+          "spinach-cans"
+        ]
+      },
+      {
+        "id": "spinach-cans",
+        "name": "The Five Spinach Cans",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-loop"
+          },
+          {
+            "shot": "animal-sinkhole"
+          },
+          {
+            "shot": "fight-bluto"
+          }
+        ],
+        "lit": "Five shots can hold a Spinach Can -- both Round House loops, the left ramp, and the Animal and Fight Bluto sinkholes -- and a lit Can doubles everything that shot scores until you cash it or the ball ends.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank a Can and spend it on a big shot, ideally a Bluto Multiball jackpot on the ramp, though no jackpot tops a hundred and eighty million however you double it. Lighting all five is a hard gate for the game's final multiball.",
+        "goals": [
+          "spinach-cans"
+        ]
+      },
+      {
+        "id": "lockjaw-locks",
+        "name": "Lockjaw Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "jab-targets"
+          },
+          {
+            "shot": "lockjaw"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Hitting both jab targets beside Bluto's head lights Lockjaw, his mouth, as a lock; the skill wheel and one Escalator award light it too.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls to start Bluto Multiball, then alternate the left ramp for a jackpot and Lockjaw to relight it. Lockjaw spits the balls back down the center drain lane, so a ball saver covers you as the multiball begins.",
+        "goals": [
+          "bluto-multiball"
+        ]
+      },
+      {
+        "id": "fight-sinkhole",
+        "name": "Fight Bluto Cartel",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "fight-bluto"
+          },
+          {
+            "shot": "oyl-rollovers"
+          }
+        ],
+        "lit": "Completing O-Y-L lights the Fight Bluto sinkhole for one of four cartel rounds; there is no clock, so a round ends only when you beat Bluto or he beats you.",
+        "flashing": null,
+        "control": null,
+        "then": "Start a fight and win it -- feed the jets to smash blocks in Earth Pavers, and take the lit loops that count toward the win -- and beating all four opens the five-ball Mutant Spinach Multiball.",
+        "goals": [
+          "fight-bluto",
+          "mutant-spinach"
+        ]
+      },
+      {
+        "id": "sea-hag-items",
+        "name": "Sea Hag Items",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "sea-target"
+          },
+          {
+            "shot": "hag-target"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "animal-sinkhole"
+          }
+        ],
+        "lit": "The SEA and HAG targets together light Collect Item at the left ramp; gathering four items arms the Animal sinkhole for an instant four-ball multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Ramp in the four items -- a can opener, a bottle, some ketchup, a flower -- then start Sea Hag Multiball at the sinkhole and hand each one back to its rightful owner at a fresh shot for a heavy score.",
+        "goals": [
+          "sea-hag-multiball"
+        ]
+      },
+      {
+        "id": "escalator-deck",
+        "name": "Escalator & Kneedeep",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "escalator"
+          },
+          {
+            "shot": "kneedeep"
+          },
+          {
+            "shot": "sweapea-gates"
+          },
+          {
+            "shot": "wheel-2x"
+          }
+        ],
+        "lit": "A lit Escalator hands you a scroll of awards to choose with the flippers, then carries the ball up to the Kneedeep mini-playfield.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot it lit and lock your award before the timer expires, then work the upper flippers: strike both standups to open Super Animal, and favor the 2X Wheel exit, which collects the extra ball and doubles the skill wheel. The gates hide Swea' Pea for the wizard checklist.",
+        "goals": [
+          "escalator-award",
+          "kneedeep-plan",
+          "find-sweapea"
+        ]
+      },
+      {
+        "id": "animals-save",
+        "name": "Save the Animals",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "animal-sinkhole"
+          },
+          {
+            "shot": "animals"
+          },
+          {
+            "shot": "right-loop"
+          }
+        ],
+        "lit": "The Animal sinkhole feeds the upper Animals section, where the left flipper kicks the ball across to collect one of five creatures, each worth five million and each opening a short save window.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the save loop right off the drop-out -- a saved animal drops you back to the left inlane, and that arms the right loop, so the save is set up before you shoot -- and saves need not be consecutive. Rescue all five to start a fifty-million hurry-up at the ramp.",
+        "goals": [
+          "save-the-animals"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Either flipper press rotates the lit O-Y-L rollovers one step to the right, so as the ball falls from the jets you can slide an unlit lane under it to finish OYL. Finishing OYL bumps the bonus multiplier by a step and reopens the Fight Bluto sinkhole; the same taps also swap which inlane is lit, arming the opposite Round House loop for its doubling value.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Grab Light Lock off the skill wheel if the disc lands it, then shoot Lockjaw to put Bluto Multiball three shots from the start. Otherwise lean on the left ramp, which feeds its own next shot and lights Spinach Cans, and spell POPEYE for a Can while the inlanes and O-Y-L rollovers reward your flipper taps.",
+        "goals": [
+          "skill-wheel",
+          "bluto-multiball",
+          "ramp-counter",
+          "popeye-targets"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Turn the loops into real points by keeping a Round House chain clean for its doubling climb, bank Spinach Cans to double your big shots, and start Sea Hag Multiball off four collected items. Spot animals toward Stampede and take the 2X Wheel on Kneedeep for the extra ball.",
+        "goals": [
+          "round-house-loops",
+          "spinach-cans",
+          "sea-hag-multiball",
+          "stampede",
+          "kneedeep-plan"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Rescue Olive is the finale, gated behind a brutal one-game checklist: both the Bluto and Sea Hag multiballs, every animal saved, Swea' Pea found, and all four cartel fights won. Clear it and a six-ball multiball begins, but the Super Jackpot itself waits at Lockjaw, and only with all five Spinach Cans lit.",
+        "goals": [
+          "rescue-olive"
+        ]
+      }
+    ]
+  }
+}

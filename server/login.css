@@ -1,0 +1,470 @@
+/* Pinball Genie sign-in — BACKGLASS palette (P5, 2026-08-14).
+ * Standalone by design (this page is served by server/pinball_auth.py, not by
+ * the Vite bundle), so it carries its own copy of the palette and its own
+ * @font-face pointing at the SAME self-hosted files the app ships: Vite copies
+ * app/public/ into dist/ and deploy-prod.sh uploads dist/ wholesale, so
+ * /fonts/*.woff2 is in the webroot for this page too.
+ * Kept in step with app/src/styles.css by hand. */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-SemiBold-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/ChakraPetch-Bold-latin.woff2') format('woff2');
+}
+:root {
+  color-scheme: dark;
+  --display: 'Chakra Petch', 'DIN Alternate', system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #0a0b10;
+  background-image: radial-gradient(circle at 50% -10%, rgba(255, 176, 46, 0.16), transparent 55%);
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #e9edf7;
+}
+.card {
+  width: 100%;
+  max-width: 380px;
+}
+.marquee {
+  text-align: center;
+  margin-bottom: 28px;
+}
+/* BACKGLASS brand mark. Was a chrome pinball (radial gradient + inset
+   highlight) — the third different mark in the product, and the last thing on
+   this page still reading as the old warm-charcoal build. Now the same LIT
+   AMBER TILE the app header and the guide pages use. Class name kept so
+   login.html's markup does not change. */
+.marquee-ball {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 14px;
+  border-radius: 13px;
+  background: linear-gradient(150deg, #ffc85f, #e07d00);
+  box-shadow: 0 0 22px rgba(255, 176, 46, 0.32);
+}
+.marquee h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffc85f, #ffb02e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.marquee p {
+  margin: 6px 0 0;
+  font-family: var(--display);
+  font-size: 12px;
+  color: rgba(233, 237, 247, 0.5);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+form {
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+label {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(233, 237, 247, 0.55);
+  display: block;
+  margin-bottom: 6px;
+}
+input {
+  width: 100%;
+  font: inherit;
+  font-size: 16px;
+  padding: 14px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(142, 170, 222, 0.2);
+  background: #0a0b10;
+  color: #e9edf7;
+}
+input:focus {
+  outline: none;
+  border-color: #ffb02e;
+  box-shadow: 0 0 0 3px rgba(255, 176, 46, 0.22);
+}
+button {
+  margin-top: 4px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #ffb02e;
+  color: #1a1200;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:active {
+  background: #e07d00;
+}
+/* 2026-07-29/2026-07-30 fix — DO NOT put a template marker in this file.
+   pinball_auth.py templates login.html only; login.css is served raw through
+   LOGIN_ASSETS, so a marker placed here is never substituted. That is exactly
+   what shipped on 2026-07-29 (back when the marker gated a login-error
+   banner, before Phase 5 replaced username+password with magic links): the
+   rule never received its `display:none`, every clean GET /login showed
+   "Wrong username or password.", and the unsubstituted percent-percent
+   sequence invalidated the following declaration under CSS error recovery.
+   The marker now gates which of .signin-panel / .sent-panel is shown (see
+   the rules just below and login.html's header comment) instead of an error
+   banner, but the hazard is identical, so the rule is unchanged: fail-safe
+   by construction — .sent-panel is hidden by DEFAULT here, so if templating
+   ever breaks again the page falls back to showing the sign-in form, never a
+   half-rendered confirmation state. No inline styles (CSP style-src 'self'). */
+.card.is-sent .signin-panel {
+  display: none;
+}
+.card.is-sent .sent-panel {
+  display: block;
+}
+/* D5 fix (2026-07-30 security review) — a third state for a tripped rate
+   limit, same marker/substitution mechanism and same fail-safe-by-default
+   posture as .is-sent above: .limited-panel is hidden by default (see its
+   own rule further down), so if templating ever breaks the page still
+   falls back to the sign-in form, never a stuck "too many attempts" state. */
+.card.is-limited .signin-panel {
+  display: none;
+}
+.card.is-limited .sent-panel {
+  display: none;
+}
+.card.is-limited .limited-panel {
+  display: block;
+}
+
+.signin-hint {
+  margin: 12px 0 0;
+  font-size: 11.5px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(233, 237, 247, 0.45);
+}
+
+.sent-panel {
+  display: none; /* default: hidden until .card.is-sent, see the rule above */
+  background: #171a24;
+  border: 1px solid rgba(142, 170, 222, 0.1);
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+.sent-title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffb02e;
+}
+
+.sent-body {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(233, 237, 247, 0.7);
+}
+
+/* "Too many attempts" state (D5, 2026-07-30 security review) — same shape
+   as .sent-panel above, distinct amber-warning border so it doesn't read
+   as identical to the neutral "check your inbox" confirmation. */
+.limited-panel {
+  display: none; /* default: hidden until .card.is-limited, see the rule above */
+  background: #171a24;
+  border: 1px solid rgba(255, 176, 46, 0.35);
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+.limited-title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffb02e;
+}
+
+.limited-body {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(233, 237, 247, 0.7);
+}
+
+/* GET /auth/verify's friendly error page (pinball_auth.py's
+   _verify_error_page) reuses this stylesheet for visual consistency rather
+   than shipping a second one — it links the same .card/.marquee markup as
+   this page, plus this one small block. */
+.verify-error {
+  background: #171a24;
+  border: 1px solid rgba(255, 79, 94, 0.3);
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+.verify-error-title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ff8b95;
+}
+
+.verify-error-body {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(233, 237, 247, 0.7);
+}
+
+/* PG-06 (2026-07-31 webapp pentest): the cross-device sign-in confirmation
+ * reuses .verify-error's card, but it is not an error — it is a question, and
+ * the ADDRESS is the whole point of showing it (a victim of login CSRF sees
+ * whose account they are about to be signed into). So it gets the accent
+ * colour and a monospace-ish weight to read as data rather than prose, and it
+ * sits above the form's own button. See _verify_confirm_page in
+ * pinball_auth.py. */
+.verify-confirm-email {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-all;
+  color: #ffb02e;
+  background: rgba(255, 176, 46, 0.08);
+  border: 1px solid rgba(255, 176, 46, 0.25);
+  border-radius: 10px;
+}
+/* "Skip sign-in" escape hatch + Instagram CTA + legal links, all added
+ * 2026-07-30 with the public launch. NOTE for whoever edits this file: it is
+ * served RAW (LOGIN_ASSETS in pinball_auth.py), never templated — so a
+ * percent-delimited substitution marker of the kind login.html uses for its
+ * error state must NEVER appear in this file, not even inside a comment. One
+ * did on 2026-07-29: it was served verbatim, never substituted, and shipped a
+ * permanently-visible "Wrong username or password" banner to every visitor,
+ * plus it broke the CSS declaration that followed it. The marker lives in
+ * login.html and nowhere else, and it is deliberately not spelled out here so
+ * that no future find-and-replace can match this warning. */
+.login-alt {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(142, 170, 222, 0.1);
+  text-align: center;
+}
+
+.login-alt-link {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #ffb02e;
+  text-decoration: none;
+}
+
+.login-alt-link:hover,
+.login-alt-link:focus-visible {
+  color: #ffc85f;
+  text-decoration: underline;
+}
+
+/* "Back to Pinball Genie" on the verify-error and confirm-sign-in pages
+ * (2026-07-31, rolo). Those are full server-rendered pages, and inside an
+ * INSTALLED PWA there is no address bar and no back button — without this a
+ * user who lands on one has no route into the app at all. Sits UNDER the
+ * primary action as the quieter of the two, hence the muted colour and the
+ * separator rule; it is an escape hatch, not the thing we want tapped first. */
+.login-back-link {
+  display: block;
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(142, 170, 222, 0.1);
+  color: rgba(233, 237, 247, 0.62);
+  font-weight: 700;
+}
+
+.login-back-link:hover,
+.login-back-link:focus-visible {
+  color: #e9edf7;
+}
+
+.login-alt-note {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: rgba(233, 237, 247, 0.45);
+}
+
+.login-ig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  margin-top: 10px;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: rgba(255, 176, 46, 0.85);
+  text-decoration: none;
+}
+
+.login-ig:hover,
+.login-ig:focus-visible {
+  color: #ffb02e;
+  text-decoration: underline;
+}
+
+.login-ig svg {
+  flex-shrink: 0;
+}
+
+.footer-note {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 11px;
+  color: rgba(233, 237, 247, 0.32);
+}
+
+.footer-legal {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 11px;
+  color: rgba(233, 237, 247, 0.3);
+}
+
+.footer-legal a {
+  color: rgba(255, 176, 46, 0.7);
+  text-decoration: none;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus-visible {
+  color: #ffb02e;
+  text-decoration: underline;
+}
+
+/* PG-18 (2026-07-31, rolo) — the sign-in CODE form, inside the "check your
+ * inbox" panel. Exists because an installed iOS PWA has its own cookie jar and
+ * Mail opens links in Safari, so the emailed LINK signs in the browser and
+ * leaves the installed app signed out. Typing the code works in whichever app
+ * the user is actually standing in.
+ *
+ * Deliberately quieter than the primary "send me a link" button: for most
+ * people the link is still the right path, and this is the fallback for the
+ * one case the link cannot serve. */
+.code-form {
+  /* This is a <form>, and the generic `form` rule near the top of this file
+     paints a full card (background + 1px border + 18px radius + 22px padding).
+     Inheriting that would render a card INSIDE the .sent-panel card. Reset
+     those four explicitly; the border-top below is the only divider wanted. */
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 16px 0 0;
+  margin: 18px 0 4px;
+  border-top: 1px solid rgba(142, 170, 222, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.code-label {
+  /* The generic `label` rule uppercases and letter-spaces; this is a sentence,
+     not a field tag, so both are turned back off. */
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: rgba(233, 237, 247, 0.72);
+}
+
+.code-input {
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.28);
+  color: #e9edf7;
+  font-size: 16px; /* >=16px: anything smaller makes iOS Safari zoom on focus */
+  font-family: ui-monospace, Menlo, monospace;
+  letter-spacing: 0.1em;
+}
+
+.code-email-input {
+  font-family: inherit;
+  letter-spacing: normal;
+}
+
+.code-input:focus-visible {
+  outline: 2px solid #ffb02e;
+  outline-offset: 1px;
+}
+
+.code-submit {
+  /* Generic `button` is the big amber primary CTA — this is the quieter
+     secondary path, so padding/margin/transform are reset too, not just colour. */
+  margin-top: 0;
+  padding: 12px;
+  text-transform: none;
+  letter-spacing: normal;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 176, 46, 0.55);
+  background: transparent;
+  color: #ffb02e;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.code-submit:hover,
+.code-submit:focus-visible {
+  background: rgba(255, 176, 46, 0.1);
+}
+
+.code-hint {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: rgba(233, 237, 247, 0.45);
+}

@@ -1,0 +1,889 @@
+{
+  "machine": "Space Station (Williams, 1987)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "A standard plunger, and the habitrail it feeds drops the ball onto the mini playfield. No skill shot exists on this machine, so plunge and get your hands on the flippers."
+    },
+    {
+      "id": "mini-playfield",
+      "name": "Mini Playfield",
+      "type": "mini-playfield",
+      "x": 0.56,
+      "y": 0.84,
+      "trim": "all",
+      "notes": "The upper deck the plunge and the right popper both feed. Everything that arrives here rolls down through the 1-2-3 lanes."
+    },
+    {
+      "id": "lanes-123",
+      "name": "1-2-3 Lanes",
+      "type": "lane",
+      "x": 0.56,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes on the mini playfield. Completing them raises the jet bumper value and — critically — relights the Dock When Lit lamps, without which the locks just spit the ball back out.",
+      "playfield": "deck-mini-playfield"
+    },
+    {
+      "id": "usa-lanes",
+      "name": "U-S-A Lanes",
+      "type": "lane",
+      "x": 0.4,
+      "y": 0.74,
+      "trim": "all",
+      "notes": "Three lanes sitting underneath the mini playfield. Each completion advances the Stop 'N' Score multiplier, which is where the real points on this machine live."
+    },
+    {
+      "id": "bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.24,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Three of them. Worth only 500 apiece until you start completing 1-2-3, after which they climb in 500-point steps to a 3,000 ceiling."
+    },
+    {
+      "id": "shuttle-targets",
+      "name": "S-H-U-T-T-L-E Targets",
+      "type": "target-bank",
+      "x": 0.06,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "A seven-target bank down the left side. The award for finishing it is randomised at the start of each ball and displayed on a lamp bank in the middle of the playfield, so check what you are playing for before you commit."
+    },
+    {
+      "id": "station-center",
+      "name": "STATION Targets (Centre)",
+      "type": "target-bank",
+      "x": 0.44,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Three of the seven STATION targets, roughly in the middle of the playfield. The bank on the right holds the other four."
+    },
+    {
+      "id": "station-right",
+      "name": "STATION Targets (Right)",
+      "type": "target-bank",
+      "x": 0.84,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The remaining four STATION targets. Both banks have to be cleared to collect the award."
+    },
+    {
+      "id": "drop-targets",
+      "name": "Bonus Drop Targets",
+      "type": "drop-target",
+      "x": 0.6,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "A three-drop bank that raises the end-of-ball bonus multiplier. A right flipper shot that clears this bank often carries on into the right popper, which is the most efficient shot on the machine."
+    },
+    {
+      "id": "ramp-drop",
+      "name": "Ramp Drop Target",
+      "type": "drop-target",
+      "x": 0.76,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "Sits in front of the ramp and mostly blocks it, though a good shot can still sneak past a raised target. Knocking it down starts Stop 'N' Score."
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "type": "ramp",
+      "x": 0.8,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "The main shot, taken off the left flipper. It delivers the ball to whichever dock the Space Station is pointing at, and it is also what collects Stop 'N' Score."
+    },
+    {
+      "id": "space-station",
+      "name": "Space Station Diverter",
+      "type": "diverter",
+      "x": 0.5,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "The rotating diverter the game is named after. Working properly it always steers a ramp shot into an empty dock. If the centre popper is entered with one ball already docked, the game holds the ball there and rotates the station first."
+    },
+    {
+      "id": "left-lock",
+      "name": "Left Dock",
+      "type": "lock",
+      "x": 0.3,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "One of the two docks. Fed by the ramp or by a habitrail from the centre popper. With Dock When Lit dark, the ball is ejected the moment it arrives."
+    },
+    {
+      "id": "right-lock",
+      "name": "Right Dock",
+      "type": "lock",
+      "x": 0.7,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "The other dock. Two balls parked in the two docks is what arms multiball."
+    },
+    {
+      "id": "center-popper",
+      "name": "Centre Popper",
+      "type": "kicker",
+      "x": 0.32,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Reached by a shot that runs around the left and back of the playfield past the U-S-A lanes. Worth 100,000 when lit, and it starts multiball if two balls are already docked."
+    },
+    {
+      "id": "right-popper",
+      "name": "Right Popper",
+      "type": "kicker",
+      "x": 0.66,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Sits just right of centre, past the drop targets. It pops the ball up to the mini playfield, and it is the easier of the two multiball starts."
+    },
+    {
+      "id": "randomise-target",
+      "name": "Randomise Target",
+      "type": "standup",
+      "x": 0.92,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "A single standup on the right wall. Hitting it rerolls whichever of the SHUTTLE and STATION awards it is currently lit for. Once you have made U-S-A four times it also carries a Special."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries the machine's only kickback, which by factory setting is lit when the ball starts. Relighting it is one of the SHUTTLE and STATION awards."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "No kickback on this side, but it does pay 100,000 when lit — the only outlane on the machine that scores anything. Note this game has no inlanes at all, so every returning ball comes straight off a flipper."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "dock-two-balls",
+      "title": "Dock Two Balls",
+      "category": "progression",
+      "summary": "The core of the machine. Get one ball into each dock and multiball is armed. The ramp is the shot to learn, and the Space Station diverter does the aiming for you — when it is working, it always points at an empty dock.",
+      "difficulty": 2,
+      "reward": "Both docks filled, multiball armed",
+      "steps": [
+        {
+          "shot": "lanes-123",
+          "action": "Make sure Dock When Lit is on",
+          "detail": "Without it a docked ball is ejected immediately. Completing 1-2-3 on the mini playfield relights it, and by factory setting it is already lit when the game starts."
+        },
+        {
+          "shot": "ramp",
+          "action": "Ramp the first ball in",
+          "detail": "Off the left flipper. The diverter routes it to whichever dock is empty.",
+          "link": "none"
+        },
+        {
+          "shot": "center-popper",
+          "action": "Or use the centre popper",
+          "detail": "With one ball already docked, the game holds your ball in the popper, rotates the station, and only then pops it — so it always lands in the empty side.",
+          "link": "none"
+        },
+        {
+          "shot": "ramp",
+          "action": "Do not ramp a third time",
+          "detail": "A ramp shot with both docks full kicks a docked ball back out and parks your ball in its place, so the shot gains you nothing — both docks stay loaded and you now have a ball coming at you from the dock."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "multiball",
+      "title": "Start Multiball",
+      "category": "multiball",
+      "summary": "With two balls docked, either popper launches you into multiball. The right popper is the easier of the two, and a right flipper shot that sweeps the drop targets often rolls straight into it.",
+      "difficulty": 2,
+      "reward": "Multiball, and a shot at the Rescue Jackpot",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Sweep the drops on the way in",
+          "detail": "The same shot clears the bonus multiplier bank and continues into the right popper — two jobs for one shot."
+        },
+        {
+          "shot": "right-popper",
+          "action": "Start it from the right popper",
+          "detail": "The centre popper starts it too, but it is the harder shot of the pair."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "rescue-jackpot",
+      "title": "Rescue Jackpot",
+      "category": "multiball",
+      "summary": "Re-dock two balls during multiball and you collect the Rescue Jackpot. It only takes two ramp shots, which is why the jackpot rarely grows large — it starts at 200,000 and only creeps up by 10,000 each time a multiball ends without it.",
+      "difficulty": 2,
+      "reward": "200,000, plus 10,000 per multiball you failed to finish",
+      "steps": [
+        {
+          "shot": "ramp",
+          "action": "Two ramp shots is the whole job",
+          "detail": "With extra balls loose, the ramp is far easier to hit than in single-ball play."
+        },
+        {
+          "shot": "lanes-123",
+          "action": "Reset the docks afterwards",
+          "detail": "After any multiball you must complete 1-2-3 again before the game will let you dock a ball at all."
+        }
+      ],
+      "fx": "saucer"
+    },
+    {
+      "id": "stop-n-score",
+      "title": "Stop 'N' Score",
+      "category": "mode",
+      "summary": "In front of the ramp sits a drop target; knock it over and a number starts cycling between 20,000 and 99,000 for the next 25 seconds. Whatever it reads when your ramp shot registers is what you are paid, times your Stop 'N' Score multiplier.",
+      "difficulty": 2,
+      "reward": "20,000 to 99,000, multiplied up to 5x",
+      "steps": [
+        {
+          "shot": "ramp-drop",
+          "action": "Drop the target to start the clock",
+          "detail": "Twenty-five seconds by factory setting, though an operator can set it anywhere from five to thirty."
+        },
+        {
+          "shot": "ramp",
+          "action": "Time the ramp shot",
+          "detail": "You are not shooting when you can — you are shooting so the number is near 99,000 when the switch trips. That timing is the difference between a nice award and a huge one."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "usa-multiplier",
+      "title": "Build The Stop 'N' Score Multiplier",
+      "category": "multiplier",
+      "summary": "The U-S-A lanes under the mini playfield are the highest-value thing you can do outside multiball. Each completion adds a level to the Stop 'N' Score multiplier, up to 5x, and the fourth one lights a Special.",
+      "difficulty": 2,
+      "reward": "Up to 5x on Stop 'N' Score, plus a Special",
+      "steps": [
+        {
+          "shot": "usa-lanes",
+          "action": "Complete U-S-A repeatedly",
+          "detail": "The lanes remember their lights between balls by factory setting, so partial progress carries."
+        },
+        {
+          "shot": "randomise-target",
+          "action": "Collect the Special at 4x",
+          "detail": "The fourth completion lights the single right-side target for a Special. An operator can set that requirement anywhere from three to five completions."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "bumper-value",
+      "title": "Feed The Bumpers",
+      "category": "progression",
+      "summary": "The jet bumpers open at a nearly worthless 500 a hit. Every 1-2-3 completion adds another 500, topping out at 3,000 — and the value carries between balls, so this is worth building early.",
+      "difficulty": 1,
+      "reward": "Bumpers from 500 up to 3,000 a hit",
+      "steps": [
+        {
+          "shot": "lanes-123",
+          "action": "Complete 1-2-3 on the mini playfield",
+          "detail": "Every ball that arrives on the upper deck rolls through these lanes, so progress is close to automatic."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Let the ball work",
+          "detail": "The bumper value carries between balls by factory setting, unlike the bonus and Stop 'N' Score multipliers, which do not."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Bonus Multiplier And Extra Ball",
+      "category": "multiplier",
+      "summary": "The three-drop bank raises your end-of-ball bonus multiplier to a maximum of 7x, and reaching 4x lights the extra ball — which you then collect by clearing the same bank one more time.",
+      "difficulty": 2,
+      "reward": "Bonus multiplier to 7x, plus an extra ball",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Clear the bank",
+          "detail": "A right flipper sweep does it and often continues into the right popper."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Clear it again at 4x",
+          "detail": "Hitting 4x lights the extra ball; the next completed bank is what actually awards it. Operators can move that threshold anywhere from 3x to 7x."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "shuttle-award",
+      "title": "Complete SHUTTLE",
+      "category": "strategy",
+      "summary": "Seven targets down the left wall for one randomly chosen award. The award is drawn at the start of each ball and shown on a lamp bank in the middle of the playfield, so you always know whether the bank is worth the effort.",
+      "difficulty": 2,
+      "reward": "One of seven awards, from 25,000 to a Special",
+      "steps": [
+        {
+          "shot": "shuttle-targets",
+          "action": "Check what it is worth first",
+          "detail": "The pool is Special, extra ball, 50,000 with the kickback relit, 50,000 with a bonus ball, 150,000 with hold bonus, 75,000 and 25,000."
+        },
+        {
+          "shot": "shuttle-targets",
+          "action": "Clear all seven",
+          "detail": "By factory setting the lights are remembered into the next ball, so a half-finished bank is not wasted."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "station-award",
+      "title": "Complete STATION",
+      "category": "strategy",
+      "summary": "The same award pool as SHUTTLE, but split across two banks — three targets in the middle of the playfield and four on the right. Both have to be cleared, which makes this the harder of the two collects.",
+      "difficulty": 2,
+      "reward": "One of the same seven awards",
+      "steps": [
+        {
+          "shot": "station-center",
+          "action": "Clear the centre three",
+          "detail": "These sit in the middle of the playfield and are the more awkward half."
+        },
+        {
+          "shot": "station-right",
+          "action": "Clear the right four",
+          "detail": "The award is drawn fresh at the start of every ball, independently of the SHUTTLE draw."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "reroll-the-award",
+      "title": "Reroll A Bad Award",
+      "category": "secret",
+      "summary": "The plain-looking standup on the right wall is not decoration. Hitting it re-randomises whichever of the two bank awards it is currently lit for — so drawing 25,000 at the start of a ball is not a sentence you have to serve.",
+      "difficulty": 2,
+      "reward": "A fresh draw on the SHUTTLE or STATION award",
+      "steps": [
+        {
+          "shot": "randomise-target",
+          "action": "Check which bank it is lit for",
+          "detail": "It only rerolls one of the two, and the lamp tells you which."
+        },
+        {
+          "shot": "randomise-target",
+          "action": "Keep hitting it",
+          "detail": "There is nothing stopping you from rerolling more than once while you fish for the Special or the extra ball."
+        },
+        {
+          "shot": "usa-lanes",
+          "action": "Arm it for a Special as well",
+          "detail": "Four U-S-A completions turn the same target into a Special collect, so it earns its keep twice over."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-ball",
+      "title": "The Bonus Ball",
+      "category": "secret",
+      "summary": "One of the award-pool prizes is a bonus ball, and it does not work like an extra ball. It is a timed ball at the end of the game where draining does not end anything — the ball is simply returned to the plunger until the clock runs out.",
+      "difficulty": 2,
+      "reward": "25 seconds of free play, 45 if you reached multiball",
+      "steps": [],
+      "instructions": [
+        "It arrives as one of the SHUTTLE and STATION awards, paired with 50,000 points.",
+        "By factory setting it runs 25 seconds, and an operator can set that between 20 and 40.",
+        "Reaching multiball at any point during the game extends the bonus ball to 45 seconds — a good reason to get multiball started even on a poor game.",
+        "During the bonus ball a drain costs you nothing but time; the ball goes back to the plunger and you carry on. Only the timer ends it.",
+        "Because drains are free, this is the moment to take shots you would never risk otherwise — go straight for the ramp and Stop 'N' Score."
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "kickback",
+      "title": "Keep The Kickback Alive",
+      "category": "strategy",
+      "summary": "The left outlane kickback is your only ball save, and there is nothing on this machine that relights it except a specific award from the two target banks. Once it is spent, that left outlane is a genuine drain.",
+      "difficulty": 1,
+      "reward": "One outlane save at a time",
+      "steps": [
+        {
+          "shot": "shuttle-targets",
+          "action": "Draw the relight award",
+          "detail": "The 50,000 plus kickback award is one of the seven in the pool for either bank."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Know when you are unprotected",
+          "detail": "By factory setting it starts lit on each ball, but a shop with it switched off leaves you with no save at all."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "redock-rule",
+      "title": "The Re-Docking Rule",
+      "category": "strategy",
+      "summary": "Two rules about the docks catch out almost everybody. You cannot dock again after a multiball until 1-2-3 is complete, and a ramp shot with both docks already full swaps a docked ball out for the one in your hand.",
+      "difficulty": 2,
+      "reward": "Not losing a multiball setup you already built",
+      "steps": [
+        {
+          "shot": "lanes-123",
+          "action": "Rebuild the dock lights after multiball",
+          "detail": "Nothing else will do it. Until 1-2-3 is complete, every ball you send at a dock comes straight back out."
+        },
+        {
+          "shot": "ramp",
+          "action": "Stop ramping once both docks are full",
+          "detail": "The third ramp shot ejects a docked ball. When you are armed, switch to a popper and start multiball instead."
+        }
+      ],
+      "fx": "space"
+    },
+    {
+      "id": "big-score-route",
+      "title": "The Real Scoring Route",
+      "category": "strategy",
+      "summary": "Multiball is the fun of this machine, but it is not where the points are. The high scores come from patiently stacking the U-S-A lanes to a 5x Stop 'N' Score multiplier and then timing a single ramp shot near the top of the number.",
+      "difficulty": 3,
+      "reward": "Close to 99,000 multiplied by five, on one shot",
+      "steps": [
+        {
+          "shot": "usa-lanes",
+          "action": "Get the multiplier to 5x first",
+          "detail": "Starting Stop 'N' Score early with a 1x multiplier wastes the mode. Build before you cash."
+        },
+        {
+          "shot": "ramp-drop",
+          "action": "Start the mode when you are ready",
+          "detail": "You have around 25 seconds, which is enough for two or three considered attempts rather than one panicked one."
+        },
+        {
+          "shot": "ramp",
+          "action": "Shoot on the number, not on the ball",
+          "detail": "Cradle, watch the display, and release so the ball trips the ramp switch as the count nears 99,000."
+        }
+      ],
+      "fx": "cash"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ss-dock",
+      "title": "Liberty Docked",
+      "desc": "Get a ball into a dock with Dock When Lit on.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "dock-two-balls"
+    },
+    {
+      "id": "ss-multiball",
+      "title": "Both Docks Full",
+      "desc": "Dock two balls and start multiball at a popper.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "ss-stop-n-score",
+      "title": "Stop 'N' Score",
+      "desc": "Drop the ramp target and collect a Stop 'N' Score award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "stop-n-score"
+    },
+    {
+      "id": "ss-reroll",
+      "title": "Reroll",
+      "desc": "Use the right-side target to re-randomise a bank award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "reroll-the-award"
+    },
+    {
+      "id": "ss-rescue",
+      "title": "Mission Accomplished",
+      "desc": "Re-dock two balls during multiball for the Rescue Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rescue-jackpot"
+    },
+    {
+      "id": "ss-bonus-ball",
+      "title": "Bonus Ball",
+      "desc": "Draw the bonus ball award and play the timed ball at the end of the game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bonus-ball"
+    },
+    {
+      "id": "ss-5x",
+      "title": "Five Times",
+      "desc": "Complete U-S-A enough times to reach a 5x Stop 'N' Score multiplier.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "usa-multiplier"
+    },
+    {
+      "id": "ss-max-timing",
+      "title": "Ninety-Nine Thousand",
+      "desc": "Time a ramp shot near the top of the Stop 'N' Score count at 5x.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "big-score-route"
+    }
+  ],
+  "drills": [
+    {
+      "id": "ramp-into-an-empty-dock",
+      "title": "Ramp Into An Empty Dock",
+      "text": "The ramp off the left flipper is the shot the whole machine runs through, and the rotating station does the aiming for you — working properly it always points at an empty dock. Check that Dock When Lit is on before you start, or the ball you just worked for is ejected the moment it arrives.",
+      "reps": "dock two balls, five times over",
+      "focus": "accuracy",
+      "goal": "dock-two-balls",
+      "shots": [
+        "ramp",
+        "space-station",
+        "left-lock",
+        "right-lock"
+      ]
+    },
+    {
+      "id": "shoot-on-the-number",
+      "title": "Shoot On The Number",
+      "text": "Drop the target in front of the ramp and a number starts cycling; what you are paid is whatever it reads the instant the ramp switch trips. Cradle, watch the display rather than the ball, and release so the shot lands near the top of the count — the clock is long enough for two or three considered attempts, not one panicked one.",
+      "reps": "10 timed ramp shots",
+      "focus": "accuracy",
+      "goal": "stop-n-score",
+      "shots": [
+        "ramp-drop",
+        "ramp"
+      ]
+    },
+    {
+      "id": "sweep-into-the-popper",
+      "title": "Sweep Into The Popper",
+      "text": "One right flipper shot clears the bonus drop bank and carries straight on into the right popper, which is your bonus multiplier and the easier of the two multiball starts in the same swing. Drill it as one shot and let the popper take the ball up to the mini playfield.",
+      "reps": "10 sweeps",
+      "focus": "flow",
+      "goal": "multiball",
+      "shots": [
+        "drop-targets",
+        "right-popper",
+        "mini-playfield"
+      ]
+    },
+    {
+      "id": "stop-ramping-when-armed",
+      "title": "Stop Ramping When You Are Armed",
+      "text": "Two rules cost people the multiball they already built: a third ramp shot with both docks full swaps a docked ball out for the one in your hand, and after any multiball nothing will dock at all until 1-2-3 is complete again. Practise taking your hand off the ramp the moment both docks are loaded, and rebuilding the lanes before you go back to it.",
+      "reps": "one full game without a wasted third ramp",
+      "focus": "ball-control",
+      "goal": "redock-rule",
+      "shots": [
+        "ramp",
+        "left-lock",
+        "right-lock",
+        "lanes-123"
+      ]
+    },
+    {
+      "id": "build-before-you-cash",
+      "title": "Build The Multiplier First",
+      "text": "The U-S-A lanes under the mini playfield are the highest-value thing you can do outside multiball: every completion steps the Stop 'N' Score multiplier and the fourth lights a Special on the right-wall target. Get to the top of that ladder before you knock the ramp target over, because starting the mode at the bottom throws the whole thing away.",
+      "reps": "max the multiplier before your first Stop 'N' Score",
+      "focus": "accuracy",
+      "goal": "usa-multiplier",
+      "shots": [
+        "usa-lanes",
+        "randomise-target",
+        "ramp-drop"
+      ]
+    },
+    {
+      "id": "reroll-a-bad-draw",
+      "title": "Reroll A Bad Draw",
+      "text": "Look at what the SHUTTLE and STATION banks are actually paying before you spend shots on them — the award is drawn fresh every ball and shown on the lamp bank in the middle of the playfield. A bad draw is not a sentence you have to serve: hit the right-wall standup to reroll it, as often as you like, then go and clear the bank.",
+      "reps": "reroll until the award is worth the bank, every ball",
+      "focus": "accuracy",
+      "goal": "reroll-the-award",
+      "shots": [
+        "randomise-target",
+        "shuttle-targets",
+        "station-center",
+        "station-right"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "space",
+  "playfields": [
+    {
+      "id": "deck-mini-playfield",
+      "name": "1-2-3 Lanes",
+      "kind": "mini",
+      "bounds": {
+        "x": 0.44,
+        "y": 0.78,
+        "w": 0.24,
+        "h": 0.18
+      },
+      "entries": [
+        "shooter-lane",
+        "right-popper"
+      ],
+      "exits": [
+        {
+          "x": 0.24,
+          "y": 0.8
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "There is no extra button on this cabinet. It is a 1987 Williams: two flippers, a manual plunger, and your hips. The only help you get is the kickback in the left outlane, and the mini playfield above is fed by the plunge habitrail rather than by anything you press."
+  },
+  "howItPlays": {
+    "objective": "Space Station is a fast Williams shooter built around the rotating docking arm it is named after: drive a ball into each of its two docks to arm the multiball. The heavier scoring comes from running the U-S-A lanes to a five-times Stop 'N' Score, then timing a single ramp shot at the peak of a spinning number.",
+    "loop": [
+      "Roll the 1-2-3 lanes on the upper deck to keep Dock When Lit on, without which a docked ball is thrown straight back out.",
+      "Ramp a ball into each dock -- the rotating arm always aims your shot at whichever side is empty -- until both are parked and multiball is armed.",
+      "Fire a popper to launch the multiball, re-dock two balls during it for the Rescue Jackpot, then rebuild the 1-2-3 lanes before the docks will hold again.",
+      "Step the Stop 'N' Score multiplier up the U-S-A lanes to five times, drop the ramp target, and time a ramp shot so the cycling number is near its ceiling as it registers."
+    ],
+    "lights": [
+      {
+        "id": "dock-lanes",
+        "name": "1-2-3 Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "lanes-123",
+            "lamps": 3
+          },
+          {
+            "shot": "bumpers",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit number is a lane you have already rolled this pass; finishing the trio switches Dock When Lit back on and nudges the jet-bumper value up a notch, and that bumper value is one of the few things here that carries from ball to ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Every ball that reaches the upper deck rolls down through these, so progress is nearly automatic -- keep the set complete so the docks will actually hold a ball, and remember that any multiball wipes Dock When Lit until you finish the lanes again.",
+        "goals": [
+          "dock-two-balls",
+          "bumper-value",
+          "redock-rule"
+        ]
+      },
+      {
+        "id": "the-docks",
+        "name": "The Two Docks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-lock"
+          },
+          {
+            "shot": "right-lock"
+          },
+          {
+            "shot": "space-station"
+          }
+        ],
+        "lit": "A dock holds a ball only while Dock When Lit is on; the rotating arm points a ramp shot at the empty side for you, and a ball parked in each dock is what arms the multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Ramp them both in, or use the centre popper -- it cradles your ball, spins the arm to the open side, then pops it, so it never misfeeds. Once both are loaded, stop ramping: a third ramp shot kicks a docked ball loose and drops yours in its place, gaining you nothing but a ball coming back at you.",
+        "goals": [
+          "dock-two-balls",
+          "redock-rule"
+        ]
+      },
+      {
+        "id": "multiball-poppers",
+        "name": "Multiball Poppers",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-popper"
+          },
+          {
+            "shot": "center-popper"
+          }
+        ],
+        "lit": "With both docks full either popper is lit to launch the multiball; the right one is the friendlier shot, and a right-flipper sweep of the drop bank often rolls straight on into it.",
+        "flashing": null,
+        "control": null,
+        "then": "Start it at the right popper, then re-dock a pair of balls during the chaos to bank the Rescue Jackpot -- an easy two ramp shots with extra balls loose. It stays modest because it barely grows, so collect it every time rather than hoarding it.",
+        "goals": [
+          "multiball",
+          "rescue-jackpot"
+        ]
+      },
+      {
+        "id": "bonus-drop-bank",
+        "name": "Bonus Drop Targets",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "drop-targets",
+            "lamps": 3
+          }
+        ],
+        "lit": "A raised drop is one you still owe; sweeping the three of them steps the end-of-ball bonus multiplier upward toward a seven-times cap.",
+        "flashing": null,
+        "control": null,
+        "then": "A right-flipper sweep clears the bank in one pass and usually carries on into the right popper. Reach four-times and the extra ball lights, then the very next completed bank is what hands it to you.",
+        "goals": [
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "id": "usa-multiplier",
+        "name": "U-S-A Lanes",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "usa-lanes",
+            "lamps": 3
+          },
+          {
+            "shot": "randomise-target"
+          }
+        ],
+        "lit": "A lit letter is a U-S-A lane already run this cycle; each full set steps your Stop 'N' Score multiplier up toward five times, and the lane lamps are remembered from ball to ball so partial progress is never lost.",
+        "flashing": null,
+        "control": null,
+        "then": "It is the biggest points source you have away from multiball, so climb it before cashing anything in. A fourth pass turns the plain right-wall standup into a Special, so the same lane work pays you a second way.",
+        "goals": [
+          "usa-multiplier",
+          "big-score-route"
+        ]
+      },
+      {
+        "id": "stop-n-score",
+        "name": "Stop 'N' Score",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "ramp-drop"
+          },
+          {
+            "shot": "ramp"
+          }
+        ],
+        "lit": "Knock over the target guarding the ramp and a figure starts spinning between twenty and ninety-nine thousand for about twenty-five seconds; whatever it reads as the ramp shot registers is your award, times the multiplier.",
+        "flashing": null,
+        "control": null,
+        "then": "The trick is patience: cradle up, keep your eyes on the climbing figure instead of the ball, and release into the ramp the instant it peaks. With the multiplier maxed, a shot that lands near the ceiling pays many times over what a rushed one does.",
+        "goals": [
+          "stop-n-score",
+          "big-score-route"
+        ]
+      },
+      {
+        "id": "award-banks",
+        "name": "SHUTTLE & STATION Banks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "shuttle-targets",
+            "lamps": 7
+          },
+          {
+            "shot": "station-center",
+            "lamps": 3
+          },
+          {
+            "shot": "station-right",
+            "lamps": 4
+          },
+          {
+            "shot": "randomise-target"
+          }
+        ],
+        "lit": "Each bank pays one award drawn at random when the ball starts and shown on a lamp cluster in the middle of the glass, so you always know what a bank is worth before you spend shots on it; a lit target is one already knocked down.",
+        "flashing": null,
+        "control": null,
+        "then": "The left seven-bank is one collect; the STATION award needs both its centre three and right four cleared. Draw something poor and the right-wall standup rerolls it as often as you like -- fish for the Special, the extra ball, the kickback relight, or the timed bonus ball before you commit to the bank.",
+        "goals": [
+          "shuttle-award",
+          "station-award",
+          "reroll-the-award",
+          "kickback",
+          "bonus-ball"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Keep the 1-2-3 lanes finished so the docks hold and the jets climb, and guard the left-outlane kickback -- it is the only save on a machine with no inlanes at all. Check what the SHUTTLE and STATION banks are paying and reroll a weak draw at the right-wall target before you work them.",
+        "goals": [
+          "dock-two-balls",
+          "bumper-value",
+          "kickback",
+          "reroll-the-award"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Load both docks and launch the multiball at the right popper, sweeping the drop bank into it on the way in. Re-dock a pair for the Rescue Jackpot, and clear the drops to four-times to light and then collect the extra ball.",
+        "goals": [
+          "multiball",
+          "rescue-jackpot",
+          "bonus-multiplier"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Multiball is the spectacle, but the real points live in patience: run the U-S-A lanes to a five-times Stop 'N' Score, drop the ramp target, and time a single ramp shot so the count reads near ninety-nine thousand. That one shot dwarfs anything the multiball hands you.",
+        "goals": [
+          "big-score-route",
+          "usa-multiplier",
+          "stop-n-score"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1351 @@
+{
+  "machine": "Pokémon (Stern Pinball, 2026)",
+  "defaultFx": "pika",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane / Plunger",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Manual plunger on the far right; sends the ball around the top of the playfield. Hold the left flipper during the plunge for a Super Skill Shot."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Lanes (Tall Grass)",
+      "type": "lane",
+      "x": 0.52,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Rollover lanes across the back; the flashing lane is the standard skill-shot target and builds Bonus X (caps 20x). Feeds the bumpers below."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Tall Grass Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.1967,
+      "y": 0.8088,
+      "trim": "all",
+      "notes": "Two lit pop bumpers representing tall grass; fill the Discover gauge to spawn wild Pokemon. Fed by the right orbit around the back and weak left-orbit shots."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Bulbasaur)",
+      "type": "orbit",
+      "x": 0.1565,
+      "y": 0.5882,
+      "trim": "all",
+      "notes": "Outer left orbit; a clean shot loops the back and returns to the right flipper. Home shot for Bulbasaur story mode; feeds Bulbasaur TEAM loops.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "psyduck",
+      "name": "Psyduck Target / Sneak-In",
+      "type": "standup",
+      "x": 0.1878,
+      "y": 0.4853,
+      "trim": "all",
+      "notes": "Low left, gating the left-orbit entrance. Pro = standup target; premium-le = Sneak-In scoop/subway with ball-saver. Secret skill-shot target (3x value)."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Squirtle)",
+      "type": "ramp",
+      "x": 0.3474,
+      "y": 0.6176,
+      "trim": "all",
+      "notes": "Steepest shot; one-way gate registers partial shots and allows backhands. The CATCH! capture shot and Squirtle home shot. premium-le adds the Whirlpool spinning bowl.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "berry-left",
+      "name": "Left Berry Target",
+      "type": "standup",
+      "x": 0.1948,
+      "y": 0.5588,
+      "trim": "all",
+      "notes": "Standup flanking the left side of the Squirtle ramp entrance; part of the 2x Playfield / Berry set."
+    },
+    {
+      "id": "berry-right",
+      "name": "Right Berry Target",
+      "type": "standup",
+      "x": 0.3271,
+      "y": 0.5735,
+      "trim": "all",
+      "notes": "Standup flanking the right side of the Squirtle ramp entrance; part of the 2x Playfield / Berry set."
+    },
+    {
+      "id": "berry-center",
+      "name": "Center Berry Target",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Third berry target left of the Pokedex captive ball. Hit when flashing to arm 2x Playfield; hitting it during 2x extends the timer +5s."
+    },
+    {
+      "id": "poke-ball-lock",
+      "name": "Poke Ball Lock Mech",
+      "type": "mech",
+      "x": 0.2883,
+      "y": 0.6324,
+      "trim": "all",
+      "notes": "Illuminated Poke Ball at the left-ramp area used to catch Pokemon. Pro = static RGB with ball-stop post; premium-le = animatronic ball-lock (LE = Master Ball sculpt)."
+    },
+    {
+      "id": "training-targets",
+      "name": "Training Targets",
+      "type": "target-bank",
+      "x": 0.17,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Left-side targets that train/heal Pokemon, extend mode timers, and are required for Travel. One heal per swap in Rival Battles."
+    },
+    {
+      "id": "battle-left",
+      "name": "BATTLE Targets - Left Bank",
+      "type": "target-bank",
+      "x": 0.4,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Left 3-bank of the center Battlefield that spells B-A-T-T-L-E; qualifies Team Rocket Multiball and deals Rival Battle damage. Also the 'Battlefield' combo shot."
+    },
+    {
+      "id": "battle-right",
+      "name": "BATTLE Targets - Right Bank",
+      "type": "target-bank",
+      "x": 0.59,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Right 3-bank of the center Battlefield spelling B-A-T-T-L-E; deals Rival Battle damage."
+    },
+    {
+      "id": "center-lane",
+      "name": "Center Lane",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Straight-up center shot between the BATTLE banks; Team Rocket MB start / super-jackpot lane, faint-jackpot lane, and arena-bonus cash-out."
+    },
+    {
+      "id": "meowth-balloon",
+      "name": "Meowth Balloon",
+      "type": "mech",
+      "x": 0.5637,
+      "y": 0.7574,
+      "trim": "all",
+      "notes": "Team Rocket bash toy that lowers over the arena when BATTLE is spelled; bash 3x (+2 each subsequent MB) to light multiball at the lane beneath it."
+    },
+    {
+      "id": "captive-ball",
+      "name": "Pokedex Captive Ball",
+      "type": "captive-ball",
+      "x": 0.6688,
+      "y": 0.6294,
+      "trim": "all",
+      "notes": "Triple captive ball; the game's hub shot. Scans Pokemon, finishes story modes, cashes out combos (Poke Balls = combo length), scores super jackpots. Best hit from the left flipper.",
+      "flipper": "left"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Pikachu)",
+      "type": "ramp",
+      "x": 0.6689,
+      "y": 0.5882,
+      "trim": "all",
+      "notes": "Encircles the Pikachu toy and feeds the right flipper fast. Home shot for Pikachu vs. Raichu multiball, Pikachu Hurry-Up (TEAM), and the Charizard mini-wizard start.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (Charmander)",
+      "type": "orbit",
+      "x": 0.8017,
+      "y": 0.5882,
+      "trim": "all",
+      "notes": "Right orbit; fastest route into the Tall Grass bumpers. Home shot for Charmander story mode and Charmander Super Spinner."
+    },
+    {
+      "id": "charmander-spinner",
+      "name": "Charmander Spinner",
+      "type": "spinner",
+      "x": 0.8,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Optical spinner at the front/entrance of the right (Charmander) orbit; ~30k-100k per spin depending on mode/TEAM boost."
+    },
+    {
+      "id": "town-scoop",
+      "name": "Town Scoop (Chansey)",
+      "type": "scoop",
+      "x": 0.88,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Far-right scoop; starts Rival Battles, collects Mystery awards, Travel, and Extra Balls. Ejects fast/dangerously - catch it live on the left flipper.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "town-targets",
+      "name": "Town Targets (Chansey)",
+      "type": "standup",
+      "x": 0.88,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Two standups near the town, reachable mainly via slingshot bounces; complete to light the outlane ball save."
+    },
+    {
+      "id": "action-button",
+      "name": "Action Button (Lockbar)",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.02,
+      "trim": "all",
+      "notes": "Lockbar button. Press while it blinks green to bank Team Rocket / Pikachu add-a-ball; also locks Pikachu Hurry-Up value, scores whirlpool prizes, and fires Pokedex Assist."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "standard-skill-shot",
+      "title": "Standard Skill Shot",
+      "category": "skillshot",
+      "difficulty": 1,
+      "summary": "The default plunge: hit a lit top lane for bonus multiplier, then let the ball drop into the bumpers to spawn a Pokemon.",
+      "reward": "+2x Bonus Multiplier (base 500k) and a bumper-spawned Pokemon",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Full-strength plunge to hit the flashing top lane",
+          "detail": "Send the ball all the way around the top of the playfield — +2x bonus multiplier (base 500k); the ball then falls into the Tall Grass bumpers, the main way to spawn Pokemon."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "super-skill-shot-center",
+      "title": "Super Skill Shot to Center Lane",
+      "category": "skillshot",
+      "difficulty": 3,
+      "summary": "Hold the left flipper on the plunge and redirect into the center lane to instantly complete BATTLE and lower the Meowth balloon, fast-tracking Team Rocket Multiball.",
+      "reward": "Instant BATTLE complete + balloon lowered (2x skill value, base 1M)",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge through to the flippers",
+          "detail": "Holding the left flipper diverts the plunge onto the playfield shots. Instantly completes BATTLE and lowers the Meowth balloon; if Team Rocket is already lit this starts the multiball and lights add-a-ball."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Hold the left flipper through a full-strength plunge to reach the center lane",
+          "detail": "Holding the left flipper diverts the plunge onto the playfield shots. Instantly completes BATTLE and lowers the Meowth balloon; if Team Rocket is already lit this starts the multiball and lights add-a-ball.",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-espeon",
+      "title": "Espeon Eeveelution Combo",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "A right-to-left-to-hub three-shot Eeveelution combo that ends on the captive ball, ideal for landing a shot multiplier on the finisher.",
+      "reward": "2.5M +500k per unique Eeveelution made; all 8 = 10M",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "Feeds the right flipper for the next shot"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Backhand the left ramp",
+          "detail": "In quick succession - the ramp gate registers partial shots"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Finish at the Pokedex captive ball",
+          "detail": "Aim the third shot onto a multiplied shot when possible; cashes combo Poke Balls"
+        }
+      ],
+      "fx": "pika"
+    },
+    {
+      "id": "combo-vaporeon",
+      "title": "Vaporeon Eeveelution Combo",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Ramp-to-ramp-to-Battlefield Eeveelution; a natural chain since both ramps feed a flipper.",
+      "reward": "2.5M +500k per unique Eeveelution made",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp",
+          "detail": "Backhandable from the left flipper",
+          "flipper": "left"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp",
+          "detail": "In quick succession"
+        },
+        {
+          "shot": "battle-left",
+          "action": "Hit the Battlefield targets",
+          "detail": "Completes the Vaporeon sequence"
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "combo-cashout",
+      "title": "Poke Ball Combo Cash-Out",
+      "category": "combo",
+      "difficulty": 2,
+      "summary": "Chain any two-or-more ramp/orbit shots then cash them at the captive ball for Poke Balls equal to the combo length - the input to the 50-ball extra ball and end-of-ball bonus.",
+      "reward": "Poke Balls = combo length (+1 per TEAM-boosted shot)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start a combo on the left orbit",
+          "detail": "Each combo shot awards 1 Poke Ball",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Continue with the right ramp",
+          "detail": "Making a 2-way combo lights the captive ball to finish",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Cash out at the captive ball",
+          "detail": "Awards Poke Balls equal to the full combo length"
+        }
+      ],
+      "fx": "pokeball"
+    },
+    {
+      "id": "team-rocket-mb",
+      "title": "Team Rocket Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Spell BATTLE to lower the Meowth balloon, bash it, then hit the lane beneath it to start the game's headline multiball.",
+      "reward": "Team Rocket Multiball; 6 jackpots light the super jackpot + shot multiplier",
+      "steps": [
+        {
+          "shot": "battle-left",
+          "action": "Spell B-A-T-T-L-E on the left bank",
+          "detail": "Center lane spots missed letters",
+          "link": "none"
+        },
+        {
+          "shot": "battle-right",
+          "action": "Finish the BATTLE letters on the right bank",
+          "detail": "Completing BATTLE lowers the Meowth balloon",
+          "link": "none"
+        },
+        {
+          "shot": "meowth-balloon",
+          "action": "Bash the Meowth balloon 3x",
+          "detail": "+2 hits required each subsequent multiball; lights the lane under the balloon"
+        },
+        {
+          "shot": "center-lane",
+          "action": "Shoot the lit lane under the balloon",
+          "detail": "Starts multiball; sneak-in: hitting this lane directly lights it instantly"
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "pikachu-raichu-mb",
+      "title": "Pikachu vs. Raichu Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "The easiest and most valuable story mode - a 2-ball multiball started by hammering the right ramp; collect 3 captive-ball super jackpots to complete.",
+      "reward": "3 super jackpots (2x at captive ball); the recommended opener",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp 3x to start",
+          "detail": "Easiest story mode and the most valuable, since it is a 2-ball multiball"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit the lit yellow shots for jackpots",
+          "detail": "Each shot goes dark after scoring until another jackpot lights it"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit the captive ball hard for the super jackpot",
+          "detail": "Worth the combined prior jackpots, scored at 2x; collect 3 to complete"
+        }
+      ],
+      "fx": "pika"
+    },
+    {
+      "id": "team-rocket-addaball",
+      "title": "Team Rocket Add-a-Ball Stack",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "The expert farming tactic: re-spell BATTLE during Team Rocket Multiball and bank add-a-balls off the action button to keep the multiball alive indefinitely.",
+      "reward": "Add-a-ball; extends the super-jackpot window",
+      "steps": [
+        {
+          "shot": "battle-left",
+          "action": "Re-spell BATTLE during multiball",
+          "detail": "Hit the center Battlefield banks while multiball runs"
+        },
+        {
+          "shot": "action-button",
+          "action": "Press the action button while it blinks green",
+          "detail": "Adds a ball; do this as balls drain to sustain the multiball - the core expert extension"
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "bulbasaur-story",
+      "title": "Bulbasaur Story Mode",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Start at the left orbit; light ramps and orbits for pollen and bank it at the center berry, or leave the berry alone and clear a whole set to raise the pollen multiplier instead.",
+      "reward": "Shot multiplier, and a higher-scoring Charizard mini-wizard",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the left orbit 3x to start",
+          "detail": "All ramps/orbits then light for pollen (base 400k, +50k per shot)"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect lit pollen shots",
+          "detail": "Clearing a full 4-shot set WITHOUT the berry = +1x pollen multiplier"
+        },
+        {
+          "shot": "berry-center",
+          "action": "Hit the center berry to bank pollen and relight shots",
+          "detail": "Optional - banks accumulated pollen"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Finish at the captive ball after 6 lit shots",
+          "detail": "Completes the mode"
+        }
+      ],
+      "fx": "pika"
+    },
+    {
+      "id": "squirtle-story",
+      "title": "Squirtle Story Mode",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Start at the left ramp; raise the whirlpool multiplier via blue shots and finish at the captive ball. Stacks efficiently with Team Rocket Multiball.",
+      "reward": "Shot multiplier; ideal to stack with Team Rocket MB",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp 3x to start",
+          "detail": "The steepest shot on the game; backhandable"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Hit other blue shots to raise the whirlpool multiplier",
+          "detail": "Up to 4x, each lasts ~10s"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Finish at the captive ball after 3 left-ramp shots",
+          "detail": "Completes the mode"
+        }
+      ],
+      "fx": "wave"
+    },
+    {
+      "id": "charmander-story",
+      "title": "Charmander Story Mode",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Start at the right orbit; rip the Charmander spinner for jackpots and raise the spinner multiplier, finishing after 100 spins at the captive ball.",
+      "reward": "Shot multiplier, and a higher-scoring Charizard mini-wizard",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the right orbit 3x to start",
+          "detail": "Fastest route to the spinner"
+        },
+        {
+          "shot": "charmander-spinner",
+          "action": "Rip the spinner for jackpots",
+          "detail": "~30k per spin"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Raise the spinner jackpot multiplier",
+          "detail": "Left orbit + both ramps raise it up to 4x (each ~10s)"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Finish at the captive ball after 100 spins",
+          "detail": "Completes the mode"
+        }
+      ],
+      "fx": "pika"
+    },
+    {
+      "id": "rival-battle",
+      "title": "Rival Battle",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "After catching a Pokemon, start a battle at the town scoop; deal damage with flashing shots and Battlefield targets, then cash faint jackpots and the victory bonus.",
+      "reward": "Compounding faint jackpots + a speed-scaled victory bonus",
+      "steps": [
+        {
+          "shot": "town-scoop",
+          "action": "Shoot the lit town scoop to start the battle",
+          "detail": "First battle needs 1 capture; +1 each subsequent"
+        },
+        {
+          "shot": "battle-right",
+          "action": "Hit flashing shots and Battlefield targets to deal damage",
+          "detail": "Type-advantaged shots flash faster; targets build an arena bonus"
+        },
+        {
+          "shot": "center-lane",
+          "action": "Cash the arena bonus / faint jackpot at the center lane",
+          "detail": "Faint jackpot is multiplied by every Pokemon you have defeated"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Cash the victory bonus at the lit left ramp",
+          "detail": "Lit ~10s after clearing all opponents; scaled to how fast you won - cash it fast"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "twox-playfield-berries",
+      "title": "2x Playfield (Berries)",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Hit the two flanking berries twice each plus the flashing center berry to run 20 seconds of doubled scoring - layer it over any big scoring window.",
+      "reward": "2x Playfield for 20s (doubles all scoring)",
+      "steps": [
+        {
+          "shot": "berry-left",
+          "action": "Hit the left berry target twice",
+          "detail": "Part of the 3-berry arm sequence",
+          "link": "none"
+        },
+        {
+          "shot": "berry-right",
+          "action": "Hit the right berry target twice",
+          "detail": "Both flanking berries must be double-hit",
+          "link": "none"
+        },
+        {
+          "shot": "berry-center",
+          "action": "Hit the center berry when it flashes",
+          "detail": "Starts 20s of 2x playfield; hitting the center berry during it adds +5s (cap 20s)"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "shot-multiplier-stack",
+      "title": "Shot Multiplier (Stack to 3x)",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Complete a story mode (or first Team Rocket super jackpot) to qualify a 2x shot multiplier, hang it on your money shots, and cycle a full set to unlock 3x.",
+      "reward": "2x -> 3x scoring on your best shots for the rest of the ball",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Apply your first 2x to the left ramp",
+          "detail": "Best target - captures and Team Rocket jackpots both score here; affects everything that shot scores"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Hang the next multiplier on the right-orbit spinner",
+          "detail": "Second-priority multiplier shot"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Once every shot holds a 2x, lock the next as 3x",
+          "detail": "The next qualified shot lights 3x - put it on your best shot"
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "pikachu-charizard-wizard",
+      "title": "Pikachu vs. Charizard",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The story-mode mini-wizard: play all four story modes to light the right ramp, then run four phases and a capped super jackpot in a four-ball multiball. How many of those modes you actually completed sets the scoring inside.",
+      "reward": "Super jackpot up to 100M (200M with 2x playfield)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Complete all four story modes",
+          "detail": "Bulbasaur, Squirtle, Pikachu and Charmander - playing all four lights the ramp, and every one you finish raises the scoring inside"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Start the mini-wizard at the lit right ramp",
+          "detail": "Starts only when nothing else is running; four-ball multiball"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Hit 2 lit shots per phase, then the captive ball",
+          "detail": "Scores combined value x balls in play; each phase base = 10% of that story mode's total score"
+        },
+        {
+          "shot": "center-lane",
+          "action": "After all 4 phases, hit the center lane super jackpot",
+          "detail": "Cap 100M (200M with 2x playfield); Last Chance adds a ball if down to one"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "lucario-catch-path",
+      "title": "Lucario Battle Qualification (Catch Path)",
+      "category": "wizard",
+      "difficulty": 3,
+      "summary": "The catch-and-battle progression toward the Lucario final challenge: discover, scan, run the CATCH! hurry-up, capture at the left ramp, then chain Rival Battles across biomes.",
+      "reward": "Progress toward the Lucario mini-wizard (rules TBD in current code)",
+      "steps": [
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed the Tall Grass bumpers to fill the Discover gauge",
+          "detail": "Top lanes and bumpers spawn a wild Pokemon"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Scan the discovered Pokemon at the Pokedex",
+          "detail": "Starts the CATCH! hurry-up at ~2M (brief ball save on scan)"
+        },
+        {
+          "shot": "battle-left",
+          "action": "Spell C-A-T-C-H on the purple shots",
+          "detail": "Capture value = combined value of the purple shots collected"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Capture at the left ramp",
+          "detail": "The purple targets swap out after every catch — Capture 2 lights the left ramp then right ramp, Capture 3 the training targets, right ramp and left orbit — while the catch itself always locks in at the left ramp"
+        },
+        {
+          "shot": "town-scoop",
+          "action": "Start and win Rival Battles at the town scoop",
+          "detail": "Chain catches (Forest 1, Lake 3, Desert 6...) and battles toward the Lucario challenge"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "best-opener",
+      "title": "Best Opener / First Three Shots",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "The consensus expert opening line: safe top-lane plunge into the bumpers, start Pikachu's easy multiball, queue Team Rocket, and hang your first multiplier on the left ramp.",
+      "reward": "Safe, high-value opening line feeding all three scoring paths",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Standard plunge to a lit top lane",
+          "detail": "Feeds the bumpers - the main way to spawn Pokemon; zero drain risk"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp to start Pikachu's story mode",
+          "detail": "Easiest mode and the most valuable (a 2-ball multiball)",
+          "plunge": "full"
+        },
+        {
+          "shot": "battle-left",
+          "action": "Spell BATTLE during ball-save to lower the balloon",
+          "detail": "Queues Team Rocket Multiball to stack later"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hang your first shot multiplier on the left ramp",
+          "detail": "Backhandable; where captures and Team Rocket jackpots score"
+        }
+      ],
+      "fx": "pika"
+    },
+    {
+      "id": "beginner-first-30",
+      "title": "Beginner First 30 Seconds",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "A drain-averse beginner sequence: front-load safe timer-based scoring and a first catch before touching volatile multiball geometry.",
+      "reward": "Front-loaded safe scoring plus a first catch and banked Poke Balls",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Skill-shot plunge to a lit top lane",
+          "detail": "Builds bonus X and drops toward the bumpers"
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let the ball work the Tall Grass bumpers",
+          "detail": "Spawns your first wild Pokemon"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the right ramp toward Pikachu's story mode",
+          "detail": "Easiest, safest mode to start"
+        },
+        {
+          "shot": "training-targets",
+          "action": "Hit training/berry targets to extend the mode timer",
+          "detail": "Completing them extends the mode timer"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Cash any 2-way combo at the Pokedex captive ball",
+          "detail": "Banks Poke Balls into the end-of-ball bonus"
+        }
+      ],
+      "fx": "pokeball"
+    },
+    {
+      "id": "faint-jackpot-engine",
+      "title": "Rival Battle Faint-Jackpot Engine",
+      "category": "strategy",
+      "difficulty": 3,
+      "summary": "The biggest sustained points engine: keep your party alive and chain Rival Battles so the faint-jackpot multiplier compounds - 2x, 3x, and higher - across successive battles.",
+      "reward": "The top documented sustained scoring source in the game",
+      "steps": [
+        {
+          "shot": "town-scoop",
+          "action": "Start a rival battle after each catch",
+          "detail": "Keep your own party alive so the multiplier keeps compounding"
+        },
+        {
+          "shot": "battle-right",
+          "action": "Deal damage with flashing shots + Battlefield targets",
+          "detail": "Type-advantaged shots flash faster and do more damage"
+        },
+        {
+          "shot": "center-lane",
+          "action": "Collect faint jackpots at the center lane",
+          "detail": "Multiplied by every Pokemon you have defeated - 2x first battle, 3x second, and up"
+        },
+        {
+          "shot": "town-scoop",
+          "action": "Swap Pokemon after 3 damage shots at the flashing scoop",
+          "detail": "Right flipper selects; training targets heal one Pokemon per swap"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "team-rocket-super-jackpot",
+      "title": "Team Rocket Super Jackpot",
+      "category": "multiball",
+      "summary": "During Team Rocket Multiball, collect the six lit jackpots off the two ramps and the Meowth balloon, then cash the super jackpot at the lit lane beneath the balloon.",
+      "difficulty": 3,
+      "reward": "Super jackpot worth the accumulated jackpot value, plus a shot multiplier",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Collect lit jackpots on the left ramp",
+          "detail": "Backhandable and one of the fastest jackpot shots to repeat during multiball",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate jackpots on the right ramp",
+          "detail": "Feeds the right flipper quickly so you can keep cycling lit shots",
+          "link": "none"
+        },
+        {
+          "shot": "meowth-balloon",
+          "action": "Take the third jackpot on the Meowth balloon",
+          "detail": "The two ramps and the balloon are the only jackpot shots - six in any mix lights the super, and later cycles need more; BATTLE during multiball feeds the add-a-ball button, not a jackpot",
+          "link": "none"
+        },
+        {
+          "shot": "center-lane",
+          "action": "Shoot the lit center lane for the super jackpot",
+          "detail": "Cashing it lights the outer ramps and orbits for 15 seconds of unlimited supers - that burst, not the single collect, is the multiball's real payoff, so stack a 2x playfield window over it if you can"
+        }
+      ],
+      "fx": "balloon"
+    },
+    {
+      "id": "extra-ball-poke-balls",
+      "title": "Extra Ball via Poke Balls",
+      "category": "strategy",
+      "summary": "Farm Poke Balls by cashing combos at the Pokedex until the total lights an extra ball, then collect it at the town scoop.",
+      "difficulty": 3,
+      "reward": "Extra ball at 50 banked Poke Balls",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Start combos on the ramps and orbits",
+          "detail": "Every shot in a live combo chain is worth one Poke Ball",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Extend the chain with the left orbit",
+          "detail": "Longer chains cash out for more balls, so keep the combo alive before finishing",
+          "link": "none"
+        },
+        {
+          "shot": "captive-ball",
+          "action": "Cash the chain at the Pokedex captive ball",
+          "detail": "Awards Poke Balls equal to the full combo length; repeat until the extra ball lights"
+        },
+        {
+          "shot": "town-scoop",
+          "action": "Collect the lit extra ball at the town scoop",
+          "detail": "The scoop kicks out fast - be ready to catch it on the left flipper"
+        }
+      ],
+      "fx": "pokeball"
+    },
+    {
+      "id": "secret-outlane-ball-save-steer",
+      "title": "Steer the Outlane Ball Save",
+      "category": "secret",
+      "summary": "Pokemon's outlane ball save only ever guards one outlane at a time, and which side that is can be changed. Completing the town targets lights it, and a flipper press moves the protection across, so the save can be waiting on whichever outlane the ball is actually drifting toward.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Complete the town targets to light the outlane ball save",
+        "Check which outlane is currently lit, because only one side is protected at a time",
+        "Press either flipper button to alternate the save to the other outlane",
+        "Move it to the side the ball is heading for before the ball gets there",
+        "Each time the save is used, one more completion of the town targets is needed to light it again"
+      ],
+      "reward": "Outlane ball save protection on the side you choose"
+    },
+    {
+      "id": "catch-ladder",
+      "title": "Catching Gets Harder Every Time",
+      "category": "progression",
+      "summary": "Catches are the currency the whole game runs on. They are what lights rival battles, what opens the next habitat, and what pads your bonus at the end of the ball. The first one is nearly free and every one after it stretches the sequence, so a catch made early in a ball is worth far more than the same catch made late.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Rattle the bumpers and roll the top lanes — working those switches is what turns up a wild Pokemon.",
+        "Once one has been found, shoot the Pokedex captive ball to scan it. That starts the catch hurry-up and switches on a short ball save.",
+        "Hit the lit purple shots to build the catch value, then finish at the left ramp to actually make the catch.",
+        "The first catch of a game needs only one purple shot. Every catch after it needs more.",
+        "Catching lights the scoop on the right for a rival battle. The first battle costs one catch, and each battle after it costs more than the one before.",
+        "Every Pokemon you catch also builds your end-of-ball bonus, so a long ball with several catches pays you twice."
+      ],
+      "reward": "Rival battles unlocked at the scoop, progress toward a new habitat, and a bigger end-of-ball bonus"
+    },
+    {
+      "id": "battle-type-swap",
+      "title": "Swap Your Pokemon for a Type Advantage",
+      "category": "progression",
+      "summary": "Rival battles are the one place where type matchups change the math. You always open with Pikachu, but the scoop lets you bench it and bring in another member of your party, and choosing the type that beats what you are facing turns a slow grind into a quick knockout.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Every rival battle opens with Pikachu, an electric type.",
+        "Ramp, orbit and Battlefield shots deal damage in your active Pokemon's type: fire for Charmander, water for Squirtle, electric for Pikachu, grass and poison for Bulbasaur.",
+        "During the battle the scoop flashes in the colour of a Pokemon on your bench. Shoot it to bring that one in.",
+        "Tap the right flipper to change which party member the scoop is offering before you take the shot.",
+        "An attack that is strong against what you are facing does more damage. Charmander's fire punishes the forest's bug types, and Bulbasaur's grass punishes the lake's water types.",
+        "Complete the training targets during a battle to heal whichever Pokemon is out at the time.",
+        "If your active Pokemon is knocked out, the next one in your party takes over."
+      ],
+      "reward": "Faster knockouts and a party still standing when the next battle starts"
+    },
+    {
+      "id": "habitat-travel",
+      "title": "Travelling Between Habitats",
+      "category": "progression",
+      "summary": "The game is built as a journey across four habitats, and every one of them has to be earned. You begin in the forest and only move on once you have caught something there and taken on that habitat's rival team — and because each habitat further along the journey demands more catches before its battle will even light, most games never leave the trees.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Every game begins in the forest, where bug types dominate.",
+        "Catch a Pokemon in the habitat you are currently in.",
+        "Take on that habitat's rival battle.",
+        "Complete the training targets by the left orbit as well, outside of a story mode — catch, battle and training together are what open travel to a new habitat.",
+        "The lake is stocked with water types; the desert and the mountain are the other two habitats.",
+        "Each habitat further along needs more catches before its rival battle will light, which is why most games end in the forest."
+      ],
+      "reward": "A new habitat with different Pokemon to find and a differently typed rival team"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-wild-catch",
+      "title": "Caught Your First One",
+      "desc": "Spawn a wild Pokemon from the Tall Grass bumpers, scan it at the Pokedex, and finish the CATCH! hurry-up with a successful capture.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "lucario-catch-path"
+    },
+    {
+      "id": "lit-lane-plunge",
+      "title": "Lane Plunge Collected",
+      "desc": "Collect the standard skill shot by plunging into the flashing top lane.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "standard-skill-shot"
+    },
+    {
+      "id": "redirected-plunge",
+      "title": "Redirected Plunge",
+      "desc": "Collect a held-flipper super skill shot by redirecting the plunge into the lit center lane.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skill-shot-center"
+    },
+    {
+      "id": "raichu-showdown-cleared",
+      "title": "Raichu Showdown Cleared",
+      "desc": "Complete the Pikachu vs. Raichu multiball by collecting all three captive-ball super jackpots.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "pikachu-raichu-mb"
+    },
+    {
+      "id": "balloon-popped",
+      "title": "Balloon Down, Balls Out",
+      "desc": "Spell BATTLE, bash the Meowth balloon down, and start Team Rocket Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "team-rocket-mb"
+    },
+    {
+      "id": "rocket-super-collected",
+      "title": "Rocket Super Collected",
+      "desc": "Collect six jackpots during Team Rocket Multiball and then cash the lit super jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "team-rocket-super-jackpot"
+    },
+    {
+      "id": "bulbasaur-cleared",
+      "title": "Bulbasaur Story Cleared",
+      "desc": "Finish the Bulbasaur story mode at the Pokedex captive ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bulbasaur-story"
+    },
+    {
+      "id": "squirtle-cleared",
+      "title": "Squirtle Story Cleared",
+      "desc": "Finish the Squirtle story mode at the Pokedex captive ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "squirtle-story"
+    },
+    {
+      "id": "charmander-cleared",
+      "title": "Charmander Story Cleared",
+      "desc": "Rip 100 spins on the Charmander spinner and close the story mode at the captive ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "charmander-story"
+    },
+    {
+      "id": "berries-doubled",
+      "title": "Berries Doubled",
+      "desc": "Arm all three berry targets and run a 2x playfield window.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "twox-playfield-berries"
+    },
+    {
+      "id": "triple-shot-locked",
+      "title": "Triple Shot Locked",
+      "desc": "Qualify shot multipliers on a full set of shots until a 3x multiplier lights, then place it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "shot-multiplier-stack"
+    },
+    {
+      "id": "fifty-poke-balls",
+      "title": "Fifty Balls Banked",
+      "desc": "Bank 50 Poke Balls from combo cash-outs and collect the resulting extra ball at the town scoop.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "extra-ball-poke-balls"
+    },
+    {
+      "id": "rival-beaten",
+      "title": "Rival Beaten",
+      "desc": "Win a Rival Battle outright and cash the victory bonus before it times out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rival-battle"
+    },
+    {
+      "id": "faint-chain-three",
+      "title": "Faint Chain of Three",
+      "desc": "Win three Rival Battles in one game so the faint jackpot compounds to at least a 3x multiplier.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "faint-jackpot-engine"
+    },
+    {
+      "id": "all-eight-eeveelutions",
+      "title": "Every Eeveelution Made",
+      "desc": "Complete all eight Eeveelution combo sequences in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-espeon"
+    },
+    {
+      "id": "four-stories-swept",
+      "title": "Four Stories Swept",
+      "desc": "Complete all four story modes in one game to light the mini-wizard at the right ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "pikachu-charizard-wizard"
+    },
+    {
+      "id": "charizard-super-cashed",
+      "title": "Charizard Super Cashed",
+      "desc": "Clear all four phases of the Pikachu vs. Charizard mini-wizard and collect its center-lane super jackpot.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "pikachu-charizard-wizard"
+    },
+    {
+      "id": "lucario-challenge-reached",
+      "title": "Lucario Challenge Reached",
+      "desc": "Chain enough catches and Rival Battle wins across biomes to reach the Lucario final challenge.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "lucario-catch-path"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-center",
+      "title": "Held-Flipper Center Lane",
+      "text": "Hold the left flipper through a full-strength plunge so the ball diverts onto the playfield, then put it in the center lane. Landing it completes BATTLE outright and lowers the balloon, so the plunge is worth as much as several playfield shots.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "super-skill-shot-center",
+      "shots": [
+        "shooter-lane",
+        "center-lane"
+      ]
+    },
+    {
+      "id": "left-ramp-ownership",
+      "title": "Own the Left Ramp",
+      "text": "Alternate a backhand off a left-flipper cradle with a live shot off the right flipper. It is the steepest shot on the game and the one every capture locks in at, so a ramp you can only hit one way is a ramp you will miss under pressure.",
+      "reps": "15 backhands, 15 live",
+      "focus": "accuracy",
+      "goal": "lucario-catch-path",
+      "shots": [
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "pokedex-hub",
+      "title": "Pokedex From a Cradle",
+      "text": "Trap on the left flipper and hit the captive ball from there rather than swinging at it on the fly. Everything routes through this shot — scans, story-mode finishes, combo cash-outs — so make it a shot you take deliberately.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "combo-cashout",
+      "shots": [
+        "captive-ball",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "scoop-kickout-catch",
+      "title": "Town Scoop Kickout",
+      "text": "Shoot the town scoop and have the left flipper ready before the eject fires — it comes out fast and hard. Catch it live rather than swinging at it, then reset and go again.",
+      "reps": "10 ejects",
+      "focus": "ball-control",
+      "goal": "rival-battle",
+      "shots": [
+        "town-scoop"
+      ]
+    },
+    {
+      "id": "eeveelution-chain",
+      "title": "Right, Left, Hub",
+      "text": "Right ramp, backhand the left ramp off the return, finish at the captive ball. The one-way gate on the left ramp registers a partial shot, so a backhand that only half makes it still keeps the chain alive.",
+      "reps": "8 chains",
+      "focus": "flow",
+      "goal": "combo-espeon",
+      "shots": [
+        "right-ramp",
+        "left-ramp",
+        "captive-ball"
+      ]
+    },
+    {
+      "id": "berry-arm-sequence",
+      "title": "Berry Arm Sequence",
+      "text": "Hit each flanking berry twice, then take the center berry while it flashes. The two flanking targets sit right at the left-ramp entrance, so work out which flipper reaches each one cleanly before you need the doubler.",
+      "reps": "5 full arms",
+      "focus": "accuracy",
+      "goal": "twox-playfield-berries",
+      "shots": [
+        "berry-left",
+        "berry-right",
+        "berry-center"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Read the color and you know what the button holds. Green means an add-a-ball is waiting, red means a Pokedex Assist is loaded. In between it locks in hurry-up values and grabs whirlpool prizes while the game is holding your ball for you.",
+    "uses": [
+      {
+        "when": "BATTLE re-spelled during Team Rocket Multiball",
+        "what": "Press while it blinks green to bank an add-a-ball — the standard way to stretch that multiball out."
+      },
+      {
+        "when": "Pikachu Hurry-Up, ball held at the right ramp",
+        "what": "Mash to drive the value up from 6M; only the number showing at release actually scores."
+      },
+      {
+        "when": "Ball spinning in the Squirtle whirlpool",
+        "what": "Press to take the prize showing right then at double value; every spin swaps the award."
+      },
+      {
+        "when": "CATCH! hurry-up running, button blinking red",
+        "what": "Spends a Pokedex Assist to collect the lit shot for you — it can't take the final catch shot."
+      },
+      {
+        "when": "Rival battle underway, Assist loaded",
+        "what": "Press and the game scores your most valuable lit shot without you shooting it."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Pokemon (Stern, 2026) sends you across four habitats to catch Pokemon and win Rival Battles. Discover and catch wild Pokemon, run the four story modes, and climb toward the Charizard and Lucario wizard goals.",
+    "loop": [
+      "Plunge a lit top lane to build your bonus multiplier, then feed the ball down into the Tall Grass bumpers, which turn up a wild Pokemon.",
+      "Scan it at the Pokedex captive ball to start the CATCH hurry-up, hit the purple shots, and finish at the left ramp to make the catch.",
+      "Spell BATTLE on the center banks to lower the Meowth balloon, bash it, and shoot the lane beneath it for Team Rocket Multiball.",
+      "Start a story mode at its home shot -- left orbit, left ramp, right orbit or right ramp -- to earn a shot multiplier you hang on your best shot.",
+      "Take a caught Pokemon into a Rival Battle at the town scoop and chain battles so the faint jackpot keeps compounding."
+    ],
+    "lights": [
+      {
+        "id": "tall-grass-lanes",
+        "name": "Top Lanes (Tall Grass)",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes"
+          }
+        ],
+        "lit": "The flashing rollover is your skill-shot lane, and every top lane you complete steps up the Bonus multiplier, which climbs toward a twenty-times ceiling.",
+        "flashing": null,
+        "control": null,
+        "then": "Roll the lit lane, then let the ball settle down into the Tall Grass bumpers below -- working the bumpers fills the Discover gauge and turns up a wild Pokemon for you to scan.",
+        "goals": [
+          "standard-skill-shot",
+          "catch-ladder"
+        ]
+      },
+      {
+        "id": "pokedex-captive-ball",
+        "name": "Pokedex Captive Ball",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "captive-ball"
+          }
+        ],
+        "lit": "The triple captive ball is the game's hub -- it scans a discovered Pokemon to start the catch, cashes combos into Poke Balls, finishes story modes, and collects super jackpots.",
+        "flashing": null,
+        "control": null,
+        "then": "Trap on the left flipper and take it from the cradle rather than swinging on the fly. Scanning starts the CATCH hurry-up with a short ball save; the first catch of the game needs a single purple shot and each one after asks for more.",
+        "goals": [
+          "combo-cashout",
+          "catch-ladder",
+          "extra-ball-poke-balls"
+        ]
+      },
+      {
+        "id": "battle-banks",
+        "name": "BATTLE Banks & Meowth Balloon",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "battle-left"
+          },
+          {
+            "shot": "battle-right"
+          },
+          {
+            "shot": "meowth-balloon"
+          },
+          {
+            "shot": "center-lane"
+          }
+        ],
+        "lit": "The two center Battlefield banks spell B-A-T-T-L-E, and the center lane spots any letter you miss; completing the word lowers the Meowth balloon over the arena.",
+        "flashing": "With BATTLE spelled, the Meowth balloon flashes -- bash it three times to light the lane directly beneath it.",
+        "control": null,
+        "then": "Shoot the lit lane under the balloon to start Team Rocket Multiball. Re-spelling BATTLE during the multiball feeds add-a-balls off the action button rather than jackpots, which is how you keep it alive.",
+        "goals": [
+          "team-rocket-mb",
+          "team-rocket-super-jackpot",
+          "team-rocket-addaball"
+        ]
+      },
+      {
+        "id": "berry-doubler",
+        "name": "Berries (2x Playfield)",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "berry-left"
+          },
+          {
+            "shot": "berry-right"
+          },
+          {
+            "shot": "berry-center"
+          }
+        ],
+        "lit": "The two flanking berries take two hits each, and then the center berry flashes to arm 2x Playfield.",
+        "flashing": "The flashing center berry starts twenty seconds of doubled scoring; hitting it again during that window adds a few seconds toward the cap.",
+        "control": null,
+        "then": "Layer 2x Playfield over your biggest window -- a multiball or a super-jackpot burst -- so everything scores double while it runs.",
+        "goals": [
+          "twox-playfield-berries"
+        ]
+      },
+      {
+        "id": "story-home-shots",
+        "name": "Story Home Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "right-ramp"
+          }
+        ],
+        "lit": "Each story Pokemon lives at its own shot -- Bulbasaur at the left orbit, Squirtle at the left ramp, Charmander at the right orbit, Pikachu at the right ramp -- and three hits to a home shot begins that mode.",
+        "flashing": null,
+        "control": null,
+        "then": "Finishing a story mode qualifies a shot multiplier you hang on your money shot; playing all four lights the right ramp for the Pikachu vs. Charizard mini-wizard.",
+        "goals": [
+          "bulbasaur-story",
+          "squirtle-story",
+          "charmander-story",
+          "shot-multiplier-stack",
+          "pikachu-charizard-wizard"
+        ]
+      },
+      {
+        "id": "town-scoop-battles",
+        "name": "Town Scoop (Rival Battles)",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "town-scoop"
+          }
+        ],
+        "lit": "The far-right Chansey scoop starts a Rival Battle once you have caught a Pokemon, and also hands out Mystery awards, Travel to a new habitat, and lit extra balls.",
+        "flashing": null,
+        "control": {
+          "input": "right-flipper",
+          "effect": "during a battle the scoop flashes in a benched Pokemon's colour, and a tap of the right flipper changes which party member it is offering, so you can bring in whichever type has the advantage over what you face",
+          "when": "before you shoot the flashing scoop mid-battle"
+        },
+        "then": "Keep your party alive and chain battles: the faint jackpot at the center lane is multiplied by every Pokemon you have beaten, so it compounds into the biggest sustained points source on the game. Catch, battle, and clear the training targets to open Travel to the next habitat.",
+        "goals": [
+          "rival-battle",
+          "faint-jackpot-engine",
+          "battle-type-swap",
+          "habitat-travel"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Clear the two town targets and the outlane ball save lights up, then tap either flipper to slide that protection to whichever outlane the ball is drifting toward. Only one side is guarded at a time, and each save you spend burns it -- clear the town targets again to relight it.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Plunge safely to a lit top lane and let the bumpers spawn your first Pokemon, then start Pikachu's easy two-ball multiball at the right ramp. Clear the town targets early so the outlane ball save is lit and can be steered before you take any risks.",
+        "goals": [
+          "standard-skill-shot",
+          "pikachu-raichu-mb",
+          "secret-outlane-ball-save-steer",
+          "beginner-first-30"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Put your first shot multiplier onto the left ramp, arm 2x Playfield at the berries, and queue Team Rocket Multiball by spelling BATTLE so you can stack it over a story mode.",
+        "goals": [
+          "shot-multiplier-stack",
+          "twox-playfield-berries",
+          "team-rocket-mb",
+          "best-opener"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Run all four story modes and the right ramp lights for the Pikachu vs. Charizard mini-wizard, a four-ball multiball with a super jackpot up to a hundred million -- doubled under 2x Playfield. Chaining Rival Battles for the compounding faint jackpot is the biggest sustained engine underneath it.",
+        "goals": [
+          "pikachu-charizard-wizard",
+          "lucario-catch-path",
+          "faint-jackpot-engine"
+        ]
+      }
+    ]
+  }
+}

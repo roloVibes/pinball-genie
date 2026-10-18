@@ -1,0 +1,694 @@
+{
+  "machine": "Ripley's Believe It or Not! (Stern, 2004)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Manual plunger aimed straight at the side scoop rather than over the top — the skill shot lives here. Too hard and you clip the standups above for a rebound down the right outlane; too soft and the ball dies down the left outlane untouched. No ball saver either way."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper-Right Flipper",
+      "type": "flipper",
+      "x": 0.85,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Full-length third flipper. Reaches the Shrunken Head, both loops, several Tomb Stone standups and the side-scoop entrance; it can also tap the vari-target but can't send it into the sink hole."
+    },
+    {
+      "id": "side-scoop",
+      "name": "Side Scoop",
+      "type": "scoop",
+      "x": 0.6,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Direct shot off the plunger, from the upper flipper, or fed by a wireform out of the Temple's lane C. The scoop's own award arrow lights when something is waiting.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "lower-pop-bumpers",
+      "name": "Lower Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.28,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Three bumpers below the Idol; build Bigfoot value along with the upper set. The right one is chopped off to make room for the side scoop."
+    },
+    {
+      "id": "upper-pop-bumpers",
+      "name": "Upper Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.74,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "Sit below the rollover lanes; also build Bigfoot value and can kick the ball back up into the lanes."
+    },
+    {
+      "id": "the-idol",
+      "name": "The Idol",
+      "type": "magnet",
+      "x": 0.2,
+      "y": 0.32,
+      "trim": "all",
+      "notes": "A magnet under the shrunken idol head grabs and tosses any ball entering from below, including ones exiting the lower pop bumpers. Hits accumulate on five lamps in front."
+    },
+    {
+      "id": "tomb-stone-risky",
+      "name": "Tomb Stone (by the Idol)",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "The most dangerous of the Tomb Stone standups — a rebound here can feed the middle drain. Treat it as a last resort, not a target."
+    },
+    {
+      "id": "tomb-stone-bank",
+      "name": "Tomb Stone Standups",
+      "type": "target-bank",
+      "x": 0.45,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Several safer Tomb Stone standups sit around the playfield — a pair above the side scoop, a pair flanking the Shrunken Head, and one below the upper flipper near the shooter lane exit. Every one of them counts toward the Europe continent total."
+    },
+    {
+      "id": "lower-loop",
+      "name": "Lower Loop",
+      "type": "loop",
+      "x": 0.14,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "One of the three jackpot shots and the Millions Plus target. A spinner sits at the entrance. Feeds the upper-right rollover lanes, or all the way around to the upper flipper on a strong shot.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper Loop",
+      "type": "loop",
+      "x": 0.12,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Sits above the lower loop and is the primary Super Jackpot collection point. Loops back down through the lower pop bumpers.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "the-temple",
+      "name": "The Temple",
+      "type": "diverter",
+      "x": 0.16,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Fed by the centre ramp. Unlit, the ball rolls straight through lane A; lit (by the right ramp), it's diverted into a rubbered area that drops it into lane B or C instead. Each lane lights a square on the Temple Jewel grid above the flippers."
+    },
+    {
+      "id": "shrunken-head",
+      "name": "Shrunken Head",
+      "type": "toy",
+      "x": 0.28,
+      "y": 0.83,
+      "trim": "all",
+      "notes": "A magnet under the head grabs the ball and either drops it straight through or throws it up into the upper-right rollover lanes. Central to lighting lock and to the South America continent."
+    },
+    {
+      "id": "centre-ramp",
+      "name": "Centre Ramp",
+      "type": "ramp",
+      "x": 0.38,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "One of the three jackpot shots. Feeds the Temple — lane A when unlit, lanes B/C when lit — and lights the Shrunken Head.",
+      "feeds": {
+        "shot": "the-temple"
+      }
+    },
+    {
+      "id": "vari-target",
+      "name": "Vari-Target",
+      "type": "mech",
+      "x": 0.48,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "A two-state push target. A fast hit locks it back and opens a sink hole for the ball to drop into; a slower hit just bounces the ball off. The VUK beneath kicks dropped balls out over the right ramp into the right loop lane, sometimes with a Scramble Temple Code, Wake Up Idol or Amazing Event award along the way. When unlit, sinkhole shots spell letters in RIPOFF instead."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.58,
+      "y": 0.65,
+      "trim": "all",
+      "notes": "One of the three jackpot shots. Bends back roughly 150 degrees and runs down the right side to a diverter that sends the ball to either the left inlane or the ball lock lane. Also relights the vari-target."
+    },
+    {
+      "id": "rollover-lanes",
+      "name": "Upper-Right Rollover Lanes",
+      "type": "rollover",
+      "x": 0.78,
+      "y": 0.63,
+      "trim": "all",
+      "notes": "Each completion steps the bonus multiplier up, with its own display icon at every level through 7x."
+    },
+    {
+      "id": "right-loop",
+      "name": "Right Loop",
+      "type": "loop",
+      "x": 0.9,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Carries a second spinner and scores penguin laps, plus Tomb Stone value. Feeds the upper-right rollovers or the left loop depending on shot strength. Shooting it right after a left-inlane roll-through raises a post that traps the ball for a shot back to the upper flipper."
+    },
+    {
+      "id": "ball-lock",
+      "name": "Ball Lock",
+      "type": "lock",
+      "x": 0.9,
+      "y": 0.2,
+      "trim": "all",
+      "notes": "Holds up to three balls, though it normally only sees two. Fed by the right ramp's diverter; releases everything at once through a gate above the right outlane. Locks not used by end of game carry over as a virtual lock next game."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.17,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Fed by wireforms off both ramps. Rolls into Temple lane A."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.79,
+      "y": 0.09,
+      "trim": "all"
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.08,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Carries a Special lamp and is notably greedy — a soft plunge can drain here untouched."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.87,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Also carries a Special lamp. The gate that releases the ball lock sits just above its entrance."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-scoop-plunge",
+      "title": "Skill Shot: Straight Into the Scoop",
+      "category": "skillshot",
+      "summary": "The game's only skill shot is a direct plunge at the side scoop rather than a shot over the top — get the strength right and it pays more every time you land it.",
+      "difficulty": 2,
+      "reward": "1M the first time in a game, +1M each additional time",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Plunge at medium strength, straight into the side scoop",
+          "detail": "Too strong and you clip the standups above for a rebound down the right outlane; too soft and the ball slides down the left outlane untouched — there's no ball saver on this shot."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bozo-letters",
+      "title": "Spell BOZO at the Scoop",
+      "category": "progression",
+      "summary": "Outside of an active award, every scoop shot adds a letter to BOZO. Complete the word and the mind-reading dog previews your random prize before it lands.",
+      "difficulty": 1,
+      "reward": "A random award, named by Bozo before you collect it",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Keep feeding the side scoop whenever it isn't otherwise lit",
+          "detail": "Each hit spots a BOZO letter; finish the word and Bozo tells you what you've won"
+        }
+      ],
+      "fx": "dog"
+    },
+    {
+      "id": "idol-hits",
+      "title": "Wake the Idol — 25 Hits",
+      "category": "progression",
+      "summary": "The magnet above the left inlane keeps a running count of every ball it grabs. Get to 25 in a game and it lights an extra ball.",
+      "difficulty": 2,
+      "reward": "Extra ball at 25 total Idol hits",
+      "steps": [
+        {
+          "shot": "the-idol",
+          "action": "Send balls up into the Idol from below",
+          "detail": "Direct shots and lower-pop-bumper exits both count; the five lamps out front track your running total toward 25"
+        }
+      ],
+      "fx": "ghost"
+    },
+    {
+      "id": "temple-jewel-grid",
+      "title": "The Temple Jewel Grid",
+      "category": "progression",
+      "summary": "A 3x3 grid of jewels sits above the flippers. The right ramp lights the Temple to route the ball into lanes B and C instead of the default lane A; light three jewels in a row on the grid to collect the award shown.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Shoot the centre ramp to feed the Temple — unlit it rolls straight through lane A, lighting the least valuable column",
+        "Shoot the right ramp first to light the Temple, diverting the same centre-ramp feed into lanes B or C instead",
+        "Each lane rolled lights the square matching that lane's current number (1, 2 or 3), shown on a small display below the letter",
+        "Three lit squares in a row — across, down or diagonal — collects the award shown for that line, including Road Trip (relights every major shot plus a jackpot) and the occasional random seven-digit '?' prize",
+        "Unclaimed jewels also add to your end-of-ball bonus alongside your Idol and R-I-P-L-E-Y-S totals"
+      ],
+      "reward": "The award shown for each completed line; every lit jewel also feeds end-of-ball bonus",
+      "fx": "magic"
+    },
+    {
+      "id": "post-trap-combo",
+      "title": "Post-Trap Combo: Inlane → Right Loop → Penguin Jackpot",
+      "category": "combo",
+      "summary": "Roll the left inlane first and the right loop remembers it — shoot the loop next and a post rises to trap the ball for an easy finish at the lower loop.",
+      "difficulty": 2,
+      "reward": "Penguin Jackpot at the lower loop",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll through the left inlane first",
+          "detail": "Arms the post at the right loop entrance"
+        },
+        {
+          "shot": "right-loop",
+          "action": "Immediately shoot the right loop",
+          "detail": "A post rises just before the rollovers and holds the ball there instead of letting it continue around"
+        },
+        {
+          "shot": "upper-flipper",
+          "action": "Catch the trapped ball on the upper flipper",
+          "detail": null
+        },
+        {
+          "shot": "lower-loop",
+          "action": "Finish at the lower loop for the Penguin Jackpot",
+          "detail": "Lit specifically by this sequence"
+        }
+      ],
+      "fx": "extreme"
+    },
+    {
+      "id": "ripleys-multiball",
+      "title": "Ripley's Multiball",
+      "category": "multiball",
+      "summary": "Four head hits build toward lock, two locked balls (real or virtual) launch multiball, and jackpots alternate between the ramps before the lower loop joins them for the rest of the round.",
+      "difficulty": 2,
+      "reward": "Alternating ramp jackpots, then a Super Jackpot at the upper loop each time both ramps clear",
+      "steps": [
+        {
+          "shot": "shrunken-head",
+          "action": "Work through the head's four starting awards",
+          "detail": "The Head Knows, then an Odditorium fact, then Collect Bigfoot Value, then Lite Lock — each needs its own hit"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Lock two balls at the right ramp",
+          "detail": "Real locks when balls are available; otherwise the game counts a virtual lock and sends the ball on"
+        },
+        {
+          "shot": "shrunken-head",
+          "action": "Hit the head once more to launch multiball",
+          "detail": "The display's swallowing man spits out three balls at once"
+        },
+        {
+          "shot": "centre-ramp",
+          "action": "Collect the first jackpot at either ramp",
+          "detail": "Whichever ramp you take goes dark until the other is collected",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the second jackpot at the other ramp",
+          "detail": null,
+          "link": "none"
+        },
+        {
+          "shot": "upper-loop",
+          "action": "Both ramps down — finish at the upper loop for the Super Jackpot",
+          "detail": "Value shown just above the flippers; worth the shot for the light show alone"
+        },
+        {
+          "shot": "lower-loop",
+          "action": "Ramps relight and the lower loop joins as a third jackpot shot",
+          "detail": "Clear all three again before they relight for another Super Jackpot round"
+        }
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "north-america-mode",
+      "title": "Continent: North America",
+      "category": "mode",
+      "summary": "A two-ball continent mode. Ramp shots light Bigfoot jackpots, the Shrunken Head relights them, and four collected jackpots clears it — the mode runs until a ball drains.",
+      "difficulty": 2,
+      "reward": "An R-I-P-L-E-Y-S letter after four Bigfoot jackpots",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Start North America at the scoop or the lit vari-target",
+          "detail": null
+        },
+        {
+          "shot": "centre-ramp",
+          "action": "Shoot a ramp to light a Bigfoot jackpot",
+          "detail": "Either ramp works"
+        },
+        {
+          "shot": "shrunken-head",
+          "action": "Collect the jackpot at the head, then relight it",
+          "detail": "Four collected jackpots completes the mode"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "africa-mode",
+      "title": "Continent: Africa",
+      "category": "mode",
+      "summary": "Africa runs the same two-ball, four-jackpot structure as North America, but The Idol does the relighting instead of the head.",
+      "difficulty": 2,
+      "reward": "An R-I-P-L-E-Y-S letter after four jackpots",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Start Africa at the scoop or the lit vari-target",
+          "detail": null
+        },
+        {
+          "shot": "centre-ramp",
+          "action": "Shoot a ramp to light a jackpot",
+          "detail": "Either ramp works"
+        },
+        {
+          "shot": "the-idol",
+          "action": "Relight jackpots at The Idol",
+          "detail": "Four collected jackpots completes the mode; continues until a ball drains"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "antarctica-mode",
+      "title": "Continent: Antarctica",
+      "category": "mode",
+      "summary": "A single-ball continent built entirely around the right loop — three penguin laps finish it and light a Penguin Jackpot of its own.",
+      "difficulty": 2,
+      "reward": "An R-I-P-L-E-Y-S letter plus a lit Penguin Jackpot",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Start Antarctica at the scoop or the lit vari-target",
+          "detail": null
+        },
+        {
+          "shot": "right-loop",
+          "action": "Rip three penguin laps",
+          "detail": "Completes the mode and lights the Penguin Jackpot at the lower loop"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "australia-mode",
+      "title": "Continent: Australia",
+      "category": "mode",
+      "summary": "Shoot the vari-target four times for boomerang jackpots to clear Australia — a strong shot straight into the sink hole counts double.",
+      "difficulty": 2,
+      "reward": "An R-I-P-L-E-Y-S letter, then a countdown of boomerang awards at the vari-target",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Start Australia at the scoop or the lit vari-target",
+          "detail": null
+        },
+        {
+          "shot": "vari-target",
+          "action": "Collect four boomerang jackpots at the vari-target",
+          "detail": "A hard shot that drops straight into the sink hole scores double"
+        },
+        {
+          "shot": "vari-target",
+          "action": "Ride the post-completion countdown",
+          "detail": "Further vari-target shots collect boomerang awards until the clock runs out"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "asia-mode",
+      "title": "Continent: Asia",
+      "category": "mode",
+      "summary": "The simplest continent — just rack up twenty-five total spins across both spinners to close it out.",
+      "difficulty": 1,
+      "reward": "An R-I-P-L-E-Y-S letter",
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Start Asia at the scoop or the lit vari-target",
+          "detail": null
+        },
+        {
+          "shot": "lower-loop",
+          "action": "Rip either spinner — lower loop or right loop — to twenty-five total spins",
+          "detail": "Both spinners count toward the same total"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "rollover-multiplier",
+      "title": "Build the Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "The upper-right rollover lanes step your bonus multiplier up with a new display icon at every level, topping out at an extra ball.",
+      "difficulty": 1,
+      "reward": "Up to 7x bonus; reaching 7x lights an extra ball, and further completions just score points",
+      "steps": [
+        {
+          "shot": "rollover-lanes",
+          "action": "Roll through the upper-right lanes",
+          "detail": "2x through 6x each get their own animal icon; 7x lights the extra ball, after which more completions just add points"
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "continent-sweep",
+      "title": "Visit All Seven Continents",
+      "category": "mode",
+      "summary": "Each continent has its own start condition and its own way to close it out. Play them in whatever order suits your shooting, then spell R-I-P-L-E-Y-S once every letter is in.",
+      "difficulty": 3,
+      "ordered": false,
+      "reward": "A R-I-P-L-E-Y-S letter per continent; all seven letters lights the eighth, mystery continent",
+      "steps": [
+        {
+          "shot": "shrunken-head",
+          "action": "North America: four Bigfoot jackpots, relit at the head",
+          "detail": "2-ball mode; runs until a ball drains"
+        },
+        {
+          "shot": "the-idol",
+          "action": "Africa: four jackpots, relit at The Idol",
+          "detail": "2-ball mode; runs until a ball drains"
+        },
+        {
+          "shot": "tomb-stone-bank",
+          "action": "Europe: collect six Tomb Stones",
+          "detail": "Further Tomb Stones after that pay 150K, 155K, 160K and up"
+        },
+        {
+          "shot": "vari-target",
+          "action": "Australia: four vari-target jackpots",
+          "detail": "A hard shot into the sink hole counts double"
+        },
+        {
+          "shot": "lower-loop",
+          "action": "Asia: twenty-five total spins on either spinner",
+          "detail": null
+        },
+        {
+          "shot": "shrunken-head",
+          "action": "South America: four hits on the head",
+          "detail": "Completion opens a countdown for further awards at the head"
+        },
+        {
+          "shot": "right-loop",
+          "action": "Antarctica: three penguin laps",
+          "detail": "Lights a Penguin Jackpot at the lower loop"
+        }
+      ],
+      "fx": "tome"
+    },
+    {
+      "id": "atlantis-wizard",
+      "title": "The Eighth Continent: Atlantis",
+      "category": "wizard",
+      "summary": "Play all seven continents and the vari-target hands back a quick re-award of everything they scored. Collect every R-I-P-L-E-Y-S letter on top of that and the vari-target lights for the mystery eighth continent.",
+      "difficulty": 3,
+      "reward": "Seven Continent Bonus (roughly 10-20M) once all continents are played; Atlantis itself once every letter is collected",
+      "steps": [
+        {
+          "shot": "vari-target",
+          "action": "After playing all seven continents, shoot the vari-target for the Seven Continent Bonus",
+          "detail": "Quickly re-awards your score from each continent, then unlocks them all for replay"
+        },
+        {
+          "shot": "vari-target",
+          "action": "Replay continents until every R-I-P-L-E-Y-S letter is collected",
+          "detail": "You don't need a perfect run the first time through — missed letters can be picked up on repeat visits"
+        },
+        {
+          "shot": "vari-target",
+          "action": "With R-I-P-L-E-Y-S complete, the vari-target lights for Atlantis",
+          "detail": "The eighth continent itself"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "opening-strategy",
+      "title": "Strategy: First Ball Priorities",
+      "category": "strategy",
+      "summary": "A sensible opener: take the skill shot if you can land it clean, get an easy continent going, and start banking Idol hits and Tomb Stones along the way since neither costs you a dedicated shot.",
+      "difficulty": 1,
+      "reward": null,
+      "steps": [
+        {
+          "shot": "side-scoop",
+          "action": "Take the skill shot at medium plunger strength",
+          "detail": "Worth 1M clean, and every later one in the game is worth another million"
+        },
+        {
+          "shot": "right-loop",
+          "action": "Start Antarctica or Asia first",
+          "detail": "Both are single-ball continents with a straightforward finish — safer than the two-ball North America or Africa modes early on"
+        },
+        {
+          "shot": "the-idol",
+          "action": "Let idol hits and Tomb Stones accumulate naturally",
+          "detail": "Neither needs a dedicated shot — they build from ordinary play toward the 25-hit extra ball and the Europe continent"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Light the Temple before you feed the centre ramp",
+          "detail": "Diverts your Temple shots into lanes B and C, which are worth more toward the jewel grid than the default lane A"
+        }
+      ],
+      "fx": "tome"
+    }
+  ],
+  "sources": [],
+  "defaultFx": "tome",
+  "achievements": [
+    {
+      "id": "skillshot-collected",
+      "title": "Right Down The Middle",
+      "desc": "Land the side-scoop skill shot with a clean, medium-strength plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-scoop-plunge"
+    },
+    {
+      "id": "bozo-spelled",
+      "title": "Letters From The Dog",
+      "desc": "Spell BOZO at the side scoop and collect the random award it predicts.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bozo-letters"
+    },
+    {
+      "id": "continent-first-cleared",
+      "title": "First Stamp In The Passport",
+      "desc": "Complete your first continent mode of the game.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "north-america-mode"
+    },
+    {
+      "id": "rollover-seven-x",
+      "title": "Full Bonus Build",
+      "desc": "Roll the upper-right lanes all the way to a 7x bonus multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "rollover-multiplier"
+    },
+    {
+      "id": "idol-25-hits",
+      "title": "Twenty-Five Strikes",
+      "desc": "Feed The Idol 25 times in a single game to light the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "idol-hits"
+    },
+    {
+      "id": "temple-three-in-row",
+      "title": "Three In A Row",
+      "desc": "Light three jewels in a row on the Temple grid and collect the award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "temple-jewel-grid"
+    },
+    {
+      "id": "multiball-launched",
+      "title": "Three From His Mouth",
+      "desc": "Build lock through all four head awards and launch Ripley's Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "ripleys-multiball"
+    },
+    {
+      "id": "post-trap-landed",
+      "title": "The Post Trick",
+      "desc": "Land the left-inlane-into-right-loop post trap and finish it at the lower loop.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "post-trap-combo"
+    },
+    {
+      "id": "all-continents-visited",
+      "title": "Around The World",
+      "desc": "Complete all seven continent modes in a single game.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "continent-sweep"
+    },
+    {
+      "id": "atlantis-lit",
+      "title": "The Eighth Continent",
+      "desc": "Collect every R-I-P-L-E-Y-S letter and light Atlantis at the vari-target.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "atlantis-wizard"
+    }
+  ]
+}

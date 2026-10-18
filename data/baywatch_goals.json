@@ -1,0 +1,1359 @@
+{
+  "machine": "Baywatch (Sega Pinball, 1995)",
+  "defaultFx": "beach",
+  "shots": [
+    {
+      "id": "plunger",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.95,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Auto-plunger; feeds the ball almost immediately onto an elevated wireform rather than a conventional straight lane — the shooter lane is nearly eliminated by design."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Rollover Lanes (SPF)",
+      "type": "lane",
+      "x": 0.45,
+      "y": 0.97,
+      "trim": "all",
+      "notes": "3 rollover lanes at the very top of the playfield; spell S-P-F to advance the bonus multiplier. Also a Skill Shot option."
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp (Ironman)",
+      "type": "ramp",
+      "x": 0.52,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "Shot off the Upper-Left Flipper; spells a letter toward IRONMAN (25M plus a lit Video Mode at the Spinner Lane on completion), Skill Shot option, Multiball Double Super Jackpot shot. Some documentation labels this lamp RESCUE instead; this dataset uses Ironman, matching the video mode it lights.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      },
+      "flipper": "upper-left-flipper"
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Has an internal Trap Door gating Ball Lock; starts/scores CPR; a GUARD/mode shot.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Middle Ramp)",
+      "type": "ramp",
+      "x": 0.45,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Starts Chopper Rescue; scores in CPR and the 3-Way Combo; a GUARD/mode shot.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.58,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Starts Shark Cove/Attack; collects Tourist Season countries; a GUARD/mode shot.",
+      "feeds": {
+        "x": 0.64,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.15,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Full loop up the left side; boosts Turbo Bumper value when reached via the inner right inlane; disabled during Diver Trapped.",
+      "feeds": {
+        "shot": "upper-left-flipper"
+      }
+    },
+    {
+      "id": "spinner-lane",
+      "name": "Spinner Lane (Right Spinner)",
+      "type": "spinner",
+      "x": 0.9,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Long wireform down the extreme right side; starts Tidal Wave; a GUARD/mode shot; feeds the Upper Ball Launch.",
+      "feeds": {
+        "shot": "upper-ball-launch"
+      }
+    },
+    {
+      "id": "upper-vuk",
+      "name": "Upper VUK",
+      "type": "scoop",
+      "x": 0.5,
+      "y": 0.82,
+      "trim": "all",
+      "notes": "One of the 5 mode/GUARD shots; starts Diver Trapped; the shot that starts Earthquake. Manual p.6/pp.7-9: the UPPER VERTICAL UP-KICKER sits top-center, above the Shark Super Scoop — distinct from the separate SUPER VUK UNDER ARCH mech (under the playfield ramp exit, near Laser Kick), which is not modeled as its own shot here."
+    },
+    {
+      "id": "shark-super-scoop",
+      "name": "Shark Super Scoop",
+      "type": "saucer",
+      "x": 0.2,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "Collects Sharks toward the 5-tier award ladder; Super Jackpot shot during Multiball; kills all remaining sharks in Shark Cove. Also a Diver Trapped mode shot (per the manual's Diver Trapped shot list).",
+      "flipper": "shark-fin-flipper"
+    },
+    {
+      "id": "shark-bank",
+      "name": "SHARK Standup Bank",
+      "type": "target-bank",
+      "x": 0.16,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "5 standups spelling S-H-A-R-K; completing enables Shark Flips (auto mini-flipper shots); used in Shark Cove mode."
+    },
+    {
+      "id": "drop-targets",
+      "name": "3-Bank Drop Targets",
+      "type": "drop-target",
+      "x": 0.45,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Completing lights Ball Lock on the Left Ramp. During Multiball each drop-target hit also boosts the in-progress Swimmer Jackpot by 1M, up to a 20M ceiling."
+    },
+    {
+      "id": "vehicle-targets",
+      "name": "Search & Rescue Vehicle Targets",
+      "type": "target-bank",
+      "x": 0.43,
+      "y": 0.37,
+      "trim": "all",
+      "notes": "Five standups spread across the ramp entrances — two by the left ramp (ATV and rescue truck), one by the center ramp (helicopter), and two by the right ramp (jet ski and wave runner).; used in Chopper Rescue and Search & Rescue."
+    },
+    {
+      "id": "two-bank-targets",
+      "name": "2-Bank Stand-Up Targets",
+      "type": "target-bank",
+      "x": 0.72,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Above the Upper Right Shark Fin Flipper; relights Laser Kick."
+    },
+    {
+      "id": "shark-fin-flipper",
+      "name": "Shark Fin Mini-Flipper",
+      "type": "flipper",
+      "x": 0.68,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Game-controlled auto-flipper — the software takes over the upper flippers and shoots for the Shark Super Scoop on its own.; fires the ball at the Shark Super Scoop."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (Turbo Bumpers)",
+      "type": "bumpers",
+      "x": 0.58,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "3 pop bumpers; base 250K/hit, boosted to 500K then 1M via inner right inlane shots to Left Orbit."
+    },
+    {
+      "id": "squid-pops",
+      "name": "Squid Pops",
+      "type": "mech",
+      "x": 0.6,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Lit feature (not a distinct target) activated via right inner inlane; scores flat 2M per pop bumper hit for the rest of the current ball."
+    },
+    {
+      "id": "laser-kick",
+      "name": "Laser Kick",
+      "type": "mech",
+      "x": 0.75,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Lit at start of every ball, relit via the 2-Bank Stand-Up Targets; ball-save/bonus feature."
+    },
+    {
+      "id": "upper-ball-launch",
+      "name": "Upper Ball Launch",
+      "type": "mech",
+      "x": 0.85,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "VUK-like hold/launch mechanism; holds the ball ~10 seconds (doubling Jackpots during Multiball) before feeding the Upper-Left Flipper for a Side Ramp shot.",
+      "feeds": {
+        "x": 0.3,
+        "y": 0.68
+      }
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower left flipper of the main pair."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Lower right flipper of the main pair."
+    },
+    {
+      "id": "upper-left-flipper",
+      "name": "Upper Left Flipper",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "The playfield's second upper flipper, mounted mid-playfield on the left opposite the shark-fin one."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-top-lanes",
+      "title": "Skill Shot — SPF Top Lanes",
+      "category": "skillshot",
+      "summary": "One of three shots lit for the skill shot at the start of every ball, and the safe, beginner-default pick: ride the auto-plunge up and take the flashing SPF top lane.",
+      "difficulty": 1,
+      "reward": "10M stock, plus cumulative +10M per skill shot made that game; all three different in one game = 50M Variety Award, the same one 3x = 50M Three of a Kind.",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Ride the auto-plunge up and take the flashing SPF top lane",
+          "detail": "No manual plunge — Baywatch launches automatically, so you steer with flipper timing, not plunge strength. Also spells a letter toward the SPF bonus multiplier."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-shark-scoop",
+      "title": "Skill Shot — Shark Super Scoop",
+      "category": "skillshot",
+      "summary": "One of three shots lit for the skill shot at the start of every ball: flip the game-controlled shark fin to redirect the auto-plunge into the Shark Super Scoop for a bigger payout.",
+      "difficulty": 2,
+      "reward": "20M stock (buffed to 40M on Chad's tournament code), plus cumulative +10M per skill shot made that game; all three different in one game = 50M Variety Award, the same one 3x = 50M Three of a Kind.",
+      "steps": [
+        {
+          "shot": "shark-super-scoop",
+          "action": "Flip the game-controlled shark fin to redirect into the Shark Super Scoop",
+          "detail": "Requires timing the game-controlled shark-fin mini-flipper — no manual plunge, Baywatch launches automatically."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-side-ramp",
+      "title": "Skill Shot — Side Ramp",
+      "category": "skillshot",
+      "summary": "One of three shots lit for the skill shot at the start of every ball, and the hardest of the three: time the upper-left flipper to catch the Side Ramp off the auto-plunge.",
+      "difficulty": 3,
+      "reward": "50M, the hardest option, plus cumulative +10M per skill shot made that game; all three different in one game = 50M Variety Award, the same one 3x = 50M Three of a Kind.",
+      "steps": [
+        {
+          "shot": "plunger",
+          "action": "Plunge through to the flippers",
+          "detail": "Also spells a letter toward IRONMAN — no manual plunge, Baywatch launches automatically."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Time the upper-left flipper to catch the Side Ramp",
+          "detail": "Also spells a letter toward IRONMAN — no manual plunge, Baywatch launches automatically."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "tourist-season-farm",
+      "title": "Tourist Season Right Ramp Farm",
+      "category": "combo",
+      "summary": "Once Tourist Season (Horizontal Mode 2) is running, the Right Ramp pays a flat ~25M repeatedly with no variety requirement — the easiest, lowest-risk money in the game.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot the Right Ramp",
+          "detail": "~25M flat per country collected (Germany, Italy, France, Spain, Holland, England)."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot it again, and again",
+          "detail": "Fully repeatable, no shot variety needed, until the 2-ball multiball ends."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "After all 6 countries, switch to the Side Ramp",
+          "detail": "100M Jackpots become collectible here for the rest of the multiball."
+        }
+      ],
+      "reward": "~25M/shot flat, plus 100M Jackpots at the Side Ramp after all 6 countries are collected.",
+      "fx": "beach"
+    },
+    {
+      "id": "cpr-three-ramp-run",
+      "title": "CPR Three-Ramp Run",
+      "category": "combo",
+      "summary": "CPR mode lights Left, Center, and Right Ramp for an escalating 50M/60M/70M sequence plus a completion bonus.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Start with the Left Ramp",
+          "detail": "First shot scores 50M."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Then the Center Ramp",
+          "detail": "Second shot scores 60M."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish on the Right Ramp",
+          "detail": "Third shot scores 70M plus a 50M completion bonus; shot order is flexible but this is the natural flow."
+        }
+      ],
+      "ordered": false,
+      "reward": "230M total per clean completion (50+60+70+50 bonus).",
+      "fx": "beach"
+    },
+    {
+      "id": "three-way-combo",
+      "title": "3-Way Combo",
+      "category": "combo",
+      "summary": "Chain Center Ramp (or Side Ramp) into Right Ramp into Spinner Lane to instantly light and collect a Video Mode.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Shoot the Center Ramp",
+          "detail": "Or substitute the Side Ramp for the alternate recognized chain."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Follow immediately with the Right Ramp",
+          "detail": "Keep the flow going without stalling on a flipper."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Finish through the Spinner Lane",
+          "detail": "Completing the 3-shot chain lights and immediately collects a Video Mode."
+        }
+      ],
+      "reward": "Instant Video Mode award.",
+      "fx": "beach"
+    },
+    {
+      "id": "diver-trapped-scoop-farm",
+      "title": "Diver Trapped Scoop Farm",
+      "category": "combo",
+      "summary": "Diver Trapped lights the Shark Super Scoop, Upper VUK, and Spinner Lane for repeatable, shot-agnostic scoring — just keep shooting whichever is easiest.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "shark-super-scoop",
+          "action": "Shoot the Shark Super Scoop",
+          "detail": "1st shot scores 20M; any of the three lit shots counts equally."
+        },
+        {
+          "shot": "upper-vuk",
+          "action": "Or the Upper VUK",
+          "detail": "2nd shot scores 30M."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Or the Spinner Lane",
+          "detail": "3rd shot 40M, 4th 50M — completing all 4 lights a 15-second Extra Ball (30M Fast Forward Bonus for repeating a shot back-to-back)."
+        }
+      ],
+      "ordered": false,
+      "reward": "20-50M escalating, plus a 15-second Extra Ball on completion (30M Fast Forward Bonus for repeat shots).",
+      "fx": "beach"
+    },
+    {
+      "id": "guard-millions-farm",
+      "title": "Guard Millions Countdown Farm",
+      "category": "combo",
+      "summary": "Hit any of the five lit Guard shots in any order as fast as possible — the award value decays from ~50M toward a ~20M floor, and collecting a shot disables that specific shot for the rest of the round.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot any lit Guard shot immediately",
+          "detail": "Starts near 50M and decays over time (~50→41→31→24M observed)."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Keep shooting whichever Guard shot is closest",
+          "detail": "Collecting a Guard shot disables that specific shot for the rest of the round — repeating the same shot scores nothing, so you must move to a different lit shot each time."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Don't let the timer bottom out",
+          "detail": "There's no pause-on-hit: the other four shots keep counting down toward a 20M floor while you're elsewhere, so hit a fresh one before it decays further."
+        }
+      ],
+      "ordered": false,
+      "reward": "Up to ~50M per hit, decaying with time toward a 20M floor — reward comes from speed AND moving to a different shot each time, since a collected shot goes dark for the rest of the round.",
+      "fx": "beach"
+    },
+    {
+      "id": "multiball-lock-and-launch",
+      "title": "Multiball: Lock & Launch",
+      "category": "multiball",
+      "summary": "Complete the 3-Bank Drop Targets to light locks on the Left Ramp trap door; collect all 3 locks to start 5-ball Multiball with a ball saver.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Knock down the 3-Bank Drop Target bank",
+          "detail": "Completing it lights a lock on the Left Ramp (1-2 completions needed depending on difficulty setting)."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp to lock the ball",
+          "detail": "Ball diverts through the Trap Door into the under-playfield lock; repeat until all 3 locks are lit."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Collect the 3rd lock to start Multiball",
+          "detail": "5 balls auto-launch with ball saver active; all 5 mode shots light for Swimmer Jackpots. Send a ball up the Spinner Lane and it is held in the Upper Ball Launch for about ten seconds — every Jackpot is worth double for as long as it sits there."
+        }
+      ],
+      "reward": "5-ball Multiball begins; Swimmer Jackpots are lit, and their value climbs with the drop targets you cleared beforehand",
+      "fx": "beach"
+    },
+    {
+      "id": "tourist-season-multiball",
+      "title": "Tourist Season: 2-Ball Multiball",
+      "category": "multiball",
+      "summary": "Light the 2nd progress lamp on all five mode shots (Horizontal Mode 2) to start a 2-ball multiball collecting countries at the Right Ramp.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Work the five mode shots until the second lamp is lit on all of them",
+          "detail": "A mode shot's first lamp is its GUARD letter; the second is a lifeguard. Collect all five lifeguards and Tourist Season, the second Horizontal Mode, begins."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Tourist Season begins: shoot the Right Ramp",
+          "detail": "2-ball multiball with an 8-second ball saver on stock code, 10 seconds on updated code; collects countries (Germany, Italy, France, Spain, Holland, England) worth 25M each."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "After all 6 countries, shoot the Side Ramp",
+          "detail": "100M Jackpots become available for the remainder of the multiball."
+        }
+      ],
+      "reward": "25M per country, then 100M Jackpots at the Side Ramp.",
+      "fx": "beach"
+    },
+    {
+      "id": "super-jackpot-phase",
+      "title": "Super Jackpot & Double Super Jackpot",
+      "category": "multiball",
+      "summary": "Inside Multiball, collecting all five Swimmer Jackpots lights the Super Jackpot at the Shark Super Scoop and the Double Super Jackpot at the Side Ramp.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "shark-super-scoop",
+          "action": "Collect all five Swimmer Jackpots, then shoot the Shark Super Scoop",
+          "detail": "Lights the Super Jackpot, worth 50M multiplied by the number of balls still in play."
+        },
+        {
+          "shot": "side-ramp",
+          "action": "Then shoot the Side Ramp",
+          "detail": "Double Super Jackpot — twice the Super Jackpot. The Upper Ball Launch stops doubling once you reach this stage; it is only feeding the upper-left flipper through the Right Orbit so you can reach this shot."
+        }
+      ],
+      "reward": "Super Jackpot followed by the Double Super Jackpot — the two biggest scoring events in regular play.",
+      "fx": "beach"
+    },
+    {
+      "id": "mode-cpr",
+      "title": "CPR",
+      "category": "mode",
+      "summary": "Hit the Left Ramp four times (cumulative across the game) to start CPR — a 30-second timed 3-ramp round.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Build toward CPR by shooting the Left Ramp",
+          "detail": "4th cumulative hit on this shot starts the mode; runs on a 30-second timer."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot Left Ramp for 50M",
+          "detail": "1st scoring shot once the mode is running.",
+          "link": "none"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Shoot Center Ramp for 60M",
+          "detail": "2nd scoring shot.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Shoot Right Ramp for 70M plus a 50M completion bonus",
+          "detail": "3rd scoring shot completes the mode.",
+          "link": "none"
+        }
+      ],
+      "reward": "230M total (50+60+70+50 bonus) if run clean inside 30 seconds.",
+      "fx": "beach"
+    },
+    {
+      "id": "mode-chopper-rescue",
+      "title": "Chopper Rescue (Copter Rescue)",
+      "category": "mode",
+      "summary": "Started from the Center Ramp; hit the 5 vehicle stand-up targets to rescue swimmers from the sinking ship — decent value but a notorious drain trap.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Build toward the mode with Center Ramp hits",
+          "detail": "4th cumulative hit starts Chopper Rescue."
+        },
+        {
+          "shot": "vehicle-targets",
+          "action": "Hit the 5 vehicle stand-ups (ATV, Rescue Truck, Helicopter, Jet Ski, Wave Runner)",
+          "detail": "Each stand-up hit rescues a swimmer: stock code pays 20M each and asks for 10, updated code pays 25M each and needs only 8."
+        }
+      ],
+      "reward": "20-25M per target, up to all 10 swimmers rescued. Caution: the vehicle targets aim straight at the center drain.",
+      "fx": "beach"
+    },
+    {
+      "id": "mode-diver-trapped",
+      "title": "Diver Trapped",
+      "category": "mode",
+      "summary": "Started from the Upper VUK; shoot the three lit shots (Shark Super Scoop, Upper VUK, Spinner Lane) to rescue the trapped diver and light a 15-second Extra Ball.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "upper-vuk",
+          "action": "Build toward the mode with Upper VUK hits",
+          "detail": "4th cumulative hit starts Diver Trapped."
+        },
+        {
+          "shot": "shark-super-scoop",
+          "action": "Shoot any of the three lit shots",
+          "detail": "1st shot scores 20M, repeatable to any lit target.",
+          "link": "none"
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Keep shooting lit shots to escalate value",
+          "detail": "2nd shot 30M, 3rd 40M, 4th 50M.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-vuk",
+          "action": "Complete all 4 to light the Extra Ball",
+          "detail": "Ends Diver Trapped with a 15-second Extra Ball window — shoot it before time runs out; shooting the same shot twice in a row instead scores an extra 30M Fast Forward Bonus.",
+          "link": "none"
+        }
+      ],
+      "reward": "20-50M escalating, plus a 15-second Extra Ball at the end of the mode (30M Fast Forward Bonus for repeating the same shot back-to-back).",
+      "fx": "beach"
+    },
+    {
+      "id": "mode-shark-cove",
+      "title": "Shark Cove (Shark Attack)",
+      "category": "mode",
+      "summary": "Started from the Right Ramp; clear waves of sharks on the SHARK bank and finish them off at the Shark Super Scoop for uncapped double points — high value, high drain risk.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Build toward the mode with Right Ramp hits",
+          "detail": "4th cumulative hit starts Shark Cove."
+        },
+        {
+          "shot": "shark-bank",
+          "action": "Hit SHARK bank targets to kill sharks one at a time",
+          "detail": "10M each; sharks arrive in waves of 1, then 2, then 3, then 4."
+        },
+        {
+          "shot": "shark-super-scoop",
+          "action": "Shoot the Shark Super Scoop to kill all remaining sharks at once",
+          "detail": "Double points, no cap on repeat collections during the mode — but the shark targets point straight at the center drain."
+        }
+      ],
+      "reward": "10M/shark plus uncapped double points at the Scoop, plus a 50M completion bonus. Play cautiously — often correct to let it time out rather than chase it.",
+      "fx": "beach"
+    },
+    {
+      "id": "spf-multiplier",
+      "title": "Light the SPF Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "Spell S-P-F at the Top Rollover Lanes to step the End-of-Ball Bonus multiplier from 2X up to 10X. It never carries between balls.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Roll through the Top Lanes to spell S-P-F",
+          "detail": "Each completed spelling advances the multiplier one step: 2X→3X→...→10X stock (bigger steps on tournament code)."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Repeat before the ball ends",
+          "detail": "The multiplier resets to 1X every new ball — there is no banking it for later."
+        }
+      ],
+      "reward": "Up to 10X multiplier on the entire End-of-Ball Bonus formula.",
+      "fx": "sparkle"
+    },
+    {
+      "id": "spf-maxout-lap",
+      "title": "SPF Max-Out Lap",
+      "category": "multiplier",
+      "summary": "After reaching 10X, one more SPF completion scores a bonus 20M and lights an Extra Ball at the Upper VUK — worth chasing even after the multiplier is maxed.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Reach 10X by repeatedly spelling SPF",
+          "detail": "See the SPF Bonus Multiplier goal for the ramp-up."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Complete SPF one more time at 10X",
+          "detail": "Scores a flat 20M bonus; all subsequent laps at 10X score only 20M with no further Extra Ball."
+        },
+        {
+          "shot": "upper-vuk",
+          "action": "Collect the Extra Ball this lights",
+          "detail": "One-time award, collected at the Upper VUK."
+        }
+      ],
+      "reward": "20M plus a lit Extra Ball, once per game.",
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-earthquake-modes",
+      "title": "Earthquake via Mode Completion",
+      "category": "wizard",
+      "summary": "Complete all 5 Vertical Modes and both Horizontal Modes (Guard + Tourist Season) to light the Earthquake wizard mode at the Upper VUK.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Complete CPR (Left Ramp)",
+          "detail": "1 of 5 Vertical Modes.",
+          "link": "none"
+        },
+        {
+          "shot": "vehicle-targets",
+          "action": "Complete Chopper Rescue (Center Ramp)",
+          "detail": "2 of 5.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-vuk",
+          "action": "Complete Diver Trapped (Upper VUK)",
+          "detail": "3 of 5.",
+          "link": "none"
+        },
+        {
+          "shot": "shark-bank",
+          "action": "Complete Shark Cove/Attack (Right Ramp)",
+          "detail": "4 of 5.",
+          "link": "none"
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Complete Tidal Wave (Spinner Lane)",
+          "detail": "5 of 5 Vertical Modes.",
+          "link": "none"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Run Guard, then complete Tourist Season",
+          "detail": "Guard, the first Horizontal Mode, rides its own lamp track: one shot into each of the five mode shots lights all five GUARD letters and Guard starts, so it arrives long before the Vertical Modes are finished. Tourist Season, the second Horizontal Mode, still has to be finished as well — see that multiball goal.",
+          "link": "none"
+        },
+        {
+          "shot": "upper-vuk",
+          "action": "Shoot the Upper VUK to start Earthquake",
+          "detail": "Forces the bonus multiplier to max 10X, enables MEGA Pops (3M/hit), and auto-launches balls continuously for 30 seconds; Every mode shot pays out again, each one worth whatever you already scored in the modes you played from it, with a 25M floor on any single award. — hit as many as you can before time runs out."
+        }
+      ],
+      "reward": "Earthquake, the game's primary wizard mode. Every mode returns to its starting state when the round ends.",
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-earthquake-shortcut",
+      "title": "Earthquake via Shark Shortcut",
+      "category": "wizard",
+      "summary": "Skip the full mode-completion grind by climbing the 5-tier Shark Feature ladder at the Shark Super Scoop to its 5th tier, which lights Earthquake directly.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "shark-super-scoop",
+          "action": "Shoot the Shark Super Scoop repeatedly to collect Sharks",
+          "detail": "Escalating waves of 1, 2, 3, then 4 sharks per collection."
+        },
+        {
+          "shot": "shark-super-scoop",
+          "action": "Climb the 5-tier award ladder",
+          "detail": "10M+Video Mode → 20M+Super Laser Kick → 30M+Shark Frenzy → 50M+Extra Ball → 100M+Earthquake."
+        },
+        {
+          "shot": "upper-vuk",
+          "action": "Shoot the Upper VUK to start Earthquake",
+          "detail": "Earthquake runs 30 seconds with balls auto-launched into play the whole time. When the timer expires the flippers cut out, every ball drains, and the modes go back to their starting state."
+        }
+      ],
+      "reward": "Earthquake wizard mode without needing all 5 modes finished first.",
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner's First 30 Seconds",
+      "category": "strategy",
+      "summary": "The safest, most concrete opening sequence for a first-time player — skill shot, then Left Ramp, then the drop targets.",
+      "difficulty": 1,
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Take the default SPF skill shot",
+          "detail": "Don't move the flippers off the default option — risk-free points plus SPF progress."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the Left Ramp 2-3 times",
+          "detail": "Builds toward CPR mode before you drift into the bumpers."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Pivot to the 3-Bank Drop Targets",
+          "detail": "Start lighting locks toward Multiball once CPR is running or resolved."
+        },
+        {
+          "shot": "top-lanes",
+          "action": "Take the SPF lane any time it's lit in passing",
+          "detail": "Low-risk, stacks the bonus multiplier no matter what else you're chasing."
+        }
+      ],
+      "reward": "A clean, low-drain-risk opening ball with a mode and lock progress both started.",
+      "fx": "beach"
+    },
+    {
+      "id": "strategy-best-opener-cpr-rush",
+      "title": "Best Opener: CPR Rush Before Lock",
+      "category": "strategy",
+      "summary": "Prioritize repeated Left Ramp shots immediately after the skill shot — CPR's mode timer is effectively racing the drop-target bank, which slingshots and bumpers can topple by accident.",
+      "difficulty": 2,
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Go straight at the Left Ramp repeatedly from the first flipper touch",
+          "detail": "3-4 cumulative hits starts CPR; do this before the drop bank falls incidentally and shifts the Guard Tower into lock mode."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Follow into Center Ramp",
+          "detail": "Continues CPR scoring (60M) once the mode has started."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish on Right Ramp",
+          "detail": "70M plus a 50M completion bonus."
+        },
+        {
+          "shot": "drop-targets",
+          "action": "Only now deliberately attack the drop targets",
+          "detail": "Starts lighting Trap Door locks toward Multiball."
+        }
+      ],
+      "reward": "CPR's 230M+ payout banked before committing to the lock/Multiball grind.",
+      "fx": "beach"
+    },
+    {
+      "id": "strategy-multiball-priority",
+      "title": "Tournament Priority: Rush Multiball, Avoid the Traps",
+      "category": "strategy",
+      "summary": "Multiball's escalating Jackpots and Super Jackpots dwarf grinding standalone rescue modes — prioritize locks, and avoid Chopper Rescue and Shark Cove as deliberate goals.",
+      "difficulty": 3,
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Prioritize clearing the drop targets over chasing individual modes",
+          "detail": "Each drop-target hit also boosts the in-multiball Swimmer Jackpot value by 1M, up to a maximum."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Bank all 3 locks and start Multiball",
+          "detail": "Stock code auto-advances locks; tournament (Chad's) code makes this non-guaranteed."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Inside Multiball, work the lit Guard shots for Jackpots",
+          "detail": "Route a shot through the Spinner Lane into the Upper Ball Launch to hold the ball ~10 seconds and double all Jackpot values — see the Super Jackpot & Double Super Jackpot goal."
+        },
+        {
+          "shot": "vehicle-targets",
+          "action": "Avoid deliberately chasing Chopper Rescue's vehicle targets outside normal mode flow",
+          "detail": "They aim straight at the center drain — regarded as the worst mode in the game to seek out on purpose.",
+          "link": "none"
+        },
+        {
+          "shot": "shark-bank",
+          "action": "Avoid deliberately chasing Shark Cove",
+          "detail": "A drain-risk trap; let it time out rather than actively play it unless already close to completion.",
+          "link": "none"
+        }
+      ],
+      "reward": "Maximized Jackpot/Super Jackpot scoring while minimizing unforced drains.",
+      "fx": "beach"
+    },
+    {
+      "id": "mode-tidal-wave",
+      "title": "Tidal Wave",
+      "category": "mode",
+      "summary": "Started from the Spinner Lane; the fifth Vertical Mode, and the one most players never see because the spinner lane is a long shot down the extreme right side.",
+      "difficulty": 3,
+      "reward": "Timed mode scoring at the Spinner Lane, and the last of the five Vertical Modes needed for the Guard and Earthquake qualification chain.",
+      "steps": [
+        {
+          "shot": "spinner-lane",
+          "action": "Build toward the mode with Spinner Lane shots",
+          "detail": "Same pattern as the other Vertical Modes: the 4th cumulative hit on this shot starts it."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Keep going back to the Spinner Lane once the mode is running",
+          "detail": "The mode is timed, and three successful rescues finish it — on stock code a failed attempt also burns one of your three tries."
+        },
+        {
+          "shot": "upper-ball-launch",
+          "action": "Use the Upper Ball Launch feed to set up repeat attempts",
+          "detail": "Spinner Lane shots feed this hold mech, which then feeds the upper-left flipper — a controlled way to come back around instead of losing the ball down the right side."
+        }
+      ],
+      "fx": "beach"
+    },
+    {
+      "id": "ironman-side-ramp-letters",
+      "title": "Spell the Side Ramp Word",
+      "category": "strategy",
+      "summary": "Every Side Ramp shot off the upper-left flipper adds one letter; completing the word pays 25M and lights a Video Mode at the Spinner Lane.",
+      "difficulty": 3,
+      "reward": "25M plus a lit Video Mode at the Spinner Lane.",
+      "steps": [
+        {
+          "shot": "side-ramp",
+          "action": "Shoot the Side Ramp from the upper-left flipper",
+          "detail": "One letter per successful shot; it is also a skill shot option, so take it at the plunge while you are chasing letters."
+        },
+        {
+          "shot": "upper-ball-launch",
+          "action": "Let the Upper Ball Launch feed you back to the upper-left flipper",
+          "detail": "This mech is the reliable way to get repeated cracks at the Side Ramp instead of waiting on a lucky feed."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Collect the Video Mode the completed word lights",
+          "detail": "It sits at the Spinner Lane; take it before the ball ends."
+        }
+      ],
+      "fx": "beach"
+    },
+    {
+      "id": "shark-bank-flips",
+      "title": "Complete SHARK for Fin Flips",
+      "category": "strategy",
+      "summary": "Knock down all five S-H-A-R-K stand-ups to switch on the game-controlled fin flipper, which fires balls at the Super Scoop for you.",
+      "difficulty": 2,
+      "reward": "Automatic fin-flipper shots at the Shark Super Scoop, feeding the 5-tier scoop award ladder without you having to time the mini-flipper.",
+      "steps": [
+        {
+          "shot": "shark-bank",
+          "action": "Work the five-target SHARK stand-up bank",
+          "detail": "Bank shots and bumper kickbacks pick these off; you do not need clean direct hits on all five."
+        },
+        {
+          "shot": "shark-fin-flipper",
+          "action": "Let the fin flipper take over once SHARK is spelled",
+          "detail": "The mech is software-controlled and aims at the Super Scoop on its own."
+        },
+        {
+          "shot": "shark-super-scoop",
+          "action": "Bank the scoop collects those flips produce",
+          "detail": "Each one climbs the 5-tier scoop award ladder, which is the shortcut route to the wizard mode."
+        }
+      ],
+      "fx": "beach"
+    },
+    {
+      "id": "video-mode-water-ski-ironman",
+      "title": "Two Named Video Modes: Water Ski and Ironman",
+      "category": "secret",
+      "altMode": "video",
+      "summary": "Whenever this machine says it has lit a Video Mode, it is really holding two separate mini-games that the playfield never names. One is a water-ski run scored on the obstacles you steer past; the other is an Ironman race won by working the flippers.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Light a video mode during play and collect it to start whichever of the two comes up",
+        "If Water Ski starts, steer to pass each obstacle on the display",
+        "If Ironman starts, work the flippers to drive your racer down the course",
+        "Finish either mode and read the total on the display — on stock code only Ironman pays a completion bonus and a completed Ironman ends at 55,000,000; updated code adds a 50,000,000 completion bonus to both"
+      ],
+      "reward": "Scoring depends on which code the machine runs. Water Ski pays per obstacle passed: 1,000,000 each on stock code, 3,000,000 on updated code. Ironman pays per flipper hit: 250,000 each on stock, 500,000 on updated. Stock code gives only Ironman a completion bonus, and a finished stock Ironman totals 55,000,000. Updated code puts a 50,000,000 completion bonus on both modes."
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-skill-shot",
+      "title": "Steer the Launch",
+      "desc": "Make any one of the three selectable skill shot options on the auto-plunge.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-top-lanes"
+    },
+    {
+      "id": "shark-flips-enabled",
+      "title": "Fin on Autopilot",
+      "desc": "Spell S-H-A-R-K on the stand-up bank to switch on the game-controlled fin flipper shots.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "shark-bank-flips"
+    },
+    {
+      "id": "max-bonus-multiplier",
+      "title": "Sunblock Maxed",
+      "desc": "Spell S-P-F at the top lanes enough times on one ball to reach the 10X end-of-ball bonus multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "spf-multiplier"
+    },
+    {
+      "id": "earn-extra-ball",
+      "title": "One More Ball",
+      "desc": "Light and collect an extra ball in a single game, from any source.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "spf-maxout-lap"
+    },
+    {
+      "id": "finish-cpr",
+      "title": "Bring Them Back",
+      "desc": "Start CPR and hit all three lit ramps before the mode timer expires.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-cpr"
+    },
+    {
+      "id": "finish-diver-trapped",
+      "title": "Free the Diver",
+      "desc": "Start Diver Trapped and collect all four lit shots to end the mode with the extra ball lit.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-diver-trapped"
+    },
+    {
+      "id": "finish-tidal-wave",
+      "title": "Ride the Swell",
+      "desc": "Start Tidal Wave from the spinner lane and complete it before it times out.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-tidal-wave"
+    },
+    {
+      "id": "start-five-ball-multiball",
+      "title": "Five in the Air",
+      "desc": "Lock all three balls through the left ramp trap door and start the five-ball multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-lock-and-launch"
+    },
+    {
+      "id": "rescue-all-swimmers",
+      "title": "Ten Out of Ten",
+      "desc": "During Chopper Rescue, work the vehicle stand-ups until all ten swimmers are pulled out of the water.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-chopper-rescue"
+    },
+    {
+      "id": "clear-the-cove",
+      "title": "Cove Cleared",
+      "desc": "Clear every shark wave in Shark Cove and take the completion bonus.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-shark-cove"
+    },
+    {
+      "id": "spell-ironman",
+      "title": "Letters Off the Upper Flipper",
+      "desc": "Spell the full side-ramp award word from the upper-left flipper in one game to light its video mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "ironman-side-ramp-letters"
+    },
+    {
+      "id": "double-super-jackpot",
+      "title": "Twice the Super",
+      "desc": "Collect all five swimmer jackpots in one multiball, then the super jackpot at the scoop and the doubled one at the side ramp.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "super-jackpot-phase"
+    },
+    {
+      "id": "start-tourist-season",
+      "title": "Passport Stamped",
+      "desc": "Light the second progress lamp on all five mode shots to start the Tourist Season two-ball multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tourist-season-multiball"
+    },
+    {
+      "id": "all-six-countries",
+      "title": "Six Flags on the Beach",
+      "desc": "Collect all six countries during Tourist Season and then cash a side-ramp jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "tourist-season-farm"
+    },
+    {
+      "id": "guard-sweep",
+      "title": "Guard Sweep",
+      "desc": "Collect all five lit guard shots in a single Guard round before the values decay to the floor.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "guard-millions-farm"
+    },
+    {
+      "id": "reach-earthquake",
+      "title": "The Ground Moves",
+      "desc": "Start the game's wizard mode at the upper up-kicker by either qualification path.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-earthquake-shortcut"
+    },
+    {
+      "id": "all-modes-then-earthquake",
+      "title": "The Long Road In",
+      "desc": "Finish all five vertical modes plus both horizontal modes and start the wizard mode off that full qualification.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-earthquake-modes"
+    },
+    {
+      "id": "earthquake-full-sweep",
+      "title": "Shake Everything Loose",
+      "desc": "Hit all five lit mode shots during a single Earthquake round before the timer expires.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-earthquake-modes"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-three-skill-options",
+      "title": "All Three Skill Options",
+      "text": "The ball launches itself here, so the skill shot is flipper timing rather than plunge strength. Work all three targets across your balls: the SPF lanes, the fin flip into the Shark scoop, and the upper-left flipper into the Side Ramp.",
+      "reps": "5 plunges per option",
+      "focus": "skill-shot",
+      "goal": "skillshot-side-ramp",
+      "shots": [
+        "plunger",
+        "top-lanes",
+        "shark-super-scoop",
+        "side-ramp",
+        "upper-left-flipper"
+      ]
+    },
+    {
+      "id": "drill-left-ramp-reps",
+      "title": "Left Ramp, Over And Over",
+      "text": "Hammer the left ramp from the first flipper touch. Cumulative hits there start CPR and the same ramp is where every multiball lock goes, so no other single shot on this machine repays repetition as well.",
+      "reps": "15 makes",
+      "focus": "accuracy",
+      "goal": "strategy-best-opener-cpr-rush",
+      "shots": [
+        "left-ramp"
+      ]
+    },
+    {
+      "id": "drill-three-ramp-run",
+      "title": "Three Ramps On The Clock",
+      "text": "Run left ramp, centre ramp, right ramp inside one short window with no cradling in between. The order is flexible but the clock is not, and the completion bonus only lands if all three go down in the same round.",
+      "reps": "5 runs",
+      "focus": "flow",
+      "goal": "cpr-three-ramp-run",
+      "shots": [
+        "left-ramp",
+        "center-ramp",
+        "right-ramp"
+      ]
+    },
+    {
+      "id": "drill-spinner-to-side-ramp",
+      "title": "Spinner Lane Into The Hold",
+      "text": "Send the ball down the Spinner Lane so it parks in the Upper Ball Launch, then take the Side Ramp when it feeds the upper-left flipper. That hold is the reliable way to get repeat cracks at the Side Ramp instead of waiting on a lucky feed.",
+      "reps": "10 trips",
+      "focus": "ball-control",
+      "goal": "ironman-side-ramp-letters",
+      "shots": [
+        "spinner-lane",
+        "upper-ball-launch",
+        "upper-left-flipper",
+        "side-ramp"
+      ]
+    },
+    {
+      "id": "drill-spf-lanes-every-pass",
+      "title": "Take SPF Every Pass",
+      "text": "Roll the top lanes whenever the ball is up there and keep re-spelling SPF. It is the only multiplier on the machine, it only touches the end-of-ball bonus, and it resets to nothing every single ball.",
+      "reps": "1 full ball",
+      "focus": "accuracy",
+      "goal": "spf-multiplier",
+      "shots": [
+        "top-lanes"
+      ]
+    },
+    {
+      "id": "drill-know-the-drain-banks",
+      "title": "Know Which Banks Bite",
+      "text": "Take the vehicle standups and the SHARK bank only off a settled ball, and only when a mode genuinely needs them. Both banks aim back at the centre drain, which is why the two modes built on them are the ones to let run out rather than chase.",
+      "reps": "10 deliberate hits each",
+      "focus": "ball-control",
+      "goal": "strategy-multiball-priority",
+      "shots": [
+        "vehicle-targets",
+        "shark-bank"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": false,
+    "how": "No action button, and no shooter rod either — Baywatch fires every ball for you. That makes the plunge a timing exercise instead of a strength one: you pick one of three skill shot targets and then work the flippers as the ball arrives. The shark-fin mini-flipper that redirects the launch is driven by the game, not by a button."
+  },
+  "howItPlays": {
+    "objective": "Baywatch is a fast Sega beach game with an auto-plunger and no action button, where you run the lifeguard rescue modes and chase Multiball. Finish all five rescue modes plus both Guard rounds, or climb the shark scoop ladder, to reach the Earthquake wizard mode.",
+    "loop": [
+      "Steer the auto-plunge with flipper timing into one of three skill shots, then spell S-P-F at the top lanes to build the end-of-ball bonus multiplier.",
+      "Hammer any of the five mode shots -- the three ramps, the spinner lane, and the upper up-kicker -- since four hits on one starts its rescue mode and each carries a Guard letter.",
+      "Clear the three-bank drop targets to arm left-ramp locks, bank three of them, and start five-ball Multiball with its Swimmer Jackpots.",
+      "Collect all five Swimmer Jackpots for the Super at the shark scoop and the Double Super at the side ramp, holding a ball in the upper launch to double them.",
+      "Finish every mode, or climb the shark scoop ladder to its top tier, to light Earthquake at the upper up-kicker."
+    ],
+    "lights": [
+      {
+        "id": "spf-top-lanes",
+        "name": "SPF Top Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "A lit top lane is a letter of S-P-F you have not rolled yet, the auto-plunge starts the ball up here, and each completed S-P-F resets the lanes to spell again.",
+        "flashing": null,
+        "control": null,
+        "then": "Every S-P-F you finish steps the end-of-ball bonus multiplier one notch toward 10x, though it never carries past the current ball, so keep re-spelling it whenever the ball is up top. One more completion at a maxed multiplier pays a flat bonus and lights a one-time Extra Ball over at the up-kicker.",
+        "goals": [
+          "spf-multiplier",
+          "spf-maxout-lap",
+          "skillshot-top-lanes"
+        ]
+      },
+      {
+        "id": "guard-shots",
+        "name": "Guard Tower Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "spinner-lane"
+          },
+          {
+            "shot": "upper-vuk"
+          }
+        ],
+        "lit": "Each of the five mode shots carries a Guard lamp, so a lit one is a Guard shot still to collect, and hitting it lights that shot's GUARD letter.",
+        "flashing": null,
+        "control": null,
+        "then": "During a Guard round, sweep all five lit shots fast, because the award decays toward a floor and a collected shot goes dark, so move to a fresh one each time. Lighting the second lamp on all five starts the Tourist Season two-ball multiball, where the right ramp farms countries and the side ramp pays 100M jackpots.",
+        "goals": [
+          "guard-millions-farm",
+          "tourist-season-multiball"
+        ]
+      },
+      {
+        "id": "rescue-modes",
+        "name": "Rescue Mode Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "spinner-lane"
+          },
+          {
+            "shot": "upper-vuk"
+          }
+        ],
+        "lit": "The same five shots each build their own rescue mode, so a lit mode arrow means four cumulative hits there will start that shot's timed round.",
+        "flashing": null,
+        "control": null,
+        "then": "Start CPR at the left ramp, Chopper Rescue at the center, Shark Cove at the right, Diver Trapped at the upper up-kicker, and Tidal Wave down the spinner lane. Play CPR and Diver Trapped freely, but let Chopper Rescue and Shark Cove time out unless you must have them, since their target banks fire straight at the center drain.",
+        "goals": [
+          "mode-cpr",
+          "mode-chopper-rescue",
+          "mode-diver-trapped",
+          "mode-shark-cove",
+          "mode-tidal-wave"
+        ]
+      },
+      {
+        "id": "multiball-locks",
+        "name": "Multiball Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drop-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "spinner-lane"
+          },
+          {
+            "shot": "upper-ball-launch"
+          },
+          {
+            "shot": "shark-super-scoop"
+          },
+          {
+            "shot": "side-ramp"
+          }
+        ],
+        "lit": "Completing the three-bank drop targets lights a lock at the left ramp's trap door, so a lit lock is a ball you can bank under the playfield toward Multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three balls at the left ramp to launch five-ball Multiball with all five mode shots lit for Swimmer Jackpots, and send one up the spinner lane so the upper launch holds it and doubles every jackpot for about ten seconds. Collect all five Swimmer Jackpots to light the Super at the shark scoop, then the Double Super at the side ramp, the two biggest scores in regular play.",
+        "goals": [
+          "multiball-lock-and-launch",
+          "super-jackpot-phase"
+        ]
+      },
+      {
+        "id": "shark-scoop-ladder",
+        "name": "Shark Scoop Award Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "shark-bank",
+            "lamps": 5
+          },
+          {
+            "shot": "shark-super-scoop"
+          }
+        ],
+        "lit": "The SHARK standup bank spells S-H-A-R-K, so a lit standup is a letter left, and completing the word switches on the game-controlled fin flipper.",
+        "flashing": null,
+        "control": null,
+        "then": "With SHARK spelled, the fin flipper auto-fires the ball into the shark super scoop for you, climbing a five-tier ladder of a Video Mode, a Super Laser Kick, Shark Frenzy, an Extra Ball, and finally Earthquake at the top. Reaching that top tier lights the wizard mode without finishing every rescue mode.",
+        "goals": [
+          "shark-bank-flips",
+          "wizard-earthquake-shortcut"
+        ]
+      },
+      {
+        "id": "side-ramp-word",
+        "name": "Side Ramp Award Word",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "side-ramp"
+          },
+          {
+            "shot": "upper-ball-launch"
+          },
+          {
+            "shot": "spinner-lane"
+          }
+        ],
+        "lit": "Every letter of the side-ramp award word is earned with a clean shot off the upper-left flipper, so a lit letter is one still to spell.",
+        "flashing": null,
+        "control": null,
+        "then": "Use the upper ball launch to hand the ball back to that flipper for repeat cracks at the ramp, and completing the word pays a chunk of points plus a Video Mode at the spinner lane. The side ramp is also where the Double Super Jackpot lands during Multiball.",
+        "goals": [
+          "ironman-side-ramp-letters"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Take the default S-P-F skill shot off the auto-plunge, then pound the left ramp two or three times to build toward CPR before you drift into the bumpers. Roll the top lanes for the bonus multiplier any time the ball is up there.",
+        "goals": [
+          "skillshot-top-lanes",
+          "strategy-first-30-seconds",
+          "mode-cpr"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Clear the drop targets to bank three locks and start five-ball Multiball, where the escalating Swimmer Jackpots dwarf the standalone rescue modes. Route a ball through the spinner lane into the upper launch to double every jackpot, then finish at the Super and Double Super.",
+        "goals": [
+          "multiball-lock-and-launch",
+          "super-jackpot-phase",
+          "strategy-multiball-priority"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Earthquake is the wizard mode, lit at the upper up-kicker either by finishing all five rescue modes plus both Guard rounds or by climbing the shark scoop ladder to its top tier. It maxes the bonus multiplier, turns on mega pop bumpers, and re-pays every mode you played across thirty auto-launched seconds.",
+        "goals": [
+          "wizard-earthquake-modes",
+          "wizard-earthquake-shortcut"
+        ]
+      }
+    ]
+  }
+}

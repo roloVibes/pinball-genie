@@ -1,0 +1,1430 @@
+{
+  "machine": "Fallout (Stern Pinball, 2026)",
+  "defaultFx": "military",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.4,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.62,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "mutated-flipper",
+      "name": "Mutated Flipper (upper left)",
+      "type": "flipper",
+      "x": 0.2,
+      "y": 0.61,
+      "trim": "all",
+      "notes": "An inverted upper flipper on the left side; it feeds the outer loop."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.09,
+      "y": 0.11,
+      "trim": "all"
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane (Nuka-Cola)",
+      "type": "lane",
+      "x": 0.27,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane (Nuka-Cola)",
+      "type": "lane",
+      "x": 0.8,
+      "y": 0.13,
+      "trim": "all"
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.91,
+      "y": 0.11,
+      "trim": "all"
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.28,
+      "trim": "all"
+    },
+    {
+      "id": "pop-bumper",
+      "name": "Fusion Core Pop Bumper",
+      "type": "bumpers",
+      "x": 0.19,
+      "y": 0.23,
+      "trim": "all",
+      "notes": "The single pop bumper; every hit charges the fusion core."
+    },
+    {
+      "id": "junk-target",
+      "name": "Junk Target",
+      "type": "standup",
+      "x": 0.37,
+      "y": 0.18,
+      "trim": "all"
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.26,
+      "y": 0.44,
+      "trim": "all",
+      "flipper": "right",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "hack-target",
+      "name": "Hacking Target",
+      "type": "standup",
+      "x": 0.32,
+      "y": 0.47,
+      "trim": "all",
+      "notes": "Stand-up beside the left ramp: mystery (hacking) and extra ball."
+    },
+    {
+      "id": "radroach-left",
+      "name": "Left Radroach Target",
+      "type": "standup",
+      "x": 0.3,
+      "y": 0.53,
+      "trim": "all"
+    },
+    {
+      "id": "pipboy-shot",
+      "name": "Pip-Boy Shot",
+      "type": "lane",
+      "x": 0.29,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "The shot directly under the Pip-Boy."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "ramp",
+      "x": 0.37,
+      "y": 0.73,
+      "trim": "all",
+      "notes": "The ramp-style lane just right of the Pip-Boy."
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop",
+      "type": "loop",
+      "x": 0.45,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "The shot just left of the center ramp; the companion and stimpak calls name it the center loop."
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Vault)",
+      "type": "ramp",
+      "x": 0.51,
+      "y": 0.69,
+      "trim": "all",
+      "notes": "Leads to the vault door at the back."
+    },
+    {
+      "id": "nuka-spinner",
+      "name": "Nuka-Cola Spinner",
+      "type": "spinner",
+      "x": 0.57,
+      "y": 0.67,
+      "trim": "all",
+      "notes": "A bottle-cap spinner that the game lowers into play and raises again."
+    },
+    {
+      "id": "radio-tower",
+      "name": "Radio Tower Target",
+      "type": "standup",
+      "x": 0.61,
+      "y": 0.65,
+      "trim": "all"
+    },
+    {
+      "id": "radroach-upper",
+      "name": "Upper Radroach Target",
+      "type": "standup",
+      "x": 0.54,
+      "y": 0.75,
+      "trim": "all"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.67,
+      "trim": "all",
+      "flipper": "left",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "deathclaw",
+      "name": "Deathclaw",
+      "type": "bash-toy",
+      "x": 0.78,
+      "y": 0.6,
+      "trim": "all"
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.92,
+      "y": 0.56,
+      "trim": "all",
+      "flipper": "left"
+    },
+    {
+      "id": "right-scoop",
+      "name": "Right Scoop",
+      "type": "scoop",
+      "x": 0.87,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Starts quests and side quests, opens Sundries, loots, and upgrades your weapon."
+    },
+    {
+      "id": "nuke-targets",
+      "name": "Mini-Nuke 3-Bank",
+      "type": "target-bank",
+      "x": 0.76,
+      "y": 0.45,
+      "trim": "all"
+    },
+    {
+      "id": "radroach-right",
+      "name": "Right Radroach Target",
+      "type": "standup",
+      "x": 0.74,
+      "y": 0.35,
+      "trim": "all"
+    },
+    {
+      "id": "outer-loop",
+      "name": "Outer Loop",
+      "type": "orbit",
+      "x": 0.08,
+      "y": 0.68,
+      "trim": "all",
+      "flipper": "mutated-flipper",
+      "notes": "The long wasteland loop, shot from the mutated upper flipper."
+    },
+    {
+      "id": "fat-man",
+      "name": "Fat Man Launcher",
+      "type": "mech",
+      "x": 0.15,
+      "y": 0.44,
+      "trim": "premium-le",
+      "notes": "A multi-axis launcher that fires the ball at a lit target; aim is fired with the action button."
+    },
+    {
+      "id": "gallery-spinner",
+      "name": "Gallery Spinner",
+      "type": "spinner",
+      "x": 0.77,
+      "y": 0.87,
+      "trim": "premium-le",
+      "playfield": "shooting-gallery"
+    },
+    {
+      "id": "gallery-targets",
+      "name": "Gallery Targets",
+      "type": "target-bank",
+      "x": 0.82,
+      "y": 0.81,
+      "trim": "premium-le",
+      "playfield": "shooting-gallery",
+      "notes": "Two targets; the middle one flips to its other face after every hit."
+    },
+    {
+      "id": "vault-loop",
+      "name": "Vault Loop",
+      "type": "loop",
+      "x": 0.6,
+      "y": 0.48,
+      "trim": "premium-le",
+      "playfield": "vault"
+    },
+    {
+      "id": "vault-targets",
+      "name": "Vault Stand-ups",
+      "type": "target-bank",
+      "x": 0.6,
+      "y": 0.4,
+      "trim": "premium-le",
+      "playfield": "vault",
+      "notes": "Three stand-up targets in the lower vault playfield."
+    }
+  ],
+  "playfields": [
+    {
+      "id": "shooting-gallery",
+      "name": "Shooting Gallery",
+      "kind": "upper",
+      "trim": "premium-le",
+      "bounds": {
+        "x": 0.67,
+        "y": 0.76,
+        "w": 0.25,
+        "h": 0.21
+      },
+      "entries": [
+        "fat-man"
+      ]
+    },
+    {
+      "id": "vault",
+      "name": "The Vault",
+      "kind": "lower",
+      "trim": "premium-le",
+      "bounds": {
+        "x": 0.43,
+        "y": 0.3,
+        "w": 0.34,
+        "h": 0.23
+      },
+      "entries": [
+        "center-ramp"
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-cap-stash",
+      "title": "Skill Shot -- Cap Stash",
+      "category": "skillshot",
+      "difficulty": 2,
+      "summary": "Time the launch so the ball rolls over the flashing Nuka-Cola inlane, then rip the spinner while it is down.",
+      "reward": "3M base plus a value per spin and a few seconds of ball save; each repeat raises both",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Time the launch",
+          "detail": "Watch the Nuka-Cola light on the right inlane and launch so the ball crosses it while it flashes."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Roll the flashing Nuka-Cola",
+          "detail": "Catching it lit drops the Nuka-Cola spinner into play for only a few seconds."
+        },
+        {
+          "shot": "nuka-spinner",
+          "action": "Rip the spinner at once",
+          "detail": "Fire straight from the right flipper -- every spin adds to the award and the spinner pops back up fast.",
+          "flipper": "right"
+        }
+      ]
+    },
+    {
+      "id": "progression-character",
+      "title": "Pick Lucy, Maximus or The Ghoul",
+      "category": "progression",
+      "difficulty": 1,
+      "summary": "Before the first launch, the flipper buttons choose who you play as. Each character carries a perk and two S.P.E.C.I.A.L. bonuses.",
+      "steps": [],
+      "instructions": [
+        "Before plunging ball one, tap the flipper buttons to cycle through the three characters.",
+        "Lucy: vaults are friendlier -- easier letters and longer timers -- plus +1 Perception and +1 Luck.",
+        "Maximus: power armor burns slower (two extra seconds per fusion-core level) plus +1 Strength and +1 Agility.",
+        "The Ghoul: radiation can't hurt him -- radroaches build HP instead -- plus +1 Endurance and +1 Charisma.",
+        "Each character also has side modes of their own, so the pick shapes more than your stats."
+      ]
+    },
+    {
+      "id": "mode-start-quest",
+      "title": "Fill Up on HP and Start a Quest",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Quests run on HP as their clock. Eat at the yellow Pip-Boy shot until you have at least 50 HP, then take the right scoop.",
+      "reward": "A quest mode; finishing it awards a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "pipboy-shot",
+          "action": "Eat at the yellow shot",
+          "detail": "Each lit food shot under the Pip-Boy adds HP, and repeats keep adding more. Early on the right ramp feeds you too."
+        },
+        {
+          "shot": "junk-target",
+          "action": "Change the quest if you like",
+          "detail": "With a quest lit, the Junk target rolls the selection to the next one."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Start it at the scoop",
+          "detail": "The blinking QUESTS insert is the one you'll get. One HP is one second of quest time, up to 100."
+        }
+      ],
+      "requiresNote": "At least 50 HP"
+    },
+    {
+      "id": "multiball-wedding-day",
+      "title": "Wedding Day",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "A two-ball quest. On Premium/LE the lower vault joins in: main-playfield shots light the vault's shots and vice versa, and making every main-playfield shot opens the vault for the super. On Pro, blue shots light yellow shots, and yellow shots build toward the super.",
+      "reward": "Super jackpot and a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "right-scoop",
+          "action": "Start the quest",
+          "detail": "Pick Wedding Day as the lit quest and take the scoop."
+        },
+        {
+          "shot": "deathclaw",
+          "action": "Bash for another ball",
+          "detail": "Count the red inserts down and hit the Deathclaw when FIRE! lights to add a ball."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Super jackpot in the vault",
+          "detail": "On Premium/LE, the vault door opens once the super is lit -- shoot through it for the super, which also finishes the quest."
+        }
+      ],
+      "requiresNote": "Start it at the right scoop as the queued quest, with at least 50 HP"
+    },
+    {
+      "id": "mode-radscorpion",
+      "title": "Radscorpion Attack",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Any lit shot lights the center jump ramp at double value, and extra shots grow it. Land four jumps and the final blow lights -- on Premium/LE you deliver it with the Fat Man at the lit target.",
+      "reward": "Mode total and a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Jump the center four times",
+          "detail": "Each jump starts at 500K plus 250K per shot made. After the fourth, the final blow lights."
+        }
+      ],
+      "requiresNote": "Start it at the right scoop as the queued quest, with at least 50 HP"
+    },
+    {
+      "id": "multiball-the-kings",
+      "title": "The Kings",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "A two-ball quest built on combos. Every lit shot is a jackpot; chaining them starts a killing spree and raises the multiplier. Three sprees -- or a maxed multiplier -- light the super jackpot.",
+      "reward": "Super jackpot and a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Chain lit shots",
+          "detail": "Any lit shot scores a jackpot; flowing one straight into the next starts a killing spree.",
+          "link": "none"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Keep the spree going",
+          "detail": "Each spree adds 1x to the multiplier and pays a multiplied jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "deathclaw",
+          "action": "Add a ball",
+          "detail": "When FIRE! lights under the Deathclaw, one more bash brings in another ball.",
+          "link": "none"
+        }
+      ],
+      "ordered": false,
+      "requiresNote": "Start it at the right scoop as the queued quest, with at least 50 HP"
+    },
+    {
+      "id": "mode-mind-control",
+      "title": "Mind Control",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Lit ramps drop the Nuka-Cola spinner for a short window; rip it enough times to pass each of three tests.",
+      "reward": "Test values and a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Make a lit ramp",
+          "detail": "Any lit ramp drops the spinner for a few seconds."
+        },
+        {
+          "shot": "nuka-spinner",
+          "action": "Rip it",
+          "detail": "Spins count toward the current test; the second test asks for 50 spins."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Drop it again",
+          "detail": "Keep relighting the spinner with ramps until all three tests are done."
+        }
+      ],
+      "requiresNote": "Start it at the right scoop as the queued quest, with at least 50 HP"
+    },
+    {
+      "id": "mode-novac",
+      "title": "NOVAC",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "A ramp mode. Lit ramps score 2M plus 250K per shot, an upper loop raises the multiplier on your next ramp, and six or more mode shots light the Pip-Boy finish.",
+      "reward": "Double-value finish and a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot lit ramps",
+          "detail": "Every lit ramp scores the mode value."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Keep counting",
+          "detail": "Six or more mode shots light the final shot."
+        },
+        {
+          "shot": "pipboy-shot",
+          "action": "Finish at the Pip-Boy",
+          "detail": "The finish pays double the current shot value."
+        }
+      ],
+      "requiresNote": "Start it at the right scoop as the queued quest, with at least 50 HP"
+    },
+    {
+      "id": "mode-find-the-target",
+      "title": "Find the Target",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Search four different yellow shots to locate the target, then hit whichever shot's insert blinks faster than the rest. Other shots raise its value first if you want. Another phase follows once it's hit.",
+      "reward": "Mode total and a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Search a yellow shot",
+          "detail": "Each search must be a different shot -- repeats don't count."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Search another",
+          "detail": "Four searches reveal where the target is."
+        }
+      ],
+      "ordered": false,
+      "requiresNote": "Start it at the right scoop as the queued quest, with at least 50 HP"
+    },
+    {
+      "id": "mode-open-the-vault",
+      "title": "Spell VAULT and Open the Vault",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Collect VAULT letters at the lit shots to light Open Vault on the center ramp. Premium/LE sends you into the lower vault for a vault mode; Pro plays Find the Lunchbox.",
+      "reward": "A lunchbox: odd ones start Vault Multiball, even ones give a Legendary Weapon",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Collect lit VAULT letters",
+          "detail": "Any shot showing a lit VAULT letter insert pays a letter; grab whichever ones are on."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Open the vault",
+          "detail": "Premium/LE: the ball is held while the door swings open -- shoot through it to start a vault mode. Pro: bash the door again to start Find the Lunchbox."
+        }
+      ]
+    },
+    {
+      "id": "mode-vault-modes",
+      "title": "Play a Vault Mode",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Premium/LE only. Inside the vault, the lower playfield's three stand-ups and loop are the whole mode. The vault number shown as the door opens tells you which mode you got.",
+      "reward": "A lunchbox",
+      "steps": [
+        {
+          "shot": "vault-targets",
+          "action": "Work the stand-ups",
+          "detail": "Most vault modes ask for hits on the three stand-ups -- gather supplies, fight raiders, collect parts -- before the loop."
+        },
+        {
+          "shot": "vault-loop",
+          "action": "Collect at the loop",
+          "detail": "Finishing the mode at the loop collects a lunchbox."
+        }
+      ],
+      "requiresNote": "Opening the vault with VAULT spelled"
+    },
+    {
+      "id": "mode-find-the-lunchbox",
+      "title": "Find the Lunchbox (Pro)",
+      "category": "mode",
+      "difficulty": 1,
+      "summary": "Pro only. After opening the vault, several shots light blue. Hit any one to find a lunchbox -- that shot drops out of later rounds -- then open it at the scoop.",
+      "reward": "A lunchbox",
+      "steps": [
+        {
+          "shot": "right-scoop",
+          "action": "Open the lunchbox",
+          "detail": "Once you've found it at a blue shot, the scoop opens it and pays the reward."
+        }
+      ],
+      "requiresNote": "Opening the vault with VAULT spelled"
+    },
+    {
+      "id": "multiball-deathclaw",
+      "title": "Deathclaw Multiball",
+      "category": "multiball",
+      "difficulty": 2,
+      "summary": "Cripple the Deathclaw's four limbs with timed bashes to start its multiball. There are three, played in order. The first has you build the jackpot on red shots and cash it at the Deathclaw; the second has you charge your weapon on red shots and switches before each jackpot.",
+      "reward": "Jackpots and supers; a weapon upgrade unlocks the next Deathclaw",
+      "steps": [
+        {
+          "shot": "deathclaw",
+          "action": "Cripple the limbs",
+          "detail": "The four inserts under the toy sweep back and forth -- the lit one is the limb you'll hit. When all four and FIRE! flash, the next bash starts it."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Build on red shots",
+          "detail": "In the first one, for 20 seconds every red-lit shot -- not just this one -- raises the jackpot from its 2M base.",
+          "link": "none"
+        },
+        {
+          "shot": "deathclaw",
+          "action": "Collect at the toy",
+          "detail": "For 12 seconds, bash to collect; combo bashes stack a multiplier and enough jackpots light supers."
+        }
+      ],
+      "requiresNote": "The second and third Deathclaw multiballs each need a weapon upgrade first"
+    },
+    {
+      "id": "multiball-wasteland",
+      "title": "Wasteland Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Hit the 3-bank to earn mini-nukes and load them with the left loop, then clear the shooting gallery -- the Fat Man's upper gallery on Premium/LE, the same 3-bank fired from the left flipper on Pro. Clearing it starts the multiball: wipe out enemy waves at lit shots to light the super.",
+      "reward": "3M+ jackpots; the super is 15M times the wave number, plus 2.5M for every jackpot collected",
+      "steps": [
+        {
+          "shot": "nuke-targets",
+          "action": "Collect a mini-nuke",
+          "detail": "A 3-bank hit earns a mini-nuke."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Load the launcher",
+          "detail": "The left loop loads the Fat Man on Premium/LE; on Pro the ball feeds the left flipper instead."
+        },
+        {
+          "shot": "nuke-targets",
+          "action": "Clear the gallery",
+          "detail": "Pro: shoot the lit 3-bank stand-up from the left flipper. Premium/LE: the Fat Man fires at the upper gallery instead (see Fat Man: Clear the Gallery). Clearing it starts the multiball."
+        }
+      ]
+    },
+    {
+      "id": "multiball-wasteland-fat-man",
+      "title": "Fat Man: Clear the Gallery",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "Premium/LE only. The Fat Man fires the loaded ball at the upper shooting gallery: a spinner and two targets. During the multiball, the red Pip-Boy shot loads it for the super.",
+      "reward": "Gallery hits toward Wasteland Multiball, then its super jackpot",
+      "steps": [
+        {
+          "shot": "fat-man",
+          "action": "Aim and fire",
+          "detail": "Aim at the lit gallery shot and press the action button to fire."
+        },
+        {
+          "shot": "gallery-spinner",
+          "action": "Hit the gallery spinner",
+          "detail": "When the spinner is lit, a shot through it counts.",
+          "link": "none"
+        },
+        {
+          "shot": "gallery-targets",
+          "action": "Hit the gallery targets",
+          "detail": "The middle target flips to its other side after every hit.",
+          "link": "none"
+        },
+        {
+          "shot": "pipboy-shot",
+          "action": "Load for the super",
+          "detail": "Once enough kills light the super, the red Pip-Boy shot loads the Fat Man to fire it at the blinking 3-bank light."
+        }
+      ],
+      "requiresNote": "A mini-nuke loaded from the 3-bank"
+    },
+    {
+      "id": "multiball-vault",
+      "title": "Vault Multiball",
+      "category": "multiball",
+      "difficulty": 3,
+      "summary": "A three-ball multiball from your first lunchbox. The jackpot marches left to right, one shot per collect, and a final lit shot follows the right orbit; clear the march and the super lights at the vault.",
+      "reward": "2M+ jackpots and a vault super jackpot",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Jackpot 1: left ramp",
+          "detail": "The faster-blinking blue shot with its VAULT insert lit is the jackpot; other blue shots build its value."
+        },
+        {
+          "shot": "pipboy-shot",
+          "action": "Jackpot 2: Pip-Boy shot",
+          "detail": "The jackpot moves one shot to the right each time you collect it."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Jackpot 3: left orbit",
+          "detail": "The ramp-style lane just right of the Pip-Boy."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Jackpot 4: left loop",
+          "detail": "The shot just left of the center ramp."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Jackpot 5: center ramp",
+          "detail": "Each jackpot is 2M plus 500K for every one before it."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Jackpot 6: right orbit",
+          "detail": "One more jackpot shot lights after this -- take whichever is flashing."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Super jackpot",
+          "detail": "Premium/LE: go past the vault door and finish the stand-ups and loop below. Pro: bash the door."
+        }
+      ],
+      "requiresNote": "Your first lunchbox from the vault (then every odd-numbered one)"
+    },
+    {
+      "id": "mode-radio",
+      "title": "Radio Modes",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Build the radio signal at the radio tower target. At full strength the music-note inserts light up in different colors -- each color is a different song. Hit the note shot showing the color you want; the song's length is the mode timer.",
+      "reward": "Radio jackpots once enough shots are made during the song",
+      "steps": [
+        {
+          "shot": "radio-tower",
+          "action": "Boost the signal",
+          "detail": "The signal meter sits top-left on the backbox display. Once it's full, pick your song by hitting the music-note shot in that song's color. The timer runs the whole song and can't be paused by holding the ball."
+        }
+      ]
+    },
+    {
+      "id": "progression-caps-sundries",
+      "title": "Cap Stash and the Sundries Shop",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "Light both Nuka-Cola inlanes to light the Cap Stash, roll the flashing one to drop the spinner and rip it for caps, then spend caps at the scoop.",
+      "reward": "Caps to buy fusion cores, stimpaks, junk and more",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Light both Nuka-Colas",
+          "detail": "Both inlane lights qualify the Cap Stash."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Roll the flashing one",
+          "detail": "A tap of a flipper button slides the flashing Nuka-Cola to the other inlane."
+        },
+        {
+          "shot": "nuka-spinner",
+          "action": "Rip for caps",
+          "detail": "The spinner stays down while it keeps spinning, then rises after a pause."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Shop at Sundries",
+          "detail": "When the shop is lit, up to four items are offered. You can try to steal one -- if you're caught, escape through the right orbit within 10 seconds or Mr. Handy takes every cap you have."
+        }
+      ]
+    },
+    {
+      "id": "multiplier-weapon",
+      "title": "Upgrade Your Weapon",
+      "category": "multiplier",
+      "difficulty": 2,
+      "summary": "Gather enough junk and take the scoop to upgrade your weapon. Each level adds a permanent playfield multiplier and bonus multiplier.",
+      "reward": "+0.2x playfield and +1x bonus per level; unlocks the next Deathclaw Multiball",
+      "steps": [
+        {
+          "shot": "junk-target",
+          "action": "Collect junk",
+          "detail": "The Junk target (when lit), looting and the shop all supply junk."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Upgrade at the scoop",
+          "detail": "Level 2 takes any five junk; later levels ask for more, including rare junk."
+        }
+      ]
+    },
+    {
+      "id": "multiplier-power-armor",
+      "title": "Suit Up in Power Armor",
+      "category": "multiplier",
+      "difficulty": 1,
+      "summary": "Charge the fusion core at the pop bumper, then hold the action button to put on power armor for a timed 2x playfield.",
+      "reward": "+1x playfield multiplier while the core lasts, added to your weapon multiplier",
+      "steps": [
+        {
+          "shot": "pop-bumper",
+          "action": "Charge the fusion core",
+          "detail": "Every pop hit fills the core lights beside the bumper; Sundries sells cores too. Once it holds the minimum charge, a long press of the action button puts the armor on -- hold again to take it off and save the rest."
+        }
+      ]
+    },
+    {
+      "id": "progression-companions",
+      "title": "Recruit a Trusty Companion",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "When the yellow companion inserts flash, make the left ramp, left loop and right orbit to recruit a companion. Each has an always-on perk and a button ability.",
+      "reward": "Victor, Protectron, Dogmeat or Mr. Handy -- each with a passive perk and an action-button ability",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Left ramp while yellow flashes",
+          "detail": "Any order works -- just make all three while the yellow inserts flash."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Left loop while yellow flashes",
+          "detail": "This is the loop just left of the center ramp."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Right orbit while yellow flashes",
+          "detail": "Once recruited, a short press of the action button fires your companion's ability."
+        }
+      ],
+      "ordered": false
+    },
+    {
+      "id": "strategy-stimpak",
+      "title": "Light the Stimpak Outlane Save",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "When the same three shots flash white instead of yellow, making them lights an outlane ball save.",
+      "reward": "Outlane ball save",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Left ramp while white flashes",
+          "detail": "Same three shots as the companion -- the insert color tells you which award is lit."
+        },
+        {
+          "shot": "left-loop",
+          "action": "Left loop while white flashes",
+          "detail": "Any order works."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Right orbit while white flashes",
+          "detail": "The third shot lights the outlane save."
+        }
+      ],
+      "ordered": false
+    },
+    {
+      "id": "mode-radroaches",
+      "title": "Radroaches and Radaway",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Kill the slowly blinking radroach at a stand-up, then stay off the solid-lit ones -- they're radiation pools that cut your max HP. A green ramp shot then offers radaway to fix it.",
+      "reward": "Points, loot, and radaway toward the Radaway Hurry-Up",
+      "steps": [
+        {
+          "shot": "radroach-left",
+          "action": "Kill the blinking radroach",
+          "detail": "Only the slow-blinking stand-up is a live radroach; another spawns elsewhere."
+        },
+        {
+          "shot": "radroach-upper",
+          "action": "Chase the next one",
+          "detail": "A new radroach spawns at one of the other stand-ups after each kill."
+        },
+        {
+          "shot": "radroach-right",
+          "action": "Avoid the solid ones",
+          "detail": "A solid light is a radiation pool -- hitting it again lowers your max HP."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Drink radaway",
+          "detail": "A green ramp shot is a radaway hurry-up: faster is worth more, and it restores lost max HP."
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Loot the body",
+          "detail": "After a kill, the scoop loots 2-3 random rewards -- caps, Nuka-Cola, junk, sometimes a legendary."
+        }
+      ],
+      "ordered": false
+    },
+    {
+      "id": "mode-radaway-hurry-up",
+      "title": "Radaway Hurry-Up",
+      "category": "mode",
+      "difficulty": 3,
+      "summary": "After three radaways, the green Pip-Boy shot starts the hurry-up. Make all three ramps, then cash at the outer loop from the mutated flipper -- as many times as you can in 10 seconds.",
+      "reward": "A repeatable jackpot for 10 seconds",
+      "steps": [
+        {
+          "shot": "pipboy-shot",
+          "action": "Start it",
+          "detail": "Shoot the flashing green Pip-Boy shot."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Make the left ramp",
+          "detail": "The three ramps can come in any order."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Make the center ramp",
+          "detail": "Two down, one to go.",
+          "link": "none"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Make the right ramp",
+          "detail": "All three ramps light the jackpot.",
+          "link": "none"
+        },
+        {
+          "shot": "outer-loop",
+          "action": "Cash at the outer loop",
+          "detail": "Repeat the loop from the mutated flipper as often as you can for 10 seconds.",
+          "flipper": "mutated-flipper"
+        }
+      ],
+      "requiresNote": "Three radaways collected"
+    },
+    {
+      "id": "mode-glowing-radroach",
+      "title": "Glowing Radroach",
+      "category": "mode",
+      "difficulty": 3,
+      "summary": "Kill all four radroaches to spawn a glowing one. On Premium/LE you load the Fat Man and hit the lower-right radroach as the launcher sweeps past it.",
+      "reward": "20M+ per glowing radroach",
+      "steps": [
+        {
+          "shot": "fat-man",
+          "action": "Load and track",
+          "detail": "The launcher points near the lower-right radroach and slowly swings."
+        },
+        {
+          "shot": "radroach-right",
+          "action": "Fire on it",
+          "detail": "A hit pays 20M plus 10M for each glowing radroach before it."
+        }
+      ],
+      "requiresNote": "All four radroaches killed"
+    },
+    {
+      "id": "mode-wasteland-loops",
+      "title": "Wasteland Loops and Side Quests",
+      "category": "mode",
+      "difficulty": 2,
+      "summary": "Shoot the outer loop from the mutated flipper to explore and pick up wasteland items. Loops are the main way to light Nuka-Cola Quantum -- collected at the shot behind the mutated flipper, it doubles XP for a short time -- and enough items light side quests at the scoop.",
+      "reward": "Side quests (Filly, Gulper, Super Duper Mart)",
+      "steps": [
+        {
+          "shot": "outer-loop",
+          "action": "Loop from the mutated flipper",
+          "detail": "Each trip advances you across the wasteland.",
+          "flipper": "mutated-flipper"
+        },
+        {
+          "shot": "right-scoop",
+          "action": "Start a side quest",
+          "detail": "With enough items and over 50 HP, the scoop starts the next side quest. After each phase you can cash out at the scoop or keep going for more time."
+        }
+      ]
+    },
+    {
+      "id": "secret-hacking",
+      "title": "Hack a Terminal",
+      "category": "secret",
+      "difficulty": 1,
+      "summary": "The stand-up beside the left ramp is a mystery award when its white light is on. It's also where lit extra balls are collected.",
+      "reward": "Mystery award; extra ball when lit",
+      "steps": [
+        {
+          "shot": "hack-target",
+          "action": "Hit it while white",
+          "detail": "Hacking can fail, or pay 10M, XP and more."
+        },
+        {
+          "shot": "hack-target",
+          "action": "Collect extra balls here",
+          "detail": "Radroach kills light extra ball -- the 4th, then the 25th."
+        }
+      ]
+    },
+    {
+      "id": "progression-special",
+      "title": "Level Up S.P.E.C.I.A.L.",
+      "category": "progression",
+      "difficulty": 2,
+      "summary": "Your seven S.P.E.C.I.A.L. stats each give a perk for the rest of the game. The Pip-Boy screen shows what the next level will do.",
+      "steps": [],
+      "instructions": [
+        "Character choice gives two stats a head start; bobbleheads from Sundries add more.",
+        "Strength makes junk easier; Endurance lengthens ball save and doubles item progress; Charisma discounts the shop and lets the flippers choose quests; Intelligence makes the Fat Man and radio jackpots easier.",
+        "Perception at its second level lets the right flipper slide the stimpak between the outlanes.",
+        "Agility makes VATS and weapon upgrades cheaper; Luck brings more caps and better junk.",
+        "Signed in with Insider Connected, your S.P.E.C.I.A.L. progress builds from game to game, and raising every stat to 10 unlocks new modes for each character."
+      ]
+    },
+    {
+      "id": "strategy-vats",
+      "title": "Use VATS",
+      "category": "strategy",
+      "difficulty": 1,
+      "summary": "Every switch fills the AP bar on the backbox. When it's full, VATS takes a shooting-gallery target for you -- choose it with the flipper buttons.",
+      "reward": "A free shooting-gallery hit toward Wasteland Multiball",
+      "steps": [
+        {
+          "shot": "nuke-targets",
+          "action": "Pick a target",
+          "detail": "On Pro, VATS spots one of the 3-bank stand-ups; on Premium/LE it aims the Fat Man for you."
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "first-quest",
+      "title": "Out of the Vault",
+      "desc": "Start your first quest.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-start-quest"
+    },
+    {
+      "id": "cap-stash-skill",
+      "title": "Bottle Cap Collector",
+      "desc": "Make the Cap Stash skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot-cap-stash"
+    },
+    {
+      "id": "power-armor",
+      "title": "Suited Up",
+      "desc": "Put on power armor.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-power-armor"
+    },
+    {
+      "id": "companion",
+      "title": "Never Alone",
+      "desc": "Recruit a Trusty Companion.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "progression-companions"
+    },
+    {
+      "id": "deathclaw",
+      "title": "Claw Breaker",
+      "desc": "Start Deathclaw Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-deathclaw"
+    },
+    {
+      "id": "vault-opened",
+      "title": "Door's Open",
+      "desc": "Spell VAULT and open the vault.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-open-the-vault"
+    },
+    {
+      "id": "wasteland",
+      "title": "Nuked From Orbit",
+      "desc": "Clear the shooting gallery to start Wasteland Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-wasteland"
+    },
+    {
+      "id": "vault-super",
+      "title": "Vault Dweller",
+      "desc": "Score the Vault Multiball super jackpot.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "multiball-vault"
+    },
+    {
+      "id": "glowing",
+      "title": "Glowing One",
+      "desc": "Kill a glowing radroach.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mode-glowing-radroach"
+    }
+  ],
+  "drills": [
+    {
+      "id": "cap-stash-timing",
+      "title": "Cap Stash Timing",
+      "text": "Practice the launch until the ball crosses the right Nuka-Cola light while it flashes, then go straight to the spinner from the right flipper.",
+      "reps": "10 launches",
+      "focus": "skill-shot",
+      "goal": "skillshot-cap-stash",
+      "shots": [
+        "shooter-lane",
+        "right-inlane",
+        "nuka-spinner"
+      ]
+    },
+    {
+      "id": "mutated-loops",
+      "title": "Mutated Flipper Loops",
+      "text": "Feed the mutated flipper and shoot the outer loop again and again. It drives wasteland items, Quantum, and the Radaway Hurry-Up cash-in.",
+      "reps": "one full ball",
+      "focus": "accuracy",
+      "goal": "mode-wasteland-loops",
+      "shots": [
+        "mutated-flipper",
+        "outer-loop"
+      ]
+    },
+    {
+      "id": "deathclaw-timing",
+      "title": "Deathclaw Timing",
+      "text": "From a cradle, watch the sweeping limb lights and bash only when an uncrippled limb is lit. On Premium/LE a crippled limb throws the ball back at you.",
+      "reps": "20 bashes",
+      "focus": "ball-control",
+      "goal": "multiball-deathclaw",
+      "shots": [
+        "deathclaw"
+      ]
+    },
+    {
+      "id": "companion-trio",
+      "title": "Companion Trio",
+      "text": "Shoot the left ramp, left loop and right orbit in any order. The same three shots recruit companions and light the stimpak save.",
+      "reps": "5 sets",
+      "focus": "flow",
+      "goal": "progression-companions",
+      "shots": [
+        "left-ramp",
+        "left-loop",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "vault-march",
+      "title": "Vault March",
+      "text": "Shoot the vault-multiball jackpot march in order, left ramp to right orbit, until you can do it without a miss.",
+      "reps": "3 clean runs",
+      "focus": "accuracy",
+      "goal": "multiball-vault",
+      "shots": [
+        "left-ramp",
+        "pipboy-shot",
+        "left-orbit",
+        "left-loop",
+        "center-ramp",
+        "right-orbit"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Fallout's action button does two jobs, set by how long you hold it. A short press fires your Trusty Companion's ability; a long press puts on (or takes off) power armor. On Premium/LE it also fires the Fat Man.",
+    "uses": [
+      {
+        "when": "Companion recruited",
+        "what": "Short press to use their ability -- Victor drops the spinner, Protectron spots radaway, Dogmeat grabs lit junk, Mr. Handy spots a Deathclaw shot."
+      },
+      {
+        "when": "Fusion core charged",
+        "what": "Hold to suit up in power armor for a timed 2x playfield; hold again to take it off and save the charge."
+      },
+      {
+        "when": "Fat Man loaded (Premium/LE)",
+        "what": "Fire the launcher at the lit gallery target or 3-bank light."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Fallout is a Keith Elwin role-playing game: pick Lucy, Maximus or The Ghoul, keep your HP up, and run quests, vault trips and multiballs while collecting caps, junk and legendary weapons that make you stronger as the game goes on.",
+    "loop": [
+      "Eat at the yellow Pip-Boy shot to raise HP, because HP is the clock for every quest.",
+      "With 50 HP or more, start the lit quest at the right scoop; finishing one earns a Legendary Weapon.",
+      "Spell VAULT at the lit letter shots and break into the vault at the center ramp for lunchboxes and Vault Multiball.",
+      "In between, gather caps, junk and fusion cores so you can upgrade your weapon and wear power armor -- both multiply everything else."
+    ],
+    "lights": [
+      {
+        "id": "quest-inserts",
+        "name": "QUEST Inserts",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "right-scoop"
+          },
+          {
+            "shot": "pipboy-shot"
+          }
+        ],
+        "lit": "The yellow QUESTS inserts on both sides of the playfield are the main quests; the BLINKING one is the next quest the scoop will start. The yellow Pip-Boy shot is lit while food is on offer.",
+        "flashing": "The blinking quest insert is the one queued for the scoop.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "the flipper buttons pick which quest is queued",
+          "when": "only once Charisma reaches level 2 -- before that, hitting the Junk target is how you swap the queued quest"
+        },
+        "then": "Get above 50 HP at the Pip-Boy shot, then hit the right scoop to start the blinking quest. HP becomes its timer, one second per point. Finish it for a Legendary Weapon -- a permanent perk for the rest of the game.",
+        "goals": [
+          "mode-start-quest",
+          "multiball-wedding-day",
+          "mode-radscorpion",
+          "multiball-the-kings",
+          "mode-mind-control",
+          "mode-novac",
+          "mode-find-the-target"
+        ]
+      },
+      {
+        "id": "vault-letters",
+        "name": "VAULT Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "center-ramp"
+          }
+        ],
+        "lit": "A lit VAULT letter insert marks a shot that will give you the next letter; once all five are in, OPEN VAULT lights on the center ramp.",
+        "control": null,
+        "then": "Take the lit letter shots until VAULT is spelled, then shoot the center ramp. Premium/LE holds the ball, swings the door open and sends you through to a vault mode in the lower playfield; Pro plays Find the Lunchbox. Every lunchbox pays: odd ones start Vault Multiball, even ones give a Legendary Weapon.",
+        "goals": [
+          "mode-open-the-vault",
+          "mode-vault-modes",
+          "mode-find-the-lunchbox",
+          "multiball-vault"
+        ]
+      },
+      {
+        "id": "deathclaw-limbs",
+        "name": "Deathclaw Limbs + FIRE!",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "deathclaw",
+            "lamps": 5
+          }
+        ],
+        "lit": "The four limb inserts under the Deathclaw sweep left and right; the lit one is the limb your next bash will cripple. Crippled limbs stay crippled.",
+        "flashing": "All four plus FIRE! flashing means the multiball is ready -- the next bash starts it.",
+        "control": null,
+        "then": "Time each bash for an uncrippled limb (on Premium/LE, hitting a crippled one fires the ball back at you). Cripple all four, then bash once more for Deathclaw Multiball. Upgrading your weapon unlocks the next Deathclaw Multiball.",
+        "goals": [
+          "multiball-deathclaw"
+        ]
+      },
+      {
+        "id": "nuka-inlanes",
+        "name": "Nuka-Cola Inlanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "Each Nuka-Cola inlane light stays on once you roll through it. With both lit, the Cap Stash is ready and one of them FLASHES.",
+        "flashing": "The flashing Nuka-Cola is the lane that drops the spinner.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "a tap of a flipper button moves the flashing Nuka-Cola to the other inlane so you can put it under the ball",
+          "when": "once both inlanes are lit and Cap Stash is ready"
+        },
+        "then": "Roll the flashing inlane and the Nuka-Cola spinner drops. Rip it from the right flipper for caps; it stays down while it keeps spinning and rises after a pause. Caps buy fusion cores, stimpaks, radaway and junk at Sundries.",
+        "goals": [
+          "progression-caps-sundries",
+          "skillshot-cap-stash"
+        ]
+      },
+      {
+        "id": "companion-inserts",
+        "name": "Companion / Stimpak Inserts",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "left-loop"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "These three shots carry flashing inserts for two different awards: YELLOW is a Trusty Companion and WHITE is the stimpak outlane save.",
+        "control": null,
+        "then": "Make all three while yellow flashes to recruit a companion (each has a perk plus an action-button ability). Make them while white flashes to light an outlane ball save.",
+        "goals": [
+          "progression-companions",
+          "strategy-stimpak"
+        ]
+      },
+      {
+        "id": "radroach-inserts",
+        "name": "Radroach Targets",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "radroach-left"
+          },
+          {
+            "shot": "radroach-upper"
+          },
+          {
+            "shot": "radroach-right"
+          }
+        ],
+        "lit": "A SLOW-BLINKING radroach light is a live radroach. A SOLID one is a pool of radiation left by a kill.",
+        "control": null,
+        "then": "Kill the blinking one for points and loot at the scoop -- another spawns somewhere else. Stay off the solid ones: they give you RAD, which cuts your max HP until you drink radaway. Kill all four for a glowing radroach.",
+        "goals": [
+          "mode-radroaches",
+          "mode-glowing-radroach"
+        ]
+      },
+      {
+        "id": "radaway-green",
+        "name": "Green Radaway Shots",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "pipboy-shot"
+          }
+        ],
+        "lit": "A green arrow on a ramp means radaway is on offer after you've taken RAD. Its value counts down, so sooner pays more.",
+        "control": null,
+        "then": "Drink it to restore max HP. Three radaways flash the green Pip-Boy shot for the Radaway Hurry-Up: make all three ramps, then repeat the outer loop from the mutated flipper for 10 seconds.",
+        "goals": [
+          "mode-radroaches",
+          "mode-radaway-hurry-up"
+        ]
+      },
+      {
+        "id": "fusion-core",
+        "name": "Fusion Core Meter",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "pop-bumper"
+          }
+        ],
+        "lit": "The column of lights next to the pop bumper is your fusion core charge; it climbs as you hit the bumper and drains while power armor is on.",
+        "control": {
+          "input": "action-button",
+          "effect": "hold to put power armor on, hold again to take it off and save what's left",
+          "when": "once the core has the minimum charge"
+        },
+        "then": "Suit up when a good shot sequence is coming: armor adds +1x to the playfield on top of your weapon multiplier until the core runs out.",
+        "goals": [
+          "multiplier-power-armor"
+        ]
+      },
+      {
+        "id": "radio-notes",
+        "name": "Music-Note Inserts",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "radio-tower"
+          }
+        ],
+        "lit": "When the radio signal is at full strength, the music-note inserts light up in different colors. Each color is a different song, and so a different radio mode.",
+        "control": null,
+        "then": "Hit the music-note shot showing the color of the song you want to start it, then make enough shots during the song to light the radio jackpot. The song length is the timer and you can't stop it by holding the ball.",
+        "goals": [
+          "mode-radio"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Once both Nuka-Cola inlanes are lit, a tap of a flipper button moves the flashing Nuka-Cola light to the other inlane. Put it under the ball, roll through, and the Nuka-Cola spinner drops so you can rip it for caps.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Start with the Cap Stash skill shot, eat at the Pip-Boy shot and start a quest. Charge the fusion core on the pop bumper and recruit a companion so you have armor and an ability ready.",
+        "goals": [
+          "skillshot-cap-stash",
+          "mode-start-quest",
+          "progression-companions",
+          "multiplier-power-armor"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Upgrade your weapon with junk for a permanent multiplier, cripple the Deathclaw for its multiball, and spell VAULT to work through vault modes and lunchboxes.",
+        "goals": [
+          "multiplier-weapon",
+          "multiball-deathclaw",
+          "mode-open-the-vault"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Vault Multiball and Wasteland Multiball are the big payoffs -- play them with power armor on and an upgraded weapon so every jackpot is multiplied.",
+        "goals": [
+          "multiball-vault",
+          "multiball-wasteland"
+        ]
+      }
+    ]
+  }
+}

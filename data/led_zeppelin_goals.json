@@ -1,0 +1,1329 @@
+{
+  "machine": "Led Zeppelin (Stern Pinball, 2020)",
+  "defaultFx": "guitar",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left flipper (lower)",
+      "type": "flipper",
+      "x": 0.3,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard lower-left flipper. Backhands the left ramp and left orbit safely."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right flipper (lower)",
+      "type": "flipper",
+      "x": 0.7,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Standard lower-right flipper. The only flipper that reaches the cross-playfield left eject/scoop, plus the right ramp and right orbit."
+    },
+    {
+      "id": "upper-right-flipper",
+      "name": "Upper-right flipper",
+      "type": "flipper",
+      "x": 0.7,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Very high on the right, fed by the right orbit. Makes the narrow upper side shot and clears the LED bank. The #1 drain hazard — can rocket the ball straight to the left outlane or brick to the right outlane. Use sparingly."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left outlane",
+      "type": "lane",
+      "x": 0.07,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Far bottom-left drain lane; a save here can be lit by completing the Ball-Save target bank."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left inlane (ROLL)",
+      "type": "lane",
+      "x": 0.32,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Inside the left flipper; lit ROLL insert. Lane change with the flippers builds Bonus X."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right inlane (ROLL)",
+      "type": "lane",
+      "x": 0.68,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Inside the right flipper; lit ROLL insert. Lane change builds Bonus X (max 50×)."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right outlane",
+      "type": "lane",
+      "x": 0.93,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Far bottom-right drain lane; less protected than the left outlane."
+    },
+    {
+      "id": "shooter-lane",
+      "name": "Shooter lane / plunge",
+      "type": "plunge",
+      "x": 0.97,
+      "y": 0.25,
+      "trim": "all",
+      "notes": "Right-edge manual plunge. Skill shot = time the plunge to hit the lit sweeping L-E-D letter. Song mode is selected here before plunging (flippers scroll, action button chooses); once a song is chosen you plunge to hit the moving L-E-D target."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left ramp (Zeppelin lock)",
+      "type": "ramp",
+      "x": 0.29,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Left of center; locks balls for Zeppelin Multiball (3 locks). Backhandable and safe; missed shots tend to drain straight down the middle.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      },
+      "flipper": "left"
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center ramp",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Back-center; the easiest, most loopable shot, hittable from either flipper. The core repeatable loop; wailed on during guitar-solo song sections. 3 consecutive shots disable lane change until a different major shot.",
+      "feeds": {
+        "x": 0.36,
+        "y": 0.1
+      }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right ramp",
+      "type": "ramp",
+      "x": 0.67,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Right of center; right-flipper shot. Qualifies Tours (increasing number of shots per tour) and feeds the upper flipper.",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left orbit",
+      "type": "orbit",
+      "x": 0.09,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Far-left loop, shootable from either flipper (safer as a backhand). Carries the left-orbit spinner; used for tour progress and record sales.",
+      "flipper": "left"
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right orbit",
+      "type": "orbit",
+      "x": 0.91,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Far-right loop; right-flipper shot that feeds the upper flipper (dangerous return). Song change; starts Mothership, Top of the Charts and Celebration Day. Doubles jackpots in Electric Magic MB (Prem/LE).",
+      "feeds": {
+        "shot": "upper-right-flipper"
+      },
+      "flipper": "right"
+    },
+    {
+      "id": "left-scoop",
+      "name": "Left eject / scoop",
+      "type": "scoop",
+      "x": 0.13,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Far-left pocket reachable ONLY by the right flipper (cross-playfield). Starts/selects Tours, starts Tour & World Tour MBs, collects Extra Balls, and is where Zeppelin super jackpots are collected. The recommended opening shot.",
+      "flipper": "right"
+    },
+    {
+      "id": "top-eject",
+      "name": "Top lock/eject saucer",
+      "type": "saucer",
+      "x": 0.55,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "Very top of the playfield. Used for song change / feature select; a controlled gate sends the ball back down the lane or into the bumpers."
+    },
+    {
+      "id": "reversing-scoop",
+      "name": "Reversing scoop (Hot Shot)",
+      "type": "scoop",
+      "x": 0.83,
+      "y": 0.62,
+      "trim": "premium-le",
+      "notes": "Prem/LE-only upper-right eject that reverses the ball into the Hot Shot chrome combo ramp back to the right flipper; forms the upper-flipper side shot on Prem/LE.",
+      "feeds": {
+        "shot": "right-inlane"
+      },
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "side-shot",
+      "name": "Upper side shot",
+      "type": "standup",
+      "x": 0.86,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "The upper-flipper narrow side shot. On the Pro it is a standup target; on Prem/LE it becomes the Hot Shot reversing combo ramp. Starts sequential Zeppelin Awards (Super Spinner/Pops/Slings/Ramps), scores super jackpots (2× the left-eject value in Zeppelin MB), and adds +5 sec to the Icarus X timer.",
+      "flipper": "upper-right-flipper"
+    },
+    {
+      "id": "led-targets",
+      "name": "L-E-D targets",
+      "type": "standup",
+      "x": 0.41,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "3-bank up the middle; the moving-light skill-shot bank, also clearable by the upper flipper. A combo-terminator bank that carries its own Icarus X multiplier; complete LED then ZEP to qualify Electric Magic MB (Prem/LE)."
+    },
+    {
+      "id": "zep-drops",
+      "name": "Z-E-P drop targets",
+      "type": "drop-target",
+      "x": 0.52,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "3-bank center drop targets; a combo-terminator bank carrying its own Icarus X multiplier. Second half of Electric Magic qualification (Prem/LE)."
+    },
+    {
+      "id": "rock-targets",
+      "name": "R-O-C-K targets",
+      "type": "standup",
+      "x": 0.84,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "4-bank on the right; a combo-terminator bank with its own Icarus X multiplier. Spell R-O-C-K to relight Zeppelin MB locks on later multiballs."
+    },
+    {
+      "id": "ball-save-targets",
+      "name": "Ball-Save targets",
+      "type": "standup",
+      "x": 0.11,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Far-left standup bank; completing it lights a left-outlane save. The fourth combo-terminator bank with its own Icarus X multiplier."
+    },
+    {
+      "id": "icarus-standup",
+      "name": "Icarus standup target",
+      "type": "standup",
+      "x": 0.55,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Straight up the middle beside the center ramp, below the Icarus leaper toy. Combo-ender; lights/recalculates the Icarus X playfield multiplier once all four banks are raised; add-a-ball (3 hits during any multiball)."
+    },
+    {
+      "id": "electric-magic-spinner",
+      "name": "Electric Magic spinner (magic wand)",
+      "type": "spinner",
+      "x": 0.57,
+      "y": 0.52,
+      "trim": "premium-le",
+      "notes": "Motorized center magic-wand toy that rises from below the playfield; optical spinner + magnet capture/launch. Center of the Prem/LE-exclusive Electric Magic Multiball. Absent on Pro."
+    },
+    {
+      "id": "left-orbit-spinner",
+      "name": "Left-orbit spinner",
+      "type": "spinner",
+      "x": 0.09,
+      "y": 0.58,
+      "trim": "premium-le",
+      "notes": "Spinner on the left orbit lane; scores points and tour progress (Earl's Court lock). Emphasized on Prem/LE; sources indicate the Pro does not carry it in the same form."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop bumpers (×3)",
+      "type": "bumpers",
+      "x": 0.52,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Three bumpers in the upper-center back area, fed from the top eject gate and orbits; no rollover feed lanes above them."
+    },
+    {
+      "id": "hindenburg-toy",
+      "name": "Hindenburg Zeppelin toy",
+      "type": "mech",
+      "x": 0.24,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Large ~13\" custom airship over the left-ramp lock area; when lit scores speed locks toward Zeppelin Multiball."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-moving-led",
+      "title": "Moving L-E-D Skill Shot",
+      "category": "skillshot",
+      "summary": "Time the plunge so the ball strikes the lit L-E-D letter as it sweeps across the bank for 500K plus a 5-second ball save.",
+      "difficulty": 1,
+      "reward": "500K + 5 sec ball save",
+      "steps": [
+        {
+          "shot": "led-targets",
+          "action": "Time the plunge to hit the lit L-E-D letter",
+          "detail": "The lit L-E-D letter slides left↔right every couple seconds — timing beats fiddling, since the letter auto-cycles on its own. Strike whichever standup is blinking as the ball reaches the bank."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-icarus-solo-farm",
+      "title": "Icarus X into a Guitar-Solo Center-Ramp Loop",
+      "category": "combo",
+      "summary": "The signature money move: build a big Icarus X, activate it right before a Whole Lotta Love or Rock and Roll guitar solo, then loop the always-lit center ramp for the whole window.",
+      "difficulty": 3,
+      "reward": "Full mode points × the Icarus X product on every loop for 15s+",
+      "steps": [
+        {
+          "shot": "led-targets",
+          "action": "Pre-build the bank multipliers evenly",
+          "detail": "Terminate combos into all four banks (+0.1× per shot) so the product is high."
+        },
+        {
+          "shot": "icarus-standup",
+          "action": "Activate Icarus X just before the solo",
+          "detail": "Once all four banks are raised, hit Icarus to light the timed playfield multiplier."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop the center ramp through the solo",
+          "detail": "Whole Lotta Love and Rock and Roll light the center ramp during their guitar solos — wail on it."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-lowest-bank-loop",
+      "title": "Left-Heavy Combo Loop into the Lowest Bank",
+      "category": "combo",
+      "summary": "The repeatable used to BUILD Icarus X: chain left-side shots, then cash the combo into whichever target bank is currently lowest, always feeding the weakest to keep the four multipliers even.",
+      "difficulty": 2,
+      "reward": "+0.1× per combo shot to the weakest bank (raises the Icarus X product)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start the chain",
+          "detail": "Combo inserts light red to show which shots continue the chain."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Continue the combo",
+          "detail": "The center ramp returns to a flipper, ideal for chaining; length is what matters."
+        },
+        {
+          "shot": "rock-targets",
+          "action": "Terminate into the lowest bank",
+          "detail": "Cash the combo into whichever of LED/ZEP/ROCK/Ball-Save is lowest — raising the smallest bank grows the product most."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-band-boost-cash",
+      "title": "Band Boost Auto-Cash",
+      "category": "combo",
+      "summary": "Spend a Band Boost to instantly cash a running combo for 5× its value into the lowest bank — the fastest way to auto-balance Icarus X when the ball can't reach a bank in time.",
+      "difficulty": 1,
+      "reward": "5× combo value into the lowest bank (Super Band Boost = 10× into the two lowest)",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Start a combo",
+          "detail": "Any lit combo shot begins the running counter."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Chain another shot",
+          "detail": "Longer chains mean a bigger cash-out (5× the combo value)."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Press the action button (Band Boost)",
+          "detail": "Cradle the ball and press to cash instantly into the lowest bank. Merge 3+ boosts for Super Band Boost (10×, two lowest banks)."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-zeppelin-super-bankclear",
+      "title": "Zeppelin Super Jackpot × Bank Clears",
+      "category": "combo",
+      "summary": "Enter Zeppelin Multiball with high bank multipliers, collect the lit jackpots to light the super at the left eject, then boost that super by clearing target banks while it is lit.",
+      "difficulty": 3,
+      "reward": "Super jackpot (sum of all jackpots/doubles) × up to 4× from bank clears; hundreds of millions under Icarus X",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Lock and start Zeppelin Multiball",
+          "detail": "Three left-ramp shots lock three balls and start the multiball."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Cash lit jackpots to light the super",
+          "detail": "Resolve the four jackpots + timed doubles; super lights at left eject and the side shot."
+        },
+        {
+          "shot": "side-shot",
+          "action": "Collect the super at 2× value",
+          "detail": "The side shot scores 2× the left-eject value; completing LED/ZEP/ROCK while super is lit adds +1× (max 4×)."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-zeppelin",
+      "title": "Zeppelin Multiball",
+      "category": "multiball",
+      "summary": "Lock three balls at the left ramp and start a 4-ball multiball; work the jackpots up to the super at the left eject and side shot.",
+      "difficulty": 2,
+      "reward": "4-ball multiball; super jackpot = sum of all jackpots/doubles, ×up to 4× via bank clears",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Lock 3 balls",
+          "detail": "Shoot the left ramp three times (Zeppelin 1-2-3 lights).",
+          "feeds": {
+            "shot": "hindenburg-toy"
+          }
+        },
+        {
+          "shot": "left-ramp",
+          "action": "The third left ramp starts the multiball",
+          "detail": "Locking the third ball starts Zeppelin Multiball immediately - no extra shot needed."
+        },
+        {
+          "shot": "rock-targets",
+          "action": "Relight locks on later multiballs",
+          "detail": "Spell R-O-C-K to relight the locks for subsequent Zeppelin MBs."
+        },
+        {
+          "shot": "icarus-standup",
+          "action": "Add a ball",
+          "detail": "Hit the Icarus target 3× (or use a Super Band Boost)."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-tour",
+      "title": "Tour Multiball",
+      "category": "multiball",
+      "summary": "Qualify a Tour at the right ramp, choose it at the left eject, clear its objectives, then start the multiball at the left eject. Your first tour of the game asks for one objective and pays a two-ball multiball; each later tour adds another objective and another ball, up to four objectives and five balls.",
+      "difficulty": 2,
+      "reward": "2–5 ball multiball scaling with tours played; progress toward World Tour Multiball",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Qualify a Tour",
+          "detail": "Shoot the right ramp an increasing number of times (+1 per additional tour); a flashing green arrow at the left eject = ready."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Pick a Tour and clear its objectives",
+          "detail": "US 1975 / US 1977 / Earl's Court / UK 1971 — each objective banks a tour lock."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Start Tour Multiball",
+          "detail": "After the final lock, the next left-eject shot starts it."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-electric-magic",
+      "title": "Electric Magic Multiball",
+      "category": "multiball",
+      "summary": "Complete the LED then ZEP banks to raise the pop-up magic-wand spinner, charge it and lock, then run the Electric Magic Frenzy — the biggest single-mode farm on Prem/LE.",
+      "difficulty": 3,
+      "reward": "Multiball + Frenzy switch-farm reported at 200–500M; right orbit doubles jackpots",
+      "steps": [
+        {
+          "shot": "led-targets",
+          "action": "Complete the LED bank",
+          "detail": "First half of the Electric Magic qualification."
+        },
+        {
+          "shot": "zep-drops",
+          "action": "Complete the ZEP bank",
+          "detail": "Then shoot any lit shot to raise the magic-wand spinner."
+        },
+        {
+          "shot": "electric-magic-spinner",
+          "action": "Charge, lock and start",
+          "detail": "Shoot the raised spinner to charge, shoot again when fully charged to lock and start; cash the Frenzy on switch hits and spinner rips."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-mothership",
+      "title": "Mothership Multiball",
+      "category": "multiball",
+      "summary": "Complete five songs to qualify the Mothership mini-wizard multiball and start it at the right orbit. Every shot that is not a lit song award is a jackpot; five jackpots light supers on the song-award shots, and five more jackpots after that multiply the supers up to 3×.",
+      "difficulty": 3,
+      "reward": "Jackpots + supers at song-award shots, multiplied up to 3×",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Complete 5 songs",
+          "detail": "Make lit song shots to earn records; five completed songs qualify Mothership."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start Mothership Multiball",
+          "detail": "The song keeps running and sets the jackpot shots."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Score jackpots, then supers",
+          "detail": "Five jackpots light supers at the song-award shots; five more while supers are lit multiplies them up to 3×."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mode-whole-lotta-love",
+      "title": "Song Mode: Whole Lotta Love",
+      "category": "mode",
+      "summary": "A forgiving song for building records — the drum-solo section keeps the side shot always lit plus two roving shots, and the guitar solo lights the center ramp.",
+      "difficulty": 1,
+      "reward": "Gold records toward song completion (5 = complete, 10 = Platinum)",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Select Whole Lotta Love",
+          "detail": "Scroll songs with the flippers, action button to choose, before you plunge."
+        },
+        {
+          "shot": "side-shot",
+          "action": "Keep the always-lit side shot going",
+          "detail": "The drum solo keeps the side shot lit and adds two roving shots of its own, one starting at the left eject, the other at the left orbit, advancing together to the next shot every ten seconds."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop the guitar-solo center ramp",
+          "detail": "The guitar solo lights the center ramp for fast record sales."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-good-times-bad-times",
+      "title": "Song Mode: Good Times, Bad Times",
+      "category": "mode",
+      "summary": "Alternates easy then hard shots across four sections while banking gold records toward song completion.",
+      "difficulty": 2,
+      "reward": "Gold records toward song completion (5 = complete, 10 = Platinum)",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Select Good Times, Bad Times",
+          "detail": "Scroll to it with the flippers and confirm with the action button before you plunge."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit the alternating lit shots",
+          "detail": "Four sections alternate an easy shot then a hard shot."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop for records between lit shots",
+          "detail": "The center ramp is the easiest loop for banking record sales while the next section's shots light."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-zeppelin-awards",
+      "title": "Zeppelin Awards (Super Features)",
+      "category": "mode",
+      "summary": "Each upper-flipper side shot starts the next sequential super feature — Super Spinner, Super Pops, Super Slings, Super Ramps — and adds Icarus X timer seconds; collecting eight lights an Extra Ball.",
+      "difficulty": 2,
+      "reward": "Sequential super features; +5 sec Icarus X per shot; 8 awards = Extra Ball",
+      "steps": [
+        {
+          "shot": "side-shot",
+          "action": "Shoot the side shot to start each super",
+          "detail": "Order: Super Spinner → Super Pops → Super Slings → Super Ramps; each shot also adds +5 sec to the Icarus X timer."
+        },
+        {
+          "shot": "side-shot",
+          "action": "Collect 8 Zeppelin Awards",
+          "detail": "Repeated side shots accumulate awards; 8 lights an Extra Ball at the left eject."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Collect the Extra Ball",
+          "detail": "The lit Extra Ball is collected at the left eject."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mult-icarus-x",
+      "title": "Icarus X Playfield Multiplier",
+      "category": "multiplier",
+      "summary": "Build all four bank multipliers evenly through combos, then activate the timed playfield multiplier at the Icarus standup — Icarus X is the product of the four banks.",
+      "difficulty": 3,
+      "reward": "Timed playfield X = LED × ZEP × ROCK × Ball-Save; multiplies all scoring",
+      "steps": [
+        {
+          "shot": "led-targets",
+          "action": "Build the LED bank multiplier",
+          "detail": "+0.1× per shot in a combo terminated into LED.",
+          "link": "none"
+        },
+        {
+          "shot": "zep-drops",
+          "action": "Build ZEP evenly",
+          "detail": "Feed whichever bank is lowest — the multiplier is a product, so balance matters most.",
+          "link": "none"
+        },
+        {
+          "shot": "ball-save-targets",
+          "action": "Raise the lowest bank",
+          "detail": "Four average multipliers beat one huge and three small; always feed the weakest.",
+          "link": "none"
+        },
+        {
+          "shot": "icarus-standup",
+          "action": "Activate playfield X",
+          "detail": "Once all four banks are raised, Icarus lights for ~15 sec (+5 sec per side shot); shoot it during the window to recalculate live."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-bonus-x",
+      "title": "Bonus X via the ROLL Inlanes",
+      "category": "multiplier",
+      "summary": "Change lanes with the flippers to light both ROLL inlanes and build the end-of-ball Bonus X, up to 50×.",
+      "difficulty": 1,
+      "reward": "Bonus X up to 50× on the end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Change lanes with the flippers",
+          "detail": "Flip to move the lit ROLL insert; note lane change disables after 3 center ramps in a row."
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Complete the ROLL inlanes",
+          "detail": "Completing the pair steps up Bonus X (max 50×), applied to the whole end-of-ball bonus."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wiz-world-tour",
+      "title": "World Tour Multiball (Wizard)",
+      "category": "wizard",
+      "summary": "Play all four Tour Multiballs to qualify the 6-ball World Tour Multiball at the left eject, then collect City Jackpots around the playfield.",
+      "difficulty": 3,
+      "reward": "6-ball; City Jackpots = (cities collected × Tour Jackpot); 10 cities lights supers",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Qualify and play all 4 Tour MBs",
+          "detail": "US 1975, US 1977, Earl's Court, UK 1971 — each qualified via the right ramp and started at the left eject."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Start World Tour Multiball",
+          "detail": "With all four tours played, the left eject starts the 6-ball wizard."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Collect City Jackpots",
+          "detail": "Collect miles around the playfield to relight the next city; every 2 cities adds a ball, all 10 lights supers."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wiz-celebration-day",
+      "title": "Celebration Day (Final Wizard)",
+      "category": "wizard",
+      "summary": "Platinum all 10 songs — via normal play or Top of the Charts — to reach the Celebration Day final wizard at the right orbit, ending with a Diamond Record that boosts future bonuses.",
+      "difficulty": 3,
+      "reward": "6-ball wizard; Diamond Record adds +1× to end-of-ball bonus going forward",
+      "steps": [
+        {
+          "shot": "top-eject",
+          "action": "Platinum all 10 songs",
+          "detail": "10 gold records each; Top of the Charts (all 10 songs completed → right orbit) is the last-chance platinum path."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start Celebration Day",
+          "detail": "All 10 songs platinum qualifies it; starts at the right orbit (2× starting bonus if platinumed without Top of the Charts)."
+        },
+        {
+          "shot": "side-shot",
+          "action": "Collect the super",
+          "detail": "10% of all scoring feeds a super lit at the side shot; draining/timing out banks a Diamond Record."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-left-eject-first",
+      "title": "Opening Sequence: Left Eject First",
+      "category": "strategy",
+      "summary": "The consensus opener: make the left eject your first shot to start a Tour, then keep the ball on safe left-side loops — backhand the left ramp and loop the center ramp.",
+      "difficulty": 1,
+      "reward": "Tour engine turning early; ball control on the left-heavy layout",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Open with the left eject",
+          "detail": "Cross-field right-flipper shot — start/select a Tour so single-ball time is never wasted (multiballs don't stack).",
+          "flipper": "right"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Backhand toward a Zeppelin lock",
+          "detail": "Safest as a backhand off the left flipper; keeps you out of deadly cross-field motion.",
+          "flipper": "left"
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop for gold records",
+          "detail": "The easiest shot on the game — the safe default loop while song shots reset."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strat-build-and-cash",
+      "title": "Build Even Banks, Cash Into a Super",
+      "category": "strategy",
+      "summary": "Build the four bank multipliers evenly during single-ball play, then time the Icarus X window to a Zeppelin (or Electric Magic) super jackpot for the biggest hits.",
+      "difficulty": 3,
+      "reward": "A single super under a big Icarus X can be 100M+",
+      "steps": [
+        {
+          "shot": "ball-save-targets",
+          "action": "Build the four banks evenly via combos",
+          "detail": "Always feed the weakest bank; use Band Boost to auto-balance when the ball can't reach a bank."
+        },
+        {
+          "shot": "icarus-standup",
+          "action": "Cash Icarus X just before a super",
+          "detail": "Don't grind Icarus X during risky single-ball play — save it to stack onto a multiball super."
+        },
+        {
+          "shot": "left-scoop",
+          "action": "Collect the super under the multiplier",
+          "detail": "Collect the Zeppelin super at the left eject while Icarus X is live for a 9×+ payoff."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "strat-tour-before-multiball",
+      "title": "Never Start a Multiball Without a Tour",
+      "category": "strategy",
+      "summary": "Universal advice: get a Tour started before any multiball so you can use the multiball to complete tour objectives and set up the next one.",
+      "difficulty": 2,
+      "reward": "Multiball time doubles as tour progress; sets up World Tour",
+      "steps": [
+        {
+          "shot": "left-scoop",
+          "action": "Start a Tour first",
+          "detail": "Multiballs don't stack, so enter every multiball with a Tour already running."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Load Zeppelin locks",
+          "detail": "Stack the Tour under a Zeppelin lock so the multiball advances both.",
+          "feeds": {
+            "shot": "hindenburg-toy"
+          }
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Use the multiball to finish the Tour",
+          "detail": "Complete tour objectives during the multiball and relight the next one."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-platinum-push",
+      "title": "Push One Song to Platinum",
+      "category": "mode",
+      "summary": "Stay on one song instead of rotating: complete it at five gold records, keep the same song running and grind its lit shots to ten records for platinum.",
+      "difficulty": 3,
+      "reward": "Platinum record on that song; one of the ten needed for the final wizard",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Select the same song again",
+          "detail": "Scroll with the flippers and confirm before the plunge — records only stack on the song you keep choosing."
+        },
+        {
+          "shot": "center-ramp",
+          "action": "Loop the safest record shot",
+          "detail": "The center ramp is the fastest low-risk way to bank records between lit sections.",
+          "link": "none"
+        },
+        {
+          "shot": "side-shot",
+          "action": "Take the always-lit sections",
+          "detail": "Solo sections park a lit shot on the upper side shot — worth the risk only when a record is close.",
+          "link": "none"
+        },
+        {
+          "shot": "top-eject",
+          "action": "Re-arm the song when it ends",
+          "detail": "Use the song-change feature to come back to the same song and pick the count up where it stopped."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-top-of-the-charts",
+      "title": "Top of the Charts (Last-Chance Platinum)",
+      "category": "mode",
+      "summary": "Complete all ten songs to qualify the catch-up mode at the right orbit, where remaining songs can be pushed to platinum in one run.",
+      "difficulty": 3,
+      "reward": "Platinum credit on unfinished songs; the backup path into the final wizard",
+      "steps": [
+        {
+          "shot": "center-ramp",
+          "action": "Complete all ten songs",
+          "detail": "Five gold records each — the center ramp loop is the reliable record engine."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start the mode",
+          "detail": "With every song completed, the right orbit starts the catch-up run."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Clear the lit shots for platinum credit",
+          "detail": "Every lit shot pushes the same song toward platinum, banked at the left eject at 999,999 sales; reaching the final wizard this way starts it with a smaller bonus than platinuming in normal play."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "pregame-challenge-mode-menu",
+      "title": "Top of the Charts Challenge (Hidden Game Mode Menu)",
+      "category": "secret",
+      "altMode": "ruleset",
+      "summary": "Led Zeppelin hides an entirely different game type behind a flipper hold. Instead of the normal free-choice song list, Top of the Charts Challenge marches you through all ten songs in a fixed order, scored on record sales, handing you an extra ball every time you finish one.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Hold both flipper buttons in, before starting a game, to display the game mode menu",
+        "Choose Top of the Charts Challenge from the menu",
+        "Play through all ten songs in sequence, starting from a fixed number of sales",
+        "Shoot lit shots and hit switches to drive the sales count upward",
+        "At 999,999 sales, shoot the left eject to award a platinum record, advance to the next song, and add a ball",
+        "The game ends when all balls drain after a song is completed"
+      ],
+      "reward": "Starts a challenge game that runs all ten Led Zeppelin songs in a fixed order, scored on sales, adding a ball each time a song is completed"
+    },
+    {
+      "id": "progress-band-boost-bank",
+      "title": "Stockpile Band Boosts",
+      "category": "progression",
+      "summary": "Band Boosts are stored ammunition rather than a mode. The game hands you one to start, and both completing a song and switching to a new one pay out more, so the habit that advances the game also feeds the bank. Five is the ceiling. The action button glows green while you are holding ordinary boosts and turns red once you reach three, which upgrades the award into a Super Band Boost. The upgraded version doubles the combo payout in single-ball play and adds a ball outright in multiball, so cashing out early costs you the bigger award.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "Every game starts you with one Band Boost already banked.",
+        "Completing a song and changing to a different song both award more boosts, so rotating songs builds the bank as a by-product of progress.",
+        "The bank caps at five. Reaching three upgrades the award to a Super Band Boost, and the action button switches from green to red.",
+        "Spend a normal boost during single-ball play to finish an in-progress combo for 5x its value and add the multiplier to the target bank that currently has the lowest one.",
+        "A Super Band Boost finishes the combo for 10x and spreads the multiplier across the two lowest banks instead of one.",
+        "In multiball the two versions do different jobs: a normal boost spots a hit on the Icarus target toward the add-a-ball, while a Super Band Boost adds a ball immediately."
+      ],
+      "reward": "A stored action-button award: 5x combo value normally, 10x as a Super Band Boost; in multiball, add-a-ball progress or an immediately added ball"
+    },
+    {
+      "id": "progress-gold-records",
+      "title": "Build the Gold Record Ladder",
+      "category": "progression",
+      "summary": "Gold records are the counter the rest of the game keys off. You pick a song at the start of each ball, then earn record sales by keeping the ball alive and hitting the lit arrows, which move around as the song passes through its musical sections. Enough sales convert into gold records: five completes the song, lights the right orbit to change songs, and pays Band Boosts, while ten in a single song takes it platinum. The running totals are what make this a ladder rather than plain scoring - five completed songs, all ten completed, and all ten platinum each qualify a different wizard mode, so rotating songs and grinding one song lead to different end games.",
+      "difficulty": 2,
+      "steps": [],
+      "instructions": [
+        "Pick a song at the start of every ball.",
+        "Earn record sales by keeping the ball moving and shooting the lit arrows.",
+        "Track the arrows as the song shifts sections; white cue lights blink briefly just before a change to show which shot is about to light.",
+        "Five gold records completes the song, lights the change at the right orbit, and pays Band Boosts.",
+        "Stay on the same song for ten gold records to take it platinum instead of moving on.",
+        "Chase the three thresholds: five songs completed, all ten completed, and all ten platinum each qualify a different wizard mode."
+      ],
+      "reward": "Three separate wizard modes, gated at five songs completed, all ten completed, and all ten taken to platinum"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "catch-the-moving-letter",
+      "title": "Catch the Moving Letter",
+      "desc": "Land the plunge on the lit sweeping L-E-D letter for the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skill-moving-led"
+    },
+    {
+      "id": "first-gold-run",
+      "title": "First Gold Run",
+      "desc": "Bank five gold records in one song to complete it.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-whole-lotta-love"
+    },
+    {
+      "id": "airship-loaded",
+      "title": "Airship Loaded",
+      "desc": "Lock three balls at the left ramp and start Zeppelin Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-zeppelin"
+    },
+    {
+      "id": "wings-lit",
+      "title": "Wings Lit",
+      "desc": "Raise all four target banks and light the Icarus X playfield multiplier at least once.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-icarus-x"
+    },
+    {
+      "id": "hit-the-road",
+      "title": "Hit the Road",
+      "desc": "Qualify a tour, finish its four objectives, and start Tour Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-tour"
+    },
+    {
+      "id": "airship-super",
+      "title": "Airship Super",
+      "desc": "Collect a Zeppelin super jackpot during Zeppelin Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-zeppelin-super-bankclear"
+    },
+    {
+      "id": "bonus-ladder-topped",
+      "title": "Bonus Ladder Topped",
+      "desc": "Work the ROLL inlanes up to the 50x end-of-ball bonus multiplier.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-bonus-x"
+    },
+    {
+      "id": "eight-awards-one-ball",
+      "title": "Eight Awards, One Extra",
+      "desc": "Collect eight Zeppelin Awards off the upper side shot to light and cash an extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-zeppelin-awards"
+    },
+    {
+      "id": "merged-boost",
+      "title": "Merged Boost",
+      "desc": "Stack three or more Band Boosts into a Super Band Boost and cash it.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-band-boost-cash"
+    },
+    {
+      "id": "five-shot-chain",
+      "title": "Five-Shot Chain",
+      "desc": "Run a combo of five shots and terminate it into a target bank.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "combo-lowest-bank-loop"
+    },
+    {
+      "id": "wand-rising",
+      "title": "Wand Rising",
+      "desc": "Clear the L-E-D then Z-E-P banks, raise the magic-wand spinner and start Electric Magic Multiball (Premium/LE).",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-electric-magic"
+    },
+    {
+      "id": "five-songs-deep",
+      "title": "Five Songs Deep",
+      "desc": "Complete five songs and start Mothership Multiball at the right orbit.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-mothership"
+    },
+    {
+      "id": "super-times-four",
+      "title": "Super Times Four",
+      "desc": "Boost a lit Zeppelin super jackpot to its 4x ceiling by clearing target banks before you collect it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-zeppelin-super-bankclear"
+    },
+    {
+      "id": "multiplied-super",
+      "title": "Multiplied Super",
+      "desc": "Collect a multiball super jackpot while the Icarus X playfield multiplier is running.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strat-build-and-cash"
+    },
+    {
+      "id": "pressed-to-platinum",
+      "title": "Pressed to Platinum",
+      "desc": "Take a single song all the way to ten gold records for platinum.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-platinum-push"
+    },
+    {
+      "id": "all-four-tours",
+      "title": "All Four Tours",
+      "desc": "Play every tour multiball and start the six-ball World Tour Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-world-tour"
+    },
+    {
+      "id": "chart-climb",
+      "title": "Chart Climb",
+      "desc": "Complete all ten songs and start Top of the Charts at the right orbit.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mode-top-of-the-charts"
+    },
+    {
+      "id": "final-encore",
+      "title": "Final Encore",
+      "desc": "Platinum all ten songs and start Celebration Day.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-celebration-day"
+    },
+    {
+      "id": "diamond-banked",
+      "title": "Diamond Banked",
+      "desc": "Finish Celebration Day and bank the Diamond Record that raises later bonuses.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wiz-celebration-day"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-moving-led-timing",
+      "title": "Time The Sweeping Letter",
+      "text": "The lit L-E-D letter slides across the bank on its own, so the plunge is a timing problem, not an aiming one. Watch the sweep, release so the ball arrives on the blinking target, and take the ball save that comes with it.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-moving-led",
+      "shots": [
+        "shooter-lane",
+        "led-targets"
+      ]
+    },
+    {
+      "id": "drill-left-eject-crossfield",
+      "title": "Cross-Field To The Left Eject",
+      "text": "Only the right flipper reaches the left eject, and that pocket starts tours, collects extra balls and pays the Zeppelin supers. Drill the cross-field shot from a right-flipper cradle until it is your automatic opening shot.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "strat-left-eject-first",
+      "shots": [
+        "left-scoop",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "drill-left-ramp-backhand-lock",
+      "title": "Backhand The Lock",
+      "text": "Take the left ramp as a backhand off the left flipper rather than a live shot across the playfield. A miss on this ramp tends to come straight back down the middle, and three clean ones in a row is the entire multiball.",
+      "reps": "15 backhands",
+      "focus": "accuracy",
+      "goal": "mb-zeppelin",
+      "shots": [
+        "left-ramp",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "drill-center-ramp-loop",
+      "title": "Center Ramp Loop",
+      "text": "Loop the centre ramp from both flippers without cradling. It is the easiest repeatable shot on the machine and the one you live on through a guitar solo, though note that three in a row shuts off lane change until you take something else.",
+      "reps": "10 consecutive",
+      "focus": "flow",
+      "goal": "combo-icarus-solo-farm",
+      "shots": [
+        "center-ramp"
+      ]
+    },
+    {
+      "id": "drill-feed-the-lowest-bank",
+      "title": "Feed The Weakest Bank",
+      "text": "Open a combo on the left orbit, keep it alive through the centre ramp, then deliberately end it in whichever of LED, ZEP, ROCK or Ball-Save is currently lowest. Icarus X is the product of the four, so a fat bank next to a starved one is worth far less than four even ones.",
+      "reps": "10 combos",
+      "focus": "accuracy",
+      "goal": "combo-lowest-bank-loop",
+      "shots": [
+        "left-orbit",
+        "center-ramp",
+        "led-targets",
+        "zep-drops",
+        "rock-targets",
+        "ball-save-targets"
+      ]
+    },
+    {
+      "id": "drill-upper-flipper-cost",
+      "title": "Learn What The Upper Flipper Costs",
+      "text": "Feed the upper-right flipper off the right orbit and take the side shot, then watch where every miss ends up. That flipper is the biggest drain hazard on the machine, rocketing balls to the left outlane or bricking them to the right, so find out its price before you need the shot.",
+      "reps": "15 attempts",
+      "focus": "ball-control",
+      "goal": "mode-zeppelin-awards",
+      "shots": [
+        "right-orbit",
+        "upper-right-flipper",
+        "side-shot",
+        "left-outlane"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Action Button",
+    "location": "center of the lockdown bar",
+    "how": "Your Band Boost button, and the confirm key for the two menus that shape a ball. Boosts are the cheapest way to finish a combo when the ball is nowhere near a target bank.",
+    "uses": [
+      {
+        "when": "Choosing a song before the plunge",
+        "what": "Flippers scroll the ten songs; the button locks in the one that runs your whole ball."
+      },
+      {
+        "when": "Combo running, button flashing green",
+        "what": "Cashes the combo on the spot for 5x its value into your lowest target bank."
+      },
+      {
+        "when": "Three or more boosts saved, flashing red",
+        "what": "Super Band Boost instead: 10x combo value, split across the two lowest banks."
+      },
+      {
+        "when": "During any multiball",
+        "what": "A boost spots an Icarus hit or adds a ball outright rather than paying combo value."
+      },
+      {
+        "when": "Picking a tour at the left eject",
+        "what": "Flippers scroll the four tours and the button confirms which one you play."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Pick a Led Zeppelin song before every plunge and grind record sales while you build the four target banks that power the Icarus X playfield multiplier. Take songs to platinum and play the four tours to reach the World Tour and Celebration Day wizards.",
+    "loop": [
+      "Choose a song at the plunge, then keep the ball alive and hit the roving lit arrows to bank gold records.",
+      "Open a combo on the left orbit, chain it through the center ramp, and cash it into whichever target bank is lowest to raise the Icarus X product.",
+      "Start a tour at the left eject and lock balls at the left ramp so a single multiball advances both at once.",
+      "Fire Icarus just before a guitar-solo center-ramp window or a multiball super so every shot scores under the multiplier.",
+      "Platinum all ten songs for Celebration Day and play all four tours for the six-ball World Tour Multiball."
+    ],
+    "lights": [
+      {
+        "id": "target-banks",
+        "name": "Target Banks & Icarus X",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "led-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "zep-drops",
+            "lamps": 3
+          },
+          {
+            "shot": "rock-targets",
+            "lamps": 4
+          },
+          {
+            "shot": "ball-save-targets"
+          },
+          {
+            "shot": "icarus-standup"
+          }
+        ],
+        "lit": "Each of the four standup banks carries its own multiplier that ticks up when you end a combo in it, and the four build through the ball as you keep feeding them.",
+        "flashing": null,
+        "control": null,
+        "then": "Because Icarus X is the four banks multiplied together, feed whichever is lowest to keep them even, then hit the Icarus standup to light the timed playfield multiplier and shoot it again to recalculate the product. Clearing the L-E-D bank and then the Z-E-P bank also raises the pop-up magic-wand toy for Electric Magic Multiball.",
+        "goals": [
+          "mult-icarus-x",
+          "combo-lowest-bank-loop",
+          "combo-icarus-solo-farm",
+          "mb-electric-magic"
+        ]
+      },
+      {
+        "id": "song-shots",
+        "name": "Song Award Shots",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "center-ramp"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "side-shot"
+          }
+        ],
+        "lit": "The lit arrows are the current song's scoring shots, and they rove from section to section as the song plays, so the shot you were hitting goes dark while a fresh one lights up.",
+        "flashing": "A quick white cue blinks on a shot just before it lights, showing where to aim next.",
+        "control": null,
+        "then": "Bank five gold records to finish a song, which opens the right orbit for a song change and pays out a Band Boost, while ten records on one song takes it platinum. Both finishing and switching songs hand you more Band Boosts to spend on the action button.",
+        "goals": [
+          "progress-gold-records",
+          "mode-whole-lotta-love",
+          "mode-good-times-bad-times",
+          "mode-platinum-push",
+          "progress-band-boost-bank"
+        ]
+      },
+      {
+        "id": "zeppelin-locks",
+        "name": "Zeppelin Locks",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "hindenburg-toy"
+          }
+        ],
+        "lit": "The lock lights at the left ramp under the airship, and every ball you lock stays banked toward the multiball rather than resetting.",
+        "flashing": null,
+        "control": null,
+        "then": "Lock three at the left ramp -- best taken as a backhand from the left flipper -- to start the four-ball Zeppelin Multiball, then grind the jackpots toward the super waiting at the left eject. Knock down R-O-C-K to bring the locks back for later multiballs.",
+        "goals": [
+          "mb-zeppelin",
+          "combo-zeppelin-super-bankclear"
+        ]
+      },
+      {
+        "id": "tour-engine",
+        "name": "Tour Engine",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "left-scoop"
+          }
+        ],
+        "lit": "The left eject starts and selects tours, and you qualify each one first by shooting the right ramp a few more times each round.",
+        "flashing": "A green arrow flashes at the left eject once a tour is qualified and ready to pick and start.",
+        "control": null,
+        "then": "Only the right flipper reaches the cross-field left eject, so set up on a right-flipper cradle to scroll and confirm your tour, clear its objectives, and take the next eject shot to launch the multiball. Playing all four tours qualifies the six-ball World Tour wizard.",
+        "goals": [
+          "mb-tour",
+          "strat-tour-before-multiball",
+          "wiz-world-tour"
+        ]
+      },
+      {
+        "id": "roll-inlanes",
+        "name": "ROLL Inlanes (Bonus X)",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A lit ROLL insert marks the inlane you still need, and a completed pair stays credited toward the end-of-ball Bonus X for the rest of the ball.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "tapping either flipper nudges the lit ROLL insert sideways from one inlane to the other, so you can set it under whichever inlane the ball is about to drop into and collect the letter you still need",
+          "when": "any time before the ball reaches an inlane, though three center-ramp loops in a row shut lane change off until you take a different major shot"
+        },
+        "then": "Position the lit insert under the inlane you want and roll the ball through to bank it, and completing both ROLL inlanes steps up Bonus X toward a 50x cap applied to your whole end-of-ball bonus.",
+        "goals": [
+          "mult-bonus-x"
+        ]
+      },
+      {
+        "id": "zeppelin-awards",
+        "name": "Zeppelin Awards",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "side-shot"
+          }
+        ],
+        "lit": "Every side shot off the upper flipper kicks off the next super feature in a fixed order, from Super Spinner through Super Pops, Super Slings, and Super Ramps, and the awards you collect stack across the ball.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the side shot off the upper-right flipper to roll through the supers, adding seconds to the Icarus X window with each one, and collect eight Zeppelin Awards to light an extra ball at the left eject. Treat that upper flipper carefully, since a missed side shot is the fastest drain on the machine.",
+        "goals": [
+          "mode-zeppelin-awards"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tapping either flipper walks the lit ROLL insert over to the other inlane, so you can set it under the inlane the ball is about to enter; complete both to step the end-of-ball Bonus X toward its 50x cap. Looping the center ramp three times in a row disables lane change until you take a different major shot.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Catch the sweeping lit L-E-D letter on the plunge for the skill shot and its short ball save. Open with the cross-field left eject to start a tour right away so no single-ball time goes to waste, then live on safe left-side shots by backhanding the left ramp and keeping the center ramp looping, and change lanes on the ROLL inlanes for Bonus X.",
+        "goals": [
+          "skill-moving-led",
+          "strat-left-eject-first",
+          "mult-bonus-x"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Build the four target banks evenly through combos and cash into the lowest to grow the Icarus X product, spending a Band Boost to even the banks out whenever the ball cannot reach one in time. Start a tour before any multiball so the multiball advances tour objectives, and lock at the left ramp for Zeppelin Multiball.",
+        "goals": [
+          "mult-icarus-x",
+          "combo-lowest-bank-loop",
+          "strat-tour-before-multiball",
+          "mb-zeppelin"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Take all ten songs to platinum to reach Celebration Day, the final wizard, and play all four tours to reach the six-ball World Tour Multiball. For the single biggest hits, time a fat Icarus X onto a Zeppelin super jackpot collected at the left eject.",
+        "goals": [
+          "wiz-celebration-day",
+          "wiz-world-tour",
+          "strat-build-and-cash"
+        ]
+      }
+    ]
+  }
+}

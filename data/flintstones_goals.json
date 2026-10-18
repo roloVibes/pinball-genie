@@ -1,0 +1,1096 @@
+{
+  "machine": "The Flintstones (Williams, 1994)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Feeds the DIG rollover lanes at the top. If a plunge fails to reach the lanes the ball saver does not switch on, so a weak plunge is genuinely dangerous here."
+    },
+    {
+      "id": "dig-lanes",
+      "name": "D-I-G Rollovers",
+      "type": "rollover",
+      "x": 0.36,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "Three lanes above the bumpers, and the target of the plunge. Rotate the lit one with the flipper buttons. Completions build the bonus multiplier and, for the first multiball only, spot a CONCRETE letter."
+    },
+    {
+      "id": "bumpers",
+      "name": "Jet Bumpers",
+      "type": "bumpers",
+      "x": 0.24,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "A triangle in the upper left. They feed the orbit or spit the ball out to the side. Bumper hits also change which mode is currently flashing, so they quietly decide what you play next."
+    },
+    {
+      "id": "time-machine",
+      "name": "Time Machine",
+      "type": "mech",
+      "x": 0.08,
+      "y": 0.9,
+      "trim": "all",
+      "notes": "A spinning wheel in the far upper left corner that holds the ball for a long time. It is fed from the popper and returns balls to your left flipper. This is where multiball balls are held."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.12,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Runs around the back of the machine. With multiball or Bronto Crane lit, a popper grabs the ball instead; with neither lit, expect the bumpers, and from there the ball frequently reaches your upper flipper.",
+      "feeds": {
+        "shot": "bumpers"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "One of the two 1-2-3 and Go Bowling ramps. It empties into the bottom loop, which means it can hand the ball to either flipper depending on what the game wants you to shoot next.",
+      "feeds": {
+        "shot": "bottom-loop"
+      }
+    },
+    {
+      "id": "bed-targets",
+      "name": "B-E-D Drop Targets",
+      "type": "drop-target",
+      "x": 0.3326,
+      "y": 0.4167,
+      "trim": "all",
+      "notes": "Three drops sitting flat against the left wall, which makes them awkward from the lower flippers — the upper flipper is the honest way in. Clearing them adds letters to CONCRETE.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "dino-targets",
+      "name": "Dino / Frenzy Targets",
+      "type": "standup",
+      "x": 0.4,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "Three of them: right of the left ramp entrance, right of the left orbit, and right of the right ramp. One is always lit for Dino, and hitting the lit one raises the Dino Frenzy value by a million for the rest of the game."
+    },
+    {
+      "id": "left-shell-targets",
+      "name": "Left Shell Targets",
+      "type": "standup",
+      "x": 0.04,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Three standups against the side of the cabinet. Clear all three and Drain Shield lights on both outlanes, though only for a while."
+    },
+    {
+      "id": "right-shell-targets",
+      "name": "Right Shell Targets",
+      "type": "standup",
+      "x": 0.96,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "The mirror image of the left set, and they light the same Drain Shield."
+    },
+    {
+      "id": "time-machine-target",
+      "name": "Time Machine Target",
+      "type": "standup",
+      "x": 0.46,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "A single standup facing the flippers. It hands out three different modes in a fixed order — Time Machine, then Job Change, then Help — so you always know what the next hit buys."
+    },
+    {
+      "id": "u-turn",
+      "name": "U-Turn Lane",
+      "type": "loop",
+      "x": 0.74,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "A short lane with a tight loop at the end, taken from the upper flipper. The switch sits at the entrance, so you get credit even when the ball fails to make the turn — and a hard shot comes back out just as hard.",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "bowl-a-rama",
+      "name": "Bowl-A-Rama",
+      "type": "target-bank",
+      "x": 0.48,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Three standups behind five plastic pins. The centre target is a strike, either side is a spare. On a fresh machine these targets need a genuinely hard hit before they start registering."
+    },
+    {
+      "id": "popper",
+      "name": "Popper",
+      "type": "kicker",
+      "x": 0.48,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Tucked behind Bowl-A-Rama. It sends the ball either into the Time Machine or through Bronto, depending on what you lit."
+    },
+    {
+      "id": "bronto",
+      "name": "Bronto",
+      "type": "ramp",
+      "x": 0.3,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "A wireform ramp wearing a green dinosaur skin. Balls arrive from the popper and are delivered into the bumpers.",
+      "feeds": {
+        "shot": "bumpers"
+      }
+    },
+    {
+      "id": "center-lane",
+      "name": "Center Lane",
+      "type": "lane",
+      "x": 0.56,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "A narrow lane that feeds the DIG rollovers, tucked just right of Bowl-A-Rama. It is the jackpot shot and the game's main counter. It is tight — a fast ball tends to rattle and come back down the middle."
+    },
+    {
+      "id": "rock-targets",
+      "name": "R-O-C-K Drop Targets",
+      "type": "drop-target",
+      "x": 0.66,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Four drops to the right of the centre lane. Clearing the bank adds letters to CONCRETE, and they replace the BED targets partway through the Water Buffalos mode."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.68,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "The Rescue ramp, and the other half of the 1-2-3 and Go Bowling pair. Like the left ramp it empties into the bottom loop.",
+      "feeds": {
+        "shot": "bottom-loop"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.88,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Its entrance is on the far side of the right ramp. Shots here roll through to the rollovers, or to the Time Machine when that is lit. Treat it as your second multiball start, and as the place Change Job is collected.",
+      "feeds": {
+        "shot": "dig-lanes"
+      },
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.82,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Sits at the mouth of the right orbit. It is how you reach the BED drops, Bronto Crane and the U-Turn without a lucky bounce."
+    },
+    {
+      "id": "bottom-loop",
+      "name": "Bottom Loop",
+      "type": "loop",
+      "x": 0.5,
+      "y": 0.16,
+      "trim": "all",
+      "notes": "A wire loop running above the centre drain that both ramps empty into. The game decides which flipper to hand the ball to — for a Go Bowling shot it always goes right; for a 1-2-3 shot it goes to whichever flipper sets up the next one."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Carries a Drain Shield light lit by the shell targets. There is no kickback — a saved ball is auto-plunged instead."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "The same Drain Shield light on this side, and the same auto-plunge return."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "D-I-G Skill Shot",
+      "category": "skillshot",
+      "summary": "The plunge lands in the DIG rollovers with one lane flashing. Move the flashing lane with the flipper buttons so it lines up with the lane the ball is heading for. It opens at 5 million and climbs by 2 million each time you hit it.",
+      "difficulty": 1,
+      "reward": "5 million, rising 2 million per collect",
+      "steps": [
+        {
+          "shot": "dig-lanes",
+          "action": "Plunge into the DIG lanes",
+          "detail": "Give it a full pull — a plunge that fails to reach the rollovers leaves you with no ball saver. Move the flashing lane onto the ball with the flipper buttons while it is still travelling."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "one-two-three",
+      "title": "Shoot 1-2-3",
+      "category": "progression",
+      "summary": "Three lit ramp shots start a mode, and they are not always on the same ramp. Watch which flipper the bottom loop hands the ball to — the game is telling you where the next shot lives.",
+      "difficulty": 1,
+      "reward": "2 million, 4 million and 6 million, then a mode starts",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Take the lit ramp",
+          "detail": "Both ramps feed the bottom loop, which then routes the ball to whichever flipper sets up your next shot."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Finish the sequence",
+          "detail": "The three shots pay 2, 4 and 6 million, or double that if Bronto Crane awarded you the 1-2-3 doubler."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Pick which mode starts",
+          "detail": "The mode row on the playfield shows lit for played, flashing for next, dark for untouched. Bumper hits move the flashing one along."
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "freds-choice",
+      "title": "Fred's Choice",
+      "category": "mode",
+      "summary": "Twenty seconds and three lit shots, each with a different value, while three voices shout contradictory advice at you. Ignore them: the left orbit is the big one, and every shot you make raises its own value by 3 million.",
+      "difficulty": 2,
+      "reward": "10 to 20 million per shot, climbing 3 million each",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Left orbit for 20 million",
+          "detail": "The best-paying of the three, and the one worth setting up first."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Right orbit for 15 million",
+          "detail": "Reachable from the upper flipper if the ball comes around that way."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Centre lane for 10 million",
+          "detail": "The smallest award and the most dangerous shot on the machine, so take it when it is the shot you have."
+        }
+      ],
+      "ordered": false,
+      "fx": "bone"
+    },
+    {
+      "id": "joes-diner",
+      "title": "Joe's Diner",
+      "category": "mode",
+      "summary": "A move-your-car mode with a countdown. Fifteen million ticks down until you land the first shot, and that value is then locked in for two more shots inside twenty seconds. The centre lane collects the lot.",
+      "difficulty": 2,
+      "reward": "The frozen value, three times over",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Stop the countdown early",
+          "detail": "The sooner you land the first shot the higher the value you freeze for the whole mode."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Two more inside twenty seconds",
+          "detail": "Both pay the same frozen value."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Collect at the centre lane",
+          "detail": "The third and final shot ends the mode."
+        }
+      ],
+      "fx": "burger"
+    },
+    {
+      "id": "water-buffalos",
+      "title": "Bedrock Water Buffalos",
+      "category": "mode",
+      "summary": "Twenty-five seconds of heckling a band. Knock down the BED drops to throw things at the stage; partway through the mode the game switches you over to the ROCK drops instead.",
+      "difficulty": 2,
+      "reward": "Scoring for each target knocked down",
+      "steps": [
+        {
+          "shot": "upper-flipper",
+          "action": "Set up the BED bank",
+          "detail": "Those drops lie flat against the wall, so the upper flipper is by far the reliable way at them."
+        },
+        {
+          "shot": "bed-targets",
+          "action": "Clear what is lit",
+          "detail": "Watch the lights — after a while the mode moves to the other bank."
+        },
+        {
+          "shot": "rock-targets",
+          "action": "Switch to ROCK",
+          "detail": "Both banks also feed CONCRETE, so nothing you knock down here is wasted."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "dino-frenzy",
+      "title": "Dino Frenzy",
+      "category": "mode",
+      "summary": "A two-ball multiball built on three standup targets. Every Frenzy target pays the running value, and the one lit for Dino adds a million to that value permanently — that increase sticks for the whole game, not just the mode.",
+      "difficulty": 2,
+      "reward": "10 million and up per target, growing all game",
+      "steps": [
+        {
+          "shot": "dino-targets",
+          "action": "Hit the Dino target whenever you see it",
+          "detail": "One of the three is always lit for Dino, and a hit raises the frenzy value by a million even outside the mode. Do this all game and Dino Frenzy pays for itself."
+        },
+        {
+          "shot": "dino-targets",
+          "action": "Sweep all three during the mode",
+          "detail": "Every target is lit for Frenzy and pays the current value on contact."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mystery-mode",
+      "title": "Mystery Mode",
+      "category": "mode",
+      "summary": "Only reachable after the other four modes are done. Twenty seconds, both drop banks, and 100 million waiting if you clear them all. Each individual target is 5 million on the way, so a failed attempt still pays.",
+      "difficulty": 3,
+      "reward": "5 million per target, 100 million for clearing both banks",
+      "steps": [
+        {
+          "shot": "bed-targets",
+          "action": "Clear BED",
+          "detail": "Three drops, and the harder half of the job from the lower flippers."
+        },
+        {
+          "shot": "rock-targets",
+          "action": "Clear ROCK",
+          "detail": "Four drops on the right. Seven targets in twenty seconds is the whole challenge."
+        }
+      ],
+      "ordered": false,
+      "fx": "sparkle"
+    },
+    {
+      "id": "invent-concrete",
+      "title": "Invent Concrete",
+      "category": "progression",
+      "summary": "Spell CONCRETE to light multiball. There are four ways to add letters, and they often arrive two at a time, so it comes around faster than the eight letters suggest.",
+      "difficulty": 2,
+      "reward": "Start Multiball lights on both orbits",
+      "steps": [
+        {
+          "shot": "bed-targets",
+          "action": "Clear the BED bank",
+          "detail": "One of the two reliable letter sources.",
+          "link": "none"
+        },
+        {
+          "shot": "rock-targets",
+          "action": "Clear the ROCK bank",
+          "detail": "The other. Both are also mode targets, so this progresses in the background.",
+          "link": "none"
+        },
+        {
+          "shot": "dig-lanes",
+          "action": "Complete DIG for the first one only",
+          "detail": "DIG completions spot letters toward your first multiball, but not the ones after it.",
+          "link": "none"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Or take the shortcut",
+          "detail": "Spell CONCRETE is one of the Bronto Crane awards and finishes the job outright.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Start it on either orbit",
+          "detail": "The ball gets diverted to the popper and loaded into the Time Machine."
+        }
+      ],
+      "fx": "city"
+    },
+    {
+      "id": "multiball",
+      "title": "Multiball Jackpots",
+      "category": "multiball",
+      "summary": "The jackpot opens at 40 million and keeps growing for as long as at least one ball is sitting in the Time Machine — so leaving a ball parked up there is the whole strategy, not an accident.",
+      "difficulty": 2,
+      "reward": "40 million and climbing, alternating regular and super",
+      "steps": [
+        {
+          "shot": "center-lane",
+          "action": "Collect the jackpot",
+          "detail": "The ball that scores it usually carries on to the upper flipper, which sets you up for the super."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Take the Super Jackpot",
+          "detail": "The super lights after each regular jackpot and the regular relights after each super, and it keeps cycling for as long as two balls are in play."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Restart it if you blank",
+          "detail": "If multiball ends without a single jackpot collected, you get twenty seconds to relight and restart it."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "bronto-crane",
+      "title": "Bronto Crane",
+      "category": "strategy",
+      "summary": "One left orbit lights it, the next one diverts the ball to the popper and collects. What comes out is random, but the pool is small and several of the awards are worth deliberately hunting.",
+      "difficulty": 2,
+      "reward": "One of eight awards, some game-changing",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Light it, then collect it",
+          "detail": "The ball that lights it carries on past the DIG lanes to the upper flipper rather than being stopped."
+        },
+        {
+          "shot": "popper",
+          "action": "Take what it gives",
+          "detail": "Bedrock Derby is usually first out — a bumper race worth 30 million that you can win with a handful of bumper hits. The rest: doubled 1-2-3 values, an extra ball, Spell CONCRETE, the bowling power-up, 2x playfield, a maxed bonus multiplier, or 20 million."
+        }
+      ],
+      "fx": "gear"
+    },
+    {
+      "id": "time-machine-mode",
+      "title": "Time Machine",
+      "category": "mode",
+      "summary": "Twenty seconds with a counter that only climbs while a ball is inside the wheel. Both orbits feed it, and the value is paid when the timer expires — so the play is to get a ball in there early and leave it.",
+      "difficulty": 2,
+      "reward": "10 million, escalating for as long as a ball is held",
+      "steps": [
+        {
+          "shot": "time-machine-target",
+          "action": "First hit starts it",
+          "detail": "The standup facing the flippers hands out its three modes in a fixed order, and this is the first of them."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Feed the wheel",
+          "detail": "Either orbit will put a ball into the machine, and the value climbs the entire time it stays there."
+        }
+      ],
+      "fx": "watch"
+    },
+    {
+      "id": "job-change",
+      "title": "Job Change",
+      "category": "mode",
+      "summary": "The second award from the Time Machine target: it lights Change Job on the right orbit for a flat 25 million. One target, one orbit, no timer games.",
+      "difficulty": 1,
+      "reward": "25 million",
+      "steps": [
+        {
+          "shot": "time-machine-target",
+          "action": "Second hit of the sequence",
+          "detail": "You have to have taken Time Machine first — the order never varies."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect on the right orbit",
+          "detail": "Reachable cleanly from the upper flipper."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "help-search",
+      "title": "Help",
+      "category": "mode",
+      "summary": "A search mode with twenty seconds on it. Three shots are lit to look for the kids, each search pays 5 million, and finding them pays 15 million — then you still have to get them home on the right ramp.",
+      "difficulty": 2,
+      "reward": "5 million per search, 15 million to find, then the rescue",
+      "steps": [
+        {
+          "shot": "time-machine-target",
+          "action": "Third hit of the sequence",
+          "detail": "The last of the three modes the target hands out."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Search the lit shots",
+          "detail": "Left orbit, centre lane and right orbit are all live."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Rescue on the right ramp",
+          "detail": "Finding them is not the end of it — the ramp is what finishes the job."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "bowling",
+      "title": "Go Bowling",
+      "category": "mode",
+      "summary": "One ramp is always lit for Go Bowling. Take it and the ball comes back to your right flipper with about five seconds to throw at Bowl-A-Rama. Centre target is a strike, either side is a spare, a miss is a gutter ball.",
+      "difficulty": 2,
+      "reward": "5 million for a strike, 3 million for a spare",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Take the lit ramp",
+          "detail": "Go Bowling shots always return the ball to the right flipper, whichever ramp you used."
+        },
+        {
+          "shot": "bowl-a-rama",
+          "action": "Throw within five seconds",
+          "detail": "Centre for the strike, sides for a spare, nothing at all for a miss. The game keeps a running frame total."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bowl-a-rama-multiball",
+      "title": "Bowl-A-Rama Multiball",
+      "category": "multiball",
+      "summary": "Three strikes and you are into a two-ball multiball where the same targets pay four times as much. It is the reward for actually chasing strikes rather than settling for spares.",
+      "difficulty": 3,
+      "reward": "20 million per super strike, 10 million per super spare",
+      "steps": [
+        {
+          "shot": "bowl-a-rama",
+          "action": "Roll three strikes",
+          "detail": "Spares do not count toward it — you need the centre target three times."
+        },
+        {
+          "shot": "bowl-a-rama",
+          "action": "Keep throwing",
+          "detail": "With two balls up the target bank is far easier to keep feeding."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "bowling-power-up",
+      "title": "The Bowling Power-Up",
+      "category": "secret",
+      "summary": "A guaranteed strike on your next Go Bowling shot, banked in advance. You get it from a Bronto Crane award or by completing Yabba-Dabba-Doo, and the game tells you it is active by changing what the coach says.",
+      "difficulty": 2,
+      "reward": "A guaranteed strike",
+      "steps": [
+        {
+          "shot": "bowl-a-rama",
+          "action": "Build Yabba-Dabba-Doo",
+          "detail": "Clear the Bowl-A-Rama bank during ordinary play and you add letters; a bank cleared right after a Go Bowling shot does not count toward the phrase. Finishing the phrase hands you the power-up."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Or draw it from Bronto Crane",
+          "detail": "It is one of the crane's random awards.",
+          "link": "none"
+        },
+        {
+          "shot": "bowl-a-rama",
+          "action": "Cash it on the next bowl",
+          "detail": "You still have to hit the target bank — the power-up only guarantees that whatever you hit counts as a strike."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bonus-multiplier",
+      "title": "Build The Bonus Multiplier",
+      "category": "multiplier",
+      "summary": "DIG completions raise the bonus multiplier and pay 5 million each on the way. It caps at 10x, after which every further completion is a flat 10 million instead — so the lanes never stop being worth shooting.",
+      "difficulty": 1,
+      "reward": "5 million per completion up to 10x, then 10 million each",
+      "steps": [
+        {
+          "shot": "dig-lanes",
+          "action": "Complete the lanes",
+          "detail": "Rotate the lights with the flipper buttons as the ball comes through."
+        },
+        {
+          "shot": "center-lane",
+          "action": "Feed them from the centre lane",
+          "detail": "The centre lane empties into the rollovers, which is the reliable way to keep completing them."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "center-lane-counter",
+      "title": "The Centre Lane Counter",
+      "category": "progression",
+      "summary": "The centre lane keeps a count all game. The seventh one is your extra ball; the next award after that is DIG Millions, which turns the bumpers into a scoring feature. It is a narrow, risky lane, but it pays.",
+      "difficulty": 2,
+      "reward": "Extra ball at seven, then DIG Millions",
+      "steps": [
+        {
+          "shot": "center-lane",
+          "action": "Grind the count to seven",
+          "detail": "Be aware the lane is narrow enough that a slow ball dribbling out can register twice."
+        },
+        {
+          "shot": "bumpers",
+          "action": "Cash DIG Millions in the bumpers",
+          "detail": "The second award turns the bumper area into super pops rather than dead time."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "u-turn-millions",
+      "title": "U-Turn Millions",
+      "category": "strategy",
+      "summary": "When nothing is lit on it, the U-Turn is still one of the best-value shots on the machine: it opens at 2 million and climbs every time you make it. The switch is at the entrance, so a shot that fails the loop still counts.",
+      "difficulty": 2,
+      "reward": "2 million, rising with each shot",
+      "steps": [
+        {
+          "shot": "upper-flipper",
+          "action": "Set up from the upper flipper",
+          "detail": "That is the natural angle into the lane."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Repeat it",
+          "detail": "Keep the shot soft enough to control the return — a hard ball comes back out of the loop at the same speed it went in."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "two-x-playfield",
+      "title": "2x Playfield",
+      "category": "multiplier",
+      "summary": "A Bronto Crane award that lights 2x Playfield at the U-Turn. Hit it and everything on the machine doubles for twenty seconds — the moment to be in a mode or a multiball, not fishing for a target.",
+      "difficulty": 2,
+      "reward": "All playfield scoring doubled for 20 seconds",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Draw it from the crane",
+          "detail": "Light 2x Playfield is one of the crane's award pool."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Start it when you are ready",
+          "detail": "The twenty seconds only begin when you take the U-Turn, so stack it into a mode or multiball rather than burning it on ordinary play."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "drain-shield",
+      "title": "Drain Shield",
+      "category": "strategy",
+      "summary": "The shell targets on either wall light Drain Shield on both outlanes for a while. There is no kickback on this machine, so this is the only outlane protection you get, and a saved ball is auto-plunged rather than returned to a flipper.",
+      "difficulty": 1,
+      "reward": "Temporary outlane protection",
+      "steps": [
+        {
+          "shot": "left-shell-targets",
+          "action": "Complete a shell bank",
+          "detail": "Either side works, and the standups are easy incidental hits."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Expect an auto-plunge",
+          "detail": "The ball is fired back into play from the shooter lane, so be ready rather than cradling."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "buy-in-mode",
+      "title": "Buy-In Starts A Mode",
+      "category": "secret",
+      "summary": "A quiet rule most players never notice: buying an extra ball at the end of the game does not just hand you a ball, it immediately starts whichever mode is currently flashing on the mode row.",
+      "difficulty": 1,
+      "reward": "A free mode start on the bought ball",
+      "steps": [],
+      "instructions": [
+        "Before your last ball drains, use the bumpers to move the flashing mode to the one you most want to play.",
+        "The buy-in ball then opens with that mode already running rather than making you shoot 1-2-3 for it.",
+        "This is worth setting up if Dino Frenzy has spent the whole game growing — a bought ball that starts on a fat frenzy value is the best buy-in on the machine.",
+        "Remember this is a four-ball game, so the buy-in comes around sooner than on most machines of the era."
+      ],
+      "fx": "coin"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ft-skillshot",
+      "title": "Dig It",
+      "desc": "Move the lit DIG lane onto the ball for the skill shot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "ft-first-mode",
+      "title": "One, Two, Three",
+      "desc": "Complete a 1-2-3 ramp sequence and start your first mode.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "one-two-three"
+    },
+    {
+      "id": "ft-strike",
+      "title": "Go For The Strike",
+      "desc": "Take a Go Bowling ramp and hit the centre target.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "bowling"
+    },
+    {
+      "id": "ft-crane",
+      "title": "Bronto Crane",
+      "desc": "Light and collect a Bronto Crane award.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bronto-crane"
+    },
+    {
+      "id": "ft-concrete",
+      "title": "Invent Concrete",
+      "desc": "Spell CONCRETE and light multiball on the orbits.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "invent-concrete"
+    },
+    {
+      "id": "ft-super-jackpot",
+      "title": "Super Jackpot",
+      "desc": "Collect a jackpot at the centre lane and follow it with the U-Turn super.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "ft-extra-ball",
+      "title": "Seven Trips Up The Middle",
+      "desc": "Take the centre lane seven times for the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "center-lane-counter"
+    },
+    {
+      "id": "ft-bowl-mb",
+      "title": "Three Strikes",
+      "desc": "Roll three strikes and start Bowl-A-Rama Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "bowl-a-rama-multiball"
+    },
+    {
+      "id": "ft-frenzy",
+      "title": "Feed The Dino",
+      "desc": "Grow the Dino Frenzy value all game, then play the mode.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dino-frenzy"
+    },
+    {
+      "id": "ft-mystery",
+      "title": "Hundred Million",
+      "desc": "Clear both drop banks inside Mystery Mode's twenty seconds.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "mystery-mode"
+    }
+  ],
+  "drills": [
+    {
+      "id": "full-plunge-lane-change",
+      "title": "Full Plunge, Then Lane Change",
+      "text": "Give the plunge a full pull — one that fails to reach the rollovers leaves you with no ball saver at all. Then move the flashing DIG lane onto the ball with the flipper buttons while it is still travelling, rather than hoping it lines up.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "dig-lanes"
+      ]
+    },
+    {
+      "id": "centre-lane-reps",
+      "title": "Thread The Centre Lane",
+      "text": "The lane right of Bowl-A-Rama is narrow enough that a fast ball rattles and comes straight back down the middle. Shoot it from a cradle and count only the clean entries, because this is both the jackpot shot and the counter that pays your extra ball.",
+      "reps": "20 attempts",
+      "focus": "accuracy",
+      "goal": "center-lane-counter",
+      "shots": [
+        "center-lane"
+      ]
+    },
+    {
+      "id": "bed-drops-upper-flipper",
+      "title": "BED Off The Upper Flipper",
+      "text": "The BED drops lie flat against the left wall, which makes them awkward from the lower flippers and honest from the upper one. Take the left orbit and let the ball come through the bumpers to the upper flipper, then clear the bank from there.",
+      "reps": "5 full clears",
+      "focus": "accuracy",
+      "goal": "water-buffalos",
+      "shots": [
+        "upper-flipper",
+        "bed-targets",
+        "left-orbit"
+      ]
+    },
+    {
+      "id": "soft-u-turns",
+      "title": "Soft U-Turns",
+      "text": "The switch sits at the entrance of the U-Turn, so you get credit even when the ball fails the loop — which means there is no reason to hit it hard. Keep the shot soft enough to control the return, because a hard ball comes back out at the speed it went in.",
+      "reps": "15 attempts",
+      "focus": "ball-control",
+      "goal": "u-turn-millions",
+      "shots": [
+        "upper-flipper",
+        "u-turn"
+      ]
+    },
+    {
+      "id": "read-the-bottom-loop",
+      "title": "Read The Bottom Loop",
+      "text": "Both ramps empty into the bottom loop and the game decides which flipper to hand the ball to, based on where your next 1-2-3 shot lives. Take a lit ramp and then watch the return instead of reaching for a favourite shot.",
+      "reps": "5 full 1-2-3 sequences",
+      "focus": "flow",
+      "goal": "one-two-three",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "bottom-loop"
+      ]
+    },
+    {
+      "id": "ramp-then-bowl",
+      "title": "Ramp, Then Bowl",
+      "text": "A Go Bowling ramp always returns the ball to the right flipper and gives you about five seconds to throw. Have the centre target picked before the ball arrives — the sides are only spares, and three strikes is what starts the multiball.",
+      "reps": "10 frames",
+      "focus": "flow",
+      "goal": "bowling",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "bowl-a-rama"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "bone",
+  "actionButton": {
+    "present": false,
+    "how": "Nothing extra on this cabinet. The Flintstones is early-90s Williams, so two flipper buttons, a spring plunger and your hips are the entire interface. The nearest thing to a bonus control is that your flipper buttons rotate the flashing D-I-G lane while the plunged ball is still travelling — worth using on every single plunge."
+  },
+  "howItPlays": {
+    "objective": "Live it up in Bedrock: start the story modes off the 1-2-3 ramps and the Time Machine target, spell CONCRETE to open multiball, and grind the narrow center lane. Clearing the four story modes unlocks Mystery Mode and its hundred-million payout.",
+    "loop": [
+      "Shoot the lit 1-2-3 ramps -- the bottom loop feeds the return to the flipper that lines up your following shot -- to bank two, four and six million and start the flashing mode.",
+      "Nudge the jet bumpers between shots to slide the flashing mode along so the one you want starts.",
+      "Clear the BED and ROCK drop banks and complete D-I-G to spell CONCRETE, then start multiball on either orbit; a ball parked in the Time Machine wheel keeps the jackpot climbing.",
+      "Hit the Time Machine target for its three fixed modes, and chase Go Bowling strikes toward Bowl-A-Rama Multiball."
+    ],
+    "lights": [
+      {
+        "id": "dig-rollovers",
+        "name": "D-I-G Rollovers",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "dig-lanes"
+          }
+        ],
+        "lit": "One of the three top D-I-G lanes flashes at a time, and completing all three raises the end-of-ball bonus multiplier -- plus, for your first multiball only, spots a CONCRETE letter.",
+        "flashing": null,
+        "control": {
+          "input": "either-flipper",
+          "effect": "either flipper tap shifts the flashing D-I-G rollover across the top, so you can steer it onto the lane the ball is about to roll through instead of hoping it lines up",
+          "when": "while the plunged or center-fed ball is still travelling toward the lanes"
+        },
+        "then": "Complete D-I-G for five million and a plus-one multiplier up to ten, after which each completion pays a flat ten million, so there is always a reason to keep feeding them. The center lane empties straight into these rollovers, which is the dependable way to keep closing the set all game.",
+        "goals": [
+          "bonus-multiplier",
+          "skillshot",
+          "invent-concrete"
+        ]
+      },
+      {
+        "id": "ramp-modes",
+        "name": "1-2-3 Ramp Modes",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "bumpers"
+          }
+        ],
+        "lit": "A lit ramp is the next 1-2-3 shot and it is not always the same ramp, since the bottom loop routes the return to whichever flipper sets up the following shot.",
+        "flashing": "The mode row reads lit for a mode already played, flashing for the one that starts next, and dark for one untouched.",
+        "control": null,
+        "then": "Bank the three ramps for two, four and six million to start whichever mode is flashing. Tap the jet bumpers between shots to walk the flashing mode over to Fred's Choice, Joe's Diner, Bedrock Water Buffalos or Dino Frenzy before you finish the sequence.",
+        "goals": [
+          "one-two-three",
+          "freds-choice",
+          "joes-diner",
+          "water-buffalos",
+          "dino-frenzy"
+        ]
+      },
+      {
+        "id": "concrete-letters",
+        "name": "CONCRETE Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "bed-targets"
+          },
+          {
+            "shot": "rock-targets"
+          },
+          {
+            "shot": "dig-lanes"
+          }
+        ],
+        "lit": "A lit letter in CONCRETE is one you have not spelled yet, and the letters often arrive two at a time so the word closes faster than eight rollovers suggests.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear the BED drops and the ROCK drops -- both also feed the story modes, so this builds in the background -- and complete D-I-G for your first multiball only. Spelling CONCRETE lights Start Multiball on both orbits, and the orbit diverts the ball to the popper and into the Time Machine wheel.",
+        "goals": [
+          "invent-concrete",
+          "multiball"
+        ]
+      },
+      {
+        "id": "time-machine-target",
+        "name": "Time Machine Target",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "time-machine-target"
+          }
+        ],
+        "lit": "The single standup facing the flippers hands out three modes in a fixed order, so you always know exactly what the next hit buys.",
+        "flashing": null,
+        "control": null,
+        "then": "The first hit starts Time Machine, a counter that climbs only while a ball rides the corner wheel, so feed a ball in early and leave it. The second lights Change Job over at the right orbit -- a flat twenty-five million with no timer to fight -- and the third starts Help, a search worth fifteen million to find the kids plus the right-ramp rescue.",
+        "goals": [
+          "time-machine-mode",
+          "job-change",
+          "help-search"
+        ]
+      },
+      {
+        "id": "dino-frenzy",
+        "name": "Dino Targets",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "dino-targets"
+          }
+        ],
+        "lit": "One of the three Dino standups always shows lit, and tapping that lit one bumps the running Dino Frenzy award up by a million -- a gain that stays banked for the entire game, well beyond the mode itself.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the lit Dino target all game so that when the two-ball Dino Frenzy starts, every target already pays a value you have been fattening since the first ball. Inside the mode all three glow and hand over the running value when struck.",
+        "goals": [
+          "dino-frenzy"
+        ]
+      },
+      {
+        "id": "bowl-a-rama",
+        "name": "Bowl-A-Rama",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "bowl-a-rama"
+          }
+        ],
+        "lit": "A Go Bowling ramp stays lit at all times; take it and the ball drops onto your right flipper, giving you about five seconds to fire at the three targets set behind the plastic pins.",
+        "flashing": null,
+        "control": null,
+        "then": "Hit the center target for a strike and the sides for a spare; three strikes start Bowl-A-Rama Multiball, where the same targets pay twenty million a super strike. A banked Bowling Power-Up turns your next throw into a guaranteed strike whatever you hit.",
+        "goals": [
+          "bowling",
+          "bowl-a-rama-multiball",
+          "bowling-power-up"
+        ]
+      },
+      {
+        "id": "center-lane-counter",
+        "name": "Center Lane Counter",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "center-lane"
+          }
+        ],
+        "lit": "The narrow lane right of Bowl-A-Rama keeps a running count all game, feeds the D-I-G rollovers, and doubles as the multiball jackpot shot.",
+        "flashing": null,
+        "control": null,
+        "then": "Grind the count to seven for the extra ball, and the very next award is DIG Millions, which turns the dead bumper area into a scoring feature. Shoot it from a cradle, because a fast ball rattles the tight lane and comes straight back down the middle.",
+        "goals": [
+          "center-lane-counter",
+          "multiball"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to slide the flashing D-I-G lane under the ball while it is still travelling -- on the plunge for the skill shot and on every feed from the center lane during play. Completing D-I-G steps the end-of-ball bonus multiplier up to 10x, then pays a flat ten million each, and for your first multiball only it also spots a CONCRETE letter.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Full-plunge into the D-I-G lanes and use the flippers to walk the flashing lane onto the incoming ball for the skill shot and an early bonus multiplier. Then bank a full 1-2-3 ramp sequence to start your first story mode.",
+        "goals": [
+          "skillshot",
+          "bonus-multiplier",
+          "one-two-three"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Spell CONCRETE off the drop banks for multiball and let a ball ride the Time Machine wheel so the jackpot keeps climbing. Feed the lit Dino target all game, chase Go Bowling strikes, and draw a Bronto Crane award off the left orbit.",
+        "goals": [
+          "invent-concrete",
+          "multiball",
+          "dino-frenzy",
+          "bowling",
+          "bronto-crane"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Clear all four story modes to unlock Mystery Mode -- both drop banks inside twenty seconds for a hundred-million payout, with each target still worth five million on the way. Stack the growing CONCRETE multiball jackpot and a Bronto Crane 2x Playfield window on top for the biggest swings of the game.",
+        "goals": [
+          "mystery-mode",
+          "multiball",
+          "two-x-playfield"
+        ]
+      }
+    ]
+  }
+}

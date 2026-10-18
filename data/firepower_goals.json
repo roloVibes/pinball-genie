@@ -1,0 +1,812 @@
+{
+  "machine": "Firepower (Williams, 1980)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Plunger Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The top of this lane is capped by a one-way gate. Plunge soft and the ball drops straight to the flippers; plunge full and it rides the curve up into the pocket above the F-I-R-E lanes."
+    },
+    {
+      "id": "lower-right-lock",
+      "name": "Lower Right Lock",
+      "type": "lock",
+      "x": 0.82,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "An eject hole on the inside of the curve from the plunger lane. Worth 10,000 when lit, 1,000 when not, and it holds a ball for multiball."
+    },
+    {
+      "id": "lower-right-star",
+      "name": "Lower Right Star Rollover",
+      "type": "rollover",
+      "x": 0.78,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "A star button in front of the lower right lock. Worth 1,000 whenever the ball crosses it."
+    },
+    {
+      "id": "upper-right-lock",
+      "name": "Upper Right Lock",
+      "type": "lock",
+      "x": 0.8,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Cannot be entered from the right — a ball arriving from the plunger lane passes underneath it. The only reliable way in is up the left spinner lane and across the top."
+    },
+    {
+      "id": "fire-lanes",
+      "name": "F-I-R-E Rollover Lanes",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Four lanes at the top centre, each worth 1,000. One-way gates on both entrances mean a ball that gets up there has to come back down through a lane."
+    },
+    {
+      "id": "bullseye-target",
+      "name": "Bullseye Target",
+      "type": "standup",
+      "x": 0.5,
+      "y": 0.75,
+      "trim": "all",
+      "notes": "A single standup between the I and R lanes, worth 1,000. The three inserts below it belong to the Firepower Bonus, not to this target — a common misreading."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.45,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Four in a square below the lanes, the left pair set slightly higher than the right. Worth 100 unlit and 1,000 lit, with very lively action."
+    },
+    {
+      "id": "center-targets-left",
+      "name": "Left Centre Stand-Ups",
+      "type": "target-bank",
+      "x": 0.4,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Three standups angled inward, numbered on the playfield arrows. Always worth 1,000 each whether lit or not, which makes them the safe shot when nothing else is on."
+    },
+    {
+      "id": "center-targets-right",
+      "name": "Right Centre Stand-Ups",
+      "type": "target-bank",
+      "x": 0.58,
+      "y": 0.49,
+      "trim": "all",
+      "notes": "The matching bank, mounted slightly lower than the left one. Some machines have been retrofitted with the drop targets the game was originally designed around."
+    },
+    {
+      "id": "spinner-lane",
+      "name": "Left Spinner Lane",
+      "type": "spinner",
+      "x": 0.15,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Starts mid-playfield and hooks hard right at the top, sending the ball through a gate across the top and towards the upper right lock. Worth 100 a spin, 1,000 when lit."
+    },
+    {
+      "id": "left-lock",
+      "name": "Left Lock",
+      "type": "lock",
+      "x": 0.09,
+      "y": 0.44,
+      "trim": "all",
+      "notes": "The third eject hole, just left of the start of the spinner lane. Same values as the others, and it has its own star rollover in front."
+    },
+    {
+      "id": "left-star",
+      "name": "Left Star Rollover",
+      "type": "rollover",
+      "x": 0.14,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "The star button in front of the left lock, worth 1,000."
+    },
+    {
+      "id": "power-targets",
+      "name": "P-O-W-E-R Stand-Ups",
+      "type": "target-bank",
+      "x": 0.8,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "The three-bank above and right of the right slingshot. Completing it awards POWER, lights both return lanes for 3,000, and collects the extra ball when lit."
+    },
+    {
+      "id": "shield",
+      "name": "The Shield",
+      "type": "kicker",
+      "x": 0.06,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "The left outlane kickback. Lit by completing either bank of centre stand-ups, and it goes out the moment it fires."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Return Lane",
+      "type": "lane",
+      "x": 0.24,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Worth 1,000, or 3,000 once POWER is completed."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Return Lane",
+      "type": "lane",
+      "x": 0.76,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Same as the left — 1,000, or 3,000 with POWER completed."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.08,
+      "trim": "all",
+      "notes": "Worth 1,000, or Special when lit. There is no kickback on this side."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.2917,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Feeds the right side of the playfield and the P-O-W-E-R bank."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6875,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "The spinner lane shot comes off this flipper. It also operates lane change on the F-I-R-E lanes."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-fire-lanes",
+      "title": "Full Plunge into the F-I-R-E Lanes",
+      "category": "skillshot",
+      "summary": "Plunge full and the ball curves over the top into the upper-centre pocket above the F-I-R-E lanes — the lanes themselves, the bumpers and the bullseye all sit up there, and a one-way gate means it has to leave through a lane.",
+      "difficulty": 1,
+      "reward": "A guaranteed F-I-R-E lane letter toward the bonus multiplier",
+      "steps": [
+        {
+          "shot": "fire-lanes",
+          "action": "Full plunge into the F-I-R-E lanes",
+          "detail": "The ball carries round the curve and drops into the top centre of the playfield, above the lanes. It has to leave through one of the four, so use lane change on the way down to steer a guaranteed letter."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "skillshot-soft-plunge",
+      "title": "Soft Plunge to the Flippers",
+      "category": "skillshot",
+      "summary": "The other ball the plunger gives you: plunge light and it drops straight into play near the flippers instead of curving up into the F-I-R-E pocket.",
+      "difficulty": 1,
+      "reward": "Immediate flipper control, no delay in the lanes",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Plunge soft for a direct drop to the flippers",
+          "detail": "A light plunge drops straight down to the flippers instead of curving over the top, which is worth doing if you need a lit shot immediately."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "fire-lanes",
+      "title": "Complete F-I-R-E",
+      "category": "multiplier",
+      "summary": "Four lanes at the top, each worth 1,000. Completing all four lights the FIRE insert in the centre of the playfield and steps the bonus multiplier to 2X, 3X, 4X and 5X. The right flipper rotates lit lanes one place at a time, which makes this far easier than it looks.",
+      "difficulty": 1,
+      "reward": "Bonus multiplier up to 5X",
+      "steps": [
+        {
+          "shot": "fire-lanes",
+          "action": "Rotate with the right flipper",
+          "detail": "Lane change moves any lit lanes left to right, one position per press."
+        },
+        {
+          "shot": "spinner-lane",
+          "action": "Feed the top of the playfield",
+          "detail": "The spinner lane and a full plunge are the two ways back up there."
+        },
+        {
+          "shot": "power-targets",
+          "action": "Complete F-I-R-E again at 5X",
+          "detail": "Once you are at 5X, another completion lights the extra ball on the P-O-W-E-R bank."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "power-targets",
+      "title": "Complete P-O-W-E-R",
+      "category": "progression",
+      "summary": "The three-bank above the right slingshot. Completing it lights the POWER insert, turns both return lanes from 1,000 into 3,000 for the rest of the ball, and is where a lit extra ball is collected.",
+      "difficulty": 1,
+      "reward": "3,000 return lanes and the extra ball",
+      "steps": [
+        {
+          "shot": "power-targets",
+          "action": "Sweep the bank from the left flipper",
+          "detail": "It sits above and right of the right slingshot, in the classic Ritchie position."
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Cash the return lanes",
+          "detail": "Both lanes triple in value once POWER is showing."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "center-targets",
+      "title": "The Centre Stand-Ups",
+      "category": "progression",
+      "summary": "Six targets in two banks of three, and the heart of the whole game. One bank lights the Shield. Both banks light two of the three locks and the spinner. A second full completion lights the last lock.",
+      "difficulty": 2,
+      "reward": "Shield, locks and a lit spinner",
+      "steps": [
+        {
+          "shot": "center-targets-left",
+          "action": "Complete either bank for the Shield",
+          "detail": "It works whether the targets were already collected or not, so this is always available."
+        },
+        {
+          "shot": "center-targets-right",
+          "action": "Complete both banks",
+          "detail": "That lights two of the three eject holes and puts the spinner on 1,000 a spin."
+        },
+        {
+          "shot": "center-targets-left",
+          "action": "Go round again for the third lock",
+          "detail": "A second completion of all six lights the remaining hole."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "keep-the-shield",
+      "title": "Keep The Shield Lit",
+      "category": "strategy",
+      "summary": "The left outlane kickback is the single best habit on this machine. It goes out the moment it fires, and relighting it costs one bank of centre stand-ups — a shot you were going to make anyway. Never leave it dark for long.",
+      "difficulty": 1,
+      "reward": "A saved ball, over and over",
+      "steps": [
+        {
+          "shot": "center-targets-left",
+          "action": "Relight it immediately after it fires",
+          "detail": "Either bank does it, collected or not."
+        },
+        {
+          "shot": "shield",
+          "action": "Let the left outlane take the ball",
+          "detail": "With the Shield lit the outlane is not a drain, it is a free return to play."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "light-the-locks",
+      "title": "Light The Three Locks",
+      "category": "progression",
+      "summary": "Three eject holes: left, lower right and upper right. Lit they pay 10,000 and hold a ball; unlit they pay 1,000 and spit it back out. Completing both centre banks lights two of them, and a second completion lights the third.",
+      "difficulty": 2,
+      "reward": "10,000 a hole and a held ball",
+      "steps": [
+        {
+          "shot": "center-targets-right",
+          "action": "Complete all six targets",
+          "detail": "Two locks light on the first completion."
+        },
+        {
+          "shot": "left-lock",
+          "action": "Take the easy ones first",
+          "detail": "The left lock and the lower right lock are both straightforward from the flippers."
+        },
+        {
+          "shot": "center-targets-left",
+          "action": "Complete them again",
+          "detail": "The second sweep lights the third hole."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "spinner-lock",
+      "title": "The Spinner Into The Upper Right Lock",
+      "category": "combo",
+      "summary": "The signature shot. The upper right lock cannot be entered from the right — a ball arriving from the plunger lane passes below it. You have to come up the left spinner lane, across the top through the gate, and into the hole from the other side.",
+      "difficulty": 3,
+      "reward": "A ripping spinner and the third lock",
+      "steps": [
+        {
+          "shot": "spinner-lane",
+          "action": "Shoot the lane crisply off the right flipper",
+          "detail": "The spinner pays 100 a spin, or 1,000 once the centre targets have lit it, so a hard shot pays twice."
+        },
+        {
+          "shot": "upper-right-lock",
+          "action": "Follow it into the hole",
+          "detail": "At the top the lane hooks hard right, a one-way gate lets the ball through, and from there it crosses the F-I-R-E area."
+        },
+        {
+          "shot": "fire-lanes",
+          "action": "Accept the rebound",
+          "detail": "A lucky bounce off the posts at the top of the lanes will occasionally drop into the lock too."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "multiball",
+      "title": "Three-Ball Multiball",
+      "category": "multiball",
+      "summary": "Lock a ball in all three eject holes and all three are released at once. This was the first solid-state multiball ever built, and it shows: there is no jackpot and no objective. What it gives you is two or three times the playfield activity, which is exactly when everything else on the machine gets easier.",
+      "difficulty": 3,
+      "reward": "Three balls in play",
+      "steps": [
+        {
+          "shot": "center-targets-left",
+          "action": "Light all three locks first",
+          "detail": "Two banks completed lights two holes, a second completion lights the third."
+        },
+        {
+          "shot": "lower-right-lock",
+          "action": "Fill the holes",
+          "detail": "Each lit hole pays 10,000 as it takes the ball."
+        },
+        {
+          "shot": "fire-lanes",
+          "action": "Use the chaos",
+          "detail": "This is the best time to finish F-I-R-E, sweep P-O-W-E-R and build bonus, because there is simply more ball on the playfield."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "firepower-bonus",
+      "title": "The Firepower Bonus",
+      "category": "combo",
+      "summary": "Complete F-I-R-E and P-O-W-E-R in the same ball and you collect the Firepower Bonus — 10,000, then 30,000, then 50,000, tracked by the three inserts stacked in the middle of the bumper area.",
+      "difficulty": 2,
+      "reward": "10,000, 30,000 then 50,000",
+      "steps": [
+        {
+          "shot": "fire-lanes",
+          "action": "Finish the lanes",
+          "detail": "Lane change with the right flipper makes this the cheaper half."
+        },
+        {
+          "shot": "power-targets",
+          "action": "Finish the target bank",
+          "detail": "The three inserts stacked in the middle of the bumper area, just below the bullseye target, show which of the three values you are on."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "outlane-specials",
+      "title": "Light The Outlane Specials",
+      "category": "secret",
+      "summary": "Collect the Firepower Bonus three times — through 10,000, 30,000 and 50,000 — and both outlanes light for Special. It is the deepest thing in the ruleset and almost nobody gets there by accident.",
+      "difficulty": 3,
+      "reward": "Special at both outlanes",
+      "steps": [
+        {
+          "shot": "fire-lanes",
+          "action": "Take the bonus three times",
+          "detail": "That means completing F-I-R-E and P-O-W-E-R together, three times over."
+        },
+        {
+          "shot": "right-outlane",
+          "action": "Then let the outlane have it",
+          "detail": "The right outlane has no kickback, so this is the one time draining there is what you want."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "extra-ball",
+      "title": "The Extra Ball",
+      "category": "progression",
+      "summary": "Reach 5X on the bonus multiplier, then complete F-I-R-E once more to light the extra ball, then collect it on the P-O-W-E-R bank. On factory settings all of that has to happen inside a single ball, which is what makes it hard.",
+      "difficulty": 3,
+      "reward": "One extra ball",
+      "steps": [
+        {
+          "shot": "fire-lanes",
+          "action": "Climb to 5X",
+          "detail": "Four completions of the lanes gets you there, and lane change makes each one cheap."
+        },
+        {
+          "shot": "fire-lanes",
+          "action": "Complete them once more",
+          "detail": "The completion after 5X is what lights the ball."
+        },
+        {
+          "shot": "power-targets",
+          "action": "Collect on the P-O-W-E-R bank",
+          "detail": "More liberally set machines carry multipliers between balls, which makes this considerably easier."
+        }
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "light-the-bumpers",
+      "title": "Light The Pop Bumpers",
+      "category": "multiplier",
+      "summary": "Unlit bumpers pay 100. Lit ones pay 1,000. Completing all six centre stand-ups lights two of them — one on the left, one on the right, alternating as they are hit — and a second completion lights all four.",
+      "difficulty": 2,
+      "reward": "1,000 per bumper instead of 100",
+      "steps": [
+        {
+          "shot": "center-targets-right",
+          "action": "Complete all six targets",
+          "detail": "The first completion lights two bumpers, one above and one below."
+        },
+        {
+          "shot": "center-targets-left",
+          "action": "Do it a second time",
+          "detail": "That lights the remaining two, so all four are worth 1,000."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Feed the nest",
+          "detail": "The bumper area on a healthy Firepower is very lively, and rebound switches around it pay 50 each on top."
+        }
+      ],
+      "fx": "military"
+    },
+    {
+      "id": "bonus-build",
+      "title": "Build The End-Of-Ball Bonus",
+      "category": "progression",
+      "summary": "Bonus runs from 1,000 up to 29,000 and multiplies by up to 5X, which makes a fully built ball worth 145,000 on its own. It is collected by first-time hits on the major features rather than by repeating shots.",
+      "difficulty": 2,
+      "reward": "Up to 145,000 at end of ball",
+      "steps": [],
+      "instructions": [
+        "Bonus is built by collecting things for the first time — F-I-R-E rollovers, uncollected centre stand-ups and the other main features.",
+        "The multiplier comes only from completing the F-I-R-E lanes: 2X, 3X, 4X, then 5X.",
+        "Because repeat hits on an already-collected target do not add bonus, spread your shots around rather than hammering one bank.",
+        "Get the multiplier up early in the ball so everything you collect afterwards is worth more.",
+        "On factory settings the multiplier resets each ball, so treat every ball as its own build."
+      ],
+      "fx": "gun"
+    },
+    {
+      "id": "safe-shot",
+      "title": "When Nothing Is Lit, Hit The Centre Targets",
+      "category": "strategy",
+      "summary": "The centre stand-ups pay 1,000 each whether they are lit or not. That makes them the default shot on this machine — no risk, real points, and they relight the Shield and step you towards the locks at the same time.",
+      "difficulty": 1,
+      "reward": "1,000 a target and progress towards everything",
+      "steps": [
+        {
+          "shot": "center-targets-left",
+          "action": "Take the safe shot",
+          "detail": "Both banks are angled inward so either flipper can reach them."
+        },
+        {
+          "shot": "shield",
+          "action": "Bank the side effects",
+          "detail": "Every completion relights the Shield, and every second one moves the locks and bumpers along."
+        }
+      ],
+      "fx": "military"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "fp-fire",
+      "title": "F-I-R-E",
+      "desc": "Complete the four rollover lanes for a bonus multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "fire-lanes"
+    },
+    {
+      "id": "fp-power",
+      "title": "P-O-W-E-R",
+      "desc": "Complete the P-O-W-E-R stand-up bank.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "power-targets"
+    },
+    {
+      "id": "fp-shield",
+      "title": "Shield Up",
+      "desc": "Light the Shield and have it kick a ball back into play.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "keep-the-shield"
+    },
+    {
+      "id": "fp-spinner",
+      "title": "Rip The Spinner",
+      "desc": "Shoot the left spinner lane into the upper right lock.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "spinner-lock"
+    },
+    {
+      "id": "fp-multiball",
+      "title": "Three Balls",
+      "desc": "Fill all three eject holes to start multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball"
+    },
+    {
+      "id": "fp-bonus",
+      "title": "Firepower Bonus",
+      "desc": "Complete F-I-R-E and P-O-W-E-R in the same ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "firepower-bonus"
+    },
+    {
+      "id": "fp-5x",
+      "title": "Five Times",
+      "desc": "Climb the bonus multiplier all the way to 5X.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "fire-lanes"
+    },
+    {
+      "id": "fp-extra-ball",
+      "title": "Extra Ball",
+      "desc": "Light the extra ball at 5X and collect it on the P-O-W-E-R bank.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "extra-ball"
+    },
+    {
+      "id": "fp-specials",
+      "title": "Full Firepower",
+      "desc": "Collect the Firepower Bonus three times to light the outlane Specials.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "outlane-specials"
+    }
+  ],
+  "drills": [
+    {
+      "id": "two-plunges",
+      "title": "Both Plunges",
+      "text": "A full plunge carries round the curve into the pocket above the lanes, and one-way gates mean the ball has to leave through one of the four — rotate with the right flipper on the way down and the letter is guaranteed. A light plunge drops straight to the flippers instead, which is what you want when something is already lit.",
+      "reps": "10 of each",
+      "focus": "skill-shot",
+      "goal": "skillshot-fire-lanes",
+      "shots": [
+        "shooter-lane",
+        "fire-lanes"
+      ]
+    },
+    {
+      "id": "centre-banks-both-flippers",
+      "title": "Six Targets, Both Flippers",
+      "text": "Both centre banks are angled inward so either flipper reaches them, and they pay a thousand each lit or not. Sweep all six from one flipper, then all six from the other; two completions light the locks, the spinner and every bumper.",
+      "reps": "5 full sweeps per flipper",
+      "focus": "accuracy",
+      "goal": "center-targets",
+      "shots": [
+        "center-targets-left",
+        "center-targets-right"
+      ]
+    },
+    {
+      "id": "spinner-into-upper-lock",
+      "title": "Spinner Into The Upper Lock",
+      "text": "The upper right lock cannot be entered from the right, so the only way in is a crisp spinner lane shot off the right flipper that hooks across the top and drops in from the far side. Hit it hard with the spinner lit and it pays twice on the way.",
+      "reps": "15 attempts",
+      "focus": "accuracy",
+      "goal": "spinner-lock",
+      "shots": [
+        "spinner-lane",
+        "upper-right-lock"
+      ]
+    },
+    {
+      "id": "relight-the-shield-first",
+      "title": "Relight The Shield First",
+      "text": "The moment the kickback fires, the next thing you shoot is a bank of centre stand-ups — before the locks, before anything. One bank relights it whether those targets were already collected or not, and with the Shield up the left outlane is a free return rather than a drain.",
+      "reps": "one full ball",
+      "focus": "ball-control",
+      "goal": "keep-the-shield",
+      "shots": [
+        "shield",
+        "center-targets-left",
+        "center-targets-right"
+      ]
+    },
+    {
+      "id": "fire-and-power-same-ball",
+      "title": "F-I-R-E And P-O-W-E-R Together",
+      "text": "Both have to be finished on the same ball to collect the Firepower Bonus, so treat them as one job rather than two. Lane change makes the lanes the cheap half; sweep the three-bank above the right slingshot from the left flipper for the other.",
+      "reps": "3 collections",
+      "focus": "flow",
+      "goal": "firepower-bonus",
+      "shots": [
+        "fire-lanes",
+        "power-targets"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "gun",
+  "actionButton": {
+    "present": false,
+    "how": "No action button on a 1980 machine — two flipper buttons and a manual plunger cover everything. The right flipper button rotates the lit F-I-R-E lanes, and leaning on it is the one bit of extra control you have."
+  },
+  "howItPlays": {
+    "objective": "Firepower is a quick military-themed shooter and the machine that first put three balls on the glass at once. Sweep the centre stand-ups to arm the Shield, the eject holes and the spinner, finish the F-I-R-E rollovers and, on the same ball, the P-O-W-E-R bank, then load all three holes for the release.",
+    "loop": [
+      "Sweep either centre stand-up bank to relight the Shield, and clear both banks to arm two of the three eject holes plus the spinner.",
+      "Rotate the F-I-R-E rollovers with the right flipper to finish the word and push your bonus multiplier a step higher.",
+      "Close the P-O-W-E-R bank off the left flipper to triple both return lanes for the rest of the ball and, at top multiplier, to arm the extra ball.",
+      "Drop a ball into each lit hole to spring all three at once, then use the crowded glass to close both lettered banks on one ball for the Firepower Bonus."
+    ],
+    "lights": [
+      {
+        "id": "fire-rollovers",
+        "name": "F-I-R-E Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "fire-lanes",
+            "lamps": 4
+          }
+        ],
+        "lit": "A lit rollover up top is an F-I-R-E letter already banked; the dark ones are what you still owe, and on stock settings the whole word plus its multiplier reset at the start of each ball.",
+        "flashing": null,
+        "control": {
+          "input": "right-flipper",
+          "effect": "each press of the right flipper button shuffles the lit rollovers one lane toward the right, so you can park a letter you still need under whichever lane the ball is dropping through",
+          "when": "as the ball rolls back down through the four top lanes after a full plunge or a spinner-lane shot"
+        },
+        "then": "Steer the missing letters under the ball to finish the word, which bumps the bonus multiplier to 2X, then 3X, 4X and 5X. One more completion once you are at 5X arms the extra ball for collecting over on the right-hand stand-ups.",
+        "goals": [
+          "fire-lanes",
+          "firepower-bonus",
+          "extra-ball",
+          "skillshot-fire-lanes"
+        ]
+      },
+      {
+        "id": "power-bank",
+        "name": "P-O-W-E-R Stand-Ups",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "power-targets"
+          }
+        ],
+        "lit": "A lit letter on the bank above the right slingshot is one you have already knocked down; the unlit ones are all that stand between you and a finished word.",
+        "flashing": null,
+        "control": null,
+        "then": "Sweep the bank from the left flipper to light the POWER insert, which turns both return lanes from small change into three-thousand each until you drain. This is also the spot where a lit extra ball is cashed once F-I-R-E has armed it at 5X.",
+        "goals": [
+          "power-targets",
+          "firepower-bonus",
+          "extra-ball"
+        ]
+      },
+      {
+        "id": "centre-stand-ups",
+        "name": "Centre Stand-Ups",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "center-targets-left",
+            "lamps": 3
+          },
+          {
+            "shot": "center-targets-right",
+            "lamps": 3
+          }
+        ],
+        "lit": "These six pay their value struck lit or dark, so they never waste a shot; what you are watching is not the individual lamps but whether a whole bank has been swept, because sweeping is what arms the rest of the machine.",
+        "flashing": null,
+        "control": null,
+        "then": "Clear one bank and the Shield relights at the left outlane. Clear both and two eject holes plus the spinner come on, and a couple of jet bumpers jump to full value; go around a second time to arm the last hole and the remaining bumpers. When nothing else is on, this is your default shot.",
+        "goals": [
+          "center-targets",
+          "keep-the-shield",
+          "light-the-bumpers",
+          "safe-shot"
+        ]
+      },
+      {
+        "id": "eject-holes",
+        "name": "The Three Eject Holes",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-lock"
+          },
+          {
+            "shot": "lower-right-lock"
+          },
+          {
+            "shot": "upper-right-lock"
+          }
+        ],
+        "lit": "A lit hole is worth ten-thousand and swallows the ball to hold it for the release; a dark one pays a token amount and spits it straight back at you.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the left and lower-right holes head-on, but the top-right one cannot be reached from below -- the sole entry is a sharp rip up the left spinner lane, which swings over the top and drops in from behind. Fill all three lit holes and every ball springs loose at once.",
+        "goals": [
+          "light-the-locks",
+          "multiball",
+          "spinner-lock"
+        ]
+      },
+      {
+        "id": "the-shield",
+        "name": "The Shield",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "shield"
+          }
+        ],
+        "lit": "Lit, the left-outlane kickback is armed and boots any ball that heads down that side back into play; the instant it fires it goes dark and stops saving you.",
+        "flashing": null,
+        "control": null,
+        "then": "Treat relighting it as the first thing you do after it kicks -- a single centre bank does it whether those targets were fresh or already collected -- because a dark Shield turns that outlane from a free return into a straight drain.",
+        "goals": [
+          "keep-the-shield"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "The right flipper button walks the lit F-I-R-E rollovers one lane rightward on every press. Line the letters you are missing up with the lanes the ball is diving through on its way down, finish the word, and the bonus multiplier climbs a step to a 5X ceiling; the very next completion after 5X arms the extra ball at P-O-W-E-R.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Live on the centre stand-ups: they score every time and keep the Shield lit so the left outlane stops eating balls. Rotate F-I-R-E closed early with the right flipper so the multiplier is already high when the bigger points arrive.",
+        "goals": [
+          "center-targets",
+          "fire-lanes",
+          "keep-the-shield",
+          "safe-shot"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Close the P-O-W-E-R bank for fat return lanes, then arm and fill the three eject holes to spring the release. Scatter your hits across fresh features instead of pounding one bank, because only a feature's first strike feeds the end-of-ball bonus.",
+        "goals": [
+          "power-targets",
+          "light-the-locks",
+          "multiball",
+          "bonus-build"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "The deepest prize is Special at both outlanes: collect the Firepower Bonus -- the F-I-R-E rollovers plus the P-O-W-E-R bank, both closed on one ball -- three times over, climbing ten, thirty and fifty thousand, to light it. The 5X extra ball is the other chase worth planning a ball around.",
+        "goals": [
+          "outlane-specials",
+          "firepower-bonus",
+          "extra-ball"
+        ]
+      }
+    ]
+  }
+}

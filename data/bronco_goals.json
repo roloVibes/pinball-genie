@@ -1,0 +1,773 @@
+{
+  "machine": "Bronco (Gottlieb, 1977)",
+  "shots": [
+    {
+      "id": "plunger",
+      "name": "Plunger",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Manual plunger. Its lane runs up to the top arch, which sits directly above the A, B and C rollover lanes — so the strength of your plunge decides which letter you have a chance at."
+    },
+    {
+      "id": "top-arch",
+      "name": "Top Arch",
+      "type": "lane",
+      "x": 0.5,
+      "y": 0.93,
+      "trim": "all",
+      "notes": "The return path across the top of the playfield. Everything you plunge passes through here on its way down into the lettered lanes."
+    },
+    {
+      "id": "a-rollover",
+      "name": "A Rollover",
+      "type": "rollover",
+      "x": 0.38,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Scores 300 and one bonus step. This is also the only lane that collects a lit Special, and both outlanes spot the same letter."
+    },
+    {
+      "id": "b-rollover",
+      "name": "B Rollover",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Scores 300 and one bonus step. The left inlane spots the same letter, so B is the easiest of the three to pick up by accident."
+    },
+    {
+      "id": "c-rollover",
+      "name": "C Rollover",
+      "type": "rollover",
+      "x": 0.62,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Scores 300 and one bonus step. The right inlane also spots C."
+    },
+    {
+      "id": "left-pop",
+      "name": "Left Pop Bumper",
+      "type": "bumpers",
+      "x": 0.38,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Scores 100."
+    },
+    {
+      "id": "middle-pop",
+      "name": "Middle Pop Bumper",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Only worth 10 points, but it is the one that matters — every hit fires the alternating relay and steps the match unit."
+    },
+    {
+      "id": "right-pop",
+      "name": "Right Pop Bumper",
+      "type": "bumpers",
+      "x": 0.62,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Scores 100."
+    },
+    {
+      "id": "drop-targets",
+      "name": "Drop Targets",
+      "type": "drop-target",
+      "x": 0.5,
+      "y": 0.54,
+      "trim": "all",
+      "notes": "Three targets with rubber posts behind them. Each is 300 points, one bonus step, and lights one spot. Clearing all three is the gateway to both the extra ball and the Special."
+    },
+    {
+      "id": "star-rollovers",
+      "name": "Star Rollovers",
+      "type": "rollover",
+      "x": 0.5,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Three stars directly below the drop targets. Ten points each — they are traffic, not a goal."
+    },
+    {
+      "id": "left-spots",
+      "name": "Left Spot Lights",
+      "type": "mech",
+      "x": 0.3,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "Three small lamps, one per drop target, lit while that target is down. They control what the left saucer is worth."
+    },
+    {
+      "id": "right-spots",
+      "name": "Right Spot Lights",
+      "type": "mech",
+      "x": 0.7,
+      "y": 0.5,
+      "trim": "all",
+      "notes": "The mirror set on the right, controlling the right saucer. The alternating relay decides which side is live at any moment."
+    },
+    {
+      "id": "left-saucer",
+      "name": "Left Ball Saucer",
+      "type": "saucer",
+      "x": 0.13,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Scores 3000 and advances the bonus one step for every lit left spot — so with all three drop targets down it is the single biggest shot on the playfield."
+    },
+    {
+      "id": "left-kickout",
+      "name": "Left Ball Kickout",
+      "type": "kicker",
+      "x": 0.11,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "A cup facing up the playfield. It holds the ball briefly, then fires it over the kickout rollover and into the left saucer. Worth 500 on its own."
+    },
+    {
+      "id": "left-kickout-rollover",
+      "name": "Left Kickout Rollover",
+      "type": "rollover",
+      "x": 0.12,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Scores 100, and holds one of the two extra ball lamps. The kickout throws the ball across it automatically, which is the practical way to collect."
+    },
+    {
+      "id": "right-saucer",
+      "name": "Right Ball Saucer",
+      "type": "saucer",
+      "x": 0.87,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "The mirror of the left saucer: 3000 points plus a bonus step for each lit right spot."
+    },
+    {
+      "id": "right-kickout",
+      "name": "Right Ball Kickout",
+      "type": "kicker",
+      "x": 0.89,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "Same 500-point cup on the right, firing the ball over its rollover and into the right saucer."
+    },
+    {
+      "id": "right-kickout-rollover",
+      "name": "Right Kickout Rollover",
+      "type": "rollover",
+      "x": 0.88,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Scores 100 and holds the other extra ball lamp. Only one of the two lamps can be lit at a time."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Scores 300 and spots B. Feeds the left flipper."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Scores 300 and spots C. Feeds the right flipper."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.07,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Scores 300 and spots A on the way out — including a lit Special, which makes this the rare outlane you can be glad about."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.93,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Also 300 and an A. Same consolation as the left."
+    },
+    {
+      "id": "bonus-lights",
+      "name": "Bonus Ladder",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "Ten lamps from 1000 to 10,000 in the lower centre, plus 2X and 4X multiplier lamps. Maximum bonus is 15,000 with the 10,000 and 5,000 lamps both lit."
+    },
+    {
+      "id": "extra-ball-light",
+      "name": "Shoot Again Light",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Between the flippers. When it is lit the same player shoots again."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "plunge-for-a-letter",
+      "title": "Plunge For A Letter",
+      "category": "skillshot",
+      "summary": "The plunger lane empties into the top arch directly above the A, B and C lanes, so plunge strength decides which lane the ball falls into. A lit letter means uncollected — aim your plunge at one of those rather than firing full strength and taking whatever you get.",
+      "difficulty": 2,
+      "reward": "300 points, a letter and a bonus step",
+      "steps": [
+        {
+          "shot": "a-rollover",
+          "action": "Check the lamps, then meter your plunge for the open letter",
+          "detail": "Lit letters are the ones you still need. The plunger lane runs up through the top arch and drops into whichever A-B-C lane your strength carries it to — favor A when it is lit, since B is easy to pick up later from the left inlane and A is the only lane that can also collect a lit Special."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "abc-rollovers",
+      "title": "Complete A-B-C",
+      "category": "progression",
+      "summary": "Three letters, each worth 300 and one bonus step, and each with a second way to collect. The left inlane also spots B, the right inlane spots C, and both outlanes spot A. Completing the set doubles your end-of-ball bonus.",
+      "difficulty": 1,
+      "reward": "Doubles the end-of-ball bonus",
+      "steps": [
+        {
+          "shot": "a-rollover",
+          "action": "Take A from the top or an outlane",
+          "detail": "A drain down either outlane still collects the letter.",
+          "link": "none"
+        },
+        {
+          "shot": "left-inlane",
+          "action": "Pick up B in the inlane",
+          "detail": "The left inlane spots the same letter as the B lane.",
+          "link": "none"
+        },
+        {
+          "shot": "right-inlane",
+          "action": "Pick up C on the other side",
+          "detail": "The right inlane spots C.",
+          "link": "none"
+        },
+        {
+          "shot": "bonus-lights",
+          "action": "Bank the multiplier",
+          "detail": "Completing the set is also half of what lights the Special."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "drop-targets",
+      "title": "Clear The Drop Targets",
+      "category": "progression",
+      "summary": "Three targets, each worth 300 and a bonus step, and each one lights a spot. Getting all three down is what makes the extra ball possible and is the other half of the Special requirement — this is the first thing to do on every ball.",
+      "difficulty": 2,
+      "reward": "Lights the extra ball and arms the Special",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Take all three down",
+          "detail": "Rubber posts sit behind them, so a hard shot rebounds rather than sailing through."
+        },
+        {
+          "shot": "left-spots",
+          "action": "Watch the spots light",
+          "detail": "One spot lights per target that is down, on whichever side the relay currently favours."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Cash them at a saucer",
+          "detail": "With all three down, a saucer pays 3000 plus three bonus steps in one shot."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "spots-and-saucers",
+      "title": "Spots And Saucers",
+      "category": "strategy",
+      "summary": "Each saucer scores 3000 flat, plus one bonus step for every lit spot on its own side. The alternating relay swaps which side is lit, so the saucer worth shooting changes during play — check the spot lamps before you commit.",
+      "difficulty": 2,
+      "reward": "3000 plus up to three bonus steps",
+      "steps": [
+        {
+          "shot": "right-spots",
+          "action": "Read which side is lit",
+          "detail": "Only one bank of spots is live at a time unless the game is set for three-ball play."
+        },
+        {
+          "shot": "right-saucer",
+          "action": "Shoot the saucer on that side",
+          "detail": "The bonus steps only come from spots on the saucer's own side."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Switch when the relay switches",
+          "detail": "Shooting the dark side still pays 3000 but wastes the drop targets you have down."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "the-kickouts",
+      "title": "Use The Kickouts",
+      "category": "strategy",
+      "summary": "The kickout cups are a free chain. A ball that settles in one scores 500, then gets fired over the kickout rollover — worth another 100 and where the extra ball lamp lives — and lands in the saucer on that side. Three separate scores from one ball trapped in a cup.",
+      "difficulty": 1,
+      "reward": "500, then 100, then the saucer award",
+      "steps": [
+        {
+          "shot": "left-kickout",
+          "action": "Get the ball into a cup",
+          "detail": "The cups face up the playfield, so the ball settles into them from above."
+        },
+        {
+          "shot": "left-kickout-rollover",
+          "action": "Let the kicker do the work",
+          "detail": "The kicker throws the ball across the rollover automatically — you do not have to aim at it."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Collect the saucer",
+          "detail": "The kicked ball lands in that side's saucer for 3000 plus its spot bonus."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "alternating-relay",
+      "title": "The Alternating Relay",
+      "category": "secret",
+      "summary": "The middle pop bumper is only worth ten points, but every hit fires a relay that moves the lit extra ball lamp from one side of the playfield to the other and swaps which spot bank is live. It is the least valuable bumper on the machine and the one that changes the most.",
+      "difficulty": 2,
+      "reward": "Control of which side is lit",
+      "steps": [
+        {
+          "shot": "middle-pop",
+          "action": "Know what it does",
+          "detail": "Ten points, plus one step of the relay and one step of the match unit."
+        },
+        {
+          "shot": "left-kickout-rollover",
+          "action": "Watch the extra ball lamp jump",
+          "detail": "Only one of the two kickout rollovers can hold the lamp at a time."
+        },
+        {
+          "shot": "right-spots",
+          "action": "And the spots swap with it",
+          "detail": "On a game set for three balls the spots stay lit on both sides and do not alternate at all."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "extra-ball",
+      "title": "Catch The Extra Ball",
+      "category": "strategy",
+      "summary": "This is the awkward one. Two things have to be true at once for the extra ball to light: the target bank is cleared, all three down, and the bonus happens to be sitting on a live rung of its ladder — 3000 and 7000 light the left lamp, 5000 and 9000 light the right, with extra windows at 4000, 6000, 12,000 and 14,000 on three-ball settings. It goes dark again at 15,000.",
+      "difficulty": 3,
+      "reward": "Shoot again",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Get all three down first",
+          "detail": "Nothing lights until the bank is clear."
+        },
+        {
+          "shot": "bonus-lights",
+          "action": "Stop climbing at a live rung",
+          "detail": "Collect the extra ball before you max the bonus — it is not lit at 15,000."
+        },
+        {
+          "shot": "right-kickout",
+          "action": "Take the lit side",
+          "detail": "Check which lamp is lit before you commit — the left and right rungs alternate as the bonus climbs. The kickout on the lit side throws the ball straight over its rollover, which is far easier than shooting the rollover directly."
+        }
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "the-special",
+      "title": "Light The Special",
+      "category": "secret",
+      "summary": "Complete A-B-C and drop all three targets and the Special lights at the A lane. It stays lit for the rest of the ball and can be collected more than once, but there is no direct shot at that lane and it has to be fed from the top arch, which is why a second collection is rare.",
+      "difficulty": 3,
+      "reward": "Special, repeatable until the ball drains",
+      "steps": [
+        {
+          "shot": "a-rollover",
+          "action": "Complete both requirements",
+          "detail": "A-B-C finished and all three drop targets down."
+        },
+        {
+          "shot": "left-outlane",
+          "action": "Do not count on the outlanes",
+          "detail": "Both outlanes spot the A letter, but the Special itself is collected in the A lane at the top, so draining does not pick it up."
+        },
+        {
+          "shot": "top-arch",
+          "action": "Or feed the A lane from the top",
+          "detail": "The lane can only really be reached from the arch, which is why a second collection is rare."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "bonus-ladder",
+      "title": "Run Up The Bonus",
+      "category": "progression",
+      "summary": "The bonus is where a Bronco score is actually made. Everything that scores 300 also advances it a step, and on a machine that rolls over at 100,000 a maximum bonus is a serious chunk of a game.",
+      "difficulty": 2,
+      "reward": "Up to 60,000 points",
+      "steps": [],
+      "instructions": [
+        "Ten lamps run from 1000 up to 10,000, and the ceiling is 15,000 — the 10,000 and 5,000 lamps lit together.",
+        "Rollovers, drop targets and inlanes each advance it one step; a saucer advances it one step per lit spot on its side.",
+        "Completing A-B-C doubles it, and being on your last ball doubles it again — a 4X maximum of 60,000.",
+        "Collect any extra ball you want before the bonus reaches its ceiling, because the extra ball lamp is dark at 15,000.",
+        "Tilting drops the bonus entirely, and the tilt penalty on this game is the ball in play."
+      ],
+      "fx": "cowboy"
+    },
+    {
+      "id": "order-of-play",
+      "title": "The Order Of Play",
+      "category": "strategy",
+      "summary": "Bronco rewards doing things in one particular sequence, because the extra ball window closes as the bonus climbs. Targets first, extra ball second, multiplier third, then spend the rest of the ball feeding the saucers.",
+      "difficulty": 2,
+      "reward": "The most points a ball can produce",
+      "steps": [
+        {
+          "shot": "drop-targets",
+          "action": "Clear the bank early",
+          "detail": "Nothing else on the machine unlocks until the targets are down."
+        },
+        {
+          "shot": "right-kickout-rollover",
+          "action": "Take the extra ball while the window is open",
+          "detail": "Its lamp only lights at certain bonus values, so waiting costs you the chance."
+        },
+        {
+          "shot": "a-rollover",
+          "action": "Then finish A-B-C for the multiplier",
+          "detail": "Doubling a large bonus is worth far more than doubling a small one."
+        },
+        {
+          "shot": "left-saucer",
+          "action": "Feed the lit saucer to the end",
+          "detail": "With three spots lit, each saucer visit is 3000 plus three rungs of the ladder."
+        }
+      ],
+      "fx": "cowboy"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "bronco-abc",
+      "title": "A-B-C",
+      "desc": "Complete the A, B and C rollovers to double your bonus.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "abc-rollovers"
+    },
+    {
+      "id": "bronco-drops",
+      "title": "Clean Sweep",
+      "desc": "Knock down all three drop targets on one ball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "drop-targets"
+    },
+    {
+      "id": "bronco-saucer",
+      "title": "Three Spots Lit",
+      "desc": "Shoot a saucer with all three spots lit on its side.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "spots-and-saucers"
+    },
+    {
+      "id": "bronco-extra-ball",
+      "title": "Shoot Again",
+      "desc": "Catch the extra ball lamp on a live bonus rung and collect it.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "extra-ball"
+    },
+    {
+      "id": "bronco-special",
+      "title": "Special Lit",
+      "desc": "Complete A-B-C and the drop targets to light the Special at the A lane.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "the-special"
+    },
+    {
+      "id": "bronco-max-bonus",
+      "title": "Sixty Thousand",
+      "desc": "Reach the 15,000 bonus ceiling on your last ball with A-B-C complete.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "bonus-ladder"
+    }
+  ],
+  "drills": [
+    {
+      "id": "plunge-for-the-open-letter",
+      "title": "Plunge For The Open Letter",
+      "text": "Read which of A, B and C is still lit, then meter the plunge so the top arch drops the ball into that lane. Favour A when it is lit, since the inlanes hand you B and C for free later and A is the only lane that collects a lit Special.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "plunge-for-a-letter",
+      "shots": [
+        "plunger",
+        "top-arch",
+        "a-rollover"
+      ]
+    },
+    {
+      "id": "clear-the-bank-early",
+      "title": "Clear The Bank Early",
+      "text": "Take all three drop targets down while the ball is still fresh and fast. Rubber posts sit behind them so a hard shot rebounds rather than sailing through, which means you get a second look off your own miss.",
+      "reps": "5 full clears",
+      "focus": "accuracy",
+      "goal": "drop-targets",
+      "shots": [
+        "drop-targets"
+      ]
+    },
+    {
+      "id": "read-the-relay",
+      "title": "Read The Relay Before You Shoot",
+      "text": "Check the spot lamps, then shoot the saucer on whichever side is currently live. Shooting the dark side still pays 3,000 but throws away the bonus steps your drop targets earned, and the middle pop bumper flips which side that is.",
+      "reps": "10 saucers",
+      "focus": "accuracy",
+      "goal": "spots-and-saucers",
+      "shots": [
+        "left-spots",
+        "right-spots",
+        "left-saucer",
+        "right-saucer"
+      ]
+    },
+    {
+      "id": "order-of-play-run",
+      "title": "Run The Order Of Play",
+      "text": "Bank first, then the extra ball while its rung is still live, then A-B-C for the multiplier, then feed the lit saucer for the rest of the ball. Doing it in any other order costs you the extra ball, because its lamp goes dark once the bonus reaches the top.",
+      "reps": "3 full balls",
+      "focus": "flow",
+      "goal": "order-of-play",
+      "shots": [
+        "drop-targets",
+        "left-kickout-rollover",
+        "right-kickout-rollover",
+        "a-rollover",
+        "left-saucer"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "cowboy",
+  "actionButton": {
+    "present": false,
+    "how": "Two flipper buttons and a manual plunger are the entire interface on this 1977 electro-mechanical machine. How hard you pull the plunger decides which of the A, B and C lanes the ball drops into, so that first pull is the only aim you get all ball."
+  },
+  "howItPlays": {
+    "objective": "Bronco is a 1977 Gottlieb western built on its bonus ladder: knock down the drop targets, complete the A-B-C lanes, and feed the ball saucers to run the bonus toward a 60,000 ceiling. There is no multiball here -- a big Bronco game is a big bonus cashed at the right moment.",
+    "loop": [
+      "Meter the plunge through the top arch to drop the ball into a lit A, B or C lane, each letter paying 300 and a bonus step.",
+      "Knock all three drop targets down to light the side spots and open both the extra ball and the Special.",
+      "Shoot the saucer on whichever side the relay has lit for 3000 plus a bonus step per lit spot, the biggest single shot on the table.",
+      "Complete A-B-C to double the bonus, grab the extra ball while its lamp still sits on a live rung, then feed the lit saucer to climb the ladder."
+    ],
+    "lights": [
+      {
+        "id": "abc-lanes",
+        "name": "A-B-C Lanes",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "a-rollover"
+          },
+          {
+            "shot": "b-rollover"
+          },
+          {
+            "shot": "c-rollover"
+          }
+        ],
+        "lit": "A lit A, B or C is a letter you still need; roll its lane to collect it and the lamp goes dark, and each one banks 300 with a step of the bonus ladder that holds until the ball drains.",
+        "flashing": null,
+        "control": {
+          "input": "plunger",
+          "effect": "the strength of your plunge picks which lettered lane the ball drops into off the top arch, so a metered pull is the one aim you get to steer a letter directly",
+          "when": "on the plunge"
+        },
+        "then": "Favour a lit A on the plunge, because the inlanes give you B and C for nothing later -- the left inlane spots B, the right inlane spots C -- while both outlanes spot A as the ball drains out. Completing all three letters doubles the end-of-ball bonus and is one half of what lights the Special.",
+        "goals": [
+          "abc-rollovers",
+          "plunge-for-a-letter"
+        ]
+      },
+      {
+        "id": "drop-target-spots",
+        "name": "Drop Targets & Spots",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "drop-targets",
+            "lamps": 3
+          },
+          {
+            "shot": "left-spots",
+            "lamps": 3
+          },
+          {
+            "shot": "right-spots",
+            "lamps": 3
+          }
+        ],
+        "lit": "Each drop target you knock down lights one spot lamp on whichever side the relay currently favours, and a lit spot raises that side's saucer by a bonus step; a downed target and its spot stay lit until the bank resets.",
+        "flashing": null,
+        "control": null,
+        "then": "Take all three down early, since nothing else on the machine opens until the bank is clear, then cash them at the saucer on the lit side for 3000 plus a step per spot. A full bank is also what makes the extra ball available and turns on the Special.",
+        "goals": [
+          "drop-targets",
+          "spots-and-saucers"
+        ]
+      },
+      {
+        "id": "saucers-relay",
+        "name": "Ball Saucers & Relay",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-saucer"
+          },
+          {
+            "shot": "right-saucer"
+          },
+          {
+            "shot": "left-kickout"
+          },
+          {
+            "shot": "right-kickout"
+          }
+        ],
+        "lit": "Only one side's spots stay live at any moment, picked by the alternating relay, and the saucer on that live side pays a flat 3000 plus a bonus step for every lit spot it is carrying.",
+        "flashing": null,
+        "control": null,
+        "then": "Read which side the spots are lit before you shoot, because the middle pop bumper -- only ten points -- fires the relay that swaps the live side and drags the extra-ball lamp across with it. A ball that settles in a kickout cup pays 500, is thrown over its rollover for another hundred and the extra-ball lamp, and drops into that side's saucer, three scores from one trapped ball.",
+        "goals": [
+          "spots-and-saucers",
+          "the-kickouts",
+          "alternating-relay"
+        ]
+      },
+      {
+        "id": "bonus-ladder",
+        "name": "Bonus Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "bonus-lights"
+          }
+        ],
+        "lit": "Ten rungs climb from 1000 to 10,000 alongside 2X and 4X lamps, and nearly everything that scores 300 advances the ladder a step; it holds where it is until the ball drains, and the top of the ladder reads 15,000, reached with both the 10,000 and the 5,000 rungs alight.",
+        "flashing": null,
+        "control": null,
+        "then": "Complete A, B and C to double it, then reach your last ball to double it again, a 4X ceiling of 60,000 on a table that rolls over at 100,000. Collect any extra ball before you top out, though, because that lamp goes dark at the 15,000 cap, and never tilt, since a tilt wipes the bonus and costs you the ball.",
+        "goals": [
+          "bonus-ladder",
+          "abc-rollovers"
+        ]
+      },
+      {
+        "id": "extra-ball-special",
+        "name": "Extra Ball & Special",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "left-kickout-rollover"
+          },
+          {
+            "shot": "right-kickout-rollover"
+          },
+          {
+            "shot": "extra-ball-light"
+          },
+          {
+            "shot": "a-rollover"
+          }
+        ],
+        "lit": "With the drop bank cleared, the extra-ball lamp lights on one of the two kickout rollovers -- never both -- but only while the bonus is parked on one of its live rungs, and it goes out again once you reach the top of the ladder.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the lit side while its window is still open; the kicker on that side flings the ball up over its own rollover for you, far easier than shooting the rollover head-on, and the Shoot Again lamp between the flippers turns on to give you the ball back. Finish A, B and C on top of the cleared bank instead and a Special lights up at the A lane, repeatable but reachable only from the top arch.",
+        "goals": [
+          "extra-ball",
+          "the-special",
+          "order-of-play"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Clear the drop-target bank while the ball is still fresh, since nothing opens up until it is down, then start collecting A, B and C, metering the plunge at a lit letter and letting the inlanes spot the rest. Read which side the relay has lit and feed that saucer for 3000 and its spot bonus.",
+        "goals": [
+          "drop-targets",
+          "abc-rollovers",
+          "spots-and-saucers"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Catch the extra ball while its lamp sits on a live bonus rung -- take the lit kickout side so the kicker sends the ball over its own rollover for you -- and complete A, B and C to double the bonus. Do it in that order, since that extra-ball lamp goes dark as the ladder nears the top.",
+        "goals": [
+          "extra-ball",
+          "order-of-play",
+          "abc-rollovers"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Run the bonus ladder to its 15,000 ceiling with A-B-C complete on your last ball for a 4X payout of 60,000, a serious slice of a game on a machine that rolls at 100,000. Light the Special at the A lane on top of that as the other marquee award, though a second collection is rare with no direct shot at that lane.",
+        "goals": [
+          "bonus-ladder",
+          "the-special"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1221 @@
+{
+  "machine": "The Champion Pub (Bally, 1998)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Hold the launch button down to cycle the skill shot awards and let go on the one you want. The ball loops around and normally exits the left orbit to your left flipper."
+    },
+    {
+      "id": "the-corner",
+      "name": "The Corner",
+      "type": "saucer",
+      "x": 0.12,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "The left saucer, and the busiest award hole on the machine. It starts the video modes, pays the extra ball, raises the purse, starts fights, and eventually starts the Ultimate Challenge. It also usually adds half a life bar."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.16,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Feeds the inner passage to the pop-up saucer, or drops its scoop and returns the ball down the habitrail to the left inlane. It starts fights too. During multiball it loops right around and comes out of the right orbit.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "pop-up-saucer",
+      "name": "Pop-Up Saucer",
+      "type": "kicker",
+      "x": 0.24,
+      "y": 0.68,
+      "trim": "all",
+      "notes": "Where a left orbit shot ends up. It either launches the ball into the jump rope area or sends it along the habitrail to the left inlane."
+    },
+    {
+      "id": "jump-rope",
+      "name": "Jump Rope",
+      "type": "mech",
+      "x": 0.3,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "A magnet holds the ball and a pop-up stick bounces it when you hit a flipper. Time your flip for the moment the rope lines up with the crease in the right flap."
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.34,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Climbs to the speed bag area and is your jackpot shot when lit. A diverter at the top decides which way it goes; either way the ball ends up on the right habitrail into the right inlane. During a fight it raises the purse and adds one or two life bars.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "speed-bag",
+      "name": "Speed Bag",
+      "type": "mech",
+      "x": 0.24,
+      "y": 0.86,
+      "trim": "all",
+      "notes": "Two plastic hands you swing with the flippers — left button for the left hand, right for the right. Five seconds to land as many as you can."
+    },
+    {
+      "id": "heavy-bag",
+      "name": "Heavy Bag / The Boxer",
+      "type": "bash-toy",
+      "x": 0.5,
+      "y": 0.64,
+      "trim": "all",
+      "notes": "The centrepiece. Outside a fight it is a heavy bag you punch to fill life bars and spell out Fisticuffs. When a fight starts it spins around and becomes your opponent, with moving arms that punch back."
+    },
+    {
+      "id": "hook-ramps",
+      "name": "Hook Ramps",
+      "type": "ramp",
+      "x": 0.58,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "The pair of green ramps that send the ball up at the boxer's head. This is where a head shot or a knockout is actually landed."
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.86,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Awards a lock or starts a fight. With the scoop down it builds the hurry-up value and helps light a knockout. During multiball it loops around and exits the left orbit."
+    },
+    {
+      "id": "beer-targets",
+      "name": "Beer Targets",
+      "type": "target-bank",
+      "x": 0.78,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "Three yellow targets. Completing them raises the purse and lights a lock. They stay lit across a drained ball, so a partial completion is never wasted. From the third multiball on they need two hits each."
+    },
+    {
+      "id": "yellow-standups",
+      "name": "Yellow Standup Targets",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.38,
+      "trim": "all",
+      "notes": "One near the left ramp, one near the right orbit. Three hits between them add 1x to your bonus multiplier, and there is no hold bonus on this machine."
+    },
+    {
+      "id": "lock-mech",
+      "name": "Lock Mechanism",
+      "type": "lock",
+      "x": 0.7,
+      "y": 0.8,
+      "trim": "all",
+      "notes": "Fed by the inner right passage. Holds locked balls, and also parks the ball here while the game picks your Door Prize."
+    },
+    {
+      "id": "against-the-ropes",
+      "name": "Against The Ropes",
+      "type": "lane",
+      "x": 0.92,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "The staggered posts past the beer targets. A ball in here bounces unpredictably and can end up in the launcher, the right inlane, the right outlane, or back out into the middle of the playfield."
+    },
+    {
+      "id": "red-post",
+      "name": "Red Post",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.04,
+      "trim": "all",
+      "notes": "Rises between the flippers at the start of a ball, at the start of a fight, and from the Ace High poker award. It is up only briefly, and a ball that rolls straight over it is still lost."
+    },
+    {
+      "id": "launch-button",
+      "name": "Launch Button",
+      "type": "mech",
+      "x": 0.5,
+      "y": 0.01,
+      "trim": "all",
+      "notes": "Fires a Smart Punch during a fight and answers the bar fly. Press it during ordinary play to see how many Smart Punches you are holding."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.26,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Rolling through here lights the jackpot at the right orbit for a few seconds. Which inlane carries the light alternates every time a slingshot fires."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.74,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "The other half of the alternating jackpot light, and where the left ramp returns the ball."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "There is no kickback on this machine. Second Wind is the only real protection, and there is an adjustable post nearby that changes how wide the lane is."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Same story as the left. During a fight an outlane drain does not just cost the ball, it loses you the fight as well."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.33,
+      "y": 0.05,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.67,
+      "y": 0.05,
+      "trim": "all"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Choose Your Skill Shot",
+      "category": "skillshot",
+      "summary": "Hold the launch button and the awards cycle; release on the one you want and it is yours when the ball comes around. Two of the awards alternate with each other, so wait for the one you actually need rather than grabbing the first thing you see.",
+      "difficulty": 1,
+      "reward": "Anything from 10 points to all jackpots lit",
+      "steps": [
+        {
+          "shot": "shooter-lane",
+          "action": "Hold the launch button, release on your pick",
+          "detail": "The awards cycle while you hold; release on the one you want and it is collected as the ball comes around. Two of the awards alternate in and out — time the release."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "door-prize",
+      "title": "The Door Prize",
+      "category": "strategy",
+      "summary": "The most valuable thing on the skill shot menu, because it is the only route to several rules. The ball is parked in the lock while the pub empties out and the game picks for you — you get no lock credit, just the award.",
+      "difficulty": 2,
+      "reward": "One of nine awards, several unavailable elsewhere",
+      "steps": [
+        {
+          "shot": "launch-button",
+          "action": "Release on the Door Prize",
+          "detail": "Worth choosing early. Six life bars or Start Fight are the fast-track awards; Extra Ball and Second Wind are the ones that keep you alive."
+        },
+        {
+          "shot": "lock-mech",
+          "action": "Wait it out in the lock",
+          "detail": "The menu also includes lighting Spittin' Gallery or Poker Night, a Smart Punch, all jackpots lit, and rarely a lit lock — which only becomes possible after you have finished Multi-Brawl once."
+        }
+      ],
+      "fx": "badge"
+    },
+    {
+      "id": "the-belt",
+      "title": "Earn The Belt",
+      "category": "progression",
+      "summary": "The whole game is one checklist. Five jewels go on the championship belt, each worth 500,000, and collecting them all is what unlocks the Ultimate Challenge. Everything else you do is in service of one of these five.",
+      "difficulty": 3,
+      "reward": "500K per jewel and access to the wizard mode",
+      "steps": [],
+      "instructions": [
+        "Training: six cumulative jump rope jumps, six cumulative speed bag hits, and roughly ten heavy bag hits that counted toward a life bar.",
+        "Multiballs: play all three of Fisticuffs, Raid and Multi-Brawl. Each is earned a completely different way.",
+        "Knockout: land one K.O. during a fight, which needs jab combos through both scoops first.",
+        "Jackpots: work all fifteen jackpot levels, from 100,000 up to 1.5 million.",
+        "Pub Champion: win five fights. The fifth win starts Champion Multiball and makes you champion.",
+        "A Royal Flush in Poker Night hands you the next jewel you are missing, working left to right along the belt — a genuine shortcut if a broken scoop diverter has made the knockout jewel impossible."
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "training-jewel",
+      "title": "The Training Jewel",
+      "category": "progression",
+      "summary": "Three training disciplines, and the game forces you to rotate through all of them. Once you have satisfied one, it is locked out until you have done the other two — no grinding a single easy one.",
+      "difficulty": 2,
+      "reward": "500K per completed set of three",
+      "steps": [
+        {
+          "shot": "jump-rope",
+          "action": "Six jumps, cumulative",
+          "detail": "They add up across the whole game, so a couple of jumps here and there still counts."
+        },
+        {
+          "shot": "speed-bag",
+          "action": "Six hits, cumulative",
+          "detail": "Same deal — the count carries."
+        },
+        {
+          "shot": "heavy-bag",
+          "action": "About ten heavy bag hits",
+          "detail": "Only hits that earned you a life bar toward starting a fight count toward the jewel."
+        },
+        {
+          "shot": "jump-rope",
+          "action": "Go around again",
+          "detail": "Finishing all three unlocks the whole cycle for another 500,000."
+        }
+      ],
+      "fx": "battle",
+      "ordered": false
+    },
+    {
+      "id": "jump-rope",
+      "title": "Jump Rope",
+      "category": "mode",
+      "summary": "A magnet holds the ball and a stick flicks it up when you hit a flipper. The trick is timing: flip when the rope lines up with the crease in the right flap, not when it looks close.",
+      "difficulty": 2,
+      "reward": "Double purse at 10, a Smart Punch at 20, initials at 30",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Get up there",
+          "detail": "A left orbit shot with jump rope lit sends the ball to the pop-up saucer, which launches it into the rope area."
+        },
+        {
+          "shot": "jump-rope",
+          "action": "Chain your jumps",
+          "detail": "Ten consecutive jumps doubles the purse value. Twenty gives you a Smart Punch."
+        },
+        {
+          "shot": "jump-rope",
+          "action": "Go for thirty",
+          "detail": "Thirty is the ceiling, and it puts your initials on the jump rope board — no credit, but it stays there until somebody matches it."
+        }
+      ],
+      "fx": "dance"
+    },
+    {
+      "id": "speed-bag",
+      "title": "Speed Bag",
+      "category": "mode",
+      "summary": "Five seconds, two flipper-controlled hands, one bag. Left button swings the left hand, right button the right. Alternate rather than mashing one side and you will land far more.",
+      "difficulty": 2,
+      "reward": "Double purse at 10, a Smart Punch at 20, initials at 30",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Ride the ramp up",
+          "detail": "The left ramp is what puts you in the speed bag area."
+        },
+        {
+          "shot": "speed-bag",
+          "action": "Alternate the hands",
+          "detail": "Same thresholds as the rope: ten consecutive for double purse, twenty for a Smart Punch, thirty for the record board."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "start-fight",
+      "title": "Fill The Life Bars",
+      "category": "progression",
+      "summary": "You cannot fight until your meter is full. Twelve life bars is a full meter, and you start the game with three of them already banked. Everything that hits the boxer or feeds the corner puts more on.",
+      "difficulty": 2,
+      "reward": "Start Fight lights at the saucer and both orbits",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Punch the bag",
+          "detail": "Heavy bag hits are the main way to fill the meter, and they double as progress toward your training jewel."
+        },
+        {
+          "shot": "the-corner",
+          "action": "Use the corner",
+          "detail": "The saucer usually adds half a life bar on top of whatever else it awards.",
+          "link": "none"
+        },
+        {
+          "shot": "the-corner",
+          "action": "Start the fight",
+          "detail": "The corner or either orbit will do it. Everything else lit on the playfield, including a lit lock, switches off so the match starts cleanly — but a lit extra ball is still collectable."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "the-fight",
+      "title": "Win The Fight",
+      "category": "mode",
+      "summary": "Hit the man in the middle. Body shots pay 100,000 and take one or two bars off him; head shots pay 500,000 and take three to six. He is hitting back the whole time, and it usually takes four to six good connections to put him down.",
+      "difficulty": 3,
+      "reward": "The purse value, plus a bonus for winning by knockout",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Work the body",
+          "detail": "Each connection is 100,000 to you and one or two life bars off him."
+        },
+        {
+          "shot": "hook-ramps",
+          "action": "Go upstairs for head shots",
+          "detail": "500,000 and three to six bars. This is how you finish a fight quickly."
+        },
+        {
+          "shot": "launch-button",
+          "action": "Spend a Smart Punch when it matters",
+          "detail": "It counts as a head shot for 500,000 and takes two or three bars. Save them for when the ball is loose or he is nearly down."
+        },
+        {
+          "shot": "red-post",
+          "action": "Respect the drain",
+          "detail": "The post drops after a while. An outlane or centre drain during a fight costs you four to seven of your own bars and the fight itself, and a tilt is an automatic loss."
+        },
+        {
+          "shot": "heavy-bag",
+          "action": "Take the sucker punch",
+          "detail": "Win or lose, you can keep hitting him while he talks at the end for 500,000 a shot, until the game cuts you off."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "fight-rewards",
+      "title": "What Each Win Pays",
+      "category": "progression",
+      "summary": "Five wins, five different unlocks, and they are fixed. Knowing what the next win gives you tells you whether to rush the fight or spend a ball building the purse first.",
+      "difficulty": 2,
+      "reward": "A different unlock for each of the five wins",
+      "steps": [],
+      "instructions": [
+        "First win lights Spittin' Gallery. It does not stack, so if the video mode is already lit you get nothing extra.",
+        "Second win lights the extra ball.",
+        "Third win starts Raid Multiball immediately — the only way that multiball exists.",
+        "Fourth win starts Contender Challenge, a hurry-up over all the major shots starting at 1 million and falling toward 25,000, resetting to 1 million on each shot made. Complete every shot and Start Fight relights on its own.",
+        "Fifth win makes you Pub Champion, pays a million for the title and launches Champion Multiball.",
+        "A flawless victory lights Start Fight for the next opponent automatically.",
+        "Fights get harder the more times you have to repeat one, so building a big purse before a rematch is usually better than charging back in."
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "knockout",
+      "title": "Land A Knockout",
+      "category": "combo",
+      "summary": "A knockout is a two-part shot. Run jab combos through the scoops on both sides — one each, so if you jabbed on the left you owe one on the right — and a K.O. light comes on for about five seconds. Get his head inside that window.",
+      "difficulty": 3,
+      "reward": "Instant win, a million bonus, and the knockout jewel",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Jab on one side",
+          "detail": "Each jab combo is worth 50,000 on its own."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Jab on the other",
+          "detail": "The first knockout of a game needs one combo per side; the second needs three, the third four, and so on."
+        },
+        {
+          "shot": "hook-ramps",
+          "action": "Head shot inside five seconds",
+          "detail": "Miss the window and you are back to a normal fight with the combo count to rebuild."
+        },
+        {
+          "shot": "launch-button",
+          "action": "Or spend a Smart Punch",
+          "detail": "It counts as the head shot and will close out the knockout for you.",
+          "link": "none"
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "shadow-boxing",
+      "title": "Shadow Boxing Hurry-Up",
+      "category": "mode",
+      "summary": "A pure speed test: hit the heavy bag before the number runs down. It opens at 200,000 the first time, 400,000 the second, 600,000 the third and keeps climbing, and each trip through a scoop while it runs adds 200,000 to the starting figure.",
+      "difficulty": 2,
+      "reward": "A rising hurry-up, plus a fixed unlock for each completion",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Three scoop passes",
+          "detail": "Three trips through the scoop during normal play or Contender Challenge starts it. The skill shot and a Flush in Poker Night also start it."
+        },
+        {
+          "shot": "heavy-bag",
+          "action": "Hit the bag fast",
+          "detail": "One hit ends it. Every scoop you take while it counts down raises the value and pays you a 50,000 jab combo on the way."
+        },
+        {
+          "shot": "heavy-bag",
+          "action": "Chase the ladder",
+          "detail": "Completions pay out in order: a Smart Punch, then Poker Night lit, then Second Wind lit, then extra ball lit — after which it starts over, but each start costs three more jabs than before."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "poker-night",
+      "title": "Poker Night",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "A one-shot video poker hand with fifteen seconds on the clock. Flippers move between cards, the launch button discards, and every hand maps to a fixed award — so play for the award you need, not for the best hand.",
+      "difficulty": 2,
+      "reward": "Awards from 250K up to a maxed 60M purse",
+      "steps": [
+        {
+          "shot": "the-corner",
+          "action": "Start it at the corner",
+          "detail": "It is lit by a Door Prize or by finishing the shadow boxing hurry-up a second time."
+        },
+        {
+          "shot": "launch-button",
+          "action": "Discard deliberately",
+          "detail": "Straight lights Start Fight, Flush starts shadow boxing, Full House gives a free Multi-Brawl that does not count against your multiball total, Four of a Kind lights the extra ball, Three of a Kind lights all jackpots."
+        },
+        {
+          "shot": "launch-button",
+          "action": "Know the fringe hands",
+          "detail": "A Pair doubles the purse, Two Pair adds 5x bonus, a Royal Flush hands you a belt jewel, and folding on an ace-high raises the red post for a while. A Straight Flush maxes the purse at 60 million and is genuinely rare."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "spittin-gallery",
+      "title": "Spittin' Gallery",
+      "category": "mode",
+      "altMode": "video",
+      "summary": "A catching video mode. Six men stand in a row and you slide along with the flippers to catch what comes down. Ten catches wins it, three misses ends it, and an extra ball sometimes drops in among them.",
+      "difficulty": 2,
+      "reward": "Up to 10 million, plus a possible extra ball",
+      "steps": [
+        {
+          "shot": "the-corner",
+          "action": "Start it at the corner",
+          "detail": "Lit by a Door Prize or handed to you for winning your first fight."
+        },
+        {
+          "shot": "the-corner",
+          "action": "Catch ten before you miss three",
+          "detail": "Scoring is 2.5 million to start, 250,000 per catch, 2.5 million for finishing and another 2.5 million if you never miss."
+        },
+        {
+          "shot": "the-corner",
+          "action": "Watch for the extra ball",
+          "detail": "Catching it awards the extra ball outright, and a second one sometimes appears if you fumble the first."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multi-brawl",
+      "title": "Multi-Brawl",
+      "category": "multiball",
+      "summary": "The standard lock-three-balls multiball. The first one is cheap — three left orbits and you are in. Every one after that needs the beer targets completed to light each lock individually.",
+      "difficulty": 2,
+      "reward": "Jackpots on the ramp, the boxer and the orbits",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Three orbits for the first one",
+          "detail": "Each lock pays 250,000 as the pub gets progressively more wrecked on the display."
+        },
+        {
+          "shot": "beer-targets",
+          "action": "Light later locks with the beer targets",
+          "detail": "From the third multiball onward each target needs two hits. Progress survives a drained ball, so keep chipping at them."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Rotate the jackpot shots",
+          "detail": "The left ramp, the right orbit and the boxer are all live, but you must hit each one before any of them relights."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "fisticuffs",
+      "title": "Fisticuffs Multiball",
+      "category": "multiball",
+      "summary": "A two-ball multiball earned purely by punching. Heavy bag hits spell out the phrase across the whole game — you never have to stop and set it up, it accumulates while you do everything else.",
+      "difficulty": 2,
+      "reward": "500K head shots, 100K body shots on two balls",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Keep hitting the bag",
+          "detail": "The letters accumulate at any time, including during other modes."
+        },
+        {
+          "shot": "hook-ramps",
+          "action": "Work the head",
+          "detail": "Head shots pay 500,000, body shots 100,000. With two balls loose the head shots come far more often than usual."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "raid-multiball",
+      "title": "Raid Multiball",
+      "category": "multiball",
+      "summary": "There is exactly one way to see this three-ball multiball: win your third fight. It is a switch-value frenzy rather than a jackpot mode, so the play is to keep all three balls moving and stop aiming.",
+      "difficulty": 3,
+      "reward": "Every switch worth up to 50,000",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Win the third fight",
+          "detail": "There is no other route in, which is why it is a belt requirement rather than something you can grind."
+        },
+        {
+          "shot": "against-the-ropes",
+          "action": "Hit everything",
+          "detail": "Every switch raises the value by 1,000, typically climbing from 5,000 to 50,000. Once it is maxed every switch pays the ceiling."
+        }
+      ],
+      "fx": "battle"
+    },
+    {
+      "id": "champion-multiball",
+      "title": "Champion Multiball",
+      "category": "multiball",
+      "summary": "Win the fifth fight and you are Pub Champion. It pays a million for the title and starts a four-ball multiball that folds Raid, Fisticuffs and Multi-Brawl together, with everything on the playfield live at once.",
+      "difficulty": 3,
+      "reward": "1M per major shot, plus jackpots and switch values together",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Beat the top-ranked fighter",
+          "detail": "The announcer calls it as a title fight, and the post comes up as usual."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Take every major shot",
+          "detail": "Each one is worth a million on top of the jackpots and switch values already running."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Let it start first",
+          "detail": "If your third lock is ready, shooting the left orbit can start an ordinary Multi-Brawl instead. Let Champion Multiball begin, then go for the lock."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "stack-multiballs",
+      "title": "Stack The Multiballs",
+      "category": "strategy",
+      "summary": "This game deliberately lets its multiballs run on top of each other, and a four-ball stack with a fresh ball saver is where the big ordinary scores come from. There is even a grace period to sneak the last one in.",
+      "difficulty": 3,
+      "reward": "Four balls, a fresh ball saver, and stacked scoring",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Line the starts up",
+          "detail": "Raid and Multi-Brawl are three-ball, Fisticuffs is two-ball; overlapping them gives you four balls and resets the saver."
+        },
+        {
+          "shot": "heavy-bag",
+          "action": "Use the grace period",
+          "detail": "If you are one hit away from a multiball and everything drains but one ball, you have roughly a second to land it and pick up that multiball plus whatever else was running. This does not work in Champion Multiball."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "jackpot-ladder",
+      "title": "Climb All Fifteen Jackpots",
+      "category": "progression",
+      "summary": "Fifteen named jackpot levels, starting at a very modest 100,000 and rising in 100,000 steps to 1.5 million. They are cumulative across the game, and working the whole ladder is one of the five belt requirements.",
+      "difficulty": 3,
+      "reward": "100K climbing to 1.5 million, and a belt jewel",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Light the jackpot from an inlane",
+          "detail": "Rolling a lit inlane arms the jackpot at the right orbit for a few seconds. The light alternates between the inlanes every time a slingshot fires."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Or light it from the left ramp",
+          "detail": "The skill shot and the Door Prize can also light all jackpots outright, and those stay lit until you collect."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Collect during multiball",
+          "detail": "Jackpots are lit throughout Multi-Brawl and Champion Multiball, which is by far the fastest way up the ladder."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "purse-value",
+      "title": "Build The Purse",
+      "category": "multiplier",
+      "summary": "The purse is what a fight actually pays you, and it is displayed along the bottom of the screen during the match. Building it before you commit to a fight is the single biggest scoring decision in the game.",
+      "difficulty": 2,
+      "reward": "The purse, up to a 60 million ceiling",
+      "steps": [
+        {
+          "shot": "the-corner",
+          "action": "Feed the corner",
+          "detail": "The saucer raises the purse, and it works during a fight as well as before one."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Ramp and beer targets during the fight",
+          "detail": "Both raise the purse mid-match and add one or two life bars while they are at it."
+        },
+        {
+          "shot": "jump-rope",
+          "action": "Double it in training",
+          "detail": "Ten consecutive jumps or speed bag hits doubles the purse, as does a Pair in Poker Night. The ceiling is 60 million."
+        }
+      ],
+      "fx": "cash",
+      "ordered": false
+    },
+    {
+      "id": "ultimate-challenge",
+      "title": "Ultimate Challenge",
+      "category": "wizard",
+      "summary": "The grand finale, and it only happens once. With every jewel on the belt, fill your life bars one last time and the corner offers the Ultimate Challenge instead of Start Fight. Five remaining fighters, one life bar, one shot at it.",
+      "difficulty": 3,
+      "reward": "Over 50 million for a clean run",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Fill the meter one more time",
+          "detail": "You still have to train your way to a full bar before it will start."
+        },
+        {
+          "shot": "the-corner",
+          "action": "Start it at the corner or an orbit",
+          "detail": "It comes with its own multiball and a brief ball saver, and normal fighting rules apply throughout."
+        },
+        {
+          "shot": "hook-ramps",
+          "action": "Work up the rankings",
+          "detail": "You begin against the bottom of the field and climb as each one falls. Drop to a single ball and the mode carries on as a one-ball fight."
+        },
+        {
+          "shot": "the-corner",
+          "action": "Understand the ending",
+          "detail": "Lose with two or more balls still out and Fisticuffs starts automatically; lose down an outlane and it is simply over. Either way you are done, and the rest of the game becomes Cash Fights."
+        }
+      ],
+      "fx": "hero"
+    },
+    {
+      "id": "cash-fight",
+      "title": "Cash Fights",
+      "category": "strategy",
+      "summary": "If you have not got the belt together, the game offers a gamble instead: pick an opponent, wager points against him, and win or lose them outright. It is capped at 240 million either way regardless of how big your score already is.",
+      "difficulty": 3,
+      "reward": "Up to 240 million won — or lost",
+      "steps": [
+        {
+          "shot": "the-corner",
+          "action": "Pick your opponent",
+          "detail": "You get ten seconds and the flippers to choose. The stake is set by your score and the ranking of the fighter you just faced."
+        },
+        {
+          "shot": "heavy-bag",
+          "action": "Fight for it",
+          "detail": "The post is up for a shorter time than a normal fight and the opponent is harder. Win and you take the wager plus the purse; lose and it comes off your score."
+        },
+        {
+          "shot": "the-corner",
+          "action": "Start small",
+          "detail": "Losing can drop you back under the replay threshold, and you only get that award once per game. Build up before you swing big."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "second-wind",
+      "title": "Second Wind",
+      "category": "secret",
+      "summary": "The closest thing this machine has to a kickback, and it is not on the playfield anywhere obvious. When it is lit, an outlane drain gives you the ball back, three life bars, and a fight if you were ready for one.",
+      "difficulty": 2,
+      "reward": "Ball saved, three life bars, and a fight started",
+      "steps": [],
+      "instructions": [
+        "There are only two ways to light it: a Door Prize award, or completing the shadow boxing hurry-up for the third time.",
+        "It lights on one outlane, not both — check which side before you decide how hard to nudge.",
+        "During a fight, one of the K.O. lights on the outer lanes goes out when Second Wind is active. Rolling through that lane adds three life bars and returns the ball.",
+        "Without it, there is no kickback on this machine at all. An outlane during a fight loses the fight as well as the ball."
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "bar-fly",
+      "title": "Swat The Bar Fly",
+      "category": "secret",
+      "summary": "Hit the heavy bag and listen. If you hear an insect buzzing, you have a moment to slap the launch button and swat it — worth 100,000 and, more usefully, a free Smart Punch.",
+      "difficulty": 2,
+      "reward": "100K and a Smart Punch",
+      "steps": [
+        {
+          "shot": "heavy-bag",
+          "action": "Listen after a bag hit",
+          "detail": "The buzzing is the only cue; nothing lights up on the playfield."
+        },
+        {
+          "shot": "launch-button",
+          "action": "Hit the button fast",
+          "detail": "You will swat one of three different flies, and one of them is a cow, which is exactly as strange as it sounds."
+        }
+      ],
+      "fx": "cow"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "cp-skillshot",
+      "title": "Ring The Bell",
+      "desc": "Hold the launch button and land a skill shot award you actually chose.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "cp-first-fight",
+      "title": "Good To See You, Kid",
+      "desc": "Fill your life bars and start your first fight.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "start-fight"
+    },
+    {
+      "id": "cp-training",
+      "title": "Keep Training",
+      "desc": "Complete jump rope, speed bag and heavy bag to earn the training jewel.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "training-jewel"
+    },
+    {
+      "id": "cp-barfly",
+      "title": "Bar Fly",
+      "desc": "Hear the buzz and swat it with the launch button.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "bar-fly"
+    },
+    {
+      "id": "cp-multibrawl",
+      "title": "This Pub Goes Ballistic",
+      "desc": "Lock three balls and start Multi-Brawl.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multi-brawl"
+    },
+    {
+      "id": "cp-thirty-jumps",
+      "title": "Thirty Straight",
+      "desc": "Land thirty consecutive jumps on the rope for the record board.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jump-rope"
+    },
+    {
+      "id": "cp-knockout",
+      "title": "Lights Out",
+      "desc": "Run jab combos on both sides and finish a fight with a knockout.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "knockout"
+    },
+    {
+      "id": "cp-raid",
+      "title": "Run, Lads",
+      "desc": "Win your third fight and play Raid Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "raid-multiball"
+    },
+    {
+      "id": "cp-jackpots",
+      "title": "Jackpot Deluxe",
+      "desc": "Work the jackpot ladder all the way to 1.5 million.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "jackpot-ladder"
+    },
+    {
+      "id": "cp-champion",
+      "title": "Pub Champion",
+      "desc": "Win the fifth fight and start Champion Multiball.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "champion-multiball"
+    },
+    {
+      "id": "cp-ultimate",
+      "title": "One Against Five",
+      "desc": "Complete the belt and survive the Ultimate Challenge.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "ultimate-challenge"
+    }
+  ],
+  "drills": [
+    {
+      "id": "hold-for-the-door-prize",
+      "title": "Hold For The Door Prize",
+      "text": "Hold the launch button and let the awards cycle rather than taking whatever is showing. Two of them swap in and out with each other, so keep holding until the Door Prize comes round and release on it.",
+      "reps": "10 plunges",
+      "focus": "skill-shot",
+      "goal": "skillshot",
+      "shots": [
+        "shooter-lane",
+        "launch-button"
+      ]
+    },
+    {
+      "id": "head-shot-reps",
+      "title": "Go Upstairs",
+      "text": "Body shots take one or two bars off him; the green hook ramps take three to six. Spend a whole fight shooting nothing but the hook ramps, even when the boxer is right in front of you asking to be punched.",
+      "reps": "2 full fights",
+      "focus": "accuracy",
+      "goal": "the-fight",
+      "shots": [
+        "hook-ramps",
+        "heavy-bag"
+      ]
+    },
+    {
+      "id": "left-ramp-purse-reps",
+      "title": "Left Ramp, Repeatedly",
+      "text": "The left ramp raises the purse, adds a life bar or two, and is your jackpot shot when lit. It returns down the right habitrail into the right inlane, so a clean one hands you the ball back ready to go again.",
+      "reps": "15 ramps",
+      "focus": "accuracy",
+      "goal": "purse-value",
+      "shots": [
+        "left-ramp",
+        "right-inlane"
+      ]
+    },
+    {
+      "id": "against-the-ropes-exits",
+      "title": "Read The Ropes",
+      "text": "Feed the staggered posts past the beer targets and wait before you commit a flipper. That area can spit the ball into the launcher, the right inlane, the right outlane or straight back into the middle, and guessing early is how you lose it.",
+      "reps": "2 minutes of feeds",
+      "focus": "ball-control",
+      "shots": [
+        "against-the-ropes",
+        "beer-targets"
+      ]
+    },
+    {
+      "id": "knockout-two-part",
+      "title": "The Knockout, In Order",
+      "text": "Jab a scoop on one side, then owe one to the other side, then put a head shot up the hook ramps inside the five seconds the K.O. light gives you. Miss that window and you are back to a normal fight with the combo count to rebuild.",
+      "reps": "5 knockout attempts",
+      "focus": "flow",
+      "goal": "knockout",
+      "shots": [
+        "left-orbit",
+        "right-orbit",
+        "hook-ramps"
+      ]
+    },
+    {
+      "id": "training-timing",
+      "title": "Rope And Bag Timing",
+      "text": "On the rope, flip when it lines up with the crease in the right flap, not when it looks close. On the bag, alternate the buttons instead of mashing one hand. Ten consecutive on either one doubles the purse, which is worth more than most shots on the playfield.",
+      "reps": "10 consecutive on each",
+      "focus": "ball-control",
+      "goal": "training-jewel",
+      "shots": [
+        "jump-rope",
+        "speed-bag"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "battle",
+  "actionButton": {
+    "present": true,
+    "label": "Launch Button",
+    "location": "front right of the cabinet, where a shooter rod would normally sit",
+    "how": "This machine launches with a button instead of a plunger, and that same button stays useful for the whole ball. It throws your Smart Punches during a fight, picks your skill shot award at the plunge, works as the discard key in Poker Night, and swats the bar fly.",
+    "uses": [
+      {
+        "when": "At the plunge",
+        "what": "Hold it and the skill shot awards cycle; let go on the one you want and it lands as the ball loops around."
+      },
+      {
+        "when": "During a fight",
+        "what": "Spends a Smart Punch, which counts as a head shot — enough to finish the knockout when the K.O. light is on."
+      },
+      {
+        "when": "Right after a heavy bag hit",
+        "what": "If you hear a fly buzzing, slap it fast for 100,000 and another free Smart Punch."
+      },
+      {
+        "when": "In the Poker Night video mode",
+        "what": "Discards or un-discards whichever card the flippers have you sitting on, inside a fifteen-second clock."
+      },
+      {
+        "when": "Between shots in normal play",
+        "what": "A quick press shows how many Smart Punches you are holding, so you know what you can spend."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "The Champion Pub is a boxing machine where a spinning heavy bag becomes your opponent and the whole game is one checklist. Earn all five jewels on the championship belt -- training, the three multiballs, a knockout, the jackpot ladder and five fight wins -- to reach the Ultimate Challenge.",
+    "loop": [
+      "Punch the heavy bag and feed the corner to fill your life bars; a full meter lights Start Fight at the corner and both orbits.",
+      "Start a fight and the bag spins into your opponent -- work body shots on the bag and head shots up the hook ramps to put him down before he drops you.",
+      "Rotate through jump rope, speed bag and heavy-bag training, lock balls for Multi-Brawl, and climb the fifteen-level jackpot ladder to fill in the belt.",
+      "Each fight win unlocks the next thing -- a video mode, the extra ball, Raid Multiball, a hurry-up round, then Champion Multiball for the title on the fifth.",
+      "Set every jewel on the belt, top up the meter one final time, and the corner puts the Ultimate Challenge on the menu in place of another bout."
+    ],
+    "lights": [
+      {
+        "id": "the-belt",
+        "name": "The Championship Belt",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "the-corner"
+          }
+        ],
+        "lit": "The belt holds five jewels -- training, all three multiballs, a knockout, the full jackpot ladder, and five fight wins -- and each jewel you earn stays set on the belt for the rest of the game.",
+        "flashing": null,
+        "control": null,
+        "then": "Everything you do feeds one of the five, and each jewel is worth five hundred thousand. With all five set and your meter refilled, the corner puts up the Ultimate Challenge in place of the usual Start Fight. A Royal Flush in Poker Night can also gift the next jewel you are missing, a genuine out if a broken shot has made one unreachable.",
+        "goals": [
+          "the-belt",
+          "ultimate-challenge"
+        ]
+      },
+      {
+        "id": "life-bars-fight",
+        "name": "Life Bars & The Fight",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "heavy-bag"
+          },
+          {
+            "shot": "hook-ramps"
+          },
+          {
+            "shot": "the-corner"
+          }
+        ],
+        "lit": "You cannot fight until the twelve-bar meter is full -- you start with three banked, punching the heavy bag is the main way to add more, and the corner usually tosses in half a bar alongside whatever else it pays.",
+        "flashing": null,
+        "control": null,
+        "then": "A full meter lights Start Fight at the corner and both orbits; starting one spins the bag into your opponent. Work body shots on the bag for a hundred thousand and a bar or two off him, head shots up the hook ramps for five hundred thousand and three to six -- but an outlane drain during a fight loses the fight, not just the ball.",
+        "goals": [
+          "start-fight",
+          "the-fight",
+          "fight-rewards"
+        ]
+      },
+      {
+        "id": "training",
+        "name": "Training",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "jump-rope"
+          },
+          {
+            "shot": "speed-bag"
+          },
+          {
+            "shot": "heavy-bag"
+          }
+        ],
+        "lit": "Three training disciplines feed a single jewel, and the game makes you cycle all of them -- clear one and it shuts off until the remaining two are also done.",
+        "flashing": null,
+        "control": null,
+        "then": "Bank six jump-rope jumps, six speed-bag hits and about ten life-bar heavy-bag hits -- all cumulative across the game, so scattered progress still counts -- to set the training jewel and reopen the whole cycle for another five hundred thousand. Ten in a row on the rope or the bag also doubles your purse.",
+        "goals": [
+          "training-jewel",
+          "jump-rope",
+          "speed-bag"
+        ]
+      },
+      {
+        "id": "knockout",
+        "name": "Knockout",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "hook-ramps"
+          }
+        ],
+        "lit": "Landing a knockout takes two steps -- jab a combo through the scoop on one side, owe one to the other, and a knockout light comes up for about five seconds.",
+        "flashing": "While that knockout light is on, a head shot up the ramps ends the fight outright.",
+        "control": null,
+        "then": "Take a head shot on the raised ramps inside that window to win it outright, banking a million bonus and the knockout jewel; a Smart Punch off the launch button lands as that head shot as well. Miss the window and the fight reverts to ordinary, your combo count wiped, and every later knockout demands more combos than the one before.",
+        "goals": [
+          "knockout"
+        ]
+      },
+      {
+        "id": "jackpot-ladder",
+        "name": "Jackpot Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Fifteen named jackpot levels climb from a hundred thousand to a million and a half, cumulative across the whole game; roll through a lit inlane to arm the right-orbit jackpot for a moment.",
+        "flashing": null,
+        "control": null,
+        "then": "Which inlane holds the light flips on its own with each slingshot hit, so take whichever side lights rather than forcing one. Collect at the right orbit -- quickest during Multi-Brawl and Champion Multiball, when the jackpots stay lit -- and clearing the entire ladder is itself one of the five belt jewels.",
+        "goals": [
+          "jackpot-ladder"
+        ]
+      },
+      {
+        "id": "locks-multiballs",
+        "name": "Locks & Multiballs",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "beer-targets"
+          },
+          {
+            "shot": "left-ramp"
+          }
+        ],
+        "lit": "Three left orbits lock the balls for your first Multi-Brawl; after that the beer targets arm each lock, and their progress survives a drained ball -- a half-finished bank picks up right where it left off.",
+        "flashing": null,
+        "control": null,
+        "then": "In multiball, cycle the three lit jackpots -- left ramp, right orbit, and the boxer himself -- landing each before any relights. Fisticuffs comes purely from bag work, while your third and fifth wins hand over Raid and Champion Multiball; overlapping the multiballs stacks four balls under a fresh saver.",
+        "goals": [
+          "multi-brawl",
+          "fisticuffs",
+          "champion-multiball"
+        ]
+      },
+      {
+        "id": "corner-awards",
+        "name": "The Corner: Awards & Video Modes",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "the-corner"
+          }
+        ],
+        "lit": "No hole on the machine works harder than the corner: it arms both video modes -- Spittin' Gallery and Poker Night -- pays out the extra ball, and pumps up the purse.",
+        "flashing": null,
+        "control": null,
+        "then": "Start the video modes here: Spittin' Gallery is a ten-catch mode worth up to ten million, Poker Night a one-shot video hand where each result maps to a fixed award -- a Royal Flush even hands you a belt jewel. Release the launch button on the Door Prize at the plunge for awards you cannot get anywhere else.",
+        "goals": [
+          "poker-night",
+          "spittin-gallery",
+          "door-prize"
+        ]
+      },
+      {
+        "id": "purse",
+        "name": "Build The Purse",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "the-corner"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "jump-rope"
+          }
+        ],
+        "lit": "The purse sets what a win actually pays, tracked along the bottom of the display through the match, and fattening it before you step into a fight is the biggest single scoring call you make all game.",
+        "flashing": null,
+        "control": null,
+        "then": "Feed the corner and the left ramp to raise it -- both pay off mid-fight and drop in life bars as they go -- and double it flat out with ten straight jumps, ten straight speed-bag hits, or a Pair dealt in Poker Night. It caps at sixty million, so a rematch is usually better spent padding the purse than rushing back in.",
+        "goals": [
+          "purse-value"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Hold the launch button and release on the Door Prize -- it is the only route to several awards and can even hand you a jewel. Start rotating through training and punch the heavy bag to fill your life bars, then start your first fight.",
+        "goals": [
+          "skillshot",
+          "training-jewel",
+          "start-fight"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Win fights for their fixed unlocks -- a video mode, the extra ball, then Raid Multiball on the third win -- lock balls for Multi-Brawl, and climb the jackpot ladder. Build the purse before every fight so each win pays more.",
+        "goals": [
+          "fight-rewards",
+          "multi-brawl",
+          "raid-multiball",
+          "jackpot-ladder",
+          "purse-value"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "With every jewel set on the belt, fill the meter once more and the corner opens the Ultimate Challenge -- the five remaining fighters, a single life bar, and its own multiball, worth north of fifty million for a clean run. Champion Multiball, the reward for the fifth ordinary win, is the high point of normal play on the road there.",
+        "goals": [
+          "ultimate-challenge",
+          "the-belt",
+          "champion-multiball"
+        ]
+      }
+    ]
+  }
+}

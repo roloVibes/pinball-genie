@@ -1,0 +1,1281 @@
+{
+  "machine": "Black Knight 2000 (Williams, 1989)",
+  "defaultFx": "quest",
+  "shots": [
+    {
+      "id": "plunge",
+      "name": "Plunger / Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.12,
+      "trim": "all",
+      "feeds": {
+        "shot": "win-lanes"
+      },
+      "notes": "Arcs over the top and delivers the ball onto the UPPER deck into the W-I-N lanes area. A full-strength plunge instead rides the loop around to the upper flipper. All served balls (Challenge, King's Ransom) come here."
+    },
+    {
+      "id": "skyway-ramp",
+      "name": "Skyway Ramp",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.58,
+      "trim": "all",
+      "flipper": "right",
+      "apex": {
+        "x": 0.13,
+        "y": 0.88
+      },
+      "feeds": {
+        "shot": "sky-loop"
+      },
+      "notes": "The money shot — lower-to-upper-deck ramp climbing the left side. Strong: carries around the Sky Loop to the upper flipper (Ramp-Loop Combo, loop value +100K). Medium: drops into the WIN lanes. Very weak: falls into the Lightning Lane seat. Scores nothing unlit — its value is safety plus whatever is lit (Hurry-Up, Extra Ball, Skyway Million)."
+    },
+    {
+      "id": "kni-targets",
+      "name": "K-N-I Drop Targets",
+      "type": "target-bank",
+      "x": 0.181,
+      "y": 0.337,
+      "trim": "all",
+      "notes": "Far-left 3-bank of arrow drop targets below the Skyway entrance, timed (default 11 s, accelerating). Bank credit latches even if the timer resets the other bank."
+    },
+    {
+      "id": "ght-targets",
+      "name": "G-H-T Drop Targets",
+      "type": "target-bank",
+      "x": 0.385,
+      "y": 0.431,
+      "trim": "all",
+      "notes": "Center 3-bank between the two U-Turn entrances. Completing all six KNIGHT targets spots a B-L-A-C-K letter and relights Kickback + Magna-Save."
+    },
+    {
+      "id": "u-turn",
+      "name": "U-Turn",
+      "type": "loop",
+      "x": 0.47,
+      "y": 0.58,
+      "trim": "all",
+      "apex": {
+        "x": 0.47,
+        "y": 0.66
+      },
+      "notes": "Horseshoe behind the G-H-T bank with entrances both sides (left entrance from right flipper, right entrance from left flipper). Timed consecutive ladder 50K-50K-75K-100K-150K-200K-250K (sources differ; some report a 25K base), ~5 s window; each adds 2K to the permanent bonus pool; 2nd+ lights the Challenge Lane. Fast, risky exits.",
+      "feeds": {
+        "x": 0.47,
+        "y": 0.62
+      }
+    },
+    {
+      "id": "lightning-lane",
+      "name": "Lightning Lane (SPIN)",
+      "type": "scoop",
+      "x": 0.67,
+      "y": 0.57,
+      "trim": "all",
+      "flipper": "left",
+      "feeds": {
+        "x": 0.68,
+        "y": 0.68
+      },
+      "notes": "Lane into a VUK that ALWAYS kicks the ball up to the upper deck, lit or not — the safe escape from the lower deck. Lit (start of ball, or briefly after the left inlane) it spins the Lightning Wheel for 1 of 16 awards."
+    },
+    {
+      "id": "challenge-lane",
+      "name": "Challenge Lane",
+      "type": "scoop",
+      "x": 0.82,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Far-right kick-out hole under the upper-deck drain wireform. Unlit: mocks you and spits the ball back (5K). Lit (by U-Turns): starts Double Knight's Challenge. During multiball it holds an incoming ball ~10 s — a legal park."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.16,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "5K + relights the SPIN light on the Lightning Lane for a few seconds — set up the immediate left-flipper Lightning Lane shot."
+    },
+    {
+      "id": "kickback",
+      "name": "Left Outlane Kickback",
+      "type": "mech",
+      "x": 0.08,
+      "y": 0.06,
+      "trim": "all",
+      "notes": "Starts lit; used-then-unlit. Relit only by completing all six KNIGHT targets or a Lightning Wheel award."
+    },
+    {
+      "id": "magna-save",
+      "name": "Magna-Save",
+      "type": "mech",
+      "x": 0.891,
+      "y": 0.168,
+      "trim": "all",
+      "notes": "Magnet above the right inlane guarding the right outlane; fired with the separate yellow cabinet button (~5 s of magnet time, consumes the light). Saved balls drop down the right inlane. Relit by KNIGHT completion or the Wheel."
+    },
+    {
+      "id": "war-lanes",
+      "name": "W-A-R Lanes",
+      "type": "lane",
+      "x": 0.47,
+      "y": 0.62,
+      "trim": "all",
+      "feeds": {
+        "x": 0.81,
+        "y": 0.2
+      },
+      "notes": "Three rollovers (plus one gap) at the upper deck's front edge — the ONLY exit off the upper deck; the wireform feeds the lower right flipper. Lane-change with the flipper buttons; nudge to dribble across the lane tops back to the upper flipper. Completing W-A-R lights Hurry-Up on the Skyway; WAR = 1M during Challenge and King's Ransom.",
+      "playfield": "upper-deck"
+    },
+    {
+      "id": "win-lanes",
+      "name": "W-I-N Lanes",
+      "type": "lane",
+      "x": 0.61,
+      "y": 0.88,
+      "trim": "all",
+      "notes": "Three top rollovers above the pops, fed by the plunge and by medium Skyway shots. Lane-change with the flipper buttons. Completing W-I-N = 20K + advance bonus X + light Ransom at the Drawbridge for ~20 s.",
+      "playfield": "upper-deck"
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.672,
+      "y": 0.695,
+      "trim": "all",
+      "notes": "Three jets clustered right-of-center on the upper deck, 110 points each.",
+      "playfield": "upper-deck"
+    },
+    {
+      "id": "drawbridge-targets",
+      "name": "Drawbridge 1-2-3 Targets",
+      "type": "target-bank",
+      "x": 0.27,
+      "y": 0.7,
+      "trim": "all",
+      "notes": "Motorized 3-target dropping bank across the front-left of the upper deck — upper flipper only. Hit all three (any order) and the drawbridge lowers, opening the ramp behind it. May re-close between locks/jackpots depending on operator difficulty; closed for the whole Double Knight's Challenge.",
+      "playfield": "upper-deck",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "drawbridge-ramp",
+      "name": "Drawbridge Ramp",
+      "type": "ramp",
+      "x": 0.31,
+      "y": 0.72,
+      "trim": "all",
+      "apex": {
+        "x": 0.14,
+        "y": 0.72
+      },
+      "feeds": {
+        "shot": "castle-lock"
+      },
+      "notes": "Short ramp behind the 1-2-3 bank, upper flipper only; delivers into the Castle lock (no flipper return — released balls exit via the WAR wireform to the right flipper). Locks balls, scores Jackpot (1M-4M) in Multiball/King's Ransom, and spots a RANSOM letter when Ransom is lit.",
+      "playfield": "upper-deck",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "castle-lock",
+      "name": "Black Knight's Castle Lock",
+      "type": "mech",
+      "x": 0.09,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Ball lock at the front-left corner of the upper deck, reachable only via the Drawbridge ramp. Holds two; the third lock starts 3-ball Multiball. Locks are SHARED in multiplayer — whoever locks the third ball gets the multiball.",
+      "playfield": "upper-deck"
+    },
+    {
+      "id": "sky-loop",
+      "name": "Sky Loop",
+      "type": "loop",
+      "x": 0.15,
+      "y": 0.78,
+      "trim": "all",
+      "apex": {
+        "x": 0.45,
+        "y": 0.94
+      },
+      "feeds": {
+        "x": 0.74,
+        "y": 0.66
+      },
+      "notes": "Full perimeter loop of the upper deck, upper flipper only: a low strong shot runs up the left edge behind the castle, across the back, down through the gate (0.80, 0.78) and back to the upper flipper — immediately re-shootable. Consecutive loops 20K/40K/60K/80K (sources differ; some report 25K steps), +2K bonus pool each; 2-in-a-row holds bonus X and lights Extra Ball on the Skyway.",
+      "playfield": "upper-deck",
+      "flipper": "upper-flipper"
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.219,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.688,
+      "y": 0.0,
+      "trim": "all"
+    },
+    {
+      "id": "upper-flipper",
+      "name": "Upper Flipper",
+      "type": "flipper",
+      "x": 0.74,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "The lone flipper up on the deck, sitting just right of the WAR lanes. Works the Sky Loop, which circles back straight onto it, and is the only way to reach the Drawbridge targets, ramp, and Castle lock.",
+      "playfield": "upper-deck"
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot-full-plunge",
+      "title": "Full Plunge to the Upper Flipper",
+      "category": "skillshot",
+      "summary": "BK2K has no lit skill-shot award — the plunge itself is the skill element. The control plunge rides the ball around the upper-deck loop straight to the upper flipper, handing you the Sky Loop immediately.",
+      "difficulty": 1,
+      "reward": "Instant upper-flipper control and a head start on the loop ladder",
+      "steps": [
+        {
+          "shot": "sky-loop",
+          "action": "Full-strength plunge around the loop to the upper flipper",
+          "detail": "A strong plunge carries around the upper deck loop instead of dropping into the WIN lanes — the ball cannot drain while it is on the upper deck. The upper flipper is mounted on a downgrade and can't truly trap, so use a controlled catch or dead flip, then shoot the loop low and strong."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skillshot-win-lanes",
+      "title": "Lane-Change Plunge into WIN",
+      "category": "skillshot",
+      "summary": "The soft-plunge variant: drop into the W-I-N rollovers and use lane change to steer an unlit lane under the ball — the fastest route to bonus X and a Ransom window.",
+      "difficulty": 2,
+      "reward": "20K + bonus X advance + Ransom lit at the Drawbridge (~20 s)",
+      "steps": [
+        {
+          "shot": "win-lanes",
+          "action": "Plunge soft-to-medium into the W-I-N lanes",
+          "detail": "A weaker plunge drops the ball into the three W-I-N lanes just above the pop bumpers. Both flipper buttons rotate the lit letters — completing all three advances the bonus multiplier and lights Ransom on the Drawbridge for a few seconds."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-ramp-loop",
+      "title": "Ramp-Loop Combo",
+      "category": "combo",
+      "summary": "The game's one literally named combo: a full-power Skyway shot carries all the way around the Sky Loop in a single motion — ramp plus loop in one shot, with a 100K kicker.",
+      "difficulty": 2,
+      "reward": "Current sky-loop value + 100K, and your loop chain starts/continues",
+      "steps": [
+        {
+          "shot": "skyway-ramp",
+          "action": "Shoot the Skyway hard off the right flipper",
+          "detail": "Only a strong shot crests at the back-left of the upper deck with enough speed to run the full loop. Medium shots fall into the WIN lanes instead (still useful — bonus X)."
+        },
+        {
+          "shot": "sky-loop",
+          "action": "Let the ball ride through the gate to the upper flipper",
+          "detail": "The combo registers as ramp + loop. The ball arrives at the upper flipper — shoot the loop again immediately to keep the consecutive-loop ladder going."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-skyway-one-touch",
+      "title": "Skyway One-Touch Recovery",
+      "category": "combo",
+      "summary": "The single most important skill in BK2K: when the ball exits the upper deck through the WAR lanes, the wireform feeds the right flipper — one-touch it straight back up the Skyway without trapping.",
+      "difficulty": 3,
+      "reward": "Ball returned to the safe upper deck, collecting anything lit on the Skyway (Hurry-Up, Extra Ball, Skyway Million)",
+      "steps": [
+        {
+          "shot": "war-lanes",
+          "action": "Let the ball exit through the W-A-R lanes",
+          "detail": "The WAR lanes are the only way off the upper deck; the exit wireform runs down the right side and drops the ball at the right flipper — by design."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "One-touch the incoming ball straight up the Skyway",
+          "detail": "The skill to drill: one-touch a ball falling off the upper deck straight back into the Skyway, almost every time. Don't trap — flip on the bounce rhythm.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-sky-loops",
+      "title": "Consecutive Sky Loops",
+      "category": "combo",
+      "summary": "The signature repeatable shot: low, strong upper-flipper shots around the top of the upper deck, back to the same flipper. Escalating values, bonus-X hold, extra balls, and the machine's Loop Champion record.",
+      "difficulty": 2,
+      "reward": "20K/40K/60K/80K... escalating, +2K bonus pool per loop; 2-in-a-row holds bonus X and lights Extra Ball",
+      "steps": [
+        {
+          "shot": "sky-loop",
+          "action": "Shoot the loop low and strong from the upper flipper",
+          "detail": "The ball circles the upper deck through the gate and returns to the same flipper — immediately re-shootable."
+        },
+        {
+          "shot": "sky-loop",
+          "action": "Loop again right away",
+          "detail": "Two consecutive loops hold the bonus multiplier for the ball AND light Extra Ball on the Skyway for ~8 s (after collecting one EB it takes three in a row, then four)."
+        },
+        {
+          "shot": "sky-loop",
+          "action": "Keep the chain alive",
+          "detail": "The machine tracks a dedicated Loop Champion record for most consecutive loops (factory default 6); beating it pays an extra ball by default."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-u-turn-ladder",
+      "title": "U-Turn Ladder Burst",
+      "category": "combo",
+      "summary": "Rapid consecutive U-Turns through the horseshoe inside the flashing ~5-second windows. Highest value-per-second on the lower deck — and the riskiest sequence in the game.",
+      "difficulty": 3,
+      "reward": "50K-50K-75K-100K-150K-200K-250K — a full 7-shot chain = 875K, plus Challenge lit and +2K permanent bonus per shot",
+      "steps": [
+        {
+          "shot": "u-turn",
+          "action": "Shoot either U-Turn entrance",
+          "detail": "Left entrance from the right flipper, right entrance from the left flipper. The lights flash after a hit — that's your window."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Repeat while the lights flash",
+          "detail": "Default 5-second window; the ladder resets on timeout, ball loss, or reaching 250K. The 2nd and every later U-Turn lights the Challenge Lane. Front-load these: the +2K bonus pool is cumulative and pays at EVERY end-of-ball. Exits are fast and near the drains — be ready."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "combo-win-ransom",
+      "title": "WIN → Drawbridge: Spot a RANSOM Letter",
+      "category": "combo",
+      "summary": "The timed two-shot combo that builds toward the wizard mode: complete the WIN lanes, then hit the open Drawbridge while Ransom is lit (~20 s) to spot a R-A-N-S-O-M letter. Letters carry over between games.",
+      "difficulty": 3,
+      "reward": "One RANSOM letter (six letters = King's Ransom)",
+      "steps": [
+        {
+          "shot": "drawbridge-targets",
+          "action": "Open the drawbridge in advance",
+          "detail": "Hit all three 1-2-3 targets from the upper flipper so the ramp is already open when the window starts."
+        },
+        {
+          "shot": "win-lanes",
+          "action": "Complete W-I-N",
+          "detail": "Use lane change; completion lights Ransom on the Drawbridge for ~20 s (operator-adjustable 5-30 s)."
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Shoot the Drawbridge inside the window",
+          "detail": "Spots one RANSOM letter. Rescue variant if the ball falls downstairs: bounce to the left flipper and shoot the Lightning Lane — it kicks out at a perfect Drawbridge angle while Ransom is still flashing."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "combo-lit-spin",
+      "title": "Left Inlane → Lit Lightning Lane",
+      "category": "combo",
+      "summary": "The lit-spin combo: the left inlane relights SPIN for a few seconds — immediately shoot the Lightning Lane off the left flipper to spin the Lightning Wheel.",
+      "difficulty": 2,
+      "reward": "One of 16 Lightning Wheel awards (up to 200K, Extra Ball, Special, Spot RANSOM, Lower Drawbridge, Knights Challenge...)",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll through the left inlane",
+          "detail": "5K and relights the SPIN light on the Lightning Lane for a few seconds only."
+        },
+        {
+          "shot": "lightning-lane",
+          "action": "Shoot the Lightning Lane immediately off the left flipper",
+          "detail": "Lit, it spins the backbox Lightning Wheel; lit or not, the VUK kicks the ball safely back to the upper deck.",
+          "flipper": "left"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-castle",
+      "title": "Castle Multiball (3-Ball)",
+      "category": "multiball",
+      "summary": "The main multiball: batter down the drawbridge door, lock three balls in the Black Knight's Castle, and the game releases all three for untimed multiball with Jackpots at the Drawbridge.",
+      "difficulty": 2,
+      "reward": "3-ball Multiball with Jackpot (1M-4M) lit at the Drawbridge",
+      "steps": [
+        {
+          "shot": "drawbridge-targets",
+          "action": "Hit all three 1-2-3 drawbridge targets",
+          "detail": "Any order, from the upper flipper. The motorized bank lowers — 'drawbridge down' — opening the ramp behind it."
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Shoot the open Drawbridge to lock ball 1",
+          "detail": "100K; the next ball is served to the plunger."
+        },
+        {
+          "shot": "drawbridge-targets",
+          "action": "Re-open the drawbridge if it closed",
+          "detail": "On harder operator settings the bank re-raises after each lock and 1-2-3 must be re-completed."
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Lock ball 2",
+          "detail": "Another 100K. Warning: locks are shared in multiplayer — an opponent can steal your multiball by locking the third ball. Don't leave two locked for them."
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Lock ball 3 to start Multiball",
+          "detail": "All three balls release via the upper-deck drain. Untimed while 2+ balls are in play; ends 10 s after dropping to one ball. Side note: on your last ball with exactly two locked, the outlanes light Last Chance — an outlane drain kicks both locked balls into play (once per game)."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-jackpots",
+      "title": "Multiball Jackpots",
+      "category": "multiball",
+      "summary": "During Castle Multiball the Drawbridge scores the Jackpot — building from 1M to a 4M max. Park a ball in the Challenge Lane to shoot jackpots one-ball-at-a-time.",
+      "difficulty": 3,
+      "reward": "Jackpot 1M building to 4M (resets to 1M when collected); Drawbridge also spots RANSOM letters during multiball",
+      "steps": [
+        {
+          "shot": "challenge-lane",
+          "action": "Park one ball in the Challenge Lane",
+          "detail": "During multiball it holds an incoming ball about 10 seconds — breathing room while you line up the upper deck."
+        },
+        {
+          "shot": "drawbridge-targets",
+          "action": "Re-complete 1-2-3 if the bridge re-closed",
+          "detail": "Depending on difficulty settings and prior jackpots, the drawbridge may need re-opening between jackpots."
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Shoot the Drawbridge for the Jackpot",
+          "detail": "Value builds over time (default 5K/step), displayed during multiball and attract; max 4M, resets to 1M when collected."
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiball-double-knights-challenge",
+      "title": "Double Knight's Challenge",
+      "category": "multiball",
+      "summary": "The 2-ball mini-wizard: light the Challenge Lane with U-Turns, start the Challenge, and spell WAR for a repeatable 1,000,000 — as many times as you can keep both balls alive.",
+      "difficulty": 3,
+      "reward": "WAR = 1,000,000, repeatable for the whole 2-ball mode",
+      "steps": [
+        {
+          "shot": "war-lanes",
+          "action": "Pre-light two of the three WAR letters",
+          "detail": "Set up the million BEFORE starting the mode so one lane-change finishes the job."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Shoot U-Turns to light the Challenge Lane",
+          "detail": "Two U-Turns required the first time; every subsequent U-Turn relights it. The Wheel's Knights Challenge award can also start the mode directly."
+        },
+        {
+          "shot": "challenge-lane",
+          "action": "Shoot the lit Challenge Lane",
+          "detail": "The ball is held in the lane and a second ball is served to the plunger. (Unlit, it just mocks you and spits the ball back for 5K.)"
+        },
+        {
+          "shot": "plunge",
+          "action": "Plunge and hold the right flipper button up",
+          "detail": "The raised upper flipper deflects the arriving plunge into a WAR lane. The held ball releases the moment the new ball hits any switch — keep one ball upstairs, and use the Lightning Lane to send a lower ball back up."
+        },
+        {
+          "shot": "war-lanes",
+          "action": "Rotate the last unlit WAR letter under the ball",
+          "detail": "Lane change with the flipper buttons: spell WAR = 1,000,000, repeatable until either ball drains (four millions inside one Challenge is achievable). The drawbridge stays closed for the duration — no locks."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "mode-hurry-up-ladder",
+      "title": "Skyway Hurry-Up Ladder",
+      "category": "mode",
+      "summary": "Completing the W-A-R lanes lights a Hurry-Up on the Skyway that counts down from 200K — and every collect, even 10K at the last instant, advances the ladder: 200K → 500K → 750K → 1M → 1.5M, persisting across balls.",
+      "difficulty": 2,
+      "reward": "Up to 1.5M per collect; the full ladder run is ≈3.95M",
+      "steps": [
+        {
+          "shot": "war-lanes",
+          "action": "Complete W-A-R",
+          "detail": "Nudge the ball across the lane tops to collect letters while keeping it upstairs; completing the third letter (usually as the ball exits) starts the Hurry-Up — value holds 1-2 s, then drops 10K per step to zero."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "One-touch the Skyway immediately to collect",
+          "detail": "The WAR exit feeds the right flipper on purpose. A 1.5M hurry-up counts down in the same total time as a 200K one — shoot instantly. A missed hurry-up re-offers the same level next time you spell WAR; collecting the 1.5M resets to 200K.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-skyway-million",
+      "title": "Spell BLACK — Skyway Million",
+      "category": "mode",
+      "summary": "Each full KNIGHT completion (both timed drop banks) spots one B-L-A-C-K letter; completing BLACK lights the Skyway for 1,000,000. Low value-per-risk — but each completion also relights both outlane saves.",
+      "difficulty": 3,
+      "reward": "1,000,000 on the Skyway when BLACK completes; Kickback + Magna-Save relit per KNIGHT completion",
+      "steps": [
+        {
+          "shot": "kni-targets",
+          "action": "Clear the K-N-I bank",
+          "detail": "Timed (default 11 s, flash rate accelerating). Bank credit latches — K-N-I stays complete even if the timer resets the other bank, and downed-target credit persists across ball loss.",
+          "link": "none"
+        },
+        {
+          "shot": "ght-targets",
+          "action": "Clear the G-H-T bank before the timer",
+          "detail": "All six KNIGHT targets down: targets reset, one BLACK letter spotted, Kickback and Magna-Save relit.",
+          "link": "none"
+        },
+        {
+          "shot": "kni-targets",
+          "action": "Repeat both banks to spell B-L-A-C-K",
+          "detail": "Five completions total; the timer speeds up each time. The points here are slim next to the upper deck — do this when you're stuck downstairs anyway.",
+          "link": "none"
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "Shoot the Skyway to collect the Million",
+          "detail": "BLACK completion lights the Skyway for 1,000,000.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "mode-lightning-wheel",
+      "title": "Spin the Lightning Wheel",
+      "category": "mode",
+      "summary": "The lit Lightning Lane spins the backbox wheel for one of 16 pseudo-random awards — points to 200K, Extra Ball, Special, Light Magna-Save/Kickback, Lower Drawbridge, Knights Challenge, Spot RANSOM, Hurry Up.",
+      "difficulty": 1,
+      "reward": "1 of 16 Lightning Wheel awards; the lane is also a safe escape to the upper deck even unlit",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Relight SPIN via the left inlane if needed",
+          "detail": "SPIN starts each game lit (one free spin, adjustable 0-5); afterward the left inlane relights it for only a few seconds."
+        },
+        {
+          "shot": "lightning-lane",
+          "action": "Shoot the lit Lightning Lane off the left flipper",
+          "detail": "The wheel's EB slot skews toward players with low scores. Lit or not, the VUK returns the ball to the upper deck near the upper flipper — the safest lower-deck shot on the game.",
+          "flipper": "left"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "multiplier-build-bonus-x",
+      "title": "Build Bonus X at the WIN Lanes",
+      "category": "multiplier",
+      "summary": "The only multiplier on BK2K is the end-of-ball bonus X: each W-I-N completion advances it 2X → 3X → 4X → 5X max. Medium Skyway shots feed the WIN lanes on demand.",
+      "difficulty": 2,
+      "reward": "Bonus multiplier up to 5X on a bonus pool that never resets (2K × every U-Turn and loop you've ever made)",
+      "steps": [
+        {
+          "shot": "win-lanes",
+          "action": "Complete W-I-N using lane change",
+          "detail": "Both flipper buttons rotate the lit letters — steer the unlit lane under the ball. Each completion = 20K + one bonus X step + Ransom lit briefly."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "Shoot a medium-strength Skyway to refill the WIN lanes",
+          "detail": "A medium Skyway shot crests and drops into the WIN lanes instead of running the loop — the reliable re-feed.",
+          "flipper": "right"
+        },
+        {
+          "shot": "win-lanes",
+          "action": "Complete W-I-N again",
+          "detail": "Repeat to 5X. The X resets each ball unless held — see the hold goal."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "multiplier-hold-bonus-x",
+      "title": "Hold the Multiplier with Two Loops",
+      "category": "multiplier",
+      "summary": "Bonus pays only at end of ball, so the cash-in play is: build X at the WIN lanes, then hold it with two consecutive Sky Loops — and stuff the pool, since U-Turn/loop bonus counts are cumulative for the whole game.",
+      "difficulty": 2,
+      "reward": "Bonus X held for the ball; every ball's bonus phase pays pool × X",
+      "steps": [
+        {
+          "shot": "win-lanes",
+          "action": "Advance the bonus X first",
+          "detail": "2X-5X via W-I-N completions."
+        },
+        {
+          "shot": "sky-loop",
+          "action": "Shoot a Sky Loop",
+          "detail": "Low and strong from the upper flipper, back around to the same flipper."
+        },
+        {
+          "shot": "sky-loop",
+          "action": "Loop again immediately — two in a row holds the X",
+          "detail": "Two consecutive loops hold the bonus multiplier for the ball (and light Extra Ball on the Skyway). King's Ransom later holds 5X for the rest of the game."
+        },
+        {
+          "shot": "u-turn",
+          "action": "Stuff the bonus pool with U-Turns",
+          "detail": "Every U-Turn and loop adds 2K to a pool that NEVER resets — shots made on ball 1 pay bonus on every subsequent ball, worth ~400K over a game for identical shots made early."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "wizard-kings-ransom",
+      "title": "King's Ransom",
+      "category": "wizard",
+      "summary": "Spell R-A-N-S-O-M (letters persist between games on the machine) for the wizard mode: ~20 seconds of 3-ball frenzy with unlimited ball save, 5X held for the rest of the game, WAR = 1M, U-Turns = 250K, Skyway = 1M + Extra Ball, Jackpot lit.",
+      "difficulty": 3,
+      "reward": "20-s three-ball frenzy; 5X bonus held permanently; 1M Skyway + EB; 1M WAR repeatable; 250K U-Turns; Jackpot 1M-4M",
+      "steps": [
+        {
+          "shot": "drawbridge-targets",
+          "action": "Keep the drawbridge open",
+          "detail": "1-2-3 from the upper flipper, so Ransom windows aren't wasted on a closed door."
+        },
+        {
+          "shot": "win-lanes",
+          "action": "Complete W-I-N to light Ransom",
+          "detail": "Ransom flashes at the Drawbridge for ~20 s after each WIN completion."
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Shoot the Drawbridge in the window — repeat until R-A-N-S-O-M is complete",
+          "detail": "One letter per conversion; the Wheel's Spot RANSOM award also helps. Letters carry over game to game — check the backglass before you plunge; a walk-up machine with 4-5 letters lit is a farm target. Spotting the M starts the mode instantly."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "In the mode: shoot the Skyway first",
+          "detail": "First Skyway = 1,000,000 + Extra Ball (once). Drains auto-feed back to the plunger — shoot fearlessly.",
+          "flipper": "right"
+        },
+        {
+          "shot": "drawbridge-ramp",
+          "action": "Collect the lit Jackpot at the Drawbridge",
+          "detail": "1M-4M. Make the Skyway and Drawbridge at least once each — that's where the big points are."
+        },
+        {
+          "shot": "war-lanes",
+          "action": "Spell WAR as often as possible; park a ball at the end",
+          "detail": "WAR = 1M repeatable, U-Turns = 250K. Pro move: a ball sitting in the plunger lane when the timer ends is still in play — effectively a free extra ball."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strategy-first-30-seconds",
+      "title": "Beginner Opener: Stay Upstairs",
+      "category": "strategy",
+      "summary": "The consensus opener — the ball cannot drain on the upper deck, so live there: full plunge, loop twice, nudge across the WAR tops, and answer every fall with the Skyway one-touch.",
+      "difficulty": 1,
+      "reward": "Extra Ball lit, bonus X held, and a ball that spends its life where it can't drain",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge full strength",
+          "detail": "The ball rides the loop around to the upper flipper. Catch and control."
+        },
+        {
+          "shot": "sky-loop",
+          "action": "Shoot 2-3 loops",
+          "detail": "Two in a row lights Extra Ball on the Skyway (~8 s) and holds the bonus X — looping is your cheapest route to extra balls."
+        },
+        {
+          "shot": "war-lanes",
+          "action": "Nudge the ball across the WAR lane tops",
+          "detail": "With practice you can nudge the ball so it rolls over the lane tops and settles back on the upper flipper — a letter collected and the ball still upstairs."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "When the ball falls, one-touch the Skyway off the right flipper",
+          "detail": "Collects the lit Extra Ball and/or Hurry-Up and puts the ball straight back upstairs. Repeat the cycle.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "strategy-hurry-up-farm",
+      "title": "Tournament Line: The Hurry-Up Farm",
+      "category": "strategy",
+      "summary": "The tournament bread-and-butter — the whole plan in one line: spell WAR on the rollovers, then shoot the Skyway for escalating hurry-ups. The ladder persists across balls, and almost all of it happens where the ball can't drain.",
+      "difficulty": 2,
+      "reward": "200K → 500K → 750K → 1M → 1.5M collects ≈ 4M on a game where 10-40M is big",
+      "steps": [
+        {
+          "shot": "plunge",
+          "action": "Plunge to the upper deck",
+          "detail": "Full plunge to the upper flipper for control."
+        },
+        {
+          "shot": "war-lanes",
+          "action": "Spell W-A-R",
+          "detail": "Dribble across the lane tops; the completing letter usually comes as the ball exits — which conveniently delivers it to the right flipper."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "One-touch the Skyway — collect the 200K Hurry-Up",
+          "detail": "Instant flip, no trap; the countdown is fast at every level.",
+          "flipper": "right"
+        },
+        {
+          "shot": "war-lanes",
+          "action": "Re-spell WAR",
+          "detail": "Each collect (any amount, even 10K) advances the next start value: 500K, 750K, 1M, 1.5M — and the ladder carries across balls."
+        },
+        {
+          "shot": "skyway-ramp",
+          "action": "Repeat the collect up the ladder",
+          "detail": "Five collects ≈ 4M. A missed hurry-up re-offers the same level; the 1.5M collect resets the ladder to 200K.",
+          "flipper": "right"
+        }
+      ],
+      "fx": "quest"
+    },
+    {
+      "id": "strategy-insurance",
+      "title": "Keep Kickback and Magna-Save Lit",
+      "category": "strategy",
+      "summary": "Both outlane saves are used-then-unlit, and only a full six-target KNIGHT completion (or a Wheel award) relights them. Clear the banks when you're stuck downstairs anyway, and learn the Magna-Save button.",
+      "difficulty": 2,
+      "reward": "Both drain insurances relit (plus a BLACK letter spotted)",
+      "steps": [
+        {
+          "shot": "kni-targets",
+          "action": "Clear K-N-I",
+          "detail": "Timed bank, far left — its credit latches even if the timer resets."
+        },
+        {
+          "shot": "ght-targets",
+          "action": "Clear G-H-T to complete KNIGHT",
+          "detail": "All six down relights the Kickback AND Magna-Save and spots a BLACK letter. Don't grind these for points — the value is the insurance."
+        },
+        {
+          "shot": "magna-save",
+          "action": "Press the yellow cabinet button as the ball enters the right outlane",
+          "detail": "The magnet runs ~5 s, snares the ball and drops it down the right inlane. Using it consumes the light whether or not it saved anything — time the press. The left-outlane Kickback fires automatically."
+        }
+      ],
+      "fx": "quest"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "loop-crown",
+      "title": "Loop Crown",
+      "desc": "Beat the machine's stored record for most consecutive Sky Loops (factory default is 6 in a row).",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-sky-loops"
+    },
+    {
+      "id": "table-initials",
+      "title": "Initials on the Board",
+      "desc": "Post a score high enough to enter the machine's four-slot high score table.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-first-30-seconds"
+    },
+    {
+      "id": "replay-breaker",
+      "title": "Past the Replay Line",
+      "desc": "Reach the machine's replay score level (4.8M at factory settings) in a single game.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "strategy-hurry-up-farm"
+    },
+    {
+      "id": "first-key",
+      "title": "First Key to the Castle",
+      "desc": "Lower the drawbridge with the 1-2-3 targets and lock a ball in the castle.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiball-castle"
+    },
+    {
+      "id": "lane-scholar",
+      "title": "Lane Scholar",
+      "desc": "Complete the W-I-N lanes once to advance your bonus multiplier.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "multiplier-build-bonus-x"
+    },
+    {
+      "id": "wheel-turner",
+      "title": "Turn the Wheel",
+      "desc": "Hit the lit Lightning Lane and take whatever the 16-slot wheel gives you.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mode-lightning-wheel"
+    },
+    {
+      "id": "quick-collect",
+      "title": "Beat the Countdown",
+      "desc": "Collect any Skyway Hurry-Up before it ticks down to zero.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-hurry-up-ladder"
+    },
+    {
+      "id": "castle-siege",
+      "title": "Siege Complete",
+      "desc": "Lock three balls in the Black Knight's Castle to start the 3-ball multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-castle"
+    },
+    {
+      "id": "million-at-war",
+      "title": "Million at WAR",
+      "desc": "Score the 1,000,000 WAR-lanes award during Double Knight's Challenge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "multiball-double-knights-challenge"
+    },
+    {
+      "id": "ladder-summit",
+      "title": "Top of the Ladder",
+      "desc": "Climb the entire Hurry-Up ladder and collect the 1.5M level.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-hurry-up-ladder"
+    },
+    {
+      "id": "horseshoe-seven",
+      "title": "Seven Through the Horseshoe",
+      "desc": "Chain seven consecutive U-Turns to reach the 250K step of the ladder.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-u-turn-ladder"
+    },
+    {
+      "id": "black-letters",
+      "title": "Five Letters in BLACK",
+      "desc": "Spell B-L-A-C-K by completing all six KNIGHT drop targets five times, then collect the lit Skyway Million.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mode-skyway-million"
+    },
+    {
+      "id": "full-price",
+      "title": "Full Price Jackpot",
+      "desc": "Let the multiball Jackpot build to its 4,000,000 maximum and collect it at the Drawbridge.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "multiball-jackpots"
+    },
+    {
+      "id": "ransom-paid",
+      "title": "The Ransom Is Paid",
+      "desc": "Spell all six R-A-N-S-O-M letters and play the King's Ransom frenzy.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-kings-ransom"
+    }
+  ],
+  "drills": [
+    {
+      "id": "two-plunges",
+      "title": "Two Plunges, Two Games",
+      "text": "Full strength rides the ball around the loop to the upper flipper, where it cannot drain — that is the control plunge. Soft-to-medium drops it into the W-I-N lanes for lane-change work instead. Drill both, and practice what comes after the strong one: the upper flipper sits on a downgrade and will not truly trap, so it has to be a controlled catch or a dead flip.",
+      "reps": "10 of each",
+      "focus": "skill-shot",
+      "goal": "skillshot-full-plunge",
+      "shots": [
+        "plunge",
+        "sky-loop",
+        "win-lanes"
+      ]
+    },
+    {
+      "id": "sky-loop-chain",
+      "title": "Sky Loop Chain",
+      "text": "Low and strong from the upper flipper. The ball circles the deck, comes back through the gate, and lands on the same flipper for an immediate re-shoot, so the chain is limited only by your rhythm. Two in a row holds the bonus multiplier and lights Extra Ball, and the machine keeps its own record for the longest run — go beat it.",
+      "reps": "chase the machine's loop record",
+      "focus": "accuracy",
+      "goal": "combo-sky-loops",
+      "shots": [
+        "sky-loop",
+        "upper-flipper"
+      ]
+    },
+    {
+      "id": "skyway-one-touch",
+      "title": "Skyway One-Touch",
+      "text": "The W-A-R lanes are the only way off the deck, and the exit wireform drops the ball on the right flipper by design. One-touch it straight back up the Skyway on the bounce rhythm without trapping first. This is the most repeated motion in a good game on this table, so drill the return itself rather than the ramp.",
+      "reps": "20 returns",
+      "focus": "flow",
+      "goal": "combo-skyway-one-touch",
+      "shots": [
+        "war-lanes",
+        "skyway-ramp",
+        "right-flipper"
+      ]
+    },
+    {
+      "id": "stay-upstairs",
+      "title": "Stay Upstairs",
+      "text": "The ball cannot drain while it is on the upper deck, so the most valuable habit here is collecting W-A-R letters without leaving. Nudge the ball so it dribbles across the lane tops and settles back onto the upper flipper instead of dropping through. Spend a whole ball with staying up there as the only objective.",
+      "reps": "2 full balls",
+      "focus": "ball-control",
+      "goal": "strategy-first-30-seconds",
+      "shots": [
+        "war-lanes",
+        "upper-flipper"
+      ]
+    },
+    {
+      "id": "keep-the-light-on",
+      "title": "Keep the Save Light On",
+      "text": "The yellow button is one save and then it is dead until you relight it, so half of playing this machine well is keeping that light lit. Fire early rather than late — the magnet has to catch the ball before it is past, and the five seconds start on the press. Whenever you are stuck downstairs anyway, clear all six KNIGHT targets, which relights the magnet and the kickback together.",
+      "reps": "one full game, never leaving the light out",
+      "focus": "ball-control",
+      "goal": "strategy-insurance",
+      "shots": [
+        "magna-save",
+        "kni-targets",
+        "ght-targets",
+        "kickback"
+      ]
+    },
+    {
+      "id": "u-turn-window",
+      "title": "U-Turn Inside the Window",
+      "text": "Left entrance off the right flipper, right entrance off the left. After each hit the lights flash, and that flash is your window — roughly five seconds — so the ladder is a rhythm rather than a series of decisions. Exits are fast and land near the drains, so run this one with hands on the machine.",
+      "reps": "5 ladders",
+      "focus": "flow",
+      "goal": "combo-u-turn-ladder",
+      "shots": [
+        "u-turn"
+      ]
+    }
+  ],
+  "playfields": [
+    {
+      "id": "upper-deck",
+      "name": "The Upper Deck",
+      "kind": "upper",
+      "bounds": {
+        "x": 0.06,
+        "y": 0.58,
+        "w": 0.72,
+        "h": 0.34
+      },
+      "entries": [
+        "plunge",
+        "skyway-ramp",
+        "lightning-lane"
+      ],
+      "exits": [
+        {
+          "x": 0.81,
+          "y": 0.2
+        }
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Magna-Save",
+    "location": "right cabinet wall, just above the right flipper button (the separate yellow button)",
+    "how": "BK2K gives you one extra button and it is pure insurance. The yellow button on the right side of the cabinet switches on a magnet mounted above the right inlane, guarding the right outlane the way the kickback guards the left. It is a limited resource: one save, then the button is dead until you relight it, so half of playing BK2K well is keeping that light on.",
+    "uses": [
+      {
+        "when": "Ball entering the right outlane",
+        "what": "Tap it; the magnet runs about five seconds, snares the ball and drops it down the right inlane instead."
+      },
+      {
+        "when": "Ball rattling toward that outlane",
+        "what": "Fire early rather than late — the magnet has to catch the ball before it is past, and the five seconds start on the press."
+      },
+      {
+        "when": "The Magna-Save light is out",
+        "what": "The button does nothing at all. Clearing all six KNIGHT drop targets relights it and the kickback together."
+      },
+      {
+        "when": "Stuck grinding the lower playfield",
+        "what": "Take the KNIGHT banks while you are down there — low points, but it restores both outlane saves before multiball."
+      },
+      {
+        "when": "Lightning Wheel offers Light Magna-Save",
+        "what": "That is a free recharge, and worth more than most of the wheel's point awards when you are playing unprotected."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "A knight-themed split-level game where the upper deck is your safe haven. Winning means spelling R-A-N-S-O-M to start King's Ransom, a 3-ball frenzy with unlimited ball save and 5X held.",
+    "loop": [
+      "Plunge to the upper deck and use the upper flipper to shoot Sky Loops and U-Turns for escalating values.",
+      "Complete W-A-R lanes to light a Hurry-Up on the Skyway, then shoot the Skyway to collect and advance the ladder.",
+      "Complete W-I-N lanes to advance bonus X and light Ransom on the Drawbridge, then shoot the Drawbridge to spot a RANSOM letter.",
+      "Clear both KNIGHT drop target banks to spot a BLACK letter and relight Kickback and Magna-Save.",
+      "Lock three balls in the Castle for multiball, then collect Jackpots at the Drawbridge."
+    ],
+    "lights": [
+      {
+        "id": "win-lanes",
+        "name": "W-I-N Lanes",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "win-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "Completing all three letters advances the bonus multiplier and lights Ransom on the Drawbridge for about 20 seconds.",
+        "flashing": null,
+        "control": {
+          "input": "both-flippers",
+          "effect": "Both flipper buttons rotate the lit letters to steer an unlit lane under the ball.",
+          "when": "While the ball is in the W-I-N lanes area."
+        },
+        "then": "Shoot the Drawbridge while Ransom is lit to spot a RANSOM letter.",
+        "goals": [
+          "multiplier-build-bonus-x",
+          "combo-win-ransom",
+          "skillshot-win-lanes"
+        ]
+      },
+      {
+        "id": "war-lanes",
+        "name": "W-A-R Lanes",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "war-lanes",
+            "lamps": 3
+          }
+        ],
+        "lit": "Completing all three letters lights a Hurry-Up on the Skyway.",
+        "flashing": null,
+        "control": {
+          "input": "both-flippers",
+          "effect": "Both flipper buttons rotate the lit letters to steer an unlit lane under the ball.",
+          "when": "While the ball is in the W-A-R lanes area."
+        },
+        "then": "Shoot the Skyway to collect the Hurry-Up and advance the ladder.",
+        "goals": [
+          "mode-hurry-up-ladder",
+          "multiball-double-knights-challenge"
+        ]
+      },
+      {
+        "id": "black-letters",
+        "name": "B-L-A-C-K Letters",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "kni-targets"
+          },
+          {
+            "shot": "ght-targets"
+          }
+        ],
+        "lit": "Completing both KNIGHT drop target banks spots one BLACK letter and relights Kickback and Magna-Save.",
+        "flashing": null,
+        "control": null,
+        "then": "When BLACK is complete, shoot the Skyway for the 1,000,000 Skyway Million.",
+        "goals": [
+          "mode-skyway-million",
+          "strategy-insurance"
+        ]
+      },
+      {
+        "id": "lightning-wheel",
+        "name": "Lightning Wheel",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "lightning-lane"
+          }
+        ],
+        "lit": "The Lightning Lane is lit at ball start and briefly after the left inlane; shooting it spins the backbox wheel for one of 16 awards.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the wheel award, which can include points, Extra Ball, Special, or lighting outlane saves.",
+        "goals": [
+          "mode-lightning-wheel",
+          "combo-lit-spin"
+        ]
+      },
+      {
+        "id": "skyway-awards",
+        "name": "Skyway Awards",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "skyway-ramp"
+          }
+        ],
+        "lit": "The Skyway is lit for Hurry-Up after completing W-A-R, Extra Ball after two consecutive Sky Loops, or the Skyway Million after spelling BLACK.",
+        "flashing": "The Hurry-Up value counts down from 200K, flashing as it decreases.",
+        "control": null,
+        "then": "Shoot the Skyway to collect the lit award and return the ball to the upper deck.",
+        "goals": [
+          "mode-hurry-up-ladder",
+          "mode-skyway-million",
+          "combo-skyway-one-touch"
+        ]
+      },
+      {
+        "id": "drawbridge-ransom-jackpot",
+        "name": "Drawbridge Ransom & Jackpot",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "drawbridge-ramp"
+          }
+        ],
+        "lit": "The Drawbridge is lit for Ransom after completing W-I-N, for Jackpot during multiball, or for locking balls when the drawbridge is down.",
+        "flashing": "Ransom is lit for about 20 seconds, flashing during that window.",
+        "control": null,
+        "then": "Shoot the Drawbridge to spot a RANSOM letter, collect a Jackpot, or lock a ball.",
+        "goals": [
+          "combo-win-ransom",
+          "multiball-jackpots",
+          "multiball-castle"
+        ]
+      },
+      {
+        "id": "u-turn-ladder",
+        "name": "U-Turn Ladder",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "u-turn"
+          }
+        ],
+        "lit": "Consecutive U-Turn shots within flashing time windows escalate the value from 50K up to 250K and light the Challenge Lane.",
+        "flashing": "The time window for the next U-Turn shot flashes.",
+        "control": null,
+        "then": "Shoot the Challenge Lane when lit to start Double Knight's Challenge.",
+        "goals": [
+          "combo-u-turn-ladder",
+          "multiball-double-knights-challenge"
+        ]
+      },
+      {
+        "id": "sky-loop",
+        "name": "Sky Loop",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "sky-loop"
+          }
+        ],
+        "lit": "Two consecutive Sky Loops hold the bonus multiplier for the ball and light Extra Ball on the Skyway.",
+        "flashing": null,
+        "control": null,
+        "then": "Shoot the Skyway to collect the Extra Ball.",
+        "goals": [
+          "multiplier-hold-bonus-x",
+          "combo-sky-loops"
+        ]
+      },
+      {
+        "id": "outlane-saves",
+        "name": "Outlane Saves",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "kickback"
+          },
+          {
+            "shot": "magna-save"
+          }
+        ],
+        "lit": "Both the Kickback and Magna-Save start lit; each is used once then unlit, and both are relit by completing all six KNIGHT targets.",
+        "flashing": null,
+        "control": {
+          "input": "action-button",
+          "effect": "The yellow cabinet button fires the Magna-Save magnet to pull the ball out of the right outlane.",
+          "when": "When the ball is heading toward the right outlane and Magna-Save is lit."
+        },
+        "then": "Keep both saves lit by completing KNIGHT targets to protect against drains.",
+        "goals": [
+          "strategy-insurance"
+        ]
+      },
+      {
+        "id": "bonus-multiplier",
+        "name": "Bonus Multiplier",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "win-lanes"
+          },
+          {
+            "shot": "sky-loop"
+          }
+        ],
+        "lit": "Each W-I-N completion advances the bonus multiplier from 2X to 5X; two consecutive Sky Loops hold it for the ball.",
+        "flashing": null,
+        "control": {
+          "input": "both-flippers",
+          "effect": "Both flipper buttons rotate the lit W-I-N letters to steer an unlit lane under the ball.",
+          "when": "While the ball is in the W-I-N lanes area."
+        },
+        "then": "Build the multiplier at W-I-N, then hold it with two Sky Loops before the ball drains.",
+        "goals": [
+          "multiplier-build-bonus-x",
+          "multiplier-hold-bonus-x"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Both flipper buttons rotate the lit letters on the W-I-N and W-A-R lanes to steer an unlit lane under the ball.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Stay on the upper deck: full plunge to the upper flipper, shoot Sky Loops and U-Turns for escalating values, and use the Skyway one-touch to return any ball that falls downstairs.",
+        "goals": [
+          "strategy-first-30-seconds",
+          "skillshot-full-plunge",
+          "combo-skyway-one-touch",
+          "combo-sky-loops",
+          "combo-u-turn-ladder"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Build bonus X at the WIN lanes, hold it with two Sky Loops, lock three balls for Castle Multiball, and climb the WAR Hurry-Up ladder for escalating Skyway values.",
+        "goals": [
+          "multiplier-build-bonus-x",
+          "multiplier-hold-bonus-x",
+          "multiball-castle",
+          "multiball-jackpots",
+          "mode-hurry-up-ladder"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Spell R-A-N-S-O-M by completing WIN lanes and shooting the Drawbridge within the timed window, then survive the 20-second 3-ball frenzy with unlimited ball save, 5X held, and Jackpot lit.",
+        "goals": [
+          "wizard-kings-ransom"
+        ]
+      }
+    ]
+  }
+}

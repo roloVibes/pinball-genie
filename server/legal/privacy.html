@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Pinball Genie</title>
+    <meta name="description" content="What Pinball Genie collects, why, how long we keep it, and how to have it deleted — including accounts, cookies, server logs, and advertising." />
+    <meta name="theme-color" content="#0a0b10" />
+    <meta name="color-scheme" content="dark" />
+    <!-- Canonical: in PUBLIC_MODE the same bytes are reachable at both
+         the clean route and /legal/<file>.html (LEGAL_ASSETS maps both).
+         Without this, crawlers see two URLs for one page. -->
+    <link rel="canonical" href="https://pinball-genie.com/privacy" />
+    <link rel="stylesheet" href="/legal/legal.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-ball" aria-hidden="true"></span>
+          Pinball Genie
+        </a>
+        <a class="back-link" href="/">&larr; Back to the app</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="meta">
+          <strong>Effective date:</strong> July 30, 2026<br />
+          <strong>App / Site:</strong> Pinball Genie (pinball-genie.com)<br />
+          <strong>Publisher:</strong> Pinball Genie LLC ("we", "us")<br />
+          <strong>Contact:</strong> <a href="mailto:admin@pinball-genie.com">admin@pinball-genie.com</a>
+        </p>
+
+        <h2>Summary</h2>
+        <!-- 2026-07-30 (Phase 5): rewritten again. The previous wording described
+             a fixed set of accounts issued by us, with a username and a stored
+             password hash. Both are gone: signup is now genuinely self-service
+             (you type an email, we email you a one-time link, that's the whole
+             flow) and there is no password anywhere in the system — not stored,
+             not hashed, not askable-for. Keep this paragraph in step with
+             reality if the auth model changes again. -->
+        <p>
+          Pinball Genie is a study tool for pinball machines, and it is <strong>free to use with
+          no account</strong> — browsing machines, goals, shot paths, and the glossary requires
+          no sign-in of any kind. An account exists only to save your achievement progress so it
+          follows you across devices, and creating one is self-service: you type your email
+          address, we send you a one-time sign-in link, and clicking it signs you in. There is no
+          password anywhere in this system — we never ask you to create one, so there is none for
+          us to store or for anyone to steal. If you have an account, we keep a small amount of
+          server-side data to make it work: your email address, your achievement progress, and
+          standard web server logs. We do not sell personal data, we do not run any analytics or
+          tracking product, and today we do not serve any third-party advertising. This page
+          explains exactly what we collect and why.
+        </p>
+
+        <h2>Information we collect</h2>
+        <ul>
+          <li>
+            <strong>Email address.</strong> To create an account, you give us an email address.
+            We use it for exactly two things: to know which saved progress is yours, and to send
+            you a one-time sign-in link when you ask for one. We never use it for marketing, and
+            we never sell or share it.
+          </li>
+          <li>
+            <strong>No password, ever.</strong> There is no password field anywhere in Pinball
+            Genie — not at signup, not to sign in, and there is nothing to "reset" because
+            nothing is ever set. Signing in works by emailing you a single-use link: you request
+            one, we send it, and clicking it signs you in. The link stops working after 15
+            minutes or the first time it's used, whichever happens first. Because we store no
+            password and nothing derived from one, there is no password database that could ever
+            be stolen or leaked.
+          </li>
+          <li>
+            <strong>Achievement progress.</strong> The goals and machines you've studied are
+            saved server-side against your account so your progress is there the next time you
+            sign in, on any device. Internally, this is filed under a stable account ID rather
+            than your raw email address — so if you ever change the email address on your
+            account, your progress moves with you instead of being orphaned.
+          </li>
+          <li>
+            <strong>Server logs.</strong> Described below.
+          </li>
+        </ul>
+        <p>
+          We do not collect your name, location, contacts, or any device advertising identifier,
+          and we do not ask for payment information.
+        </p>
+
+        <h2>Sign-in emails</h2>
+        <p>
+          Because our server cannot send email directly, we use <strong>Resend</strong>, a
+          transactional email provider, to deliver sign-in links. Resend receives only what it
+          needs to deliver that one message — your email address and the link itself — and we
+          do not upload any mailing list or use Resend for marketing. Sign-in emails are sent
+          from a dedicated subdomain, <code>send.pinball-genie.com</code>, which is a technical
+          email-deliverability choice (it keeps a bounced or misdirected signup attempt from
+          affecting <code>admin@pinball-genie.com</code>'s reputation) — it is still us sending
+          the email, not a third party acting on its own behalf.
+        </p>
+        <p>
+          To keep this system from being used to spam an address or exhaust our email quota, we
+          cap how many sign-in links can be requested for one email address, from one network,
+          and site-wide, within a short window. Requesting a link for an address that has no
+          account produces exactly the same response as requesting one that does — we never let
+          this form be used to check whether a given email address is registered.
+        </p>
+
+        <h2>Cookies and local storage</h2>
+        <p>
+          <strong>Session cookie.</strong> When you sign in, we set one cookie that identifies
+          your logged-in session. It is <strong>HttpOnly</strong> (not readable by page scripts),
+          <strong>Secure</strong> (sent only over HTTPS), and <strong>SameSite=Lax</strong>, and it
+          expires after 30 days. This cookie exists only to keep you signed in — we set no
+          third-party cookies today.
+        </p>
+        <p>
+          <strong>Local storage.</strong> The app also stores a few interface preferences in your
+          browser's local storage on your own device — things like your preferred shot-trail
+          style, whether the ball tracer is on, which machine you last viewed, and whether you've
+          seen the first-time how-to screen. These preferences never leave your device and are not
+          your account progress; account progress is the server-side data described above.
+        </p>
+
+        <h2>Server logs</h2>
+        <p>
+          Like effectively every website, our servers keep operational logs so we can debug
+          problems and detect abuse:
+        </p>
+        <ul>
+          <li>
+            Our web server (Caddy) writes an access log for every request — the requesting IP
+            address, the request method and URL, the response status, and the browser's
+            user-agent string. The one URL in this system that would otherwise carry a sign-in
+            token (the link you click from your email) has that token's value specifically
+            stripped out and replaced before the line is ever written to disk, so the log shows
+            that a sign-in attempt happened without ever recording the token itself. This log
+            rotates automatically — 10 MiB per file, 10 files kept — so no request is held onto
+            indefinitely.
+          </li>
+          <li>
+            Our application server separately logs security-relevant events (sign-in link
+            requests, sign-ins, rate-limiting) with a timestamp and the requesting IP address.
+            This application-level log never includes a sign-in link's token or a cookie value —
+            it records that the event happened, and for a blocked or rate-limited attempt, why —
+            never the credential-equivalent values involved.
+          </li>
+        </ul>
+        <p>
+          We use these logs only for security, debugging, and abuse prevention — never for
+          advertising or analytics.
+        </p>
+
+        <h2>Data retention</h2>
+        <!-- 2026-07-30 (Phase 5, D7): this section didn't exist even though the
+             meta description at the top of this file has always promised
+             "how long we keep it." Every figure below is read off the actual
+             running system (MAGIC_TOKEN_TTL, UserStore, and deploy-prod.sh's
+             Caddy `log` block), not asserted from memory — keep it that way
+             if any of those change. -->
+        <p>How long each kind of data sticks around:</p>
+        <ul>
+          <li>
+            <strong>Sign-in tokens.</strong> A sign-in link is good for 15 minutes from the
+            moment we send it, and works exactly once. Whichever happens first — someone using
+            it, or the 15 minutes running out — ends its usefulness immediately, and the record
+            is cleaned up shortly after.
+          </li>
+          <li>
+            <strong>Your account and achievement progress.</strong> These persist for as long as
+            your account exists — see "Your rights: export and deletion" below for how to end
+            that whenever you choose. We do not delete an account just because it has gone
+            unused for a while.
+          </li>
+          <!-- 2026-07-30, second security pass: this paragraph previously said
+               "Requesting a link creates your account record immediately, before
+               you ever click anything … that record does not expire on its own".
+               That described the code as it stood when this page was written, and
+               the same review pass changed the code underneath it: an account is
+               now created only when the link is actually clicked, so that typing
+               a stranger's address into the form can no longer create a permanent
+               record about them. Verified against the running server — ten
+               requests with zero clicks leave no user file on disk at all.
+               Keep this paragraph in step with pinball_auth.py's _do_verify(),
+               which is the single place a user record is created. -->
+          <li>
+            <strong>A sign-in link you request but never click.</strong> Requesting a link does
+            <strong>not</strong> create an account. All it stores is the one-time link itself,
+            which expires 15 minutes after it is issued and can be used only once. If you never
+            click it, nothing about you is kept — your account is created at the moment you
+            click the link, not when you ask for it. That also means someone typing your address
+            into our sign-in form cannot create an account in your name; only you, from your own
+            inbox, can do that.
+          </li>
+          <li>
+            <strong>Server logs.</strong> Our web server's access log rotates automatically —
+            10 MiB per file, 10 files kept — so it ages out on its own as new requests come in.
+          </li>
+        </ul>
+        <p>
+          Your achievement progress is not shared with anyone and is not used for anything other
+          than showing your progress back to you.
+        </p>
+
+        <h2>No sale of personal data</h2>
+        <p>
+          We do not sell, rent, or trade your personal data to anyone, for any purpose, ever.
+        </p>
+
+        <h2>Children's privacy</h2>
+        <p>
+          Pinball Genie is not directed at children under 13, and we do not knowingly collect
+          personal information from anyone under 13. If you believe a child under 13 has created
+          an account, contact us at <a href="mailto:admin@pinball-genie.com">admin@pinball-genie.com</a>
+          and we will delete it.
+        </p>
+
+        <h2>Advertising</h2>
+        <p>
+          Pinball Genie is a free, ad-supported service. <strong>Today, the only advertising we
+          show is a single self-hosted "house" banner that we serve ourselves.</strong> No
+          third-party ad network is active, and no third-party advertising cookies are set.
+        </p>
+        <p>
+          We expect to introduce a third-party advertising network in a later phase. When we do,
+          the following will apply, and we will update the effective date of this policy before it
+          takes effect:
+        </p>
+        <ul>
+          <li>
+            Third-party vendors, including Google, use cookies to serve ads based on a user's
+            prior visits to this and other websites.
+          </li>
+          <li>
+            Google's use of advertising cookies enables it and its partners to serve ads to users
+            based on their visits to this site and/or other sites on the Internet.
+          </li>
+          <li>
+            Users may opt out of personalized advertising by visiting
+            <a href="https://www.google.com/settings/ads">Google Ads Settings</a>. Users may also
+            opt out of a number of third-party vendors' use of cookies for personalized advertising
+            by visiting <a href="https://www.aboutads.info">aboutads.info</a>.
+          </li>
+          <li>
+            If we add other third-party ad vendors beyond Google, we will name them here.
+          </li>
+        </ul>
+
+        <h2>Your rights: export and deletion</h2>
+        <!-- 2026-07-30 (Phase 5): rewritten again. This section previously
+             asserted an "account settings" screen and said neither action
+             "requires emailing us" — this codebase has server routes for
+             both (session-gated, same as every other per-user route) but
+             this file has no way to verify what the app's UI currently
+             surfaces, so it should not describe a screen. Say what you get,
+             not where the button is: the capability is real either way, and
+             email is the one path that is guaranteed regardless of what the
+             UI does or doesn't expose on a given day. Keep it phrased this
+             way even after a self-service UI ships — the email path should
+             stay true as a fallback, not get deleted along with this
+             caveat. -->
+        <p>
+          You can <strong>export</strong> a copy of your data — your email address and your
+          achievement progress, as JSON — or <strong>delete your account</strong> outright.
+          Deleting your account removes your account record and your stored achievement
+          progress, and cannot be undone. The guaranteed way to get either one is to email us at
+          <a href="mailto:admin@pinball-genie.com">admin@pinball-genie.com</a>; we will act on it
+          once we can reasonably confirm you're the account holder. That route works even if
+          you've lost access to the inbox your account is tied to and can't sign in at all — it
+          does not depend on a working sign-in link.
+        </p>
+        <p>
+          You do not need to ask us for anything to stop using Pinball Genie: since the study tool
+          itself needs no account, you can simply stop signing in, and clearing your browser's site
+          data removes the display preferences stored on your device.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          If we change what we collect or how we use it — including turning on a third-party ad
+          network — we will update this page and its effective date before the change takes effect.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Pinball Genie LLC — <a href="mailto:admin@pinball-genie.com">admin@pinball-genie.com</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <nav class="footer-links" aria-label="Legal">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <p class="footer-contact">
+          <a href="https://instagram.com/pinballgenie">@pinballgenie</a> on Instagram ·
+          <a href="mailto:admin@pinball-genie.com">admin@pinball-genie.com</a>
+        </p>
+        <p class="footer-copy">© 2026 Pinball Genie LLC</p>
+      </div>
+    </footer>
+  </body>
+</html>

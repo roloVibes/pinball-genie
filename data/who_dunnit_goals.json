@@ -1,0 +1,1175 @@
+{
+  "machine": "Who Dunnit (Bally, 1995)",
+  "shots": [
+    {
+      "id": "shooter-lane",
+      "name": "Shooter Lane",
+      "type": "plunge",
+      "x": 0.96,
+      "y": 0.18,
+      "trim": "all",
+      "notes": "A short lane that fires the ball straight across the playfield rather than up an orbit. There is a manual plunger, but the machine will also autolaunch."
+    },
+    {
+      "id": "taxi-targets",
+      "name": "T-A-X-I Targets",
+      "type": "target-bank",
+      "x": 0.16,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Spell TAXI to collect a clue. These are also what the plunger skill shot aims at, and Taxi Chase spots letters for you."
+    },
+    {
+      "id": "mystery-target",
+      "name": "Mystery Target",
+      "type": "standup",
+      "x": 0.22,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Sits above the left slingshot. Lit by a Penthouse Key target, and it awards whatever the game happens to owe you at that moment — including jackpots during multiball."
+    },
+    {
+      "id": "lock-saucer",
+      "name": "Lock Saucer",
+      "type": "saucer",
+      "x": 0.2,
+      "y": 0.22,
+      "trim": "all",
+      "notes": "The Super Skill Shot target and the ball lock. Its entrance faces right, and you cannot really aim at it from a flipper — it is fed from the plunger or off the elevator exit."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "type": "orbit",
+      "x": 0.1,
+      "y": 0.58,
+      "trim": "all",
+      "notes": "Two completely different shots depending on state. Lit for Taxi Chase it runs clean past the bumpers and out the right side; otherwise a post drops the ball into the bumpers for Nudge Slots.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "red-target",
+      "name": "Red Target",
+      "type": "standup",
+      "x": 0.24,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Sets your next roulette bet to red — but only if you leave the black target alone."
+    },
+    {
+      "id": "phone",
+      "name": "The Phone",
+      "type": "scoop",
+      "x": 0.3,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "A hole under a black telephone, at the end of a lane just right of the left orbit entrance. Answering it interrogates a suspect, and it is where you name your killer."
+    },
+    {
+      "id": "elevator-targets",
+      "name": "Elevator 3-Bank",
+      "type": "drop-target",
+      "x": 0.46,
+      "y": 0.48,
+      "trim": "all",
+      "notes": "Three targets that sink into the playfield. Down, the elevator is wide open; up, there is only a narrow gap to thread. They cycle up and down on their own during some modes."
+    },
+    {
+      "id": "elevator",
+      "name": "The Elevator",
+      "type": "ramp",
+      "x": 0.5,
+      "y": 0.6,
+      "trim": "all",
+      "notes": "A wide ramp feeding three habitrails — UP, EXIT and DOWN. Which one takes the ball decides which floor you get off at, and floors are how modes start."
+    },
+    {
+      "id": "jet-hole",
+      "name": "Jet Bumper Hole",
+      "type": "saucer",
+      "x": 0.5,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Directly behind the elevator and under the bumpers. A ball rattling in the bumpers usually ends up here, which is how you collect a slot spin."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers",
+      "type": "bumpers",
+      "x": 0.5,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "Three in the standard triangle. Each one drives a different reel of the slot machine, and during multiball each hit raises the jackpot."
+    },
+    {
+      "id": "right-ramp",
+      "name": "Train Ramp",
+      "type": "ramp",
+      "x": 0.74,
+      "y": 0.52,
+      "trim": "all",
+      "notes": "Only exists while the ramp is down, which is any time Taxi Chase is not running. It returns to the left flipper on a good shot and to the bumpers on a weak one, so consecutive shots are very repeatable.",
+      "feeds": {
+        "shot": "left-flipper"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "type": "orbit",
+      "x": 0.86,
+      "y": 0.56,
+      "trim": "all",
+      "notes": "Same entrance as the train ramp, except Taxi Chase has the ramp raised. The ball then loops around, passing the bumpers, and comes back out where the left orbit begins.",
+      "feeds": {
+        "shot": "left-orbit"
+      }
+    },
+    {
+      "id": "black-target",
+      "name": "Black Target",
+      "type": "standup",
+      "x": 0.76,
+      "y": 0.66,
+      "trim": "all",
+      "notes": "Sets your next roulette bet to black, provided you have not also hit the red target."
+    },
+    {
+      "id": "roulette",
+      "name": "Roulette VUK",
+      "type": "kicker",
+      "x": 0.82,
+      "y": 0.42,
+      "trim": "all",
+      "notes": "A kicker at the end of a lane just right of the ramp entrance. A jackpot shot in every multiball, and the way you raise your bonus multiplier."
+    },
+    {
+      "id": "spinner",
+      "name": "Roulette Spinner",
+      "type": "spinner",
+      "x": 0.82,
+      "y": 0.36,
+      "trim": "all",
+      "notes": "Sits in the roulette lane. How much it spins on the way in sets the size of the bet you are offered."
+    },
+    {
+      "id": "sewer",
+      "name": "The Sewer",
+      "type": "scoop",
+      "x": 0.9,
+      "y": 0.34,
+      "trim": "all",
+      "notes": "A hole to the right of the roulette entrance. What it awards depends entirely on which equipment you are carrying, so it is worth arming before you shoot it."
+    },
+    {
+      "id": "penthouse-targets",
+      "name": "Penthouse Key Targets",
+      "type": "target-bank",
+      "x": 0.9,
+      "y": 0.26,
+      "trim": "all",
+      "notes": "Two targets below the sewer. They light the Mystery Target and they are the only route to the Penthouse floor."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.28,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "Can be lit to start Taxi Chase. Rolling a lit inlane is the whole trigger — no shot required."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.72,
+      "y": 0.1,
+      "trim": "all",
+      "notes": "The other Taxi Chase trigger. The train ramp feeds the left flipper, so this side comes up less often."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "outlane",
+      "x": 0.06,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Can be lit for Slots. There is no kickback here, but a lit outlane drain spins the slots and the slots can hand the ball back."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "outlane",
+      "x": 0.94,
+      "y": 0.07,
+      "trim": "all",
+      "notes": "Also lightable for Slots, with the same conditional reprieve."
+    },
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.34,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Fed by the train ramp, which is what makes repeated train combos practical. Feeds the roulette lane, sewer and right orbit."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.66,
+      "y": 0.05,
+      "trim": "all",
+      "notes": "Feeds the left orbit, phone lane and the elevator."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skillshot",
+      "title": "Plunger Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge at the TAXI targets. Hit a lit letter and you collect what the display is offering for it; hit an unlit one and you simply spot the letter. Each letter carries a different award, so watch what is on offer before you pull.",
+      "difficulty": 1,
+      "reward": "Points, a clue, a multiplier or a lit Roulette",
+      "steps": [
+        {
+          "shot": "taxi-targets",
+          "action": "Plunge at the TAXI letter you want",
+          "detail": "The awards cycle, so read the display before you pull — the same letter is worth different things on different balls. T pays points in the tens of millions, A gives a clue, X advances your bonus multiplier and I lights Roulette; an unlit letter just spots it."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "super-skillshot",
+      "title": "Super Skill Shot",
+      "category": "skillshot",
+      "summary": "Plunge the ball into the lock saucer instead. It is worth 20M multiplied by how many super skill shots you have already made, hands you a clue, advances your multiplier, and locks the ball. Three of these is Basement Multiball straight off the plunger.",
+      "difficulty": 2,
+      "reward": "20M per super skill shot, plus a clue, a multiplier and a lock",
+      "steps": [
+        {
+          "shot": "lock-saucer",
+          "action": "Find the plunge strength that reaches the saucer",
+          "detail": "The saucer entrance faces right, and the plunger is one of only two ways a ball ever gets in there. Four awards come off one plunge and the value climbs every time you repeat it; bank all three and the next one starts Basement Multiball."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "cases",
+      "title": "Working A Case",
+      "category": "progression",
+      "summary": "Every case follows the same shape: collect evidence, interrogate suspects, name a killer, and if you named the right one, catch them. There are five cases before the sequence repeats, and none of the case names actually change what you have to do.",
+      "difficulty": 2,
+      "reward": "20M per finished case in bonus, plus a four-ball multiball",
+      "steps": [
+        {
+          "shot": "elevator",
+          "action": "Ride to the third or fifth floor for evidence",
+          "detail": "Each of those exits pays 25M and moves the case forward."
+        },
+        {
+          "shot": "phone",
+          "action": "Answer the phone to interrogate",
+          "detail": "A suspect will talk about the killer — unless they are the killer, in which case they will talk about anything else."
+        },
+        {
+          "shot": "phone",
+          "action": "Name your suspect",
+          "detail": "Guess right and Catch the Killer starts. Guess wrong and you move on to the next case anyway, with the old one left open."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "elevator-floors",
+      "title": "Reading The Elevator",
+      "category": "progression",
+      "summary": "The elevator is the spine of this machine. Eleven floors sit behind those three habitrails, and knowing which floor does what is the difference between shooting the elevator hopefully and shooting it on purpose.",
+      "difficulty": 2,
+      "reward": "Access to every mode in the game",
+      "steps": [],
+      "instructions": [
+        "Basement is a three-ball multiball.",
+        "Main Floor lights Slots and Roulette.",
+        "2nd Floor spots all four TAXI letters, which is a free clue, and lights the phone.",
+        "3rd and 5th Floors each let you collect evidence or name your killer.",
+        "4th Floor spins the slot machine.",
+        "6th Floor hands you the leftmost piece of equipment you do not already have.",
+        "7th Floor starts Elevator Madness. The display will tell you it is the 8th floor; it is not.",
+        "8th Floor interrogates a suspect or lets you name your killer.",
+        "Penthouse runs Penthouse Party, and you can only reach it once you hold the Penthouse Key.",
+        "The Roof is Catch the Killer, and it opens once you have visited every other floor or correctly named the killer.",
+        "The three-target bank in front of the elevator has to be down for a comfortable shot. When it is up you are threading a very narrow gap."
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "taxi-chase",
+      "title": "Taxi Chase",
+      "category": "mode",
+      "summary": "Roll a lit inlane and the chase begins — both orbits light, the train ramp raises out of the way, and every orbit shot both extends the timer and spots a TAXI letter. It is the fastest route to clues in the game.",
+      "difficulty": 1,
+      "reward": "A TAXI letter and more time per orbit",
+      "steps": [
+        {
+          "shot": "left-inlane",
+          "action": "Roll a lit return lane",
+          "detail": "No shot needed — the chase starts the moment the ball crosses the lane."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Run the orbits",
+          "detail": "With Taxi Chase running the left orbit no longer diverts into the bumpers, so it runs clean.",
+          "link": "none"
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Alternate sides",
+          "detail": "Each shot buys time and spots a letter, so a good chase spells TAXI on its own.",
+          "link": "none"
+        }
+      ],
+      "fx": "car"
+    },
+    {
+      "id": "clues",
+      "title": "Collecting Clues",
+      "category": "strategy",
+      "summary": "Clues come from spelling TAXI, from the super skill shot, and from three fingerprints on the slots. They top out at 50M each, and five clues inside a single case lights an extra ball. Your clue count resets when a new case starts.",
+      "difficulty": 2,
+      "reward": "Up to 50M each, extra ball at five in one case",
+      "steps": [
+        {
+          "shot": "taxi-targets",
+          "action": "Spell TAXI",
+          "detail": "Either by hitting the targets directly or by letting Taxi Chase spot them."
+        },
+        {
+          "shot": "phone",
+          "action": "Watch the phone light",
+          "detail": "Every clue you collect lights the telephone."
+        },
+        {
+          "shot": "roulette",
+          "action": "Bank the bonus value",
+          "detail": "Clues are worth a million each in the end-of-ball bonus before the multiplier is applied."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "phone-work",
+      "title": "Answering The Phone",
+      "category": "mode",
+      "summary": "The phone lights whenever you collect a clue. Answer it and one of the suspects fields a question — and here is the tell the whole game hangs on: a suspect will always point at the killer, unless they are the killer themselves.",
+      "difficulty": 2,
+      "reward": "Suspect elimination and the WhoDunnit choice",
+      "steps": [
+        {
+          "shot": "taxi-targets",
+          "action": "Light the phone with a clue",
+          "detail": "Spelling TAXI is the most reliable way to keep it ringing."
+        },
+        {
+          "shot": "phone",
+          "action": "Listen to who they blame",
+          "detail": "Anyone deflecting is worth a second look. Carrying the Magnifying Glass eliminates a suspect outright if nothing else is awarded."
+        },
+        {
+          "shot": "phone",
+          "action": "Commit when you are sure",
+          "detail": "Naming the killer correctly goes straight to Catch the Killer without needing the Roof."
+        }
+      ],
+      "fx": "psychic"
+    },
+    {
+      "id": "catch-the-killer",
+      "title": "Catch The Killer",
+      "category": "multiball",
+      "summary": "The biggest thing on this machine. Complete the lit Taxi Chase and then the phone; a hurry-up starts at 100M and falls to 25M. Whatever value you catch them at becomes the value of every lit shot in the four-ball multiball that follows.",
+      "difficulty": 3,
+      "reward": "A four-ball multiball paying your hurry-up value per shot",
+      "steps": [
+        {
+          "shot": "elevator",
+          "action": "Reach the Roof",
+          "detail": "The Roof opens once you have visited every other floor, or the moment you name the killer correctly."
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Complete the lit chase",
+          "detail": "Take too long and the lit chase moves, or the phone goes dark and you are back to the chase."
+        },
+        {
+          "shot": "phone",
+          "action": "Catch them high",
+          "detail": "The hurry-up drops from 100M to 25M, and the value it stops at is what every multiball shot pays. Shoot the phone fast."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "basement-multiball",
+      "title": "Basement Multiball",
+      "category": "multiball",
+      "summary": "Three balls, with jackpots at the roulette kicker, the sewer, the Mystery Target and all three elevator habitrails. Bumper hits raise the jackpot a million at a time — five million at a time if you are carrying the Revolver.",
+      "difficulty": 2,
+      "reward": "Repeatable jackpots at six different shots",
+      "steps": [
+        {
+          "shot": "lock-saucer",
+          "action": "Lock three, or ride the elevator down",
+          "detail": "Three super skill shots does it, and so does an elevator exit in the basement."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Build the jackpot in the bumpers",
+          "detail": "A million per hit normally, five million with the Revolver — get that piece of equipment first if you can."
+        },
+        {
+          "shot": "roulette",
+          "action": "Cycle the jackpot shots",
+          "detail": "The roulette kicker and the sewer are the marked jackpots; the Mystery Target and all three elevator trails also pay."
+        }
+      ],
+      "fx": "cash"
+    },
+    {
+      "id": "elevator-madness",
+      "title": "Elevator Madness",
+      "category": "multiball",
+      "summary": "A two-ball multiball off the seventh floor. Shooting either side of the elevator reverses which way it is travelling and collects the value of the floor it is passing, somewhere between 10M and 35M. After twenty seconds or so the target bank starts cycling up and down to make life harder.",
+      "difficulty": 2,
+      "reward": "10M-35M per floor collected",
+      "steps": [
+        {
+          "shot": "elevator",
+          "action": "Exit on the seventh floor",
+          "detail": "The display will call it the eighth. Ignore that."
+        },
+        {
+          "shot": "elevator",
+          "action": "Keep reversing it",
+          "detail": "Either side shot flips its direction and collects the current floor's value."
+        },
+        {
+          "shot": "elevator-targets",
+          "action": "Time your shots around the bank",
+          "detail": "Once the three-bank starts cycling, wait for it to drop rather than firing into a raised target."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "penthouse-party",
+      "title": "Penthouse Party",
+      "category": "mode",
+      "summary": "Collect the Penthouse Key and ride the elevator all the way up. Every flashing shot pays an escalating value — 10M, then 20M, then 30M, and on — until the timer runs out. Keep the shots coming and this is the most efficient scoring in the game.",
+      "difficulty": 2,
+      "reward": "Escalating 10M steps, potentially several hundred million",
+      "steps": [
+        {
+          "shot": "penthouse-targets",
+          "action": "Collect the Penthouse Key",
+          "detail": "The Penthouse floor is locked until you have it."
+        },
+        {
+          "shot": "elevator",
+          "action": "Exit at the Penthouse",
+          "detail": "You need the elevator to stop there, so watch the habitrail it takes."
+        },
+        {
+          "shot": "elevator",
+          "action": "Just keep shooting",
+          "detail": "The values only climb. A clean run to the timer is worth roughly three quarters of a billion."
+        }
+      ],
+      "fx": "hotel"
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "category": "strategy",
+      "summary": "Four pieces of gear, each one turning a dead shot into a useful one. They come from the sixth floor, three magnifying glasses on the slots, a second consecutive train ramp, or the sewer — and the sewer is the one that most needs them.",
+      "difficulty": 2,
+      "reward": "Permanently better sewer, phone and multiball awards",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Take the second train combo",
+          "detail": "Two consecutive ramps hands you the Flashlight, which is the piece the whole chain starts with."
+        },
+        {
+          "shot": "sewer",
+          "action": "Use the Flashlight to find the Map",
+          "detail": "With the Flashlight but no Map, an unlit sewer gives you the Map."
+        },
+        {
+          "shot": "elevator",
+          "action": "Ride to six for the rest",
+          "detail": "The sixth floor hands you the leftmost piece you are missing. The Revolver speeds up jackpot building in multiball; the Magnifying Glass eliminates a suspect at the phone."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "sewer",
+      "title": "The Sewer",
+      "category": "strategy",
+      "summary": "The same hole pays four completely different things depending on what you are carrying. Unarmed it is nearly worthless; armed with the Flashlight and the Map it becomes one of the most useful shots on the playfield.",
+      "difficulty": 1,
+      "reward": "Anything from 1M to 50M and a lit WhoDunnit",
+      "steps": [
+        {
+          "shot": "sewer",
+          "action": "Check what you are holding",
+          "detail": "With neither Flashlight nor Map it pays a million times the number of visits you have made — which is small for a long time."
+        },
+        {
+          "shot": "sewer",
+          "action": "Shoot it lit for a slot spin",
+          "detail": "When the sewer is lit it simply spins the slots."
+        },
+        {
+          "shot": "sewer",
+          "action": "Shoot it fully equipped",
+          "detail": "Flashlight plus Map turns it into a rotating award: a multiplier, an interrogation, a piece of evidence, a lit WhoDunnit, or 50M."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "slots",
+      "title": "The Slot Machine",
+      "category": "strategy",
+      "summary": "Three reels with eight results. Three bars is 100M, three question marks starts Elevator Madness, three wilds sends you to the Roof, and there is a wild on every reel — the middle one lets you choose between the two outer results.",
+      "difficulty": 2,
+      "reward": "Up to 100M, or a mode, extra ball, jackpot or multiball",
+      "steps": [
+        {
+          "shot": "elevator",
+          "action": "Spin from the fourth floor",
+          "detail": "The Main Floor lights the slots instead of spinning them, and a lit sewer spins them too.",
+          "link": "none"
+        },
+        {
+          "shot": "jet-hole",
+          "action": "Collect a Nudge Slots spin",
+          "detail": "The award is only paid once the ball drops into the hole under the bumpers.",
+          "link": "none"
+        },
+        {
+          "shot": "roulette",
+          "action": "Chase the second chance",
+          "detail": "Two matching reels gives you another go, redeemable by completing any spin shot — phone, roulette, sewer, or an elevator exit. A mismatch is still worth 5M."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "nudge-slots",
+      "title": "Nudge Slots",
+      "category": "strategy",
+      "summary": "When Taxi Chase is not running, a post interrupts the left orbit and drops the ball into the bumpers. Each bumper drives a different reel, and any two reels that match will lock in place — so a long rattle is genuinely steering the result.",
+      "difficulty": 1,
+      "reward": "A steerable slot spin",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the orbit unlit on purpose",
+          "detail": "The post will divert it into the bumpers rather than round the top."
+        },
+        {
+          "shot": "pop-bumpers",
+          "action": "Let it work the reels",
+          "detail": "Matched pairs freeze, so time spent in the bumpers is time spent improving the odds."
+        },
+        {
+          "shot": "jet-hole",
+          "action": "Drop into the hole to collect",
+          "detail": "Nothing is awarded until the ball falls into the hole directly under the bumpers."
+        }
+      ],
+      "fx": "dice"
+    },
+    {
+      "id": "roulette",
+      "title": "Roulette",
+      "category": "multiplier",
+      "summary": "Shoot the roulette lane while it is lit and you get the choice to bet or walk — and your bonus multiplier goes up either way, which is the real reason to shoot it. Set the colour with the red or black target first, and let the spinner rip to raise the stake.",
+      "difficulty": 2,
+      "reward": "A guaranteed multiplier advance plus an optional gamble",
+      "steps": [
+        {
+          "shot": "red-target",
+          "action": "Pick a colour",
+          "detail": "Red or black — but hit both targets and you have cancelled your own choice."
+        },
+        {
+          "shot": "spinner",
+          "action": "Feed the spinner hard",
+          "detail": "How much it spins on the way in decides the size of bet you are offered."
+        },
+        {
+          "shot": "roulette",
+          "action": "Take the multiplier regardless",
+          "detail": "Early in a game you can be offered more than you actually have. A win pays it in full; a loss just takes you to zero."
+        }
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "train-combo",
+      "title": "Train Combos",
+      "category": "combo",
+      "summary": "Consecutive shots to the train ramp build a combo, and each step hands you something different: the first lights Roulette, the second gives you the Flashlight, the third lights an extra ball, and the fourth starts a chase against the machine's own loop record.",
+      "difficulty": 2,
+      "reward": "Roulette, the Flashlight, an extra ball, then a champion chase",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot it clean",
+          "detail": "A good ramp shot returns to the left flipper; a weak one dribbles into the bumpers and breaks the chain."
+        },
+        {
+          "shot": "left-flipper",
+          "action": "Cradle and repeat",
+          "detail": "The left flipper feed is what makes four in a row realistic."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Push past three",
+          "detail": "Three loops is the extra ball at the phone. The fourth starts the loop champion chase, which is worth real points if you keep going."
+        }
+      ],
+      "fx": "train"
+    },
+    {
+      "id": "mystery-shot",
+      "title": "The Mystery Target",
+      "category": "strategy",
+      "summary": "Knock down either Penthouse Key target and the Mystery Target arms itself just above the left slingshot, ready to hand you whatever the game owes you at that moment. Collect it during Penthouse Party and all three of that mode's awards arrive at once.",
+      "difficulty": 1,
+      "reward": "Context-sensitive, including multiball jackpots",
+      "steps": [
+        {
+          "shot": "penthouse-targets",
+          "action": "Hit either Penthouse Key target",
+          "detail": "That is all it takes to arm the Mystery Target."
+        },
+        {
+          "shot": "mystery-target",
+          "action": "Collect at the right moment",
+          "detail": "It counts as a jackpot shot in multiball, so hold it if a multiball is close."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "dont-solve-it",
+      "title": "Do Not Solve It Too Early",
+      "category": "strategy",
+      "summary": "The counter-intuitive line on this machine. Naming the killer correctly ends the case and resets your clue count — but five clues inside one case is an extra ball. If you are three clues deep and already know the answer, stall.",
+      "difficulty": 3,
+      "reward": "Extra balls instead of a shorter case",
+      "steps": [
+        {
+          "shot": "taxi-targets",
+          "action": "Bank clues before you commit",
+          "detail": "Five in one case lights an extra ball at the phone."
+        },
+        {
+          "shot": "phone",
+          "action": "Hold the accusation",
+          "detail": "Once the case closes your clue count starts again from zero."
+        },
+        {
+          "shot": "roulette",
+          "action": "Keep the multiplier climbing",
+          "detail": "A long case is also a long time to build the bonus multiplier you will cash at the end of the ball."
+        }
+      ],
+      "fx": "briefcase"
+    },
+    {
+      "id": "bonus",
+      "title": "End-Of-Ball Bonus",
+      "category": "strategy",
+      "summary": "Bonus here is worth caring about, unusually for a 1990s Bally. Five million per case started, a million per clue, five million per slot spin and twenty million per case finished — all multiplied. A long game can end a ball with more than a billion in bonus.",
+      "difficulty": 2,
+      "reward": "Potentially 1B+ per ball",
+      "steps": [
+        {
+          "shot": "roulette",
+          "action": "Push the multiplier",
+          "detail": "Roulette raises it whether you bet or not, and the X skill shot raises it too."
+        },
+        {
+          "shot": "elevator",
+          "action": "Spin the slots often",
+          "detail": "Every spin is five million in bonus before the multiplier."
+        },
+        {
+          "shot": "phone",
+          "action": "Finish cases, do not just start them",
+          "detail": "A finished case is worth four times a started one."
+        }
+      ],
+      "fx": "cash",
+      "ordered": false
+    },
+    {
+      "id": "second-chance",
+      "title": "The Slot Machine Kickback",
+      "category": "secret",
+      "summary": "There is no physical kickback on this machine, but there is a synthetic one, and most players never notice it. Losing a ball down a lit outlane spins the slots on the way out — and some of those results hand the ball straight back.",
+      "difficulty": 1,
+      "reward": "A saved ball",
+      "steps": [],
+      "instructions": [
+        "Get an outlane lit for Slots. Draining there triggers a spin instead of just ending the ball.",
+        "If the spin matches two of three, you are given a Second Chance and the machine autolaunches a ball.",
+        "The Multiball and Elevator Madness results do the same thing for the obvious reason — you cannot start a multiball with no balls in play.",
+        "Redeem a Second Chance by completing any spin shot: the phone, the roulette kicker, the sewer, or an elevator exit."
+      ],
+      "fx": "coin"
+    },
+    {
+      "id": "midnight-madness",
+      "title": "Midnight Madness",
+      "category": "secret",
+      "summary": "A time-of-day easter egg. At midnight, assuming the machine's clock is set, the game fakes its own death — flippers go dead, the balls drain, the playfield goes dark and it looks exactly like a tilt. It is not.",
+      "difficulty": 3,
+      "reward": "A four-ball multiball at 3M per hit",
+      "steps": [],
+      "instructions": [
+        "It triggers mid-game if someone is playing at midnight, or at the first ball start if nobody is.",
+        "The machine plays dead first: dead flippers, a drain, a dark playfield, and what looks like a tilt.",
+        "It then empties every ball in the machine and starts a four-ball multiball.",
+        "Every hit is worth 3M, with comic-book impact panels on the display.",
+        "The machine's clock has to be set correctly for any of this to happen, which on location it often is not."
+      ],
+      "fx": "skull"
+    },
+    {
+      "id": "three-d-mode",
+      "title": "3D Mode",
+      "category": "secret",
+      "summary": "A display easter egg hidden behind a flipper code. Enter it after starting a game and the machine asks you to put on 3D glasses before you launch the ball.",
+      "difficulty": 2,
+      "reward": "A 3D display presentation",
+      "steps": [],
+      "instructions": [
+        "Start a game first, then enter the code with the flipper buttons.",
+        "The sequence is: both flippers, then eight left, one right, five left, one right, five left, one right, six left, two right.",
+        "Wait for the display to ask for the glasses, then launch the ball.",
+        "It scores nothing. It is purely a presentation change, and it is a great party trick on location."
+      ],
+      "fx": "sparkle"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "wd-skillshot",
+      "title": "Lit Letter",
+      "desc": "Plunge into a lit TAXI target and collect the displayed award.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "skillshot"
+    },
+    {
+      "id": "wd-super-skillshot",
+      "title": "Straight Into The Lock",
+      "desc": "Land a super skill shot in the lock saucer off the plunge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "super-skillshot"
+    },
+    {
+      "id": "wd-taxi",
+      "title": "Spelled TAXI",
+      "desc": "Complete TAXI and collect a clue.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "clues"
+    },
+    {
+      "id": "wd-basement",
+      "title": "Down To The Basement",
+      "desc": "Start Basement Multiball and collect a jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "basement-multiball"
+    },
+    {
+      "id": "wd-train",
+      "title": "Three Trains",
+      "desc": "String three consecutive train ramp shots to light the extra ball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "train-combo"
+    },
+    {
+      "id": "wd-equipment",
+      "title": "Fully Equipped",
+      "desc": "Hold the Revolver, Magnifying Glass, Flashlight and Map at the same time.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "equipment"
+    },
+    {
+      "id": "wd-penthouse",
+      "title": "Penthouse Party",
+      "desc": "Collect the Penthouse Key and ride the elevator to the top floor.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "penthouse-party"
+    },
+    {
+      "id": "wd-madness",
+      "title": "Wrong Floor",
+      "desc": "Start Elevator Madness from the seventh floor.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "elevator-madness"
+    },
+    {
+      "id": "wd-bars",
+      "title": "Three Bars",
+      "desc": "Line up three bars on the slot machine for 100M.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "slots"
+    },
+    {
+      "id": "wd-killer",
+      "title": "Case Closed",
+      "desc": "Name the correct suspect and catch the killer.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "catch-the-killer"
+    },
+    {
+      "id": "wd-hurryup",
+      "title": "Caught Them Cold",
+      "desc": "Catch the killer near the top of the 100M hurry-up.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "catch-the-killer"
+    },
+    {
+      "id": "wd-five-clues",
+      "title": "Five Clues, One Case",
+      "desc": "Bank five clues inside a single case to light the extra ball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "dont-solve-it"
+    },
+    {
+      "id": "wd-midnight",
+      "title": "Midnight Madness",
+      "desc": "Be at the machine when it fakes a tilt at midnight.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "midnight-madness"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-plunge",
+      "title": "Super Skill Shot Plunges",
+      "text": "Hunt the plunge strength that puts the ball into the lock saucer, which faces right and is one of only two ways a ball ever gets in there. Four awards ride on one plunge and the value climbs every time you repeat it, so three in a row hands you Basement Multiball before you have flipped at anything.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "super-skillshot",
+      "shots": [
+        "shooter-lane",
+        "lock-saucer"
+      ]
+    },
+    {
+      "id": "train-ramp-combos",
+      "title": "Four Train Ramps In A Row",
+      "text": "A clean train ramp returns to the left flipper and a weak one dribbles into the bumpers and breaks the chain, so shoot for the return, not just the ramp. Cradle each feed and go again until four consecutive shots is something you can do on demand.",
+      "reps": "10 attempts at a four-shot chain",
+      "focus": "accuracy",
+      "goal": "train-combo",
+      "shots": [
+        "right-ramp",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "elevator-gap-threading",
+      "title": "Elevator With The Bank Up",
+      "text": "Drop the three-target bank first and take the wide elevator shot ten times, then deliberately shoot it with the targets standing and thread the narrow gap. Knowing how much smaller the shot gets is what stops you firing into a raised target during Elevator Madness.",
+      "reps": "10 wide, 10 threaded",
+      "focus": "accuracy",
+      "goal": "elevator-floors",
+      "shots": [
+        "elevator-targets",
+        "elevator"
+      ]
+    },
+    {
+      "id": "roulette-colour-and-spinner",
+      "title": "Colour, Spinner, Roulette",
+      "text": "Pick red or black and leave the other target completely alone, then shoot the roulette lane hard so the spinner rips on the way in and you are offered a real bet. Take the shot whether you intend to gamble or not — the bonus multiplier goes up either way, and this bonus is worth caring about.",
+      "reps": "10 runs",
+      "focus": "accuracy",
+      "goal": "roulette",
+      "shots": [
+        "red-target",
+        "black-target",
+        "spinner",
+        "roulette"
+      ]
+    },
+    {
+      "id": "catch-the-killer-hurryup",
+      "title": "Chase, Then Phone, Fast",
+      "text": "Complete the lit chase on the orbits and go straight to the phone with no cradling in between. The hurry-up falls from 100M to 25M and whatever value you stop it at is what every shot in the four-ball multiball pays, so hesitation costs you the entire round.",
+      "reps": "5 attempts",
+      "focus": "flow",
+      "goal": "catch-the-killer",
+      "shots": [
+        "left-orbit",
+        "right-orbit",
+        "phone"
+      ]
+    },
+    {
+      "id": "nudge-slots-work",
+      "title": "Work The Reels",
+      "text": "Shoot the left orbit unlit on purpose so the post drops the ball into the bumpers, then keep it rattling up there rather than rushing it out. Matched reels lock in place, so time in the nest is genuinely steering the result — and nothing pays until the ball falls into the hole underneath.",
+      "reps": "8 spins",
+      "focus": "ball-control",
+      "goal": "nudge-slots",
+      "shots": [
+        "left-orbit",
+        "pop-bumpers",
+        "jet-hole"
+      ]
+    }
+  ],
+  "sources": [],
+  "defaultFx": "briefcase",
+  "actionButton": {
+    "present": false,
+    "how": "Bally kept this cabinet plain: two normal-sized flippers and a manual plunger, nothing extra to press. The elevator runs on its own and your safety net is not a button either — with an outlane lit for Slots, draining spins the reels on the way out and a match hands the ball straight back."
+  },
+  "howItPlays": {
+    "objective": "Who Dunnit is a noir detective machine where you work murder cases from the seat of a taxi. Gather clues, question suspects over the phone, name the killer, and run them down on the Roof.",
+    "loop": [
+      "Ride the elevator and read which floor each habitrail drops you on, because the floors are how every mode begins.",
+      "Spell TAXI at the letter targets or run Taxi Chase on the orbits to bank clues, and each clue lights the telephone.",
+      "Answer the phone to question a suspect, who points at the guilty party unless the guilty party is the one talking.",
+      "Name the killer correctly, or tour every floor, to open the Roof and start Catch the Killer."
+    ],
+    "lights": [
+      {
+        "id": "taxi-letters",
+        "name": "T-A-X-I Targets",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "taxi-targets",
+            "lamps": 4
+          }
+        ],
+        "lit": "A lit letter on the T-A-X-I bank is one you have yet to knock down, and the standups already dropped stay spelled until the clue is banked.",
+        "flashing": null,
+        "control": null,
+        "then": "Finish all four letters to collect a clue and light the phone; banking five clues inside one case lights an extra ball, and every clue also feeds a slice of your end-of-ball bonus.",
+        "goals": [
+          "clues",
+          "skillshot"
+        ]
+      },
+      {
+        "id": "chase-inlanes",
+        "name": "Taxi Chase Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "left-inlane"
+          },
+          {
+            "shot": "right-inlane"
+          }
+        ],
+        "lit": "A lit return lane is armed for Taxi Chase, and simply rolling the lit lane triggers the mode with no follow-up shot required.",
+        "flashing": null,
+        "control": null,
+        "then": "Starting the chase lights both orbits and lifts the train ramp out of the way, and each orbit you then run buys extra time while spotting a letter toward the next clue.",
+        "goals": [
+          "taxi-chase"
+        ]
+      },
+      {
+        "id": "elevator-floors-ladder",
+        "name": "Elevator Floors",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "elevator"
+          },
+          {
+            "shot": "elevator-targets"
+          }
+        ],
+        "lit": "Which of the three habitrails carries the ball decides the floor you reach, and the drop-target bank out front has to be down for a clean shot at it.",
+        "flashing": null,
+        "control": null,
+        "then": "Reach the third or fifth floor for evidence, the seventh for Elevator Madness, and the Penthouse for its party; visiting every floor is one of the two ways to open the Roof for the endgame.",
+        "goals": [
+          "elevator-floors",
+          "cases"
+        ]
+      },
+      {
+        "id": "phone-light",
+        "name": "The Phone",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "phone"
+          }
+        ],
+        "lit": "The telephone lights each time you bank a clue, and answering it puts a question to a suspect who always fingers the killer unless the killer is the one dodging.",
+        "flashing": null,
+        "control": null,
+        "then": "Name your suspect at the phone once you are sure: a correct call jumps straight into Catch the Killer, while a wrong one rolls you into the next case with the old one still unsolved.",
+        "goals": [
+          "phone-work",
+          "cases"
+        ]
+      },
+      {
+        "id": "roulette-multiplier",
+        "name": "Roulette",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "roulette"
+          },
+          {
+            "shot": "spinner"
+          },
+          {
+            "shot": "red-target"
+          },
+          {
+            "shot": "black-target"
+          }
+        ],
+        "lit": "A lit roulette lane offers a wager; set the colour at the red or black target beforehand, and feed the spinner hard on the way in to raise the stake on the table.",
+        "flashing": null,
+        "control": null,
+        "then": "Take the roulette shot whether you gamble or not, because your bonus multiplier steps up either way, and the same kicker doubles as a jackpot in every multiball.",
+        "goals": [
+          "roulette"
+        ]
+      },
+      {
+        "id": "slot-reels",
+        "name": "Slot Machine",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "pop-bumpers",
+            "lamps": 3
+          },
+          {
+            "shot": "jet-hole"
+          }
+        ],
+        "lit": "Each of the three bumpers drives its own slot reel, and any two reels that come up matching lock in place, so a long rattle genuinely steers the result.",
+        "flashing": null,
+        "control": null,
+        "then": "Nothing pays until the ball drops into the hole beneath the bumpers, and the reels can hand you a hundred million for three bars, a mode for three question marks, or the Roof for three wilds.",
+        "goals": [
+          "slots",
+          "nudge-slots"
+        ]
+      },
+      {
+        "id": "lock-basement",
+        "name": "Lock Saucer",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "lock-saucer"
+          }
+        ],
+        "lit": "The lock saucer only fills from the plunger or the elevator's down exit, and three balls stashed there open Basement Multiball.",
+        "flashing": null,
+        "control": null,
+        "then": "A super skill shot straight into the saucer both locks a ball and pays twenty million times the number you have already made, so three clean plunges can start the multiball before you flip at anything.",
+        "goals": [
+          "super-skillshot",
+          "basement-multiball"
+        ]
+      },
+      {
+        "id": "penthouse-key",
+        "name": "Penthouse Key & Mystery",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "penthouse-targets",
+            "lamps": 2
+          },
+          {
+            "shot": "mystery-target"
+          }
+        ],
+        "lit": "Knocking either Penthouse Key target arms the Mystery Target above the left sling and unlocks the only route up to the Penthouse floor.",
+        "flashing": null,
+        "control": null,
+        "then": "Collect the Mystery Target for whatever award is pending right then, jackpots during multiball included, and ride the elevator up to the Penthouse for a party of escalating ten-million steps.",
+        "goals": [
+          "mystery-shot",
+          "penthouse-party"
+        ]
+      }
+    ],
+    "laneChange": "unknown",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "Open on the TAXI targets for the plunger skill shot, or plunge straight into the lock saucer for the super skill shot, then start Taxi Chase off a lit return lane to bank early clues. Keep the roulette multiplier climbing so your bonus is worth cashing.",
+        "goals": [
+          "skillshot",
+          "super-skillshot",
+          "taxi-chase",
+          "roulette"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Ride the elevator to pull evidence and open modes while keeping the phone ringing with fresh clues. Stall on naming the killer once you are three clues deep, since five in one case is an extra ball, and stack Basement Multiball on top.",
+        "goals": [
+          "cases",
+          "phone-work",
+          "dont-solve-it",
+          "basement-multiball"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Catch the Killer is the marquee payoff: name the right suspect or tour every floor to open the Roof, complete the lit chase and the phone, and stop the hurry-up as high as you can as it falls from a hundred million to twenty-five. Whatever value you catch them at is what every lit shot pays across the four-ball multiball that follows.",
+        "goals": [
+          "catch-the-killer"
+        ]
+      }
+    ]
+  }
+}

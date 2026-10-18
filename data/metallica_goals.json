@@ -1,0 +1,1419 @@
+{
+  "machine": "Metallica Remastered (Stern Pinball, 2024)",
+  "defaultFx": "guitar",
+  "shots": [
+    {
+      "id": "left-flipper",
+      "name": "Left Flipper",
+      "type": "flipper",
+      "x": 0.3611,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Main lower-left flipper. Backhands orbits and Sparky; held on plunge for the Super Skill Shot."
+    },
+    {
+      "id": "right-flipper",
+      "name": "Right Flipper",
+      "type": "flipper",
+      "x": 0.6356,
+      "y": 0.0,
+      "trim": "all",
+      "notes": "Main lower-right flipper."
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit (Left Loop)",
+      "type": "orbit",
+      "x": 0.07,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Backhandable outer lane with optical spinner; wraps to the pops. One of the 5 major/Hardwired shots.",
+      "feeds": {
+        "shot": "pop-bumpers"
+      }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "type": "ramp",
+      "x": 0.24,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Spells METALLICA. Major/combo/Hardwired shot; alternate with right ramp for Lady Justice value.",
+      "feeds": {
+        "shot": "right-inlane"
+      }
+    },
+    {
+      "id": "sparky",
+      "name": "Sparky / Electric Chair (Center Shot)",
+      "type": "target",
+      "x": 0.49,
+      "y": 0.72,
+      "trim": "all",
+      "notes": "Dead-center electrocuted-man sculpt. Side hit=1, center=2. Electric Chair MB + a major/Hardwired shot.",
+      "flipper": "left"
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "type": "ramp",
+      "x": 0.72,
+      "y": 0.45,
+      "trim": "all",
+      "notes": "Spells METALLICA. Major/combo/Hardwired shot; sits just above the snake.",
+      "feeds": {
+        "shot": "left-inlane"
+      }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit (Right Loop)",
+      "type": "orbit",
+      "x": 0.93,
+      "y": 0.55,
+      "trim": "all",
+      "notes": "Backhandable outer lane with optical spinner. Major/combo/Hardwired shot."
+    },
+    {
+      "id": "grave-marker",
+      "name": "Grave Marker (inline drops)",
+      "type": "drop-target",
+      "x": 0.37,
+      "y": 0.53,
+      "trim": "all",
+      "notes": "3 inline drop targets + motorized riser (Prem/LE). Clear all 3 then hit the magnet for Grave Marker MB; drops raise Bonus X and Resurrection."
+    },
+    {
+      "id": "snake",
+      "name": "Snake",
+      "type": "mech",
+      "x": 0.64,
+      "y": 0.57,
+      "trim": "all",
+      "notes": "Sculpted ball-eating jaw right-of-center. Locks balls / spots SNAKE / Snake MB; also the target of the 4-Picks 2x lock."
+    },
+    {
+      "id": "coffin",
+      "name": "Coffin (captive ball / subway lock)",
+      "type": "captive-ball",
+      "x": 0.55,
+      "y": 0.46,
+      "trim": "all",
+      "notes": "Captive ball (Pro) or real 3-ball subway lock (Prem/LE). Only source of Coffin items; Coffin MB via 5/10/15 hits."
+    },
+    {
+      "id": "hammer",
+      "name": "The Hammer / Gavel",
+      "type": "mech",
+      "x": 0.53,
+      "y": 0.55,
+      "trim": "premium-le",
+      "notes": "Premium/LE only. Motorized gavel over the coffin/subway; drives Coffin/Justice theatrics."
+    },
+    {
+      "id": "scoop",
+      "name": "Scoop (Power Scoop)",
+      "type": "scoop",
+      "x": 0.78,
+      "y": 0.3,
+      "trim": "all",
+      "notes": "Right-side scoop, fed from the left flipper. Starts modes, Mystery, lights Hardwired, Crank It Up, Blackened, End of the Line.",
+      "flipper": "left"
+    },
+    {
+      "id": "fuel",
+      "name": "FUEL Target",
+      "type": "target",
+      "x": 0.06,
+      "y": 0.33,
+      "trim": "all",
+      "notes": "Far-left standup. Complete FUEL to light Dead End for 2x Playfield / FUEL Frenzy. Rebounds toward the left outlane — dangerous."
+    },
+    {
+      "id": "dead-end",
+      "name": "Dead End Target",
+      "type": "target",
+      "x": 0.2,
+      "y": 0.78,
+      "trim": "all",
+      "notes": "Behind the pops. Combo Jackpot cash-out and 2x Playfield activator; Super Skill Shot target."
+    },
+    {
+      "id": "pick-1",
+      "name": "72 Seasons / Pick Standup 1",
+      "type": "standup",
+      "x": 0.15,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Position approximate. One of four standups feeding 72 Seasons, Super Spinner and the in-MB Snake 2x + add-a-ball."
+    },
+    {
+      "id": "pick-2",
+      "name": "72 Seasons / Pick Standup 2",
+      "type": "standup",
+      "x": 0.42,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Position approximate. Part of the 4-standup set."
+    },
+    {
+      "id": "pick-3",
+      "name": "72 Seasons / Pick Standup 3",
+      "type": "standup",
+      "x": 0.58,
+      "y": 0.28,
+      "trim": "all",
+      "notes": "Position approximate. Part of the 4-standup set."
+    },
+    {
+      "id": "pick-4",
+      "name": "72 Seasons / Pick Standup 4",
+      "type": "standup",
+      "x": 0.86,
+      "y": 0.4,
+      "trim": "all",
+      "notes": "Position approximate. Part of the 4-standup set."
+    },
+    {
+      "id": "pop-bumpers",
+      "name": "Pop Bumpers (x3)",
+      "type": "bumper",
+      "x": 0.3,
+      "y": 0.85,
+      "trim": "all",
+      "notes": "3 RGB pops upper-left, fed by the left orbit. Progress Blown Pistons at the Dead End."
+    },
+    {
+      "id": "left-spinner",
+      "name": "Left Orbit Spinner",
+      "type": "spinner",
+      "x": 0.09,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Optical spinner in the left orbit; Super Spinner via the 4 Picks and Unforgiven Part I."
+    },
+    {
+      "id": "right-spinner",
+      "name": "Right Orbit Spinner",
+      "type": "spinner",
+      "x": 0.91,
+      "y": 0.62,
+      "trim": "all",
+      "notes": "Optical spinner in the right orbit; pairs with the left spinner for Super Spinner."
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Rollover Lanes",
+      "type": "lanes",
+      "x": 0.5,
+      "y": 0.95,
+      "trim": "all",
+      "notes": "Flashing rollover for the standard skill shot; complete the 5 lanes for Mystery / Super Pistons."
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "type": "lane",
+      "x": 0.08,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Notorious drain side; lit for Resurrection ball save."
+    },
+    {
+      "id": "left-inlane",
+      "name": "Left Inlane",
+      "type": "lane",
+      "x": 0.27,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Feeds the left flipper; the inlane/outlane rail is the game's dominant killer."
+    },
+    {
+      "id": "right-inlane",
+      "name": "Right Inlane",
+      "type": "lane",
+      "x": 0.73,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Feeds the right flipper."
+    },
+    {
+      "id": "right-outlane",
+      "name": "Right Outlane",
+      "type": "lane",
+      "x": 0.92,
+      "y": 0.09,
+      "trim": "all",
+      "notes": "Lit for Resurrection ball save."
+    },
+    {
+      "id": "left-sling",
+      "name": "Left Slingshot",
+      "type": "kicker",
+      "x": 0.29,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Hungry sling above the left inlane."
+    },
+    {
+      "id": "right-sling",
+      "name": "Right Slingshot",
+      "type": "kicker",
+      "x": 0.71,
+      "y": 0.15,
+      "trim": "all",
+      "notes": "Hungry sling above the right inlane."
+    }
+  ],
+  "goals": [
+    {
+      "id": "skill-super-deadend",
+      "title": "Super Skill Shot to the Dead End (2x Playfield)",
+      "category": "skillshot",
+      "summary": "Hold the left flipper on the plunge to disable the orbit up-post, then collect the Super Skill Shot at the Dead End target to instantly light 2x Playfield — the strongest possible opener.",
+      "difficulty": 2,
+      "reward": "2x standard skill value +100k AND 2x Playfield lit at ball start",
+      "steps": [
+        {
+          "shot": "dead-end",
+          "action": "Hold the left flipper on the plunge, then shoot the Dead End",
+          "detail": "Holding the left flipper disables the orbit up-post so the plunge runs through; collect the Super Skill Shot at the Dead End target to light 2x playfield instantly.",
+          "technique": [
+            "hold-flipper"
+          ],
+          "flipper": "left"
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "skill-standard",
+      "title": "Standard Skill Shot (Right Lane 2x)",
+      "category": "skillshot",
+      "summary": "Plunge into the flashing top rollover lane for a safe, low-value skill shot; plunge to the right lane to double it.",
+      "difficulty": 1,
+      "reward": "200k (+50k per skill shot), 2x if collected in the right lane",
+      "steps": [
+        {
+          "shot": "top-lanes",
+          "action": "Plunge into the flashing rollover lane",
+          "detail": "200k, +50k for each skill shot made. Aim the plunge at the right lane for 2x (4x if combined with rollover completion)."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "combo-deadend-farm",
+      "title": "Combo Jackpot Farm: Ramp/Loop → Dead End",
+      "category": "combo",
+      "summary": "The #1 money combo — chain any ramp or loop into the Dead End lane to cash the Combo Jackpot, then rebuild and re-cash so it snowballs (750k → 1M → 1.25M+).",
+      "difficulty": 2,
+      "reward": "Combo Jackpot, base 750k, +250k per chained shot each re-cash (doubled under 2x Playfield)",
+      "steps": [
+        {
+          "shot": "right-ramp",
+          "action": "Shoot a ramp or loop to start the chain",
+          "detail": "Any comboable shot (ramps, loops, captive ball, grave drops) lights the next link with a flashing red arrow."
+        },
+        {
+          "shot": "dead-end",
+          "action": "End the combo at the Dead End lane",
+          "detail": "Cashes the Combo Jackpot (base 750k). New base = 750k + unique setlist value + 250k x chained shots — it snowballs within the ball."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-one-lady-justice",
+      "title": "\"One\" Farm: Left Loop → Left Ramp → Dead End",
+      "category": "combo",
+      "summary": "The single most-cited high-value repeatable line: the Left Loop → Left Ramp setlist combo carries the max 750k boost; feed it into the Dead End during Lady Justice with 2x Playfield live.",
+      "difficulty": 3,
+      "reward": "750k setlist boost cashed at the Dead End, doubled under 2x Playfield / Lady Justice",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Loop",
+          "detail": "Starts the 'One' Setlist Combo chain."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Combo into the Left Ramp",
+          "detail": "Left Loop → Left Ramp is the 'One' Setlist Combo (+750k boost, Lady Justice)."
+        },
+        {
+          "shot": "dead-end",
+          "action": "Cash at the Dead End",
+          "detail": "Highest value when Lady Justice and Fuel 2x are both running."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-fuel-loop",
+      "title": "750k Loop Setlist: Left Loop → Left Loop (Fuel)",
+      "category": "combo",
+      "summary": "Repeat the backhandable Left Loop into itself to bank the 750k Fuel setlist boost, then cash it at the Dead End. Fastest way to re-arm boosts and stack combo count toward Extra Balls.",
+      "difficulty": 2,
+      "reward": "+750k Combo Jackpot boost; combos count toward Extra Ball at 15/50",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Shoot the Left Loop twice in a row",
+          "detail": "Left Loop → Left Loop is the Fuel Setlist Combo (+750k). Do it when the center up-post is down."
+        },
+        {
+          "shot": "dead-end",
+          "action": "Cash the boosted jackpot at the Dead End"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-blackened-loop",
+      "title": "750k Loop Setlist: Right Loop → Right Loop (Blackened)",
+      "category": "combo",
+      "summary": "Mirror farm on the right side — repeat the Right Loop into itself for the 750k Blackened setlist boost, then cash at the Dead End.",
+      "difficulty": 2,
+      "reward": "+750k Combo Jackpot boost",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot the Right Loop twice in a row",
+          "detail": "Right Loop → Right Loop is the Blackened Setlist Combo (+750k)."
+        },
+        {
+          "shot": "dead-end",
+          "action": "Cash the boosted jackpot at the Dead End"
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "combo-snake-multiball",
+      "title": "Snake Combo Farm (during Snake Multiball)",
+      "category": "combo",
+      "summary": "Inside Snake MB, combo any major shot into the Snake to score the jackpot times a multiplier that maxes at 3x; collect 5 Snake Combos to light all shots for Super Jackpots.",
+      "difficulty": 2,
+      "reward": "Jackpot x up to 3x; 5 combos lights all shots for 750k Supers; levels band member Kirk",
+      "steps": [
+        {
+          "shot": "right-orbit",
+          "action": "Shoot a major shot to add +1x to the Snake Combo",
+          "detail": "Any non-Snake shot bumps the Snake Combo multiplier (max 3x)."
+        },
+        {
+          "shot": "snake",
+          "action": "Collect at the Snake for jackpot x multiplier",
+          "detail": "Collect 5 Snake Combos to light every shot for Super Jackpots (750k + 2.5k x items)."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mb-electric-chair",
+      "title": "Electric Chair Multiball (Sparky)",
+      "category": "multiball",
+      "summary": "The safe first multiball — bash Sparky 10 times to qualify and start, then raise the Jacob's Ladder with every switch and shoot Sparky for Super Jackpots. Progress is preserved between balls.",
+      "difficulty": 1,
+      "reward": "Super Jackpot 1.5M + 5k x items at Sparky; after 7 electrocutions all shots go super-eligible",
+      "steps": [
+        {
+          "shot": "sparky",
+          "action": "Bash Sparky 10 times to qualify and start",
+          "detail": "Side hits=1, center target=2. Each subsequent Chair MB needs +3 more hits. Safe left-flipper backhand.",
+          "flipper": "left"
+        },
+        {
+          "shot": "left-orbit",
+          "action": "Hit lit chair inserts on the orbits for jackpots",
+          "detail": "Jackpots at left/right orbits + Sparky = 250k + 2.5k x items; each counts 10 switches toward the ladder."
+        },
+        {
+          "shot": "sparky",
+          "action": "When the sparks top out, shoot Sparky for the Super Jackpot",
+          "detail": "Each super advances the chair-insert color level."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "mb-snake",
+      "title": "Snake Multiball",
+      "category": "multiball",
+      "summary": "Spot the letters S-N-A-K-E at the Snake (relight by bashing the jaw or shooting lit Snake inserts), then start a 2-ball multiball at the Snake.",
+      "difficulty": 2,
+      "reward": "2-ball MB; jackpots 300k + 3k x items; Snake Combo to 3x; Super Jackpots 750k",
+      "steps": [
+        {
+          "shot": "snake",
+          "action": "Shoot the lit Snake to spot SNAKE letters",
+          "detail": "Snake unlights after each letter; relight by bashing its jaw or shooting any shot with a lit Snake insert (3 light per Snake shot)."
+        },
+        {
+          "shot": "snake",
+          "action": "After SNAKE is complete, shoot the Snake again to start",
+          "detail": "Starts the 2-ball multiball."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "mb-grave-marker",
+      "title": "Grave Marker Multiball (Master of Puppets)",
+      "category": "multiball",
+      "summary": "Knock down all three inline drop targets (each raises Bonus X), then shoot the grave-marker magnet behind them to start. Higher variance — progress resets on drain.",
+      "difficulty": 2,
+      "reward": "Jackpots 200k + 2.5k x items; Double Jackpot + 20s magnet hold; Super 1.25M + 2.5k x items (up to 5x)",
+      "steps": [
+        {
+          "shot": "grave-marker",
+          "action": "Knock down all 3 inline drop targets",
+          "detail": "Each drop also raises Bonus X and advances Resurrection."
+        },
+        {
+          "shot": "grave-marker",
+          "action": "Shoot the grave-marker magnet behind them to start",
+          "detail": "Premium/LE motorized riser + magnet; Pro has the drops without the motor. Each replay needs +1 more magnet hit."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mb-coffin",
+      "title": "Coffin Multiball (For Whom The Bell Tolls)",
+      "category": "multiball",
+      "summary": "The stacking engine — hit the captive ball to count down locks (5/10/15), the third lock starts MB, and you can advance or start one other multiball inside it. Hardest to start.",
+      "difficulty": 3,
+      "reward": "Jackpots 400k + 4k x items; Super Jackpot 3M + 10k x items; can stack a second multiball",
+      "steps": [
+        {
+          "shot": "coffin",
+          "action": "Hit the captive ball: 5 locks 1, 10 locks 2, 15 locks 3",
+          "detail": "Third lock starts Coffin MB. Comboing into the captive ball adds extra hits = combo length. Only source of Coffin items."
+        },
+        {
+          "shot": "coffin",
+          "action": "Alternate flashing arrows and the captive ball for jackpots",
+          "detail": "Make all arrow shots to light the captive ball for the Super Jackpot. Uniquely stackable with another MB."
+        }
+      ],
+      "fx": "bone"
+    },
+    {
+      "id": "mode-lady-justice",
+      "title": "Lady Justice",
+      "category": "mode",
+      "summary": "Spell METALLICA with nine ramp shots, then shoot a ramp to start. The scales want balance: shots that alternate between the playfield's left and right sides pay far better than repeating the same side. On a machine with the topper, re-spelling METALLICA on the topper lights during the mode starts …And Justice For All Multiball alongside it.",
+      "difficulty": 2,
+      "reward": "Alternating ramps pay value +500k (+250k per replay); pairs with the 'One' combo farm",
+      "steps": [
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the left ramp toward METALLICA (9 ramp shots)",
+          "detail": "Left and right ramps together spell METALLICA."
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Alternate to the right ramp",
+          "detail": "Alternating sides balances the scales for the higher value."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot a ramp to start Lady Justice",
+          "detail": "Alternating pays value +500k; same-side pays +50k per shot. Orbit up-post disabled during the mode."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-hardwired",
+      "title": "Hardwired Hurry-Up",
+      "category": "mode",
+      "summary": "In single-ball play, light all five main shots (blinking white circles), start it at the scoop, then collect fast-counting hurry-ups — each adds its value to the final Hardwired Jackpot.",
+      "difficulty": 2,
+      "reward": "5M start (+400k per boost shot); Hardwired Jackpot = sum of the 4 prior hurry-ups; awards a self-destruct",
+      "steps": [
+        {
+          "shot": "left-orbit",
+          "action": "Light all 5 main shots (blinking white)",
+          "detail": "Left Orbit, Left Ramp, Grave Marker, Right Ramp, Right Orbit. Extra Hardwired shots before starting boost the value."
+        },
+        {
+          "shot": "scoop",
+          "action": "Shoot the lit scoop to start the Hurry-Up"
+        },
+        {
+          "shot": "right-ramp",
+          "action": "Collect the fast-counting hurry-ups",
+          "detail": "Each collected hurry-up resets its value and adds its amount to the final 5th hurry-up (the Hardwired Jackpot)."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mode-72-seasons",
+      "title": "72 Seasons",
+      "category": "mode",
+      "summary": "Complete the four 72 Seasons standups in single-ball play to launch a 72-switch count-up, then a 72-second mode where you build a Toy Jackpot and collect it repeatedly at the four lit standups.",
+      "difficulty": 2,
+      "reward": "Toy Jackpot (+50k/switch) collectable repeatedly at the 4 targets; also feeds the Super Spinner",
+      "steps": [
+        {
+          "shot": "pick-1",
+          "action": "Hit the first 72 Seasons standup"
+        },
+        {
+          "shot": "pick-2",
+          "action": "Hit the second standup"
+        },
+        {
+          "shot": "pick-3",
+          "action": "Hit the third standup"
+        },
+        {
+          "shot": "pick-4",
+          "action": "Complete the fourth standup to start the count-up",
+          "detail": "Make 72 switches to start the 72-second mode; build the Toy Jackpot and collect at any of the 4 lit targets."
+        }
+      ],
+      "fx": "guitar",
+      "ordered": false
+    },
+    {
+      "id": "mode-crank-fwtbt",
+      "title": "Crank It Up: For Whom The Bell Tolls",
+      "category": "mode",
+      "summary": "After 12 of each item, start Crank It Up at the scoop and pick For Whom The Bell Tolls — the easiest mode to complete: shoot the 5 major shots up to 3x each, then cash out or continue at the scoop.",
+      "difficulty": 2,
+      "reward": "Completion Bonus 15M + 2.5M x CIU modes started; enables victory laps; progresses toward End of the Line",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Shoot the scoop and pick For Whom The Bell Tolls",
+          "detail": "Qualified by collecting 12 of each item (+1 per CIU already played)."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Shoot the 5 major shots up to 3x each",
+          "detail": "Ramp alternation builds the jackpot at low risk; completing insert rows/columns scores higher."
+        },
+        {
+          "shot": "scoop",
+          "action": "Cash out (left flipper) or continue (right flipper) at the scoop",
+          "detail": "Cash out banks the jackpot; continue re-lights the four features to keep building."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mult-fuel-2x",
+      "title": "Fuel 2x Playfield",
+      "category": "multiplier",
+      "summary": "Complete the FUEL target to light the Dead End for 2x Playfield; keep re-hitting the Dead End to refresh the 20-second timer and double every point you score.",
+      "difficulty": 2,
+      "reward": "2x Playfield for 20s (refreshable); stacks with Snake 2x for 4x",
+      "steps": [
+        {
+          "shot": "fuel",
+          "action": "Complete the FUEL target (4 hits per completion)",
+          "detail": "Lights the Dead End target for 2x Playfield. Beware: FUEL rebounds toward the left outlane."
+        },
+        {
+          "shot": "dead-end",
+          "action": "Shoot the Dead End to activate and refresh 2x",
+          "detail": "Hitting the Dead End while 2x is active resets the 20-second timer."
+        }
+      ],
+      "fx": "sparkle"
+    },
+    {
+      "id": "mult-snake-4x",
+      "title": "Snake 2x → 4x Stack (4 Picks in Multiball)",
+      "category": "multiplier",
+      "summary": "During any multiball, complete the four Pick standups to light the Snake for a timed lock granting 2x Playfield plus an add-a-ball; stacked with Fuel 2x this gives full 4x scoring.",
+      "difficulty": 2,
+      "reward": "Snake 2x (20s) + add-a-ball (first per MB); 4x total when stacked with Fuel 2x",
+      "steps": [
+        {
+          "shot": "pick-1",
+          "action": "During multiball, start hitting the 4 Pick standups"
+        },
+        {
+          "shot": "pick-4",
+          "action": "Complete all 4 Picks to light the Snake",
+          "detail": "Lights the Snake for a timed lock + 2x Playfield (20s).",
+          "link": "none"
+        },
+        {
+          "shot": "snake",
+          "action": "Shoot the Snake lock for 2x + add-a-ball",
+          "detail": "First lock per MB adds a ball; with Fuel 2x also live you are now at 4x — dump your big supers here."
+        }
+      ],
+      "fx": "monster"
+    },
+    {
+      "id": "wizard-blackened",
+      "title": "Blackened (Mini-Wizard Qualification)",
+      "category": "wizard",
+      "summary": "Play all four main multiballs (Chair, Grave, Snake, Coffin) to earn each band member, then start Blackened manually at the scoop in single-ball play — a 4-ball mini-wizard.",
+      "difficulty": 3,
+      "reward": "4-ball MB, start value 800k + 100k x total band levels; all values x (balls in play − 1)",
+      "steps": [
+        {
+          "shot": "sparky",
+          "action": "Play all four main multiballs to level the band members",
+          "detail": "Chair (James), Grave (Robert), Snake (Kirk), Coffin (Lars). Blackened is a remaster manual scoop start."
+        },
+        {
+          "shot": "scoop",
+          "action": "Once all four are collected, shoot the scoop to start Blackened",
+          "detail": "If Crank It Up is also lit, the player chooses which to start."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "wizard-end-of-the-line",
+      "title": "End of the Line (Wizard Mode Qualification)",
+      "category": "wizard",
+      "summary": "Play all four Crank It Up modes (needn't cash out), then collect enough items to light the 5th CIU and shoot the scoop. A 2-ball mode whose supers are worth 50% of your CIU scores — the biggest score on the machine.",
+      "difficulty": 3,
+      "reward": "Opens with 200k x total items; Super Jackpots = 50% of CIU scores lowest→highest; both 2x's apply (can exceed 1B)",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Play all four Crank It Up modes to qualify",
+          "detail": "You need only start each of the four CIU modes, not complete them."
+        },
+        {
+          "shot": "scoop",
+          "action": "Collect items to light the 5th CIU, then shoot the scoop to start",
+          "detail": "2-ball; keep Fuel 2x and Snake 2x live so supers land under up to 4x."
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "strat-opener",
+      "title": "Strategy: The Optimal Opener",
+      "category": "strategy",
+      "summary": "A reliable opening line — super skill shot to 2x Playfield, move the Spider to light items on safe shots, secure Resurrection, start Electric Chair MB, then take the 4 Picks for Snake 2x + add-a-ball.",
+      "difficulty": 2,
+      "reward": "2x Playfield + Resurrection ball save + first multiball with 4x scoring available",
+      "steps": [
+        {
+          "shot": "left-flipper",
+          "action": "Hold on the plunge for the Super Skill Shot",
+          "flipper": "left"
+        },
+        {
+          "shot": "dead-end",
+          "action": "Collect the super at the Dead End → 2x Playfield"
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Hit a ramp/orbit to move the Spider and light items",
+          "detail": "Correct Spider positioning lights multiple items with fewer shots — the real bottleneck for Crank It Up."
+        },
+        {
+          "shot": "grave-marker",
+          "action": "Knock down 3 drops for the Resurrection ball save",
+          "detail": "Cheap insurance before chasing anything risky."
+        },
+        {
+          "shot": "sparky",
+          "action": "Start Electric Chair Multiball (safe left-flipper backhand)",
+          "flipper": "left"
+        },
+        {
+          "shot": "pick-1",
+          "action": "In multiball, shoot the 4 Picks → Snake 2x + add-a-ball",
+          "detail": "With Fuel 2x still stackable you reach up to 4x."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "strat-4x-dump",
+      "title": "Strategy: Stack to 4x and Dump Supers",
+      "category": "strategy",
+      "summary": "Time your biggest collects to land under a live multiplier — bring up Fuel 2x, add Snake 2x via the 4 Picks in multiball, then dump Sparky super jackpots (and later End of the Line supers) while 4x is active.",
+      "difficulty": 3,
+      "reward": "Up to 4x on your largest single collects — never dump a super with the multiplier expired",
+      "steps": [
+        {
+          "shot": "fuel",
+          "action": "Light Fuel 2x (super skill shot or completing FUEL)"
+        },
+        {
+          "shot": "pick-1",
+          "action": "In multiball, complete the 4 Picks for Snake 2x"
+        },
+        {
+          "shot": "snake",
+          "action": "Collect the Snake lock — now at 4x"
+        },
+        {
+          "shot": "sparky",
+          "action": "Dump Sparky Super Jackpots while 4x is live",
+          "detail": "Same principle applies to Crank It Up and End of the Line supers."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "strat-eotl-build",
+      "title": "Strategy: Build the End of the Line Super",
+      "category": "strategy",
+      "summary": "Cash out your first one or two Crank It Up modes conservatively, then continue modes 3 and 4 to inflate their totals, since End of the Line supers scale off your CIU mode scores — keep Fuel 2x live at the final collect.",
+      "difficulty": 3,
+      "reward": "Final End of the Line collect scaling off inflated CIU totals — can exceed 1 billion under 2x",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Cash out Crank It Up modes 1–2 conservatively",
+          "detail": "Bank guaranteed points early when ball control is uncertain."
+        },
+        {
+          "shot": "scoop",
+          "action": "Continue Crank It Up modes 3–4 to inflate the pot",
+          "detail": "End of the Line supers = 50% of CIU scores lowest→highest, so bigger CIU totals mean a bigger wizard payoff."
+        },
+        {
+          "shot": "fuel",
+          "action": "Keep Fuel 2x live going into End of the Line"
+        },
+        {
+          "shot": "scoop",
+          "action": "Take the final scoop collect under the multiplier",
+          "detail": "Both Fuel 2x and Snake 2x apply here for up to 4x."
+        }
+      ],
+      "fx": "guitar"
+    },
+    {
+      "id": "mb-coffin-stack",
+      "title": "Stack a Second Multiball Inside Coffin",
+      "category": "multiball",
+      "summary": "Coffin Multiball is the only one that lets another multiball run on top of it — bank Sparky hits and Snake letters first, start Coffin, then light the second multiball while it is running for doubled-up jackpot streams.",
+      "difficulty": 3,
+      "reward": "Two overlapping jackpot sets plus a 4-ball playfield; add the 4 Picks for Snake 2x and an add-a-ball",
+      "steps": [
+        {
+          "shot": "sparky",
+          "action": "Bank Sparky hits before you start Coffin",
+          "detail": "Chair progress carries over, so leave it one or two hits short and you can start it later on demand."
+        },
+        {
+          "shot": "snake",
+          "action": "Bank Snake letters the same way",
+          "detail": "Leave S-N-A-K-E finished but unstarted so the snake shot is a one-shot multiball start.",
+          "link": "none"
+        },
+        {
+          "shot": "coffin",
+          "action": "Lock the captive ball three times to start Coffin Multiball",
+          "detail": "Third lock starts it; comboing into the captive ball adds extra hits equal to the combo length."
+        },
+        {
+          "shot": "pick-1",
+          "action": "Inside the stack, take the 4 Picks for Snake 2x and an add-a-ball",
+          "detail": "The extra ball keeps the stack alive long enough to reach the Coffin Super Jackpot."
+        }
+      ],
+      "fx": "heatray"
+    },
+    {
+      "id": "wizard-blackened-jackpots",
+      "title": "Scoring Inside Blackened",
+      "category": "wizard",
+      "summary": "Blackened is a 4-ball mini-wizard: every scoring value gets scaled by one less than however many balls are currently in play, which makes hanging onto balls just as important as picking the right shot. All shots glow red toward the super jackpot, but the jackpot itself pays only at the one purple shot. That purple light begins on the dead end target and moves one shot to the right every time you either cash it where it sits or shoot the captive ball; turn all six shots purple and the super jackpot is yours.",
+      "difficulty": 3,
+      "reward": "Start value 800k plus 100k per band level, every value multiplied by (balls in play minus one)",
+      "steps": [
+        {
+          "shot": "scoop",
+          "action": "Start Blackened at the scoop once all four band members are collected",
+          "detail": "Single-ball manual start; if Crank It Up is also lit you choose between them."
+        },
+        {
+          "shot": "left-ramp",
+          "action": "Feed the ramps early while all four balls are still live",
+          "detail": "Ramps return to the inlanes, which is the safest way to score while the ball count and multiplier are at their peak."
+        },
+        {
+          "shot": "right-orbit",
+          "action": "Take the lit loops and orbits for the higher-value collects",
+          "detail": "Loops keep the flow going but risk returns; spend them while at least three balls are in play.",
+          "link": "none"
+        },
+        {
+          "shot": "dead-end",
+          "action": "Cash combo chains at the Dead End before the ball count falls",
+          "detail": "The Dead End combo jackpot is still live during Blackened and benefits from any playfield multiplier you kept up.",
+          "link": "none"
+        }
+      ],
+      "fx": "crown"
+    },
+    {
+      "id": "progress-band-member-levels",
+      "title": "Level Up the Band",
+      "category": "progression",
+      "summary": "Each of the four main multiballs is tied to one member of the band: Electric Chair to James, Grave Marker to Robert, Snake to Kirk, Coffin to Lars. Simply starting a multiball bumps its member up one level, and the right scores inside it bump the level again — but the qualifying score is different for each member, so the same play does not pay off everywhere. Levels cap at 8 apiece and stay banked for the whole game rather than resetting between balls. Play all four multiballs and Blackened lights at the scoop, where the levels cash out twice over: the opening jackpot is 800k plus 100k for every level across the whole band, and any member you pushed to the 8 cap adds hardware — one maxed member gives an add-a-ball button, four maxed members give two buttons and two extra balls before the multiball has even begun.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Sparky: start Electric Chair Multiball for James. Every super jackpot fries one more figure on the chair, and each figure fried is another level.",
+        "Grave Marker: start Grave Marker Multiball for Robert. Double jackpots add levels, and a multiplied super jackpot pays a level for every multiplier you built while the ball was held.",
+        "Snake: start Snake Multiball for Kirk. Starting it is one level, and every snake super jackpot is another.",
+        "Coffin: start Coffin Multiball for Lars. This one is the odd case — the ordinary captive ball jackpots add the levels, so you do not have to reach the super to climb.",
+        "Scoop: with all four members collected, shoot the scoop for Blackened. The jackpot opens at 800k plus 100k per band level, and members left at level 8 add add-a-ball buttons and extra balls at the start."
+      ],
+      "reward": "Four band levels, up to 8 each, that persist all game — they set Blackened's opening jackpot at 800k + 100k per total level and add add-a-ball buttons and extra starting balls for every member left at the cap"
+    },
+    {
+      "id": "progress-seven-sparkys",
+      "title": "Fry All Seven Figures on the Chair",
+      "category": "progression",
+      "summary": "Electric Chair Multiball hides a seven-step ladder. Ten hits on Sparky open it, the jackpot shots are the flashing chair inserts on the two orbits plus Sparky himself, and those jackpots raise the sparks up the Jacob's Ladder ten switches at a time. Top the ladder out and Sparky is armed for a super jackpot — and every super you cash burns down one more of the seven figures on the chair, with the insert colours showing how far along the row you are. Take the seventh and the multiball opens right up: both orbits, both ramps and Sparky all stand lit for super jackpots at the same value. Every figure that goes down is also a level for James, so this ladder and the band ladder climb together. Getting there costs you, though — each new Electric Chair Multiball demands three more Sparky hits than the one before.",
+      "difficulty": 3,
+      "steps": [],
+      "instructions": [
+        "Sparky: hit the centre shot 10 times to start Electric Chair Multiball. The shots either side of him count as one hit, the target between them counts as two.",
+        "Left Orbit and Right Orbit: shoot the flashing chair inserts on the orbits, and Sparky, for jackpots. Each of those jackpots is worth ten switch hits toward filling the Jacob's Ladder.",
+        "Sparky: with the sparks at the top, come back to Sparky for the super jackpot. Each super takes out one more of the seven figures and the chair insert colours track which one you are on.",
+        "Sparky: budget for the escalation — every later Electric Chair Multiball needs three more Sparky hits to qualify than the last one did.",
+        "Left Ramp and Right Ramp: once the seventh figure is down, the ramps join the orbits and Sparky as super jackpot shots, all at the same value."
+      ],
+      "reward": "Both orbits, both ramps and Sparky all lit for super jackpots once the seventh figure goes down, plus one band level for James per figure fried"
+    },
+    {
+      "id": "progress-self-destruct-bank",
+      "title": "Bank Self-Destruct Uses",
+      "category": "progression",
+      "summary": "Self-destruct is a stored charge rather than a mode. Several things hand you one: clearing all four targets during 72 Seasons, scoring the Hardwired jackpot, collecting a setlist combo pair, blown pistons at three and then every ten after, and the super jackpot inside Blackened. They sit waiting on the action button, which flashes while you are holding one, and the stack tops out at three. Pressing it does two jobs at once. It spots your next Hardwired shot, taken left to right, whether you are still lighting the mode or already running the hurry-up. It also sweeps every item currently lit on the playfield into your collection, with a coffin thrown in for each shot where all three items are locked in — and items are what light Crank It Up, which wants 12 of each one, plus another for every Crank It Up you have already played this game.",
+      "difficulty": 1,
+      "steps": [],
+      "instructions": [
+        "72 Seasons targets: clear all four during the mode to bank a use. The Hardwired jackpot, a setlist combo pair, blown pistons at 3 and every 10 after, and Blackened's super jackpot each award one as well.",
+        "Action button: a flashing button means a charge is waiting. Three is the ceiling.",
+        "Action button: press it to spot your next Hardwired shot, taken left to right — it works while you are lighting the mode and while the hurry-up is running.",
+        "Action button: the same press collects every item lit on the playfield right then, plus a coffin for any shot with all three items locked in.",
+        "Scoop: those items go straight toward Crank It Up, which lights at the scoop at 12 of each item plus one more for every Crank It Up already played, so cash a charge in rather than sitting on a full stack of three."
+      ],
+      "reward": "Up to three stored action-button charges, each one spotting a Hardwired shot and sweeping every lit item into your Crank It Up progress"
+    }
+  ],
+  "sources": [],
+  "achievements": [
+    {
+      "id": "light-the-doubler",
+      "title": "Doubler Lit",
+      "desc": "Light 2x Playfield by completing the FUEL target and activating it at the Dead End.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mult-fuel-2x"
+    },
+    {
+      "id": "first-combo-jackpot",
+      "title": "First Combo Cash",
+      "desc": "Chain a ramp or loop into the Dead End lane to collect one Combo Jackpot.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "combo-deadend-farm"
+    },
+    {
+      "id": "chair-multiball-started",
+      "title": "Chair Lit Up",
+      "desc": "Bash Sparky enough times to qualify and then start Electric Chair Multiball.",
+      "tier": "easy",
+      "source": "derived",
+      "goal": "mb-electric-chair"
+    },
+    {
+      "id": "super-skill-opener",
+      "title": "Super Plunge",
+      "desc": "Collect the Super Skill Shot at the Dead End off a held-left-flipper plunge.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "skill-super-deadend"
+    },
+    {
+      "id": "snake-multiball-started",
+      "title": "Snake Awake",
+      "desc": "Spell S-N-A-K-E and start Snake Multiball at the snake.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-snake"
+    },
+    {
+      "id": "grave-multiball-started",
+      "title": "Drops Down, Marker Up",
+      "desc": "Clear all three inline drop targets and hit the grave-marker magnet to start Grave Marker Multiball.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mb-grave-marker"
+    },
+    {
+      "id": "quadruple-scoring",
+      "title": "Four Times Everything",
+      "desc": "Have Fuel 2x and Snake 2x running at the same time for full 4x playfield scoring.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mult-snake-4x"
+    },
+    {
+      "id": "justice-started",
+      "title": "Scales Balanced",
+      "desc": "Spell METALLICA on the ramps and start the Lady Justice mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-lady-justice"
+    },
+    {
+      "id": "hardwired-jackpot-collected",
+      "title": "All Five Wired",
+      "desc": "Light all five main shots, start the Hardwired hurry-up at the scoop, and collect the final Hardwired Jackpot.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-hardwired"
+    },
+    {
+      "id": "seasons-toy-jackpot",
+      "title": "Seventy-Two Ticks",
+      "desc": "Complete the four 72 Seasons standups, finish the switch count-up, and collect a Toy Jackpot inside the timed mode.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-72-seasons"
+    },
+    {
+      "id": "crank-mode-finished",
+      "title": "One Song Down",
+      "desc": "Start a Crank It Up song mode and finish it for the completion bonus.",
+      "tier": "medium",
+      "source": "derived",
+      "goal": "mode-crank-fwtbt"
+    },
+    {
+      "id": "one-farm-under-multiplier",
+      "title": "Loop, Ramp, Cash",
+      "desc": "Run the Left Loop to Left Ramp setlist combo and cash it at the Dead End while Lady Justice and 2x Playfield are both live.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-one-lady-justice"
+    },
+    {
+      "id": "snake-super-jackpots",
+      "title": "Five Fangs",
+      "desc": "Collect five Snake Combos inside Snake Multiball to light every shot for Super Jackpots.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "combo-snake-multiball"
+    },
+    {
+      "id": "coffin-multiball-started",
+      "title": "Third Lock",
+      "desc": "Work the captive ball through all three locks to start Coffin Multiball.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-coffin"
+    },
+    {
+      "id": "stacked-multiball",
+      "title": "Two At Once",
+      "desc": "Start a second multiball while Coffin Multiball is already running.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "mb-coffin-stack"
+    },
+    {
+      "id": "crank-quartet",
+      "title": "Full Setlist",
+      "desc": "Start all four Crank It Up song modes in a single game.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "strat-eotl-build"
+    },
+    {
+      "id": "band-assembled",
+      "title": "Whole Band Earned",
+      "desc": "Play all four main multiballs in one game to collect every band member and light Blackened.",
+      "tier": "hard",
+      "source": "derived",
+      "goal": "wizard-blackened"
+    },
+    {
+      "id": "blackened-jackpots",
+      "title": "Blackened, Four Balls Alive",
+      "desc": "Start Blackened and score jackpots while keeping enough balls in play to run its multiplier above 1x.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-blackened-jackpots"
+    },
+    {
+      "id": "end-of-the-line-reached",
+      "title": "End Of The Line",
+      "desc": "Qualify and start the End of the Line wizard mode and collect at least one of its Super Jackpots.",
+      "tier": "epic",
+      "source": "derived",
+      "goal": "wizard-end-of-the-line"
+    }
+  ],
+  "drills": [
+    {
+      "id": "super-skill-deadend",
+      "title": "Held Plunge to Dead End",
+      "text": "Hold the left flipper on the plunge so the orbit up-post drops and the ball runs through, then collect at the Dead End target. It lights the playfield doubler at ball start, which makes it the strongest possible opening shot on the machine.",
+      "reps": "15 plunges",
+      "focus": "skill-shot",
+      "goal": "skill-super-deadend",
+      "shots": [
+        "left-flipper",
+        "dead-end"
+      ]
+    },
+    {
+      "id": "loop-backhand-pairs",
+      "title": "Loop Into Itself",
+      "text": "Backhand the left loop into itself, then do the same on the right. Both orbits are backhandable and each repeat pair banks a large boost, so this is the cheapest way to build value before you ever cash anything.",
+      "reps": "10 pairs per side",
+      "focus": "accuracy",
+      "goal": "combo-fuel-loop",
+      "shots": [
+        "left-orbit",
+        "right-orbit"
+      ]
+    },
+    {
+      "id": "sparky-backhand",
+      "title": "Sparky Backhand",
+      "text": "Backhand the center sculpt from the left flipper and aim for the center target rather than the sides — the middle counts double. It is the safest way to take dead center on this machine, and the multiball it qualifies keeps its progress between balls.",
+      "reps": "20 hits",
+      "focus": "accuracy",
+      "goal": "mb-electric-chair",
+      "shots": [
+        "sparky",
+        "left-flipper"
+      ]
+    },
+    {
+      "id": "fuel-rebound-control",
+      "title": "FUEL Rebound",
+      "text": "Take the far-left FUEL target from a settled cradle and be ready to nudge, because the rebound comes back toward the left outlane. Complete it, then cash the doubler at the Dead End and keep re-hitting the Dead End to hold the timer open.",
+      "reps": "5 completions",
+      "focus": "ball-control",
+      "goal": "mult-fuel-2x",
+      "shots": [
+        "fuel",
+        "dead-end",
+        "left-outlane"
+      ]
+    },
+    {
+      "id": "one-combo-cashout",
+      "title": "Loop, Ramp, Cash",
+      "text": "Left loop into the left ramp, then end the chain at the Dead End. That pair carries the biggest setlist boost on the machine, and the boost only pays when the Dead End cashes it, so never break off before the third shot.",
+      "reps": "10 cash-outs",
+      "focus": "flow",
+      "goal": "combo-one-lady-justice",
+      "shots": [
+        "left-orbit",
+        "left-ramp",
+        "dead-end"
+      ]
+    },
+    {
+      "id": "justice-ramp-alternation",
+      "title": "Alternate the Ramps",
+      "text": "Shoot the left ramp, then the right, then back to the left again. Each ramp's return crosses to the opposite inlane, so the side transfer is the part worth drilling. Alternating sides pays far more than repeating one, so never settle for whichever ramp is easier from where the ball lands.",
+      "reps": "note your longest unbroken alternation",
+      "focus": "flow",
+      "goal": "mode-lady-justice",
+      "shots": [
+        "left-ramp",
+        "right-ramp",
+        "left-inlane",
+        "right-inlane"
+      ]
+    }
+  ],
+  "actionButton": {
+    "present": true,
+    "label": "Self-Destruct Button",
+    "location": "center of the lockdown bar",
+    "how": "The lockdown bar button holds self-destruct charges. It flashes whenever one is waiting and you can stack three; at the cap it turns red-orange, telling you to spend one before any further award is thrown away. Each press does two jobs in the same moment.",
+    "uses": [
+      {
+        "when": "Charge waiting, Hardwired not yet lit",
+        "what": "Advances you one shot closer to lighting the Hardwired Hurry-Up."
+      },
+      {
+        "when": "Hardwired Hurry-Up running",
+        "what": "Collects the next hurry-up shot, taken left to right across the five majors."
+      },
+      {
+        "when": "Items lit around the playfield",
+        "what": "The same press sweeps them all in, plus a coffin for any shot holding a full column of three."
+      },
+      {
+        "when": "Button flashing red-orange",
+        "what": "You are stacked at three — spend one now or the next award you earn is wasted."
+      },
+      {
+        "when": "Blackened with band members maxed",
+        "what": "Each member left at level 8 gives you an add-a-ball press during the multiball."
+      }
+    ]
+  },
+  "howItPlays": {
+    "objective": "Play the four band-member multiballs - Electric Chair, Grave Marker, Snake and Coffin - to level James, Robert, Kirk and Lars, while stacking Fuel 2x and Snake 2x for up to 4x scoring. Collect the whole band for Blackened and run every Crank It Up song to reach End of the Line.",
+    "loop": [
+      "Hold the left flipper on the plunge and bank the Dead End Super Skill Shot, which lights 2x Playfield before you have made a real shot.",
+      "Feed a ramp or a loop into the Dead End to cash the snowballing Combo Jackpot, and complete FUEL to keep 2x live.",
+      "Start the four band multiballs - bash Sparky, clear the grave drops, spell SNAKE, lock the coffin - leveling each band member as you go.",
+      "Complete the Pick standups inside a multiball to stack Snake 2x on Fuel 2x for 4x, dump your supers under it, then light Blackened and push the Crank It Up songs toward End of the Line."
+    ],
+    "lights": [
+      {
+        "id": "top-lanes",
+        "name": "Top Rollover Lanes",
+        "kind": "lanes",
+        "sites": [
+          {
+            "shot": "top-lanes",
+            "lamps": 5
+          }
+        ],
+        "lit": "One top-lane rollover flashes at a time; rolling the ball through the lit lane banks it, and the lanes you have already banked stay collected so only the ones still needed keep flashing.",
+        "flashing": "The flashing lane is the one you have not rolled through yet.",
+        "control": {
+          "input": "either-flipper",
+          "effect": "tapping either flipper button shifts the flashing rollover across the top lanes, so you can set the lit one over whichever lane the ball is rolling toward and bank the one you still need",
+          "when": "as the ball crosses the top lanes"
+        },
+        "then": "Move the lit lane under the ball with a flipper and roll it through; completing every top lane scores a Mystery award and builds Super Pistons. Off the plunge these same lanes are your standard skill shot - aim the right lane to double it.",
+        "goals": [
+          "skill-standard"
+        ]
+      },
+      {
+        "id": "combo-jackpot",
+        "name": "Combo Jackpot Arrows",
+        "kind": "shot-arrow",
+        "sites": [
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "left-ramp"
+          },
+          {
+            "shot": "right-ramp"
+          },
+          {
+            "shot": "right-orbit"
+          },
+          {
+            "shot": "dead-end"
+          }
+        ],
+        "lit": "Land any comboable shot - a ramp, a loop, the captive ball, the grave drops - and a red arrow flashes on the next link in the chain, which ends at the Dead End and holds only while the combo timer runs.",
+        "flashing": "The red arrow flashes on the shot that continues the chain.",
+        "control": null,
+        "then": "Send a ramp or a loop straight into the Dead End to cash the Combo Jackpot, then set it up and cash it again so its base keeps snowballing within the ball. The Left Loop into Left Ramp carries the biggest setlist boost, and every collect doubles under a live 2x Playfield.",
+        "goals": [
+          "combo-deadend-farm",
+          "combo-one-lady-justice",
+          "combo-fuel-loop"
+        ]
+      },
+      {
+        "id": "fuel-doubler",
+        "name": "Fuel 2x Playfield",
+        "kind": "multiplier",
+        "sites": [
+          {
+            "shot": "fuel"
+          },
+          {
+            "shot": "dead-end"
+          }
+        ],
+        "lit": "Completing the far-left FUEL target lights the Dead End for 2x Playfield, and once activated it doubles every point you score for about twenty seconds.",
+        "flashing": "The 2x insert winds down over its timer, and hitting the Dead End again resets the clock.",
+        "control": null,
+        "then": "Complete FUEL - mind the rebound toward the left outlane - then activate 2x at the Dead End and keep striking that lane to refresh its timer. Stack it with Snake 2x from the Picks for full 4x, then dump your biggest supers underneath.",
+        "goals": [
+          "mult-fuel-2x",
+          "mult-snake-4x"
+        ]
+      },
+      {
+        "id": "electric-chair",
+        "name": "Electric Chair (Sparky)",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "sparky"
+          },
+          {
+            "shot": "left-orbit"
+          },
+          {
+            "shot": "right-orbit"
+          }
+        ],
+        "lit": "Sparky lights as the start once you have bashed the center sculpt enough times; during the multiball the chair inserts on the two orbits and Sparky himself light as jackpots, and the qualify progress carries between balls.",
+        "flashing": null,
+        "control": null,
+        "then": "Backhand Sparky from the left flipper - the center counts double - to start Electric Chair Multiball, then hit the lit orbit inserts to raise the Jacob's Ladder and shoot Sparky for Super Jackpots. Each super fries a figure off the chair and levels James, and frying them all lights both ramps as supers too.",
+        "goals": [
+          "mb-electric-chair",
+          "progress-seven-sparkys"
+        ]
+      },
+      {
+        "id": "snake-letters",
+        "name": "Snake",
+        "kind": "letters",
+        "sites": [
+          {
+            "shot": "snake"
+          }
+        ],
+        "lit": "A lit Snake spots a letter of S-N-A-K-E when you shoot the jaw, then goes dark, and you relight it by bashing the jaw or shooting any shot carrying a lit Snake insert.",
+        "flashing": null,
+        "control": null,
+        "then": "Spell SNAKE, then shoot the jaw again to start Snake Multiball and level Kirk. Inside any multiball, completing the Pick standups instead lights the Snake for a timed lock worth 2x Playfield plus an add-a-ball - stack that on Fuel 2x to reach 4x.",
+        "goals": [
+          "mb-snake",
+          "combo-snake-multiball",
+          "mult-snake-4x"
+        ]
+      },
+      {
+        "id": "grave-drops",
+        "name": "Grave Marker Drops",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "grave-marker",
+            "lamps": 3
+          }
+        ],
+        "lit": "The inline drop targets stand lit to be knocked down, and each one you drop also raises your end-of-ball Bonus X and advances the Resurrection ball save.",
+        "flashing": null,
+        "control": null,
+        "then": "Knock down the inline drops, then strike the grave-marker magnet behind them to kick off Grave Marker Multiball and level Robert. The drops reset if you drain, and each fresh start asks for another magnet hit on top of the last.",
+        "goals": [
+          "mb-grave-marker"
+        ]
+      },
+      {
+        "id": "coffin-locks",
+        "name": "Coffin",
+        "kind": "status",
+        "sites": [
+          {
+            "shot": "coffin"
+          }
+        ],
+        "lit": "The captive ball counts down its locks as you hit it, and the lit coffin is both the game's only source of Coffin items and the one multiball you can run a second multiball on top of.",
+        "flashing": null,
+        "control": null,
+        "then": "Work the captive ball through its locks to start Coffin Multiball and level Lars - a combo into it tacks on extra hits matching the combo's length. Bank Sparky hits and SNAKE letters first, then start a second multiball inside Coffin for two overlapping jackpot streams.",
+        "goals": [
+          "mb-coffin",
+          "mb-coffin-stack"
+        ]
+      },
+      {
+        "id": "band-members",
+        "name": "Band Members to Blackened",
+        "kind": "ladder",
+        "sites": [
+          {
+            "shot": "sparky"
+          },
+          {
+            "shot": "grave-marker"
+          },
+          {
+            "shot": "snake"
+          },
+          {
+            "shot": "coffin"
+          },
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "Each band member lights as you play his multiball - James at Sparky, Robert at the grave, Kirk at the Snake, Lars at the Coffin - and those levels bank all game rather than resetting between balls.",
+        "flashing": null,
+        "control": null,
+        "then": "Play all four multiballs to collect the whole band and light Blackened at the scoop, a four-ball mini-wizard whose opening jackpot grows with every band level. Any member left at the cap hands you an add-a-ball button and an extra ball to start with.",
+        "goals": [
+          "wizard-blackened",
+          "progress-band-member-levels",
+          "wizard-blackened-jackpots"
+        ]
+      },
+      {
+        "id": "crank-it-up",
+        "name": "Crank It Up Songs",
+        "kind": "mode",
+        "sites": [
+          {
+            "shot": "scoop"
+          }
+        ],
+        "lit": "The scoop lights for Crank It Up once you have collected enough items - swept in by the self-destruct button and the major shots - and every song you have already played raises the item bar for the next.",
+        "flashing": null,
+        "control": null,
+        "then": "Start a Crank It Up song at the scoop and hit the major shots to build its jackpot, then bank it or push on for more, both from the scoop. Playing all four songs qualifies End of the Line, the two-ball wizard whose supers pay half of your song totals - the biggest score on the machine.",
+        "goals": [
+          "mode-crank-fwtbt",
+          "wizard-end-of-the-line",
+          "strat-eotl-build"
+        ]
+      }
+    ],
+    "laneChange": "flippers",
+    "laneChangeNote": "Tap either flipper button to slide the flashing top-lane rollover across the top lanes, so you can line the lit one up with the lane the ball is about to roll down. Completing every top lane banks a Mystery award and builds Super Pistons; off the plunge the same lanes are the standard skill shot, with the right lane worth double.",
+    "scoring": [
+      {
+        "tier": "ball-one",
+        "text": "The strongest opener on the machine: hold the left flipper on the plunge and bank the Dead End Super Skill Shot to light 2x Playfield before your first real shot. Then farm the snowballing Combo Jackpot by feeding a ramp or a loop into the Dead End, and clear the grave drops for the Resurrection ball save.",
+        "goals": [
+          "skill-super-deadend",
+          "combo-deadend-farm",
+          "strat-opener"
+        ]
+      },
+      {
+        "tier": "building",
+        "text": "Start the band multiballs, the safe Electric Chair backhand first, and complete the Pick standups inside one to stack Snake 2x on Fuel 2x for full 4x, then dump your Super Jackpots under it. Spell METALLICA on the alternating ramps for Lady Justice and light the five majors for the Hardwired hurry-up between multiballs.",
+        "goals": [
+          "mb-electric-chair",
+          "mult-snake-4x",
+          "strat-4x-dump",
+          "mode-lady-justice",
+          "mode-hardwired"
+        ]
+      },
+      {
+        "tier": "the-big-one",
+        "text": "Collect the whole band to light Blackened, a four-ball mini-wizard that scales with your banked band levels. Then run all four Crank It Up songs to reach End of the Line, whose supers pay half of your song totals - under a live 4x that final collect can top a billion, the biggest score the machine offers.",
+        "goals": [
+          "wizard-blackened",
+          "wizard-end-of-the-line",
+          "strat-eotl-build"
+        ]
+      }
+    ]
+  }
+}
